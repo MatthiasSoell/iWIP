@@ -12,9 +12,9 @@
       <link>http://localhost:1313/iWIP/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/iWIP/</guid>
-      <description>&lt;div style=&#34;display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;&#34;&gt;
-  &lt;div style=&#34;flex: 1;&#34;&gt;
-    &lt;p&gt;&lt;strong&gt;Willkommen auf meinem Lehrblog!&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;div style=&#34;display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2rem; margin-bottom: 2rem;&#34;&gt;
+&lt;div style=&#34;flex: 1; padding-top: 0.8rem;&#34;&gt;
+      &lt;p&gt;&lt;strong&gt;Willkommen auf meinem Lehrblog!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Hier findest Du Lehrinhalte, Materialien und Präsentationen – semesterweise geordnet und offen verfügbar.&lt;/p&gt;
 
   &lt;/div&gt;
@@ -25,6 +25,7 @@
     
   &lt;/figure&gt;
 &lt;/div&gt;
+&lt;p&gt;Test&lt;/p&gt;
 &lt;p&gt;👉 &lt;strong&gt;Nächster Abschnitt:&lt;/strong&gt; &lt;a href=&#34;http://localhost:1313/iWIP/ws24/&#34;&gt;Wintersemester 2024&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
