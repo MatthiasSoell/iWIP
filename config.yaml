@@ -1,0 +1,8 @@
+baseURL: "https://matthiassoell.github.io/iWIP/"
+languageCode: "de-de"
+title: "Lehrblog iWIP"
+theme: "papermod"
+
+params:
+  defaultTheme: "auto"
+  ShowReadingTime: true
