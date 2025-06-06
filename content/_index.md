@@ -1,7 +1,7 @@
 ---
 title: "Willkommen im Lehrblog iWIP"
 ---
-{{< imgrechts src="/bilder/matthiassoell_index.jpg" alt="Beispielbild" caption="Abbildung 1: Beispiel" >}}
+{{< imgrechts src="/bilder/matthiassoell_index.jpg" alt="Beispielbild" caption="Prof. Dr. Matthias Söll" >}}
 
 **Willkommen auf meinem Lehrblog!**
 
