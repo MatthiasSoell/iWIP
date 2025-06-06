@@ -2,9 +2,10 @@
   <div style="flex: 1 1 300px; min-width: 200px; padding-top: 0.5rem;">
     {{ .Inner | markdownify }}
   </div>
-  <figure class="img-right" style="flex: 0 1 300px; margin: 0; text-align: center;">
-    <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="width: 100%; border-radius: 0.5rem;">
-    {{ with .Get "caption" }}
+<figure class="img-right" style="flex: 0 1 300px; margin: 0 auto; text-align: center;">
+      <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="width: 100%; border-radius: 0.5rem;">
+<img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="width: 100%; max-width: 300px; margin: 0 auto;">
+      {{ with .Get "caption" }}
       <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5rem; text-align: center;">{{ . }}</figcaption>
     {{ end }}
   </figure>
