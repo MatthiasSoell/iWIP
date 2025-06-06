@@ -10,6 +10,6 @@ draft: false
 
 Hier findest Du Lehrinhalte, Materialien und Präsentationen – semesterweise geordnet und offen verfügbar.
 
-👉 **Nächster Abschnitt:** [Wintersemester 2024](/ws24/)
-
 {{< /imgrechts >}}
+
+👉 **Nächster Abschnitt:** [Wintersemester 2024](/ws24/)
