@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Lehrblog iWIP</title>
+    <title>LehreBlog iWIP</title>
     <link>http://localhost:1313/iWIP/</link>
-    <description>Recent content on Lehrblog iWIP</description>
+    <description>Recent content on LehreBlog iWIP</description>
     <generator>Hugo -- 0.147.7</generator>
     <language>de-de</language>
     <lastBuildDate>Fri, 06 Jun 2025 14:18:15 +0200</lastBuildDate>
@@ -16,20 +16,30 @@
       <description></description>
     </item>
     <item>
+      <title>Herzlich Willkommen!</title>
+      <link>http://localhost:1313/iWIP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/iWIP/</guid>
+      <description>&lt;div style=&#34;display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;&#34;&gt;
+  &lt;div style=&#34;flex: 1;&#34;&gt;
+    &lt;p&gt;&lt;strong&gt;Willkommen auf meinem Lehrblog!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Hier findest Du Lehrinhalte, Materialien und Präsentationen – semesterweise geordnet und offen verfügbar.&lt;/p&gt;
+&lt;p&gt;👉 &lt;strong&gt;Nächster Abschnitt:&lt;/strong&gt; &lt;a href=&#34;http://localhost:1313/iWIP/ws24/&#34;&gt;Wintersemester 2024&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;figure class=&#34;img-right&#34; style=&#34;flex: 1; margin: 0;&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/iWIP/bilder/msoell.jpg&#34; alt=&#34;Matthias Söll&#34; style=&#34;width: 100%;&#34;&gt;
+    
+      &lt;figcaption&gt;Prof. Dr. Matthias Söll&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+&lt;/div&gt;</description>
+    </item>
+    <item>
       <title>Willkommen im Lehrblog iWIP</title>
       <link>http://localhost:1313/iWIP/_index_alt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/iWIP/_index_alt/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Willkommen auf meinem Lehrblog!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Hier findest Du Lehrinhalte, Materialien und Präsentationen – semesterweise geordnet und offen verfügbar.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Porträt von Matthias Söll&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/iWIP/bilder/msoell.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;👉 &lt;strong&gt;Nächster Abschnitt:&lt;/strong&gt; &lt;a href=&#34;http://localhost:1313/iWIP/ws24/&#34;&gt;Wintersemester 2024&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Willkommen im Lehrblog iWIP</title>
-      <link>http://localhost:1313/iWIP/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/iWIP/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Willkommen auf meinem Lehrblog!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Hier findest Du Lehrinhalte, Materialien und Präsentationen – semesterweise geordnet und offen verfügbar.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;Porträt von Matthias Söll&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/iWIP/bilder/msoell.jpg&#34;&gt;&lt;/p&gt;
