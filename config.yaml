@@ -6,3 +6,8 @@ theme: "papermod"
 params:
   defaultTheme: "auto"
   ShowReadingTime: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
