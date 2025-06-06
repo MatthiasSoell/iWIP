@@ -4,6 +4,8 @@ title: "Willkommen im Lehrblog iWIP"
 {{< imgrechts src="/bilder/matthiassoell_index.jpg" alt="Matthias Söll" caption="Prof. Dr. Matthias Söll" >}}
 
 
+<img src="/bilder/matthiassoell_index.jpg" alt="Ich">
+
 **Willkommen auf meinem Lehrblog!**
 
 Hier findest Du Lehrinhalte, Materialien und Präsentationen – semesterweise geordnet und offen verfügbar.
