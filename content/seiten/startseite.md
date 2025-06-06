@@ -12,4 +12,6 @@ Hier findest Du Lehrinhalte, Materialien und Präsentationen – semesterweise g
 
 {{< /imgrechts >}}
 
+Test
+
 👉 **Nächster Abschnitt:** [Wintersemester 2024](/ws24/)
