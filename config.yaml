@@ -1,6 +1,6 @@
 baseURL: "https://matthiassoell.github.io/iWIP/"
 languageCode: "de-de"
-title: "LehreBlog iWIP"
+title: "SciBlog iWIP"
 theme: "papermod"
 
 params:
@@ -11,3 +11,15 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+menu:
+  main:
+    - identifier: oer
+      name: OER
+      url: /oer/
+      weight: 10
+
+    - identifier: bisy
+      name: BiSy
+      url: /bisy/
+      weight: 20
