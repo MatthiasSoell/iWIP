@@ -1,0 +1,12 @@
+---
+title: "Willkommen im Lehrblog iWIP"
+---
+{{< imgrechts src="/static/bilder/matthiassoell_index.jpg" alt="Beispielbild" caption="Abbildung 1: Beispiel" >}}
+
+**Willkommen auf meinem Lehrblog!**
+
+Hier findest Du Lehrinhalte, Materialien und Präsentationen – semesterweise geordnet und offen verfügbar.
+
+{{< /imgrechts >}}
+
+👉 **Nächster Abschnitt:** [Wintersemester 2024](/ws24/)
