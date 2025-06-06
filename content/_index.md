@@ -1,19 +1,13 @@
 ---
 title: "Willkommen im Lehrblog iWIP"
 ---
-{{< imgrechts src="/bilder/matthiassoell_index.jpg" alt="Matthias Söll" caption="Prof. Dr. Matthias Söll" >}}
 
-
-<img src="/bilder/matthiassoell_index.jpg" alt="Ich">
 
 **Willkommen auf meinem Lehrblog!**
 
-Hier findest Du Lehrinhalte, Materialien und Präsentationen – semesterweise geordnet und offen verfügbar.
-
-{{< /imgrechts >}}
-
-Test 123
 
 Hier findest Du Lehrinhalte, Materialien und Präsentationen – semesterweise geordnet und offen verfügbar.
+
+![Porträt von Matthias Söll](/bilder/matthiassoell_index.jpg)
 
 👉 **Nächster Abschnitt:** [Wintersemester 2024](/ws24/)
