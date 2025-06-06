@@ -8,6 +8,6 @@ draft: false
 
 Hier findest Du Lehrinhalte, Materialien und Präsentationen – semesterweise geordnet und offen verfügbar.
 
-![Porträt von Matthias Söll](/bilder/msoell.jpg)
+![Porträt von Matthias Söll](/iWIP/bilder/msoell.jpg)
 
 👉 **Nächster Abschnitt:** [Wintersemester 2024](/ws24/)
