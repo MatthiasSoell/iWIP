@@ -2,7 +2,7 @@
   <div style="flex: 1;">
     {{ .Inner | markdownify }}
   </div>
-  <figure class="img-right" style="flex: 1; margin: 0;">
+  <figure class="img-right" style="flex: 1; margin: 0; text-align: center;">
     <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="width: 100%;">
     {{ with .Get "caption" }}
       <figcaption>{{ . }}</figcaption>

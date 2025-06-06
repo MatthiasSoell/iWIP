@@ -26,7 +26,7 @@
 &lt;p&gt;Hier findest Du Lehrinhalte, Materialien und Präsentationen – semesterweise geordnet und offen verfügbar.&lt;/p&gt;
 
   &lt;/div&gt;
-  &lt;figure class=&#34;img-right&#34; style=&#34;flex: 1; margin: 0;&#34;&gt;
+  &lt;figure class=&#34;img-right&#34; style=&#34;flex: 1; margin: 0; text-align: center;&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/iWIP/bilder/msoell.jpg&#34; alt=&#34;Matthias Söll&#34; style=&#34;width: 100%;&#34;&gt;
     
       &lt;figcaption&gt;Prof. Dr. Matthias Söll&lt;/figcaption&gt;
