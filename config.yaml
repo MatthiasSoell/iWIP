@@ -1,9 +1,11 @@
 baseURL: "https://matthiassoell.github.io/iWIP/"
 languageCode: "de-de"
 title: "SciBlog iWIP"
-theme: "papermod"
+# theme: "papermod"
 
 params:
+  defaultTheme: "auto"
+  ShowReadingTime: true
   customCSS: ["css/custom.css"]
 
 markup:
