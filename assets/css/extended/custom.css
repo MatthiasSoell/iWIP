@@ -14,7 +14,7 @@ a:hover {
 
 /* Blockquotes */
 blockquote {
-  border-left: 4px solid var(--uni-blau);
+  border-left: 4px solid red;
   padding-left: 1rem;
   margin-left: 0;
   color: #333;
