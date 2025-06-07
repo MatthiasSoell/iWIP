@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Seitens on SciBlog iWIP</title>
     <link>http://localhost:1313/iWIP/seiten/</link>
     <description>Recent content in Seitens on SciBlog iWIP</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.147.7</generator>
     <language>de-de</language>
     <atom:link href="http://localhost:1313/iWIP/seiten/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,12 @@
       <link>http://localhost:1313/iWIP/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/iWIP/</guid>
-      <description>&lt;div style=&#34;display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem;&#34;&gt;&#xA;  &lt;div style=&#34;flex: 1 1 300px; min-width: 200px;&#34;&gt;&#xA;    &lt;p&gt;Mit meinem &lt;strong&gt;SciBlog iWIP&lt;/strong&gt; 🧠📖 mache ich mich auf den Weg, meine Forschungs- und Lehrmaterialien als &lt;strong&gt;OER&lt;/strong&gt; 🌍🔓 frei zugänglich zu machen.&lt;/p&gt;&#xA;&lt;p&gt;&amp;hellip; wer, wie, was??? Drei Abkürzungen in ein paar Zeilen &amp;hellip; 😉&lt;/p&gt;&#xA;&lt;p&gt;Also: Ich bin &lt;strong&gt;Dr. Matthias Söll&lt;/strong&gt; 👨‍🏫, Professor für Wirtschaftsdidaktik am &lt;strong&gt;Institut für Wirtschaftspädagogik&lt;/strong&gt; (iWIP) der &lt;strong&gt;Universität Rostock&lt;/strong&gt; 🎓.&lt;/p&gt;&#xA;&lt;p&gt;Ich blogge über &lt;strong&gt;Wissenschaft&lt;/strong&gt; (Science Blog) – und veröffentliche meine Inhalte als &lt;strong&gt;Open Educational Resources&lt;/strong&gt; (OER).&lt;/p&gt;</description>
+      <description>&lt;div style=&#34;display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem;&#34;&gt;
+  &lt;div style=&#34;flex: 1 1 300px; min-width: 200px;&#34;&gt;
+    &lt;p&gt;Mit meinem &lt;strong&gt;SciBlog iWIP&lt;/strong&gt; 🧠📖 mache ich mich auf den Weg, meine Forschungs- und Lehrmaterialien als &lt;strong&gt;OER&lt;/strong&gt; 🌍🔓 frei zugänglich zu machen.&lt;/p&gt;
+&lt;p&gt;&amp;hellip; wer, wie, was??? Drei Abkürzungen in ein paar Zeilen &amp;hellip; 😉&lt;/p&gt;
+&lt;p&gt;Also: Ich bin &lt;strong&gt;Dr. Matthias Söll&lt;/strong&gt; 👨‍🏫, Professor für Wirtschaftsdidaktik am &lt;strong&gt;Institut für Wirtschaftspädagogik&lt;/strong&gt; (iWIP) der &lt;strong&gt;Universität Rostock&lt;/strong&gt; 🎓.&lt;/p&gt;
+&lt;p&gt;Ich blogge über &lt;strong&gt;Wissenschaft&lt;/strong&gt; (Science Blog) – und veröffentliche meine Inhalte als &lt;strong&gt;Open Educational Resources&lt;/strong&gt; (OER).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

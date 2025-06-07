@@ -6,8 +6,6 @@ theme: "papermod"
 params:
   defaultTheme: "auto"
   ShowReadingTime: true
-  assets:
-    customCSS: ["css/custom.css"]
 
 markup:
   goldmark:
