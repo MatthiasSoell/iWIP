@@ -1,0 +1,45 @@
+/* === Uni-Farbe: RGB(1, 74, 153) === */
+:root {
+  --uni-blau: rgb(1, 74, 153);
+}
+
+/* Links */
+a {
+  color: var(--uni-blau);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--uni-blau);
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #333;
+  background: #f0f4fa;
+  font-style: italic;
+}
+
+/* Buttons (z. B. für Shortcodes) */
+.button {
+  background-color: var(--uni-blau);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.button:hover {
+  background-color: #004080;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--uni-blau);
+  font-weight: 700;
+}
