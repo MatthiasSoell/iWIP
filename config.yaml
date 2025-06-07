@@ -7,7 +7,7 @@ params:
   defaultTheme: "auto"
   ShowReadingTime: true
   assets:
-    customCSS: ["css/custom.css"]
+    customCSS: ["/iWIP/css/custom.css"]
 
 markup:
   goldmark:
