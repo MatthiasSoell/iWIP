@@ -5,4 +5,4 @@ title: "Open Educational Resources"
 ---
 Hier findest Du alles zu OER im SciBlog. Das ist sehr nützlich. Sogar sehr nützlich. Oder doch nicht?
 
-
+> Das ist ein Zitat. 
