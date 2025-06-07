@@ -14,11 +14,11 @@ a:hover {
 
 /* Blockquotes */
 blockquote {
-  border-left: 4px solid red;
+  border-left: 4px solid var(--uni-blau);
   padding-left: 1rem;
   margin-left: 0;
   color: #333;
-  background: #f0f4fa;
+  background: red;
   font-style: italic;
 }
 
