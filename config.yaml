@@ -4,8 +4,6 @@ title: "SciBlog iWIP"
 theme: "papermod"
 
 params:
-  defaultTheme: "auto"
-  ShowReadingTime: true
   customCSS: ["css/custom.css"]
 
 markup:
