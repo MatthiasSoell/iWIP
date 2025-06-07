@@ -6,8 +6,7 @@ theme: "papermod"
 params:
   defaultTheme: "auto"
   ShowReadingTime: true
-  assets:
-    customCSS: ["/iWIP/css/custom.css"]
+  customCSS: ["css/custom.css"]
 
 markup:
   goldmark:
