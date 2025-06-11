@@ -4,6 +4,7 @@ title: "SciBlog iWIP"
 theme: "papermod"
 
 params:
+  logo: "/iWIP/bilder/logo_siblog_iwip.png"
   defaultTheme: "auto"
   ShowReadingTime: true
 

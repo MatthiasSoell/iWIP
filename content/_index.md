@@ -1,5 +1,6 @@
 ---
 title: "Herzlich Willkommen!"
+description: "Interaktive Wissenschaftliche Praxis"
 url: "/"
 draft: false
 ---

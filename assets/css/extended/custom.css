@@ -17,6 +17,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.logo img {
+  height: 50px !important;
+  width: auto !important;
+}
+
 .post-content blockquote {
   border-left: 4px solid var(--uni-blau) !important;
   padding-left: 1rem !important;

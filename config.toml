@@ -1,0 +1,34 @@
+baseURL = "https://matthiassoell.github.io/iWIP/"
+languageCode = "de-de"
+title = "SciBlog iWIP"
+theme = "papermod"
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+
+  [params.label]
+    icon = "/iWIP/bilder/logo_siblog_iwip.png"
+    text = ""  # optional: "" blendet den Titel aus, oder "SciBlog iWIP" lässt ihn stehen
+
+[params.assets]
+  customCSS = ["css/custom.css"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "oer"
+    name = "OER"
+    url = "/oer/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "bisy"
+    name = "BiSy"
+    url = "/bisy/"
+    weight = 20

@@ -11,20 +11,10 @@
     <loc>http://localhost:1313/iWIP/oer/</loc>
     <lastmod>2025-06-06T23:43:20+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/iWIP/posts/</loc>
-    <lastmod>2025-06-06T14:18:15+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/iWIP/posts/willkommen/</loc>
-    <lastmod>2025-06-06T14:18:15+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/iWIP/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/iWIP/</loc>
-  </url><url>
-    <loc>http://localhost:1313/iWIP/seiten/</loc>
+    <loc>http://localhost:1313/iWIP/posts/</loc>
   </url><url>
     <loc>http://localhost:1313/iWIP/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/iWIP/_index_alt/</loc>
   </url>
 </urlset>
