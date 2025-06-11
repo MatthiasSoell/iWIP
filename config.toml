@@ -6,6 +6,7 @@ theme = "papermod"
 [params]
   defaultTheme = "auto"
   ShowReadingTime = true
+  ShowThemeToggle = true
   
   [params.label]
     icon = "/iWIP/bilder/logo_siblog_iwip.png"
