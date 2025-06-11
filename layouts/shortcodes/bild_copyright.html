@@ -1,0 +1,13 @@
+<figure style="margin: 1rem auto 0 auto; text-align: center;">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="width: 100%; max-width: 300px; height: auto; display: block; margin: 0 auto;">
+  {{ with .Get "caption" }}
+<figcaption style="font-size: 0.9em; font-weight: bold; color: #666; margin-top: 0.5rem; margin-bottom: 0;">
+  {{ . }}
+</figcaption>
+  {{ end }}
+  {{ if .Inner }}
+    <div style="font-size: 0.75em; color: #888; margin-top: 0.2rem; line-height: 1.3;">
+      {{ .Inner | markdownify }}
+    </div>
+  {{ end }}
+</figure>

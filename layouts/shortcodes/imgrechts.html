@@ -2,10 +2,19 @@
   <div style="flex: 1 1 300px; min-width: 200px;">
     {{ .Inner | markdownify }}
   </div>
-<figure class="img-right" style="flex: 0 1 300px; margin: 0 auto; text-align: center;  margin-top: 0.4rem;">
-      <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="width: 100%; max-width: 300px; margin: 0 auto;">
-      {{ with .Get "caption" }}
-      <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5rem; text-align: center;">{{ . }}</figcaption>
+  <figure class="img-right" style="flex: 0 1 300px; margin: 0 auto; text-align: center; margin-top: 0.4rem;">
+    <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="width: 100%; max-width: 300px; margin: 0 auto;">
+    
+    {{ with .Get "caption" }}
+      <figcaption style="font-size: 0.9em; font-weight: bold; color: #333; margin: 0; text-align: center;">
+        {{ . }}
+      </figcaption>
+    {{ end }}
+    
+    {{ with .Get "subtext" }}
+      <div style="font-size: 0.75em; color: #888; margin-top: 0.2rem; text-align: center;">
+        {{ . | safeHTML }}
+      </div>
     {{ end }}
   </figure>
 </div>

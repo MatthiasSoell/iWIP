@@ -1,3 +1,4 @@
+
 ---
 title: "Herzlich Willkommen!"
 description: "Interaktive Wissenschaftliche Praxis"
@@ -5,7 +6,12 @@ url: "/"
 draft: false
 ---
 
-{{< imgrechts src="/iWIP/bilder/msoell.jpg" alt="Matthias Söll" caption="Matthias Söll" >}}
+{{< imgrechts
+  src="/iWIP/bilder/msoell.jpg"
+  alt="Matthias Söll"
+  caption="Matthias Söll"
+  subtext="© ITMZ | Universität Rostock<br> – nicht frei verwendbar"
+>}}
 
 Mit meinem **SciBlog iWIP** 🎓🧠📖 mache ich mich auf den Weg, meine Forschungs- und Lehrmaterialien als **OER** 🌍🔓 frei zugänglich zu machen.
 
