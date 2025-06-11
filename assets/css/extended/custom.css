@@ -3,6 +3,11 @@
   --uni-blau: rgb(1, 74, 153);
 }
 
+/* Body einheitliche Hintergrundfarbe */
+body {
+  background: var(--theme) !important;
+}
+
 /* Links */
 a {
   color: var(--uni-blau);
@@ -12,14 +17,13 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Blockquotes */
-blockquote {
-  border-left: 4px solid var(--uni-blau);
-  padding-left: 1rem;
-  margin-left: 0;
-  color: #333;
-  background: #f0f4fa;
-  font-style: italic;
+.post-content blockquote {
+  border-left: 4px solid var(--uni-blau) !important;
+  padding-left: 1rem !important;
+  margin-left: 0 !important;
+  color: #000000 !important;
+  background: rgba(1, 74, 153, 0.2) !important;
+  font-style: italic !important;
 }
 
 /* Buttons (z. B. für Shortcodes) */
