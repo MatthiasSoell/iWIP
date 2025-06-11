@@ -13,8 +13,6 @@
   </url><url>
     <loc>http://localhost:1313/iWIP/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/iWIP/posts/</loc>
-  </url><url>
     <loc>http://localhost:1313/iWIP/tags/</loc>
   </url>
 </urlset>
