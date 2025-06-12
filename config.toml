@@ -4,10 +4,11 @@ title = "SciBlog iWIP"
 theme = "papermod"
 
 [params]
+  hideFooter = true
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowThemeToggle = true
-  
+
   [params.label]
     icon = "/iWIP/bilder/logo_siblog_iwip.png"
     text = ""  # optional: "" blendet den Titel aus, oder "SciBlog iWIP" lässt ihn stehen

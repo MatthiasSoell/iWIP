@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/iWIP/categories/</loc>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/iWIP/</loc>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/iWIP/tags/lehrmaterial/</loc>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/iWIP/categories/oer/</loc>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/iWIP/tags/oer/</loc>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/iWIP/tags/</loc>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/iWIP/oer/warum_oer/</loc>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/iWIP/tags/wissenschaft/</loc>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/iWIP/bisy/</loc>
     <lastmod>2025-06-06T23:43:38+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/iWIP/</loc>
-    <lastmod>2025-06-06T23:43:38+02:00</lastmod>
+    <loc>http://localhost:1313/iWIP/hinweise/</loc>
+    <lastmod>2025-06-06T23:43:20+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/iWIP/oer/</loc>
     <lastmod>2025-06-06T23:43:20+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/iWIP/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/iWIP/tags/</loc>
   </url>
 </urlset>
