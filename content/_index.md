@@ -1,8 +1,7 @@
-
 ---
 title: "Herzlich Willkommen!"
 description: "Interaktive Wissenschaftliche Praxis"
-url: "/"
+layout: "home"
 draft: false
 ---
 

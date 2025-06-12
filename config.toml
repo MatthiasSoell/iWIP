@@ -8,7 +8,9 @@ theme = "papermod"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowThemeToggle = true
-
+  ShowRecentPosts = false
+  mainSections = ["posts"]
+  
   [params.label]
     icon = "/iWIP/bilder/logo_siblog_iwip.png"
     text = ""  # optional: "" blendet den Titel aus, oder "SciBlog iWIP" lässt ihn stehen
