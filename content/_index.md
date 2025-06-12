@@ -5,7 +5,7 @@ layout: "home"
 draft: false
 ---
 
-### Herzlich Willkommen! Test
+### Herzlich Willkommen!
 
 {{< imgrechts
   src="/iWIP/bilder/msoell.jpg"
@@ -14,7 +14,7 @@ draft: false
   subtext="© ITMZ | Universität Rostock<br> – nicht frei verwendbar"
 >}}
 
-Mit meinem **SciBlog iWIP** 🧠📖 mache ich mich auf den Weg, meine Forschungs- und Lehrmaterialien als **OER** 🎓🌍🔓 frei zugänglich zu machen.
+Lalelu Mit meinem **SciBlog iWIP** 🧠📖 mache ich mich auf den Weg, meine Forschungs- und Lehrmaterialien als **OER** 🎓🌍🔓 frei zugänglich zu machen.
 
 ... wer, wie, was??? Drei Abkürzungen in ein paar Zeilen ... 😉
 
