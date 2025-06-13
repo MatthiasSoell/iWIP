@@ -2,7 +2,8 @@
 title: "Warum OER?"
 date: 2025-06-12
 draft: false
-description: "In diesem Beitrag beschreibe ich neben dem Hintergrund von freien Bildungsmaterialien drei Argumentationsfiguren zur Erstellung, Nutzung und Weitergabe von OER aus der Perspektive der beruflichen Bildung."
+description: "In diesem Beitrag beschreibe ich den Hintergrund freier Bildungsmaterialien und stelle drei zentrale Argumentationsfiguren zur Nutzung von OER aus der Perspektive der beruflichen Bildung vor."
+summary: "In diesem Beitrag beschreibe ich den Hintergrund freier Bildungsmaterialien und stelle drei zentrale Argumentationsfiguren zur Nutzung von OER aus der Perspektive der beruflichen Bildung vor."
 tags: ["OER", "Lehrmaterial", "Wissenschaft"]
 categories: ["OER"]
 ---
