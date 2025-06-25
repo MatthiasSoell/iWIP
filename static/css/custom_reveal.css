@@ -116,11 +116,11 @@ body.dark .top-toggle button:hover {
 /* Vergrößert Text auf kleinen Bildschirmen */
 @media screen and (max-width: 768px) {
   .reveal section p {
-    font-size: 8.2em; !important;
-    line-height: 4.6;
+    font-size: 4.2em; !important;
+    line-height: 2.6;
   }
 
   .reveal section li {
-    font-size: 8.2em;
+    font-size: 4.2em;
   }
 }
