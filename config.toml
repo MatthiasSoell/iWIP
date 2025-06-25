@@ -55,3 +55,10 @@ noUgly = true
 theme = "white"
 slide_number = "c/t"
 custom_theme = "/iWIP/css/custom_reveal.css"
+
+# [reveal_hugo.reveal_options]
+# width = 1280
+# height = 720
+# margin = 0.05
+# minScale = 0.5
+# maxScale = 1.5
