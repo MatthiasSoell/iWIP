@@ -27,6 +27,10 @@
   text-transform: none;
 }
 
+.reveal h1 {
+  font-size: 3.2rem;
+}
+
 .reveal ul li:not(:last-child),
 .reveal ol li:not(:last-child) {
   margin-bottom: 0.6em;
@@ -68,7 +72,7 @@ body.dark .top-toggle button:hover {
 
 .reveal li,
 .reveal p {
-  font-size: 1.4vw;
+  font-size: 1.8vw;
 }
 
 .fragebox-slide {
@@ -126,14 +130,15 @@ body.dark .top-toggle button:hover {
     color: #000;
 }
 
-/* Vergrößert Text auf kleinen Bildschirmen */
-@media screen and (max-width: 768px) {
-  .reveal section p {
-    font-size: 4.2em; !important;
-    line-height: 2.6;
-  }
-
+@media screen and (max-width: 900px) {
+  .reveal section p,
   .reveal section li {
-    font-size: 4.2em;
+    font-size: 3.2rem;
+    line-height: 1.6;
+  }
+  
+  .reveal h1 {
+    font-size: 4.0rem;
   }
 }
+
