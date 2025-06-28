@@ -28,7 +28,7 @@
 }
 
 .reveal h1 {
-  font-size: 3.2rem;
+  font-size: 3.0rem;
 }
 
 .reveal ul li:not(:last-child),
@@ -130,15 +130,26 @@ body.dark .top-toggle button:hover {
     color: #000;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (orientation: portrait) {
   .reveal section p,
   .reveal section li {
     font-size: 3.2rem;
     line-height: 1.6;
   }
-  
+
   .reveal h1 {
-    font-size: 4.0rem;
+    font-size: 4rem;
   }
 }
 
+@media screen and (orientation: landscape) {
+  .reveal section p,
+  .reveal section li {
+    font-size: 1.9rem;
+    line-height: 1.5;
+  }
+
+  .reveal h1 {
+    font-size: 3rem;
+  }
+}
