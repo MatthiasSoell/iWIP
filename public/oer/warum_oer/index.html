@@ -129,7 +129,13 @@
 
 </div>
   </header> 
-  <div class="post-content"><div class="top-toggle">
+  <div class="post-content"><script>
+  function triggerPrint() {
+    window.print(); // oder eine andere Funktion, je nach Zweck
+  }
+</script>
+<div class="top-toggle">
+  <button onclick="triggerPrint()" title="Präsentation speichern">💾</button>
   <button onclick="location.href='/iWIP/praesentation/warum_oer'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
 <h2 id="was-sind-oer">Was sind OER?<a hidden class="anchor" aria-hidden="true" href="#was-sind-oer">#</a></h2>

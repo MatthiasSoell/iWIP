@@ -137,6 +137,11 @@ body.dark .top-toggle button:hover {
     line-height: 1.6;
   }
 
+  .top-toggle button {
+    font-size: 3.8rem;
+    padding: 1.0rem 1.0rem;
+  }
+
   .reveal h1 {
     font-size: 4rem;
   }
@@ -147,6 +152,11 @@ body.dark .top-toggle button:hover {
   .reveal section li {
     font-size: 1.9rem;
     line-height: 1.5;
+  }
+
+  .top-toggle button {
+    font-size: 2.6rem;
+    padding: 0.8rem 0.8rem;
   }
 
   .reveal h1 {
