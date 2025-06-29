@@ -130,21 +130,58 @@ body.dark .top-toggle button:hover {
     color: #000;
 }
 
+.zitat-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.zitat-container {
+  max-width: 80%;
+  position: relative;
+  z-index: 2;
+}
+
+.zitat-box {
+  background-color: #e0f2f1 !important;     /* helles Grün */
+  border-left: 6px solid #00796b !important; /* türkises Grün */
+  border-radius: 6px;
+  padding: 1em;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 0;
+  text-align: center;
+}
+
+.zitat-quelle {
+  text-align: right;
+  font-size: 1.6rem !important;
+  color: #4e684e; /* mittleres, neutrales Grün-Grau */
+  margin-top: 0.5rem;
+}
+
 @media screen and (orientation: portrait) {
   .reveal section p,
   .reveal section li {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     line-height: 1.6;
   }
 
   .top-toggle button {
-    font-size: 3.8rem;
-    padding: 1.0rem 1.0rem;
+    font-size: 3.2rem;
+    padding: 0.8rem 0.8rem;
   }
 
   .reveal h1 {
     font-size: 4rem;
   }
+
+  .zitat-quelle {
+  font-size: 2.2rem !important;
+}
+
 }
 
 @media screen and (orientation: landscape) {
@@ -155,8 +192,8 @@ body.dark .top-toggle button:hover {
   }
 
   .top-toggle button {
-    font-size: 2.6rem;
-    padding: 0.8rem 0.8rem;
+    font-size: 1.8rem;
+    padding: 0.6rem 0.6rem;
   }
 
   .reveal h1 {

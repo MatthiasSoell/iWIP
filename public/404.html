@@ -1,133 +1,141 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><script src="/iWIP/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=iWIP/livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>404 Page not found | SciBlog iWIP</title>
-<meta name="keywords" content="">
+<!doctype html>
+<html lang="en">
+  <head><script src="/iWIP/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=iWIP/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<title>404 Page not found</title>
 <meta name="description" content="Ich bin Prof. Dr. Matthias Söll vom Institut für Wirtschaftspädagogik (iWIP) der Universität Rostock und blogge mit Open Educational Resources über Wissenschaft und Bildung.">
-<meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/iWIP/404.html">
-<link crossorigin="anonymous" href="/iWIP/assets/css/stylesheet.86d267a7ac619cf7480bd02d7cded9e207f9541fd8811acd93fd919d1654edfd.css" integrity="sha256-htJnp6xhnPdIC9AtfN7Z4gf5VB/YgRrNk/2RnRZU7f0=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/iWIP/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/iWIP/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/iWIP/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/iWIP/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/iWIP/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/iWIP/404.html">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="stylesheet" href="/iWIP/reveal-js/dist/reset.css">
+<link rel="stylesheet" href="/iWIP/reveal-js/dist/reveal.css"><link rel="stylesheet" href="/iWIP/css/custom_reveal.css" id="theme"><link rel="stylesheet" href="/iWIP/highlight-js/default.min.css">
+  </head>
+  
+  <footer class="footer">
+      © 2025 <a href="#top">SciBlog iWIP</a> · <a href="/iWIP/impressum/">Impressum</a> · <a href="/iWIP/datenschutz">Datenschutz</a> · Powered by
+      <a href="https://github.com/joshed-io/reveal-hugo" rel="noopener" target="_blank">reveal-hugo</a><br>
+      Inhalte unter
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>,
+      <a href="/iWIP/hinweise/">sofern nicht anders angegeben</a>.
+</footer>
+  
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+<div class="not-found">404</div></div>
+      
+
+    </div>
+<script type="text/javascript" src=/iWIP/reveal-hugo/object-assign.js></script>
+
+
+<script src="/iWIP/reveal-js/dist/reveal.js"></script>
+
+
+  <script type="text/javascript" src="/iWIP/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/iWIP/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/iWIP/reveal-js/plugin/zoom/zoom.js"></script>
+  
+  <script type="text/javascript" src="/iWIP/reveal-js/plugin/notes/notes.js"></script>
+  
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
         }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
-</head>
-
-<body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+      });
     }
+    return map;
+  }
 
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = {"custom_theme":"/iWIP/css/custom_reveal.css","slide_number":"c/t","theme":"white"};
+  var revealHugoPageParams = {};
+
+  var revealHugoPlugins = {
+    
+    plugins: [RevealMarkdown,RevealHighlight,RevealZoom,RevealNotes]
+  };
+
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams),
+    camelize(revealHugoPlugins));
+
+  Reveal.initialize(options);
 </script>
 
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="http://localhost:1313/iWIP/" accesskey="h" title="SciBlog iWIP (Alt + H)">
-                <img src="http://localhost:1313/iWIP/bilder/logo_siblog_iwip.png" alt="" aria-label="logo"
-                    height="30">SciBlog iWIP</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="http://localhost:1313/iWIP/oer/" title="OER">
-                    <span>OER</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/iWIP/bisy/" title="BiSy">
-                    <span>BiSy</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main">
-<div class="not-found">404</div>
-    </main>
-    <div class="footer">
-  <div class="center-zone">
-    © 2025 <a href="/">SciBlog iWIP</a> ·
-    <a href="/iWIP/impressum">Impressum</a> ·
-    <a href="/iWIP/datenschutz">Datenschutz</a> ·
-    Powered by
-    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>, 
-    <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a> & 
-    <a href="https://github.com/dzello/reveal-hugo">reveal-hugo</a><br>
-    Inhalte unter <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>,
-    <a href="/iWIP/hinweise">sofern nicht anders angegeben</a>.
-  </div>
-</div></body>
 
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+    
+    
+  </body>
 </html>
