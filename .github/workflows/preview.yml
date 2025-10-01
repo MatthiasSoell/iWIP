@@ -2,8 +2,7 @@ name: Deploy Preview of Hugo site
 
 on:
   push:
-    branches:
-      - preview
+    branches: [preview]
   workflow_dispatch:
 
 permissions:
@@ -44,14 +43,19 @@ jobs:
           hugo --minify --config config.toml,config-preview.toml \
             --baseURL "${{ steps.pages.outputs.base_url }}/preview/"
 
+      - name: Move site into preview subfolder
+        run: |
+          mkdir -p ./site/preview
+          mv ./public/* ./site/preview/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./site
 
   deploy:
     environment:
-      name: preview
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
