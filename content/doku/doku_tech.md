@@ -24,7 +24,7 @@ Diese Dokumentation richtet sich an Interessierte an einer OER-kompatiblen, frei
 
 ## 2. Webseitengenerator "Hugo"
 
-- **Hugo als Generator:** [`https://gohugo.io`](https://gohugo.io)
+- **Hugo als Generator:** [`https://gohugo.io`](https://gohugo.io)  
   Die Webseiten werden mit dem Webseitengenerator Hugo gebaut. Der Generator arbeitet mit GitHub Actions gut auf GitHub und GitHub Pages, ist umfassend dokumentiert und schnell. 
 
 - **Hugo Modules als Modulverwaltung:** [`https://gohugo.io/hugo-modules/`](https://gohugo.io/hugo-modules/)  
@@ -33,12 +33,8 @@ Diese Dokumentation richtet sich an Interessierte an einer OER-kompatiblen, frei
 - **PaperMod als Theme:** [PaperMod](https://github.com/adityatelange/hugo-PaperMod)   
   Das PaperMod Theme nutze ich aufgrund des einfachen, ansprechenden Aufbaus und der Möglichkeit, es meinen Bedürfnissen v. a. über CSS anpassen zu können.
 
-- **Reveal-Hugo als Erweiterung:** [Reveal-Hugo](https://github.com/joshed-io/reveal-hugo) 
+- **Reveal-Hugo als Erweiterung:** [Reveal-Hugo](https://github.com/joshed-io/reveal-hugo)  
   Reveal-Hugo nutze ich als Erweiterung, um meine Blogbeiträge als Online-Präsentationen aufzubereiten und in meinen Lehrveranstaltungen zeigen zu können.
-  
-- **Co-Autor:innen-Arbeitsumgebung (Fork):**  
-  [`https://github.com/kiwip2025/iWIP`](https://github.com/kiwip2025/iWIP)  
-  [`https://kiwip2025.github.io/iWIP/`](https://kiwip2025.github.io/iWIP/) (Live-Vorschau!)
 
 ## 3. Quelltext-Editor Visual Studio Code
 
@@ -51,5 +47,5 @@ Zur Programmierung der Webseiten nutze ich **Visual Studio Code** [`https://code
 
 ## 5. Zusammenarbeit
 
-- Alle GitHub Nutzer:innen können über Pull Requests Änderungen über das Repository vorschlagen.
-- Mit Co-Autor:innen arbeite ich über einen Fork auf [`https://github.com/kiwip2025/iWIP`](https://github.com/kiwip2025/iWIP) zusammen. Als Collaborator:innen können sie dort Änderungen direkt vornehmen und live unter [`https://kiwip2025.github.io/iWIP/`](https://kiwip2025.github.io/iWIP/) testen.
+- Alle GitHub Nutzer:innen können über Pull Requests im Repository Änderungen vorschlagen und so als automatisch dokumentierte **Co-Autor:innen** am Projekt mitwirken.
+- Mit Co-Autor:innen arbeite ich über einen Fork auf [`https://github.com/kiwip2025/iWIP`](https://github.com/kiwip2025/iWIP) zusammen. Als **Collaborator:innen** können sie dort Änderungen direkt vornehmen und live unter [`https://kiwip2025.github.io/iWIP/`](https://kiwip2025.github.io/iWIP/) testen.
