@@ -20,31 +20,29 @@ Im Mittelpunkt dieses Beitrags steht die technische Infrastruktur hinter dem Sci
   Ich nutze die Plattform GitHub, die eine benutzerfreundliche Umgebung für die **Entwicklung**, **Versionierung** und **Veröffentlichung** von Code bietet. Die Zusammenarbeit an Code wird durch die Versionsverwaltungs-Software Git transparent dokumentiert. GitHub ist für Open-Source-Projekte kostenfrei.
  
 - **🚀 GitHub Pages als Host:** [`https://pages.github.com`](https://pages.github.com)  
-  Der Blog wird direkt über GitHub Pages im Internet veröffentlicht.
+  Der Blog wird direkt über GitHub Pages im Internet **veröffentlicht**.
 
 ---
 
 ## 2️⃣ Webseitengenerator „Hugo“
 
-- **⚡ Hugo als Generator** [`https://gohugo.io`](https://gohugo.io)  
-  Hugo ist ein **schneller** und **vielseitiger** Webseitengenerator, der Markdown-Dateien in statische HTML-Seiten umwandelt. Er eignet sich besonders gut für die Veröffentlichung über GitHub Pages und unterstützt eine effiziente Automatisierung via GitHub Actions.  
-  ✅ Da rein **statische Seiten** generiert werden, ist die Ladegeschwindigkeit hoch, das Hosting einfach und die langfristige Archivierbarkeit ganz im Sinne von OER.
+- **⚡ Hugo als Generator:** [`https://gohugo.io`](https://gohugo.io)  
+  Hugo ist ein **schneller** und **vielseitiger** Webseitengenerator, der Markdown-Dateien in statische HTML-Seiten umwandelt. Er eignet sich besonders gut für die Veröffentlichung über GitHub Pages und unterstützt eine effiziente Automatisierung via GitHub Actions. ✅ Da rein **statische Seiten** generiert werden, ist die Ladegeschwindigkeit hoch, das Hosting einfach und die langfristige Archivierbarkeit ganz im Sinne von OER.
 
-- **📦 Hugo Modules als Modulverwaltung** [`https://gohugo.io/hugo-modules/`](https://gohugo.io/hugo-modules/)  
+- **📦 Hugo Modules als Modulverwaltung:** [`https://gohugo.io/hugo-modules/`](https://gohugo.io/hugo-modules/)  
   Die Verwaltung von Themes und Erweiterungen erfolgt über Hugo Modules. Diese bieten gegenüber klassischen Git Submodules eine **einfachere**, **robustere** und **wartungsärmere** Lösung – besonders im Teamkontext.
 
-- **🎨 PaperMod als Theme** [`https://github.com/adityatelange/hugo-PaperMod`](https://github.com/adityatelange/hugo-PaperMod)  
+- **🎨 PaperMod als Theme:** [`https://github.com/adityatelange/hugo-PaperMod`](https://github.com/adityatelange/hugo-PaperMod)  
   Das PaperMod-Theme überzeugt durch **minimalistisches Design**, **hohe Anpassbarkeit** über Custom CSS und **gute Dokumentation**.
 
-- **🖥️ Reveal-Hugo als Präsentationserweiterung** [`https://github.com/joshed-io/reveal-hugo`](https://github.com/joshed-io/reveal-hugo)  
+- **🖥️ Reveal-Hugo als Präsentationserweiterung:** [`https://github.com/joshed-io/reveal-hugo`](https://github.com/joshed-io/reveal-hugo)  
   Mit Reveal-Hugo können Blogbeiträge auch als **interaktive Online-Präsentationen** (basierend auf reveal.js) dargestellt werden – ein Feature, das ich in meinen Lehrveranstaltungen aktiv nutze.
 
 ---
 
 ## 3️⃣ Quelltext-Editor Visual Studio Code  
 
-Zur Programmierung der Webseiten nutze ich 📝 **Visual Studio Code** [`https://code.visualstudio.com`](https://code.visualstudio.com), der über zahlreiche Erweiterungen, z. B. **Markdown All in One** oder **Live Preview**, individuell erweitert und angepasst werden kann.  
-💡 Kleinere Änderungen nehme ich auch über **GitHub** selbst vor.
+Zur Programmierung der Webseiten nutze ich 📝 **Visual Studio Code** [`https://code.visualstudio.com`](https://code.visualstudio.com), der über zahlreiche Erweiterungen, z. B. **Markdown All in One** oder **Live Preview**, individuell erweitert und angepasst werden kann. 💡 Kleinere Änderungen nehme ich auch über **GitHub** selbst vor.
 
 ---
 
