@@ -8,40 +8,48 @@ tags: ["GitHub", "GitHub Pages", "Hugo", "PaperMod", "reveal-hugo"]
 categories: ["Doku"]
 ---
 
-# Mitarbeit am SciBlog iWIP
+# Zielgruppe
 
-Diese Anleitung richtet sich an Co-Autor:innen des SciBlog iWIP. Sie beschreibt das technische Setup, das Repository-Konzept und wie eigene Beiträge mit Live-Vorschau verfasst und zur Veröffentlichung vorgeschlagen werden können – inklusive kurzer Markdown-Einführung.
+Diese Dokumentation richtet sich an Interessierte an einer OER-kompatiblen, frei verfügbaren Softwarebasis für Webseiten.
 
 ---
 
-## 1. Projektübersicht
+## 1. Entwicklungsumgebung "GitHub"
 
-- **Blog-Adresse (öffentlich):**  
-  [`https://matthiassoell.github.io/iWIP/`](https://matthiassoell.github.io/iWIP/)
+- **GitHub als öffentliche Softwareentwicklungsplattform:** [`https://github.com`](https://github.com)  
+  Ich nutze die Plattform GitHub, in deren Zentrum die Nutzer:innen und deren Projekte stehen. Die Zusammenarbeit an Code wird durch die Versionsverwaltungs-Software Git transparent dokumentiert.
+ 
+- **GitHub Pages als Host:** [`https://pages.github.com`](https://pages.github.com)  
+  Der Blog wird direkt über GitHub Pages im Internet veröffentlicht.
 
-- **Haupt-Repository (admin-only):**  
-  [`https://github.com/MatthiasSoell/iWIP`](https://github.com/MatthiasSoell/iWIP)
+## 2. Webseitengenerator "Hugo"
 
+- **Hugo als Generator:** [`https://gohugo.io`](https://gohugo.io)
+  Die Webseiten werden mit dem Webseitengenerator Hugo gebaut. Der Generator arbeitet mit GitHub Actions gut auf GitHub und GitHub Pages, ist umfassend dokumentiert und schnell. 
+
+- **Hugo Modules als Modulverwaltung:** [`https://gohugo.io/hugo-modules/`](https://gohugo.io/hugo-modules/)  
+  Die Verwaltung von Themes und Erweiterungen erfolgt bei meinem Blog über Hugo Modules. Diese ermöglichen eine einfachere und robustere Einbindung als ältere Methoden wie Git Submodules.
+
+- **PaperMod als Theme:** [PaperMod](https://github.com/adityatelange/hugo-PaperMod)   
+  Das PaperMod Theme nutze ich aufgrund des einfachen, ansprechenden Aufbaus und der Möglichkeit, es meinen Bedürfnissen v. a. über CSS anpassen zu können.
+
+- **Reveal-Hugo als Erweiterung:** [Reveal-Hugo](https://github.com/joshed-io/reveal-hugo) 
+  Reveal-Hugo nutze ich als Erweiterung, um meine Blogbeiträge als Online-Präsentationen aufzubereiten und in meinen Lehrveranstaltungen zeigen zu können.
+  
 - **Co-Autor:innen-Arbeitsumgebung (Fork):**  
   [`https://github.com/kiwip2025/iWIP`](https://github.com/kiwip2025/iWIP)  
   [`https://kiwip2025.github.io/iWIP/`](https://kiwip2025.github.io/iWIP/) (Live-Vorschau!)
 
-- **Generator:** [Hugo](https://gohugo.io) (v0.147.7 extended)  
-- **Themes:** [PaperMod](https://github.com/adityatelange/hugo-PaperMod), [Reveal-Hugo](https://github.com/joshed-io/reveal-hugo)  
-- **Modulverwaltung:** Hugo Modules  
-- **Hosting:** GitHub Pages  
-- **Deployment:** GitHub Actions (automatisch bei Push auf `main`)  
-- **Struktur:**
-  - Seiten: `/content/…`
-  - Bilder: `/static/iWIP/bilder/…` → Online erreichbar unter `/iWIP/bilder/…`
+## 3. Quelltext-Editor Visual Studio Code
 
----
+Zur Programmierung der Webseiten nutze ich **Visual Studio Code** [`https://code.visualstudio.com`](https://code.visualstudio.com), der über zahlreiche Erweiterungen an die persönlichen Bedürfnisse angepasst werden kann. Kleinere Änderungen nehme ich auch über **GitHub** selbst vor.
 
-## 2. Mitarbeit über Fork & Pull Requests
+## 4. Struktur
 
-### Schritt 1: Zugang
-- Du erhältst Zugriff auf den Fork unter [`https://github.com/kiwip2025/iWIP`](https://github.com/kiwip2025/iWIP) als **Collaborator**.
-- Du kannst dort direkt Änderungen vornehmen und live unter [`https://kiwip2025.github.io/iWIP/`](https://kiwip2025.github.io/iWIP/) testen.
+- Repository: [`https://github.com/MatthiasSoell/iWIP/`](https://github.com/MatthiasSoell/iWIP/)
+- Homepage: [`https://matthiassoell.github.io/iWIP/`](https://matthiassoell.github.io/iWIP/)
 
-### Schritt 2: Beitrag verfassen
-- Lege eine neue Datei im Verzeichnis `/content/<dein-thema>/` an, z. B.:
+## 5. Zusammenarbeit
+
+- Alle GitHub Nutzer:innen können über Pull Requests Änderungen über das Repository vorschlagen.
+- Mit Co-Autor:innen arbeite ich über einen Fork auf [`https://github.com/kiwip2025/iWIP`](https://github.com/kiwip2025/iWIP) zusammen. Als Collaborator:innen können sie dort Änderungen direkt vornehmen und live unter [`https://kiwip2025.github.io/iWIP/`](https://kiwip2025.github.io/iWIP/) testen.
