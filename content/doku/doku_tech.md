@@ -8,7 +8,7 @@ tags: ["GitHub", "GitHub Pages", "Hugo", "PaperMod", "reveal-hugo"]
 categories: ["Doku"]
 ---
 
-# Mitarbeit am SciBlog iWIp
+# Mitarbeit am SciBlog iWIP
 
 Diese Anleitung richtet sich an Co-Autor:innen des SciBlog iWIP. Sie beschreibt das technische Setup, das Repository-Konzept und wie eigene Beiträge mit Live-Vorschau verfasst und zur Veröffentlichung vorgeschlagen werden können – inklusive kurzer Markdown-Einführung.
 
