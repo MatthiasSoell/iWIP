@@ -1,6 +1,6 @@
 ---
 title: "Anleitungen für Co-Autor:innen"
-date: 2025-10-01
+date: 2025-09-30
 draft: false
 description: "Diese Anleitung richtet sich an Co-Autor:innen des SciBlog iWIP. Schritt für Schritt wird erklärt, wie eigene Seiten mit Markdown und grundlegenden Webtechniken erstellt werden können."
 summary: "Diese Anleitung richtet sich an Co-Autor:innen des SciBlog iWIP. Schritt für Schritt wird erklärt, wie eigene Seiten mit Markdown und grundlegenden Webtechniken erstellt werden können."
