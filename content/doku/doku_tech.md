@@ -2,10 +2,10 @@
 title: "Technische Dokumentation"
 date: 2025-10-01
 draft: false
-description: "In diesem Beitrag beschreibe ich den Hintergrund freier Bildungsmaterialien und stelle drei zentrale Argumentationsfiguren zur Nutzung von OER aus der Perspektive der beruflichen Bildung vor."
-summary: "In diesem Beitrag beschreibe ich den Hintergrund freier Bildungsmaterialien und stelle drei zentrale Argumentationsfiguren zur Nutzung von OER aus der Perspektive der beruflichen Bildung vor."
-tags: ["OER", "Lehrmaterial", "Wissenschaft"]
-categories: ["OER"]
+description: "In dieser technischen Dokumentation stelle ich die möglichst OER-kompatible und frei verfügbare Software vor, mit deren Hilfe ich meinen Blog betreibe."
+summary: "In dieser technischen Dokumentation stelle ich die möglichst OER-kompatible und frei verfügbare Software vor, mit deren Hilfe ich meinen Blog betreibe."
+tags: ["GitHub", "GitHub Pages", "Hugo", "PaperMod", "reveal-hugo"]
+categories: ["Doku"]
 ---
 
 # Mitarbeit am SciBlog iWIP
