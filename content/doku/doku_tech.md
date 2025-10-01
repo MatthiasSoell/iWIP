@@ -4,48 +4,58 @@ date: 2025-10-01
 draft: false
 description: "Diese technische Dokumentation beschreibt die OER-kompatible und frei verfügbare Softwarebasis des SciBlog iWIP."
 summary: "Diese technische Dokumentation beschreibt die OER-kompatible und frei verfügbare Softwarebasis des SciBlog iWIP."
-tags: ["GitHub", "GitHub Pages", "Hugo", "PaperMod", "reveal-hugo"]
+tags: ["GitHub", "GitHub Pages", "Hugo", "PaperMod", "reveal-hugo", "OER", "Open Source"]
 categories: ["Doku"]
 ---
 
-# Zielgruppe
+# 📚 Gegenstand  
 
-Diese Dokumentation richtet sich an Interessierte an einer OER-kompatiblen, frei verfügbaren Softwarebasis für Webseiten.
+Diese Dokumentation beschreibt die technische Infrastruktur hinter dem SciBlog iWIP. Ziel ist eine **offene**, **frei verfügbare** und **OER-kompatible** Plattform für Wissenschaftskommunikation und Lehre. Die eingesetzten Tools ermöglichen sowohl **effizientes Publizieren** als auch **kollaboratives Arbeiten** mit Co-Autor:innen.
 
 ---
 
-## 1. Entwicklungsumgebung "GitHub"
+## 1️⃣ Entwicklungsumgebung „GitHub“
 
-- **GitHub als öffentliche Softwareentwicklungsplattform:** [`https://github.com`](https://github.com)  
-  Ich nutze die Plattform GitHub, in deren Zentrum die Nutzer:innen und deren Projekte stehen. Die Zusammenarbeit an Code wird durch die Versionsverwaltungs-Software Git transparent dokumentiert.
+- **🌐 GitHub als öffentliche Softwareentwicklungsplattform:** [`https://github.com`](https://github.com)  
+  Ich nutze die Plattform GitHub, die eine benutzerfreundliche Umgebung für die **Entwicklung**, **Versionierung** und **Veröffentlichung** von Code bietet. Die Zusammenarbeit an Code wird durch die Versionsverwaltungs-Software Git transparent dokumentiert. GitHub ist für Open-Source-Projekte kostenfrei.
  
-- **GitHub Pages als Host:** [`https://pages.github.com`](https://pages.github.com)  
+- **🚀 GitHub Pages als Host:** [`https://pages.github.com`](https://pages.github.com)  
   Der Blog wird direkt über GitHub Pages im Internet veröffentlicht.
 
-## 2. Webseitengenerator "Hugo"
+---
 
-- **Hugo als Generator:** [`https://gohugo.io`](https://gohugo.io)  
-  Die Webseiten werden mit dem Webseitengenerator Hugo gebaut. Der Generator arbeitet mit GitHub Actions gut auf GitHub und GitHub Pages, ist umfassend dokumentiert und schnell. 
+## 2️⃣ Webseitengenerator „Hugo“
 
-- **Hugo Modules als Modulverwaltung:** [`https://gohugo.io/hugo-modules/`](https://gohugo.io/hugo-modules/)  
-  Die Verwaltung von Themes und Erweiterungen erfolgt bei meinem Blog über Hugo Modules. Diese ermöglichen eine einfachere und robustere Einbindung als ältere Methoden wie Git Submodules.
+- **⚡ Hugo als Generator** [`https://gohugo.io`](https://gohugo.io)  
+  Hugo ist ein **schneller** und **vielseitiger** Webseitengenerator, der Markdown-Dateien in statische HTML-Seiten umwandelt. Er eignet sich besonders gut für die Veröffentlichung über GitHub Pages und unterstützt eine effiziente Automatisierung via GitHub Actions.  
+  ✅ Da rein **statische Seiten** generiert werden, ist die Ladegeschwindigkeit hoch, das Hosting einfach und die langfristige Archivierbarkeit ganz im Sinne von OER.
 
-- **PaperMod als Theme:** [PaperMod](https://github.com/adityatelange/hugo-PaperMod)   
-  Das PaperMod Theme nutze ich aufgrund des einfachen, ansprechenden Aufbaus und der Möglichkeit, es meinen Bedürfnissen v. a. über CSS anpassen zu können.
+- **📦 Hugo Modules als Modulverwaltung** [`https://gohugo.io/hugo-modules/`](https://gohugo.io/hugo-modules/)  
+  Die Verwaltung von Themes und Erweiterungen erfolgt über Hugo Modules. Diese bieten gegenüber klassischen Git Submodules eine **einfachere**, **robustere** und **wartungsärmere** Lösung – besonders im Teamkontext.
 
-- **Reveal-Hugo als Erweiterung:** [Reveal-Hugo](https://github.com/joshed-io/reveal-hugo)  
-  Reveal-Hugo nutze ich als Erweiterung, um meine Blogbeiträge als Online-Präsentationen aufzubereiten und in meinen Lehrveranstaltungen zeigen zu können.
+- **🎨 PaperMod als Theme** [`https://github.com/adityatelange/hugo-PaperMod`](https://github.com/adityatelange/hugo-PaperMod)  
+  Das PaperMod-Theme überzeugt durch **minimalistisches Design**, **hohe Anpassbarkeit** über Custom CSS und **gute Dokumentation**.
 
-## 3. Quelltext-Editor Visual Studio Code
+- **🖥️ Reveal-Hugo als Präsentationserweiterung** [`https://github.com/joshed-io/reveal-hugo`](https://github.com/joshed-io/reveal-hugo)  
+  Mit Reveal-Hugo können Blogbeiträge auch als **interaktive Online-Präsentationen** (basierend auf reveal.js) dargestellt werden – ein Feature, das ich in meinen Lehrveranstaltungen aktiv nutze.
 
-Zur Programmierung der Webseiten nutze ich **Visual Studio Code** [`https://code.visualstudio.com`](https://code.visualstudio.com), der über zahlreiche Erweiterungen an die persönlichen Bedürfnisse angepasst werden kann. Kleinere Änderungen nehme ich auch über **GitHub** selbst vor.
+---
 
-## 4. Struktur
+## 3️⃣ Quelltext-Editor Visual Studio Code  
 
-- Repository: [`https://github.com/MatthiasSoell/iWIP/`](https://github.com/MatthiasSoell/iWIP/)
-- Homepage: [`https://matthiassoell.github.io/iWIP/`](https://matthiassoell.github.io/iWIP/)
+Zur Programmierung der Webseiten nutze ich 📝 **Visual Studio Code** [`https://code.visualstudio.com`](https://code.visualstudio.com), der über zahlreiche Erweiterungen, z. B. **Markdown All in One** oder **Live Preview**, individuell erweitert und angepasst werden kann.  
+💡 Kleinere Änderungen nehme ich auch über **GitHub** selbst vor.
 
-## 5. Zusammenarbeit
+---
 
-- Alle GitHub Nutzer:innen können über Pull Requests im Repository Änderungen vorschlagen und so als automatisch dokumentierte **Co-Autor:innen** am Projekt mitwirken.
-- Mit Co-Autor:innen arbeite ich über einen Fork auf [`https://github.com/kiwip2025/iWIP`](https://github.com/kiwip2025/iWIP) zusammen. Als **Collaborator:innen** können sie dort Änderungen direkt vornehmen und live unter [`https://kiwip2025.github.io/iWIP/`](https://kiwip2025.github.io/iWIP/) testen.
+## 4️⃣ Struktur  
+
+- 📂 **Repository:** [`https://github.com/MatthiasSoell/iWIP/`](https://github.com/MatthiasSoell/iWIP/)  
+- 🌍 **Homepage:** [`https://matthiassoell.github.io/iWIP/`](https://matthiassoell.github.io/iWIP/)
+
+---
+
+## 5️⃣ Zusammenarbeit  
+
+- 👥 Alle interessierten GitHub Nutzer:innen können über **Pull Requests** im Repository Beiträge oder Änderungen vorschlagen und so transparent dokumentiert als **Co-Autor:innen** am Projekt mitwirken.  
+- 🤝 **Collaborator:innen** können direkt im **Fork** [`https://github.com/kiwip2025/iWIP`](https://github.com/kiwip2025/iWIP) arbeiten, Beiträge erstellen und live unter [`https://kiwip2025.github.io/iWIP/`](https://kiwip2025.github.io/iWIP/) testen, bevor sie ihre Inhalte über Pull Requests in das Hauptprojekt einbringen.
