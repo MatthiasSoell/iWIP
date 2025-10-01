@@ -2,8 +2,8 @@
 title: "Technische Dokumentation"
 date: 2025-10-01
 draft: false
-description: "In dieser technischen Dokumentation stelle ich die möglichst OER-kompatible und frei verfügbare Software vor, mit deren Hilfe ich meinen Blog betreibe."
-summary: "In dieser technischen Dokumentation stelle ich die möglichst OER-kompatible und frei verfügbare Software vor, mit deren Hilfe ich meinen Blog betreibe."
+description: "Diese technische Dokumentation beschreibt die OER-kompatible und frei verfügbare Softwarebasis des SciBlog iWIP."
+summary: "Diese technische Dokumentation beschreibt die OER-kompatible und frei verfügbare Softwarebasis des SciBlog iWIP."
 tags: ["GitHub", "GitHub Pages", "Hugo", "PaperMod", "reveal-hugo"]
 categories: ["Doku"]
 ---
