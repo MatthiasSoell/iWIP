@@ -42,17 +42,21 @@ jobs:
       - name: Build Hugo with Preview Config
         run: |
           hugo --minify --config config.toml,config-preview.toml \
-            --baseURL "${{ steps.pages.outputs.base_url }}/preview/"
+            --baseURL "https://matthiassoell.github.io/iWIP/preview/"
+
+      - name: Move public/ to subfolder preview/
+        run: |
+          mkdir -p ./site/preview
+          mv ./public/* ./site/preview/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./site
 
   deploy:
     environment:
       name: preview
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
