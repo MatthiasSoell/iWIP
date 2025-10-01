@@ -3,4 +3,4 @@ date: '2025-10-01'
 draft: false
 title: "Dokumentation"
 ---
-Hier beschreibe ich einerseits die Software, die ich für meinen Blog nutze. Bei der Auswahl nehme ich darauf Rücksicht, dass sie zu OER möglichst kompatibel und kostenfrei verfügbar ist. Andererseits schreibe ich Anleitungen für Co-Autor:innen. Die Dokumentationen werden fortlaufend aktualisiert, um Interessierten Inspirationen für eigene Homepageprojekte zu geben.
+In diesen Dokumentationen zeige ich, mit welcher [Software]({{< relref “doku_tech.md” >}}) mein Blog aufgebaut ist – bewusst gewählt mit Blick auf Offenheit, OER-Kompatibilität und kostenfreie Nutzung. Zusätzlich finden Co-Autor:innen [Anleitungen]({{< relref “doku_coll.md” >}}), mit denen sie eigene Inhalte beitragen und live testen können. Die Inhalte sollen auch anderen als Orientierung für eigene OER-Projekte dienen und werden laufend aktualisiert.
