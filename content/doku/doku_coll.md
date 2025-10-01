@@ -12,7 +12,7 @@ categories: ["Doku"]
 
 ## title: "Dokumentation und Anleitung für Co-Autor\:innen" date: 2025-10-01
 
-# 🔧 SciBlog iWIP – Technisches Setup und Anleitung für Co-Autor\:innen
+# 🔧 SciBlog iWIP – Technisches Setup und Anleitung für Co-Autor\:innen und Autoren
 
 ## ✍️ Zielsetzung
 
