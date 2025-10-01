@@ -40,6 +40,12 @@ theme = ["github.com/adityatelange/hugo-PaperMod", "github.com/joshed-io/reveal-
     url = "/bisy/"
     weight = 20
 
+  [[menu.main]]
+    identifier = "doku"
+    name = "Doku"
+    url = "/doku/"
+    weight = 30
+
 [outputs]
 home = ["HTML"]
 page = ["HTML", "Reveal"]
