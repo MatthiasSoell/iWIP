@@ -1,11 +1,11 @@
 ---
-title: "Dokumentation für Co-Autor:innen"
+title: "Anleitungen für Co-Autor:innen"
 date: 2025-10-01
 draft: false
-description: "In diesem Beitrag beschreibe ich den Hintergrund freier Bildungsmaterialien und stelle drei zentrale Argumentationsfiguren zur Nutzung von OER aus der Perspektive der beruflichen Bildung vor."
-summary: "In diesem Beitrag beschreibe ich den Hintergrund freier Bildungsmaterialien und stelle drei zentrale Argumentationsfiguren zur Nutzung von OER aus der Perspektive der beruflichen Bildung vor."
-tags: ["OER", "Lehrmaterial", "Wissenschaft"]
-categories: ["OER"]
+description: "Mit diesen Anleitungen beschreibe ich für Co-Autor:innen, wie Seiten für den SciBlog iWIP mit Grundkenntnissen in Markdown, HTML, CSS und Java Script entwickelt werden können."
+summary: "Mit diesen Anleitungen beschreibe ich für Co-Autor:innen, wie Seiten für den SciBlog iWIP mit Grundkenntnissen in Markdown, HTML, CSS und Java Script entwickelt werden können."
+tags: ["GitHub Pages", "Hugo", "Anleitungen", "Markdown", "HTML", "CSS", Java Script"]
+categories: ["Doku"]
 ---
 
 ---
