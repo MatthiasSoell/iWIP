@@ -3,7 +3,7 @@ title: "Anleitungen für Co-Autor:innen"
 date: 2025-10-01
 draft: false
 description: "Diese Anleitung richtet sich an Co-Autor:innen des SciBlog iWIP. Schritt für Schritt wird erklärt, wie eigene Seiten mit Markdown und grundlegenden Webtechniken erstellt werden können."
-summary: "Anleitungen zur Erstellung von Blogseiten mit Markdown, HTML, CSS und JavaScript für den SciBlog iWIP – inkl. GitHub Pages-Vorschau."
+summary: "Diese Anleitung richtet sich an Co-Autor:innen des SciBlog iWIP. Schritt für Schritt wird erklärt, wie eigene Seiten mit Markdown und grundlegenden Webtechniken erstellt werden können."
 tags: ["GitHub", "GitHub Pages", "Hugo", "PaperMod", "reveal-hugo", "Markdown", "HTML", "CSS", "JavaScript", "Co-Autor:innen"]
 categories: ["Doku"]
 ---
