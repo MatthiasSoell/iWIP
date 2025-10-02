@@ -46,14 +46,21 @@ Zur Programmierung der Webseiten nutze ich 📝 **Visual Studio Code** [`https:/
 
 ---
 
-## 4️⃣ Struktur  
+## 4️⃣ KI-Unterstützung
+
+🤖 Für die Konzeption des SciBlogs iWIP sowie für die technische Umsetzung nutze ich die **KI ChatGPT**.  
+Sie kommt insbesondere bei der **Ideensammlung**, der **Codeoptimierung**, der **Fehlersuche**, dem **Schreiben von Dokumentationen** sowie der **didaktischen Aufbereitung** von Inhalten zum Einsatz.
+
+---
+
+## 5️⃣ Struktur  
 
 - 📂 **Repository:** [`https://github.com/MatthiasSoell/iWIP/`](https://github.com/MatthiasSoell/iWIP/)  
 - 🌍 **Homepage:** [`https://matthiassoell.github.io/iWIP/`](https://matthiassoell.github.io/iWIP/)
 
 ---
 
-## 5️⃣ Zusammenarbeit  
+## 6️⃣ Zusammenarbeit  
 
 - 👥 Alle interessierten GitHub Nutzer:innen können über **Pull Requests** im Repository Beiträge oder Änderungen vorschlagen und so transparent dokumentiert als **Co-Autor:innen** am Projekt mitwirken.  
 - 🤝 **Collaborator:innen** können direkt im **Fork** [`https://github.com/kiwip2025/iWIP`](https://github.com/kiwip2025/iWIP) arbeiten, Beiträge erstellen und live unter [`https://kiwip2025.github.io/iWIP/`](https://kiwip2025.github.io/iWIP/) testen, bevor sie ihre Inhalte über Pull Requests in das Hauptprojekt einbringen.
