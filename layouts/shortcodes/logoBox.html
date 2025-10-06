@@ -1,28 +1,37 @@
+{{/* Übergibt Werte an JS via data-Attribut */}}
+<div id="logo-data"
+     data-src="{{ .Get "src" }}"
+     data-text="{{ .Get "text" }}"
+     data-show="{{ if .IsNamedParams }}{{ .Get "show" | default "true" }}{{ else }}true{{ end }}">
+</div>
+
 <script>
   window.addEventListener("DOMContentLoaded", function () {
+    const data = document.getElementById("logo-data");
+    if (!data) return;
+
+    const showLogo = data.dataset.show === "true";
+    if (!showLogo) return; // 🔒 Logo komplett deaktivieren
+
+    const logoSrc = data.dataset.src;
+    const logoText = data.dataset.text;
+
     const logoBox = document.createElement("div");
-    logoBox.style.position = "fixed";
-    logoBox.style.top = "1rem";
-    logoBox.style.left = "1rem";
-    logoBox.style.display = "flex";
-    logoBox.style.alignItems = "center";
-    logoBox.style.gap = "0.5rem";
-    logoBox.style.zIndex = "9999";
+    logoBox.className = "logo-box";
 
     const img = document.createElement("img");
-    img.src = "{{ .Get "src" }}";
+    img.src = logoSrc;
     img.alt = "Logo";
     img.className = "logo-img";
-
-    const span = document.createElement("span");
-    span.textContent = "{{ .Get "text" }}";
-    span.className = "logo-text"; // ❗ Textklasse für CSS
-    span.style.fontWeight = "bold";
-    span.style.color = getComputedStyle(document.documentElement).getPropertyValue('--uni-blau');
-    span.style.fontFamily = "-apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif";
-
     logoBox.appendChild(img);
-    logoBox.appendChild(span);
+
+    if (logoText && logoText.trim() !== "") {
+      const span = document.createElement("span");
+      span.textContent = logoText;
+      span.className = "logo-text";
+      logoBox.appendChild(span);
+    }
+
     document.body.appendChild(logoBox);
   });
 </script>

@@ -3,12 +3,11 @@
   --uni-blau: rgb(1, 74, 153);
 }
 
-/* Body einheitliche Hintergrundfarbe */
+/* === Allgemeines Layout === */
 body {
   background: var(--theme) !important;
 }
 
-/* Links */
 a {
   color: var(--uni-blau);
   text-decoration: none;
@@ -29,6 +28,7 @@ a:hover {
   padding: 0;
 }
 
+/* === Zitat- und Textgestaltung === */
 .post-content blockquote {
   border-left: 4px solid var(--uni-blau) !important;
   padding-left: 1rem !important;
@@ -38,7 +38,7 @@ a:hover {
   font-style: italic !important;
 }
 
-/* Buttons (z. B. für Shortcodes) */
+/* === Buttons === */
 .button {
   background-color: var(--uni-blau);
   color: white;
@@ -54,29 +54,24 @@ a:hover {
   background-color: #004080;
 }
 
-/* Headings */
+/* === Überschriften === */
 h1, h2, h3 {
   color: var(--uni-blau);
   font-weight: 700;
 }
 
+/* === Präsentationsmodus (reveal) === */
 body.presentation-view {
   font-size: 1.5rem;
   background-color: #111;
   color: #f1f1f1;
 }
-
 body.presentation-view header,
 body.presentation-view footer {
   display: none;
 }
 
-.footer {
-  line-height: 1.6;
-}
-
-/* Toggles */
-
+/* === Top-Toggles === */
 .top-toggle {
   display: flex;
   justify-content: flex-end;
@@ -84,7 +79,6 @@ body.presentation-view footer {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
-
 .top-toggle button {
   font-size: 1.1rem;
   background: #f1f1f1;
@@ -95,7 +89,6 @@ body.presentation-view footer {
   transition: background 0.2s ease;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
-
 .top-toggle button:hover {
   background: #ddd;
 }
@@ -104,13 +97,101 @@ body.dark .top-toggle button {
   background: #444;
   color: #eee;
 }
-
 body.dark .top-toggle button:hover {
   background: #666;
 }
-
 body.dark .post-content blockquote {
   color: var(--primary) !important;
   background: rgba(1, 74, 153, 0.25) !important;
   border-left: 4px solid var(--uni-blau) !important;
+}
+
+/* ===========================================================
+   SciBlog iWIP — Custom Footer Styles (PaperMod compatible)
+   =========================================================== */
+
+.footer {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* === Social-Icons === */
+.footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+.footer .social-links a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  color: #444;
+  transition: color 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .social-links a:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  color: #014a99;
+}
+
+.footer .social-links a:focus-visible {
+  outline: 2px solid var(--uni-blau);
+  outline-offset: 3px;
+}
+
+.footer .social-links svg {
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+  fill: currentColor !important;
+  stroke: none !important;
+  vertical-align: middle;
+}
+
+/* --- Fix: Abgeschnittenes rechtes Icon (Mail) --- */
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;              /* verhindert Abschneiden */
+  min-width: 2.2rem;            /* sorgt für symmetrischen Klickbereich */
+}
+
+.footer .social-links svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: currentColor;
+  vertical-align: middle;
+  overflow: visible;            /* wichtiger Teil! zeigt volle SVG-Fläche */
+}
+
+/* === Dark-Mode Footer === */
+[data-theme="dark"] .footer {
+  color: #bbb;
+}
+[data-theme="dark"] .footer .social-links a {
+  color: #ddd;
+}
+
+/* === Abstand Content–Footer === */
+main.main {
+  padding-bottom: 0rem !important;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: 0.9rem;
+  }
+  .footer .social-links {
+    gap: 1.2rem;
+  }
+  main.main {
+    padding-bottom: 0.3rem !important;
+  }
 }

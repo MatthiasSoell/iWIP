@@ -1,18 +1,34 @@
 <div class="footer">
   <div class="center-zone">
+
+    <!-- Kontakt-Icons -->
+    <div class="social-links" aria-label="Kontaktmöglichkeiten">
+      <a rel="me" href="https://mastodon.social/@matthias_oer"
+         title="Mastodon" target="_blank" aria-label="Mastodon">
+        {{ partial "custom/mastodon.html" . }}
+      </a>
+
+      <a href="mailto:matthias.soell@uni-rostock.de"
+         title="E-Mail" aria-label="E-Mail">
+        {{ partial "custom/email.html" . }}
+      </a>
+    </div>
+
+    <!-- Impressum -->
     © {{ now.Year }} <a href="https://matthiassoell.github.io/iWIP/">SciBlog iWIP</a> ·
     <a href="/iWIP/impressum">Impressum</a> ·
     <a href="/iWIP/datenschutz">Datenschutz</a> ·
 
-      Powered by
+    Powered by
     {{ if ne .Section "praesentation" }}
-      <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>, 
-      <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener noreferrer" target="_blank">PaperMod</a> &
+      <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>,
+      <a href="https://github.com/adityatelange/hugo-PaperMod/" target="_blank" rel="noopener noreferrer">PaperMod</a> &
     {{ end }}
 
-    <a href="https://github.com/dzello/reveal-hugo" rel="noopener noreferrer" target="_blank">reveal-hugo</a><br>
+    <a href="https://github.com/dzello/reveal-hugo" target="_blank" rel="noopener noreferrer">reveal-hugo</a><br>
 
-    Inhalte unter <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener noreferrer" target="_blank">CC BY-SA 4.0</a>,
+    Inhalte unter
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>,
     <a href="/iWIP/hinweise">sofern nicht anders angegeben</a>.
   </div>
-</div> 
+</div>

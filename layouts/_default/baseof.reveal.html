@@ -6,20 +6,20 @@
     {{ $plugins := partial "internal/plugins" . -}}
     {{- range $plugins }}
       {{- with .css }}
-
-    <link rel="stylesheet" href="{{ . | relURL }}"> {{- end -}}
+      <link rel="stylesheet" href="{{ . | relURL }}">
+      {{- end -}}
     {{ end -}}
-    <!-- To insert markup before the closing head tag for all presentations,
-         create layouts/partials/reveal-hugo/head.html -->
+
+    <!-- To insert markup before the closing head tag for all presentations -->
     {{- partial "reveal-hugo/head" . -}}
-    <!-- To insert markup at the end of the head tag for a specific presentation,
-         create layouts/partials/{section}/reveal-hugo/head.html -->
+
+    <!-- To insert markup at the end of the head tag for a specific presentation -->
     {{- $sectionHeadPartial := printf "%s/reveal-hugo/head" (.Page.Section | default "home") -}}
-    {{- if fileExists (printf "layouts/partials/%s.html" $sectionHeadPartial) -}}{{ partial $sectionHeadPartial . }}{{- end }}
+    {{- if fileExists (printf "layouts/partials/%s.html" $sectionHeadPartial) -}}
+      {{ partial $sectionHeadPartial . }}
+    {{- end }}
   </head>
-  
-  {{ partial "extend_footer.html" . }}
-  
+
   <body>
     {{ if .Param "logo.src" }}
     <style>
@@ -32,25 +32,37 @@
     </style>
     <img id="logo" src="{{ .Param "logo.src" }}" alt="{{ .Param "logo.alt" }}">
     {{ end }}
+
+    <!-- ===================================================== -->
+    <!-- Reveal.js Stage -->
+    <!-- ===================================================== -->
     <div class="reveal">
       <div class="slides">
         {{- block "main" . -}}{{- end -}}
       </div>
-      <!-- To insert markup at the end of the .reveal tag for all presentations,
-           create layouts/partials/reveal-hugo/end.html -->
+
+      <!-- End-Partials (global & sectionspezifisch) -->
       {{- partial "reveal-hugo/end" . -}}
-      <!-- To insert markup at the end of the .reveal tag for a specific presentation,
-           create layouts/partials/{section}/reveal-hugo/end.html -->
       {{- $sectionHeadPartial := printf "%s/reveal-hugo/end" (.Page.Section | default "home") -}}
-      {{- if fileExists (printf "layouts/partials/%s.html" $sectionHeadPartial) -}}{{ partial $sectionHeadPartial . }}{{- end }}
+      {{- if fileExists (printf "layouts/partials/%s.html" $sectionHeadPartial) -}}
+        {{ partial $sectionHeadPartial . }}
+      {{- end }}
     </div>
+
+    <!-- ===================================================== -->
+    <!-- Globaler SciBlog-Footer außerhalb der Reveal-Bühne -->
+    <!-- verhindert Skalierung durch Reveal.js transform -->
+    <!-- ===================================================== -->
+    <div id="global-footer">
+      {{ partial "extend_footer.html" . }}
+    </div>
+
+    <!-- JavaScript & Body-End -->
     {{- partial "layout/javascript" . }}
-    <!-- To insert markup before the closing body tag for all presentations,
-         create layouts/partials/reveal-hugo/body.html -->
     {{- partial "reveal-hugo/body" . }}
-    <!-- To insert markup at the end of the head tag for a specific presentation,
-         create layouts/partials/{section}/reveal-hugo/body.html -->
     {{- $sectionBodyPartial := printf "%s/reveal-hugo/body" (.Page.Section | default "home") -}}
-    {{- if fileExists (printf "layouts/partials/%s.html" $sectionBodyPartial) -}}{{ partial $sectionBodyPartial . }}{{- end }}
+    {{- if fileExists (printf "layouts/partials/%s.html" $sectionBodyPartial) -}}
+      {{ partial $sectionBodyPartial . }}
+    {{- end }}
   </body>
 </html>

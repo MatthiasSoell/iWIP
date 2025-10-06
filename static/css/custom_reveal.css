@@ -1,22 +1,24 @@
+/* ===========================================================
+   SciBlog iWIP – Reveal-Hugo Custom Theme
+   Kompatibel mit reveal.js 5.2.1 + PaperMod
+   =========================================================== */
+
 @import url("https://unpkg.com/reveal.js@5.2.1/dist/theme/white.css");
 
-.reveal blockquote {
-  background-color: #d7e1f1;
-  border-left: 6px solid #0057b8;
-  padding: 1em;
-  margin: 1em auto; /* <-- zentriert horizontal */
-  border-radius: 6px;
-  font-style: italic;
-  width: fit-content;     /* Inhalt bestimmt die Breite */
-  max-width: 90%;         /* verhindert Überbreite */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* optional: weicher Schatten */
-}
+/* -----------------------------------------------------------
+   1. Grundfarben & Schrift
+   ----------------------------------------------------------- */
 
-/* assets/css/extended/reveal-branding.css */
 :root {
   --uni-blau: rgb(1, 74, 153);
 }
 
+.reveal {
+  color: #222;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Überschriften */
 .reveal h1,
 .reveal h2,
 .reveal h3,
@@ -27,12 +29,55 @@
   text-transform: none;
 }
 
-.reveal ul li:not(:last-child),
-.reveal ol li:not(:last-child) {
-  margin-bottom: 0.6em;
+/* -----------------------------------------------------------
+   2. Blockquotes & Info-Boxen
+   ----------------------------------------------------------- */
+
+.reveal blockquote {
+  background-color: #d7e1f1;
+  border-left: 6px solid #0057b8;
+  padding: 1em;
+  margin: 1em auto;
+  border-radius: 6px;
+  font-style: italic;
+  width: fit-content;
+  max-width: 90%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Toggles */
+.hinweis-box {
+  font-size: 1.9rem;
+  background: #fffbe6;
+  border-left: 6px solid #ffb300;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 2rem auto;
+  width: fit-content;
+  max-width: 90%;
+}
+
+.zitat-box {
+  background-color: #e0f2f1 !important;
+  border-left: 6px solid #00796b !important;
+  border-radius: 6px;
+  padding: 1em;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.zitat-quelle, .bild-quelle {
+  text-align: right;
+  font-size: 1.3rem !important;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* -----------------------------------------------------------
+   3. Toggles
+   ----------------------------------------------------------- */
 
 .top-toggle {
   display: flex;
@@ -52,213 +97,137 @@
   transition: background 0.2s ease;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
+.top-toggle button:hover { background: #ddd; }
 
-.top-toggle button:hover {
-  background: #ddd;
-}
+body.dark .top-toggle button { background: #444; color: #eee; }
+body.dark .top-toggle button:hover { background: #666; }
 
-body.dark .top-toggle button {
-  background: #444;
-  color: #eee;
-}
-
-body.dark .top-toggle button:hover {
-  background: #666;
-}
+/* -----------------------------------------------------------
+   4. Textgrößen & Responsive Verhalten
+   ----------------------------------------------------------- */
 
 .reveal li,
 .reveal p {
   font-size: 1.4vw;
 }
 
-.fragebox-slide {
-  position: relative;
-  width: 100%;
-  height: 80vh; /* oder min-height */
-}
-
-.fragebox-text {
-  position: absolute;
-  top: 25%;              /* vorher: 10% → jetzt weiter unten */
-  right: 10%;
-  background: #bfbfbf;
-  color: black;
-  font-size: 1.5rem;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  max-width: 40%;
-  text-align: center;
-  z-index: 10;
-}
-
-.fragebox-avatar {
-  position: absolute;
-  bottom: 25%;            /* vorher: 5% → jetzt deutlich höher */
-  left: 25%;
-  height: 220px;
-  z-index: 5;
-}
-
-/* Footer */
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70vw;
-    color: #6b6b6b;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-size: 0.8em;
+@media screen and (orientation: portrait) {
+  .reveal section p,
+  .reveal section li {
+    font-size: 2.6rem;
     line-height: 1.6;
-    text-align: center;
-    z-index: 1000;
-    padding: 1em;
-    pointer-events: auto;
+  }
 }
 
-.footer a {
-    color: #6b6b6b;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+@media screen and (orientation: landscape) {
+  .reveal section p,
+  .reveal section li {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
 }
 
-.footer a:hover {
-    color: #000;
+/* -----------------------------------------------------------
+   5. Bilder & QR-Icons
+   ----------------------------------------------------------- */
+
+.reveal section img.responsive-image {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
 }
 
-.top-row {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center; /* vertikal mittig */
-}
-
-.qr-icon-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #f1f1f1;
+.qr-icon {
+  width: 3.8vw;
+  height: auto;
   border-radius: 0.5rem;
-  padding: 0.35rem;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-  transition: background 0.2s ease;
-  height: 2.5rem; /* gleiche Höhe wie Buttons */
-  width: 2.5rem;
-  text-decoration: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  opacity: 0.9;
 }
 
-.qr-icon-button:hover {
-  background: #ddd;
+@media (max-width: 600px) {
+  .qr-icon { width: 72px; }
 }
 
-.qr-icon-button img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;  /* skaliert das Bild korrekt innerhalb der Fläche */
-  border-radius: 0.25rem;
+/* -----------------------------------------------------------
+   6. Footer – außerhalb der Reveal-Bühne
+   ----------------------------------------------------------- */
+
+#global-footer {
+  position: fixed;
+  bottom: 0.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3000;
+  width: 80vw;
+  color: #6b6b6b;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 0.8em;
+  line-height: 1.4;
+  text-align: center;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+  pointer-events: auto;
 }
 
-/* Zitate Box grün */
-.zitat-wrapper {
-  height: 100%;
+#global-footer:hover { opacity: 1; }
+
+#global-footer a {
+  color: #6b6b6b;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+#global-footer a:hover { color: #000; }
+
+#global-footer .social-links {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -1.5rem;
+  gap: 1.2rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 
-.zitat-container {
-  max-width: 80%;
-  position: relative;
-  z-index: 2;
+#global-footer svg {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  min-height: 22px;
+  fill: currentColor;
+  stroke: none;
+  vertical-align: middle;
+  display: inline-block;
+  transform: none !important;
+  scale: 1 !important;
 }
 
-.zitat-container {
-  margin-bottom: -1.0rem;
+@media (max-width: 900px) {
+  #global-footer {
+    font-size: 0.6em;
+    width: 95vw;
+  }
+  #global-footer svg {
+    width: 18px;
+    height: 18px;
+  }
 }
 
-.zitat-box {
-  background-color: #e0f2f1 !important;     /* helles Grün */
-  border-left: 6px solid #00796b !important; /* türkises Grün */
-  border-radius: 6px;
-  padding: 1em;
-  font-style: italic;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  margin: 0;
-  text-align: center;
-}
+/* -----------------------------------------------------------
+   7. Utility-Klassen (Avatare, Definitionen, Fragebox)
+   ----------------------------------------------------------- */
 
-.zitat-quelle {
-  text-align: right;
-  font-size: 1.3rem !important;
-  color: #555;
-  margin-top: 0.5rem;
-}
-
-.quote-char {
-  color: #a5d6a7;         /* hellgrün, pastellig */
-  font-size: 2.0em;       /* z. B. größer */
-  vertical-align: middle; /* oder: text-top, je nach Look */
-  line-height: 0;         /* verhindert Einfluss auf Absatzhöhe */
-}
-
-.bild-quelle {
-  text-align: right;
-  font-size: 1.3rem !important;
-  color: #555;
-  margin-top: 0.8rem !important;
-}
-
-/* Hinweisbox */
-.hinweis-box {
-  font-size: 1.9rem; /* übernimmt die normale Schriftgröße von p etc. */
-  background: #fffbe6;
-  border-left: 6px solid #ffb300;
-  padding: 1rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  margin: 2rem auto;
-  width: fit-content;
-  max-width: 90%;
-}
-
-/* Grosser Emoji */
-.big-emoji {
-  font-size: 6rem;      /* größer als h1 */
-  line-height: 1;       /* kompakt in der Höhe */
-  margin-bottom: 0rem; /* kleiner Abstand danach */
-  text-align: center;   /* optional: zentriert */
-}
-
-.big-emoji + .zitat-wrapper {
-  margin-top: -1.5rem;
-}
-
-/* Spezieller Bullet Point in Aufzählungsliste */
-.special-bullet {
-  list-style: none;           /* entfernt den Standard-Bullet */
-  margin-left: -1em;          /* rückt nach links wie die anderen Bullets */
-  padding-left: 0;            /* optional: verhindert Extraeinrückung */
-}
-
-.special-bullet::before {
-  content: "👉";              /* dein Icon */
-  margin-right: 0.5em;        /* Abstand zum Text */
-  font-size: 1.2em;           /* ggf. anpassen */
-}
-
-/* Avatare */
 .definition-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  flex-wrap: wrap; /* sorgt für Umbruch auf kleinen Bildschirmen */
+  flex-wrap: wrap;
   margin: 2rem 0;
 }
 
 .definition-avatar img {
-  max-width: 120px; 
+  max-width: 120px;
   height: auto;
 }
 
@@ -272,140 +241,72 @@ body.dark .top-toggle button:hover {
   max-width: 70%;
 }
 
-.qr-icon {
-  width: 3.8vw;
-  height: auto;
-  vertical-align: middle;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  opacity: 0.9;
-}
-
-/* Optional: Smartphone-Anpassung */
-@media (max-width: 600px) {
-  .qr-icon {
-  width: 72px;
-  border-radius: 0rem;
-
-  }
-  
+@media (max-width: 768px) {
   .definition-container {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
-
-  .definition-avatar img {
-    max-width: 200px;
-  }
-
-  .definition-box {
-    max-width: 90%;
-  }
 }
 
-/* Optional: Avatar zentrieren auf kleinen Screens */
-@media (max-width: 768px) {
-  .definition-avatar-box {
-    flex-direction: column;
-  }
+/* Fragebox */
+.fragebox-slide {
+  position: relative;
+  width: 100%;
+  height: 80vh;
 }
 
-/* Responsive Bildgrößenanpassung */
-
-.reveal section img.responsive-image {
-  display: block;
-  margin: 0 auto;
-  width: 60%;
-  height: auto;
+.fragebox-text {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  background: #bfbfbf;
+  color: black;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  max-width: 40%;
+  text-align: center;
+  z-index: 10;
 }
 
-/* Vergrößert Text auf kleinen Bildschirmen */
-@media screen and (orientation: portrait) {
-  .reveal section p,
-  .reveal section li {
-    font-size: 2.8rem;
-    line-height: 1.6;
-  }
-
-  .reveal section img.responsive-image {
-    width: 90%;
-  }
-
-  .top-toggle button {
-    font-size: 3.2rem;
-    padding: 0.8rem 0.8rem;
-  }
-
-  .reveal h1 {
-    font-size: 4rem;
-  }
-
-  .zitat-quelle {
-  font-size: 2.2rem !important;
-  }
-
-  .bild-quelle {
-  font-size: 2.2rem !important;
-  }
-
-  .hinweis-box {
-  font-size: 2.8rem; /* übernimmt die normale Schriftgröße von p etc. */
-  }
-
+.fragebox-avatar {
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+  height: 220px;
+  z-index: 5;
 }
 
-@media screen and (orientation: landscape) {
-  .reveal section p,
-  .reveal section li {
-    font-size: 1.9rem;
-    line-height: 1.5;
-  }
-
-  .reveal section img.responsive-image {
-    width: 50%;
-  }
-
-  .top-toggle button {
-    font-size: 1.8rem;
-    padding: 0.6rem 0.6rem;
-  }
-
-  .reveal h1 {
-    font-size: 3rem;
-  }
-
-  .hinweis-box {
-  font-size: 1.9rem; /* übernimmt die normale Schriftgröße von p etc. */
-  }
-
-}
-
-@media screen and (max-width: 900px) {
-  .qr-icon-button {
-    display: none;
-  }
-
-  .footer {
-    font-size: 0.4em;
-    line-height: 1.6;
-    padding: 0.4em;
-}
-
+/* ==== Reveal-LogoBox (SciBlog iWIP) ==== */
+.logo-box {
+  position: fixed;
+  top: 1.2%;
+  left: 1.2%;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  z-index: 2000;
 }
 
 .logo-img {
-  height: 40px;
+  height: 42px;
+  width: auto;
 }
 
-/* Auf Smartphones kleiner */
-@media (max-width: 600px) {
+.logo-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--uni-blau, #014a99);
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Responsive Anpassung */
+@media (max-width: 900px) {
   .logo-img {
-    height: 40px;
+    height: 32px;
   }
 
   .logo-text {
-    font-size: 1.2em;
+    font-size: 0.9rem;
   }
-
 }

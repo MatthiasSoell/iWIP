@@ -4,7 +4,7 @@ outputs:
   - Reveal
 ---
 
-{{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" >}}
+{{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
 
 ### Bildungssysteme 📚⚙️ <br>im Kontext von <br>Arbeit 🧑‍💻 und Gesellschaft 🧑‍🤝‍🧑
 

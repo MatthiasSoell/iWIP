@@ -12,6 +12,8 @@ reveal_hugo:
   custom_theme: /iWIP/css/custom_reveal.css
 ---
 
+{{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
+
 # 📚 Technische Dokumentation
 
 Im Mittelpunkt dieser Präsentation steht die technische Infrastruktur hinter dem **SciBlog iWIP**.  
