@@ -35,9 +35,9 @@ theme = ["github.com/adityatelange/hugo-PaperMod", "github.com/joshed-io/reveal-
     weight = 10
 
   [[menu.main]]
-    identifier = "bisy"
-    name = "BiSy"
-    url = "/bisy/"
+    identifier = "widi"
+    name = "WiDi"
+    url = "/widi/"
     weight = 20
 
   [[menu.main]]
