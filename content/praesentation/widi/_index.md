@@ -14,12 +14,29 @@ reveal_hugo:
 
 {{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
 
-# 📚 Allgemeine Didaktik & Fachdidaktik  
-### Seminar · Grundlagen Fachdidaktik Wirtschaft
+<div style="text-align:center; margin-top:2rem;">
+
+<h1 style="font-size:2.2rem; margin-bottom:1.2rem;">
+📚 <strong>Allgemeine Didaktik &amp; Fachdidaktik</strong>
+</h1>
+
+<hr style="width:65%; height:2px; background-color:#d0d7de; border:none; margin:2.2rem auto;">
+
+<h2 style="font-size:1.6rem; color:#1a4a8d; margin-bottom:2.4rem;">
+🎓 <em>Seminar „Grundlagen Fachdidaktik Wirtschaft“</em>
+</h2>
+
+<hr style="width:50%; height:1.5px; background-color:#d0d7de; border:none; margin:1.8rem auto;">
+
+<p style="font-size:1.2rem; font-weight:600; margin-top:1.5rem;">
+👤 Prof. Dr. Matthias Söll
+</p>
+
+</div>
 
 ---
 
-## 🎯 Lernziele
+## 🎯 Lehrziele
 
 - 🤔 **Verständnis reflektieren** – eigenes Didaktikbild prüfen. <!-- .element: class="fragment" -->
 - 🕰️ **Geschichte verstehen** – zentrale Entwicklungslinien kennen. <!-- .element: class="fragment" -->
@@ -30,30 +47,52 @@ reveal_hugo:
 
 ## 🧭 Ablauf (90 Min)
 
-1️⃣ Einstieg & Schreibimpuls (20’) <!-- .element: class="fragment" -->  
-2️⃣ Historischer Überblick (15’) <!-- .element: class="fragment" -->  
-3️⃣ Allgemeine Didaktik (15’) <!-- .element: class="fragment" -->  
-4️⃣ Fachdidaktik (25’) <!-- .element: class="fragment" -->  
-5️⃣ Reflexion & Ausblick (15’) <!-- .element: class="fragment" -->
+<section data-auto-animate>
+<div style="display:flex; align-items:center; justify-content:center; gap:0.25rem; margin-top:0.25rem;">
+
+  <!-- Linke Spalte: Ablauf -->
+  <div style="flex:0 0 50%; font-size:1.8rem; line-height:1.7; text-align:left; max-width:33rem;">
+    1️⃣ Einstieg &amp; Aktivierung (20’)<br>
+    2️⃣ Historischer Überblick (15’)<br>
+    3️⃣ Allgemeine Didaktik (15’)<br>
+    4️⃣ Fachdidaktik (25’)<br>
+    5️⃣ Reflexion &amp; Ausblick (15’)
+  </div>
+
+  <!-- Rechte Spalte: QR-Code -->
+  <div style="flex:0 0 17%; text-align:center; margin-top:-0.25rem; margin-left:-0.5rem;">
+    <img src="/iWIP/bilder/qr_did_allg_fach.png"
+         alt="QR-Code Didaktik-Einheit"
+         style="width:100%; max-width:150px; border-radius:12px; box-shadow:0 0 8px rgba(0,0,0,.15);">
+    <p style="font-size:0.8rem; margin-top:-0.6em; color:#444; white-space:nowrap;">
+      📱 <em>Materialien im SciBlog iWIP</em>
+    </p>
+  </div>
+
+</div>
+</section>
 
 ---
 
 ## 1️⃣ Einstieg 🤔
 
 Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – von KiTa bis Uni.  
+<br>
 ➡️ Sie bringen bereits ein **eigenes Verständnis von Didaktik** mit.
 
 ---
 
-## 🧠 Schreibimpuls (Einzel)
+## 🧠 Aktivierung in Einzelarbeit
 
 **Aufgabe:** Formulieren Sie in **max. 2 Sätzen**, was „**Didaktik**“ für Sie bedeutet. ✏️  
+<br>
 **Ziel:** Begriffe sammeln – gemeinsame Arbeitsbasis.
 
 ---
 
-## 👥 Aktivierung (Plenum)
+## 👥 Aktivierung im Plenum
 
+🪑 **Stuhlhalbkreis**: Rücken Sie die Tische zur Seite und bilden Sie einen Stuhlhalbkreis.  
 🎾 **Ballwurf-Runde**: Name + Satz vervollständigen  
 > „**Didaktik bedeutet für mich …**“
 
@@ -83,7 +122,7 @@ Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – vo
 
 ---
 
-## 🧩 Beobachtung → Deutung
+## 🧩 Deutung der Beobachtungen
 
 - Unterricht ist **zeitgebunden**. <!-- .element: class="fragment" -->
 - Rollen, Medien, Räume und Aktivitäten **wandeln** sich. <!-- .element: class="fragment" -->
