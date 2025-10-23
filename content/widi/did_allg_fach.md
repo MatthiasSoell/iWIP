@@ -328,8 +328,6 @@ Sie können nun …
 
 # 📚 Literatur  
 
-<h1>📚 Literatur</h1>
-
 <ul class="refs">
   <li>
     Arnold, K.-H., &amp; Roßa, A.-E. (2012). <em>Grundlagen der Allgemeinen Didaktik und der Fachdidaktiken.</em>
