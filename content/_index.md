@@ -29,4 +29,6 @@ Ich blogge über **Wissenschaft** (Science Blog) – und veröffentliche meine I
 
 In der Rubrik [OER](/iWIP/oer/) beschäftige ich mich mit den (bildungs-)politischen Rahmenbedingungen, der Entwicklung und der Nutzung freier Bildungsmaterialien. 
 
-Unter [BiSy](/iWIP/bisy/) finden Sie meine OER-Lehrmaterialien zum Modul "Bildungssysteme im Kontext von Arbeit und Gesellschaft" im Bachelor Wirtschaftspädagogik an der Universität Rostock.
+Unter [WiDi](/iWIP/widi/) finden Sie meine OER-Lehrmaterialien zum Modul "Grundlagen didaktischen Handelns in Schule und Betrieb (Fachdidaktik Wirtschaft)" im Bachelor Wirtschaftspädagogik an der Universität Rostock.
+
+Ich skizziere schließlich in meinen Dokumentationen unter [Doku](/iWIP/doku/), mit welcher Software mein Blog aufgebaut ist.

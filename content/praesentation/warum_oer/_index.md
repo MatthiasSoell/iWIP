@@ -6,48 +6,19 @@ outputs:
 
 {{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
 
-<script>
-  function triggerPrint() {
-    window.print(); // oder eine andere Funktion, je nach Zweck
-  }
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.location.search.includes("print-pdf")) {
-    // Warten, bis Reveal "ready" ist
-    Reveal.addEventListener("ready", function () {
-      setTimeout(() => {
-        window.print();
-      }, 300); // etwas Spielraum lassen
-    });
-  }
-});
-</script>
-
-<div class="top-toggle">
-  <div class="top-row">
-    <button onclick="triggerPrint()" title="Präsentation speichern">💾</button>
-    <button onclick="location.href='/iWIP/oer/warum_oer'" title="Zur Blogansicht">📄</button>
-    <a class="qr-icon-button" href="LINK-ZUM-INHALT" title="Zur Präsentation">
-      <img src="qrcode_warum_oer.png" alt="QR-Code">
-    </a>
-  </div>
-</div>
-
-# Was sind OER?
-<div class="definition-container">
-  <div class="definition-avatar">
-    <img src="/iWIP/bilder/avatare/avatar_erkenntnis_1.png" alt="Avatar Erkenntnis" />
-  </div>
-  <div class="definition-box">
-    <p><em>OER =<br>Open Educational Resources =<br>freie Bildungsmaterialien</em></p>
-  </div>
-</div>
+{{< titleSlide
+    title="Warum OER?"
+    emojis="🎓 🌍 🔓"
+    veranstaltungstyp=""
+    veranstaltung=""
+    author="Prof. Dr. Matthias Söll"
+    qr="qrcode_warum_oer.png"
+    blog="/iWIP/oer/warum_oer"
+>}}
 
 ---
 
-# OER sind 🎓🌍🔓:
+### OER sind:<br> 🎓🌍🔓
 * Bildungsmaterialien in einem sehr weiten Verständnis (von einer Definition über eine Grafik bis hin zu einem Selbstlernkurse)
 * frei über Online-Plattformen verfügbar (bspw. <a href="https://www.twillo.de" target="_blank" rel="noopener">twillo</a> oder <a href="https://hubbs.schule/"  target="_blank" rel="noopener">HubbS</a> geteilt)
 * digital (so lässt sich das Material gut teilen)
@@ -56,14 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ---
 
-# Woher kommen OER? 🇺🇳 UNESCO
+### Woher kommen OER?<br>🇺🇳 UNESCO
 * Ausgangspunkt der OER-Initiativen ist die <a href="https://www.unesco.de/assets/dokumente/Deutsche_UNESCO-Kommission/02_Publikationen/Publikation_Bildungsagenda_2030_Aktionsrahmen.pdf" target="_blank" rel="noopener">Agenda Bildung 2030 (PDF)</a> der UNESCO aus dem Jahr 2015
 * Ziel der Agenda (u. a.): inklusive, chancengerechte und hochwertige Bildung für alle Menschen weltweit
 * UNESCO (2009) <a href="https://www.unesco.de/assets/2019_Empfehlung_Open_Educational_Resources.pdf" target="_blank" rel="noopener"> Empfehlungen zu OER (PDF)</a>: OER als geeignete Mittel zur Zielerreichung
 
 ---
 
-# Woher kommen OER? 🇩🇪 GER
+### Woher kommen OER? <br>🇩🇪 GER
 * Das BMFTR (Bundesministerium für Forschung, Technologie und Raumfahrt, ehemals BMBF: Bundesministerium für Bildung und Forschung) fördert OER seit 2016:
   * <a href="https://open-educational-resources.de/" target="_blank" rel="noopener">OERInfo</a> (2016)
   * <a href="https://www.oer-strategie.de/foerdern/foerderrichtlinien/" target="_blank" rel="noopener">OE_COM</a> (2023)
@@ -72,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
 ---
 
-# 🔎 Noch mehr OER Infos?
+### 🔎 Noch mehr<br>OER Infos?
 
 <div class="definition-container">
   <div class="definition-box">
@@ -85,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ---
 
-# Warum OER? ❤️ Emotionale Begründung
+### Warum OER?<br>❤️ Emotionale Begründung
 
 <div class="zitat-wrapper">
   <div class="zitat-container">
@@ -100,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ---
 
-# Warum OER? 📈 Rationale Begründung
+### Warum OER<br>📈 Rationale Begründung
 
 <ul>
   <li>22.638 neue Büromanagement-Azubis im Jahr 2023 👩‍💼</li>
@@ -115,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ---
 
-# Warum OER? ✨ Qualitative Begründung
+### Warum OER?<br>✨ Qualitative Begründung
 
 
 Die Qualität von Lehr-Lern-Arrangements kann durch kooperative Entwicklung steigen.

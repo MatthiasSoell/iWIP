@@ -55,3 +55,48 @@ OER sind stark, weil:
 
   > Auf <a href="https://open-educational-resources.de/was-ist-oer-3-2/" target="_blank" rel="noopener">OERInfo.de</a> finden Sie weitere, anschaulich aufbereitete Informationen zu OER: bspw. ein 90s Erklärvideo, eine ausführliche Definition sowie Infos zu offenen Lizenzen und zum Mehrwert von OER.
 
+## Warum OER? ❤️ Emotionale Begründung
+
+> „Wissen ist das einzige Gut, das sich vermehrt, wenn man es teilt.“  
+> — Marie von Ebner-Eschenbach (1830 – 1916)
+
+Dieses Zitat bringt den Kern von OER auf den Punkt: Wissen entfaltet seinen Wert erst im Teilen.  
+Wer Lehr-Lern-Materialien offen zur Verfügung stellt, stärkt das gemeinsame Lernen und trägt zur Bildungsgerechtigkeit bei.  
+Ähnlich argumentiert <a href="https://www.bpb.de/shop/zeitschriften/apuz/33204/elinor-ostrom-und-die-wiederentdeckung-der-allmende/" target="_blank" rel="noopener">Elinor Ostrom</a>, die 2009 als erste Frau den Wirtschaftsnobelpreis erhielt.  
+Sie beschreibt Wissen als *Allmende* — als gemeinsames Gut, das durch gemeinschaftliche Nutzung wächst, statt zu verknappen.  
+
+---
+
+## Warum OER? 📈 Rationale Begründung
+
+OER steigern die **Effizienz** in Lehr-Lern-Prozessen:
+
+* 22 638 neue Büromanagement-Auszubildende im Jahr 2023 👩‍💼  
+* Durchschnittlich 22 Schüler:innen pro Klasse 👥  
+* Ca. 1 029 Klassen allein im 1. Lehrjahr 🏫  
+* Etwa 1 000 Lehrkräfte, die ähnliche Unterrichtsinhalte täglich neu aufbereiten 👩‍🏫  
+
+> Das Teilen und gemeinsame Bearbeiten von Materialien reduziert redundante Arbeit und ermöglicht eine bessere Nutzung gemeinsamer Ressourcen.  
+> So kann mehr Zeit in die didaktische Gestaltung und Begleitung von Lernprozessen fließen.
+
+---
+
+## Warum OER? ✨ Qualitative Begründung
+
+Neben Effizienzgewinnen kann OER die **Qualität** von Lehr-Lern-Arrangements erhöhen.  
+Durch kooperative Entwicklung und kollegiale Begutachtung entstehen Materialien, die didaktisch reifer, aktueller und vielfältiger sind.
+
+<img class="responsive-image" src="OER_qualitaet.png" alt="Kooperative Entwicklung von OER">
+
+<p class="bild-quelle">Bildquelle: erstellt mit ChatGPT</p>
+
+Offene Zusammenarbeit führt so zu reflektierteren, anschlussfähigeren und lernförderlicheren Ergebnissen — und stärkt eine Kultur des Teilens, die weit über das einzelne Unterrichtsmaterial hinausgeht.
+
+---
+
+## Fazit
+
+OER stehen für mehr als frei verfügbare Materialien:  
+Sie verkörpern eine Haltung — die Bereitschaft, Wissen zu teilen, voneinander zu lernen und Bildung als gemeinsame Aufgabe zu verstehen.  
+Ob emotional, rational oder qualitativ begründet:  
+**OER sind ein Schlüssel zu einer offenen, kollaborativen und gerechten Bildungslandschaft.**

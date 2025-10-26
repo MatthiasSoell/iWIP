@@ -8,6 +8,32 @@ tags: ["Didaktik", "Allgemeine Didaktik", "Fachdidaktik", "Didaktische Modelle"]
 categories: ["Didaktik"]
 ---
 
+
+<script>
+  function triggerPrint() {
+    window.print(); // oder eine andere Funktion, je nach Zweck
+  }
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.location.search.includes("print-pdf")) {
+    // Warten, bis Reveal "ready" ist
+    Reveal.addEventListener("ready", function () {
+      setTimeout(() => {
+        window.print();
+      }, 300); // etwas Spielraum lassen
+    });
+  }
+});
+</script>
+
+<div class="top-toggle">
+  <button onclick="triggerPrint()" title="Präsentation speichern">💾</button>
+  <button onclick="location.href='/iWIP/praesentation/widi/'" title="Zur Präsentationsansicht">🖥️</button>
+</div>
+
+
 # 📚 Gegenstand  
 
 Ausgangspunkt dieser Lehr-Lern-Einheit ist **Ihr eigenes Verständnis von Didaktik**. 🤔  

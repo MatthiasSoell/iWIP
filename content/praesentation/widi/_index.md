@@ -14,25 +14,15 @@ reveal_hugo:
 
 {{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
 
-<div style="text-align:center; margin-top:2rem;">
-
-<h1 style="font-size:2.2rem; margin-bottom:1.2rem;">
-📚 <strong>Allgemeine Didaktik &amp; Fachdidaktik</strong>
-</h1>
-
-<hr style="width:65%; height:2px; background-color:#d0d7de; border:none; margin:2.2rem auto;">
-
-<h2 style="font-size:1.6rem; color:#1a4a8d; margin-bottom:2.4rem;">
-🎓 <em>Seminar „Grundlagen Fachdidaktik Wirtschaft“</em>
-</h2>
-
-<hr style="width:50%; height:1.5px; background-color:#d0d7de; border:none; margin:1.8rem auto;">
-
-<p style="font-size:1.2rem; font-weight:600; margin-top:1.5rem;">
-👤 Prof. Dr. Matthias Söll
-</p>
-
-</div>
+{{< titleSlide
+    title="Allgemeine Didaktik & Fachdidaktik"
+    emojis="🤔 🕰️ 🧭 🔍"
+    veranstaltungstyp="🎓 Seminar"
+    veranstaltung="Grundlagen Fachdidaktik Wirtschaft"
+    author="Prof. Dr. Matthias Söll"
+    qr="qrcode_warum_oer.png"
+    blog="/iWIP/widi/did_allg_fach"
+>}}
 
 ---
 
@@ -210,7 +200,71 @@ Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – vo
 
 ---
 
-## 🙏 Danke!
+{{< rawhtml >}}
+<style>
+  /* =========================================
+     Abschlussfolie – SciBlog iWIP
+     ========================================= */
+  .abschlussfolie {
+    text-align: center;
+    margin-top: 2.8rem; /* leicht höher für visuelle Zentrierung */
+  }
 
-Fragen? Kommentare?  
-**SciBlog iWIP** · matthiassoell.github.io/iWIP
+  .abschlussfolie h1 {
+    font-size: 2.6rem;
+    color: #014A99;
+    font-weight: 800;
+    margin-bottom: 1.8rem;
+  }
+
+  /* Linie im Stil der Titelfolie, aber mit mehr vertikalem Abstand */
+  .abschlussfolie .rule-thin {
+    margin-top: 3rem;     /* mehr Platz über der Linie */
+    margin-bottom: 3rem;    /* mehr Platz unter der Linie */
+  }
+
+  /* Textabsätze innerhalb der Folie */
+  .abschlussfolie p {
+    font-size: 1.6rem;
+    margin: 0.6rem 0;
+    color: #222;
+  }
+
+  .contact-block {
+  margin-top: 1.8rem; /* bleibt gleich – Abstand zur Überschrift */
+  text-align: center;
+}
+
+.contact-line {
+  margin: 0.2rem 0; /* vorher 0.4rem → engerer Zeilenabstand */
+  font-size: 1.5rem;
+  color: #014A99;
+  font-weight: 500;
+}
+
+.contact-line svg {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+  fill: #014A99;
+}
+</style>
+
+<div class="abschlussfolie">
+  <h1>🌱<br>Danke fürs<br>Mitdenken, Mitreden & Mitlernen!<br>😃</h1>
+
+  <hr class="rule-thin">
+
+  <h1>Fragen oder Feedback?</h1>
+
+  <div class="contact-block">
+    <div class="contact-line">
+      {{< email >}}<a href="mailto:matthias.soell@uni-rostock.de">matthias.soell@uni-rostock.de</a>
+    </div>
+    <div class="contact-line">
+      {{< mastodon >}}<a href="https://mastodon.social/@matthias_oer">matthias_oer@mastodon.social</a>
+    </div>
+  </div>
+</div>
+{{< /rawhtml >}}

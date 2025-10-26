@@ -310,3 +310,168 @@ body.dark .top-toggle button:hover { background: #666; }
     font-size: 0.9rem;
   }
 }
+
+/* ==== SciBlog iWIP – Titel-Folie (aus Inline-Code extrahiert) ==== */
+:root{
+  --uni-blau-650: #1E4D92;     /* dezente Trenner-/Linienfarbe */
+}
+
+/* Container & Header */
+.reveal .titlecard{
+  max-width:1100px;
+  margin:0 auto;
+  padding-top:1.2rem;
+}
+.reveal .header-bar{
+  display:flex;
+  justify-content:flex-end;
+  margin-bottom:1rem;
+}
+.reveal .buttons{display:flex; gap:.5rem;}
+.reveal .buttons button{
+  font-size:1.05rem;
+  background:#f6f8fa;
+  border:0;
+  border-radius:.8rem;
+  padding:.4rem .6rem;
+  box-shadow:0 1px 6px rgba(0,0,0,.14);
+  cursor:pointer;
+}
+.reveal .buttons button:hover{ background:#eef1f5; }
+
+/* Titelblock */
+.reveal .title-wrap{ text-align:center; margin-top:0; }
+.reveal .title-wrap h1{
+  font-size:2.8rem;
+  line-height:1.18;
+  color:var(--uni-blau);
+  font-weight:800;
+  margin:0 0 1.7rem;
+}
+/* ==== Trennerlinie im iWIP-Farbverlauf ==== */
+.reveal .rule-thin{
+  position: relative;
+  width: 40%;
+  height: 2px;
+  margin: .6rem auto 1.1rem;
+  border: 0;
+  background: linear-gradient(90deg,#1E88E5 0%,#5ED020 50%,#1E88E5 100%);
+  border-radius: 999px;
+  /* Enden weich ausblenden */
+  -webkit-mask: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
+          mask: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
+}
+.reveal .rule-thin::after{
+  content:"";
+  position:absolute; inset:-6px 0;          /* weiche „Aura“ */
+  background: linear-gradient(90deg,#1E88E5 0%,#5ED020 50%,#1E88E5 100%);
+  opacity:.16;
+  filter: blur(6px);
+  border-radius:999px;
+  pointer-events:none;
+}
+
+/* Seminar, Autor, QR */
+.reveal .seminar{
+  font-size:1.45rem;
+  color:var(--uni-blau);
+  font-weight:500;
+  margin:1.8rem 0 3.6rem;
+}
+.reveal .author{
+  font-size:1.18rem;
+  font-weight:600;
+  color:#0f274a;
+  margin:.2rem 0 .2rem;
+}
+/* ==== QR-Code Block – leicht tiefer gesetzt ==== */
+.reveal .qr-card {
+  margin: 1.4rem 0 0;       /* vorher .8rem 0 0 – jetzt 1.2rem */
+  text-align: center;
+}
+.reveal .qr-card img {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: 0 auto;
+  padding: 6px;
+  background:
+    linear-gradient(to right, #1E88E5, #5ED020) top,
+    linear-gradient(to right, #5ED020, #1E88E5) bottom,
+    linear-gradient(to bottom, #5ED020, #009FE3) left,
+    linear-gradient(to top, #5ED020, #009FE3) right;
+  background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-sizing: border-box;
+  opacity: 0.96;
+}
+
+/* Responsive */
+@media (max-width:900px){
+  .reveal .title-wrap h1{ font-size:2.3rem; }
+  .reveal .qr-card img{ width:100px; height:100px; }
+}
+
+/* Mehr Abstand, wenn kein seminartype & kein seminar übergeben wurde */
+.reveal .titlecard.no-seminar .rule-thin { margin: .6rem auto 3.4rem; }
+.reveal .titlecard.no-seminar .author    { margin-top: 1.2rem; }
+.reveal .titlecard.no-seminar .qr-card   { margin-top: 1.2rem; }
+
+/* Kleinere Kontakt-Icons */
+.reveal .contact-icon svg {
+  width: 32px;   /* vorher 42px */
+  height: 32px;
+}
+
+/* ============================================
+   Abschlussfolie: Kontaktangaben mit Icons
+   ============================================ */
+.reveal .contact-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+}
+
+.reveal .contact-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  color: var(--uni-blau);        /* iWIP-Blau */
+  font-size: 1.5rem;             /* kleiner & dezenter */
+  font-weight: 400;
+}
+
+.reveal .contact-line a {
+  color: var(--uni-blau);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.reveal .contact-line a:hover {
+  color: #003c7d; /* leicht dunkler beim Hover */
+}
+
+.reveal .contact-line svg {
+  width: 22px;                  /* gleiche Höhe wie Text */
+  height: 22px;
+  flex-shrink: 0;
+  fill: currentColor;            /* erbt die Schriftfarbe */
+  opacity: 0.95;
+  vertical-align: middle;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .reveal .contact-line {
+    font-size: 1.25rem;
+  }
+  .reveal .contact-line svg {
+    width: 20px;
+    height: 20px;
+  }
+}

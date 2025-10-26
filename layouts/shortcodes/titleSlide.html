@@ -1,0 +1,55 @@
+<!-- layouts/shortcodes/titleSlide.html -->
+
+<script>
+  if (!window.__iwipPrintHook) {
+    window.__iwipPrintHook = true;
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.location.search.includes("print-pdf")) {
+        Reveal.addEventListener("ready", () => setTimeout(() => window.print(), 300));
+      }
+    });
+  }
+  function triggerPrint(){ window.print(); }
+</script>
+
+{{/* prüfen, ob Veranstaltungstyp oder Veranstaltung angegeben ist */}}
+{{- $hasType := .Get "veranstaltungstyp" -}}
+{{- $hasTitle := .Get "veranstaltung" -}}
+{{- $hasEvent := or $hasType $hasTitle -}}
+
+<div class="titlecard{{ if not $hasEvent }} no-seminar{{ end }}">
+  <div class="header-bar">
+    <div class="buttons">
+      <button onclick="triggerPrint()" title="Präsentation speichern">💾</button>
+      {{ with .Get "blog" }}
+        <button onclick="location.href='{{ . }}'" title="Zur Blogansicht">📄</button>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="title-wrap">
+    <h1>
+      {{ .Get "title" | safeHTML }}<br>
+      {{ with .Get "emojis" }}{{ . | safeHTML }}{{ end }}
+    </h1>
+
+    <hr class="rule-thin">
+
+    {{ if $hasEvent }}
+      <div class="seminar">
+        {{ with .Get "veranstaltungstyp" }}{{ . | safeHTML }}<br>{{ end }}
+        {{ with .Get "veranstaltung" }}<em>„{{ . | safeHTML }}“</em>{{ end }}
+      </div>
+    {{ end }}
+
+    {{ with .Get "author" }}
+      <div class="author">👤 {{ . | safeHTML }}</div>
+    {{ end }}
+
+    {{ with .Get "qr" }}
+      <div class="qr-card">
+        <img src="{{ . }}" alt="QR zur Präsentation" loading="lazy">
+      </div>
+    {{ end }}
+  </div>
+</div>
