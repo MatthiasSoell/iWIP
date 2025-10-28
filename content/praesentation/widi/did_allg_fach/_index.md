@@ -1,6 +1,6 @@
 ---
 title: "Allgemeine Didaktik und Fachdidaktik"
-date: 2025-10-20
+date: 2025-10-22
 draft: false
 description: "In dieser Lehr-Lern-Einheit entwickeln wir Ihr Verständnis von Didaktik weiter."
 outputs:

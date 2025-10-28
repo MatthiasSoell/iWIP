@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <div class="top-toggle">
   <button onclick="triggerPrint()" title="Präsentation speichern">💾</button>
-  <button onclick="location.href='/iWIP/praesentation/widi/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button onclick="location.href='/iWIP/praesentation/widi/did_allg_fach/'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
 
 
@@ -41,12 +41,6 @@ Darauf aufbauend möchte ich didaktische Entscheidungen **nicht nur erklären, s
 
 Im weiteren Verlauf werfen wir einen Blick auf die **Entstehungsgeschichte der Didaktik** 🕰️ 
 und unterscheiden zwischen der **Allgemeinen Didaktik** und den **Fachdidaktiken**.  
-
-Abschließend lernen wir das **klassische didaktische Modell nach Wolfgang Klafki** kennen – 
-ein bis heute prägendes Konzept, das hilft, Unterricht **bewusst zu planen, zu begründen und zu reflektieren**. 🎓
-
-
- steht die technische Infrastruktur hinter dem SciBlog iWIP. Ziel ist eine **offene**, **frei verfügbare** und **OER-kompatible Plattform** für Wissenschaftskommunikation und Lehre. Die eingesetzten Tools ermöglichen sowohl **effizientes Publizieren** als auch **kollaboratives Arbeiten** mit Co-Autor:innen.
 
 # 🎯 Lehrziele  
 
@@ -204,6 +198,26 @@ Anschließend besprechen wir kurz gemeinsam:
 
 ---
 
+<details>
+<summary>🔽 <span>Unsere Beobachtungen</span> 🔎</summary>
+
+Wir haben unser Seminar im klassichen Setup mit Tischreihen begonnen:  
+
+**Seminarraum mit Tischreihen:**  
+![Klassisches Setup des Seminarraums](klassisches_setup.jpeg) 
+*Quelle: Matthias Söll · Lizenz: Die Rechte liegen bei den abgebildeten Personen.*
+
+Im Zuge der Vorbereitung der Vorstellungsrunde haben wir auf einen Stuhlkreis umgebaut:  
+
+**Seminarraum mit Stuhlkreis:**  
+![Stuhlkreis](stuhlkreis.jpeg)
+*Quelle: Matthias Söll · Lizenz: Die Rechte liegen bei den abgebildeten Personen.*  
+
+Wir stellten fest, dass die Sitzordnung in **Tischreihen** zunächst vertraut und strukturiert wirkt, zugleich jedoch **mehr Ablenkung** durch Laptops oder Smartphones ermöglicht. Im **Stuhlkreis** hingegen waren alle Teilnehmenden unmittelbarer präsent, der Blickkontakt intensiver und die **Aufmerksamkeit stärker aufeinander gerichtet**. Die Atmosphäre wirkte offener und dialogischer. Wäre die gleiche Übung an Tischen durchgeführt worden, hätten sich vermutlich schnell **Gruppenstrukturen oder Barrieren** ergeben. Didaktisch lässt sich die Methode als Versuch verstehen, **Lernräume aktiv zu gestalten** und die **soziale Interaktion** bewusst in den Mittelpunkt zu stellen. Häufig genannte Begriffe waren dabei *Inhalte aufbereiten*, *Lehren*, *Methoden* oder *Medien*. 💬  
+</details>
+
+---
+
 # 2️⃣ Historischer Überblick 🕰️
 
 ## 🖼️ Unterricht im Wandel  
@@ -217,14 +231,14 @@ Was fällt Ihnen in Bezug auf die **Aktivitäten der Lernenden und Lehrenden** s
 ### 📸 Klassenzimmer 1934  
 
 ![Klassenzimmer 1934](/iWIP/bilder/widi/did_allg_fach/Klassenzimmer_früher.jpg)  
-Quelle: <a href="https://rlp.museum-digital.de/object/33802" target="_blank" rel="noopener noreferrer">museum-digital Rheinland-Pfalz</a> · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>  
+*Quelle: <a href="https://rlp.museum-digital.de/object/33802" target="_blank" rel="noopener noreferrer">museum-digital Rheinland-Pfalz</a> · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*  
 
 ---
 
 ### 📸 Klassenzimmer heute  
 
 ![Klassenzimmer heute](/iWIP/bilder/widi/did_allg_fach/Klassenzimmer_heute.jpg)  
-Quelle: <a href="https://commons.wikimedia.org/wiki/File:Unterricht.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>  
+*Quelle: <a href="https://commons.wikimedia.org/wiki/File:Unterricht.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>*  
 
 ---
 
