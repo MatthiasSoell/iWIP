@@ -20,7 +20,7 @@ reveal_hugo:
     veranstaltungstyp="🎓 Seminar"
     veranstaltung="Grundlagen Fachdidaktik Wirtschaft"
     author="Prof. Dr. Matthias Söll"
-    qr="qrcode_warum_oer.png"
+    qr="qrcode.png"
     blog="/iWIP/widi/did_allg_fach"
 >}}
 

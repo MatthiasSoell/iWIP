@@ -31,8 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
   <button onclick="location.href='/iWIP/praesentation/widi/widi/'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
 
----
-
 # 🌀 Recap – Rückblick auf die letzte Veranstaltung  
 
 - 🏫 Ausgehend von Ihren Erfahrungen in **Bildungseinrichtungen** haben wir in der letzten Veranstaltung Ihr persönliches **Didaktikverständnis** reflektiert.  
@@ -45,7 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
 # 📚 Gegenstand  
 
 - Heute widmen wir uns gezielt der **Wirtschaftsdidaktik** 💼.  
-- Sie erarbeiten in **Gruppen** 👥 zentrale Themenfelder, **systematisieren** diese 🧩 und **reflektieren** die **methodische Vorgehensweise** 🔄 im Vergleich zur letzten Sitzung.  
+- Sie erarbeiten in **Gruppen** 👥 zentrale Themenfelder und **systematisieren** diese 🧩.
+- Ferner **reflektieren** wir die **methodische Vorgehensweise** 🔄 im Vergleich zur letzten Sitzung.  
 
 ---
 
@@ -61,9 +60,9 @@ Sie erarbeiten sich einen Überblick über die zentralen Themenfelder der Wirtsc
 
 Sie lernen, …
 
-- die **Themenfelder der Wirtschaftsdidaktik** zu systematisieren und zu beschreiben,  
-- in Gruppen Ergebnisse zu erarbeiten und  
-- die **Vor- und Nachteile methodischer Erarbeitungs- und Darstellungsformen** zu reflektieren.  
+- 🧩 die **Themenfelder der Wirtschaftsdidaktik** zu systematisieren und zu beschreiben,  
+- 👥 in **Gruppen** Ergebnisse zu erarbeiten und  
+- 🪞 die **Vor- und Nachteile methodischer Erarbeitungs- und Darstellungsformen** zu reflektieren.  
 
 ---
 

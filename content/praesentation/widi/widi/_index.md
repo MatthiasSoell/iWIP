@@ -19,12 +19,12 @@ reveal_hugo:
 
 {{< titleSlide
     title="Wirtschaftsdidaktik –<br>Themen & Systematisierung"
-    emojis="🤔 🕰️ 🧭 🔍"
+    emojis="🧩 👥 🪞"
     veranstaltungstyp="🎓 Seminar"
     veranstaltung="Grundlagen Fachdidaktik Wirtschaft"
     author="Prof. Dr. Matthias Söll"
-    qr="qrcode_warum_oer.png"
-    blog="/iWIP/widi/did_allg_fach"
+    qr="qrcode.png"
+    blog="/iWIP/widi/widi"
 >}}
 
 ---
@@ -41,7 +41,8 @@ reveal_hugo:
 ## 📚 Gegenstand
 
 - Fokus heute: **Wirtschaftsdidaktik** 💼. <!-- .element: class="fragment" -->
-- Gruppen erarbeiten Themenfelder, **systematisieren** 🧩 und **reflektieren** die Methodik (Vergleich zur letzten Sitzung). <!-- .element: class="fragment" -->
+- Gruppen **erarbeiten** und **systematisieren** Themenfelder 🧩
+- Wir **reflektieren** die Methodik (Vergleich zur letzten Sitzung) <!-- .element: class="fragment" -->
 
 ---
 
@@ -54,48 +55,39 @@ reveal_hugo:
 ## 🎯 Lehrziele
 
 Sie erarbeiten sich einen Überblick über die zentralen Themenfelder der Wirtschaftsdidaktik.  
-Sie lernen, …  
-- **Themenfelder** zu systematisieren und zu beschreiben, <!-- .element: class="fragment" -->
-- in **Gruppen** Ergebnisse zu erarbeiten, <!-- .element: class="fragment" -->
-- **Vor- & Nachteile** methodischer Erarbeitungs- und Darstellungsformen zu reflektieren. <!-- .element: class="fragment" -->
+<br>&nbsp;
+Sie lernen, …
+- 🧩 **Themenfelder** zu systematisieren und zu beschreiben, <!-- .element: class="fragment" -->
+- 👥 in **Gruppen** Ergebnisse zu erarbeiten, <!-- .element: class="fragment" -->
+- 🪞 **Vor- & Nachteile** methodischer Erarbeitungs- und Darstellungsformen zu reflektieren. <!-- .element: class="fragment" -->
 
 ---
 
 ## 🧭 Ablauf (90 Min)
 
-<div style="font-size:1.2rem">
-
-| Phase | Inhalt | Ziel | Zeit |
-|:------|:------|:-----|:---:|
-| **1️⃣ Einstieg 🤔** | Rückblick & Einführung in die Fragestellung | Vorwissen aktivieren, Leitfrage klären, Motivation schaffen | ⏱️ 10 |
-| **2️⃣ Erarbeitung 🧩** | Vier Gruppen analysieren je **eine Quelle** (<a href="https://doi.org/10.25593/978-3-96147-267-3" target="_blank" rel="noopener noreferrer">Arndt, 2020</a>; <a href="https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung" target="_blank" rel="noopener noreferrer">Brahm et al., o. J.</a>; <a href="https://elibrary.utb.de/doi/epdf/10.36198/9783838541648" target="_blank" rel="noopener noreferrer">Euler & Hahn, 2014</a>; <a href="https://doi.org/10.25656/01:24386" target="_blank" rel="noopener noreferrer">Wilbers, 2022</a>) | Themen identifizieren, Darstellungsform wählen, Methode reflektieren | ⏱️ 45 |
-| **3️⃣ Präsentation 💬** | Kurzvorstellung & gemeinsame Reflexion | Perspektiven vergleichen, Themen systematisieren, Erkenntnisse sichern | ⏱️ 35 |
-
-</div>
+1️⃣ Einstieg &amp; Einführung 🚀 (10’)  
+2️⃣ Erarbeitung in Gruppen 🧩 (45’)  
+3️⃣ Präsentation &amp; Reflexion 💬 (35’)
 
 ---
 
 ## 🧠 Arbeitsauftrag (Gruppen)
 
-1. Bilden Sie **vier Gruppen** (je zwei Tische zusammenstellen).  
-2. **Lesen** Sie die zugewiesene Quelle:  
-   - <a href="https://doi.org/10.25593/978-3-96147-267-3" target="_blank" rel="noopener noreferrer">Arndt (2020)</a>, S. 47–53  
-   - <a href="https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung" target="_blank" rel="noopener noreferrer">Brahm et al. (o. J.)</a>, sämtliche Themenfelder  
-   - <a href="https://elibrary.utb.de/doi/epdf/10.36198/9783838541648" target="_blank" rel="noopener noreferrer">Euler & Hahn (2014)</a>, S. 77–87 & 89–91  
-   - <a href="https://doi.org/10.25656/01:24386" target="_blank" rel="noopener noreferrer">Wilbers (2022)</a>, S. 1–22  
-3. **Arbeiten Sie heraus**, mit welchen **Themen** sich die Wirtschaftsdidaktik beschäftigt.  
-4. **Ergänzen** Sie ggf. fehlende Themen.  
-5. **Dokumentation** (frei wählbar): Dokument/Präsentation/Board/Pad/analoge Grafik (digitalisiert).  
-6. **Kurzvorstellung** vorbereiten (max. 5 Min).  
+1. Bilden Sie **vier Gruppen** 👥 (je zwei Tische zusammenstellen).  
+2. **Lesen** Sie die zugewiesene Quelle 📖 (siehe Blogbeitrag): Arndt (2020), Brahm et al. (o. J.), Euler & Hahn (2014) und Wilbers (2022)  
+3. **Arbeiten Sie heraus**, mit welchen **Themen** sich die Wirtschaftsdidaktik beschäftigt 💭.  
+4. **Ergänzen** Sie ggf. fehlende Themen ➕.  
+5. **Dokumentation** 🧾 (frei wählbar): z. B. Dokument, Präsentation, Board, Pad, analoge Grafik (digitalisiert).  
+6. **Kurzvorstellung** 🎤 vorbereiten (max. 5 Min).
 
 ---
 
-## 📘 Kennzeichen der Fachdidaktiken *(Wiederholung)*
+## 📘 Kennzeichen der Fachdidaktiken 🔄
 
 - Entstehung **fachspezifisch** (z. B. Wirtschaftsdidaktik um 1900). <!-- .element: class="fragment" -->
 - Bezugspunkt: **Fächer / Berufsfelder**. <!-- .element: class="fragment" -->
 - Funktion: Anwendung allgemeiner didaktischer Prinzipien auf **fachliche Inhalte**. <!-- .element: class="fragment" -->
-<small>Siehe auch <a href="https://doi.org/10.1007/978-3-531-18984-0" target="_blank" rel="noopener noreferrer">Arnold & Roßa (2012)</a>; <a href="https://ebookcentral.proquest.com/lib/ubrostock-ebooks/detail.action?docID=2080721" target="_blank" rel="noopener noreferrer">Jank & Meyer (2014)</a>.</small>
+(siehe [Blogbeitrag *Allgemeine Didaktik & Fachdidaktik*](/iWIP/widi/did_allg_fach/))
 
 ---
 

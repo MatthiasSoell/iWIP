@@ -205,13 +205,13 @@ Wir haben unser Seminar im klassichen Setup mit Tischreihen begonnen:
 
 **Seminarraum mit Tischreihen:**  
 ![Klassisches Setup des Seminarraums](klassisches_setup.jpeg) 
-*Quelle: Matthias Söll · Lizenz: Die Rechte liegen bei den abgebildeten Personen.*
+<p style="text-align:center; font-size:0.85rem;"><em><strong>Foto:</strong> Matthias Söll · <strong>Keine freie Lizenz</strong> (Rechte bei den abgebildeten Personen)</em></p>
 
 Im Zuge der Vorbereitung der Vorstellungsrunde haben wir auf einen Stuhlkreis umgebaut:  
 
 **Seminarraum mit Stuhlkreis:**  
 ![Stuhlkreis](stuhlkreis.jpeg)
-*Quelle: Matthias Söll · Lizenz: Die Rechte liegen bei den abgebildeten Personen.*  
+<p style="text-align:center; font-size:0.85rem;"><em><strong>Foto:</strong> Matthias Söll · <strong>Keine freie Lizenz</strong> (Rechte bei den abgebildeten Personen)</em></p>
 
 Wir stellten fest, dass die Sitzordnung in **Tischreihen** zunächst vertraut und strukturiert wirkt, zugleich jedoch **mehr Ablenkung** durch Laptops oder Smartphones ermöglicht. Im **Stuhlkreis** hingegen waren alle Teilnehmenden unmittelbarer präsent, der Blickkontakt intensiver und die **Aufmerksamkeit stärker aufeinander gerichtet**. Die Atmosphäre wirkte offener und dialogischer. Wäre die gleiche Übung an Tischen durchgeführt worden, hätten sich vermutlich schnell **Gruppenstrukturen oder Barrieren** ergeben. Didaktisch lässt sich die Methode als Versuch verstehen, **Lernräume aktiv zu gestalten** und die **soziale Interaktion** bewusst in den Mittelpunkt zu stellen. Häufig genannte Begriffe waren dabei *Inhalte aufbereiten*, *Lehren*, *Methoden* oder *Medien*. 💬  
 </details>
