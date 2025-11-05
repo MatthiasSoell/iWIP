@@ -1,5 +1,5 @@
 ---
-title: "Warum OER?"
+title: "Frei nutzbare Lehr-Lern-Materialien – OER"
 outputs:
   - Reveal
 ---
@@ -12,7 +12,7 @@ outputs:
     veranstaltungstyp=""
     veranstaltung=""
     author="Prof. Dr. Matthias Söll"
-    qr="qrcode_warum_oer.png"
+    qr="prcode.png"
     blog="/iWIP/oer/warum_oer"
 >}}
 
