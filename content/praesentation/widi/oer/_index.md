@@ -7,12 +7,12 @@ outputs:
 {{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
 
 {{< titleSlide
-    title="Warum OER?"
+    title="Frei nutzbare Lehr-Lern-Materialien – OER"
     emojis="🎓 🌍 🔓"
     veranstaltungstyp=""
     veranstaltung=""
     author="Prof. Dr. Matthias Söll"
-    qr="prcode.png"
+    qr="qrcode.png"
     blog="/iWIP/oer/warum_oer"
 >}}
 
