@@ -45,16 +45,31 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+.anreiz-box,
 .hinweis-box {
-  font-size: 1.9rem;
-  background: #fffbe6;
-  border-left: 6px solid #ffb300;
-  padding: 1rem;
+  padding: 1rem 1.4rem;
+  border-left: 6px solid;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   margin: 2rem auto;
   width: fit-content;
-  max-width: 90%;
+  max-width: 100%;
+  line-height: 1.35;
+  font-size: 0.8em;
+}
+
+/* Blautöne – neutrale Info */
+.anreiz-box {
+  background: #e8eff7;
+  border-color: #014a99;
+  font-style: normal;
+}
+
+/* Gelbtöne – Hinweis / Akzent */
+.hinweis-box {
+  background: #fffbe6;
+  border-color: #ffb300;
+  font-style: italic;
 }
 
 .zitat-box {
@@ -89,18 +104,48 @@
 
 .top-toggle button {
   font-size: 1.1rem;
-  background: #f1f1f1;
-  border: none;
-  padding: 0.35rem 0.6rem;
-  border-radius: 0.5rem;
+  background: rgba(214, 225, 241, 0.55); /* leicht transparenter iWIP-Ton – wie im Blog */
+  -webkit-backdrop-filter: blur(10px) saturate(150%);
+  backdrop-filter: blur(10px) saturate(150%);
+  color: #111;
+  border: 1px solid rgba(1, 74, 153, 0.2);
+  border-radius: 0.8rem;
+  padding: 0.4rem 0.6rem;
   cursor: pointer;
-  transition: background 0.2s ease;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
+  box-shadow:
+    inset 0 0 1px rgba(255, 255, 255, 0.4),
+    0 0 6px rgba(0, 0, 0, 0.10),
+    inset 0 0 10px rgba(0, 159, 227, 0.22); /* Halo – wie im Blog */
 }
-.top-toggle button:hover { background: #ddd; }
 
-body.dark .top-toggle button { background: #444; color: #eee; }
-body.dark .top-toggle button:hover { background: #666; }
+.top-toggle button:hover {
+  background: rgba(200, 215, 235, 0.7);
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 0 1px rgba(255, 255, 255, 0.5),
+    0 4px 10px rgba(1, 74, 153, 0.25),
+    0 0 0 1px rgba(1, 74, 153, 0.15);
+}
+
+body.dark .top-toggle button,
+.reveal section.has-dark-background .top-toggle button {
+  background: rgba(45, 50, 60, 0.4);
+  -webkit-backdrop-filter: blur(10px) saturate(130%);
+  backdrop-filter: blur(10px) saturate(130%);
+  color: #eee;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    inset 0 0 1px rgba(255, 255, 255, 0.25),
+    0 3px 6px rgba(0, 0, 0, 0.4);
+}
+body.dark .top-toggle button:hover,
+.reveal section.has-dark-background .top-toggle button:hover {
+  background: rgba(70, 75, 85, 0.55);
+  box-shadow:
+    inset 0 0 1px rgba(255, 255, 255, 0.35),
+    0 4px 10px rgba(1, 74, 153, 0.25);
+}
 
 /* -----------------------------------------------------------
    4. Textgrößen & Responsive Verhalten
@@ -328,16 +373,50 @@ body.dark .top-toggle button:hover { background: #666; }
   margin-bottom:1rem;
 }
 .reveal .buttons{display:flex; gap:.5rem;}
+
+/* >>> Vereinheitlichte Buttons auf Blog-Look <<< */
 .reveal .buttons button{
-  font-size:1.05rem;
-  background:#f6f8fa;
-  border:0;
-  border-radius:.8rem;
-  padding:.4rem .6rem;
-  box-shadow:0 1px 6px rgba(0,0,0,.14);
-  cursor:pointer;
+  font-size: 1.1rem;
+  background: rgba(214, 225, 241, 0.55);
+  -webkit-backdrop-filter: blur(10px) saturate(150%);
+  backdrop-filter: blur(10px) saturate(150%);
+  color: #111;
+  border: 1px solid rgba(1, 74, 153, 0.2);
+  border-radius: .8rem;
+  padding: .4rem .6rem;
+  cursor: pointer;
+  transition: background .25s ease, box-shadow .25s ease, transform .15s ease;
+  box-shadow:
+    inset 0 0 1px rgba(255,255,255,0.4),
+    0 0 6px rgba(0,0,0,0.10),
+    inset 0 0 10px rgba(0,159,227,0.22);
 }
-.reveal .buttons button:hover{ background:#eef1f5; }
+.reveal .buttons button:hover{
+  background: rgba(200, 215, 235, 0.7);
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 0 1px rgba(255,255,255,0.5),
+    0 4px 10px rgba(1,74,153,0.25),
+    0 0 0 1px rgba(1,74,153,0.15);
+}
+
+/* Dark-Variante für Titel-Buttons */
+.reveal section.has-dark-background .buttons button {
+  background: rgba(45, 50, 60, 0.4);
+  -webkit-backdrop-filter: blur(10px) saturate(130%);
+  backdrop-filter: blur(10px) saturate(130%);
+  color: #eee;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow:
+    inset 0 0 1px rgba(255,255,255,0.25),
+    0 3px 6px rgba(0,0,0,0.4);
+}
+.reveal section.has-dark-background .buttons button:hover {
+  background: rgba(70, 75, 85, 0.55);
+  box-shadow:
+    inset 0 0 1px rgba(255,255,255,0.35),
+    0 4px 10px rgba(1,74,153,0.25);
+}
 
 /* Titelblock */
 .reveal .title-wrap{ text-align:center; margin-top:0; }
@@ -357,13 +436,12 @@ body.dark .top-toggle button:hover { background: #666; }
   border: 0;
   background: linear-gradient(90deg,#1E88E5 0%,#5ED020 50%,#1E88E5 100%);
   border-radius: 999px;
-  /* Enden weich ausblenden */
   -webkit-mask: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
           mask: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
 }
 .reveal .rule-thin::after{
   content:"";
-  position:absolute; inset:-6px 0;          /* weiche „Aura“ */
+  position:absolute; inset:-6px 0;
   background: linear-gradient(90deg,#1E88E5 0%,#5ED020 50%,#1E88E5 100%);
   opacity:.16;
   filter: blur(6px);
@@ -386,7 +464,7 @@ body.dark .top-toggle button:hover { background: #666; }
 }
 /* ==== QR-Code Block – leicht tiefer gesetzt ==== */
 .reveal .qr-card {
-  margin: 1.4rem 0 0;       /* vorher .8rem 0 0 – jetzt 1.2rem */
+  margin: 1.4rem 0 0;
   text-align: center;
 }
 .reveal .qr-card img {
@@ -441,8 +519,8 @@ body.dark .top-toggle button:hover { background: #666; }
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  color: var(--uni-blau);        /* iWIP-Blau */
-  font-size: 1.5rem;             /* kleiner & dezenter */
+  color: var(--uni-blau);
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -457,10 +535,10 @@ body.dark .top-toggle button:hover { background: #666; }
 }
 
 .reveal .contact-line svg {
-  width: 22px;                  /* gleiche Höhe wie Text */
+  width: 22px;
   height: 22px;
   flex-shrink: 0;
-  fill: currentColor;            /* erbt die Schriftfarbe */
+  fill: currentColor;
   opacity: 0.95;
   vertical-align: middle;
   transform: translateY(-1px);

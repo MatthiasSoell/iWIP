@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <div class="top-toggle">
-  <button onclick="triggerPrint()" title="Präsentation speichern">💾</button>
+  <button onclick="triggerPrint()" title="Präsentation speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/warum_oer'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
 
