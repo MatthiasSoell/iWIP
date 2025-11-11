@@ -86,9 +86,9 @@ OER steigern die **Effizienz** in Lehr-Lern-Prozessen:
 Neben Effizienzgewinnen kann OER die **Qualität** von Lehr-Lern-Arrangements erhöhen.  
 Durch kooperative Entwicklung und kollegiale Begutachtung entstehen Materialien, die didaktisch reifer, aktueller und vielfältiger sind.
 
-<img class="responsive-image" src="OER_qualitaet.png" alt="Kooperative Entwicklung von OER">
+<img class="responsive-image" src="/iWIP/praesentation/warum_oer/OER_qualitaet.png" alt="Kooperative Entwicklung von OER">
 
-<p class="bild-quelle">Bildquelle: erstellt mit ChatGPT</p>
+<p class="bild-quelle"><i>Bildquelle: erstellt mit ChatGPT · Lizenz: CC BY 4.0</i></p>
 
 Offene Zusammenarbeit führt so zu reflektierteren, anschlussfähigeren und lernförderlicheren Ergebnissen — und stärkt eine Kultur des Teilens, die weit über das einzelne Unterrichtsmaterial hinausgeht.
 

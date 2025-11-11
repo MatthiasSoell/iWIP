@@ -27,9 +27,24 @@ reveal_hugo:
 
 💬 Warum möchten wir über<br><b>standort-</b> und <b>zielgruppenspezifische Anreize</b><br>diskutieren? 🎯
 
-<div style="text-align:center;">
-  <img src="avatare_silvia_nancy_matthias.png" alt="Avatare Silvia, Nancy und Matthias" style="max-width:35%; height:auto;">
-</div>
+<style>
+.bildquelle {
+  text-align:center !important;
+  font-style:italic !important;
+  font-size:0.9rem !important; /* oder .9rem, je nach Wunsch */
+  margin-top:0.4rem !important;
+  color:#333;
+}
+</style>
+
+<figure style="text-align:center; margin:1.2rem auto;">
+  <img src="/iWIP/praesentation/oer/anreize/avatare_silvia_nancy_matthias.png"
+       alt="Co-WOERK AP 4 Team"
+       style="max-width:420px; width:80%; height:auto; display:block; margin:0 auto;">
+</figure>
+<p class="bildquelle">
+  Bildquelle: erstellt mit ChatGPT · Keine freie Lizenz (Rechte bei den dargestellten Personen)
+</p>
 
 ---
 

@@ -20,11 +20,26 @@ Das Co-WOERK Team hat sich in Frankfurt (Oder) getroffen. Wir starten mit der Fr
 
 Kurz: OER-Nutzung ist **kein** On/Off-Schalter. Sie entsteht **prozesshaft** – und braucht je nach **Phase** andere Impulse.
 
-<div style="text-align:center; margin:1rem 0;">
-  <img src="/iWIP/praesentation/oer/anreize/avatare_silvia_nancy_matthias.png" 
-       alt="AP 4 Co-WOERK Team" 
-       style="max-width:380px; width:80%; height:auto; display:inline-block;">
-</div>
+
+
+<style>
+.bildquelle {
+  text-align:center !important;
+  font-style:italic !important;
+  font-size:0.9rem !important; /* oder .9rem, je nach Wunsch */
+  margin-top:0.4rem !important;
+  color:#333;
+}
+</style>
+
+<figure style="text-align:center; margin:1.2rem auto;">
+  <img src="/iWIP/praesentation/oer/anreize/avatare_silvia_nancy_matthias.png"
+       alt="Co-WOERK AP 4 Team"
+       style="max-width:320px; width:80%; height:auto; display:block; margin:0 auto;">
+</figure>
+<p class="bildquelle">
+  Bildquelle: erstellt mit ChatGPT · Keine freie Lizenz (Rechte bei den dargestellten Personen)
+</p>
 
 ---
 
