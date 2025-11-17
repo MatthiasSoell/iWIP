@@ -29,21 +29,21 @@ theme = ["github.com/adityatelange/hugo-PaperMod", "github.com/joshed-io/reveal-
 [menu]
 
   [[menu.main]]
-    identifier = "oer"
+    identifier = "blog/oer"
     name = "OER"
-    url = "/oer/"
+    pageRef = "blog/oer"
     weight = 10
 
   [[menu.main]]
-    identifier = "widi"
+    identifier = "blog/widi/"
     name = "WiDi"
-    url = "/widi/"
+    pageRef = "blog/widi/"
     weight = 20
 
   [[menu.main]]
-    identifier = "doku"
+    identifier = "blog/doku"
     name = "Doku"
-    url = "/doku/"
+    pageRef = "blog/doku/"
     weight = 30
 
 [outputs]

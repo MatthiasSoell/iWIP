@@ -1,6 +1,6 @@
 ---
 title: "Frei nutzbare Lehr-Lern-Materialien – OER"
-date: 2025-07-24
+date: 2025-11-05T21:14:00+02:00
 draft: false
 description: |
   Open Educational Resources (OER) sind frei zugängliche und offen lizenzierte Bildungsmaterialien, 

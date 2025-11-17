@@ -1,6 +1,6 @@
 ---
 title: "Wirtschaftsdidaktik"
-date: 2025-10-20T21:14:00+02:00
+date: 2025-10-29T21:14:00+02:00
 draft: false
 description: "Aufbauend auf Ihrem Verständnis von Allgemeiner Didaktik elaborieren wir Ihr Verständnis von Wirtschaftsdidaktik."
 summary: "Aufbauend auf Ihrem Verständnis von Allgemeiner Didaktik elaborieren wir Ihr Verständnis von Wirtschaftsdidaktik."
