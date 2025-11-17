@@ -21,7 +21,7 @@ reveal_hugo:
     veranstaltung="Grundlagen Fachdidaktik Wirtschaft"
     author="Prof. Dr. Matthias Söll"
     qr="qrcode.png"
-    blog="/iWIP/widi/did_allg_fach"
+    blog="/iWIP/blog/widi/did_allg_fach"
 >}}
 
 ---

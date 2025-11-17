@@ -17,7 +17,7 @@ reveal_hugo:
     veranstaltung=""
     author="Silvia Retzlaff, Nancy Walter & Matthias Söll"
     qr="qrcode.png"
-    blog="/iWIP/oer/anreize"
+    blog="/iWIP/blog/oer/anreize"
 >}}
 
 
