@@ -1,3 +1,13 @@
 {
-    "chatgpt.openOnStartup": true
+    "chatgpt.openOnStartup": true,
+    "favorites.resources": [
+        {
+            "filePath": "content/blog",
+            "group": "Default"
+        },
+        {
+            "filePath": "content/praesentation",
+            "group": "Default"
+        }
+    ]
 }
