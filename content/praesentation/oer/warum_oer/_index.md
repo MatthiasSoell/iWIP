@@ -12,7 +12,7 @@ outputs:
     veranstaltungstyp=""
     veranstaltung=""
     author="Prof. Dr. Matthias Söll"
-    qr="qrcode_warum_oer.png"
+    qr="qrcode.png"
     blog="/iWIP/blog/oer/warum_oer"
 >}}
 
