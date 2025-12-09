@@ -1,7 +1,7 @@
 ---
 title: "Test"
 date: 2025-10-22T21:14:00+02:00
-draft: false
+draft: true
 description: "In dieser Lehr-Lern-Einheit entwickeln wir Ihr Verständnis von Didakitk weiter."
 summary: "In dieser Lehr-Lern-Einheit entwickeln wir Ihr Verständnis von Didakitk weiter."
 tags: ["Didaktik", "Allgemeine Didaktik", "Fachdidaktik", "Didaktische Modelle"]

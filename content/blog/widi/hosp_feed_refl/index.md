@@ -1,7 +1,7 @@
 ---
 title: "Hospitation, Feedback & Reflexion"
 date: 2025-11-26T21:14:00+02:00
-draft: false
+draft: true
 description: |
   In dieser Lehr-Lern-Einheit entwickeln Sie Ihr Verständnis von Didaktik weiter: Anhand von Hospitation, Feedback und 🪞 Reflexion wird die eigene Professionalisierung als Lehrperson in den Blick genommen.
 summary: |
