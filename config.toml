@@ -9,7 +9,7 @@ theme = ["github.com/adityatelange/hugo-PaperMod", "github.com/joshed-io/reveal-
   ShowReadingTime = true
   ShowThemeToggle = true
   ShowRecentPosts = false
-  mainSections = ["posts"]
+  mainSections = ["blog", "posts"]
   images = ["/iWIP/bilder/logo_siblog_iwip_socmed.png"]
   description = "Ich bin Prof. Dr. Matthias Söll vom Institut für Wirtschaftspädagogik (iWIP) der Universität Rostock und blogge mit Open Educational Resources über Wissenschaft und Bildung."
 
@@ -18,7 +18,6 @@ theme = ["github.com/adityatelange/hugo-PaperMod", "github.com/joshed-io/reveal-
     text = ""  # optional: "" blendet den Titel aus, oder "SciBlog iWIP" lässt ihn stehen
 
 [params.assets]
-  customCSS = ["css/custom.css"]
   favicon = "/iWIP/favicon.ico"
 
 [markup]

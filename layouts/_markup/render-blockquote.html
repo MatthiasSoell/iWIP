@@ -1,0 +1,7 @@
+{{ if eq .Type "alert" }}
+  <blockquote class="my-callout alert-{{ .AlertType }}">
+    {{ .Text }}
+  </blockquote>
+{{ else }}
+  <blockquote>{{ .Text }}</blockquote>
+{{ end }}

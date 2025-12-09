@@ -1,3 +1,5 @@
+@import "design_tokens.css";
+
 /* === Uni-Farbe: RGB(1, 74, 153) === */
 :root {
   --uni-blau: rgb(1, 74, 153);
@@ -76,8 +78,8 @@ body.presentation-view footer {
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .top-toggle button {
@@ -211,3 +213,169 @@ main.main {
     padding-bottom: 0.3rem !important;
   }
 }
+
+.reveal .k3-diagram {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+}
+
+/* Titel oben über die ganze Breite */
+.reveal .k3-title {
+  grid-column: 1 / 3;
+  background: #d0d6db;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Bubbles unten */
+.reveal .k3-bubbles {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+.reveal .k3-bubbles .bubble {
+  background: #9ea7ad;
+  color: #000;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  min-width: 8rem;
+  text-align: center;
+}
+
+/* mittlere Schritte (linke Spalte) */
+.reveal .k3-steps {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+}
+.reveal .k3-step {
+  border: 2px solid #555;
+  padding: 0.6rem 0.8rem;
+  text-align: center;
+  background: #fff;
+}
+
+/* rechte Kästen */
+.reveal .k3-side {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+}
+.reveal .k3-step.side {
+  /* optional: gleiche Optik */
+}
+
+/* Reflexion oben mittig */
+.reveal .k3-reflect {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #555;
+  background: #fff;
+  padding: 0.4rem 0.8rem;
+}
+
+/* ------------------------------------------
+   Literatur-Badges: UB Rostock / WorldCat / DOI
+   ------------------------------------------ */
+
+/* Link selbst: Text unsichtbar UND ohne Breite */
+a[href^="https://opac.lbs-rostock.gbv.de"],
+a[href^="https://search.worldcat.org/de"],
+a[href^="https://doi.org/"] {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: transparent;   /* Text unsichtbar */
+  font-size: 0;         /* Text nimmt keinen Platz mehr ein */
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+/* Badge-Design (sichtbarer Teil) */
+a[href^="https://opac.lbs-rostock.gbv.de"]::before,
+a[href^="https://search.worldcat.org/de"]::before,
+a[href^="https://doi.org/"]::before {
+  display: inline-block;
+  padding: 0.18em 0.55em;
+  border-radius: 0.4em;
+  font-size: 0.78rem;   /* sichtbare Schriftgröße */
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+/* UB Rostock – offizielles Uni-Blau */
+a[href^="https://opac.lbs-rostock.gbv.de"]::before {
+  content: "UB Rostock";
+  background-color: #003B70;
+}
+
+/* WorldCat – abgestuftes Blau */
+a[href^="https://search.worldcat.org/de"]::before {
+  content: "WorldCat";
+  background-color: #145DA0;
+}
+
+/* DOI – neutrale Blaustufe */
+a[href^="https://doi.org/"]::before {
+  content: "DOI";
+  background-color: #5F7F9E;
+}
+
+/* ------------------------------------------
+   Agenda
+   ------------------------------------------ */
+
+.agenda table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  font-size:0.98rem;
+  line-height:1.45;
+}
+.agenda thead th{
+  background:#f8fafc;
+  text-align:left;
+  font-weight:700;
+  padding:.65em .85em;
+  border-bottom:2px solid #e5e7eb;
+}
+.agenda tbody td{
+  padding:.8em .85em;
+  vertical-align:middle;
+  border-bottom:1px solid #eef2f7;
+}
+.agenda tbody tr:hover td{
+  background:#f9fbff;
+}
+.agenda tbody td:nth-child(1){ width:22%; font-weight:700; }
+.agenda tbody td:nth-child(4){ width:12%; text-align:center; }
+.timecell{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.35em;
+  white-space:nowrap;
+}
+.timecell .time{
+  font-variant-numeric: tabular-nums;
+  font-weight:600;
+}
+.agenda td p{ margin:.2em 0; }
+.agenda tbody td:nth-child(1){ font-size:1.02rem; }

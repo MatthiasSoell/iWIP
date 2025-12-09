@@ -32,3 +32,20 @@
     <a href="/iWIP/hinweise">sofern nicht anders angegeben</a>.
   </div>
 </div>
+
+<script>
+  // Öffnet UB-, WorldCat- und DOI-Links in neuem Tab
+  document.addEventListener("DOMContentLoaded", function () {
+    document
+      .querySelectorAll(
+        'a[href*="opac.lbs-rostock.gbv.de"], a[href*="search.worldcat.org"], a[href*="doi.org"]'
+      )
+      .forEach(function (link) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      });
+  });
+</script>
+
+<!-- Globale Druck- und Preview-Funktionen -->
+<script src="{{ "/iWIP/js/print-save-toggle.js" | relURL }}"></script>

@@ -14,7 +14,6 @@ summary: |
   und werden seit 2016 durch nationale Förderprogramme in Deutschland gestärkt.
 tags: ["OER", "Lehrmaterial", "Wissenschaft"]
 categories: ["OER"]
-weight: 10
 ---
 
 <script>

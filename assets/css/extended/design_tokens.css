@@ -1,0 +1,58 @@
+/* ===========================================================
+   SciBlog iWIP – Design Tokens (Farben & Basis-Stile)
+   Nur: Farben, Radien, Schatten, Abstände – keine Schriftgrößen
+   =========================================================== */
+
+/* Primär- & Akzentfarben – basierend auf deinem bisherigen Setup */
+:root {
+  /* Primärmarke */
+  --uni-blau: #014A99;                 /* rgb(1, 74, 153) */
+
+  /* Varianten & Verläufe */
+  --uni-blau-strong: #1E4D92;          /* etwas dunkler, z. B. für Trenner */
+  --accent-green: #5ED020;             /* Gradient-Partner */
+  --accent-turquoise: #00796b;
+
+  /* Pastell-Hintergründe (Info / Zitat / Anreiz) */
+  --bg-info-soft: #d7e1f1;             /* Blockquotes / Info */
+  --bg-info-soft-strong: #e8eff7;      /* Anreiz-Box, helle Info */
+  --bg-quote-soft: #e0f2f1;            /* Zitatbox-Hintergrund */
+
+  /* Tipp- & Warn-Boxen */
+  --bg-tip: #fffbdd;
+  --border-tip: #f0c000;
+  --bg-warning: #ffe6e6;
+  --border-warning: #d9534f;
+
+  /* Text & Neutral */
+  --text-main: #222222;
+  --text-muted: #6b6b6b;
+  --text-quote: #555555;
+
+  /* Glas-/Button-Look (Blog & Reveal-Buttons) */
+  --btn-glass-bg: rgba(214, 225, 241, 0.55);
+  --btn-glass-border: rgba(1, 74, 153, 0.2);
+  --btn-glass-halo: rgba(0, 159, 227, 0.22);
+
+  /* Zitat-Hintergrund im Blog */
+  --bg-quote-highlight: rgba(1, 74, 153, 0.2);
+
+  /* Radien & Schatten für Boxen */
+  --radius-soft: 0.5rem;
+  --radius-pill: 999px;
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  /* Abstände (kannst du bei Bedarf nutzen) */
+  --space-xs: 0.4rem;
+  --space-s: 0.8rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2rem;
+}
+
+/* Optional: Dark-Mode-leichte Anpassungen – nur Farben, kein Layout */
+[data-theme="dark"] {
+  --text-main: #e0e0e0;
+  --text-muted: #bbbbbb;
+  --bg-quote-highlight: rgba(1, 74, 153, 0.35);
+}

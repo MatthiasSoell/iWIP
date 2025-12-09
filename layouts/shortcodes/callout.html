@@ -1,0 +1,18 @@
+{{/* ============================================================
+     SciBlog iWIP – Callout Shortcode (Blog & Reveal kompatibel)
+     Typen: tip | warning | info | note (optional Erweiterung)
+     Nutzung: {{< callout type="tip" >}}…{{< /callout >}}
+   ============================================================ */}}
+
+{{ $type := .Get "type" | default "note" }}
+{{ $allowed := slice "tip" "warning" "info" "note" }}
+
+{{ if not (in $allowed $type) }}
+  {{ errorf "Ungültiger callout type '%s'. Erlaubt: tip, warning, info, note." $type }}
+{{ end }}
+
+<div class="callout callout--{{ $type }}">
+  <div class="callout-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

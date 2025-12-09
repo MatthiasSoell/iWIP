@@ -1,17 +1,5 @@
 <!-- layouts/shortcodes/titleSlide.html -->
 
-<script>
-  if (!window.__iwipPrintHook) {
-    window.__iwipPrintHook = true;
-    document.addEventListener("DOMContentLoaded", () => {
-      if (window.location.search.includes("print-pdf")) {
-        Reveal.addEventListener("ready", () => setTimeout(() => window.print(), 300));
-      }
-    });
-  }
-  function triggerPrint(){ window.print(); }
-</script>
-
 {{/* prüfen, ob Veranstaltungstyp oder Veranstaltung angegeben ist */}}
 {{- $hasType := .Get "veranstaltungstyp" -}}
 {{- $hasTitle := .Get "veranstaltung" -}}

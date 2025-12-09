@@ -8,26 +8,8 @@ tags: ["Didaktik", "Fachdidaktik", "Wirtschaftsdidaktik", "Ökonomische Bildung"
 categories: ["Didaktik"]
 ---
 
-<script>
-  function triggerPrint() {
-    window.print();
-  }
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.location.search.includes("print-pdf")) {
-    Reveal.addEventListener("ready", function () {
-      setTimeout(() => {
-        window.print();
-      }, 300);
-    });
-  }
-});
-</script>
-
 <div class="top-toggle">
-  <button onclick="triggerPrint()" title="Präsentation speichern">📥</button>
+  <button onclick="triggerPrint()" title="Blog speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/widi/widi/'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
 

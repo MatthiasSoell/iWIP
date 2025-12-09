@@ -5,6 +5,24 @@
 
 @import url("https://unpkg.com/reveal.js@5.2.1/dist/theme/white.css");
 
+/* === Design Tokens (Reveal) – minimaler Satz, passend zum Blog === */
+:root {
+  --uni-blau: #014A99;
+  --accent-turquoise: #00796b;
+
+  /* Callouts */
+  --bg-tip: #fffbdd;
+  --border-tip: #f0c000;
+  --bg-warning: #ffe6e6;
+  --border-warning: #d9534f;
+  --bg-info-soft: #d7e1f1;
+  --bg-quote-soft: #e0f2f1;
+
+  /* Utility */
+  --radius-soft: 0.5rem;
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
 /* -----------------------------------------------------------
    1. Grundfarben & Schrift
    ----------------------------------------------------------- */
@@ -85,7 +103,7 @@
 
 .zitat-quelle, .bild-quelle {
   text-align: right;
-  font-size: 1.3rem !important;
+  font-size: 1rem !important;
   color: #555;
   margin-top: 0.5rem;
 }
@@ -552,4 +570,197 @@ body.dark .top-toggle button:hover,
     width: 20px;
     height: 20px;
   }
+}
+
+/* ===========================================================
+   Callout – Reveal-Version (für Präsentationen)
+   =========================================================== */
+
+.reveal .callout {
+  border-radius: var(--radius-soft);
+  padding: 1.2rem 1.6rem;
+  margin: 2rem auto;
+  width: 90%;
+  box-shadow: var(--shadow-soft);
+  border-left: 0.45rem solid transparent;
+  font-size: 0.9em;
+}
+
+/* TIP */
+.reveal .callout--tip {
+  background: var(--bg-tip, #fffbdd);
+  border-color: var(--border-tip, #f0c000);
+}
+
+/* WARNING */
+.reveal .callout--warning {
+  background: var(--bg-warning, #ffe6e6);
+  border-color: var(--border-warning, #d9534f);
+}
+
+/* INFO */
+.reveal .callout--info {
+  background: var(--bg-info-soft, #d7e1f1);
+  border-color: var(--uni-blau, #014A99);
+}
+
+/* NOTE */
+.reveal .callout--note {
+  background: var(--bg-quote-soft, #e0f2f1);
+  border-color: var(--accent-turquoise, #00796b);
+}
+
+.reveal .callout-content p {
+  margin: 0 0 1rem;
+}
+.reveal .callout-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
+   K3-Step Box – einfache Variante
+   ============================================ */
+.reveal .k3-step {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  border: 2px solid #555;
+  border-radius: 0.4rem;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin: 1rem 0;
+}
+
+/* ===========================================================
+   K3-Diagramm – Hospitation, Feedback & Reflexion
+   =========================================================== */
+
+.reveal .k3-diagram {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto 1fr auto;
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+  align-items: center;
+}
+
+/* Titel-Leiste oben */
+.reveal .k3-title {
+  grid-column: 1 / 3;
+  background: #d0d6db;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.35rem;
+  border: 2px solid #8b9398;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Untere Bubbles */
+.reveal .k3-bubbles {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  align-self: end;
+}
+
+.reveal .k3-bubble {
+  background: #9ea7ad;
+  color: #000;
+  padding: 0.4rem 1.2rem;
+  border-radius: 999px;
+  min-width: 9rem;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* Mittlere Schritte (linke Spalte) */
+.reveal .k3-steps {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.6rem;
+  justify-self: center;
+}
+
+.reveal .k3-step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.4rem;
+  border: 2px solid #555;
+  border-radius: var(--radius-soft, 0.4rem);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft, 0 2px 6px rgba(0,0,0,0.08));
+  text-align: center;
+}
+
+/* Pfeile zwischen den Kästen */
+.reveal .k3-arrow {
+  height: 1.8rem;
+  position: relative;
+}
+
+.reveal .k3-arrow::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 0.7rem solid transparent;
+  border-right: 0.7rem solid transparent;
+  border-top: 1.1rem solid #a0a0a0;
+}
+
+/* Rechte Kästen: Hospitieren / Feedbacken */
+.reveal .k3-side {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-self: start;
+}
+
+.reveal .k3-step.side {
+  min-width: 11rem;
+}
+
+/* Reflexions-Box oben mittig */
+.reveal .k3-reflect {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #555;
+  border-radius: var(--radius-soft, 0.4rem);
+  background: #ffffff;
+  padding: 0.5rem 1.4rem;
+  box-shadow: var(--shadow-soft, 0 2px 6px rgba(0,0,0,0.08));
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Optional: etwas kleinere Schrift insgesamt */
+.reveal .k3-diagram {
+  font-size: 0.9em;
+}
+
+.prof-diagram {
+  position: relative;
+  width: 100%;
+  height: 480px; /* oder 420, 400, anpassen nach Geschmack */
+  margin-top: -30px;   /* ← Diagramm 60px nach oben schieben */
+}
+
+.reveal .prof-diagram img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -1,0 +1,100 @@
+/* -----------------------------------------------
+   Callout-Styles (Tipp, Warnung) & Blockquote-Layout
+   ----------------------------------------------- */
+
+/* Gemeinsame Eigenschaften für alle individuellen Callouts */
+.my-callout {
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;   /* gleicher Innenabstand oben/unten und seitlich */
+  margin: 1rem 0;         /* gleicher Außenabstand wie bei normalen Zitaten */
+  display: flex;          /* Inhalt vertikal zentrieren */
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Inline-Überschriften und Absätze in Callouts: keine zusätzlichen Margins */
+.my-callout strong {
+  display: inline;
+  margin: 0;
+}
+.my-callout p {
+  margin: 0;
+}
+
+/* blaues Zitat (alert-quote) */
+.my-callout.alert-quote {
+  background-color: bg-info-soft !important;
+  border-left: 0.4rem solid uni-blau-strong !important;
+}
+
+/* Gelber Tipp (alert-tipp) */
+.my-callout.alert-tipp {
+  background-color: #fffbdd !important;        /* gelber Hintergrund */
+  border-left: 0.4rem solid #f0c000 !important; /* gelber Rahmen */
+}
+
+/* Rot Zentrales (alert-important) */
+.my-callout.alert-important {
+  background-color: #ffe6e6 !important;         /* roter Hintergrund */
+  border-left: 0.4rem solid #d9534f !important;  /* roter Rahmen */
+}
+
+/* Standard-Blockquotes – gleiche Abstände wie individuelle Callouts */
+.post-content blockquote {
+  padding: 0.8rem 1rem;    /* identischer Innenabstand oben/unten und seitlich */
+  margin: 1rem 0;          /* identischer Außenabstand */
+  border-radius: 0.5rem;   /* gleiche Rundung wie bei my-callout */
+}
+
+/* Innenabstände der Absätze in Blockquotes neutralisieren */
+.post-content blockquote p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ===========================================================
+   Callout – Blog-Version (PaperMod)
+   nutzt die Design Tokens (farben + radien)
+   =========================================================== */
+
+.callout {
+  border-radius: var(--radius-soft);
+  padding: var(--space-m);
+  margin: var(--space-m) 0;
+  box-shadow: var(--shadow-soft);
+  border-left: 0.4rem solid transparent;
+  background: var(--bg-info-soft-strong);
+  color: var(--text-main);
+}
+
+/* Zitat (blau) */
+.callout--quote {
+  background: var(--bg-info-soft);
+  border-color: var(--uni-blau);
+}
+
+/* TIPP (gelb) */
+.callout--tipp {
+  background: var(--bg-tipp);
+  border-color: var(--border-tipp);
+}
+
+/* WARNING (rot) */
+.callout--important {
+  background: var(--bg-warning);
+  border-color: var(--border-warning);
+}
+
+.callout-content p {
+  margin: 0 0 var(--space-s);
+}
+
+.callout-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Blockquote soll nicht kursiv sein */
+.post-content blockquote,
+.post-content blockquote p {
+  font-style: normal !important;
+}
