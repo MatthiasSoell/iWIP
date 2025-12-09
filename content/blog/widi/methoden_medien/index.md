@@ -12,7 +12,6 @@ categories: ["Methoden", "Medien", "OER", "Wirtschaftsdidaktik"]
 
 <div class="top-toggle">
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
-  <button onclick="location.href='{{< relref "praesentation/widi/widi" >}}'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
 
 # 1️⃣ 🌀 Recap – Rückblick auf die letzte Veranstaltung  

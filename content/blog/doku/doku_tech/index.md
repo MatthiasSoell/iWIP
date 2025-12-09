@@ -8,6 +8,10 @@ tags: ["GitHub", "GitHub Pages", "Hugo", "PaperMod", "reveal-hugo", "OER", "Open
 categories: ["Doku"]
 ---
 
+<div class="top-toggle">
+  <button onclick="triggerPrint()" title="Blog speichern">📥</button>
+</div>
+
 # 📚 Gegenstand  
 
 Im Mittelpunkt dieses Beitrags steht die technische Infrastruktur hinter dem SciBlog iWIP. Ziel ist eine **offene**, **frei verfügbare** und **OER-kompatible Plattform** für Wissenschaftskommunikation und Lehre. Die eingesetzten Tools ermöglichen sowohl **effizientes Publizieren** als auch **kollaboratives Arbeiten** mit Co-Autor:innen.
