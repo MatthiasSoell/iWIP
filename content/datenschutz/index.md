@@ -62,9 +62,11 @@ Beim Aufruf der Website werden durch GitHub **technisch notwendige Daten** verar
 sowie Browsertyp und Betriebssystem), um den sicheren und stabilen Betrieb der Website
 zu gewährleisten.
 
-GitHub verarbeitet diese Daten als **eigener Verantwortlicher**.
-Weitere Informationen zur Datenverarbeitung durch GitHub finden Sie in der Datenschutzerklärung von GitHub:
+GitHub verarbeitet diese Daten als **eigener Verantwortlicher**.  
+Weitere Informationen zur Datenverarbeitung durch GitHub finden Sie in der Datenschutzerklärung von GitHub:  
+<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">
 https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement
+</a>
 
 ---
 
@@ -100,7 +102,10 @@ Dabei wird die datenschutzfreundlichere Einbettungsvariante **youtube-nocookie.c
 
 Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer anschaulichen Darstellung von Lehr-Lern-Inhalten).
 
-Weitere Informationen zur Datenverarbeitung durch YouTube finden Sie unter: https://policies.google.com/privacy
+Weitere Informationen zur Datenverarbeitung durch YouTube finden Sie unter:  
+<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+https://policies.google.com/privacy
+</a>
 
 ---
 
@@ -141,4 +146,6 @@ Der SciBlog iWIP ist **kein zentrales Webangebot der Universität Rostock**, son
 
 Ergänzend gelten die Datenschutzbestimmungen der Universität Rostock. Informationen zur Verarbeitung personenbezogener Daten sowie zu den zuständigen datenschutzrechtlichen Ansprechpartner:innen finden Sie in der Datenschutzerklärung der Universität Rostock:
 
+<a href="https://www.uni-rostock.de/footer/datenschutz/" target="_blank" rel="noopener noreferrer">
 https://www.uni-rostock.de/footer/datenschutz/
+</a>

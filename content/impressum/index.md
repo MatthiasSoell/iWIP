@@ -6,7 +6,7 @@ draft: false
 
 description: >
   Impressum des SciBlog iWIP von Prof. Dr. Matthias Söll mit Angaben
-  gemäß § 5 TMG und § 18 Abs. 2 MStV.
+  gemäß § 5 DDG und § 18 Abs. 2 MStV.
 
 summary: >
   Rechtliche Angaben zum Betreiber des SciBlog iWIP
@@ -17,7 +17,7 @@ tags:
   - Rechtliches
   - Anbieterkennzeichnung
   - MStV
-  - TMG
+  - DDG
 
 categories:
   - Rechtliches
@@ -54,16 +54,10 @@ oer:
 ## Anbieter
 
 Prof. Dr. Matthias Söll *(Blogbetreiber)*  
+
 Universität Rostock  
 Universitätsplatz 1  
 18055 Rostock
-
----
-
-## Vertretung der Universität Rostock
-
-*Vertreterin der Universität:*  
-Prof. Dr. Elizabeth Prommer
 
 ---
 
@@ -74,9 +68,10 @@ E-Mail: matthias.soell@uni-rostock.de
 
 ---
 
-## Umsatzsteuer-Identifikationsnummer
+## Vertretung der Universität Rostock
 
-DE137385436
+*Vertreterin der Universität:*  
+Prof. Dr. Elizabeth Prommer
 
 ---
 
@@ -114,10 +109,8 @@ Dieser Haftungsausschluss ist als Teil des Internetangebotes zu betrachten. Sofe
 
 ## Urheberrecht
 
-Die Inhalte dieser Seite sind im Rahmen meiner hochschulischen Forschung und Lehre entstanden und stehen – sofern nicht anders angegeben – unter der Lizenz  
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Die Inhalte dieser Seite sind im Rahmen meiner hochschulischen Forschung und Lehre entstanden und stehen unter der Lizenz <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>, sofern nicht anders angegeben.
 
 Sie dürfen die Inhalte dieser Seite verwenden, teilen und anpassen, solange Sie den Urheber nennen und Ihre Version unter derselben Lizenz veröffentlichen.
 
-Hinweise zu Ausnahmen finden Sie hier:  
-/iWIP/Hinweise/
+Hinweise zu Ausnahmen finden Sie hier: [Hinweise](/iWIP/Hinweise/)
