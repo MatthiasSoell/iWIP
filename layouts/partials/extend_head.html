@@ -1,0 +1,104 @@
+{{- $oer := .Params.oer -}}
+{{- if and $oer (or (eq $oer.is_oer true) (eq (printf "%v" $oer.is_oer) "true")) -}}
+
+{{- /* --- Creators zu schema.org Person-Liste --- */ -}}
+{{- $creators := slice -}}
+{{- with $oer.creators -}}
+  {{- range . -}}
+    {{- $p := dict "@type" "Person" "name" .name -}}
+    {{- with .given_name }}{{- $p = merge $p (dict "givenName" .) -}}{{- end -}}
+    {{- with .family_name }}{{- $p = merge $p (dict "familyName" .) -}}{{- end -}}
+    {{- with .affiliation }}{{- $p = merge $p (dict "affiliation" (dict "@type" "Organization" "name" .)) -}}{{- end -}}
+    {{- with .url }}{{- $p = merge $p (dict "url" .) -}}{{- end -}}
+
+    {{- /* ORCID optional: als identifier (PropertyValue) */ -}}
+    {{- with .orcid -}}
+      {{- $p = merge $p (dict "identifier" (dict "@type" "PropertyValue" "propertyID" "ORCID" "value" .)) -}}
+    {{- end -}}
+
+    {{- $creators = $creators | append $p -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* --- Publisher --- */ -}}
+{{- $publisher := dict "@type" "Organization" -}}
+{{- with $oer.publisher.name }}{{- $publisher = merge $publisher (dict "name" .) -}}{{- end -}}
+{{- with $oer.publisher.url }}{{- $publisher = merge $publisher (dict "url" .) -}}{{- end -}}
+
+{{- /* --- Keywords/About --- */ -}}
+{{- $keywords := slice -}}
+{{- with .Params.tags -}}
+  {{- range . -}}
+    {{- $keywords = $keywords | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- with $oer.about -}}
+  {{- range . -}}
+    {{- with .term -}}
+      {{- $keywords = $keywords | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* --- Basis: schema.org LearningResource --- */ -}}
+{{- $json := dict
+  "@context" "https://schema.org"
+  "@type" "LearningResource"
+  "name" .Title
+  "url" .Permalink
+-}}
+
+{{- if .Description -}}
+  {{- $json = merge $json (dict "description" (.Description | plainify | chomp)) -}}
+{{- else if .Summary -}}
+  {{- $json = merge $json (dict "description" (.Summary | plainify | chomp)) -}}
+{{- end -}}
+
+{{- with $oer.in_language }}{{- $json = merge $json (dict "inLanguage" .) -}}{{- end -}}
+
+{{- with $oer.license.url }}{{- $json = merge $json (dict "license" .) -}}{{- end -}}
+{{/* {{- with $oer.license.label }}{{- $json = merge $json (dict "copyrightNotice" .) -}}{{- end -}} */}}
+
+{{- if gt (len $creators) 0 -}}
+  {{- $json = merge $json (dict "creator" $creators) -}}
+{{- end -}}
+
+{{- /* FIX: publisher nur setzen, wenn name vorhanden (dict-safe) */ -}}
+{{- with $oer.publisher.name -}}
+  {{- $json = merge $json (dict "publisher" $publisher) -}}
+{{- end -}}
+
+{{- with .Date }}{{- $json = merge $json (dict "datePublished" (.Format "2006-01-02")) -}}{{- end -}}
+{{- with .Lastmod }}{{- $json = merge $json (dict "dateModified" (.Format "2006-01-02")) -}}{{- end -}}
+
+{{- with $oer.time_required }}{{- $json = merge $json (dict "timeRequired" .) -}}{{- end -}}
+{{- with $oer.learning_resource_type }}{{- $json = merge $json (dict "learningResourceType" .) -}}{{- end -}}
+{{- with $oer.educational_level }}{{- $json = merge $json (dict "educationalLevel" .) -}}{{- end -}}
+
+{{- if gt (len $keywords) 0 -}}
+  {{- $json = merge $json (dict "keywords" ($keywords | uniq)) -}}
+{{- end -}}
+
+{{- with $oer.source.url }}{{- $json = merge $json (dict "isBasedOn" .) -}}{{- end -}}
+
+{{- /* --- Rechte-Ausnahmen (optional, aber hilfreich) --- */ -}}
+{{- with $oer.rights_exceptions -}}
+  {{- $parts := slice -}}
+  {{- range . -}}
+    {{- $parts = $parts | append (dict
+      "@type" "CreativeWork"
+      "name" .item
+      "url" (.path | absURL)
+      "description" .note
+    ) -}}
+  {{- end -}}
+  {{- if gt (len $parts) 0 -}}
+    {{- $json = merge $json (dict "hasPart" $parts) -}}
+  {{- end -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{{ $json | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+
+{{- end -}}
