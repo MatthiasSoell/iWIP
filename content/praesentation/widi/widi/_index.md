@@ -1,18 +1,91 @@
 ---
 title: "Wirtschaftsdidaktik"
-date: 2025-10-29T21:14:00+02:00
+date: 2025-10-29
+lastmod: 2025-10-29
 draft: false
-description: "Aufbauend auf Ihrem Verständnis von Allgemeiner Didaktik elaborieren wir Ihr Verständnis von Wirtschaftsdidaktik."
-summary: "Aufbauend auf Ihrem Verständnis von Allgemeiner Didaktik elaborieren wir Ihr Verständnis von Wirtschaftsdidaktik."
-tags: ["Didaktik", "Fachdidaktik", "Wirtschaftsdidaktik", "Ökonomische Bildung", "Didaktische Modelle"]
-categories: ["Didaktik"]
+
 outputs:
   - Reveal
+
 reveal_hugo:
   theme: simple
   slide_number: true
   transition: slide
   custom_theme: /iWIP/css/custom_reveal.css
+
+description: >
+  Reveal-Präsentation zur Einführung in die Wirtschaftsdidaktik:
+  Abgrenzung von Allgemeiner Didaktik, systematische Erarbeitung zentraler
+  Themenfelder sowie Reflexion methodischer Zugänge im Seminar
+  „Grundlagen Fachdidaktik Wirtschaft“.
+
+summary: >
+  Präsentation zur Wirtschaftsdidaktik mit Fokus auf Themenfelder,
+  Systematisierung, Gruppenarbeit und Reflexion didaktischer
+  Erarbeitungs- und Darstellungsformen.
+
+tags:
+  - Wirtschaftsdidaktik
+  - Fachdidaktik
+  - Didaktik
+  - Ökonomische Bildung
+  - Lehrkräftebildung
+  - Präsentation
+  - OER
+
+categories:
+  - Wirtschaftsdidaktik
+  - OER
+
+oer:
+  is_oer: true
+  kind: "presentation"
+  note: >
+    Präsentation ist als OER gekennzeichnet. Einzelne Abbildungen (z. B.
+    Whiteboard-Foto aus der Lehrveranstaltung) können nicht frei
+    weiterverwendbar sein und sind ggf. ausgenommen.
+
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "Universität Rostock"
+    url: "https://www.uni-rostock.de/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "Blogbeitrag: Wirtschaftsdidaktik"
+    url: "https://matthiassoell.github.io/iWIP/blog/widi/widi/"
+
+  in_language: "de"
+  learning_resource_type: "Presentation"
+  educational_level:
+    - "Bachelor (grundlagenorientiert)"
+  audience:
+    - "Studierende der Wirtschaftspädagogik"
+  time_required: "PT90M"
+
+  about:
+    - term: "Wirtschaftsdidaktik"
+    - term: "Fachdidaktik"
+    - term: "Ökonomische Bildung"
+    - term: "Didaktische Systematisierung"
+    - term: "Professionalisierung von Lehrkräften"
+
+  rights_exceptions:
+    - item: "Whiteboard-Foto"
+      note: "Fotografische Dokumentation aus der Lehrveranstaltung; keine explizite offene Lizenz"
+      path: "widi_whiteboard.jpg"
+
+  todos: []
 ---
 
 {{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}

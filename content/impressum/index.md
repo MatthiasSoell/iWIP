@@ -1,7 +1,52 @@
 ---
-date: '2025-06-06T23:43:20+02:00'
-draft: false
 title: "Impressum"
+date: 2025-06-06
+lastmod: 2025-06-06
+draft: false
+
+description: >
+  Impressum des SciBlog iWIP von Prof. Dr. Matthias Söll mit Angaben gemäß § 5 TMG und § 18 Abs. 2 MStV.
+
+summary: >
+  Rechtliche Angaben zum Betreiber des SciBlog iWIP (Anbieterkennzeichnung und Verantwortlichkeit).
+
+tags:
+  - Impressum
+  - Rechtliches
+  - Anbieterkennzeichnung
+  - MStV
+  - TMG
+
+categories:
+  - Rechtliches
+
+oer:
+  is_oer: false
+  kind: "legal"
+  note: "Rechtliche Pflichtseite (Impressum), keine Lehr-Lern-Ressource"
+
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  in_language: "de"
+
+  audience:
+    - "Besucher:innen der Website"
+
+  todos: []
 ---
 
 Prof. Dr. Matthias Söll *(Blogbetreiber)* 

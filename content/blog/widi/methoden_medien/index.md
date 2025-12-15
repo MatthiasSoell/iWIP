@@ -1,26 +1,67 @@
 ---
 title: "Methoden & Medien"
-date: 2025-11-19T21:14:00+02:00
+date: 2025-11-19
+lastmod: 2025-11-19
 draft: false
+
 description: |
   📌 Ausgangspunkt des heutigen Lehr-Lern-Arrangements ist die Reflexion Ihrer 🎓🌍🔓 OER-Entwicklung. 🧭 Anschließend lernen Sie Systematisierungen von 🧩 Methoden und 💻 Medien kennen und erproben, wie sich daraus begründete Entscheidungen für die Gestaltung von 🤝 Wirtschaftsunterricht ableiten lassen.
 summary: |
   In dieser Einheit lernen Sie Systematisierungen von Methoden und Medien kennen. Auf dieser Basis lassen sich begründete Entscheidungen für die Gestaltung von Wirtschaftsunterricht ableiten.
+
 tags: ["Methoden", "Medien", "Wirtschaftsdidaktik", "Unterrichtsgestaltung", "OER", "Didaktik"]
 categories: ["Methoden", "Medien", "OER", "Wirtschaftsdidaktik"]
+
+oer:
+  is_oer: true
+  kind: "lesson"
+
+  # TULLU-Pflichtdaten (Frontend) + Basis für JSON-LD
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "Universität Rostock"
+    url: "https://www.uni-rostock.de/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  # Version/Reifegrad (dein Reifegrad, kein Qualitätsurteil)
+  version: "1.0"
+  status: "pilot"   # draft | pilot | stable | aligned
+
+  # OERSI/schema.org-nahe Felder
+  in_language: "de"
+  learning_resource_type: "Lesson"
+  educational_level: ["Bachelor (grundlagenorientiert)"]
+  audience: ["Studierende der Wirtschaftspädagogik"]
+  time_required: "PT90M"
+
+  about:
+    - term: "Methoden"
+    - term: "Medien"
+    - term: "Unterrichtsgestaltung"
+    - term: "Wirtschaftsdidaktik"
+
+  # Optional: Wenn du To-dos pflegen willst
+  todos: []
 ---
 
 <div class="top-toggle">
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
 </div>
-
-# 1️⃣ 🌀 Recap – Rückblick auf die letzte Veranstaltung  
-
-- In der letzten Veranstaltung haben wir uns mit 🎓🌍🔓 freien Bildungsmaterialien – **Open Educational Resources (OER)** – beschäftigt.  
-- Wir haben uns einen 🧭 Überblick über **Ursprung, Entwicklung und Lizenzierung** des OER-Konzepts verschafft.  
-- 🛠️ Auf dieser Basis war es Ihre Aufgabe, aus Ihren Ausarbeitungen zu Themen der 🤝🎨 Wirtschaftsdidaktik **eigene OER-Materialien** zu entwickeln.
-
----
+{{< oer-meta >}}
 
 # 💭 Fragestellung  
 

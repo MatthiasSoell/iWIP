@@ -1,7 +1,82 @@
 ---
 title: "Warum OER?"
+date: 2025-06-12
+lastmod: 2025-06-12
+draft: false
+
 outputs:
   - Reveal
+
+description: >
+  Reveal-Präsentation zur Einführung in Open Educational Resources (OER): Definition, bildungspolitische Einordnung (UNESCO, Deutschland) sowie emotionale, rationale und qualitative Begründungen für den Einsatz von OER in Bildung und Wissenschaft.
+
+summary: >
+  Präsentation zu Open Educational Resources (OER) mit grundlegender Definition, politischem Hintergrund und zentralen Argumentationslinien für offene Bildung.
+
+tags:
+  - OER
+  - Open Educational Resources
+  - Open Education
+  - Bildungspolitik
+  - Wissenschaftskommunikation
+  - Präsentation
+
+categories:
+  - OER
+
+oer:
+  is_oer: true
+  kind: "presentation"
+  note: >
+    Präsentation ist als OER gekennzeichnet. Einzelne Abbildungen (z. B. Avatare,
+    KI-generierte Grafiken) sind nicht frei weiterverwendbar und davon ausgenommen.
+
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  # Lizenz für alle eigenen, frei verwendbaren Inhalte
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "Blogbeitrag: Warum OER?"
+    url: "https://matthiassoell.github.io/iWIP/blog/oer/warum_oer/"
+
+  in_language: "de"
+  learning_resource_type: "Presentation"
+  educational_level:
+    - "Hochschule"
+    - "Lehrkräftebildung"
+  audience:
+    - "Studierende"
+    - "Lehrende"
+    - "OER-Interessierte"
+  time_required: "PT45M"
+
+  about:
+    - term: "Open Educational Resources"
+    - term: "Offene Bildung"
+    - term: "Creative Commons"
+    - term: "UNESCO Bildung 2030"
+    - term: "OER-Strategie Deutschland"
+
+  rights_exceptions:
+    - item: "Avatar-Grafiken"
+      note: "Nicht frei verwendbar (KI-generiert, personenbezogene Darstellung)"
+    - item: "Grafik »OER_qualitaet.png«"
+      note: "KI-generiert; keine explizite offene Lizenz angegeben"
+
+  todos: []
 ---
 
 {{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}

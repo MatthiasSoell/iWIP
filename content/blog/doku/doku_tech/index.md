@@ -1,16 +1,77 @@
 ---
 title: "Technische Dokumentation"
 date: 2025-10-01
+lastmod: 2025-10-01
 draft: false
-description: "Diese technische Dokumentation beschreibt die OER-kompatible und frei verfügbare Softwarebasis des SciBlog iWIP."
-summary: "Diese technische Dokumentation beschreibt die OER-kompatible und frei verfügbare Softwarebasis des SciBlog iWIP."
-tags: ["GitHub", "GitHub Pages", "Hugo", "PaperMod", "reveal-hugo", "OER", "Open Source"]
-categories: ["Doku"]
+
+description: >
+  Diese technische Dokumentation beschreibt die OER-kompatible, offene und frei verfügbare Softwarebasis des SciBlog iWIP sowie zentrale Design- und Infrastrukturentscheidungen.
+
+summary: >
+  Technische Dokumentation zur Infrastruktur des SciBlog iWIP: GitHub, Hugo, Themes, Präsentationsformate und kollaborative Workflows für offene Wissenschaftskommunikation.
+
+tags:
+  - Dokumentation
+  - Technische Infrastruktur
+  - GitHub
+  - Hugo
+  - Open Source
+  - OER-Infrastruktur
+  - Wissenschaftskommunikation
+
+categories:
+  - Doku
+
+oer:
+  is_oer: false
+  kind: "documentation"
+  note: "Technische Dokumentation zur Infrastruktur des SciBlog iWIP (keine Lehr-Lern-Einheit, kein einzelnes OER)"
+
+  related_practices:
+    - "Open Educational Practices (OEP)"
+    - "Open Source Software"
+    - "Open Science"
+    - "Open Infrastructure"
+
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  in_language: "de"
+
+  audience:
+    - "Lehrende"
+    - "Studierende"
+    - "Co-Autor:innen"
+    - "Interessierte an OER- und Blog-Infrastrukturen"
+
+  about:
+    - term: "Technische Dokumentation"
+    - term: "Blog-Infrastruktur"
+    - term: "GitHub Pages"
+    - term: "Hugo"
+    - term: "Open-Source-Software"
+    - term: "OER-kompatible Webpublikation"
+
+  todos:
+    - "Erweiterung der Co-Autor:innen-Dokumentation"
+    - "Dokumentation der Preview- und Review-Workflows"
 ---
 
 <div class="top-toggle">
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
 </div>
+{{< oer-meta >}}
 
 # 📚 Gegenstand  
 

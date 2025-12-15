@@ -1,15 +1,90 @@
 ---
 title: "Hospitation, Feedback & Reflexion"
-date: 2025-10-22T21:14:00+02:00
+date: 2025-10-22
+lastmod: 2025-10-22
 draft: false
-description: "In dieser Lehr-Lern-Einheit entwickeln wir Ihr Verständnis von Didaktik weiter."
+
 outputs:
   - Reveal
+
 reveal_hugo:
   theme: simple
   slide_number: true
   transition: slide
   custom_theme: /iWIP/css/custom_reveal.css
+
+description: >
+  Reveal-Präsentation zur Professionalisierung angehender Lehrkräfte im Modul „Grundlagen Fachdidaktik Wirtschaft“. Im Fokus stehen Hospitation, Feedback und Reflexion als zentrale Elemente didaktischen Handelns.
+
+summary: >
+  Seminarpräsentation zu Hospitation, Feedback und Reflexion: Begriffe klären, theoretische Modelle einordnen (u. a. Baumert & Kunter, ALACT) und praxisnahe Anwendung im Lehramtskontext reflektieren.
+
+tags:
+  - Wirtschaftsdidaktik
+  - Fachdidaktik
+  - Didaktik
+  - Hospitation
+  - Feedback
+  - Reflexion
+  - Lehrer:innenbildung
+  - Hochschullehre
+  - Präsentation
+
+categories:
+  - Didaktik
+  - Wirtschaftsdidaktik
+
+oer:
+  is_oer: true
+  kind: "presentation"
+  note: >
+    Präsentation ist als OER ausgewiesen. Eigene Grafiken stehen unter
+    CC BY 4.0. Eingebettete externe Inhalte (z. B. YouTube-Videos) unterliegen
+    den jeweiligen Nutzungsbedingungen der Plattformen.
+
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "Blogbeitrag: Allgemeine Didaktik & Fachdidaktik"
+    url: "https://matthiassoell.github.io/iWIP/blog/widi/did_allg_fach/"
+
+  in_language: "de"
+  learning_resource_type: "Presentation"
+  educational_level:
+    - "Bachelor (Lehramt / Wirtschaftspädagogik)"
+  audience:
+    - "Studierende der Wirtschaftspädagogik"
+    - "Angehende Lehrkräfte"
+  time_required: "PT90M"
+
+  about:
+    - term: "Hospitation"
+    - term: "Feedback"
+    - term: "Reflexion"
+    - term: "Professionalisierung"
+    - term: "Lehrkräftebildung"
+    - term: "Didaktische Handlungskompetenz"
+
+  rights_exceptions:
+    - item: "Eingebettete YouTube-Videos"
+      note: "Externe Inhalte, Nutzung gemäß YouTube-Nutzungsbedingungen"
+      path: "https://www.youtube.com/"
+  
+  todos: []
 ---
 
 {{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}

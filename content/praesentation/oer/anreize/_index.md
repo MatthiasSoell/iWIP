@@ -1,11 +1,95 @@
 ---
 title: "Die Anreizmatrix im Praxistest"
+date: 2025-11-10
+lastmod: 2025-11-10
+draft: false
+
 outputs:
   - Reveal
+
 reveal_hugo:
   theme: "simple"
   slideNumber: true
   hash: true
+
+description: >
+  Reveal-Präsentation zum Co-WOERK-Teamtreffen: Einführung in Anreizbegriffe, Adaptionsphasen (u. a. nach Rogers/Hart et al.) und Anwendung der OER-Anreizmatrix zur standort- und zielgruppenspezifischen Maßnahmenplanung.
+
+summary: >
+  Workshop-Präsentation zur OER-Anreizmatrix: Begriffe klären, Kategorien/Phasen strukturieren und Anreize für Zielgruppen und Standorte praxisnah ableiten.
+
+tags:
+  - OER
+  - Anreizmatrix
+  - Open Education
+  - Workshop
+  - Co-WOERK
+  - Didaktik
+  - Präsentation
+
+categories:
+  - OER & Open Practice
+
+oer:
+  is_oer: true
+  kind: "presentation"
+  note: "Präsentation enthält (mindestens) nicht frei verwendbare Abbildungen (Avatare). Daher rechtlich gemischter Status."
+
+  creators:
+    - name: "Silvia Retzlaff"
+      given_name: "Silvia"
+      family_name: "Retzlaff"
+      affiliation: ""
+      url: ""
+      orcid: ""
+    - name: "Nancy Walter"
+      given_name: "Nancy"
+      family_name: "Walter"
+      affiliation: ""
+      url: ""
+      orcid: ""
+    - name: "Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  # Lizenz für die eigenen Inhalte; Ausnahmen separat aufführen
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "Blogbeitrag: Die OER-Anreizmatrix im Praxistest"
+    url: "https://matthiassoell.github.io/iWIP/blog/oer/anreize/"
+
+  in_language: "de"
+  learning_resource_type: "Presentation"
+  educational_level:
+    - "Hochschule (Fort- & Weiterbildung)"
+  audience:
+    - "Projektteam / Lehrende / OER-Akteur:innen"
+  time_required: "PT90M"
+
+  about:
+    - term: "Open Educational Resources"
+    - term: "OER-Anreizmatrix"
+    - term: "Innovationsadoption"
+    - term: "Motivation"
+    - term: "Open Educational Practices"
+    - term: "Community Building"
+
+  rights_exceptions:
+    - item: "Avatare (ChatGPT/DALL·E)"
+      note: "Keine freie Lizenz (Rechte bei den dargestellten Personen)"
+      path: "/iWIP/praesentation/oer/anreize/avatare_silvia_nancy_matthias.png"
+
+  todos: []
 ---
 
 {{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}

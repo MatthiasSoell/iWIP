@@ -1,7 +1,104 @@
 ---
 title: "Frei nutzbare Lehr-Lern-Materialien – OER"
+date: 2025-11-05
+lastmod: 2025-11-05
+draft: false
+
 outputs:
   - Reveal
+
+reveal_hugo:
+  theme: simple
+  slideNumber: true
+  hash: true
+
+description: >
+  Reveal-Präsentation als Einstieg in Open Educational Resources (OER): Definitionen, UNESCO- und Deutschland-Bezüge, Gründe für OER sowie Arbeitsauftrag zur Erstellung eines eigenen OER inkl. Kriterien und Abgabe.
+
+summary: >
+  Präsentation zu OER (Definition, Herkunft, Begründungen) mit anschließender Aufgabenstellung zur Entwicklung eines eigenen OER und Orientierung an Bewertungskriterien.
+
+tags:
+  - OER
+  - Open Educational Resources
+  - Open Education
+  - Creative Commons
+  - OEP
+  - Hochschullehre
+  - Präsentation
+  - Didaktik
+
+categories:
+  - OER
+
+oer:
+  is_oer: true
+  kind: "presentation"
+  note: >
+    Präsentation ist als OER gekennzeichnet. Enthält ggf. Medien/Abbildungen
+    mit abweichenden Nutzungsrechten (z. B. Avatar-Grafiken, lokal eingebundene Bilder).
+    Diese sind als Ausnahmen separat zu behandeln.
+
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+    - name: "Marie-Christin Hamann"
+      given_name: "Marie-Christin"
+      family_name: "Hamann"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+    - name: "Laura Wolf"
+      given_name: "Laura"
+      family_name: "Wolf"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "Blogbeitrag: Frei nutzbare Lehr-Lern-Materialien – OER"
+    url: "https://matthiassoell.github.io/iWIP/blog/oer/warum_oer/"
+
+  in_language: "de"
+  learning_resource_type: "Presentation"
+  educational_level:
+    - "Hochschule / Weiterbildung"
+  audience:
+    - "Studierende"
+    - "Lehrende"
+    - "Interessierte an Open Education"
+  time_required: "PT90M"
+
+  about:
+    - term: "Open Educational Resources"
+    - term: "Creative Commons"
+    - term: "OER-Strategie"
+    - term: "UNESCO"
+    - term: "Open Educational Practices"
+    - term: "OER-Erstellung"
+    - term: "TULLU"
+
+  rights_exceptions:
+    - item: "Avatar-Grafik"
+      note: "Rechte/ Lizenz ggf. abweichend; nur verwenden, wenn entsprechend geklärt"
+      path: "/iWIP/bilder/avatare/avatar_erkenntnis_2.png"
+    - item: "Abbildung zur kooperativen OER-Entwicklung"
+      note: "Lizenz/Urheberschaft prüfen; ggf. Ausnahme kennzeichnen"
+      path: "OER_qualitaet.png"
+
+  todos: []
 ---
 
 {{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}

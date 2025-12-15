@@ -379,3 +379,241 @@ a[href^="https://doi.org/"]::before {
 }
 .agenda td p{ margin:.2em 0; }
 .agenda tbody td:nth-child(1){ font-size:1.02rem; }
+
+/* ===========================================================
+   SciBlog iWIP – OER Meta + Status Badges + Tooltip (🟡🟠🔵🟢)
+   =========================================================== */
+
+/* ===========================================================
+   FIX: Tooltips dürfen nicht geclippt werden (PaperMod/Container)
+   =========================================================== */
+.post-content,
+.entry-content,
+.main,
+article.post-single{
+  overflow: visible !important;
+}
+
+/* Falls irgendwo ein Transform einen neuen Stacking-Context erzeugt */
+.post-content,
+.entry-content{
+  transform: none !important;
+}
+
+/* ===========================================================
+   OER Meta – Box + 2-Spalten-Layout + Titel
+   =========================================================== */
+
+.oer-meta{
+  margin: var(--space-m) 0 var(--space-m);
+  padding: var(--space-s) var(--space-m);
+  background: var(--bg-info-soft-strong);
+  border-radius: var(--radius-soft);
+  box-shadow: var(--shadow-soft);
+  font-size: 0.9rem;
+
+  /* Tooltip darf raus */
+  overflow: visible !important;
+
+  /* Stacking-Context sauber */
+  position: relative;
+  z-index: 1;
+}
+
+.oer-row{ margin-bottom: 0.2rem; }
+.oer-meta-title{ margin-bottom: 0.3rem; }
+
+.oer-tullu > .oer-row:last-of-type{
+  margin-bottom: 0;
+}
+
+/* Titel über beide Spalten */
+.oer-meta-title-center{
+  text-align: center;
+  margin: 0 0 var(--space-s);
+  line-height: 1.3;
+}
+
+.oer-meta-title-center .oer-meta-label{
+  font-weight: 700;
+  opacity: 0.95;
+  margin-right: 0.02rem;
+}
+
+.oer-meta-title-center .oer-meta-value{
+  font-weight: 400;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* 2-Spalten-Grid */
+.oer-meta-grid{
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--space-l);
+  align-items: start;
+
+  overflow: visible !important;
+}
+
+.oer-meta-col,
+.oer-meta-right{
+  overflow: visible !important;
+}
+
+.oer-meta-col .oer-row{
+  margin-bottom: 0.35rem;
+}
+
+.oer-meta-right{
+  justify-self: end;
+}
+
+/* Mobil */
+@media (max-width: 640px){
+  .oer-meta-grid{
+    grid-template-columns: 1fr;
+    gap: var(--space-m);
+  }
+  .oer-meta-right{
+    justify-self: start;
+  }
+}
+
+/* ===========================================================
+   OER Status Badge + Tooltip
+   =========================================================== */
+
+.oer-status{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-main);
+  background: var(--btn-glass-bg);
+  border: 1px solid var(--btn-glass-border);
+  box-shadow: var(--shadow-soft);
+  white-space: nowrap;
+
+  position: relative;
+  cursor: help;
+
+  /* eigener Layer */
+  z-index: 999;
+}
+
+/* Statusfarben */
+.oer-status.draft{
+  background: var(--bg-tip);
+  border-color: var(--border-tip);
+}
+
+.oer-status.pilot{
+  background: color-mix(in srgb, var(--bg-tip) 70%, var(--border-tip) 30%);
+  border-color: color-mix(in srgb, var(--border-tip) 80%, var(--text-muted) 20%);
+}
+
+.oer-status.stable{
+  background: var(--bg-info-soft);
+  border-color: color-mix(in srgb, var(--uni-blau) 55%, transparent);
+}
+
+.oer-status.aligned{
+  background: color-mix(in srgb, var(--bg-info-soft-strong) 70%, var(--accent-green) 30%);
+  border-color: color-mix(in srgb, var(--accent-green) 65%, transparent);
+}
+
+/* Hover & Fokus */
+.oer-status:hover{
+  box-shadow: 0 0 0 3px var(--btn-glass-halo), var(--shadow-soft);
+}
+
+.oer-status:focus,
+.oer-status:focus-visible{
+  outline: 2px solid color-mix(in srgb, var(--uni-blau) 70%, transparent);
+  outline-offset: 2px;
+}
+
+/* Tooltip (ohne JS) */
+.oer-status[data-tooltip]::after{
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 0.6rem);
+  transform: translateX(-50%);
+  z-index: 9999;
+
+  width: 32ch;
+  max-width: min(48ch, 80vw);
+  padding: 0.6rem 0.8rem;
+
+  background: rgba(34,34,34,0.92);
+  color: #fff;
+  border-radius: var(--radius-soft);
+  box-shadow: var(--shadow-soft);
+
+  font-size: 0.85rem;
+  line-height: 1.35;
+  text-align: left;
+
+  /* wichtig: Zeilenumbruch trotz white-space:nowrap am Badge */
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 120ms ease, transform 120ms ease;
+}
+
+.oer-status[data-tooltip]::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 0.2rem);
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: rgba(34,34,34,0.92);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  z-index: 9998;
+}
+
+/* Anzeigen */
+.oer-status:hover::after,
+.oer-status:hover::before,
+.oer-status:focus::after,
+.oer-status:focus::before{
+  opacity: 1;
+  visibility: visible;
+}
+
+.oer-status:hover::after,
+.oer-status:focus::after{
+  transform: translateX(-50%) translateY(-2px);
+}
+
+/* Dark Mode */
+[data-theme="dark"] .oer-status{
+  background: color-mix(in srgb, var(--btn-glass-bg) 70%, transparent);
+  border-color: color-mix(in srgb, var(--uni-blau) 35%, transparent);
+}
+
+/* Labels im OER-Meta wieder klar hervorheben */
+.oer-meta-label{
+  font-weight: 700;
+}
+
+.oer-cite {
+  margin-top: calc(var(--space-m) + 0.3rem);
+  text-align: center;
+}

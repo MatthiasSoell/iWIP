@@ -1,15 +1,84 @@
 ---
 title: "Allgemeine Didaktik und Fachdidaktik"
-date: 2025-10-22T21:14:00+02:00
+date: 2025-10-22
+lastmod: 2025-10-22
 draft: false
-description: "In dieser Lehr-Lern-Einheit entwickeln wir Ihr Verständnis von Didaktik weiter."
+
 outputs:
   - Reveal
+
 reveal_hugo:
   theme: simple
   slide_number: true
   transition: slide
   custom_theme: /iWIP/css/custom_reveal.css
+
+description: >
+  Reveal-Präsentation im Seminar „Grundlagen Fachdidaktik Wirtschaft“. Die Einheit führt in zentrale Entwicklungslinien, Begriffe und Unterscheidungen der Allgemeinen Didaktik und der Fachdidaktik ein und unterstützt Studierende bei der reflexiven Begründung didaktischen Handelns.
+
+summary: >
+  Seminarpräsentation zur Allgemeinen Didaktik und Fachdidaktik: historische Einordnung, begriffliche Klärung und systematische Unterscheidung als Grundlage reflektierter Unterrichtsplanung.
+
+tags:
+  - Allgemeine Didaktik
+  - Fachdidaktik
+  - Wirtschaftsdidaktik
+  - Didaktische Modelle
+  - Lehrer:innenbildung
+  - Hochschullehre
+  - Präsentation
+
+categories:
+  - Didaktik
+  - Wirtschaftsdidaktik
+
+oer:
+  is_oer: true
+  kind: "presentation"
+  note: >
+    Präsentation ist als OER gekennzeichnet. Verwendete Abbildungen
+    stammen aus offen lizenzierten Quellen (CC BY / CC BY-SA) oder
+    wurden als eigene Darstellungen erstellt. Lizenzhinweise sind
+    jeweils an den Materialien ausgewiesen.
+
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "Blogbeitrag: Allgemeine Didaktik & Fachdidaktik"
+    url: "https://matthiassoell.github.io/iWIP/blog/widi/did_allg_fach/"
+
+  in_language: "de"
+  learning_resource_type: "Presentation"
+  educational_level:
+    - "Bachelor (Wirtschaftspädagogik / Lehramt)"
+  audience:
+    - "Studierende der Wirtschaftspädagogik"
+    - "Angehende Lehrkräfte"
+  time_required: "PT90M"
+
+  about:
+    - term: "Allgemeine Didaktik"
+    - term: "Fachdidaktik"
+    - term: "Wirtschaftsdidaktik"
+    - term: "Didaktische Prinzipien"
+    - term: "Professionalisierung"
+    - term: "Unterrichtsplanung"
+
+  todos: []
 ---
 
 {{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}

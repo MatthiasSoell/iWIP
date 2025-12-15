@@ -1,10 +1,65 @@
 ---
 title: "Herzlich Willkommen!"
-description: "Interaktive Wissenschaftliche Praxis"
-layout: "home"
+date: 2025-06-01
+lastmod: 2025-06-01
 draft: false
+layout: "home"
+
+description: >
+  Persönliche Startseite des SciBlog iWIP von Prof. Dr. Matthias Söll. Der Blog verbindet wissenschaftliche Praxis, Wirtschaftsdidaktik und Open Educational Resources (OER).
+
+summary: >
+  Einstieg in den SciBlog iWIP: Wissenschaftsblog und OER-Plattform zu Wirtschaftsdidaktik, Lehre und offener Bildung an der Universität Rostock.
+
+tags:
+  - Wissenschaftsblog
+  - Wirtschaftsdidaktik
+  - OER
+  - Open Education
+  - Hochschullehre
+  - Wissenschaftskommunikation
+
+categories:
+  - Startseite
+
 cascade:
   hiddenInHomeList: true
+
+oer:
+  is_oer: false
+  kind: "home"
+  note: "Zentrale Einstiegs- und Orientierungsseite des SciBlog iWIP (keine Lehr-Lern-Einheit)"
+
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  in_language: "de"
+
+  audience:
+    - "Studierende"
+    - "Lehrende"
+    - "Wissenschaftler:innen"
+    - "Interessierte an OER"
+
+  related_practices:
+    - "Open Educational Practices (OEP)"
+    - "Wissenschaftskommunikation"
+    - "Open Science"
+
+  todos: []
 ---
 
 ### Herzlich Willkommen!

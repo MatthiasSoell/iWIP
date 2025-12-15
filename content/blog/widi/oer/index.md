@@ -1,19 +1,89 @@
 ---
 title: "Frei nutzbare Lehr-Lern-Materialien – OER"
-date: 2025-11-05T21:14:00+02:00
+date: 2025-11-05
+lastmod: 2025-11-05
 draft: false
+
 description: |
-  Open Educational Resources (OER) sind frei zugängliche und offen lizenzierte Bildungsmaterialien, 
-  die rechtssicher genutzt, verändert und weiterverbreitet werden dürfen. 
-  Sie unterstützen das Ziel der UNESCO, Bildung weltweit inklusiver, gerechter und qualitativ hochwertiger zu gestalten 
-  und werden seit 2016 durch nationale Förderprogramme in Deutschland gestärkt.
+  Open Educational Resources (OER) sind frei zugängliche und offen lizenzierte Bildungsmaterialien, die rechtssicher genutzt, verändert und weiterverbreitet werden dürfen. Sie unterstützen das Ziel der UNESCO, Bildung weltweit inklusiver, gerechter und qualitativ hochwertiger zu gestalten und werden seit 2016 durch nationale Förderprogramme in Deutschland gestärkt.
 summary: |
-  Open Educational Resources (OER) sind frei zugängliche und offen lizenzierte Bildungsmaterialien, 
-  die rechtssicher genutzt, verändert und weiterverbreitet werden dürfen. 
-  Sie unterstützen das Ziel der UNESCO, Bildung weltweit inklusiver, gerechter und qualitativ hochwertiger zu gestalten 
-  und werden seit 2016 durch nationale Förderprogramme in Deutschland gestärkt.
-tags: ["OER", "Lehrmaterial", "Wissenschaft"]
-categories: ["OER"]
+  Sie lernen Open Educational Resources (OER) – frei zugängliche und offen lizenzierte Bildungsmaterialien – kennen, die Sie rechtssicher nutzen, anpassen und weiterverbreitet dürfen.
+
+tags:
+  - OER
+  - Lehrmaterial
+  - Wissenschaft
+  - Creative Commons
+  - Offene Lizenzen
+  - TULLU
+  - OER-Strategie
+
+categories:
+  - OER
+
+oer:
+  is_oer: true
+  kind: "lesson"
+
+  # TULLU-Pflichtdaten (Frontend) + Basis für JSON-LD
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+    - name: "Marie-Christin Hamann"
+      given_name: "Marie-Christin"
+      family_name: "Hamann"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+    - name: "Laura Wolf"
+      given_name: "Laura"
+      family_name: "Wolf"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "Universität Rostock"
+    url: "https://www.uni-rostock.de/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  # Version / Reifegrad (kein Qualitätsurteil)
+  version: "1.0"
+  status: "pilot"   # draft | pilot | stable | aligned
+
+  # OERSI / schema.org-nahe Felder
+  in_language: "de"
+  learning_resource_type: "Lesson"
+  educational_level:
+    - "Bachelor (grundlagenorientiert)"
+  audience:
+    - "Studierende der Wirtschaftspädagogik"
+  time_required: "PT90M"
+
+  about:
+    - term: "Open Educational Resources (OER)"
+    - term: "Creative Commons"
+    - term: "Offene Lizenzen"
+    - term: "TULLU"
+    - term: "OER finden und einsetzen"
+    - term: "OER erstellen"
+    - term: "UNESCO (Bildungsagenda 2030 / OER-Empfehlung)"
+    - term: "OER-Strategie (Deutschland)"
+    - term: "Metadaten / Auffindbarkeit (OERSI)"
+
+  # Optional
+  todos: []
 ---
 
 <script>
@@ -38,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <button onclick="triggerPrint()" title="Präsentation speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/widi/oer/'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
+{{< oer-meta >}}
 
 ---
 

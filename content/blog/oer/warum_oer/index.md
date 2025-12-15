@@ -1,11 +1,74 @@
 ---
 title: "Warum OER?"
 date: 2025-06-12
+lastmod: 2025-06-12
 draft: false
-description: "In diesem Beitrag beschreibe ich den Hintergrund freier Bildungsmaterialien und stelle drei zentrale Argumentationsfiguren zur Nutzung von OER aus der Perspektive der beruflichen Bildung vor."
-summary: "In diesem Beitrag beschreibe ich den Hintergrund freier Bildungsmaterialien und stelle drei zentrale Argumentationsfiguren zur Nutzung von OER aus der Perspektive der beruflichen Bildung vor."
-tags: ["OER", "Lehrmaterial", "Wissenschaft"]
-categories: ["OER"]
+
+description: >
+  In diesem Beitrag wird der Hintergrund freier Bildungsmaterialien erläutert. Aus der Perspektive der beruflichen Bildung werden drei zentrale Argumentationsfiguren für die Nutzung von Open Educational Resources (OER) vorgestellt: emotional, rational und qualitativ.
+
+summary: >
+  Warum OER? Der Beitrag erläutert Herkunft, Zielsetzungen und zentrale Mehrwerte für die berufliche Bildung.
+
+tags:
+  - OER
+  - Open Educational Resources
+  - Offene Bildung
+  - Berufliche Bildung
+  - Wissenschaftskommunikation
+
+categories:
+  - OER
+
+oer:
+  is_oer: true
+  kind: "article"
+
+  # TULLU-Pflichtdaten (Frontend) + Basis für JSON-LD
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  # Version / Reifegrad
+  version: "1.0"
+  status: "stable"   # draft | pilot | stable | aligned
+
+  # OERSI / schema.org-nahe Felder
+  in_language: "de"
+  learning_resource_type: "Article"
+  educational_level:
+    - "Hochschule"
+    - "Berufliche Bildung"
+  audience:
+    - "Studierende"
+    - "Lehrende"
+    - "Interessierte an Open Education"
+  time_required: "PT20M"
+
+  about:
+    - term: "Open Educational Resources"
+    - term: "Offene Bildung"
+    - term: "Creative Commons"
+    - term: "OER-Strategien"
+    - term: "Berufliche Bildung"
+
+  todos: []
 ---
 
 <script>
@@ -31,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <button onclick="triggerPrint()" title="Präsentation speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/oer/warum_oer/'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
+{{< oer-meta >}}
 
 ## Was sind OER?
 > OER = Open Educational Resources = freie Bildungsmaterialien  

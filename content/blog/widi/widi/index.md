@@ -1,17 +1,86 @@
 ---
 title: "Wirtschaftsdidaktik"
-date: 2025-10-29T21:14:00+02:00
+date: 2025-10-29
+lastmod: 2025-10-29
 draft: false
-description: "Aufbauend auf Ihrem Verständnis von Allgemeiner Didaktik elaborieren wir Ihr Verständnis von Wirtschaftsdidaktik."
-summary: "Aufbauend auf Ihrem Verständnis von Allgemeiner Didaktik elaborieren wir Ihr Verständnis von Wirtschaftsdidaktik."
-tags: ["Didaktik", "Fachdidaktik", "Wirtschaftsdidaktik", "Ökonomische Bildung", "Didaktische Modelle"]
-categories: ["Didaktik"]
+
+description: |
+  Aufbauend auf Ihrem Verständnis von Allgemeiner Didaktik elaborieren wir Ihr Verständnis von Wirtschaftsdidaktik.
+summary: |
+  Aufbauend auf Ihrem Verständnis von Allgemeiner Didaktik elaborieren wir Ihr Verständnis von Wirtschaftsdidaktik.
+
+tags:
+  - Didaktik
+  - Fachdidaktik
+  - Wirtschaftsdidaktik
+  - Ökonomische Bildung
+  - Didaktische Modelle
+  - Unterricht
+  - OER
+
+categories:
+  - Didaktik
+  - OER
+  - Wirtschaftsdidaktik
+
+oer:
+  is_oer: true
+  kind: "lesson"
+
+  # TULLU-Pflichtdaten (Frontend) + Basis für JSON-LD
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "Universität Rostock"
+    url: "https://www.uni-rostock.de/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  # Version / Reifegrad (kein Qualitätsurteil)
+  version: "1.0"
+  status: "pilot"   # draft | pilot | stable | aligned
+
+  # OERSI / schema.org-nahe Felder
+  in_language: "de"
+  learning_resource_type: "Lesson"
+  educational_level:
+    - "Bachelor (grundlagenorientiert)"
+  audience:
+    - "Studierende der Wirtschaftspädagogik"
+  time_required: "PT90M"
+
+  about:
+    - term: "Wirtschaftsdidaktik"
+    - term: "Ökonomische Bildung"
+    - term: "Fachdidaktik"
+    - term: "Themenfelder der Wirtschaftsdidaktik"
+    - term: "Unterrichtsgestaltung"
+    - term: "Kooperatives Lernen"
+    - term: "Methodenreflexion"
+    - term: "Berufliche Bildung"
+    - term: "Allgemeine Bildung"
+
+  # Optional
+  todos: []
 ---
 
 <div class="top-toggle">
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/widi/widi/'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
+{{< oer-meta >}}
 
 # 🌀 Recap – Rückblick auf die letzte Veranstaltung  
 

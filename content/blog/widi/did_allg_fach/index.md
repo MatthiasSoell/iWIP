@@ -1,13 +1,76 @@
 ---
 title: "Allgemeine Didaktik und Fachdidaktik"
-date: 2025-10-22T21:14:00+02:00
+date: 2025-10-22
+lastmod: 2025-10-22
 draft: false
-description: "In dieser Lehr-Lern-Einheit entwickeln wir Ihr Verständnis von Didakitk weiter."
-summary: "In dieser Lehr-Lern-Einheit entwickeln wir Ihr Verständnis von Didakitk weiter."
-tags: ["Didaktik", "Allgemeine Didaktik", "Fachdidaktik", "Didaktische Modelle"]
-categories: ["Didaktik"]
----
 
+description: |
+  📚 Ausgangspunkt dieser Lehr-Lern-Einheit ist das eigene Verständnis von Didaktik. Auf dieser Basis werden zentrale Entwicklungslinien der Didaktik nachvollzogen und die Allgemeine Didaktik von den Fachdidaktiken abgegrenzt.
+summary: |
+  In dieser Einheit entwickeln Studierende ein grundlegendes Verständnis von Didaktik, ihrer historischen Entwicklung sowie der Unterscheidung zwischen Allgemeiner Didaktik und Fachdidaktiken.
+
+tags:
+  - Didaktik
+  - Allgemeine Didaktik
+  - Fachdidaktik
+  - Wirtschaftsdidaktik
+  - Unterricht
+  - OER
+
+categories:
+  - Didaktik
+  - OER
+  - Wirtschaftsdidaktik
+
+oer:
+  is_oer: true
+  kind: "lesson"
+
+  # TULLU-Pflichtdaten (Frontend) + Basis für JSON-LD
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "Universität Rostock"
+    url: "https://www.uni-rostock.de/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  # Version / Reifegrad (kein Qualitätsurteil)
+  version: "1.0"
+  status: "pilot"   # draft | pilot | stable | aligned
+
+  # OERSI / schema.org-nahe Felder
+  in_language: "de"
+  learning_resource_type: "Lesson"
+  educational_level:
+    - "Bachelor (grundlagenorientiert)"
+  audience:
+    - "Studierende der Wirtschaftspädagogik"
+  time_required: "PT90M"
+
+  about:
+    - term: "Didaktik"
+    - term: "Allgemeine Didaktik"
+    - term: "Fachdidaktik"
+    - term: "Unterrichtsgestaltung"
+    - term: "Wirtschaftsdidaktik"
+
+  # Optional
+  todos: []
+
+---
 
 <script>
   function triggerPrint() {
@@ -32,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <button onclick="triggerPrint()" title="Präsentation speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/widi/did_allg_fach/'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
-
+{{< oer-meta >}}
 
 # 📚 Gegenstand  
 

@@ -1,18 +1,101 @@
 ---
 title: "Die OER-Anreizmatrix im Praxistest – Co-WOERK Teamtreffen"
-date: 2025-11-10T22:55:00+01:00
+date: 2025-11-10
+lastmod: 2025-11-10
 draft: false
-description: "Vom Begriff ‚Anreiz‘ über Kategorien und Adaptionsphasen bis zur gemeinsamen Werkstatt: Wie die OER-Anreizmatrix Denken und Handeln verbindet."
-summary: "Anreize verstehen, in Kategorien und Phasen verorten – und als Team in ein umsetzbares Konzept überführen."
-tags: ["OER", "Anreizmatrix", "Hochschullehre", "Co-WOERK", "Didaktik"]
-categories: ["OER & Open Practice"]
+
+description: >
+  Vom Begriff „Anreiz“ über Kategorien und Adaptionsphasen bis zur gemeinsamen Werkstatt: Wie die OER-Anreizmatrix Denken und Handeln verbindet und in standort- sowie zielgruppenspezifische Maßnahmen übersetzt werden kann.
+
+summary: >
+  Bericht und Arbeitsimpuls aus dem Co-WOERK-Teamtreffen: Anreize für OER systematisch geordnet und als praxisnahes Werkstattkonzept aufbereitet.
+
 thumbnail: "/iWIP/bilder/thumbnails/oer_anreize_mini.png"
+
+tags:
+  - OER
+  - Open Educational Resources
+  - Open Educational Practices (OEP)
+  - Anreizmatrix
+  - Hochschullehre
+  - Co-WOERK
+  - Didaktik
+  - Community Building
+
+categories:
+  - OER & Open Practice
+
+oer:
+  is_oer: true
+  kind: "article"
+
+  creators:
+    - name: "Silvia Retzlaff"
+      given_name: "Silvia"
+      family_name: "Retzlaff"
+      affiliation: ""
+      url: ""
+      orcid: ""
+    - name: "Nancy Walter"
+      given_name: "Nancy"
+      family_name: "Walter"
+      affiliation: ""
+      url: ""
+      orcid: ""
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  version: "1.0"
+  status: "pilot"   # draft | pilot | stable | aligned
+
+  in_language: "de"
+  learning_resource_type: "Article"
+
+  educational_level:
+    - "Hochschule"
+    - "Berufliche Bildung"
+
+  audience:
+    - "Hochschullehrende"
+    - "Lehrende"
+    - "Projektmitarbeitende"
+    - "Interessierte an Open Education"
+
+  time_required: "PT30M"
+
+  about:
+    - term: "Open Educational Resources"
+    - term: "Open Educational Practices"
+    - term: "Anreize"
+    - term: "Adoptionsphasen"
+    - term: "Innovation Adoption"
+    - term: "OER-Strategien"
+    - term: "Community Building"
+
+  todos: []
 ---
 
 <div class="top-toggle">
   <button onclick="window.print()" title="Beitrag speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/oer/anreize/'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
+{{< oer-meta >}}
 
 # 🚀 Einstieg  
 

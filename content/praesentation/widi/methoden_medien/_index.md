@@ -1,7 +1,95 @@
 ---
 title: "Methoden & Medien"
+date: 2025-11-05
+lastmod: 2025-11-05
+draft: false
+
 outputs:
   - Reveal
+
+reveal_hugo:
+  theme: simple
+  slideNumber: true
+  hash: true
+
+description: >
+  Reveal-Präsentation zu Methoden und Medien im Kontext von Open Educational
+  Resources (OER): Einführung, bildungspolitische Einordnung, Begründungen für
+  OER sowie eine konkrete Aufgabenstellung zur Entwicklung eigener OER.
+
+summary: >
+  Präsentation zu OER mit Fokus auf Methoden- und Medieneinsatz in der
+  Hochschullehre, inklusive didaktischer Zielsetzung, Arbeitsauftrag,
+  Lizenzierung und Bewertungskriterien.
+
+tags:
+  - OER
+  - Methoden
+  - Medien
+  - Didaktik
+  - Open Education
+  - Creative Commons
+  - Hochschullehre
+  - Präsentation
+
+categories:
+  - OER
+
+oer:
+  is_oer: true
+  kind: "presentation"
+  note: >
+    Präsentation ist als OER ausgewiesen. Einzelne eingebundene Grafiken
+    (z. B. Avatar-Grafiken oder Illustrationen) können abweichende
+    Nutzungsrechte besitzen und sind ggf. als Ausnahmen zu behandeln.
+
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "Blogbeitrag: Frei nutzbare Lehr-Lern-Materialien – OER"
+    url: "https://matthiassoell.github.io/iWIP/blog/oer/warum_oer/"
+
+  in_language: "de"
+  learning_resource_type: "Presentation"
+  educational_level:
+    - "Hochschule / Weiterbildung"
+  audience:
+    - "Studierende"
+    - "Lehrende"
+    - "Interessierte an Open Education"
+  time_required: "PT90M"
+
+  about:
+    - term: "Methoden und Medien"
+    - term: "Open Educational Resources"
+    - term: "Creative Commons"
+    - term: "Open Educational Practices"
+    - term: "OER-Erstellung"
+    - term: "Didaktische Gestaltung"
+
+  rights_exceptions:
+    - item: "Avatar-Grafik"
+      note: "Lizenz ggf. abweichend; Nutzung nur im Kontext der Präsentation"
+      path: "/iWIP/bilder/avatare/avatar_erkenntnis_2.png"
+    - item: "Illustration zur OER-Qualität"
+      note: "Urheberschaft/Lizenz prüfen; ggf. als Ausnahme kennzeichnen"
+      path: "OER_qualitaet.png"
+
+  todos: []
 ---
 
 {{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}

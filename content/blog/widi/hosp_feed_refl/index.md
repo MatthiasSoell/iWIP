@@ -1,13 +1,76 @@
 ---
 title: "Hospitation, Feedback & Reflexion"
-date: 2025-11-26T21:14:00+02:00
+date: 2025-11-26
+lastmod: 2025-11-26
 draft: true
+
 description: |
   In dieser Lehr-Lern-Einheit entwickeln Sie Ihr Verständnis von Didaktik weiter: Anhand von Hospitation, Feedback und 🪞 Reflexion wird die eigene Professionalisierung als Lehrperson in den Blick genommen.
 summary: |
   In dieser Einheit beschäftigen Sie sich mit Hospitation, Feedback und Reflexion als Bausteinen professionellen Lehrer:innenhandelns und lernen das ALACT-Modell als Strukturhilfe für Reflexionsprozesse kennen.
-tags: ["Didaktik", "Reflexion", "Feedback", "Hospitation", "Professionalisierung"]
-categories: ["Didaktik", "Wirtschaftsdidaktik"]
+
+tags:
+  - Didaktik
+  - Reflexion
+  - Feedback
+  - Hospitation
+  - Professionalisierung
+  - ALACT
+  - OER
+
+categories:
+  - Didaktik
+  - Wirtschaftsdidaktik
+  - OER
+
+oer:
+  is_oer: true
+  kind: "lesson"
+
+  # TULLU-Pflichtdaten (Frontend) + Basis für JSON-LD
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "Universität Rostock"
+    url: "https://www.uni-rostock.de/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  # Version / Reifegrad (kein Qualitätsurteil)
+  version: "1.0"
+  status: "draft"   # draft | pilot | stable | aligned
+
+  # OERSI / schema.org-nahe Felder
+  in_language: "de"
+  learning_resource_type: "Lesson"
+  educational_level:
+    - "Bachelor (grundlagenorientiert)"
+  audience:
+    - "Studierende der Wirtschaftspädagogik"
+  time_required: "PT90M"
+
+  about:
+    - term: "Hospitation"
+    - term: "Feedback"
+    - term: "Reflexion"
+    - term: "Professionalisierung"
+    - term: "ALACT-Modell"
+    - term: "Lehrer:innenhandeln"
+
+  # Optional
+  todos: []
 ---
 
 <script>
@@ -32,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <button onclick="triggerPrint()" title="Beitrag drucken oder speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/widi/hospitation_feedback_reflexion/'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
+{{< oer-meta >}}
 
 ---
 

@@ -1,0 +1,166 @@
+{{- $p := .Params -}}
+{{- $oer := $p.oer -}}
+
+{{- if and $oer $oer.is_oer -}}
+
+<div class="oer-meta">
+
+  <!-- 🏷️ Titel zentriert (Label + Value) -->
+  <div class="oer-meta-title-center">
+    <span class="oer-meta-label">🏷️ Titel:</span>
+    <span class="oer-meta-value">{{ .Title }}</span>
+  </div>
+
+  <div class="oer-meta-grid">
+
+    <!-- LINKE SPALTE: Identität -->
+    <div class="oer-meta-col">
+
+      {{/* --- URHEBER-LOGIK: Du allein vs. mehrere --- */}}
+      {{ with $oer.creators }}
+        {{- $n := len . -}}
+        {{- $label := "👤 Urheber:" -}}
+        {{- if gt $n 1 -}}
+          {{- $label = "👥 Urheber:innen:" -}}
+        {{- end -}}
+
+        <div class="oer-row">
+          <span class="oer-meta-label">{{ $label }}</span>
+          <span class="oer-meta-value">
+            {{- range $i, $c := . -}}
+              {{- if $i }}, {{ end -}}{{ $c.name }}
+            {{- end -}}
+          </span>
+        </div>
+      {{ end }}
+
+      {{ with $oer.license }}
+      <div class="oer-row">
+        <span class="oer-meta-label">📜 Lizenz & Link:</span>
+        <a class="oer-meta-value"
+           href="{{ .url }}"
+           target="_blank"
+           rel="license noopener">
+          {{ .label }}
+        </a>
+      </div>
+      {{ end }}
+
+      {{ with $oer.source }}
+      <div class="oer-row">
+        <span class="oer-meta-label">🔗 Ursprungsort:</span>
+        <a class="oer-meta-value" href="{{ .url }}" rel="noopener">
+          {{ .label }}
+        </a>
+      </div>
+      {{ end }}
+
+    </div>
+
+    <!-- RECHTE SPALTE: Entwicklungsstand -->
+    <div class="oer-meta-col oer-meta-right">
+
+      <div class="oer-row">
+        <span class="oer-meta-label">🗓 Erstellt:</span>
+        <span class="oer-meta-value">{{ .Date.Format "02.01.2006" }}</span>
+      </div>
+
+      {{ if ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02") }}
+      <div class="oer-row oer-meta-sub">
+        <span class="oer-meta-label">🔄 Aktualisiert:</span>
+        <span class="oer-meta-value">{{ .Lastmod.Format "02.01.2006" }}</span>
+      </div>
+      {{ end }}
+
+      <div class="oer-row">
+        <span class="oer-meta-label">🧩 Version:</span>
+        <span class="oer-meta-value">{{ $oer.version | default "–" }}</span>
+      </div>
+
+      <div class="oer-row">
+        <span class="oer-meta-label">🚦 Status:</span>
+
+        {{ with $oer.status }}
+          {{- $label := "" -}}
+          {{- $tooltip := "" -}}
+          {{- if eq . "draft" -}}
+            {{- $label = "Entwurf" -}}
+            {{- $tooltip = "Diese Lehr-Lern-Einheit befindet sich noch im Aufbau." -}}
+          {{- else if eq . "pilot" -}}
+            {{- $label = "In Erprobung" -}}
+            {{- $tooltip = "Diese Lehr-Lern-Einheit wird aktuell in der Lehre erprobt." -}}
+          {{- else if eq . "stable" -}}
+            {{- $label = "Stabil" -}}
+            {{- $tooltip = "Diese Lehr-Lern-Einheit ist didaktisch erprobt und zuverlässig einsetzbar." -}}
+          {{- else if eq . "aligned" -}}
+            {{- $label = "Didaktisch abgestimmt" -}}
+            {{- $tooltip = "Diese Lehr-Lern-Einheit ist didaktisch konsolidiert und reflektiert abgeschlossen." -}}
+          {{- end -}}
+
+          <span class="oer-status {{ . }}"
+                data-tooltip="{{ $tooltip }}"
+                tabindex="0">
+            {{ if eq . "draft" }}🟡{{ else if eq . "pilot" }}🟠{{ else if eq . "stable" }}🔵{{ else if eq . "aligned" }}🟢{{ end }}
+            <span class="oer-status-text">{{ $label }}</span>
+          </span>
+        {{ end }}
+
+      </div>
+
+    </div>
+
+  </div>
+
+  {{/* ----------------------------
+     🧾 So zitieren (APA-7-nah)
+     - wenn oer.citation vorhanden: nutzen
+     - sonst: automatisch generieren
+  ---------------------------- */}}
+
+  {{- $cite := "" -}}
+
+  {{- with $oer.citation -}}
+    {{- $cite = . -}}
+  {{- else -}}
+
+    {{/* --- Autor(en) APA-nah --- */}}
+    {{- $authors := slice -}}
+    {{- with $oer.creators -}}
+      {{- range . -}}
+        {{- if and .family_name .given_name -}}
+          {{- $authors = $authors | append (printf "%s, %s" .family_name .given_name) -}}
+        {{- else -}}
+          {{- $authors = $authors | append .name -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $authorsStr := delimit $authors "; " -}}
+    {{- $year := .Date.Format "2006" -}}
+
+    {{- $site := "SciBlog iWIP" -}}
+    {{- with $oer.source -}}
+      {{- if .label }}{{- $site = .label -}}{{- end -}}
+    {{- end -}}
+
+    {{- $lic := "CC BY-SA 4.0" -}}
+    {{- with $oer.license -}}
+      {{- if .label }}{{- $lic = .label -}}{{- end -}}
+    {{- end -}}
+
+    {{- if gt (len $authorsStr) 0 -}}
+      {{- $cite = printf "%s (%s). %s. %s. %s (Lizenz: %s)" $authorsStr $year .Title $site .Permalink $lic -}}
+    {{- else -}}
+      {{- $cite = printf "(%s). %s. %s. %s (Lizenz: %s)" $year .Title $site .Permalink $lic -}}
+    {{- end -}}
+
+  {{- end -}}
+
+  <div class="oer-row oer-cite">
+    <span class="oer-meta-label">🧾 Zitiervorschlag:</span>
+    <span class="oer-meta-value">{{- $cite -}}</span>
+  </div>
+
+</div>
+
+{{- end -}}
