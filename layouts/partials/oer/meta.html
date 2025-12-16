@@ -3,6 +3,42 @@
 
 {{- if and $oer $oer.is_oer -}}
 
+<script id="md-rawcontent" type="text/plain">{{ .RawContent }}</script>
+
+<script id="md-oer-meta" type="text/plain">
+## 🎓🌍🔓 OER-Metadaten
+
+- 🏷️ **Titel:** {{ .Title }}
+
+{{ with $oer.creators -}}
+- {{ if gt (len .) 1 }}👥 **Urheber:innen:**{{ else }}👤 **Urheber:**{{ end }} {{ range $i, $c := . }}{{ if $i }}, {{ end }}{{ $c.family_name }}, {{ $c.given_name }}{{ end }}
+{{- else -}}
+- 👤 **Urheber:** –
+{{- end }}
+
+{{ with $oer.license -}}
+- 📜 **Lizenz:** {{ .label }}
+- 🔗 **Lizenz-Link:** {{ .url }}
+{{- else -}}
+- 📜 **Lizenz:** –
+{{- end }}
+
+{{ with $oer.source -}}
+- 🔗 **Ursprungsort:** {{ .label }}
+- 🌐 **URL:** {{ .url }}
+{{- end }}
+
+- 🗓 **Erstellt:** {{ .Date.Format "02.01.2006" }}
+{{ if ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02") -}}
+- 🔄 **Aktualisiert:** {{ .Lastmod.Format "02.01.2006" }}
+{{- end }}
+
+- 🧩 **Version:** {{ $oer.version | default "–" }}
+- 🚦 **Status:** {{ if eq $oer.status "draft" -}}🟡 Entwurf{{- else if eq $oer.status "pilot" -}}🟠 In Erprobung{{- else if eq $oer.status "stable" -}}🔵 Stabil{{- else if eq $oer.status "aligned" -}}🟢 Didaktisch abgestimmt{{- else -}}–{{- end }}
+
+- 🧾 **Zitiervorschlag:** {{ with $oer.creators }}{{ range $i, $c := . }}{{ if $i }}, {{ end }}{{ $c.family_name }}, {{ $c.given_name }}{{ end }}{{ end }} ({{ .Date.Format "2006" }}). {{ .Title }}. {{ with $oer.source }}{{ .label }}{{ else }}SciBlog iWIP{{ end }}. {{ .Permalink }} (Lizenz: {{ with $oer.license }}{{ .label }}{{ else }}–{{ end }})
+</script>
+
 <div class="oer-meta">
 
   <!-- 🏷️ Titel zentriert (Label + Value) -->
@@ -28,7 +64,7 @@
           <span class="oer-meta-label">{{ $label }}</span>
           <span class="oer-meta-value">
             {{- range $i, $c := . -}}
-              {{- if $i }}, {{ end -}}{{ $c.name }}
+              {{- if $i }}; {{ end -}}{{ $c.family_name }}, {{ $c.given_name }}
             {{- end -}}
           </span>
         </div>
@@ -78,7 +114,7 @@
       </div>
 
       <div class="oer-row">
-        <span class="oer-meta-label">🚦 Status:</span>
+        <span class="oer-meta-label">🚦 Status: </span>
 
         {{ with $oer.status }}
           {{- $label := "" -}}
@@ -101,7 +137,7 @@
                 data-tooltip="{{ $tooltip }}"
                 tabindex="0">
             {{ if eq . "draft" }}🟡{{ else if eq . "pilot" }}🟠{{ else if eq . "stable" }}🔵{{ else if eq . "aligned" }}🟢{{ end }}
-            <span class="oer-status-text">{{ $label }}</span>
+            {{ $label }}
           </span>
         {{ end }}
 
@@ -135,7 +171,7 @@
       {{- end -}}
     {{- end -}}
 
-    {{- $authorsStr := delimit $authors "; " -}}
+    {{- $authorsStr := delimit $authors ", " -}}
     {{- $year := .Date.Format "2006" -}}
 
     {{- $site := "SciBlog iWIP" -}}

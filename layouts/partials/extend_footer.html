@@ -47,5 +47,10 @@
   });
 </script>
 
+{{ if and .IsPage (ne .Section "praesentation") }}
+<script id="md-rawcontent" type="text/plain">{{ .RawContent }}</script>
+<script src="{{ "/iWIP/js/copy-page-md.js" | relURL }}"></script>
+{{ end }}
+
 <!-- Globale Druck- und Preview-Funktionen -->
 <script src="{{ "/iWIP/js/print-save-toggle.js" | relURL }}"></script>

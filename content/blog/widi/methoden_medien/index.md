@@ -59,6 +59,7 @@ oer:
 ---
 
 <div class="top-toggle">
+  <button id="md-copy-btn" title="Markdown kopieren">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
 </div>
 {{< oer-meta >}}

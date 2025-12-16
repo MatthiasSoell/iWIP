@@ -614,6 +614,6 @@ article.post-single{
 }
 
 .oer-cite {
-  margin-top: calc(var(--space-m) + 0.3rem);
+  margin-top: calc(var(--space-m) + 0.1rem);
   text-align: center;
 }
