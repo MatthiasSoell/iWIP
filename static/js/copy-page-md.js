@@ -220,3 +220,16 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.removeChild(ta);
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.querySelector("[data-copy-citation]");
+  const target = document.getElementById("oer-citation-text");
+
+  if (!btn || !target) return;
+
+  btn.addEventListener("click", () => {
+    navigator.clipboard.writeText(target.innerText).then(() => {
+      showCopyBadge("Zitiervorschlag kopiert");
+    });
+  });
+});

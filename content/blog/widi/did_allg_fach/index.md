@@ -5,7 +5,7 @@ lastmod: 2025-10-22
 draft: false
 
 description: |
-  📚 Ausgangspunkt dieser Lehr-Lern-Einheit ist das eigene Verständnis von Didaktik. Auf dieser Basis werden zentrale Entwicklungslinien der Didaktik nachvollzogen und die Allgemeine Didaktik von den Fachdidaktiken abgegrenzt.
+  Ausgangspunkt dieser Lehr-Lern-Einheit ist das eigene Verständnis von Didaktik. Auf dieser Basis werden zentrale Entwicklungslinien der Didaktik nachvollzogen und die Allgemeine Didaktik von den Fachdidaktiken abgegrenzt.
 summary: |
   In dieser Einheit entwickeln Studierende ein grundlegendes Verständnis von Didaktik, ihrer historischen Entwicklung sowie der Unterscheidung zwischen Allgemeiner Didaktik und Fachdidaktiken.
 

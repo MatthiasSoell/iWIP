@@ -5,7 +5,7 @@ lastmod: 2025-11-19
 draft: false
 
 description: |
-  📌 Ausgangspunkt des heutigen Lehr-Lern-Arrangements ist die Reflexion Ihrer 🎓🌍🔓 OER-Entwicklung. 🧭 Anschließend lernen Sie Systematisierungen von 🧩 Methoden und 💻 Medien kennen und erproben, wie sich daraus begründete Entscheidungen für die Gestaltung von 🤝 Wirtschaftsunterricht ableiten lassen.
+  Ausgangspunkt des heutigen Lehr-Lern-Arrangements ist die Reflexion Ihrer OER-Entwicklung. Anschließend lernen Sie Systematisierungen von Methoden und Medien kennen und erproben, wie sich daraus begründete Entscheidungen für die Gestaltung von Wirtschaftsunterricht ableiten lassen.
 summary: |
   In dieser Einheit lernen Sie Systematisierungen von Methoden und Medien kennen. Auf dieser Basis lassen sich begründete Entscheidungen für die Gestaltung von Wirtschaftsunterricht ableiten.
 
