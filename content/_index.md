@@ -71,7 +71,7 @@ oer:
   subtext="© ITMZ | Universität Rostock<br> – nicht frei verwendbar"
 >}}
 
-Mit MEINEM **SciBlog iWIP** 🧠📖 mache ich mich auf den Weg, meine Forschungs- und Lehrmaterialien als **OER** 🎓🌍🔓 frei zugänglich zu machen.
+Mit meinem **SciBlog iWIP** 🧠📖 mache ich mich auf den Weg, meine Forschungs- und Lehrmaterialien als **OER** 🎓🌍🔓 frei zugänglich zu machen.
 
 ... wer, wie, was??? Drei Abkürzungen in ein paar Zeilen ... 😉
 
