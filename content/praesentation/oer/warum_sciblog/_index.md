@@ -102,13 +102,6 @@ oer:
 
 ---
 
-## Agenda 🧭
-1. Motivation für SciBlog iWIP 💡
-2. Zentrale Funktionen 🛠️
-3. Learnings 🧠
-
----
-
 ## 1. Motivation 💡
 
 {{< rawhtml >}}

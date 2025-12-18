@@ -617,3 +617,80 @@ article.post-single{
   margin-top: calc(var(--space-m) + 0.1rem);
   text-align: center;
 }
+
+/* =========================================
+   🎓🌍🔓 OER Meta-Box – Dark Mode Fix (PaperMod)
+   Gilt nur für die Meta-Box, nicht global.
+   ========================================= */
+
+body.dark .oer-meta {
+  background: #171a1d;            /* dunkles Card-Feeling */
+  border: 1px solid #2a2f36;
+  box-shadow: none;               /* im Dark Mode oft besser */
+}
+
+/* Grundtypografie innerhalb der Box */
+body.dark .oer-meta,
+body.dark .oer-meta * {
+  color: #e7eaf0;
+}
+
+/* Labels etwas zurücknehmen, damit Werte führen */
+body.dark .oer-meta .oer-meta-label {
+  color: #a7b0be;
+}
+
+/* Werte klar lesbar */
+body.dark .oer-meta .oer-meta-value {
+  color: #eef2f7;
+}
+
+/* Links: gut sichtbar, ohne „Neon“ */
+body.dark .oer-meta a.oer-meta-value,
+body.dark .oer-meta a {
+  color: #9ec5ff;
+  text-decoration-color: rgba(158, 197, 255, 0.65);
+}
+
+body.dark .oer-meta a:hover,
+body.dark .oer-meta a:focus {
+  color: #c3dbff;
+  text-decoration-color: rgba(195, 219, 255, 0.95);
+}
+
+/* Trenner / Sub-Zeilen (falls Du dort Abstände/Optik nutzt) */
+body.dark .oer-meta .oer-meta-sub {
+  opacity: 0.95;
+}
+
+/* Zitiervorschlag: etwas „luftiger“, aber nicht ausgewaschen */
+body.dark .oer-meta .oer-cite {
+  border-top: 1px solid #2a2f36;  /* falls Du im Light Mode einen Divider nutzt */
+}
+
+body.dark .oer-meta .oer-cite .oer-meta-value {
+  color: #dde3ee;
+  line-height: 1.35;
+}
+
+/* Status-Badge (Dein <span class="oer-status pilot"> … ) */
+body.dark .oer-meta .oer-status {
+  background: #222831;
+  border: 1px solid #384252;
+  color: #eef2f7;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+}
+
+/* Optional: Status je nach Typ minimal akzentuieren (ohne buntes Feuerwerk) */
+body.dark .oer-meta .oer-status.draft  { border-color: #5a4b1a; }
+body.dark .oer-meta .oer-status.pilot  { border-color: #6a3e20; }
+body.dark .oer-meta .oer-status.stable { border-color: #284a66; }
+body.dark .oer-meta .oer-status.aligned{ border-color: #245a3a; }
+
+/* Tooltip (falls Du ihn per CSS renderst, z.B. ::after) */
+body.dark .oer-meta [data-tooltip]::after {
+  background: #0f1216;
+  border: 1px solid #2a2f36;
+  color: #e7eaf0;
+}

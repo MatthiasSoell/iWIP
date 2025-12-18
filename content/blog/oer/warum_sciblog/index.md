@@ -208,7 +208,7 @@ Aus dieser Reduktion heraus wurde der Weg frei für das, was mir in der Lehre ei
 > [!TIPP]
 > Die entscheidende Idee war, nicht noch ein weiteres Tool zu suchen, sondern die **Perspektive zu wechseln**: weg von einzelnen Anwendungen – hin zu einer integrierten **Software-Umgebung für die Lehre** 💻🎯.
 
-Inspiriert durch meine Kollegin **Silvia Retzlaff** sowie durch die Arbeit der *oer.community* im OE_COM-Projekt **FOERBICO** 🤝🌱, erinnerte ich mich – unter leichtem sozialem Druck 😉 – an meine eigenen Programmieranfänge in der Jugend 👨‍💻.
+Inspiriert durch meine Kollegin **Silvia Retzlaff** sowie durch die Arbeit der [oer.community](https://oer.community) im OE_COM-Projekt **FOERBICO** 🤝🌱, erinnerte ich mich – unter leichtem sozialem Druck 😉 – an meine eigenen Programmieranfänge in der Jugend 👨‍💻.
 
 Als ich mich intensiver mit dem Gedanken beschäftigte, dass das **Web selbst** – und insbesondere **HTML** – eine ausgesprochen **OER-freundliche Umgebung** ist 🌍🔓, fiel meine Entscheidung:  
 
