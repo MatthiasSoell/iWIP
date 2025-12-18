@@ -764,3 +764,8 @@ body.dark .top-toggle button:hover,
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Mehr Abstand zwischen Listenpunkten in Reveal */
+.reveal ul li {
+  margin-bottom: 0.9em;
+}
