@@ -21,4 +21,4 @@ Ihr Browser bietet zusätzliche Unterstützung, z. B.:
 - **🌍 Übersetzen** von Seiten      
 - **🔖 Lesezeichen** oder **Leseliste** zum späteren Wiederfinden
 
-Weitere Hinweise zur **technischen Umsetzung**, zur **Struktur** des Blogs und zur **Mitwirkung** an Inhalten finden Sie in der Doku 💻
+Weitere Hinweise zur **technischen Umsetzung**, zur **Struktur** des Blogs und zur **Mitwirkung** an Inhalten finden Sie in der Doku 💻.
