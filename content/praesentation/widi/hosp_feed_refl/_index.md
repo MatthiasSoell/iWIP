@@ -96,7 +96,7 @@ oer:
     veranstaltung="Grundlagen Fachdidaktik Wirtschaft"
     author="Prof. Dr. Matthias Söll"
     qr="qrcode.png"
-    blog="/iWIP/blog/widi/did_allg_fach"
+    blog="/iWIP/blog/widi/hosp_feed_refl"
 >}}
 
 ---

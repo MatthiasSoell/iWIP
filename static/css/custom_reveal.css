@@ -486,11 +486,9 @@ body.dark .top-toggle button:hover,
   text-align: center;
 }
 .reveal .qr-card img {
-  width: 120px;
-  height: 120px;
   display: block;
   margin: 0 auto;
-  padding: 6px;
+  padding: 3px;
   background:
     linear-gradient(to right, #1E88E5, #5ED020) top,
     linear-gradient(to right, #5ED020, #1E88E5) bottom,
@@ -498,7 +496,7 @@ body.dark .top-toggle button:hover,
     linear-gradient(to top, #5ED020, #009FE3) right;
   background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
   background-repeat: no-repeat;
-  border-radius: 10px;
+  border-radius: 8px;
   box-sizing: border-box;
   opacity: 0.96;
 }

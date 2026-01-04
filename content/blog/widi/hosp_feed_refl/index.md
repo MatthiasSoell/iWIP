@@ -2,12 +2,12 @@
 title: "Hospitation, Feedback & Reflexion"
 date: 2025-11-26
 lastmod: 2025-11-26
-draft: true
+draft: false
 
 description: |
-  In dieser Lehr-Lern-Einheit entwickeln Sie Ihr Verständnis von Didaktik weiter: Anhand von Hospitation, Feedback und 🪞 Reflexion wird die eigene Professionalisierung als Lehrperson in den Blick genommen.
+  In dieser Lehr-Lern-Einheit entwickeln Sie Ihr Verständnis von Didaktik weiter: Anhand von Hospitation, Feedback und Reflexion wird die eigene Professionalisierung als Lehrperson in den Blick genommen.
 summary: |
-  In dieser Einheit beschäftigen Sie sich mit Hospitation, Feedback und Reflexion als Bausteinen professionellen Lehrer:innenhandelns und lernen das ALACT-Modell als Strukturhilfe für Reflexionsprozesse kennen.
+  In dieser Einheit beschäftigen Sie sich mit Hospitation, Feedback und Reflexion als Bausteinen professionellen Lehrer:innenhandelns und lernen das ALACT-Modell als Reflexionsmodell kennen.
 
 tags:
   - Didaktik
@@ -79,21 +79,20 @@ oer:
   }
 </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.location.search.includes("print-pdf")) {
-    Reveal.addEventListener("ready", function () {
-      setTimeout(() => {
-        window.print();
-      }, 300);
-    });
-  }
-});
-</script>
+<style>
+.bildquelle {
+  text-align:center !important;
+  font-style:italic !important;
+  font-size:0.9rem !important; /* oder .9rem, je nach Wunsch */
+  margin-top:0.4rem !important;
+  color:#333;
+}
+</style>
 
 <div class="top-toggle">
-  <button onclick="triggerPrint()" title="Beitrag drucken oder speichern">📥</button>
-  <button onclick="location.href='/iWIP/praesentation/widi/hospitation_feedback_reflexion/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button id="md-copy-btn" title="Markdown kopieren">📑</button>
+  <button onclick="triggerPrint()" title="Blog speichern">📥</button>
+<button onclick="location.href='/iWIP/praesentation/widi/hosp_feed_refl/'" title="Zur Präsentationsansicht">🖥️</button>
 </div>
 {{< oer-meta >}}
 
@@ -105,7 +104,7 @@ In dieser Lehr-Lern-Einheit knüpfen wir an grundlegende Fragen der Didaktik an:
 
 - Was macht **professionelles Lehrer:innenhandeln** aus?  
 - Wie können wir Unterricht gezielt **beobachten**, **rückmelden** und **reflektieren**, um daraus zu lernen?  
-- Welche Rolle spielen dabei **Hospitation**, **Feedback** und **🪞 Reflexion**?
+- Welche Rolle spielen dabei **Hospitation**, **Feedback** und **Reflexion**?
 
 Die Veranstaltung verbindet damit zentrale Bausteine der **Professionalisierung** mit ganz praktischen Übungen im Seminar.
 
@@ -113,9 +112,8 @@ Die Veranstaltung verbindet damit zentrale Bausteine der **Professionalisierung*
 
 # 💭 Fragestellung  
 
-> [!TIP]
-> Wie können Hospitation, Feedback und Reflexion genutzt werden,  
-> um das eigene Lehrer:innenhandeln gezielt weiterzuentwickeln?
+> [!TIPP]
+> Wie können Hospitation, Feedback und Reflexion genutzt werden, um das eigene Lehrer:innenhandeln gezielt weiterzuentwickeln?
 
 ---
 
@@ -160,6 +158,13 @@ Professionalisierung von Lehrer:innen wird häufig als Zusammenspiel mehrerer Di
 - **Überzeugungen und Werthaltungen**,  
 - **Motivation und Selbstregulation**,  
 - **Handlungskompetenzen** im Unterricht und darüber hinaus.
+
+<figure class="figure-frame">
+  <img src="professionelle_lehrperson.jpg"
+       alt="Professionelle Lehrperson nach Baumert & Kunter (2006)">
+</figure>
+
+<p class="bildquelle" data-fragment-index="1">Bildquelle: Eigene Darstellung in Anlehnung an Baumert & Kunter (2006) · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/ target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 Im Seminar wird dieses Verständnis über eine Grafik (in Anlehnung an Baumert & Kunter 2006) visualisiert und als Referenzrahmen genutzt, um Hospitation, Feedback und Reflexion einzuordnen.
 
@@ -292,7 +297,7 @@ Mögliche Leitfragen:
 
 ---
 
-# 📚 Literatur (Auszug)  
+# 📚 Literatur
 
 - Arnold, K.-H., & Roßa, A.-E. (2012). *Grundlagen der Allgemeinen Didaktik und der Fachdidaktiken.*  
 - Baumert, J., & Kunter, M. (2006). Stichwort: Professionelle Kompetenz von Lehrkräften. *Zeitschrift für Erziehungswissenschaft.*  
@@ -303,6 +308,4 @@ Mögliche Leitfragen:
 - Koerrenz, R., Kenklies, K., Kauhaus, H., & Schwarzkopf, M. (2017). *Geschichte der Pädagogik.*  
 - Köhler, K., & Weiß, K. (2015). Hospitation als Instrument der Unterrichtsentwicklung.  
 - Köhnlein, W. (2004). Fachdidaktik. In *Wörterbuch Schulpädagogik.*  
-- Müller, R. (2007). Das ALACT-Modell in der Lehrerbildung.  
-
-<small>Hinweis: Vollständige bibliographische Angaben kannst du – wie bei den anderen Beiträgen – bei Bedarf noch nachziehen und mit UB-/WorldCat-/DOI-Links ergänzen.</small>
+- Müller, R. (2007). Das ALACT-Modell in der Lehrerbildung.

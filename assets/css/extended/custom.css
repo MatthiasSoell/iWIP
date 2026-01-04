@@ -694,3 +694,17 @@ body.dark .oer-meta [data-tooltip]::after {
   border: 1px solid #2a2f36;
   color: #e7eaf0;
 }
+
+.figure-frame {
+  border: 1px solid #e5e7eb;   /* noch heller */
+  border-radius: 8px;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  background: #fff;
+  margin: 2rem auto;
+}
+
+.figure-frame img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}

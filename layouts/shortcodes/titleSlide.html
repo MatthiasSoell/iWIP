@@ -34,10 +34,32 @@
       <div class="author">👤 {{ . | safeHTML }}</div>
     {{ end }}
 
-    {{ with .Get "qr" }}
-      <div class="qr-card">
-        <img src="{{ . }}" alt="QR zur Präsentation" loading="lazy">
-      </div>
-    {{ end }}
+{{- with .Get "blog" -}}
+
+  {{- $path := . -}}
+  {{- if hasPrefix $path "/iWIP/" -}}
+    {{- $path = strings.TrimPrefix "/iWIP" $path -}}
+  {{- end -}}
+
+  {{- $target := cond (hasPrefix $path "http") $path (absURL $path) -}}
+
+{{- $opts := dict "scale" 12 "level" "medium" "targetDir" "qr" -}}
+{{- with images.QR $target $opts -}}
+  {{- $w := .Width -}}
+  {{- $h := .Height -}}
+  {{- $factor := 3 -}} {{/* 2 = halb so groß | 3 = Drittel usw. */}}
+
+  <div class="qr-card">
+    <img
+      src="{{ .RelPermalink }}"
+      width="{{ math.Div $w $factor }}"
+      height="{{ math.Div $h $factor }}"
+      style="width:{{ math.Div $w $factor }}px;height:{{ math.Div $h $factor }}px;image-rendering:pixelated;image-rendering:crisp-edges;"
+      alt="QR zum Blog"
+      loading="lazy">
+  </div>
+{{- end -}}
+
+{{- end -}}
   </div>
 </div>

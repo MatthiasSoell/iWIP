@@ -96,7 +96,6 @@ oer:
     veranstaltungstyp=""
     veranstaltung=""
     author="Prof. Dr. Matthias Söll"
-    qr="qrcode_sci.png"
     blog="/iWIP/blog/oer/warum_sciblog"
 >}}
 

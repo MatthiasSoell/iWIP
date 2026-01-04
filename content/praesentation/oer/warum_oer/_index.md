@@ -87,7 +87,6 @@ oer:
     veranstaltungstyp=""
     veranstaltung=""
     author="Prof. Dr. Matthias Söll"
-    qr="qrcode.png"
     blog="/iWIP/blog/oer/warum_oer"
 >}}
 

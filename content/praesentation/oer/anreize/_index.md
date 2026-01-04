@@ -100,7 +100,6 @@ oer:
     veranstaltungstyp="Co-WOERK Teamtreffen in Frankfurt (Oder)"
     veranstaltung=""
     author="Silvia Retzlaff, Nancy Walter & Matthias Söll"
-    qr="qrcode.png"
     blog="/iWIP/blog/oer/anreize"
 >}}
 
