@@ -34,38 +34,30 @@
       <div class="author">👤 {{ . | safeHTML }}</div>
     {{ end }}
 
+{{- $page := .Page -}}
 {{- with .Get "blog" -}}
 
-  {{- $path := . -}}
-  {{- if hasPrefix $path "/iWIP/" -}}
-    {{- $path = strings.TrimPrefix "/iWIP" $path -}}
-  {{- end -}}
-
-  {{- /* KANONISCHE URL – unabhängig vom Präsentationskontext */ -}}
-  {{- $target := cond (hasPrefix $path "http")
-        $path
-        (printf "%s%s" site.BaseURL (relURL $path)) -}}
+  {{- /* Ziel: aktuelle Präsentation inkl. Reveal-Hash */ -}}
+  {{- $target := printf "%s#/" $page.Permalink -}}
 
   {{- $opts := dict "scale" 12 "level" "medium" "targetDir" "qr" -}}
   {{- with images.QR $target $opts -}}
 
-    {{- $w := .Width -}}
-    {{- $h := .Height -}}
     {{- $factor := 3 -}}
 
     <div class="qr-card">
       <img
         src="{{ .RelPermalink }}"
-        width="{{ math.Div $w $factor }}"
-        height="{{ math.Div $h $factor }}"
-        style="width:{{ math.Div $w $factor }}px;height:{{ math.Div $h $factor }}px;image-rendering:pixelated;image-rendering:crisp-edges;"
-        alt="QR zum Blog"
+        width="{{ math.Div .Width $factor }}"
+        height="{{ math.Div .Height $factor }}"
+        style="width:{{ math.Div .Width $factor }}px;height:{{ math.Div .Height $factor }}px;image-rendering:pixelated;image-rendering:crisp-edges;"
+        alt="QR zur Präsentation"
         loading="lazy">
     </div>
 
-  {{- end -}}  {{/* ← end images.QR */}}
+  {{- end -}}
 
-{{- end -}}    {{/* ← end .Get "blog" */}}
+{{- end -}}
 
   </div>
 </div>
