@@ -31,7 +31,12 @@ a:hover {
 }
 
 html {
+  overflow-y: scroll !important;            /* verhindert Layout-Sprung (Chrome) */
   scrollbar-gutter: stable both-edges;
+}
+
+body.iwip_no_scroll {
+  overflow: hidden !important;              /* Scroll-Lock beim Overlay */
 }
 
 /* === Zitat- und Textgestaltung === */
