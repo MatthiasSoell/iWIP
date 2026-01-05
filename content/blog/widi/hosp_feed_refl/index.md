@@ -93,6 +93,14 @@ oer:
   <button id="md-copy-btn" title="Markdown kopieren">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
 <button onclick="location.href='/iWIP/praesentation/widi/hosp_feed_refl/'" title="Zur Präsentationsansicht">🖥️</button>
+<button class="iwip_help_btn"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="iwip_help_overlay"
+        aria-expanded="false"
+        title="Hinweise zur Nutzung">
+  ⓘ
+</button>
 </div>
 {{< oer-meta >}}
 

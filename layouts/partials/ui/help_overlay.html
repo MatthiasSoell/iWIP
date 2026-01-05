@@ -1,0 +1,33 @@
+{{/* UI Help Overlay – lädt Inhalt aus content/snippets/ui_help.md */}}
+{{ $p := site.GetPage "snippets/ui_help" }}
+
+<div id="iwip_help_overlay"
+     class="iwip_help_overlay"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="iwip_help_title"
+     hidden>
+
+  <div class="iwip_help_panel" role="document">
+    <div class="iwip_help_head">
+      <h2 id="iwip_help_title">ⓘ Hinweise zur Nutzung</h2>
+      <button class="iwip_help_close"
+              type="button"
+              aria-label="Schließen">
+        ✕
+      </button>
+    </div>
+
+    <div class="iwip_help_body">
+      {{ if $p }}
+        {{ $p.Content | markdownify }}
+      {{ else }}
+        <p>
+          <strong>Hinweis:</strong>
+          Der Hilfetext konnte nicht geladen werden
+          (<code>content/snippets/ui_help.md</code>).
+        </p>
+      {{ end }}
+    </div>
+  </div>
+</div>

@@ -30,6 +30,10 @@ a:hover {
   padding: 0;
 }
 
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
 /* === Zitat- und Textgestaltung === */
 .post-content blockquote {
   border-left: 4px solid var(--uni-blau) !important;
@@ -82,9 +86,9 @@ body.presentation-view footer {
   margin-bottom: 1rem;
 }
 
-.top-toggle button {
+.top-toggle button:not(.iwip_help_btn) {
   font-size: 1.1rem;
-  background: rgba(214, 225, 241, 0.55); /* leicht transparenter iWIP-Ton */
+  background: rgba(214, 225, 241, 0.55);
   backdrop-filter: blur(10px) saturate(150%);
   color: #111;
   border: 1px solid rgba(1, 74, 153, 0.2);
@@ -95,10 +99,10 @@ body.presentation-view footer {
   box-shadow:
     inset 0 0 1px rgba(255, 255, 255, 0.4),
     0 0 6px rgba(0, 0, 0, 0.10),
-    inset 0 0 10px rgba(0, 159, 227, 0.22); /* Halo für alle Buttons */
+    inset 0 0 10px rgba(0, 159, 227, 0.22);
 }
 
-.top-toggle button:hover {
+.top-toggle button:not(.iwip_help_btn):hover {
   background: rgba(200, 215, 235, 0.7);
   transform: translateY(-1px);
   box-shadow:
@@ -108,7 +112,7 @@ body.presentation-view footer {
 }
 
 /* === Dark Mode === */
-body.dark .top-toggle button {
+body.dark .top-toggle button:not(.iwip_help_btn) {
   background: rgba(45, 50, 60, 0.4);
   backdrop-filter: blur(10px) saturate(130%);
   color: #eee;
@@ -117,7 +121,8 @@ body.dark .top-toggle button {
     inset 0 0 1px rgba(255, 255, 255, 0.25),
     0 3px 6px rgba(0, 0, 0, 0.4);
 }
-body.dark .top-toggle button:hover {
+
+body.dark .top-toggle button:not(.iwip_help_btn):hover {
   background: rgba(70, 75, 85, 0.55);
   box-shadow:
     inset 0 0 1px rgba(255, 255, 255, 0.35),
@@ -707,4 +712,144 @@ body.dark .oer-meta [data-tooltip]::after {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+}
+
+/* =========================================================
+   UI Help Overlay – SciBlog iWIP
+   ========================================================= */
+
+/* Overlay Hintergrund */
+.iwip_help_overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Panel */
+.iwip_help_panel {
+  width: min(720px, 100%);
+  max-height: 80vh;
+  overflow-y: auto;
+  background: var(--theme);
+  color: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Header */
+.iwip_help_head {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--theme);
+  border-bottom: 1px solid var(--border);
+}
+
+.iwip_help_head h2 {
+  font-size: 1.05rem;        /* minimal größer */
+  font-weight: 700;          /* stärker als Body */
+  letter-spacing: 0.01em;    /* leichte Klarheit */
+  color: var(--uni-blau);    /* iWIP-Bezug */
+}
+
+/* Body */
+.iwip_help_body {
+  padding: 14px 16px;
+  font-size: 0.95rem;
+}
+
+.iwip_help_body h3 {
+  margin-top: 1rem;
+}
+
+.iwip_help_body ul {
+  padding-left: 1.4rem;
+  margin-left: 0;
+}
+
+.iwip_help_body li {
+  margin-left: 0;
+  padding-left: 0.2rem;
+}
+
+/* Close Button */
+.iwip_help_close {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--primary);
+  border-radius: 8px;
+  padding: 2px 8px;
+  font-size: 0.9rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.iwip_help_close:hover {
+  background: var(--code-bg);
+}
+
+/* Scroll Lock */
+.iwip_no_scroll {
+  overflow: hidden;
+}
+
+.iwip_help_head {
+  position: sticky;
+  top: 0;
+  padding: 12px 16px;
+}
+
+/* Close-Button sauber ausrichten */
+.iwip_help_close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+/* Mobile: Bottom Sheet */
+@media (max-width: 640px) {
+  .iwip_help_overlay {
+    place-items: end center;
+    padding: 10px;
+  }
+
+  .iwip_help_panel {
+    width: 100%;
+    max-height: 85vh;
+    border-radius: 14px 14px 0 0;
+  }
+}
+
+/* Help-Button: bewusst "leichter" als Tool-Buttons */
+.iwip_help_btn {
+  border: 0;
+  background: transparent;
+  padding: 6px 8px;
+  border-radius: 999px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--primary);
+}
+
+/* sichtbare Rückmeldung */
+.iwip_help_btn:hover {
+  background: var(--code-bg);
+}
+
+.iwip_help_btn:focus-visible {
+  outline: 2px solid var(--uni-blau);
+  outline-offset: 2px;
+}
+
+.iwip_help_overlay[hidden] {
+  display: none !important;
 }
