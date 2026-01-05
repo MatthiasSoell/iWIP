@@ -41,25 +41,31 @@
     {{- $path = strings.TrimPrefix "/iWIP" $path -}}
   {{- end -}}
 
-  {{- $target := cond (hasPrefix $path "http") $path (absURL $path) -}}
+  {{- /* KANONISCHE URL – unabhängig vom Präsentationskontext */ -}}
+  {{- $target := cond (hasPrefix $path "http")
+        $path
+        (printf "%s%s" site.BaseURL (relURL $path)) -}}
 
-{{- $opts := dict "scale" 12 "level" "medium" "targetDir" "qr" -}}
-{{- with images.QR $target $opts -}}
-  {{- $w := .Width -}}
-  {{- $h := .Height -}}
-  {{- $factor := 3 -}} {{/* 2 = halb so groß | 3 = Drittel usw. */}}
+  {{- $opts := dict "scale" 12 "level" "medium" "targetDir" "qr" -}}
+  {{- with images.QR $target $opts -}}
 
-  <div class="qr-card">
-    <img
-      src="{{ .RelPermalink }}"
-      width="{{ math.Div $w $factor }}"
-      height="{{ math.Div $h $factor }}"
-      style="width:{{ math.Div $w $factor }}px;height:{{ math.Div $h $factor }}px;image-rendering:pixelated;image-rendering:crisp-edges;"
-      alt="QR zum Blog"
-      loading="lazy">
-  </div>
-{{- end -}}
+    {{- $w := .Width -}}
+    {{- $h := .Height -}}
+    {{- $factor := 3 -}}
 
-{{- end -}}
+    <div class="qr-card">
+      <img
+        src="{{ .RelPermalink }}"
+        width="{{ math.Div $w $factor }}"
+        height="{{ math.Div $h $factor }}"
+        style="width:{{ math.Div $w $factor }}px;height:{{ math.Div $h $factor }}px;image-rendering:pixelated;image-rendering:crisp-edges;"
+        alt="QR zum Blog"
+        loading="lazy">
+    </div>
+
+  {{- end -}}  {{/* ← end images.QR */}}
+
+{{- end -}}    {{/* ← end .Get "blog" */}}
+
   </div>
 </div>
