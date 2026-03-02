@@ -1,7 +1,25 @@
-{{ if eq .Type "alert" }}
-  <blockquote class="my-callout alert-{{ .AlertType }}">
-    {{ .Text }}
-  </blockquote>
-{{ else }}
+{{- /* =========================================================
+      Render Hook: blockquote
+      GitHub-Style Callouts (alerts) -> einheitliche .callout Klassen
+      Canonical: tipp | quote | important | note
+    ========================================================= */ -}}
+
+{{- if eq .Type "alert" -}}
+  {{- $raw := .AlertType | default "note" | lower -}}
+
+  {{- /* Mapping: Hugo/GFM-Alerttypen -> canonical */ -}}
+  {{- $type := $raw -}}
+  {{- if eq $raw "tip" -}}{{- $type = "tipp" -}}{{- end -}}
+  {{- if eq $raw "quote" -}}{{- $type = "quote" -}}{{- end -}}
+  {{- if eq $raw "important" -}}{{- $type = "important" -}}{{- end -}}
+  {{- if or (eq $raw "warning") (eq $raw "caution") -}}{{- $type = "important" -}}{{- end -}}
+  {{- if eq $raw "note" -}}{{- $type = "note" -}}{{- end -}}
+
+  <div class="callout callout--{{ $type }}">
+    <div class="callout-content">
+      {{- .Text -}}
+    </div>
+  </div>
+{{- else -}}
   <blockquote>{{ .Text }}</blockquote>
-{{ end }}
+{{- end -}}

@@ -34,8 +34,9 @@
 </div>
 
 <script>
-  // Öffnet UB-, WorldCat- und DOI-Links in neuem Tab
   document.addEventListener("DOMContentLoaded", function () {
+
+    // Öffnet UB-, WorldCat- und DOI-Links in neuem Tab
     document
       .querySelectorAll(
         'a[href*="opac.lbs-rostock.gbv.de"], a[href*="search.worldcat.org"], a[href*="doi.org"]'
@@ -44,6 +45,18 @@
         link.setAttribute("target", "_blank");
         link.setAttribute("rel", "noopener noreferrer");
       });
+
+    // Öffnet alle externen http(s)-Links im Content in neuem Tab (z.B. Literaturliste)
+    document
+      .querySelectorAll('.post-content a[href^="http"]:not([target])')
+      .forEach(function (link) {
+        const isExternal = link.host && link.host !== window.location.host;
+        if (!isExternal) return;
+
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      });
+
   });
 </script>
 
@@ -57,3 +70,7 @@
 
 {{ partial "ui/help_overlay.html" . }}
 <script src="/iWIP/js/iwip_help_overlay.js"></script>
+
+<script src="/iWIP/js/print.js" defer></script>
+
+<script src="/iWIP/js/logo.js"></script>

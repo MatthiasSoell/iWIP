@@ -299,13 +299,17 @@ main.main {
 }
 
 /* ------------------------------------------
-   Literatur-Badges: UB Rostock / WorldCat / DOI
+   Literatur-Badges (explizit über Klassen)
+   UB Rostock / WorldCat / DOI
    ------------------------------------------ */
 
-/* Link selbst: Text unsichtbar UND ohne Breite */
-a[href^="https://opac.lbs-rostock.gbv.de"],
-a[href^="https://search.worldcat.org/de"],
-a[href^="https://doi.org/"] {
+/* ------------------------------------------
+   Basis: Literatur-Link (Text ausblenden)
+   ------------------------------------------ */
+
+a.lit-doi,
+a.lit-ub,
+a.lit-worldcat {
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -316,10 +320,13 @@ a[href^="https://doi.org/"] {
   vertical-align: middle;
 }
 
-/* Badge-Design (sichtbarer Teil) */
-a[href^="https://opac.lbs-rostock.gbv.de"]::before,
-a[href^="https://search.worldcat.org/de"]::before,
-a[href^="https://doi.org/"]::before {
+/* ------------------------------------------
+   Badge-Design (sichtbarer Teil)
+   ------------------------------------------ */
+
+a.lit-doi::before,
+a.lit-ub::before,
+a.lit-worldcat::before {
   display: inline-block;
   padding: 0.18em 0.55em;
   border-radius: 0.4em;
@@ -328,22 +335,32 @@ a[href^="https://doi.org/"]::before {
   line-height: 1.2;
   color: #ffffff;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
-/* UB Rostock – offizielles Uni-Blau */
-a[href^="https://opac.lbs-rostock.gbv.de"]::before {
+/* ------------------------------------------
+   UB Rostock – offizielles Uni-Blau
+   ------------------------------------------ */
+
+a.lit-ub::before {
   content: "UB Rostock";
   background-color: #003B70;
 }
 
-/* WorldCat – abgestuftes Blau */
-a[href^="https://search.worldcat.org/de"]::before {
+/* ------------------------------------------
+   WorldCat – abgestuftes Blau
+   ------------------------------------------ */
+
+a.lit-worldcat::before {
   content: "WorldCat";
   background-color: #145DA0;
 }
 
-/* DOI – neutrale Blaustufe */
-a[href^="https://doi.org/"]::before {
+/* ------------------------------------------
+   DOI – neutrale Blaustufe
+   ------------------------------------------ */
+
+a.lit-doi::before {
   content: "DOI";
   background-color: #5F7F9E;
 }
@@ -737,7 +754,7 @@ body.dark .oer-meta [data-tooltip]::after {
 /* Panel */
 .iwip_help_panel {
   width: min(720px, 100%);
-  max-height: 80vh;
+  max-height: 90vh;
   overflow-y: auto;
   background: var(--theme);
   color: var(--primary);
@@ -857,4 +874,53 @@ body.dark .oer-meta [data-tooltip]::after {
 
 .iwip_help_overlay[hidden] {
   display: none !important;
+}
+
+.bildquelle {
+  text-align:center !important;
+  font-style:italic !important;
+  font-size:0.9rem !important; /* oder .9rem, je nach Wunsch */
+  margin-top:0.4rem !important;
+  color:#333;
+}
+
+details > summary + p {
+  margin-top: 1.3rem;
+}
+
+.author{
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  hyphens: none;
+}
+
+.oer_cite_copy{
+  margin-left: 0.1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity .15s ease;
+}
+
+.oer-cite:hover .oer_cite_copy {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.info_tip{
+  opacity: .7;
+  cursor: help;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 1;
+}
+.info_tip:hover,
+.info_tip:focus{
+  opacity: 1;
 }

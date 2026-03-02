@@ -73,35 +73,20 @@ oer:
   todos: []
 ---
 
-<script>
-  function triggerPrint() {
-    window.print();
-  }
-</script>
-
-<style>
-.bildquelle {
-  text-align:center !important;
-  font-style:italic !important;
-  font-size:0.9rem !important; /* oder .9rem, je nach Wunsch */
-  margin-top:0.4rem !important;
-  color:#333;
-}
-</style>
-
 <div class="top-toggle">
-  <button id="md-copy-btn" title="Markdown kopieren">📑</button>
+  <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
-<button onclick="location.href='/iWIP/praesentation/widi/hosp_feed_refl/'" title="Zur Präsentationsansicht">🖥️</button>
-<button class="iwip_help_btn"
+  <button onclick="location.href='/iWIP/praesentation/widi/hosp_feed_refl/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button class="iwip_help_btn"
         type="button"
         aria-haspopup="dialog"
         aria-controls="iwip_help_overlay"
         aria-expanded="false"
         title="Hinweise zur Nutzung">
   ⓘ
-</button>
+  </button>
 </div>
+
 {{< oer-meta >}}
 
 ---
@@ -172,11 +157,11 @@ Professionalisierung von Lehrer:innen wird häufig als Zusammenspiel mehrerer Di
        alt="Professionelle Lehrperson nach Baumert & Kunter (2006)">
 </figure>
 
-<p class="bildquelle" data-fragment-index="1">Bildquelle: Eigene Darstellung in Anlehnung an Baumert & Kunter (2006) · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/ target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
+<p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an Baumert & Kunter (2006) · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 Im Seminar wird dieses Verständnis über eine Grafik (in Anlehnung an Baumert & Kunter 2006) visualisiert und als Referenzrahmen genutzt, um Hospitation, Feedback und Reflexion einzuordnen.
 
-> [!TIP]
+> [!TIPP]
 > Hospitation, Feedback und Reflexion sind keine „Add-ons“, sondern Bausteine professionellen Lehrer:innenhandelns: Sie helfen, Unterricht **bewusst wahrzunehmen**, **rückzumelden** und **weiterzuentwickeln**.
 
 ---
@@ -197,8 +182,12 @@ Quelle: vgl. Köhler & Weiß (2015).
 
 Im Seminar arbeiten wir mit einem **Hospitationsbogen**, der ausgewählte Beobachtungskategorien strukturiert und so die Auswertung im Anschluss erleichtert.
 
-![Hospitationsbogen (Beispiel)](hospitationsbogen.png)  
-<small>Bildquelle: Eigene Darstellung · Lizenz: CC BY 4.0</small>
+<figure class="figure-frame">
+  <img src="/iWIP/bilder/widi/hosp_feed_refl/hospitationsbogen.png"
+       alt="Beispiel eines Hospitationsbogens">
+</figure>  
+
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 ---
 
@@ -239,7 +228,7 @@ Für das Selbststudium können Sie u. a. folgende Videos nutzen:
 - [Wirksam Feedback geben (YouTube)](https://www.youtube.com/watch?v=7KMeQ6hyPBU)  
 - [Die Feedbackformel WWW – Mit WWW erfolgreich Feedback geben (YouTube)](https://www.youtube.com/watch?v=1DlSMQr4D6g)
 
-> [!TIP]
+> [!TIPP]
 > Nutzen Sie diese Materialien, um Ihr eigenes „Feedback-Repertoire“ zu schärfen – z. B. indem Sie Formulierungen notieren, die Sie in zukünftigen Lehrsituationen ausprobieren möchten.
 
 ---
@@ -265,16 +254,16 @@ Reflexion fördert die Professionalisierung von Lehrer:innen u. a. durch:
 - die **Verbesserung von Planung, Durchführung und Auswertung** von Unterricht,  
 - die Möglichkeit, Erfahrungen im Licht theoretischer Konzepte neu zu deuten.
 
-> [!TIP]
+> [!TIPP]
 > Professionalisierung entsteht nicht nur durch „mehr Erfahrung“, sondern durch **strukturiert reflektierte Erfahrung**.
 
 ---
 
 # 6️⃣ 🧠 Das ALACT-Modell der Reflexion  
 
-## ALACT nach Korthagen (2002)  
+## ALACT nach Korthagen & Kessels (1999)  
 
-Das ALACT-Modell (Korthagen 2002) beschreibt einen fünfphasigen Zyklus professioneller Reflexion:
+Das ALACT-Modell Korthagen & Kessels (1999) beschreibt einen fünfphasigen Zyklus professioneller Reflexion:
 
 1. **Action (Handeln)** – eine konkrete Unterrichtssituation oder Handlung.  
 2. **Looking back on the Action (Rückblick)** – was ist passiert, was war auffällig?  
@@ -282,8 +271,12 @@ Das ALACT-Modell (Korthagen 2002) beschreibt einen fünfphasigen Zyklus professi
 4. **Creating alternative Methods of Action (Alternativen entwickeln)** – was könnte ich beim nächsten Mal anders machen?  
 5. **Trial (Ausprobieren)** – die alternativen Handlungsmöglichkeiten werden in neuen Situationen erprobt.
 
-![ALACT-Modell nach Korthagen](alact.png)  
-<small>Bildquelle: Eigene Darstellung in Anlehnung an Müller (2007) · Lizenz: CC BY 4.0</small>
+<figure class="figure-frame">
+  <img src="/iWIP/bilder/widi/hosp_feed_refl/alact.png"
+       alt="ALACT-Modell nach Korthagen">
+</figure>  
+
+<p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an Korthagen & Kessels (1999) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 Im Seminar wird das Modell genutzt, um konkrete Erfahrungen aus Hospitation und Feedback systematisch zu reflektieren und **Handlungsalternativen** zu entwickeln.
 
@@ -307,13 +300,20 @@ Mögliche Leitfragen:
 
 # 📚 Literatur
 
-- Arnold, K.-H., & Roßa, A.-E. (2012). *Grundlagen der Allgemeinen Didaktik und der Fachdidaktiken.*  
-- Baumert, J., & Kunter, M. (2006). Stichwort: Professionelle Kompetenz von Lehrkräften. *Zeitschrift für Erziehungswissenschaft.*  
-- Dewey, J. (1933). *How We Think: A Restatement of the Relation of Reflective Thinking to the Educative Process.*  
-- Jahncke, H., et al. (2018). Reflexion im Praxissemester. In: *Lehrerbildung auf dem Prüfstand.*  
-- Jank, W., & Meyer, H. (2014). *Didaktische Modelle.*  
-- Korthagen, F. A. J. (2002). The relation between theory and practice in teacher education. *International Journal of Educational Research,* 35(5–6), 425–447.  
-- Koerrenz, R., Kenklies, K., Kauhaus, H., & Schwarzkopf, M. (2017). *Geschichte der Pädagogik.*  
-- Köhler, K., & Weiß, K. (2015). Hospitation als Instrument der Unterrichtsentwicklung.  
-- Köhnlein, W. (2004). Fachdidaktik. In *Wörterbuch Schulpädagogik.*  
-- Müller, R. (2007). Das ALACT-Modell in der Lehrerbildung.
+Arnold, K.-H., &amp; Roßa, A.-E. (2012). <em>Grundlagen der Allgemeinen Didaktik und der Fachdidaktiken.</em> In M. Kampshoff &amp; C. Wiepke (Hrsg.), <em>Handbuch Geschlechterforschung und Fachdidaktik</em> (S. 11–23). VS Verlag für Sozialwissenschaften. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1651884684" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.1007/978-3-531-18984-0" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/725009000" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+
+Baumert, J., & Kunter, M. (2006). Stichwort: Professionelle Kompetenz von Lehrkräften. *Zeitschrift Für Erziehungswissenschaft*, 9(4), 469–520. <a class="lit-doi" href="https://doi.org/10.1007/s11618-006-0165-2" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/10957670578" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+ 
+Dewey, J. (1933). *How we think : a restatement of the relation of reflective thinking to the educative process.* D.C. Heath. <a class="lit-doi" href="https://dx.doi.org/10.17169/refubium-44079" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href=" https://search.worldcat.org/de/title/851000439" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+
+Vergleichende Analyse zweier Portfoliokonzepte zur Beförderung der (Selbst‑)Reflexionsfähigkeit die hochschullehre 06/2018. (n.d.). *Die Hochschullehre*, 4. <a class="lit-doi" href="https://doi.org/10.3278/HSL1806W" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/9904562795" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+
+Jank, W., &amp; Meyer, H. (2014). <em>Didaktische Modelle.</em> Cornelsen Scriptor. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=829805583" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/913694967" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+
+Korthagen, F. A. J., & Kessels, J. P. A. M. (1999). Linking theory and practice: Changing the pedagogy of teacher education. *Educational Researcher*, 28(4), 4–17. <a class="lit-doi" href=" https://doi.org/10.3102/0013189X028004004" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/425550074" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+
+Koerrenz, R., Kenklies, K., Kauhaus, H., &amp; Schwarzkopf, M. (2017). <em>Geschichte der Pädagogik</em>. Springer VS. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=890515816" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.36198/9783838545240" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/725009000" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+
+Köhler, K., Weiß, L., & Julius Beltz GmbH & Co KG. (2015). *Unterricht kompetenzorientiert nachbesprechen : Lehrproben - Unterrichtsbesuche - kollegiale Hospitationen*. Beltz. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=832251887" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/933863720" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+ 
+Köhnlein, W. (2004). Fachdidaktik. In R. W. Keck, U. Sandfuchs &amp; B. Feige (Hrsg.), <em>Wörterbuch Schulpädagogik</em> (S. 140–143). Bad Heilbrunn: Klinkhardt. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=460036823" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/76528336" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>

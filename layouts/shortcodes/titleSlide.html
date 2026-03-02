@@ -1,15 +1,59 @@
 <!-- layouts/shortcodes/titleSlide.html -->
 
-{{/* prüfen, ob Veranstaltungstyp oder Veranstaltung angegeben ist */}}
-{{- $hasType := .Get "veranstaltungstyp" -}}
-{{- $hasTitle := .Get "veranstaltung" -}}
-{{- $hasEvent := or $hasType $hasTitle -}}
+{{- $page := .Page -}}
+
+{{/* --------- Defaults aus Shortcode ODER Front Matter --------- */}}
+
+{{- /* Blog */ -}}
+{{- $blog := .Get "blog" -}}
+{{- if not $blog -}}
+  {{- with $page.Params.blog -}}{{- $blog = . -}}{{- end -}}
+{{- end -}}
+
+{{- /* Title: shortcode > front matter > page title */ -}}
+{{- $title := .Get "title" -}}
+{{- if not $title -}}
+  {{- with $page.Params.title_reveal -}}
+    {{- $title = . -}}
+  {{- else -}}
+    {{- with $page.Params.title -}}{{- $title = . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $title -}}
+  {{- $title = $page.Title -}}
+{{- end -}}
+
+{{- /* Emojis */ -}}
+{{- $emojis := .Get "emojis" -}}
+{{- if not $emojis -}}
+  {{- with $page.Params.emojis -}}{{- $emojis = . -}}{{- end -}}
+{{- end -}}
+
+{{- /* Author */ -}}
+{{- $author := .Get "author" -}}
+{{- if not $author -}}
+  {{- with $page.Params.author -}}{{- $author = . -}}{{- end -}}
+{{- end -}}
+
+{{- /* Event (optional): shortcode > front matter */ -}}
+{{- $type := .Get "veranstaltungstyp" -}}
+{{- if not $type -}}
+  {{- with $page.Params.veranstaltungstyp -}}{{- $type = . -}}{{- end -}}
+{{- end -}}
+
+{{- $event := .Get "veranstaltung" -}}
+{{- if not $event -}}
+  {{- with $page.Params.veranstaltung -}}{{- $event = . -}}{{- end -}}
+{{- end -}}
+
+{{- $hasEvent := or $type $event -}}
 
 <div class="titlecard{{ if not $hasEvent }} no-seminar{{ end }}">
   <div class="header-bar">
     <div class="buttons">
       <button onclick="triggerPrint()" title="Präsentation speichern">📥</button>
-      {{ with .Get "blog" }}
+
+      {{ with $blog }}
         <button onclick="location.href='{{ . }}'" title="Zur Blogansicht">📄</button>
       {{ end }}
     </div>
@@ -17,47 +61,40 @@
 
   <div class="title-wrap">
     <h1>
-      {{ .Get "title" | safeHTML }}<br>
-      {{ with .Get "emojis" }}{{ . | safeHTML }}{{ end }}
+      {{ $title | safeHTML }}<br>
+      {{ with $emojis }}{{ . | safeHTML }}{{ end }}
     </h1>
 
     <hr class="rule-thin">
 
     {{ if $hasEvent }}
       <div class="seminar">
-        {{ with .Get "veranstaltungstyp" }}{{ . | safeHTML }}<br>{{ end }}
-        {{ with .Get "veranstaltung" }}<em>„{{ . | safeHTML }}“</em>{{ end }}
+        {{ with $type }}{{ . | safeHTML }}<br>{{ end }}
+        {{ with $event }}<em>„{{ . | safeHTML }}“</em>{{ end }}
       </div>
     {{ end }}
 
-    {{ with .Get "author" }}
+    {{ with $author }}
       <div class="author">👤 {{ . | safeHTML }}</div>
     {{ end }}
 
-{{- $page := .Page -}}
-{{- with .Get "blog" -}}
-
-  {{- /* Ziel: aktuelle Präsentation inkl. Reveal-Hash */ -}}
-  {{- $target := printf "%s#/" $page.Permalink -}}
-
-  {{- $opts := dict "scale" 12 "level" "medium" "targetDir" "qr" -}}
-  {{- with images.QR $target $opts -}}
-
-    {{- $factor := 3 -}}
-
-    <div class="qr-card">
-      <img
-        src="{{ .RelPermalink }}"
-        width="{{ math.Div .Width $factor }}"
-        height="{{ math.Div .Height $factor }}"
-        style="width:{{ math.Div .Width $factor }}px;height:{{ math.Div .Height $factor }}px;image-rendering:pixelated;image-rendering:crisp-edges;"
-        alt="QR zur Präsentation"
-        loading="lazy">
-    </div>
-
-  {{- end -}}
-
-{{- end -}}
+    {{- with $blog -}}
+      {{- /* Ziel: aktuelle Präsentation inkl. Reveal-Hash */ -}}
+      {{- $target := printf "%s#/" $page.Permalink -}}
+      {{- $opts := dict "scale" 12 "level" "medium" "targetDir" "qr" -}}
+      {{- with images.QR $target $opts -}}
+        {{- $factor := 3 -}}
+        <div class="qr-card">
+          <img
+            src="{{ .RelPermalink }}"
+            width="{{ math.Div .Width $factor }}"
+            height="{{ math.Div .Height $factor }}"
+            style="width:{{ math.Div .Width $factor }}px;height:{{ math.Div .Height $factor }}px;image-rendering:pixelated;image-rendering:crisp-edges;"
+            alt="QR zur Präsentation"
+            loading="lazy">
+        </div>
+      {{- end -}}
+    {{- end -}}
 
   </div>
 </div>

@@ -11,8 +11,8 @@
   --accent-turquoise: #00796b;
 
   /* Callouts */
-  --bg-tip: #fffbdd;
-  --border-tip: #f0c000;
+  --bg-tipp: #fffbdd;
+  --border-tipp: #f0c000;
   --bg-warning: #ffe6e6;
   --border-warning: #d9534f;
   --bg-info-soft: #d7e1f1;
@@ -467,6 +467,10 @@ body.dark .top-toggle button:hover,
   pointer-events:none;
 }
 
+.reveal section.end-slide .rule-thin {
+  margin: 1.4rem auto 2.2rem !important;
+}
+
 /* Seminar, Autor, QR */
 .reveal .seminar{
   font-size:1.45rem;
@@ -526,17 +530,17 @@ body.dark .top-toggle button:hover,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
-  margin-top: 1.4rem;
+  gap: 0.4rem;
+  margin-top: 0rem;
 }
 
 .reveal .contact-line {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
+  gap: 0.3rem;
   color: var(--uni-blau);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -569,7 +573,6 @@ body.dark .top-toggle button:hover,
     height: 20px;
   }
 }
-
 /* ===========================================================
    Callout – Reveal-Version (für Präsentationen)
    =========================================================== */
@@ -584,22 +587,28 @@ body.dark .top-toggle button:hover,
   font-size: 0.9em;
 }
 
-/* TIP */
-.reveal .callout--tip {
-  background: var(--bg-tip, #fffbdd);
-  border-color: var(--border-tip, #f0c000);
+/* TIPP */
+.reveal .callout--tipp {
+  background: var(--bg-tipp, #fffbdd);
+  border-color: var(--border-tipp, #f0c000);
+}
+
+/* QUOTE */
+.reveal .callout--quote {
+  background: var(--bg-info-soft, #d7e1f1);
+  border-color: var(--uni-blau, #014A99);
+  padding: 2rem 2.5rem;      /* mehr Luft */
+  margin: 3rem auto;         /* mehr Abstand zur Umgebung */
+  width: 91%;                /* etwas schmaler → eleganter */
+  text-align: center;
+  line-height: 1.45;
+  font-style: italic;
 }
 
 /* WARNING */
 .reveal .callout--warning {
   background: var(--bg-warning, #ffe6e6);
   border-color: var(--border-warning, #d9534f);
-}
-
-/* INFO */
-.reveal .callout--info {
-  background: var(--bg-info-soft, #d7e1f1);
-  border-color: var(--uni-blau, #014A99);
 }
 
 /* NOTE */
@@ -765,5 +774,101 @@ body.dark .top-toggle button:hover,
 
 /* Mehr Abstand zwischen Listenpunkten in Reveal */
 .reveal ul li {
-  margin-bottom: 0.9em;
+  margin-bottom: 0.2em;
+}
+
+.endcard{
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.endcard h2{
+  margin: 0 0 1.5rem 0;
+}
+
+.qr-wrap{
+  margin: 1.5rem 0;
+}
+
+.end-url{
+  font-size: .9rem;
+  opacity: .7;
+  margin-top: 1rem;
+}
+
+.end-back{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.back-to-blog{
+  display: inline-block;
+  font-size: 0.9rem;
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+.back-to-blog:hover{
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.reveal section.end-slide .end-icon{
+  font-size: 2.2rem !important;
+  margin-bottom: .6rem !important;
+  opacity: .75 !important;
+}
+
+.reveal section.end-slide .end-title{
+  font-size: 2.2rem !important;
+  line-height: 1.1 !important;
+  margin: .2rem 0 .6rem !important;
+}
+
+.reveal section.end-slide .end-sub{
+  font-size: 1.35rem !important;
+  font-weight: 600 !important;
+  margin: .8rem 0 .8rem !important;
+  opacity: .95 !important;
+}
+
+.reveal section.end-slide .contact-block{
+  display: inline-block !important;
+  text-align: left !important;
+  margin: .6rem 0 1.4rem !important;
+}
+
+.reveal section.end-slide .contact-line{
+  display: flex !important;
+  align-items: center !important;
+  gap: .6rem !important;
+  margin: .35rem 0 !important;
+  font-size: 1.05rem !important;
+}
+
+.reveal section.end-slide .qr-card{
+  margin: .8rem auto .7rem !important;
+}
+
+.reveal section.end-slide .back-to-blog{
+  font-size: 0.9rem !important;
+  text-decoration: none !important;
+  opacity: .75 !important;
+}
+
+.reveal section.end-slide .qr-card img {
+  width: 140px;   /* oder 150 */
+  height: auto;
+}
+
+.reveal section p + ul {
+  margin-top: 0.1em !important;
+}
+
+.reveal section p {
+  margin-bottom: 0.1em;
+}
+
+.reveal section div.fragment > p {
+  margin-bottom: 0.1em;
 }

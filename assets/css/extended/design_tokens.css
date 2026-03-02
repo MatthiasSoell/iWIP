@@ -19,8 +19,8 @@
   --bg-quote-soft: #e0f2f1;            /* Zitatbox-Hintergrund */
 
   /* Tipp- & Warn-Boxen */
-  --bg-tip: #fffbdd;
-  --border-tip: #f0c000;
+  --bg-tipp: #fffbdd;
+  --border-tipp: #f0c000;
   --bg-warning: #ffe6e6;
   --border-warning: #d9534f;
 

@@ -69,9 +69,17 @@ oer:
 ---
 
 <div class="top-toggle">
+  <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
+  <button class="iwip_help_btn"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="iwip_help_overlay"
+        aria-expanded="false"
+        title="Hinweise zur Nutzung">
+  ⓘ
+  </button>
 </div>
-{{< oer-meta >}}
 
 # 📚 Gegenstand  
 
@@ -129,3 +137,48 @@ Sie kommt insbesondere bei der **Ideensammlung**, der **Codeoptimierung**, der *
 
 - 👥 Alle interessierten GitHub Nutzer:innen können über **Pull Requests** im Repository Beiträge oder Änderungen vorschlagen und so transparent dokumentiert als **Co-Autor:innen** am Projekt mitwirken.  
 - 🤝 **Collaborator:innen** können direkt im **Fork** [`https://github.com/kiwip2025/iWIP`](https://github.com/kiwip2025/iWIP) arbeiten, Beiträge erstellen und live unter [`https://kiwip2025.github.io/iWIP/`](https://kiwip2025.github.io/iWIP/) testen, bevor sie ihre Inhalte über Pull Requests in das Hauptprojekt einbringen.
+
+---
+
+## 7️⃣ Versionierung & Reifegrad von Lehr-Lern-Einheiten
+
+**🛠️ Entwicklungslogik des SciBlog iWIP:** Neben der technischen Infrastruktur folgt der SciBlog iWIP einer transparenten Entwicklungslogik für Lehr-Lern-Einheiten.
+
+Im SciBlog iWIP werden Lehr-Lern-Einheiten nicht nur veröffentlicht, sondern kontinuierlich weiterentwickelt.  
+Um diesen Entwicklungsprozess transparent zu machen, werden zwei unterschiedliche Angaben ausgewiesen:
+
+---
+
+### 🧩 Version (X.Y)
+
+Die Version beschreibt **Veränderungen an der Struktur oder am Inhalt** einer Einheit.
+
+- **X (Hauptversion)**  
+  Eine neue Hauptversion (z. B. 2.0) bedeutet eine grundlegende didaktische Überarbeitung, etwa eine neue Zielgruppe, eine veränderte Struktur oder eine konzeptionelle Neuausrichtung.
+
+- **Y (Unterversion)**  
+  Unterversionen (z. B. 1.1, 1.2) markieren inhaltliche Ergänzungen, Präzisierungen, sprachliche Überarbeitungen oder kleinere didaktische Anpassungen.
+
+Die Version macht sichtbar, **was sich verändert hat**.
+
+---
+
+### 🚦 Reifegrad (Status)
+
+Der Status beschreibt den **Entwicklungsstand** einer Lehr-Lern-Einheit.
+
+Die Reifegrade sind:
+
+| Symbol | Bezeichnung | Bedeutung |
+|--------|------------|-----------|
+| 🟡 | **Entwurf** | Die Einheit befindet sich noch im Aufbau. Struktur oder Inhalte können sich ändern. |
+| 🟠 | **In Erprobung** | Die Einheit wird aktuell in der Lehre eingesetzt und weiterentwickelt. |
+| 🔵 | **Stabil** | Die Einheit wurde mehrfach eingesetzt und ist zuverlässig nutzbar. |
+| 🟢 | **Didaktisch abgestimmt** | Die Einheit ist didaktisch konsolidiert und reflektiert ausgearbeitet. |
+
+### Wichtiger Hinweis
+
+Der Reifegrad ist **kein Qualitätsranking**.  
+Er stellt keine Wertung dar, sondern macht transparent, **in welcher Phase des Entwicklungsprozesses sich eine Einheit befindet**.
+
+Eine Einheit im Status „In Erprobung“ ist nicht „schlechter“ als eine „Stabile“ Einheit – sie befindet sich lediglich in einer anderen Phase der didaktischen Weiterentwicklung.

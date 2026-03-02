@@ -91,12 +91,23 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <div class="top-toggle">
-  <button onclick="triggerPrint()" title="Präsentation speichern">📥</button>
+  <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
+  <button onclick="triggerPrint()" title="Blog speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/oer/warum_oer/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button class="iwip_help_btn"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="iwip_help_overlay"
+        aria-expanded="false"
+        title="Hinweise zur Nutzung">
+  ⓘ
+  </button>
 </div>
+
 {{< oer-meta >}}
 
 ## Was sind OER?
+> [!IMPORTANT]
 > OER = Open Educational Resources = freie Bildungsmaterialien  
 
 OER sind stark, weil:
@@ -117,10 +128,12 @@ OER sind stark, weil:
   
   Diese Maßnahmen dienen der Umsetzung der im Jahr 2022 ausgegebenen <a href="https://www.bmbf.de/SharedDocs/Publikationen/DE/3/691288_OER-Strategie.pdf?__blob=publicationFile&v=5" target="_blank" rel="noopener">OER-Strategie der Bundesregierung (PDF)</a>.
 
+> [!TIPP]
   > Auf <a href="https://open-educational-resources.de/was-ist-oer-3-2/" target="_blank" rel="noopener">OERInfo.de</a> finden Sie weitere, anschaulich aufbereitete Informationen zu OER: bspw. ein 90s Erklärvideo, eine ausführliche Definition sowie Infos zu offenen Lizenzen und zum Mehrwert von OER.
 
 ## Warum OER? ❤️ Emotionale Begründung
 
+> [!QUOTE]
 > „Wissen ist das einzige Gut, das sich vermehrt, wenn man es teilt.“  
 > — Marie von Ebner-Eschenbach (1830 – 1916)
 
@@ -140,6 +153,7 @@ OER steigern die **Effizienz** in Lehr-Lern-Prozessen:
 * Ca. 1 029 Klassen allein im 1. Lehrjahr 🏫  
 * Etwa 1 000 Lehrkräfte, die ähnliche Unterrichtsinhalte täglich neu aufbereiten 👩‍🏫  
 
+> [!TIPP]
 > Das Teilen und gemeinsame Bearbeiten von Materialien reduziert redundante Arbeit und ermöglicht eine bessere Nutzung gemeinsamer Ressourcen.  
 > So kann mehr Zeit in die didaktische Gestaltung und Begleitung von Lernprozessen fließen.
 

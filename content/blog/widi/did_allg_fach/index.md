@@ -72,30 +72,23 @@ oer:
 
 ---
 
-<script>
-  function triggerPrint() {
-    window.print(); // oder eine andere Funktion, je nach Zweck
-  }
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.location.search.includes("print-pdf")) {
-    // Warten, bis Reveal "ready" ist
-    Reveal.addEventListener("ready", function () {
-      setTimeout(() => {
-        window.print();
-      }, 300); // etwas Spielraum lassen
-    });
-  }
-});
-</script>
-
 <div class="top-toggle">
+  <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/widi/did_allg_fach/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button class="iwip_help_btn"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="iwip_help_overlay"
+        aria-expanded="false"
+        title="Hinweise zur Nutzung">
+  ⓘ
+  </button>
 </div>
+
 {{< oer-meta >}}
+
+---
 
 # 📚 Gegenstand  
 
@@ -116,9 +109,9 @@ Sie lernen, …
 - 🧭 zwischen **Allgemeiner Didaktik** und **Fachdidaktiken** zu unterscheiden und deren jeweilige Funktionen zu beschreiben.  
 - 🔍 zentrale **Begriffe, Ziele und Prinzipien didaktischen Handelns** zu erklären und in eigene Überlegungen zu integrieren.  
 
----
 
-💡 *Ziel ist es, ein reflektiertes Verständnis von Didaktik als Grundlage professionellen pädagogischen Handelns zu entwickeln.*
+> [!TIPP]
+> 💡 *Ziel ist es, ein reflektiertes Verständnis von Didaktik als Grundlage professionellen pädagogischen Handelns zu entwickeln.*
 
 ---
 
@@ -128,73 +121,15 @@ Die Lehr-Lern-Einheit ist so gestaltet, dass Sie **Didaktik nicht nur theoretisc
 
 Gesamtdauer: ca. **90 Minuten**
 
-<style>
-/* hübscheres, ruhigeres Tabellenlayout – nur innerhalb .agenda */
-.agenda table{
-  width:100%;
-  border-collapse:separate;
-  border-spacing:0;
-  font-size:0.98rem;
-  line-height:1.45;
-}
-.agenda thead th{
-  background:#f8fafc;
-  text-align:left;
-  font-weight:700;
-  padding:.65em .85em;
-  border-bottom:2px solid #e5e7eb;
-}
-.agenda tbody td{
-  padding:.8em .85em;
-  vertical-align:middle;
-  border-bottom:1px solid #eef2f7;
-}
-.agenda tbody tr:hover td{
-  background:#f9fbff; /* dezenter Hover */
-}
-/* Spaltenbreiten & Typo */
-.agenda tbody td:nth-child(1){ width:22%; font-weight:700; }
-.agenda tbody td:nth-child(4){ width:12%; text-align:center; }
-/* Zeit-Zelle: Icon + Zeit auf einer Linie */
-.timecell{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:.35em;
-  white-space:nowrap;
-}
-.timecell .time{
-  font-variant-numeric: tabular-nums;
-  font-weight:600;
-}
-/* Micro-spacing innerhalb von Zellen */
-.agenda td p{ margin:.2em 0; }
-/* Etwas mehr optische Ruhe in Spalte 1 (Phase) */
-.agenda tbody td:nth-child(1){ font-size:1.02rem; }
-
-/* Details-Boxen (global, einmalig) */
-details summary {
-  cursor: pointer;
-  font-weight: 600;
-  color: #0056b3;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4em;
-}
-details summary span { text-decoration: underline; }
-details summary:hover span { color: #003f8a; }
-details summary::-webkit-details-marker { display: inline-block; }
-</style>
-
 <div class="agenda">
 
 | Phase | Inhalt | Ziel | Zeit |
 |:------|:--------|:------|:------:|
-| **1️⃣ Einstieg 🤔** | Individuelle Reflexion: *Was verstehe ich unter Didaktik?* | Aktivierung des Vorwissens und gemeinsame Begriffsklärung | <div class="timecell">⏱️ <span class="time">20 Min</span></div> |
-| **2️⃣ Historischer Überblick 🕰️** | Entwicklungs­linien der Didaktik von Comenius bis Klafki | Verständnis zentraler Denkmodelle und Begriffstraditionen | <div class="timecell">⏱️ <span class="time">15 Min</span></div> |
-| **3️⃣ Allgemeine Didaktik 🧭** | Vergleich theoretischer Ansätze und ihrer Funktionen | Abgrenzung und Verknüpfung beider Perspektiven | <div class="timecell">⏱️ <span class="time">15 Min</span></div> |
-| **4️⃣ Fachdidaktik 🎓** | Übertragung didaktischer Prinzipien auf spezifische Fachkontexte | Erkennen der Besonderheiten und Funktionen fachdidaktischer Ansätze | <div class="timecell">⏱️ <span class="time">25 Min</span></div> |
-| **5️⃣ Reflexion & Ausblick 💬** | Gemeinsame Diskussion und persönliche Standortbestimmung | Transfer auf das eigene Lehrverständnis | <div class="timecell">⏱️ <span class="time">15 Min</span></div> |
+| **1️⃣ Einstieg 🤔** | Individuelle Reflexion: *Was verstehe ich unter Didaktik?* | Aktivierung des Vorwissens und gemeinsame Begriffsklärung | ⏱️ 20 Min |
+| **2️⃣ Historischer Überblick 🕰️** | Entwicklungs­linien der Didaktik von Comenius bis Klafki | Verständnis zentraler Denkmodelle und Begriffstraditionen | ⏱️ 15 Min |
+| **3️⃣ Allgemeine Didaktik 🧭** | Vergleich theoretischer Ansätze und ihrer Funktionen | Abgrenzung und Verknüpfung beider Perspektiven | ⏱️ 15 Min |
+| **4️⃣ Fachdidaktik 🎓** | Übertragung didaktischer Prinzipien auf spezifische Fachkontexte | Erkennen der Besonderheiten und Funktionen fachdidaktischer Ansätze | ⏱️ 25 Min |
+| **5️⃣ Reflexion & Ausblick 💬** | Gemeinsame Diskussion und persönliche Standortbestimmung | Transfer auf das eigene Lehrverständnis | ⏱️ 15 Min |
 
 </div>
 
@@ -232,6 +167,7 @@ Wenn Sie **nicht live am Seminar teilnehmen**, können Sie die Aufgabe digital b
 2. Führen Sie anschließend ein kurzes Gespräch mit einer **KI Ihrer Wahl** (z. B. ChatGPT, Claude o. Ä.) über Ihr Verständnis von Didaktik.  
 
 💡 **Prompt-Vorschlag:**  
+> [!TIPP]
 > „Ich möchte mein Verständnis von Didaktik reflektieren. Bitte erläutere, welche zentralen Dimensionen und Perspektiven typischerweise in einem Didaktikverständnis enthalten sind, und gib mir anschließend 2–3 Anregungen, wie ich mein eigenes Verständnis erweitern oder präzisieren könnte.“  
 
 Notieren Sie anschließend Ihre wichtigsten Einsichten und vergleichen Sie sie mit Ihrer ursprünglichen Formulierung. 🔍  
@@ -240,7 +176,7 @@ Notieren Sie anschließend Ihre wichtigsten Einsichten und vergleichen Sie sie m
 
 ---
 
-## 👥 Kennenlernen & Aktivierung 
+## 👥 Kennenlernen & Aktivierung
 
 Um gut miteinander arbeiten zu können, möchte ich Sie nun kurz kennenlernen und aktivieren – und dabei erfahren, **welche Vorstellungen Sie mit Didaktik verbinden.**  
 
@@ -248,6 +184,7 @@ Bitte **schieben Sie die Tische zur Seite** und bilden Sie gemeinsam einen **Stu
 
 Werfen Sie anschließend den Ball 🎾 einer Person zu. Wer ihn fängt, stellt sich kurz **namentlich vor** und **vervollständigt den Satz**:
 
+> [!TIPP]
 > **„Didaktik bedeutet für mich …“** 💬
 
 🪞 **Reflexion**
@@ -264,17 +201,25 @@ Anschließend besprechen wir kurz gemeinsam:
 <details>
 <summary>🔽 <span>Unsere Beobachtungen</span> 🔎</summary>
 
-Wir haben unser Seminar im klassichen Setup mit Tischreihen begonnen:  
+<p>Wir haben unser Seminar im klassischen Setup mit Tischreihen begonnen:</p>
 
 **Seminarraum mit Tischreihen:**  
-![Klassisches Setup des Seminarraums](klassisches_setup.jpeg) 
-<p style="text-align:center; font-size:0.85rem;"><em><strong>Foto:</strong> Matthias Söll · <strong>Keine freie Lizenz</strong> (Rechte bei den abgebildeten Personen)</em></p>
+<figure class="figure-frame">
+  <img src="klassisches_setup.jpeg"
+       alt="Klassisches Setup des Seminarraums">
+</figure>
+
+<p class="bildquelle">Foto: Matthias Söll · Lizenz: keine freie Lizenz (Rechte bei den abgebildeten Personen)</p>
 
 Im Zuge der Vorbereitung der Vorstellungsrunde haben wir auf einen Stuhlkreis umgebaut:  
 
 **Seminarraum mit Stuhlkreis:**  
-![Stuhlkreis](stuhlkreis.jpeg)
-<p style="text-align:center; font-size:0.85rem;"><em><strong>Foto:</strong> Matthias Söll · <strong>Keine freie Lizenz</strong> (Rechte bei den abgebildeten Personen)</em></p>
+<figure class="figure-frame">
+  <img src="stuhlkreis.jpeg"
+       alt="Stuhlkreis">
+</figure>
+
+<p class="bildquelle">Foto: Matthias Söll · Lizenz: keine freie Lizenz (Rechte bei den abgebildeten Personen)</p>
 
 Wir stellten fest, dass die Sitzordnung in **Tischreihen** zunächst vertraut und strukturiert wirkt, zugleich jedoch **mehr Ablenkung** durch Laptops oder Smartphones ermöglicht. Im **Stuhlkreis** hingegen waren alle Teilnehmenden unmittelbarer präsent, der Blickkontakt intensiver und die **Aufmerksamkeit stärker aufeinander gerichtet**. Die Atmosphäre wirkte offener und dialogischer. Wäre die gleiche Übung an Tischen durchgeführt worden, hätten sich vermutlich schnell **Gruppenstrukturen oder Barrieren** ergeben. Didaktisch lässt sich die Methode als Versuch verstehen, **Lernräume aktiv zu gestalten** und die **soziale Interaktion** bewusst in den Mittelpunkt zu stellen. Häufig genannte Begriffe waren dabei *Inhalte aufbereiten*, *Lehren*, *Methoden* oder *Medien*. 💬  
 </details>
@@ -293,15 +238,23 @@ Was fällt Ihnen in Bezug auf die **Aktivitäten der Lernenden und Lehrenden** s
 
 ### 📸 Klassenzimmer 1934  
 
-![Klassenzimmer 1934](/iWIP/bilder/widi/did_allg_fach/Klassenzimmer_früher.jpg)  
-*Quelle: <a href="https://rlp.museum-digital.de/object/33802" target="_blank" rel="noopener noreferrer">museum-digital Rheinland-Pfalz</a> · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*  
+<figure class="figure-frame">
+  <img src="/iWIP/bilder/widi/did_allg_fach/Klassenzimmer_früher.jpg"
+       alt="Klassenzimmer 1934">
+</figure>
+
+<p class="bildquelle">Bildquelle: <a href="https://rlp.museum-digital.de/object/33802" target="_blank" rel="noopener noreferrer">museum-digital Rheinland-Pfalz</a> · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></p>
 
 ---
 
 ### 📸 Klassenzimmer heute  
 
-![Klassenzimmer heute](/iWIP/bilder/widi/did_allg_fach/Klassenzimmer_heute.jpg)  
-*Quelle: <a href="https://commons.wikimedia.org/wiki/File:Unterricht.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>*  
+<figure class="figure-frame">
+  <img src="/iWIP/bilder/widi/did_allg_fach/Klassenzimmer_heute.jpg"
+       alt="Klassenzimmer heute">
+</figure>
+
+<p class="bildquelle">Bildquelle: <a href="https://commons.wikimedia.org/wiki/File:Unterricht.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></p> 
 
 ---
 
@@ -316,6 +269,7 @@ Wenn Sie **nicht live am Seminar teilnehmen**, können Sie die Aufgabe digital b
 2. Führen Sie anschließend ein kurzes Gespräch mit einer **KI Ihrer Wahl** (z. B. ChatGPT, Claude o. Ä.) über die Unterschiede und Veränderungen zwischen den beiden Unterrichtssituationen.  
 
 💡 **Prompt-Vorschlag:**  
+> [!TIPP]
 > „Ich betrachte zwei Unterrichtsbilder auf der Seite <a href="https://matthiassoell.github.io/iWIP/" target="_blank" rel="noopener noreferrer">SciBlog iWIP</a> im Beitrag *Unterricht im Wandel*. Bitte hilf mir, die Unterschiede in Lehr- und Lernaktivitäten, Raumgestaltung und Lehrerrolle herauszuarbeiten. Erläutere, wie sich diese Beobachtungen im historischen Kontext der Didaktik deuten lassen.“  
 
 Notieren Sie anschließend Ihre wichtigsten Erkenntnisse und überlegen Sie,  
@@ -348,7 +302,7 @@ Im Folgenden betrachten wir einige **gesellschaftliche Entwicklungen** und die *
 
 ## 🕰️ Geschichte der Pädagogik  
 
-<a href="https://doi.org/10.36198/9783838545240" target="_blank" rel="noopener noreferrer">Koerrenz et al. (2017)</a> skizzieren die Geschichte der Pädagogik anhand der folgenden Etappen:
+<a href="#-literatur">Koerrenz et al. (2017)</a> skizzieren die Geschichte der Pädagogik anhand der folgenden Etappen:
 
 - 🏛️ **Antike (bis 313)** – Von Mykene bis Kaiser Konstantin  
 - ⛪ **Mittelalter (313–1492)** – Von Kaiser Konstantin bis Christoph Kolumbus  
@@ -360,6 +314,7 @@ Im Folgenden betrachten wir einige **gesellschaftliche Entwicklungen** und die *
 
 Eine anschauliche Visualisierung bietet der Blog <a href="https://www.smarterlernen.at/geschichte-der-bildung/" target="_blank" rel="noopener noreferrer">smarterlernen.at</a>, betrieben von einem österreichischen Bildungsunternehmen.  
 
+> [!TIPP]
 > 💬 Die Gliederung macht deutlich: Bildung ist nie zeitlos, sondern stets Ausdruck der gesellschaftlichen, kulturellen und ökonomischen Bedingungen ihrer Epoche.
 
 ---
@@ -368,8 +323,10 @@ Eine anschauliche Visualisierung bietet der Blog <a href="https://www.smarterler
 
 Warum benötigen wir eigentlich *Didaktik* als wissenschaftliche Disziplin?  
 
-> „Didaktik ist die Wissenschaft und Theorie des Unterrichts.“  
-> <a href="https://doi.org/10.1007/978-3-531-18984-0" target="_blank" rel="noopener noreferrer">Arnold & Roßa (2012, S. 14)</a>
+> [!quote]
+> „Didaktik ist die Wissenschaft und Theorie des Unterrichts.“
+
+<p class="quote-source"><a href="#-literatur">Arnold & Roßa (2012, S. 14)</a></p>
 
 Didaktik fragt also danach, **wie Lernprozesse gestaltet werden können**, um Lernen **bedeutsam, wirksam und reflexiv** zu machen.  
 
@@ -377,7 +334,7 @@ Didaktik fragt also danach, **wie Lernprozesse gestaltet werden können**, um Le
 
 In der Übung *Methoden und Medien wirtschaftsberuflichen Handelns* haben Sie bereits Kriterien für guten Unterricht kennengelernt.  
 
-Besonders bekannt sind die **10 Merkmale guten Unterrichts** von <a href="https://ebookcentral.proquest.com/lib/ubrostock-ebooks/detail.action?docID=2080724" target="_blank" rel="noopener noreferrer">Hilbert Meyer (2014)</a>. 🎥 <a href="https://www.youtube.com/watch?v=_4kPq5vhEHc" target="_blank" rel="noopener noreferrer">YouTube: Dr. Hilbert Meyer – Was guten Unterricht ausmacht</a>
+Besonders bekannt sind die **10 Merkmale guten Unterrichts** von <a href="#-literatur">Hilbert Meyer (2014)</a>. 🎥 <a href="https://www.youtube.com/watch?v=_4kPq5vhEHc" target="_blank" rel="noopener noreferrer">YouTube: Dr. Hilbert Meyer – Was guten Unterricht ausmacht</a>
 
 ---
 
@@ -388,7 +345,7 @@ Besonders bekannt sind die **10 Merkmale guten Unterrichts** von <a href="https:
 - Bedeutendster Vertreter: **Wolfgang Klafki** (Kategoriale Bildung, Didaktische Analyse, Allgemeinbildung, kritisch-konstruktive Didaktik) 🎓  
 - Bezugsdisziplinen u. a.: Anthropologie, Psychologie, Philosophie, Soziologie, Politikwissenschaft  
 
-➡️ Siehe dazu auch <a href="https://doi.org/10.1007/978-3-531-18984-0" target="_blank" rel="noopener noreferrer">Arnold & Roßa (2012)</a> und <a href="https://ebookcentral.proquest.com/lib/ubrostock-ebooks/detail.action?docID=2080721" target="_blank" rel="noopener noreferrer">Jank & Meyer (2014)</a>.
+➡️ Siehe dazu auch <a href="#-literatur">Arnold & Roßa (2012)</a> und <a href="#-literatur">Jank & Meyer (2014)</a>.
 
 ---
 
@@ -396,11 +353,13 @@ Besonders bekannt sind die **10 Merkmale guten Unterrichts** von <a href="https:
 
 Warum benötigen wir nun zusätzlich *Fachdidaktiken* als eigene wissenschaftliche Disziplinen?
 
+> [!quote]
 > „Fachdidaktik ist die Wissenschaft und Theorie des (Fach-)Unterrichts.“  
-> <a href="https://doi.org/10.1007/978-3-531-18984-0" target="_blank" rel="noopener noreferrer">Arnold & Roßa (2012, S. 14)</a>
+> <a href="#-literatur">Arnold & Roßa (2012, S. 14)</a>
 
+> [!quote]
 > „[…] Wissenschaft vom pädagogisch angeleiteten institutionalisierten Lehren und Lernen fachlich bezogener Inhalte, Methoden, Prinzipien und Aspekte.“  
-> <a href="https://search.worldcat.org/de/title/76528336" target="_blank" rel="noopener noreferrer">Köhnlein (2004, S. 140)</a>
+> <a href="#-literatur">Köhnlein (2004, S. 140)</a>
 
 ---
 
@@ -410,7 +369,7 @@ Warum benötigen wir nun zusätzlich *Fachdidaktiken* als eigene wissenschaftlic
 - Bezugspunkt: einzelne **Fächer oder Berufsfelder**  
 - Fokus: Anwendung allgemeiner didaktischer Prinzipien auf fachliche Inhalte  
 
-➡️ Vgl. dazu <a href="https://doi.org/10.1007/978-3-531-18984-0" target="_blank" rel="noopener noreferrer">Arnold & Roßa (2012)</a> und <a href="https://ebookcentral.proquest.com/lib/ubrostock-ebooks/detail.action?docID=2080721" target="_blank" rel="noopener noreferrer">Jank & Meyer (2014)</a>.
+➡️ Vgl. dazu <a href="#-literatur">Arnold & Roßa (2012)</a> und <a href="#-literatur">Jank & Meyer (2014)</a>.
 
 ---
 
@@ -425,32 +384,20 @@ Sie können nun …
 - 🧭 **Disziplinen unterscheiden** – Allgemeine vs. Fachdidaktik.  
 - 🔍 **Handeln begründen** – zentrale Prinzipien integrieren. 
 
+> [!TIPP]
 > 💭 *Didaktik bleibt damit keine abgeschlossene Theorie, sondern ein Werkzeug, um Lernen in einer sich wandelnden Welt bewusst zu gestalten.* 🌍  
 
 ---
 
 # 📚 Literatur  
 
-<ul class="refs">
-  <li>
-    Arnold, K.-H., &amp; Roßa, A.-E. (2012). <em>Grundlagen der Allgemeinen Didaktik und der Fachdidaktiken.</em>
-    In M. Kampshoff &amp; C. Wiepke (Hrsg.), <em>Handbuch Geschlechterforschung und Fachdidaktik</em> (S. 11–23). VS Verlag für Sozialwissenschaften.
-    <a href="https://doi.org/10.1007/978-3-531-18984-0" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/978-3-531-18984-0</a>
-  </li>
-  <li>
-    Meyer, H. (2014). <em>Was ist guter Unterricht?</em> Cornelsen Scriptor.
-    <a href="https://ebookcentral.proquest.com/lib/ubrostock-ebooks/detail.action?docID=2080724" target="_blank" rel="noopener noreferrer">https://ebookcentral.proquest.com/lib/ubrostock-ebooks/detail.action?docID=2080724</a>
-  </li>
-  <li>
-    Jank, W., &amp; Meyer, H. (2014). <em>Didaktische Modelle.</em> Cornelsen Scriptor.
-    <a href="https://ebookcentral.proquest.com/lib/ubrostock-ebooks/detail.action?docID=2080721" target="_blank" rel="noopener noreferrer">https://ebookcentral.proquest.com/lib/ubrostock-ebooks/detail.action?docID=2080721</a>
-  </li>
-  <li>
-    Koerrenz, R., Kenklies, K., Kauhaus, H., &amp; Schwarzkopf, M. (2017). <em>Geschichte der Pädagogik</em>. Springer VS.
-    <a href="https://doi.org/10.36198/9783838545240" target="_blank" rel="noopener noreferrer">https://doi.org/10.36198/9783838545240</a>
-  </li>
-  <li>
-    Köhnlein, W. (2004). Fachdidaktik. In R. W. Keck, U. Sandfuchs &amp; B. Feige (Hrsg.), <em>Wörterbuch Schulpädagogik</em> (S. 140–143). Bad Heilbrunn: Klinkhardt.
-    <a href="https://search.worldcat.org/de/title/76528336" target="_blank" rel="noopener noreferrer">https://search.worldcat.org/de/title/76528336</a>
-  </li>
-</ul>
+
+Arnold, K.-H., &amp; Roßa, A.-E. (2012). <em>Grundlagen der Allgemeinen Didaktik und der Fachdidaktiken.</em> In M. Kampshoff &amp; C. Wiepke (Hrsg.), <em>Handbuch Geschlechterforschung und Fachdidaktik</em> (S. 11–23). VS Verlag für Sozialwissenschaften. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1651884684" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.1007/978-3-531-18984-0" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/725009000" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+ 
+Meyer, H. (2014). <em>Was ist guter Unterricht?</em> Cornelsen Scriptor. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1655914588" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/929915561" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+
+Jank, W., &amp; Meyer, H. (2014). <em>Didaktische Modelle.</em> Cornelsen Scriptor. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=829805583" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/913694967" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+
+Koerrenz, R., Kenklies, K., Kauhaus, H., &amp; Schwarzkopf, M. (2017). <em>Geschichte der Pädagogik</em>. Springer VS. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=890515816" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.36198/9783838545240" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/725009000" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+
+Köhnlein, W. (2004). Fachdidaktik. In R. W. Keck, U. Sandfuchs &amp; B. Feige (Hrsg.), <em>Wörterbuch Schulpädagogik</em> (S. 140–143). Bad Heilbrunn: Klinkhardt. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=460036823" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/76528336" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>

@@ -59,10 +59,22 @@ oer:
 ---
 
 <div class="top-toggle">
-  <button id="md-copy-btn" title="Markdown kopieren">📑</button>
+  <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
+  <!-- <button onclick="location.href='/iWIP/praesentation/widi/hosp_feed_refl/'" title="Zur Präsentationsansicht">🖥️</button> -->
+  <button class="iwip_help_btn"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="iwip_help_overlay"
+        aria-expanded="false"
+        title="Hinweise zur Nutzung">
+  ⓘ
+  </button>
 </div>
+
 {{< oer-meta >}}
+
+---
 
 # 💭 Fragestellung  
 
@@ -337,12 +349,12 @@ Neue Medien
 
 # 📚 Literatur
 
-Bonz, B. (2006). Methoden in der schulischen Berufsbildung. In R. Arnold & A. Lipsmeier (Hrsg.), Handbuch der Berufsbildung (S. 328–341). VS Verlag für Sozialwissenschaften. [UB](https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=513898441) [WorldCat](https://search.worldcat.org/de/title/162307316) [DOI](https://doi.org/10.1007/978-3-531-90622-5_20)
+Bonz, B. (2006). Methoden in der schulischen Berufsbildung. In R. Arnold & A. Lipsmeier (Hrsg.), Handbuch der Berufsbildung (S. 328–341). VS Verlag für Sozialwissenschaften. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=513898441" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.1007/978-3-531-90622-5_20" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/162307316" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 
-Euler, D., & Hahn, A. (2014). Wirtschaftsdidaktik. Haupt Verlag. [UB](https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=797092021) [WorldCat](https://search.worldcat.org/de/title/881096700) [DOI](https://doi.org/10.36198/9783838541648)
+Euler, D. &amp; Hahn, A. (2014). <em>Wirtschaftsdidaktik.</em> Haupt Verlag. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=797092021" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.36198/9783838541648" target="_blank" rel="noopener noreferrer"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1250361192" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 
-von Martial, I. (2002). Unterrichtsmedien. In I. von Martial & V. Ladenthin (Hrsg.), Medien im Unterricht. Grundlagen und Praxis der Mediendidaktik (S. 15–26). Schneider Verlag Hohengehren. [UB](https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=352651210) [WorldCat](https://search.worldcat.org/de/title/248499458)
+von Martial, I. (2002). Unterrichtsmedien. In I. von Martial & V. Ladenthin (Hrsg.), Medien im Unterricht. Grundlagen und Praxis der Mediendidaktik (S. 15–26). Schneider Verlag Hohengehren. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=352651210" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/248499458" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a> 
 
-Tulodziecki, G., Herzig, B., & Grafe, S. (2021). Medienbildung in Schule und Unterricht: Grundlagen und Beispiele (3., durchgesehene und aktualisierte Auflage). Julius Klinkhardt; utb.[UB](https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1765244145) [WorldCat](https://search.worldcat.org/de/title/1248720687) [DOI](https://doi.org/10.36198/9783838557465)
+Tulodziecki, G., Herzig, B., & Grafe, S. (2021). Medienbildung in Schule und Unterricht: Grundlagen und Beispiele (3., durchgesehene und aktualisierte Auflage). Julius Klinkhardt; utb. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1765244145" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.36198/9783838557465" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1248720687" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 
-Stadtfeld, T. (2011). Tradierte Lehrmittel, neue Medien, „moderner“ Unterricht – systematische Betrachtung und praktisches Modell. Bildung und Erziehung, 64(1), 69–84. [DOI](https://doi.org/10.7788/bue.2011.64.1.69)
+Stadtfeld, T. (2011). Tradierte Lehrmittel, neue Medien, „moderner“ Unterricht – systematische Betrachtung und praktisches Modell. Bildung und Erziehung, 64(1), 69–84. <a class="lit-doi" href="https://doi.org/10.7788/bue.2011.64.1.69" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/5525697268" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a> 

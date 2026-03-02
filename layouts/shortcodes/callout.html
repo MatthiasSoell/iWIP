@@ -1,15 +1,25 @@
 {{/* ============================================================
      SciBlog iWIP – Callout Shortcode (Blog & Reveal kompatibel)
-     Typen: tip | warning | info | note (optional Erweiterung)
-     Nutzung: {{< callout type="tip" >}}…{{< /callout >}}
+     Canonical Typen: tipp | quote | important | note
+     Aliasse (für Bequemlichkeit):
+       tip      -> tipp
+       info     -> quote
+       warning  -> important
+     Nutzung: {{< callout type="tipp" >}}…{{< /callout >}}
    ============================================================ */}}
 
-{{ $type := .Get "type" | default "note" }}
-{{ $allowed := slice "tip" "warning" "info" "note" }}
+{{- $raw := .Get "type" | default "note" | lower -}}
 
-{{ if not (in $allowed $type) }}
-  {{ errorf "Ungültiger callout type '%s'. Erlaubt: tip, warning, info, note." $type }}
-{{ end }}
+{{- /* Aliasse -> canonical */ -}}
+{{- $type := $raw -}}
+{{- if eq $raw "tip" -}}{{- $type = "tipp" -}}{{- end -}}
+{{- if eq $raw "info" -}}{{- $type = "quote" -}}{{- end -}}
+{{- if eq $raw "warning" -}}{{- $type = "important" -}}{{- end -}}
+
+{{- $allowed := slice "tipp" "quote" "important" "note" -}}
+{{- if not (in $allowed $type) -}}
+  {{- errorf "Ungültiger callout type '%s'. Erlaubt: tipp, quote, important, note (Aliasse: tip, info, warning)." $raw -}}
+{{- end -}}
 
 <div class="callout callout--{{ $type }}">
   <div class="callout-content">

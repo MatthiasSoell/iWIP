@@ -132,13 +132,9 @@ oer:
 
 ### Warum OER?<br>❤️ Emotionale Begründung
 
-<div class="zitat-wrapper">
-  <div class="zitat-container">
-    <blockquote class="zitat-box">
-       <span class="quote-char">„</span> Wissen ist das einzige Gut, das sich vermehrt, wenn man es teilt.<span class="quote-char">“</span>
-    </blockquote>
-    <p class="zitat-quelle">Marie von Ebner-Eschenbach (1830 – 1916)</p>
-  </div>
+<div class="quote-block">
+  {{< callout type="quote" >}}"Wissen ist das einzige Gut, das sich vermehrt, wenn man es teilt."{{< /callout >}}
+  <p class="zitat-quelle">Marie von Ebner-Eschenbach (1830 – 1916)</p>
 </div>
 
 <p class="fragment">Ähnlich argumentiert <a href="https://www.bpb.de/shop/zeitschriften/apuz/33204/elinor-ostrom-und-die-wiederentdeckung-der-allmende/" target="_blank" rel="noopener">Elinor Ostrom</a>, erste Nobelpreisträgerin in Wirtschaftswissenschaften 2009, in <a href="https://search.worldcat.org/de/title/897400533" target="_blank" rel="noopener">„Was mehr wird, wenn wir teilen“</a>.</p>

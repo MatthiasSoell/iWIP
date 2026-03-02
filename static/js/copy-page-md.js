@@ -36,6 +36,52 @@ document.addEventListener("DOMContentLoaded", function () {
   if (cs.position === "static") btn.style.position = "relative";
   btn.appendChild(badge);
 
+  // --- Zitiervorschlag-Button (Badge wie beim MD-Button) ---
+  const citeBtn = document.querySelector(".oer_cite_copy");
+  const citeTarget = document.getElementById("oer_citation_text");
+
+  let citeBadge = null;
+  if (citeBtn) {
+    citeBadge = document.createElement("span");
+    citeBadge.textContent = "✓";
+    citeBadge.setAttribute("aria-hidden", "true");
+    Object.assign(citeBadge.style, {
+      position: "absolute",
+      top: "-6px",
+      right: "-6px",
+      minWidth: "18px",
+      height: "18px",
+      lineHeight: "18px",
+      textAlign: "center",
+      borderRadius: "999px",
+      fontSize: "12px",
+      fontWeight: "700",
+      border: "1px solid var(--border)",
+      background: "var(--primary)",
+      color: "var(--theme)",
+      boxShadow: "0 2px 6px rgba(0,0,0,.15)",
+      opacity: "0",
+      transform: "scale(.85)",
+      transition: "opacity .12s ease, transform .12s ease",
+      pointerEvents: "none",
+    });
+
+    const cs2 = getComputedStyle(citeBtn);
+    if (cs2.position === "static") citeBtn.style.position = "relative";
+    citeBtn.appendChild(citeBadge);
+
+    citeBtn.addEventListener("click", async function () {
+      if (!citeTarget) return;
+
+      const text = (citeTarget.textContent || "").trim();
+      if (!text) return;
+
+      const ok = await copyText(text);
+      if (ok) flashBadge(citeBadge);
+    });
+  }
+
+
   let busy = false;
 
   btn.addEventListener("click", async function () {
@@ -56,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (meta) md = meta + "\n\n" + md;
 
     const ok = await copyText(md);
-    if (ok) flashBadge();
+    if (ok) flashBadge(badge);
 
     setTimeout(() => (busy = false), 350);
   });
@@ -64,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
   async function copyText(text) {
     try {
       await navigator.clipboard.writeText(text);
-      return true;
+      return true;a
     } catch (e) {
       try {
         fallbackCopy(text);
@@ -75,12 +121,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  function flashBadge() {
-    badge.style.opacity = "1";
-    badge.style.transform = "scale(1)";
+  function flashBadge(b) {
+    b.style.opacity = "1";
+    b.style.transform = "scale(1)";
     setTimeout(() => {
-      badge.style.opacity = "0";
-      badge.style.transform = "scale(.85)";
+      b.style.opacity = "0";
+      b.style.transform = "scale(.85)";
     }, 900);
   }
 
@@ -219,17 +265,4 @@ document.addEventListener("DOMContentLoaded", function () {
     document.execCommand("copy");
     document.body.removeChild(ta);
   }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.querySelector("[data-copy-citation]");
-  const target = document.getElementById("oer-citation-text");
-
-  if (!btn || !target) return;
-
-  btn.addEventListener("click", () => {
-    navigator.clipboard.writeText(target.innerText).then(() => {
-      showCopyBadge("Zitiervorschlag kopiert");
-    });
-  });
 });

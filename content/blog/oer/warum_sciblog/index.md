@@ -86,12 +86,20 @@ oer:
   todos: []
 ---
 
-
 <div class="top-toggle">
-  <button id="md-copy-btn" title="Markdown kopieren">📑</button>
+  <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
-    <button onclick="location.href='/iWIP/praesentation/oer/warum_sciblog/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button onclick="location.href='/iWIP/praesentation/oer/warum_sciblog/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button class="iwip_help_btn"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="iwip_help_overlay"
+        aria-expanded="false"
+        title="Hinweise zur Nutzung">
+  ⓘ
+  </button>
 </div>
+
 {{< oer-meta >}}
 
 ## 1. Motivation: Wie es zur Idee kam 🧭
@@ -171,6 +179,7 @@ Die Gefahr war spürbar: **Lehre wird verwaltet statt gestaltet**.
 
 Der Wendepunkt war keine neue Software, sondern eine **konzeptionelle Entscheidung** 💭🧭:
 
+> [!TIPP]
 > **Was wäre, wenn Lehre nicht aus vielen verbundenen Tools besteht,  
 > sondern aus einer integrierten Umgebung, die didaktische Logik abbildet?**
 
@@ -360,10 +369,12 @@ Der SciBlog ist dabei kein Selbstzweck, sondern ein **Arbeitsmittel**, das mir e
 
 # 📚 Literatur
 
-Dietrich, A., & Zug, S. (2025). AI-assisted course creation: From Markdown to interactive learning in 3 hours [Blogbeitrag]. LiaScript. [https://liascript.github.io/blog/ai-assisted-course-creation-buchstabensuppe-tutorial/](https://liascript.github.io/blog/ai-assisted-course-creation-buchstabensuppe-tutorial/)  
+Dietrich, A., & Zug, S. (2025). AI-assisted course creation: From Markdown to interactive learning in 3 hours [Blogbeitrag]. LiaScript. [https://liascript.github.io/blog/ai-assisted-course-creation-buchstabensuppe-tutorial/](https://liascript.github.io/blog/ai-assisted-course-creation-buchstabensuppe-tutorial/) (abgerufen am 18.02.2026)  
 
-Söll, M., & Klusmeyer, J. (2022). Akademisches Lernen und Reflexion bei der Förderung von Unterrichtsplanungskompetenz in der Wirtschaftsdidaktik. In J. Klusmeyer & D. Bosse (Hrsg.), Konzepte reflexiver Praxisstudien in der Lehrer*innenbildung (S. 73–114). Springer VS. [UB](https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1799310981) [WorldCat](https://search.worldcat.org/de/title/1311485961) [DOI](https://doi.org/10.1007/978-3-658-35483-1)  
+Söll, M., & Klusmeyer, J. (2022). Akademisches Lernen und Reflexion bei der Förderung von Unterrichtsplanungskompetenz in der Wirtschaftsdidaktik. In J. Klusmeyer & D. Bosse (Hrsg.), *Konzepte reflexiver Praxisstudien in der Lehrer*innenbildun* (S. 73–114). Springer VS. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1799310981" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a>
+<a class="lit-doi" href="https://doi.org/10.1007/978-3-658-35483-1" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
+<a class="lit-worldcat" href="https://search.worldcat.org/de/title/1311485961" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 
-Wernke, S.; Zierer, K. (2017). Die Unterrichtsplanung - ein in Vergessenheit geratener Kompetenzbereich?!. In: S. Wernke & K. Zierer (Hrsg.), Die Unterrichtsplanung: ein in Vergessenheit geratener Kompetenzbereich?! Status Quo und Perspektiven aus Sicht der empirischen Forschung. (S. 7-16). Julius Klinkhardt.[UR](https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1009887009) [WorldCat](https://search.worldcat.org/de/title/1015854043) [DOI](https://doi.org/10.35468/9783781555655)
+Wernke, S.; Zierer, K. (2017). Die Unterrichtsplanung - ein in Vergessenheit geratener Kompetenzbereich?!. In: S. Wernke & K. Zierer (Hrsg.), *Die Unterrichtsplanung: ein in Vergessenheit geratener Kompetenzbereich?! Status Quo und Perspektiven aus Sicht der empirischen Forschung.* (S. 7-16). Julius Klinkhardt. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1009887009" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1015854043" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 
-Wiley, D., & Hilton, J. (2018). Defining OER-enabled pedagogy. International Review of Research in Open and Distributed Learning, 19(4), 133–147. [WorldCat](https://search.worldcat.org/de/title/8214655664) [DOI](https://doi.org/10.19173/irrodl.v19i4.3601)
+Wiley, D., & Hilton, J. (2018). Defining OER-enabled pedagogy. *International Review of Research in Open and Distributed Learning*, 19(4), 133–147. <a class="lit-doi" href="https://doi.org/10.19173/irrodl.v19i4.3601" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/8214655664" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>

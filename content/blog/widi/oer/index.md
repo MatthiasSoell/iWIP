@@ -7,7 +7,7 @@ draft: false
 description: |
   Open Educational Resources (OER) sind frei zugängliche und offen lizenzierte Bildungsmaterialien, die rechtssicher genutzt, verändert und weiterverbreitet werden dürfen. Sie unterstützen das Ziel der UNESCO, Bildung weltweit inklusiver, gerechter und qualitativ hochwertiger zu gestalten und werden seit 2016 durch nationale Förderprogramme in Deutschland gestärkt.
 summary: |
-  Sie lernen Open Educational Resources (OER) – frei zugängliche und offen lizenzierte Bildungsmaterialien – kennen, die Sie rechtssicher nutzen, anpassen und weiterverbreitet dürfen.
+  Sie lernen Open Educational Resources (OER) – frei zugängliche und offen lizenzierte Bildungsmaterialien – kennen, die Sie rechtssicher nutzen, anpassen und weiterverbreiten dürfen.
 
 tags:
   - OER
@@ -86,28 +86,20 @@ oer:
   todos: []
 ---
 
-<script>
-  function triggerPrint() {
-    window.print();
-  }
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.location.search.includes("print-pdf")) {
-    Reveal.addEventListener("ready", function () {
-      setTimeout(() => {
-        window.print();
-      }, 300);
-    });
-  }
-});
-</script>
-
 <div class="top-toggle">
-  <button onclick="triggerPrint()" title="Präsentation speichern">📥</button>
+  <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
+  <button onclick="triggerPrint()" title="Blog speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/widi/oer/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button class="iwip_help_btn"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="iwip_help_overlay"
+        aria-expanded="false"
+        title="Hinweise zur Nutzung">
+  ⓘ
+  </button>
 </div>
+
 {{< oer-meta >}}
 
 ---
@@ -126,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <a id="was-sind-oer"></a>
 ## ❓ Was sind OER?
 
+> [!IMPORTANT]
 > OER = Open Educational Resources = freie Bildungsmaterialien  
 
 **OER** sind frei zugängliche **Bildungsmaterialien**, die von allen **genutzt, verändert und weiterverbreitet** werden dürfen – **rechtssicher und kostenlos**.
@@ -149,6 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 Damit andere Ihre Lehr-Lern-Materialien rechtssicher nutzen können, werden OER mit einer **offenen Lizenz** veröffentlicht – meist einer **Creative-Commons-Lizenz (CC)**.
 
+> [!TIPP]
 > ***OER sind nützlich, weil:***
 > * Bildungsmaterialien in einem sehr weiten Verständnis (von Präsentationen über Grafiken bis zu Lehr-Lern-Konzepten)
 > * frei über Online-Plattformen wie <a href="https://www.twillo.de" target="_blank" rel="noopener">twillo</a> oder <a href="https://hubbs.schule/" target="_blank" rel="noopener">HubbS</a> verfügbar
@@ -246,6 +240,7 @@ Ein Lizenzkürzel setzt sich aus mehreren Teilen zusammen, z. B.:
 - **CC BY-NC-ND 4.0** — Namensnennung, nicht-kommerziell, keine Bearbeitung oder Abwandlung  
 - Symbole: <a href="https://mirrors.creativecommons.org/presskit/icons/cc.svg" target="_blank" rel="noopener">CC-Symbole (SVG)</a>
 
+> [!TIPP]
 > In der Praxis treten Lizenzbezeichnungen in unterschiedlichen Schreibweisen auf  
 > (z. B. mit oder ohne Bindestriche, in englischer oder deutscher Sprache oder als Symbole).
 
@@ -277,6 +272,7 @@ Beachten Sie bei jeder Nutzung die **TULLU-Regel** für Lizenzhinweise:
 | **L** | Link zur Lizenz | <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">https://creativecommons.org/licenses/by-sa/4.0/</a> |
 | **U** | Ursprungsort | [Quelle oder URL] |
 
+> [!TIPP]
 > **Tipp:** Immer so genau wie möglich zitieren – so bleiben Sie rechtlich auf der sicheren Seite.
 
 <a id="oer-selbst-erstellen"></a>
@@ -320,6 +316,7 @@ Offene Bildungsressourcen (OER) fördern:
 - die **rechtssichere Nutzung, Anpassung und Weiterentwicklung** von Materialien sowie  
 - **Transparenz, Teilhabe und Sichtbarkeit** in Bildung und Wissenschaft.
 
+> [!IMPORTANT]
 > ☝️ Offen teilen heißt, gemeinsam weiterzulernen – mit Respekt vor Urheberrechten.
 
 ## 🎯 Ziel der Aufgabe
@@ -397,7 +394,7 @@ Beschreiben Sie die **Einbettung Ihres Materials in das Seminar**:
 
 ### 6️⃣ Abgabe
 
-- **Format:** bestenfalls editierbares Format (.pptx, .docx, .odt), ggf.PDF  
+- **Format:** bestenfalls editierbares Format (.pptx, .docx, .odt), ggf. PDF  
 - **Optional:** Bei digitalen Formaten (H5P, Video, interaktives PDF etc.) bitte **Link oder QR-Code** beifügen  
 - **Veröffentlichung:** Stellen Sie Ihr Material auf der **Stud.IP** im Datenbereich bereit.  
 
@@ -426,17 +423,17 @@ Beschreiben Sie die **Einbettung Ihres Materials in das Seminar**:
 
 ## 🧭 Andere Zugänge  
 
-🧗 Sie möchten lieber selbst entdecken, statt lesen? Dann besuchen Sie diesen interaktiven Onlinekurs: Universität Potsdam. (n. d.). *Open Educational Resources – Selbstlernkurs.* <a href="https://openup.uni-potsdam.de/enrol/index.php?id=556" target="_blank" rel="noopener">https://openup.uni-potsdam.de/enrol/index.php?id=556</a>. 
+🧗 Sie möchten lieber selbst entdecken, statt lesen? Dann besuchen Sie diesen interaktiven Onlinekurs: Universität Potsdam. (o.&nbsp;J.). *Open Educational Resources – Selbstlernkurs.* <a href="https://openup.uni-potsdam.de/enrol/index.php?id=556" target="_blank" rel="noopener">https://openup.uni-potsdam.de/enrol/index.php?id=556</a>. 
 
-🎥 Sie schauen gerne Info-Videos? Da finden Sie gute Zusmmenfassungen auf OERinfo. (n. d.). *Was ist OER?*. <a href="https://open-educational-resources.de/was-ist-oer-3-2/" target="_blank" rel="noopener">https://open-educational-resources.de/was-ist-oer-3-2/</a>  
+🎥 Sie schauen gerne Info-Videos? Da finden Sie gute Zusammenfassungen auf OERinfo. (o.&nbsp;J.). *Was ist OER?*. <a href="https://open-educational-resources.de/was-ist-oer-3-2/" target="_blank" rel="noopener">https://open-educational-resources.de/was-ist-oer-3-2/</a>  
 
 <a id="quellen--weiterfuehrende-links"></a>
 ## 📚 Quellen
 
-Creative Commons. (n. d.). *Creative Commons – Unlocking the full potential of the internet.* <a href="https://creativecommons.org" target="_blank" rel="noopener">https://creativecommons.org</a>  
+Creative Commons. (o.&nbsp;J.). *Creative Commons – Unlocking the full potential of the internet.* <a href="https://creativecommons.org" target="_blank" rel="noopener noreferrer">https://creativecommons.org</a> (abgerufen am 17.02.2026) 
 
-OERinfo. (n. d.). *Informationsstelle für Open Educational Resources.* <a href="https://open-educational-resources.de" target="_blank" rel="noopener">https://open-educational-resources.de</a>  
+OERinfo. (o.&nbsp;J.). *Informationsstelle für Open Educational Resources.* <a href="https://open-educational-resources.de" target="_blank" rel="noopener noreferrer">https://open-educational-resources.de</a> (abgerufen am 17.02.2026) 
 
-Bundeszentrale für politische Bildung (bpb). (n. d.). *Open Educational Resources – OER.* <a href="https://www.bpb.de/lernen/digitale-bildung/werkstatt/222073/open-educational-resources-oer/" target="_blank" rel="noopener">https://www.bpb.de/lernen/digitale-bildung/werkstatt/222073/open-educational-resources-oer/</a> (Abgerufen am 23. Oktober 2025)
+Bundeszentrale für politische Bildung (bpb). (o.&nbsp;J.). *Open Educational Resources – OER.* <a href="https://www.bpb.de/lernen/digitale-bildung/werkstatt/222073/open-educational-resources-oer/" target="_blank" rel="noopener noreferrer">https://www.bpb.de/lernen/digitale-bildung/werkstatt/222073/open-educational-resources-oer/</a> (abgerufen am 17.02.2026)
 
-Bundeszentrale für politische Bildung (bpb). (n. d.). *OER ist alles. Oder ist im Web alles OER?* <a href="https://www.bpb.de/lernen/digitale-bildung/werkstatt/222108/oer-ist-alles-oder-ist-im-web-alles-oer/" target="_blank" rel="noopener">https://www.bpb.de/lernen/digitale-bildung/werkstatt/222108/oer-ist-alles-oder-ist-im-web-alles-oer/</a> (Abgerufen am 27. Oktober 2025)
+Bundeszentrale für politische Bildung (bpb). (2016). *OER ist alles. Oder ist im Web alles OER?* <a href="https://www.bpb.de/lernen/digitale-bildung/werkstatt/222108/oer-ist-alles-oder-ist-im-web-alles-oer/" target="_blank" rel="noopener noreferrer">https://www.bpb.de/lernen/digitale-bildung/werkstatt/222108/oer-ist-alles-oder-ist-im-web-alles-oer/</a>  (abgerufen am 17.02.2026)

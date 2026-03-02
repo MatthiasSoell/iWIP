@@ -92,9 +92,19 @@ oer:
 ---
 
 <div class="top-toggle">
-  <button onclick="window.print()" title="Beitrag speichern">📥</button>
+  <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
+  <button onclick="triggerPrint()" title="Blog speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/oer/anreize/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button class="iwip_help_btn"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="iwip_help_overlay"
+        aria-expanded="false"
+        title="Hinweise zur Nutzung">
+  ⓘ
+  </button>
 </div>
+
 {{< oer-meta >}}
 
 # 🚀 Einstieg  
@@ -136,15 +146,16 @@ Die **Klammer**: vom **Verstehen** zum **Planen** – und am Ende eine **Mini-Ch
 
 # 💡 Was ist ein Anreiz?  
 
+> [!TIPP] 
 > Ein Anreiz ist ein verhaltensbeeinflussender <b>Reiz</b>, der als Bindeglied zwischen <b>Motiven</b> (Bedürfnissen) und <b>Motivation</b> (zielgerichtetem <b>Handeln</b>) wirkt. Anreize können innerhalb einer <b>Person</b> (z. B. durch Sinn, Anerkennung oder Zugehörigkeit) oder <b>außerhalb</b> (z. B. durch Ressourcen, Strukturen oder Belohnungen) liegen.
 
-<p class="zitat-quelle" style="font-size:.9em;"><a href="https://link.springer.com/chapter/10.1007/978-3-662-68476-4_8" target="_blank" rel="noopener">Müsseler &amp; Rieger (2017)</a></p>
+<p class="zitat-quelle" style="font-size:.9em;"><a href="#-literatur--hinweise">Müsseler &amp; Rieger (2017)</a></p>
 
 **Anreize in Co-WOERK:**
 - Anreize als gezielte Unterstützungsimpulse
 - Ausrichtung von Anreizen an Bedürfnissen<br>verschiedener Zielgruppen  
 
-<p class="zitat-quelle" style="font-size:.9em;"><a href="https://open-educational-resources.de/wp-content/uploads/266159eng.pdf" target="_blank" rel="noopener">Organisation internationale de la Francophonie (2016)</a></p>
+<p class="zitat-quelle" style="font-size:.9em;"><a href="#-literatur--hinweise">Organisation internationale de la Francophonie (2016)</a></p>
 
 <p>
 👉 Anreize sollen Studierende, Hochschullehrende, Referendar:innen und Lehrkräfte an beruflichen Schulen dazu motivieren, OER zu entdecken, zu nutzen, zu erstellen und zu teilen.
@@ -156,7 +167,7 @@ Die **Klammer**: vom **Verstehen** zum **Planen** – und am Ende eine **Mini-Ch
 
 # 🧩 Von Anreizen zur Anreizmatrix  
 
-Grundlage ist das **Adoptionsmodell** nach <a href="https://www.irrodl.org/index.php/irrodl/article/view/2047/3272" target="_blank" rel="noopener">Hart et al. (2015)</a>:  
+Grundlage ist das **Adoptionsmodell** nach <a href="#-literatur--hinweise">Hart et al. (2015)</a>:  
 - **Awareness → Interesse → Erwägung → Umsetzung → Integration**.  
 - Jede Stufe bringt **andere Fragen** mit sich (z. B. „Warum überhaupt?“ vs. „Wie konkret mache ich das?“).  
 
@@ -169,7 +180,7 @@ Grundlage ist das **Adoptionsmodell** nach <a href="https://www.irrodl.org/index
        style="display:block; margin:0 auto; max-width:480px; width:100%; height:auto;">
   <figcaption style="font-style:italic; font-size:.9em; margin-top:.4rem; font-weight:normal;">
     Quelle: <span style="font-style:italic; font-weight:normal;">
-      <a href="https://www.irrodl.org/index.php/irrodl/article/view/2047/3272" target="_blank" rel="noopener" style="font-weight:normal; font-style:italic;">Hart et al. (2015)</a>
+      <a href="#-literatur--hinweise">Hart et al. (2015)</a>
     </span> · 
     Lizenz: <span style="font-style:italic; font-weight:normal;">
       <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" style="font-weight:normal; font-style:italic;">CC BY 4.0</a>
@@ -177,7 +188,8 @@ Grundlage ist das **Adoptionsmodell** nach <a href="https://www.irrodl.org/index
   </figcaption>
 </figure>
 
-👉 Die Matrix verknüpft diese **Phasenlogik** mit **Anreizkategorien** – so werden **Lücken** sichtbar und **Prioritäten** ableitbar.
+> [!IMPORTANT]
+> 👉 Die Matrix verknüpft diese **Phasenlogik** mit **Anreizkategorien** – so werden **Lücken** sichtbar und **Prioritäten** ableitbar.
 
 ---
 
@@ -382,30 +394,24 @@ und Anreize in deren <b>Sprache, Kultur, Struktur</b> formulieren.
 
 # 💡 Zentrale Erkenntnis  
 
+> [!TIPP] 
 > **Kein Anreiz wirkt überall gleich.** Entscheidend ist der **Kontext** (Phase × Zielgruppe × Rahmenbedingungen). Die Matrix verbindet **Denken** (Analysieren) und **Handeln** (Planen) – und macht Fortschritt **sichtbar**.
 
 ---
 
 ## 📚 Literatur & Hinweise  
 
-<ul>
-  <li>
-    Hart, K. de, Chetty, Y. &amp; Archer, E. (2015). <em>Uptake of OER by staff in distance education in South Africa.</em>
-    <em>International Review of Research in Open and Distributed Learning, 16</em>(2), 18–45.  
-    <a href="https://www.irrodl.org/index.php/irrodl/article/view/2047/3272" target="_blank" rel="noopener">https://www.irrodl.org/index.php/irrodl/article/view/2047/3272</a>
-  </li>
-  <li>
-    Organisation internationale de la Francophonie. (2016). <em>Open Educational Resources: From commitment to action.</em>  
-    <a href="https://open-educational-resources.de/wp-content/uploads/266159eng.pdf" target="_blank" rel="noopener">https://open-educational-resources.de/wp-content/uploads/266159eng.pdf</a>
-  </li>
-  <li>
-    Puca, R. M., &amp; Schüler, J. (2024). <em>Motivation.</em> In M. Rieger &amp; J. Müsseler (Eds.), <em>Allgemeine Psychologie</em> (pp. 269–301). Springer Nature.  
-    <a href="https://link.springer.com/chapter/10.1007/978-3-662-68476-4_8" target="_blank" rel="noopener">https://link.springer.com/chapter/10.1007/978-3-662-68476-4_8</a>
-  </li>
-</ul>
 
----
+ Hart, K. de, Chetty, Y. &amp; Archer, E. (2015). <em>Uptake of OER by staff in distance education in South Africa.</em><em>International Review of Research in Open and Distributed Learning, 16</em>(2), 18–45. <a href="https://www.irrodl.org/index.php/irrodl/article/view/2047/3272" target="_blank" rel="noopener">https://www.irrodl.org/index.php/irrodl/article/view/2047/3272</a> (abgerufen am 18.02.2026) <a class="lit-worldcat" href="https://search.worldcat.org/de/title/5867419439" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 
-## 👩‍🏫 Autor:innen  
 
-Silvia Retzlaff · Nancy Walter · Matthias Söll
+Organisation internationale de la Francophonie. (2016). <em>Open Educational Resources: From commitment to action.</em> <a href="https://open-educational-resources.de/wp-content/uploads/266159eng.pdf" target="_blank" rel="noopener">https://open-educational-resources.de/wp-content/uploads/266159eng.pdf</a> (abgerufen am 18.02.2026)
+
+Puca, R. M., &amp; Schüler, J. (2024). <em>Motivation.</em> In M. Rieger &amp; J. Müsseler (Hrsg.), <em>Allgemeine Psychologie</em> (pp. 269–301). Springer Nature. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1907593772" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.1007/978-3-662-68476-4_8" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> 
+<span class="info_tip"
+      title="Der DOI führt direkt zum Artikel."
+      tabindex="0"
+      aria-label="Hinweis: Der DOI führt direkt zum Artikel.">
+  ⓘ
+</span>
+ <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1466907797" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>

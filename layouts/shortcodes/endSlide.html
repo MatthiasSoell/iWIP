@@ -1,0 +1,61 @@
+{{- $page := .Page -}}
+
+{{- /* Blog-Link: erst Param im Shortcode, sonst Page Params */ -}}
+{{- $blog := .Get "blog" -}}
+{{- if not $blog -}}
+  {{- with $page.Params.blog -}}{{- $blog = . -}}{{- end -}}
+{{- end -}}
+
+{{- /* QR: Ziel ist die aktuelle Präsentation inkl. Reveal-Hash */ -}}
+{{- $target := printf "%s#/" $page.Permalink -}}
+{{- $opts := dict "scale" 12 "level" "medium" "targetDir" "qr" -}}
+
+<section class="end-slide">
+
+  <div class="end-icon">🌱</div>
+
+  <h4 class="end-title">
+    Vielen Dank<br>für Ihr Interesse!
+  </h4>
+
+  <hr class="rule-thin">
+
+  <h6 class="end-sub">
+    Fragen oder Feedback?
+  </h6>
+
+  <div class="contact-block">
+    <div class="contact-line">
+      <span class="contact-icon" aria-hidden="true">
+        {{ partial "custom/email.html" . }}
+      </span>
+      <a href="mailto:matthias.soell@uni-rostock.de">matthias.soell@uni-rostock.de</a>
+    </div>
+
+    <div class="contact-line">
+      <span class="contact-icon" aria-hidden="true">
+        {{ partial "custom/mastodon.html" . }}
+      </span>
+      <a href="https://mastodon.social/@matthias_oer" target="_blank" rel="noopener noreferrer">matthias_oer@mastodon.social</a>
+    </div>
+  </div>
+
+  {{- with images.QR $target $opts -}}
+    {{- $factor := 3 -}}
+    <div class="qr-card">
+      <img
+        src="{{ .RelPermalink }}"
+        width="{{ math.Div .Width $factor }}"
+        height="{{ math.Div .Height $factor }}"
+        alt="QR zur Präsentation"
+        loading="lazy">
+    </div>
+  {{- end -}}
+
+  {{- with $blog -}}
+    <p class="end-back">
+      <a class="back-to-blog" href="{{ . }}">📄 Zurück zum Blog</a>
+    </p>
+  {{- end -}}
+
+</section>

@@ -77,10 +77,22 @@ oer:
 ---
 
 <div class="top-toggle">
+  <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
   <button onclick="location.href='/iWIP/praesentation/widi/widi/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button class="iwip_help_btn"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="iwip_help_overlay"
+        aria-expanded="false"
+        title="Hinweise zur Nutzung">
+  ⓘ
+  </button>
 </div>
+
 {{< oer-meta >}}
+
+---
 
 # 🌀 Recap – Rückblick auf die letzte Veranstaltung  
 
@@ -127,52 +139,12 @@ Die Lehr-Lern-Einheit ist so konzipiert, dass Sie von einer **offenen Fragestell
 
 Gesamtdauer: ca. **90 Minuten**
 
-<style>
-.agenda table{
-  width:100%;
-  border-collapse:separate;
-  border-spacing:0;
-  font-size:0.98rem;
-  line-height:1.45;
-}
-.agenda thead th{
-  background:#f8fafc;
-  text-align:left;
-  font-weight:700;
-  padding:.65em .85em;
-  border-bottom:2px solid #e5e7eb;
-}
-.agenda tbody td{
-  padding:.8em .85em;
-  vertical-align:middle;
-  border-bottom:1px solid #eef2f7;
-}
-.agenda tbody tr:hover td{
-  background:#f9fbff;
-}
-.agenda tbody td:nth-child(1){ width:22%; font-weight:700; }
-.agenda tbody td:nth-child(4){ width:12%; text-align:center; }
-.timecell{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:.35em;
-  white-space:nowrap;
-}
-.timecell .time{
-  font-variant-numeric: tabular-nums;
-  font-weight:600;
-}
-.agenda td p{ margin:.2em 0; }
-.agenda tbody td:nth-child(1){ font-size:1.02rem; }
-</style>
-
 <div class="agenda">
 
 | Phase | Inhalt | Ziel | Zeit |
 |:------|:--------|:------|:------:|
 | **1️⃣ Einstieg 🤔** | Rückblick auf die letzte Sitzung und Einführung in die heutige Fragestellung | Vorwissen aktivieren, Leitfrage klären, Motivation schaffen | ⏱️ 10 Min |
-| **2️⃣ Erarbeitung 🧩** | Vier Gruppen analysieren je eine Quelle: Arndt 2020, Brahm et al. o. J.</a>, Euler &amp; Hahn 2014 oder Wilbers 2022 und bereiten Ergebnisse auf | Themen identifizieren, geeignete Darstellungsform wählen, methodische Vor- & Nachteile reflektieren | ⏱️ 45 Min |
+| **2️⃣ Erarbeitung 🧩** | Vier Gruppen analysieren je eine Quelle: Arndt 2020, Brahm et al. o. J., Euler &amp; Hahn 2014 oder Wilbers 2022 und bereiten Ergebnisse auf | Themen identifizieren, geeignete Darstellungsform wählen, methodische Vor- & Nachteile reflektieren | ⏱️ 45 Min |
 | **3️⃣ Präsentation 💬** | Kurzvorstellung der Gruppenergebnisse und gemeinsame Reflexion im Plenum | Perspektiven vergleichen, Themen systematisieren, Erkenntnisse sichern | ⏱️ 35 Min |
 
 </div>
@@ -185,19 +157,19 @@ Als Studierende:r der Wirtschaftspädagogik verfügen Sie bereits über grundleg
 
 1. Bilden Sie **vier Gruppen** und stellen Sie sich je zwei **Tische** zusammen.  
 2. **Lesen** Sie die Ihnen zugewiesene Quelle sorgfältig:
-- <a href="https://doi.org/10.25593/978-3-96147-267-3" target="_blank" rel="noopener noreferrer">Arndt (2020)</a>, S. 47–53  
-- <a href="https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung" target="_blank" rel="noopener noreferrer">Brahm et al. (o. J.)</a>, sämtliche Themenfelder  
-- <a href="https://elibrary.utb.de/doi/epdf/10.36198/9783838541648" target="_blank" rel="noopener noreferrer">Euler & Hahn (2014)</a>, S. 77–87 & S. 89–91  
-- <a href="https://doi.org/10.25656/01:24386" target="_blank" rel="noopener noreferrer">Wilbers (2022)</a>, S. 1–22  
-3. Arbeiten Sie heraus, mit welchen **Themen** sich die Wirtschaftsdidaktik beschäftigt.  
-4. Ergänzen Sie ggf. **fehlende Themen**, die in Ihrer Quelle nicht vorkommen.  
-5. Halten Sie Ihre Ergebnisse in einer geeigneten Form fest, z. B.:  
+- <a href="#-literatur">Arndt (2020)</a>, S. 47–53  
+- <a href="#-literatur">Brahm et al. (o. J.)</a>, sämtliche Themenfelder  
+- <a href="#-literatur">Euler & Hahn (2014)</a>, S. 77–87 & S. 89–91  
+- <a href="#-literatur">Wilbers (2022)</a>, S. 1–22  
+1. Arbeiten Sie heraus, mit welchen **Themen** sich die Wirtschaftsdidaktik beschäftigt.  
+2. Ergänzen Sie ggf. **fehlende Themen**, die in Ihrer Quelle nicht vorkommen.  
+3. Halten Sie Ihre Ergebnisse in einer geeigneten Form fest, z. B.:  
    - 🧾 **Dokument** (z. B. <a href="https://cryptpad.fr/doc/" target="_blank" rel="noopener noreferrer">cryptpad.fr</a>)  
    - 🪶 **Präsentation** (z. B. <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Canva</a> oder <a href="https://cryptpad.fr/presentation/" target="_blank" rel="noopener noreferrer">cryptpad.fr</a>)  
    - 🧱 **Board** (z. B. <a href="https://miro.com/app/board/uXjVJ7SaunY=/" target="_blank" rel="noopener noreferrer">Miro</a>)  
    - ✍️ **Etherpad** (z. B. <a href="https://yopad.eu" target="_blank" rel="noopener noreferrer">yopad.eu</a>)  
    - 📷 **analoge Grafik** (z. B. digitalisiert per Smartphone)  
-6. Bereiten Sie eine **max. 5-minütige Kurzvorstellung** Ihrer Ergebnisse vor.  
+4. Bereiten Sie eine **max. 5-minütige Kurzvorstellung** Ihrer Ergebnisse vor.  
 
 ⏱️ *Bearbeitungszeit: ca. 45 Minuten*  
 
@@ -208,7 +180,7 @@ Als Studierende:r der Wirtschaftspädagogik verfügen Sie bereits über grundleg
 
 Wenn Sie **nicht live am Seminar teilnehmen**, können Sie die Aufgabe digital bearbeiten:
 
-1. **Lesen** Sie den Text von <a href="https://doi.org/10.25656/01:24386" target="_blank" rel="noopener noreferrer">Wilbers (2022)</a> und lassen Sie sich den Text von <a href="https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung" target="_blank" rel="noopener noreferrer">Brahm et al. (o. J.)</a> mithilfe einer KI zusammenfassen.  
+1. **Lesen** Sie den Text von <a href="#-literatur">Wilbers (2022)</a> und lassen Sie sich den Text von <a href="#-literatur">Brahm et al. (o. J.)</a> mithilfe einer KI zusammenfassen.  
 2. **Vergleichen** Sie anschließend die Ergebnisse beider Quellen.  
 3. Schreiben Sie Ihre **Erkenntnisse** in ein Online-Dokument, z. B.:  
    👉 <a href="https://cryptpad.fr/doc/" target="_blank" rel="noopener noreferrer">KryptPad – datenschutzfreundlicher Online-Editor</a>  
@@ -235,7 +207,7 @@ Notieren Sie anschließend Ihre wichtigsten Einsichten und vergleichen Sie sie m
 - Bezugspunkt: einzelne **Fächer oder Berufsfelder**  
 - Fokus: Anwendung allgemeiner didaktischer Prinzipien auf **fachliche Inhalte**  
 
-➡️ Siehe dazu auch <a href="https://doi.org/10.1007/978-3-531-18984-0" target="_blank" rel="noopener noreferrer">Arnold & Roßa (2012)</a> und <a href="https://ebookcentral.proquest.com/lib/ubrostock-ebooks/detail.action?docID=2080721" target="_blank" rel="noopener noreferrer">Jank & Meyer (2014)</a>.  
+➡️ Siehe dazu auch <a href="#-literatur">Arnold & Roßa (2012)</a> und <a href="#-literatur">Jank & Meyer (2014)</a>.  
 
 ---
 
@@ -243,7 +215,12 @@ Notieren Sie anschließend Ihre wichtigsten Einsichten und vergleichen Sie sie m
 
 Wir fassen die in den Quellen identifizierten Themenfelder gemeinsam auf **Moderationskarten** zusammen und **clustern** sie nach übergeordneten Bereichen.
 
-![Whiteboard](widi_whiteboard.jpg) 
+<figure class="figure-frame">
+  <img src="widi_whiteboard.jpg"
+       alt="Whiteboard">
+</figure>
+
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 ---
 
@@ -254,8 +231,8 @@ Sie haben über die Gemeinsamkeiten und Unterschiede nachgedacht und möchten si
 <details>
 <summary>🔽 <span>Erläuterung zur Systematisierung</span> 🗺️</summary>
 
-- Wirtschaftsdidaktik in der **beruflichen Bildung**: vgl. <a href="https://elibrary.utb.de/doi/epdf/10.36198/9783838541648" target="_blank" rel="noopener noreferrer">Euler & Hahn (2014)</a>, <a href="https://doi.org/10.25656/01:24386" target="_blank" rel="noopener noreferrer">Wilbers (2022)</a>  
-- Wirtschaftsdidaktik in der **allgemeinen Bildung**: vgl. <a href="https://doi.org/10.25593/978-3-96147-267-3" target="_blank" rel="noopener noreferrer">Arndt (2020)</a>, <a href="https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung" target="_blank" rel="noopener noreferrer">Brahm et al. (o. J.)</a>  
+- Wirtschaftsdidaktik in der **beruflichen Bildung**: vgl. <a href="#-literatur">Euler & Hahn (2014)</a>, <a href="#-literatur">Wilbers (2022)</a>  
+- Wirtschaftsdidaktik in der **allgemeinen Bildung**: vgl. <a href="#-literatur">Arndt (2020)</a>, <a href="#-literatur">Brahm et al. (o. J.)</a>  
 - Unterschiedliche **normative Zielsetzungen** (z. B. berufliche Handlungskompetenz vs. mündige Konsument:innen)  
 - Unterschiedliche **Bezugspunkte** (z. B. betriebliche Praxis, Konsumverhalten, Finanzentscheidungen)  
 
@@ -281,21 +258,10 @@ Sie können nun …
 
 # 📚 Literatur  
 
-<ul class="refs">
-  <li>
-    Arndt, H. (2020). <em>Economic Education – Ökonomische Bildung.</em> FAU University Press. 
-    <a href="https://doi.org/10.25593/978-3-96147-267-3" target="_blank" rel="noopener noreferrer">https://doi.org/10.25593/978-3-96147-267-3</a>
-  </li>
-  <li>
-    Brahm, T., Ring, M. &amp; Schild, K. (o.&nbsp;J.). <em>Wirtschaft unterrichten. Offenes Lehrbuch für Wirtschaftsdidaktik.</em> 
-    <a href="https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung" target="_blank" rel="noopener noreferrer">https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung</a>
-  </li>
-  <li>
-    Euler, D. &amp; Hahn, A. (2014). <em>Wirtschaftsdidaktik.</em> Haupt Verlag. 
-    <a href="https://elibrary.utb.de/doi/epdf/10.36198/9783838541648" target="_blank" rel="noopener noreferrer">https://elibrary.utb.de/doi/epdf/10.36198/9783838541648</a>
-  </li>
-  <li>
-    Wilbers, K. (2022). <em>Einführung in die Berufs- und Wirtschaftspädagogik. Schulische und betriebliche Lernwelten erkunden.</em> epubli. 
-    <a href="https://doi.org/10.25656/01:24386" target="_blank" rel="noopener noreferrer">https://doi.org/10.25656/01:24386</a>
-  </li>
-</ul>
+Arndt, H. (2020). <em>Economic Education – Ökonomische Bildung.</em> FAU University Press. <a class="lit-doi" href="https://doi.org/10.25593/978-3-96147-267-3" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1140125971" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+
+Brahm, T., Ring, M. &amp; Schild, K. (o.&nbsp;J.). <em>Wirtschaft unterrichten. Offenes Lehrbuch für Wirtschaftsdidaktik.</em> <a href="https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung" target="_blank" rel="noopener noreferrer">https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung</a> (abgerufen am 17.02.2026)
+
+Euler, D. &amp; Hahn, A. (2014). <em>Wirtschaftsdidaktik.</em> Haupt Verlag. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=797092021" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.36198/9783838541648" target="_blank" rel="noopener noreferrer"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1250361192" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+
+Wilbers, K. (2022). <em>Einführung in die Berufs- und Wirtschaftspädagogik. Schulische und betriebliche Lernwelten erkunden.</em> epubli. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1651884684" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.25656/01:24386" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1310644933" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
