@@ -1,5 +1,11 @@
 ---
 title: "Unterricht planen mit KI – Wirtschaft unterrichten mit freien Bildungsmaterialien"
+title_reveal: "Unterricht planen mit KI & OER<br>"
+emojis: "🤖 🎓🌍🔓"
+veranstaltungstyp: ""
+veranstaltung: "AWT-BO Fachtag 2026"
+author: "Prof. Dr. Matthias Söll"
+blog: "/iWIP/blog/oer/uplan_ki_oer/"
 date: 2026-03-02
 lastmod: 2026-03-02
 draft: false
@@ -86,16 +92,7 @@ oer:
   todos: []
 ---
 
-{{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
-
-{{< titleSlide
-    title="Unterricht planen mit KI & OER<br>"
-    emojis="🤖 🎓🌍🔓"
-    veranstaltungstyp=""
-    veranstaltung="AWT-BO Fachtag 2026"
-    author="Prof. Dr. Matthias Söll"
-    blog="/iWIP/blog/oer/uplan_ki_oer/"
->}}
+{{< titleSlide >}}
 
 ---
 
