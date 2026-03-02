@@ -244,11 +244,14 @@ Woher bekommt man aber nun die richtigen Fragen bzw. **Prompts**? 💭
 
 ## 🛠️ Werkstatt: Auftrag
 
-- Arbeiten Sie mit einer eigenen Unterrichtsidee 💡 oder einer Beispielsequenz 📑
-- Wählen Sie den Arbeitsmodus, der zu Ihrem Erfahrungsstand passt 🌱
-- Nutzen Sie die Kurzformel 🧠 sowie die Leitfragen 💭 auf dem Blog 🌐
-- Beantworten Sie Ihre Leitfrage schriftlich 📝
-- In der Challenge identifizieren wir gemeinsam die Planung mit dem sichtbarsten Entwicklungsfortschritt 📈
+- Arbeiten Sie mit eigenen Unterrichtsplanungen oder einem Beispiel 📑
+<ul>
+  <li class="fragment">Nutzen Sie bspw. fobizz oder Perplexity AI 🤖</li>
+  <li class="fragment">Wählen Sie den Arbeitsmodus, der zu Ihrem Erfahrungsstand passt 🌱</li>
+  <li class="fragment">Nutzen Sie die Kurzformel 🧠 sowie die Leitfragen 💭 auf dem Blog 🌐</li>
+  <li class="fragment">Beantworten Sie Ihre Leitfrage schriftlich 📝</li>
+  <li class="fragment">Challenge: Wir identifizieren gemeinsam die Planung mit dem sichtbarsten Entwicklungsfortschritt 📈</li>
+</ul>
 
 ---
 

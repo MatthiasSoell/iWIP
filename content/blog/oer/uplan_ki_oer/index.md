@@ -355,6 +355,17 @@ Nutzen Sie die Kurzformel:
 > [!TIPP]
 > **Rolle 🎭 + Kontext 👥 + Ziel 🎯 + Qualitätskriterien 🧠 + Format 📑 + Differenzierung 🌱 + Reflexion 🪞**
 
+Nutzen Sie Ihren <a href="https://fobizz.com/de/"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Externer Link: fobizz">
+  fobizz</a> Account, <a href="https://www.perplexity.ai"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Externer Link: Perplexity AI">
+  Perplexity AI
+</a> (ohne Login nutzbar) oder das KI-Tool Ihrer Wahl.
+
 Wählen Sie den Arbeitsmodus, der zu Ihrem Erfahrungsstand passt.
 
 ---
@@ -525,7 +536,7 @@ In meinem Beitrag [Warum OER?]({{< ref "blog/oer/warum_oer/index.md" >}}) habe i
 - [Serlo Die freie Lernplattfrom](https://de.serlo.org/wirtschaft/137757/wirtschaft) (Fächer im Aufbau: Wirtschaft)  
 - [Verbraucherzentrale Bundesverband e.V.](https://www.verbraucherbildung.de/materialkompass) (Materialkompass)  
 
-Ebenfalls interessant, aber *keine OER i. E. S.*:
+Ebenfalls interessant, aber *keine OER i. e. S.*:
 
 - [Teach Economy – Das Portal für den Wirtschaftsunterricht](https://www.teacheconomy.de)
 
@@ -563,11 +574,11 @@ Decristan, J., Hess, M., Holzberger, D., & Praetorius, A.-K. (2020). Oberfläche
 <a class="lit-doi" href="https://doi.org/10.25656/01:25867" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 
 Friese, J., Jonuschies, I., Kalisch, C., Kollath, P., Kühne-Hellmessen, C., & Mittmann, F. (2025). Praxis Arbeit - Wirtschaft - Technik - Berufsorientierung (Mecklenburg-Vorpommern, Sekundarstufe I). Westermann. 
-<a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1910896985" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a>
+<a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1910896985" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> 
 <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1474981237" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 
 Lipowsky, F., & Bleck, V. (2019). Was wissen wir über guten Unterricht? – Ein Update. In U. Steffens & R. Messner (Hrsg.), Unterrichtsqualität: Konzepte und Bilanzen gelingenden Lehrens und Lernens: Grundlagen der Qualität von Schule 3 (S. 219–250). Waxmann. 
-<a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1667842072" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a>
+<a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1667842072" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> 
 <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1091716118" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 
 Luo, Z., & Tahir, R. (2025). ChatGPT-Assisted Lesson Planning for Children’s STEAM Arts Education: An Experimental Study on Benefits, Challenges, Methods, and a Prompt Framework. International Journal of Artificial Intelligence in Education, 35(6), 3696–3745. 
