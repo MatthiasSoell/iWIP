@@ -3,6 +3,9 @@ title: "Haushaltsbudget und ökonomisches Prinzip – differenzierte Unterrichts
 date: 2026-03-02
 lastmod: 2026-03-02
 draft: false
+_build:
+  list: never
+  render: always
 
 description: >
   Differenzierte Unterrichtsplanung zum Haushaltsbudget (Sek I & II), entwickelt als Arbeitsgrundlage für eine Lehrkräftewerkstatt zur KI-gestützten Unterrichtsplanung.
