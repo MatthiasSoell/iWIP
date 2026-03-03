@@ -372,12 +372,6 @@ Wählen Sie den Arbeitsmodus, der zu Ihrem Erfahrungsstand passt.
 
 ### 🔀 Differenzierte Arbeitsmodi:
 
-Arbeiten Sie mit einer eigenen Unterrichtsplanung.
-
-Wählen Sie den Arbeitsmodus, der zu *Ihrem Erfahrungsstand* passt.
-
----
-
 #### 🌱 Einsteiger:innen – Struktur klären 🎨
 
 **Ziel:** Die *Sichtstruktur* 🎨 der eigenen Planung transparent machen.
@@ -570,31 +564,24 @@ Die Weiterentwicklung von KI-gestützter Planung kann perspektivisch in einer ko
 
 ## 📚 Literatur
 
-Decristan, J., Hess, M., Holzberger, D., & Praetorius, A.-K. (2020). Oberflächen- und Tiefenmerkmale. Eine Reflexion zweier prominenter Begriffe der Unterrichtsforschung. In Empirische Forschung zu Unterrichtsqualität. Theoretische Grundfragen und quantitative Modellierungen: Zeitschrift für Pädagogik, Beiheft (Nummer 66, S. 102–116). Beltz Juventa : Weinheim; Basel. 
+Decristan, J., Hess, M., Holzberger, D., & Praetorius, A.-K. (2020). Oberflächen- und Tiefenmerkmale. Eine Reflexion zweier prominenter Begriffe der Unterrichtsforschung. In Empirische Forschung zu Unterrichtsqualität. Theoretische Grundfragen und quantitative Modellierungen: Zeitschrift für Pädagogik, Beiheft (Nummer 66, S. 102–116). Beltz Juventa. 
 <a class="lit-doi" href="https://doi.org/10.25656/01:25867" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 
-Friese, J., Jonuschies, I., Kalisch, C., Kollath, P., Kühne-Hellmessen, C., & Mittmann, F. (2025). Praxis Arbeit - Wirtschaft - Technik - Berufsorientierung (Mecklenburg-Vorpommern, Sekundarstufe I). Westermann. 
-<a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1910896985" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> 
-<a class="lit-worldcat" href="https://search.worldcat.org/de/title/1474981237" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+Friese, J., Jonuschies, I., Kalisch, C., Kollath, P., Kühne-Hellmessen, C., & Mittmann, F. (2025). Praxis Arbeit - Wirtschaft - Technik - Berufsorientierung (Mecklenburg-Vorpommern, Sekundarstufe I). Westermann. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1910896985" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1474981237" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 
-Lipowsky, F., & Bleck, V. (2019). Was wissen wir über guten Unterricht? – Ein Update. In U. Steffens & R. Messner (Hrsg.), Unterrichtsqualität: Konzepte und Bilanzen gelingenden Lehrens und Lernens: Grundlagen der Qualität von Schule 3 (S. 219–250). Waxmann. 
-<a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1667842072" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> 
-<a class="lit-worldcat" href="https://search.worldcat.org/de/title/1091716118" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+Lipowsky, F., & Bleck, V. (2019). Was wissen wir über guten Unterricht? – Ein Update. In U. Steffens & R. Messner (Hrsg.), Unterrichtsqualität: Konzepte und Bilanzen gelingenden Lehrens und Lernens: Grundlagen der Qualität von Schule 3 (S. 219–250). Waxmann. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1667842072" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1091716118" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 
 Luo, Z., & Tahir, R. (2025). ChatGPT-Assisted Lesson Planning for Children’s STEAM Arts Education: An Experimental Study on Benefits, Challenges, Methods, and a Prompt Framework. International Journal of Artificial Intelligence in Education, 35(6), 3696–3745. 
 <a class="lit-doi" href="https://doi.org/10.1007/s40593-025-00513-6" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 
-Ministerium für Bildung und Kindertagesförderung. Mecklenburg-Vorpommern (Hrsg.). (2019). Rahmenplan  für die Qualifikationsphase der gymnasialen Oberstufe. https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/unterricht/rahmenplaene/RP_WIRT_SEK2.pdf (abgerufen am 03.02.2026)
+Ministerium für Bildung und Kindertagesförderung. Mecklenburg-Vorpommern (Hrsg.). (2019). Rahmenplan  für die Qualifikationsphase der gymnasialen Oberstufe. https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/unterricht/rahmenplaene/RP_WIRT_SEK2.pdf (abgerufen am 03.02.2026).
 
-Ministerium für Bildung und Kindertagesförderung. Mecklenburg-Vorpommern (Hrsg.). (2023a). Rahmenplan AWT.  Regionale Schule und Gesamtschule. Klasse 7 bis 10. https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/unterricht/rahmenplaene/rp_awt_sek_I_regs.pdf (abgerufen am 03.02.2026)
+Ministerium für Bildung und Kindertagesförderung. Mecklenburg-Vorpommern (Hrsg.). (2023a). Rahmenplan AWT.  Regionale Schule und Gesamtschule. Klasse 7 bis 10. https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/unterricht/rahmenplaene/rp_awt_sek_I_regs.pdf (abgerufen am 03.02.2026).
 
-Ministerium für Bildung und Kindertagesförderung. Mecklenburg-Vorpommern (Hrsg.). (2023b). Rahmenplan AWT. Gymnasium. Klasse 7 bis 10. https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/unterricht/rahmenplaene/rp_awt_sek_I_gym_.pdf (abgerufen am 03.02.2026)
+Ministerium für Bildung und Kindertagesförderung. Mecklenburg-Vorpommern (Hrsg.). (2023b). Rahmenplan AWT. Gymnasium. Klasse 7 bis 10. https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/unterricht/rahmenplaene/rp_awt_sek_I_gym_.pdf (abgerufen am 03.02.2026).
 
-Moundridou, M., Matzakos, N., & Doukakis, S. (2024). Generative AI tools as educators’ assistants: Designing and implementing inquiry-based lesson plans. Computers and Education: Artificial Intelligence, 7, 100277. 
-<a class="lit-doi" href="https://doi.org/10.1016/j.caeai.2024.100277" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
+Moundridou, M., Matzakos, N., & Doukakis, S. (2024). Generative AI tools as educators’ assistants: Designing and implementing inquiry-based lesson plans. Computers and Education: Artificial Intelligence, (7, 100277), S. 1–16. <a class="lit-doi" href="https://doi.org/10.1016/j.caeai.2024.100277" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 
-Saum, T., & Brüning, L. (2023). Zur Problematik der Sicht- und Tiefenstrukturen lernwirksamen Unterrichts. Zeitschrift SEMINAR, 30, 124–139. 
-<a class="lit-doi" href="https://doi.org/10.3278/SEM2302W010" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
+Saum, T., & Brüning, L. (2023). Zur Problematik der Sicht- und Tiefenstrukturen lernwirksamen Unterrichts. Zeitschrift SEMINAR, 29 (2), 124–139. <a class="lit-doi" href="https://doi.org/10.3278/SEM2302W010" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 
-Van Den Berg, G., & Du Plessis, E. (2023). ChatGPT and Generative AI: Possibilities for Its Contribution to Lesson Planning, Critical Thinking and Openness in Teacher Education. Education Sciences, 13(10), 998. 
-<a class="lit-doi" href="https://doi.org/10.3390/educsci13100998" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
+Van Den Berg, G., & Du Plessis, E. (2023). ChatGPT and Generative AI: Possibilities for Its Contribution to Lesson Planning, Critical Thinking and Openness in Teacher Education. Education Sciences, 13(998), 1–12. <a class="lit-doi" href="https://doi.org/10.3390/educsci13100998" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
