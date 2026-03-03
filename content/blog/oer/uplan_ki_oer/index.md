@@ -348,7 +348,7 @@ Oder als Leitfrage:
 
 ### 🧑‍💻 Arbeitsauftrag:
 
-Arbeiten Sie mit einer eigenen Unterrichtsidee oder einer [Beispielsequenz](/content/blog/oer/uplan_ki_oer/uplan_bsp/index.md).  
+Arbeiten Sie mit einer eigenen Unterrichtsidee oder einer [Beispielsequenz](/iWIP/blog/oer/uplan_ki_oer/uplan_bsp/).  
 
 Nutzen Sie die Kurzformel:
 
