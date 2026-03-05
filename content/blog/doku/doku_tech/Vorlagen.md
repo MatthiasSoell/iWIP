@@ -1,18 +1,34 @@
-> [!TIPP]
-> [!QUOTE]
-> [!IMPORTANT]
+# Vorlagen – Copy & Paste (Blog / Präsentation)
 
-<a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1651884684" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.1007/978-3-531-18984-0" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/725009000" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+Diese Sammlung enthält wiederkehrende Snippets aus `content/blog/**/index.md` und `content/praesentation/**/_index.md`.
 
-<span class="info_tip"
-      title="Der DOI führt direkt zum Artikel."
-      tabindex="0"
-      aria-label="Hinweis: Der DOI führt direkt zum Artikel.">
+---
+
+## 1) Blog-Vorlagen (`index.md`)
+
+### 1.1 Kopfbereich: Top-Toggle + OER-Meta
+
+```html
+<div class="top-toggle">
+  <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
+  <button onclick="triggerPrint()" title="Blog speichern">📥</button>
+  <button onclick="location.href='/iWIP/praesentation/oer/MEIN_BEITRAG/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button class="iwip_help_btn"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="iwip_help_overlay"
+        aria-expanded="false"
+        title="Hinweise zur Nutzung">
   ⓘ
-</span>
+  </button>
+</div>
 
-Boxen:
+{{< oer-meta >}}
+```
 
+### 1.2 Callouts (Markdown-Admonitions)
+
+```markdown
 > [!TIPP]
 > TIPP
 
@@ -24,80 +40,157 @@ Boxen:
 
 > [!NOTE]
 > Betonung
+```
 
+### 1.3 Literatur-Icons (UB / DOI / WorldCat)
 
-{{/* Präsentation */}}
+```html
+<a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=123" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a>
+<a class="lit-doi" href="https://doi.org/10.xxxx/xxxx" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
+<a class="lit-worldcat" href="https://search.worldcat.org/de/title/123" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+```
 
-{{/* Infobox mit Avatar Erkenntnis 2 rechts, müsste noch gelb werden */}}
+### 1.4 DOI-Hinweis-Icon
 
-<div class="definition-container">
-  <div class="definition-box">
-    <p><em>Auf <a href="https://open-educational-resources.de/was-ist-oer-3-2/" target="_blank" rel="noopener">OERInfo.de</a> finden Sie weitere, anschaulich aufbereitete Informationen zu OER: bspw. ein 90s Erklärvideo, eine ausführliche Definition sowie Infos zu offenen Lizenzen und zum Mehrwert von OER.</em></p>
-  </div>
-  <div class="definition-avatar">
-    <img src="/iWIP/bilder/avatare/avatar_erkenntnis_2.png" alt="Avatar Erkenntnis" />
-  </div>
-</div>
+```html
+<span class="info_tip"
+      title="Der DOI führt direkt zum Artikel."
+      tabindex="0"
+      aria-label="Hinweis: Der DOI führt direkt zum Artikel.">
+  ⓘ
+</span>
+```
 
-{{/* Zitatbox, müsste noch blau werden */}}
+### 1.5 Abbildungsrahmen
 
-<div class="zitat-wrapper">
-  <div class="zitat-container">
-    <blockquote class="zitat-box">
-       <span class="quote-char">„</span> Wissen ist das einzige Gut, das sich vermehrt, wenn man es teilt.<span class="quote-char">“</span>
-    </blockquote>
-    <p class="zitat-quelle">Marie von Ebner-Eschenbach (1830 – 1916)</p>
-  </div>
-</div>
+```html
+<figure class="figure-frame">
+  <img src="bild.jpg"
+       alt="Aussagekräftiger Alternativtext">
+</figure>
+```
 
-{{/* Hinweisbox */}}
+### 1.6 Interne Verlinkung auf andere Beiträge
 
-<div class="hinweis-box fragment">
-  ☝️ Das Teilen und gemeinsame Bearbeiten von Bildungsmaterialien steigert die Effizienz der Vorbereitung von Lehr-Lern-Arrangements.
-</div>
+```markdown
+[Warum OER?]({{< ref "blog/oer/warum_oer/index.md" >}})
+```
 
-{{/* Zitatbox */}}
+---
 
-<div class="anreiz-box">
-Ein Anreiz ist ein verhaltensbeeinflussender <b>Reiz</b>, der als Bindeglied zwischen <b>Motiven</b> (Bedürfnissen) und <b>Motivation</b> (zielgerichtetem <b>Handeln</b>) wirkt. Anreize können innerhalb einer <b>Person</b> (z. B. durch Sinn, Anerkennung oder Zugehörigkeit) oder <b>außerhalb</b> (z. B. durch Ressourcen, Strukturen oder Belohnungen) liegen.
-</div>
+## 2) Präsentations-Vorlagen (`_index.md`)
 
-{{/* Text wird eingeblendet */}}
-<p class="fragment"></p>
+### 2.1 Grundgerüst Reveal
 
+```markdown
+---
 
-Boxen
+{{< titleSlide >}}
 
-{{< callout type="tipp" >}}
-Tipp
-{{< /callout >}}
+---
 
-{{< callout type="info" >}}
-Zitat
+## Folientitel
+
+Inhalt
+
+---
+
+{{< endSlide >}}
+```
+
+### 2.2 Titelbereich mit `logoBox` + parametrisiertem `titleSlide`
+
+```markdown
+{{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
+
+{{< titleSlide
+  title="Mein Titel"
+  emojis="🤖 🎓🌍🔓"
+  veranstaltung="Meine Veranstaltung"
+  author="Prof. Dr. Matthias Söll"
+  blog="/iWIP/blog/oer/mein_beitrag/"
+>}}
+```
+
+### 2.3 Literatur-/Abschlussfolien (Shortcodes)
+
+```markdown
+{{< literatureSlide >}}
+
+---
+
+{{< endSlide >}}
+```
+
+### 2.4 Fragment: Absatz / Liste / Markdown-Kommentar
+
+```html
+<p class="fragment">Dieser Text erscheint später.</p>
+
+<li class="fragment">Dieser Listenpunkt erscheint später.</li>
+```
+
+```markdown
+- Ein Punkt, der später erscheint. <!-- .element: class="fragment" -->
+```
+
+### 2.5 Reveal-Callout (Shortcode)
+
+```markdown
+{{< callout type="tip" >}}
+Dies ist ein Tipp.
 {{< /callout >}}
 
 {{< callout type="warning" >}}
-Hinweis
+Dies ist ein Hinweis.
 {{< /callout >}}
 
-{{< callout type="note" >}}
-Betonung
+{{< callout type="info" >}}
+Dies ist eine neutrale Info.
 {{< /callout >}}
+```
 
-<figure class="figure-frame">
-  <img src="professionelle_lehrperson.jpg"
-       alt="Professionelle Lehrperson nach Baumert & Kunter (2006)">
-</figure>
+### 2.6 Reveal-Callout (HTML, mit/ohne Fragment)
 
+```html
 <div class="callout callout--tipp fragment">
   <div class="callout-content">
     <p>
-      Der entscheidende Mehrwert von KI-gestützter, dialogischer Unterrichtsplanung liegt darin,
-      dass die KI als <strong>reflexives Gegenüber</strong> 🪞 genutzt werden kann,
-      um die <strong>Sicht- 🎨</strong>, v. a. aber auch die
-      <strong>Tiefenstrukturen</strong> 🧠 von Unterricht zu stärken.
+      Kernaussage für die Folie.
     </p>
   </div>
 </div>
+```
 
-Fragment zum Erscheinen von Texten:
+### 2.7 Hinweisbox in Präsentation
+
+```html
+<div class="hinweis-box fragment">
+  ☝️ Kurzer Hinweistext.
+</div>
+```
+
+### 2.8 `rawhtml`-Block für komplexes HTML
+
+```markdown
+{{< rawhtml >}}
+<div class="k3-step fragment" data-fragment-index="1">
+  Komplexes, eigenes HTML
+</div>
+{{< /rawhtml >}}
+```
+
+### 2.9 Bild + Bildquelle (Reveal)
+
+```html
+<img class="fragment responsive-image" data-fragment-index="1" src="bild.png" alt="Beschreibung">
+<p class="fragment bild-quelle" data-fragment-index="1">Bildquelle: ...</p>
+```
+
+---
+
+## 3) Mini-Workflow (für schnelles Arbeiten)
+
+1. Blog mit Abschnittsstruktur + Callouts + Literatur-Icons schreiben.
+2. Für Präsentation auf Kernaussagen kürzen, dann `titleSlide` + `fragment` + `callout` einsetzen.
+3. Abschluss immer mit `{{< literatureSlide >}}` und `{{< endSlide >}}`.

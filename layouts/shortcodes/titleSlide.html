@@ -127,7 +127,7 @@
         {{- $target := printf "%s#/" $page.Permalink -}}
         {{- $opts := dict "scale" 12 "level" "medium" "targetDir" "qr" -}}
         {{- with images.QR $target $opts -}}
-          {{- $factor := 1.5 -}}
+          {{- $factor := 2.0 -}}
           <div class="qr-card">
             <img
               src="{{ .RelPermalink }}"
