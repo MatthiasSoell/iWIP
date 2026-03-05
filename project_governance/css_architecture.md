@@ -7,21 +7,57 @@ Status: verbindliche Projektregel
 
 ---
 
-# 1. Grundprinzipien
+# 1. CSS Architecture Diagram
+
+```mermaid
+flowchart TD
+
+A[CSS Entry Point (Blog)<br>Hugo Pipes: assets/css/extended] --> T[00_design_tokens.css<br>Tokens only]
+T --> C[10_custom.css<br>Blog components + features]
+C --> O[20_custom_callouts.css<br>Blog callouts only]
+
+R[Reveal CSS (Presentation)<br>static/css/custom_reveal.css] --> RV[.reveal / reveal-hugo only]
+
+subgraph RULES[Governance Rules]
+  X1[No hardcoded colors outside tokens]
+  X2[Owner principle: one file owns a selector]
+  X3[No Reveal selectors in Blog CSS]
+  X4[No Blog selectors in Reveal CSS]
+end
+
+T -.enforces.-> X1
+C -.enforces.-> X2
+O -.enforces.-> X2
+R -.enforces.-> X3
+R -.enforces.-> X4
+
+```
+
+**Legend**
+- Solid arrows = load order / dependency
+- Dashed arrows = governance constraints
+
+Das Diagramm zeigt die Lade-Reihenfolge der Blog-CSS-Dateien sowie die
+strikte Trennung zwischen Blog-CSS und Reveal-Präsentations-CSS.
+
+---
+
+# 2. Grundprinzipien
 
 1. **Markdown-first, CSS minimal**
-2. **Design Tokens sind die einzige Quelle für Farben, Abstände, Radius**
-3. **Keine Doppeldefinitionen von Selektoren**
-4. **Kein `!important` ohne dokumentierten Grund**
-5. **Reveal strikt vom Blog getrennt**
-6. **Jede CSS-Datei hat einen klar definierten Owner-Bereich**
-7. **Keine spontane Regelergänzung ohne Einordnung in diese Struktur**
+2. **Design Tokens sind die einzige Quelle für Farben, Abstände, Radius im Blog**
+3. **Reveal verwendet für Farben eigene Variablen in custom_reveal.css**
+4. **Keine Doppeldefinitionen von Selektoren**
+5. **Kein `!important` ohne dokumentierten Grund**
+6. **Reveal strikt vom Blog getrennt**
+7. **Jede CSS-Datei hat einen klar definierten Owner-Bereich**
+8. **Keine spontane Regelergänzung ohne Einordnung in diese Struktur**
 
 Ziel: Wartbarkeit, Verständlichkeit, Release-Stabilität.
 
 ---
 
-# 2. Dateistruktur & Verantwortlichkeiten
+# 3. Dateistruktur & Verantwortlichkeiten
 
 ## 00_design_tokens.css
 **Owner:** Design-System
@@ -119,7 +155,7 @@ Strikte Trennung zwischen Blog und Präsentation.
 
 ---
 
-# 3. Kaskadenreihenfolge (verbindlich)
+# 4. Kaskadenreihenfolge (verbindlich)
 
 Die Reihenfolge der Dateien im Ordner `assets/css/extended/` ist:
 
@@ -139,7 +175,7 @@ Regeln:
 
 ---
 
-# 4. Umgang mit `!important`
+# 5. Umgang mit `!important`
 
 `!important` ist nur erlaubt, wenn:
 
@@ -156,7 +192,7 @@ Ziel: `!important` als Ausnahme, nicht als Stilmittel.
 
 ---
 
-# 5. Selektor-Scope-Regel
+# 6. Selektor-Scope-Regel
 
 Selektoren müssen möglichst lokal sein.
 
@@ -179,7 +215,7 @@ Unbeabsichtigte CSS-Überschreibungen vermeiden.
 
 ---
 
-# 6. Refactoring-Regel
+# 7. Refactoring-Regel
 
 Wenn ein Selektor in zwei Dateien auftaucht:
 
@@ -189,7 +225,7 @@ Wenn ein Selektor in zwei Dateien auftaucht:
 
 ---
 
-# 7. 1.0.0 Stabilitätsregeln
+# 8. 1.0.0 Stabilitätsregeln
 
 Vor Release:
 
@@ -202,7 +238,7 @@ Vor Release:
 
 ---
 
-# 8. Erweiterungsregel
+# 9. Erweiterungsregel
 
 Neue CSS-Regeln werden:
 
@@ -217,7 +253,7 @@ Spontanes Einfügen „irgendwo dazwischen“ ist nicht zulässig.
 
 ---
 
-# 9. Projektziel
+# 10. Projektziel
 
 Die CSS-Architektur soll:
 
@@ -228,3 +264,17 @@ Die CSS-Architektur soll:
 - langfristig stabil bleiben
 
 Sie ist Teil der Governance des SciBlog iWIP.
+
+---
+
+# 11. AI-Unterstützte Codebearbeitung
+
+Für Änderungen mit KI-Tools (z. B. GitHub Copilot oder ChatGPT)
+gelten zusätzliche Regeln.
+
+Diese sind dokumentiert in:
+
+ai_copilot_instructions.md
+
+Die dort definierten Prinzipien (Modify-first, Framework-first,
+No-hack) sind verbindlich für alle automatisierten Codevorschläge.

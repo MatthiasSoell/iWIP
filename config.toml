@@ -1,33 +1,92 @@
+# ============================================================
+# SciBlog iWIP – Hugo Konfiguration (config.toml)
+# Status: läuft produktiv (Stand: 2026-03-05)
+#
+# Ziel dieser Datei:
+# - zentrale, kommentierte Projektkonfiguration
+# - keine „magischen“ Werte ohne Kontext
+# - Änderungen möglichst sparsam und nachvollziehbar
+#
+# Hinweis:
+# - PaperMod + reveal-hugo werden als Hugo Modules genutzt.
+# - Reveal-Styles liegen bewusst unter static/ (custom_theme), Blog-CSS unter assets/.
+# ============================================================
+
+
+# ------------------------------------------------------------
+# 1) Hugo Core
+# ------------------------------------------------------------
+
 baseURL = "https://matthiassoell.github.io/iWIP/"
 languageCode = "de-de"
 title = "SciBlog iWIP"
-theme = ["github.com/adityatelange/hugo-PaperMod", "github.com/joshed-io/reveal-hugo"]
+
+# Themes werden ausschließlich über Hugo Modules geladen.
+# Siehe technische Dokumentation im SciBlog iWIP.
+# Definition erfolgt weiter unten unter [module.imports].
+
+
+# ------------------------------------------------------------
+# 2) PaperMod – Site Parameters
+# ------------------------------------------------------------
 
 [params]
+  # Layout / Verhalten
   hideFooter = true
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowThemeToggle = true
   ShowRecentPosts = false
   ShowCodeCopyButtons = true
+
+  # Welche Bereiche als „Hauptbereiche“ gelten (z. B. für Listen/Startseite)
   mainSections = ["blog", "posts"]
+
+  # Social Preview / OG-Images (absoluter Pfad unter baseURL)
   images = ["/iWIP/bilder/logo_siblog_iwip_socmed.png"]
+
+  # Meta
   description = "Ich bin Prof. Dr. Matthias Söll vom Institut für Wirtschaftspädagogik (iWIP) der Universität Rostock und blogge mit Open Educational Resources über Wissenschaft und Bildung."
 
+  # Branding (Header)
   [params.label]
     icon = "/iWIP/bilder/logo_siblog_iwip.png"
-    text = ""  # optional: "" blendet den Titel aus, oder "SciBlog iWIP" lässt ihn stehen
+    text = ""
 
-[params.assets]
-  favicon = "/iWIP/favicon.ico"
+  # Favicons / Assets
+  [params.assets]
+    favicon = "/iWIP/favicon.ico"
+
+
+# ------------------------------------------------------------
+# 3) Reveal-Hugo – Präsentationskonfiguration
+# ------------------------------------------------------------
+# Wichtig:
+# - Reveal ist ein zusätzlicher Output für Pages (siehe [outputs])
+# - custom_theme zeigt auf static/css/custom_reveal.css (nicht assets/), damit reveal-hugo es zuverlässig findet.
+
+  [params.reveal_hugo]
+    theme = "white"
+    slide_number = "c/t"
+    custom_theme = "/iWIP/css/custom_reveal.css"
+
+
+# ------------------------------------------------------------
+# 4) Markdown / Render
+# ------------------------------------------------------------
+# unsafe = true: erlaubt HTML in Markdown (bewusst eingesetzt, z. B. für bestimmte Komponenten/Layouts)
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
-[menu]
 
+# ------------------------------------------------------------
+# 5) Navigation (Top-Menü)
+# ------------------------------------------------------------
+
+[menu]
   [[menu.main]]
     identifier = "blog/oer"
     name = "OER"
@@ -46,26 +105,38 @@ theme = ["github.com/adityatelange/hugo-PaperMod", "github.com/joshed-io/reveal-
     pageRef = "blog/doku/"
     weight = 30
 
+
+# ------------------------------------------------------------
+# 6) Outputs / OutputFormats (Reveal aktivieren)
+# ------------------------------------------------------------
+# home: nur HTML
+# page: HTML + Reveal (damit einzelne Inhalte als Präsentation gerendert werden können)
+
 [outputs]
-home = ["HTML"]
-page = ["HTML", "Reveal"]
+  home = ["HTML"]
+  page = ["HTML", "Reveal"]
 
-[outputFormats.Reveal]
-name = "Reveal"
-mediaType = "text/html"
-baseName = "index"
-isPlainText = false
-isHTML = true
-noUgly = true
+# Reveal-OutputFormat: wird von reveal-hugo genutzt.
+# baseName = "index": erzeugt index.html in der Präsentations-URL.
 
-[params.reveal_hugo]
-theme = "white"
-slide_number = "c/t"
-custom_theme = "/iWIP/css/custom_reveal.css"
+[outputFormats]
+  [outputFormats.Reveal]
+    name = "Reveal"
+    mediaType = "text/html"
+    baseName = "index"
+    isPlainText = false
+    isHTML = true
+    noUgly = true
+
+
+# ------------------------------------------------------------
+# 7) Hugo Modules (PaperMod + reveal-hugo)
+# ------------------------------------------------------------
+# Diese Imports sind die modulare Quelle der Themes.
+# (Wenn du irgendwann die Redundanz reduzieren willst: theme[] ODER module.imports – aber erst nach einem Testlauf.)
 
 [module]
-[[module.imports]]
-  path = "github.com/adityatelange/hugo-PaperMod"
-
-[[module.imports]]
-  path = "github.com/joshed-io/reveal-hugo"
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
+  [[module.imports]]
+    path = "github.com/joshed-io/reveal-hugo"
