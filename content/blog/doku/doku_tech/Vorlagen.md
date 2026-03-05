@@ -194,3 +194,205 @@ Dies ist eine neutrale Info.
 1. Blog mit Abschnittsstruktur + Callouts + Literatur-Icons schreiben.
 2. Für Präsentation auf Kernaussagen kürzen, dann `titleSlide` + `fragment` + `callout` einsetzen.
 3. Abschluss immer mit `{{< literatureSlide >}}` und `{{< endSlide >}}`.
+
+---
+
+## 4) Content Conventions – Emoji-Policy (Referenz)
+
+Verbindliche Quelle:
+
+- `project_governance/content_emoji_policy.md`
+
+Kurzregeln für schnelles Arbeiten:
+
+- Emojis semantisch einsetzen (nicht dekorativ).
+- Maximal 1 Emoji pro Absatz/Bullet.
+- Emoji-Bedeutungen konsistent halten.
+- OER-Kennzeichnung: `🎓🌍🔓`
+
+---
+
+## 5) KI-Workflow-Prompts (Copy & Paste)
+
+### 5.1 Didaktik glätten (aus Stichpunkten)
+
+```text
+Rolle: Du bist mein didaktischer Sparringspartner für wirtschaftsdidaktische Blogbeiträge.
+
+Aufgabe:
+- Überführe meine Stichpunkte in eine didaktisch konsistente Struktur.
+- Behalte meine Aussagen vollständig bei, erfinde keine neuen Inhalte.
+- Markiere fehlende Übergänge oder argumentative Lücken als kurze Hinweise.
+
+Zielstruktur:
+1) Ausgangsproblem
+2) Zielperspektive
+3) Didaktische Einordnung
+4) Praktische Umsetzung
+5) Reflexion / Ausblick
+
+Ausgabeformat:
+- Erst: strukturierter Entwurf mit Zwischenüberschriften
+- Danach: 5 konkrete Verbesserungsvorschläge in Stichpunkten
+
+Hier ist mein Rohtext:
+<<<
+[HIER EINFÜGEN]
+>>>
+```
+
+### 5.2 Sprachlich finalisieren (wissenschaftsnah, klar)
+
+```text
+Rolle: Du bist mein wissenschaftsnaher Lektor (Deutsch).
+
+Aufgabe:
+- Formuliere den Text klar, präzise und gut lesbar.
+- Erhalte meinen Stil (professionell, zugänglich, nicht überformal).
+- Kürze Redundanzen und glätte lange Sätze.
+- Keine inhaltlichen Ergänzungen.
+
+Stilregeln:
+- Aktive Formulierungen
+- Kurze Absätze
+- Fachbegriffe nur dort, wo sie wirklich nötig sind
+- Gender- und Zeichensetzung konsistent lassen
+
+Ausgabeformat:
+1) Überarbeitete Fassung komplett
+2) Kurzliste: wichtigste sprachliche Änderungen (max. 8 Punkte)
+
+Text:
+<<<
+[HIER EINFÜGEN]
+>>>
+```
+
+### 5.3 Emoji-Standard anwenden
+
+```text
+Rolle: Du bist mein Editor für konsistente Emoji-Annotation nach meinem Standard.
+
+Aufgabe:
+- Füge passende Emojis nur dort ein, wo sie semantisch unterstützen.
+- Keine Emoji-Überladung: maximal 1 Emoji pro Satz bzw. Listenpunkt.
+- Bestehende Emojis nur ersetzen, wenn sie unpassend oder inkonsistent sind.
+
+Regeln:
+- Überschriften: optional 1 Emoji
+- Aufzählungen: höchstens 1 Emoji pro Bullet
+- Fachlich neutrale Abschnitte: ggf. ganz ohne Emoji
+
+Ausgabeformat:
+1) Text mit Emoji-Anpassung
+2) Liste der verwendeten Emoji-Regeln (kurz)
+
+Text:
+<<<
+[HIER EINFÜGEN]
+>>>
+```
+
+### 5.4 Blog → Präsentation reduzieren (Reveal-fähig)
+
+```text
+Rolle: Du bist mein Editor für die Reduktion eines Blogtexts auf eine Reveal-Präsentation.
+
+Aufgabe:
+- Reduziere den Text auf präsentationsrelevante Kernaussagen.
+- Erzeuge prägnante Folientitel und kurze Bulletpoints.
+- Kennzeichne Stellen, die als Fragment erscheinen sollen.
+- Behalte zentrale Quellenhinweise bei (kurzform).
+
+Ausgabeformat:
+- Direkt als Hugo-Reveal-Markdown mit Folientrennern `---`
+- Nutze bei Bedarf diese Muster:
+  - `{{< titleSlide >}}`
+  - `{{< literatureSlide >}}`
+  - `{{< endSlide >}}`
+  - `<!-- .element: class="fragment" -->`
+
+Zusatz:
+- Max. 5 Bullets pro Folie
+- Möglichst 1 Kernaussage pro Folie
+
+Blogtext:
+<<<
+[HIER EINFÜGEN]
+>>>
+```
+
+### 5.5 Qualitätscheck vor Veröffentlichung
+
+```text
+Prüfe den finalen Blog-/Slide-Text auf folgende Punkte:
+
+1) Inhalt
+- Roter Faden erkennbar?
+- Zielperspektive und Fazit konsistent?
+
+2) Sprache
+- Klar, präzise, ohne Redundanzen?
+- Einheitlicher Stil?
+
+3) Emojis
+- Konsistent und sparsam?
+- Keine dekorative Überladung?
+
+4) Präsentationstauglichkeit
+- Folien nicht überladen?
+- Pro Folie klare Kernaussage?
+
+Gib am Ende eine kurze Ampelbewertung:
+- Grün = direkt veröffentlichbar
+- Gelb = kleine Korrekturen
+- Rot = größere Überarbeitung nötig
+```
+
+---
+
+## 6) Ultra-Kurz (1-Minuten-Version)
+
+### 6.1 Rohtext → didaktische Struktur
+
+```text
+Strukturiere meinen Rohtext didaktisch in 5 Abschnitte: Ausgangsproblem, Zielperspektive, Einordnung, Umsetzung, Ausblick. Keine neuen Inhalte ergänzen.
+
+Text:
+<<<
+[HIER EINFÜGEN]
+>>>
+```
+
+### 6.2 Struktur → sprachlich sauber
+
+```text
+Überarbeite den Text sprachlich klar und präzise (wissenschaftsnah, gut lesbar), ohne inhaltliche Ergänzungen. Kürze Redundanzen.
+
+Text:
+<<<
+[HIER EINFÜGEN]
+>>>
+```
+
+### 6.3 Emoji-Standard schnell anwenden
+
+```text
+Füge Emojis nach meinem Standard sparsam ein: max. 1 Emoji pro Satz/Bullet, nur semantisch passend, keine Überladung.
+
+Text:
+<<<
+[HIER EINFÜGEN]
+>>>
+```
+
+### 6.4 Blogtext → Reveal-Folien (kompakt)
+
+```text
+Reduziere den Text auf Reveal-Folien mit `---`, max. 5 Bullets pro Folie, 1 Kernaussage pro Folie, Fragmente markieren (`<!-- .element: class="fragment" -->`). Nutze bei Bedarf `{{< titleSlide >}}`, `{{< literatureSlide >}}`, `{{< endSlide >}}`.
+
+Text:
+<<<
+[HIER EINFÜGEN]
+>>>
+```

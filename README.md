@@ -111,6 +111,7 @@ project_governance/
 ├─ repo_architecture.md
 ├─ css_architecture.md
 ├─ development_workflow.md
+├─ content_emoji_policy.md
 ├─ ai_project_context.md
 └─ ai_copilot_instructions.md
 ```
@@ -119,6 +120,7 @@ Diese Dokumente beschreiben:
 
 - Repository-Struktur  
 - CSS-System  
+- Content-Konventionen (Emoji-Policy)
 - AI-Regeln für Codeänderungen  
 - technischen Projektkontext  
 

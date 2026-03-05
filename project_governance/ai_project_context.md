@@ -32,6 +32,7 @@ Architecture rules:
 Documentation:
 - project_governance/css_architecture.md → CSS system
 - project_governance/repo_architecture.md → repository structure
+- project_governance/content_emoji_policy.md → content emoji conventions
 - project_governance/ai_copilot_instructions.md → AI editing rules
 
 Goal of the project:

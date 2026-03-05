@@ -86,6 +86,7 @@ Wenn du **Architektur, Pfade, Owners oder Regeln** änderst, dann gilt:
 - passende Doku aktualisieren (mindestens):
   - `project_governance/css_architecture.md`
   - `project_governance/repo_architecture.md`
+  - `project_governance/content_emoji_policy.md`
   - `project_governance/ai_copilot_instructions.md`
   - `project_governance/ai_project_context.md`
   - `project_governance/development_workflow.md`
@@ -114,6 +115,7 @@ Vor Merge nach `main`:
   - `project_governance/ai_copilot_instructions.md`
   - `project_governance/ai_project_context.md`
   - `project_governance/css_architecture.md`
+  - `project_governance/content_emoji_policy.md`
   - `project_governance/repo_architecture.md`
   - `project_governance/development_workflow.md`
 - AI-Vorschläge werden **wie Code Reviews** behandelt: übernehmen nur, was du verstehst und getestet hast.

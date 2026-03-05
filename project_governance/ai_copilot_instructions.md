@@ -110,6 +110,7 @@ Relevante Dokumente:
 - project_governance/css_architecture.md
 - project_governance/repo_architecture.md
 - project_governance/ai_copilot_instructions.md
+- project_governance/content_emoji_policy.md
 - config.toml Kommentare
 - content/blog/doku/doku_tech/index.md technische Blog‑Dokumentation
 

@@ -108,6 +108,7 @@ iWIP/
 ├─ project_governance/                   # Projekt-Dokumentation (Governance)
 │  ├─ css_architecture.md
 │  ├─ ai_copilot_instructions.md
+│  ├─ content_emoji_policy.md
 │  └─ repo_architecture.md
 │
 ├─ config.toml             # zentrale Hugo-Konfiguration
