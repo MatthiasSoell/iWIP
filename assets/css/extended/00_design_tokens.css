@@ -1,0 +1,112 @@
+/* ===========================================================
+   SciBlog iWIP – Design Tokens
+   Datei: assets/css/extended/00_design_tokens.css
+   Status: vorbereitet für 1.0.0
+   Owner: 00_design_tokens.css
+
+   Zweck
+   - Zentrale Definition von Farben, Abständen, Radien, Schatten
+   - Grundlage für Blog (PaperMod) und Präsentation (Reveal-Hugo)
+
+   Scope
+   - Nur Tokens (Custom Properties)
+   - Keine Layout-Regeln
+   - Keine Komponenten
+   - Keine Schriftgrößen
+   - Keine Selektoren außer :root und Theme-Scopes
+
+   Regeln
+   - Keine Hex-/RGB-Farben außerhalb dieser Datei (Ausnahmen dokumentieren)
+   - Dark Mode ausschließlich über Token-Überschreibungen (Theme-Scopes)
+
+   Smoke-Test (nach Änderungen)
+   - Light/Dark: Kontraste, Links, Boxen, Buttons wirken stimmig
+   - Keine „verwaisten“ Tokens (Suche nach var(--...) ohne Definition)
+   =========================================================== */
+
+
+/* -----------------------------------------------------------
+   1. Brand- & Akzentfarben
+   ----------------------------------------------------------- */
+
+:root {
+
+  /* Primärmarke */
+  --uni-blau: #014A99;                 /* rgb(1, 74, 153) */
+
+  /* Varianten & Ergänzungen */
+  --uni-blau-strong: #1E4D92;
+  --accent-green: #5ED020;
+  --accent-turquoise: #00796b;
+
+
+  /* -----------------------------------------------------------
+     2. Hintergrundfarben (Callouts, Hinweise, Zitate)
+     ----------------------------------------------------------- */
+
+  /* Info- / Zitat-Hintergründe */
+  --bg-info-soft: #d7e1f1;
+  --bg-info-soft-strong: #e8eff7;
+  --bg-quote-soft: #e0f2f1;
+
+  /* Tipp- & Warn-Boxen */
+  --bg-tipp: #fffbdd;
+  --border-tipp: #f0c000;
+  --bg-warning: #ffe6e6;
+  --border-warning: #d9534f;
+
+
+  /* -----------------------------------------------------------
+     3. Text- & Neutralfarben
+     ----------------------------------------------------------- */
+
+  --text-main: #222222;
+  --text-muted: #6b6b6b;
+  --text-quote: #555555;
+
+
+  /* -----------------------------------------------------------
+     4. UI-Elemente (Buttons / Glas-Effekte)
+     ----------------------------------------------------------- */
+
+  --btn-glass-bg: rgba(214, 225, 241, 0.55);
+  --btn-glass-border: rgba(1, 74, 153, 0.2);
+  --btn-glass-halo: rgba(0, 159, 227, 0.22);
+
+  /* Zitat-Hintergrund im Blog */
+  --bg-quote-highlight: rgba(1, 74, 153, 0.2);
+
+
+  /* -----------------------------------------------------------
+     5. Radien & Schatten
+     ----------------------------------------------------------- */
+
+  --radius-soft: 0.5rem;
+  --radius-pill: 999px;
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+
+  /* -----------------------------------------------------------
+     6. Spacing-System
+     ----------------------------------------------------------- */
+
+  --space-xs: 0.4rem;
+  --space-s: 0.8rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2rem;
+}
+
+
+/* -----------------------------------------------------------
+   7. Dark Mode (Token-Überschreibungen)
+   Nur Farbwerte, keine Layout-Änderungen
+   ----------------------------------------------------------- */
+
+[data-theme="dark"] {
+
+  --text-main: #e0e0e0;
+  --text-muted: #bbbbbb;
+  --bg-quote-highlight: rgba(1, 74, 153, 0.35);
+
+}

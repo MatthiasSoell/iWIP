@@ -1,11 +1,40 @@
-@import "design_tokens.css";
+/* ===========================================================
+   SciBlog iWIP – Custom CSS (PaperMod)
+   Datei: assets/css/extended/10_custom.css
+   Status: vorbereitet für 1.0.0
+   Owner: 10_custom.css
 
-/* === Uni-Farbe: RGB(1, 74, 153) === */
-:root {
-  --uni-blau: rgb(1, 74, 153);
-}
+   Zweck
+   - Blog-spezifische Komponenten/Features (PaperMod), die nicht in Tokens/Callouts gehören
+   - Layout-nahe Anpassungen, UI-Overlays, OER-Meta, Footer, Utilities
 
-/* === Allgemeines Layout === */
+   Scope
+   - Komponenten-/Feature-Styles für den Blog
+   - Keine Design Tokens (→ 00_design_tokens.css)
+   - Keine Callout-Styles (→ 20_custom_callouts.css)
+   - Keine Reveal-Styles (→ static/css/custom_reveal.css)
+
+   Prinzipien
+   - Möglichst wenig globale Overrides (nur wenn nötig, dann dokumentiert)
+   - „Bewusste Ausnahmen“ klar kommentieren
+   - Technikschuld als TODO markieren (mit Kontext + Testhinweis)
+   - Kein !important, außer als dokumentierte Ausnahme
+
+   Smoke-Test (nach Änderungen)
+   - Light/Dark Toggle
+   - OER-Tooltip: nicht geclippt, Fokus + Hover ok
+   - Help-Overlay: öffnen/schließen + Scroll-Lock ok
+   - Footer-Icons: Hover + Focus sichtbar, Links klickbar
+   =========================================================== */
+
+
+/* ===========================================================
+   01) Basis-Layout & globale Defaults
+   =========================================================== */
+
+ /* Ausnahme (bewusst): Theme-Background sicher überschreiben
+    Hintergrund wurde ohne !important grau (Theme/Cascade).
+    TODO (nach 1.0.0): Ursache/Cascade prüfen und ggf. ohne !important lösen. */
 body {
   background: var(--theme) !important;
 }
@@ -19,8 +48,8 @@ a:hover {
 }
 
 .logo img {
-  height: 50px !important;
-  width: auto !important;
+  height: 50px;
+  width: auto;
 }
 
 .clear {
@@ -30,26 +59,23 @@ a:hover {
   padding: 0;
 }
 
+/* Ausnahme (bewusst): verhindert Layout-Sprung bei Scrollbar-Wechsel
+   TODO (nach 1.0.0): Verhältnis zu scrollbar-gutter prüfen (ggf. reicht gutter allein). */
 html {
   overflow-y: scroll !important;            /* verhindert Layout-Sprung (Chrome) */
   scrollbar-gutter: stable both-edges;
 }
 
+/* Ausnahme (bewusst): Scroll-Lock beim Overlay */
 body.iwip_no_scroll {
   overflow: hidden !important;              /* Scroll-Lock beim Overlay */
 }
 
-/* === Zitat- und Textgestaltung === */
-.post-content blockquote {
-  border-left: 4px solid var(--uni-blau) !important;
-  padding-left: 1rem !important;
-  margin-left: 0 !important;
-  color: var(--primary) !important;
-  background: rgba(1, 74, 153, 0.2) !important;
-  font-style: italic !important;
-}
 
-/* === Buttons === */
+/* ===========================================================
+   02) Buttons (generisch)
+   =========================================================== */
+
 .button {
   background-color: var(--uni-blau);
   color: white;
@@ -65,24 +91,21 @@ body.iwip_no_scroll {
   background-color: #004080;
 }
 
-/* === Überschriften === */
+
+/* ===========================================================
+   03) Typografie – Überschriften (global)
+   =========================================================== */
+
 h1, h2, h3 {
   color: var(--uni-blau);
   font-weight: 700;
 }
 
-/* === Präsentationsmodus (reveal) === */
-body.presentation-view {
-  font-size: 1.5rem;
-  background-color: #111;
-  color: #f1f1f1;
-}
-body.presentation-view header,
-body.presentation-view footer {
-  display: none;
-}
 
-/* === Top-Toggles – iWIP-Blau, gläserner Look === */
+/* ===========================================================
+   04) Top-Toggles (UI Pattern: Buttons, nicht Links)
+   =========================================================== */
+
 .top-toggle {
   display: flex;
   justify-content: flex-end;
@@ -116,7 +139,8 @@ body.presentation-view footer {
     0 0 0 1px rgba(1, 74, 153, 0.15);
 }
 
-/* === Dark Mode === */
+/* Dark Mode (Altbestand): nutzt body.dark
+   TODO (nach 1.0.0): auf [data-theme="dark"] vereinheitlichen. */
 body.dark .top-toggle button:not(.iwip_help_btn) {
   background: rgba(45, 50, 60, 0.4);
   backdrop-filter: blur(10px) saturate(130%);
@@ -134,8 +158,9 @@ body.dark .top-toggle button:not(.iwip_help_btn):hover {
     0 4px 10px rgba(1, 74, 153, 0.25);
 }
 
+
 /* ===========================================================
-   SciBlog iWIP — Custom Footer Styles (PaperMod compatible)
+   05) Footer & Social Links
    =========================================================== */
 
 .footer {
@@ -144,7 +169,7 @@ body.dark .top-toggle button:not(.iwip_help_btn):hover {
   text-align: center;
 }
 
-/* === Social-Icons === */
+/* Social-Icons: Container */
 .footer .social-links {
   display: flex;
   justify-content: center;
@@ -153,19 +178,24 @@ body.dark .top-toggle button:not(.iwip_help_btn):hover {
   margin-bottom: 0.6rem;
 }
 
+/* Social-Icons: Links (Klickfläche + kein Unterstrich) */
 .footer .social-links a {
-  text-decoration: none !important;
-  border-bottom: none !important;
+  text-decoration: none;
+  border-bottom: none;
   color: #444;
   transition: color 0.25s ease;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 0.2rem;              /* verhindert Abschneiden */
+  min-width: 2.2rem;            /* symmetrischer Klickbereich */
 }
 
 .footer .social-links a:hover {
-  text-decoration: none !important;
-  border-bottom: none !important;
+  text-decoration: none;
+  border-bottom: none;
   color: #014a99;
 }
 
@@ -174,42 +204,29 @@ body.dark .top-toggle button:not(.iwip_help_btn):hover {
   outline-offset: 3px;
 }
 
-.footer .social-links svg {
-  width: 1.6rem !important;
-  height: 1.6rem !important;
-  fill: currentColor !important;
-  stroke: none !important;
-  vertical-align: middle;
-}
-
-/* --- Fix: Abgeschnittenes rechtes Icon (Mail) --- */
-.footer .social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.2rem;              /* verhindert Abschneiden */
-  min-width: 2.2rem;            /* sorgt für symmetrischen Klickbereich */
-}
-
+/* Social-Icons: SVG */
 .footer .social-links svg {
   width: 1.6rem;
   height: 1.6rem;
   fill: currentColor;
+  stroke: none;
   vertical-align: middle;
-  overflow: visible;            /* wichtiger Teil! zeigt volle SVG-Fläche */
+
+  overflow: visible;            /* zeigt volle SVG-Fläche */
 }
 
-/* === Dark-Mode Footer === */
+/* Dark Mode Footer */
 [data-theme="dark"] .footer {
   color: #bbb;
 }
+
 [data-theme="dark"] .footer .social-links a {
   color: #ddd;
 }
 
-/* === Abstand Content–Footer === */
+/* Abstand Content–Footer */
 main.main {
-  padding-bottom: 0rem !important;
+  padding-bottom: 0rem;
 }
 
 @media (max-width: 600px) {
@@ -220,93 +237,17 @@ main.main {
     gap: 1.2rem;
   }
   main.main {
-    padding-bottom: 0.3rem !important;
+    padding-bottom: 0.3rem;
   }
 }
 
-.reveal .k3-diagram {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  gap: 1rem;
-}
 
-/* Titel oben über die ganze Breite */
-.reveal .k3-title {
-  grid-column: 1 / 3;
-  background: #d0d6db;
-  padding: 0.6rem 1rem;
-  text-align: center;
-  font-weight: 600;
-}
-
-/* Bubbles unten */
-.reveal .k3-bubbles {
-  grid-column: 1 / 3;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  margin-top: 1rem;
-}
-.reveal .k3-bubbles .bubble {
-  background: #9ea7ad;
-  color: #000;
-  padding: 0.4rem 0.8rem;
-  border-radius: 999px;
-  min-width: 8rem;
-  text-align: center;
-}
-
-/* mittlere Schritte (linke Spalte) */
-.reveal .k3-steps {
-  grid-column: 1 / 2;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  justify-content: center;
-}
-.reveal .k3-step {
-  border: 2px solid #555;
-  padding: 0.6rem 0.8rem;
-  text-align: center;
-  background: #fff;
-}
-
-/* rechte Kästen */
-.reveal .k3-side {
-  grid-column: 2 / 3;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  justify-content: center;
-}
-.reveal .k3-step.side {
-  /* optional: gleiche Optik */
-}
-
-/* Reflexion oben mittig */
-.reveal .k3-reflect {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 2px solid #555;
-  background: #fff;
-  padding: 0.4rem 0.8rem;
-}
-
-/* ------------------------------------------
-   Literatur-Badges (explizit über Klassen)
+/* ===========================================================
+   06) Literatur-Badges (explizit über Klassen)
    UB Rostock / WorldCat / DOI
-   ------------------------------------------ */
+   =========================================================== */
 
-/* ------------------------------------------
-   Basis: Literatur-Link (Text ausblenden)
-   ------------------------------------------ */
-
+/* Basis: Literatur-Link (Text ausblenden) */
 a.lit-doi,
 a.lit-ub,
 a.lit-worldcat {
@@ -320,10 +261,7 @@ a.lit-worldcat {
   vertical-align: middle;
 }
 
-/* ------------------------------------------
-   Badge-Design (sichtbarer Teil)
-   ------------------------------------------ */
-
+/* Badge-Design (sichtbarer Teil) */
 a.lit-doi::before,
 a.lit-ub::before,
 a.lit-worldcat::before {
@@ -338,36 +276,28 @@ a.lit-worldcat::before {
   white-space: nowrap;
 }
 
-/* ------------------------------------------
-   UB Rostock – offizielles Uni-Blau
-   ------------------------------------------ */
-
+/* UB Rostock – offizielles Uni-Blau */
 a.lit-ub::before {
   content: "UB Rostock";
   background-color: #003B70;
 }
 
-/* ------------------------------------------
-   WorldCat – abgestuftes Blau
-   ------------------------------------------ */
-
+/* WorldCat – abgestuftes Blau */
 a.lit-worldcat::before {
   content: "WorldCat";
   background-color: #145DA0;
 }
 
-/* ------------------------------------------
-   DOI – neutrale Blaustufe
-   ------------------------------------------ */
-
+/* DOI – neutrale Blaustufe */
 a.lit-doi::before {
   content: "DOI";
   background-color: #5F7F9E;
 }
 
-/* ------------------------------------------
-   Agenda
-   ------------------------------------------ */
+
+/* ===========================================================
+   07) Agenda (Tabellen-Stil)
+   =========================================================== */
 
 .agenda table{
   width:100%;
@@ -407,13 +337,13 @@ a.lit-doi::before {
 .agenda td p{ margin:.2em 0; }
 .agenda tbody td:nth-child(1){ font-size:1.02rem; }
 
-/* ===========================================================
-   SciBlog iWIP – OER Meta + Status Badges + Tooltip (🟡🟠🔵🟢)
-   =========================================================== */
 
 /* ===========================================================
-   FIX: Tooltips dürfen nicht geclippt werden (PaperMod/Container)
+   08) OER Meta + Status Badges + Tooltip (🟡🟠🔵🟢)
    =========================================================== */
+
+/* Ausnahme (bewusst global): Tooltips dürfen nicht geclippt werden (PaperMod/Container)
+   TODO (nach 1.0.0): auf minimal nötige Container reduzieren (4.1). */
 .post-content,
 .entry-content,
 .main,
@@ -421,16 +351,14 @@ article.post-single{
   overflow: visible !important;
 }
 
-/* Falls irgendwo ein Transform einen neuen Stacking-Context erzeugt */
+/* Ausnahme (bewusst global): verhindert Stacking-Contexts durch Transform
+   TODO (nach 1.0.0): Ursache eingrenzen und ggf. entfernen (4.2). */
 .post-content,
 .entry-content{
   transform: none !important;
 }
 
-/* ===========================================================
-   OER Meta – Box + 2-Spalten-Layout + Titel
-   =========================================================== */
-
+/* OER Meta – Box + 2-Spalten-Layout + Titel */
 .oer-meta{
   margin: var(--space-m) 0 var(--space-m);
   padding: var(--space-s) var(--space-m);
@@ -507,10 +435,7 @@ article.post-single{
   }
 }
 
-/* ===========================================================
-   OER Status Badge + Tooltip
-   =========================================================== */
-
+/* OER Status Badge + Tooltip */
 .oer-status{
   display: inline-flex;
   align-items: center;
@@ -535,13 +460,13 @@ article.post-single{
 
 /* Statusfarben */
 .oer-status.draft{
-  background: var(--bg-tip);
-  border-color: var(--border-tip);
+  background: var(--bg-tipp);
+  border-color: var(--border-tipp);
 }
 
 .oer-status.pilot{
-  background: color-mix(in srgb, var(--bg-tip) 70%, var(--border-tip) 30%);
-  border-color: color-mix(in srgb, var(--border-tip) 80%, var(--text-muted) 20%);
+  background: color-mix(in srgb, var(--bg-tipp) 70%, var(--border-tipp) 30%);
+  border-color: color-mix(in srgb, var(--border-tipp) 80%, var(--text-muted) 20%);
 }
 
 .oer-status.stable{
@@ -645,11 +570,8 @@ article.post-single{
   text-align: center;
 }
 
-/* =========================================
-   🎓🌍🔓 OER Meta-Box – Dark Mode Fix (PaperMod)
-   Gilt nur für die Meta-Box, nicht global.
-   ========================================= */
-
+/* OER Meta-Box – Dark Mode Fix (Altbestand via body.dark)
+   TODO (nach 1.0.0): auf [data-theme="dark"] vereinheitlichen (4.3). */
 body.dark .oer-meta {
   background: #171a1d;            /* dunkles Card-Feeling */
   border: 1px solid #2a2f36;
@@ -722,6 +644,11 @@ body.dark .oer-meta [data-tooltip]::after {
   color: #e7eaf0;
 }
 
+
+/* ===========================================================
+   09) Figure-Frames (Bilder einrahmen)
+   =========================================================== */
+
 .figure-frame {
   border: 1px solid #e5e7eb;   /* noch heller */
   border-radius: 8px;
@@ -736,9 +663,10 @@ body.dark .oer-meta [data-tooltip]::after {
   max-width: 100%;
 }
 
-/* =========================================================
-   UI Help Overlay – SciBlog iWIP
-   ========================================================= */
+
+/* ===========================================================
+   10) UI Help Overlay – SciBlog iWIP
+   =========================================================== */
 
 /* Overlay Hintergrund */
 .iwip_help_overlay {
@@ -819,7 +747,7 @@ body.dark .oer-meta [data-tooltip]::after {
   background: var(--code-bg);
 }
 
-/* Scroll Lock */
+/* Scroll Lock (lokal; globaler Scroll-Lock zusätzlich oben dokumentiert) */
 .iwip_no_scroll {
   overflow: hidden;
 }
@@ -873,14 +801,20 @@ body.dark .oer-meta [data-tooltip]::after {
 }
 
 .iwip_help_overlay[hidden] {
-  display: none !important;
+  display: none;
+  pointer-events: none;
 }
 
+
+/* ===========================================================
+   11) Utilities & kleine Korrekturen
+   =========================================================== */
+
 .bildquelle {
-  text-align:center !important;
-  font-style:italic !important;
-  font-size:0.9rem !important; /* oder .9rem, je nach Wunsch */
-  margin-top:0.4rem !important;
+  text-align:center;
+  font-style:italic;
+  font-size:0.9rem;
+  margin-top:0.4rem;
   color:#333;
 }
 

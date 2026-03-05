@@ -1,13 +1,56 @@
 /* ===========================================================
    SciBlog iWIP – Reveal-Hugo Custom Theme
-   Kompatibel mit reveal.js 5.2.1 + PaperMod
+   Datei: static/css/custom_reveal.css
+   Status: vorbereitet für 1.0.0
+   Owner: Reveal-Präsentationen (Reveal-Hugo / reveal.js)
+
+   Zweck
+   - Theme-Overrides für Reveal.js (Präsentationsansicht)
+   - Slide-UI-Komponenten (Titlecard, Footer, Callouts, Diagramme, Endslides)
+   - Präsentationsmodus (body.presentation-view)
+
+   Scope
+   - Nur Reveal/Präsentation
+   - Keine Blog-Regeln (→ assets/css/extended/10_custom.css)
+   - Keine Blog-Callouts (→ assets/css/extended/20_custom_callouts.css)
+   - Tokens idealerweise zentral (→ assets/css/extended/00_design_tokens.css)
+     Hinweis: aktuell teilweise lokal, TODO nach 1.0.0
+
+   Prinzipien
+   - Overrides so lokal wie möglich (unter .reveal / slide-spezifischen Klassen)
+   - Kein !important, außer als dokumentierte Ausnahme
+   - Technikschuld als TODO markieren (mit Kontext + Testhinweis)
+
+   Smoke-Test (nach Änderungen)
+   - Titlecard: Titel / Buttons / Rule / QR / Author
+   - Toggles: Light/Dark + dark-background slide
+   - Footer: Links + Icons klickbar, Fokus sichtbar
+   - Callouts: tip/quote/warning/note (Revealseiten)
+   - K3-Diagramm Slide
+   - Endslide + Endcard
+   - Portrait vs Landscape: Typo/Spacing wirkt stimmig
+   =========================================================== */
+
+
+/* ===========================================================
+   01) Base Theme Import
    =========================================================== */
 
 @import url("https://unpkg.com/reveal.js@5.2.1/dist/theme/white.css");
 
+
+/* ===========================================================
+   02) Tokens (Reveal-lokal)
+   Status:
+   - Konsolidiert in einem :root-Block
+   TODO nach 1.0.0:
+   - prüfen, ob Tokens vollständig aus 00_design_tokens.css abgeleitet werden sollen
+   =========================================================== */
+
 /* === Design Tokens (Reveal) – minimaler Satz, passend zum Blog === */
 :root {
   --uni-blau: #014A99;
+  --uni-blau-650: #1E4D92;     /* dezente Trenner-/Linienfarbe */
   --accent-turquoise: #00796b;
 
   /* Callouts */
@@ -23,14 +66,12 @@
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* -----------------------------------------------------------
-   1. Grundfarben & Schrift
-   ----------------------------------------------------------- */
 
-:root {
-  --uni-blau: rgb(1, 74, 153);
-}
+/* ===========================================================
+   03) Grundfarben & Typografie
+   =========================================================== */
 
+/* Basis-Text */
 .reveal {
   color: #222;
   font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -47,10 +88,12 @@
   text-transform: none;
 }
 
-/* -----------------------------------------------------------
-   2. Blockquotes & Info-Boxen
-   ----------------------------------------------------------- */
 
+/* ===========================================================
+   04) Blockquotes & Info-Boxen
+   =========================================================== */
+
+/* Blockquote Standard */
 .reveal blockquote {
   background-color: #d7e1f1;
   border-left: 6px solid #0057b8;
@@ -63,6 +106,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* Info-/Hinweis-Boxen */
 .anreiz-box,
 .hinweis-box {
   padding: 1rem 1.4rem;
@@ -90,6 +134,7 @@
   font-style: italic;
 }
 
+/* Zitat-Box (Reveal-spezifisch) */
 .zitat-box {
   background-color: #e0f2f1 !important;
   border-left: 6px solid #00796b !important;
@@ -101,6 +146,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* Zitat-/Bildquelle */
 .zitat-quelle, .bild-quelle {
   text-align: right;
   font-size: 1rem !important;
@@ -108,66 +154,10 @@
   margin-top: 0.5rem;
 }
 
-/* -----------------------------------------------------------
-   3. Toggles
-   ----------------------------------------------------------- */
 
-.top-toggle {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.top-toggle button {
-  font-size: 1.1rem;
-  background: rgba(214, 225, 241, 0.55); /* leicht transparenter iWIP-Ton – wie im Blog */
-  -webkit-backdrop-filter: blur(10px) saturate(150%);
-  backdrop-filter: blur(10px) saturate(150%);
-  color: #111;
-  border: 1px solid rgba(1, 74, 153, 0.2);
-  border-radius: 0.8rem;
-  padding: 0.4rem 0.6rem;
-  cursor: pointer;
-  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
-  box-shadow:
-    inset 0 0 1px rgba(255, 255, 255, 0.4),
-    0 0 6px rgba(0, 0, 0, 0.10),
-    inset 0 0 10px rgba(0, 159, 227, 0.22); /* Halo – wie im Blog */
-}
-
-.top-toggle button:hover {
-  background: rgba(200, 215, 235, 0.7);
-  transform: translateY(-1px);
-  box-shadow:
-    inset 0 0 1px rgba(255, 255, 255, 0.5),
-    0 4px 10px rgba(1, 74, 153, 0.25),
-    0 0 0 1px rgba(1, 74, 153, 0.15);
-}
-
-body.dark .top-toggle button,
-.reveal section.has-dark-background .top-toggle button {
-  background: rgba(45, 50, 60, 0.4);
-  -webkit-backdrop-filter: blur(10px) saturate(130%);
-  backdrop-filter: blur(10px) saturate(130%);
-  color: #eee;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow:
-    inset 0 0 1px rgba(255, 255, 255, 0.25),
-    0 3px 6px rgba(0, 0, 0, 0.4);
-}
-body.dark .top-toggle button:hover,
-.reveal section.has-dark-background .top-toggle button:hover {
-  background: rgba(70, 75, 85, 0.55);
-  box-shadow:
-    inset 0 0 1px rgba(255, 255, 255, 0.35),
-    0 4px 10px rgba(1, 74, 153, 0.25);
-}
-
-/* -----------------------------------------------------------
-   4. Textgrößen & Responsive Verhalten
-   ----------------------------------------------------------- */
+/* ===========================================================
+   05) Textgrößen & Responsive Verhalten
+   =========================================================== */
 
 .reveal li,
 .reveal p {
@@ -190,9 +180,10 @@ body.dark .top-toggle button:hover,
   }
 }
 
-/* -----------------------------------------------------------
-   5. Bilder & QR-Icons
-   ----------------------------------------------------------- */
+
+/* ===========================================================
+   06) Bilder & QR-Icons
+   =========================================================== */
 
 .reveal section img.responsive-image {
   display: block;
@@ -213,9 +204,10 @@ body.dark .top-toggle button:hover,
   .qr-icon { width: 72px; }
 }
 
-/* -----------------------------------------------------------
-   6. Footer – außerhalb der Reveal-Bühne
-   ----------------------------------------------------------- */
+
+/* ===========================================================
+   07) Footer – außerhalb der Reveal-Bühne
+   =========================================================== */
 
 #global-footer {
   position: fixed;
@@ -276,10 +268,12 @@ body.dark .top-toggle button:hover,
   }
 }
 
-/* -----------------------------------------------------------
-   7. Utility-Klassen (Avatare, Definitionen, Fragebox)
-   ----------------------------------------------------------- */
 
+/* ===========================================================
+   08) Utility-Klassen (Avatare, Definitionen, Fragebox)
+   =========================================================== */
+
+/* Definitionen */
 .definition-container {
   display: flex;
   align-items: center;
@@ -340,7 +334,11 @@ body.dark .top-toggle button:hover,
   z-index: 5;
 }
 
-/* ==== Reveal-LogoBox (SciBlog iWIP) ==== */
+
+/* ===========================================================
+   09) Reveal-LogoBox
+   =========================================================== */
+
 .logo-box {
   position: fixed;
   top: 1.2%;
@@ -374,10 +372,12 @@ body.dark .top-toggle button:hover,
   }
 }
 
-/* ==== SciBlog iWIP – Titel-Folie (aus Inline-Code extrahiert) ==== */
-:root{
-  --uni-blau-650: #1E4D92;     /* dezente Trenner-/Linienfarbe */
-}
+
+/* ===========================================================
+   10) Titlecard / Titel-Folie (aus Inline-Code extrahiert)
+   Hinweis: enthält eigene Button-Styles (.reveal .buttons button)
+   TODO nach 1.0.0: Button-Styles ggf. auf Token-Preset umstellen
+   =========================================================== */
 
 /* Container & Header */
 .reveal .titlecard{
@@ -445,7 +445,8 @@ body.dark .top-toggle button:hover,
   font-weight:800;
   margin:0 0 1.7rem;
 }
-/* ==== Trennerlinie im iWIP-Farbverlauf ==== */
+
+/* Trennerlinie im iWIP-Farbverlauf */
 .reveal .rule-thin{
   position: relative;
   width: 40%;
@@ -484,7 +485,8 @@ body.dark .top-toggle button:hover,
   color:#0f274a;
   margin:.2rem 0 .2rem;
 }
-/* ==== QR-Code Block – leicht tiefer gesetzt ==== */
+
+/* QR-Code Block – leicht tiefer gesetzt */
 .reveal .qr-card {
   margin: 1.4rem 0 0;
   text-align: center;
@@ -522,9 +524,11 @@ body.dark .top-toggle button:hover,
   height: 32px;
 }
 
-/* ============================================
-   Abschlussfolie: Kontaktangaben mit Icons
-   ============================================ */
+
+/* ===========================================================
+   11) Abschlussfolie: Kontaktangaben mit Icons
+   =========================================================== */
+
 .reveal .contact-block {
   display: flex;
   flex-direction: column;
@@ -573,8 +577,10 @@ body.dark .top-toggle button:hover,
     height: 20px;
   }
 }
+
+
 /* ===========================================================
-   Callout – Reveal-Version (für Präsentationen)
+   12) Callout – Reveal-Version (für Präsentationen)
    =========================================================== */
 
 .reveal .callout {
@@ -624,22 +630,8 @@ body.dark .top-toggle button:hover,
   margin-bottom: 0;
 }
 
-/* ============================================
-   K3-Step Box – einfache Variante
-   ============================================ */
-.reveal .k3-step {
-  display: inline-block;
-  padding: 0.8rem 1.4rem;
-  border: 2px solid #555;
-  border-radius: 0.4rem;
-  background: #ffffff;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  margin: 1rem 0;
-}
-
 /* ===========================================================
-   K3-Diagramm – Hospitation, Feedback & Reflexion
+   13) K3-Diagramm – Hospitation, Feedback & Reflexion
    =========================================================== */
 
 .reveal .k3-diagram {
@@ -695,6 +687,7 @@ body.dark .top-toggle button:hover,
   justify-self: center;
 }
 
+/* K3-Step Box (nur im K3-Diagramm verwendet) */
 .reveal .k3-step {
   display: flex;
   align-items: center;
@@ -758,6 +751,11 @@ body.dark .top-toggle button:hover,
   font-size: 0.9em;
 }
 
+
+/* ===========================================================
+   14) Prof-Diagramm (Bild positioning)
+   =========================================================== */
+
 .prof-diagram {
   position: relative;
   width: 100%;
@@ -772,10 +770,19 @@ body.dark .top-toggle button:hover,
   transform: translate(-50%, -50%);
 }
 
-/* Mehr Abstand zwischen Listenpunkten in Reveal */
+
+/* ===========================================================
+   15) Listenabstände in Reveal
+   =========================================================== */
+
 .reveal ul li {
   margin-bottom: 0.2em;
 }
+
+
+/* ===========================================================
+   16) Endcard (Back-to-blog + URL + QR wrap)
+   =========================================================== */
 
 .endcard{
   text-align: center;
@@ -812,6 +819,12 @@ body.dark .top-toggle button:hover,
   text-decoration: underline;
   opacity: 1;
 }
+
+
+/* ===========================================================
+   17) End-Slide Feintuning (viele !important – bewusst)
+   TODO nach 1.0.0: schrittweise reduzieren
+   =========================================================== */
 
 .reveal section.end-slide .end-icon{
   font-size: 2.2rem !important;
@@ -861,6 +874,11 @@ body.dark .top-toggle button:hover,
   height: auto;
 }
 
+
+/* ===========================================================
+   18) Typo/Spacing Fixes innerhalb von Reveal
+   =========================================================== */
+
 .reveal section p + ul {
   margin-top: 0.1em !important;
 }
@@ -871,4 +889,20 @@ body.dark .top-toggle button:hover,
 
 .reveal section div.fragment > p {
   margin-bottom: 0.1em;
+}
+
+
+/* ===========================================================
+   19) Präsentationsmodus (reveal) – body.presentation-view
+   =========================================================== */
+
+body.presentation-view {
+  font-size: 1.5rem;
+  background-color: #111;
+  color: #f1f1f1;
+}
+
+body.presentation-view header,
+body.presentation-view footer {
+  display: none;
 }

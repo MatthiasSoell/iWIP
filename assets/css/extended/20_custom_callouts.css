@@ -1,0 +1,203 @@
+/* ===========================================================
+   SciBlog iWIP – Callout Styles (PaperMod)
+   Datei: assets/css/extended/20_custom_callouts.css
+   Status: vorbereitet für 1.0.0
+   Owner: 20_custom_callouts.css
+
+   Zweck
+   - Didaktische Callout-Komponenten im Blog (PaperMod)
+
+   Scope
+   - Nur Callout-Komponenten (keine Layout-/Theme-Overrides)
+   - Keine Design Tokens (→ 00_design_tokens.css)
+   - Keine Reveal-Styles (→ static/css/custom_reveal.css)
+
+   Architektur
+   - Design Tokens      → 00_design_tokens.css
+   - UI/Komponenten     → 10_custom.css
+   - Callouts (Blog)    → 20_custom_callouts.css
+
+   Prinzipien
+   - Varianten über Modifier-Klassen (.callout--*)
+   - Keine hart kodierten Farben (nur Tokens)
+   - Kein !important, außer als dokumentierte Ausnahme
+
+   Abhängigkeiten
+   - Nutzt ausschließlich Design Tokens (Farben, Radien, Abstände, Schatten)
+
+   Smoke-Test (nach Änderungen)
+   - Tip-Callout
+   - Quote-Callout + Quelle unter der Box
+   - Important-Callout
+   - Note-Callout
+   - Abstände: Box ↔ Fließtext wirken ruhig/konsequent
+   =========================================================== */
+
+
+/* -----------------------------------------------------------
+   1. Basiskomponente
+   -----------------------------------------------------------
+
+   Grundstruktur aller Callouts.
+
+   Verantwortlich für:
+   - Box-Layout
+   - Abstand
+   - Border-Akzent
+   - Grundtypografie
+
+   Varianten überschreiben lediglich:
+   - Hintergrundfarbe
+   - Border-Farbe
+   ----------------------------------------------------------- */
+
+.callout {
+  border-radius: var(--radius-soft);
+  padding: var(--space-m);
+  margin: var(--space-m) 0;
+  box-shadow: var(--shadow-soft);
+  border-left: 0.4rem solid transparent;
+  background: var(--bg-info-soft-strong);
+  color: var(--text-main);
+}
+
+
+/* -----------------------------------------------------------
+   2. Varianten
+   -----------------------------------------------------------
+
+   Varianten folgen dem BEM-Muster:
+
+   .callout
+   .callout--quote
+   .callout--tipp
+   .callout--important
+   .callout--note
+
+   Jede Variante verändert nur:
+   - Hintergrund
+   - Border-Farbe
+   - ggf. kleine typografische Anpassungen
+
+   Keine Layoutänderungen.
+   ----------------------------------------------------------- */
+
+
+/* Zitat (blau)
+
+   Verwendung:
+   - zentrale Aussagen
+   - Literaturzitate
+   - theoretische Definitionen
+*/
+.callout--quote {
+  background: var(--bg-info-soft);
+  border-color: var(--uni-blau);
+  text-align: center;
+  margin: var(--space-m) 0 0.8rem;
+}
+
+
+/* TIPP (gelb)
+
+   Verwendung:
+   - didaktische Hinweise
+   - Lernstrategien
+   - methodische Tipps
+*/
+.callout--tipp {
+  background: var(--bg-tipp);
+  border-color: var(--border-tipp);
+}
+
+
+/* IMPORTANT / WARNING (rot)
+
+   Verwendung:
+   - wichtige Hinweise
+   - typische Fehler
+   - kritische Einschränkungen
+*/
+.callout--important {
+  background: var(--bg-warning);
+  border-color: var(--border-warning);
+}
+
+
+/* NOTE (Betonung / Ergänzung)
+
+   Verwendung:
+   - Zusatzinformationen
+   - Kontext
+   - Erweiterungen
+*/
+.callout--note {
+  background: var(--bg-quote-soft);
+  border-color: var(--accent-turquoise);
+}
+
+
+/* -----------------------------------------------------------
+   3. Typografie innerhalb der Box
+   -----------------------------------------------------------
+
+   Standardisierung von Absatzabständen.
+
+   Ziel:
+   - saubere vertikale Rhythmik
+   - kein zusätzlicher Abstand am Ende der Box
+   ----------------------------------------------------------- */
+
+.callout-content p {
+  margin: 0 0 var(--space-s);
+}
+
+.callout-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Sonderfall Quote-Callout */
+.callout--quote .callout-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* -----------------------------------------------------------
+   4. Blog-Overrides (kein Reveal)
+   -----------------------------------------------------------
+
+   Diese Regeln betreffen nur den Blog (PaperMod),
+   nicht Präsentationen oder andere Render-Kontexte.
+
+   Zweck:
+   - bessere Lesbarkeit von Zitaten
+   - saubere Darstellung der Quellenangabe
+   ----------------------------------------------------------- */
+
+
+/* Blockquote soll nicht kursiv sein
+
+   PaperMod setzt Blockquotes standardmäßig kursiv.
+   Für didaktische Zitate im Blog ist normale Schrift besser lesbar.
+*/
+.post-content blockquote,
+.post-content blockquote p {
+  font-style: normal;
+}
+
+
+/* Quelle unter Zitat-Box (außerhalb)
+
+   Nutzung im Markdown:
+
+   > Zitat
+   >
+   > <Quelle>
+
+   Styling sorgt dafür, dass die Quelle
+   unterhalb der Callout-Box rechts steht.
+*/
+.post-content .quote-source {
+  margin-top: 0.2rem;
+  text-align: right;
+}
