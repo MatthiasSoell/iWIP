@@ -1,6 +1,6 @@
 ---
 title: "Unterricht planen mit KI – Wirtschaft unterrichten mit freien Bildungsmaterialien"
-title_reveal: "Unterricht planen mit KI & OER<br>"
+title_reveal: "Unterricht planen mit KI –<br>Wirtschaft unterrichten mit freien Bildungsmaterialien<br>"
 emojis: "🤖 🎓🌍🔓"
 veranstaltungstyp: ""
 veranstaltung: "AWT-BO Fachtag 2026"
@@ -353,17 +353,7 @@ Woher bekommt man aber nun die richtigen Fragen bzw. **Prompts**? 💭
 
 ---
 
-## 📚 Literatur
-
-<br>
-<div class="callout callout--note" style="max-width: 880px; margin: 1.8rem auto; text-align:center;">
-
-<strong>Alle Quellen & Links</strong> finden Sie<br>gesammelt im Blogbeitrag.
-
-</p>
-
-</div>
-<br>
+{{< literatureSlide >}}
 
 ---
 

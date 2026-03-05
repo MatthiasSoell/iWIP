@@ -1,60 +1,91 @@
-/* iwip_help_overlay.js
-   Steuert das UI-Hilfe-Overlay (öffnen/schließen, Fokus, ESC)
-*/
-
 (() => {
-  const overlay = document.getElementById('iwip_help_overlay');
-  if (!overlay) return;
+  const init = () => {
+    const root = document.documentElement;
+    const overlayById = new Map();
 
-  const close_btn = overlay.querySelector('.iwip_help_close');
+    const anyOpen = () => Array.from(overlayById.values()).some((el) => !el.hidden);
 
-  const open_overlay = (trigger_btn) => {
-    overlay.hidden = false;
-    trigger_btn.setAttribute('aria-expanded', 'true');
+    const openOverlay = (overlay, triggerBtn) => {
+      overlay.hidden = false;
+      if (triggerBtn) {
+        if (!triggerBtn.id) triggerBtn.id = `iwip_overlay_trigger_${Math.random().toString(16).slice(2)}`;
+        overlay.dataset.triggerId = triggerBtn.id;
+        triggerBtn.setAttribute('aria-expanded', 'true');
+      }
+      root.classList.add('iwip_no_scroll');
+      const closeBtn = overlay.querySelector('[data-iwip-overlay-close], .iwip_help_close');
+      if (closeBtn) closeBtn.focus();
+    };
 
-    // Trigger merken, um Fokus korrekt zurückzugeben
-    if (!trigger_btn.id) {
-      trigger_btn.id = 'iwip_help_trigger_' + Math.random().toString(16).slice(2);
+    const closeOverlay = (overlay) => {
+      overlay.hidden = true;
+      const triggerId = overlay.dataset.triggerId;
+      if (triggerId) {
+        const triggerBtn = document.getElementById(triggerId);
+        if (triggerBtn) {
+          triggerBtn.setAttribute('aria-expanded', 'false');
+          triggerBtn.focus();
+        }
+      }
+      if (!anyOpen()) root.classList.remove('iwip_no_scroll');
+    };
+
+    const registerOverlay = (overlay) => {
+      if (!overlay || !overlay.id) return;
+      if (overlayById.has(overlay.id)) return;
+
+      // Overlay aus Reveal-Container lösen -> volle Viewport-Fläche
+      if (overlay.parentElement !== document.body) {
+        document.body.appendChild(overlay);
+      }
+
+      overlayById.set(overlay.id, overlay);
+
+      overlay.addEventListener('click', (event) => {
+        if (event.target === overlay) closeOverlay(overlay);
+      });
+
+      overlay
+        .querySelectorAll('[data-iwip-overlay-close], .iwip_help_close')
+        .forEach((btn) => btn.addEventListener('click', () => closeOverlay(overlay)));
+    };
+
+    document.querySelectorAll('[data-iwip-overlay]').forEach(registerOverlay);
+
+    const helpOverlay = document.getElementById('iwip_help_overlay');
+    if (helpOverlay) registerOverlay(helpOverlay);
+
+    if (helpOverlay) {
+      document.querySelectorAll('.iwip_help_btn, #iwip_help_trigger').forEach((triggerBtn) => {
+        if (!triggerBtn.hasAttribute('data-iwip-overlay-target')) {
+          triggerBtn.setAttribute('data-iwip-overlay-target', 'iwip_help_overlay');
+        }
+        if (!triggerBtn.hasAttribute('aria-controls')) {
+          triggerBtn.setAttribute('aria-controls', 'iwip_help_overlay');
+        }
+        if (!triggerBtn.hasAttribute('aria-expanded')) {
+          triggerBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
     }
-    overlay.dataset.trigger_id = trigger_btn.id;
 
-    document.documentElement.classList.add('iwip_no_scroll');
-    close_btn?.focus();
+    document.querySelectorAll('[data-iwip-overlay-target]').forEach((triggerBtn) => {
+      const targetId = triggerBtn.getAttribute('data-iwip-overlay-target');
+      const overlay = overlayById.get(targetId);
+      if (!overlay) return;
+      triggerBtn.addEventListener('click', () => openOverlay(overlay, triggerBtn));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      const open = Array.from(overlayById.values()).find((el) => !el.hidden);
+      if (open) closeOverlay(open);
+    });
   };
 
-  const close_overlay = () => {
-    overlay.hidden = true;
-    document.documentElement.classList.remove('iwip_no_scroll');
-
-    const trigger_id = overlay.dataset.trigger_id;
-    if (trigger_id) {
-      const trigger_btn = document.getElementById(trigger_id);
-      trigger_btn?.setAttribute('aria-expanded', 'false');
-      trigger_btn?.focus();
-    }
-  };
-
-  // Öffnen per Klick auf Help-Button
-  document.addEventListener('click', (e) => {
-    const help_btn = e.target.closest('.iwip_help_btn');
-    if (help_btn) {
-      open_overlay(help_btn);
-      return;
-    }
-
-    // Klick auf Overlay-Hintergrund schließt
-    if (e.target === overlay) {
-      close_overlay();
-    }
-  });
-
-  // Schließen per Close-Button
-  close_btn?.addEventListener('click', close_overlay);
-
-  // Schließen per ESC
-  document.addEventListener('keydown', (e) => {
-    if (!overlay.hidden && e.key === 'Escape') {
-      close_overlay();
-    }
-  });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init, { once: true });
+  } else {
+    init();
+  }
 })();
