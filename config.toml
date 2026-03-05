@@ -68,7 +68,7 @@ title = "SciBlog iWIP"
   [params.reveal_hugo]
     theme = "white"
     slide_number = "c/t"
-    custom_theme = "/iWIP/css/custom_reveal.css"
+    custom_theme = "/iWIP/css/custom_reveal.css?v=20260305a"
 
 
 # ------------------------------------------------------------

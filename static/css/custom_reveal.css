@@ -1065,6 +1065,11 @@ body.presentation-view footer {
   cursor: pointer;
 }
 
+.iwip_overlay--qr .iwip_overlay_close {
+  top: 0.2rem;
+  right: 0.2rem;
+}
+
 .iwip_overlay_close:hover {
   background: rgba(0, 0, 0, 0.06);
   color: #222;
