@@ -1025,9 +1025,9 @@ body.presentation-view footer {
 }
 
 .iwip_overlay--qr .iwip_overlay_panel {
-  width: min(86vw, 380px);
+  width: min(84vw, 350px);
   aspect-ratio: 1 / 1;
-  padding: 0.9rem;
+  padding: 0.75rem;
   display: grid;
   place-items: center;
 }
@@ -1040,8 +1040,15 @@ body.presentation-view footer {
   place-items: center;
 }
 
-/* Wichtig: KEINE eigenen .iwip_overlay--qr .qr-card / img Rahmenregeln hier.
-   So greift 1:1 der bestehende .qr-card Stil der Eingangsfolie. */
+.iwip_overlay--qr .qr-card {
+  margin: 0;
+}
+
+/* !important erforderlich, da das QR-Bild im Shortcode eine Inline-Breite/Höhe erhält. */
+.iwip_overlay--qr .qr-card img {
+  width: min(68vw, 280px) !important;
+  height: auto !important;
+}
 
    /* Close-Button konsistent zum bestehenden Hinweis-Overlay (inline im Panel) */
 .iwip_overlay_close {
@@ -1066,8 +1073,8 @@ body.presentation-view footer {
 }
 
 .iwip_overlay--qr .iwip_overlay_close {
-  top: 0.2rem;
-  right: 0.2rem;
+  top: 0.15rem;
+  right: 0.15rem;
 }
 
 .iwip_overlay_close:hover {
