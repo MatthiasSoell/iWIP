@@ -62,15 +62,15 @@
 
 {{ if and .IsPage (ne .Section "praesentation") }}
 <script id="md-rawcontent" type="text/plain">{{ .RawContent }}</script>
-<script src="{{ "/iWIP/js/copy-page-md.js" | relURL }}"></script>
+<script src="{{ "/iWIP/js/copy-page-md.js" | relURL }}?v={{ now.Unix }}"></script>
 {{ end }}
 
 <!-- Globale Druck- und Preview-Funktionen -->
-<script src="{{ "/iWIP/js/print-save-toggle.js" | relURL }}"></script>
+<script src="{{ "/iWIP/js/print-save-toggle.js" | relURL }}?v={{ now.Unix }}"></script>
 
 {{ partial "ui/help_overlay.html" . }}
-<script src="/iWIP/js/iwip_help_overlay.js"></script>
+<script src="{{ "/iWIP/js/iwip_help_overlay.js" | relURL }}?v={{ now.Unix }}"></script>
 
-<script src="/iWIP/js/print.js" defer></script>
+<script src="{{ "/iWIP/js/print.js" | relURL }}?v={{ now.Unix }}" defer></script>
 
-<script src="/iWIP/js/logo.js"></script>
+<script src="{{ "/iWIP/js/logo.js" | relURL }}?v={{ now.Unix }}"></script>
