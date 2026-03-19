@@ -261,6 +261,13 @@ a.lit-worldcat {
   vertical-align: middle;
 }
 
+/* Stabiler Abstand vor jedem Badge, unabhaengig von HTML-Whitespace oder Minifizierung */
+.post-content a.lit-doi,
+.post-content a.lit-ub,
+.post-content a.lit-worldcat {
+  margin-inline-start: 0.15rem;
+}
+
 /* Badge-Design (sichtbarer Teil) */
 a.lit-doi::before,
 a.lit-ub::before,

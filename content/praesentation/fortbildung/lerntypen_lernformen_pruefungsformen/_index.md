@@ -325,7 +325,7 @@ Frage: Welcher Lerntyp dominiert bei Ihren Schüler:innen – <br>**a**uditiv, *
 
 ---
 
-## Diskussion & 🌱 Transfer
+## Diskussion 🌱 Transfer
 
 > [!TIPP]
 > Wie wollen Sie vor dem Hintergrund der Fortbildung Lerntypen, Lernformen und Prüfungsformen in Ihrem Unterricht und an Ihrer Schule gestalten?
