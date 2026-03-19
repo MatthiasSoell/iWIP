@@ -95,6 +95,18 @@
   --space-m: 1rem;
   --space-l: 1.5rem;
   --space-xl: 2rem;
+
+
+   /* -----------------------------------------------------------
+       7. Tabellen (Blog)
+       ----------------------------------------------------------- */
+
+   --table-bg: #ffffff;
+   --table-border: #d6dde7;
+   --table-head-bg: #eef3f9;
+   --table-head-text: #1f2e42;
+   --table-row-alt: #f9fbfe;
+   --table-row-hover: #edf4ff;
 }
 
 
@@ -108,5 +120,12 @@
   --text-main: #e0e0e0;
   --text-muted: #bbbbbb;
   --bg-quote-highlight: rgba(1, 74, 153, 0.35);
+
+   --table-bg: #18212c;
+   --table-border: #2f3b49;
+   --table-head-bg: #223041;
+   --table-head-text: #dbe8f8;
+   --table-row-alt: #1d2835;
+   --table-row-hover: #253446;
 
 }

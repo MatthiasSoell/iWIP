@@ -3,6 +3,8 @@ title: "Unterricht planen mit KI – Wirtschaft unterrichten mit freien Bildungs
 date: 2026-03-02
 lastmod: 2026-03-02
 draft: false
+aliases:
+  - "/blog/oer/uplan_ki_oer/"
 
 description: >
   Werkstattbericht und Arbeitsgrundlage zur KI-gestützten Unterrichtsplanung im Fach AWT (Sekundarstufen I & II). Der Beitrag verbindet curricular verankerte Zielperspektiven der Bildung im Fach AWT mit Unterrichtsqualität (Sicht- und Tiefenstrukturen) und zeigt, wie KI dialogisch zur professionellen Planung genutzt werden kann.
@@ -88,7 +90,7 @@ oer:
 <div class="top-toggle">
   <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
-  <button onclick="location.href='/iWIP/praesentation/oer/uplan_ki_oer/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button onclick="location.href='/iWIP/praesentation/fortbildung/uplan_ki_oer/'" title="Zur Präsentationsansicht">🖥️</button>
   <button class="iwip_help_btn"
         type="button"
         aria-haspopup="dialog"
@@ -348,7 +350,7 @@ Oder als Leitfrage:
 
 ### 🧑‍💻 Arbeitsauftrag:
 
-Arbeiten Sie mit einer eigenen Unterrichtsidee oder einer [Beispielsequenz](/iWIP/blog/oer/uplan_ki_oer_bsp/).  
+Arbeiten Sie mit einer eigenen Unterrichtsidee oder einer [Beispielsequenz](/iWIP/blog/fortbildung/uplan_ki_oer_bsp/).  
 
 Nutzen Sie die Kurzformel:
 

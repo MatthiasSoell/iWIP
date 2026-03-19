@@ -5,13 +5,21 @@ emojis: "🤖 🎓🌍🔓"
 veranstaltungstyp: ""
 veranstaltung: "AWT-BO Fachtag 2026"
 author: "Prof. Dr. Matthias Söll"
-blog: "/iWIP/blog/oer/uplan_ki_oer/"
+blog: "/iWIP/blog/fortbildung/uplan_ki_oer/"
 date: 2026-03-02
 lastmod: 2026-03-02
 draft: false
+aliases:
+  - "/praesentation/oer/uplan_ki_oer/"
 
 outputs:
   - Reveal
+
+reveal_hugo:
+  theme: simple
+  slide_number: true
+  transition: slide
+  custom_theme: /iWIP/css/custom_reveal.css
 
 description: >
   Reveal-Präsentation zur KI-gestützten Unterrichtsplanung im Fach AWT (Sekundarstufen I & II). 
@@ -61,7 +69,7 @@ oer:
 
   source:
     label: "Blogbeitrag: Unterricht planen mit KI – Wirtschaft unterrichten mit freien Bildungsmaterialien"
-    url: "https://matthiassoell.github.io/iWIP/blog/oer/uplan_ki_oer/"
+    url: "https://matthiassoell.github.io/iWIP/blog/fortbildung/uplan_ki_oer/"
 
   in_language: "de"
   learning_resource_type: "Presentation"

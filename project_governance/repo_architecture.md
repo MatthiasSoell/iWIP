@@ -269,3 +269,24 @@ Der SciBlog iWIP soll langfristig als:
 - Lehr- und Lernumgebung
 
 genutzt werden – mit Fokus auf Stabilität, Transparenz und Offenheit.
+
+---
+
+## 14. File Naming Convention
+
+Dateinamen im Repository verwenden `snake_case`.
+
+Beispiele:
+
+- master_agent.md
+- blog_template.md
+- reveal_template.md
+- content_emoji_policy.md
+
+Vermeide:
+
+- Leerzeichen
+- Großbuchstaben
+- gemischte Schreibweisen
+
+Die Regel dient der Konsistenz im gesamten Repository.

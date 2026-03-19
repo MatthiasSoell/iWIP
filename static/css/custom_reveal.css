@@ -149,10 +149,21 @@
 
 /* Zitat-/Bildquelle */
 .zitat-quelle, .bild-quelle {
-  text-align: right;
+  text-align: center;
   font-size: 1rem !important;
   color: #555;
-  margin-top: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+/* Inline-Quelle */
+.zitat-inline {
+  display: inline;
+  margin-left: 0.3em;
+  font-size: 0.68em !important;
+  color: #777;
+  font-weight: 400;
+  opacity: 0.9;
+  vertical-align: baseline;
 }
 
 
@@ -191,6 +202,50 @@
   margin: 0 auto;
   width: 60%;
   height: auto;
+}
+
+/* Einheitliche Bildgroesse fuer figure-frame Slides */
+.reveal section .figure-frame {
+  --figure-width: min(72vw, 980px);
+  --figure-max-height: 54vh;
+  width: var(--figure-width);
+  margin: 0 auto 1rem;
+}
+
+.reveal section .figure-frame > img {
+  display: block;
+  width: 100%;
+  max-height: var(--figure-max-height);
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Optional: kleinere oder groessere Bilddarstellung pro Folie */
+.reveal section .figure-frame.figure-frame-sm {
+  --figure-width: min(58vw, 760px);
+  --figure-max-height: 44vh;
+}
+
+/* Supersmall Variante fuer sehr platzkritische Folien */
+.reveal section .figure-frame.figure-frame-ssm {
+  --figure-width: min(50vw, 640px);
+  --figure-max-height: 42vh;
+}
+
+/* Falls figure-frame direkt auf img verwendet wird */
+.reveal section img.figure-frame.figure-frame-ssm {
+  display: block;
+  width: min(50vw, 640px);
+  max-height: 42vh;
+  height: auto;
+  object-fit: contain;
+  margin: 1.0rem auto 0;
+}
+
+.reveal section .figure-frame.figure-frame-lg {
+  --figure-width: min(84vw, 1240px);
+  --figure-max-height: 64vh;
 }
 
 .qr-icon {
@@ -333,6 +388,11 @@
   left: 25%;
   height: 220px;
   z-index: 5;
+}
+
+/* Mehr Abstand zwischen Headline und Liste auf ausgewaehlten Folien */
+.headline-list-gap {
+  margin-top: 2.1rem;
 }
 
 
@@ -678,7 +738,8 @@ body.presentation-view .qr-card img {
   font-style: italic;
 }
 
-/* WARNING */
+/* IMPORTANT (inkl. Warning/Caution Alias) */
+.reveal .callout--important,
 .reveal .callout--warning {
   background: var(--bg-warning, #ffe6e6);
   border-color: var(--border-warning, #d9534f);
@@ -846,7 +907,6 @@ body.presentation-view .qr-card img {
   font-size: 0.9em;
 }
 
-
 /* ===========================================================
    14) Prof-Diagramm (Bild positioning)
    =========================================================== */
@@ -865,6 +925,80 @@ body.presentation-view .qr-card img {
   transform: translate(-50%, -50%);
 }
 
+/* ===========================================================
+   14) Methoden-Bonz Diagramm (Bild positioning)
+   =========================================================== */
+
+/* Methoden-Bonz: überlagerte Fragment-Bilder */
+.methoden-bonz-diagram {
+  position: relative;
+  width: 100%;
+  height: 400px;      /* bei Bedarf 340-400 testen */
+  margin-top: -30px;  /* näher an die Überschrift */
+  margin-bottom: 0.0rem;
+}
+
+.reveal .methoden-bonz-diagram img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(82vw, 900px);
+  max-height: 380px;
+  height: auto;
+}
+
+/* ===========================================================
+   14) Methoden-Euler-Hahn Diagramm (Bild positioning)
+   =========================================================== */
+
+/* Methoden-Euler-Hahn: kompakter Abstand zu Ueberschrift und Bildquelle */
+.methoden-euler-hahn-diagram {
+  position: relative;
+  width: 100%;
+  height: 312px;
+  margin-top: -30px;
+  margin-bottom: 0.7rem;
+}
+
+.reveal .methoden-euler-hahn-diagram img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(78vw, 820px);
+  max-height: 282px;
+  height: auto;
+}
+
+.reveal .methoden-euler-hahn-diagram + .bild-quelle {
+  margin-top: 0.1rem;
+}
+
+@media (max-width: 1200px), (max-height: 760px) {
+  .methoden-bonz-diagram {
+    height: 340px;
+    margin-top: -10px;
+  }
+
+  .methoden-euler-hahn-diagram {
+    height: 292px;
+    margin-top: -14px;
+    margin-bottom: -0.3rem;
+  }
+
+  .reveal .methoden-euler-hahn-diagram img {
+    width: min(82vw, 760px);
+    max-height: 258px;
+    top: 51%;
+  }
+
+  .reveal .methoden-bonz-diagram img {
+    width: min(86vw, 820px);
+    max-height: 300px;
+    top: 52%;
+  }
+}
 
 /* ===========================================================
    15) Listenabstände in Reveal

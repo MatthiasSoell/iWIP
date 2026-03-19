@@ -9,5 +9,19 @@
             "filePath": "content/praesentation",
             "group": "Default"
         }
-    ]
+    ],
+    "chat.tools.terminal.autoApprove": {
+        "/^perl -i -pe 'if \\(\\$\\. > 1\\) \\{ s/\\^# /## / \\} s/\\[ \\\\t\\]\\+\\$//' /Users/matthias/Documents/GitHub/iWIP/ai_agents/master_agent\\.md\nperl -i -pe 'if \\(\\$\\. > 1\\) \\{ s/\\^# /## / \\}' /Users/matthias/Documents/GitHub/iWIP/prompts/create\\.md\nperl -i -pe 'if \\(\\$\\. > 1\\) \\{ s/\\^# /## / \\}' /Users/matthias/Documents/GitHub/iWIP/ai_agents/templates/blog_template\\.md\nperl -i -pe 's/\\^\\\\s\\*\\\\d\\+\\\\\\. /1\\. /' /Users/matthias/Documents/GitHub/iWIP/ai_agents/master_agent\\.md\npython - <<'PY'\nfrom pathlib import Path\np=Path\\('/Users/matthias/Documents/GitHub/iWIP/prompts/create\\.md'\\)\nt=p\\.read_text\\(\\)\np\\.write_text\\(t\\.rstrip\\('\\\\n'\\)\\+'\\\\n'\\)\nPY$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python - <<'PY'\nfrom pathlib import Path\np=Path\\('/Users/matthias/Documents/GitHub/iWIP/prompts/create\\.md'\\)\nt=p\\.read_text\\(\\)\np\\.write_text\\(t\\.rstrip\\('\\\\n'\\)\\+'\\\\n'\\)\nPY$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^perl -0777 -i -pe 's/\\\\n\\*\\\\z/\\\\n/' /Users/matthias/Documents/GitHub/iWIP/prompts/create\\.md$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
 }

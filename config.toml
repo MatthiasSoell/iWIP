@@ -94,6 +94,12 @@ title = "SciBlog iWIP"
     weight = 10
 
   [[menu.main]]
+    identifier = "blog/fortbildung"
+    name = "Fobi"
+    pageRef = "blog/fortbildung/"
+    weight = 15
+
+  [[menu.main]]
     identifier = "blog/widi/"
     name = "WiDi"
     pageRef = "blog/widi/"

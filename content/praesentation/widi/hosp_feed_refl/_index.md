@@ -1,5 +1,11 @@
 ---
 title: "Hospitation, Feedback & Reflexion"
+title_reveal: "Hospitation, Feedback & Reflexion<br>"
+emojis: "🤔 🕰️ 🧭 🔍"
+veranstaltungstyp: "🎓 Seminar"
+veranstaltung: "Grundlagen Fachdidaktik Wirtschaft"
+author: "Prof. Dr. Matthias Söll"
+blog: "/iWIP/blog/widi/hosp_feed_refl"
 date: 2025-10-22
 lastmod: 2025-10-22
 draft: false
@@ -87,17 +93,7 @@ oer:
   todos: []
 ---
 
-{{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
-
-{{< titleSlide
-    title="Hospitation, Feedback & Reflexion"
-    emojis="🤔 🕰️ 🧭 🔍"
-    veranstaltungstyp="🎓 Seminar"
-    veranstaltung="Grundlagen Fachdidaktik Wirtschaft"
-    author="Prof. Dr. Matthias Söll"
-    qr="qrcode.png"
-    blog="/iWIP/blog/widi/hosp_feed_refl"
->}}
+{{< titleSlide >}}
 
 ---
 
@@ -105,7 +101,7 @@ oer:
 <p style="margin-top: -1.6rem;">(Baumert & Kunter 2006)</p>
 
 {{< rawhtml >}}
-<div class="prof-diagram">
+<div class="figure-frame-sm">
   
   <img src="prof/prof_1.png" class="plain">
   
@@ -248,83 +244,8 @@ YouTube: Die Feedbackformel WWW – Mit WWW erfolgreich Feedback geben
 
 ---
 
-## 📚 Literatur (Auszug)
-
-- Arnold, K.-H., & Roßa, A.-E. (2012). *Grundlagen der Allgemeinen Didaktik und der Fachdidaktiken.*  
-- Jank, W., & Meyer, H. (2014). *Didaktische Modelle.*  
-- Meyer, H. (2014). *Was ist guter Unterricht?*  
-- Koerrenz, R., Kenklies, K., Kauhaus, H., & Schwarzkopf, M. (2017). *Geschichte der Pädagogik.*  
-- Köhnlein, W. (2004). *Fachdidaktik.* In *Wörterbuch Schulpädagogik.*
-
-<small>Vollständige Angaben: siehe Blogbeitrag.</small>
+{{< literatureSlide >}}
 
 ---
 
-{{< rawhtml >}}
-<style>
-  /* =========================================
-     Abschlussfolie – SciBlog iWIP
-     ========================================= */
-  .abschlussfolie {
-    text-align: center;
-    margin-top: 2.8rem; /* leicht höher für visuelle Zentrierung */
-  }
-
-  .abschlussfolie h1 {
-    font-size: 2.6rem;
-    color: #014A99;
-    font-weight: 800;
-    margin-bottom: 1.8rem;
-  }
-
-  /* Linie im Stil der Titelfolie, aber mit mehr vertikalem Abstand */
-  .abschlussfolie .rule-thin {
-    margin-top: 3rem;     /* mehr Platz über der Linie */
-    margin-bottom: 3rem;    /* mehr Platz unter der Linie */
-  }
-
-  /* Textabsätze innerhalb der Folie */
-  .abschlussfolie p {
-    font-size: 1.6rem;
-    margin: 0.6rem 0;
-    color: #222;
-  }
-
-  .contact-block {
-  margin-top: 1.8rem; /* bleibt gleich – Abstand zur Überschrift */
-  text-align: center;
-}
-
-.contact-line {
-  margin: 0.2rem 0; /* vorher 0.4rem → engerer Zeilenabstand */
-  font-size: 1.5rem;
-  color: #014A99;
-  font-weight: 500;
-}
-
-.contact-line svg {
-  width: 22px;
-  height: 22px;
-  vertical-align: middle;
-  margin-right: 0.4rem;
-  fill: #014A99;
-}
-</style>
-
-<div class="abschlussfolie">
-  <h1>🌱<br>Danke fürs<br>Mitdenken, Mitreden & Mitlernen!<br>😃</h1>
-
-  <hr class="rule-thin">
-
-  <h1>Fragen oder Feedback?</h1>
-
-  <div class="contact-block">
-    <div class="contact-line">
-      {{< email >}}<a href="mailto:matthias.soell@uni-rostock.de">matthias.soell@uni-rostock.de</a>
-    </div>
-    <div class="contact-line">
-      {{< mastodon >}}<a href="https://mastodon.social/@matthias_oer">matthias_oer@mastodon.social</a>
-    </div>
-  </div>
-</div>
-{{< /rawhtml >}}
+{{< endSlide >}}

@@ -3,6 +3,8 @@ title: "Haushaltsbudget und ökonomisches Prinzip – differenzierte Unterrichts
 date: 2026-03-02
 lastmod: 2026-03-02
 draft: false
+aliases:
+  - "/blog/oer/uplan_ki_oer_bsp/"
 _build:
   list: never
   render: always

@@ -143,6 +143,27 @@ project_governance/ai_copilot_instructions.md
 
 ---
 
+## Didaktischer Planungsagent
+
+Der SciBlog iWIP nutzt einen experimentellen KI-Agenten zur Unterstützung
+der didaktischen Planung von Lehrveranstaltungen.
+
+Der Agent arbeitet dialogisch und unterstützt insbesondere bei:
+
+- Kontextklärung
+- Entwicklung didaktischer Strukturen
+- Alignment zwischen Lernzielen, Aktivitäten und Leistungsüberprüfung
+- Ableitung von Blogartikeln und Präsentationen
+
+Der Ansatz ist inspiriert von bestehenden Arbeiten von André Dietrich zu 
+Agents in der Lernumgebung LiaScript.
+
+Der Agent wurde für den Kontext der Wirtschaftsdidaktik
+weiterentwickelt und orientiert sich an europäischen 
+didaktischen Modellen (z. B. Berliner Modell, Constructive Alignment).
+
+---
+
 ## 📖 Lizenz
 
 Die Inhalte des Blogs werden – sofern nicht anders angegeben – unter einer **Creative Commons Lizenz (CC BY-SA 4.0)** veröffentlicht.

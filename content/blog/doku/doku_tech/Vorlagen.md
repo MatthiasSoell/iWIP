@@ -1,18 +1,31 @@
-# Vorlagen – Copy & Paste (Blog / Präsentation)
+# Vorlagen – Quickstart, Copy & Paste, Qualitätschecks
 
-Diese Sammlung enthält wiederkehrende Snippets aus `content/blog/**/index.md` und `content/praesentation/**/_index.md`.
+Diese Seite ist als öffentliche Arbeitsvorlage gedacht: schnell im Alltag nutzbar, aber mit klaren Qualitätsleitplanken.
+
+Sie ist bewusst getrennt nach:
+
+- Blog (`index.md`)
+- Reveal-Präsentation (`_index.md`)
 
 ---
 
-## 1) Blog-Vorlagen (`index.md`)
+## 1) Quickstart (2 Minuten)
 
-### 1.1 Kopfbereich: Top-Toggle + OER-Meta
+1. Nutze unten ein passendes Snippet aus den Top 10.
+2. Schreibe erst die inhaltliche Struktur, dann Feinschliff (Sprache, Emojis, Quellen).
+3. Prüfe vor Veröffentlichung mit den jeweiligen Qualitätschecks für Blog oder Reveal.
+
+---
+
+## 2) Top 10 Copy-Paste Snippets
+
+### 2.1 Blog: Top-Toggle + OER-Meta
 
 ```html
 <div class="top-toggle">
   <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
-  <button onclick="location.href='/iWIP/praesentation/oer/MEIN_BEITRAG/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button onclick="location.href='/iWIP/praesentation/<BEREICH>/<ORDNER>/'" title="Zur Präsentationsansicht">🖥️</button>
   <button class="iwip_help_btn"
         type="button"
         aria-haspopup="dialog"
@@ -26,61 +39,55 @@ Diese Sammlung enthält wiederkehrende Snippets aus `content/blog/**/index.md` u
 {{< oer-meta >}}
 ```
 
-### 1.2 Callouts (Markdown-Admonitions)
+Pfadregel: `content/blog/<BEREICH>/<ORDNER>/index.md` -> `/iWIP/praesentation/<BEREICH>/<ORDNER>/`
+
+### 2.2 Blog: Callouts
 
 ```markdown
 > [!TIPP]
-> TIPP
-
-> [!QUOTE]
-> Zitat
+> Kurzer Tipp.
 
 > [!IMPORTANT]
-> Hinweis
-
-> [!NOTE]
-> Betonung
+> Wichtiger Hinweis.
 ```
 
-### 1.3 Literatur-Icons (UB / DOI / WorldCat)
-
-```html
-<a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=123" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a>
-<a class="lit-doi" href="https://doi.org/10.xxxx/xxxx" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
-<a class="lit-worldcat" href="https://search.worldcat.org/de/title/123" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
-```
-
-### 1.4 DOI-Hinweis-Icon
-
-```html
-<span class="info_tip"
-      title="Der DOI führt direkt zum Artikel."
-      tabindex="0"
-      aria-label="Hinweis: Der DOI führt direkt zum Artikel.">
-  ⓘ
-</span>
-```
-
-### 1.5 Abbildungsrahmen
+### 2.3 Blog: Figure + Bildquelle
 
 ```html
 <figure class="figure-frame">
-  <img src="bild.jpg"
-       alt="Aussagekräftiger Alternativtext">
+  <img src="bild.jpg" alt="Aussagekräftiger Alternativtext">
 </figure>
+
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 ```
 
-### 1.6 Interne Verlinkung auf andere Beiträge
+### 2.4 Blog: Interner Hugo-Link
 
 ```markdown
 [Warum OER?]({{< ref "blog/oer/warum_oer/index.md" >}})
 ```
 
----
+### 2.5 Blog: Agenda-Tabelle (Standard)
 
-## 2) Präsentations-Vorlagen (`_index.md`)
+```markdown
+<div class="agenda">
 
-### 2.1 Grundgerüst Reveal
+| Phase | Inhalt | Ziel | Zeit |
+|---|---|---|---|
+| 1 | Einstieg | Orientierung | 5<br>Min |
+| 2 | Arbeitsphase | Vertiefung | 25<br>Min |
+
+</div>
+```
+
+### 2.6 Blog: Agenda-Tabelle (Varianten)
+
+```markdown
+<div class="agenda compact"> ... </div>
+<div class="agenda roomy"> ... </div>
+```
+
+### 2.7 Reveal: Minimalgerüst
 
 ```markdown
 ---
@@ -91,14 +98,151 @@ Diese Sammlung enthält wiederkehrende Snippets aus `content/blog/**/index.md` u
 
 ## Folientitel
 
-Inhalt
+Kernaussage
 
 ---
 
 {{< endSlide >}}
 ```
 
-### 2.2 Titelbereich mit `logoBox` + parametrisiertem `titleSlide`
+### 2.8 Reveal: Fragmente
+
+```markdown
+- Erster Punkt
+- Zweiter Punkt <!-- .element: class="fragment" -->
+```
+
+### 2.9 Reveal: Literatur-/Abschlussfolie
+
+```markdown
+{{< literatureSlide >}}
+
+---
+
+{{< endSlide >}}
+```
+
+### 2.10 Reveal: Callout
+
+```markdown
+{{< callout type="tip" >}}
+Kernaussage für die Folie.
+{{< /callout >}}
+```
+
+### 2.11 Reveal: Abstand Headline -> Liste
+
+```markdown
+###### Beitrag evidenzinformierter<br>Unterrichts- und Schulentwicklung:
+
+<div class="headline-list-gap">
+
+- Weiterentwicklung von **Unterrichtspraxis** 🧠
+- Unterstützung der **Lehrkräfteprofessionalisierung** 👩‍🏫
+- Stärkung einer innovativen, kooperativen **Schulkultur** 🤝
+
+</div>
+```
+
+Hinweis: Für solche Abstände bevorzugt Klassen in
+`static/css/custom_reveal.css` (z. B. `.headline-list-gap`)
+statt Inline-Styles.
+
+---
+
+## 3) Blog-Bereich (`index.md`)
+
+### 3.1 Markdown-Grundlagen (Blog)
+
+````markdown
+## Abschnitt
+
+Kurzer Einleitungsabsatz mit klarer Leitidee.
+
+- Punkt 1
+- Punkt 2
+
+> [!QUOTE]
+> Pointierte Aussage.
+
+`Inline-Code` und
+
+  Codeblock
+````
+
+### 3.2 Tabellen-Patterns (Blog)
+
+Wichtig:
+
+- Normale Markdown-Tabellen erhalten automatisch den universellen Tabellenstil.
+- Für breite Prozess-/Vergleichstabellen immer `agenda` als Wrapper nutzen.
+- Optional Dichte steuern mit `agenda compact` oder `agenda roomy`.
+- Für eine Tabellenüberschrift vor der Tabelle: `table-title` nutzen (fett + zentriert).
+- Optional für eine zweite, nicht-fette Zeile direkt darunter: `<span class="table-title-note">...</span>` innerhalb von `table-title` nutzen.
+- Für Überschriften direkt vor Grafiken/Bildern: `grafic-title` nutzen (gleiche Typografie, enger Abstand zur Grafik).
+- In der Zeitspalte standardmäßig Format `Zahl<br>Min` verwenden (z. B. `25<br>Min`).
+
+Tabellenüberschrift (empfohlen):
+
+```markdown
+<p class="table-title">Methoden und Medien in Abhängigkeit von Aktions- und Sozialform (Euler & Hahn, 2014, 319)</p>
+
+<p class="table-title">Taxonomie nach Anderson & Krathwohl (2001)<span class="table-title-note">(Mouseover zeigt die Tabelleneinträge)</span></p>
+
+<p class="grafic-title">Lerntypen</p>
+```
+
+Beispiel (5 Spalten):
+
+```markdown
+<div class="agenda">
+
+| Aktionsform | Plenum | Gruppe | Partner | Einzeln |
+|---|---|---|---|---|
+| Darbieten | Vortrag / Vorführung | Instruktion | Instruktion | Instruktion |
+| Im Dialog entwickeln | Lehrgespräch | Beratung / Moderation | Beratung / Moderation | Beratung / Moderation |
+| Erarbeiten & entdecken lassen | angeleitete Einzelarbeit | Gruppenarbeit | Partnerarbeit | Einzelarbeit |
+
+</div>
+```
+
+### 3.3 Häufige Bausteine (Blog)
+
+- Literatur-Icons: `lit-ub`, `lit-doi`, `lit-worldcat`
+- DOI-Hinweis: `info_tip`
+- Bildrahmen + Bildquelle: `figure-frame`, `bildquelle`
+
+### 3.4 Qualitätscheck (Blog)
+
+1. Struktur: Leitfrage, roter Faden, nachvollziehbarer Abschluss.
+2. Evidenz: Kernaussagen mit Quellenbezug im Fließtext.
+3. Sprache: klar, präzise, wenig Redundanz.
+4. Emojis: semantisch, sparsam, konsistent.
+5. Technik: interne Links funktionieren, Tabellen sinnvoll gesetzt, Bilder mit Alt-Text.
+
+---
+
+## 4) Reveal-Bereich (`_index.md`)
+
+### 4.1 Markdown-Grundlagen (Reveal)
+
+```markdown
+---
+
+## Folie 1
+
+- Max. 3-5 Bullets
+
+---
+
+## Folie 2
+
+Ein Punkt pro Folie als Kernaussage.
+```
+
+### 4.2 Typische Reveal-Bausteine
+
+Titelbereich:
 
 ```markdown
 {{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
@@ -112,155 +256,30 @@ Inhalt
 >}}
 ```
 
-### 2.3 Literatur-/Abschlussfolien (Shortcodes)
-
-```markdown
-{{< literatureSlide >}}
-
----
-
-{{< endSlide >}}
-```
-
-### 2.4 Fragment: Absatz / Liste / Markdown-Kommentar
-
-```html
-<p class="fragment">Dieser Text erscheint später.</p>
-
-<li class="fragment">Dieser Listenpunkt erscheint später.</li>
-```
-
-```markdown
-- Ein Punkt, der später erscheint. <!-- .element: class="fragment" -->
-```
-
-### 2.5 Reveal-Callout (Shortcode)
-
-```markdown
-{{< callout type="tip" >}}
-Dies ist ein Tipp.
-{{< /callout >}}
-
-{{< callout type="warning" >}}
-Dies ist ein Hinweis.
-{{< /callout >}}
-
-{{< callout type="info" >}}
-Dies ist eine neutrale Info.
-{{< /callout >}}
-```
-
-### 2.6 Reveal-Callout (HTML, mit/ohne Fragment)
-
-```html
-<div class="callout callout--tipp fragment">
-  <div class="callout-content">
-    <p>
-      Kernaussage für die Folie.
-    </p>
-  </div>
-</div>
-```
-
-### 2.7 Hinweisbox in Präsentation
-
-```html
-<div class="hinweis-box fragment">
-  ☝️ Kurzer Hinweistext.
-</div>
-```
-
-### 2.8 `rawhtml`-Block für komplexes HTML
+Fragment + rawhtml:
 
 ```markdown
 {{< rawhtml >}}
-<div class="k3-step fragment" data-fragment-index="1">
-  Komplexes, eigenes HTML
-</div>
+<div class="k3-step fragment" data-fragment-index="1">Kernaussage</div>
 {{< /rawhtml >}}
 ```
 
-### 2.9 Bild + Bildquelle (Reveal)
+### 4.3 Qualitätscheck (Reveal)
 
-```html
-<img class="fragment responsive-image" data-fragment-index="1" src="bild.png" alt="Beschreibung">
-<p class="fragment bild-quelle" data-fragment-index="1">Bildquelle: ...</p>
-```
-
----
-
-## 3) Mini-Workflow (für schnelles Arbeiten)
-
-1. Blog mit Abschnittsstruktur + Callouts + Literatur-Icons schreiben.
-2. Für Präsentation auf Kernaussagen kürzen, dann `titleSlide` + `fragment` + `callout` einsetzen.
-3. Abschluss immer mit `{{< literatureSlide >}}` und `{{< endSlide >}}`.
+1. Pro Folie genau eine Hauptaussage.
+2. Maximal 5 Bullets pro Folie.
+3. Fragmente gezielt, nicht inflationär.
+4. Lesbarkeit: ausreichend Kontrast, Schrift nicht zu klein, keine Textwände.
+5. Abschluss immer mit Literatur/Endfolie.
 
 ---
 
-## 4) Content Conventions – Emoji-Policy (Referenz)
+## 5) KI-Workflow-Prompts (Kurzfassung)
 
-Verbindliche Quelle:
-
-- `project_governance/content_emoji_policy.md`
-
-Kurzregeln für schnelles Arbeiten:
-
-- Emojis semantisch einsetzen (nicht dekorativ).
-- Maximal 1 Emoji pro Absatz/Bullet.
-- Emoji-Bedeutungen konsistent halten.
-- OER-Kennzeichnung: `🎓🌍🔓`
-
----
-
-## 5) KI-Workflow-Prompts (Copy & Paste)
-
-### 5.1 Didaktik glätten (aus Stichpunkten)
+### 5.1 Rohtext didaktisch strukturieren
 
 ```text
-Rolle: Du bist mein didaktischer Sparringspartner für wirtschaftsdidaktische Blogbeiträge.
-
-Aufgabe:
-- Überführe meine Stichpunkte in eine didaktisch konsistente Struktur.
-- Behalte meine Aussagen vollständig bei, erfinde keine neuen Inhalte.
-- Markiere fehlende Übergänge oder argumentative Lücken als kurze Hinweise.
-
-Zielstruktur:
-1) Ausgangsproblem
-2) Zielperspektive
-3) Didaktische Einordnung
-4) Praktische Umsetzung
-5) Reflexion / Ausblick
-
-Ausgabeformat:
-- Erst: strukturierter Entwurf mit Zwischenüberschriften
-- Danach: 5 konkrete Verbesserungsvorschläge in Stichpunkten
-
-Hier ist mein Rohtext:
-<<<
-[HIER EINFÜGEN]
->>>
-```
-
-### 5.2 Sprachlich finalisieren (wissenschaftsnah, klar)
-
-```text
-Rolle: Du bist mein wissenschaftsnaher Lektor (Deutsch).
-
-Aufgabe:
-- Formuliere den Text klar, präzise und gut lesbar.
-- Erhalte meinen Stil (professionell, zugänglich, nicht überformal).
-- Kürze Redundanzen und glätte lange Sätze.
-- Keine inhaltlichen Ergänzungen.
-
-Stilregeln:
-- Aktive Formulierungen
-- Kurze Absätze
-- Fachbegriffe nur dort, wo sie wirklich nötig sind
-- Gender- und Zeichensetzung konsistent lassen
-
-Ausgabeformat:
-1) Überarbeitete Fassung komplett
-2) Kurzliste: wichtigste sprachliche Änderungen (max. 8 Punkte)
+Strukturiere meinen Rohtext in 5 Abschnitte: Ausgangsproblem, Zielperspektive, Einordnung, Umsetzung, Ausblick. Keine neuen Inhalte ergänzen.
 
 Text:
 <<<
@@ -268,103 +287,7 @@ Text:
 >>>
 ```
 
-### 5.3 Emoji-Standard anwenden
-
-```text
-Rolle: Du bist mein Editor für konsistente Emoji-Annotation nach meinem Standard.
-
-Aufgabe:
-- Füge passende Emojis nur dort ein, wo sie semantisch unterstützen.
-- Keine Emoji-Überladung: maximal 1 Emoji pro Satz bzw. Listenpunkt.
-- Bestehende Emojis nur ersetzen, wenn sie unpassend oder inkonsistent sind.
-
-Regeln:
-- Überschriften: optional 1 Emoji
-- Aufzählungen: höchstens 1 Emoji pro Bullet
-- Fachlich neutrale Abschnitte: ggf. ganz ohne Emoji
-
-Ausgabeformat:
-1) Text mit Emoji-Anpassung
-2) Liste der verwendeten Emoji-Regeln (kurz)
-
-Text:
-<<<
-[HIER EINFÜGEN]
->>>
-```
-
-### 5.4 Blog → Präsentation reduzieren (Reveal-fähig)
-
-```text
-Rolle: Du bist mein Editor für die Reduktion eines Blogtexts auf eine Reveal-Präsentation.
-
-Aufgabe:
-- Reduziere den Text auf präsentationsrelevante Kernaussagen.
-- Erzeuge prägnante Folientitel und kurze Bulletpoints.
-- Kennzeichne Stellen, die als Fragment erscheinen sollen.
-- Behalte zentrale Quellenhinweise bei (kurzform).
-
-Ausgabeformat:
-- Direkt als Hugo-Reveal-Markdown mit Folientrennern `---`
-- Nutze bei Bedarf diese Muster:
-  - `{{< titleSlide >}}`
-  - `{{< literatureSlide >}}`
-  - `{{< endSlide >}}`
-  - `<!-- .element: class="fragment" -->`
-
-Zusatz:
-- Max. 5 Bullets pro Folie
-- Möglichst 1 Kernaussage pro Folie
-
-Blogtext:
-<<<
-[HIER EINFÜGEN]
->>>
-```
-
-### 5.5 Qualitätscheck vor Veröffentlichung
-
-```text
-Prüfe den finalen Blog-/Slide-Text auf folgende Punkte:
-
-1) Inhalt
-- Roter Faden erkennbar?
-- Zielperspektive und Fazit konsistent?
-
-2) Sprache
-- Klar, präzise, ohne Redundanzen?
-- Einheitlicher Stil?
-
-3) Emojis
-- Konsistent und sparsam?
-- Keine dekorative Überladung?
-
-4) Präsentationstauglichkeit
-- Folien nicht überladen?
-- Pro Folie klare Kernaussage?
-
-Gib am Ende eine kurze Ampelbewertung:
-- Grün = direkt veröffentlichbar
-- Gelb = kleine Korrekturen
-- Rot = größere Überarbeitung nötig
-```
-
----
-
-## 6) Ultra-Kurz (1-Minuten-Version)
-
-### 6.1 Rohtext → didaktische Struktur
-
-```text
-Strukturiere meinen Rohtext didaktisch in 5 Abschnitte: Ausgangsproblem, Zielperspektive, Einordnung, Umsetzung, Ausblick. Keine neuen Inhalte ergänzen.
-
-Text:
-<<<
-[HIER EINFÜGEN]
->>>
-```
-
-### 6.2 Struktur → sprachlich sauber
+### 5.2 Sprachlich finalisieren
 
 ```text
 Überarbeite den Text sprachlich klar und präzise (wissenschaftsnah, gut lesbar), ohne inhaltliche Ergänzungen. Kürze Redundanzen.
@@ -375,10 +298,10 @@ Text:
 >>>
 ```
 
-### 6.3 Emoji-Standard schnell anwenden
+### 5.3 Blog zu Reveal reduzieren
 
 ```text
-Füge Emojis nach meinem Standard sparsam ein: max. 1 Emoji pro Satz/Bullet, nur semantisch passend, keine Überladung.
+Reduziere den Text auf Reveal-Folien mit `---`, max. 5 Bullets pro Folie, 1 Kernaussage pro Folie, Fragmente markieren (`<!-- .element: class="fragment" -->`).
 
 Text:
 <<<
@@ -386,13 +309,97 @@ Text:
 >>>
 ```
 
-### 6.4 Blogtext → Reveal-Folien (kompakt)
+---
 
-```text
-Reduziere den Text auf Reveal-Folien mit `---`, max. 5 Bullets pro Folie, 1 Kernaussage pro Folie, Fragmente markieren (`<!-- .element: class="fragment" -->`). Nutze bei Bedarf `{{< titleSlide >}}`, `{{< literatureSlide >}}`, `{{< endSlide >}}`.
+## 6) Verbindliche Referenzen
 
-Text:
-<<<
-[HIER EINFÜGEN]
->>>
+- `project_governance/css_architecture.md`
+- `project_governance/content_emoji_policy.md`
+- `project_governance/ai_copilot_instructions.md`
+- `ai_agents/templates/blog_template.md`
+- `ai_agents/templates/reveal_template.md`
+
+---
+
+## 7) Reveal-Baukasten (Geruest fuer die naechste Ueberarbeitung)
+
+Ziel:
+
+- wiederkehrende Layoutaufgaben ueber feste Klassen loesen,
+- Inline-Styles reduzieren,
+- neue Praesentationen schneller bauen.
+
+### 7.1 Einsatzprinzip
+
+1. Erst Inhalt bauen, danach Layout.
+2. Pro Folie nur vorhandene Baustein-Klassen kombinieren.
+3. Neue Klasse nur dann aufnehmen, wenn sie mindestens 2x genutzt wurde.
+
+### 7.2 Kern-Bausteine (V1)
+
+Layout/Spacing:
+
+- `layout-compact` (enge Vertikalabstaende)
+- `headline-list-gap` (mehr Luft zwischen Ueberschrift und Liste)
+- `list-tight` (kompakte Listen)
+
+Bilder/Diagramme:
+
+- `figure-frame figure-frame-sm`
+- `figure-frame figure-frame-ssm` (supersmall, platzkritische Folien)
+- `methoden-bonz-diagram` (Overlay-Frames Bonz)
+- `methoden-euler-hahn-diagram` (Overlay-Frames Euler/Hahn)
+
+Quellenzeilen:
+
+- `bild-quelle` (Standard)
+- `bild-quelle is-tight` (enger Abstand)
+
+Callouts:
+
+- `callout--tipp`
+- `callout--important`
+- `callout--note`
+- `callout--quote`
+
+### 7.3 Entscheidungslogik (Wenn-Dann)
+
+- Wenn eine Grafik in den Footer ragt -> `figure-frame-ssm` nutzen.
+- Wenn mehrere Frame-Bilder ueberlagert werden sollen -> Overlay-Container nutzen (`...-diagram`), nicht `figure-frame`.
+- Wenn Headline + Grafik zu weit auseinander stehen -> erst Container-Margins pruefen, nicht Bildbreite.
+- Wenn Quelle zu tief sitzt -> Abstand ueber `bild-quelle`-Variante steuern, nicht ueber globale Paragraph-Regeln.
+
+### 7.4 Copy-Paste Muster (Overlay)
+
+```markdown
+**Untertitel / Bildtitel**
+
+{{< rawhtml >}}
+<div class="methoden-bonz-diagram">
+  <img src="pfad/frame_1.png" class="fragment plain" alt="">
+  <img src="pfad/frame_2.png" class="fragment plain" alt="">
+  <img src="pfad/frame_3.png" class="fragment plain" alt="">
+</div>
+{{< /rawhtml >}}
+
+<p class="bild-quelle is-tight">Bildquelle: ... · Lizenz: CC BY-SA 4.0</p>
 ```
+
+### 7.5 QA-Check vor Freigabe (Reveal)
+
+1. Keine Elemente ueberlagern den Footer.
+2. Quellenzeile ist auf 100% Zoom lesbar.
+3. Max. eine Hauptaussage pro Folie.
+4. Fragmente erscheinen in sinnvoller Reihenfolge.
+5. Keine unnoetigen Inline-Styles, wenn Baustein-Klasse existiert.
+6. Diagrammklassen sind sprechend und folienuebergreifend wiederverwendbar.
+
+### 7.6 Kandidatenliste fuer neue Klassen
+
+Hier waehrend der naechsten Praesentationen sammeln:
+
+- Kandidat:
+  Einsatzfall:
+  Bereits genutzt in:
+  In Baukasten uebernehmen (ja/nein):
+
