@@ -15,6 +15,8 @@
 11. Der Buttonpfad im `top-toggle` zur Präsentation folgt immer der 1:1-Ableitung aus dem Blogpfad: `content/blog/<bereich>/<ordner>/index.md` -> `/iWIP/praesentation/<bereich>/<ordner>/`.
 12. Fachliche Hauptinhalte müssen als fachlich benannte H2/H3-Kapitel erscheinen (z. B. `## Lerntypen`, `## Lernformen`, `## Prüfungsformen`), nicht unter Sammelüberschriften wie `Kernpunkte`.
 13. Blogmodus ist ko-kreativ: Nutzerinput in Stichpunkten/Sätzen pro Hauptkapitel wird in leser:innenfreundlichen, publizistischen Fließtext überführt; Inhalte bleiben erhalten, Sprache und Übergänge werden redaktionell verbessert.
+14. In sichtbaren deutschen Texten von Blog und Reveal sind Umlaute normalisiert auszugeben (`ae -> ä`, `oe -> ö`, `ue -> ü`), ausgenommen technische Felder (URLs, Pfade, Dateinamen, Slugs, Alias-Pfade, Bild-`src`, maschinenlesbare Keys).
+15. Externe Links im Fließtext, in Listen und in Quellenzeilen außerhalb des Literaturverzeichnisses sind immer als HTML-Anker mit sichtbarem Linktext auszugeben: `<a href="..." target="_blank" rel="noopener noreferrer">LINKTEXT</a>`; die Literatur-Badges im Literaturverzeichnis bleiben davon unberührt.
 
 ## Hintergrund
 
@@ -106,6 +108,7 @@ Jedes spätere Artefakt baut auf dem vorherigen auf.
 - Führe am Ende einen **didaktischen Kohärenzcheck** durch.
 - Arbeite standardmäßig **auf Deutsch**.
 - Gib Markdown so aus, dass es **direkt weiterverwendet werden kann**.
+- Gib externe Links ausschließlich als HTML-Anker mit `target="_blank"` und `rel="noopener noreferrer"` aus.
 
 ## Unsicherheitsregel
 

@@ -159,7 +159,7 @@ Die Teilnehmenden können nach der Fortbildung 🧠:
 <p class="grafic-title">Lerntypen</p>
 
 <figure class="figure-frame">
-  <img src="Lerntypen_1.png"
+  <img src="Lerntypen.png"
        alt="Lerntypen">
 </figure>
 

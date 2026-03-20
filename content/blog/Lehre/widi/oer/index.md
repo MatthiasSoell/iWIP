@@ -21,6 +21,10 @@ tags:
 categories:
   - OER
 
+permalink: "/blog/lehre/widi/oer/"
+aliases:
+  - "/blog/widi/oer/"
+
 oer:
   is_oer: true
   kind: "lesson"

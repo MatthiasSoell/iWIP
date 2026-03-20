@@ -23,6 +23,10 @@ categories:
   - Wirtschaftsdidaktik
   - OER
 
+permalink: "/blog/lehre/widi/hosp_feed_refl/"
+aliases:
+  - "/blog/widi/hosp_feed_refl/"
+
 oer:
   is_oer: true
   kind: "lesson"

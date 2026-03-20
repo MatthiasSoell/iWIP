@@ -12,6 +12,10 @@ summary: |
 tags: ["Methoden", "Medien", "Wirtschaftsdidaktik", "Unterrichtsgestaltung", "OER", "Didaktik"]
 categories: ["Methoden", "Medien", "OER", "Wirtschaftsdidaktik"]
 
+permalink: "/blog/lehre/widi/methoden_medien/"
+aliases:
+  - "/blog/widi/methoden_medien/"
+
 oer:
   is_oer: true
   kind: "lesson"
@@ -117,7 +121,7 @@ Gesamtdauer: ca. **90 Minuten**
 
 # 2️⃣ 🛠️ Erstellung, Lizenzierung, Einbettung & Abgabe von OER
 
-Sie hatten die Aufgabe, Ihre Ausarbeitungen zu den 🤝🎨 [Gegenständen der Wirtschaftsdidaktik](/iWIP/blog/widi/widi/) als 🎓🌍🔓 OER aufzubereiten. Hier gelangen Sie zur [Aufgabenstellung](/iWIP/blog/widi/oer/#-selbst-tätig-werden).  
+Sie hatten die Aufgabe, Ihre Ausarbeitungen zu den 🤝🎨 [Gegenständen der Wirtschaftsdidaktik](/iWIP/blog/lehre/widi/widi/) als 🎓🌍🔓 OER aufzubereiten. Hier gelangen Sie zur [Aufgabenstellung](/iWIP/blog/lehre/widi/oer/#-selbst-tätig-werden).  
 
 Im 👥 Seminar schauen wir uns die entwickelten Materialien im Plenum an und 💬 diskutieren die Kriterien von OER.
 
@@ -135,7 +139,7 @@ Didaktik fragt danach, **wie Lernprozesse gestaltet werden können**, damit Lern
 
 ### 🌐 Methoden anhand von Aktions- und Sozialformen
 
-[Euler & Hahn (2014, S. 319)](/iWIP/blog/widi/methoden_medien/#-literatur) systematisieren Methoden anhand von **🎙️ Aktionsformen** (Darbieten, im Dialog entwickeln, erarbeiten & entdecken lassen) und **✏️ Sozialformen** (Plenum, Gruppe, Partner, Einzeln).  
+[Euler & Hahn (2014, S. 319)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) systematisieren Methoden anhand von **🎙️ Aktionsformen** (Darbieten, im Dialog entwickeln, erarbeiten & entdecken lassen) und **✏️ Sozialformen** (Plenum, Gruppe, Partner, Einzeln).  
 
 Diese Systematisierung lässt sich in einem *Entscheidungsbaum* darstellen:
 
@@ -173,7 +177,7 @@ Aktionsformen
         └── Einzelarbeit
 ````
 
-*Quelle: in Anlehnung an [Euler & Hahn (2014, S. 319)](/iWIP/blog/widi/methoden_medien/#-literatur)  · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*
+*Quelle: in Anlehnung an [Euler & Hahn (2014, S. 319)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur)  · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*
 
 Wie ist der Entscheidungsbaum zu 📖 *lesen*?
 - Startpunkt ist die Ebene der 🎙️ Aktionsformen (z. B. Darbieten, im Dialog entwickeln, erarbeiten & entdecken lassen).
@@ -187,7 +191,7 @@ Wie ist der Entscheidungsbaum zu 📖 *lesen*?
 
 ### 🌐 Spektrum der Methoden beruflicher Schulen
 
-[Bonz (2006, S. 339)](/iWIP/blog/widi/methoden_medien/#-literatur) systematisiert das Spektrum der Methoden ausgehend vom Konzept des 👩‍🏫 Lehrens oder des 🧠 Lernens:
+[Bonz (2006, S. 339)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) systematisiert das Spektrum der Methoden ausgehend vom Konzept des 👩‍🏫 Lehrens oder des 🧠 Lernens:
 
 ````text
 Lehren oder Lernen
@@ -214,14 +218,14 @@ Lehren oder Lernen
         └── Leittextmethode
 ````
 
-*Quelle: in Anlehnung an [Bonz (2006, S. 339)](/iWIP/blog/widi/methoden_medien/#-literatur) · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*
+*Quelle: in Anlehnung an [Bonz (2006, S. 339)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*
 
 Wie ist dieser Entscheidungsbaum zu 📖 *lesen*?
 - 📌 Ausgangspunkt ist die Unterscheidung **Lehren 👩‍🏫** vs. **selbstgesteuertes Lernen 🧠**.  
 - 🌳 Innerhalb dieser beiden Wege verzweigt der Baum weiter in **Methodenfamilien** (z. B. Lehrformen, traditionelle Methoden, handlungsorientierte Methoden).  
 - 🧩 Die Endpunkte zeigen die **konkreten Methoden**, die aus diesem didaktischen Grundverständnis heraus typisch eingesetzt werden (z. B. Frontalunterricht, Gruppenarbeit, Leittextmethode).
 
-🧭 Wie bei der ersten Systematik von [Euler & Hahn (2014, S. 319)](/iWIP/blog/widi/methoden_medien/#-literatur) wird dadurch sichtbar, welche **methodischen Optionen** aus der gewählten Grundausrichtung entstehen.  
+🧭 Wie bei der ersten Systematik von [Euler & Hahn (2014, S. 319)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) wird dadurch sichtbar, welche **methodischen Optionen** aus der gewählten Grundausrichtung entstehen.  
 
 Mit der Übersicht lassen sich bspw. **Schwerpunkte und Entwicklungsmöglichkeiten** im eigenen Repertoire **reflektieren**: etwa wenn man fast ausschließlich Lehrformen nutzt, aber selten Methoden des selbstgesteuerten oder handlungsorientierten Lernens.
 
@@ -236,8 +240,8 @@ Mit der Übersicht lassen sich bspw. **Schwerpunkte und Entwicklungsmöglichkeit
 
 - 👥 Unterricht lebt von direkter Kommunikation zwischen Lehrenden und Lernenden – über Sprache, Gestik und Mimik.  
 - 💻 Beim Lernen mit *Medien* werden zusätzlich materielle und technische Objekte einbezogen (z. B. Texte, Visualisierungen, Simulationen).  
-- 🧭 Nach [Tulodziecki et al. (2021, S. 33)](/iWIP/blog/widi/methoden_medien/#-literatur) sind Medien Mittler, durch die in kommunikativen Zusammenhängen Zeichen aufgenommen, erzeugt, verarbeitet, übertragen, gespeichert oder präsentiert werden.  
-- 🎨 [Von Martial (2002, S. 15 ff.)](/iWIP/blog/widi/methoden_medien/#-literatur) versteht Medien als Instrumente, mit deren Hilfe die Ziele des Unterrichts erreicht werden sollen.
+- 🧭 Nach [Tulodziecki et al. (2021, S. 33)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) sind Medien Mittler, durch die in kommunikativen Zusammenhängen Zeichen aufgenommen, erzeugt, verarbeitet, übertragen, gespeichert oder präsentiert werden.  
+- 🎨 [Von Martial (2002, S. 15 ff.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) versteht Medien als Instrumente, mit deren Hilfe die Ziele des Unterrichts erreicht werden sollen.
 
 > [!TIPP]
 > Medien sind also kein Selbstzweck, sondern dienen dazu, Lerngegenstände zugänglich, anschaulich, bearbeitbar und reflektierbar zu machen.
@@ -246,7 +250,7 @@ Mit der Übersicht lassen sich bspw. **Schwerpunkte und Entwicklungsmöglichkeit
 
 ### 🌐 Unterrichtsmedien als Lernobjekte und Hilfsmittel
 
-Nach [von Martial (2002, S. 15 ff.)](/iWIP/blog/widi/methoden_medien/#-literatur) können Unterrichtsmedien bspw. in 🎒 *Lernobjekte* (Originale und Abbildungen) und 🧰 *Hilfsmittel* differenziert werden. In folgender Übersicht werden Beispiele aus dem Berufsfeld 🤝 Wirtschaft und Verwaltung aufgezählt:
+Nach [von Martial (2002, S. 15 ff.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) können Unterrichtsmedien bspw. in 🎒 *Lernobjekte* (Originale und Abbildungen) und 🧰 *Hilfsmittel* differenziert werden. In folgender Übersicht werden Beispiele aus dem Berufsfeld 🤝 Wirtschaft und Verwaltung aufgezählt:
 
 ````text
 Unterrichtsmedien
@@ -271,11 +275,11 @@ Unterrichtsmedien
     └── z. B. interaktives Whiteboard, Tablets, Präsentationssysteme
 ````
 
-*Quelle: in Anlehnung an [von Martial (2002, S. 15 ff.)](/iWIP/blog/widi/methoden_medien/#-literatur) · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*
+*Quelle: in Anlehnung an [von Martial (2002, S. 15 ff.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*
 
 ### 🧰 Unterrichtsmedien als tradierte Lehrmittel & neue Medien
 
-In Anlehnung an [Stadtfeld (2011, S. 71 f.)](/iWIP/blog/widi/methoden_medien/#-literatur) kann zwischen 🏫🖍️ *tradierten Lehrmitteln* (klassische analoge Medien und klassische digitale Medien) und ✨💻 *neuen Medien* (Lernprogramme und -umgebungen, Experimentier- & Simulationsumgebungen, Werkzeugen und Kommunikations- & Kooperationsumgebungen) unterschieden werden:
+In Anlehnung an [Stadtfeld (2011, S. 71 f.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) kann zwischen 🏫🖍️ *tradierten Lehrmitteln* (klassische analoge Medien und klassische digitale Medien) und ✨💻 *neuen Medien* (Lernprogramme und -umgebungen, Experimentier- & Simulationsumgebungen, Werkzeugen und Kommunikations- & Kooperationsumgebungen) unterschieden werden:
 
 ````text
 Tradierte Lehrmittel
@@ -315,7 +319,7 @@ Neue Medien
     └── Kollaborationstools (z. B. Miro, Padlet)
 ````
 
-*Quelle: in Anlehnung an [Stadtfeld (2011, S. 71 f.)](/iWIP/blog/widi/methoden_medien/#-literatur) · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*
+*Quelle: in Anlehnung an [Stadtfeld (2011, S. 71 f.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*
 
 ---
 

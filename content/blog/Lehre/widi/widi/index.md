@@ -23,6 +23,10 @@ categories:
   - OER
   - Wirtschaftsdidaktik
 
+permalink: "/blog/lehre/widi/widi/"
+aliases:
+  - "/blog/widi/widi/"
+
 oer:
   is_oer: true
   kind: "lesson"

@@ -22,6 +22,10 @@ categories:
   - OER
   - Wirtschaftsdidaktik
 
+permalink: "/blog/lehre/widi/did_allg_fach/"
+aliases:
+  - "/blog/widi/did_allg_fach/"
+
 oer:
   is_oer: true
   kind: "lesson"

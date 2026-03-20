@@ -236,6 +236,8 @@ Sprach-/Schreibregeln (verbindlich):
 
 - Folientexte in natürlichem, präsentationsnahen Deutsch ausgeben.
 - In sichtbaren deutschen Texten Umlaute normalisieren: `ae -> ä`, `oe -> ö`, `ue -> ü`.
+- Externe Links im sichtbaren Folientext immer als HTML-Anker mit sichtbarem Linktext ausgeben: `<a href="..." target="_blank" rel="noopener noreferrer">LINKTEXT</a>`.
+- Die Badge-Regeln fuer das Blog-Literaturverzeichnis (siehe `templates/blog_template.md`) bleiben davon unberuehrt.
 - Die Umlaut-Normalisierung gilt nicht für technische Felder und Tokens,
   insbesondere nicht für URLs, Pfade, Dateinamen, Slugs, Alias-Pfade,
   Bildquellen (`src`) oder maschinenlesbare Schlüssel.

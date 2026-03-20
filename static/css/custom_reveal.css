@@ -248,6 +248,27 @@
   --figure-max-height: 64vh;
 }
 
+/* Bringt ein einzelnes Bild etwas naeher an die Ueberschrift */
+.reveal section .figure-frame.figure-frame-tight-top {
+  margin-top: -1.7rem;
+}
+
+/* Utility Spacer: kleine, wiederverwendbare Abstaende in Reveal-Folien */
+.reveal .spacer {
+  display: block;
+  width: 100%;
+  height: 1rem;
+}
+.reveal .spacer-sm { height: 0.6rem; }
+.reveal .spacer-lg { height: 1.6rem; }
+
+/* Tools-Heading: zentriert, leicht betont und mit kleinem Abstand zur Liste */
+.reveal .tools-heading {
+  text-align: center;
+  font-weight: 700;
+  margin: 0 0 1.6rem 0;
+}
+
 .qr-icon {
   width: 3.8vw;
   height: auto;
@@ -929,23 +950,70 @@ body.presentation-view .qr-card img {
    14) Methoden-Bonz Diagramm (Bild positioning)
    =========================================================== */
 
-/* Methoden-Bonz: überlagerte Fragment-Bilder */
-.methoden-bonz-diagram {
+/* Basis fuer aufploppende/ueberlagerte Fragment-Bilder */
+.overlay-fragment-diagram {
   position: relative;
   width: 100%;
-  height: 400px;      /* bei Bedarf 340-400 testen */
-  margin-top: -30px;  /* näher an die Überschrift */
-  margin-bottom: 0.0rem;
+  height: var(--overlay-height, 400px);
+  margin-top: var(--overlay-margin-top, -20px);
+  margin-bottom: var(--overlay-margin-bottom, 0);
 }
 
-.reveal .methoden-bonz-diagram img {
+.reveal .overlay-fragment-diagram img {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: var(--overlay-img-top, 50%);
   transform: translate(-50%, -50%);
-  width: min(82vw, 900px);
-  max-height: 380px;
+  width: var(--overlay-width, min(82vw, 900px));
+  max-height: min(
+    var(--overlay-max-height, 100vh),
+    calc(var(--overlay-height, 400px) - 6px)
+  );
   height: auto;
+  max-width: 100%;
+}
+
+/* Quelle unter Overlay-Slides lesbar halten */
+.reveal .overlay-fragment-diagram + .zitat-quelle,
+.reveal .overlay-fragment-diagram + .bild-quelle {
+  margin-top: 1.5rem;
+}
+
+/* Methoden-Bonz: überlagerte Fragment-Bilder */
+.methoden-bonz-diagram {
+  --overlay-height: 400px;
+  --overlay-margin-top: -30px;
+  --overlay-margin-bottom: 0;
+  --overlay-width: min(82vw, 900px);
+  --overlay-max-height: 380px;
+}
+
+/* Lerntheorien-Slide: eigene Klasse fuer groessere, unverzerrte Darstellung */
+.lerntheorien-diagram {
+  --overlay-height: 400px;
+  --overlay-margin-top: -1.0rem;
+  --overlay-margin-bottom: 0.25rem;
+  --overlay-img-top: 47.5%;
+  --overlay-width: min(82vw, 960px);
+  --overlay-max-height: 56vh;
+}
+
+/* Persoenliches Lernen: eigene Groessenabstimmung, etwas groesser und weniger gestaucht */
+.persoenliches-lernen-diagram {
+  --overlay-height: 375px;
+  --overlay-margin-top: -1.0rem;
+  --overlay-margin-bottom: 0.3rem;
+  --overlay-img-top: 47%;
+  --overlay-width: auto;
+  --overlay-max-height: 56vh;
+}
+
+/* Portraitmotive auf "Lernen boostern" ueber Hoehe skalieren, nicht ueber Breite */
+.reveal .persoenliches-lernen-diagram img {
+  width: auto;
+  height: min(56vh, calc(var(--overlay-height) - 6px));
+  max-width: min(79vw, 940px);
+  border-radius: 12px;
 }
 
 /* ===========================================================
@@ -977,8 +1045,31 @@ body.presentation-view .qr-card img {
 
 @media (max-width: 1200px), (max-height: 760px) {
   .methoden-bonz-diagram {
-    height: 340px;
-    margin-top: -10px;
+    --overlay-height: 340px;
+    --overlay-margin-top: -10px;
+  }
+
+  .lerntheorien-diagram {
+    --overlay-height: 340px;
+    --overlay-margin-top: -0.7rem;
+    --overlay-img-top: 47%;
+    --overlay-width: min(86vw, 840px);
+    --overlay-max-height: 50vh;
+    --overlay-margin-bottom: 0.2rem;
+  }
+
+  .persoenliches-lernen-diagram {
+    --overlay-height: 335px;
+    --overlay-margin-top: -0.7rem;
+    --overlay-img-top: 46.5%;
+    --overlay-width: auto;
+    --overlay-max-height: 52vh;
+    --overlay-margin-bottom: 0.2rem;
+  }
+
+  .reveal .persoenliches-lernen-diagram img {
+    height: min(52vh, calc(var(--overlay-height) - 6px));
+    max-width: min(84vw, 800px);
   }
 
   .methoden-euler-hahn-diagram {
@@ -993,10 +1084,9 @@ body.presentation-view .qr-card img {
     top: 51%;
   }
 
-  .reveal .methoden-bonz-diagram img {
-    width: min(86vw, 820px);
-    max-height: 300px;
-    top: 52%;
+  .methoden-bonz-diagram {
+    --overlay-width: min(86vw, 820px);
+    --overlay-max-height: 300px;
   }
 }
 

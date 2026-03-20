@@ -18,6 +18,10 @@ tags:
 categories:
   - Lehre
 
+permalink: "/blog/lehre/widi/"
+aliases:
+  - "/blog/widi/"
+
 oer:
   is_oer: false
   kind: "module"
@@ -58,8 +62,6 @@ oer:
     cycle: "Wintersemester"
     language: "Deutsch"
     module_number: "3501040"
-
-  permalink: "/blog/widi/"
 ---
 
 👋 **Willkommen** im Modul **Grundlagen didaktischen Handelns in Schule und Betrieb (Fachdidaktik Wirtschaft)**
@@ -67,6 +69,7 @@ oer:
 🎯 **Ziel:** Hier lernen Sie, wie Sie **Unterricht** in der wirtschaftsberuflichen Bildung professionell **planen, gestalten und reflektieren** können.
 
 🧩 **Modulstruktur:** Das Modul umfasst die folgenden Veranstaltungen:
+
 - 🧠 *Methoden und Medien wirtschaftsberuflichen Handelns (Übung)*  
 - 💡 *Grundlagen Fachdidaktik Wirtschaft (Seminar)*
 

@@ -180,6 +180,11 @@ Der Text soll sich lesen wie ein guter SciBlog-Beitrag:
 - variiert Satzlängen und Übergänge,
 - markiert zentrale Aussagen gezielt (nicht inflationär).
 
+Zusätzliche Sprachregel (verbindlich):
+
+- In sichtbaren deutschen Blogtexten Umlaute normalisieren: `ae -> ä`, `oe -> ö`, `ue -> ü`.
+- Nicht anwenden auf technische Felder und Tokens, insbesondere URLs, Pfade, Dateinamen, Slugs, Alias-Pfade, Bildquellen (`src`) oder maschinenlesbare Schlüssel.
+
 ### Zielstruktur (Standard)
 
 Die Standardreihenfolge des Artikels ist:
@@ -351,7 +356,9 @@ Regeln fuer den Literaturabschnitt:
 
 - Formatiere Eintraege APA-7-nah und konsistent.
 - Fuehre pro Quelle genau einen bibliografischen Haupteintrag.
+- Externe Links im Fliesstext, in Listen und in Quellenzeilen ausserhalb des Literaturabschnitts immer so ausgeben: `<a href="..." target="_blank" rel="noopener noreferrer">LINKTEXT</a>`.
 - Hinterlege zusaetzliche Zugriffe als Badges (`lit-ub`, `lit-doi`, `lit-worldcat`) oder als normalen Weblink, wenn kein Badge-Typ passt.
+- Badge-Links im Literaturabschnitt bleiben unveraendert und sind von der obigen Textlink-Regel ausgenommen.
 - Erhalte den inhaltlichen Quellenbestand unveraendert (keine inhaltlichen Aenderungen an Autor:innen, Jahr, Titel, Publikation).
 - Korrigiere nur Form, Konsistenz und Linkdarstellung.
 
