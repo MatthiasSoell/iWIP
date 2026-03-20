@@ -253,7 +253,7 @@ Aus didaktischer Perspektive für digitales Lernen wie im Juniorstudium besonder
 - ✅ Verständnis aktiv prüfen, statt nur wiederzulesen
 - 💬 Rückmeldung und Austausch gezielt suchen
 
-Diese Tipps stammen von [Reinmann (2013)](#literatur), die in ihren Veröffentlichungen noch weitere, wertvolle Ratschläge zum Lernen bietet.
+Diese Tipps stammen von [Reinmann (2025)](#literatur), die in ihren Veröffentlichungen noch weitere, wertvolle Ratschläge zum Lernen bietet.
 
 ---
 
@@ -279,11 +279,11 @@ Newton, P. M., & Salvi, A. (2020). How common is belief in the learning styles n
 
 Reinmann, G. (2013). Didaktisches Handeln. Die Beziehung zwischen Lerntheorien und didaktischem Design. In M. Ebner & S. Schoen (Hrsg.), *L3T. Lehrbuch für Lernen und Lehren mit Technologien*. <a class="lit-doi" href="https://doi.org/10.25656/01:8338" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 
+Reinmann, G. (2025). Strategien, Lernformen, Tugenden <a href="https://www.uni-hamburg.de/dl-portal/studium-und-lehre/strategien-lernformen-tugenden.html" target="_blank" rel="noopener noreferrer">https://www.uni-hamburg.de/dl-portal/studium-und-lehre/strategien-lernformen-tugenden.html</a>
+
 Schumacher, R., & Stern, E. (2012). Neurowissenschaften und Lehr-Lern-Forschung: Welches Wissen trägt zu lernwirksamem Unterricht bei? *Die Deutsche Schule, 104*(4), 383-396. <a class="lit-doi" href="https://doi.org/10.25656/01:25740" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 
 Sun, X., Norton, O., & Nancekivell, S. E. (2023). Beware the myth: Learning styles affect parents', children's, and teachers' thinking about children's academic potential. *npj Science of Learning, 8*(1), 46. <a class="lit-doi" href="https://doi.org/10.1038/s41539-023-00190-x" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
-
-The Learning Scientists. (2019). *The Learning Scientists: Study Strategies*. <a href="https://www.learningscientists.org/" target="_blank" rel="noopener noreferrer">https://www.learningscientists.org/</a>
 
 Willingham, D. T. (2009). *Why don't students like school?* Jossey-Bass. <a class="lit-worldcat" href="https://search.worldcat.org/title/256000278" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 

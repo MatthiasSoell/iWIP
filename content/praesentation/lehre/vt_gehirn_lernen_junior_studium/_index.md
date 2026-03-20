@@ -113,7 +113,7 @@ oer:
 ## Lerntypen-Check 🧠
 
 <figure class="figure-frame figure-frame figure-frame-tight-top">
-  <img src="/iWIP/blog/Lehre/vt_gehirn_lernen_junior_studium/Lerntypen.png" alt="Lerntypen-Grafik">
+  <img src="Lerntypen.png" alt="Lerntypen-Grafik">
 </figure>
 
 <p class="zitat-quelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: CC BY-SA 4.0</p>
@@ -147,10 +147,10 @@ oer:
 
 {{< rawhtml >}}
 <div class="overlay-fragment-diagram lerntheorien-diagram">
-  <img src="/iWIP/blog/Lehre/vt_gehirn_lernen_junior_studium/Lerntheorien/Lerntheorien_1.jpeg" alt="Lerntheorie 1" class="plain">
-  <img src="/iWIP/blog/Lehre/vt_gehirn_lernen_junior_studium/Lerntheorien/Lerntheorien_2.jpeg" alt="Lerntheorie 2" class="fragment plain">
-  <img src="/iWIP/blog/Lehre/vt_gehirn_lernen_junior_studium/Lerntheorien/Lerntheorien_3.jpeg" alt="Lerntheorie 3" class="fragment plain">
-  <img src="/iWIP/blog/Lehre/vt_gehirn_lernen_junior_studium/Lerntheorien/Lerntheorien_4.jpeg" alt="Lerntheorie 4" class="fragment plain">
+  <img src="Lerntheorien/Lerntheorien_1.jpeg" alt="Lerntheorie 1" class="plain">
+  <img src="Lerntheorien/Lerntheorien_2.jpeg" alt="Lerntheorie 2" class="fragment plain">
+  <img src="Lerntheorien/Lerntheorien_3.jpeg" alt="Lerntheorie 3" class="fragment plain">
+  <img src="Lerntheorien/Lerntheorien_4.jpeg" alt="Lerntheorie 4" class="fragment plain">
 </div>
 {{< /rawhtml >}}
 
@@ -162,9 +162,9 @@ oer:
 
 {{< rawhtml >}}
 <div class="overlay-fragment-diagram persoenliches-lernen-diagram">
-  <img src="/iWIP/blog/Lehre/vt_gehirn_lernen_junior_studium/Persoenliches_Lernen/Persoenliches_Lernen_1.jpeg" alt="Persönliches Lernbeispiel 1" class="plain">
-  <img src="/iWIP/blog/Lehre/vt_gehirn_lernen_junior_studium/Persoenliches_Lernen/Persoenliches_Lernen_2.jpeg" alt="Persönliches Lernbeispiel 2" class="fragment plain">
-  <img src="/iWIP/blog/Lehre/vt_gehirn_lernen_junior_studium/Persoenliches_Lernen/Persoenliches_Lernen_3.jpeg" alt="Persönliches Lernbeispiel 3" class="fragment plain">
+  <img src="Persoenliches_Lernen/Persoenliches_Lernen_1.jpeg" alt="Persönliches Lernbeispiel 1" class="plain">
+  <img src="Persoenliches_Lernen/Persoenliches_Lernen_2.jpeg" alt="Persönliches Lernbeispiel 2" class="fragment plain">
+  <img src="Persoenliches_Lernen/Persoenliches_Lernen_3.jpeg" alt="Persönliches Lernbeispiel 3" class="fragment plain">
 </div>
 {{< /rawhtml >}}
 
