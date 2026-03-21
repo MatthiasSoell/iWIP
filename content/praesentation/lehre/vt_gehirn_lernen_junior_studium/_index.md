@@ -227,7 +227,7 @@ oer:
 
 ## 🎓 Lust, Lernen selbst zu verstehen – und zu gestalten?
 
-<figure class="figure-frame figure-frame">
+<figure class="figure-frame figure-frame-sm">
   <img src="/iWIP/praesentation/lehre/vt_gehirn_lernen_junior_studium/Wipaed_Werbefolie.jpg" alt="QR-Code zu den Informationen für Studieninteressierte Wirtschaftspädagogik">
 </figure>
 
