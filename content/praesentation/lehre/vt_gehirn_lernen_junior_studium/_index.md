@@ -136,7 +136,7 @@ oer:
 ## Wie funktioniert Lernen? 🧠
 
 <figure class="figure-frame figure-frame figure-frame-tight-top">
-  <img src="/iWIP/blog/Lehre/vt_gehirn_lernen_junior_studium/Gehirn_Lernen.png" alt="Gehirn und Lernen">
+  <img src="Gehirn_Lernen.png" alt="Gehirn und Lernen">
 </figure>
 
 <p class="zitat-quelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: CC BY-SA 4.0</p>
