@@ -24,6 +24,7 @@ veranstaltungstyp: ""
 veranstaltung: ""
 author: ""
 blog: ""
+source_lastmod: YYYY-MM-DD
 date: YYYY-MM-DD
 lastmod: YYYY-MM-DD
 draft: false
@@ -89,9 +90,13 @@ Regeln:
 
 - Alle Felder sind verpflichtend, außer `oer.rights_exceptions` und `oer.todos`.
 - `blog` soll auf den zugehörigen Blogbeitrag zeigen.
+- `source_lastmod` muss den aktuellen `lastmod` des zugehörigen Blogbeitrags enthalten.
+- Migrationsregel: Bei bestehenden Legacy-Reveals ohne `source_lastmod` ist der Nachtrag beim naechsten Reveal-Update verpflichtend.
 - Metadaten müssen kontextspezifisch zur jeweiligen Präsentation ausgefüllt sein (keine Copy-Paste-Werte).
 - Der Agent darf keine Reveal-Datei als final ausgeben,
   wenn Pflichtfelder fehlen oder leer geblieben sind.
+- Pflichtfelder muessen semantisch gefuellt sein (keine Platzhalterwerte wie `TODO`, `tbd`, `-`, `...`).
+- Ohne explizites Nutzer-OK darf keine Reveal-Datei erstellt, aktualisiert oder finalisiert werden.
 
 ---
 
@@ -236,6 +241,7 @@ Sprach-/Schreibregeln (verbindlich):
 
 - Folientexte in natürlichem, präsentationsnahen Deutsch ausgeben.
 - In sichtbaren deutschen Texten Umlaute normalisieren: `ae -> ä`, `oe -> ö`, `ue -> ü`.
+- In sichtbaren deutschen Texten Gedankenstrich `–` als Satzzeichen verwenden (statt Bindestrich `-`).
 - Externe Links im sichtbaren Folientext immer als HTML-Anker mit sichtbarem Linktext ausgeben: `<a href="..." target="_blank" rel="noopener noreferrer">LINKTEXT</a>`.
 - Die Badge-Regeln fuer das Blog-Literaturverzeichnis (siehe `templates/blog_template.md`) bleiben davon unberuehrt.
 - Die Umlaut-Normalisierung gilt nicht für technische Felder und Tokens,
@@ -249,6 +255,13 @@ Nutze bei passenden Inhalten:
 - Callout-Boxen für zentrale Take-aways,
 - Bild- oder Medienfolien mit kurzer Quellenzeile,
 - kurze Interaktionsfolien (Fragen, Abstimmung, Auftrag).
+
+Bildpfad-Regel (verbindlich):
+
+- Standard fuer aus dem Blog uebernommene Bilder: absolute Pfade auf den Blogbeitrag verwenden (`/iWIP/blog/<bereich>/<ordner>/...`).
+- Reveal-spezifische Bilder (z. B. Schrittsequenzen oder Animationen) im Reveal-Ordner ablegen und relativ referenzieren.
+- Relative Bildpfade duerfen nur verwendet werden, wenn die Datei im Reveal-Ordner tatsaechlich vorhanden ist.
+- Wenn ein Bild nicht aufloesbar ist, vor Finalisierung Pfad korrigieren oder Datei gezielt in den Reveal-Ordner uebernehmen.
 
 ---
 
@@ -290,15 +303,4 @@ Der Fokus liegt auf:
 
 ## Definition of Done (Reveal-Layout)
 
-Eine Reveal-Präsentation ist erst final, wenn zusätzlich zu Metadaten und
-Inhaltskonsistenz folgende Stilprüfungen erfüllt sind:
-
-1. Kernbotschaft pro Folie klar erkennbar.
-2. Textdichte pro Inhaltsfolie im kompakten Bereich (Richtwert 35-45 Wörter).
-3. Fachkapitel enthalten jeweils mindestens eine visuelle Stützfolie.
-4. Quellenzeilen bei Visualisierungen vorhanden und knapp gehalten.
-5. Fragment-Einsatz unterstützt Argumentationsaufbau sichtbar.
-6. Emoji-Einsatz ist semantisch konsistent gemäß
-  `project_governance/content_emoji_policy.md`.
-7. Sichtbare deutsche Texte sind orthografisch korrekt,
-  inklusive Umlaut-Normalisierung (`ae/oe/ue` -> `ä/ö/ü`) außerhalb technischer Felder.
+Definition of Done: siehe master_agent.md (Definition of Done - Reveal-Ableitung).

@@ -85,6 +85,10 @@ Pfadregel: `content/blog/<BEREICH>/<ORDNER>/index.md` -> `/iWIP/praesentation/<B
 ```markdown
 <div class="agenda compact"> ... </div>
 <div class="agenda roomy"> ... </div>
+
+<!-- Alias-Klassen (gleiches Styling): -->
+<div class="agenda agenda-sm"> ... </div>
+<div class="agenda agenda-lg"> ... </div>
 ```
 
 ### 2.7 Reveal: Minimalgerüst
@@ -127,6 +131,14 @@ Kernaussage
 ```markdown
 {{< callout type="tip" >}}
 Kernaussage für die Folie.
+{{< /callout >}}
+
+{{< callout type="info" >}}
+Zusatzinformation in ruhigem Ton.
+{{< /callout >}}
+
+{{< callout type="warning" >}}
+Wichtiger Hinweis / Stolperstelle.
 {{< /callout >}}
 ```
 
@@ -321,85 +333,113 @@ Text:
 
 ---
 
-## 7) Reveal-Baukasten (Geruest fuer die naechste Ueberarbeitung)
+## 7) CSS-Baukasten (Konsistent und schnell)
 
 Ziel:
 
 - wiederkehrende Layoutaufgaben ueber feste Klassen loesen,
 - Inline-Styles reduzieren,
-- neue Praesentationen schneller bauen.
+- dieselben Modifier in Blog und Reveal nutzen.
 
-### 7.1 Einsatzprinzip
+### 7.1 Einheitliche Modifier (neu)
 
-1. Erst Inhalt bauen, danach Layout.
-2. Pro Folie nur vorhandene Baustein-Klassen kombinieren.
-3. Neue Klasse nur dann aufnehmen, wenn sie mindestens 2x genutzt wurde.
+Blog (Agenda):
 
-### 7.2 Kern-Bausteine (V1)
+- `agenda-sm` als Alias zu `compact`
+- `agenda-lg` als Alias zu `roomy`
 
-Layout/Spacing:
+Reveal (Figure/Spacing):
 
-- `layout-compact` (enge Vertikalabstaende)
-- `headline-list-gap` (mehr Luft zwischen Ueberschrift und Liste)
-- `list-tight` (kompakte Listen)
+- `is-sm`, `is-ssm`, `is-lg` als Alias zu den bestehenden Figure-Groessen
+- `spacer is-sm`, `spacer is-lg` als Alias zu `spacer-sm`, `spacer-lg`
 
-Bilder/Diagramme:
+Callouts (Blog + Reveal):
 
-- `figure-frame figure-frame-sm`
-- `figure-frame figure-frame-ssm` (supersmall, platzkritische Folien)
-- `methoden-bonz-diagram` (Overlay-Frames Bonz)
-- `methoden-euler-hahn-diagram` (Overlay-Frames Euler/Hahn)
+- `tip` als Alias zu `tipp`
+- `info` als Alias zu `note`
+- `warn`/`warning` als Alias zu `important`
 
-Quellenzeilen:
-
-- `bild-quelle` (Standard)
-- `bild-quelle is-tight` (enger Abstand)
-
-Callouts:
-
-- `callout--tipp`
-- `callout--important`
-- `callout--note`
-- `callout--quote`
-
-### 7.3 Entscheidungslogik (Wenn-Dann)
-
-- Wenn eine Grafik in den Footer ragt -> `figure-frame-ssm` nutzen.
-- Wenn mehrere Frame-Bilder ueberlagert werden sollen -> Overlay-Container nutzen (`...-diagram`), nicht `figure-frame`.
-- Wenn Headline + Grafik zu weit auseinander stehen -> erst Container-Margins pruefen, nicht Bildbreite.
-- Wenn Quelle zu tief sitzt -> Abstand ueber `bild-quelle`-Variante steuern, nicht ueber globale Paragraph-Regeln.
-
-### 7.4 Copy-Paste Muster (Overlay)
+### 7.2 Copy-Paste: Blog (Agenda)
 
 ```markdown
-**Untertitel / Bildtitel**
+<div class="agenda agenda-sm">
 
-{{< rawhtml >}}
-<div class="methoden-bonz-diagram">
-  <img src="pfad/frame_1.png" class="fragment plain" alt="">
-  <img src="pfad/frame_2.png" class="fragment plain" alt="">
-  <img src="pfad/frame_3.png" class="fragment plain" alt="">
+| Phase | Inhalt | Ziel | Zeit |
+|---|---|---|---|
+| 1 | Einstieg | Orientierung | 5<br>Min |
+| 2 | Arbeitsphase | Vertiefung | 25<br>Min |
+
 </div>
-{{< /rawhtml >}}
-
-<p class="bild-quelle is-tight">Bildquelle: ... · Lizenz: CC BY-SA 4.0</p>
 ```
 
-### 7.5 QA-Check vor Freigabe (Reveal)
+```markdown
+<div class="agenda agenda-lg">
 
-1. Keine Elemente ueberlagern den Footer.
-2. Quellenzeile ist auf 100% Zoom lesbar.
-3. Max. eine Hauptaussage pro Folie.
-4. Fragmente erscheinen in sinnvoller Reihenfolge.
-5. Keine unnoetigen Inline-Styles, wenn Baustein-Klasse existiert.
-6. Diagrammklassen sind sprechend und folienuebergreifend wiederverwendbar.
+| Phase | Inhalt | Ziel | Zeit |
+|---|---|---|---|
+| 1 | Einstieg | Orientierung | 5<br>Min |
+| 2 | Arbeitsphase | Vertiefung | 25<br>Min |
 
-### 7.6 Kandidatenliste fuer neue Klassen
+</div>
+```
 
-Hier waehrend der naechsten Praesentationen sammeln:
+### 7.3 Copy-Paste: Reveal (Figure + Spacer)
 
-- Kandidat:
-  Einsatzfall:
-  Bereits genutzt in:
-  In Baukasten uebernehmen (ja/nein):
+```markdown
+<figure class="figure-frame is-sm">
+  <img src="/iWIP/bilder/beispiel.png" alt="Kurzbeschreibung">
+</figure>
+
+<div class="spacer is-sm"></div>
+```
+
+```markdown
+<figure class="figure-frame is-lg">
+  <img src="/iWIP/bilder/beispiel.png" alt="Kurzbeschreibung">
+</figure>
+
+<div class="spacer is-lg"></div>
+```
+
+### 7.4 Copy-Paste: Callouts (einheitliche Namen)
+
+Blog-Callout (Markdown):
+
+```markdown
+> [!TIPP]
+> Didaktischer Hinweis.
+
+> [!IMPORTANT]
+> Kritischer Hinweis.
+```
+
+Reveal-Callout (Shortcode):
+
+```markdown
+{{< callout type="tip" >}}Kernaussage{{< /callout >}}
+{{< callout type="info" >}}Ergaenzung{{< /callout >}}
+{{< callout type="warning" >}}Stolperstelle{{< /callout >}}
+```
+
+### 7.5 Schrittweise Konsistenzpruefung (empfohlen)
+
+1. Inventar: nur Klassen/IDs erfassen und Dubletten markieren.
+2. Alias-Stufe: zusaetzliche Namen (`sm/lg/info/warning`) einfuehren, ohne alte Namen zu brechen.
+3. Vorlagen-Stufe: nur Klassen verwenden, die im CSS wirklich existieren.
+4. Cleanup-Stufe: doppelte Regelbloecke zusammenziehen, Reihenfolge klar nach Owner-Datei.
+5. Migrations-Stufe: alte Namen optional in Content schrittweise auf die neuen Alias-Namen umstellen.
+
+### 7.6 Aufraeumen ohne Werteaenderung
+
+Sinnvoll:
+
+- doppelte Definitionen zusammenziehen (z. B. identische Rahmen-/QR-Regeln),
+- uneinheitliche Benennung vereinheitlichen (z. B. `tipp`/`tip`),
+- Altmuster bei Dark-Mode (`body.dark` vs `[data-theme="dark"]`) als geplante Migration markieren.
+
+Nicht in dieser Stufe:
+
+- keine Farb-/Spacing-Werte aendern,
+- keine visuelle Umgestaltung,
+- keine Cross-Owner-Verschiebung zwischen Blog- und Reveal-CSS.
 

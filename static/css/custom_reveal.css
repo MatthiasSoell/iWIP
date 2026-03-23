@@ -222,19 +222,22 @@
 }
 
 /* Optional: kleinere oder groessere Bilddarstellung pro Folie */
-.reveal section .figure-frame.figure-frame-sm {
+.reveal section .figure-frame.figure-frame-sm,
+.reveal section .figure-frame.is-sm {
   --figure-width: min(58vw, 760px);
   --figure-max-height: 44vh;
 }
 
 /* Supersmall Variante fuer sehr platzkritische Folien */
-.reveal section .figure-frame.figure-frame-ssm {
+.reveal section .figure-frame.figure-frame-ssm,
+.reveal section .figure-frame.is-ssm {
   --figure-width: min(50vw, 640px);
   --figure-max-height: 42vh;
 }
 
 /* Falls figure-frame direkt auf img verwendet wird */
-.reveal section img.figure-frame.figure-frame-ssm {
+.reveal section img.figure-frame.figure-frame-ssm,
+.reveal section img.figure-frame.is-ssm {
   display: block;
   width: min(50vw, 640px);
   max-height: 42vh;
@@ -243,7 +246,8 @@
   margin: 1.0rem auto 0;
 }
 
-.reveal section .figure-frame.figure-frame-lg {
+.reveal section .figure-frame.figure-frame-lg,
+.reveal section .figure-frame.is-lg {
   --figure-width: min(84vw, 1240px);
   --figure-max-height: 64vh;
 }
@@ -259,8 +263,10 @@
   width: 100%;
   height: 1rem;
 }
-.reveal .spacer-sm { height: 0.6rem; }
-.reveal .spacer-lg { height: 1.6rem; }
+.reveal .spacer-sm,
+.reveal .spacer.is-sm { height: 0.6rem; }
+.reveal .spacer-lg,
+.reveal .spacer.is-lg { height: 1.6rem; }
 
 /* Tools-Heading: zentriert, leicht betont und mit kleinem Abstand zur Liste */
 .reveal .tools-heading {
@@ -594,22 +600,6 @@ body.presentation-view .qr-card {
   text-align: center;
 }
 
-body.presentation-view .qr-card img {
-  display: block;
-  margin: 0 auto;
-  padding: 3px;
-  background:
-    linear-gradient(to right, #1E88E5, #5ED020) top,
-    linear-gradient(to right, #5ED020, #1E88E5) bottom,
-    linear-gradient(to bottom, #5ED020, #009FE3) left,
-    linear-gradient(to top, #5ED020, #009FE3) right;
-  background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
-  background-repeat: no-repeat;
-  border-radius: 8px;
-  box-sizing: border-box;
-  opacity: 0.96;
-}
-
 /* Einheitlicher QR-Container (Reveal-Slides) */
 .reveal .qr-card {
   margin: 1.4rem 0 0;
@@ -623,6 +613,9 @@ body.presentation-view .qr-card img {
 }
 
 /* Einheitlicher QR-Rahmen (identisch) */
+body.presentation-view .qr-card img,
+body.presentation-view .qr-card canvas,
+body.presentation-view .qr-card svg,
 .reveal .qr-card img,
 .reveal .qr-card canvas,
 .reveal .qr-card svg,
@@ -647,14 +640,6 @@ body.presentation-view .qr-card img {
 }
 
 /* Overlay weiterhin nur layouten, nicht rahmenstylen */
-.iwip_overlay--qr .iwip_qr_wrap {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  display: grid;
-  place-items: center;
-}
-
 /* Responsive */
 @media (max-width:900px){
   .reveal .title-wrap h1{ font-size:2.3rem; }
@@ -742,7 +727,8 @@ body.presentation-view .qr-card img {
 }
 
 /* TIPP */
-.reveal .callout--tipp {
+.reveal .callout--tipp,
+.reveal .callout--tip {
   background: var(--bg-tipp, #fffbdd);
   border-color: var(--border-tipp, #f0c000);
 }
@@ -767,7 +753,8 @@ body.presentation-view .qr-card img {
 }
 
 /* NOTE */
-.reveal .callout--note {
+.reveal .callout--note,
+.reveal .callout--info {
   background: var(--bg-quote-soft, #e0f2f1);
   border-color: var(--accent-turquoise, #00796b);
 }

@@ -118,7 +118,9 @@
    - typische Fehler
    - kritische Einschränkungen
 */
-.callout--important {
+.callout--important,
+.callout--warn,
+.callout--warning {
   background: var(--bg-warning);
   border-color: var(--border-warning);
 }
@@ -131,7 +133,8 @@
    - Kontext
    - Erweiterungen
 */
-.callout--note {
+.callout--note,
+.callout--info {
   background: var(--bg-quote-soft);
   border-color: var(--accent-turquoise);
 }

@@ -50,6 +50,8 @@ Die Präsentation wird ausschließlich aus dem finalen Blogartikel abgeleitet.
 7. Bei fehlenden Kerninformationen oder Regelkonflikten: eine klärende Rückfrage, dann Stopp vor Artefakterstellung.
 8. Blog-Frontmatter vollständig gemäß ai_agents/templates/blog_template.md, inklusive vollständigem OER-/TULLU-/OERSI-Metadatenblock.
 9. Reveal-Frontmatter vollständig gemäß ai_agents/templates/reveal_template.md, inklusive vollständigem OER-Metadatenblock für Präsentationen.
+10. Bei `REVEAL GO` wird im Reveal-Zielordner zusätzlich `snapshot_master_agent.md` als nicht-rendernde Momentaufnahme erzeugt. Der Snapshot enthaelt denselben inhaltlichen Stand wie die zum Zeitpunkt von `REVEAL GO` erzeugte Reveal-Datei und ergaenzt ausschliesslich den Frontmatter-Block `_build: { render: false, list: false }`.
+11. Snapshot-Dateien im Reveal-Kontext sind nicht-operativ: keine automatische Bearbeitung und keine Ableitung aus Snapshot-Dateien; Reveal wird stets aus dem finalen Blog-`index.md` abgeleitet.
 
 ---
 
@@ -63,6 +65,7 @@ Ein Blogartikel ist nur final, wenn:
 4. Kernpunkte mit Quellenbezug im Text.
 5. Literaturverzeichnis vollständig vorhanden.
 6. Pflicht-Frontmatter vollständig ausgefüllt (inkl. `oer.creators`, `publisher`, `license`, `source`, `version`, `status`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `time_required`, `about`).
+7. Die bearbeitete `.index.md` bleibt als nicht-rendernder Arbeitsstand erhalten und enthält `_build.render: false` sowie `_build.list: false`; der finale Blogartikel (`index.md`) wurde konsistent daraus abgeleitet.
 
 ---
 
@@ -84,6 +87,7 @@ Eine Reveal-Ableitung ist nur final, wenn:
 12. Sichtbare deutsche Folientexte enthalten korrekte Umlaute;
    Normalisierung `ae/oe/ue -> ä/ö/ü` gilt verpflichtend außerhalb technischer Felder
    (URLs, Pfade, Dateinamen, Slugs, Alias-Pfade, src-Attribute, maschinenlesbare Keys).
+13. Im Reveal-Zielordner liegt `snapshot_master_agent.md` als nicht-rendernde Momentaufnahme mit `_build.render: false` und `_build.list: false`.
 
 ---
 
@@ -94,6 +98,7 @@ Im Ergebnis dokumentiert der Agent kurz:
 - gewählte Kernpunktanzahl und Begründung,
 - ggf. gewählte Umschreibintensität (konservativ/redaktionell),
 - Mapping Blogkernpunkte -> Themenfolien.
+- optional nach `BLOG FINAL`: 2-4 Reflexionsfragen oder Hypothesen aus einem Vergleich zwischen `.index.md` und finalem `index.md`; optional nach `REVEAL GO`: 2-4 Reflexionsfragen oder Hypothesen aus einem Vergleich zwischen `snapshot_master_agent.md` und finalem Reveal-Stand (ohne automatische Regelanpassung).
 
 ---
 
@@ -178,19 +183,24 @@ Diese Prüffälle sollen nach Änderungen an Agentenlogik, Prompts oder Template
 - Erwartung: finale Präsentation enthält vollständiges Pflicht-Frontmatter gemäß `ai_agents/templates/reveal_template.md`.
 - Fehlerindikator: fehlende oder leere Pflichtfelder, insbesondere im Reveal-OER-Metadatenblock.
 
-### RC-13 Reveal-Textdichte und Kernbotschaften
+### RC-13 Snapshot bei REVEAL GO
+
+- Erwartung: mit finaler Reveal-Datei wird im Reveal-Zielordner `snapshot_master_agent.md` erzeugt und nicht gerendert.
+- Fehlerindikator: fehlende Snapshot-Datei oder Snapshot als Ableitungsquelle verwendet.
+
+### RC-14 Reveal-Textdichte und Kernbotschaften
 
 - Erwartung: jede Inhaltsfolie trägt eine klar erkennbare Kernbotschaft;
   Textdichte bleibt im foliengerechten Bereich.
 - Fehlerindikator: textlastige Folien ohne klare Priorisierung der Aussage.
 
-### RC-14 Visualisierungsquote
+### RC-15 Visualisierungsquote
 
 - Erwartung: je fachlichem Hauptkapitel ist mindestens eine visuelle Stützfolie vorhanden,
   inklusive kurzer Quellenzeile.
 - Fehlerindikator: rein textbasierte Kapitel ohne visuelle Strukturhilfe.
 
-### RC-15 Umlaut-Normalisierung in sichtbaren Texten
+### RC-16 Umlaut-Normalisierung in sichtbaren Texten
 
 - Erwartung: sichtbare deutsche Folientexte enthalten korrekte Umlaute.
 - Fehlerindikator: systematische Ausgabe von `ae/oe/ue` in sichtbaren Folientexten,

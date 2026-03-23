@@ -489,27 +489,33 @@ a.lit-doi::before {
 }
 
 /* Optional density variants for agenda tables */
-.agenda.compact table thead th{
+.agenda.compact table thead th,
+.agenda.agenda-sm table thead th{
   padding: 0.56em 0.72em;
 }
 
-.agenda.compact table tbody td{
+.agenda.compact table tbody td,
+.agenda.agenda-sm table tbody td{
   padding: 0.6em 0.72em;
 }
 
-.agenda.compact table{
+.agenda.compact table,
+.agenda.agenda-sm table{
   font-size: 0.93rem;
 }
 
-.agenda.roomy table thead th{
+.agenda.roomy table thead th,
+.agenda.agenda-lg table thead th{
   padding: 0.84em 1.05em;
 }
 
-.agenda.roomy table tbody td{
+.agenda.roomy table tbody td,
+.agenda.agenda-lg table tbody td{
   padding: 0.92em 1.05em;
 }
 
-.agenda.roomy table{
+.agenda.roomy table,
+.agenda.agenda-lg table{
   font-size: 1rem;
 }
 
@@ -943,6 +949,9 @@ body.dark .oer-meta [data-tooltip]::after {
   font-size: 0.9rem;
   line-height: 1;
   cursor: pointer;
+  position: absolute;
+  top: 6px;
+  right: 6px;
 }
 
 .iwip_help_close:hover {
@@ -952,19 +961,6 @@ body.dark .oer-meta [data-tooltip]::after {
 /* Scroll Lock (lokal; globaler Scroll-Lock zusätzlich oben dokumentiert) */
 .iwip_no_scroll {
   overflow: hidden;
-}
-
-.iwip_help_head {
-  position: sticky;
-  top: 0;
-  padding: 12px 16px;
-}
-
-/* Close-Button sauber ausrichten */
-.iwip_help_close {
-  position: absolute;
-  top: 6px;
-  right: 6px;
 }
 
 /* Mobile: Bottom Sheet */

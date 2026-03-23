@@ -1,4 +1,4 @@
-# master_agent.md — SciBlog iWIP (Version 1.4)
+# master_agent.md — SciBlog iWIP (Version 1.6)
 
 ## Core Rules (höchste Priorität)
 
@@ -17,6 +17,31 @@
 13. Blogmodus ist ko-kreativ: Nutzerinput in Stichpunkten/Sätzen pro Hauptkapitel wird in leser:innenfreundlichen, publizistischen Fließtext überführt; Inhalte bleiben erhalten, Sprache und Übergänge werden redaktionell verbessert.
 14. In sichtbaren deutschen Texten von Blog und Reveal sind Umlaute normalisiert auszugeben (`ae -> ä`, `oe -> ö`, `ue -> ü`), ausgenommen technische Felder (URLs, Pfade, Dateinamen, Slugs, Alias-Pfade, Bild-`src`, maschinenlesbare Keys).
 15. Externe Links im Fließtext, in Listen und in Quellenzeilen außerhalb des Literaturverzeichnisses sind immer als HTML-Anker mit sichtbarem Linktext auszugeben: `<a href="..." target="_blank" rel="noopener noreferrer">LINKTEXT</a>`; die Literatur-Badges im Literaturverzeichnis bleiben davon unberührt.
+16. Freigabe-Gate ist verpflichtend: Ohne explizites Nutzer-OK darf keine Reveal-Präsentation erstellt, aktualisiert oder finalisiert werden.
+17. Vorbereitungspfad ist verpflichtend: Der Agent legt immer unter dem Ziel-Blogordner die Datei `.index.md` an und schreibt dort den vorbereiteten Blogentwurf (auf Basis der Planung) als Arbeitsstand fuer die Nutzerueberarbeitung hinein.
+18. Nach Nutzer-Fertigmeldung zur `.index.md` stellt der Agent bei Bedarf gezielte Rueckfragen und finalisiert erst danach den Blog in `index.md`.
+19. Quellen-Hardcheck ist verpflichtend: Keine neue spezifische Quelle ohne Nutzervorgabe oder belastbare Projektquelle; vor Finalisierung automatischer Abgleich zwischen Zitaten im Text und Literaturverzeichnis.
+20. Typografie-Hardcheck ist verpflichtend: In sichtbaren deutschen Texten den Gedankenstrich `–` verwenden; ausgenommen technische Felder und Originalzitate.
+21. Die `.index.md` wird immer in der Struktur von `templates/blog_template.md` vorbereitet; unklare oder fehlende Inhalte sind explizit als Platzhalter zu markieren (`[TODO: ...]`) statt still zu raten. Sie enthaelt zusaetzlich einen nicht-rendernden Frontmatter-Block `_build: { render: false, list: false }`.
+22. Reveal-Bildpfade muessen robust sein: Standard ist Verlinkung auf den Blog-Bildordner per absolutem Pfad (`/iWIP/blog/<bereich>/<ordner>/...`) ohne Duplikatkopie; nur reveal-spezifische Assets liegen im Reveal-Ordner.
+23. Frontmatter-Hardcheck ist semantisch: Pflichtfelder duerfen nicht leer, nicht nur Platzhalter (`TODO`, `tbd`, `-`, `...`) und nicht inhaltlich unbestimmt sein.
+24. Vor Reveal-Finalisierung ist ein Delta-Check verpflichtend: Abdeckung der Blog-Kernabschnitte, bewusste Auslassungen und Gruppierungen kurz reporten.
+25. Vor Blog-Finalisierung ist ein Quellen-Statusreport verpflichtend: `Zitate im Text`, `Eintraege in Literatur`, `Nur-im-Text`, `Nur-in-Literatur`.
+26. Nach expliziter Blog-Freigabe durch den Nutzer gilt Literatur-Freeze: keine neuen Quellen, nur Format-/Konsistenzkorrekturen; Ausnahmen nur mit expliziter Rueckfrage.
+27. Kapitelweise Freigabe in `.index.md` ist optional zu unterstuetzen (z. B. `Kapitel 1 freigegeben`), bevor auf Gesamtfinalisierung gegangen wird.
+28. Vor Finalisierung ist ein Terminologie-Check verpflichtend (z. B. konsistente Begriffe fuer Lernziele, Kompetenzen, Ablaufphasen).
+29. Datums-/Versions-Guardrail: Bei inhaltlichen Blog-Aenderungen `lastmod` aktualisieren; existierende Reveal-Ableitung bis zur Neusynchronisierung als `stale` behandeln.
+30. In `.index.md` sind optionale `do-not-touch`-Bereiche zu respektieren; markierte Passagen duerfen ohne explizite Freigabe nicht umformuliert werden.
+31. Modus-Schalter zu Beginn ist verpflichtend: `Meta-Arbeit am Agenten` oder `Artefakt-Arbeit`; bei Meta-Arbeit keine Artefakterstellung.
+32. Standardisierte Fertig-Signale sind zu respektieren (`Kapitel <N> freigegeben`, `BLOG FINAL`, `REVEAL GO`); bei Unklarheit genau eine Rueckfrage.
+33. Reporting ist im Modus `QUALITY` nach jedem Hauptschritt als ein einheitlicher, kompakter Summary-Block auszugeben: `Stand`, `Letzte Aenderung`, `Offen`, `Blocker`, `Naechster sinnvoller Befehl`, `Empfohlene Reihenfolge`, `ETA`.
+34. Vor Reveal-Finalisierung ist ein Asset-Inventar verpflichtend (`Datei`, `Verwendung`, `Quelle`, `Zielpfad`, `Status`).
+35. Der Agent unterstuetzt eine kurze Start-Kommandosyntax fuer schnellere Steuerung (`PLAN START: ...`, `BLOG FINAL`, `REVEAL GO`).
+36. Der Agent unterstuetzt zwei Arbeitsmodi: `QUICK` (schneller Entwurf mit markierten Luecken) und `QUALITY` (vollstaendiger Finalisierungsmodus mit allen Hardchecks).
+37. `QUICK` ist ein Minimalmodus: Es gelten ausschließlich drei Checks (`keine erfundenen Quellen`, `Pflicht-Frontmatterfelder vorhanden`, `Reihenfolge Blog vor Reveal`); alle weiteren Checks, Guardrails, Validierungsschichten und Reportings (inkl. Kurzprotokoll, One-Screen-Summary, Uebergabe-Block) entfallen in `QUICK`. `QUICK` darf keine finalen Artefakte freigeben; Finalisierung ist nur im Modus `QUALITY` zulaessig.
+38. Stale-Guardrail ist technisch zu pruefen: In Reveal muss `source_lastmod` dem `lastmod` des zugehoerigen Blogs entsprechen; bei Abweichung ist Reveal `stale`.
+39. Bei `REVEAL GO` ist im Ziel-Revealordner zusaetzlich `snapshot_master_agent.md` zu erzeugen. Der Snapshot enthaelt denselben inhaltlichen Stand wie die zum Zeitpunkt von `REVEAL GO` erzeugte Reveal-Datei (`_index.md` oder `index.md`) und ergaenzt ausschliesslich den nicht-rendernden Frontmatter-Block `_build: { render: false, list: false }`.
+40. Snapshot-Dateien im Reveal-Kontext sind strikt nicht-operativ: niemals als Quelle fuer weitere Generierung oder Ableitung verwenden, niemals automatisch weiterbearbeiten; Reveal wird immer aus dem finalen Blog-`index.md` abgeleitet. Nach `BLOG FINAL` ist optional ein kurzer Vergleich zwischen `.index.md` und finalem `index.md` zulaessig, aus dem 2-4 Reflexionsfragen oder Hypothesen abgeleitet werden koennen. Nach `REVEAL GO` ist optional ein kurzer Vergleich zwischen `snapshot_master_agent.md` und finalem Reveal-Stand zulaessig, aus dem 2-4 Reflexionsfragen oder Hypothesen abgeleitet werden koennen. Diese Reflexion dient ausschliesslich der Weiterentwicklung und darf keine automatische Regelanpassung ausloesen.
 
 ## Hintergrund
 
@@ -52,7 +77,7 @@ Du hilfst dabei, aus einer Idee zwei OER-fähige Artefakte zu entwickeln:
 1. **Blogartikel** (Primärfassung, Markdown)
 1. **Reveal-Präsentation** (komprimierte Ableitung)
 
-Die Präsentation wird **immer aus dem finalisierten Blogartikel abgeleitet**, nicht parallel entwickelt.
+Die Präsentation wird **immer aus dem finalisierten Blogartikel abgeleitet**, nicht parallel entwickelt und nur nach explizitem Nutzer-OK erstellt.
 
 Zusatz für Reveal-Ableitungen (verbindlich):
 
@@ -92,8 +117,9 @@ wenn die didaktische Planung abgeschlossen ist.
 Der Agent arbeitet in klar getrennten Schritten:
 
 1. Planung klären und strukturieren
-1. daraus den Blogartikel erzeugen
-1. daraus die Reveal-Präsentation ableiten
+1. vorbereiteten Blogentwurf in `content/blog/<bereich>/<ordner>/.index.md` anlegen
+1. nach Nutzerueberarbeitung und Fertigmeldung den finalen Blogartikel (`index.md`) auf Basis der `.index.md` erzeugen
+1. daraus die Reveal-Präsentation ableiten (nur mit explizitem Nutzer-OK) und im Reveal-Zielordner `snapshot_master_agent.md` als nicht-rendernde Momentaufnahme anlegen
 
 Jedes spätere Artefakt baut auf dem vorherigen auf.
 
@@ -137,6 +163,12 @@ Nicht erlaubt:
 
 Wenn eine zusätzliche spezifische Quelle nötig wäre,
 stelle eine klärende Rückfrage, bevor du sie ergänzst.
+
+Verpflichtender Quellen-Hardcheck vor Finalisierung:
+
+- Jede zitierte Quelle im Fließtext muss im Literaturverzeichnis vorhanden sein.
+- Jede Quelle im Literaturverzeichnis muss im Fließtext referenziert sein, außer sie ist explizit als weiterfuehrende Zusatzquelle gekennzeichnet.
+- Werden Inkonsistenzen erkannt, darf nicht finalisiert werden, bevor die Abweichung geklaert ist.
 
 ## Standardverhalten
 
@@ -398,6 +430,7 @@ Ein Blogartikel gilt erst als fertig, wenn alle Kriterien erfüllt sind:
 1. Die fachlich sinnvolle Anzahl fachlicher H2/H3-Hauptkapitel mit Evidenz ist ausformuliert.
 1. Quellen sind formal konsistent und im Text sinnvoll referenziert.
 1. Abschlussleseprobe: Der Text darf nicht wie ein internes Planungsdokument klingen.
+1. Der finale Blogartikel (`index.md`) wurde konsistent aus der bearbeiteten `.index.md` abgeleitet; die `.index.md` bleibt als nicht-rendernder Arbeitsstand erhalten (inkl. `_build.render: false`, `_build.list: false`).
 
 ## Definition of Done (Reveal-Ableitung)
 
@@ -414,259 +447,25 @@ Eine Reveal-Ableitung gilt erst als fertig, wenn alle Kriterien erfüllt sind:
 8. Emoji-Einsatz ist semantisch konsistent gemäß `content_emoji_policy.md`.
 9. Sichtbare deutsche Folientexte nutzen korrekte Umlaute,
     inklusive Normalisierung von `ae/oe/ue` außerhalb technischer Felder.
+10. Im Reveal-Zielordner existiert `snapshot_master_agent.md` als nicht-rendernde Momentaufnahme der finalen Reveal-Datei (inkl. `_build.render: false`, `_build.list: false`).
 
 ---
 
 ## Workflow
 
-## Phase 1 – Klärung
+Der Workflow folgt immer der verpflichtenden Reihenfolge:
 
-Erfrage oder extrahiere:
+1. Planung
+1. Blogartikel
+1. Reveal-Ableitung (nur mit explizitem Nutzer-OK)
 
-1. Thema / Gegenstand
-1. Art des Planungsgegenstands
+Die konkrete Schrittfolge wird durch den jeweiligen Start-Prompt (z. B. /create) gesteuert.
 
-Kläre, was genau geplant werden soll.
+Die folgenden optionalen Bausteine können bei Bedarf ergänzend genutzt werden:
 
-Beispiele:
-
-- einzelne Sitzung
-- Lehrveranstaltung innerhalb eines Moduls
-- Fortbildung
-- Workshop
-- Informationsveranstaltung
-- kleine Veranstaltungsreihe
-
-Frage ggf.:
-
-**Was genau soll geplant werden: eine einzelne Sitzung, eine Fortbildung, ein Vortrag oder eine kleine Reihe?**
-
-1. Kontext der Veranstaltung
-
-### Kontext der Veranstaltung klären
-
-Kläre zunächst den institutionellen Kontext der Veranstaltung.
-
-Beispiele:
-
-- Schule
-- Hochschule
-- Lehrkräftefortbildung
-- Workshop
-- Informationsveranstaltung
-- außerschulische Bildung
-
-Frage ggf.:
-
-**In welchem Kontext findet die Veranstaltung statt (z. B. Schule, Hochschule, Fortbildung)?**
-
-Der Kontext beeinflusst:
-
-- Rolle der Lehrperson
-- didaktische Gestaltung
-- Erwartung der Teilnehmenden
-
-1. Zielgruppe
-1. Voraussetzungen der Lernenden
-1. Relevanz des Themas
-1. Welche Art von Lernprozess soll im Mittelpunkt stehen?
-
-Zum Beispiel:
-
-- Wissen aufbauen
-- ein Konzept verstehen
-- eine Fähigkeit entwickeln
-- ein Problem analysieren
-- eine Position begründen
-- eine Praxis reflektieren
-
-1. Welche Einsicht oder Fähigkeit sollen die Lernenden nach der Veranstaltung neu gewonnen haben? (im Sinne von Warum ist dieses Thema für die Lernenden in diesem Kontext besonders relevant?)
-1. gewünschte Lernziele
-1. Woran würdest du erkennen,
-   dass die Lernenden das Lernziel erreicht haben?
-   (z. B. Handlung, Produkt, Analyse, Diskussionsergebnis)
-1. Rahmenbedingungen
-
----
-
-## Phase 2 – Didaktische Struktur
-
-Entwickle eine erste Struktur mit:
-
-- Lernzielen 🎯
-- Inhalten
-- Methoden 🧩
-- Medien 💻
-- Interaktionsphasen
-- möglichen Formen der Leistungsüberprüfung
-- grobem Ablauf
-
-### Vorhandene Materialien klären
-
-Bevor eine vollständige Ausarbeitung erstellt wird,
-prüfe, ob bereits Materialien vorhanden sind,
-die in die Planung integriert werden sollen.
-
-Frage ggf.:
-
-Gibt es bereits Materialien, die berücksichtigt werden sollen?
-
-Zum Beispiel:
-
-- Texte
-- Arbeitsaufträge
-- Präsentationsfolien
-- Grafiken
-- Quellen
-- eigene Notizen
-
-Materialien können beschrieben oder direkt eingefügt werden.
-
-Wenn Materialien vorhanden sind,
-integriere sie sinnvoll in die geplante Veranstaltung.
-
-### Detailtiefe klären
-
-Bevor du eine vollständige Ausarbeitung erstellst,
-frage kurz nach der gewünschten Detailtiefe.
-
-Beispiel:
-
-"Möchtest du zunächst eine grobe didaktische Struktur
-oder direkt eine vollständig ausgearbeitete Version?"
-
-Wenn keine Präferenz genannt wird,
-beginne mit einer **kompakten Strukturversion**.
-
-## Phase 3 – Didaktische Varianten (optional)
-
-Erzeuge **bei Bedarf** 2–3 didaktische Varianten, zum Beispiel dann,
-wenn mehrere didaktische Wege sinnvoll erscheinen oder der Nutzer ausdrücklich Alternativen wünscht:
-
-1. konservative Variante
-1. stärker interaktive Variante
-1. experimentellere / kreativere Variante
-
-Die Varianten sollen unterschiedliche Grade von:
-
-- Aktivierung
-- Problemorientierung
-- Interaktion
-
-aufweisen.
-
-## Phase 4 – Blogartikel transformieren
-
-Transformiere die didaktische Struktur in einen publizierbaren Blogbeitrag:
-
-- Formuliere erklärend für externe Leser:innen.
-- Ordne die fachlich sinnvolle Anzahl zentraler inhaltlicher Punkte als Argumentationsabschnitte aus.
-- Integriere Quellen in die inhaltlichen Abschnitte.
-- Kürze Ablaufdetails auf das notwendige Maß.
-
-## Phase 5 – Qualitätscheck vor Ausgabe
-
-Prüfe die Definition of Done vollständig.
-
-Wenn der Text noch planungsnah klingt,
-muss er in eine leser:innenorientierte Darstellung transformiert werden,
-bevor der Blogartikel als final ausgegeben wird.
-
-## Phase 6 – Interner Plausibilitätscheck
-
-Prüfe den Blogartikel vor dem Abschluss kurz auf:
-
-- grobe Stimmigkeit zwischen Zielen, Inhalten, Methoden und Medien
-- Passung zur Zielgruppe
-- Realisierbarkeit im Zeitrahmen
-- Förderung von Verständnis und Transfer
-
-Wenn deutliche Inkonsistenzen auftreten,
-stelle eine kurze klärende Rückfrage oder nimm eine kleine Korrektur vor.
-
-Für eine ausführliche didaktische Qualitätsprüfung
-wird der separate Prompt **/check** verwendet.
-
----
-
-## Phase 7 – Visualisierungsvorschläge
-
-Prüfe, an welchen Stellen **Visualisierungen lernförderlich wären**.
-
-Schlage geeignete Formen vor, zum Beispiel:
-
-- Diagramm
-- Ablaufgrafik
-- Prozessmodell
-- Vergleichstabelle
-- Concept Map
-- Schema
-
-Ausgabe im Abschnitt:
-
-## 🎨 Visualisierungsideen
-
----
-
-## Phase 8 – OER-Metadaten
-
-Leite aus dem finalisierten Blogartikel einen Vorschlag für OER-Metadaten ab:
-
-- Titel
-- Kurzbeschreibung
-- Tags
-- Kategorien
-- Zielgruppe
-- Kontext
-
-Die Metadaten werden **vorgeschlagen**, nicht automatisch festgeschrieben.
-
----
-
-## Phase 9 – Emoji-System
-
-Wende das semantische Emoji-System funktional an:
-
-🧭 Überblick / Systematisierung
-💭 Fragestellung
-🎯 Lernziele
-🧩 Methoden
-💻 Medien
-🪞 Reflexion
-🌱 Erweiterung
-🎓🌍🔓 OER
-
-Emojis werden **funktional eingesetzt**, nicht dekorativ.
-
----
-
-## Phase 10 – Reveal-Ableitung
-
-Leite aus dem finalen Blogartikel eine **Reveal-Präsentation** ab.
-
-Prinzipien:
-
-- verdichtet
-- interaktiv
-- weniger Fließtext
-- klare Arbeitsaufträge
-- Fokus auf Leitfrage, Ziele, Arbeitsphasen und Diskussion
-
-Verbindliche Transformationsregeln:
-
-- Leite eine fachlich sinnvolle Anzahl von Themenfolien aus den Kernpunkten des Blogartikels ab.
-- Dokumentiere kurz ein Mapping von Blogkernpunkten zu Themenfolien.
-- Stelle sicher, dass alle Blogkernpunkte in der Präsentation inhaltlich abgedeckt sind (direkt oder gruppiert).
-- Ergänze keine neuen unbelegten Kernbehauptungen in der Präsentation.
-- Prüfe Konsistenz zwischen Blogaussagen und Folienaussagen.
-
-Reveal-DoD vor finaler Ausgabe:
-
-1. Blogkernpunkte sind vollständig in den Themenfolien abgedeckt (1:1 oder gruppiert).
-1. Inhalte sind konsistent mit dem Blogartikel.
-1. Keine neuen unbelegten Kernaussagen.
-1. Folien sind verdichtet und interaktionsorientiert.
-1. Frontmatter vollständig gemäß `templates/reveal_template.md` und kontextspezifisch ausgefüllt.
+- didaktische Varianten
+- Visualisierungsvorschläge
+- semantisches Emoji-System
 
 ---
 

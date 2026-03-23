@@ -36,6 +36,15 @@ Priorisierung der Prüfung:
 - Wenn das Artefakt eine Reveal-Präsentation ist, prüfe **zuerst** die Reveal-Transformationsqualität.
 - Wenn das Artefakt ein reiner Veranstaltungsentwurf ist, beginne mit der didaktischen Kohärenz.
 
+QUICK-Modus:
+
+- Wenn der Arbeitsmodus `QUICK` ist, prüfe ausschließlich die drei Minimalchecks gemaess `ai_agents/master_agent.md` (Core Rule 37).
+- Alle weiteren Prüfkategorien, Reportings und Guardrails werden in `QUICK` nicht angewendet.
+
+QUALITY-Modus:
+
+- Alle folgenden detaillierten Prüfkategorien gelten vollständig im Modus `QUALITY`.
+
 ## Materialien ↔ Planung
 
 - Werden vorhandene Materialien sinnvoll in die Planung eingebunden?
@@ -122,6 +131,8 @@ Priorisierung der Prüfung:
 - Sind Literaturangaben in Quellenzeilen unter Tabellen/Grafiken ebenfalls auf den Literaturanker verlinkt?
 - Ist das Literaturverzeichnis APA-7-nah konsistent formatiert?
 - Sind Zusatzlinks je Quelle konsistent als Badge (`lit-ub`, `lit-doi`, `lit-worldcat`) oder als normaler Weblink dargestellt?
+- Zusätzlich alle einschlägigen Core Rules aus `ai_agents/master_agent.md` für
+    Blogartefakte prüfen (insbesondere 17, 18, 19, 20, 25, 26, 27, 30, 31, 32, 33, 36, 37).
 
 ---
 
@@ -150,7 +161,9 @@ Verpflichtend zu prüfen:
 Bewertungsregel:
 
 - Fehlende Pflichtfelder, leere Pflichtfelder oder falsch strukturierte Pflichtfelder sind **Blocker**.
+- Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls **Blocker**.
 - Ein Blogartefakt darf bei Blockern nicht als "final" bewertet werden.
+- Wenn `lastmod` trotz inhaltlicher Aenderung nicht aktualisiert wurde, ist das ein **Blocker**.
 
 ---
 
@@ -168,8 +181,9 @@ Bewertungsregel:
 - Ist je fachlichem Hauptkapitel mindestens eine visuelle Stützfolie vorhanden (Grafik/Diagramm/Tabelle/Schema)?
 - Enthalten Visualisierungen kurze, saubere Quellenzeilen?
 - Ist der Emoji-Einsatz semantisch konsistent gemäß `project_governance/content_emoji_policy.md`?
-- Sind sichtbare deutsche Folientexte orthografisch korrekt,
-  inklusive Umlaut-Normalisierung (`ae/oe/ue -> ä/ö/ü`) außerhalb technischer Felder?
+- Entsprechen sichtbare deutsche Folientexte den Typografie-/Sprachregeln gemäß `ai_agents/master_agent.md` (insbesondere Core Rules 14 und 20)?
+- Zusätzlich alle einschlägigen Core Rules aus `ai_agents/master_agent.md` für
+    Revealartefakte prüfen (insbesondere 16, 20, 22, 24, 29, 32, 33, 34, 36, 37, 38).
 
 ---
 
@@ -180,7 +194,7 @@ Prüfe bei Revealartefakten das Frontmatter strikt gegen
 
 Verpflichtend zu prüfen:
 
-- `title`, `title_reveal`, `emojis`, `veranstaltungstyp`, `veranstaltung`, `author`, `blog`, `date`, `lastmod`, `draft`
+- `title`, `title_reveal`, `emojis`, `veranstaltungstyp`, `veranstaltung`, `author`, `blog`, `source_lastmod`, `date`, `lastmod`, `draft`
 - `outputs`, `reveal_hugo.theme`, `reveal_hugo.slide_number`, `reveal_hugo.transition`, `reveal_hugo.custom_theme`
 - `description`, `summary`
 - `tags`, `categories`
@@ -198,6 +212,9 @@ Verpflichtend zu prüfen:
 Bewertungsregel:
 
 - Fehlende Pflichtfelder, leere Pflichtfelder oder falsch strukturierte Pflichtfelder sind **Blocker**.
+- Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls **Blocker**.
+- Zusätzlich gelten die Blocker-/Hinweislogiken aus `ai_agents/master_agent.md`
+    (insbesondere 16, 23, 24, 29, 33, 34, 37, 38) unverändert.
 - Ein Revealartefakt darf bei Blockern nicht als "final" bewertet werden.
 
 ---

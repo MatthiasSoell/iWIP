@@ -183,6 +183,7 @@ Der Text soll sich lesen wie ein guter SciBlog-Beitrag:
 Zusätzliche Sprachregel (verbindlich):
 
 - In sichtbaren deutschen Blogtexten Umlaute normalisieren: `ae -> ä`, `oe -> ö`, `ue -> ü`.
+- In sichtbaren deutschen Blogtexten Gedankenstrich `–` als Satzzeichen verwenden (statt Bindestrich `-`).
 - Nicht anwenden auf technische Felder und Tokens, insbesondere URLs, Pfade, Dateinamen, Slugs, Alias-Pfade, Bildquellen (`src`) oder maschinenlesbare Schlüssel.
 
 ### Zielstruktur (Standard)
@@ -356,6 +357,9 @@ Regeln fuer den Literaturabschnitt:
 
 - Formatiere Eintraege APA-7-nah und konsistent.
 - Fuehre pro Quelle genau einen bibliografischen Haupteintrag.
+- Nimm keine neue spezifische Quelle auf, wenn sie nicht vom Nutzer vorgegeben oder im Projektkontext belastbar vorhanden ist.
+- Fuehre vor Finalisierung einen Konsistenzcheck durch: Alle Quellenzitate im Fliesstext muessen im Literaturabschnitt vorhanden sein; alle Literaturquellen muessen im Fliesstext referenziert sein (Ausnahme: explizit als weiterfuehrende Zusatzquelle markiert).
+- Bei Quellenkonflikten oder fehlender belastbarer Grundlage nicht finalisieren, sondern genau eine klaerende Rueckfrage stellen.
 - Externe Links im Fliesstext, in Listen und in Quellenzeilen ausserhalb des Literaturabschnitts immer so ausgeben: `<a href="..." target="_blank" rel="noopener noreferrer">LINKTEXT</a>`.
 - Hinterlege zusaetzliche Zugriffe als Badges (`lit-ub`, `lit-doi`, `lit-worldcat`) oder als normalen Weblink, wenn kein Badge-Typ passt.
 - Badge-Links im Literaturabschnitt bleiben unveraendert und sind von der obigen Textlink-Regel ausgenommen.
@@ -422,9 +426,14 @@ wenn möglich, OER-kompatibel sein.
 Vor finaler Ausgabe prüfen:
 
 1. Frontmatter vollständig,
-2. Leser:innenperspektive erkennbar,
-3. Ablauf nicht dominierend,
-4. Kernpunkte inhaltlich ausformuliert,
-5. Quellen im Text und Literaturteil konsistent,
-6. Stil wirkt blog- und leser:innennah (nicht generisch),
-7. Emoji-Einsatz ist funktional konsistent.
+2. Frontmatter semantisch gefuellt (keine leeren Pflichtfelder, keine Platzhalter wie `TODO`, `tbd`, `-`, `...`),
+3. Leser:innenperspektive erkennbar,
+4. Ablauf nicht dominierend,
+5. Kernpunkte inhaltlich ausformuliert,
+6. Quellen im Text und Literaturteil konsistent,
+7. Quellen-Statusreport ausgegeben (`Zitate im Text`, `Eintraege in Literatur`, `Nur-im-Text`, `Nur-in-Literatur`),
+8. Nach Nutzerfreigabe des Blogs keine neuen Quellen ergaenzt (Literatur-Freeze),
+9. Terminologie konsistent (z. B. Lernziele, Kompetenzen, Ablaufphasen),
+10. Markierte `do-not-touch`-Bereiche aus `.index.md` wurden unveraendert respektiert,
+11. Stil wirkt blog- und leser:innennah (nicht generisch),
+12. Emoji-Einsatz ist funktional konsistent.

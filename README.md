@@ -13,7 +13,7 @@ The project combines a blog, presentations, and OER resources within a transpare
 
 Der veröffentlichte Blog ist hier erreichbar:
 
-https://matthiassoell.github.io/iWIP/
+[https://matthiassoell.github.io/iWIP/](https://matthiassoell.github.io/iWIP/)
 
 ---
 
@@ -34,7 +34,7 @@ Der Blog dient insbesondere dazu:
 
 Der SciBlog iWIP basiert auf einer bewusst einfachen, offenen Web-Infrastruktur.
 
-**Technologien**
+### Technologien
 
 - **Hugo** – Static Site Generator  
 - **PaperMod** – Blog-Theme  
@@ -50,7 +50,7 @@ Alle Inhalte werden in **Markdown** geschrieben und als **statische Webseiten** 
 
 Die wichtigsten Bereiche des Repositories:
 
-```
+```text
 content/
 ├─ blog/               → Blogartikel und OER-Materialien
 ├─ praesentation/      → Präsentationen (Reveal.js)
@@ -73,7 +73,7 @@ static/css/
 
 Das Projekt nutzt eine klar definierte CSS-Architektur:
 
-```
+```text
 Design Tokens
       ↓
 Blog Komponenten
@@ -83,7 +83,7 @@ Callout-Komponenten
 
 Dateien:
 
-```
+```text
 00_design_tokens.css
 10_custom.css
 20_custom_callouts.css
@@ -94,7 +94,7 @@ Reveal-CSS und Blog-CSS sind strikt getrennt.
 
 Details sind dokumentiert in:
 
-```
+```text
 project_governance/css_architecture.md
 ```
 
@@ -106,7 +106,7 @@ Die technische Architektur des Projekts ist zusammen mit mit Entwicklungsregeln 
 
 Wichtige Dokumente:
 
-```
+```text
 project_governance/
 ├─ repo_architecture.md
 ├─ css_architecture.md
@@ -122,9 +122,7 @@ Diese Dokumente beschreiben:
 - CSS-System  
 - Content-Konventionen (Emoji-Policy)
 - AI-Regeln für Codeänderungen  
-- technischen Projektkontext  
-
-
+- technischen Projektkontext
 
 ---
 
@@ -137,30 +135,152 @@ Bei der technischen Entwicklung des Projekts werden KI-Werkzeuge eingesetzt, u. 
 
 Die Regeln für AI-gestützte Änderungen sind dokumentiert in:
 
-```
+```text
 project_governance/ai_copilot_instructions.md
 ```
 
 ---
 
-## Didaktischer Planungsagent
+## 🤖 Didaktischer Planungsagent
 
-Der SciBlog iWIP nutzt einen experimentellen KI-Agenten zur Unterstützung
-der didaktischen Planung von Lehrveranstaltungen.
+Der SciBlog iWIP nutzt einen KI-Agenten zur Unterstützung der didaktischen Planung und Veröffentlichung von Lehr-Lern-Arrangements als OER.
 
-Der Agent arbeitet dialogisch und unterstützt insbesondere bei:
+Der Agent arbeitet dialogisch und verbindet Planung, Ausarbeitung und Publikation in einem konsistenten Workflow.
 
-- Kontextklärung
-- Entwicklung didaktischer Strukturen
-- Alignment zwischen Lernzielen, Aktivitäten und Leistungsüberprüfung
-- Ableitung von Blogartikeln und Präsentationen
+---
 
-Der Ansatz ist inspiriert von bestehenden Arbeiten von André Dietrich zu 
-Agents in der Lernumgebung LiaScript.
+## ⚡ Quickstart
 
-Der Agent wurde für den Kontext der Wirtschaftsdidaktik
-weiterentwickelt und orientiert sich an europäischen 
-didaktischen Modellen (z. B. Berliner Modell, Constructive Alignment).
+1. `PLAN START: Thema | Zielgruppe | Zeit`
+2. Entwurf dialogisch entwickeln (`.index.md`)
+3. Blog finalisieren (`BLOG FINAL`)
+4. Präsentation erzeugen (`REVEAL GO`)
+
+---
+
+## 🧠 Grundlogik
+
+Der Agent arbeitet strikt sequenziell:
+
+1. Planung klären  
+2. Blogentwurf entwickeln (`.index.md`)  
+3. Blog finalisieren (`index.md`)  
+4. Präsentation daraus ableiten  
+
+Die `.index.md` dient als nicht-rendernder Arbeitsstand:
+
+- wird iterativ bearbeitet
+- enthält den aktuellen Entwicklungsstand
+- wird bei `BLOG FINAL` in den finalen Blogartikel (`index.md`) überführt
+- ist nicht öffentlich sichtbar (`_build.render: false`, `_build.list: false`)
+
+Wichtig:
+
+- Der Blog ist das **Primärartefakt**
+- Die Präsentation wird **immer daraus abgeleitet**
+- Keine parallele Erstellung von Blog und Reveal
+
+---
+
+## ⚙️ Steuerung
+
+### Signale
+
+- `PLAN START: Thema | Zielgruppe | Zeit`
+- `Kapitel <N> freigegeben`
+- `BLOG FINAL`
+- `REVEAL GO`
+
+### Modi
+
+- `QUICK` → schneller Entwurf, keine Finalisierung  
+- `QUALITY` → vollständige Ausarbeitung mit Qualitätschecks  
+
+Standard: `QUALITY`
+
+---
+
+## 🔁 Snapshot-Logik
+
+Bei `REVEAL GO` wird automatisch erzeugt:
+
+```text
+snapshot_master_agent.md
+```
+
+Eigenschaften:
+
+- nicht-rendernd (`_build.render: false`, `_build.list: false`)
+- gleicher fachlicher Stand zum Zeitpunkt der Finalisierung
+- dient als Momentaufnahme
+
+Für Blogartikel wird kein Snapshot erzeugt. Stattdessen dient die `.index.md` als Arbeitsstand und Referenz für die Reflexion.
+
+Wichtig:
+
+- Snapshots sind **nicht-operativ**
+- keine Weiterverarbeitung oder Ableitung daraus
+- Reveal wird immer aus dem finalen Blog (`index.md`) erzeugt
+
+---
+
+## 💡 Optionale Reflexion
+
+Der Agent kann optional Reflexionen anstoßen:
+
+Nach `BLOG FINAL`:
+
+- Vergleich zwischen bearbeiteter `.index.md` und finalem `index.md`
+- Einordnung von Änderungen (Korrekturen, Ergänzungen, Anpassungen)
+- Ableitung von 2–4 Reflexionsfragen oder Hypothesen
+
+Nach `REVEAL GO`:
+
+- Vergleich zwischen `snapshot_master_agent.md` und finalem Reveal-Stand
+- Ableitung von 2–4 Reflexionsfragen oder Hypothesen
+
+→ dient ausschließlich der Weiterentwicklung  
+→ keine automatischen Regeländerungen
+
+---
+
+### 🎯 Ziel
+
+Der Agent unterstützt dabei:
+
+- didaktisch kohärente Lehrveranstaltungen zu planen  
+- Inhalte effizient auszuarbeiten  
+- Blogartikel als OER zu publizieren  
+- Präsentationen konsistent daraus abzuleiten  
+
+### 🔄 Agent-Workflow (Übersicht)
+
+```text
+PLAN START
+    ↓
+.index.md (Arbeitsstand, nicht öffentlich)
+    ↓
+Bearbeitung & Ergänzung (dialogisch)
+    ↓
+BLOG FINAL
+    ↓
+index.md (finaler Blogartikel)
+    ↓
+REVEAL GO
+    ↓
+_index.md (vom Agent erzeugte Reveal-Version)
+    + snapshot_master_agent.md (Momentaufnahme der ersten Reveal-Version)
+    ↓
+Bearbeitung & Feinschliff an _index.md
+    ↓
+finale _index.md
+```
+
+- Nach BLOG FINAL: 
+      Vergleich .index.md ↔ index.md
+
+- Nach Reveal-Feinschliff:
+      Vergleich snapshot_master_agent.md ↔ finale _index.md
 
 ---
 
@@ -168,7 +288,7 @@ didaktischen Modellen (z. B. Berliner Modell, Constructive Alignment).
 
 Die Inhalte des Blogs werden – sofern nicht anders angegeben – unter einer **Creative Commons Lizenz (CC BY-SA 4.0)** veröffentlicht.
 
-https://creativecommons.org/licenses/by-sa/4.0/
+[https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ---
 
@@ -178,7 +298,7 @@ https://creativecommons.org/licenses/by-sa/4.0/
 Universität Rostock  
 Institut für Wirtschaftspädagogik
 
-https://matthiassoell.github.io/iWIP/
+[https://matthiassoell.github.io/iWIP/](https://matthiassoell.github.io/iWIP/)
 
 ---
 
