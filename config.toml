@@ -19,6 +19,7 @@
 
 baseURL = "https://matthiassoell.github.io/iWIP/"
 languageCode = "de-de"
+defaultContentLanguage = "de"
 title = "SciBlog iWIP"
 
 # Themes werden ausschließlich über Hugo Modules geladen.
@@ -34,6 +35,7 @@ title = "SciBlog iWIP"
   # Layout / Verhalten
   hideFooter = true
   defaultTheme = "auto"
+  DateFormat = "02.01.2006"
   ShowReadingTime = true
   ShowThemeToggle = true
   ShowRecentPosts = false

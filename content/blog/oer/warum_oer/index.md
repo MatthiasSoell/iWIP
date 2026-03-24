@@ -47,7 +47,7 @@ oer:
 
   # Version / Reifegrad
   version: "1.0"
-  status: "stable"   # draft | pilot | stable | aligned
+  status: "pilot"   # draft | pilot | stable | aligned
 
   # OERSI / schema.org-nahe Felder
   in_language: "de"
@@ -68,27 +68,12 @@ oer:
     - term: "OER-Strategien"
     - term: "Berufliche Bildung"
 
-  todos: []
+  todos:
+    - "Artikel mit Literaturangaben ergänzen"
+
 ---
 
-<script>
-  function triggerPrint() {
-    window.print(); // oder eine andere Funktion, je nach Zweck
-  }
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.location.search.includes("print-pdf")) {
-    // Warten, bis Reveal "ready" ist
-    Reveal.addEventListener("ready", function () {
-      setTimeout(() => {
-        window.print();
-      }, 300); // etwas Spielraum lassen
-    });
-  }
-});
-</script>
+{{< oer-meta >}}
 
 <div class="top-toggle">
   <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
@@ -103,8 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
   ⓘ
   </button>
 </div>
-
-{{< oer-meta >}}
 
 ## Was sind OER?
 > [!IMPORTANT]

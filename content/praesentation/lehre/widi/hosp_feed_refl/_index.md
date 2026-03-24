@@ -10,6 +10,9 @@ date: 2025-10-22
 lastmod: 2025-10-22
 draft: false
 
+aliases:
+  - "/praesentation/widi/hosp_feed_refl/"
+
 outputs:
   - Reveal
 

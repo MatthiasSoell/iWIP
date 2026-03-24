@@ -91,7 +91,10 @@ oer:
     - item: "Motivationsgrafiken (KI-Illustrationen)"
       note: "KI-generiert; keine explizite offene Lizenz angegeben"
 
-  todos: []
+  todos:
+    - "Bild auf Folie Motivation: Bild mit transparentem Hintergrund gestalten"
+    - "Vortrag didaktisch zuspitzen: weniger von technischen Entwicklungen berichten"
+
 ---
 
 {{< titleSlide >}}
@@ -198,6 +201,10 @@ oer:
 <div class="hinweis-box fragment">
   💡 Nicht Tools gestalten Lehre – <b>sondern didaktische Entscheidungen</b>. SciBlog iWIP schafft dafür Raum.
 </div>
+
+---
+
+{{< literatureSlide >}}
 
 ---
 

@@ -4,6 +4,10 @@ date: 2025-10-29
 lastmod: 2025-10-29
 draft: false
 
+aliases:
+  - "/praesentation/widi/widi/"
+  - "/praesentation/widi/"
+
 outputs:
   - Reveal
 

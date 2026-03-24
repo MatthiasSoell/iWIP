@@ -1,6 +1,12 @@
 ---
 title: "Warum OER?"
 date: 2025-06-12
+title_reveal: "Warum OER?"
+emojis: "🎓 🌍 🔓"
+veranstaltungstyp: ""
+veranstaltung: ""
+author: "Prof. Dr. Matthias Söll"
+blog: "/iWIP/blog/oer/warum_oer"
 lastmod: 2025-06-12
 draft: false
 
@@ -76,19 +82,12 @@ oer:
     - item: "Grafik »OER_qualitaet.png«"
       note: "KI-generiert; keine explizite offene Lizenz angegeben"
 
-  todos: []
+  todos:
+    - "Literaturfolie ergänzen, wenn in Blog aktualisiert"
+
 ---
 
-{{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
-
-{{< titleSlide
-    title="Warum OER?"
-    emojis="🎓 🌍 🔓"
-    veranstaltungstyp=""
-    veranstaltung=""
-    author="Prof. Dr. Matthias Söll"
-    blog="/iWIP/blog/oer/warum_oer"
->}}
+{{< titleSlide >}}
 
 ---
 
@@ -164,3 +163,7 @@ Die Qualität von Lehr-Lern-Arrangements kann durch kooperative Entwicklung stei
 <img class="fragment responsive-image" data-fragment-index="1" src="OER_qualitaet.png" alt="Kooperative Entwicklung von OER">
 
 <p class="fragment bild-quelle" data-fragment-index="1">Bildquelle: Erstellt mit ChatGPT</p>
+
+---
+
+{{< endSlide >}}

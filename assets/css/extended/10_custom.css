@@ -1051,6 +1051,7 @@ details > summary + p {
   justify-content: center;
   vertical-align: middle;
   line-height: 1;
+  margin-inline: 0.3rem;
 }
 .info_tip:hover,
 .info_tip:focus{

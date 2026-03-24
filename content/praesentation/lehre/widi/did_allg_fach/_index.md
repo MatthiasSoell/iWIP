@@ -4,6 +4,9 @@ date: 2025-10-22
 lastmod: 2025-10-22
 draft: false
 
+aliases:
+  - "/praesentation/widi/did_allg_fach/"
+
 outputs:
   - Reveal
 

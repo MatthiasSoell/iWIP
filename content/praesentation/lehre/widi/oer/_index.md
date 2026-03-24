@@ -1,8 +1,11 @@
 ---
-title: "Methoden & Medien"
+title: "Frei nutzbare Lehr-Lern-Materialien – OER"
 date: 2025-11-05
 lastmod: 2025-11-05
 draft: false
+
+aliases:
+  - "/praesentation/widi/oer/"
 
 outputs:
   - Reveal
@@ -13,24 +16,20 @@ reveal_hugo:
   hash: true
 
 description: >
-  Reveal-Präsentation zu Methoden und Medien im Kontext von Open Educational
-  Resources (OER): Einführung, bildungspolitische Einordnung, Begründungen für
-  OER sowie eine konkrete Aufgabenstellung zur Entwicklung eigener OER.
+  Reveal-Präsentation als Einstieg in Open Educational Resources (OER): Definitionen, UNESCO- und Deutschland-Bezüge, Gründe für OER sowie Arbeitsauftrag zur Erstellung eines eigenen OER inkl. Kriterien und Abgabe.
 
 summary: >
-  Präsentation zu OER mit Fokus auf Methoden- und Medieneinsatz in der
-  Hochschullehre, inklusive didaktischer Zielsetzung, Arbeitsauftrag,
-  Lizenzierung und Bewertungskriterien.
+  Präsentation zu OER (Definition, Herkunft, Begründungen) mit anschließender Aufgabenstellung zur Entwicklung eines eigenen OER und Orientierung an Bewertungskriterien.
 
 tags:
   - OER
-  - Methoden
-  - Medien
-  - Didaktik
+  - Open Educational Resources
   - Open Education
   - Creative Commons
+  - OEP
   - Hochschullehre
   - Präsentation
+  - Didaktik
 
 categories:
   - OER
@@ -39,14 +38,26 @@ oer:
   is_oer: true
   kind: "presentation"
   note: >
-    Präsentation ist als OER ausgewiesen. Einzelne eingebundene Grafiken
-    (z. B. Avatar-Grafiken oder Illustrationen) können abweichende
-    Nutzungsrechte besitzen und sind ggf. als Ausnahmen zu behandeln.
+    Präsentation ist als OER gekennzeichnet. Enthält ggf. Medien/Abbildungen
+    mit abweichenden Nutzungsrechten (z. B. Avatar-Grafiken, lokal eingebundene Bilder).
+    Diese sind als Ausnahmen separat zu behandeln.
 
   creators:
     - name: "Prof. Dr. Matthias Söll"
       given_name: "Matthias"
       family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+    - name: "Marie-Christin Hamann"
+      given_name: "Marie-Christin"
+      family_name: "Hamann"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+    - name: "Laura Wolf"
+      given_name: "Laura"
+      family_name: "Wolf"
       affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
       url: ""
       orcid: ""
@@ -74,19 +85,20 @@ oer:
   time_required: "PT90M"
 
   about:
-    - term: "Methoden und Medien"
     - term: "Open Educational Resources"
     - term: "Creative Commons"
+    - term: "OER-Strategie"
+    - term: "UNESCO"
     - term: "Open Educational Practices"
     - term: "OER-Erstellung"
-    - term: "Didaktische Gestaltung"
+    - term: "TULLU"
 
   rights_exceptions:
     - item: "Avatar-Grafik"
-      note: "Lizenz ggf. abweichend; Nutzung nur im Kontext der Präsentation"
+      note: "Rechte/ Lizenz ggf. abweichend; nur verwenden, wenn entsprechend geklärt"
       path: "/iWIP/bilder/avatare/avatar_erkenntnis_2.png"
-    - item: "Illustration zur OER-Qualität"
-      note: "Urheberschaft/Lizenz prüfen; ggf. als Ausnahme kennzeichnen"
+    - item: "Abbildung zur kooperativen OER-Entwicklung"
+      note: "Lizenz/Urheberschaft prüfen; ggf. Ausnahme kennzeichnen"
       path: "OER_qualitaet.png"
 
   todos: []
@@ -100,11 +112,137 @@ oer:
     veranstaltungstyp=""
     veranstaltung=""
     author="Prof. Dr. Matthias Söll"
-    qr="qrcode.png"
     blog="/iWIP/blog/oer/warum_oer"
 >}}
 
 ---
+
+## Hospitation, Feedback & Reflexion
+
+{{< rawhtml >}}
+<div class="k3-diagram">
+
+  <!-- Titel-Leiste -->
+  <div class="k3-title">
+    Ziel: Professionalisierung (K3: Lehr- und Lernprozesse gestalten)
+  </div>
+
+  <!-- Untere Bubbles – erscheinen zuerst -->
+  <div class="k3-bubbles fragment" data-fragment-index="1">
+    <div class="k3-bubble">Didaktik: Modelle und Konzepte</div>
+    <div class="k3-bubble">Methoden</div>
+    <div class="k3-bubble">Medien</div>
+    <div class="k3-bubble">Lerntheoretische und -psychologische Grundlagen</div>
+  </div>
+
+  <!-- Mittlere Schritte (Planen → Erproben → Analysieren/Bewerten) -->
+  <div class="k3-steps">
+    <div class="k3-step fragment" data-fragment-index="2">
+      Sie <strong>planen</strong><br>Lehr-Lern-Situationen
+    </div>
+
+    <div class="k3-arrow"></div>
+
+    <div class="k3-step fragment" data-fragment-index="3">
+      Sie <strong>erproben</strong> ihr eigenes pädagogisches und didaktisches Handeln
+    </div>
+
+    <div class="k3-arrow"></div>
+
+    <div class="k3-step fragment" data-fragment-index="4">
+      Sie <strong>analysieren und bewerten</strong> das Handeln
+    </div>
+  </div>
+
+  <!-- Rechte Kästen: Hospitieren / Feedbacken -->
+  <div class="k3-side">
+    <div class="k3-step side fragment" data-fragment-index="5">
+      Sie hospitieren
+    </div>
+    <div class="k3-step side fragment" data-fragment-index="6">
+      Sie <strong>feedbacken</strong>
+    </div>
+  </div>
+
+  <!-- Reflexion oben -->
+  <div class="k3-reflect fragment" data-fragment-index="7">
+    Sie <strong>reflektieren</strong>
+  </div>
+
+</div>
+{{< /rawhtml >}}
+
+---
+
+{{< rawhtml >}}
+<div class="k3-step fragment">
+  Testbox – sollte erscheinen!
+</div>
+{{< /rawhtml >}}
+
+---
+
+<section>
+
+<div class="k3-diagram">
+
+  <div class="k3-title">
+    Ziel: Professionalisierung (K3: Lehr- und Lernprozesse gestalten)
+  </div>
+
+  <!-- Bubbles unten – erscheinen zuerst -->
+  <div class="k3-bubbles fragment">
+    <div class="bubble">Didaktik: Modelle und Konzepte</div>
+    <div class="bubble">Methoden</div>
+    <div class="bubble">Medien</div>
+    <div class="bubble">Lerntheoretische und -psychologische Grundlagen</div>
+  </div>
+
+  <!-- Planen → Erproben → Analysieren/Bewerten – gestapelt in der Mitte -->
+  <div class="k3-steps">
+
+    <div class="k3-step fragment">
+      Sie planen<br>Lehr-Lern-Situationen
+    </div>
+
+    <div class="k3-step fragment">
+      Sie erproben ihr eigenes pädagogisches und didaktisches Handeln
+    </div>
+
+    <div class="k3-step fragment">
+      Sie <strong>analysieren und bewerten</strong> das Handeln
+    </div>
+
+  </div>
+
+  <!-- rechte Kästen -->
+  <div class="k3-side fragment">
+    <div class="k3-step side">Sie hospitieren</div>
+    <div class="k3-step side">Sie feedbacken</div>
+  </div>
+
+  <!-- Reflexion oben -->
+  <div class="k3-reflect fragment">
+    Sie <strong>reflektieren</strong>
+  </div>
+
+</div>
+
+</section>
+
+---
+
+{{< callout type="tip" >}}
+Dies ist ein Tipp für die Studierenden.
+{{< /callout >}}
+
+{{< callout type="warning" >}}
+Achtung: Dies ist ein Warnhinweis.
+{{< /callout >}}
+
+{{< callout type="info" >}}
+Eine neutrale Informationsbox.
+{{< /callout >}}
 
 ### OER sind:<br> 🎓🌍🔓
 - Bildungsmaterialien im weiten Sinn  

@@ -1128,7 +1128,229 @@ body.presentation-view .qr-card svg,
 
 
 /* ===========================================================
-   17) End-Slide Feintuning (viele !important – bewusst)
+   17) Presentation-specific: OER Anreizmatrix
+   Quelle: content/praesentation/oer/anreize/_index.md
+   =========================================================== */
+
+.reveal .anreize-avatar-figure {
+  text-align: center;
+  margin: 1.2rem auto;
+}
+
+.reveal .anreize-avatar-image {
+  max-width: 420px;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.reveal .bild-quelle.bild-quelle--compact {
+  font-style: italic;
+  font-size: 0.9rem !important;
+  margin-top: 0.4rem;
+  color: #333;
+}
+
+.reveal .meta-note {
+  font-size: 0.65em !important;
+  font-style: italic;
+}
+
+.reveal .anreize-task-block {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.reveal .anreizmatrix table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  table-layout: fixed;
+}
+
+.reveal .anreizmatrix thead th {
+  background: #f8fafc;
+  text-align: left;
+  font-weight: 700;
+  padding: 0.65em 0.8em;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.reveal .anreizmatrix tbody td {
+  padding: 0.7em 0.8em;
+  vertical-align: middle;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.reveal .anreizmatrix tbody tr:hover td {
+  background: #eef4fb;
+}
+
+.reveal .anreizmatrix td,
+.reveal .anreizmatrix td p,
+.reveal .anreizmatrix ul,
+.reveal .anreizmatrix li {
+  font-size: 0.94rem !important;
+  line-height: 1.4 !important;
+}
+
+.reveal .anreizmatrix ul {
+  margin: 0 0 0.15em 1.05em;
+  padding: 0;
+  list-style: disc outside;
+}
+
+.reveal .anreizmatrix li {
+  margin: 0.08em 0;
+}
+
+.reveal .anreizmatrix table :is(th, td):nth-child(1) {
+  width: 18% !important;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.reveal .anreizmatrix table :is(th, td):nth-child(2) {
+  width: 39% !important;
+  font-size: 0.93rem !important;
+  line-height: 1.38 !important;
+}
+
+.reveal .anreizmatrix table :is(th, td):nth-child(3) {
+  width: 43% !important;
+  font-size: 0.97rem !important;
+  line-height: 1.38 !important;
+}
+
+.reveal .keycap {
+  display: inline-block;
+  min-width: 1.5em;
+  padding: 0.05em 0.4em;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5em;
+  background: #f6f8fa;
+  font: 600 0.9rem/1 system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", Arial, sans-serif;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.reveal .anreizmatrix_2 table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.95rem;
+  line-height: 1.25;
+  table-layout: fixed;
+}
+
+.reveal .anreizmatrix_2 thead th {
+  background: #f8fafc;
+  text-align: left;
+  font-weight: 700;
+  padding: 1.2em 0.65em;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.reveal .anreizmatrix_2 tbody td {
+  padding: 1.2em 0.65em;
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f3f6;
+}
+
+.reveal .anreizmatrix_2 tbody tr:hover td {
+  background: #f5f8fe;
+}
+
+.reveal .anreizmatrix_2 tbody tr:nth-child(even) td {
+  background: #fcfdff;
+}
+
+.reveal .anreizmatrix_2 th,
+.reveal .anreizmatrix_2 td {
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+}
+
+.reveal .anreizmatrix_2 td,
+.reveal .anreizmatrix_2 td p,
+.reveal .anreizmatrix_2 ul,
+.reveal .anreizmatrix_2 li {
+  font-size: 0.94rem !important;
+  line-height: 1.25 !important;
+}
+
+.reveal .anreizmatrix_2 ul {
+  margin: 0 0 0.1em 1.05em;
+  padding: 0;
+  list-style: disc outside;
+}
+
+.reveal .anreizmatrix_2 li {
+  margin: 0.06em 0;
+}
+
+.reveal .anreizmatrix_2 table :is(th, td):nth-child(1) {
+  width: 3% !important;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 0.4em;
+  font-weight: 700;
+}
+
+.reveal .anreizmatrix_2 table :is(th, td):nth-child(2) {
+  width: 13% !important;
+}
+
+.reveal .anreizmatrix_2 table :is(th, td):nth-child(3) {
+  width: 21% !important;
+}
+
+.reveal .anreizmatrix_2 table :is(th, td):nth-child(4) {
+  width: 21% !important;
+}
+
+.reveal .anreizmatrix_2 table :is(th, td):nth-child(5) {
+  width: 21% !important;
+}
+
+.reveal .anreizmatrix_2 table :is(th, td):nth-child(6) {
+  width: 21% !important;
+}
+
+.reveal .ws {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.reveal .ws p {
+  margin: 0.25em 0;
+  line-height: 1.3;
+}
+
+.reveal .ws ul.tight {
+  margin: 0.2em 0 0.4em 1.1rem;
+  line-height: 1.3;
+}
+
+.reveal .ws ul.tight li {
+  margin: 0.08em 0;
+  font-size: 0.7em !important;
+  line-height: 1.3 !important;
+  margin-left: 1rem;
+}
+
+.reveal .ws .note {
+  font-size: 0.65em;
+  font-style: italic;
+  margin-top: 0.35rem;
+}
+
+
+/* ===========================================================
+   18) End-Slide Feintuning (viele !important – bewusst)
    TODO nach 1.0.0: schrittweise reduzieren
    =========================================================== */
 
