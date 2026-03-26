@@ -59,13 +59,14 @@ oer:
     - term: "Wirtschaftsdidaktik"
 
   # Optional: Wenn du To-dos pflegen willst
-  todos: []
+  todos:
+    - "Bilder aus Fortbildung einfügen zu Methoden und Medien, Entscheidungsbaeume"
 ---
 
 <div class="top-toggle">
   <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
-  <!-- <button onclick="location.href='/iWIP/praesentation/widi/hosp_feed_refl/'" title="Zur Präsentationsansicht">🖥️</button> -->
+  <!-- ´´´<button onclick="location.href='/iWIP/praesentation/widi/hosp_feed_refl/'" title="Zur Präsentationsansicht">🖥️</button> -->
   <button class="iwip_help_btn"
         type="button"
         aria-haspopup="dialog"

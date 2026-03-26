@@ -279,6 +279,7 @@ Pflicht für Schritt 7 (Revealartefakte):
 - Wende alle verbindlichen Revealregeln aus `ai_agents/master_agent.md` an
   (insbesondere 3, 9, 16, 22, 23, 24, 34, 36, 37, 38).
 - Frontmatter gegen `ai_agents/templates/reveal_template.md` prüfen.
+- Sicherstellen, dass Reveal-Frontmatter keine OER-Metadaten enthält; OER-Metadaten dürfen ausschließlich im Blog stehen.
 - Zusätzlich die Reveal-Zielgestalt gemäß den Regeln in
   `ai_agents/templates/reveal_template.md` prüfen.
 - Bei formalen Blockern keine Finalausgabe; Blocker präzise ausweisen.

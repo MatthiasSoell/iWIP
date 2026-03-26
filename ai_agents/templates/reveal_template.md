@@ -10,22 +10,24 @@ Emojis werden gemäß **content_emoji_policy.md** verwendet.
 Referenzstil (qualitatives Zielbild):
 
 - `content/praesentation/oer/uplan_ki_oer/_index.md`
-- `content/praesentation/widi/hosp_feed_refl/_index.md`
+- `content/praesentation/lehre/widi/hosp_feed_refl/_index.md`
 
 ---
 
 ## Frontmatter (Pflichtstruktur Reveal)
 
 ```yaml
+---
 title: ""
+date: YYYY-MM-DD
+
 title_reveal: ""
 emojis: ""
 veranstaltungstyp: ""
 veranstaltung: ""
 author: ""
 blog: ""
-source_lastmod: YYYY-MM-DD
-date: YYYY-MM-DD
+
 lastmod: YYYY-MM-DD
 draft: false
 
@@ -33,10 +35,9 @@ outputs:
   - Reveal
 
 reveal_hugo:
-  theme: simple
-  slide_number: true
-  transition: slide
-  custom_theme: /iWIP/css/custom_reveal.css
+  theme: "simple"
+  slideNumber: true
+  hash: true
 
 description: >
   
@@ -44,54 +45,22 @@ description: >
 summary: >
   
 
-tags: []
-categories: []
+tags:
+  - ...
 
-oer:
-  is_oer: true
-  kind: "presentation"
-  note: >
-    
+categories:
+  - ...
 
-  creators:
-    - name: ""
-      given_name: ""
-      family_name: ""
-      affiliation: ""
-      url: ""
-      orcid: ""
-
-  publisher:
-    name: ""
-    url: ""
-
-  license:
-    label: ""
-    url: ""
-
-  source:
-    label: ""
-    url: ""
-
-  in_language: "de"
-  learning_resource_type: "Presentation"
-  educational_level: []
-  audience: []
-  time_required: ""
-
-  about:
-    - term: ""
-
-  rights_exceptions: []
-  todos: []
+todos: []
+---
 ```
 
 Regeln:
 
-- Alle Felder sind verpflichtend, außer `oer.rights_exceptions` und `oer.todos`.
+- Reveal-Frontmatter enthält ausschließlich präsentationsbezogene Metadaten.
+- In Reveal-Dateien sind OER-Metadaten strikt verboten.
+- Verboten sind insbesondere: `oer`, `is_oer`, `kind`, `creators`, `publisher`, `license`, `source`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `time_required`, `about`, `rights_exceptions`.
 - `blog` soll auf den zugehörigen Blogbeitrag zeigen.
-- `source_lastmod` muss den aktuellen `lastmod` des zugehörigen Blogbeitrags enthalten.
-- Migrationsregel: Bei bestehenden Legacy-Reveals ohne `source_lastmod` ist der Nachtrag beim naechsten Reveal-Update verpflichtend.
 - Metadaten müssen kontextspezifisch zur jeweiligen Präsentation ausgefüllt sein (keine Copy-Paste-Werte).
 - Der Agent darf keine Reveal-Datei als final ausgeben,
   wenn Pflichtfelder fehlen oder leer geblieben sind.

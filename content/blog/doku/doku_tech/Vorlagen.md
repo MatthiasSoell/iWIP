@@ -443,3 +443,23 @@ Nicht in dieser Stufe:
 - keine visuelle Umgestaltung,
 - keine Cross-Owner-Verschiebung zwischen Blog- und Reveal-CSS.
 
+### 7.7 Youtube Videos einbetten
+
+{{< rawhtml >}}
+<iframe
+  class="video-embed"
+  width="700"
+  height="394"
+  src="https://www.youtube-nocookie.com/embed/1DlSMQr4D6g"
+  title="Wirksam Feedback geben"
+  loading="lazy"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
+</iframe>
+{{< /rawhtml >}}
+<p class="bild-quelle" style="margin-top:-3px;">
+Quelle: <a href="https://www.youtube.com/watch?v=1DlSMQr4D6g" target="_blank" rel="noopener">
+YouTube: Die Feedbackformel WWW – Mit WWW erfolgreich Feedback geben
+</a>
+</p>

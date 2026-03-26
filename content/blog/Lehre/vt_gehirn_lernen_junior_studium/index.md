@@ -194,7 +194,8 @@ Um Lernen **wissenschaftlich fundiert** zu **verstehen** und zu **gestalten**, s
        alt="Drei autobiografische Lernbeispiele">
 </figure>
 
-<p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+<p class="bildquelle">Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT ·
+Keine freie Lizenz (Rechte bei der dargestellten Person)</p>
 
 Ich habe erst relativ spät angefangen, über mein eigenes **Lernen 🧠** nachzudenken – schade eigentlich.  
 In meiner Schulzeit war Lernen für mich oft **anstrengend**. Besonders das Üben in Mathe: immer wieder **ähnliche Aufgaben**, wenig Abwechslung – das hat mir selten **Spaß** gemacht.  

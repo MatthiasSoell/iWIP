@@ -41,53 +41,9 @@ tags:
 categories:
   - Lehre
 
-oer:
-  is_oer: true
-  kind: "presentation"
-
-  note: >
-    Eigene Folieninhalte stehen unter CC BY-SA 4.0.
-
-  creators:
-    - name: "Prof. Dr. Matthias Söll"
-      given_name: "Matthias"
-      family_name: "Söll"
-      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
-      url: ""
-      orcid: ""
-
-  publisher:
-    name: "Universität Rostock"
-    url: "https://www.uni-rostock.de/"
-
-  license:
-    label: "CC BY-SA 4.0"
-    url: "https://creativecommons.org/licenses/by-sa/4.0/"
-
-  source:
-    label: "Blogbeitrag: Dein Gehirn ist keine Festplatte – Wie Du Dein Lernen boostern kannst"
-    url: "https://matthiassoell.github.io/iWIP/blog/lehre/vt_gehirn_lernen_junior_studium/"
-
-  in_language: "de"
-  learning_resource_type: "Presentation"
-  educational_level:
-    - "Oberstufe"
-  audience:
-    - "Schüler:innen im Juniorstudium"
-  time_required: "PT30M"
-
-  about:
-    - term: "Lerntypen-Mythos"
-    - term: "Lernstrategien"
-    - term: "Selbstreguliertes Lernen"
-    - term: "Digitales Lernen"
-
-  rights_exceptions: []
-  todos: []
+todos: []
 
 ---
-
-<!-- markdownlint-disable MD033 -->
 
 {{< titleSlide >}}
 
@@ -235,6 +191,8 @@ oer:
 
 ---
 
-{{< endSlide >}}
+{{< literatureSlide >}}
 
-<!-- markdownlint-enable MD033 -->
+---
+
+{{< endSlide >}}

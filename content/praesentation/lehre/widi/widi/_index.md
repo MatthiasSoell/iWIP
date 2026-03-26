@@ -1,5 +1,11 @@
 ---
 title: "Wirtschaftsdidaktik"
+title_reveal: "Wirtschaftsdidaktik –<br>Themen & Systematisierung"
+emojis: "🧩 👥 🪞"
+veranstaltungstyp: "🎓 Seminar"
+veranstaltung: "Grundlagen Fachdidaktik Wirtschaft"
+author: "Prof. Dr. Matthias Söll"
+blog: "/iWIP/blog/lehre/widi/widi"
 date: 2025-10-29
 lastmod: 2025-10-29
 draft: false
@@ -41,67 +47,11 @@ categories:
   - Wirtschaftsdidaktik
   - OER
 
-oer:
-  is_oer: true
-  kind: "presentation"
-  note: >
-    Präsentation ist als OER gekennzeichnet. Einzelne Abbildungen (z. B.
-    Whiteboard-Foto aus der Lehrveranstaltung) können nicht frei
-    weiterverwendbar sein und sind ggf. ausgenommen.
+todos: []
 
-  creators:
-    - name: "Prof. Dr. Matthias Söll"
-      given_name: "Matthias"
-      family_name: "Söll"
-      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
-      url: ""
-      orcid: ""
-
-  publisher:
-    name: "Universität Rostock"
-    url: "https://www.uni-rostock.de/"
-
-  license:
-    label: "CC BY-SA 4.0"
-    url: "https://creativecommons.org/licenses/by-sa/4.0/"
-
-  source:
-    label: "Blogbeitrag: Wirtschaftsdidaktik"
-    url: "https://matthiassoell.github.io/iWIP/blog/widi/widi/"
-
-  in_language: "de"
-  learning_resource_type: "Presentation"
-  educational_level:
-    - "Bachelor (grundlagenorientiert)"
-  audience:
-    - "Studierende der Wirtschaftspädagogik"
-  time_required: "PT90M"
-
-  about:
-    - term: "Wirtschaftsdidaktik"
-    - term: "Fachdidaktik"
-    - term: "Ökonomische Bildung"
-    - term: "Didaktische Systematisierung"
-    - term: "Professionalisierung von Lehrkräften"
-
-  rights_exceptions:
-    - item: "Whiteboard-Foto"
-      note: "Fotografische Dokumentation aus der Lehrveranstaltung; keine explizite offene Lizenz"
-      path: "widi_whiteboard.jpg"
-
-  todos: []
 ---
 
-{{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
-
-{{< titleSlide
-    title="Wirtschaftsdidaktik –<br>Themen & Systematisierung"
-    emojis="🧩 👥 🪞"
-    veranstaltungstyp="🎓 Seminar"
-    veranstaltung="Grundlagen Fachdidaktik Wirtschaft"
-    author="Prof. Dr. Matthias Söll"
-    blog="/iWIP/blog/widi/widi"
->}}
+{{< titleSlide >}}
 
 ---
 
@@ -169,9 +119,13 @@ Sie lernen, …
 
 ## 🧩 Systematisierung der Themen
 
-Wir fassen die in den Quellen identifizierten Themenfelder gemeinsam auf **Moderationskarten** zusammen und **clustern** sie nach übergeordneten Bereichen.
+**Zusammenfassung** und **Clusterung** der in den Quellen identifizierten Themenfelder nach übergeordneten Bereichen
 
-![Whiteboard zur Clusterbildung](widi_whiteboard.jpg)
+<figure class="figure-frame figure-frame-sm">
+  <img src="widi_whiteboard.jpg" alt="Whiteboard zur Clusterbildung">
+</figure>
+
+<p class="bild-quelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: CC BY-SA 4.0</p>
 
 ---
 
@@ -192,11 +146,8 @@ Wir fassen die in den Quellen identifizierten Themenfelder gemeinsam auf **Moder
 
 ---
 
-## 📚 Literatur (Auszug)
+{{< literatureSlide >}}
 
-- <a href="https://doi.org/10.25593/978-3-96147-267-3" target="_blank" rel="noopener noreferrer">Arndt, H. (2020)</a>. *Economic Education – Ökonomische Bildung.*  
-- <a href="https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung" target="_blank" rel="noopener noreferrer">Brahm, T., Ring, M., & Schild, K. (o. J.)</a>. *Wirtschaft unterrichten. Offenes Lehrbuch für Wirtschaftsdidaktik.*  
-- <a href="https://elibrary.utb.de/doi/epdf/10.36198/9783838541648" target="_blank" rel="noopener noreferrer">Euler, D., & Hahn, A. (2014)</a>. *Wirtschaftsdidaktik.*  
-- <a href="https://doi.org/10.25656/01:24386" target="_blank" rel="noopener noreferrer">Wilbers, K. (2022)</a>. *Einführung in die Berufs- und Wirtschaftspädagogik.*  
+---
 
-<small>Vollständige Angaben siehe Blogbeitrag.</small>
+{{< endSlide >}}

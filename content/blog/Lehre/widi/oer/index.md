@@ -87,7 +87,8 @@ oer:
     - term: "Metadaten / Auffindbarkeit (OERSI)"
 
   # Optional
-  todos: []
+  todos:
+    - "Inhalte anpassen, v. a. im Hinblick auf didaktische Umsetzbarkeit in 90 Min inkl. Arbeitsauftrag, ggf. flipped-classroom inkl. OER-Spiel"
 ---
 
 <div class="top-toggle">

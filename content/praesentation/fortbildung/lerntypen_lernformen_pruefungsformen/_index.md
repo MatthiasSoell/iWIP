@@ -4,7 +4,7 @@ title_reveal: "Lerntypen, Lernformen & <br>Prüfungsformen evidenzinformiert<br>
 emojis: "🧠 🧩 🎯"
 veranstaltungstyp: "🎓 Online-Lehrkräftefortbildung"
 veranstaltung: ""
-author: "Prof. Dr. Matthias Soell"
+author: "Prof. Dr. Matthias Söll"
 blog: "/iWIP/blog/fortbildung/lerntypen_lernformen_pruefungsformen"
 date: 2026-03-13
 lastmod: 2026-03-17
@@ -42,51 +42,7 @@ categories:
   - Wirtschaftsdidaktik
   - Lehre
 
-oer:
-  is_oer: true
-  kind: "presentation"
-
-  note: >
-    Präsentation ist als OER ausgewiesen. Eigene Folieninhalte stehen unter
-    CC BY-SA 4.0.
-
-  creators:
-    - name: "Prof. Dr. Matthias Soell"
-      given_name: "Matthias"
-      family_name: "Soell"
-      affiliation: "Universitaet Rostock · Institut fuer Wirtschaftspaedagogik"
-      url: ""
-      orcid: ""
-
-  publisher:
-    name: "Universitaet Rostock"
-    url: "https://www.uni-rostock.de/"
-
-  license:
-    label: "CC BY-SA 4.0"
-    url: "https://creativecommons.org/licenses/by-sa/4.0/"
-
-  source:
-    label: "Blogbeitrag: Lerntypen, Lernformen und Pruefungsformen in der Unterrichts- und Schulentwicklung"
-    url: "https://matthiassoell.github.io/iWIP/blog/fortbildung/lerntypen_lernformen_pruefungsformen/"
-
-  in_language: "de"
-  learning_resource_type: "Presentation"
-  educational_level:
-    - "Lehrkraeftefortbildung"
-  audience:
-    - "Lehrkraefte an berufsbildenden Schulen"
-  time_required: "PT90M"
-
-  about:
-    - term: "Lerntypen"
-    - term: "Lernformen"
-    - term: "Pruefungsformen"
-    - term: "Evidenzinformierung"
-    - term: "Constructive Alignment"
-
-  rights_exceptions: []
-  todos: []
+todos: []
 
 ---
 
@@ -156,7 +112,7 @@ Kurz pruefen, ob die Ziele fuer alle plausibel sind.
 Frage: Welcher Lerntyp dominiert bei Ihren Schüler:innen – <br>**a**uditiv, **v**isuell, **h**aptisch, **k**ognitiv oder **s**onstiger?
 
 <figure class="figure-frame figure-frame-sm">
-  <img src="/iWIP/blog/fortbildung/lerntypen_lernformen_pruefungsformen/Lerntypen_1.png" alt="Lerntypen">
+  <img src="Lerntypen.png" alt="Lerntypen">
 </figure>
 
 <p class="bild-quelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit ChatGPT · Lizenz: CC BY-SA 4.0</p>
@@ -200,7 +156,7 @@ Frage: Welcher Lerntyp dominiert bei Ihren Schüler:innen – <br>**a**uditiv, *
 **🧭 Spektrum der Methoden beruflicher Schulen**
 
 {{< rawhtml >}}
-<div class="methoden-bonz-diagram">
+<div class="overlay-fragment-diagram methoden-bonz-diagram">
   
   <img src="methoden_bonz/Methoden_Bonz_1.png" class="fragment plain">
   <img src="methoden_bonz/Methoden_Bonz_2.png" class="fragment plain">

@@ -194,25 +194,21 @@ Prüfe bei Revealartefakten das Frontmatter strikt gegen
 
 Verpflichtend zu prüfen:
 
-- `title`, `title_reveal`, `emojis`, `veranstaltungstyp`, `veranstaltung`, `author`, `blog`, `source_lastmod`, `date`, `lastmod`, `draft`
-- `outputs`, `reveal_hugo.theme`, `reveal_hugo.slide_number`, `reveal_hugo.transition`, `reveal_hugo.custom_theme`
+- `title`, `date`, `title_reveal`, `emojis`, `veranstaltungstyp`, `veranstaltung`, `author`, `blog`, `lastmod`, `draft`
+- `outputs`, `reveal_hugo.theme`, `reveal_hugo.slideNumber`, `reveal_hugo.hash`
 - `description`, `summary`
 - `tags`, `categories`
-- `oer.is_oer`, `oer.kind`, `oer.note`
-- `oer.creators` mit `name`, `given_name`, `family_name`, `affiliation`, `url`, `orcid`
-- `oer.publisher.name`, `oer.publisher.url`
-- `oer.license.label`, `oer.license.url`
-- `oer.source.label`, `oer.source.url`
-- `oer.in_language`, `oer.learning_resource_type`
-- `oer.educational_level`, `oer.audience`, `oer.time_required`
-- `oer.about` (mindestens ein `term`)
-- `oer.rights_exceptions` (optional)
-- `oer.todos` (optional, darf leer sein)
+- `todos` (optional, darf leer sein)
+
+Zusätzlich verpflichtend zu prüfen:
+
+- Reveal darf keinen `oer`-Block und keine OER-Einzelfelder enthalten (`is_oer`, `kind`, `creators`, `publisher`, `license`, `source`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `time_required`, `about`, `rights_exceptions`).
 
 Bewertungsregel:
 
 - Fehlende Pflichtfelder, leere Pflichtfelder oder falsch strukturierte Pflichtfelder sind **Blocker**.
 - Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls **Blocker**.
+- Vorhandene OER-Metadaten in Reveal sind **Blocker**.
 - Zusätzlich gelten die Blocker-/Hinweislogiken aus `ai_agents/master_agent.md`
     (insbesondere 16, 23, 24, 29, 33, 34, 37, 38) unverändert.
 - Ein Revealartefakt darf bei Blockern nicht als "final" bewertet werden.

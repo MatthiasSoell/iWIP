@@ -1,5 +1,11 @@
 ---
 title: "Frei nutzbare Lehr-Lern-Materialien – OER"
+title_reveal: "Frei nutzbare Lehr-Lern-Materialien –<br>OER<br>"
+emojis: "🎓 🌍 🔓"
+veranstaltungstyp: "🎓 Seminar"
+veranstaltung: "Grundlagen Fachdidaktik Wirtschaft"
+author: "Prof. Dr. Matthias Söll"
+blog: "/iWIP/blog/lehre/widi/oer"
 date: 2025-11-05
 lastmod: 2025-11-05
 draft: false
@@ -34,215 +40,14 @@ tags:
 categories:
   - OER
 
-oer:
-  is_oer: true
-  kind: "presentation"
-  note: >
-    Präsentation ist als OER gekennzeichnet. Enthält ggf. Medien/Abbildungen
-    mit abweichenden Nutzungsrechten (z. B. Avatar-Grafiken, lokal eingebundene Bilder).
-    Diese sind als Ausnahmen separat zu behandeln.
-
-  creators:
-    - name: "Prof. Dr. Matthias Söll"
-      given_name: "Matthias"
-      family_name: "Söll"
-      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
-      url: ""
-      orcid: ""
-    - name: "Marie-Christin Hamann"
-      given_name: "Marie-Christin"
-      family_name: "Hamann"
-      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
-      url: ""
-      orcid: ""
-    - name: "Laura Wolf"
-      given_name: "Laura"
-      family_name: "Wolf"
-      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
-      url: ""
-      orcid: ""
-
-  publisher:
-    name: "SciBlog iWIP – Universität Rostock"
-    url: "https://matthiassoell.github.io/iWIP/"
-
-  license:
-    label: "CC BY-SA 4.0"
-    url: "https://creativecommons.org/licenses/by-sa/4.0/"
-
-  source:
-    label: "Blogbeitrag: Frei nutzbare Lehr-Lern-Materialien – OER"
-    url: "https://matthiassoell.github.io/iWIP/blog/oer/warum_oer/"
-
-  in_language: "de"
-  learning_resource_type: "Presentation"
-  educational_level:
-    - "Hochschule / Weiterbildung"
-  audience:
-    - "Studierende"
-    - "Lehrende"
-    - "Interessierte an Open Education"
-  time_required: "PT90M"
-
-  about:
-    - term: "Open Educational Resources"
-    - term: "Creative Commons"
-    - term: "OER-Strategie"
-    - term: "UNESCO"
-    - term: "Open Educational Practices"
-    - term: "OER-Erstellung"
-    - term: "TULLU"
-
-  rights_exceptions:
-    - item: "Avatar-Grafik"
-      note: "Rechte/ Lizenz ggf. abweichend; nur verwenden, wenn entsprechend geklärt"
-      path: "/iWIP/bilder/avatare/avatar_erkenntnis_2.png"
-    - item: "Abbildung zur kooperativen OER-Entwicklung"
-      note: "Lizenz/Urheberschaft prüfen; ggf. Ausnahme kennzeichnen"
-      path: "OER_qualitaet.png"
-
-  todos: []
----
-
-{{< logoBox src="/iWIP/bilder/logo_siblog_iwip.png" text="SciBlog iWIP" show="true" >}}
-
-{{< titleSlide
-    title="Frei nutzbare Lehr-Lern-Materialien – OER"
-    emojis="🎓 🌍 🔓"
-    veranstaltungstyp=""
-    veranstaltung=""
-    author="Prof. Dr. Matthias Söll"
-    blog="/iWIP/blog/oer/warum_oer"
->}}
+todos:
+    - "Praesentation inhaltlich aktualisieren, nicht alle Materialien aus dem Blog sind adressat:innengerecht abgebildet"
 
 ---
 
-## Hospitation, Feedback & Reflexion
-
-{{< rawhtml >}}
-<div class="k3-diagram">
-
-  <!-- Titel-Leiste -->
-  <div class="k3-title">
-    Ziel: Professionalisierung (K3: Lehr- und Lernprozesse gestalten)
-  </div>
-
-  <!-- Untere Bubbles – erscheinen zuerst -->
-  <div class="k3-bubbles fragment" data-fragment-index="1">
-    <div class="k3-bubble">Didaktik: Modelle und Konzepte</div>
-    <div class="k3-bubble">Methoden</div>
-    <div class="k3-bubble">Medien</div>
-    <div class="k3-bubble">Lerntheoretische und -psychologische Grundlagen</div>
-  </div>
-
-  <!-- Mittlere Schritte (Planen → Erproben → Analysieren/Bewerten) -->
-  <div class="k3-steps">
-    <div class="k3-step fragment" data-fragment-index="2">
-      Sie <strong>planen</strong><br>Lehr-Lern-Situationen
-    </div>
-
-    <div class="k3-arrow"></div>
-
-    <div class="k3-step fragment" data-fragment-index="3">
-      Sie <strong>erproben</strong> ihr eigenes pädagogisches und didaktisches Handeln
-    </div>
-
-    <div class="k3-arrow"></div>
-
-    <div class="k3-step fragment" data-fragment-index="4">
-      Sie <strong>analysieren und bewerten</strong> das Handeln
-    </div>
-  </div>
-
-  <!-- Rechte Kästen: Hospitieren / Feedbacken -->
-  <div class="k3-side">
-    <div class="k3-step side fragment" data-fragment-index="5">
-      Sie hospitieren
-    </div>
-    <div class="k3-step side fragment" data-fragment-index="6">
-      Sie <strong>feedbacken</strong>
-    </div>
-  </div>
-
-  <!-- Reflexion oben -->
-  <div class="k3-reflect fragment" data-fragment-index="7">
-    Sie <strong>reflektieren</strong>
-  </div>
-
-</div>
-{{< /rawhtml >}}
+{{< titleSlide >}}
 
 ---
-
-{{< rawhtml >}}
-<div class="k3-step fragment">
-  Testbox – sollte erscheinen!
-</div>
-{{< /rawhtml >}}
-
----
-
-<section>
-
-<div class="k3-diagram">
-
-  <div class="k3-title">
-    Ziel: Professionalisierung (K3: Lehr- und Lernprozesse gestalten)
-  </div>
-
-  <!-- Bubbles unten – erscheinen zuerst -->
-  <div class="k3-bubbles fragment">
-    <div class="bubble">Didaktik: Modelle und Konzepte</div>
-    <div class="bubble">Methoden</div>
-    <div class="bubble">Medien</div>
-    <div class="bubble">Lerntheoretische und -psychologische Grundlagen</div>
-  </div>
-
-  <!-- Planen → Erproben → Analysieren/Bewerten – gestapelt in der Mitte -->
-  <div class="k3-steps">
-
-    <div class="k3-step fragment">
-      Sie planen<br>Lehr-Lern-Situationen
-    </div>
-
-    <div class="k3-step fragment">
-      Sie erproben ihr eigenes pädagogisches und didaktisches Handeln
-    </div>
-
-    <div class="k3-step fragment">
-      Sie <strong>analysieren und bewerten</strong> das Handeln
-    </div>
-
-  </div>
-
-  <!-- rechte Kästen -->
-  <div class="k3-side fragment">
-    <div class="k3-step side">Sie hospitieren</div>
-    <div class="k3-step side">Sie feedbacken</div>
-  </div>
-
-  <!-- Reflexion oben -->
-  <div class="k3-reflect fragment">
-    Sie <strong>reflektieren</strong>
-  </div>
-
-</div>
-
-</section>
-
----
-
-{{< callout type="tip" >}}
-Dies ist ein Tipp für die Studierenden.
-{{< /callout >}}
-
-{{< callout type="warning" >}}
-Achtung: Dies ist ein Warnhinweis.
-{{< /callout >}}
-
-{{< callout type="info" >}}
-Eine neutrale Informationsbox.
-{{< /callout >}}
 
 ### OER sind:<br> 🎓🌍🔓
 - Bildungsmaterialien im weiten Sinn  
@@ -388,3 +193,11 @@ Eine neutrale Informationsbox.
 | Gestaltung & Verständlichkeit | 10 |
 | Kreativität & Eigenleistung | 10 |
 | **Gesamt** | **100** |
+
+---
+
+{{< literatureSlide >}}
+
+---
+
+{{< endSlide >}}

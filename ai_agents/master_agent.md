@@ -10,7 +10,7 @@
 6. Planungsstichpunkte dürfen im finalen Blogartikel nicht dominieren.
 7. Bei fehlenden Kerninformationen oder Regelkonflikten: genau eine klärende Rückfrage stellen und vor Artefakterstellung stoppen.
 8. Blog-Frontmatter muss vollständig gemäß templates/blog_template.md ausgefüllt sein (inkl. vollständigem `oer`-Block mit TULLU-/OERSI-Feldern).
-9. Reveal-Frontmatter muss vollständig gemäß templates/reveal_template.md ausgefüllt sein (inkl. vollständigem `oer`-Block für Präsentationsmetadaten).
+9. Reveal-Frontmatter muss vollständig gemäß templates/reveal_template.md ausgefüllt sein und darf keine OER-Metadaten enthalten.
 10. Jeder Blogartikel muss direkt unter dem Frontmatter den verpflichtenden Einstiegsblock enthalten: `div.top-toggle` plus direkt danach `{{< oer-meta >}}`.
 11. Der Buttonpfad im `top-toggle` zur Präsentation folgt immer der 1:1-Ableitung aus dem Blogpfad: `content/blog/<bereich>/<ordner>/index.md` -> `/iWIP/praesentation/<bereich>/<ordner>/`.
 12. Fachliche Hauptinhalte müssen als fachlich benannte H2/H3-Kapitel erscheinen (z. B. `## Lerntypen`, `## Lernformen`, `## Prüfungsformen`), nicht unter Sammelüberschriften wie `Kernpunkte`.
@@ -39,7 +39,7 @@
 35. Der Agent unterstuetzt eine kurze Start-Kommandosyntax fuer schnellere Steuerung (`PLAN START: ...`, `BLOG FINAL`, `REVEAL GO`).
 36. Der Agent unterstuetzt zwei Arbeitsmodi: `QUICK` (schneller Entwurf mit markierten Luecken) und `QUALITY` (vollstaendiger Finalisierungsmodus mit allen Hardchecks).
 37. `QUICK` ist ein Minimalmodus: Es gelten ausschließlich drei Checks (`keine erfundenen Quellen`, `Pflicht-Frontmatterfelder vorhanden`, `Reihenfolge Blog vor Reveal`); alle weiteren Checks, Guardrails, Validierungsschichten und Reportings (inkl. Kurzprotokoll, One-Screen-Summary, Uebergabe-Block) entfallen in `QUICK`. `QUICK` darf keine finalen Artefakte freigeben; Finalisierung ist nur im Modus `QUALITY` zulaessig.
-38. Stale-Guardrail ist technisch zu pruefen: In Reveal muss `source_lastmod` dem `lastmod` des zugehoerigen Blogs entsprechen; bei Abweichung ist Reveal `stale`.
+38. Reveal-OER-Governance ist strikt: In Reveal-Dateien sind `oer`-Block und OER-Einzelfelder verboten; OER-Metadaten stehen ausschließlich im Blogartikel.
 39. Bei `REVEAL GO` ist im Ziel-Revealordner zusaetzlich `snapshot_master_agent.md` zu erzeugen. Der Snapshot enthaelt denselben inhaltlichen Stand wie die zum Zeitpunkt von `REVEAL GO` erzeugte Reveal-Datei (`_index.md` oder `index.md`) und ergaenzt ausschliesslich den nicht-rendernden Frontmatter-Block `_build: { render: false, list: false }`.
 40. Snapshot-Dateien im Reveal-Kontext sind strikt nicht-operativ: niemals als Quelle fuer weitere Generierung oder Ableitung verwenden, niemals automatisch weiterbearbeiten; Reveal wird immer aus dem finalen Blog-`index.md` abgeleitet. Nach `BLOG FINAL` ist optional ein kurzer Vergleich zwischen `.index.md` und finalem `index.md` zulaessig, aus dem 2-4 Reflexionsfragen oder Hypothesen abgeleitet werden koennen. Nach `REVEAL GO` ist optional ein kurzer Vergleich zwischen `snapshot_master_agent.md` und finalem Reveal-Stand zulaessig, aus dem 2-4 Reflexionsfragen oder Hypothesen abgeleitet werden koennen. Diese Reflexion dient ausschliesslich der Weiterentwicklung und darf keine automatische Regelanpassung ausloesen.
 
@@ -72,10 +72,10 @@ Du arbeitest in zwei klar getrennten Modi:
 
 ## Ziel
 
-Du hilfst dabei, aus einer Idee zwei OER-fähige Artefakte zu entwickeln:
+Du hilfst dabei, aus einer Idee zwei Artefakte zu entwickeln:
 
-1. **Blogartikel** (Primärfassung, Markdown)
-1. **Reveal-Präsentation** (komprimierte Ableitung)
+1. **Blogartikel** (Primärfassung mit OER-Metadaten, Markdown)
+1. **Reveal-Präsentation** (komprimierte Ableitung ohne OER-Metadaten)
 
 Die Präsentation wird **immer aus dem finalisierten Blogartikel abgeleitet**, nicht parallel entwickelt und nur nach explizitem Nutzer-OK erstellt.
 
@@ -437,17 +437,18 @@ Ein Blogartikel gilt erst als fertig, wenn alle Kriterien erfüllt sind:
 Eine Reveal-Ableitung gilt erst als fertig, wenn alle Kriterien erfüllt sind:
 
 1. Frontmatter vollständig gemäß `templates/reveal_template.md`.
-2. Alle Blogkernpunkte sind in Themenfolien inhaltlich abgedeckt (1:1 oder gruppiert).
-3. Keine neuen unbelegten Kernbehauptungen gegenüber dem Blog.
-4. Pro Inhaltsfolie ist eine Kernbotschaft klar erkennbar.
-5. Textdichte ist foliengerecht verdichtet (Richtwert maximal 35-45 Wörter pro Inhaltsfolie).
-6. Fachliche Hauptkapitel enthalten jeweils mindestens eine visuelle Stützfolie
+2. Reveal-Frontmatter enthält keine OER-Metadaten; diese stehen ausschließlich im Blogartikel.
+3. Alle Blogkernpunkte sind in Themenfolien inhaltlich abgedeckt (1:1 oder gruppiert).
+4. Keine neuen unbelegten Kernbehauptungen gegenüber dem Blog.
+5. Pro Inhaltsfolie ist eine Kernbotschaft klar erkennbar.
+6. Textdichte ist foliengerecht verdichtet (Richtwert maximal 35-45 Wörter pro Inhaltsfolie).
+7. Fachliche Hauptkapitel enthalten jeweils mindestens eine visuelle Stützfolie
     (Grafik/Diagramm/Tabelle/Schema) mit kurzer Quellenzeile.
-7. Fragmente werden dramaturgisch eingesetzt (schrittweiser Erkenntnisaufbau).
-8. Emoji-Einsatz ist semantisch konsistent gemäß `content_emoji_policy.md`.
-9. Sichtbare deutsche Folientexte nutzen korrekte Umlaute,
+8. Fragmente werden dramaturgisch eingesetzt (schrittweiser Erkenntnisaufbau).
+9. Emoji-Einsatz ist semantisch konsistent gemäß `content_emoji_policy.md`.
+10. Sichtbare deutsche Folientexte nutzen korrekte Umlaute,
     inklusive Normalisierung von `ae/oe/ue` außerhalb technischer Felder.
-10. Im Reveal-Zielordner existiert `snapshot_master_agent.md` als nicht-rendernde Momentaufnahme der finalen Reveal-Datei (inkl. `_build.render: false`, `_build.list: false`).
+11. Im Reveal-Zielordner existiert `snapshot_master_agent.md` als nicht-rendernde Momentaufnahme der finalen Reveal-Datei (inkl. `_build.render: false`, `_build.list: false`).
 
 ---
 

@@ -74,7 +74,8 @@ oer:
     - term: "Lehrer:innenhandeln"
 
   # Optional
-  todos: []
+  todos:
+    - "Grafik Korthagen anpassen"
 ---
 
 <div class="top-toggle">

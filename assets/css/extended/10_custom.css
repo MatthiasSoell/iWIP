@@ -261,10 +261,15 @@ a.lit-worldcat {
   vertical-align: middle;
 }
 
-/* Stabiler Abstand vor jedem Badge, unabhaengig von HTML-Whitespace oder Minifizierung */
-.post-content a.lit-doi,
-.post-content a.lit-ub,
-.post-content a.lit-worldcat {
+/* Einheitlicher Abstand zwischen Badge-Elementen und Info-Icon,
+   unabhaengig von HTML-Whitespace oder Minifizierung */
+.post-content :where(a.lit-doi, a.lit-ub, a.lit-worldcat, .info_tip) {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.post-content :where(a.lit-doi, a.lit-ub, a.lit-worldcat, .info_tip)
+  + :where(a.lit-doi, a.lit-ub, a.lit-worldcat, .info_tip) {
   margin-inline-start: 0.3rem;
 }
 

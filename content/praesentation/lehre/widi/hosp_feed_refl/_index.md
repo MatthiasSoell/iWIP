@@ -43,57 +43,9 @@ categories:
   - Didaktik
   - Wirtschaftsdidaktik
 
-oer:
-  is_oer: true
-  kind: "presentation"
-  note: >
-    Präsentation ist als OER ausgewiesen. Eigene Grafiken stehen unter
-    CC BY 4.0. Eingebettete externe Inhalte (z. B. YouTube-Videos) unterliegen
-    den jeweiligen Nutzungsbedingungen der Plattformen.
+todos:
+    - "Grafik Professionalisierung und ALACT ggf. entzerren"
 
-  creators:
-    - name: "Prof. Dr. Matthias Söll"
-      given_name: "Matthias"
-      family_name: "Söll"
-      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
-      url: ""
-      orcid: ""
-
-  publisher:
-    name: "SciBlog iWIP – Universität Rostock"
-    url: "https://matthiassoell.github.io/iWIP/"
-
-  license:
-    label: "CC BY-SA 4.0"
-    url: "https://creativecommons.org/licenses/by-sa/4.0/"
-
-  source:
-    label: "Blogbeitrag: Allgemeine Didaktik & Fachdidaktik"
-    url: "https://matthiassoell.github.io/iWIP/blog/widi/did_allg_fach/"
-
-  in_language: "de"
-  learning_resource_type: "Presentation"
-  educational_level:
-    - "Bachelor (Lehramt / Wirtschaftspädagogik)"
-  audience:
-    - "Studierende der Wirtschaftspädagogik"
-    - "Angehende Lehrkräfte"
-  time_required: "PT90M"
-
-  about:
-    - term: "Hospitation"
-    - term: "Feedback"
-    - term: "Reflexion"
-    - term: "Professionalisierung"
-    - term: "Lehrkräftebildung"
-    - term: "Didaktische Handlungskompetenz"
-
-  rights_exceptions:
-    - item: "Eingebettete YouTube-Videos"
-      note: "Externe Inhalte, Nutzung gemäß YouTube-Nutzungsbedingungen"
-      path: "https://www.youtube.com/"
-  
-  todos: []
 ---
 
 {{< titleSlide >}}
@@ -104,7 +56,7 @@ oer:
 <p style="margin-top: -1.6rem;">(Baumert & Kunter 2006)</p>
 
 {{< rawhtml >}}
-<div class="figure-frame-sm">
+<div class="figure-frame-sm overlay-fragment-diagram">
   
   <img src="prof/prof_1.png" class="plain">
   
@@ -114,8 +66,10 @@ oer:
   <img src="prof/prof_5.png" class="fragment plain">
   <img src="prof/prof_6.png" class="fragment plain">
   <img src="prof/prof_7.png" class="fragment plain">
+
 </div>
 {{< /rawhtml >}}
+
 <p class="bild-quelle" data-fragment-index="1">Bildquelle: Eigene Darstellung · Lizenz: CC BY 4.0</p>
 
 ---
@@ -151,8 +105,9 @@ oer:
 
 ## 1️⃣ Hospitation
 
-  <img src="hospitationsbogen.png" class="plain" style="width:80%; height:auto;">
-  <p class="bild-quelle" data-fragment-index="1" style="margin-top: -1.6rem;">Bildquelle: Eigene Darstellung · Lizenz: CC BY 4.0</p>
+  <img src="/iWIP/bilder/widi/hosp_feed_refl/hospitationsbogen.png" class="figure-frame figure-frame-ssm" alt="Hospitationsbogen">
+  
+  <p class="bild-quelle">Bildquelle: Eigene Darstellung · Lizenz: CC BY 4.0</p>
 
 ---
 
@@ -240,10 +195,10 @@ YouTube: Die Feedbackformel WWW – Mit WWW erfolgreich Feedback geben
 ---
 
 ## Reflexionsmodell: ALACT
-<p style="margin-top: -1.6rem;">(Korthagen 2002)</p>
+<p>(Korthagen 2002)</p>
 
-  <img src="alact.png" class="plain" style="width:75%; height:auto; margin-top:-10px;">
-  <p class="bild-quelle" data-fragment-index="1" style="margin-top: -1.6rem;">Bildquelle: Eigene Darstellung in Anlehnung an Müller (2007) · Lizenz: CC BY 4.0</p>
+  <img src="/iWIP/bilder/widi/hosp_feed_refl/alact.png" class="figure-frame-sm overlay-fragment-diagram" alt="ALACT-Reflexionsmodell">
+  <p class="bild-quelle">Bildquelle: Eigene Darstellung in Anlehnung an Müller (2007) · Lizenz: CC BY 4.0</p>
 
 ---
 

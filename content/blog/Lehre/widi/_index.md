@@ -1,15 +1,15 @@
 ---
 title: "Grundlagen didaktischen Handelns in Schule und Betrieb (Fachdidaktik Wirtschaft)"
 description: >
-  Modulübersicht zur Fachdidaktik Wirtschaft im Bachelorstudium Wirtschaftspädagogik mit Materialien und Lehr-Lern-Arrangements zu Planung, Gestaltung und Reflexion von Unterricht in Schule und Betrieb.
+  Modul Fachdidaktik Wirtschaft: Unterricht in der wirtschaftsberuflichen Bildung planen, gestalten und reflektieren – mit Materialien, Beispielen und Impulsen für Studium und Praxis."
 summary: >
-  Modulrahmen der Fachdidaktik Wirtschaft im Bachelorstudium Wirtschaftspädagogik: didaktische Modelle, Methoden, Medien und lernpsychologische Grundlagen.
+  Seminarveranstaltungen des Moduls Fachdidaktik Wirtschaft im Bachelorstudium Wirtschaftspädagogik: didaktische Modelle, Methoden, Medien und lernpsychologische Grundlagen.
 
 date: 2025-10-20
 lastmod: 2025-10-20
 
-hideDescription: true
-hideSummary: true
+hideDescription: false
+hideSummary: false
 
 tags:
   - Wirtschaftsdidaktik
