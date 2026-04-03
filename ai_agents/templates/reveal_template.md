@@ -9,7 +9,7 @@ Emojis werden gemäß **content_emoji_policy.md** verwendet.
 
 Referenzstil (qualitatives Zielbild):
 
-- `content/praesentation/oer/uplan_ki_oer/_index.md`
+- `content/praesentation/fortbildung/uplan_ki_oer/_index.md`
 - `content/praesentation/lehre/widi/hosp_feed_refl/_index.md`
 
 ---
@@ -66,6 +66,11 @@ Regeln:
   wenn Pflichtfelder fehlen oder leer geblieben sind.
 - Pflichtfelder muessen semantisch gefuellt sein (keine Platzhalterwerte wie `TODO`, `tbd`, `-`, `...`).
 - Ohne explizites Nutzer-OK darf keine Reveal-Datei erstellt, aktualisiert oder finalisiert werden.
+
+## Freigaberegel (verbindlich)
+
+- Reveal-Dateien duerfen ausschliesslich nach dem Signal `REVEAL GO` erzeugt oder finalisiert werden.
+- Allgemeines Nutzer-OK ist nicht ausreichend.
 
 ---
 

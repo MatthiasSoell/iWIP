@@ -35,8 +35,8 @@ Regel:
 - Bei `Meta-Arbeit` keine Artefakte erzeugen.
 - Bei `Artefakt-Arbeit` den folgenden Ablauf vollstaendig durchlaufen.
 
-Schnelle Kommandosyntax, Arbeitsmodi und Modusregeln folgen verbindlich
-den Core Rules in `ai_agents/master_agent.md` (insbesondere 31, 32, 35, 36, 37).
+Schnelle Kommandosyntax, Profilwahl und Modusregeln folgen verbindlich
+den Core Rules in `ai_agents/master_agent.md` (insbesondere 31, 32, 35, 36, 37, 38).
 
 ---
 
@@ -185,56 +185,18 @@ den Core Rules in `ai_agents/master_agent.md` (insbesondere 32, 35).
 
 Nach Abschluss der Planung wird der Entwurf in einen Blogartikel für externe Leser:innen transformiert.
 
-Finalisierungsregel:
+Finalisierungsregel (Gate-basierter Rigor, Core Rule 38):
 
-- Finale Blogausgabe ist nur im Modus `QUALITY` zulaessig.
-- Im Modus `QUICK` stattdessen Entwurf + offene Punkte ausgeben.
-- In QUICK endet der Workflow hier. Schritte 7-10 werden nicht durchlaufen.
+- Finale Blogausgabe ist nur bei vollstaendigem Check-Durchlauf zulaessig (`BLOG FINAL`).
+- Waehrend der Entwurfsarbeit (`.index.md`) gelten die Minimal-Checks gemaess Core Rule 38 in `ai_agents/master_agent.md`.
+- Bei `BLOG FINAL` greifen automatisch alle Hardchecks, Guardrails und Reportings.
 - Bei `BLOG FINAL` wird der finale Blogartikel (`index.md`) aus der bearbeiteten `.index.md` abgeleitet; die `.index.md` bleibt als nicht-rendernder Arbeitsstand erhalten.
 
-Verbindliche Regeln:
+Schlankheitsregel:
 
-- schreibe nicht als internes Planungsdokument,
-- formuliere erklärend und einordnend für Leser:innen,
-- nutze den Ablauf nur unterstützend,
-- arbeite die zentralen Inhalte als Fließtext aus,
-- integriere die Kernquellen sichtbar im Text.
-
-Stilregel für die Blogausgabe:
-
-- orientiere dich an der publizistischen Qualität der etablierten SciBlog-Beiträge,
-- nutze semantische Emojis als Strukturhilfe (funktional, nicht dekorativ),
-- formuliere mit sichtbarem Spannungsbogen statt neutraler Standardprosa.
-- stelle den Ablauf bei sitzungs- oder fortbildungsbezogenen Beiträgen im
-  `div class="agenda"`-Tabellenformat dar.
-- Formatiere die Zeitspalte in Agenda-Tabellen standardmäßig als `Zahl<br>Min` (z. B. `25<br>Min`).
-- setze direkt unter dem Frontmatter immer den verpflichtenden Einstiegsblock aus `div.top-toggle` und anschließend `{{< oer-meta >}}`.
-- leite den Präsentationspfad im `top-toggle` immer aus dem Blogpfad ab:
-  `content/blog/<bereich>/<ordner>/index.md` -> `/iWIP/praesentation/<bereich>/<ordner>/`.
-
-Quellenregeln, Quellen-Hardcheck, Quellen-Statusreport, Literatur-Freeze
-und Reporting folgen verbindlich den Core Rules
-in `ai_agents/master_agent.md` (insbesondere 19, 25, 26, 33, 37).
-
-Geltung:
-
-- Die obigen Regeln gelten in dieser Auspraegung im Modus `QUALITY`.
-- In `QUICK` gelten ausschließlich die drei Minimalchecks gemaess
-  `ai_agents/master_agent.md` (Core Rule 37).
-
-Pflicht für die inhaltliche Gliederung:
-
-- zuerst die fachlich sinnvolle Anzahl an Kernpunkten bestimmen,
-- danach genau diese Anzahl an Kernabschnitten ausformulieren,
-- pro Kernabschnitt mindestens ein nachvollziehbarer Quellenbezug,
-- zusätzlich vollständiges Literaturverzeichnis.
-- Meta-Reflexion zu Methoden und Medien standardmäßig im Abschnitt `Hintergrund` integrieren.
-- Keine separaten Standardabschnitte `Methoden`, `Medien`, `Reflexion`, wenn diese Inhalte bereits in `Hintergrund` und den Kernabschnitten enthalten sind.
-- Fachliche Hauptinhalte als H2/H3 mit Fachbezeichnungen ausgeben (z. B. `## Lerntypen`, `## Lernformen`, `## Prüfungsformen`).
-- Keine Sammelüberschrift wie `Kernpunkte` oder `Kernpunkte mit Evidenz` im Artikelkörper.
-- Nutzerinput pro Hauptkapitel (Stichpunkte + kurze Sätze) kapitelweise übernehmen und in publizistischen, leser:innenfreundlichen Fließtext transformieren.
-- Bei Bedarf je Hauptkapitel passende Grafiken/Tabellen im bestehenden Stil ergänzen.
-- Dialogische Schreibschleife nutzen: pro Hauptkapitel kurz abstimmen (Input -> Ausformulierung -> nächstes Kapitel), statt den Gesamttext blind in einem Schritt zu erzeugen.
+- Stil, Perspektive, Quellen-Governance, Terminologie-/Typografie-Checks, Reporting und DQM folgen den Core Rules in `ai_agents/master_agent.md` (insbesondere 4-6, 10-15, 19-20, 23, 25-26, 28, 33, 38, 43-44).
+- Blogstruktur und Pflichtmetadaten folgen `ai_agents/templates/blog_template.md`.
+- Dieser Prompt steuert primär Ablauf und Interaktion; Detailregeln werden nicht doppelt gepflegt.
 
 Pflicht für die finale Literaturaufbereitung (am Ende von Schritt 6):
 
@@ -258,51 +220,36 @@ verwende standardmäßig **redaktionell ausformulieren**.
 
 ## Schritt 7 – Abnahmeprüfung vor finaler Ausgabe
 
-Vor der finalen Ausgabe prüfe zwingend:
-
-1. Leser:innenperspektive statt Planer:innenperspektive,
-2. inhaltliche Argumentation statt Ablaufprotokoll,
-3. Kernpunkte mit Evidenz vollständig,
-4. Quellen im Text und im Literaturverzeichnis konsistent,
-5. Stil und Gestaltung sind blog- bzw. präsentationsnah, nicht generisch,
-6. Frontmatter vollständig gemäß `ai_agents/templates/blog_template.md`.
+Vor der finalen Ausgabe pruefe zwingend die Artefaktqualitaet gemaess
+`ai_agents/master_agent.md` und den zugehoerigen Templates.
 
 Pflicht für Schritt 7 (Blogartefakte):
 
 - Wende alle verbindlichen Blogregeln aus `ai_agents/master_agent.md` an
-  (insbesondere 8, 10, 11, 20, 23, 28, 29).
+  (insbesondere 8, 10, 11, 20, 23, 28, 29, 38).
 - Frontmatter gegen `ai_agents/templates/blog_template.md` prüfen.
 - Bei formalen Blockern keine Finalausgabe; Blocker präzise ausweisen.
 
 Pflicht für Schritt 7 (Revealartefakte):
 
 - Wende alle verbindlichen Revealregeln aus `ai_agents/master_agent.md` an
-  (insbesondere 3, 9, 16, 22, 23, 24, 34, 36, 37, 38).
-- Frontmatter gegen `ai_agents/templates/reveal_template.md` prüfen.
+  (insbesondere 3, 9, 16, 22, 23, 24, 34, 38, 40, 41).
+- Frontmatter und Reveal-Zielgestalt gegen `ai_agents/templates/reveal_template.md` prüfen.
 - Sicherstellen, dass Reveal-Frontmatter keine OER-Metadaten enthält; OER-Metadaten dürfen ausschließlich im Blog stehen.
-- Zusätzlich die Reveal-Zielgestalt gemäß den Regeln in
-  `ai_agents/templates/reveal_template.md` prüfen.
 - Bei formalen Blockern keine Finalausgabe; Blocker präzise ausweisen.
-- Bei `REVEAL GO` im Reveal-Zielordner zusaetzlich `snapshot_master_agent.md` erzeugen
-- Snapshot-Regel Reveal: Der Snapshot enthaelt denselben inhaltlichen Stand wie die zum Zeitpunkt von `REVEAL GO` erzeugte Reveal-Datei (`_index.md` oder `index.md`) und ergaenzt ausschliesslich den nicht-rendernden Frontmatter-Block:
-
-```yaml
-_build:
-  render: false
-  list: false
-```
-
+- Bei `REVEAL GO` im Reveal-Zielordner zusaetzlich `reveal_snapshot.md` erzeugen (gemäß Core Rule 41).
 - Reveal-Ableitung bleibt strikt blogbasiert: immer aus finalem Blog-`index.md`, nie aus Snapshot-Dateien.
 
 Datums-/Versions-Guardrail und Reporting
 folgen verbindlich den Core Rules in `ai_agents/master_agent.md`
-(insbesondere 29, 33, 37, 38).
+(insbesondere 29, 33, 38, 40, 43).
 
-Geltung:
+Wenn Hardchecks fehlschlagen, gilt verpflichtend der Fehlerpfad aus Core Rule 38:
 
-- Die obigen Regeln gelten im Modus `QUALITY`.
-- In `QUICK` gelten ausschließlich die drei Minimalchecks gemaess
-  `ai_agents/master_agent.md` (Core Rule 37).
+- Finalisierung stoppen,
+- kompakte Blockerliste ausgeben,
+- Korrekturrunde unterstuetzen,
+- Re-Check vor erneuter Finalisierung.
 
 Wenn ein Punkt nicht erfüllt ist, überarbeite vor Ausgabe automatisch.
 
@@ -310,14 +257,11 @@ Wenn ein Punkt nicht erfüllt ist, überarbeite vor Ausgabe automatisch.
 
 ## Schritt 8 – Literatur-Finalisierung (verbindlich)
 
-Führe vor finaler Ausgabe zwingend eine Literatur-Nachbearbeitung aus:
+Führe vor finaler Ausgabe zwingend eine Literatur-Nachbearbeitung aus.
+Die konkreten Literatur-Checks folgen den in Schritt 6 genannten Pflichtpunkten.
 
-1. Alle Fließtext-Erwähnungen von Literatur auf `#literatur` verlinken.
-2. Bei Mehrfachzitaten pro Quelle einen eigenen Link setzen; Trennzeichen nicht verlinken.
-3. Quellenzeilen unter Tabellen/Grafiken mit Literaturbezug ebenfalls auf `#literatur` verlinken.
-4. Literaturabschnitt auf APA-7-nahe Einheitlichkeit bringen.
-5. Pro Quelle Linkdarstellung vereinheitlichen (Badge oder normaler Weblink).
-6. Defekte Linksyntax reparieren.
+Die Umsetzung folgt den inhaltlichen Regeln aus `ai_agents/master_agent.md` und
+`prompts/literatur.md`; keine neuen Quellen ohne explizite Freigabe.
 
 Wenn vorhanden, kann dafür der spezialisierte Prompt `/Literatur` verwendet werden.
 
@@ -343,7 +287,7 @@ Optional nach `BLOG FINAL`:
 
 Optional nach `REVEAL GO`:
 
-- kurzer Vergleich zwischen `snapshot_master_agent.md` und finalem Reveal-Stand,
+- kurzer Vergleich zwischen `reveal_snapshot.md` und finalem Reveal-Stand,
 - 2-4 Reflexionsfragen oder Hypothesen ausgeben,
 - keine automatische Regelanpassung vornehmen.
 

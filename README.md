@@ -143,29 +143,67 @@ project_governance/ai_copilot_instructions.md
 
 ## 🤖 Didaktischer Planungsagent
 
-Der SciBlog iWIP nutzt einen KI-Agenten zur Unterstützung der didaktischen Planung und Veröffentlichung von Lehr-Lern-Arrangements als OER.
+Der SciBlog iWIP nutzt einen KI-Agenten (Version 1.0.0) zur Unterstützung der didaktischen Planung und Veröffentlichung von Lehr-Lern-Arrangements als OER.
 
-Der Agent arbeitet dialogisch und verbindet Planung, Ausarbeitung und Publikation in einem konsistenten Workflow.
+Der Agent arbeitet dialogisch in **fünf Phasen** und verbindet Planung, Ausarbeitung und Publikation in einem konsistenten Workflow.
+
+### Kerneigenschaften
+
+- **44 Core Rules** regeln Modus, Qualität und Artefakterstellung verbindlich.
+- **Didaktisches Qualitätsmodell (DQM)** mit sechs Leitdimensionen und kompakter Prüfmatrix.
+- **Drei didaktische Profile**: (A) Integrativ-kompetenzorientiert (Default), (B) Handlungsorientiert-konstruktivistisch, (C) Instruktional-kognitivistisch.
+- **Gate-basierter Rigor**: Während der Entwurfsarbeit gelten Minimal-Checks; bei Finalisierung (`BLOG FINAL`, `REVEAL GO`) greifen automatisch alle Hardchecks, Guardrails und Reportings.
+- **Blog-Wissensbasis**: Kuratierter Index veröffentlichter Blogartikel für thematische Anschlussfähigkeit.
+- **Ko-kreative Textarbeit**: Kapitelweise Zusammenarbeit (Nutzerinput → publizistischer Fließtext).
+
+### Fünf-Phasen-Workflow
+
+| Phase | Beschreibung |
+|---|---|
+| P1 – Klären | Kontext, Profil, Wissensbasis-Bezüge |
+| P2 – Strukturieren | Didaktische Struktur, Kohärenzcheck |
+| P3 – Entwerfen | `.index.md` anlegen, Querverweise markieren |
+| P4 – Ko-kreativ ausarbeiten | Kapitelweise Fließtextentwicklung |
+| P5 – Finalisieren | Hardchecks, DQM-Prüfbericht, Reporting |
+
+### Agenten-Dateien
+
+```text
+ai_agents/
+├─ master_agent.md                → Agentendefinition (44 Rules, Workflow, DoD)
+├─ didaktisches_qualitaetsmodell.md → DQM (Dimensionen, Profile, Prüfmatrix)
+├─ blog_wissensbasis.md           → Kuratierter Artikelindex
+└─ templates/
+   ├─ blog_template.md            → Pflichtstruktur Blogartikel
+   └─ reveal_template.md          → Pflichtstruktur Reveal-Präsentation
+
+prompts/
+├─ create.md                      → /create – Neue Planung starten
+├─ check.md                       → /check – Didaktischer Qualitätscheck
+└─ literatur.md                   → /literatur – Literaturformatierung
+```
 
 ---
 
 ## ⚡ Quickstart
 
 1. `PLAN START: Thema | Zielgruppe | Zeit`
-2. Entwurf dialogisch entwickeln (`.index.md`)
-3. Blog finalisieren (`BLOG FINAL`)
-4. Präsentation erzeugen (`REVEAL GO`)
+2. Profil wählen (A/B/C) oder Default (A) übernehmen
+3. Entwurf dialogisch entwickeln (`.index.md`)
+4. Blog finalisieren (`BLOG FINAL`)
+5. Präsentation erzeugen (`REVEAL GO`)
 
 ---
 
 ## 🧠 Grundlogik
 
-Der Agent arbeitet strikt sequenziell:
+Der Agent arbeitet strikt sequenziell in fünf Phasen (P1–P5):
 
-1. Planung klären  
-2. Blogentwurf entwickeln (`.index.md`)  
-3. Blog finalisieren (`index.md`)  
-4. Präsentation daraus ableiten  
+1. Kontext klären und Profil festlegen
+2. Didaktisch strukturieren und Kohärenz prüfen
+3. Blogentwurf entwickeln (`.index.md`)
+4. Kapitelweise ko-kreativ ausarbeiten
+5. Blog finalisieren (`index.md`) und Reveal ableiten
 
 Die `.index.md` dient als nicht-rendernder Arbeitsstand:
 
@@ -191,12 +229,22 @@ Wichtig:
 - `BLOG FINAL`
 - `REVEAL GO`
 
-### Modi
+### Gate-basierter Rigor
 
-- `QUICK` → schneller Entwurf, keine Finalisierung  
-- `QUALITY` → vollständige Ausarbeitung mit Qualitätschecks  
+Es gibt keine separaten Arbeitsmodi. Stattdessen:
 
-Standard: `QUALITY`
+- **Entwurfsphase** (`.index.md`): Drei Minimal-Checks (keine erfundenen Quellen, Pflicht-Frontmatter, Reihenfolge Blog vor Reveal).
+- **Finalisierung** (`BLOG FINAL`, `REVEAL GO`): Alle Hardchecks, Guardrails und Reportings greifen automatisch.
+
+### Konsistenzregeln
+
+- Reveal-Dateien enthalten keine OER-Metadaten; OER-Metadaten stehen ausschließlich im Blog.
+- Reveal-Erzeugung und -Finalisierung erfolgen ausschließlich nach dem Signal `REVEAL GO`.
+- Die didaktische Bewertung folgt dem DQM als einzigem didaktischen Referenzmodell, inklusive profilabhängiger Gewichtung (A/B/C).
+
+Verbindliche Governance und Tests:
+
+- `project_governance/agent_contract.md`
 
 ---
 
@@ -205,7 +253,7 @@ Standard: `QUALITY`
 Bei `REVEAL GO` wird automatisch erzeugt:
 
 ```text
-snapshot_master_agent.md
+reveal_snapshot.md
 ```
 
 Eigenschaften:
@@ -236,7 +284,7 @@ Nach `BLOG FINAL`:
 
 Nach `REVEAL GO`:
 
-- Vergleich zwischen `snapshot_master_agent.md` und finalem Reveal-Stand
+- Vergleich zwischen `reveal_snapshot.md` und finalem Reveal-Stand
 - Ableitung von 2–4 Reflexionsfragen oder Hypothesen
 
 → dient ausschließlich der Weiterentwicklung  
@@ -269,7 +317,7 @@ index.md (finaler Blogartikel)
 REVEAL GO
     ↓
 _index.md (vom Agent erzeugte Reveal-Version)
-    + snapshot_master_agent.md (Momentaufnahme der ersten Reveal-Version)
+    + reveal_snapshot.md (Momentaufnahme der ersten Reveal-Version)
     ↓
 Bearbeitung & Feinschliff an _index.md
     ↓
@@ -280,7 +328,7 @@ finale _index.md
       Vergleich .index.md ↔ index.md
 
 - Nach Reveal-Feinschliff:
-      Vergleich snapshot_master_agent.md ↔ finale _index.md
+    Vergleich `reveal_snapshot.md` ↔ finale `_index.md`
 
 ---
 

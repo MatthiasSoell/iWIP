@@ -8,12 +8,13 @@ Scope: Planungsmodus, Blogmodus, Reveal-Transformationsmodus
 
 ## 1. Zielbild
 
-Der Agent erzeugt aus einer didaktischen Planung zwei konsistente OER-Artefakte:
+Der Agent erzeugt aus einer didaktischen Planung zwei konsistente Artefakte:
 
 1. Blogartikel (Primärartefakt)
 2. Reveal-Präsentation (abgeleitetes Artefakt)
 
 Die Präsentation wird ausschließlich aus dem finalen Blogartikel abgeleitet.
+OER-Metadaten werden im Blogartikel geführt; Reveal bleibt OER-metadatenfrei.
 
 ---
 
@@ -49,8 +50,8 @@ Die Präsentation wird ausschließlich aus dem finalen Blogartikel abgeleitet.
 6. Keine erfundenen spezifischen Quellenangaben (Studien, DOI, Publikationsdetails).
 7. Bei fehlenden Kerninformationen oder Regelkonflikten: eine klärende Rückfrage, dann Stopp vor Artefakterstellung.
 8. Blog-Frontmatter vollständig gemäß ai_agents/templates/blog_template.md, inklusive vollständigem OER-/TULLU-/OERSI-Metadatenblock.
-9. Reveal-Frontmatter vollständig gemäß ai_agents/templates/reveal_template.md, inklusive vollständigem OER-Metadatenblock für Präsentationen.
-10. Bei `REVEAL GO` wird im Reveal-Zielordner zusätzlich `snapshot_master_agent.md` als nicht-rendernde Momentaufnahme erzeugt. Der Snapshot enthaelt denselben inhaltlichen Stand wie die zum Zeitpunkt von `REVEAL GO` erzeugte Reveal-Datei und ergaenzt ausschliesslich den Frontmatter-Block `_build: { render: false, list: false }`.
+9. Reveal-Frontmatter vollständig gemäß ai_agents/templates/reveal_template.md; Reveal enthält keine OER-Metadaten.
+10. Bei `REVEAL GO` wird im Reveal-Zielordner zusätzlich `reveal_snapshot.md` als nicht-rendernde Momentaufnahme erzeugt. Der Snapshot enthaelt denselben inhaltlichen Stand wie die zum Zeitpunkt von `REVEAL GO` erzeugte Reveal-Datei und ergaenzt ausschliesslich den Frontmatter-Block `_build: { render: false, list: false }`.
 11. Snapshot-Dateien im Reveal-Kontext sind nicht-operativ: keine automatische Bearbeitung und keine Ableitung aus Snapshot-Dateien; Reveal wird stets aus dem finalen Blog-`index.md` abgeleitet.
 
 ---
@@ -78,7 +79,7 @@ Eine Reveal-Ableitung ist nur final, wenn:
 3. Keine neuen unbelegten Kernbehauptungen.
 4. Folien sind verdichtet und interaktionsorientiert.
 5. Literaturfolie basiert auf der Blog-Literatur.
-6. Pflicht-Frontmatter vollständig ausgefüllt (inkl. `title_reveal`, `emojis`, `veranstaltungstyp`, `veranstaltung`, `author`, `blog`, `outputs`, `reveal_hugo`, `description`, `summary`, `tags`, `categories`, `oer.creators`, `publisher`, `license`, `source`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `time_required`, `about`).
+6. Pflicht-Frontmatter vollständig ausgefüllt (inkl. `title_reveal`, `emojis`, `veranstaltungstyp`, `veranstaltung`, `author`, `blog`, `outputs`, `reveal_hugo`, `description`, `summary`, `tags`, `categories`); OER-Metadaten sind in Reveal-Dateien verboten.
 7. Pro Inhaltsfolie ist eine klare Kernbotschaft erkennbar.
 8. Textdichte ist foliengerecht verdichtet (Richtwert maximal 35-45 Wörter je Inhaltsfolie).
 9. Je fachlichem Hauptkapitel ist mindestens eine visuelle Stützfolie mit kurzer Quellenzeile enthalten.
@@ -87,7 +88,7 @@ Eine Reveal-Ableitung ist nur final, wenn:
 12. Sichtbare deutsche Folientexte enthalten korrekte Umlaute;
    Normalisierung `ae/oe/ue -> ä/ö/ü` gilt verpflichtend außerhalb technischer Felder
    (URLs, Pfade, Dateinamen, Slugs, Alias-Pfade, src-Attribute, maschinenlesbare Keys).
-13. Im Reveal-Zielordner liegt `snapshot_master_agent.md` als nicht-rendernde Momentaufnahme mit `_build.render: false` und `_build.list: false`.
+13. Im Reveal-Zielordner liegt `reveal_snapshot.md` als nicht-rendernde Momentaufnahme mit `_build.render: false` und `_build.list: false`.
 
 ---
 
@@ -98,7 +99,7 @@ Im Ergebnis dokumentiert der Agent kurz:
 - gewählte Kernpunktanzahl und Begründung,
 - ggf. gewählte Umschreibintensität (konservativ/redaktionell),
 - Mapping Blogkernpunkte -> Themenfolien.
-- optional nach `BLOG FINAL`: 2-4 Reflexionsfragen oder Hypothesen aus einem Vergleich zwischen `.index.md` und finalem `index.md`; optional nach `REVEAL GO`: 2-4 Reflexionsfragen oder Hypothesen aus einem Vergleich zwischen `snapshot_master_agent.md` und finalem Reveal-Stand (ohne automatische Regelanpassung).
+- optional nach `BLOG FINAL`: 2-4 Reflexionsfragen oder Hypothesen aus einem Vergleich zwischen `.index.md` und finalem `index.md`; optional nach `REVEAL GO`: 2-4 Reflexionsfragen oder Hypothesen aus einem Vergleich zwischen `reveal_snapshot.md` und finalem Reveal-Stand (ohne automatische Regelanpassung).
 
 ---
 
@@ -180,12 +181,12 @@ Diese Prüffälle sollen nach Änderungen an Agentenlogik, Prompts oder Template
 
 ### RC-12 Meta-Vollständigkeit Reveal
 
-- Erwartung: finale Präsentation enthält vollständiges Pflicht-Frontmatter gemäß `ai_agents/templates/reveal_template.md`.
-- Fehlerindikator: fehlende oder leere Pflichtfelder, insbesondere im Reveal-OER-Metadatenblock.
+- Erwartung: finale Präsentation enthält vollständiges Pflicht-Frontmatter gemäß `ai_agents/templates/reveal_template.md` und keine OER-Metadaten.
+- Fehlerindikator: fehlende oder leere Pflichtfelder oder vorhandene OER-Felder in Reveal.
 
 ### RC-13 Snapshot bei REVEAL GO
 
-- Erwartung: mit finaler Reveal-Datei wird im Reveal-Zielordner `snapshot_master_agent.md` erzeugt und nicht gerendert.
+- Erwartung: mit finaler Reveal-Datei wird im Reveal-Zielordner `reveal_snapshot.md` erzeugt und nicht gerendert.
 - Fehlerindikator: fehlende Snapshot-Datei oder Snapshot als Ableitungsquelle verwendet.
 
 ### RC-14 Reveal-Textdichte und Kernbotschaften

@@ -8,6 +8,14 @@ ai_agents/master_agent.md
 
 Der Fokus liegt auf der **didaktischen Kohärenz** der Planung.
 
+Didaktische Prüflogik:
+
+- Das DQM in `ai_agents/didaktisches_qualitaetsmodell.md` ist das einzige didaktische Referenzmodell.
+- Die didaktische Bewertung erfolgt entlang der sechs DQM-Dimensionen.
+- Die Bewertung erfolgt profilabhängig gewichtet (Profil A/B/C gemäß DQM), bei gleichzeitigem Mindeststandard: keine Dimension darf ❌ sein.
+- Bei Abweichungen in hoch gewichteten Dimensionen ist die Bewertung strenger auszulegen als in niedrig gewichteten Dimensionen.
+
+
 ---
 
 ## Aufgabe
@@ -36,14 +44,10 @@ Priorisierung der Prüfung:
 - Wenn das Artefakt eine Reveal-Präsentation ist, prüfe **zuerst** die Reveal-Transformationsqualität.
 - Wenn das Artefakt ein reiner Veranstaltungsentwurf ist, beginne mit der didaktischen Kohärenz.
 
-QUICK-Modus:
+Gate-basierter Rigor (gemaess Core Rule 38):
 
-- Wenn der Arbeitsmodus `QUICK` ist, prüfe ausschließlich die drei Minimalchecks gemaess `ai_agents/master_agent.md` (Core Rule 37).
-- Alle weiteren Prüfkategorien, Reportings und Guardrails werden in `QUICK` nicht angewendet.
-
-QUALITY-Modus:
-
-- Alle folgenden detaillierten Prüfkategorien gelten vollständig im Modus `QUALITY`.
+- Waehrend der Entwurfsarbeit (`.index.md`) gelten die Minimal-Checks gemaess Core Rule 38 in `ai_agents/master_agent.md`.
+- Bei Finalisierung (`BLOG FINAL`, `REVEAL GO`) greifen automatisch alle folgenden detaillierten Prüfkategorien, Reportings und Guardrails.
 
 ## Materialien ↔ Planung
 
@@ -53,60 +57,67 @@ QUALITY-Modus:
 
 ---
 
-## Prüfkategorien
+## Didaktische Pruefkategorien (DQM-Kern)
 
-## 1 🎯 Zielklarheit
+## 1 🎯 Zielorientierung (DQM)
 
-- Sind die Lernziele klar formuliert?
-- Beschreiben sie Verständnis, Anwendung oder Reflexion?
-- Sind sie realistisch im Zeitrahmen erreichbar?
-
----
-
-## 2 Inhalte ↔ Ziele
-
-- Unterstützen die Inhalte die Lernziele?
-- Gibt es Inhalte ohne klaren Bezug zu den Zielen?
+- Sind die Lernziele kompetenzorientiert und als beobachtbare Handlungen formuliert?
+- Passen die Lernziele zum Niveau und Kontext der Zielgruppe?
+- Ist das Anforderungsniveau transparent und realistisch im Zeitrahmen?
 
 ---
 
-## 3 Methoden ↔ Ziele
+## 2 🧭 Strukturierung (DQM)
 
-- Unterstützen die gewählten Methoden die Lernziele?
-- Fördern sie **Verständnis, Anwendung und Reflexion**?
-
----
-
-## 4 Interaktionsgrad
-
-- Gibt es ausreichend Aktivierungsphasen?
-- Überwiegt Vortrag oder Interaktion?
-- Werden Lernende aktiv eingebunden?
+- Ist der Lehr-Lern-Prozess didaktisch schluessig sequenziert?
+- Ist der Ablauf realistisch umsetzbar (keine Ueberfrachtung)?
+- Sind Uebergaenge zwischen den Phasen klar?
 
 ---
 
-## 5 Mediennutzung 💻
+## 3 🧠 Lernverstaendnis (DQM)
 
-- Unterstützen die Medien das Lernen?
-- Oder sind sie nur Präsentationshilfe?
-
----
-
-## 6 Wissenschaftliche Fundierung
-
-- Wird das Thema fachlich korrekt dargestellt?
-- Wird zwischen **Bachelor- und Master-Niveau** sinnvoll differenziert?
+- Ist das Verhaeltnis von Lehrenden- und Lernendenaktivitaet bewusst gestaltet?
+- Werden Lernende aktiv eingebunden statt ueberwiegend rezeptiv gefuehrt?
+- Ist die Lernlogik konsistent zum gewaehlten Profil (A/B/C)?
 
 ---
 
-## 7 Zeitrealismus
+## 4 👥 Lernqualitaet (DQM)
 
-- Ist der Ablauf realistisch umsetzbar?
-- Gibt es zu viele Inhalte oder Aktivitäten?
+- Gehen Aufgaben ueber Reproduktion hinaus (Erklaeren, Vergleichen, Begruenden, Bewerten)?
+- Foerdern die Aktivitaeten Verstaendnis, Anwendung, Transfer und Deep Learning?
+- Ist Constructive Alignment (Ziele ↔ Aktivitaeten ↔ Assessment) erkennbar?
 
 ---
 
-## 8 Blogmodus-Qualität
+## 5 🪞 Reflexion (DQM)
+
+- Sind explizite Reflexionsanlaesse vorhanden?
+- Gibt es formative Feedback-Elemente (Feed-up / Feed-back / Feed-forward)?
+- Passt die Reflexionstiefe zum gewaehlten Profil und Lernzielniveau?
+
+---
+
+## 6 🌱 Adaptivitaet (DQM)
+
+- Werden Zielgruppe, Voraussetzungen und Kontext angemessen beruecksichtigt?
+- Gibt es sinnvolle Differenzierungsoptionen (Niveau, Tempo, Zugang)?
+- Ist der Medieneinsatz lernfoerderlich begruendet statt nur praesentativ?
+
+---
+
+## DQM-Bewertungsregel (verbindlich)
+
+- Bewerte jede DQM-Dimension mit ✅ / ⚠️ / ❌ und kurzer Begruendung.
+- Nutze die profilabhaengige Gewichtung (A/B/C) aus `ai_agents/didaktisches_qualitaetsmodell.md`.
+- Hoeher gewichtete Dimensionen werden strenger ausgelegt; niedrig gewichtete Dimensionen duerfen nur in der Tiefe reduziert sein, nie fehlen.
+- Mindeststandard bleibt immer verbindlich: keine Dimension darf ❌ sein.
+- Bei ❌ ist eine Rueckfrage verpflichtend, bevor ein Artefakt als final bewertet werden darf.
+
+---
+
+## 7 Blogmodus-Qualitaet (Erweiterung)
 
 - Ist der Text klar leser:innenorientiert statt planungsintern formuliert?
 - Wird die inhaltliche Argumentation im Fließtext entwickelt (statt nur im Ablauf)?
@@ -132,11 +143,11 @@ QUALITY-Modus:
 - Ist das Literaturverzeichnis APA-7-nah konsistent formatiert?
 - Sind Zusatzlinks je Quelle konsistent als Badge (`lit-ub`, `lit-doi`, `lit-worldcat`) oder als normaler Weblink dargestellt?
 - Zusätzlich alle einschlägigen Core Rules aus `ai_agents/master_agent.md` für
-    Blogartefakte prüfen (insbesondere 17, 18, 19, 20, 25, 26, 27, 30, 31, 32, 33, 36, 37).
+    Blogartefakte prüfen (insbesondere 17, 18, 19, 20, 25, 26, 27, 30, 31, 32, 33, 38, 39, 43).
 
 ---
 
-## 9 Frontmatter- und Metadaten-Vollständigkeit (Pflicht)
+## 8 Frontmatter- und Metadaten-Vollstaendigkeit (Pflicht)
 
 Prüfe bei Blogartefakten das Frontmatter strikt gegen
 `ai_agents/templates/blog_template.md`.
@@ -167,13 +178,20 @@ Bewertungsregel:
 
 ---
 
-## 10 Reveal-Transformationsqualität
+## 9 Reveal-Pruefmatrix (verbindlich)
+
+Prüfe Revealartefakte in der folgenden Reihenfolge.
+
+### 9.1 Transformationsqualitaet
 
 - Ist die Präsentation erkennbar aus dem Blogartikel abgeleitet?
 - Deckt die Präsentation alle Blogkernpunkte inhaltlich ab (direkt oder gruppiert)?
 - Sind Kernbehauptungen zwischen Blog und Reveal konsistent?
 - Wurden keine neuen unbelegten Kernaussagen ergänzt?
 - Ist die Präsentation verdichtet und interaktionsorientiert statt blogartig ausformuliert?
+
+### 9.2 Folienqualitaet und Dramaturgie
+
 - Ist die Foliengestaltung visuell klar (kurze Folientexte, fragmentierte Progression, eindeutige Kernbotschaften)?
 - Entspricht die Tonalität eher einer präsentationsfähigen Dramaturgie als einer Folien-Textsammlung?
 - Trägt jede Inhaltsfolie genau eine priorisierte Kernbotschaft?
@@ -182,12 +200,8 @@ Bewertungsregel:
 - Enthalten Visualisierungen kurze, saubere Quellenzeilen?
 - Ist der Emoji-Einsatz semantisch konsistent gemäß `project_governance/content_emoji_policy.md`?
 - Entsprechen sichtbare deutsche Folientexte den Typografie-/Sprachregeln gemäß `ai_agents/master_agent.md` (insbesondere Core Rules 14 und 20)?
-- Zusätzlich alle einschlägigen Core Rules aus `ai_agents/master_agent.md` für
-    Revealartefakte prüfen (insbesondere 16, 20, 22, 24, 29, 32, 33, 34, 36, 37, 38).
 
----
-
-## 11 Reveal-Frontmatter- und Metadaten-Vollständigkeit (Pflicht)
+### 9.3 Frontmatter- und Metadaten-Vollstaendigkeit
 
 Prüfe bei Revealartefakten das Frontmatter strikt gegen
 `ai_agents/templates/reveal_template.md`.
@@ -200,17 +214,19 @@ Verpflichtend zu prüfen:
 - `tags`, `categories`
 - `todos` (optional, darf leer sein)
 
-Zusätzlich verpflichtend zu prüfen:
+### 9.4 Verbotene OER-Metadaten in Reveal
 
 - Reveal darf keinen `oer`-Block und keine OER-Einzelfelder enthalten (`is_oer`, `kind`, `creators`, `publisher`, `license`, `source`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `time_required`, `about`, `rights_exceptions`).
 
-Bewertungsregel:
+### 9.5 Bewertungsregel
 
 - Fehlende Pflichtfelder, leere Pflichtfelder oder falsch strukturierte Pflichtfelder sind **Blocker**.
 - Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls **Blocker**.
 - Vorhandene OER-Metadaten in Reveal sind **Blocker**.
+- Zusätzlich alle einschlägigen Core Rules aus `ai_agents/master_agent.md` für
+    Revealartefakte prüfen (insbesondere 16, 20, 22, 24, 29, 32, 33, 34, 38, 40, 41).
 - Zusätzlich gelten die Blocker-/Hinweislogiken aus `ai_agents/master_agent.md`
-    (insbesondere 16, 23, 24, 29, 33, 34, 37, 38) unverändert.
+    (insbesondere 16, 23, 24, 29, 33, 34, 38, 40) unverändert.
 - Ein Revealartefakt darf bei Blockern nicht als "final" bewertet werden.
 
 ---

@@ -15,8 +15,8 @@ Design und Darstellung orientieren sich an:
 
 Referenzstil (qualitatives Zielbild):
 
-- `content/blog/oer/uplan_ki_oer/index.md`
-- `content/blog/widi/hosp_feed_refl/index.md`
+- `content/blog/fortbildung/uplan_ki_oer/index.md`
+- `content/blog/lehre/widi/hosp_feed_refl/index.md`
 
 ---
 
@@ -139,6 +139,8 @@ Nutze dafür:
 - didaktisch-essayistischen Fließtext statt neutraler KI-Standardprosa,
 - funktionale Callouts (`TIPP`, `IMPORTANT`, `QUOTE`) an Scharnierstellen,
 - prägnante Überschriften mit semantischem Emoji-Anker.
+- DQM-orientierte Ausarbeitung entlang der sechs Leitdimensionen (Zielorientierung, Strukturierung, Lernverstaendnis, Lernqualitaet, Reflexion, Adaptivitaet).
+- gezielte Bezüge zu thematisch passenden Beiträgen aus `ai_agents/blog_wissensbasis.md` herstellen (ohne unkritische Übernahme).
 
 Vermeide:
 
@@ -212,6 +214,9 @@ Beantworte kurz:
 
 Integriere hier außerdem eine knappe Meta-Reflexion zu Methoden- und Medienlogik
 (z. B. warum wenige klare Formate gewählt wurden und wie Medien die Diskussion stützen).
+
+Wenn plausible Lernhuerden benannt werden, formuliere sie hypothesenbasiert
+als Annahmen und nicht als Tatsachen.
 
 Formhinweis:
 
@@ -423,17 +428,4 @@ wenn möglich, OER-kompatibel sein.
 
 ## Definition of Done (Blogartikel)
 
-Vor finaler Ausgabe prüfen:
-
-1. Frontmatter vollständig,
-2. Frontmatter semantisch gefuellt (keine leeren Pflichtfelder, keine Platzhalter wie `TODO`, `tbd`, `-`, `...`),
-3. Leser:innenperspektive erkennbar,
-4. Ablauf nicht dominierend,
-5. Kernpunkte inhaltlich ausformuliert,
-6. Quellen im Text und Literaturteil konsistent,
-7. Quellen-Statusreport ausgegeben (`Zitate im Text`, `Eintraege in Literatur`, `Nur-im-Text`, `Nur-in-Literatur`),
-8. Nach Nutzerfreigabe des Blogs keine neuen Quellen ergaenzt (Literatur-Freeze),
-9. Terminologie konsistent (z. B. Lernziele, Kompetenzen, Ablaufphasen),
-10. Markierte `do-not-touch`-Bereiche aus `.index.md` wurden unveraendert respektiert,
-11. Stil wirkt blog- und leser:innennah (nicht generisch),
-12. Emoji-Einsatz ist funktional konsistent.
+Definition of Done: siehe `ai_agents/master_agent.md` (Definition of Done - Blogartikel).
