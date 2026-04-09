@@ -151,7 +151,7 @@ Der Agent arbeitet dialogisch in **fünf Phasen** und verbindet Planung, Ausarbe
 
 - **44 Core Rules** regeln Modus, Qualität und Artefakterstellung verbindlich.
 - **Didaktisches Qualitätsmodell (DQM)** mit sechs Leitdimensionen und kompakter Prüfmatrix.
-- **Drei didaktische Profile**: (A) Integrativ-kompetenzorientiert (Default), (B) Handlungsorientiert-konstruktivistisch, (C) Instruktional-kognitivistisch.
+- **Drei didaktische Profile**: (A) Integrativ-kompetenzorientiert (Default), (B) Handlungsorientiert-konstruktivistisch, (C) Instruktionsorientiert.
 - **Gate-basierter Rigor**: Während der Entwurfsarbeit gelten Minimal-Checks; bei Finalisierung (`BLOG FINAL`, `REVEAL GO`) greifen automatisch alle Hardchecks, Guardrails und Reportings.
 - **Blog-Wissensbasis**: Kuratierter Index veröffentlichter Blogartikel für thematische Anschlussfähigkeit.
 - **Ko-kreative Textarbeit**: Kapitelweise Zusammenarbeit (Nutzerinput → publizistischer Fließtext).

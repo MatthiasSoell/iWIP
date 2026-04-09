@@ -61,7 +61,7 @@ Begriffsrahmen (verbindlich):
 35. Der Agent unterstuetzt die kurze Kommandosyntax fuer Signale (`PLAN START: ...`, `BLOG FINAL`, `REVEAL GO`).
 
 ### Didaktisches Profil und DQM
-36. Didaktisches Profil ist verpflichtend: In der Klaerungsphase fragt der Agent nach dem didaktischen Schwerpunktprofil. Optionen: (A) Integrativ-kompetenzorientiert (Default) – Lehrende geben Rahmen, Lernende arbeiten aktiv, Scaffolding, kompetenzorientiert. (B) Handlungsorientiert-konstruktivistisch – Eigenstaendig, problembasiert, kooperativ, hohe Autonomie. (C) Instruktional-kognitivistisch – Klare Instruktion, gelenkte Erarbeitung, kognitive Aktivierung, Sicherungsphasen. Wenn kein Profil gewaehlt wird, gilt A. Das Profil steuert die Gewichtung der DQM-Dimensionen, die Struktur des Unterrichts, die Art der Aufgaben und die Rolle der Lernenden gemaess `didaktisches_qualitaetsmodell.md`. Der Agent flaggt inkonsistente Mischformen und fragt nach, laesst aber bewusstes Mischen nach Begruendung zu.
+36. Didaktisches Profil ist verpflichtend: In der Klaerungsphase fragt der Agent nach dem didaktischen Schwerpunktprofil. Optionen: (A) Integrativ-kompetenzorientiert (Default) – Lehrende geben Rahmen, Lernende arbeiten aktiv, Scaffolding, kompetenzorientiert. (B) Handlungsorientiert-konstruktivistisch – Eigenstaendig, problembasiert, kooperativ, hohe Autonomie. (C) Instruktionsorientiert – Klare Instruktion, gelenkte Erarbeitung, kognitive Aktivierung, Sicherungsphasen. Wenn kein Profil gewaehlt wird, gilt A. Das Profil steuert die Gewichtung der DQM-Dimensionen, die Struktur des Unterrichts, die Art der Aufgaben und die Rolle der Lernenden gemaess `didaktisches_qualitaetsmodell.md`. Der Agent flaggt inkonsistente Mischformen und fragt nach, laesst aber bewusstes Mischen nach Begruendung zu.
 37. Profilwechsel-Schutz: Wird das didaktische Profil mitten in einer laufenden Planung gewechselt, gibt der Agent einen Kohaerenz-Hinweis aus und fragt, ob bereits erstellte Planungsteile angepasst werden sollen. Stillschweigendes Umschalten ist nicht erlaubt.
 38. Gate-basierter Rigor ersetzt QUICK/QUALITY: Es gibt keinen separaten Arbeitsmodus mehr. Waehrend der Entwurfsarbeit (`.index.md`) gelten drei Minimal-Checks (keine erfundenen Quellen, Pflicht-Frontmatterfelder vorhanden, Reihenfolge Blog vor Reveal). Bei Finalisierung (`BLOG FINAL`, `REVEAL GO`) greifen automatisch alle Hardchecks, Guardrails und Reportings. Finalisierung ist nur mit vollstaendigem Check-Durchlauf zulaessig. Bei Hardcheck-Fehlern gilt verpflichtend: Finalisierung stoppen, kompakte Blockerliste ausgeben, gezielte Korrekturrunde in `.index.md` unterstuetzen, danach Re-Check und erst bei erfuellten Bedingungen finalisieren.
 39. DQM-Vorrang und Diagnose-Heuristik: Das DQM hat Vorrang vor der Blog-Wissensbasis; bestehende Blogartikel werden referenziert, aber nicht unkritisch als didaktischer Standard uebernommen. Wenn der Agent Lernhuerden oder typische Schwierigkeiten benennt, formuliert er diese als plausible Annahmen, nicht als deterministische Aussagen.
@@ -70,6 +70,30 @@ Begriffsrahmen (verbindlich):
 42. Snapshot-Dateien im Reveal-Kontext sind strikt nicht-operativ: niemals als Quelle fuer weitere Generierung oder Ableitung verwenden, niemals automatisch weiterbearbeiten; Reveal wird immer aus dem finalen Blog-`index.md` abgeleitet. Nach `BLOG FINAL` ist optional ein kurzer Vergleich zwischen `.index.md` und finalem `index.md` zulaessig, aus dem 2-4 Reflexionsfragen oder Hypothesen abgeleitet werden koennen. Nach `REVEAL GO` ist optional ein kurzer Vergleich zwischen `reveal_snapshot.md` und finalem Reveal-Stand zulaessig, aus dem 2-4 Reflexionsfragen oder Hypothesen abgeleitet werden koennen. Diese Reflexion dient ausschliesslich der Weiterentwicklung und darf keine automatische Regelanpassung ausloesen.
 43. DQM-Pruefbericht ist verpflichtend: Vor `BLOG FINAL` gibt der Agent einen kompakten Pruefbericht auf Basis der Pruefmatrix aus `didaktisches_qualitaetsmodell.md` aus. Format: eine Zeile pro Dimension mit ✅/⚠️/❌ und Kurzbegruendung. Die Bewertung erfolgt unter Beruecksichtigung der profilabhaengigen Gewichtung der DQM-Dimensionen. Bei ❌ in einer Dimension ist Rueckfrage verpflichtend; Finalisierung erst nach Klaerung. Auch bei niedrig gewichteten Dimensionen (profilabhaengig) gilt der Mindeststandard ⚠️.
 44. Wissensbasis-Update nach Publikation: Nach `BLOG FINAL` schlaegt der Agent einen neuen Eintrag fuer `blog_wissensbasis.md` vor (Pfad, Bereich, Kernthemen, Schluesselkonzepte, Verweishaken). Der Nutzer entscheidet, ob und wie der Eintrag uebernommen wird.
+45. Didaktische Konfliktregel: Wenn Nutzeranforderungen in erkennbarem Widerspruch zu DQM-Prinzipien stehen, stoppt der Agent die Planung und gibt vor jeder weiteren Rueckfrage ausschliesslich den folgenden Konfliktblock aus. Die Regel greift nur bei harten DQM-Widerspruechen. Liegen lediglich produktive Spannungen vor, loest der Agent keinen Konfliktblock aus, sondern benennt in einem kurzen Satz, warum die Spannungen didaktisch aufloesbar sind:
+
+    **Konfliktblock (verbindliches Ausgabeformat):**
+
+    **1. Stopp-Satz:**
+    `Ich stoppe vor der Planung, weil folgende Vorgaben im Widerspruch zum DQM stehen:`
+
+    **2. Spannungen (nummerierte Liste):**
+    Jede Spannung wird einzeln benannt, an die betroffene DQM-Dimension gebunden und fachlich kurz begruendet.
+    Muster: *„[Nutzervorgabe] steht in Spannung zu DQM-Dimension [Nr. + Name], weil [konkretes Kriterium oder Folge]."*
+
+    **3. DQM-Empfehlung:**
+    Der Agent priorisiert didaktische Qualitaet und gibt eine zusammenhaengende, konkrete und handlungsorientierte Empfehlung, die alle zuvor benannten Spannungen adressiert.
+    Bei mehreren Spannungen darf die Empfehlung nicht nur einen Teilkonflikt herausgreifen.
+    Wenn die Nutzervorgaben in ihrer vorgegebenen Form didaktisch nicht planbar sind, muss die Empfehlung dies explizit sagen: `Eine Planung in der vorgegebenen Form ist unter dem DQM nicht zulaessig.`
+
+    **4. Entscheidungsfrage:**
+    Der Agent stellt genau eine Entscheidungsfrage, ob nach der gesamten DQM-Empfehlung geplant werden soll oder ob der Nutzer bewusst an den widerspruechlichen Vorgaben festhaelt.
+    Die Frage benennt die Konsequenzen fuer alle betroffenen DQM-Dimensionen.
+    Muster: *„Soll ich DQM-konform mit dieser Priorisierung planen, oder willst du bewusst an [Vorgaben] festhalten und die Einschraenkungen bei [DQM-Dimensionen] dokumentieren?"*
+
+    Haelt der Nutzer bewusst an den widerspruechlichen Vorgaben fest und verlangt dennoch eine Planung, wird in diesem Rahmen weitergearbeitet. Der verpflichtende Vorbereitungspfad nach Rule 17 bleibt dabei unberuehrt: Die `.index.md` ist trotzdem anzulegen und muss den bewussten Override sowie die didaktischen Einschraenkungen explizit dokumentieren.
+
+    Eine Planung ohne vorherige Konfliktklaerung im Konfliktblock ist nicht zulaessig.
 
 <!-- markdownlint-enable MD029 -->
 

@@ -263,6 +263,8 @@
   width: 100%;
   height: 1rem;
 }
+.reveal .spacer-ssm,
+.reveal .spacer.is-ssm { height: 0.1rem; }
 .reveal .spacer-sm,
 .reveal .spacer.is-sm { height: 0.6rem; }
 .reveal .spacer-lg,
@@ -995,6 +997,31 @@ body.presentation-view .qr-card svg,
   --overlay-max-height: 56vh;
 }
 
+/* Bildungsbiographie: mehr Hoehe und Breite, damit die Grafik nicht gestaucht klein wirkt */
+.biographie-diagram {
+  --overlay-height: 437px;
+  --overlay-margin-top: -0.4rem;
+  --overlay-margin-bottom: 1rem;
+  --overlay-img-top: 45.5%;
+  --overlay-width: min(70vw, 944px);
+  --overlay-max-height: 53.5vh;
+}
+
+/* Bildungsbiographie ueber Hoehe skalieren, damit die Grafik nicht optisch gestaucht wirkt */
+.reveal .biographie-diagram img {
+  width: auto;
+  height: min(53.5vh, calc(var(--overlay-height) - 6px));
+  max-width: min(80vw, 1030px);
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.reveal .biographie-diagram + .bild-quelle {
+  margin-top: 3rem;
+}
+
 /* Portraitmotive auf "Lernen boostern" ueber Hoehe skalieren, nicht ueber Breite */
 .reveal .persoenliches-lernen-diagram img {
   width: auto;
@@ -1052,6 +1079,20 @@ body.presentation-view .qr-card svg,
     --overlay-width: auto;
     --overlay-max-height: 52vh;
     --overlay-margin-bottom: 0.2rem;
+  }
+
+  .biographie-diagram {
+    --overlay-height: 361px;
+    --overlay-margin-top: -0.2rem;
+    --overlay-img-top: 45.8%;
+    --overlay-width: min(72vw, 784px);
+    --overlay-max-height: 48.3vh;
+    --overlay-margin-bottom: 0.8rem;
+  }
+
+  .reveal .biographie-diagram img {
+    height: min(48.3vh, calc(var(--overlay-height) - 6px));
+    max-width: min(84vw, 900px);
   }
 
   .reveal .persoenliches-lernen-diagram img {
@@ -1223,6 +1264,22 @@ body.presentation-view .qr-card svg,
   width: 43% !important;
   font-size: 0.97rem !important;
   line-height: 1.38 !important;
+}
+
+/* Workload-Tabelle: schmalere Stunden-Spalte, breitere Textspalte */
+.reveal .workload-matrix table :is(th, td):nth-child(1) {
+  width: 25% !important;
+}
+
+.reveal .workload-matrix table :is(th, td):nth-child(2) {
+  width: 15% !important;
+  white-space: nowrap;
+}
+
+.reveal .workload-matrix table :is(th, td):nth-child(3) {
+  width: 60% !important;
+  font-size: 0.9rem !important;
+  line-height: 1.3 !important;
 }
 
 .reveal .keycap {

@@ -119,6 +119,16 @@ Antworte ausschließlich mit:
 1. einer kurzen Zusammenfassung des Verstandenen
 2. den offenen Rückfragen
 
+Wenn der Beschreibungstext bereits erkennbare didaktische Widersprüche enthält,
+greift vor jeder weiteren Rückfrage zwingend Core Rule 45 aus `ai_agents/master_agent.md`.
+In diesem Fall gibt der Agent ausschließlich den dort definierten Konfliktblock aus
+und stellt noch keine didaktische Planung bereit.
+
+Wenn der Beschreibungstext nur produktive Spannungen, aber keinen harten
+DQM-Widerspruch enthält, löst der Agent keinen Konfliktblock aus, benennt dies
+in einem kurzen Satz und erklärt knapp, warum die Spannungen didaktisch
+auflösbar sind.
+
 Erst nachdem der Nutzer geantwortet hat,
 beginnt die eigentliche Planung nach den Regeln des **master_agent.md**.
 
@@ -168,6 +178,7 @@ _build:
 ```
 
 - Die Struktur der `.index.md` strikt am `ai_agents/templates/blog_template.md` ausrichten.
+- Auch bei bewusst akzeptierten DQM-Konflikten oder Overrides bleibt Schritt 5 verpflichtend. In diesem Fall dokumentiert die `.index.md` den Konflikt, die Nutzerentscheidung und die didaktischen Einschränkungen in einem klar markierten Abschnitt.
 - Unklare, fehlende oder noch offene Inhalte in der `.index.md` explizit markieren (z. B. `[TODO: Quelle fehlt]`, `[TODO: Bild noch auswaehlen]`) statt Annahmen zu treffen.
 - Optionalen kapitelweisen Freigabemodus unterstuetzen (z. B. `Kapitel 1 freigegeben`, `Kapitel 2 offen`) und nur freigegebene Kapitel final uebernehmen.
 - Optional markierte `do-not-touch`-Bereiche in `.index.md` unveraendert lassen (z. B. `<!-- do-not-touch:start --> ... <!-- do-not-touch:end -->`).
