@@ -279,7 +279,7 @@ Die offiziellen Termine des Prüfungsamts für das SoSe 2026 finden Sie in der
 <a href="https://www.wsf.uni-rostock.de/storages/uni-rostock/Alle_WSF/WSF/Studium/termine-ba/SoSe/2026/2025-12-12_Terminuebersicht_BA_WIP.pdf" target="_blank" rel="noopener noreferrer">Terminübersicht des Prüfungsamts</a>.
 
 > [!TIPP]
-> ‼️ Melden Sie sich **fristgerecht** zur Prüfung an!
+> ‼️ Melden Sie sich **fristgerecht** zur Prüfung an ‼️
 
 ---
 
