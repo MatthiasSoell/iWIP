@@ -144,7 +144,8 @@ Wir starten mit einem **biografischen Einstieg**, der sich didaktisch als **anal
 
 ## 💭 Leitfrage
 
-> **Wie verlaufen Bildungswege eigentlich, und was hat individuelle Entscheidungen mit gesellschaftlichen Strukturen zu tun?**
+> [!TIPP]
+> **Wie verlaufen 🛤️ Bildungswege eigentlich, und was haben 🧠 individuelle Entscheidungen mit 🧭 gesellschaftlichen Strukturen zu tun?**
 
 Gerade dadurch wird schnell deutlich: Bildungsbiographien sind **persönlich erlebt**, aber niemals nur privat. Sie sind in **Institutionen**, **Zugangsregeln**, **Zertifikate** und **soziale Voraussetzungen** eingebettet.
 
@@ -156,17 +157,17 @@ Im Anschluss folgt eine niedrigschwellige, aktivierende **Aufstellung** mit dire
 
 Mögliche Aussagen:
 
-- Wer hat die **allgemeine Hochschulreife**?
-- Wer hat eine **Berufsausbildung** angefangen oder abgeschlossen?
-- Wer hat schon einmal etwas **anderes studiert**?
-- Wer kommt aus **Mecklenburg-Vorpommern**?
+- 🎓 Wer hat die **allgemeine Hochschulreife**?
+- 🛠️ Wer hat eine **Berufsausbildung** angefangen oder abgeschlossen?
+- 📚 Wer hat schon einmal etwas **anderes studiert**?
+- 📍 Wer kommt aus **Mecklenburg-Vorpommern**?
 
-Die Aufstellung macht sichtbar, wie unterschiedlich Bildungswege verlaufen und welche Erfahrungen bereits im Raum vorhanden sind.
+Die Aufstellung macht sichtbar, wie unterschiedlich 🛤️ Bildungswege verlaufen und welche 🧠 Erfahrungen bereits im Raum vorhanden sind.
 
 Anschlussfragen für das Plenum:
 
-- Welche Unterschiede in Bildungswegen werden hier sichtbar?
-- Was könnte davon individuell wirken, was eher strukturell?
+- Welche Unterschiede in 🛤️ Bildungswegen werden hier sichtbar?
+- Was könnte davon 🧠 individuell wirken, was eher 🧭 strukturell?
 
 ---
 
@@ -197,10 +198,10 @@ Zugleich entwickeln Sie Ihre Kompetenzen im **wissenschaftlichen Arbeiten** weit
 
 Im Mittelpunkt stehen unter anderem folgende Fragen:
 
-- Wie funktioniert das deutsche Bildungssystem?
-- Wie verlaufen Bildungswege in Schule, Ausbildung, Hochschule und Weiterbildung?
-- Wie verändern sich Bildung und Arbeit unter Bedingungen von Digitalisierung, New Work und gesellschaftlichem Wandel?
-- Wie lassen sich diese Entwicklungen wissenschaftlich erschließen und argumentativ bearbeiten?
+- 🏛️ Wie funktioniert das deutsche Bildungssystem?
+- 🧭 Wie verlaufen Bildungswege in Schule, Ausbildung, Hochschule und Weiterbildung?
+- 🌐 Wie verändern sich Bildung und Arbeit unter Bedingungen von Digitalisierung, New Work und gesellschaftlichem Wandel?
+- 🧠 Wie lassen sich diese Entwicklungen wissenschaftlich erschließen und argumentativ bearbeiten?
 
 Dabei wird sich zeigen:
 
@@ -230,11 +231,11 @@ Die Übung findet **montags von 09:15 bis 10:45 Uhr in SR 018/020** statt.
 
 Für das Modul sind mehrere Kommunikationswege relevant. Es ist hilfreich, ihre jeweilige Funktion gleich zu Beginn klar zu benennen.
 
-- **Während oder nach der Veranstaltung:** für direkte Rückfragen
-- **Sprechstunde:** für ausführlichere Rückfragen, Beratung und Feedback
-- **Telefon:** für kurze dringliche Absprachen
-- **Mail:** für organisatorische und individuelle Anliegen
-- **Stud.IP:** für Materialien, Hinweise und organisatorische Informationen
+- 💬 **Während oder nach der Veranstaltung:** für direkte Rückfragen
+- 👥 **Sprechstunde:** für ausführlichere Rückfragen, Beratung und Feedback
+- 📞 **Telefon:** für kurze dringliche Absprachen
+- ✉️ **Mail:** für organisatorische und individuelle Anliegen
+- 🌐 **Stud.IP:** für Materialien, Hinweise und organisatorische Informationen
 
 ---
 
@@ -248,9 +249,9 @@ Eine grobe Orientierung kann so aussehen:
 
 | Bereich | Orientierung |
 |:------|:--------|
-| **Präsenzzeit** | ca. 50 Stunden für Vorlesung und Übung |
-| **Vor- und Nachbereitung** | ca. 26 Stunden für Lektüre bzw. Vertiefung, Notizen und Wiederholung (2 Stunden pro Woche) |
-| **Hausarbeit** | ca. 104 Stunden für Themenerschließung, Literaturarbeit, Schreiben und Überarbeitung (2,5 Wochen Vollzeit mit 40 Stunden pro Woche) |
+| **👥 Präsenzzeit** | ca. 50 Stunden für Vorlesung und Übung |
+| **📚 Vor- und Nachbereitung** | ca. 26 Stunden für Lektüre bzw. Vertiefung, Notizen und Wiederholung (2 Stunden pro Woche) |
+| **📝 Hausarbeit** | ca. 104 Stunden für Themenerschließung, Literaturarbeit, Schreiben und Überarbeitung (2,5 Wochen Vollzeit mit 40 Stunden pro Woche) |
 
 </div>
 
@@ -262,11 +263,11 @@ Die **Hausarbeit ist keine Zusatzleistung am Schluss**, sondern ein integraler B
 
 Die Prüfungsleistung des Moduls ist eine **wissenschaftliche Hausarbeit**.
 
-- Umfang: **10 bis 12 Seiten Fließtext**
-- hinzu kommen **Verzeichnisse**, **Deckblatt** und **Selbstständigkeitserklärung**
-- die Themen greifen Inhalte aus **Vorlesung und Übung** auf
-- die konkreten Themen werden **zu Beginn der Bearbeitungszeit (13.07.2026)** bekannt gegeben
-- Die Abgabe der Hausarbeit erfolgt digital **bis zum 07.09.2026** als WORD- und PDF-Datei **per Mail** an die Dozent:innen
+- 📏 Umfang: **10 bis 12 Seiten Fließtext**
+- 📄 hinzu kommen **Verzeichnisse**, **Deckblatt** und **Selbstständigkeitserklärung**
+- 📚 die Themen greifen Inhalte aus **Vorlesung und Übung** auf
+- 📅 die konkreten Themen werden **zu Beginn der Bearbeitungszeit (13.07.2026)** bekannt gegeben
+- ✉️ Die Abgabe der Hausarbeit erfolgt digital **bis zum 07.09.2026** als WORD- und PDF-Datei **per Mail** an die Dozent:innen
 
 Die formalen und inhaltlichen Anforderungen werden im <a href="https://www.iwip.uni-rostock.de/studium-und-lehre/waehrend-des-studiums/leitfaden-wissenschaftliches-arbeiten/" target="_blank" rel="noopener noreferrer">Leitfaden zum wissenschaftlichen Arbeiten</a> erläutert, den wir im Verlauf des Moduls gemeinsam besprechen.
 
@@ -278,10 +279,10 @@ Die offiziellen Termine des Prüfungsamts für das SoSe 2026 finden Sie in der
 <a href="https://www.wsf.uni-rostock.de/storages/uni-rostock/Alle_WSF/WSF/Studium/termine-ba/SoSe/2026/2025-12-12_Terminuebersicht_BA_WIP.pdf" target="_blank" rel="noopener noreferrer">Terminübersicht des Prüfungsamts</a>.
 
 > [!TIPP]
-> Melden Sie sich **fristgerecht** zur Prüfung an!
+> ‼️ Melden Sie sich **fristgerecht** zur Prüfung an!
 
 ---
 
 # 🔭 Ausblick
 
-Am kommenden Montag steht in der **Übung** die Frage im Mittelpunkt, wie sich **individuelle Bildungswege** beschreiben und systematisieren lassen. In der darauffolgenden **Vorlesung** suchen wir dann eine erste Antwort auf die Frage, wie das **deutsche Bildungssystem** funktioniert.
+Am kommenden Montag steht in der 👥 **Übung** die Frage im Mittelpunkt, wie sich **individuelle Bildungswege** beschreiben und systematisieren lassen. In der darauffolgenden 👩‍🏫 **Vorlesung** suchen wir dann eine erste Antwort auf die Frage, wie das **deutsche Bildungssystem** funktioniert.
