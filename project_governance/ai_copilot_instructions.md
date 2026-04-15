@@ -3,11 +3,14 @@ SciBlog iWIP
 
 Version: 1.1.0  
 Status: verbindliche Projektregel  
-Scope: technische Änderungen im Repo (CSS, Layout, Struktur)
+Kontext: technische Änderungen im Repo (CSS, Layout, Struktur) sowie Änderungen an agentischen Steuerdateien
 
 AI agents: read `ai_project_context.md` first, then follow these rules.
 
 Diese Regeln definieren, wie AI‑Agenten (z. B. GitHub Copilot, ChatGPT) Änderungen am Projekt durchführen sollen.
+
+Diese Datei ist KEINE Laufzeit-Steuerlogik.
+Sie gilt nur fuer Entwicklung und QA.
 
 Ziel ist eine stabile, wartbare Architektur ohne unnötige technische Schulden.
 
@@ -110,7 +113,14 @@ Relevante Dokumente:
 - project_governance/css_architecture.md
 - project_governance/repo_architecture.md
 - project_governance/ai_copilot_instructions.md
+- project_governance/agent_contract.md
+- project_governance/development_workflow.md
 - project_governance/content_emoji_policy.md
+- ai_agents/master_agent.md
+- prompts/create.md
+- prompts/check.md
+- ai_agents/templates/blog_template.md
+- ai_agents/templates/reveal_template.md
 - config.toml Kommentare
 - content/blog/doku/doku_tech/index.md technische Blog‑Dokumentation
 
@@ -126,9 +136,19 @@ Wenn eine Regel bewusst verletzt wird:
 
 # 6. Change Test
 
-Nach jeder Änderung soll ein kurzer Smoke‑Test erfolgen.
+Tests folgen der projektweiten Regel der **proportionalen Testtiefe**.
 
-Blog prüfen:
+Reine Text-, Formulierungs- oder Dokumentationsänderungen:
+
+- Diff prüfen
+- nur betroffene Regeln oder RCs prüfen
+- kein voller Smoke‑Test nötig
+
+Änderungen an CSS, Layout, Renderlogik, Pfaden oder Bundles:
+
+- gezielten Smoke‑Test durchführen
+
+Blog prüfen, wenn betroffen:
 
 - Light / Dark Toggle
 - Footer Links und Icons
@@ -136,13 +156,28 @@ Blog prüfen:
 - Help‑Overlay
 - Callouts (tip / quote / important / note)
 
-Reveal prüfen:
+Reveal prüfen, wenn betroffen:
 
 - Titlecard
 - Buttons
 - Diagramm‑Slide
 - Endslide
 - Präsentationsmodus
+
+Änderungen an agentischen Steuerdateien:
+
+- `project_governance/agent_contract.md`
+- `ai_agents/master_agent.md`
+- `prompts/create.md`
+- `prompts/check.md`
+- `ai_agents/templates/blog_template.md`
+- `ai_agents/templates/reveal_template.md`
+
+Dann zusätzlich:
+
+- RC‑Katalog aus `project_governance/agent_contract.md` anwenden
+- Ausführungslogik aus `project_governance/development_workflow.md` befolgen
+- vor Live‑Fällen oder festgeschriebenen Ständen einen vollständigen RC‑Durchlauf bzw. Trockentest vorsehen
 
 ---
 

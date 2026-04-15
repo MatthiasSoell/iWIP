@@ -1,7 +1,7 @@
 # Development Workflow – SciBlog iWIP
 
 Version: 1.0.0  
-Scope: technische Änderungen im Repository (Hugo, CSS, Layout, Docs)  
+Kontext: technische Änderungen im Repository (Hugo, CSS, Layout, Docs)  
 Status: verbindliche Projektregel
 
 ---
@@ -14,6 +14,8 @@ Status: verbindliche Projektregel
 - Farben im Blog nur über Tokens (00_design_tokens.css).
 - Reveal verwendet eigene Variablen in custom_reveal.css.
 - Blog-CSS und Reveal-CSS strikt getrennt.
+- Agentenlogik nach Änderungen mit dem RC-Katalog in `project_governance/agent_contract.md` prüfen.
+- Testtiefe proportional zum Änderungsrisiko wählen.
 - Vor Änderungen: Diff prüfen und Smoke-Test durchführen.
 
 ## 1. Grundprinzip
@@ -65,6 +67,92 @@ Vor jedem Commit:
   - Endslide / Endcard
   - Portrait vs Landscape Typografie (wenn vorhanden)
 
+### 4.3 Agenten-Regression
+
+Wenn Änderungen an folgenden Dateien erfolgen, ist zusätzlich der RC-Katalog aus `project_governance/agent_contract.md` anzuwenden:
+
+- `project_governance/agent_contract.md`
+- `ai_agents/master_agent.md`
+- `prompts/create.md`
+- `prompts/check.md`
+- `ai_agents/templates/blog_template.md`
+- `ai_agents/templates/reveal_template.md`
+
+Ausführungslogik:
+
+- **Selektiver RC-Durchlauf**: bei kleinen Text- oder Regelkorrekturen nur betroffene RCs plus RC-07.
+- **Vollständiger RC-Durchlauf**: vor Live-Fällen, festgeschriebenen Ständen und nach Änderungen an Moduslogik, Übergängen, Snapshot-Regeln, Bundle-Hygiene oder DoD.
+- **Trockentest**: mindestens ein geschlossener Repo-Fall in drei Schritten: `Meta-Arbeit am Agenten`, `BLOG FINAL`, `REVEAL GO` -> `REVEAL FINAL`.
+
+### 4.4 Proportionale Testtiefe
+
+- Reine Text- oder Formulierungsänderungen an Doku, Prompts oder Regeln: Diff-Prüfung plus betroffene RCs; kein voller Smoke-Test nötig.
+- Änderungen an Workflow, Pfaden, Snapshots, Bundles, Frontmatter-Logik oder Renderlogik: betroffene RCs plus technischer Smoke-Test.
+- Reveal-, Bundle- oder CSS-Änderungen: zusätzlicher Reveal-Sichttest und Bundle-Prüfung auf unerwünschte Markdown-Dateien.
+
+### 4.5 Dry-Run-Auswertungsvorlage
+
+Für RC-Trockentests wird das Ergebnis nicht nur summarisch, sondern als kurzer Auswertungsbogen festgehalten.
+
+Ziel:
+
+- den Testfall stationenweise nachvollziehbar auswerten,
+- Regel-, Prompt- und Template-Fehler trennen,
+- Folgearbeiten gezielt ableiten.
+
+Pflichtstationen im Agenten-Trockentest:
+
+- `Meta-Arbeit am Agenten`
+- `BLOG FINAL`
+- `REVEAL GO` -> `REVEAL FINAL`
+
+Pro Station mindestens erfassen:
+
+- welches Verhalten erwartet wurde,
+- was tatsächlich passiert ist,
+- ob der Schritt bestanden ist,
+- welche Abweichung vorliegt,
+- wo die Korrektur voraussichtlich hingehört (Contract, Master-Agent, Prompt, Template, Doku).
+
+Kopierbare Vorlage:
+
+```md
+## Dry Run – Auswertung
+
+Fall:
+Datum:
+Bearbeiter:
+
+| Station | Prüfschritt | Erwartetes Verhalten | Tatsächliches Verhalten | Status (OK/Teilweise/Nein) | Abweichung | Folgeort |
+|---|---|---|---|---|---|---|
+| Meta-Arbeit am Agenten | Keine Artefakterstellung | | | | | |
+| Meta-Arbeit am Agenten | Sprache bleibt meta- und reviewgerecht | | | | | |
+| BLOG FINAL | Kontextlücken führen zu genau einer Rückfrage | | | | | |
+| BLOG FINAL | Profilsteuerung A/B/C ist sichtbar korrekt | | | | | |
+| BLOG FINAL | Blog-first und Uebergangsdisziplin bleiben intakt | | | | | |
+| BLOG FINAL | Dialogstil bleibt didaktisch und adressatenorientiert | | | | | |
+| BLOG FINAL | Uploads werden nur als Quellmaterial behandelt | | | | | |
+| BLOG FINAL | Mindestpruefungen und sichtbare Zusammenfassung greifen korrekt | | | | | |
+| REVEAL GO -> REVEAL FINAL | Reveal startet erst nach Uebergang/Freigabe | | | | | |
+| REVEAL GO -> REVEAL FINAL | Gleichwertige Statusmeldungen werden korrekt interpretiert | | | | | |
+| REVEAL GO -> REVEAL FINAL | Snapshot- und Bundle-Hygiene bleiben sauber | | | | | |
+| REVEAL GO -> REVEAL FINAL | Abgleich, optionale Materialuebersicht und Finalisierung stimmen | | | | | |
+
+### Kurzfazit
+
+- Staerken:
+- Hauptabweichungen:
+- Empfohlene Nacharbeit:
+```
+
+Faustregel fuer `Folgeort`:
+
+- **Contract**: Governance, Prioritaeten, Uebergaenge, RCs, Konfliktlogik.
+- **Master-Agent**: operative Arbeitslogik, Dialogstil, Statusauswertung.
+- **Prompt**: Start-, Check- oder Interaktionssteuerung.
+- **Template**: Frontmatter, Artefaktstruktur, Template-Pflichtlogik.
+- **Doku**: README oder Workflow erklaert den Stand noch falsch oder unvollstaendig.
+
 ---
 
 ## 5. Commit-Regel
@@ -103,6 +191,7 @@ Vor Merge nach `main`:
 - [ ] Diff geprüft (keine unbeabsichtigten Änderungen)
 - [ ] Smoke-Test Blog OK
 - [ ] Smoke-Test Reveal OK (falls betroffen)
+- [ ] RC-Katalog durchlaufen (falls Agentenlogik betroffen)
 - [ ] Doku konsistent (wenn betroffen)
 - [ ] keine neuen unkommentierten `!important`
 - [ ] keine neuen Hardcoded-Farben außerhalb von Tokens

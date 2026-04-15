@@ -3,7 +3,7 @@ title: "Dein Gehirn ist keine Festplatte – Wie Du Dein Lernen boostern kannst"
 slug: "vt_gehirn_lernen_junior_studium"
 authors: [Prof. Dr. Matthias Söll]
 date: 2026-03-20
-lastmod: 2026-03-20
+lastmod: 2026-04-11
 draft: false
 aliases:
   - "/blog/lehre/vt_gehirn_lernen_junior_studium/"
@@ -194,7 +194,7 @@ Um Lernen **wissenschaftlich fundiert** zu **verstehen** und zu **gestalten**, s
        alt="Drei autobiografische Lernbeispiele">
 </figure>
 
-<p class="bildquelle">Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT ·
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT ·
 Keine freie Lizenz (Rechte bei der dargestellten Person)</p>
 
 Ich habe erst relativ spät angefangen, über mein eigenes **Lernen 🧠** nachzudenken – schade eigentlich.  

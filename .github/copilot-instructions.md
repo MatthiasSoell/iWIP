@@ -1,5 +1,8 @@
 # Copilot Instructions – SciBlog iWIP
 
+Diese Datei ist KEINE Laufzeit-Steuerlogik.
+Sie gilt nur fuer Entwicklung und QA.
+
 Follow the project governance files:
 
 - project_governance/ai_copilot_instructions.md

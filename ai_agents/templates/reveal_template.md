@@ -1,16 +1,16 @@
 # Reveal Template — SciBlog iWIP
 
+Version: 1.0.0
+Status: Template-Spezifikation
+Kontext: Frontmatter und Zielstruktur für Reveal-Artefakte
+
 Dieses Template definiert die Standardstruktur
 für Reveal-Präsentationen im SciBlog iWIP.
 
 Die Präsentation wird aus dem Blogartikel abgeleitet.
 
 Emojis werden gemäß **content_emoji_policy.md** verwendet.
-
-Referenzstil (qualitatives Zielbild):
-
-- `content/praesentation/fortbildung/uplan_ki_oer/_index.md`
-- `content/praesentation/lehre/widi/hosp_feed_refl/_index.md`
+Begriffe wie `veroeffentlichter Pfad` und `Finalisierung` folgen dem Glossar in `project_governance/agent_contract.md`.
 
 ---
 
@@ -27,9 +27,11 @@ veranstaltungstyp: ""
 veranstaltung: ""
 author: ""
 blog: ""
+aliases:
+  - "/praesentation/<bereich>/<ordner>/"
 
 lastmod: YYYY-MM-DD
-draft: false
+draft: true
 
 outputs:
   - Reveal
@@ -60,221 +62,155 @@ Regeln:
 - Reveal-Frontmatter enthält ausschließlich präsentationsbezogene Metadaten.
 - In Reveal-Dateien sind OER-Metadaten strikt verboten.
 - Verboten sind insbesondere: `oer`, `is_oer`, `kind`, `creators`, `publisher`, `license`, `source`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `time_required`, `about`, `rights_exceptions`.
-- `blog` soll auf den zugehörigen Blogbeitrag zeigen.
+- `blog` soll auf die veroeffentlichte Blogansicht mit Site-Base zeigen, nicht auf einen technischen Content-Pfad.
+- Der sichtbare veroeffentlichte Praesentationspfad lautet `/iWIP/praesentation/<bereich>/<ordner>/`; fuer `widi` ist dies `/iWIP/praesentation/widi/<ordner>/`.
+- `aliases` fuehrt den Hugo-Alias relativ zur Site-Base; im Frontmatter steht daher `/praesentation/<bereich>/<ordner>/`, fuer `widi` `/praesentation/widi/<ordner>/`.
+- Sichtbare Links, Buttons und Hinweise verwenden nur den veroeffentlichten Pfad; technische Bundle-Orte und Alias-Semantik bleiben intern.
 - Metadaten müssen kontextspezifisch zur jeweiligen Präsentation ausgefüllt sein (keine Copy-Paste-Werte).
-- Der Agent darf keine Reveal-Datei als final ausgeben,
-  wenn Pflichtfelder fehlen oder leer geblieben sind.
 - Pflichtfelder muessen semantisch gefuellt sein (keine Platzhalterwerte wie `TODO`, `tbd`, `-`, `...`).
-- Ohne explizites Nutzer-OK darf keine Reveal-Datei erstellt, aktualisiert oder finalisiert werden.
 
-## Freigaberegel (verbindlich)
+## Hinweis zur Steuerung
 
-- Reveal-Dateien duerfen ausschliesslich nach dem Signal `REVEAL GO` erzeugt oder finalisiert werden.
-- Allgemeines Nutzer-OK ist nicht ausreichend.
+Die Ableitung, Pruefung und Finalisierung der Praesentation
+erfolgt ausschliesslich gemaess:
 
----
+-> `project_governance/agent_contract.md`
+
+Dieses Template definiert nur die Struktur der Praesentation.
 
 ## Folienstruktur
 
+Dieses Template definiert nur Frontmatter und Zielstruktur des Reveal-Artefakts.
+
+### Mindestreihenfolge
+
+1. Titel
+2. Leitfrage oder Problem
+3. Ablauf
+4. Lernziele
+5. optionale Einordnung
+6. ein oder mehrere inhaltliche Themenfolien
+7. optionale Arbeits-, Diskussions- oder Transferfolien
+8. Literatur
+9. Abschluss
+
+---
+
 ## Folie 1 — Titel
 
+```markdown
 {{< titleSlide >}}
+```
+
+Nutze nach Möglichkeit `title_reveal` und `emojis` im Frontmatter.
+
+---
+
+## Folie 2 — Leitfrage / Problem
+
+- zentrale Leitfrage oder Problemstellung knapp zuspitzen
+- visuell und sprachlich als Einstieg markieren
+
+---
+
+## Folie 3 — Ablauf
+
+- Sitzungs- oder Präsentationslogik knapp sichtbar machen
+- bei Bedarf nummerierte Schrittfolge oder kurze Agenda nutzen
+
+---
+
+## Folie 4 — Lernziele
+
+- wichtigste Lernziele oder Zielperspektiven knapp darstellen
+- Emojis im Folieninhalt folgen `project_governance/content_emoji_policy.md`
+
+Beispiel:
+
+```markdown
+## 🎯 Lernziele
+
+- 🎯 zwei Kriterien fuer lernfoerderliches Feedback benennen
+- 🧠 ein Fallbeispiel didaktisch einordnen
+- 🪞 einen Transfer in die eigene Praxis formulieren
+```
+
+---
+
+## Folie 5 — Einordnung (optional)
+
+- nur ergänzen, wenn eine eigene Einordnungsfolie wirklich Mehrwert bringt
+
+---
+
+## Themenfolien (wiederholbar)
+
+- ein oder mehrere fachlich benannte Inhaltsfolien anlegen
+- pro Folie eine klare Kernbotschaft fokussieren
+- Arbeitsauftrag, Diskussion oder Transfer nur ergänzen, wenn es zur Dramaturgie passt
+- Ziel: visuelle Strukturierung, schnelle kognitive Orientierung und Hervorhebung zentraler Aussagen.
+
+Robustes Fragmentmuster fuer Listen:
+
+```html
+<ul>
+  <li>🧭 erster Punkt</li>
+  <li class="fragment">🧠 zweiter Punkt</li>
+  <li class="fragment">🪞 dritter Punkt</li>
+</ul>
+```
 
 Hinweis:
+Emojis werden über mehrere Fragmente hinweg konsistent fortgeführt und nicht nur im ersten Punkt verwendet.
 
-- Nutze nach Möglichkeit `title_reveal` und `emojis` im Frontmatter,
-  um die visuelle Tonalität der Präsentation zu schärfen.
+## Arbeits-, Diskussions- und Transferfolien (optional)
 
----
+- Arbeits-, Diskussions- und Transferfolien setzen Emojis im sichtbaren Folieninhalt gemaess `project_governance/content_emoji_policy.md` ein.
 
-## Folie 2 — Leitfrage / Problem 💭
+Beispiel Arbeitsauftrag:
 
-Formuliere die zentrale Leitfrage.
+```markdown
+## 💬 Arbeitsauftrag
 
-Die Folie soll:
+💬 Vergleicht zu zweit ein Beispiel aus eurer Praxis und haltet fest:
 
-- Interesse wecken
-- das Problem sichtbar machen
-- den Einstieg strukturieren.
+- 🧩 Welche Methode wird sichtbar?
+- 🪞 Wo braucht es eine Anpassung?
+```
 
----
+Beispiel Transfer / Reflexion:
 
-## Folie 3 — Ablauf 🧭
+```markdown
+## 🪞 Transfer
 
-Überblick über den Ablauf der Sitzung.
+🪞 Welche Veraenderung uebernimmst du in deine naechste Sitzung?
+```
 
-Zum Beispiel:
+Optionales Muster fuer Bild- oder Medienfolien:
 
-1 Einstieg  
-2 Problem / Leitfrage  
-3 Arbeitsphase  
-4 Diskussion  
-5 Reflexion  
-6 Transfer  
+```html
+<figure class="figure-frame figure-frame-sm">
+  <img src="..." alt="...">
+</figure>
+<p class="zitat-quelle">Bildquelle: ... · Lizenz: CC BY-SA 4.0</p>
+```
 
----
-
-## Folie 4 — Lernziele 🎯
-
-Formuliere die wichtigsten Lernziele der Veranstaltung.
-
----
-
-## Folie 5 — Einordnung
-
-Ordne das Thema kurz ein.
-
-Zum Beispiel:
-
-- fachliche Perspektive
-- didaktische Perspektive
-- Praxisbezug.
-
----
-
-## Folie 6 — Arbeitsphase 🧩
-
-Beschreibe die zentrale Lernaktivität.
-
-Die Folie enthält:
-
-- Arbeitsauftrag
-- Arbeitsform
-- ggf. Zeitrahmen.
-
----
-
-## Folie 7 — Diskussion / Reflexion 🪞
-
-Mögliche Diskussionsfragen.
-
-Ziel:
-
-- Argumentation
-- Perspektivwechsel
-- Reflexion.
-
----
-
-## Folie 8 — Transfer / Erweiterung 🌱
-
-Fragen zur Übertragung des Gelernten.
-
-Zum Beispiel:
-
-- Anwendung auf andere Kontexte
-- Verbindung zu Praxis
-- weiterführende Fragen.
-
----
-
-## Adaptive Kernfolienregel
-
-Die Anzahl der inhaltlichen Kernfolien wird dynamisch aus dem Blogartikel abgeleitet.
-
-- Ermittle zuerst, wie viele Kernpunkte im Blogartikel fachlich ausgearbeitet wurden.
-- Erzeuge daraus eine fachlich sinnvolle Themenfolienstruktur (1:1 oder gruppiert).
-- Vermeide starre Folienanzahlen, wenn sie nicht zur inhaltlichen Dramaturgie passen.
-
-Die Folienstruktur ist somit ein Gerüst,
-das an die fachlich sinnvolle Gliederung angepasst wird.
-
-### Transformations-Checks (verbindlich)
-
-- Erzeuge ein kurzes Mapping: Blogkernpunkt -> Themenfolie.
-- Übernimm nur Inhalte, die im Blogartikel fachlich ausgearbeitet sind.
-- Ergänze keine neuen unbelegten Kernaussagen.
-- Prüfe vor Abschluss die Konsistenz von Kernaussagen zwischen Blog und Reveal.
-- Folientitel sollen als reine Themenüberschrift erscheinen
-  (z. B. "Lerntypen") und keine sichtbaren Präfixe wie "Kernfolie" enthalten.
-- Stelle sicher, dass alle Blogkernpunkte in den Folien inhaltlich abgedeckt sind.
-
-## Gestaltungsstil (verbindlich)
-
-Reveal-Folien sollen die Referenzqualität erkennbar treffen:
-
-- klare Leitfrage- und Zielorientierung,
-- hoher visueller Fokus, wenig Fließtext,
-- gezielter Einsatz von `fragment`-Schritten,
-- semantische Emojis als Navigationshilfe,
-- praxisnahe Arbeitsaufträge statt Textwände.
-
-Zusätzliche Qualitätsregeln (verbindlich):
-
-- Pro Inhaltsfolie genau eine klare Kernbotschaft.
-- Textdichte niedrig halten: Richtwert maximal 35-45 Wörter pro Inhaltsfolie.
-- Keine kompakten Absatzblöcke; stattdessen kurze Aussagen, Listen, Callouts.
-- Fachliche Verdichtung über mehrere Folien statt "alles auf eine Folie".
-- Sichtbarer Medieneinsatz: pro fachlichem Hauptkapitel mindestens ein visuelles Element
-  (z. B. Abbildung, Diagramm, Tabelle, Schema).
-- Jede eingesetzte Grafik erhält eine kurze Quellenzeile auf der Folie.
-- Reveal-Fragmente so nutzen, dass Argumentation schrittweise sichtbar wird
-  (nicht dekorativ, sondern dramaturgisch).
-
-Sprach-/Schreibregeln (verbindlich):
-
-- Folientexte in natürlichem, präsentationsnahen Deutsch ausgeben.
-- In sichtbaren deutschen Texten Umlaute normalisieren: `ae -> ä`, `oe -> ö`, `ue -> ü`.
-- In sichtbaren deutschen Texten Gedankenstrich `–` als Satzzeichen verwenden (statt Bindestrich `-`).
-- Externe Links im sichtbaren Folientext immer als HTML-Anker mit sichtbarem Linktext ausgeben: `<a href="..." target="_blank" rel="noopener noreferrer">LINKTEXT</a>`.
-- Die Badge-Regeln fuer das Blog-Literaturverzeichnis (siehe `templates/blog_template.md`) bleiben davon unberuehrt.
-- Die Umlaut-Normalisierung gilt nicht für technische Felder und Tokens,
-  insbesondere nicht für URLs, Pfade, Dateinamen, Slugs, Alias-Pfade,
-  Bildquellen (`src`) oder maschinenlesbare Schlüssel.
-- Wenn Fachbegriffe, Eigennamen oder Zitate bewusst ASCII verwenden,
-  bleibt die Originalschreibweise erhalten.
-
-Nutze bei passenden Inhalten:
-
-- Callout-Boxen für zentrale Take-aways,
-- Bild- oder Medienfolien mit kurzer Quellenzeile,
-- kurze Interaktionsfolien (Fragen, Abstimmung, Auftrag).
-
-Bildpfad-Regel (verbindlich):
-
-- Standard fuer aus dem Blog uebernommene Bilder: absolute Pfade auf den Blogbeitrag verwenden (`/iWIP/blog/<bereich>/<ordner>/...`).
-- Reveal-spezifische Bilder (z. B. Schrittsequenzen oder Animationen) im Reveal-Ordner ablegen und relativ referenzieren.
-- Relative Bildpfade duerfen nur verwendet werden, wenn die Datei im Reveal-Ordner tatsaechlich vorhanden ist.
-- Wenn ein Bild nicht aufloesbar ist, vor Finalisierung Pfad korrigieren oder Datei gezielt in den Reveal-Ordner uebernehmen.
+- In Reveal steht die Bildquelle schlank unter der Visualisierung; ein eigener Bildtitel ist meist entbehrlich, wenn der Folientitel die Funktion bereits uebernimmt.
+- Unter Bildern, Grafiken, Diagrammen, Screenshots und Fotos immer `zitat-quelle` mit dem Praefix `Bildquelle:` verwenden.
+- Die Quellenzeile enthaelt immer Herkunft und Lizenzstatus; `Illustration:` ist optional. Lizenzlinks sind in Reveal nicht erforderlich.
 
 ---
 
 ## Vorletzte Folie — Literatur
 
+```markdown
 {{< literatureSlide >}}
+```
 
 ---
 
 ## Letzte Folie — Abschluss
 
+```markdown
 {{< endSlide >}}
-
----
-
-## Gestaltungsregeln
-
-Reveal-Folien sollen:
-
-- wenig Text enthalten
-- klare Arbeitsaufträge formulieren
-- Diskussion und Interaktion fördern.
-- Abstände zwischen Überschrift und Liste über Utility-Klassen in
-  `static/css/custom_reveal.css` steuern (z. B. `.headline-list-gap`),
-  nicht über Inline-Styles pro Folie.
-
-Sprachregel:
-
-- Folientexte sollen mündlich anschlussfähig sein,
-- nicht wie komprimierte Blogabsätze wirken,
-- und pro Folie eine klare Kernbotschaft tragen.
-
-Der Fokus liegt auf:
-
-- Leitfrage
-- Aktivität
-- Diskussion
-- Reflexion.
-
-## Definition of Done (Reveal-Layout)
-
-Definition of Done: siehe master_agent.md (Definition of Done - Reveal-Ableitung).
+```

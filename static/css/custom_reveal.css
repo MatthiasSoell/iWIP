@@ -528,6 +528,67 @@
   fill: currentColor;
 }
 
+.reveal .iwip_reveal_qr_inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.reveal .iwip_reveal_qr_label {
+  display: inline-block;
+}
+
+.reveal .iwip_reveal_qr_trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  padding: 0;
+  margin-top: -0.4em;
+  border: 1px solid rgba(1, 74, 153, 0.12);
+  border-radius: 999px;
+  background: rgba(236, 242, 250, 0.95);
+  color: var(--uni-blau);
+  box-shadow:
+    inset 0 0 1px rgba(255,255,255,0.55),
+    0 2px 6px rgba(1,74,153,0.14);
+  cursor: pointer;
+  flex: 0 0 auto;
+  vertical-align: middle;
+  line-height: 1;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.reveal .iwip_reveal_qr_trigger:hover {
+  background: rgba(200, 215, 235, 0.46);
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 0 1px rgba(255,255,255,0.5),
+    0 3px 8px rgba(1,74,153,0.18),
+    0 0 0 1px rgba(1,74,153,0.12);
+}
+
+.reveal .iwip_reveal_qr_trigger:focus-visible {
+  outline: 2px solid rgba(1, 74, 153, 0.35);
+  outline-offset: 2px;
+}
+
+.reveal .iwip_reveal_qr_icon {
+  display: inline-flex;
+  width: 0.72rem;
+  height: 0.72rem;
+}
+
+.reveal .iwip_reveal_qr_icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: currentColor;
+}
+
 /* Dark-Variante für Titel-Buttons */
 .reveal section.has-dark-background .buttons button {
   background: rgba(45, 50, 60, 0.26);
@@ -1514,12 +1575,56 @@ body.presentation-view footer {
   border-radius: 12px;
 }
 
+.reveal .figure-frame--zoomable {
+  position: relative;
+}
+
+.reveal .iwip_reveal_image_trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.reveal .iwip_reveal_image_trigger img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .iwip_overlay--qr .iwip_overlay_panel {
   width: min(84vw, 350px);
   aspect-ratio: 1 / 1;
   padding: 0.75rem;
   display: grid;
   place-items: center;
+}
+
+.iwip_overlay--image .iwip_overlay_panel {
+  width: min(92vw, 1200px);
+  max-height: 90vh;
+  padding: 0.9rem;
+}
+
+.iwip_overlay--image .iwip_overlay_close {
+  top: 0.3rem;
+  right: 0.3rem;
+}
+
+.iwip_overlay--image .iwip_reveal_image_wrap {
+  display: grid;
+  place-items: center;
+}
+
+.iwip_overlay--image .iwip_reveal_image_wrap img {
+  display: block;
+  max-width: 100%;
+  max-height: 84vh;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
 }
 
 .iwip_overlay--qr .iwip_qr_wrap {

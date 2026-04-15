@@ -1,8 +1,15 @@
 # Didaktisches Qualitätsmodell (DQM) – SciBlog iWIP
 
+Version: 1.0.0
+Status: didaktisches Referenzdokument
+Scope: DQM-Leitdimensionen, Profile und Prüfmatrix für agentische Planung und Finalprüfung
+
 Referenzdokument für den Master-Agent.
 Das DQM steuert die didaktische Strukturierung, die profilabhängige Planung,
 den Kohärenzcheck und die abschließende Qualitätsprüfung.
+
+Normative Steuerung, Konfliktbehandlung, Profil-Defaults und Pflichtlogik liegen ausschliesslich in `project_governance/agent_contract.md`.
+Das DQM liefert Diagnose und Heuristik, keine eigene Prozesssteuerung.
 
 ## Nutzungsprinzipien
 
@@ -21,15 +28,37 @@ den Kohärenzcheck und die abschließende Qualitätsprüfung.
    einen Mindeststandard. Keine Dimension darf vollständig ignoriert werden;
    der Mindeststandard ist ⚠️ (teilweise), nicht ❌ (fehlt).
 
-4. **Konflikttransparenz**: Wenn Nutzervorgaben in erkennbarem Widerspruch zu
-   DQM-Dimensionen stehen, stoppt der Agent die Planung und gibt den
-   verpflichtenden Konfliktblock aus Core Rule 45 aus.
-   Dieser Konfliktblock muss
-   (1) jede Spannung einzeln mit Bezug zur betroffenen DQM-Dimension benennen,
-   (2) eine zusammenhängende DQM-Empfehlung geben, die alle benannten Spannungen adressiert,
-   (3) eine Entscheidungsfrage stellen, die sich auf die gesamte Empfehlung bezieht
-   und die Folgen für alle betroffenen DQM-Dimensionen nennt.
-   Stille Umsetzung widersprüchlicher Vorgaben ist nicht zulässig.
+4. **Konfliktbehandlung**: Konflikte werden ausschliesslich gemaess Contract behandelt.
+   -> `project_governance/agent_contract.md` – Abschnitt Konfliktregel
+   Das DQM liefert nur Diagnose, keine Steuerung.
+
+## Quellenkanon und Referenzstatus
+
+Der Quellenkanon des DQM wird bewusst kompakt in Kurzform geführt.
+Ziel ist keine vollständige Bibliografie, sondern ein stabiler didaktischer
+Referenzrahmen für Planung, Diagnose und Finalprüfung.
+
+Es gelten drei Ebenen:
+
+1. **Fachlicher Leitanker**: Für die sozio-ökonomische Bildung ist Reinhold
+   Hedtke der fachliche Primäranker.
+2. **Didaktischer Kernkanon**: Wiederkehrende Referenzen wie Weinert, Biggs,
+   Anderson & Krathwohl, Heimann/Otto/Schulz, Helmke, Hattie & Timperley,
+   Schön, Korthagen, Dewey und Vygotsky markieren die tragenden DQM-Bezüge.
+3. **Anschlussreferenzen**: Weitere Namen, Modelle und Curricula
+   konkretisieren einzelne Dimensionen, ohne allein die Profilgewichtung oder
+   die Leitlogik des DQM zu verändern.
+
+Mehrfachnennungen einzelner Referenzen über mehrere Dimensionen hinweg sind
+funktional und kein Redaktionsfehler. Sie markieren unterschiedliche
+didaktische Funktionen derselben Quelle, z. B. Biggs für Zielorientierung und
+Lernqualität oder Helmke für Lernqualität und Adaptivität.
+
+Änderungen am fachlichen Leitanker oder am didaktischen Kernkanon sind
+normative Eingriffe und vor Freeze-Ständen explizit zu prüfen.
+Anschlussreferenzen können ergänzt oder präzisiert werden, solange dadurch
+keine neue Leitdimension, keine Profilumgewichtung und keine stille
+Theoriewende eingeführt wird.
 
 ---
 
@@ -58,10 +87,11 @@ Diese Perspektive erweitert ein rein instrumentelles Verständnis von Wirtschaft
 
 ---
 
-### Referenzrahmen
+### Fachlicher Leitanker der sozio-ökonomischen Bildung
 
-- Reinhold Hedtke: Sozioökonomische Bildung  
-- (optional ergänzbar: weitere Ansätze der pluralen ökonomischen Bildung)
+- Reinhold Hedtke: sozioökonomische Bildung als fachlicher Primäranker
+- ergänzende plural-ökonomische Perspektiven sind anschlussfähig,
+  ersetzen diesen Leitanker aber nicht stillschweigend
 
 ---
 
@@ -159,15 +189,15 @@ sofern sie didaktisch begründet und nicht nur additiv ergänzt werden.
 
 ---
 
-### Referenzrahmen
+### Leitreferenzen der Zielorientierung
 
-- Weinert (2001): Kompetenzbegriff  
-- Biggs (1996/2011): Constructive Alignment / Deep Learning  
-- Anderson & Krathwohl (2001): Taxonomie kognitiver Lernziele  
-- Baumert & Kunter (2006): Professionelle Kompetenz von Lehrkräften  
-- Basiscurriculum Berufs- und Wirtschaftspädagogik (BWP)  
+- Weinert (2001): Kompetenzbegriff als Handlungsfähigkeit in Anforderungssituationen
+- Biggs (1996/2011): Constructive Alignment und Deep Learning
+- Anderson & Krathwohl (2001): Taxonomie kognitiver Lernziele
+- Baumert & Kunter (2006): professionelle Kompetenz von Lehrkräften
+- Basiscurriculum Berufs- und Wirtschaftspädagogik (BWP): curriculare Anschlusslogik
 
-### 2. 🧭 Strukturierung
+## 2. 🧭 Strukturierung
 
 Lehr-Lern-Prozesse werden didaktisch schlüssig strukturiert.
 Die Struktur folgt einer lernlogischen Abfolge und unterstützt die aktive Auseinandersetzung der Lernenden mit dem Gegenstand.
@@ -261,7 +291,7 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ---
 
-### Qualitätskriterien
+### Qualitätskriterien der Strukturierung
 
 - Die Struktur ist für Lernende nachvollziehbar  
 - Die Abfolge der Phasen ist didaktisch begründet  
@@ -272,7 +302,7 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ---
 
-### Typische Schwachstellen
+### Typische Schwachstellen der Strukturierung
 
 - Aneinanderreihung von Methoden ohne didaktische Logik  
 - Unklare oder fehlende Übergänge zwischen Phasen  
@@ -282,12 +312,12 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ---
 
-### Referenzrahmen
+### Leitreferenzen der Strukturierung
 
-- Paul Heimann, Gunter Otto & Wolfgang Schulz: Berliner Modell (Strukturkategorien)  
-- Karl Wilbers: Handlungsorientierung und vollständige Handlung  
-- Tade Tramm: Berufliche Handlungssituationen und Lernfeldansatz  
-- Hilbert Meyer: Phasierung von Unterricht (Einstieg – Erarbeitung – Sicherung – Transfer)  
+- Heimann, Otto & Schulz: Berliner Modell der Unterrichtsplanung
+- Wilbers: Handlungsorientierung und vollständige Handlung
+- Tramm: berufliche Handlungssituationen und Lernfeldansatz
+- Meyer: Phasierung von Unterricht (Einstieg – Erarbeitung – Sicherung – Transfer)
 
 ## 3. 🧠 Lernverständnis
 
@@ -299,7 +329,7 @@ Lernende setzen sich aktiv mit einem Gegenstand auseinander, entwickeln eigene V
 
 ---
 
-### Grundprinzip
+### Grundprinzip des Lernverständnisses
 
 Lernen bedeutet nicht primär Aufnahme von Informationen,
 sondern aktive Konstruktion von Wissen in Auseinandersetzung mit einem Gegenstand.
@@ -404,13 +434,13 @@ Ihre Rolle umfasst:
 
 ---
 
-### Hinweis zur Profilsteuerung
+### Hinweis zur Profilsteuerung im Lernverständnis
 
 Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (A/B/C). Maßgeblich sind die unten definierten Profile und ihre Gewichtung.
 
 ---
 
-### Qualitätskriterien
+### Qualitätskriterien des Lernverständnisses
 
 - Lernende sind aktiv in den Lernprozess eingebunden  
 - Aufgaben fördern Denken statt bloßer Reproduktion  
@@ -421,7 +451,7 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ---
 
-### Typische Schwachstellen
+### Typische Schwachstellen des Lernverständnisses
 
 - überwiegend rezeptiver Unterricht (Zuhören statt Denken)  
 - Aktivität ohne inhaltliche Tiefe („Beschäftigung statt Lernen“)  
@@ -432,13 +462,13 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ---
 
-### Referenzrahmen
+### Leitreferenzen des Lernverständnisses
 
-- Kersten Reich: Konstruktivistische Didaktik  
-- Karl Wilbers: Handlungsorientierung  
-- Tade Tramm: Berufliche Handlungssituationen  
-- John Biggs: Deep vs. Surface Approaches to Learning  
-- Deci & Ryan: Self-Determination Theory (SDT)  
+- Reich: konstruktivistische Didaktik
+- Wilbers: Handlungsorientierung
+- Tramm: berufliche Handlungssituationen
+- Biggs: Deep vs. Surface Approaches to Learning
+- Deci & Ryan: Self-Determination Theory (SDT)
 
 ## 4. 👥 Lernqualität
 
@@ -454,7 +484,7 @@ Damit operationalisiert Lernqualität das Lernverständnis in konkreten Aufgaben
 
 ---
 
-### Grundprinzip
+### Grundprinzip der Lernqualität
 
 Guter Unterricht zeichnet sich nicht primär durch seine äußere Struktur aus,
 sondern durch die Qualität der Lernprozesse.
@@ -545,7 +575,7 @@ Aufgabenformate sollen auch im Assessment über reine Reproduktion hinausgehen.
 
 ---
 
-### Constructive Alignment
+### Constructive Alignment in der Lernqualität
 
 Constructive Alignment (→ Dimension 1: Zielorientierung) zeigt sich in der Lernqualität daran,
 dass Lernziele, Aktivitäten und Prüfung tatsächlich kohärent umgesetzt sind.
@@ -565,13 +595,13 @@ Didaktische Planung berücksichtigt daher die spezifische Logik des Faches
 
 ---
 
-### Hinweis zur Profilsteuerung
+### Hinweis zur Profilsteuerung in der Lernqualität
 
 Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (A/B/C). Maßgeblich sind die unten definierten Profile und ihre Gewichtung.
 
 ---
 
-### Qualitätskriterien
+### Qualitätskriterien der Lernqualität
 
 - Lernaktivitäten fördern Verstehen und Transfer  
 - Aufgaben erfordern aktives Denken und Problemlösen  
@@ -583,7 +613,7 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ---
 
-### Typische Schwachstellen
+### Typische Schwachstellen der Lernqualität
 
 - Aufgaben auf reinem Reproduktionsniveau  
 - scheinbare Aktivität ohne kognitive Tiefe  
@@ -594,12 +624,12 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ---
 
-### Referenzrahmen
+### Leitreferenzen der Lernqualität
 
-- Helmke: Unterrichtsqualität (Basisdimensionen)  
-- Hattie & Timperley: Feedback und Lernwirksamkeit  
-- Biggs: Constructive Alignment / Deep Learning  
-- Lipowsky & Bleck: Fachspezifische Unterrichtsqualität  
+- Helmke: Unterrichtsqualität und Basisdimensionen
+- Hattie & Timperley: Feedback und Lernwirksamkeit
+- Biggs: Constructive Alignment und Deep Learning
+- Lipowsky & Bleck: fachspezifische Unterrichtsqualität
 
 ## 5. 🪞 Reflexion
 
@@ -609,7 +639,7 @@ Sie unterstützt die Entwicklung von Verständnis, Urteilsfähigkeit und profess
 
 ---
 
-### Grundprinzip
+### Grundprinzip der Reflexion
 
 Reflexion bedeutet:
 
@@ -683,13 +713,13 @@ Sie folgt typischerweise einem zyklischen Prozess:
 
 ---
 
-### Hinweis zur Profilsteuerung
+### Hinweis zur Profilsteuerung in der Reflexion
 
 Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (A/B/C). Maßgeblich sind die unten definierten Profile und ihre Gewichtung.
 
 ---
 
-### Qualitätskriterien
+### Qualitätskriterien der Reflexion
 
 - Reflexion ist erkennbar in den Lernprozess integriert  
 - Reflexion geht über bloße Meinungsäußerung hinaus  
@@ -700,7 +730,7 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ---
 
-### Typische Schwachstellen
+### Typische Schwachstellen der Reflexion
 
 - Reflexion fehlt oder ist nur additiv am Ende  
 - Reflexion bleibt oberflächlich („Hat Spaß gemacht“)  
@@ -710,11 +740,11 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ---
 
-### Referenzrahmen
+### Leitreferenzen der Reflexion
 
-- Donald Schön: Reflective Practitioner (reflection-in-action / on-action)  
-- Fred Korthagen: Zyklisches Reflexionsmodell (ALACT)  
-- John Dewey: Reflexives Denken  
+- Schön: Reflective Practitioner (reflection-in-action / on-action)
+- Korthagen: zyklisches Reflexionsmodell (ALACT)
+- Dewey: reflexives Denken
 
 ## 6. 🌱 Adaptivität
 
@@ -724,7 +754,7 @@ Sie ist Voraussetzung dafür, dass Lernangebote für unterschiedliche Lernende w
 
 ---
 
-### Grundprinzip
+### Grundprinzip der Adaptivität
 
 Lernende unterscheiden sich in:
 
@@ -789,7 +819,7 @@ sondern auch während des Lernprozesses:
 
 ---
 
-### Rolle der Lehrperson
+### Rolle der Lehrperson in der Adaptivität
 
 Die Lehrperson übernimmt eine adaptive Steuerungsfunktion:
 
@@ -812,13 +842,13 @@ Didaktische Verantwortung bleibt jedoch bei der Lehrperson.
 
 ---
 
-### Hinweis zur Profilsteuerung
+### Hinweis zur Profilsteuerung in der Adaptivität
 
 Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (A/B/C). Maßgeblich sind die unten definierten Profile und ihre Gewichtung.
 
 ---
 
-### Qualitätskriterien
+### Qualitätskriterien der Adaptivität
 
 - Lernvoraussetzungen werden berücksichtigt  
 - Aufgaben bieten unterschiedliche Zugänge oder Niveaus  
@@ -828,7 +858,7 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ---
 
-### Typische Schwachstellen
+### Typische Schwachstellen der Adaptivität
 
 - Einheitliche Aufgaben für alle ohne Differenzierung  
 - Überforderung oder Unterforderung einzelner Lernender  
@@ -838,17 +868,17 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ---
 
-### Referenzrahmen
+### Leitreferenzen der Adaptivität
 
-- Andreas Helmke: Unterrichtsqualität (Umgang mit Heterogenität)  
-- John Hattie: Sichtbarkeit von Lernen und Differenzierung  
-- Lev Vygotsky: Zone der nächsten Entwicklung (Scaffolding)  
+- Helmke: Unterrichtsqualität und Umgang mit Heterogenität
+- Hattie: Sichtbarkeit von Lernen und Differenzierung
+- Vygotsky: Zone der nächsten Entwicklung und Scaffolding
 
 ---
 
 ## Didaktische Profile
 
-### Profil A – Integrativ-kompetenzorientiert (Default)
+### Profil A – Integrativ-kompetenzorientiert
 
 **Grundlogik**: Lehrende strukturieren den Lernprozess, Lernende arbeiten aktiv und kompetenzorientiert.
 
@@ -960,7 +990,7 @@ Diese Prinzipien gelten dimensionsübergreifend und werden in der Prüfmatrix al
 
 ## Kompakte Prüfmatrix
 
-| Dimension | Pflichtprüfung | ✅ erfüllt | ⚠️ teilweise | ❌ fehlt |
+| Dimension | Diagnosefrage | ✅ erfüllt | ⚠️ teilweise | ❌ fehlt |
 |---|---|---|---|---|
 | 🎯 Zielorientierung | Kompetenz-Lernziele formuliert? | Beobachtbar + niveaupassend | Vorhanden, aber vage | Fehlt oder nur „kennen/wissen" |
 | 🧭 Strukturierung | Phasenlogik + Zeitrahmen? | Schlüssig + realistisch | Logik erkennbar, Zeit unklar | Keine Phasenstruktur |
@@ -970,7 +1000,7 @@ Diese Prinzipien gelten dimensionsübergreifend und werden in der Prüfmatrix al
 | 🌱 Adaptivität | Differenzierung möglich? | Mehrere Zugänge | Eine Alternative | Keine Differenzierung |
 | 🔗 Querschnittsprinzipien | Fundierung, Bezug, Offenheit, Fehlerkultur, Methodenbewusstheit? | Alle Prinzipien erkennbar | Teilweise berücksichtigt | Mehrere Prinzipien nicht erkennbar |
 
-Mindeststandard: Keine Dimension darf ❌ sein, auch nicht bei niedriger Profilgewichtung.
-Bei ❌ in einer Pflichtdimension ist Rückfrage verpflichtend; Finalisierung erst nach Klärung.
+Mindeststandard und Folgerungen werden ausschliesslich im Contract definiert.
+Das DQM markiert diagnostisch, wo eine Dimension unzureichend ausgearbeitet ist.
 
 Die Prüfmatrix wird vor `BLOG FINAL` als DQM-Prüfbericht ausgegeben.

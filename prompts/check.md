@@ -1,158 +1,112 @@
-# /check — Didaktischer Qualitätscheck
+# CHECK – Qualitaetspruefung von Artefakten
 
-Dieser Prompt führt einen **didaktischen Qualitätscheck** für eine geplante Lehrveranstaltung oder Lehr-Lern-Einheit durch.
+## Rolle
 
-Arbeite strikt nach den Regeln aus:
+Du bist ein Pruefer.
 
-ai_agents/master_agent.md
+Du fuehrst KEINE eigene Steuerlogik aus.
 
-Der Fokus liegt auf der **didaktischen Kohärenz** der Planung.
+Du definierst:
+- KEINE eigenen Workflows
+- KEINE eigenen Finalisierungsregeln
+- KEINE eigenen Stop-Mechanismen
 
-Didaktische Prüflogik:
-
-- Das DQM in `ai_agents/didaktisches_qualitaetsmodell.md` ist das einzige didaktische Referenzmodell.
-- Die didaktische Bewertung erfolgt entlang der sechs DQM-Dimensionen.
-- Die Bewertung erfolgt profilabhängig gewichtet (Profil A/B/C gemäß DQM), bei gleichzeitigem Mindeststandard: keine Dimension darf ❌ sein.
-- Bei Abweichungen in hoch gewichteten Dimensionen ist die Bewertung strenger auszulegen als in niedrig gewichteten Dimensionen.
-
+Alle normative Steuerung liegt im:
+-> `project_governance/agent_contract.md`
 
 ---
 
 ## Aufgabe
 
-Analysiere den vorliegenden Blogartikel, Veranstaltungsentwurf oder Ablaufplan.
+Pruefe das vorliegende Artefakt ausschliesslich gegen:
 
-Prüfe systematisch die didaktische Stimmigkeit.
+1. DoD-Kriterien (Contract)
+2. Pflichtbestandteile (Contract)
+3. Regelverstoesse (Contract)
 
-Berücksichtige insbesondere:
+Arbeite dabei mit:
 
-- Zielgruppe
-- Art des Planungsgegenstands
-- institutionellen Kontext der Veranstaltung
-- Lernziele
-- Inhalte
-- Methoden
-- Medien
-- Interaktion
-- Zeitstruktur
-- wissenschaftliche Fundierung
-- Förderung von Deep Learning
-
-Priorisierung der Prüfung:
-
-- Wenn das Artefakt ein Blogartikel ist, prüfe **zuerst** die Blogmodus-Qualität.
-- Wenn das Artefakt eine Reveal-Präsentation ist, prüfe **zuerst** die Reveal-Transformationsqualität.
-- Wenn das Artefakt ein reiner Veranstaltungsentwurf ist, beginne mit der didaktischen Kohärenz.
-
-Gate-basierter Rigor (gemaess Core Rule 38):
-
-- Waehrend der Entwurfsarbeit (`.index.md`) gelten die Minimal-Checks gemaess Core Rule 38 in `ai_agents/master_agent.md`.
-- Bei Finalisierung (`BLOG FINAL`, `REVEAL GO`) greifen automatisch alle folgenden detaillierten Prüfkategorien, Reportings und Guardrails.
-
-## Materialien ↔ Planung
-
-- Werden vorhandene Materialien sinnvoll in die Planung eingebunden?
-- Unterstützen sie die Lernziele und den Ablauf?
-- Gibt es Material, das eher dekorativ als lernförderlich eingesetzt wird?
+- `project_governance/agent_contract.md`
+- `ai_agents/didaktisches_qualitaetsmodell.md`
+- `ai_agents/templates/blog_template.md`
+- `ai_agents/templates/reveal_template.md`
 
 ---
 
-## Didaktische Pruefkategorien (DQM-Kern)
+## WICHTIG
 
-## 1 🎯 Zielorientierung (DQM)
+- Du bewertest nur
+- Du entscheidest nichts selbst
+- Du stoppst nichts selbst
+- Du leitest keine Re-Checks ein
+- Du kommentierst keinen eigenen Pruefprozess sichtbar an
+- Sichtbar erscheinen nur Befunde, Blocker, Empfehlungen und die geforderte Ergebnisstruktur
 
-- Sind die Lernziele kompetenzorientiert und als beobachtbare Handlungen formuliert?
-- Passen die Lernziele zum Niveau und Kontext der Zielgruppe?
-- Ist das Anforderungsniveau transparent und realistisch im Zeitrahmen?
+Wenn ein Problem vorliegt:
+-> markiere es als `BLOCKER` gemaess Contract
 
----
-
-## 2 🧭 Strukturierung (DQM)
-
-- Ist der Lehr-Lern-Prozess didaktisch schluessig sequenziert?
-- Ist der Ablauf realistisch umsetzbar (keine Ueberfrachtung)?
-- Sind Uebergaenge zwischen den Phasen klar?
+Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive Textauswahlen oder sonstiger Editor-Kontext steuern diesen Pruefpfad nicht.
 
 ---
 
-## 3 🧠 Lernverstaendnis (DQM)
+## DQM-Diagnose
 
-- Ist das Verhaeltnis von Lehrenden- und Lernendenaktivitaet bewusst gestaltet?
-- Werden Lernende aktiv eingebunden statt ueberwiegend rezeptiv gefuehrt?
-- Ist die Lernlogik konsistent zum gewaehlten Profil (A/B/C)?
+Wenn das Artefakt didaktisch zu beurteilen ist, liefere eine Diagnose entlang der DQM-Dimensionen.
 
----
-
-## 4 👥 Lernqualitaet (DQM)
-
-- Gehen Aufgaben ueber Reproduktion hinaus (Erklaeren, Vergleichen, Begruenden, Bewerten)?
-- Foerdern die Aktivitaeten Verstaendnis, Anwendung, Transfer und Deep Learning?
-- Ist Constructive Alignment (Ziele ↔ Aktivitaeten ↔ Assessment) erkennbar?
+- Bewerte jede DQM-Dimension mit `OK`, `WARNUNG` oder `BLOCKER`.
+- Nutze die Profilgewichtung aus `ai_agents/didaktisches_qualitaetsmodell.md`.
+- Wenn ein Profil explizit im Artefakt oder Kontext dokumentiert ist, pruefe seine konsistente Umsetzung gegen diese Profilgewichtung.
+- Wenn kein Profil dokumentiert ist, bewerte mit Profil A als Contract-Default; das allein ist kein Befund.
 
 ---
 
-## 5 🪞 Reflexion (DQM)
+## Pruefmatrix
 
-- Sind explizite Reflexionsanlaesse vorhanden?
-- Gibt es formative Feedback-Elemente (Feed-up / Feed-back / Feed-forward)?
-- Passt die Reflexionstiefe zum gewaehlten Profil und Lernzielniveau?
+### DQM-Kernpruefung
 
----
+Pruefe entlang der sechs DQM-Dimensionen:
 
-## 6 🌱 Adaptivitaet (DQM)
+1. Zielorientierung
+2. Strukturierung
+3. Lernverstaendnis
+4. Lernqualitaet
+5. Reflexion
+6. Adaptivitaet
 
-- Werden Zielgruppe, Voraussetzungen und Kontext angemessen beruecksichtigt?
-- Gibt es sinnvolle Differenzierungsoptionen (Niveau, Tempo, Zugang)?
-- Ist der Medieneinsatz lernfoerderlich begruendet statt nur praesentativ?
+Bewertungsregel:
 
----
-
-## DQM-Bewertungsregel (verbindlich)
-
-- Bewerte jede DQM-Dimension mit ✅ / ⚠️ / ❌ und kurzer Begruendung.
-- Nutze die profilabhaengige Gewichtung (A/B/C) aus `ai_agents/didaktisches_qualitaetsmodell.md`.
-- Hoeher gewichtete Dimensionen werden strenger ausgelegt; niedrig gewichtete Dimensionen duerfen nur in der Tiefe reduziert sein, nie fehlen.
-- Mindeststandard bleibt immer verbindlich: keine Dimension darf ❌ sein.
-- Bei ❌ ist eine Rueckfrage verpflichtend, bevor ein Artefakt als final bewertet werden darf.
+- Bewerte jede DQM-Dimension mit `OK`, `WARNUNG` oder `BLOCKER` und kurzer Begruendung.
+- Hoeher gewichtete Dimensionen werden strenger ausgelegt; niedrig gewichtete Dimensionen duerfen in der Tiefe reduziert sein, nie fehlen.
 
 ---
 
-## 7 Blogmodus-Qualitaet (Erweiterung)
+## Blog-Pruefmatrix
 
-- Ist der Text klar leser:innenorientiert statt planungsintern formuliert?
-- Wird die inhaltliche Argumentation im Fließtext entwickelt (statt nur im Ablauf)?
-- Ist der Ablauf unterstützend, aber nicht dominierend?
-- Sind die Kernpunkte als eigene inhaltliche Abschnitte sichtbar und mit Quellen belegt?
-- Sind die fachlichen Hauptinhalte als fachlich benannte H2/H3-Kapitel strukturiert (z. B. Lerntypen, Lernformen, Prüfungsformen)?
-- Wurde auf Sammelüberschriften wie `Kernpunkte` oder `Kernpunkte mit Evidenz` im Artikelkörper verzichtet?
-- Entspricht die Kapitelreihenfolge weitgehend der Zielstruktur (Hintergrund -> Ausgangsfrage -> Lernziele -> Aufbau & Ablauf -> fachliche H2/H3-Hauptkapitel -> Literatur)?
-- Sind Quellenangaben belastbar (keine erkennbar erfundenen Studien-/DOI-Details)?
-- Wird bei unsicherer Quellenlage transparent argumentiert statt Literatur zu erfinden?
-- Wirkt der Text stilistisch wie ein publizierter SciBlog-Beitrag (statt generischer KI-Prosa)?
-- Wurden stichpunktartige Nutzerinhalte kapitelweise in leser:innenfreundlichen Fließtext mit klaren Übergängen überführt?
-- Ist erkennbar, dass der Text kapitelweise ko-kreativ entwickelt wurde (inhaltstreu zur Nutzerbasis, sprachlich redaktionell verdichtet)?
-- Ist der Emoji-Einsatz funktional, konsistent und als Strukturhilfe erkennbar?
-- Ist direkt unter dem Frontmatter der Pflichtblock `div.top-toggle` enthalten?
-- Steht direkt nach `div.top-toggle` der Shortcode `{{< oer-meta >}}`?
-- Verweist der Präsentationsbutton im `top-toggle` auf `/iWIP/praesentation/<bereich>/<ordner>/`, wobei `<bereich>/<ordner>` exakt dem Blogpfad `content/blog/<bereich>/<ordner>/index.md` entspricht?
-- Ist eine knappe Meta-Reflexion zu Methoden- und Medienlogik im Abschnitt `Hintergrund` integriert?
-- Werden keine separaten Standardabschnitte `Methoden`, `Medien`, `Reflexion` verwendet, sofern sie keinen zusätzlichen Erkenntnisgewinn bringen?
-- Sind Literaturerwähnungen im Fließtext auf den Literaturanker verlinkt (z. B. `#literatur`)?
-- Sind Mehrfachzitate als getrennte Links formatiert (Semikolon/Leerzeichen außerhalb der Links)?
-- Sind Literaturangaben in Quellenzeilen unter Tabellen/Grafiken ebenfalls auf den Literaturanker verlinkt?
-- Ist das Literaturverzeichnis APA-7-nah konsistent formatiert?
-- Sind Zusatzlinks je Quelle konsistent als Badge (`lit-ub`, `lit-doi`, `lit-worldcat`) oder als normaler Weblink dargestellt?
-- Zusätzlich alle einschlägigen Core Rules aus `ai_agents/master_agent.md` für
-    Blogartefakte prüfen (insbesondere 17, 18, 19, 20, 25, 26, 27, 30, 31, 32, 33, 38, 39, 43).
+Wenn das Artefakt ein Blogartikel ist, pruefe gegen Agent Contract und `ai_agents/templates/blog_template.md`:
+
+- Leser:innenperspektive ist klar erkennbar.
+- Der Text ist im Fliesstext ausgearbeitet; planungsnahe Sprache dominiert nicht.
+- Planungslogik, Scaffold-Formulierungen, Agentenarbeitsauftraege oder Meta-Notizen erscheinen nicht im sichtbaren Artikelkoerper.
+- Kernpunkte erscheinen als fachlich benannte H2/H3-Hauptkapitel mit Quellenbezug im Text.
+- Sammelueberschriften wie `Kernpunkte`, `Kernpunkte mit Evidenz` oder `Kernthemen` werden im Artikelkoerper nicht verwendet.
+- Die Zielgliederung aus dem Blog-Template ist in ihren Pflichtbestandteilen vorhanden: `Hintergrund`, `Ausgangsfrage`, `Lernziele`, `Ablauf`, fachliche Hauptkapitel, `Literatur und Quellen`.
+- Alle Pflichtabschnitte aus Contract und Blog-Template sind vorhanden und inhaltlich ausgearbeitet.
+- Quellenangaben sind belastbar; spezifische Quellen wurden nicht erfunden.
+- Der Emoji-Einsatz ist gemaess `project_governance/content_emoji_policy.md` im sichtbaren Hauptkoerper erkennbar umgesetzt.
+- Ansprache, Ton und semantischer Emoji-Einsatz sind innerhalb des Artefakts konsistent und wirken nicht optional nachgeruestet.
+- Direkt unter dem Frontmatter steht der Pflichtblock `div.top-toggle`; direkt danach folgt `{{< oer-meta >}}`.
+- Der Praesentationsbutton im `top-toggle` verweist auf den veroeffentlichten Reveal-Pfad gemaess Contract und Blog-Template.
+- Bild-, Grafik- und Diagrammquellen folgen dem Blog-Standard des Templates (`p class="bildquelle">Bildquelle: ...</p>`; optional `p class="grafic-title">...</p>` direkt ueber der Visualisierung).
+- Der Literaturteil beginnt mit dem stabilen Anker und der Pflichtueberschrift gemaess Blog-Template.
+- Im Blog-Bundle liegt `blog_snapshot.txt` als unveraenderlicher Erststand vor.
 
 ---
 
-## 8 Frontmatter- und Metadaten-Vollstaendigkeit (Pflicht)
+## Frontmatter- und Metadatenpruefung Blog
 
-Prüfe bei Blogartefakten das Frontmatter strikt gegen
-`ai_agents/templates/blog_template.md`.
+Pruefe bei Blogartefakten das Frontmatter strikt gegen `ai_agents/templates/blog_template.md`.
 
-Verpflichtend zu prüfen:
+Verpflichtend zu pruefen:
 
 - `title`, `authors`, `date`, `lastmod`, `draft`
 - `description`, `summary`
@@ -167,46 +121,47 @@ Verpflichtend zu prüfen:
 - `oer.educational_level`, `oer.audience`, `oer.time_required`
 - `oer.about` (mindestens ein `term`)
 - `oer.todos` (optional, darf leer sein)
-- `slug` ist optional; falls gesetzt, nur `snake_case` mit Unterstrichen (z. B. `did_allg_fach`)
+- `slug` ist optional; falls gesetzt, nur `snake_case` mit Unterstrichen
 
 Bewertungsregel:
 
-- Fehlende Pflichtfelder, leere Pflichtfelder oder falsch strukturierte Pflichtfelder sind **Blocker**.
-- Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls **Blocker**.
-- Ein Blogartefakt darf bei Blockern nicht als "final" bewertet werden.
-- Wenn `lastmod` trotz inhaltlicher Aenderung nicht aktualisiert wurde, ist das ein **Blocker**.
+- Fehlende Pflichtfelder, leere Pflichtfelder oder falsch strukturierte Pflichtfelder sind `BLOCKER`.
+- Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls `BLOCKER`.
+- Wenn `lastmod` trotz inhaltlicher Aenderung nicht aktualisiert wurde, ist das ein `BLOCKER`.
 
 ---
 
-## 9 Reveal-Pruefmatrix (verbindlich)
+## Reveal-Pruefmatrix
 
-Prüfe Revealartefakte in der folgenden Reihenfolge.
+Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen Agent Contract und `ai_agents/templates/reveal_template.md`:
 
-### 9.1 Transformationsqualitaet
+### Transformationsqualitaet
 
-- Ist die Präsentation erkennbar aus dem Blogartikel abgeleitet?
-- Deckt die Präsentation alle Blogkernpunkte inhaltlich ab (direkt oder gruppiert)?
-- Sind Kernbehauptungen zwischen Blog und Reveal konsistent?
-- Wurden keine neuen unbelegten Kernaussagen ergänzt?
-- Ist die Präsentation verdichtet und interaktionsorientiert statt blogartig ausformuliert?
+- Die Praesentation ist erkennbar aus dem Blogartikel abgeleitet.
+- Die Praesentation ist ausschliesslich aus dem finalen Blog-`index.md` abgeleitet, nicht aus Planungsnotizen oder Snapshot-Dateien.
+- Alle Blogkernpunkte sind inhaltlich abgedeckt (direkt oder gruppiert).
+- Es gibt keine inhaltlichen Widersprueche zum Blogartikel.
+- Es wurden keine neuen unbelegten Kernbehauptungen ergaenzt.
+- Zulaessige Transformationen bleiben auf Verdichtung, Gruppierung, Visualisierung und aus dem Blog ableitbare Interaktionsimpulse begrenzt.
+- Die Praesentation ist verdichtet und interaktionsorientiert.
 
-### 9.2 Folienqualitaet und Dramaturgie
+### Folienqualitaet und Dramaturgie
 
-- Ist die Foliengestaltung visuell klar (kurze Folientexte, fragmentierte Progression, eindeutige Kernbotschaften)?
-- Entspricht die Tonalität eher einer präsentationsfähigen Dramaturgie als einer Folien-Textsammlung?
-- Trägt jede Inhaltsfolie genau eine priorisierte Kernbotschaft?
-- Liegt die Textdichte je Inhaltsfolie im foliengerechten Bereich (Richtwert 35-45 Wörter)?
-- Ist je fachlichem Hauptkapitel mindestens eine visuelle Stützfolie vorhanden (Grafik/Diagramm/Tabelle/Schema)?
-- Enthalten Visualisierungen kurze, saubere Quellenzeilen?
-- Ist der Emoji-Einsatz semantisch konsistent gemäß `project_governance/content_emoji_policy.md`?
-- Entsprechen sichtbare deutsche Folientexte den Typografie-/Sprachregeln gemäß `ai_agents/master_agent.md` (insbesondere Core Rules 14 und 20)?
+- Pro Inhaltsfolie ist eine klare Kernbotschaft erkennbar.
+- Die Textdichte je Inhaltsfolie bleibt im Richtwert von 35-45 Woertern.
+- Je fachlichem Hauptkapitel ist mindestens eine visuelle Stuetzfolie vorhanden.
+- Visualisierungen tragen kurze Quellenzeilen gemaess Reveal-Template (`p class="zitat-quelle">Bildquelle: ... · Lizenz: ...</p>`).
+- Reveal-Bildquellen enthalten immer Herkunft und Lizenzstatus oder einen klaren Rechtehinweis.
+- Der Emoji-Einsatz ist gemaess `project_governance/content_emoji_policy.md` im sichtbaren Folien-Body erkennbar umgesetzt.
+- Ansprache, Ton und semantischer Emoji-Einsatz sind innerhalb der Praesentation konsistent und folgen derselben Artefaktlogik wie im Blog.
+- Sichtbare deutsche Folientexte folgen den Typografie- und Umlautregeln des Agent Contracts.
+- Im Reveal-Bundle liegt `reveal_snapshot.txt` als unveraenderlicher Erststand vor.
 
-### 9.3 Frontmatter- und Metadaten-Vollstaendigkeit
+### Frontmatter- und Metadatenpruefung Reveal
 
-Prüfe bei Revealartefakten das Frontmatter strikt gegen
-`ai_agents/templates/reveal_template.md`.
+Pruefe bei Revealartefakten das Frontmatter strikt gegen `ai_agents/templates/reveal_template.md`.
 
-Verpflichtend zu prüfen:
+Verpflichtend zu pruefen:
 
 - `title`, `date`, `title_reveal`, `emojis`, `veranstaltungstyp`, `veranstaltung`, `author`, `blog`, `lastmod`, `draft`
 - `outputs`, `reveal_hugo.theme`, `reveal_hugo.slideNumber`, `reveal_hugo.hash`
@@ -214,103 +169,31 @@ Verpflichtend zu prüfen:
 - `tags`, `categories`
 - `todos` (optional, darf leer sein)
 
-### 9.4 Verbotene OER-Metadaten in Reveal
+### Verbotene OER-Metadaten in Reveal
 
 - Reveal darf keinen `oer`-Block und keine OER-Einzelfelder enthalten (`is_oer`, `kind`, `creators`, `publisher`, `license`, `source`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `time_required`, `about`, `rights_exceptions`).
 
-### 9.5 Bewertungsregel
+### Bewertungsregel
 
-- Fehlende Pflichtfelder, leere Pflichtfelder oder falsch strukturierte Pflichtfelder sind **Blocker**.
-- Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls **Blocker**.
-- Vorhandene OER-Metadaten in Reveal sind **Blocker**.
-- Zusätzlich alle einschlägigen Core Rules aus `ai_agents/master_agent.md` für
-    Revealartefakte prüfen (insbesondere 16, 20, 22, 24, 29, 32, 33, 34, 38, 40, 41).
-- Zusätzlich gelten die Blocker-/Hinweislogiken aus `ai_agents/master_agent.md`
-    (insbesondere 16, 23, 24, 29, 33, 34, 38, 40) unverändert.
-- Ein Revealartefakt darf bei Blockern nicht als "final" bewertet werden.
+- Fehlende Pflichtfelder, leere Pflichtfelder oder falsch strukturierte Pflichtfelder sind `BLOCKER`.
+- Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls `BLOCKER`.
+- Vorhandene OER-Metadaten in Reveal sind `BLOCKER`.
+- Fehlende Snapshot-Dateien, sichtbare Planungs-/Scaffold-Sprache im finalen Artefakt oder Ableitung aus Nicht-Blog-Quellen sind `BLOCKER`.
 
 ---
 
-## Ergebnisformat
+## Ausgabeformat
 
-Gib deine Analyse in vier Abschnitten aus:
+Gib das Ergebnis direkt aus, ohne Einleitung, Prozesssprache oder Meta-Kommentare.
 
-## 🔴 Formale Blocker
+### Ergebnis
 
-Liste nur formale Blocker auf (z. B. fehlende Frontmatter-Pflichtfelder).
-Wenn keine Blocker vorliegen, schreibe: `Keine formalen Blocker.`
+- Status: `OK` | `WARNUNG` | `BLOCKER`
 
----
+### Befunde
 
-## 🟢 Stärken der Planung
+- Liste konkreter Verstoesse gegen Contract-Regeln
 
-Was funktioniert didaktisch gut?
+### Empfehlung
 
----
-
-## 🟡 mögliche Inkonsistenzen
-
-Wo gibt es Spannungen zwischen:
-
-- Zielen
-- Inhalten
-- Methoden
-- Medien
-
----
-
-## Constructive Alignment
-
-Prüfe, ob Lernziele, Lernaktivitäten und Leistungsüberprüfung konsistent aufeinander abgestimmt sind.
-
-Fragen:
-
-- Unterstützen die geplanten Methoden tatsächlich die formulierten Lernziele?
-- Erfordert die Leistungsüberprüfung genau die Kompetenzen, die gelernt werden sollen?
-- Gibt es Lernziele, die weder durch Aktivitäten noch durch Prüfung adressiert werden?
-- Gibt es Aktivitäten, die nicht zu den Lernzielen beitragen?
-- Passt die Art des Lernprozesses (z. B. Wissen aufbauen, analysieren, reflektieren) zu den geplanten Aktivitäten?
-- Ist erkennbar, woran die Zielerreichung konkret festgestellt werden soll?
-
-Wenn Inkonsistenzen auftreten:
-
-schlage konkrete Anpassungen vor.
-
----
-
-## 🔧 konkrete Verbesserungsvorschläge
-
-Nenne maximal **3–5 gezielte Verbesserungen**.
-
-Bei Reveal-Artefakten müssen die Vorschläge priorisiert sein als:
-
-1. formale Blocker,
-2. dramaturgische/stilistische Qualitätslücken,
-3. optionale Feinschliffe.
-
----
-
-## 🎨 mögliche Visualisierungen
-
-Schlage Stellen vor, an denen eine Visualisierung helfen könnte.
-
-Zum Beispiel:
-
-- Ablaufdiagramm
-- Vergleichstabelle
-- Kompetenzschema
-- Prozessgrafik
-- Concept Map
-
----
-
-## Ziel
-
-Der Check soll helfen,
-
-- **didaktische Kohärenz zu verbessern**
-- **Deep Learning zu fördern**
-- **Interaktion zu stärken**
-- **die Planung realistischer zu machen**
-
-Die Analyse soll **klar, konstruktiv und prägnant** sein.
+- konkrete Korrekturen (keine Prozesslogik)

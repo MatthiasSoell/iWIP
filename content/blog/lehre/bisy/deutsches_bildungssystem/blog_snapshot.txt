@@ -1,0 +1,331 @@
+---
+title: "Wie funktioniert das deutsche Bildungssystem?"
+date: 2026-04-14
+lastmod: 2026-04-14
+draft: true
+
+description: |
+  Die Veranstaltung führt in 90 Minuten in Aufbau, Logik und rechtliche Rahmung des deutschen Bildungssystems ein und verbindet individuelle Bildungsbiographien mit strukturellen Perspektiven auf Bildung, Gesellschaft und Arbeitswelt.
+summary: |
+  Sie lernen das deutsche Bildungssystem als gegliedertes, durchlässiges und föderal organisiertes System kennen und recherchieren abschließend zentrale Merkmale des Bildungssystems in Mecklenburg-Vorpommern.
+
+tags:
+  - Bildungssysteme
+  - Deutsches Bildungssystem
+  - Bildungsbiographie
+  - Bildungswege
+  - Föderalismus
+  - Mecklenburg-Vorpommern
+
+categories:
+  - Lehre
+
+permalink: "/blog/lehre/bisy/deutsches_bildungssystem/"
+
+oer:
+  is_oer: true
+  kind: "lesson"
+
+  creators:
+    - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      url: ""
+      orcid: ""
+
+  publisher:
+    name: "Universität Rostock"
+    url: "https://www.uni-rostock.de/"
+
+  license:
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  version: "1.0"
+  status: "pilot"
+
+  in_language: "de"
+  learning_resource_type: "Lesson"
+  educational_level:
+    - "Bachelor (grundlagenorientiert)"
+  audience:
+    - "Studierende der Wirtschaftspädagogik"
+  time_required: "PT90M"
+
+  about:
+    - term: "Bildungssysteme"
+    - term: "Deutsches Bildungssystem"
+    - term: "Bildungsbiographie"
+    - term: "Bildungswege"
+    - term: "Föderalismus"
+    - term: "Mecklenburg-Vorpommern"
+    - term: "Subjektive und strukturelle Perspektive"
+    - term: "Gesellschaft, Bildungssystem und Arbeitswelt"
+    - term: "Rechtliche Rahmenbedingungen"
+    - term: "Bildungssystem Mecklenburg-Vorpommern"
+
+  todos: []
+---
+
+<div class="top-toggle">
+  <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
+  <button onclick="triggerPrint()" title="Blog speichern">📥</button>
+  <button onclick="location.href='/iWIP/praesentation/lehre/bisy/deutsches_bildungssystem/'" title="Zur Präsentationsansicht">🖥️</button>
+  <button class="iwip_help_btn"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="iwip_help_overlay"
+        aria-expanded="false"
+        title="Hinweise zur Nutzung">
+  ⓘ
+  </button>
+</div>
+
+{{< oer-meta >}}
+
+---
+
+# 📚 Gegenstand
+
+Diese erste inhaltliche Vorlesung im Modul eröffnet den Zugang zum Thema über einen doppelten Blick: **Bildung wird individuell erlebt**, ist aber zugleich **gesellschaftlich organisiert**. Bildungsbiographien erscheinen aus subjektiver Sicht oft als Folge persönlicher Entscheidungen. Im Lehrgespräch wird jedoch sichtbar, dass diese Entscheidungen immer in institutionelle Strukturen, Übergangsregeln, Abschlüsse, Zuständigkeiten und gesellschaftliche Erwartungen eingebettet sind.
+
+Im Zentrum steht deshalb die Frage, **wie das deutsche Bildungssystem funktioniert**: Wie ist es aufgebaut? Wer ist wofür zuständig? Welche Rolle spielen Bund, Länder und einzelne Institutionen? Und wie hängen **Gesellschaft**, **Bildungssystem** und **Arbeitswelt** zusammen?
+
+---
+
+# 💭 Leitfrage
+
+> [!TIPP]
+> **Wie lassen sich individuelle Bildungswege verstehen, wenn man sie zugleich als Teil eines gesellschaftlich, rechtlich und institutionell geordneten Bildungssystems betrachtet?**
+
+---
+
+# 🎯 Lernziele
+
+Die Veranstaltung verbindet lebensweltlichen Einstieg, systematische Einführung und eine erste eigenständige Recherche.
+
+Sie lernen, ...
+
+- 👤 den Zusammenhang zwischen **individuellen Bildungsbiographien** und dem **Bildungssystem** herzustellen.
+- 🔁 zwischen **subjektiven Erfahrungen** und **strukturellen Perspektiven** auf Bildung zu unterscheiden.
+- 🧭 die Rollen und Perspektiven des Subjekts in der **Trias aus Gesellschaft, Bildungssystem und Arbeitswelt** zu erkennen und zu reflektieren.
+- 🏛️ den **systematischen Aufbau des deutschen Bildungssystems** zu beschreiben und zu erklären.
+- ⚖️ zentrale **rechtliche Rahmenbedingungen** des Bildungssystems einzuordnen.
+- 🔎 offizielle Quellen zum Bildungssystem in **Mecklenburg-Vorpommern** zu nutzen und erste Rechercheergebnisse aufzubereiten.
+
+---
+
+# 🧭 Aufbau & Ablauf
+
+Gesamtdauer: ca. **90 Minuten**
+
+<div class="agenda">
+
+| Phase | Inhalt | Ziel | Zeit |
+|:------|:--------|:------|:------:|
+| **1️⃣ Einstieg 👤** | Aktivierung über eigene Bildungswege und erste Wortmeldungen zu biographischen Erfahrungen | Lebensweltbezug herstellen und Heterogenität sichtbar machen | ⏱️ 15 Min |
+| **2️⃣ Lehrgespräch 🔁** | Subjektive und strukturelle Perspektive auf Bildung unterscheiden | analytische Grundunterscheidung aufbauen | ⏱️ 15 Min |
+| **3️⃣ Systematik 🏛️** | Aufbau des deutschen Bildungssystems von frühkindlicher Bildung bis Weiterbildung | Systemlogik, Übergänge und Durchlässigkeit verstehen | ⏱️ 25 Min |
+| **4️⃣ Recht ⚖️** | Föderale Zuständigkeiten und zentrale Rechtsgrundlagen | Steuerung und Rahmung des Systems einordnen | ⏱️ 10 Min |
+| **5️⃣ Recherche MV 🔎** | Kurzrecherche mit offiziellen Quellen zum Bildungssystem in Mecklenburg-Vorpommern | Quellenkompetenz und Regionalbezug entwickeln | ⏱️ 15 Min |
+| **6️⃣ Diskussion 💬** | Austausch über Besonderheiten, offene Fragen und erste Bewertungen | Ergebnisse sichern und regionale Perspektive reflektieren | ⏱️ 10 Min |
+
+</div>
+
+---
+
+# 1️⃣ Einstieg – Bildungsbiographie als Zugang
+
+Zum Auftakt bietet sich ein kurzer Austausch über eigene Bildungswege an. Der Einstieg kann mündlich, per Zuruf oder über eine einfache Aufstellung erfolgen.
+
+Mögliche Impulse:
+
+- 🎓 Wer ist direkt nach dem Abitur an die Universität gegangen?
+- 🛠️ Wer hat vor dem Studium eine Berufsausbildung begonnen oder abgeschlossen?
+- 🛤️ Wer hat den Bildungsweg über mehrere Stationen oder Umwege erlebt?
+- 📍 Wer hat Schule oder Ausbildung in Mecklenburg-Vorpommern absolviert?
+
+Anschlussfragen:
+
+- 👤 Welche Anteile Ihres Bildungswegs erleben Sie als **eigene Entscheidung**?
+- 🏛️ Wo werden **institutionelle Vorgaben**, **Zugangsregeln** oder **Abschlüsse** sichtbar?
+- 🌍 Welche Rolle spielten Schule, Familie, Region, Arbeitsmarkt oder Zufälle?
+
+Didaktischer Punkt: Bildungsbiographien sind ein guter Einstieg, weil sie die Studierenden unmittelbar betreffen. Zugleich lässt sich von hier aus der Übergang zur systematischen Analyse vorbereiten.
+
+---
+
+# 2️⃣ Subjektive und strukturelle Perspektive
+
+Im Lehrgespräch wird die Unterscheidung zwischen **subjektiver** und **struktureller** Perspektive explizit gemacht.
+
+## 👤 Subjektive Perspektive
+
+Hier steht im Vordergrund, wie Bildung von einzelnen Personen erlebt wird:
+
+- 👤 Interessen, Wünsche und Entscheidungen
+- 🧠 Erfolgserlebnisse und Brüche
+- 🛤️ Übergänge als persönliche Erfahrung
+- 🪞 Deutungen des eigenen Bildungswegs
+
+## 🏛️ Strukturelle Perspektive
+
+Hier rückt das Bildungssystem als gesellschaftliche Ordnung in den Blick:
+
+- 🏫 Schularten und Übergänge
+- 📜 Abschlüsse und Berechtigungen
+- ⚖️ rechtliche Vorgaben
+- 🌍 soziale Ungleichheiten und Zugangsbedingungen
+- 🧭 institutionelle Erwartungen
+
+> [!TIPP]
+> Die analytische Kernidee lautet: **Individuen handeln im Bildungssystem nie voraussetzungslos.** Persönliche Bildungswege entstehen im Zusammenspiel von subjektiven Entscheidungen und strukturellen Bedingungen.
+
+---
+
+# 3️⃣ Die Trias aus Gesellschaft, Bildungssystem und Arbeitswelt
+
+Um die Perspektive zu weiten, kann die Veranstaltung mit einer einfachen Trias arbeiten:
+
+- 🌍 **Gesellschaft:** Werte, Normen, soziale Ungleichheit, Teilhabe, Integration
+- 🏫 **Bildungssystem:** Institutionen, Abschlüsse, Übergänge, Selektion, Förderung
+- 💼 **Arbeitswelt:** Qualifikationsanforderungen, Berufe, Fachkräftesicherung, Beschäftigung
+
+Die Lernenden können reflektieren, dass das Subjekt in allen drei Bereichen zugleich positioniert ist:
+
+- 👥 als Mitglied der Gesellschaft,
+- 🎓 als Lernende:r im Bildungssystem,
+- 💼 als gegenwärtige oder zukünftige Arbeitskraft in der Arbeitswelt.
+
+Leitende Reflexionsfragen:
+
+- 💭 Welche Erwartungen richten diese drei Teilsysteme an Individuen?
+- 🔁 Wo ergänzen sie sich, wo entstehen Spannungen?
+- 📈 Wie prägen Bildungsabschlüsse spätere Chancen auf dem Arbeitsmarkt?
+
+---
+
+# 4️⃣ Systematischer Aufbau des deutschen Bildungssystems
+
+Im Vortrag bzw. Lehrgespräch wird anschließend der grundlegende Aufbau des deutschen Bildungssystems systematisiert.
+
+## 🧱 Zentrale Bildungsbereiche
+
+- **Frühkindliche Bildung, Betreuung und Erziehung**
+- **Primarbereich**
+- **Sekundarbereich I**
+- **Sekundarbereich II**
+- **Berufliche Bildung**
+- **Hochschulbildung**
+- **Weiterbildung / Erwachsenenbildung**
+
+## 🔄 Zentrale Merkmale
+
+- 🧭 Das System ist **gegliedert**: Es besteht aus verschiedenen Bildungsbereichen und Institutionen.
+- 🏛️ Es ist **föderal organisiert**: Die Länder tragen die Hauptverantwortung für das Schulwesen.
+- 🔁 Es ist prinzipiell **durchlässig**: Abschlüsse eröffnen Anschlussmöglichkeiten, auch wenn diese in der Praxis ungleich verteilt sind.
+- 📜 Es ist **zertifikats- und berechtigungsorientiert**: Übergänge werden häufig über formale Abschlüsse geregelt.
+
+Für die Visualisierung eignet sich besonders das offizielle KMK-Schaubild zur **Grundstruktur des Bildungswesens in der Bundesrepublik Deutschland**; die zugehörigen offiziellen Einstiegsquellen stehen im Abschnitt [Literatur und Quellen](#literatur).
+
+---
+
+# 5️⃣ Rechtliche Rahmenbedingungen
+
+Für die erste Orientierung genügt eine konzentrierte Auswahl zentraler Rechtsbezüge:
+
+- ⚖️ **Art. 7 GG:** Das Schulwesen steht unter staatlicher Aufsicht.
+- 🏛️ **Art. 30 und Art. 70 GG:** Bildung ist in weiten Teilen Sache der Länder; daraus folgt die föderale Prägung des Systems.
+- 📚 **Länderrecht:** Schulgesetze und Verordnungen regeln Aufbau und Ausgestaltung des Schulwesens in den einzelnen Bundesländern.
+- 🛠️ **BBiG:** Für die berufliche Bildung ist das Berufsbildungsgesetz ein zentraler bundesrechtlicher Rahmen.
+
+Damit lässt sich bereits ein grundlegendes Verständnis entwickeln:
+
+- 🏛️ Das Bildungssystem in Deutschland ist **nicht vollständig zentral gesteuert**.
+- 🔁 Es gibt einen **gemeinsamen Rahmen** und zugleich **länderspezifische Ausprägungen**.
+- 🤝 Gerade für Wirtschaftspädagogik ist die Verbindung von **Bildung**, **Beruf** und **Recht** besonders relevant.
+
+---
+
+# 6️⃣ Arbeitsauftrag – Recherche zum Bildungssystem in Mecklenburg-Vorpommern
+
+Zum Ende der Sitzung recherchieren die Studierenden in Kleingruppen oder Tandems mit **offiziellen Quellen**.
+
+## 📝 Recherchefragen
+
+Bearbeiten Sie zwei bis drei der folgenden Fragen:
+
+1. Wie ist das **Schulsystem in Mecklenburg-Vorpommern** grundsätzlich aufgebaut?
+2. Welche **Schularten** sind in Mecklenburg-Vorpommern besonders relevant?
+3. Wie ist die **berufliche Bildung** in Mecklenburg-Vorpommern organisiert?
+4. Welche Hinweise finden Sie auf **Durchlässigkeit**, **Übergänge** oder **regionale Besonderheiten**?
+5. Wo werden **rechtliche Grundlagen** oder Zuständigkeiten des Landes sichtbar?
+
+## 📌 Ergebnisformat
+
+Halten Sie Ihre Ergebnisse knapp fest:
+
+- 📍 in 3 bis 5 Stichpunkten,
+- 🔎 mit mindestens **einer offiziellen Quelle**,
+- 🪞 und mit einer kurzen Einschätzung, was für Mecklenburg-Vorpommern besonders auffällt.
+
+⏱️ *Bearbeitungszeit: ca. 15 Minuten*
+
+---
+
+# 💬 Abschlussdiskussion
+
+Zum Abschluss werden die Rechercheergebnisse im Plenum gebündelt.
+
+Mögliche Diskussionsfragen:
+
+- 💭 Was erscheint am Bildungssystem in Mecklenburg-Vorpommern typisch für Deutschland?
+- 📍 Wo zeigen sich landesspezifische Besonderheiten?
+- 💼 Welche Rolle spielt die berufliche Bildung mit Blick auf regionale Wirtschafts- und Arbeitsmarktstrukturen?
+- 🔁 Welche Spannungen werden sichtbar zwischen **individuellen Bildungswünschen** und **strukturellen Vorgaben**?
+
+Eine mögliche Sicherung im Schlussteil:
+
+- 👤 **Subjektive Perspektive:** Wie erleben Menschen Bildungswege?
+- 🏛️ **Strukturelle Perspektive:** Wie ordnet und begrenzt das System diese Wege?
+- 🧭 **Trias:** Wie hängen Gesellschaft, Bildungssystem und Arbeitswelt zusammen?
+
+---
+
+# 📚 Didaktischer Kommentar
+
+Die Sitzung ist bewusst als **Vortrag mit Lehrgespräch** angelegt. Der lebensweltliche Einstieg erleichtert den Zugang, ohne beim rein biographischen Erzählen stehen zu bleiben. Die Studierenden sollen vielmehr früh lernen, individuelle Bildungsverläufe als Teil einer gesellschaftlich und rechtlich strukturierten Ordnung zu analysieren.
+
+Die kurze Recherchephase am Ende erfüllt dabei zwei Funktionen:
+
+- 📍 Sie öffnet den Blick vom bundesweiten Überblick zur **landesspezifischen Konkretisierung**.
+- 🔎 Sie trainiert früh den Umgang mit **offiziellen und belastbaren Quellen**.
+
+---
+
+<a id="literatur"></a>
+
+# 📚 Literatur und Quellen
+
+Stand der verlinkten offiziellen Seiten: **14. April 2026**
+
+## Deutschland
+
+- <a href="https://www.kmk.org/downloads-dokumente/das-deutsche-bildungssystem.html" target="_blank" rel="noopener noreferrer">Kultusministerkonferenz: Das deutsche Bildungssystem</a>
+- <a href="https://www.kmk.org/bildungsministerkonferenz/bildungsthemen/bildungswege-und-abschluesse.html" target="_blank" rel="noopener noreferrer">Kultusministerkonferenz: Bildungswege und Abschlüsse</a>
+- <a href="https://www.gesetze-im-internet.de/gg/art_7.html" target="_blank" rel="noopener noreferrer">Grundgesetz Art. 7</a>
+- <a href="https://www.gesetze-im-internet.de/gg/art_30.html" target="_blank" rel="noopener noreferrer">Grundgesetz Art. 30</a>
+- <a href="https://www.gesetze-im-internet.de/gg/art_70.html" target="_blank" rel="noopener noreferrer">Grundgesetz Art. 70</a>
+- <a href="https://www.gesetze-im-internet.de/bbig_2005/BJNR093110005.html" target="_blank" rel="noopener noreferrer">Berufsbildungsgesetz (BBiG)</a>
+
+## Mecklenburg-Vorpommern
+
+- <a href="https://www.bildung-mv.de/schule/schularten/" target="_blank" rel="noopener noreferrer">Bildung MV: Schularten</a>
+- <a href="https://www.regierung-mv.de/Landesregierung/bm/Schule/Schulorganisation/" target="_blank" rel="noopener noreferrer">Regierungsportal MV: Schulorganisation</a>
+- <a href="https://www.regierung-mv.de/Landesregierung/bm/Schule/Berufliche-Schule/" target="_blank" rel="noopener noreferrer">Regierungsportal MV: Berufliche Schule</a>
+- <a href="https://www.regierung-mv.de/Landesregierung/bm/Schule/Schulorganisation/Schulrecht/" target="_blank" rel="noopener noreferrer">Regierungsportal MV: Schulrecht</a>

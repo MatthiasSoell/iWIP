@@ -143,192 +143,52 @@ project_governance/ai_copilot_instructions.md
 
 ## 🤖 Didaktischer Planungsagent
 
-Der SciBlog iWIP nutzt einen KI-Agenten (Version 1.0.0) zur Unterstützung der didaktischen Planung und Veröffentlichung von Lehr-Lern-Arrangements als OER.
+Der integrierte Agent unterstützt Lehrende und Studierende dabei, Lehrveranstaltungen klar zu planen, Inhalte schrittweise auszuarbeiten und daraus veröffentlichbare Materialien zu entwickeln.
 
-Der Agent arbeitet dialogisch in **fünf Phasen** und verbindet Planung, Ausarbeitung und Publikation in einem konsistenten Workflow.
+Im Zentrum steht ein einfacher Zusammenhang: **Planung → Blog → Präsentation**. Die fachliche und didaktische Arbeit beginnt mit der Planung. Daraus entsteht ein Blogbeitrag als zentrales Arbeitsdokument. Wenn gewünscht, kann anschließend eine Präsentation aus diesem Blogbeitrag abgeleitet werden.
 
-### Kerneigenschaften
+Der Agent ist dabei kein technisches Steuerinstrument, sondern ein didaktisches Werkzeug. Er hilft, Gedanken zu ordnen, Ziele zu schärfen, Lernwege zu strukturieren und Inhalte so aufzubereiten, dass sie für Lehre, Reflexion und Austausch nutzbar werden.
 
-- **44 Core Rules** regeln Modus, Qualität und Artefakterstellung verbindlich.
-- **Didaktisches Qualitätsmodell (DQM)** mit sechs Leitdimensionen und kompakter Prüfmatrix.
-- **Drei didaktische Profile**: (A) Integrativ-kompetenzorientiert (Default), (B) Handlungsorientiert-konstruktivistisch, (C) Instruktionsorientiert.
-- **Gate-basierter Rigor**: Während der Entwurfsarbeit gelten Minimal-Checks; bei Finalisierung (`BLOG FINAL`, `REVEAL GO`) greifen automatisch alle Hardchecks, Guardrails und Reportings.
-- **Blog-Wissensbasis**: Kuratierter Index veröffentlichter Blogartikel für thematische Anschlussfähigkeit.
-- **Ko-kreative Textarbeit**: Kapitelweise Zusammenarbeit (Nutzerinput → publizistischer Fließtext).
+### Wofür der Agent gedacht ist
 
-### Fünf-Phasen-Workflow
+- zur Unterstützung bei der Planung von Lehrveranstaltungen
+- zur strukturierten Entwicklung von Blogbeiträgen
+- zur Ableitung von Präsentationen auf Grundlage des Blogbeitrags
 
-| Phase | Beschreibung |
-|---|---|
-| P1 – Klären | Kontext, Profil, Wissensbasis-Bezüge |
-| P2 – Strukturieren | Didaktische Struktur, Kohärenzcheck |
-| P3 – Entwerfen | `.index.md` anlegen, Querverweise markieren |
-| P4 – Ko-kreativ ausarbeiten | Kapitelweise Fließtextentwicklung |
-| P5 – Finalisieren | Hardchecks, DQM-Prüfbericht, Reporting |
+### Zentrale Idee
 
-### Agenten-Dateien
+Der Blog ist das Herzstück der Arbeit. Hier werden Inhalte gebündelt, ausgearbeitet und in eine Form gebracht, die sowohl für die Lehre als auch für die Veröffentlichung geeignet ist. Die Präsentation entsteht nicht unabhängig davon, sondern baut auf dem Blogbeitrag auf.
 
-```text
-ai_agents/
-├─ master_agent.md                → Agentendefinition (44 Rules, Workflow, DoD)
-├─ didaktisches_qualitaetsmodell.md → DQM (Dimensionen, Profile, Prüfmatrix)
-├─ blog_wissensbasis.md           → Kuratierter Artikelindex
-└─ templates/
-   ├─ blog_template.md            → Pflichtstruktur Blogartikel
-   └─ reveal_template.md          → Pflichtstruktur Reveal-Präsentation
+Das schafft Klarheit: Erst wird inhaltlich und didaktisch gearbeitet, dann kann aus dieser Grundlage eine Präsentation entwickelt werden.
 
-prompts/
-├─ create.md                      → /create – Neue Planung starten
-├─ check.md                       → /check – Didaktischer Qualitätscheck
-└─ literatur.md                   → /literatur – Literaturformatierung
-```
+### Nutzung
 
----
+Der Einstieg erfolgt über `/create`. Von dort aus begleitet der Agent die Ausarbeitung im Dialog: ruhig, fokussiert und in enger Zusammenarbeit mit den Nutzenden.
 
-## ⚡ Quickstart
+Die Arbeit ist ko-kreativ angelegt. Der Agent macht Vorschläge, strukturiert Inhalte, unterstützt beim Formulieren und hilft dabei, didaktische Entscheidungen sichtbar zu machen. Er übernimmt nicht die Lehrplanung, sondern unterstützt sie.
 
-1. `PLAN START: Thema | Zielgruppe | Zeit`
-2. Profil wählen (A/B/C) oder Default (A) übernehmen
-3. Entwurf dialogisch entwickeln (`.index.md`)
-4. Blog finalisieren (`BLOG FINAL`)
-5. Präsentation erzeugen (`REVEAL GO`)
+Wenn aus dem Blogbeitrag zusätzlich eine Präsentation entstehen soll, kann diese anschließend aus der bereits erarbeiteten Grundlage abgeleitet werden.
 
----
+### Didaktischer Mehrwert
 
-## 🧠 Grundlogik
+- unterstützt eine strukturierte Planung von Lehrveranstaltungen
+- stärkt die Entwicklung aktiver Lernformate
+- fördert Reflexion, Diskussion und nachvollziehbare Begründungen
+- orientiert sich an didaktischer Qualität statt an schneller Texterzeugung
 
-Der Agent arbeitet strikt sequenziell in fünf Phasen (P1–P5):
+### Charakter des Systems
 
-1. Kontext klären und Profil festlegen
-2. Didaktisch strukturieren und Kohärenz prüfen
-3. Blogentwurf entwickeln (`.index.md`)
-4. Kapitelweise ko-kreativ ausarbeiten
-5. Blog finalisieren (`index.md`) und Reveal ableiten
+Der Agent arbeitet zurückhaltend und unterstützend. Er ist auf didaktische Klärung ausgerichtet, nicht auf technische Komplexität. Dadurch bleibt die Zusammenarbeit verständlich, fokussiert und anschlussfähig für unterschiedliche Lehr- und Lernsituationen.
 
-Die `.index.md` dient als nicht-rendernder Arbeitsstand:
+### Verbindung zum Blog und zu OER
 
-- wird iterativ bearbeitet
-- enthält den aktuellen Entwicklungsstand
-- wird bei `BLOG FINAL` in den finalen Blogartikel (`index.md`) überführt
-- ist nicht öffentlich sichtbar (`_build.render: false`, `_build.list: false`)
+Der SciBlog iWIP versteht den Blog als OER-Angebot. Inhalte können veröffentlicht, weiterverwendet und in neuen Lehrzusammenhängen erneut aufgegriffen werden. Der Agent unterstützt diese Erstellung, indem er die Ausarbeitung von der ersten Planung bis zum veröffentlichbaren Blogbeitrag begleitet.
 
-Wichtig:
+### Beispielhafter Ablauf
 
-- Der Blog ist das **Primärartefakt**
-- Die Präsentation wird **immer daraus abgeleitet**
-- Keine parallele Erstellung von Blog und Reveal
-
----
-
-## ⚙️ Steuerung
-
-### Signale
-
-- `PLAN START: Thema | Zielgruppe | Zeit`
-- `Kapitel <N> freigegeben`
-- `BLOG FINAL`
-- `REVEAL GO`
-
-### Gate-basierter Rigor
-
-Es gibt keine separaten Arbeitsmodi. Stattdessen:
-
-- **Entwurfsphase** (`.index.md`): Drei Minimal-Checks (keine erfundenen Quellen, Pflicht-Frontmatter, Reihenfolge Blog vor Reveal).
-- **Finalisierung** (`BLOG FINAL`, `REVEAL GO`): Alle Hardchecks, Guardrails und Reportings greifen automatisch.
-
-### Konsistenzregeln
-
-- Reveal-Dateien enthalten keine OER-Metadaten; OER-Metadaten stehen ausschließlich im Blog.
-- Reveal-Erzeugung und -Finalisierung erfolgen ausschließlich nach dem Signal `REVEAL GO`.
-- Die didaktische Bewertung folgt dem DQM als einzigem didaktischen Referenzmodell, inklusive profilabhängiger Gewichtung (A/B/C).
-
-Verbindliche Governance und Tests:
-
-- `project_governance/agent_contract.md`
-
----
-
-## 🔁 Snapshot-Logik
-
-Bei `REVEAL GO` wird automatisch erzeugt:
-
-```text
-reveal_snapshot.md
-```
-
-Eigenschaften:
-
-- nicht-rendernd (`_build.render: false`, `_build.list: false`)
-- gleicher fachlicher Stand zum Zeitpunkt der Finalisierung
-- dient als Momentaufnahme
-
-Für Blogartikel wird kein Snapshot erzeugt. Stattdessen dient die `.index.md` als Arbeitsstand und Referenz für die Reflexion.
-
-Wichtig:
-
-- Snapshots sind **nicht-operativ**
-- keine Weiterverarbeitung oder Ableitung daraus
-- Reveal wird immer aus dem finalen Blog (`index.md`) erzeugt
-
----
-
-## 💡 Optionale Reflexion
-
-Der Agent kann optional Reflexionen anstoßen:
-
-Nach `BLOG FINAL`:
-
-- Vergleich zwischen bearbeiteter `.index.md` und finalem `index.md`
-- Einordnung von Änderungen (Korrekturen, Ergänzungen, Anpassungen)
-- Ableitung von 2–4 Reflexionsfragen oder Hypothesen
-
-Nach `REVEAL GO`:
-
-- Vergleich zwischen `reveal_snapshot.md` und finalem Reveal-Stand
-- Ableitung von 2–4 Reflexionsfragen oder Hypothesen
-
-→ dient ausschließlich der Weiterentwicklung  
-→ keine automatischen Regeländerungen
-
----
-
-### 🎯 Ziel
-
-Der Agent unterstützt dabei:
-
-- didaktisch kohärente Lehrveranstaltungen zu planen  
-- Inhalte effizient auszuarbeiten  
-- Blogartikel als OER zu publizieren  
-- Präsentationen konsistent daraus abzuleiten  
-
-### 🔄 Agent-Workflow (Übersicht)
-
-```text
-PLAN START
-    ↓
-.index.md (Arbeitsstand, nicht öffentlich)
-    ↓
-Bearbeitung & Ergänzung (dialogisch)
-    ↓
-BLOG FINAL
-    ↓
-index.md (finaler Blogartikel)
-    ↓
-REVEAL GO
-    ↓
-_index.md (vom Agent erzeugte Reveal-Version)
-    + reveal_snapshot.md (Momentaufnahme der ersten Reveal-Version)
-    ↓
-Bearbeitung & Feinschliff an _index.md
-    ↓
-finale _index.md
-```
-
-- Nach BLOG FINAL: 
-      Vergleich .index.md ↔ index.md
-
-- Nach Reveal-Feinschliff:
-    Vergleich `reveal_snapshot.md` ↔ finale `_index.md`
+1. Planung einer Lehrveranstaltung oder Lerneinheit
+2. Ausarbeitung eines Blogbeitrags als zentrales Arbeitsdokument
+3. optionale Ableitung einer Präsentation aus dem Blogbeitrag
 
 ---
 

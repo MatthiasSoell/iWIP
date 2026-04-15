@@ -86,6 +86,8 @@ Ich blogge über **Wissenschaft** (Science Blog) – und veröffentliche meine I
 
 In der Rubrik [OER](/iWIP/blog/oer/) beschäftige ich mich mit den (bildungs-)politischen Rahmenbedingungen, der Entwicklung und der Nutzung freier Bildungsmaterialien. 
 
-Unter [WiDi](/iWIP/blog/widi/) finden Sie meine OER-Lehrmaterialien zum Modul "Grundlagen didaktischen Handelns in Schule und Betrieb (Fachdidaktik Wirtschaft)" im Bachelor Wirtschaftspädagogik an der Universität Rostock.
+Unter [Lehre](/iWIP/blog/lehre/) finden Sie meine OER-Lehrmaterialien, insbesondere zu Modulen im Bachelor- und Masterstudium der Wirtschaftspädagogik an der Universität Rostock. 
+
+Im Bereich [Fortbildung](/iWIP/blog/fortbildung/) stelle ich zudem Materialien für Lehrkräftefortbildungen bereit.
 
 Ich skizziere schließlich in meinen Dokumentationen unter [Doku](/iWIP/blog/doku/), mit welcher Software mein Blog aufgebaut ist.

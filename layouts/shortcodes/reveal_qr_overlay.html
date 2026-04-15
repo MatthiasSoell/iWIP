@@ -1,0 +1,71 @@
+{{- $url := .Get "url" -}}
+{{- $label := .Get "label" | default "Link" -}}
+{{- $text := $label -}}
+{{- if isset .Params "text" -}}
+  {{- $text = .Get "text" -}}
+{{- end -}}
+{{- $id := .Get "id" | default "iwip_reveal_qr_overlay" -}}
+
+{{- if $url -}}
+  <span class="iwip_reveal_qr_inline">
+    {{- if $text -}}
+      <span class="iwip_reveal_qr_label">{{ $text }}</span>
+    {{- end -}}
+    <button
+      type="button"
+      class="iwip_reveal_qr_trigger"
+      data-iwip-overlay-target="{{ $id }}"
+      aria-controls="{{ $id }}"
+      aria-expanded="false"
+      aria-label="QR-Code zu {{ $label }} anzeigen"
+      title="QR-Code anzeigen">
+      <span class="iwip_reveal_qr_icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+          <rect x="2" y="2" width="7" height="7" rx="1.2"></rect>
+          <rect x="4" y="4" width="3" height="3" rx="0.6" fill="#fff"></rect>
+          <rect x="15" y="2" width="7" height="7" rx="1.2"></rect>
+          <rect x="17" y="4" width="3" height="3" rx="0.6" fill="#fff"></rect>
+          <rect x="2" y="15" width="7" height="7" rx="1.2"></rect>
+          <rect x="4" y="17" width="3" height="3" rx="0.6" fill="#fff"></rect>
+          <rect x="12" y="12" width="2" height="2" rx="0.4"></rect>
+          <rect x="15" y="12" width="2" height="2" rx="0.4"></rect>
+          <rect x="12" y="15" width="2" height="2" rx="0.4"></rect>
+          <rect x="18" y="15" width="2" height="2" rx="0.4"></rect>
+          <rect x="15" y="18" width="2" height="2" rx="0.4"></rect>
+          <rect x="20" y="20" width="2" height="2" rx="0.4"></rect>
+        </svg>
+      </span>
+    </button>
+  </span>
+
+  <div
+    id="{{ $id }}"
+    class="iwip_overlay iwip_overlay--qr"
+    data-iwip-overlay
+    role="dialog"
+    aria-modal="true"
+    aria-label="QR-Code zu {{ $label }}"
+    hidden>
+    <div class="iwip_overlay_panel">
+      <button
+        type="button"
+        class="iwip_overlay_close"
+        data-iwip-overlay-close
+        aria-label="Overlay schließen">×</button>
+
+      <div class="iwip_qr_wrap">
+        {{- $opts := dict "scale" 12 "level" "medium" "targetDir" "qr" -}}
+        {{- with images.QR $url $opts -}}
+          <div class="qr-card">
+            <img
+              src="{{ .RelPermalink }}"
+              width="{{ math.Div .Width 2 }}"
+              height="{{ math.Div .Height 2 }}"
+              alt="QR-Code zu {{ $label }}"
+              loading="lazy">
+          </div>
+        {{- end -}}
+      </div>
+    </div>
+  </div>
+{{- end -}}
