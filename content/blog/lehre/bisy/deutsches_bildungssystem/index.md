@@ -214,6 +214,10 @@ Das Subjekt ist in allen drei Bereichen zugleich positioniert:
 - 🎓 als Lernende:r im Bildungssystem,
 - 💼 als gegenwärtige oder zukünftige Arbeitnehmende in der Arbeitswelt.
 
+Die 🌍 **Gesellschaft** bildet dabei den Rahmen sozialer Ordnung und Kommunikation, in dem individuelles Handeln, Teilhabe und Bildungsprozesse überhaupt erst verstehbar werden (<a href="#literatur">Luhmann 2017</a>; <a href="#literatur">Habermas 1999</a>). Die 💼 **Arbeit** vermittelt zwischen Individuum und Gesellschaft, strukturiert soziale Rollen und ist zugleich eng mit Fragen sozialer Ungleichheit verbunden (<a href="#literatur">Offe 1984</a>). Das 🏫 **Bildungssystem** lässt sich vor diesem Hintergrund als institutionelles Arrangement verstehen, das Kompetenzen für gesellschaftliche Arbeit reproduziert, ordnet und weiterentwickelt (<a href="#literatur">Baethge et al. 2007</a>; <a href="#literatur">Kerschensteiner 2020</a>).
+
+<p class="grafic-title">Trias aus Gesellschaft, Bildungssystem und Arbeitswelt</p>
+
 <figure class="figure-frame">
   <img src="Trias_Bildungssystem.png"
        alt="Trias aus Gesellschaft, Bildungssystem und Arbeitswelt">
@@ -246,6 +250,8 @@ Der grundlegende Aufbau des deutschen Bildungssystems kann wie folgt systematisi
 ## 🛠️ Fokus: berufliche Bildung
 
 Im Bereich der beruflichen Bildung gibt es eine **Vielzahl** von Institutionen, Abschlüssen und Übergängen. Hier spielen insbesondere die **Berufsschulen**, die **duale Ausbildung** und **berufsbildende Schulen** eine zentrale Rolle:
+
+<p class="grafic-title">Grundstruktur des Bildungssystems in Deutschland<br>mit Fokus auf berufliche Bildung</p>
 
 {{< blog_image_overlay src="Bildungssystem_Grundstruktur.png" alt="Grundstruktur des Bildungssystems mit Fokus auf berufliche Bildung" id="iwip_bildungssystem_grundstruktur_overlay" >}}
 
@@ -284,13 +290,11 @@ Damit lässt sich bereits ein grundlegendes Verständnis entwickeln:
 
 ---
 
-# 6️⃣ Arbeitsauftrag – Recherche zum Bildungssystem in Mecklenburg-Vorpommern
+# 6️⃣ Recherche zum Bildungssystem in Mecklenburg-Vorpommern
 
-Recherchieren Sie abschließend in Kleingruppen oder Tandems in **offiziellen Quellen** des Landes Mecklenburg-Vorpommern.
+Abschließend recherchierten die Studierenden in Kleingruppen oder Tandems in **offiziellen Quellen** des Landes Mecklenburg-Vorpommern.
 
-## 📝 Recherchefragen
-
-Bearbeiten Sie zwei bis drei der folgenden Fragen:
+## 📝 Rechercheaufträge
 
 1. Welche **Schularten** umfasst die berufliche Bildung in Mecklenburg-Vorpommern? <!-- https://www.bildung-mv.de/schule/schularten/berufliche-schulen --> 
 2. Welche Grundsätze der **Beruflichen Orientierung** im Sekundarbereich II werden in Mecklenburg-Vorpommern im Landeskonzept für den Übergang von der Schule in den Beruf verfolgt? <!-- https://www.bildung-mv.de/schule/schularten/berufliche-schulen/, https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/schule/Landeskonzept_Uebergang_Schule-Beruf_-24.06.2019.pdf -->
@@ -298,6 +302,32 @@ Bearbeiten Sie zwei bis drei der folgenden Fragen:
 4. Wie viele **Lehrkräfte** sind in den beruflichen Schulen in Mecklenburg-Vorpommern tätig? <!-- https://www.laiv-mv.de/static/LAIV/Statistik/Dateien/Publikationen/B%20I%20Allgemeinbildende%20Schulen/B%20123/B123%202024%2000.pdf -->
 5. Wie viele **Schüler:innen** gehen in Mecklenburg-Vorpommern in beruflichen Schulen? <!-- https://www.laiv-mv.de/static/LAIV/Statistik/Dateien/Publikationen/B%20II%20Berufliche%20Schulen%2c%20Berufsbildung/B2131/B2131%202024%2000.pdf -->
 
+<p class="grafic-title">Berufliche Bildung in Mecklenburg-Vorpommern</p>
+
+<figure class="figure-frame">
+  <img src="berufliche_bildung_mv.png"
+       alt="Die berufliche Bildung in MV">
+</figure>
+
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+
+1. **Schularten:** Berufsvorbereitung, Berufsschule, Berufsfachschule, höhere Berufsfachschule, Fachgymnasium, Fachoberschule, Fachschule.  
+  Quelle: <a href="https://www.bildung-mv.de/schule/schularten/berufliche-schulen" target="_blank" rel="noopener noreferrer">bildung-mv.de/schule/schularten/berufliche-schulen</a>
+
+1. **Berufliche Orientierung:** Gleichwertigkeit von Bildungswegen, Verankerung am Gymnasium, Breite der Informationsvermittlung, verpflichtender Unterrichtsumfang, Weiterentwicklung und Ausbau, modulares Unterstützungssystem, Kooperation mit externen Partnern sowie Handlungs- und Zielgruppenorientierung.  
+  Quelle: <a href="https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/schule/Landeskonzept_Uebergang_Schule-Beruf_-24.06.2019.pdf" target="_blank" rel="noopener noreferrer">Landeskonzept Übergang Schule-Beruf (PDF)</a>
+
+1. **Anzahl berufliche Schulen:** 62 (2024).  
+  Quelle: <a href="https://www.laiv-mv.de/static/LAIV/Statistik/Dateien/Publikationen/B%20II%20Berufliche%20Schulen%2c%20Berufsbildung/B2131/B2131%202024%2000.pdf" target="_blank" rel="noopener noreferrer">Statistischer Bericht B2131 2024 (PDF)</a>
+
+1. **Anzahl Lehrkräfte:** 2.069 (2024).  
+  Quelle: <a href="https://www.laiv-mv.de/static/LAIV/Statistik/Dateien/Publikationen/B%20I%20Allgemeinbildende%20Schulen/B%20123/B123%202024%2000.pdf" target="_blank" rel="noopener noreferrer">Statistischer Bericht B123 2024 (PDF)</a>
+
+1. **Anzahl Schüler:innen an beruflichen Schulen:** 36.289 (2024).  
+  Quelle: <a href="https://www.laiv-mv.de/static/LAIV/Statistik/Dateien/Publikationen/B%20II%20Berufliche%20Schulen%2c%20Berufsbildung/B2131/B2131%202024%2000.pdf" target="_blank" rel="noopener noreferrer">Statistischer Bericht B2131 2024 (PDF)</a>
+
+</details>
+      
 ## 📌 Ergebnisformat
 
 Halten Sie Ihre Ergebnisse auf <a href="https://www.taskcards.de/#/board/85425d57-2921-4a91-ae4d-1bcff2e6b216/view?token=a1dea74f-04b8-44d1-8d26-a5fd07ad053a" target="_blank" rel="noopener noreferrer">Taskcards</a>{{< blog_qr_overlay url="https://www.taskcards.de/#/board/85425d57-2921-4a91-ae4d-1bcff2e6b216/view?token=a1dea74f-04b8-44d1-8d26-a5fd07ad053a" label="Taskcards" id="iwip_taskcards_qr" >}} fest:
