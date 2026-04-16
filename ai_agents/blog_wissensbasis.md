@@ -96,3 +96,10 @@ Kuratierungsprinzipien:
 - **Kernthemen**: OER-Definition, UNESCO-Hintergrund, drei Argumentationsfiguren (emotional, rational, qualitativ)
 - **Schlüsselkonzepte**: OER, Creative Commons, UNESCO Bildungsagenda 2030, Elinor Ostrom (Commons)
 - **Verweishaken**: Bei Vermittlung von Sinn und Mehrwert von OER; bei Argumentation für Open Education
+
+## 12. Wie funktioniert das deutsche Bildungssystem?
+- **Pfad**: content/blog/lehre/bisy/deutsches_bildungssystem/index.md
+- **Bereich**: Lehre
+- **Kernthemen**: subjektive und strukturelle Perspektive auf Bildung, Trias aus Gesellschaft/Bildungssystem/Arbeitswelt, Aufbau des deutschen Bildungssystems, rechtliche Rahmenbedingungen, Recherche zum Bildungssystem in Mecklenburg-Vorpommern
+- **Schlüsselkonzepte**: Bildungssystem, Bildungsbiographie, Föderalismus, Berufsbildung, Schulrecht, Mecklenburg-Vorpommern
+- **Verweishaken**: Bei Einführungen in das deutsche Bildungssystem; bei der Verknüpfung von Bildungswegen und Systemstrukturen; bei regionalen Vertiefungen zu Mecklenburg-Vorpommern
