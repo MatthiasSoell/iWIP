@@ -138,11 +138,22 @@ todos: []
 - 🏫 **Bildungssystem:** Institutionen, Abschlüsse, Übergänge, Förderung
 - 💼 **Arbeitswelt:** Berufe, Qualifikationen, Fachkräftesicherung
 
-<p class="fragment" style="text-align:center; margin: 0.8rem 0 0.35rem 0;">💭 Welche <b>Erwartungen</b> richten diese drei Teilsysteme an Individuen?</p>
+<span class="spacer spacer-sm"></span>
 
 <ul>
+  <li class="fragment">💭 Welche Erwartungen richten diese drei Teilsysteme an Individuen?</li>
   <li class="fragment">🔁 Wo ergänzen sie sich, wo entstehen Spannungen?</li>
   <li class="fragment">📈 Wie prägen Bildungsabschlüsse spätere Chancen auf dem Arbeitsmarkt?</li>
+</ul>
+
+---
+
+## Zentrale Begriffe
+
+<ul>
+  <li>🌍 <b>Gesellschaft</b>: Rahmen sozialer Ordnung und Kommunikation <span class="zitat-inline">(Luhmann 2017; Habermas 1999)</span></li>
+  <li class="fragment">💼 <b>Arbeit</b>: Vermittlungsinstanz zwischen Individuum und Gesellschaft; strukturiert soziale Rollen und Ungleichheit <span class="zitat-inline">(Offe 1984)</span></li>
+  <li class="fragment">🏫 <b>Bildungssystem</b>: institutionalisiertes Arrangement zur Reproduktion und Transformation von Kompetenzen für gesellschaftliche Arbeit <span class="zitat-inline">(Baethge et al. 2007; Kerschensteiner 2020)</span></li>
 </ul>
 
 ---

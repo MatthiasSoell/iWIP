@@ -343,13 +343,7 @@ Die kurze Recherchephase am Ende erfüllt dabei zwei Funktionen:
 
 # 📚 Literatur
 
-Edelstein, B. (2013). <em>Das Bildungssystem in Deutschland</em>. Bundeszentrale für politische Bildung. <a href="https://www.bpb.de/themen/bildung/dossier-bildung/163283/das-bildungssystem-in-deutschland/" target="_blank" rel="noopener noreferrer">https://www.bpb.de/themen/bildung/dossier-bildung/163283/das-bildungssystem-in-deutschland/</a>
-
-Bundesministerium der Justiz. (2025). <em>Grundgesetz für die Bundesrepublik Deutschland: Art. 7</em>. Gesetze im Internet. <a href="https://www.gesetze-im-internet.de/gg/art_7.html" target="_blank" rel="noopener noreferrer">https://www.gesetze-im-internet.de/gg/art_7.html</a>
-
-Bundesministerium der Justiz. (2025). <em>Grundgesetz für die Bundesrepublik Deutschland: Art. 30</em>. Gesetze im Internet. <a href="https://www.gesetze-im-internet.de/gg/art_30.html" target="_blank" rel="noopener noreferrer">https://www.gesetze-im-internet.de/gg/art_30.html</a>
-
-Bundesministerium der Justiz. (2025). <em>Grundgesetz für die Bundesrepublik Deutschland: Art. 70</em>. Gesetze im Internet. <a href="https://www.gesetze-im-internet.de/gg/art_70.html" target="_blank" rel="noopener noreferrer">https://www.gesetze-im-internet.de/gg/art_70.html</a>
+Baethge, M., Solga, H., & Wieck, M. (2007). <em>Berufsbildung im Umbruch: Signale eines überfälligen Aufbruchs</em>. Friedrich-Ebert-Stiftung. <a href="https://doku.iab.de/externe/2007/k070228f09.pdf" target="_blank" rel="noopener noreferrer">https://doku.iab.de/externe/2007/k070228f09.pdf</a>
 
 Bundesministerium der Justiz. (2025). <em>Berufsbildungsgesetz (BBiG): § 2 Lernorte der Berufsbildung</em>. Gesetze im Internet. <a href="https://www.gesetze-im-internet.de/bbig_2005/__2.html" target="_blank" rel="noopener noreferrer">https://www.gesetze-im-internet.de/bbig_2005/__2.html</a>
 
@@ -359,8 +353,26 @@ Bundesministerium der Justiz. (2025). <em>Berufsbildungsgesetz (BBiG): § 4 Aner
 
 Bundesministerium der Justiz. (2025). <em>Berufsbildungsgesetz (BBiG): § 71 Zuständige Stellen</em>. Gesetze im Internet. <a href="https://www.gesetze-im-internet.de/bbig_2005/__71.html" target="_blank" rel="noopener noreferrer">https://www.gesetze-im-internet.de/bbig_2005/__71.html</a>
 
+Bundesministerium der Justiz. (2025). <em>Grundgesetz für die Bundesrepublik Deutschland: Art. 7</em>. Gesetze im Internet. <a href="https://www.gesetze-im-internet.de/gg/art_7.html" target="_blank" rel="noopener noreferrer">https://www.gesetze-im-internet.de/gg/art_7.html</a>
+
+Bundesministerium der Justiz. (2025). <em>Grundgesetz für die Bundesrepublik Deutschland: Art. 30</em>. Gesetze im Internet. <a href="https://www.gesetze-im-internet.de/gg/art_30.html" target="_blank" rel="noopener noreferrer">https://www.gesetze-im-internet.de/gg/art_30.html</a>
+
+Bundesministerium der Justiz. (2025). <em>Grundgesetz für die Bundesrepublik Deutschland: Art. 70</em>. Gesetze im Internet. <a href="https://www.gesetze-im-internet.de/gg/art_70.html" target="_blank" rel="noopener noreferrer">https://www.gesetze-im-internet.de/gg/art_70.html</a>
+
+Edelstein, B. (2013). <em>Das Bildungssystem in Deutschland</em>. Bundeszentrale für politische Bildung. <a href="https://www.bpb.de/themen/bildung/dossier-bildung/163283/das-bildungssystem-in-deutschland/" target="_blank" rel="noopener noreferrer">https://www.bpb.de/themen/bildung/dossier-bildung/163283/das-bildungssystem-in-deutschland/</a>
+
+Habermas, J. (1999). <em>Theorie des kommunikativen Handelns</em> (Bd. 1). Suhrkamp. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=308877020" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a>
+
+Habermas, J. (1999). <em>Theorie des kommunikativen Handelns</em> (Bd. 2). Suhrkamp. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=308877276" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a>
+
+Kerschensteiner, G. (2020). <em>Begriff der Arbeitsschule</em>. R. Oldenbourg Verlag. <a class="lit-doi" href="https://doi.org/10.1515/9783486754933" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
+
 Kultusministerkonferenz. (2023). <em>Grundstruktur des Bildungswesens in der Bundesrepublik Deutschland</em> [Diagramm]. <a href="https://www.kmk.org/fileadmin/Dateien/pdf/Dokumentation/de_2023.pdf" target="_blank" rel="noopener noreferrer">https://www.kmk.org/fileadmin/Dateien/pdf/Dokumentation/de_2023.pdf</a>
 
 Kultusministerkonferenz. (2025). <em>Das Bildungswesen in der Bundesrepublik Deutschland 2023/2024: Darstellung der Kompetenzen, Strukturen und bildungspolitischen Entwicklungen für den Informationsaustausch in Europa</em>. <a href="https://www.kmk.org/fileadmin/Dateien/pdf/Eurydice/DE/dossier_de_ebook.pdf" target="_blank" rel="noopener noreferrer">https://www.kmk.org/fileadmin/Dateien/pdf/Eurydice/DE/dossier_de_ebook.pdf</a>
 
 Landesrecht Mecklenburg-Vorpommern. (2010). <em>Schulgesetz für das Land Mecklenburg-Vorpommern (Schulgesetz - SchulG M-V), Teil 4 (§§ 41-51)</em>. <a href="https://www.landesrecht-mv.de/bsmv/document/jlr-SchulGMV2010pG4/format/xsl?oi=hheu3UuEz2&sourceP=%7B%22source%22%3A%22TOC%22%7D&docAcc=true" target="_blank" rel="noopener noreferrer">https://www.landesrecht-mv.de/bsmv/document/jlr-SchulGMV2010pG4/format/xsl?oi=hheu3UuEz2&sourceP=%7B%22source%22%3A%22TOC%22%7D&docAcc=true</a>
+
+Luhmann, N. (2017). <em>Systemtheorie der Gesellschaft</em> (Hrsg. J. F. K. Schmidt & A. Kieserling). Suhrkamp. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=88511759X" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a>
+
+Offe, C. (1984). <em>Arbeitsgesellschaft: Strukturprobleme und Zukunftsperspektiven</em>. Campus-Verlag. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=025270478" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a>
