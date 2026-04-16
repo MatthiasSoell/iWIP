@@ -12,6 +12,10 @@ Die Präsentation wird aus dem Blogartikel abgeleitet.
 Emojis werden gemäß **content_emoji_policy.md** verwendet.
 Begriffe wie `veroeffentlichter Pfad` und `Finalisierung` folgen dem Glossar in `project_governance/agent_contract.md`.
 
+Die folgenden mediendidaktischen Gestaltungsregeln gelten in diesem Template
+als weiche Heuristiken fuer die Darstellung. Sie geben Orientierung fuer die
+Ausarbeitung, erzeugen aber weder Hard-Fails noch Zwangsverhalten.
+
 ---
 
 ## Frontmatter (Pflichtstruktur Reveal)
@@ -82,6 +86,14 @@ Dieses Template definiert nur die Struktur der Praesentation.
 
 Dieses Template definiert nur Frontmatter und Zielstruktur des Reveal-Artefakts.
 
+## Mediendidaktische Soft-Heuristiken fuer Reveal
+
+- Eine Folie hat in der Regel einen dominanten Informationstraeger, z. B. Bild, Leitfrage, Liste oder Arbeitsauftrag.
+- Kurze, klar fokussierte Slides werden bevorzugt; lange Textbloecke werden nach Moeglichkeit vermieden.
+- Bei hoeherer Komplexitaet werden Inhalte eher seriell als simultan gezeigt, z. B. durch Fragmente oder Aufteilung auf mehrere Slides.
+- Die Textdichte bleibt gering; typischerweise stehen pro Folie eher drei bis fuenf kurze Einheiten als laengere Fliesstextpassagen.
+- Emojis werden überwiegend konsistent als Funktionsmarker eingesetzt und nicht ohne erkennbare Funktion gehaeuft.
+
 ### Mindestreihenfolge
 
 1. Titel
@@ -149,6 +161,7 @@ Beispiel:
 - pro Folie eine klare Kernbotschaft fokussieren
 - Arbeitsauftrag, Diskussion oder Transfer nur ergänzen, wenn es zur Dramaturgie passt
 - Ziel: visuelle Strukturierung, schnelle kognitive Orientierung und Hervorhebung zentraler Aussagen.
+- Wenn mehrere gleichwertige Inhalte konkurrieren, ist eine Aufteilung auf mehrere Slides oder eine serielle Sichtbarmachung per Fragment oft die robustere Form.
 
 Robustes Fragmentmuster fuer Listen:
 

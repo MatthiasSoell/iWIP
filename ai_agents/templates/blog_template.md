@@ -12,6 +12,10 @@ Die Reveal-Präsentation wird anschließend daraus abgeleitet.
 Emojis werden gemäß **content_emoji_policy.md** verwendet.
 Begriffe wie `veroeffentlichter Pfad` und `Finalisierung` folgen dem Glossar in `project_governance/agent_contract.md`.
 
+Die folgenden mediendidaktischen Gestaltungsregeln gelten in diesem Template
+als weiche Heuristiken fuer die Darstellung. Sie geben Orientierung fuer die
+Ausarbeitung, erzeugen aber weder Hard-Fails noch Zwangsverhalten.
+
 ---
 
 ## Frontmatter (Pflichtstruktur)
@@ -128,6 +132,12 @@ Pfadregel für den Präsentationsbutton (verbindlich):
 ## Standardstruktur des Artikels
 
 Dieses Template definiert nur Frontmatter, Einstiegsblock und Zielstruktur des Blogartefakts.
+
+## Mediendidaktische Soft-Heuristiken fuer Blogabschnitte
+
+- Laengere Textpassagen werden nach Moeglichkeit sichtbar segmentiert, z. B. durch Zwischenueberschriften, Bilder, Tabellen, Callouts oder andere klare Strukturmarker.
+- Visuelle oder strukturelle Marker werden funktional eingesetzt; sie dienen der Darstellung, nicht als zusaetzliche Inhaltsebene.
+- Emojis werden konsistent als Funktionsmarker genutzt, z. B. fuer Struktur, Frage, Ziel oder Reflexion, ohne Haeufung ohne erkennbaren Zweck.
 
 ### Zielgliederung (Standard)
 

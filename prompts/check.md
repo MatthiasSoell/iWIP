@@ -62,6 +62,20 @@ Wenn das Artefakt didaktisch zu beurteilen ist, liefere eine Diagnose entlang de
 
 ## Pruefmatrix
 
+## Mediendidaktische Soft-Heuristiken
+
+Ergaenze zur formalen Pruefung eine schlanke mediendidaktische Heuristik-Diagnose.
+
+Dabei gilt strikt:
+
+- Diese Heuristiken erzeugen **keine Blocker**.
+- Diese Heuristiken erzeugen **keine harten Fehler**.
+- Diese Heuristiken fuehren **nicht** zu automatischen Umschreibungen oder Zwangsverhalten.
+- Wenn nur Soft-Heuristik-Hinweise vorliegen und keine Contract-Verstoesse, bleibt der Status `OK`.
+- Soft-Heuristik-Befunde erscheinen als Hinweise oder Optimierungen zur Darstellungsqualitaet.
+
+Fokus ist ausschliesslich die Darstellung, nicht die inhaltliche Korrektheit.
+
 ### DQM-Kernpruefung
 
 Pruefe entlang der sechs DQM-Dimensionen:
@@ -99,6 +113,20 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen Agent Contract und `ai_agent
 - Bild-, Grafik- und Diagrammquellen folgen dem Blog-Standard des Templates (`p class="bildquelle">Bildquelle: ...</p>`; optional `p class="grafic-title">...</p>` direkt ueber der Visualisierung).
 - Der Literaturteil beginnt mit dem stabilen Anker und der Pflichtueberschrift gemaess Blog-Template.
 - Im Blog-Bundle liegt `blog_snapshot.txt` als unveraenderlicher Erststand vor.
+
+### Blog-Heuristikhinweise zur Darstellung
+
+Pruefe zusaetzlich als Soft-Heuristik:
+
+- Ob laengere Textpassagen sichtbar segmentiert sind oder als unsegmentierte Bloecke stehen.
+- Ob laengere Abschnitte durch Zwischenueberschriften, Bilder, Tabellen, Callouts oder vergleichbare Strukturmarker orientierend gegliedert werden.
+- Ob der Emoji-Einsatz als Funktionsmarker konsistent wirkt oder punktuell gehaeuft bzw. uneinheitlich eingesetzt wird.
+
+Wenn Auffaelligkeiten vorliegen:
+
+- formuliere sie als Hinweis oder Optimierung
+- markiere sie nicht als Contract-Verstoss
+- leite daraus keinen `BLOCKER` ab
 
 ---
 
@@ -157,6 +185,22 @@ Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen Agent Contract und
 - Sichtbare deutsche Folientexte folgen den Typografie- und Umlautregeln des Agent Contracts.
 - Im Reveal-Bundle liegt `reveal_snapshot.txt` als unveraenderlicher Erststand vor.
 
+### Reveal-Heuristikhinweise zur Darstellung
+
+Pruefe zusaetzlich als Soft-Heuristik:
+
+- Ob eine Folie mehrere gleichwertige Inhalte gleichzeitig traegt und eine Aufteilung oder Serialisierung sinnvoll waere.
+- Ob die Textdichte auf einer Folie ueber eine klare, schnell erfassbare Verdichtung hinausgeht.
+- Ob eine Folie nur aus Ueberschrift plus laengerem Textblock besteht und von Reduktion, Fragmentierung oder Aufteilung profitieren wuerde.
+- Ob ein dominanter Informationstraeger erkennbar ist oder mehrere Elemente ohne klare visuelle Prioritaet konkurrieren.
+- Ob Emojis im sichtbaren Folieninhalt konsistent als Funktionsmarker eingesetzt sind oder ohne klare Funktion gehaeuft erscheinen.
+
+Wenn Auffaelligkeiten vorliegen:
+
+- formuliere sie als Hinweis oder Optimierung
+- markiere sie nicht als Contract-Verstoss
+- leite daraus keinen `BLOCKER` ab
+
 ### Frontmatter- und Metadatenpruefung Reveal
 
 Pruefe bei Revealartefakten das Frontmatter strikt gegen `ai_agents/templates/reveal_template.md`.
@@ -193,6 +237,10 @@ Gib das Ergebnis direkt aus, ohne Einleitung, Prozesssprache oder Meta-Kommentar
 ### Befunde
 
 - Liste konkreter Verstoesse gegen Contract-Regeln
+
+### Hinweise oder Optimierungen
+
+- Liste weicher mediendidaktischer Heuristikhinweise zur Darstellungsqualitaet, sofern relevant
 
 ### Empfehlung
 

@@ -32,6 +32,13 @@ Das DQM liefert Diagnose und Heuristik, keine eigene Prozesssteuerung.
    -> `project_governance/agent_contract.md` – Abschnitt Konfliktregel
    Das DQM liefert nur Diagnose, keine Steuerung.
 
+Zur Unterstuetzung der dialogischen Planung nutzt der Agent die bestehenden
+DQM-Leitdimensionen auch in verdichteter Form als heuristische Zugriffspunkte.
+Diese Verdichtung dient ausschliesslich der Gespraechsfuehrung, z. B. zur
+adressatenorientierten Benennung von Spannungen oder fuer Anschlussfragen,
+stellt jedoch keine eigenstaendige Bewertungslogik, keine zusaetzlichen
+Dimensionen und keine Grundlage fuer Blocker dar.
+
 ## Quellenkanon und Referenzstatus
 
 Der Quellenkanon des DQM wird bewusst kompakt in Kurzform geführt.
