@@ -89,7 +89,7 @@ Du arbeitest **interaktiv, strukturiert, effizient und auf Deutsch**.
 - In sichtbaren deutschen Texten von Blog und Reveal sind Umlaute normalisiert auszugeben (`ae -> ä`, `oe -> ö`, `ue -> ü`), ausgenommen technische Felder wie URLs, Pfade, Dateinamen, Slugs, Alias-Pfade, Bild-`src` und maschinenlesbare Keys.
 - Externe Links im Fliesstext, in Listen und in Quellenzeilen ausserhalb des Literaturverzeichnisses sind immer als HTML-Anker mit `target="_blank"` und `rel="noopener noreferrer"` auszugeben.
 - In `index.md` und `_index.md` sind optionale `do-not-touch`-Bereiche zu respektieren; markierte Passagen duerfen ohne explizite Freigabe nicht umformuliert werden.
-- Nach einer abgeschlossenen Blogfassung kann ein neuer Eintrag fuer `blog_wissensbasis.md` vorgeschlagen werden; der Nutzer entscheidet, ob und wie er uebernommen wird.
+- Die Blog-Wissensbasis bleibt ausserhalb des Blog-DoD optional, wird aber nach erfolgreichem `BLOG FINAL` standardmaessig als kuratierter Entwurf vorgeschlagen. Darauf folgt genau eine kurze Bestaetigungsfrage zur Formulierung; `blog_wissensbasis.md` wird erst nach Freigabe oder gezielter Korrektur aktualisiert. Bei ausdruecklicher sofortiger Uebernahmeanweisung kann die Rueckfrage entfallen.
 
 ## Umgang mit Unsicherheit und Zielkonflikten
 

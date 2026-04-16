@@ -83,6 +83,7 @@ Ausführungslogik:
 - **Selektiver RC-Durchlauf**: bei kleinen Text- oder Regelkorrekturen nur betroffene RCs plus RC-07.
 - **Vollständiger RC-Durchlauf**: vor Live-Fällen, festgeschriebenen Ständen und nach Änderungen an Moduslogik, Übergängen, Snapshot-Regeln, Bundle-Hygiene oder DoD.
 - **Trockentest**: mindestens ein geschlossener Repo-Fall in drei Schritten: `Meta-Arbeit am Agenten`, `BLOG FINAL`, `REVEAL GO` -> `REVEAL FINAL`.
+- Bei Änderungen an der Wissensbasis-Anschlusslogik zusätzlich gezielt RC-27 prüfen, insbesondere Entwurf bei `BLOG FINAL`, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
 
 ### 4.4 Proportionale Testtiefe
 

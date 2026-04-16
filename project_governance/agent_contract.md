@@ -123,7 +123,7 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 24. Sichtbar genannte Zielpfade, Bundle-Orte oder Dateinamen muessen vor ihrer Ausgabe eindeutig aus dem Zielartefakt abgeleitet sein und spaeter mit den tatsaechlich bearbeiteten Pfaden uebereinstimmen; Pfadangaben auf Verdacht sind unzulaessig.
 25. Emoji-Einsatz folgt verbindlich `project_governance/content_emoji_policy.md`; in Blog und Reveal muss die Policy im sichtbaren Hauptkoerper beziehungsweise Folien-Body erkennbar umgesetzt sein und darf nicht auf Ueberschriften oder Frontmatter beschraenkt bleiben.
 26. Low-noise-Regel ist verbindlich: Im sichtbaren Dialog sind nur eine notwendige Rueckfrage, ein echter Blocker oder Abbruch, die Uebergabe eines Artefakts oder ein knappes Finalergebnis zulaessig. Alles Steuernde bleibt unsichtbar; prozessnahe Selbstbeschreibungen und Statussaetze sind auch als Einzelsatz verboten. Pflichtausgaben wie Abgleich, DQM-Pruefbericht, sichtbare Zusammenfassung nach dem Summary-Schema oder Tabellen gelten als Bestandteil des Artefakts, nicht als Dialog. Optionale Zusatzausgaben wie Quellenuebersicht oder Materialuebersicht gelten ebenso, wenn sie sichtbar ausgegeben werden. Sie sind trotz Low-noise-Regel sichtbar zulaessig, sofern sie direkt ausgegeben werden, nicht durch Prozesssprache eingeleitet werden und keine zusaetzlichen erklaerenden Meta-Saetze enthalten.
-27. Die Blog-Wissensbasis ist ein optionaler Anschluss fuer Verweise, Orientierung und Nachpflege; sie ist kein Pflicht-Gate der Standardplanung oder Finalisierung.
+27. Die Blog-Wissensbasis ist ein optionaler Anschluss fuer Verweise, Orientierung und Nachpflege; sie ist kein Pflicht-Gate der Standardplanung oder Finalisierung. Nach erfolgreichem `BLOG FINAL` entwirft der Agent jedoch standardmaessig einen kuratierten Wissensbasis-Eintrag als Vorschlag und stellt genau eine Bestaetigungsfrage zur Formulierung. Erst nach Bestaetigung oder gezielter Korrektur wird `blog_wissensbasis.md` aktualisiert. Liegt statt des Review-Schritts eine ausdrueckliche sofortige Uebernahmeanweisung vor, darf die Aktualisierung ohne Zusatzrueckfrage im selben Arbeitsgang erfolgen. `REVEAL GO` loest fuer sich allein keine Wissensbasis-Aktualisierung aus.
 28. Routing hat zwei Ebenen: technischen Bundle-Ort und veroeffentlichten Pfad. Die Site-Basis ist gemaess `config.toml` `/iWIP/`. Fuer sichtbare Ausgaben ist ausschliesslich der veroeffentlichte Pfad unterhalb dieser Site-Basis massgeblich. Standard: `content/blog/<bereich>/<ordner>/index.md` -> veroeffentlichter Pfad `/iWIP/praesentation/<bereich>/<ordner>/`. Sonderfall `widi`: technisches Reveal-Bundle `content/praesentation/lehre/widi/<ordner>/`, veroeffentlichter Pfad `/iWIP/praesentation/widi/<ordner>/`. Der technische Bundle-Ort darf niemals in sichtbaren Ausgaben erscheinen; Buttons, sichtbare Links, pruefende Beispiele und die aus Frontmatter-Aliases aufgeloeste Route muessen auf dieselbe veroeffentlichte URL zeigen.
 29. Forschungsprotokolle bleiben schlank und verifizierbar: enthalten sind nur Marker, zentrale Zeitpunkte, Artefaktpfade, Build-/Check-Status und exakt ableitbare Zaehldaten. Unsichere Zaehldaten werden nicht geschaetzt, sondern als nicht verlaesslich verfuegbar markiert.
 30. `FORSCHUNG START` aktiviert zusaetzlich ein append-only Sichttranskript in `exports/` nach dem Muster `forschung_chat_<slug>_<YYYY-MM-DD>.md`; es enthaelt nur tatsaechlich sichtbare, finale Nutzer- und Assistententurns. Verboten sind Prozesssprache, Statusmeldungen, Zwischenstaende, Debug- oder Toolnaehe, `gleich mache ich ...`-Saetze, leere Codebloecke und nachtraegliche Rekonstruktionsspuren. Auch scheinbar fachliche, aber selbstreferenzielle Saetze des Assistenten (z. B. `Ich habe das angepasst`, `Ich habe das verdichtet`) gelten als Prozesssprache und sind im sichtbaren Dialog sowie im Forschungs-Transkript unzulaessig. Ein Satz gehoert nur dann ins Transkript, wenn er fuer externe Leser fachlich oder dialogisch sinnvoll ist.
@@ -210,7 +210,7 @@ Ein Blogartikel ist nur final, wenn:
 8. Abbildungen, Diagramme und Screenshots folgen im Blog dem Standard gemaess `ai_agents/templates/blog_template.md`: optional `p.grafic-title` direkt vor der Visualisierung, `figure.figure-frame` fuer das Bild und darunter `p.bildquelle` mit dem Praefix `Bildquelle:`.
 9. Emoji-Einsatz folgt `project_governance/content_emoji_policy.md` und ist im sichtbaren Hauptkoerper erkennbar umgesetzt.
 10. Alle Pflichtabschnitte aus diesem Contract und `ai_agents/templates/blog_template.md` sind vorhanden und inhaltlich ausgearbeitet; wenn kapitelweise Freigabe genutzt wurde, sind alle Pflichtabschnitte vor `BLOG FINAL` freigegeben.
-11. Die Blog-Wissensbasis kann nach `BLOG FINAL` als optionaler Anschluss aktualisiert oder fuer Verweise genutzt werden; sie ist kein Definition-of-Done-Bestandteil.
+11. Die Blog-Wissensbasis kann nach `BLOG FINAL` als optionaler Anschluss aktualisiert oder fuer Verweise genutzt werden; sie ist kein Definition-of-Done-Bestandteil. Standardanschluss ist ein kuratierter Entwurf mit genau einer Bestaetigungsfrage zur Formulierung; erst danach wird der Eintrag uebernommen. Bei ausdruecklicher sofortiger Uebernahmeanweisung kann die Rueckfrage entfallen.
 
 ---
 
@@ -267,6 +267,8 @@ Ein Artefakt ohne zugehoerigen Snapshot gilt nicht als finalisierbar.
 4. Hinweise oder Optimierungen
 5. optional Quellenuebersicht
 6. Zusammenfassung
+
+Nach erfolgreich abgeschlossenem `BLOG FINAL` folgt standardmaessig als optionaler Anschluss ein kuratierter Wissensbasis-Entwurf mit genau einer Bestaetigungsfrage zur Formulierung. Die Datei `blog_wissensbasis.md` wird erst nach dieser Bestaetigung oder nach gezielter Korrektur aktualisiert.
 
 Bei `REVEAL FINAL` ist die sichtbare Reihenfolge:
 
@@ -474,3 +476,8 @@ Testtiefe ist proportional:
 
 - Erwartung: Testaufwand entspricht dem Risiko der Aenderung; Mini-Textaenderungen loesen keinen Volltest aus, struktur- oder renderrelevante Aenderungen dagegen schon.
 - Fehlerindikator: Volltests auf triviale Aenderungen oder fehlende Smoke-Tests nach Pfad-, Snapshot-, Bundle-, CSS- oder Renderaenderungen.
+
+### RC-27 Wissensbasis-Anschluss deterministisch
+
+- Erwartung: Nach erfolgreichem `BLOG FINAL` wird standardmaessig ein kuratierter Wissensbasis-Entwurf vorgeschlagen und genau eine Bestaetigungsfrage zur Formulierung gestellt; die Datei wird erst nach Freigabe oder gezielter Korrektur aktualisiert. Bei ausdruecklicher sofortiger Uebernahmeanweisung darf die Rueckfrage entfallen. `REVEAL GO` allein triggert keine Wissensbasis-Aktualisierung.
+- Fehlerindikator: Nach `BLOG FINAL` fehlt der Wissensbasis-Entwurf trotz regulaerem Anschlussfall; die Formulierung wird ohne Review still uebernommen; trotz bestaetigtem Entwurf wird `blog_wissensbasis.md` nicht aktualisiert; oder `REVEAL GO` behandelt die Wissensbasis wieder wie ein automatisches Pflicht-Gate.
