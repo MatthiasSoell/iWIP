@@ -145,7 +145,7 @@ project_governance/ai_copilot_instructions.md
 
 Der integrierte Agent unterstützt Lehrende und Studierende dabei, Lehrveranstaltungen klar zu planen, Inhalte schrittweise auszuarbeiten und daraus veröffentlichbare Materialien zu entwickeln.
 
-Im Zentrum steht ein einfacher Zusammenhang: **Planung → Blog → Präsentation**. Die fachliche und didaktische Arbeit beginnt mit der Planung. Daraus entsteht ein Blogbeitrag als zentrales Arbeitsdokument. Wenn gewünscht, kann anschließend eine Präsentation aus diesem Blogbeitrag abgeleitet werden.
+Im Zentrum steht ein einfacher Zusammenhang: **Planung → Blog → Präsentation**. Die fachliche und didaktische Arbeit beginnt mit der Planung. Daraus entsteht ein Blogbeitrag als zentrales Arbeitsdokument. Wenn gewünscht, kann anschließend eine Präsentation aus diesem finalen Blogbeitrag abgeleitet werden.
 
 Der Agent ist dabei kein technisches Steuerinstrument, sondern ein didaktisches Werkzeug. Er hilft, Gedanken zu ordnen, Ziele zu schärfen, Lernwege zu strukturieren und Inhalte so aufzubereiten, dass sie für Lehre, Reflexion und Austausch nutzbar werden.
 
@@ -153,21 +153,23 @@ Der Agent ist dabei kein technisches Steuerinstrument, sondern ein didaktisches 
 
 - zur Unterstützung bei der Planung von Lehrveranstaltungen
 - zur strukturierten Entwicklung von Blogbeiträgen
-- zur Ableitung von Präsentationen auf Grundlage des Blogbeitrags
+- zur Ableitung von Präsentationen auf Grundlage des finalen Blogbeitrags
 
 ### Zentrale Idee
 
-Der Blog ist das Herzstück der Arbeit. Hier werden Inhalte gebündelt, ausgearbeitet und in eine Form gebracht, die sowohl für die Lehre als auch für die Veröffentlichung geeignet ist. Die Präsentation entsteht nicht unabhängig davon, sondern baut auf dem Blogbeitrag auf.
+Der Blog ist das Herzstück der Arbeit. Hier werden Inhalte gebündelt, ausgearbeitet und in eine Form gebracht, die sowohl für die Lehre als auch für die Veröffentlichung geeignet ist. Die Präsentation entsteht nicht unabhängig davon, sondern baut auf dem finalen Blogbeitrag auf.
 
 Das schafft Klarheit: Erst wird inhaltlich und didaktisch gearbeitet, dann kann aus dieser Grundlage eine Präsentation entwickelt werden.
 
 ### Nutzung
 
-Der Einstieg erfolgt über `/create`. Von dort aus begleitet der Agent die Ausarbeitung im Dialog: ruhig, fokussiert und in enger Zusammenarbeit mit den Nutzenden.
+Der Agent leitet den Arbeitsmodus aus dem Nutzeranliegen ab. Ein expliziter Einstieg über `/create` ist möglich, aber nicht der einzige zulässige Startpunkt. Semantisch eindeutige Anliegen und Statusmeldungen werden gemäß Contract gleichwertig interpretiert.
+
+Von dort aus begleitet der Agent die Ausarbeitung im Dialog: ruhig, fokussiert und in enger Zusammenarbeit mit den Nutzenden.
 
 Die Arbeit ist ko-kreativ angelegt. Der Agent macht Vorschläge, strukturiert Inhalte, unterstützt beim Formulieren und hilft dabei, didaktische Entscheidungen sichtbar zu machen. Er übernimmt nicht die Lehrplanung, sondern unterstützt sie.
 
-Wenn aus dem Blogbeitrag zusätzlich eine Präsentation entstehen soll, kann diese anschließend aus der bereits erarbeiteten Grundlage abgeleitet werden.
+Wenn aus dem finalen Blogbeitrag zusätzlich eine Präsentation entstehen soll, kann diese anschließend aus der bereits erarbeiteten Grundlage abgeleitet werden.
 
 ### Didaktischer Mehrwert
 
@@ -188,13 +190,15 @@ Der SciBlog iWIP versteht den Blog als OER-Angebot. Inhalte können veröffentli
 
 1. Planung einer Lehrveranstaltung oder Lerneinheit
 2. Ausarbeitung eines Blogbeitrags als zentrales Arbeitsdokument
-3. optionale Ableitung einer Präsentation aus dem Blogbeitrag
+3. optionale Ableitung einer Präsentation aus dem finalen Blogbeitrag
 
 ---
 
 ## 📖 Lizenz
 
 Die Inhalte des Blogs werden – sofern nicht anders angegeben – unter einer **Creative Commons Lizenz (CC BY-SA 4.0)** veröffentlicht.
+
+Der **Agent** steht ebenfalls unter einer **Creative Commons Lizenz (CC BY-SA 4.0)** Lizenz (siehe `ai_agents/LICENSE.md`).
 
 [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 

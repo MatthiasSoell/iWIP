@@ -1,5 +1,9 @@
 # Blog-Wissensbasis – SciBlog iWIP
 
+Version: 1.0.0
+Status: Wissensbasis des Blogs, kuratierter Index der veröffentlichten Beiträge
+Scope: kuratierter Index der veröffentlichten Beiträge, um Orientierung, Verweise und fachliche Nachpflege zu ermöglichen
+
 Kuratierter Index der veröffentlichten Blogartikel.
 Die Wissensbasis ist ein optionaler Anschluss fuer Orientierung, Verweise und fachliche Nachpflege.
 Sie kann genutzt werden, wenn zusaetzliche fachliche Tiefe benoetigt wird oder Unsicherheit im fachlichen Bereich besteht.

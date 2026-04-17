@@ -7,7 +7,7 @@ Kontext: Frontmatter und Zielstruktur für Reveal-Artefakte
 Dieses Template definiert die Standardstruktur
 für Reveal-Präsentationen im SciBlog iWIP.
 
-Die Präsentation wird aus dem Blogartikel abgeleitet.
+Die Präsentation wird ausschliesslich aus dem finalen Blogartikel abgeleitet.
 
 Emojis werden gemäß **content_emoji_policy.md** verwendet.
 Begriffe wie `veroeffentlichter Pfad` und `Finalisierung` folgen dem Glossar in `project_governance/agent_contract.md`.
@@ -51,11 +51,9 @@ description: >
 summary: >
   
 
-tags:
-  - ...
+tags: []
 
-categories:
-  - ...
+categories: []
 
 todos: []
 ---
@@ -66,7 +64,7 @@ Regeln:
 - Reveal-Frontmatter enthält ausschließlich präsentationsbezogene Metadaten.
 - In Reveal-Dateien sind OER-Metadaten strikt verboten.
 - Verboten sind insbesondere: `oer`, `is_oer`, `kind`, `creators`, `publisher`, `license`, `source`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `time_required`, `about`, `rights_exceptions`.
-- `blog` soll auf die veroeffentlichte Blogansicht mit Site-Base zeigen, nicht auf einen technischen Content-Pfad.
+- `blog` soll auf die veroeffentlichte Blogansicht mit Site-Base zeigen, also auf die veroeffentlichte Blog-URL inkl. baseURL und nicht auf einen technischen Content-Pfad.
 - Der sichtbare veroeffentlichte Praesentationspfad lautet `/iWIP/praesentation/<bereich>/<ordner>/`; fuer `widi` ist dies `/iWIP/praesentation/widi/<ordner>/`.
 - `aliases` fuehrt den Hugo-Alias relativ zur Site-Base; im Frontmatter steht daher `/praesentation/<bereich>/<ordner>/`, fuer `widi` `/praesentation/widi/<ordner>/`.
 - Sichtbare Links, Buttons und Hinweise verwenden nur den veroeffentlichten Pfad; technische Bundle-Orte und Alias-Semantik bleiben intern.

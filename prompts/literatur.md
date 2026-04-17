@@ -1,14 +1,14 @@
 # /Literatur — Literatur-Finalisierung fuer Blogbeiträge
 
+Version: 1.0.0
+Status: optionaler Utility-Prompt
+Scope: formale Literatur-Nachbearbeitung bestehender Blogbeitraege ohne Quellenneuerfindung
+
 Du arbeitest strikt nach den Regeln aus:
 
 project_governance/agent_contract.md
 
 Der Contract ist die einzige Steuerlogik.
-
-Version: 1.0.0
-Status: optionaler Utility-Prompt
-Scope: formale Literatur-Nachbearbeitung bestehender Blogbeitraege ohne Quellenneuerfindung
 
 ## Status
 

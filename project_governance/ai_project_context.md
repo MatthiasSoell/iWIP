@@ -1,5 +1,9 @@
 # AI Project Context – SciBlog iWIP
 
+Version: 1.0.0
+Status: AI-Projektkontext fuer Entwicklung und QA
+Scope: kompakter Systemueberblick ueber Repository, Architektur, Kerntechnologien und zentrale Dokumentation fuer AI-Agenten
+
 Purpose: quick system overview for AI agents (Copilot, ChatGPT).
 
 Project type:

@@ -1,6 +1,6 @@
 # /create — Didaktische Planung starten
 
-Version: 1.1.0
+Version: 1.0.0
 Status: Start- und Router-Prompt
 Kontext: Einstieg und Routing in die Arbeit nach Contract
 

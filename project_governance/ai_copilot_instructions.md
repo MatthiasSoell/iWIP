@@ -1,7 +1,7 @@
 # AI Editing Instructions – Copilot / ChatGPT
 SciBlog iWIP
 
-Version: 1.1.0  
+Version: 1.0.0  
 Status: verbindliche Projektregel  
 Kontext: technische Änderungen im Repo (CSS, Layout, Struktur) sowie Änderungen an agentischen Steuerdateien
 
