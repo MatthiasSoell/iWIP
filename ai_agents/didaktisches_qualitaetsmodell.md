@@ -47,19 +47,19 @@ Referenzrahmen für Planung, Diagnose und Finalprüfung.
 
 Es gelten drei Ebenen:
 
-1. **Fachlicher Leitanker**: Für die sozio-ökonomische Bildung ist Reinhold
-   Hedtke der fachliche Primäranker.
-2. **Didaktischer Kernkanon**: Wiederkehrende Referenzen wie Weinert, Biggs,
-   Anderson & Krathwohl, Heimann/Otto/Schulz, Helmke, Hattie & Timperley,
-   Schön, Korthagen, Dewey und Vygotsky markieren die tragenden DQM-Bezüge.
+1. **Fachlicher Leitanker**: Für die sozio-ökonomische Bildung ist Hedtke (2015)
+   der fachliche Primäranker.
+2. **Didaktischer Kernkanon**: Wiederkehrende Referenzen wie Weinert (2001), Biggs (1996), Biggs & Tang (2009),
+   Anderson et al. (2001), Heimann et al. (1976), Helmke (2017), Hattie & Timperley (2007),
+   Schön (1987), Korthagen (2002), Dewey (1910), Vygotsky (1978) und Wood et al. (1976) markieren die tragenden DQM-Bezüge.
 3. **Anschlussreferenzen**: Weitere Namen, Modelle und Curricula
    konkretisieren einzelne Dimensionen, ohne allein die Profilgewichtung oder
    die Leitlogik des DQM zu verändern.
 
 Mehrfachnennungen einzelner Referenzen über mehrere Dimensionen hinweg sind
 funktional und kein Redaktionsfehler. Sie markieren unterschiedliche
-didaktische Funktionen derselben Quelle, z. B. Biggs für Zielorientierung und
-Lernqualität oder Helmke für Lernqualität und Adaptivität.
+didaktische Funktionen derselben Quelle, z. B. Biggs (1996) und Biggs & Tang (2009) 
+für Constructive Alignment und Deep Learning oder Helmke (2017) für Lernqualität und Adaptivität.
 
 Änderungen am fachlichen Leitanker oder am didaktischen Kernkanon sind
 normative Eingriffe und vor Freeze-Ständen explizit zu prüfen.
@@ -96,7 +96,7 @@ Diese Perspektive erweitert ein rein instrumentelles Verständnis von Wirtschaft
 
 ### Fachlicher Leitanker der sozio-ökonomischen Bildung
 
-- Reinhold Hedtke: sozioökonomische Bildung als fachlicher Primäranker
+- Hedtke (2015): sozioökonomische Bildung als fachlicher Primäranker
 - ergänzende plural-ökonomische Perspektiven sind anschlussfähig,
   ersetzen diesen Leitanker aber nicht stillschweigend
 
@@ -169,6 +169,9 @@ Die Studierenden entwickeln Kompetenzen, um Lernende zur beruflichen Handlungsko
 
 ### Erweiterte Kompetenzperspektiven (optional)
 
+**Didaktischer Bezug:**
+Dieser Abschnitt knüpft an etablierte Kompetenzmodelle an, insbesondere an Weinert (2001) und ergänzend an Baumert & Kunter (2006), und erweitert diese kontextbezogen.
+
 Neben klassischen Kompetenzdimensionen können auch überfachliche Zukunftskompetenzen
 (z. B. kollaboratives Arbeiten, Problemlösen, reflektiertes Entscheiden) berücksichtigt werden,
 sofern sie didaktisch begründet und nicht nur additiv ergänzt werden.
@@ -199,10 +202,10 @@ sofern sie didaktisch begründet und nicht nur additiv ergänzt werden.
 ### Leitreferenzen der Zielorientierung
 
 - Weinert (2001): Kompetenzbegriff als Handlungsfähigkeit in Anforderungssituationen
-- Biggs (1996/2011): Constructive Alignment und Deep Learning
-- Anderson & Krathwohl (2001): Taxonomie kognitiver Lernziele
+- Biggs (1996), Biggs & Tang (2009): Constructive Alignment und Deep Learning
+- Anderson et al. (2001): Taxonomie kognitiver Lernziele
 - Baumert & Kunter (2006): professionelle Kompetenz von Lehrkräften
-- Basiscurriculum Berufs- und Wirtschaftspädagogik (BWP): curriculare Anschlusslogik
+- Sektion BWP der DGfE (2014): Basiscurriculum Berufs- und Wirtschaftspädagogik (BWP): curriculare Anschlusslogik
 
 ## 2. 🧭 Strukturierung
 
@@ -222,6 +225,9 @@ Didaktische Strukturierung bedeutet:
 ---
 
 ### Standard-Ablaufmodelle (Orientierungsrahmen)
+
+**Didaktischer Bezug:**
+Die hier dargestellten Ablaufmodelle knüpfen sowohl an allgemeindidaktische Strukturierungsansätze (Heimann et al. 1976) als auch an fachdidaktische Konzepte der beruflichen Bildung an, insbesondere an handlungsorientierte Modelle und die vollständige Handlung (Tramm 2009; Wilbers 2025).
 
 Je nach didaktischem Profil orientiert sich die Struktur an etablierten Ablaufmodellen.
 
@@ -279,6 +285,9 @@ Sie sind **keine starren Vorgaben**, sondern werden situationsbezogen angepasst.
 
 ### Wissenschaftsorientierte Strukturierung (Hochschulkontext)
 
+**Didaktischer Bezug:**
+Dieser Abschnitt knüpft an etablierte didaktische Strukturierungsansätze an, insbesondere an Heimann et al. (1976), und erweitert diese kontextbezogen für den Hochschulbereich.
+
 Didaktische Strukturierung im Hochschulkontext folgt auch einer wissenschaftslogischen Progression:
 
 - im Bachelorstudium:  
@@ -321,10 +330,10 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ### Leitreferenzen der Strukturierung
 
-- Heimann, Otto & Schulz: Berliner Modell der Unterrichtsplanung
-- Wilbers: Handlungsorientierung und vollständige Handlung
-- Tramm: berufliche Handlungssituationen und Lernfeldansatz
-- Meyer: Phasierung von Unterricht (Einstieg – Erarbeitung – Sicherung – Transfer)
+- Heimann et al. (1976): Berliner Modell der Unterrichtsplanung
+- Wilbers (2025): Handlungsorientierung und vollständige Handlung
+- Tramm (2009): berufliche Handlungssituationen und Lernfeldansatz
+- Meyer (2015): Phasierung von Unterricht (Einstieg – Erarbeitung – Sicherung – Transfer)
 
 ## 3. 🧠 Lernverständnis
 
@@ -471,11 +480,11 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ### Leitreferenzen des Lernverständnisses
 
-- Reich: konstruktivistische Didaktik
-- Wilbers: Handlungsorientierung
-- Tramm: berufliche Handlungssituationen
-- Biggs: Deep vs. Surface Approaches to Learning
-- Deci & Ryan: Self-Determination Theory (SDT)
+- Reich (2012): konstruktivistische Didaktik
+- Wilbers (2025): Handlungsorientierung
+- Tramm (2009): berufliche Handlungssituationen
+- Biggs & Tang (2009): Deep vs. Surface Approaches to Learning
+- Deci & Ryan (2000): Self-Determination Theory (SDT)
 
 ## 4. 👥 Lernqualität
 
@@ -576,6 +585,9 @@ Feedback ist integraler Bestandteil des Lernprozesses, nicht nur Abschluss.
 
 ### Leistungsüberprüfung und Assessment
 
+**Didaktischer Bezug:**
+Dieser Abschnitt knüpft an etablierte didaktische und lernpsychologische Ansätze an, insbesondere an Biggs (1996) sowie Hattie & Timperley (2007), und erweitert diese kontextbezogen.
+
 Wo Leistungsüberprüfung geplant wird, ist ihre Gestaltung Teil der Lernqualität.
 Formatives Assessment (lernbegleitend) wird gegenüber rein summativem Assessment bevorzugt.
 Aufgabenformate sollen auch im Assessment über reine Reproduktion hinausgehen.
@@ -633,10 +645,11 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ### Leitreferenzen der Lernqualität
 
-- Helmke: Unterrichtsqualität und Basisdimensionen
-- Hattie & Timperley: Feedback und Lernwirksamkeit
-- Biggs: Constructive Alignment und Deep Learning
-- Lipowsky & Bleck: fachspezifische Unterrichtsqualität
+- Helmke (2017): Unterrichtsqualität und Basisdimensionen
+- Hattie & Timperley (2007): Feedback und Lernwirksamkeit
+- Biggs (1996): Constructive Alignment
+- Biggs & Tang (2009): Deep Learning
+- Lipowsky & Bleck (2019): fachspezifische Unterrichtsqualität
 
 ## 5. 🪞 Reflexion
 
@@ -749,9 +762,9 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ### Leitreferenzen der Reflexion
 
-- Schön: Reflective Practitioner (reflection-in-action / on-action)
-- Korthagen: zyklisches Reflexionsmodell (ALACT)
-- Dewey: reflexives Denken
+- Schön (1987): Reflective Practitioner (reflection-in-action / on-action)
+- Korthagen (2002): zyklisches Reflexionsmodell (ALACT)
+- Dewey (1910): reflexives Denken
 
 ## 6. 🌱 Adaptivität
 
@@ -839,6 +852,9 @@ Die Lehrperson übernimmt eine adaptive Steuerungsfunktion:
 
 ### Adaptivität im Kontext von KI
 
+**Didaktischer Bezug:**
+Dieser Abschnitt knüpft an etablierte didaktische und lernpsychologische Ansätze an, insbesondere an Vygotsky (1978) und Wood et al. (1976), und erweitert diese kontextbezogen.
+
 Digitale und KI-gestützte Systeme können Adaptivität unterstützen, indem sie:
 
 - unterschiedliche Zugänge bereitstellen  
@@ -877,11 +893,31 @@ Die konkrete Ausprägung dieser Dimension variiert je nach didaktischem Profil (
 
 ### Leitreferenzen der Adaptivität
 
-- Helmke: Unterrichtsqualität und Umgang mit Heterogenität
-- Hattie: Sichtbarkeit von Lernen und Differenzierung
-- Vygotsky: Zone der nächsten Entwicklung und Scaffolding
+- Helmke (2017): Unterrichtsqualität und Umgang mit Heterogenität
+- Hattie (2009): Sichtbarkeit von Lernen und Differenzierung
+- Vygotsky (1978) & Wood et al. (1976): Zone der nächsten Entwicklung und Scaffolding
 
 ---
+
+### Ableitungslogik der didaktischen Profile
+
+Die didaktischen Profile (A-C) sind keine eigenständigen Modelle,
+sondern ergeben sich aus einer unterschiedlichen Gewichtung
+und Kombination der bestehenden DQM-Leitdimensionen.
+
+Sie basieren insbesondere auf:
+
+- Zielorientierung und Constructive Alignment (Biggs 1996; Biggs & Tang 2009)
+- Strukturierungsansätzen der Allgemeinen Didaktik (Heimann et al. 1976)
+- handlungsorientierten Konzepten der beruflichen Bildung (Tramm 2009; Wilbers 2025)
+- konstruktivistischen und motivationspsychologischen Lernverständnissen (Reich 2012; Deci & Ryan 2000)
+- empirischen Befunden zu Unterrichtsqualität und Lernprozessen (Helmke 2017; Hattie 2009)
+
+Die Profile stellen damit **typische didaktische Konfigurationsmuster** dar,
+die in der Praxis häufig auftreten und im Agenten zur Strukturierung,
+Gewichtung und Kohärenzprüfung genutzt werden.
+
+Sie sind analytisch trennbar, können in der Praxis jedoch begründet kombiniert werden.
 
 ## Didaktische Profile
 
@@ -978,6 +1014,22 @@ Profilwechsel wird explizit gemacht und begründet.
 
 ---
 
+### Ableitungslogik der Querschnittsprinzipien
+
+Die Querschnittsprinzipien sind keine eigenständige zusätzliche Dimension,
+sondern verdichten zentrale Aspekte der bestehenden Leitdimensionen.
+
+Sie leiten sich insbesondere ab aus:
+
+- Lernqualität (z. B. kognitive Aktivierung, Feedback, Unterrichtsqualität; Helmke 2017, Hattie & Timperley 2007)
+- Lernverständnis (z. B. konstruktivistische Perspektive, Motivation; Reich 2012, Deci & Ryan 2000)
+- Adaptivität (z. B. Differenzierung, Umgang mit Heterogenität; Vygotsky 1978, Wood et al. 1976)
+- Strukturierung und Zielorientierung (z. B. didaktische Kohärenz; Heimann et al. 1976, Biggs 1996)
+
+Die Prinzipien haben damit den Status einer **synthetischen Heuristik**:
+Sie machen dimensionsübergreifende Qualitätsanforderungen explizit,
+führen jedoch keine neue Bewertungslogik ein.
+
 ## Querschnittsprinzipien
 
 Diese Prinzipien gelten dimensionsübergreifend und werden in der Prüfmatrix als eigene Zeile geprüft.
@@ -1011,3 +1063,49 @@ Mindeststandard und Folgerungen werden ausschliesslich im Contract definiert.
 Das DQM markiert diagnostisch, wo eine Dimension unzureichend ausgearbeitet ist.
 
 Die Prüfmatrix wird vor `BLOG FINAL` als DQM-Prüfbericht ausgegeben.
+
+---
+
+## Literatur
+
+Anderson, L. W., Krathwohl, D. R., Airasian, P. W., Cruikshank, K. A., Mayer, R. E., Pintrich, P. R., Raths, J., & Wittrock, M. C. (2001). A taxonomy for learning, teaching, and assessing: A revision of Bloom’s taxonomy of educational objectives. Longman.
+
+Baumert, J., & Kunter, M. (2006). Stichwort: Professionelle Kompetenz von Lehrkräften. Zeitschrift für Erziehungswissenschaft: ZfE, 9(4), 469–520.
+
+Biggs, J. (1996). Enhancing teaching through constructive alignment. Higher Education, 32(3), 347–364. https://doi.org/10.1007/BF00138871
+
+Biggs, J. B., & Tang, C. S. (2009). Teaching for quality learning at university: What the student does (3rd ed., reprinted). McGraw-Hill u.a..
+
+Deci, E. L., & Ryan, R. M. (2000). The "What" and "Why" of goal pursuits: Human needs and the self-determination of behavior. Psychological Inquiry, 11(4), 227–268. https://doi.org/10.1207/S15327965PLI1104_01
+
+Dewey, J. (1910). How we think. D. C. Heath & Co.
+
+Hattie, J. (2009). Visible learning: A synthesis of over 800 meta-analyses relating to achievement. Routledge.
+
+Hattie, J., & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112. https://doi.org/10.3102/003465430298487
+
+Hedtke, R. (2015). Sozioökonomische Bildung. Haushalt in Bildung & Forschung, 4(3), 3–18. https://doi.org/10.3224/hibifo.v4i3.20689
+
+Heimann, P., Otto, G., & Schulz, W. (Hrsg.). (1976). Unterricht: Analyse und Planung. Schroedel.
+
+Helmke, A. (2017). Unterrichtsqualität und Lehrerprofessionalität: Diagnose, Evaluation und Verbesserung des Unterrichts. Klett Kallmeyer.
+
+KMK. (2021). Handreichung für die Erarbeitung von Rahmenlehrplänen der Kultusministerkonferenz für den berufsbezogenen Unterricht in der Berufsschule und ihre Abstimmung mit Ausbildungsordnungen des Bundes für anerkannte Ausbildungsberufe. https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2021/2021_06_17-GEP-Handreichung.pdf
+
+Lipowsky, F., & Bleck, V. (2019). Was wissen wir über guten Unterricht? – Ein Update. In U. Steffens & R. Messner (Hrsg.), Unterrichtsqualität: Konzepte und Bilanzen gelingenden Lehrens und Lernens: Grundlagen der Qualität von Schule 3 (S. 219–250). Waxmann.
+
+Meyer, H. (2015). Leitfaden zur Unterrichtsvorbereitung. Cornelsen Scriptor.
+
+Reich, K. (2012). Konstruktivistische Didaktik: Das Lehr- und Studienbuch mit Online-Methodenpool. Beltz Verlag.
+
+Sektion BWP der DGfE. (2014). Basiscurriculum für das universitäre Studienfach Berufs- und Wirtschaftspädagogik im Rahmen berufs- und wirtschaftspädagogischer Studiengänge. https://www.dgfe.de/fileadmin/OrdnerRedakteure/Sektionen/Sek07_BerWiP/2014_Basiscurriculum_BWP.pdf
+
+Tramm, T. (2009). Von der Geschäftsprozess- zur Lernprozessperspektive. Das Zusammenspiel von Prozessorientierung, systemischer Perspektive und prozessübergreifender Kompetenzentwicklung im lernfeldstrukturierten Berufsschulunterricht. In H. Pongratz, T. Tramm, & K. Wilbers (Hrsg.), Prozessorientierte Wirtschaftsdidaktik und Einsatz von ERP-Systemen im kaufmännischen Unterricht (S. 77–101). Shaker Verlag.
+
+Vygotsky, L. S. (1978). Mind in society. The development of higher psychological processes. Harvard University Press.
+
+Weinert, F. E. (2001). Concept of competence: A conceptual clarification. In D. S. Rychen & L. H. Salganik (Hrsg.), Defining and selecting key competencies (S. 45–65). Hogrefe and Huber.
+
+Wilbers, K. (2025). Wirtschaftsunterricht gestalten: Eine traditionelle und handlungsorientierte Didaktik für kaufmännische Bildungsgänge. epubli.
+
+Wood, D., Bruner, J. S., & Ross, G. (1976). The role of tutoring in problem solving. Journal of Child Psychology and Psychiatry, 17(2), 89–100. https://doi.org/10.1111/j.1469-7610.1976.tb00381.x
