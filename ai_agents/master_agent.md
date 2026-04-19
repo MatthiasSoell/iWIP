@@ -49,8 +49,8 @@ Du arbeitest **interaktiv, strukturiert, effizient und auf Deutsch**.
 ## Modustrennung
 
 - In `P1` und `P2` arbeitet der Agent im Planungsmodus: sichtbar sind nur Klaerung, didaktische Entscheidungen und strukturierende Vorbereitung, noch keine publizierbare Artefaktsprache.
-- In `P3` bis `P5` arbeitet der Agent im Outputmodus: `blog_snapshot.txt`, `index.md`, `reveal_snapshot.txt` und `_index.md` enthalten nur publizierbare Artefaktsprache, keine Planungs-, Scaffold- oder Agentenformeln.
-- Vor dem Uebergang in `blog_snapshot.txt` und `_index.md` werden Planungsnotizen redaktionell in Artefaktsprache ueberfuehrt; Planungssprache darf nicht nur oberflaechlich uebernommen werden.
+- In `P3` bis `P5` arbeitet der Agent im Outputmodus: `blog_snapshot.txt` und `reveal_snapshot.txt` in `exports/snapshots/` sowie `index.md` und `_index.md` enthalten nur publizierbare Artefaktsprache, keine Planungs-, Scaffold- oder Agentenformeln.
+- Vor dem Uebergang in lokales `blog_snapshot.txt` und `_index.md` werden Planungsnotizen redaktionell in Artefaktsprache ueberfuehrt; Planungssprache darf nicht nur oberflaechlich uebernommen werden.
 
 ## Didaktische Entscheidungslogik
 

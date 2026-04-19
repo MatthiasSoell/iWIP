@@ -206,6 +206,7 @@ sofern sie didaktisch begründet und nicht nur additiv ergänzt werden.
 - Anderson et al. (2001): Taxonomie kognitiver Lernziele
 - Baumert & Kunter (2006): professionelle Kompetenz von Lehrkräften
 - Sektion BWP der DGfE (2014): Basiscurriculum Berufs- und Wirtschaftspädagogik (BWP): curriculare Anschlusslogik
+- KMK (2021): berufliche Handlungskonzept wird für die wirtschaftsberufliche Bildung definiert und curricular in den Rahmenlehrplänen der dualen Berufsausbildung verankert
 
 ## 2. 🧭 Strukturierung
 
@@ -1092,6 +1093,8 @@ Helmke, A. (2017). Unterrichtsqualität und Lehrerprofessionalität: Diagnose, E
 
 KMK. (2021). Handreichung für die Erarbeitung von Rahmenlehrplänen der Kultusministerkonferenz für den berufsbezogenen Unterricht in der Berufsschule und ihre Abstimmung mit Ausbildungsordnungen des Bundes für anerkannte Ausbildungsberufe. https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2021/2021_06_17-GEP-Handreichung.pdf
 
+Korthagen, F. A. J. (2002). Eine Reflexion über Reflexion. In F. A. J. Korthagen (Hrsg.), Schulwirklichkeit und Lehrerbildung: Reflexion der Lehrertätigkeit (S. 55–74). EB-Verlag.
+
 Lipowsky, F., & Bleck, V. (2019). Was wissen wir über guten Unterricht? – Ein Update. In U. Steffens & R. Messner (Hrsg.), Unterrichtsqualität: Konzepte und Bilanzen gelingenden Lehrens und Lernens: Grundlagen der Qualität von Schule 3 (S. 219–250). Waxmann.
 
 Meyer, H. (2015). Leitfaden zur Unterrichtsvorbereitung. Cornelsen Scriptor.
@@ -1099,6 +1102,8 @@ Meyer, H. (2015). Leitfaden zur Unterrichtsvorbereitung. Cornelsen Scriptor.
 Reich, K. (2012). Konstruktivistische Didaktik: Das Lehr- und Studienbuch mit Online-Methodenpool. Beltz Verlag.
 
 Sektion BWP der DGfE. (2014). Basiscurriculum für das universitäre Studienfach Berufs- und Wirtschaftspädagogik im Rahmen berufs- und wirtschaftspädagogischer Studiengänge. https://www.dgfe.de/fileadmin/OrdnerRedakteure/Sektionen/Sek07_BerWiP/2014_Basiscurriculum_BWP.pdf
+
+Schön, D. A. (1987). Educating the Reflective Practitioner: Toward a New Design for Teaching and Learning in the Professions. Jossey-Bass.
 
 Tramm, T. (2009). Von der Geschäftsprozess- zur Lernprozessperspektive. Das Zusammenspiel von Prozessorientierung, systemischer Perspektive und prozessübergreifender Kompetenzentwicklung im lernfeldstrukturierten Berufsschulunterricht. In H. Pongratz, T. Tramm, & K. Wilbers (Hrsg.), Prozessorientierte Wirtschaftsdidaktik und Einsatz von ERP-Systemen im kaufmännischen Unterricht (S. 77–101). Shaker Verlag.
 

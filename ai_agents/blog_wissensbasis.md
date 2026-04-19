@@ -13,9 +13,6 @@ Hinweis: Das DQM hat Vorrang vor der Wissensbasis.
 Bestehende Artikel koennen referenziert werden, aber nicht unkritisch als
 didaktischer Standard übernommen.
 
-Regenerierung: `scripts/generate_blog_index.sh` erzeugt eine Rohfassung;
-Schlüsselkonzepte und Verweishaken werden manuell kuratiert.
-
 Kuratierungsprinzipien:
 
 - Reihenfolge und Nummerierung sind thematisch kuratiert und muessen nicht der Rohfassung entsprechen.
@@ -107,3 +104,10 @@ Kuratierungsprinzipien:
 - **Kernthemen**: subjektive und strukturelle Perspektive auf Bildung, Trias aus Gesellschaft/Bildungssystem/Arbeitswelt, Aufbau des deutschen Bildungssystems, rechtliche Rahmenbedingungen, Recherche zum Bildungssystem in Mecklenburg-Vorpommern
 - **Schlüsselkonzepte**: Bildungssystem, Bildungsbiographie, Föderalismus, Berufsbildung, Schulrecht, Mecklenburg-Vorpommern
 - **Verweishaken**: Bei Einführungen in das deutsche Bildungssystem; bei der Verknüpfung von Bildungswegen und Systemstrukturen; bei regionalen Vertiefungen zu Mecklenburg-Vorpommern
+
+## 13. Einführung in das Modul Bildungssysteme
+- **Pfad**: content/blog/lehre/bisy/einfuehrung/index.md
+- **Bereich**: Lehre
+- **Kernthemen**: Modulauftakt zu Bildungssystemen im Kontext von Arbeit und Gesellschaft, biographischer Zugang über Bildungswege und Übergänge, Kennenlernen und Sichtbarmachung heterogener Bildungsbiographien, organisatorische Orientierung zu Kommunikation, Workload und Semesterfahrplan, Einführung in Hausarbeit und Prüfungsanmeldung
+- **Schlüsselkonzepte**: Bildungssysteme, Bildungsbiographie, Bildungswege, Übergänge, berufliche Bildung, wissenschaftliches Arbeiten, Hausarbeit
+- **Verweishaken**: Bei Modul- und Semesterauftakten; bei Einstiegen über biographische Zugänge zu Bildungssystemen; bei der frühen Klärung von Prüfungsanforderungen, Kommunikation und Arbeitsorganisation

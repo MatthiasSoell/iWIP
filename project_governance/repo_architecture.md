@@ -117,6 +117,24 @@ iWIP/
    └─ workflows/           # GitHub Actions Deployment
 ```
 
+### 4.1 Lokale Arbeitsartefakte
+
+Einige Pfade sind fuer den lokalen Arbeitsprozess sinnvoll, gehoeren aber
+nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
+
+- `exports/` fuer lokale Forschungs-, Review- und Chat-Exporte
+- `exports/snapshots/` fuer lokale, nicht oeffentliche Blog- und Reveal-Snapshots
+- `public/` als lokaler Hugo-Build-Output
+- `resources/` als lokaler Hugo-Cache bzw. Build-Artefakt
+- `.hugo_build.lock` als lokale Lock-Datei
+- `.vscode/` fuer nutzerspezifische Workspace-Einstellungen
+
+Regel:
+
+- Diese Pfade duerfen lokal existieren.
+- Sie werden nicht fuer GitHub Pages benoetigt.
+- Sie sollen im Regelfall nicht versioniert werden.
+
 ---
 
 ## 5. Content-Struktur (Hauptordner)

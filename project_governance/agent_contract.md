@@ -19,7 +19,7 @@ OER-Metadaten werden im Blogartikel gefuehrt; Reveal bleibt OER-metadatenfrei.
 Der Agent arbeitet reflektionsgeleitet und Human-in-the-Loop.
 Kritische didaktische Entscheidungen, Unsicherheiten und Spannungen werden vor Artefakterstellung explizit benannt und ueber Rueckfragen, Reflexionsschleifen und klar markierte Uebergaenge bearbeitet.
 Ko-kreative Weiterarbeit am Blog ist der Standardfall; eine Offline-Ueberarbeitung durch den Nutzer ist optional.
-Reflexionsschleifen zwischen Planung, `blog_snapshot.txt`, bearbeitetem `index.md`, `reveal_snapshot.txt` und bearbeitetem `_index.md` sind Soll-Verhalten und kein Fehlerfall.
+Reflexionsschleifen zwischen Planung, lokalem `blog_snapshot.txt`, bearbeitetem `index.md`, lokalem `reveal_snapshot.txt` und bearbeitetem `_index.md` sind Soll-Verhalten und kein Fehlerfall.
 
 ### Glossar der Steuerarchitektur
 
@@ -28,6 +28,7 @@ Reflexionsschleifen zwischen Planung, `blog_snapshot.txt`, bearbeitetem `index.m
 - `Phasenlabel`: rein beschreibende Bezeichnung innerhalb einer Prozessphase, z. B. Planung, Blogausarbeitung oder Reveal-Transformation; Phasenlabels erzeugen keine eigene Steuerlogik.
 - `veroeffentlichter Pfad`: sichtbare URL eines Artefakts unterhalb der Site-Basis `/iWIP/`.
 - `technischer Bundle-Ort`: dateibasierter Content-Pfad im Repo, aus dem ein Artefakt gebaut wird.
+- `lokale Snapshot-Ablage`: nicht oeffentliche Arbeitsablage unter `exports/snapshots/`; sie spiegelt den technischen Bundle-Ort eines Artefakts und enthaelt nur unveraenderliche Vergleichsstaende.
 - `sichtbare Ausgabe`: alles, was absichtlich im Nutzerdialog oder als sichtbarer Artefaktteil erscheint.
 - `Planungsmodus`: sichtbare Planungs- und Klaerungssprache in `P1` und `P2`; sie dient nur der Vorbereitung und gehoert nicht in finale Artefakte.
 - `Outputmodus`: publizierbare Artefaktsprache in `P3` bis `P5`; sie ist frei von Planungs-, Scaffold- und Steuerformeln.
@@ -48,7 +49,7 @@ Die fuenf Prozessphasen sind die einzige normative Ablaufstruktur der Artefakt-A
 
 - `P1 – Klaeren`: Kontext, Profil und offene Voraussetzungen klaeren.
 - `P2 – Strukturieren`: didaktische Planung gemaess Profil und DQM konsistent aufbauen.
-- `P3 – Entwerfen`: `blog_snapshot.txt` als unveraenderlichen Erstentwurf erzeugen, nach `index.md` klonen und Luecken markieren.
+- `P3 – Entwerfen`: `blog_snapshot.txt` in der lokalen Snapshot-Ablage als unveraenderlichen Erstentwurf erzeugen, nach `index.md` klonen und Luecken markieren.
 - `P4 – Ko-kreativ ausarbeiten`: Blog standardmaessig gemeinsam in `index.md` ausarbeiten; nach `REVEAL GO` Reveal gezielt in `_index.md` verdichten. Offline-Ueberarbeitung durch den Nutzer ist optional und kein Standard-Gate.
 - `P5 – Finalisieren`: Mindestpruefungen, sichtbare Finalausgaben und Artefaktfreigabe durchfuehren.
 
@@ -66,7 +67,7 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 - `FORSCHUNG START: ...` startet die Artefakt-Arbeit in einem eigenstaendigen Forschungsmodus. Nur in diesem Modus werden systematisch Prozessdaten (Zeit, Schritte, Entscheidungen) protokolliert; dazu gehoeren ein strukturiertes Forschungsprotokoll mit Zeitmarken und optional ein sichtbares Forschungs-Transkript in `exports/`.
 - `Kapitel <N> freigegeben` dokumentiert kapitelweise Freigaben innerhalb der Ausarbeitung, wenn dieser Modus genutzt wird.
 - `BLOG FINAL` loest die Blog-Finalisierung mit allen Mindestpruefungen aus.
-- `REVEAL GO` erzeugt `_index.md` als bearbeitbare Reveal-Arbeitsdatei und `reveal_snapshot.txt` als unveraenderlichen Snapshot.
+- `REVEAL GO` erzeugt `_index.md` als bearbeitbare Reveal-Arbeitsdatei und `reveal_snapshot.txt` in der lokalen Snapshot-Ablage als unveraenderlichen Snapshot.
 - `REVEAL FINAL` loest die Reveal-Finalisierung mit allen Mindestpruefungen aus und schliesst eine aktive Forschungsdokumentation automatisch ab.
 - `FORSCHUNGSPROTOKOLL START` schaltet den Forschungsmodus nur noch dann explizit zu, wenn ein laufender Fall nicht mit `FORSCHUNG START` begonnen wurde oder die Forschungsdokumentation spaeter zugeschaltet werden soll.
 - `FORSCHUNGSPROTOKOLL FINAL` gibt das getrennte Forschungsprotokoll manuell aus bzw. schliesst es ab, wenn ein Fall ohne `REVEAL FINAL` endet oder ein Zwischenstand benoetigt wird.
@@ -108,13 +109,13 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 9. Das didaktische Profil (A/B/C) steuert die Planung. Wenn kein Profil angegeben ist, gilt automatisch Profil A. Diese Default-Setzung wird im Standardfall genau einmal sichtbar gemacht, und zwar in der ersten strukturierten Planungszusammenfassung oder einer gleichwertigen Klarstellung; spaetere Finalpruefungen oder Uebergaenge loesen dazu keine neue Rueckfrage aus. Das DQM in `ai_agents/didaktisches_qualitaetsmodell.md` ist das einzige didaktische Referenzmodell und steuert Profilgewichtung, Struktur und Bewertung.
 10. Blog-Frontmatter vollstaendig gemaess `ai_agents/templates/blog_template.md`, inklusive vollstaendigem OER-/TULLU-/OERSI-Metadatenblock.
 11. Reveal-Frontmatter vollstaendig gemaess `ai_agents/templates/reveal_template.md`; Reveal enthaelt keine OER-Metadaten.
-12. Nach Abschluss der Planung erzeugt der Agent im Blog-Zielordner `blog_snapshot.txt` als unveraenderlichen Plain-Text-Snapshot des ersten vollstaendigen Blogentwurfs und klont diesen Stand nach `index.md` als bearbeitbare Arbeitsdatei. Ohne vorhandenes `blog_snapshot.txt` ist weder `P4` noch `BLOG FINAL` zulaessig.
-13. Bei `REVEAL GO` erzeugt der Agent im Reveal-Zielordner `_index.md` als bearbeitbare Arbeitsdatei und `reveal_snapshot.txt` als unveraenderlichen Plain-Text-Snapshot desselben Erststands. Ohne vorhandenes `reveal_snapshot.txt` ist weder die Reveal-Arbeitsphase abgeschlossen noch `REVEAL FINAL` zulaessig.
-14. Snapshot-Dateien im Blog- und Reveal-Kontext sind fuer Generierung und Ableitung nicht-operativ: keine automatische Bearbeitung und keine Nutzung als Ableitungsquelle; Reveal wird stets aus dem finalen Blog-`index.md` abgeleitet. Ein optionaler Vergleich zwischen `blog_snapshot.txt` und finalem `index.md` sowie zwischen `reveal_snapshot.txt` und finalem `_index.md` ist ausschliesslich als Reflexion zulaessig und darf keine automatische Regelanpassung ausloesen.
+12. Nach Abschluss der Planung erzeugt der Agent in der lokalen Snapshot-Ablage unter `exports/snapshots/` einen zum Blog-Zielordner gespiegelten `blog_snapshot.txt` als unveraenderlichen Plain-Text-Snapshot des ersten vollstaendigen Blogentwurfs, zum Beispiel `exports/snapshots/content/blog/<bereich>/<ordner>/blog_snapshot.txt`, und klont diesen Stand nach `index.md` als bearbeitbare Arbeitsdatei. Ohne vorhandenes `blog_snapshot.txt` ist weder `P4` noch `BLOG FINAL` zulaessig.
+13. Bei `REVEAL GO` erzeugt der Agent im Reveal-Zielordner `_index.md` als bearbeitbare Arbeitsdatei und in der lokalen Snapshot-Ablage unter `exports/snapshots/` einen zum Reveal-Zielordner gespiegelten `reveal_snapshot.txt` als unveraenderlichen Plain-Text-Snapshot desselben Erststands, zum Beispiel `exports/snapshots/content/praesentation/<bereich>/<ordner>/reveal_snapshot.txt`. Ohne vorhandenes `reveal_snapshot.txt` ist weder die Reveal-Arbeitsphase abgeschlossen noch `REVEAL FINAL` zulaessig.
+14. Snapshot-Dateien im Blog- und Reveal-Kontext sind fuer Generierung und Ableitung nicht-operativ: keine automatische Bearbeitung und keine Nutzung als Ableitungsquelle; Reveal wird stets aus dem finalen Blog-`index.md` abgeleitet. Ein optionaler Vergleich zwischen lokalem `blog_snapshot.txt` und finalem `index.md` sowie zwischen lokalem `reveal_snapshot.txt` und finalem `_index.md` ist ausschliesslich als Reflexion zulaessig und darf keine automatische Regelanpassung ausloesen.
 15. Vor Finalisierung greifen verpflichtende Mindestpruefungen. Alle Pflichtbestandteile muessen vor `BLOG FINAL` beziehungsweise `REVEAL FINAL` vollstaendig geprueft sein. Im Blog sind dies mindestens DQM-Pruefbericht, sichtbare Zusammenfassung nach dem Summary-Schema dieses Contracts, Frontmatter-Pruefung, Begriffspruefung, Typografiepruefung und Snapshot-Pruefung. In Reveal sind dies mindestens Abgleich, sichtbare Zusammenfassung nach dem Summary-Schema dieses Contracts, Frontmatter-Pruefung und Snapshot-Pruefung. Eine Quellenuebersicht wird nur sichtbar ausgegeben, wenn Quellenkonsistenz oder Nutzerklarheit das erfordern. Eine Materialuebersicht wird nur sichtbar ausgegeben, wenn mehrere Dateien, Quellen oder Zielpfade tatsaechlich abgestimmt werden muessen. Ziel ist eine moeglichst abschliessende First-pass-Finalisierung ohne nachtraegliche Korrekturschleifen. Bei Blockern stoppt die Finalisierung.
-16. `BLOG FINAL` ist unzulaessig, wenn Pflichtabschnitte aus diesem Contract oder dem Blog-Template fehlen, inhaltlich unvollstaendig sind, `blog_snapshot.txt` fehlt oder im kapitelweisen Freigabefall noch nicht freigegeben wurden.
+16. `BLOG FINAL` ist unzulaessig, wenn Pflichtabschnitte aus diesem Contract oder dem Blog-Template fehlen, inhaltlich unvollstaendig sind, das lokale `blog_snapshot.txt` fehlt oder im kapitelweisen Freigabefall noch nicht freigegeben wurden.
 17. Reveal-Bildpfade muessen robust sein: Standard ist Verlinkung auf den Blog-Bildordner per absolutem Pfad (`/iWIP/blog/<bereich>/<ordner>/...`) ohne Duplikatkopie; nur reveal-spezifische Assets liegen im Reveal-Ordner.
-18. `blog_snapshot.txt` und `reveal_snapshot.txt` dienen ausschliesslich als unveraenderliche Vergleichsstaende. Iterative Ueberarbeitung erfolgt nur in `index.md` beziehungsweise `_index.md`. Offene oder unklare Inhalte werden dort explizit als `[TODO: ...]` markiert statt still ergaenzt.
+18. `blog_snapshot.txt` und `reveal_snapshot.txt` in `exports/snapshots/` dienen ausschliesslich als unveraenderliche Vergleichsstaende. Iterative Ueberarbeitung erfolgt nur in `index.md` beziehungsweise `_index.md`. Offene oder unklare Inhalte werden dort explizit als `[TODO: ...]` markiert statt still ergaenzt.
 19. Nutzerdialog ist primaer didaktisch, adressatenorientiert und antwortorientiert: zuerst fachliche Einordnung, Entscheidung oder naechste sinnvolle Arbeitsfrage; interne Prozesssprache bleibt unsichtbar. Bei erkennbaren didaktischen Spannungen beginnt die sichtbare Antwort ohne Prozesskommentar direkt mit der fachlichen Diagnose. Der Agent benennt die zentrale Spannung in einem klaren Ziel-Mittel-Satz mit Bezug auf die betroffene didaktische Dimension und vermeidet weichzeichnende Formulierungen, wenn dadurch die Tragweite unklar wuerde. Danach folgt genau eine kurze Anschlussfrage oder eine konkrete Empfehlung.
 20. Hochgeladene PPTX-, PDF-, DOCX-, Markdown- oder Notizdateien gelten standardmaessig als Quellmaterial fuer Analyse, Planung oder Ueberarbeitung. Daraus folgt keine implizite Reveal-Erzeugung, keine Ueberschreibung bestehender Artefakte und keine Finalisierung.
 21. Explizite Standardstatusmeldungen haben Vorrang vor gleichwertigen Formulierungen; semantisch eindeutige natuerliche Formulierungen duerfen dieselben Uebergaenge ausloesen. Bei Unklarheit ist genau eine Klaerungsfrage verpflichtend.
@@ -178,7 +179,7 @@ Der Agent stellt genau eine Entscheidungsfrage, ob nach der gesamten DQM-Empfehl
 Die Frage benennt die Konsequenzen fuer alle betroffenen DQM-Dimensionen.
 Muster: *„Soll ich DQM-konform mit dieser Priorisierung planen, oder willst du bewusst an [Vorgaben] festhalten und die Einschraenkungen bei [DQM-Dimensionen] dokumentieren?"*
 
-Haelt der Nutzer bewusst an den widerspruechlichen Vorgaben fest und verlangt dennoch eine Planung, wird in diesem Rahmen weitergearbeitet. Der verpflichtende Vorbereitungspfad bleibt dabei unberuehrt: `blog_snapshot.txt` ist trotzdem anzulegen, und `index.md` muss den bewussten Override sowie die didaktischen Einschraenkungen explizit dokumentieren.
+Haelt der Nutzer bewusst an den widerspruechlichen Vorgaben fest und verlangt dennoch eine Planung, wird in diesem Rahmen weitergearbeitet. Der verpflichtende Vorbereitungspfad bleibt dabei unberuehrt: das lokale `blog_snapshot.txt` ist trotzdem anzulegen, und `index.md` muss den bewussten Override sowie die didaktischen Einschraenkungen explizit dokumentieren.
 
 Eine Planung ohne vorherige Konfliktklaerung im Konfliktblock ist nicht zulaessig.
 
@@ -193,7 +194,7 @@ Eine didaktische Planung ist abgeschlossen, wenn:
 3. Lernziele, Struktur und zentrale Aktivitaeten DQM-konsistent und im Zeitrahmen plausibel sind.
 4. Constructive Alignment zwischen Zielen, Aktivitaeten, Methoden und Leistungsanforderungen erkennbar ist.
 5. Offene Informationen explizit als `[TODO: ...]` markiert sind und nicht still ergaenzt wurden.
-6. Der Uebergang in `blog_snapshot.txt` als Erstentwurf und `index.md` als Arbeitsdatei vorbereitet ist.
+6. Der Uebergang in lokales `blog_snapshot.txt` als Erstentwurf und `index.md` als Arbeitsdatei vorbereitet ist.
 
 ---
 
@@ -207,7 +208,7 @@ Ein Blogartikel ist nur final, wenn:
 4. Kernpunkte mit Quellenbezug im Text.
 5. Literaturverzeichnis vollstaendig vorhanden.
 6. Pflicht-Frontmatter vollstaendig ausgefuellt (inkl. `oer.creators`, `publisher`, `license`, `source`, `version`, `status`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `time_required`, `about`).
-7. `blog_snapshot.txt` bleibt als unveraenderlicher Erstentwurf erhalten; `index.md` wurde daraus geklont, iterativ ueberarbeitet und finalisiert.
+7. `blog_snapshot.txt` in `exports/snapshots/` bleibt als unveraenderlicher Erstentwurf erhalten; `index.md` wurde daraus geklont, iterativ ueberarbeitet und finalisiert.
 8. Abbildungen, Diagramme und Screenshots folgen im Blog dem Standard gemaess `ai_agents/templates/blog_template.md`: optional `p.grafic-title` direkt vor der Visualisierung, `figure.figure-frame` fuer das Bild und darunter `p.bildquelle` mit dem Praefix `Bildquelle:`.
 9. Emoji-Einsatz folgt `project_governance/content_emoji_policy.md` und ist im sichtbaren Hauptkoerper erkennbar umgesetzt.
 10. Alle Pflichtabschnitte aus diesem Contract und `ai_agents/templates/blog_template.md` sind vorhanden und inhaltlich ausgearbeitet; wenn kapitelweise Freigabe genutzt wurde, sind alle Pflichtabschnitte vor `BLOG FINAL` freigegeben.
@@ -231,7 +232,7 @@ Eine Reveal-Ableitung ist nur final, wenn:
 10. Fragment-Einsatz unterstuetzt einen schrittweisen Argumentationsaufbau.
 11. Emoji-Einsatz folgt `project_governance/content_emoji_policy.md` und ist im sichtbaren Folien-Body erkennbar umgesetzt.
 12. Sichtbare deutsche Reveal-Texte folgen der allgemeinen Typografie- und Umlautregel dieses Contracts; technische Felder und technische Zeichenketten bleiben ausgenommen.
-13. Im Reveal-Zielordner liegt `reveal_snapshot.txt` als unveraenderlicher Snapshot des ersten Reveal-Entwurfs; `_index.md` wurde darauf aufbauend iterativ ueberarbeitet und mit `REVEAL FINAL` abgeschlossen.
+13. In `exports/snapshots/` liegt ein zum Reveal-Zielordner gespiegeltes `reveal_snapshot.txt` als unveraenderlicher Snapshot des ersten Reveal-Entwurfs; `_index.md` wurde darauf aufbauend iterativ ueberarbeitet und mit `REVEAL FINAL` abgeschlossen.
 14. Bild-, Grafik- und Diagrammquellen folgen in Reveal dem Standard gemaess `ai_agents/templates/reveal_template.md`: Quellenzeile unter der Visualisierung als schlanke `p.zitat-quelle` mit dem Praefix `Bildquelle:`; die Quellenzeile enthaelt immer die Herkunft und eine Lizenzangabe bzw. einen klaren Rechtehinweis.
 
 ---
@@ -402,7 +403,7 @@ Testtiefe ist proportional:
 
 ### RC-13 Snapshot bei REVEAL GO
 
-- Erwartung: bei `REVEAL GO` werden `_index.md` und `reveal_snapshot.txt` aus demselben Erststand erzeugt; ohne Snapshot darf der Reveal-Lauf nicht als finalisierbar gelten.
+- Erwartung: bei `REVEAL GO` werden `_index.md` und `reveal_snapshot.txt` in `exports/snapshots/` aus demselben Erststand erzeugt; ohne Snapshot darf der Reveal-Lauf nicht als finalisierbar gelten.
 - Fehlerindikator: fehlende Snapshot-Datei, abweichender Erststand, Snapshot als Ableitungsquelle verwendet oder Reveal-Finalisierung trotz fehlendem Snapshot.
 
 ### RC-14 Reveal-Textdichte und Kernbotschaften
@@ -425,7 +426,7 @@ Testtiefe ist proportional:
 
 ### RC-17 Blog-Snapshot erhalten
 
-- Erwartung: `blog_snapshot.txt` bleibt nach der Initialerzeugung unveraendert; iterative Bearbeitung erfolgt nur in `index.md`; ohne Snapshot gilt der Bloglauf nicht als finalisierbar.
+- Erwartung: `blog_snapshot.txt` in `exports/snapshots/` bleibt nach der Initialerzeugung unveraendert; iterative Bearbeitung erfolgt nur in `index.md`; ohne Snapshot gilt der Bloglauf nicht als finalisierbar.
 - Fehlerindikator: Snapshot wird ueberschrieben, `index.md` nicht aus dem Snapshot geklont oder Blog-Finalisierung trotz fehlendem Snapshot.
 
 ### RC-18 Reveal-Finalisierung getrennt
@@ -460,7 +461,7 @@ Testtiefe ist proportional:
 
 ### RC-23 Bundle-Hygiene bleibt sauber
 
-- Erwartung: in rendernden Content-Bundles liegen keine zusaetzlichen Markdown-Archiv- oder Snapshot-Dateien; Vergleichsstaende liegen als `.txt` oder ausserhalb rendernder Bundles vor.
+- Erwartung: in rendernden Content-Bundles liegen keine zusaetzlichen Markdown-Archiv- oder Snapshot-Dateien; Vergleichsstaende liegen ausschliesslich in `exports/snapshots/` ausserhalb rendernder Bundles.
 - Fehlerindikator: zusaetzliche `.md`-Dateien im Bundle werden mitgerendert oder koennen den Ausgabestand verfaelschen.
 
 ### RC-24 Blog-first bleibt Default
