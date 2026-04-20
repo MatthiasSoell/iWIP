@@ -1,0 +1,241 @@
+name: Generate OERSI metadata
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  metadata:
+    if: github.event_name == 'workflow_dispatch' || github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Generate metadata.yml
+        run: |
+          ruby <<'RUBY'
+          require 'yaml'
+          require 'date'
+
+          BASE_URL = 'https://matthiassoell.github.io/iWIP'
+
+          def present?(value)
+            !(value.nil? || (value.respond_to?(:empty?) && value.empty?))
+          end
+
+          def normalize_scalar(value)
+            return value.iso8601 if value.respond_to?(:iso8601)
+            value
+          end
+
+          def normalize_text(value)
+            value.to_s.gsub(/\s+/, ' ').strip
+          end
+
+          entries = Dir.glob('content/blog/**/index.md').sort.map do |path|
+            content = File.read(path)
+            next unless content.start_with?("---\n")
+
+            parts = content.split(/^---\s*$\n?/, 3)
+            next if parts.length < 3
+
+            front = YAML.safe_load(parts[1], permitted_classes: [Date, Time], aliases: true) || {}
+            next unless front['draft'] == false
+
+            oer = front['oer'] || {}
+            next unless oer['is_oer'] == true
+
+            permalink = front['permalink']
+            next unless present?(permalink)
+
+            url = "#{BASE_URL}#{permalink}"
+
+            keywords = []
+            Array(front['tags']).each do |tag|
+              normalized = normalize_text(tag)
+              keywords << normalized if present?(normalized) && !keywords.include?(normalized)
+            end
+            Array(oer['about']).each do |item|
+              term = item.is_a?(Hash) ? item['term'] : item
+              normalized = normalize_text(term)
+              keywords << normalized if present?(normalized) && !keywords.include?(normalized)
+            end
+
+            creators = Array(oer['creators']).map do |creator|
+              next unless creator.is_a?(Hash)
+
+              mapped = {}
+              mapped['name'] = normalize_text(creator['name']) if present?(creator['name'])
+              mapped['givenName'] = normalize_text(creator['given_name']) if present?(creator['given_name'])
+              mapped['familyName'] = normalize_text(creator['family_name']) if present?(creator['family_name'])
+              mapped['affiliation'] = normalize_text(creator['affiliation']) if present?(creator['affiliation'])
+              mapped['url'] = creator['url'] if present?(creator['url'])
+              mapped['identifier'] = creator['orcid'] if present?(creator['orcid'])
+              mapped.empty? ? nil : mapped
+            end.compact
+
+            item = {}
+            item['id'] = url
+            item['url'] = url
+            item['name'] = normalize_text(front['title']) if present?(front['title'])
+            item['creativeWorkStatus'] = 'Published'
+
+            description = front['description'] || front['summary']
+            item['description'] = normalize_text(description) if present?(description)
+            item['datePublished'] = normalize_scalar(front['date']) if present?(front['date'])
+            item['dateModified'] = normalize_scalar(front['lastmod']) if present?(front['lastmod'])
+            item['creator'] = creators if creators.any?
+            item['publisher'] = {
+              'name' => 'SciBlog iWIP',
+              'url' => 'https://matthiassoell.github.io/iWIP/'
+            }
+
+            license = oer['license'] || {}
+            mapped_license = {}
+            mapped_license['name'] = normalize_text(license['label']) if present?(license['label'])
+            mapped_license['url'] = license['url'] if present?(license['url'])
+            item['license'] = mapped_license if mapped_license.any?
+
+            item['keywords'] = keywords if keywords.any?
+            item['learningResourceType'] = normalize_text(oer['learning_resource_type']) if present?(oer['learning_resource_type'])
+
+            educational_level = Array(oer['educational_level']).map { |value| normalize_text(value) }.reject { |value| !present?(value) }
+            item['educationalLevel'] = educational_level if educational_level.any?
+
+            audience = Array(oer['audience']).map { |value| normalize_text(value) }.reject { |value| !present?(value) }
+            item['audience'] = audience if audience.any?
+
+            item['timeRequired'] = normalize_text(oer['time_required']) if present?(oer['time_required'])
+            item['inLanguage'] = normalize_text(oer['in_language']) if present?(oer['in_language'])
+            item
+          end.compact
+
+          File.write('metadata.yml', YAML.dump(entries, line_width: -1))
+          RUBY
+
+      - name: Validate YAML structure and duplicates
+        run: |
+          ruby <<'RUBY'
+          require 'yaml'
+
+          metadata = YAML.load_file('metadata.yml')
+          raise 'metadata.yml must contain a top-level array' unless metadata.is_a?(Array)
+
+          ids = metadata.map { |entry| entry['id'] }
+          duplicate_ids = ids.group_by(&:itself).select { |_id, group| group.size > 1 }.keys
+          raise "Duplicate resource ids: #{duplicate_ids.join(', ')}" unless duplicate_ids.empty?
+
+          metadata.each do |entry|
+            raise 'Missing id' unless entry['id']
+            raise "Missing name for #{entry['id']}" unless entry['name']
+            raise "Missing url for #{entry['id']}" unless entry['url']
+            raise "Missing creativeWorkStatus for #{entry['id']}" unless entry['creativeWorkStatus'] == 'Published'
+          end
+          RUBY
+
+      - name: Validate exported URLs
+        run: |
+          ruby <<'RUBY'
+          require 'yaml'
+          require 'net/http'
+          require 'uri'
+
+          def fetch_response(uri, limit = 5)
+            raise 'Too many redirects' if limit <= 0
+
+            http = Net::HTTP.new(uri.host, uri.port)
+            http.use_ssl = uri.scheme == 'https'
+            http.open_timeout = 20
+            http.read_timeout = 20
+
+            path = uri.path.empty? ? '/' : uri.path
+            path += "?#{uri.query}" if uri.query
+            headers = { 'User-Agent' => 'SciBlog-iWIP-OERSI-Workflow' }
+
+            response = http.request(Net::HTTP::Head.new(path, headers))
+            response = http.request(Net::HTTP::Get.new(path, headers)) if response.code.to_i >= 400
+
+            if response.is_a?(Net::HTTPRedirection)
+              location = response['location']
+              raise "Redirect without location for #{uri}" unless location
+              return fetch_response(URI.join(uri.to_s, location), limit - 1)
+            end
+
+            response
+          end
+
+          metadata = YAML.load_file('metadata.yml')
+            urls = []
+
+            metadata.each do |entry|
+              if ENV['GITHUB_EVENT_NAME'] == 'workflow_dispatch'
+                # Vollpruefung (inkl. eigener Seiten)
+                urls << entry['id']
+                urls << entry['url']
+              end
+
+              # Immer pruefen (stabile externe URLs)
+              urls << entry.dig('publisher', 'url')
+              urls << entry.dig('license', 'url')
+
+              Array(entry['creator']).each do |creator|
+                urls << creator['url']
+                urls << creator['identifier']
+              end
+            end
+
+            urls = urls.compact.uniq
+
+          failures = []
+          urls.each do |url|
+            response = fetch_response(URI(url))
+            code = response.code.to_i
+            failures << "#{url} => #{code}" unless code.between?(200, 399)
+          rescue StandardError => error
+            failures << "#{url} => #{error.class}: #{error.message}"
+          end
+
+          raise failures.join("\n") unless failures.empty?
+          RUBY
+
+      - name: Upload metadata artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: oersi-metadata
+          path: metadata.yml
+
+      - name: Check metadata changes
+        id: metadata_changes
+        run: |
+          if git diff --quiet -- metadata.yml; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Configure git identity
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && steps.metadata_changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit updated metadata.yml
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && steps.metadata_changes.outputs.changed == 'true'
+        run: |
+          git add metadata.yml
+          git commit -m "chore: update oersi metadata"
+
+      - name: Push updated metadata.yml
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && steps.metadata_changes.outputs.changed == 'true'
+        run: git push
