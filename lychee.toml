@@ -1,0 +1,5 @@
+# akzeptiere 403 (z. B. DOI-Links)
+accept = [200, 403]
+# optional, aber sinnvoll:
+# weniger Lärm durch Redirects
+max_redirects = 5

@@ -32,8 +32,8 @@ oer:
       given_name: "Matthias"
       family_name: "Söll"
       affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
-      url: ""
-      orcid: ""
+      url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
+      orcid: "https://orcid.org/0000-0002-9717-3017"
 
   publisher:
     name: "SciBlog iWIP – Universität Rostock"

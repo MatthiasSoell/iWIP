@@ -43,11 +43,11 @@ oer:
       given_name: "Matthias"
       family_name: "Söll"
       affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
-      url: "https://matthiassoell.github.io/iWIP/"
-      orcid: ""
+      url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
+      orcid: "https://orcid.org/0000-0002-9717-3017"
 
   publisher:
-    name: "SciBlog iWIP – Universität Rostock"
+    name: "SciBlog iWIP"
     url: "https://matthiassoell.github.io/iWIP/"
 
   license:
@@ -55,7 +55,7 @@ oer:
     url: "https://creativecommons.org/licenses/by/4.0/"
 
   source:
-    label: "SciBlog iWIP – Universität Rostock"
+    label: "SciBlog iWIP"
     url: "https://matthiassoell.github.io/iWIP/"
 
   version: "1.0"

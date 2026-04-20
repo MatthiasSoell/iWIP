@@ -1,0 +1,5 @@
+# lokale Hugo-Subpath-Probleme (/iWIP/)
+^file:///.*?/public/iWIP/assets/css/
+^file:///.*?/public/iWIP/datenschutz$
+^file:///.*?/public/iWIP/hinweise$
+^file:///.*?/public/iWIP/impressum$

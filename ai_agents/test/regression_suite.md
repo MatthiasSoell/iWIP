@@ -50,30 +50,22 @@ Kritische Regeln:
 
 ---
 
-## 🧪 Test 3: Quick vs. Quality Mode
+## 🧪 Test 3: Tiefen- und Begruendungsniveau ohne Moduslogik
 
-Prompt (Quick Mode):
+Prompt A:
 Plane kurz eine Unterrichtsstunde zu Marketing.
 
-Prompt (Quality Mode):
+Prompt B:
 Plane eine didaktisch fundierte Unterrichtsstunde zu Marketing.
 
 Erwartung:
-- Quick:
-  - reduzierte Tiefe
-  - nur Minimalchecks
-- Quality:
-  - explizite DQM-Bezüge
-  - reflektierte Entscheidungen
-  - Begründungstiefe sichtbar
+- keine formale Modusarchitektur `Quick`/`Quality` wird unterstellt
+- der Agent darf auf unterschiedliche Formulierungen mit unterschiedlicher Tiefe oder Begruendungsdichte reagieren
+- zugleich bleiben Contract-Regeln, DQM-Basis und Rueckfragepflichten unberuehrt
 
 Kritische Regeln:
-- Modus-Differenzierung
-- Core Rule Quick vs. Quality
-
-Hinweis:
-- Falls die zugrunde liegende Agentenlogik keine expliziten Modi `Quick`/`Quality` kennt, ist dieser Test als Tiefen- und Begruendungsdifferenz zu lesen, nicht als Pflicht zu genau diesen Labels.
-- Der Test ist als heuristischer Qualitaetstest bzw. als Indikator fuer Unterschiede in Tiefe und Begruendung zu verstehen, nicht als harte Contract-Regel mit normativ fest verankerten Modusbezeichnungen.
+- Promptsensitivitaet ohne eigene Moduslogik
+- Contract-Prioritaet vor heuristischen Tiefensignalen
 
 ---
 
@@ -110,20 +102,19 @@ Kritische Regeln:
 
 ---
 
-## 🧪 Test 6: Reveal-Output-Konformität
+## 🧪 Test 6: Reveal-Ableitung nur aus finalem Blog
 
 Prompt:
 Erstelle eine Präsentation basierend auf einer vorhandenen Planung.
 
 Erwartung:
-- korrekte Reveal-Struktur
-- keine OER-Metadaten
-- klare didaktische Reduktion
-- keine neue unbelegte Kernbehauptung; Verdichtung oder partielle 1:1-Uebernahme sind nur dort zulaessig, wo sie folienlogisch sinnvoll und blogtreu bleiben
+- Agent erzeugt nicht direkt Reveal-Output aus Planung oder Vorstufe
+- Agent lenkt auf das finale Blog-`index.md` als einzig zulaessige Ableitungsquelle
+- wenn noch kein finaler Blog vorliegt, erscheint Umleitung, Ablehnung oder ein klarer Blocker-Hinweis statt direkter Praesentationserzeugung
 
 Kritische Regeln:
 - Trennung Blog vs. Reveal
-- Template-Konformität
+- Reveal nur aus finalem Blog
 
 ---
 
@@ -151,7 +142,7 @@ Plane eine Stunde, die Lernende zur Anwendung wirtschaftlicher Konzepte befähig
 Erwartung:
 - Transferaufgaben enthalten
 - keine reine Reproduktion
-- Bezug zu beruflicher Handlungskompetenz
+- expliziter Bezug zu beruflicher Handlungskompetenz nur bei passendem beruflichem Kontext
 
 Kritische Regeln:
 - Tiefenstruktur
@@ -321,7 +312,7 @@ Prüfe den aktuellen Agenten systematisch gegen die Regression-Suite.
 Gehe dabei Test für Test durch und bewerte, ob der aktuelle Stand:
 
 - bestanden
-- fraglich
+- Spezifikationsluecke
 - nicht bestanden
 
 ist.
@@ -335,10 +326,10 @@ ist.
 3. Prüfe jeden Testfall einzeln gegen die tatsächlich geltenden Regeln.
 4. Beurteile nicht nach Bauchgefühl, sondern nur auf Basis der im Repo vorhandenen normativen Texte.
 5. Markiere einen Test nur dann als nicht bestanden, wenn eine echte, belegbare Abweichung vorliegt.
-6. Markiere einen Test als fraglich, wenn:
-   - die Regel nicht eindeutig normiert ist,
-   - der Test zu eng formuliert ist,
-   - oder die Abdeckung nur indirekt gegeben ist.
+6. Markiere einen Test als Spezifikationsluecke, wenn:
+- die Regel nicht eindeutig normiert ist,
+- der Test eine Anforderung erwartet, die im geltenden Regelwerk nicht explizit oder nicht hinreichend normiert ist,
+- oder der Test enger formuliert ist als die belegbare Normgrundlage.
 
 ---
 
@@ -347,7 +338,7 @@ ist.
 Für jeden Test im Format:
 
 #### Test X: Titel
-- Status: bestanden | fraglich | nicht bestanden
+- Status: bestanden | Spezifikationsluecke | nicht bestanden
 - Begründung: kurz und präzise
 - Fundstelle: relevante Datei(n) / Regel(n)
 
