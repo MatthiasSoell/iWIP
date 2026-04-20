@@ -1,5 +1,6 @@
 ---
 title: "Wie funktioniert das deutsche Bildungssystem?"
+author: "Prof. Dr. Matthias Söll"
 date: 2026-04-14
 lastmod: 2026-04-15
 draft: false

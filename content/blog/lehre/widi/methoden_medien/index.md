@@ -1,5 +1,6 @@
 ---
 title: "Methoden & Medien"
+author: "Prof. Dr. Matthias Söll"
 date: 2025-11-19
 lastmod: 2025-11-19
 draft: false

@@ -1,5 +1,6 @@
 ---
 title: "Unterricht planen mit KI – Wirtschaft unterrichten mit freien Bildungsmaterialien"
+author: "Prof. Dr. Matthias Söll"
 date: 2026-03-02
 lastmod: 2026-03-02
 draft: false

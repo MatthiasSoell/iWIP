@@ -1,5 +1,6 @@
 ---
 title: "Die OER-Anreizmatrix im Praxistest – Co-WOERK Teamtreffen"
+author: "Silvia Retzlaff; Nancy Walter; Matthias Söll"
 date: 2025-11-10
 lastmod: 2025-11-10
 draft: false

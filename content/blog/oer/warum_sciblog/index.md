@@ -1,5 +1,6 @@
 ---
 title: "Warum SciBlog iWIP? – Motivation, Funktionen, Learnings"
+author: "Prof. Dr. Matthias Söll"
 date: 2025-12-17
 lastmod: 2025-12-17
 draft: false

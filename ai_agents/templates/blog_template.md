@@ -25,8 +25,8 @@ title: ""
 # optional: nur setzen, wenn eine feste URL gewuenscht ist
 # Format wenn gesetzt: nur lowercase + unterstriche (z. B. did_allg_fach)
 slug: ""
-authors:
-  - ""
+author: ""
+# mehrere Autor:innen als String mit Semikolon, z. B. "Matthias Soell; Max Mustermann"
 date: YYYY-MM-DD
 lastmod: YYYY-MM-DD
 draft: true
@@ -82,6 +82,7 @@ oer:
 
 Alle Felder sind verpflichtend, außer `slug` und `oer.todos`.
 Wenn `slug` gesetzt wird, muss er `snake_case` mit Unterstrichen nutzen.
+Fuer Autor:innen ist ausschliesslich `author` zulaessig; `authors` ist nicht erlaubt.
 
 Tags und Kategorien sind wichtig für Auffindbarkeit
 und OERSI-Metadaten.

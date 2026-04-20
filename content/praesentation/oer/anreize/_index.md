@@ -6,7 +6,7 @@ title_reveal: "Die OER-Anreizmatrix im Praxistest"
 emojis: "🎓🌍🔓 ✨🧩 🛠️"
 veranstaltungstyp: "Co-WOERK Teamtreffen in Frankfurt (Oder)"
 veranstaltung: ""
-author: "Silvia Retzlaff, Nancy Walter & Matthias Söll"
+author: "Silvia Retzlaff; Nancy Walter; Matthias Söll"
 blog: "/iWIP/blog/oer/anreize"
 
 lastmod: 2025-11-10

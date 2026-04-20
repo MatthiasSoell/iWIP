@@ -1,5 +1,6 @@
 ---
 title: "Haushaltsbudget und ökonomisches Prinzip – differenzierte Unterrichtsplanung für Sek I & II"
+author: "Prof. Dr. Matthias Söll"
 date: 2026-03-02
 lastmod: 2026-03-02
 draft: false

@@ -123,6 +123,7 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen Agent Contract und `ai_agent
 - Begriffspruefung: zentrale Begriffe und Benennungen werden im sichtbaren Blogtext konsistent verwendet.
 - Typografiepruefung: sichtbare deutsche Blogtexte folgen den Typografie- und Umlautregeln des Agent Contracts.
 - In `exports/snapshots/` liegt ein zum Blog-Bundle gespiegeltes `blog_snapshot.txt` als unveraenderlicher Erststand vor.
+- Fuer `BLOG FINAL` ist der im minimalen Release-Check des Contracts geforderte vorbereitete Linkcheck ohne offene Fehler.
 
 ### Blog-Heuristikhinweise zur Darstellung
 
@@ -146,7 +147,7 @@ Pruefe bei Blogartefakten das Frontmatter strikt gegen `ai_agents/templates/blog
 
 Verpflichtend zu pruefen:
 
-- `title`, `authors`, `date`, `lastmod`, `draft`
+- `title`, `author`, `date`, `lastmod`, `draft`
 - `description`, `summary`
 - `tags`, `categories`
 - `oer.is_oer`, `oer.kind`
@@ -160,12 +161,16 @@ Verpflichtend zu pruefen:
 - `oer.about` (mindestens ein `term`)
 - `oer.todos` (optional, darf leer sein)
 - `slug` ist optional; falls gesetzt, nur `snake_case` mit Unterstrichen
+- `authors` ist verboten; mehrere Autor:innen stehen in `author` als Semikolon-getrennter String
 
 Bewertungsregel:
 
 - Fehlende Pflichtfelder, leere Pflichtfelder oder falsch strukturierte Pflichtfelder sind `BLOCKER`.
 - Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls `BLOCKER`.
 - `lastmod` ist als Pflichtfeld vorhanden und semantisch plausibel befuellt zu pruefen.
+- Fuer `BLOG FINAL` sind unvollstaendiges oder ungueltiges Frontmatter, `draft` ungleich `false` sowie jede Nutzung von `authors` immer `BLOCKER`.
+- Fuer `BLOG FINAL` sind offene Linkfehler im nach Contract verbindlichen vorbereiteten Linkcheck immer `BLOCKER`.
+- Wenn `draft: false` gesetzt ist, muessen alle OER-Pflichtfelder vollstaendig und valide sein; Abweichungen sind `BLOCKER`.
 
 ---
 

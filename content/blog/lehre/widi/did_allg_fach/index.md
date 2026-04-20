@@ -1,5 +1,6 @@
 ---
 title: "Allgemeine Didaktik und Fachdidaktik"
+author: "Prof. Dr. Matthias Söll"
 date: 2025-10-22
 lastmod: 2025-10-22
 draft: false

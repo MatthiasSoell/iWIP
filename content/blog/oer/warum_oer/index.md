@@ -1,5 +1,6 @@
 ---
 title: "Warum OER?"
+author: "Prof. Dr. Matthias Söll"
 date: 2025-06-12
 lastmod: 2025-06-12
 draft: false

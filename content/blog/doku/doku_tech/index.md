@@ -1,5 +1,6 @@
 ---
 title: "Technische Dokumentation"
+author: "Prof. Dr. Matthias Söll"
 date: 2025-10-01
 lastmod: 2025-10-01
 draft: false
@@ -25,16 +26,11 @@ categories:
 oer:
   is_oer: false
   kind: "documentation"
-  note: "Technische Dokumentation zur Infrastruktur des SciBlog iWIP (keine Lehr-Lern-Einheit, kein einzelnes OER)"
-
-  related_practices:
-    - "Open Educational Practices (OEP)"
-    - "Open Source Software"
-    - "Open Science"
-    - "Open Infrastructure"
 
   creators:
     - name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
       affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
       url: ""
       orcid: ""
@@ -46,6 +42,21 @@ oer:
   license:
     label: "CC BY-SA 4.0"
     url: "https://creativecommons.org/licenses/by-sa/4.0/"
+
+  source:
+    label: "SciBlog iWIP – Universität Rostock"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  version: "1.0"
+  status: "pilot"
+
+  note: "Technische Dokumentation als offen lizenzierter Blog-Beitrag; keine klassische Lehr-Lern-Einheit"
+
+  related_practices:
+    - "Open Educational Practices (OEP)"
+    - "Open Source Software"
+    - "Open Science"
+    - "Open Infrastructure"
 
   in_language: "de"
 

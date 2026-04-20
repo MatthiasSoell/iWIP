@@ -1,5 +1,6 @@
 ---
 title: "Hospitation, Feedback & Reflexion"
+author: "Prof. Dr. Matthias Söll"
 date: 2025-11-26
 lastmod: 2025-11-26
 draft: false

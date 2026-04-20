@@ -1,5 +1,6 @@
 ---
 title: "Einführung in das Modul Bildungssysteme"
+author: "Prof. Dr. Matthias Söll"
 date: 2026-04-08
 lastmod: 2026-04-08
 draft: false

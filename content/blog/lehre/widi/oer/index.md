@@ -1,5 +1,6 @@
 ---
 title: "Frei nutzbare Lehr-Lern-Materialien – OER"
+author: "Prof. Dr. Matthias Söll; Marie-Christin Hamann; Laura Wolf"
 date: 2025-11-05
 lastmod: 2025-11-05
 draft: false

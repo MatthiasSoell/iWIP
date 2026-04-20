@@ -1,7 +1,7 @@
 ---
 title: "Lerntypen, Lernformen und Prüfungsformen in der Unterrichts- und Schulentwicklung"
 slug: "lerntypen_lernformen_pruefungsformen"
-authors: [Prof. Dr. Matthias Söll]
+author: "Prof. Dr. Matthias Söll"
 date: 2026-03-13
 lastmod: 2026-03-13
 draft: false

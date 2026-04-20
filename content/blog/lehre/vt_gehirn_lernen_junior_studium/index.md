@@ -1,7 +1,7 @@
 ---
 title: "Dein Gehirn ist keine Festplatte – Wie Du Dein Lernen boostern kannst"
 slug: "vt_gehirn_lernen_junior_studium"
-authors: [Prof. Dr. Matthias Söll]
+author: "Prof. Dr. Matthias Söll"
 date: 2026-03-20
 lastmod: 2026-04-11
 draft: false
@@ -43,7 +43,7 @@ oer:
     url: "https://creativecommons.org/licenses/by-sa/4.0/"
 
   source:
-    label: "SciBlog iWIP - Universität Rostock"
+    label: "SciBlog iWIP – Universität Rostock"
     url: "https://matthiassoell.github.io/iWIP/"
 
   version: "1.0"

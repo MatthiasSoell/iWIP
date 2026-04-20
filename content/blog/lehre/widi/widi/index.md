@@ -1,5 +1,6 @@
 ---
 title: "Wirtschaftsdidaktik"
+author: "Prof. Dr. Matthias Söll"
 date: 2025-10-29
 lastmod: 2025-10-29
 draft: false
