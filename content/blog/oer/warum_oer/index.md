@@ -4,6 +4,7 @@ author: "Prof. Dr. Matthias Söll"
 date: 2025-06-12
 lastmod: 2025-06-12
 draft: false
+permalink: "/blog/oer/warum_oer/"
 
 description: >
   In diesem Beitrag wird der Hintergrund freier Bildungsmaterialien erläutert. Aus der Perspektive der beruflichen Bildung werden drei zentrale Argumentationsfiguren für die Nutzung von Open Educational Resources (OER) vorgestellt: emotional, rational und qualitativ.

@@ -5,6 +5,7 @@ author: "Prof. Dr. Matthias Söll"
 date: 2026-03-13
 lastmod: 2026-03-13
 draft: false
+permalink: "/blog/fortbildung/lerntypen_lernformen_pruefungsformen/"
 aliases:
   - "/blog/widi/lerntypen_lernformen_pruefungsformen/"
 

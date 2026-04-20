@@ -4,6 +4,7 @@ author: "Prof. Dr. Matthias Söll"
 date: 2026-03-02
 lastmod: 2026-03-02
 draft: false
+permalink: "/blog/fortbildung/uplan_ki_oer_bsp/"
 aliases:
   - "/blog/oer/uplan_ki_oer_bsp/"
 _build:
