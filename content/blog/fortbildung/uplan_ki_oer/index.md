@@ -9,10 +9,10 @@ aliases:
   - "/blog/oer/uplan_ki_oer/"
 
 description: >
-  Werkstattbericht und Arbeitsgrundlage zur KI-gestützten Unterrichtsplanung im Fach AWT (Sekundarstufen I & II). Der Beitrag verbindet curricular verankerte Zielperspektiven der Bildung im Fach AWT mit Unterrichtsqualität (Sicht- und Tiefenstrukturen) und zeigt, wie KI dialogisch zur professionellen Planung genutzt werden kann.
+  Fortbildungskonzept und -dokumentation zur KI-gestützten Unterrichtsplanung im Fach AWT (Sekundarstufen I & II). Der Beitrag verbindet curricular verankerte Zielperspektiven der Bildung im Fach AWT mit Unterrichtsqualität (Sicht- und Tiefenstrukturen) und zeigt, wie KI dialogisch zur professionellen Planung genutzt werden kann.
 
 summary: >
-  Dokumentation einer 90-minütigen Lehrkräftewerkstatt: KI als dialogischer Planungsraum für qualitativ hochwertigen Unterricht – mit Reflexionsrahmen, Arbeitsphase und Ausblick auf OER.
+  Konzept und  Dokumentation einer 90-minütigen Lehrkräftefortbildung: KI als dialogischer Planungsraum für qualitativ hochwertigen Unterricht mit freien Bildungsmaterialien.
 
 thumbnail: "/iWIP/bilder/thumbnails/ki_unterrichtsplanung_wirtschaft.png"
 
