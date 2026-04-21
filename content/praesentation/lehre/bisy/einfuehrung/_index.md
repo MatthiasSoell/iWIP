@@ -64,7 +64,7 @@ todos: []
 </div>
 {{< /rawhtml >}}
 
-<p class="bild-quelle bild-quelle--compact">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · <br>Keine freie Lizenz (Rechte bei der dargestellten Person)</p>
+<p class="bild-quelle bild-quelle--compact">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · <br>Lizenz: nicht frei verwendbar</p>
 
 ---
 
@@ -138,7 +138,7 @@ Claudia Thürke & Matthias Söll
   <img src="thuerke_soell.jpg" alt="Claudia Thürke und Matthias Söll">
 </figure>
 
-<p class="zitat-quelle">Bildquelle: ITMZ · Universität Rostock · nicht frei verwendbar</p>
+<p class="zitat-quelle">Bildquelle: Universität Rostock ITMZ · Lizenz: nicht frei verwendbar</p>
 
 ---
 
@@ -166,7 +166,7 @@ Claudia Thürke & Matthias Söll
   <img src="ablauf_bisy_sose_26.png" alt="Fahrplan des Moduls Bildungssysteme im Sommersemester 2026 mit Vorlesung und Übung">
 </figure>
 
-<p class="zitat-quelle">Bildquelle: Eigene Darstellung · Lizenz: CC BY-SA 4.0 (ausgenommen iWIP Logo)</p>
+<p class="zitat-quelle">Bildquelle: Eigene Darstellung · Lizenz: CC BY-SA 4.0 (Hinweis iWIP Logo: nicht frei verwendbar)</p>
 
 ---
 

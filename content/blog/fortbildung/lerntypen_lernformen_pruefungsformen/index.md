@@ -164,7 +164,7 @@ Die Teilnehmenden können nach der Fortbildung 🧠:
        alt="Lerntypen">
 </figure>
 
-<p class="bildquelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt  mit ChatGPT) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 - **Lerntypen** sind populäre, aber empirisch nicht belastbare Konstrukte, die Lernende in **feste Kategorien einteilen** ([Brand, 2025](#literatur); [Daumiller & Wisniewski, 2022](#literatur); [Menz et al., 2021](#literatur)) 🧠.
 

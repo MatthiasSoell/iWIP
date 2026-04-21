@@ -110,7 +110,7 @@ Die Qualität von Lehr-Lern-Arrangements kann durch kooperative Entwicklung stei
 
 <img class="fragment responsive-image" data-fragment-index="1" src="OER_qualitaet.png" alt="Kooperative Entwicklung von OER">
 
-<p class="fragment bild-quelle" data-fragment-index="1">Bildquelle: Erstellt mit ChatGPT</p>
+<p class="fragment bild-quelle" data-fragment-index="1">Bildquelle: Eigene Darstellung (erstellt  mit ChatGPT) · Lizenz: CC BY-SA 4.0</p>
 
 ---
 

@@ -129,7 +129,7 @@ Kurz: OER-Nutzung ist **kein** On/Off-Schalter. Sie entsteht **prozesshaft** –
        style="max-width:320px; width:80%; height:auto; display:block; margin:0 auto;">
 </figure>
 <p class="bildquelle">
-  Bildquelle: erstellt mit ChatGPT · Keine freie Lizenz (Rechte bei den dargestellten Personen)
+  Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: nicht frei verwendbar
 </p>
 
 ---
@@ -177,7 +177,7 @@ Grundlage ist das **Adoptionsmodell** nach <a href="#-literatur--hinweise">Hart 
        alt="Rogers (2003)"
        style="display:block; margin:0 auto; max-width:480px; width:100%; height:auto;">
   <figcaption style="font-style:italic; font-size:.9em; margin-top:.4rem; font-weight:normal;">
-    Quelle: <span style="font-style:italic; font-weight:normal;">
+    Bildquelle: <span style="font-style:italic; font-weight:normal;">
       <a href="#-literatur--hinweise">Hart et al. (2015)</a>
     </span> · 
     Lizenz: <span style="font-style:italic; font-weight:normal;">

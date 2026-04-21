@@ -268,16 +268,12 @@ a.lit-worldcat {
   vertical-align: middle;
 }
 
-.post-content :where(a.lit-doi, a.lit-ub, a.lit-worldcat, .info_tip)
-  + :where(a.lit-doi, a.lit-ub, a.lit-worldcat, .info_tip) {
-  margin-inline-start: 0.3rem;
-}
-
 /* Badge-Design (sichtbarer Teil) */
 a.lit-doi::before,
 a.lit-ub::before,
 a.lit-worldcat::before {
   display: inline-block;
+  margin-inline-end: 0.3rem;
   padding: 0.18em 0.55em;
   border-radius: 0.4em;
   font-size: 0.78rem;   /* sichtbare Schriftgröße */

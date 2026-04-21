@@ -56,7 +56,7 @@ todos: []
        class="anreize-avatar-image">
 </figure>
 <p class="bild-quelle bild-quelle--compact">
-  Bildquelle: erstellt mit ChatGPT · Keine freie Lizenz (Rechte bei den dargestellten Personen)
+  Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: nicht frei verwendbar
 </p>
 
 ---

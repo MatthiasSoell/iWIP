@@ -59,7 +59,7 @@ todos:
   <img src="motiv/motivation_4.png" class="fragment plain">
 </div>
 {{< /rawhtml >}}
-<p class="bild-quelle" data-fragment-index="1">Bildquelle: erstellt mit ChatGPT · Keine freie Lizenz (Rechte bei der dargestellten Person)</p>
+<p class="bild-quelle" data-fragment-index="1">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: nicht frei verwendbar</p>
 
 ---
 

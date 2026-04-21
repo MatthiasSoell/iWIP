@@ -70,7 +70,7 @@ todos:
 </div>
 {{< /rawhtml >}}
 
-<p class="bild-quelle" data-fragment-index="1">Bildquelle: Eigene Darstellung · Lizenz: CC BY 4.0</p>
+<p class="bild-quelle" data-fragment-index="1">Bildquelle: Eigene Darstellung in Anlehnung an Baumert & Kunter (2006) · Lizenz: CC BY 4.0</p>
 
 ---
 
@@ -198,7 +198,7 @@ YouTube: Die Feedbackformel WWW – Mit WWW erfolgreich Feedback geben
 <p>(Korthagen 2002)</p>
 
   <img src="/iWIP/bilder/widi/hosp_feed_refl/alact.png" class="figure-frame-sm overlay-fragment-diagram" alt="ALACT-Reflexionsmodell">
-  <p class="bild-quelle">Bildquelle: Eigene Darstellung in Anlehnung an Müller (2007) · Lizenz: CC BY 4.0</p>
+  <p class="bild-quelle">Bildquelle: Eigene Darstellung in Anlehnung an an Korthagen & Kessels (1999) · Lizenz: CC BY 4.0</p>
 
 ---
 

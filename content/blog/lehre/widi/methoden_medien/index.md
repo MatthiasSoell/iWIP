@@ -179,7 +179,7 @@ Aktionsformen
         └── Einzelarbeit
 ````
 
-*Quelle: in Anlehnung an [Euler & Hahn (2014, S. 319)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur)  · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*
+<p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an Euler & Hahn (2014, S. 319) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 Wie ist der Entscheidungsbaum zu 📖 *lesen*?
 - Startpunkt ist die Ebene der 🎙️ Aktionsformen (z. B. Darbieten, im Dialog entwickeln, erarbeiten & entdecken lassen).
@@ -220,7 +220,7 @@ Lehren oder Lernen
         └── Leittextmethode
 ````
 
-*Quelle: in Anlehnung an [Bonz (2006, S. 339)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*
+<p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an Bonz (2006, S. 339) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 Wie ist dieser Entscheidungsbaum zu 📖 *lesen*?
 - 📌 Ausgangspunkt ist die Unterscheidung **Lehren 👩‍🏫** vs. **selbstgesteuertes Lernen 🧠**.  
@@ -277,7 +277,7 @@ Unterrichtsmedien
     └── z. B. interaktives Whiteboard, Tablets, Präsentationssysteme
 ````
 
-*Quelle: in Anlehnung an [von Martial (2002, S. 15 ff.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*
+<p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an von Martial (2002, S. 15 ff.) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 ### 🧰 Unterrichtsmedien als tradierte Lehrmittel & neue Medien
 
@@ -321,7 +321,7 @@ Neue Medien
     └── Kollaborationstools (z. B. Miro, Padlet)
 ````
 
-*Quelle: in Anlehnung an [Stadtfeld (2011, S. 71 f.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) · Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>*
+<p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an Stadtfeld (2011, S. 71 f.) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 ---
 

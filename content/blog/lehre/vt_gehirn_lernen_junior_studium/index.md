@@ -142,7 +142,7 @@ Die Junior-Studierenden können nach dem Impuls:
        alt="Lerntypen">
 </figure>
 
-<p class="bildquelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 
 -🗄️ **Lerntypen** sind populäre, aber empirisch **nicht nachweisbare** Konstrukte, die Lernende in feste Kategorien einteilen ([Brand, 2025](#literatur); [Daumiller & Wisniewski, 2022](#literatur); [Menz et al., 2021](#literatur)).
 - 🧪 Der Lerntypen-Ansatz gilt deshalb in der Forschung als **Mythos** ([Newton & Salvi, 2020](#literatur)).
@@ -160,7 +160,7 @@ Wir wissen heute bspw. aus den **kognitiven Neurowissenschaften** viel über die
        alt="Visualisierung zum Lernen im Gehirn">
 </figure>
 
-<p class="bildquelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 
 > [!IMPORTANT]
 > Lernen hängt davon ab, **wie** *Du* **was** und **wie** lernen möchtest - individuelle und situative Kontextfaktoren entscheiden mit!
@@ -174,7 +174,7 @@ Um Lernen **wissenschaftlich fundiert** zu **verstehen** und zu **gestalten**, s
   alt="Überblick zu vier Lerntheorien">
 </figure>
 
-<p class="bildquelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 
 - 🔁 **Behaviorismus:** Lernen zeigt sich in beobachtbarer Verhaltensänderung durch Reiz, Reaktion und Verstärkung.
 - 🧠 **Kognitivismus:** Lernen wird als aktive Informationsverarbeitung verstanden (Aufmerksamkeit, Verstehen, Gedächtnis).
@@ -193,8 +193,7 @@ Um Lernen **wissenschaftlich fundiert** zu **verstehen** und zu **gestalten**, s
        alt="Drei autobiografische Lernbeispiele">
 </figure>
 
-<p class="bildquelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT ·
-Keine freie Lizenz (Rechte bei der dargestellten Person)</p>
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: nicht frei verwendbar</p>
 
 Ich habe erst relativ spät angefangen, über mein eigenes **Lernen 🧠** nachzudenken – schade eigentlich.  
 In meiner Schulzeit war Lernen für mich oft **anstrengend**. Besonders das Üben in Mathe: immer wieder **ähnliche Aufgaben**, wenig Abwechslung – das hat mir selten **Spaß** gemacht.  

@@ -115,7 +115,7 @@ Frage: Welcher Lerntyp dominiert bei Ihren Schüler:innen – <br>**a**uditiv, *
   <img src="Lerntypen.png" alt="Lerntypen">
 </figure>
 
-<p class="bild-quelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit ChatGPT · Lizenz: CC BY-SA 4.0</p>
+<p class="bild-quelle">Bildquelle: Eigene Darstellung (erstellt  mit ChatGPT) · Lizenz: CC BY-SA 4.0</p>
 
 ---
 

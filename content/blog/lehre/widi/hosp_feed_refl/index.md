@@ -163,7 +163,7 @@ Professionalisierung von Lehrer:innen wird häufig als Zusammenspiel mehrerer Di
        alt="Professionelle Lehrperson nach Baumert & Kunter (2006)">
 </figure>
 
-<p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an Baumert & Kunter (2006) · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
+<p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an Baumert & Kunter (2006) (erstellt u. a. mit ChatGPT) · <br>Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 Im Seminar wird dieses Verständnis über eine Grafik (in Anlehnung an Baumert & Kunter 2006) visualisiert und als Referenzrahmen genutzt, um Hospitation, Feedback und Reflexion einzuordnen.
 

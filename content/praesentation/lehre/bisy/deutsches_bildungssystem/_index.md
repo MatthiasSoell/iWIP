@@ -166,7 +166,7 @@ todos: []
   <img src="Bildungssystem_Grundstruktur.png" alt="Grundstruktur des Bildungssystems mit Fokus auf berufliche Bildung">
 </figure>
 
-<p class="zitat-quelle">Bildquelle: Eigene Darstellung · Lizenz: CC BY-SA 4.0</p>
+<p class="zitat-quelle">Bildquelle: Eigene Darstellung in Anlenung an KMK (2023) · Lizenz: CC BY-SA 4.0</p>
 
 ---
 

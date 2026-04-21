@@ -123,7 +123,7 @@ todos:
 - Sichtbarkeit & Anschlussfähigkeit in Netzwerken
 
 <img class="fragment responsive-image" data-fragment-index="1" src="OER_qualitaet.png" alt="Kooperative Entwicklung von OER">
-<p class="fragment bild-quelle" data-fragment-index="1">Bildquelle: Erstellt mit ChatGPT</p>
+<p class="fragment bild-quelle" data-fragment-index="1">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: CC BY-SA 4.0</p>
 
 ---
 

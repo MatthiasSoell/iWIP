@@ -141,7 +141,7 @@ Wir starten mit einem **biografischen Einstieg**, der sich didaktisch als **anal
        width="720">
 </figure>
 
-<p class="bildquelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Keine freie Lizenz (Rechte bei der dargestellten Person)</p>
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: nicht frei verwendbar</p>
 
 ## 💭 Leitfrage
 
@@ -187,7 +187,7 @@ Das Modul wird in **Vorlesung** und **Übung** gemeinsam getragen.
        width="720">
 </figure>
 
-<p class="bildquelle">Bildquelle: ITMZ · Universität Rostock · nicht frei verwendbar</p>
+<p class="bildquelle">Bildquelle: Universität Rostock ITMZ · Lizenz: nicht frei verwendbar</p>
 
 ---
 
@@ -224,7 +224,13 @@ Die Übung findet **montags von 09:15 bis 10:45 Uhr in SR 018/020** statt.
        alt="Fahrplan des Moduls Bildungssysteme im Sommersemester 2026 mit Vorlesung und Übung">
 </figure>
 
-<p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+<p class="bildquelle">
+  Bildquelle: Eigene Darstellung · Lizenz:
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">
+    CC BY-SA 4.0
+  </a><br>
+  Hinweis: iWIP-Logo nicht frei verwendbar
+</p>
 
 ---
 

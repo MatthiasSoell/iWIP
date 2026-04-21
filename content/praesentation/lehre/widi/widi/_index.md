@@ -125,7 +125,7 @@ Sie lernen, …
   <img src="widi_whiteboard.jpg" alt="Whiteboard zur Clusterbildung">
 </figure>
 
-<p class="bild-quelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: CC BY-SA 4.0</p>
+<p class="bild-quelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: CC BY-SA 4.0</p>
 
 ---
 

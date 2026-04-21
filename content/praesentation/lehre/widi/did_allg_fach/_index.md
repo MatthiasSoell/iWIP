@@ -106,7 +106,7 @@ Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – vo
   <img src="/iWIP/bilder/widi/did_allg_fach/Klassenzimmer_früher.jpg" alt="Klassenzimmer 1934">
 </figure>
 
-<p class="bild-quelle">Quelle: museum-digital Rheinland-Pfalz · CC BY 4.0</p>
+<p class="bild-quelle">Bildquelle: museum-digital Rheinland-Pfalz · CC BY 4.0</p>
 
 ---
 
@@ -116,7 +116,7 @@ Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – vo
   <img src="/iWIP/bilder/widi/did_allg_fach/Klassenzimmer_heute.jpg" alt="Klassenzimmer heute">
 </figure>
 
-<p class="bild-quelle">Quelle: Wikimedia Commons · CC BY-SA 3.0</p>
+<p class="bild-quelle">Bildquelle: Wikimedia Commons · CC BY-SA 3.0</p>
 
 ---
 

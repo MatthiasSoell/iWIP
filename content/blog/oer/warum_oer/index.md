@@ -7,7 +7,7 @@ draft: false
 permalink: "/blog/oer/warum_oer/"
 
 description: >
-  In diesem Impuls wird der Hintergrund freier Bildungsmaterialien erläutert. Aus der Perspektive der beruflichen Bildung werden drei zentrale Argumentationsfiguren für die Nutzung von Open Educational Resources (OER) vorgestellt: emotional, rational und qualitativ.
+  In diesem Reflexionsbeitrag wird der Hintergrund freier Bildungsmaterialien erläutert. Aus der Perspektive der beruflichen Bildung werden drei zentrale Argumentationsfiguren für die Nutzung von Open Educational Resources (OER) vorgestellt: emotional, rational und qualitativ.
 
 summary: >
   Warum OER? Der Beitrag erläutert Herkunft, Zielsetzungen und zentrale Mehrwerte für die berufliche Bildung.
@@ -149,9 +149,9 @@ OER steigern die **Effizienz** in Lehr-Lern-Prozessen:
 Neben Effizienzgewinnen kann OER die **Qualität** von Lehr-Lern-Arrangements erhöhen.  
 Durch kooperative Entwicklung und kollegiale Begutachtung entstehen Materialien, die didaktisch reifer, aktueller und vielfältiger sind.
 
-<img class="responsive-image" src="/iWIP/praesentation/warum_oer/OER_qualitaet.png" alt="Kooperative Entwicklung von OER">
+<img class="responsive-image" src="OER_qualitaet.png" alt="Kooperative Entwicklung von OER">
 
-<p class="bild-quelle"><i>Bildquelle: erstellt mit ChatGPT · Lizenz: CC BY 4.0</i></p>
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt  mit ChatGPT) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 Offene Zusammenarbeit führt so zu reflektierteren, anschlussfähigeren und lernförderlicheren Ergebnissen — und stärkt eine Kultur des Teilens, die weit über das einzelne Unterrichtsmaterial hinausgeht.
 

@@ -256,7 +256,7 @@ Im Bereich der beruflichen Bildung gibt es eine **Vielzahl** von Institutionen, 
 
 {{< blog_image_overlay src="Bildungssystem_Grundstruktur.png" alt="Grundstruktur des Bildungssystems mit Fokus auf berufliche Bildung" id="iwip_bildungssystem_grundstruktur_overlay" >}}
 
-<p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+<p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an <a href="#literatur">KMK (2023)</a> · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 
 ## 🔄 Zentrale Merkmale
 
@@ -310,7 +310,7 @@ Abschließend recherchierten die Studierenden in Kleingruppen oder Tandems in **
        alt="Die berufliche Bildung in MV">
 </figure>
 
-<p class="bildquelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt  mit ChatGPT) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 
 1. **Schularten:** Berufsvorbereitung, Berufsschule, Berufsfachschule, höhere Berufsfachschule, Fachgymnasium, Fachoberschule, Fachschule.  
   Quelle: <a href="https://www.bildung-mv.de/schule/schularten/berufliche-schulen" target="_blank" rel="noopener noreferrer">bildung-mv.de/schule/schularten/berufliche-schulen</a>

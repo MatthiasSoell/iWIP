@@ -72,7 +72,7 @@ todos: []
   <img src="Lerntypen.png" alt="Lerntypen-Grafik">
 </figure>
 
-<p class="zitat-quelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: CC BY-SA 4.0</p>
+<p class="zitat-quelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: CC BY-SA 4.0</p>
 
 ---
 
@@ -95,7 +95,7 @@ todos: []
   <img src="Gehirn_Lernen.png" alt="Gehirn und Lernen">
 </figure>
 
-<p class="zitat-quelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: CC BY-SA 4.0</p>
+<p class="zitat-quelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: CC BY-SA 4.0</p>
 
 ---
 
@@ -110,7 +110,7 @@ todos: []
 </div>
 {{< /rawhtml >}}
 
-<p class="zitat-quelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: CC BY-SA 4.0</p>
+<p class="zitat-quelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: CC BY-SA 4.0</p>
 
 ---
 
@@ -124,7 +124,7 @@ todos: []
 </div>
 {{< /rawhtml >}}
 
-<p class="zitat-quelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · <br>Keine freie Lizenz (Rechte bei der dargestellten Person)</p>
+<p class="zitat-quelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: nicht frei verwendbar</p>
 
 ---
 
@@ -187,7 +187,7 @@ todos: []
   <img src="/iWIP/praesentation/lehre/vt_gehirn_lernen_junior_studium/Wipaed_Werbefolie.jpg" alt="QR-Code zu den Informationen für Studieninteressierte Wirtschaftspädagogik">
 </figure>
 
-<p class="zitat-quelle">Bildquelle: Eigene Darstellung · Illustration: erstellt mit Unterstützung von ChatGPT · Lizenz: CC BY-SA 4.0</p>
+<p class="zitat-quelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: CC BY-SA 4.0 (Hinweis: iWIP Logo nicht frei verwendbar)</p>
 
 ---
 
