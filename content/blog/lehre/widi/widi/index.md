@@ -6,7 +6,7 @@ lastmod: 2025-10-29
 draft: false
 
 description: |
-  Aufbauend auf Ihrem Verständnis von Allgemeiner Didaktik elaborieren wir Ihr Verständnis von Wirtschaftsdidaktik.
+  Aufbauend auf dem eigenen Verständnis von Allgemeiner Didaktik wird ein differenziertes Verständnis von Wirtschaftsdidaktik entwickelt.
 summary: |
   Aufbauend auf Ihrem Verständnis von Allgemeiner Didaktik elaborieren wir Ihr Verständnis von Wirtschaftsdidaktik.
 

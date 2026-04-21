@@ -6,7 +6,7 @@ lastmod: 2026-04-08
 draft: false
 
 description: |
-  Die Einführungsveranstaltung eröffnet das Modul Bildungssysteme im Kontext von Arbeit und Gesellschaft. Sie verbindet Kennenlernen, Modulüberblick, Motivierung und organisatorische Hinweise.
+  Die Einführungsveranstaltung eröffnet das Modul Bildungssysteme im Kontext von Arbeit und Gesellschaft. Sie verbindet Kennenlernen, Modulüberblick inkl. Ziele und Gegenstände, Motivierung und organisatorische Hinweise.
 summary: |
   In 60 Minuten lernen Studierende Gegenstand, Ziele, Ablauf, Kommunikationswege und Prüfungsanforderungen des Moduls kennen.
 

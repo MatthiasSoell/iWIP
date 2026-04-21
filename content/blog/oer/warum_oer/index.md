@@ -7,7 +7,7 @@ draft: false
 permalink: "/blog/oer/warum_oer/"
 
 description: >
-  In diesem Beitrag wird der Hintergrund freier Bildungsmaterialien erläutert. Aus der Perspektive der beruflichen Bildung werden drei zentrale Argumentationsfiguren für die Nutzung von Open Educational Resources (OER) vorgestellt: emotional, rational und qualitativ.
+  In diesem Impuls wird der Hintergrund freier Bildungsmaterialien erläutert. Aus der Perspektive der beruflichen Bildung werden drei zentrale Argumentationsfiguren für die Nutzung von Open Educational Resources (OER) vorgestellt: emotional, rational und qualitativ.
 
 summary: >
   Warum OER? Der Beitrag erläutert Herkunft, Zielsetzungen und zentrale Mehrwerte für die berufliche Bildung.

@@ -9,7 +9,7 @@ permalink: "/blog/fortbildung/lerntypen_lernformen_pruefungsformen/"
 aliases:
   - "/blog/widi/lerntypen_lernformen_pruefungsformen/"
 
-description: "Werkstattkonzept einer 90-minütigen Online-Lehrkräftefortbildung: Der Beitrag zeigt, wie Lerntypen, Lernformen und Prüfungsformen evidenzinformiert in die Unterrichts- und Schulentwicklung integriert werden – mit Inputblöcken, moderierter Plenumsdiskussion und konkretem Transferauftrag."
+description: "Fortbildungskonzept und -dokumentation einer 90-minütigen Online-Lehrkräftewerkstatt: Der Beitrag zeigt, wie Lerntypen, Lernformen und Prüfungsformen evidenzinformiert in die Unterrichts- und Schulentwicklung integriert werden – mit Inputblöcken, moderierter Plenumsdiskussion und konkretem Transferauftrag."
 summary: "Konzept und Dokumentation einer 90-minütigen Lehrkräftefortbildung: Lerntypen-Mythos, Lernformen und Prüfungsformen – evidenzinformiert eingeordnet, diskutiert und in die Praxis transferiert."
 
 tags:

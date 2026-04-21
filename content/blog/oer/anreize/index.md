@@ -7,7 +7,7 @@ draft: false
 permalink: "/blog/oer/anreize/"
 
 description: >
-  Vom Begriff „Anreiz“ über Kategorien und Adaptionsphasen bis zur gemeinsamen Werkstatt: Wie die OER-Anreizmatrix Denken und Handeln verbindet und in standort- sowie zielgruppenspezifische Maßnahmen übersetzt werden kann.
+  Arbeitsimpuls und Bericht aus einem OER-Projekttreffen: Ausgehend vom Begriff „Anreiz“, über Kategorien und Adaptionsphasen wird eine gemeinsame Werkstatt umgesetzt: Wie die OER-Anreizmatrix Denken und Handeln verbindet und in standort- sowie zielgruppenspezifische Maßnahmen übersetzt werden kann.
 
 summary: >
   Bericht und Arbeitsimpuls aus dem Co-WOERK-Teamtreffen: Anreize für OER systematisch geordnet und als praxisnahes Werkstattkonzept aufbereitet.

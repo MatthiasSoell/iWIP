@@ -12,7 +12,7 @@ _build:
   render: always
 
 description: >
-  Differenzierte Unterrichtsplanung zum Haushaltsbudget (Sek I & II), entwickelt als Arbeitsgrundlage für eine Lehrkräftewerkstatt zur KI-gestützten Unterrichtsplanung.
+  Differenzierte Unterrichtsplanung zum Haushaltsbudget (Sek I & II), entwickelt als Arbeitsgrundlage für eine Fortbildung in Form einer Lehrkräftewerkstatt zur KI-gestützten Unterrichtsplanung.
 
 summary: >
   Problemorientierte Beispielplanung zum ökonomischen Prinzip. Die Stunde dient im Workshop als Analyse- und Überarbeitungsgrundlage.

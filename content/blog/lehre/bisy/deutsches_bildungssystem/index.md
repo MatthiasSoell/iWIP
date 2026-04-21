@@ -6,7 +6,7 @@ lastmod: 2026-04-15
 draft: false
 
 description: |
-  Die 90-minütige Veranstaltung führt in Aufbau, Logik und rechtliche Rahmung des deutschen Bildungssystems ein, verbindet Bildungsbiographien mit strukturellen Perspektiven und schließt mit einer Recherche zum Bildungssystem in Mecklenburg-Vorpommern.
+  Die 90-minütige Veranstaltung führt in Aufbau, Logik und rechtliche Rahmung des deutschen Bildungssystems ein. Dabei steht die Perspektive der berulfichen Bildung im Fokus. Es werden Bildungsbiographien mit strukturellen Perspektiven verbunden. Die Veranstaltung schließt mit einer Recherche zum Bildungssystem in Mecklenburg-Vorpommern ab.
 summary: |
   Sie lernen Aufbau und rechtliche Grundlagen des deutschen Bildungssystems kennen und befassen sich mit Besonderheiten in Mecklenburg-Vorpommern.
 

@@ -7,7 +7,7 @@ lastmod: 2026-04-11
 draft: false
 permalink: "/blog/lehre/vt_gehirn_lernen_junior_studium/"
 
-description: "Dokumentation einer 30-minütigen Veranstaltung im Juniorstudium an der Universität Rostock für Schüler:innen: Lerntypen-Mythos, Lerntheorien, persönliche Lernstrategien, digitale Tools und soziale Lernprozesse."
+description: "Impuls im Juniorstudium an der Universität Rostock für Schüler:innen: Lerntypen-Mythos, Lerntheorien, persönliche Lernstrategien, digitale Tools und soziale Lernprozesse im Rahmen einer 30-minütigen Veranstaltung."
 summary: "30 Minuten Lern-Impuls für das Juniorstudium: Lerntypen hinterfragen, Lernen kontextbezogen verstehen, eigene Lernzugänge gestalten und konkrete nächste Schritte planen."
 
 tags:
