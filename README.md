@@ -95,7 +95,7 @@ Dokumentiert sind dort insbesondere Repository-Struktur, CSS-System, Content-Kon
 
 Die Versionierung markiert bewusst größere Entwicklungsschritte der Plattform und des Agenten (keine feingranulare Software-Versionierung).
 
-Plattform SciBlog iWIP: 1.0
+Plattform SciBlog iWIP: 1.0 (Release)
 
 Kleinere Anpassungen an Layout, Formulierungen oder CSS werden nicht separat versioniert.
 
