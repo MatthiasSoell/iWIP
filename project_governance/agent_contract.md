@@ -1,7 +1,5 @@
 # Agent Contract — Didaktische Planung und Publikation
 
-Version: 1.0.0
-Status: verbindliche Verhaltensspezifikation
 Kontext: normative Steuerarchitektur fuer Arbeitsmodus und Prozessphasen P1-P5
 
 ---
@@ -222,7 +220,7 @@ Ein Blogartikel ist nur final, wenn:
 7. Pflicht-Frontmatter vollstaendig und valide ausgefuellt, einschliesslich `author` als Einzelstring; `authors` ist unzulaessig.
 8. Bei `draft: false` ist der OER-/TULLU-/OERSI-Metadatenblock vollstaendig ausgefuellt (inkl. `oer.creators`, `publisher`, `license`, `source`, `version`, `status`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `time_required`, `about`).
 9. `blog_snapshot.txt` in `exports/snapshots/` bleibt als unveraenderlicher Erstentwurf erhalten; `index.md` wurde daraus geklont, iterativ ueberarbeitet und finalisiert.
-10. Abbildungen, Diagramme und Screenshots folgen im Blog dem Standard gemaess `ai_agents/templates/blog_template.md`: optional `p.grafic-title` direkt vor der Visualisierung, `figure.figure-frame` fuer das Bild und darunter `p.bildquelle` mit dem Praefix `Bildquelle:`.
+10. Visuelle Darstellungen wie Bilder, Grafiken, Diagramme, Tabellen und Screenshots folgen im Blog dem Standard gemaess `ai_agents/templates/blog_template.md`: optionaler kurzer Kontextsatz bei Bedarf, direkt darueber genau ein `p.grafic-title`, die Visualisierung selbst und direkt darunter genau eine `p.bildquelle` im Muster `Bildquelle: [Herkunft] · Lizenz: [Lizenzangabe]`; der Begriff bleibt immer `Bildquelle`, freie Lizenzen werden im Blog als HTML-Link ausgegeben, gesperrte Rechte als `Lizenz: nicht frei verwendbar`. Einzige Ausnahme sind eindeutig als Ablaufplan erkennbare Tabellen innerhalb eines Abschnitts, also direkt unter einer Abschnittsueberschrift eingebettete Tabellen zur zeitlichen oder didaktischen Phasenstruktur mit organisatorischem Zweck. Nur in diesem Fall entfallen `p.grafic-title` und `p.bildquelle`; stattdessen steht direkt ueber der Tabelle genau die knappe Zeile `**Gesamtdauer:** ca. XX Minuten ⏱️`, wobei die Minuten aus den Phasen summiert oder konsistent geschaetzt werden.
 11. Emoji-Einsatz folgt `project_governance/content_emoji_policy.md` und ist im sichtbaren Hauptkoerper erkennbar umgesetzt.
 12. Alle Pflichtabschnitte aus diesem Contract und `ai_agents/templates/blog_template.md` sind vorhanden und inhaltlich ausgearbeitet; wenn kapitelweise Freigabe genutzt wurde, sind alle Pflichtabschnitte vor `BLOG FINAL` freigegeben.
 13. Der minimale Release-Check dieses Contracts ist bestanden; bei `BLOG FINAL` schliesst dies den verbindlichen Linkcheck ohne offene Fehler ein.
@@ -247,7 +245,7 @@ Eine Reveal-Ableitung ist nur final, wenn:
 11. Emoji-Einsatz folgt `project_governance/content_emoji_policy.md` und ist im sichtbaren Folien-Body erkennbar umgesetzt.
 12. Sichtbare deutsche Reveal-Texte folgen der allgemeinen Typografie- und Umlautregel dieses Contracts; technische Felder und technische Zeichenketten bleiben ausgenommen.
 13. In `exports/snapshots/` liegt ein zum Reveal-Zielordner gespiegeltes `reveal_snapshot.txt` als unveraenderlicher Snapshot des ersten Reveal-Entwurfs; `_index.md` wurde darauf aufbauend iterativ ueberarbeitet und mit `REVEAL FINAL` abgeschlossen.
-14. Bild-, Grafik- und Diagrammquellen folgen in Reveal dem Standard gemaess `ai_agents/templates/reveal_template.md`: Quellenzeile unter der Visualisierung als schlanke `p.zitat-quelle` mit dem Praefix `Bildquelle:`; die Quellenzeile enthaelt immer die Herkunft und eine Lizenzangabe bzw. einen klaren Rechtehinweis.
+14. Visuelle Darstellungen wie Bilder, Grafiken, Diagramme, Tabellen und Screenshots folgen in Reveal dem Standard gemaess `ai_agents/templates/reveal_template.md`: direkt darunter genau eine schlanke `p.bild-quelle` im Muster `Bildquelle: [Herkunft] · Lizenz: [Lizenzangabe]`; ein kurzer Kontextsatz bei Bedarf und ein `p.grafic-title` direkt darueber sind optional. Der `p.grafic-title` wird nur verwendet, wenn die Darstellung nicht bereits durch die Folienueberschrift oder den unmittelbaren Kontext eindeutig eingefuehrt ist; der Begriff bleibt immer `Bildquelle`, Lizenzlinks sind dort nicht erforderlich, gesperrte Rechte werden als `Lizenz: nicht frei verwendbar` ausgegeben. Einzige Ausnahme sind eindeutig als Ablaufplan erkennbare Tabellen innerhalb eines Abschnitts, also direkt unter einer Abschnittsueberschrift eingebettete Tabellen zur zeitlichen oder didaktischen Phasenstruktur mit organisatorischem Zweck. Nur in diesem Fall entfallen `p.grafic-title` und `p.bild-quelle`; stattdessen steht direkt ueber der Tabelle genau die knappe Zeile `**Gesamtdauer:** ca. XX Minuten ⏱️`, wobei die Minuten aus den Phasen summiert oder konsistent geschaetzt werden.
 
 ---
 

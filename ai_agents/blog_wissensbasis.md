@@ -1,7 +1,5 @@
 # Blog-Wissensbasis – SciBlog iWIP
 
-Version: 1.0.0
-Status: Wissensbasis des Blogs, kuratierter Index der veröffentlichten Beiträge
 Scope: kuratierter Index der veröffentlichten Beiträge, um Orientierung, Verweise und fachliche Nachpflege zu ermöglichen
 
 Kuratierter Index der veröffentlichten Blogartikel.

@@ -112,7 +112,9 @@ Die Junior-Studierenden können nach dem Impuls:
 
 ---
 
-## 🧭 Ablauf (30 Minuten)
+## 🧭 Ablauf
+
+**Gesamtdauer:** ca. 30 Minuten ⏱️
 
 <div class="agenda compact no-scroll hover-reveal">
 
@@ -155,6 +157,8 @@ Die Junior-Studierenden können nach dem Impuls:
 
 Wir wissen heute bspw. aus den **kognitiven Neurowissenschaften** viel über die **Funktionen des Gehirns beim Lernen**, aber nicht alles. Deshalb und weil entsprechende Erkenntnisse **nicht direkt auf die Gestaltung des Lernens übertragen** werden können, ist Lernen keine rein naturwissenschaftlich ableitbare, sondern eine **didaktisch zu gestaltende, kontextabhängige Aufgabe** ([Schumacher & Stern, 2012](#literatur); [Willingham, 2009](#literatur)).
 
+<p class="grafic-title">Lernen & Gehirn</p>
+
 <figure class="figure-frame">
   <img src="Gehirn_Lernen.png"
        alt="Visualisierung zum Lernen im Gehirn">
@@ -167,7 +171,9 @@ Wir wissen heute bspw. aus den **kognitiven Neurowissenschaften** viel über die
 
 ### Lerntheorien im Kurzformat
 
-Um Lernen **wissenschaftlich fundiert** zu **verstehen** und zu **gestalten**, sind **vier Lerntheorien** besonders hilfreich:
+Um Lernen **wissenschaftlich fundiert** zu **verstehen** und zu **gestalten**, sind **vier Lerntheorien** besonders hilfreich. Sie werden in folgender Grafik veranschaulicht.
+
+<p class="grafic-title">Lerntheorien</p>
 
 <figure class="figure-frame">
   <img src="Lerntheorien/Lerntheorien_4.jpeg"
@@ -188,6 +194,8 @@ Um Lernen **wissenschaftlich fundiert** zu **verstehen** und zu **gestalten**, s
 > [!TIPP]
 > **Wie** kannst **Du** vor diesem Hintergrund **Dein Lernen boostern**?
 
+<p class="grafic-title">Autobiografische Lernbeispiele von Matthias Söll</p>
+
 <figure class="figure-frame">
   <img src="Persoenliches_Lernen/Persoenliches_Lernen_3.jpeg"
        alt="Drei autobiografische Lernbeispiele">
@@ -201,7 +209,7 @@ Ganz anders war es im Badminton. Dort konnte ich mich stundenlang auf den Platz 
 Und dann gab es einzelne Unterrichtssituationen, die mir bis heute im Gedächtnis geblieben sind 👥. Besonders im Deutschunterricht zum Thema Barock: Wir haben die Epoche „mit Kopf, Hand und Herz“ kennengelernt – also nicht nur darüber gesprochen, sondern sie **aktiv erlebt**.  
 Erst später habe ich verstanden, woran das liegt: **Motivation**, **Aktivierung**, **Rückmeldung** und **soziale Einbettung 👥** machen einen entscheidenden Unterschied – und viele dieser Faktoren kann ich selbst **beeinflussen 🌱**.
 
-Was bedeutet das für Dich?
+Was bedeutet das für Dich und Dein Lernen?
 
 > [!IMPORTANT]
 > Du kannst Dein Lernen aktiv steuern – und genau das macht einen großen Unterschied.

@@ -1,8 +1,6 @@
 # Content Emoji Policy – SciBlog iWIP
 
-Version: 1.0.0  
 Scope: Blog-Inhalte, OER-Materialien und Präsentationen  
-Status: verbindliche Content-Governance
 
 ---
 

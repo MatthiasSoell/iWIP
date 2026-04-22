@@ -1,8 +1,6 @@
 # Development Workflow – SciBlog iWIP
 
-Version: 1.0.0  
 Kontext: technische Änderungen im Repository (Hugo, CSS, Layout, Docs)  
-Status: verbindliche Projektregel
 
 ---
 

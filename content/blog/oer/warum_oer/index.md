@@ -147,7 +147,9 @@ OER steigern die **Effizienz** in Lehr-Lern-Prozessen:
 ## Warum OER? ✨ Qualitative Begründung
 
 Neben Effizienzgewinnen kann OER die **Qualität** von Lehr-Lern-Arrangements erhöhen.  
-Durch kooperative Entwicklung und kollegiale Begutachtung entstehen Materialien, die didaktisch reifer, aktueller und vielfältiger sind.
+Durch kooperative Entwicklung und kollegiale Begutachtung entstehen Materialien, die didaktisch reifer, aktueller und vielfältiger sind. Dies wird in folgender Darstellung verdeutlicht:
+
+<p class="grafic-title">Kooperative Entwicklung von OER</p>
 
 <img class="responsive-image" src="OER_qualitaet.png" alt="Kooperative Entwicklung von OER">
 

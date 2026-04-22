@@ -1,7 +1,5 @@
 # /Literatur — Literatur-Finalisierung fuer Blogbeiträge
 
-Version: 1.0.0
-Status: optionaler Utility-Prompt
 Scope: formale Literatur-Nachbearbeitung bestehender Blogbeitraege ohne Quellenneuerfindung
 
 Du arbeitest strikt nach den Regeln aus:

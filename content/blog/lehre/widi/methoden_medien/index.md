@@ -106,7 +106,7 @@ Die Studierenden sind in der Lage …
 
 Die Lehr-Lern-Einheit geht von einer **offenen Fragestellung** aus, arbeitet im *Lehrgespräch* und nutzt *Partnerarbeit* sowie das *Plenum* zur Vertiefung.
 
-Gesamtdauer: ca. **90 Minuten**
+**Gesamtdauer:** ca. 90 Minuten ⏱️
 
 <div class="agenda">
 
@@ -144,6 +144,8 @@ Didaktik fragt danach, **wie Lernprozesse gestaltet werden können**, damit Lern
 [Euler & Hahn (2014, S. 319)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) systematisieren Methoden anhand von **🎙️ Aktionsformen** (Darbieten, im Dialog entwickeln, erarbeiten & entdecken lassen) und **✏️ Sozialformen** (Plenum, Gruppe, Partner, Einzeln).  
 
 Diese Systematisierung lässt sich in einem *Entscheidungsbaum* darstellen:
+
+<p class="grafic-title">Systematisierung von Methoden nach Euler & Hahn (2014)</p>
 
 ````text
 Aktionsformen
@@ -194,6 +196,8 @@ Wie ist der Entscheidungsbaum zu 📖 *lesen*?
 ### 🌐 Spektrum der Methoden beruflicher Schulen
 
 [Bonz (2006, S. 339)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) systematisiert das Spektrum der Methoden ausgehend vom Konzept des 👩‍🏫 Lehrens oder des 🧠 Lernens:
+
+<p class="grafic-title">Systematisierung von Methoden nach Bonz (2006)</p>
 
 ````text
 Lehren oder Lernen
@@ -254,6 +258,8 @@ Mit der Übersicht lassen sich bspw. **Schwerpunkte und Entwicklungsmöglichkeit
 
 Nach [von Martial (2002, S. 15 ff.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) können Unterrichtsmedien bspw. in 🎒 *Lernobjekte* (Originale und Abbildungen) und 🧰 *Hilfsmittel* differenziert werden. In folgender Übersicht werden Beispiele aus dem Berufsfeld 🤝 Wirtschaft und Verwaltung aufgezählt:
 
+<p class="grafic-title">Systematisierung von Unterrichtsmedien nach von Martial (2002)</p>
+
 ````text
 Unterrichtsmedien
 │
@@ -282,6 +288,8 @@ Unterrichtsmedien
 ### 🧰 Unterrichtsmedien als tradierte Lehrmittel & neue Medien
 
 In Anlehnung an [Stadtfeld (2011, S. 71 f.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) kann zwischen 🏫🖍️ *tradierten Lehrmitteln* (klassische analoge Medien und klassische digitale Medien) und ✨💻 *neuen Medien* (Lernprogramme und -umgebungen, Experimentier- & Simulationsumgebungen, Werkzeugen und Kommunikations- & Kooperationsumgebungen) unterschieden werden:
+
+<p class="grafic-title">Systematisierung von Unterrichtsmedien nach Stadtfeld (2011)</p>
 
 ````text
 Tradierte Lehrmittel

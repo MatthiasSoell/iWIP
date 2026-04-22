@@ -1,9 +1,7 @@
 
 # CSS Architecture – SciBlog iWIP
 
-Version: 1.0.0
 Scope: Blog (PaperMod) + Reveal (reveal-hugo)
-Status: verbindliche Projektregel
 
 ---
 

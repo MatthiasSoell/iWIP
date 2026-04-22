@@ -1,7 +1,5 @@
 # Didaktisches Qualitätsmodell (DQM) – SciBlog iWIP
 
-Version: 1.0.0
-Status: didaktisches Referenzdokument
 Scope: DQM-Leitdimensionen, Profile und Prüfmatrix für agentische Planung und Finalprüfung
 
 Referenzdokument für den Master-Agent.

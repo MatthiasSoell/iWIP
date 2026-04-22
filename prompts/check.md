@@ -1,7 +1,5 @@
 # CHECK – Qualitaetspruefung von Artefakten
 
-Version: 1.0.0
-Status: Pruef- und Qualitaetssicherungs-Prompt
 Scope: Qualitaetspruefung von Blog- und Reveal-Artefakten gegen Contract, Templates und DQM ohne eigene Steuerlogik
 
 ## Rolle
@@ -118,7 +116,8 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen Agent Contract und `ai_agent
 - Ansprache, Ton und semantischer Emoji-Einsatz sind innerhalb des Artefakts konsistent und wirken nicht optional nachgeruestet.
 - Direkt unter dem Frontmatter steht der Pflichtblock `div.top-toggle`; direkt danach folgt `{{< oer-meta >}}`.
 - Der Praesentationsbutton im `top-toggle` verweist auf den veroeffentlichten Reveal-Pfad gemaess Contract und Blog-Template.
-- Bild-, Grafik- und Diagrammquellen folgen dem Blog-Standard des Templates (`p class="bildquelle">Bildquelle: ...</p>`; optional `p class="grafic-title">...</p>` direkt ueber der Visualisierung).
+- Jede Blog-Visualisierung hat direkt darueber genau einen `p class="grafic-title">...</p>`, direkt darunter genau eine Quellenzeile gemaess Blog-Template (`p class="bildquelle">Bildquelle: ... · Lizenz: ...</p>`; freie Lizenzen als HTML-Link); ein kurzer Kontextsatz davor ist optional und nur bei erklaerungsbeduerftigen Darstellungen sinnvoll. Einzige Ausnahme sind eindeutig als Ablaufplan erkennbare Tabellen innerhalb eines Abschnitts: direkt unter einer Abschnittsueberschrift eingebettete Tabellen zur zeitlichen oder didaktischen Phasenstruktur mit organisatorischem Zweck duerfen nur dann ohne Titel und Quellenzeile stehen; stattdessen muss direkt ueber der Tabelle die Zeile `**Gesamtdauer:** ca. XX Minuten ⏱️` stehen.
+- Wenn ein Ablaufplan erkannt wird und diese Gesamtdauer-Zeile fehlt oder deutlich vom Format abweicht, gib eine `WARNUNG` aus, aber keinen `BLOCKER`.
 - Der Literaturteil beginnt mit dem stabilen Anker und der Pflichtueberschrift gemaess Blog-Template.
 - Begriffspruefung: zentrale Begriffe und Benennungen werden im sichtbaren Blogtext konsistent verwendet.
 - Typografiepruefung: sichtbare deutsche Blogtexte folgen den Typografie- und Umlautregeln des Agent Contracts.
@@ -193,8 +192,9 @@ Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen Agent Contract und
 - Pro Inhaltsfolie ist eine klare Kernbotschaft erkennbar.
 - Die Textdichte je Inhaltsfolie bleibt im Richtwert von 35-45 Woertern.
 - Je fachlichem Hauptkapitel ist mindestens eine visuelle Stuetzfolie vorhanden.
-- Visualisierungen tragen kurze Quellenzeilen gemaess Reveal-Template (`p class="zitat-quelle">Bildquelle: ... · Lizenz: ...</p>`).
-- Reveal-Bildquellen enthalten immer Herkunft und Lizenzstatus oder einen klaren Rechtehinweis.
+- Jede Reveal-Visualisierung hat direkt darunter genau eine Quellenzeile gemaess Reveal-Template (`p class="bild-quelle">Bildquelle: ... · Lizenz: ...</p>`). Ein `p class="grafic-title">...</p>` direkt darueber ist optional und nur erforderlich, wenn die Visualisierung nicht bereits durch die Folienueberschrift oder den unmittelbaren Kontext eingefuehrt ist. Ein kurzer Kontextsatz davor ist optional und nur bei erklaerungsbeduerftigen Darstellungen sinnvoll. Einzige Ausnahme sind eindeutig als Ablaufplan erkennbare Tabellen innerhalb eines Abschnitts: direkt unter einer Abschnittsueberschrift eingebettete Tabellen zur zeitlichen oder didaktischen Phasenstruktur mit organisatorischem Zweck duerfen nur dann ohne Titel und Quellenzeile stehen; stattdessen muss direkt ueber der Tabelle die Zeile `**Gesamtdauer:** ca. XX Minuten ⏱️` stehen.
+- Wenn ein Ablaufplan erkannt wird und diese Gesamtdauer-Zeile fehlt oder deutlich vom Format abweicht, gib eine `WARNUNG` aus, aber keinen `BLOCKER`.
+- Reveal-Bildquellen enthalten immer Herkunft und Lizenzstatus; fuer gesperrte Rechte ist die Formulierung `Lizenz: nicht frei verwendbar` zu verwenden.
 - Der Emoji-Einsatz ist gemaess `project_governance/content_emoji_policy.md` im sichtbaren Folien-Body erkennbar umgesetzt.
 - Ansprache, Ton und semantischer Emoji-Einsatz sind innerhalb der Praesentation konsistent und folgen derselben Artefaktlogik wie im Blog.
 - Sichtbare deutsche Folientexte folgen den Typografie- und Umlautregeln des Agent Contracts.

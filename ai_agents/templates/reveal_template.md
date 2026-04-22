@@ -1,7 +1,5 @@
 # Reveal Template — SciBlog iWIP
 
-Version: 1.0.0
-Status: Template-Spezifikation
 Kontext: Frontmatter und Zielstruktur für Reveal-Artefakte
 
 Dieses Template definiert die Standardstruktur
@@ -199,18 +197,26 @@ Beispiel Transfer / Reflexion:
 🪞 Welche Veraenderung uebernimmst du in deine naechste Sitzung?
 ```
 
-Optionales Muster fuer Bild- oder Medienfolien:
+Muster fuer Visualisierungen auf Folien:
 
 ```html
+<p>Einleitender Satz (optional)</p>
+<p class="grafic-title">Kurztitel der Darstellung</p>
 <figure class="figure-frame figure-frame-sm">
   <img src="..." alt="...">
 </figure>
-<p class="zitat-quelle">Bildquelle: ... · Lizenz: CC BY-SA 4.0</p>
+<p class="bild-quelle">Bildquelle: ... · Lizenz: CC BY-SA 4.0</p>
 ```
 
-- In Reveal steht die Bildquelle schlank unter der Visualisierung; ein eigener Bildtitel ist meist entbehrlich, wenn der Folientitel die Funktion bereits uebernimmt.
-- Unter Bildern, Grafiken, Diagrammen, Screenshots und Fotos immer `zitat-quelle` mit dem Praefix `Bildquelle:` verwenden.
-- Die Quellenzeile enthaelt immer Herkunft und Lizenzstatus; `Illustration:` ist optional. Lizenzlinks sind in Reveal nicht erforderlich.
+- Jede visuelle Darstellung erhaelt direkt darunter genau eine Quellenzeile als `p class="bild-quelle"`.
+- Ein kurzer Titel als `p class="grafic-title"` direkt darueber ist optional und wird nur verwendet, wenn die Darstellung nicht bereits durch die Folienueberschrift oder den unmittelbaren Kontext eindeutig eingefuehrt ist.
+- Ein kurzer einleitender Kontextsatz vor Titel und Visualisierung ist optional und wird nur verwendet, wenn die Darstellung erklaerungsbeduerftig ist, z. B. bei komplexen Tabellen, Modellen, Matrizen oder Schaubildern.
+- Einzige Ausnahme: eindeutig als Ablaufplan erkennbare Tabellen innerhalb eines Abschnitts, also direkt unter einer Abschnittsueberschrift eingebettete Tabellen zur zeitlichen oder didaktischen Phasenstruktur mit organisatorischem Zweck. Nur in diesem Fall entfallen `grafic-title` und `bild-quelle`; stattdessen steht direkt ueber der Tabelle genau die knappe Zeile `**Gesamtdauer:** ca. XX Minuten ⏱️`, wobei die Minuten aus den Phasen summiert oder konsistent geschaetzt werden.
+- Die Quellenzeile folgt immer dem Muster `Bildquelle: [Herkunft] · Lizenz: [Lizenzangabe]`.
+- Der Begriff bleibt auch bei Tabellen und vergleichbaren Visualisierungen immer `Bildquelle`.
+- Wenn KI beteiligt war, wird dies nur als Zusatz in der Herkunft genannt, z. B. `Eigene Darstellung (erstellt mit ChatGPT)`.
+- Fuer nicht frei verwendbare Inhalte bleibt die Formulierung `Lizenz: nicht frei verwendbar` verbindlich.
+- Lizenzlinks sind in Reveal nicht erforderlich.
 
 ---
 

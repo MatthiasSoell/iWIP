@@ -1,8 +1,6 @@
 # AI Editing Instructions – Copilot / ChatGPT
 SciBlog iWIP
 
-Version: 1.0.0  
-Status: verbindliche Projektregel  
 Kontext: technische Änderungen im Repo (CSS, Layout, Struktur) sowie Änderungen an agentischen Steuerdateien
 
 AI agents: read `ai_project_context.md` first, then follow these rules.

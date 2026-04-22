@@ -124,7 +124,7 @@ Sie lernen, …
 
 Die Lehr-Lern-Einheit ist so gestaltet, dass Sie **Didaktik nicht nur theoretisch kennenlernen, sondern auch praktisch erfahren**.  
 
-Gesamtdauer: ca. **90 Minuten**
+**Gesamtdauer:** ca. 90 Minuten ⏱️
 
 <div class="agenda">
 
@@ -243,6 +243,10 @@ Was fällt Ihnen in Bezug auf die **Aktivitäten der Lernenden und Lehrenden** s
 
 ### 📸 Klassenzimmer 1934  
 
+Auf folgendem Foto ist ein Klassenzimmer aus dem Jahr 1934 zu sehen. Es zeigt eine typische Unterrichtssituation der damaligen Zeit.
+
+<p class="grafic-title">Klassenzimmer 1934</p>
+
 <figure class="figure-frame">
   <img src="/iWIP/bilder/widi/did_allg_fach/Klassenzimmer_früher.jpg"
        alt="Klassenzimmer 1934">
@@ -253,6 +257,10 @@ Was fällt Ihnen in Bezug auf die **Aktivitäten der Lernenden und Lehrenden** s
 ---
 
 ### 📸 Klassenzimmer heute  
+
+Dieses Foto zeigt eine aktuelle Unterrichtssituation in einem modernen Klassenzimmer. Es verdeutlicht die Veränderungen in der Gestaltung von Lernräumen und Interaktionen zwischen Lehrenden und Lernenden.
+
+<p class="grafic-title">Klassenzimmer heute</p>
 
 <figure class="figure-frame">
   <img src="/iWIP/bilder/widi/did_allg_fach/Klassenzimmer_heute.jpg"

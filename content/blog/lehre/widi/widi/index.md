@@ -142,7 +142,7 @@ Sie lernen, …
 
 Die Lehr-Lern-Einheit ist so konzipiert, dass Sie von einer **offenen Fragestellung** ausgehen und sich diese in **kooperativer Gruppenarbeit** selbst erarbeiten.  
 
-Gesamtdauer: ca. **90 Minuten**
+**Gesamtdauer:** ca. 90 Minuten ⏱️
 
 <div class="agenda">
 
@@ -219,6 +219,8 @@ Notieren Sie anschließend Ihre wichtigsten Einsichten und vergleichen Sie sie m
 # 🧩 Systematisierung der Themen der Wirtschaftsdidaktik  
 
 Wir fassen die in den Quellen identifizierten Themenfelder gemeinsam auf **Moderationskarten** zusammen und **clustern** sie nach übergeordneten Bereichen.
+
+<p class="grafic-title">Clustern von Themenfeldern</p>
 
 <figure class="figure-frame">
   <img src="widi_whiteboard.jpg"

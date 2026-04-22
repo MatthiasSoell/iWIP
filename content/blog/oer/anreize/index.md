@@ -123,6 +123,8 @@ Kurz: OER-Nutzung ist **kein** On/Off-Schalter. Sie entsteht **prozesshaft** –
 }
 </style>
 
+<p class="grafic-title">Nancy Walter, Silvia Retzlaff & Matthias Söll</p>
+
 <figure style="text-align:center; margin:1.2rem auto;">
   <img src="/iWIP/praesentation/oer/anreize/avatare_silvia_nancy_matthias.png"
        alt="Co-WOERK AP 4 Team"
@@ -169,10 +171,9 @@ Grundlage ist das **Adoptionsmodell** nach <a href="#-literatur--hinweise">Hart 
 - **Awareness → Interesse → Erwägung → Umsetzung → Integration**.  
 - Jede Stufe bringt **andere Fragen** mit sich (z. B. „Warum überhaupt?“ vs. „Wie konkret mache ich das?“).  
 
+<p class="grafic-title">Roger's 5 stages of the innovation adoption process (Rogers, 2003)</p>
+
 <figure style="text-align:center; margin:1.5rem auto;">
-  <figcaption style="font-weight:600; font-size:1.6rem; margin-bottom:.6rem;">
-    📊 Roger's 5 stages of the innovation adoption process (Rogers, 2003)
-  </figcaption>
   <img src="/iWIP/bilder/oer/anreize/rogers_2003.jpg"
        alt="Rogers (2003)"
        style="display:block; margin:0 auto; max-width:480px; width:100%; height:auto;">
@@ -192,6 +193,10 @@ Grundlage ist das **Adoptionsmodell** nach <a href="#-literatur--hinweise">Hart 
 ---
 
 # ✨ OER-Anreizkategorien  
+
+Die folgenden **vier Kategorien** zeigen **typische Anreizformen** für die **Nutzung von OER** und ihre jeweilige **Wirkung**:
+
+<p class="grafic-title">OER-Anreizkategorien</p>
 
 <style>
 .anreizmatrix table{
@@ -249,6 +254,8 @@ Grundlage ist das **Adoptionsmodell** nach <a href="#-literatur--hinweise">Hart 
 
 </div>
 
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+
 **Zusammenhang:**  
 - **A** öffnet die **Haltung** („Warum es Sinn macht“),  
 - **B** ermöglicht **Handeln** („Womit/Wann“),  
@@ -260,6 +267,10 @@ Je nach **Phase** brauchst du **eine andere Mischung** aus A–D.
 ---
 
 # 🧭 Die OER-Anreizmatrix
+
+Diese Anreizkategorien können in eine Matrix überfürt werden, welche die **Adoptionsphasen** mit den **Anreizkategorien** verknüpft. So wird sichtbar, welche Anreize in welcher Phase besonders wichtig sind und wo es Lücken gibt.
+
+<p class="grafic-title">OER-Anreizmatrix</p>
 
 <style>
 .anreizmatrix_2 table{
@@ -332,6 +343,8 @@ Je nach **Phase** brauchst du **eine andere Mischung** aus A–D.
 5️⃣ **Integration** |  |  |  |  |  
 
 </div>
+
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 
 **So liest du die Matrix:**  
 - Links steht die **Frage der Phase** (z. B. *Awareness*: „Warum relevant?“).  

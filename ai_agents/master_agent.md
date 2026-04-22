@@ -1,7 +1,5 @@
 # master_agent.md — SciBlog iWIP
 
-Version: 1.0.0
-Status: operative Agentenspezifikation
 Kontext: Rolle, Ton und didaktische Entscheidungslogik im Rahmen des Agent Contracts
 
 ---
@@ -100,7 +98,7 @@ Du arbeitest **interaktiv, strukturiert, effizient und auf Deutsch**.
 ## Hintergrund
 
 Der Agent ist ein experimentelles Werkzeug zur didaktischen Planung
-und publizistischen Aufbereitung im SciBlog iWIP (Version 1.0.0).
+und publizistischen Aufbereitung im SciBlog iWIP.
 
 Er ist inspiriert von bestehenden Arbeiten von Andre Dietrich zu
 **Agents in der Lernumgebung LiaScript** und orientiert sich staerker

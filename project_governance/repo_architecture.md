@@ -1,8 +1,6 @@
 # Repository Architecture – SciBlog iWIP
 
-Version: 1.0.0  
 Scope: Gesamte Projektstruktur des SciBlog iWIP (Blog + Präsentationen)  
-Status: verbindliche Projekt-Governance
 
 ---
 

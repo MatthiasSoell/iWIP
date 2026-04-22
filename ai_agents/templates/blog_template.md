@@ -1,7 +1,5 @@
 # Blog Template — SciBlog iWIP
 
-Version: 1.0.0
-Status: Template-Spezifikation
 Kontext: Frontmatter, Einstiegsblock und Zielstruktur für Blogartefakte
 
 Dieses Template definiert die Standardstruktur für Blogartikel im SciBlog iWIP.
@@ -61,10 +59,6 @@ oer:
   source:
     label: ""
     url: ""
-
-  # Version / Reifegrad (kein Qualitätsurteil)
-  version: "1.0"
-  status: "pilot"   # draft | pilot | stable | aligned
 
   # OERSI / schema.org-nahe Felder
   in_language: "de"
@@ -209,19 +203,26 @@ Agenda-Tabelle anlegen.
 - keine Sammelüberschrift fuer alle Kernpunkte verwenden
 - zentrale Aussagen im Fließtext ausführen und Quellen im Text sichtbar integrieren
 
-Optionales Strukturmuster für Visualisierungen oder Abbildungen:
+Strukturmuster fuer Visualisierungen:
 
 ```html
+<p>Einleitender Satz (optional)</p>
 <p class="grafic-title">Kurztitel der Grafik</p>
 <figure class="figure-frame">
   <img src="..." alt="...">
 </figure>
-<p class="bildquelle">Bildquelle: ...</p>
+<p class="bildquelle">Bildquelle: ... · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 ```
 
-- `grafic-title` nur verwenden, wenn die Visualisierung eine eigene sichtbare Ueberschrift braucht.
-- Unter Bildern, Grafiken, Diagrammen, Screenshots und Fotos immer den Praefix `Bildquelle:` verwenden; Hinweise wie `Illustration:` oder `Fotograf:` folgen danach in derselben Zeile.
-- Die Quellenzeile enthaelt immer auch den Lizenzstatus, z. B. `Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>` oder `Keine freie Lizenz (Rechte bei den dargestellten Personen)`.
+- Jede visuelle Darstellung erhaelt direkt darueber genau einen kurzen Titel als `p class="grafic-title"`.
+- Ein kurzer einleitender Kontextsatz vor Titel und Visualisierung ist optional und wird nur verwendet, wenn die Darstellung erklaerungsbeduerftig ist, z. B. bei komplexen Tabellen, Modellen, Matrizen oder Schaubildern.
+- Nach jedem Bild, jeder Grafik, jedem Diagramm, jeder Tabelle, jedem Screenshot und jedem Foto steht direkt darunter genau eine Quellenzeile als `p class="bildquelle"`.
+- Einzige Ausnahme: eindeutig als Ablaufplan erkennbare Tabellen innerhalb eines Abschnitts, also direkt unter einer Abschnittsueberschrift eingebettete Tabellen zur zeitlichen oder didaktischen Phasenstruktur mit organisatorischem Zweck. Nur in diesem Fall entfallen `grafic-title` und `bildquelle`; stattdessen steht direkt ueber der Tabelle genau die knappe Zeile `**Gesamtdauer:** ca. XX Minuten ⏱️`, wobei die Minuten aus den Phasen summiert oder konsistent geschaetzt werden.
+- Die Quellenzeile folgt immer dem Muster `Bildquelle: [Herkunft] · Lizenz: [Lizenzangabe]`.
+- Der Begriff bleibt auch bei Tabellen und vergleichbaren Visualisierungen immer `Bildquelle`.
+- Im Blog werden freie Lizenzen immer als HTML-Link ausgegeben, z. B. `Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>`.
+- Wenn KI beteiligt war, wird dies nur als Zusatz in der Herkunft genannt, z. B. `Eigene Darstellung (erstellt mit ChatGPT)`.
+- Fuer nicht frei verwendbare Inhalte bleibt die Formulierung `Lizenz: nicht frei verwendbar` verbindlich.
 
 ---
 

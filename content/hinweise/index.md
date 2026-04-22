@@ -5,7 +5,7 @@ lastmod: 2025-06-06
 draft: false
 
 description: >
-  Informationen zu Nutzungsrechten, Lizenzen und Ausnahmen im SciBlog iWIP. Erläutert werden insbesondere Creative-Commons-Lizenzen und nicht frei verwendbare Inhalte.
+  Informationen zu Nutzungsrechten, Lizenzen und Ausnahmen im SciBlog iWIP. Erläutert werden insbesondere die Creative-Commons-Lizenz und nicht frei verwendbare Inhalte.
 
 summary: >
   Lizenzhinweise und Nutzungsbedingungen für Inhalte des SciBlog iWIP, insbesondere zur CC BY-SA 4.0 Lizenz und zu ausgewiesenen Ausnahmen.
@@ -49,11 +49,9 @@ oer:
 
   todos: []
 ---
-Die Inhalte dieser Seite stehen – sofern nicht anders angegeben – unter der Lizenz <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.
+Die Inhalte dieser Seite stehen – sofern nicht anders angegeben – unter der Lizenz  
+<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.
 
-Das bedeutet: Sie dürfen die Inhalte dieser Seite verwenden, teilen und anpassen – solange Sie **den Urheber nennen** und Ihre Version **unter derselben Lizenz** veröffentlichen.  
+Das bedeutet: Sie dürfen die Inhalte **verwenden**, **teilen** und **anpassen** – vorausgesetzt, Sie **nennen die Urheber:innen** und veröffentlichen Ihre Version **unter derselben Lizenz**.
 
-Ausgenommen sind Inhalte, die explizit als **nicht frei verwendbar** (z. B. Portraitfoto auf der Startseite) gekennzeichnet oder **im Folgenden aufgeführt** sind:  
-
-* **Avatare:** KI-generierte Cartoon-Illustration mit ChatGPT/DALL·E
-* **Logo:** KI-generierte Cartoon-Illustration mit ChatGPT/DALL·E, bearbeitet mit GIMP
+Einzelne Abbildungen und Materialien **können davon abweichen**. Diese sind direkt an der jeweiligen Stelle entsprechend gekennzeichnet (z. B. „nicht frei verwendbar“).

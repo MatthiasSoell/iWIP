@@ -110,7 +110,7 @@ Sie lernen, …
 
 # 🧭 Aufbau & Ablauf
 
-Gesamtdauer: ca. **60 Minuten**
+**Gesamtdauer:** ca. 60 Minuten ⏱️
 
 <div class="agenda">
 
@@ -252,6 +252,8 @@ Das Modul umfasst **6 Leistungspunkte** und damit ungefähr **180 Stunden Arbeit
 
 Eine grobe Orientierung kann so aussehen:
 
+<p class="grafic-title">Zeitverteilung im Modul</p>
+
 <div class="agenda">
 
 | Bereich | Orientierung |
@@ -261,6 +263,8 @@ Eine grobe Orientierung kann so aussehen:
 | **📝 Hausarbeit** | ca. 104 Stunden für Themenerschließung, Literaturarbeit, Schreiben und Überarbeitung (2,5 Wochen Vollzeit mit 40 Stunden pro Woche) |
 
 </div>
+
+<p class="bildquelle">Bildquelle: Eigene Darstellung · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Lizenz: CC BY-SA 4.0</a></p>
 
 Die **Hausarbeit ist keine Zusatzleistung am Schluss**, sondern ein integraler Bestandteil des Moduls. Deshalb lohnt es sich, Materialien, Fragen und Literaturhinweise von Beginn an systematisch mitzudenken.
 

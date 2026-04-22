@@ -1,7 +1,5 @@
 # Blog-Literaturbasis - SciBlog iWIP
 
-Version: 1.0.0
-Status: projektinterne Referenzbasis
 Scope: kuratierte Literaturbasis fuer den Agenten auf Grundlage des DQM sowie spaetere Ergaenzung um eigene Projektquellen
 
 Diese Datei ergaenzt das DQM um eine funktional kuratierte Literaturbasis.

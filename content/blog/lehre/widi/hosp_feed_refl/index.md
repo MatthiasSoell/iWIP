@@ -127,11 +127,11 @@ Die Studierenden sind in der Lage …
 
 ---
 
-# 🧭 Ablauf (90 Min)  
+# 🧭 Ablauf
 
 Die Lehr-Lern-Einheit ist als Kombination aus Input, angeleiteter Analyse und gemeinsamer Reflexion angelegt.
 
-Gesamtdauer: ca. **90 Minuten**
+**Gesamtdauer:** ca. 90 Minuten ⏱️
 
 <div class="agenda">
 
@@ -157,6 +157,8 @@ Professionalisierung von Lehrer:innen wird häufig als Zusammenspiel mehrerer Di
 - **Überzeugungen und Werthaltungen**,  
 - **Motivation und Selbstregulation**,  
 - **Handlungskompetenzen** im Unterricht und darüber hinaus.
+
+<p class="grafic-title">Professionelle Lehrperson nach Baumert & Kunter (2006)</p>
 
 <figure class="figure-frame">
   <img src="professionelle_lehrperson.jpg"
@@ -187,6 +189,8 @@ Im Seminar wird dieses Verständnis über eine Grafik (in Anlehnung an Baumert &
 Quelle: vgl. Köhler & Weiß (2015).
 
 Im Seminar arbeiten wir mit einem **Hospitationsbogen**, der ausgewählte Beobachtungskategorien strukturiert und so die Auswertung im Anschluss erleichtert.
+
+<p class="grafic-title">Beispiel eines Hospitationsbogens</p>
 
 <figure class="figure-frame">
   <img src="/iWIP/bilder/widi/hosp_feed_refl/hospitationsbogen.png"
@@ -277,9 +281,11 @@ Das ALACT-Modell Korthagen & Kessels (1999) beschreibt einen fünfphasigen Zyklu
 4. **Creating alternative Methods of Action (Alternativen entwickeln)** – was könnte ich beim nächsten Mal anders machen?  
 5. **Trial (Ausprobieren)** – die alternativen Handlungsmöglichkeiten werden in neuen Situationen erprobt.
 
+<p class="grafic-title">ALACT-Modell nach Korthagen & Kessels (1999)</p>
+
 <figure class="figure-frame">
   <img src="/iWIP/bilder/widi/hosp_feed_refl/alact.png"
-       alt="ALACT-Modell nach Korthagen">
+       alt="ALACT-Modell nach Korthagen & Kessels (1999)">
 </figure>  
 
 <p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an Korthagen & Kessels (1999) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>

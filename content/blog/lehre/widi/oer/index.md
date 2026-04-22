@@ -212,6 +212,8 @@ Jede Lizenzangabe enthält den Lizenztyp, die Versionsnummer und optional eine L
 
 Creative Commons (CC) bietet verschiedene **Bausteine**, die kombinierbar sind:
 
+<p class="grafic-title">Creative Commons Lizenzen</p>
+
 | Kürzel | Bedeutung | Erklärung |
 |--------|-----------|-----------|
 | **BY** | Attribution | Der **Name des Urhebers** muss genannt werden. |
@@ -219,13 +221,15 @@ Creative Commons (CC) bietet verschiedene **Bausteine**, die kombinierbar sind:
 | **NC** | Non Commercial | **Keine kommerzielle Nutzung** erlaubt. |
 | **ND** | No Derivatives | **Keine Bearbeitung oder Abwandlung** erlaubt. |
 
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
+
 ---
 
 ## 🔤 Lizenzkürzel – Aufbau
 
 Ein Lizenzkürzel setzt sich aus mehreren Teilen zusammen, z. B.:
 
-**`CC BY-SA 3.0 DE`**
+<p class="grafic-title">`CC BY-SA 3.0 DE`</p>
 
 | Teil | Bedeutung |
 |------|-----------|
@@ -233,6 +237,8 @@ Ein Lizenzkürzel setzt sich aus mehreren Teilen zusammen, z. B.:
 | **BY-SA** | Lizenzbedingungen (Namensnennung + Weitergabe unter gleichen Bedingungen) |
 | **3.0** | Versionsnummer |
 | **DE** | Portierung für Deutschland (in älteren Versionen; ab 4.0 international einheitlich gültig) |
+
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 ---
 
@@ -266,6 +272,8 @@ Ein Lizenzkürzel setzt sich aus mehreren Teilen zusammen, z. B.:
 
 Beachten Sie bei jeder Nutzung die **TULLU-Regel** für Lizenzhinweise:
 
+<p class="grafic-title">TULLU-Regel für Lizenzhinweise</p>
+
 | Buchstabe | Bedeutung | Beispiel |
 |------------|------------|-----------|
 | **T** | Titel des Materials | „Einführung in die OER“ |
@@ -273,6 +281,8 @@ Beachten Sie bei jeder Nutzung die **TULLU-Regel** für Lizenzhinweise:
 | **L** | Lizenz | CC BY-SA 4.0 |
 | **L** | Link zur Lizenz | <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">https://creativecommons.org/licenses/by-sa/4.0/</a> |
 | **U** | Ursprungsort | [Quelle oder URL] |
+
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 > [!TIPP]
 > **Tipp:** Immer so genau wie möglich zitieren – so bleiben Sie rechtlich auf der sicheren Seite.
@@ -294,10 +304,15 @@ Vor der Veröffentlichung:
 ---
 
 ### 3️⃣ Schritt 3: Geeignete Formate wählen
+
+<p class="grafic-title">Empfohlene Formate für OER</p>
+
 | Typ | Empfohlenes Format |
 |------|--------------------|
 | Textdokumente | `.docx` oder `.odt` (statt PDF, um Bearbeitung zu erleichtern) |
 | Interaktive Materialien | mit <a href="https://h5p.org/" target="_blank" rel="noopener"><strong>H5P</strong></a> – z. B. Quizze, Selbsttests oder Lernspiele |
+
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 ---
 
@@ -385,12 +400,16 @@ Begründen Sie Ihre Auswahl.
 
 Beschreiben Sie die **Einbettung Ihres Materials in das Seminar**:
 
+<p class="grafic-title">Aspekte der didaktischen Einbindung</p>
+
 | **Aspekt** | **Beschreibung** |
 |-------------|------------------|
 | **Zielgruppe** | Für wen ist das Material gedacht? |
 | **Kontext** | In welcher Lernsituation wird es eingesetzt? |
 | **Lernziele** | Welche Kompetenzen sollen gefördert werden? |
 | **Einsatz im Seminar** | Wie wird das Material in die Seminareinheit eingebunden? *(z. B. Einstieg, Erarbeitung, Vertiefung, Prüfungsvorbereitung)* |
+
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 ---
 
@@ -411,8 +430,9 @@ Beschreiben Sie die **Einbettung Ihres Materials in das Seminar**:
 - Achten Sie auf **benutzerfreundliche Struktur** und **professionelles Design**
 - Vergeben Sie eine **offene Lizenz**
 
-<a id="bewertungskriterien"></a>
 ## 🧮 Bewertungskriterien zur Orientierung
+
+<p class="grafic-title">Bewertungskriterien zur Orientierung</p>
 
 | **Kriterium** | **Punkte** |
 |----------------|:---------:|
@@ -422,6 +442,8 @@ Beschreiben Sie die **Einbettung Ihres Materials in das Seminar**:
 | Korrekte Lizenzierung & Quellenangaben | 20 |
 | Gestaltung & Verständlichkeit | 10 |
 | **Gesamt** | **100** |
+
+<p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
 ## 🧭 Andere Zugänge  
 

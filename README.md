@@ -1,52 +1,58 @@
 # SciBlog iWIP – Offene Publikationsplattform für Wirtschaftsdidaktik
 
-SciBlog iWIP ist eine offene Publikationsplattform für wirtschaftsdidaktische Lehr-Lern- und Forschungs-Materialien.  
-Das Projekt verbindet Blog, Präsentationen und OER-Materialien in einer transparent dokumentierten technischen Infrastruktur.
+SciBlog iWIP ist eine offene Publikationsplattform für wirtschaftsdidaktische Lehr-, Lern- und Forschungsinhalte. 
 
-**English:**  
-SciBlog iWIP is an open publishing platform for teaching and research materials in business education and training.  
-The project combines a blog, presentations, and OER resources within a transparently documented technical infrastructure.
+Das Repository vereint Blog, OER, Präsentationen und didaktische Entwicklungsarbeit in einer gemeinsamen, transparent dokumentierten Infrastruktur.
 
----
+Das Repository enthält:
 
-## 🌐 Website
+- eine technische Plattform auf Basis von Hugo, GitHub Pages und GitHub Actions
+- Blogartikel und Open Educational Resources (OER) in Markdown
+- Präsentationen auf Basis von reveal-hugo und reveal.js
+- einen didaktischen Planungsagenten für die Entwicklung von Lehr- und Publikationsmaterialien
+- technische und didaktische Dokumentation zur Struktur und Weiterentwicklung des Projekts
+
+## Website
 
 Der veröffentlichte Blog ist hier erreichbar:
 
 [https://matthiassoell.github.io/iWIP/](https://matthiassoell.github.io/iWIP/)
 
----
+## Ziel des Projekts
 
-## 🎓 Ziel des Projekts
+- Lehr-Lern- und Forschungsmaterialien der Wirtschaftsdidaktik offen zugänglich machen
+- Materialien als Open Educational Resources veröffentlichen und weiterentwickeln
+- Lehrveranstaltungen und Entwicklungsprozesse transparent dokumentieren
+- Präsentationen direkt aus Markdown ableiten
+- eine nachvollziehbare, offene, moderne Infrastruktur für wissenschaftliche Lehre und Forschung bereitstellen
 
-Der SciBlog iWIP verfolgt das Ziel, Lehr-Lern- und Forschungs-Materialien der Wirtschaftsdidaktik offen zugänglich zu machen und kontinuierlich weiterzuentwickeln.
+## Komponenten der Plattform
 
-Der Blog dient insbesondere dazu:
+### Blog & OER
 
-- Lehrmaterialien und Forschungsmaterialien als **Open Educational Resources (OER)** zu veröffentlichen  
-- **Lehrveranstaltungen transparent zu dokumentieren**  
-- Präsentationen direkt aus Markdown zu generieren  
-- eine **offene, nachvollziehbare Infrastruktur** für wissenschaftliche Lehre und Forschung bereitzustellen
+Der Blog bildet das publizistische Zentrum des Projekts. Hier entstehen Blogartikel, OER-Materialien und fachbezogene Dokumentationen, die in Markdown gepflegt und als statische Seiten veröffentlicht werden.
 
----
+### Präsentationen
 
-## ⚙️ Technische Grundlage
+Präsentationen werden mit reveal-hugo und reveal.js bereitgestellt. Sie sind bewusst als eigener Ausgabekanal organisiert und können aus vorhandenen Inhalten abgeleitet werden.
 
-Der SciBlog iWIP basiert auf einer bewusst einfachen, offenen Web-Infrastruktur.
+### Didaktischer Planungsagent
 
-### Technologien
+Der integrierte didaktische Planungsagent (WiDi) unterstützt die Planung und strukturierte Ausarbeitung von Lehr-Lern-Inhalten. Er verbindet den Arbeitszusammenhang Planung → Blog → Präsentation und macht Entwicklungsprozesse nachvollziehbar und reflektierbar. Der Agent arbeitet dialogisch, strukturierend und ko-kreativ; der Blog dient dabei als zentrales Arbeitsdokument, aus dem bei Bedarf Präsentationen abgeleitet werden können. Er ist als unterstützendes Werkzeug konzipiert und ersetzt keine didaktischen Entscheidungen. Weitere Details, zentrale Dateien und die Nutzung sind in [ai_agents/README.md](ai_agents/README.md) dokumentiert.
 
-- **Hugo** – Static Site Generator  
-- **PaperMod** – Blog-Theme  
-- **reveal-hugo / reveal.js** – Präsentationssystem  
-- **GitHub Pages** – Hosting  
-- **GitHub Actions** – automatisiertes Deployment  
+### Technische Infrastruktur
 
-Alle Inhalte werden in **Markdown** geschrieben und als **statische Webseiten** generiert.
+Die Plattform basiert auf einer bewusst einfachen, offenen Web-Infrastruktur:
 
----
+- Hugo als Static Site Generator
+- PaperMod als Blog-Theme
+- reveal-hugo / reveal.js für Präsentationen
+- GitHub Pages für Hosting
+- GitHub Actions für automatisiertes Deployment
 
-## 🧱 Projektstruktur
+Alle Inhalte werden in Markdown gepflegt und als statische Webseiten generiert.
+
+## Projektstruktur
 
 Die wichtigsten Bereiche des Repositories:
 
@@ -67,42 +73,9 @@ static/css/
 └─ custom_reveal.css
 ```
 
----
+## Dokumentation
 
-## 🎨 CSS-Architektur
-
-Das Projekt nutzt eine klar definierte CSS-Architektur:
-
-```text
-Design Tokens
-      ↓
-Blog Komponenten
-      ↓
-Callout-Komponenten
-```
-
-Dateien:
-
-```text
-00_design_tokens.css
-10_custom.css
-20_custom_callouts.css
-custom_reveal.css
-```
-
-Reveal-CSS und Blog-CSS sind strikt getrennt.
-
-Details sind dokumentiert in:
-
-```text
-project_governance/css_architecture.md
-```
-
----
-
-## 📚 Dokumentation
-
-Die technische Architektur des Projekts ist zusammen mit mit Entwicklungsregeln im Ordner `project_governance/` transparent dokumentiert.
+Die technische und organisatorische Dokumentation liegt im Ordner `project_governance/`.
 
 Wichtige Dokumente:
 
@@ -116,105 +89,27 @@ project_governance/
 └─ ai_copilot_instructions.md
 ```
 
-Diese Dokumente beschreiben:
+Dokumentiert sind dort insbesondere Repository-Struktur, CSS-System, Content-Konventionen, AI-Regeln und der technische Projektkontext.
 
-- Repository-Struktur  
-- CSS-System  
-- Content-Konventionen (Emoji-Policy)
-- AI-Regeln für Codeänderungen  
-- technischen Projektkontext
+## Versionierung
 
----
+Die Versionierung markiert bewusst größere Entwicklungsschritte der Plattform und des Agenten (keine feingranulare Software-Versionierung).
 
-## 🤖 KI-Unterstützung
+Plattform SciBlog iWIP: 1.0
 
-Bei der technischen Entwicklung des Projekts werden KI-Werkzeuge eingesetzt, u. a.:
+Kleinere Anpassungen an Layout, Formulierungen oder CSS werden nicht separat versioniert.
 
-- GitHub Copilot
-- ChatGPT
+## Lizenz
 
-Die Regeln für AI-gestützte Änderungen sind dokumentiert in:
-
-```text
-project_governance/ai_copilot_instructions.md
-```
-
----
-
-## 🤖 Didaktischer Planungsagent
-
-Der integrierte Agent unterstützt Lehrende und Studierende dabei, Lehrveranstaltungen klar zu planen, Inhalte schrittweise auszuarbeiten und daraus veröffentlichbare Materialien zu entwickeln.
-
-Im Zentrum steht ein einfacher Zusammenhang: **Planung → Blog → Präsentation**. Die fachliche und didaktische Arbeit beginnt mit der Planung. Daraus entsteht ein Blogbeitrag als zentrales Arbeitsdokument. Wenn gewünscht, kann anschließend eine Präsentation aus diesem finalen Blogbeitrag abgeleitet werden.
-
-Der Agent ist dabei kein technisches Steuerinstrument, sondern ein didaktisches Werkzeug. Er hilft, Gedanken zu ordnen, Ziele zu schärfen, Lernwege zu strukturieren und Inhalte so aufzubereiten, dass sie für Lehre, Reflexion und Austausch nutzbar werden.
-
-### Wofür der Agent gedacht ist
-
-- zur Unterstützung bei der Planung von Lehrveranstaltungen
-- zur strukturierten Entwicklung von Blogbeiträgen
-- zur Ableitung von Präsentationen auf Grundlage des finalen Blogbeitrags
-
-### Zentrale Idee
-
-Der Blog ist das Herzstück der Arbeit. Hier werden Inhalte gebündelt, ausgearbeitet und in eine Form gebracht, die sowohl für die Lehre als auch für die Veröffentlichung geeignet ist. Die Präsentation entsteht nicht unabhängig davon, sondern baut auf dem finalen Blogbeitrag auf.
-
-Das schafft Klarheit: Erst wird inhaltlich und didaktisch gearbeitet, dann kann aus dieser Grundlage eine Präsentation entwickelt werden.
-
-### Nutzung
-
-Der Agent leitet den Arbeitsmodus aus dem Nutzeranliegen ab. Ein expliziter Einstieg über `/create` ist möglich, aber nicht der einzige zulässige Startpunkt. Semantisch eindeutige Anliegen und Statusmeldungen werden gemäß Contract gleichwertig interpretiert.
-
-Von dort aus begleitet der Agent die Ausarbeitung im Dialog: ruhig, fokussiert und in enger Zusammenarbeit mit den Nutzenden.
-
-Die Arbeit ist ko-kreativ angelegt. Der Agent macht Vorschläge, strukturiert Inhalte, unterstützt beim Formulieren und hilft dabei, didaktische Entscheidungen sichtbar zu machen. Er übernimmt nicht die Lehrplanung, sondern unterstützt sie.
-
-Wenn aus dem finalen Blogbeitrag zusätzlich eine Präsentation entstehen soll, kann diese anschließend aus der bereits erarbeiteten Grundlage abgeleitet werden.
-
-### Didaktischer Mehrwert
-
-- unterstützt eine strukturierte Planung von Lehrveranstaltungen
-- stärkt die Entwicklung aktiver Lernformate
-- fördert Reflexion, Diskussion und nachvollziehbare Begründungen
-- orientiert sich an didaktischer Qualität statt an schneller Texterzeugung
-
-### Charakter des Systems
-
-Der Agent arbeitet zurückhaltend und unterstützend. Er ist auf didaktische Klärung ausgerichtet, nicht auf technische Komplexität. Dadurch bleibt die Zusammenarbeit verständlich, fokussiert und anschlussfähig für unterschiedliche Lehr- und Lernsituationen.
-
-### Verbindung zum Blog und zu OER
-
-Der SciBlog iWIP versteht den Blog als OER-Angebot. Inhalte können veröffentlicht, weiterverwendet und in neuen Lehrzusammenhängen erneut aufgegriffen werden. Der Agent unterstützt diese Erstellung, indem er die Ausarbeitung von der ersten Planung bis zum veröffentlichbaren Blogbeitrag begleitet.
-
-### Beispielhafter Ablauf
-
-1. Planung einer Lehrveranstaltung oder Lerneinheit
-2. Ausarbeitung eines Blogbeitrags als zentrales Arbeitsdokument
-3. optionale Ableitung einer Präsentation aus dem finalen Blogbeitrag
-
----
-
-## 📖 Lizenz
-
-Die Inhalte des Blogs werden – sofern nicht anders angegeben – unter einer **Creative Commons Lizenz (CC BY-SA 4.0)** veröffentlicht.
-
-Der **Agent** steht ebenfalls unter einer **Creative Commons Lizenz (CC BY-SA 4.0)** Lizenz (siehe `ai_agents/LICENSE.md`).
+Die Inhalte des Blogs werden, sofern nicht anders angegeben, unter der Lizenz **CC BY-SA 4.0** veröffentlicht.
 
 [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 
----
-
-## 👤 Autor
+## Autor
 
 **Prof. Dr. Matthias Söll**  
 Universität Rostock  
 Institut für Wirtschaftspädagogik
+Lehrstuhl für Wirtschaftsdidaktik mit dem Schwerpunkt digitales Lehren und Lernen in der beruflichen Bildung
 
-[https://matthiassoell.github.io/iWIP/](https://matthiassoell.github.io/iWIP/)
-
----
-
-## ℹ️ Hinweis
-
-Dieses Repository dient in erster Linie der **Dokumentation der technischen Infrastruktur** des SciBlog iWIP.  
-Die Inhalte werden über den Blog selbst veröffentlicht.
+[https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/](https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/)

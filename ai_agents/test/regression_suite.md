@@ -1,7 +1,5 @@
 # Regression Suite – SciBlog iWIP Agent
 
-Version: 1.0.0
-Status: Regression- und Pruefkatalog fuer die Agentenlogik
 Scope: zentrale didaktische, prozessuale und governancebezogene Testfaelle zur Qualitaetssicherung des Agenten
 
 ## 🧭 Ziel

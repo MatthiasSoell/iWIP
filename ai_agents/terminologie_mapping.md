@@ -1,7 +1,5 @@
 # Terminologie-Mapping – SciBlog iWIP
 
-Version: 1.0.0
-Status: interne Referenz
 Kontext: sprachliche Vereinheitlichung in Agentensteuerdateien
 
 Dieses Mapping dient nur der internen Dokumentation.

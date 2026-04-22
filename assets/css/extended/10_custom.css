@@ -309,6 +309,7 @@ a.lit-doi::before {
 
 /* Universal table base for blog content */
 .post-content table{
+  display: table;
   width: 100%;
   margin: var(--space-m) 0;
   border-collapse: separate;

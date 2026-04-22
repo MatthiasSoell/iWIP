@@ -128,7 +128,7 @@ Sie lernen, ...
 
 # 🧭 Aufbau & Ablauf
 
-Gesamtdauer: ca. **90 Minuten**
+**Gesamtdauer:** ca. 90 Minuten ⏱️
 
 <div class="agenda">
 
