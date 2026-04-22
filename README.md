@@ -1,6 +1,6 @@
-# SciBlog iWIP – Offene Publikationsplattform für Wirtschaftsdidaktik
+# SciBlog iWIP – Offene Publikationsplattform für Wirtschaftspädagogik und -didaktik
 
-SciBlog iWIP ist eine offene Publikationsplattform für wirtschaftsdidaktische Lehr-, Lern- und Forschungsinhalte. 
+SciBlog iWIP ist eine offene Publikationsplattform für wirtschaftspädagogische und -didaktische Lehr-, Lern- und Forschungsinhalte. 
 
 Das Repository vereint Blog, OER, Präsentationen und didaktische Entwicklungsarbeit in einer gemeinsamen, transparent dokumentierten Infrastruktur.
 
@@ -20,7 +20,7 @@ Der veröffentlichte Blog ist hier erreichbar:
 
 ## Ziel des Projekts
 
-- Lehr-Lern- und Forschungsmaterialien der Wirtschaftsdidaktik offen zugänglich machen
+- Lehr-Lern- und Forschungsmaterialien der Wirtschaftspädagogik und -didaktik offen zugänglich machen
 - Materialien als Open Educational Resources veröffentlichen und weiterentwickeln
 - Lehrveranstaltungen und Entwicklungsprozesse transparent dokumentieren
 - Präsentationen direkt aus Markdown ableiten
@@ -109,7 +109,7 @@ Die Inhalte des Blogs werden, sofern nicht anders angegeben, unter der Lizenz **
 
 **Prof. Dr. Matthias Söll**  
 Universität Rostock  
-Institut für Wirtschaftspädagogik
+Institut für Wirtschaftspädagogik  
 Lehrstuhl für Wirtschaftsdidaktik mit dem Schwerpunkt digitales Lehren und Lernen in der beruflichen Bildung
 
 [https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/](https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/)
