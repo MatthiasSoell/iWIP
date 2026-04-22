@@ -94,7 +94,13 @@ oer:
 
 # 📚 Gegenstand  
 
-Im Mittelpunkt dieses Beitrags steht die technische Infrastruktur hinter dem SciBlog iWIP. Ziel ist eine **offene**, **frei verfügbare** und **OER-kompatible Plattform** für Wissenschaftskommunikation und Lehre. Die eingesetzten Tools ermöglichen sowohl **effizientes Publizieren** als auch **kollaboratives Arbeiten** mit Co-Autor:innen.
+Im Mittelpunkt dieses Beitrags steht die technische Infrastruktur hinter dem SciBlog iWIP. Ziel ist eine **offene**, **frei verfügbare** und **OER-kompatible Plattform** für Wissenschaftskommunikation und Lehre.
+
+Die eingesetzten Tools ermöglichen sowohl **effizientes Publizieren** als auch **kollaboratives Arbeiten** mit Co-Autor:innen.
+
+Der SciBlog iWIP ist jedoch kein rein technisches Projekt, sondern folgt einem **didaktischen Primat**: Die **technische Infrastruktur** dient der **Unterstützung von Lehr-Lern-Prozessen**, deren **Planung**, **Reflexion** und **Veröffentlichung**.
+
+Die Technik wird daher bewusst einfach gehalten und an didaktischen Anforderungen ausgerichtet – nicht umgekehrt.
 
 ---
 
@@ -137,21 +143,50 @@ Sie kommt insbesondere bei der **Ideensammlung**, der **Codeoptimierung**, der *
 
 ---
 
-## 5️⃣ Struktur  
+## 5️⃣ Didaktischer Planungsagent
+
+Ein zentrales Element des SciBlog iWIP ist ein didaktischer Planungsagent, der die Entwicklung von Lehr-Lern-Inhalten unterstützt.
+
+Der Agent verbindet den Arbeitszusammenhang:
+
+**Planung → Blog → Präsentation**
+
+Er arbeitet dialogisch und strukturierend und unterstützt insbesondere die didaktische Ausarbeitung von Inhalten. Der Blog dient dabei als zentrales Arbeitsdokument.
+
+Weitere Informationen finden sich in der Agentendokumentation:
+→ [ai_agents/README.md](../../../../ai_agents/README.md)
+
+---
+
+## 6️⃣ Automatisierte Metadatenpflege
+
+Zur Verbesserung der Auffindbarkeit und Interoperabilität werden Metadaten automatisiert gepflegt und aktualisiert.
+
+Dies erfolgt über GitHub Actions, die Änderungen an Metadaten im Repository automatisiert committen können.
+
+Dadurch können auch ohne manuelle Eingriffe Aktualisierungen im Repository entstehen.
+
+Diese Automatisierung ist insbesondere für die Anbindung an OER-Infrastrukturen wie OERSI relevant.
+
+---
+
+## 7️⃣ Struktur  
 
 - 📂 **Repository:** [`https://github.com/MatthiasSoell/iWIP/`](https://github.com/MatthiasSoell/iWIP/)  
 - 🌍 **Homepage:** [`https://matthiassoell.github.io/iWIP/`](https://matthiassoell.github.io/iWIP/)
 
 ---
 
-## 6️⃣ Zusammenarbeit  
+## 8️⃣ Zusammenarbeit  
 
 - 👥 Alle interessierten GitHub Nutzer:innen können über **Pull Requests** im Repository Beiträge oder Änderungen vorschlagen und so transparent dokumentiert als **Co-Autor:innen** am Projekt mitwirken.  
 - 🤝 **Collaborator:innen** können direkt im **Fork** [`https://github.com/kiwip2025/iWIP`](https://github.com/kiwip2025/iWIP) arbeiten, Beiträge erstellen und live unter [`https://kiwip2025.github.io/iWIP/`](https://kiwip2025.github.io/iWIP/) testen, bevor sie ihre Inhalte über Pull Requests in das Hauptprojekt einbringen.
 
 ---
 
-## 7️⃣ Versionierung & Reifegrad von Lehr-Lern-Einheiten
+<span id="versionierung-reifegrad-blogbeitraege"></span>
+
+## 9️⃣ Versionierung & Reifegrad von Blogbeiträgen
 
 **🛠️ Entwicklungslogik des SciBlog iWIP:** Neben der technischen Infrastruktur folgt der SciBlog iWIP einer transparenten Entwicklungslogik für Lehr-Lern-Einheiten.
 
@@ -193,3 +228,13 @@ Der Reifegrad ist **kein Qualitätsranking**.
 Er stellt keine Wertung dar, sondern macht transparent, **in welcher Phase des Entwicklungsprozesses sich eine Einheit befindet**.
 
 Eine Einheit im Status „In Erprobung“ ist nicht „schlechter“ als eine „Stabile“ Einheit – sie befindet sich lediglich in einer anderen Phase der didaktischen Weiterentwicklung.
+
+## 🔟 Versionierung der Plattform und des didaktischen Planungsagenten
+
+Die Versionierung erfolgt auf mehreren Ebenen:
+
+- **Lehr-Lern-Einheiten (OER):** eigene Versionierung und Reifegrad (z. B. 1.0, „In Erprobung“), siehe [oben](#versionierung-reifegrad-blogbeitraege)
+- **Plattform (SciBlog iWIP):** markiert größere Entwicklungsschritte (Version 1.0)
+- **Agent:** eigenständige Versionierung (Version 1.0)
+
+Kleinere technische Änderungen werden nicht versioniert.
