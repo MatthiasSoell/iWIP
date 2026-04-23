@@ -129,6 +129,86 @@
   - Fortbildungsinteressierte
   timeRequired: PT90M
   inLanguage: de
+- id: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/
+  url: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/
+  name: Wie finden Menschen ihren Weg in den Beruf?
+  creativeWorkStatus: Published
+  description: Die 90-minütige Veranstaltung führt in Berufswahl als individuellen, sozialen und institutionell gerahmten Prozess ein. Über Personas, einen systematisierenden Theorieüberblick, Super (1990), Wehking (2020) und Berufsorientierung wird der Bogen bis zum Übergangssystem gespannt.
+  datePublished: '2026-04-23'
+  dateModified: '2026-04-23'
+  creator:
+  - name: Prof. Dr. Matthias Söll
+    givenName: Matthias
+    familyName: Söll
+    affiliation: Universität Rostock · Institut für Wirtschaftspädagogik
+    url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
+    identifier: https://orcid.org/0000-0002-9717-3017
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  license:
+    name: CC BY-SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+  keywords:
+  - Bildungssysteme
+  - Berufswahl
+  - Berufsorientierung
+  - Übergangssystem
+  - Super
+  - Wehking
+  - Wirtschaftspädagogik
+  - Erste Schwelle
+  - Donald Super
+  learningResourceType: Lesson
+  educationalLevel:
+  - Bachelor (grundlagenorientiert)
+  audience:
+  - Studierende der Wirtschaftspädagogik
+  timeRequired: PT90M
+  inLanguage: de
+- id: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle_bsp/
+  url: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle_bsp/
+  name: Personas – Berufswahl an der ersten Schwelle (Einmündung)
+  creativeWorkStatus: Published
+  description: Vier Personas zur Berufswahl an der ersten Schwelle. Das Material dient als Arbeitsgrundlage für die Veranstaltung im Modul Bildungssysteme und unterstützt die Analyse individueller, sozialer und institutioneller Einflussfaktoren auf Berufseinmündungen.
+  datePublished: '2026-04-23'
+  dateModified: '2026-04-23'
+  creator:
+  - name: Prof. Dr. Matthias Söll
+    givenName: Matthias
+    familyName: Söll
+    affiliation: Universität Rostock · Institut für Wirtschaftspädagogik
+    url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
+    identifier: https://orcid.org/0000-0002-9717-3017
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  keywords:
+  - Bildungssysteme
+  - Berufswahl
+  - Erste Schwelle
+  - Personas
+  - Berufsorientierung
+  - Übergangssystem
+  - Wirtschaftspädagogik
+  - OER
+  - Open Educational Resources
+  - Unterrichtsmaterial
+  - Berufseinmündung
+  learningResourceType: Worksheet
+  educationalLevel:
+  - Bachelor (grundlagenorientiert)
+  - Berufliche Bildung
+  - Hochschule
+  audience:
+  - Studierende der Wirtschaftspädagogik
+  - Lehrende in der beruflichen Bildung
+  - Fortbildungsinteressierte
+  timeRequired: PT25M
+  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/deutsches_bildungssystem/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/deutsches_bildungssystem/
   name: Wie funktioniert das deutsche Bildungssystem?
