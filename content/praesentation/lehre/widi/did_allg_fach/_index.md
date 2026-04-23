@@ -54,10 +54,10 @@ todos:
 
 ## 🎯 Lehrziele
 
-- 🤔 **Verständnis reflektieren** – eigenes Didaktikbild prüfen. <!-- .element: class="fragment" -->
-- 🕰️ **Geschichte verstehen** – zentrale Entwicklungslinien kennen. <!-- .element: class="fragment" -->
-- 🧭 **Disziplinen unterscheiden** – Allgemeine vs. Fachdidaktik. <!-- .element: class="fragment" -->
-- 🔍 **Handeln begründen** – zentrale Prinzipien integrieren. <!-- .element: class="fragment" -->
+- 🤔 **Verständnis reflektieren:** – eigenes Didaktikbild prüfen. <!-- .element: class="fragment" -->
+- 🕰️ **Geschichte verstehen:** – zentrale Entwicklungslinien kennen. <!-- .element: class="fragment" -->
+- 🧭 **Disziplinen unterscheiden:** – Allgemeine vs. Fachdidaktik. <!-- .element: class="fragment" -->
+- 🔍 **Handeln begründen:** – zentrale Prinzipien integrieren. <!-- .element: class="fragment" -->
 
 ---
 
