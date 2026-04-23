@@ -68,6 +68,8 @@ jobs:
           server_pid=$!
           trap 'kill "$server_pid"' EXIT
 
+          sleep 3
+
           curl --fail --silent --show-error --retry 10 --retry-delay 1 "$REVEAL_URL" > /dev/null
 
           mkdir -p "$(dirname "$PDF_OUTPUT")"
