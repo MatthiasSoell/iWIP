@@ -23,6 +23,9 @@ reveal_hugo:
   transition: slide
   custom_theme: /iWIP/css/custom_reveal.css
 
+pdf_export: true
+pdf_filename: "widi.pdf"
+
 description: >
   Reveal-Präsentation zur Einführung in die Wirtschaftsdidaktik:
   Abgrenzung von Allgemeiner Didaktik, systematische Erarbeitung zentraler

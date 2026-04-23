@@ -13,6 +13,9 @@ draft: false
 outputs:
   - Reveal
 
+pdf_export: true
+pdf_filename: "warum_sciblog.pdf"
+
 description: >
   Reveal-Präsentation zur Vorstellung des SciBlog iWIP als integrierte, web-basierte
   Lehr-Lern-Umgebung. Die Präsentation thematisiert die Motivation (Tool-Zoo vs.

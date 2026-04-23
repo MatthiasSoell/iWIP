@@ -22,6 +22,9 @@ reveal_hugo:
   transition: slide
   custom_theme: /iWIP/css/custom_reveal.css
 
+pdf_export: true
+pdf_filename: "deutsches_bildungssystem.pdf"
+
 description: >
   Reveal-Präsentation zur 90-minütigen BISY-Vorlesung über Aufbau, Logik und
   rechtliche Rahmung des deutschen Bildungssystems mit Transfer auf

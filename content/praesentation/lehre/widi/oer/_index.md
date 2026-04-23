@@ -21,6 +21,9 @@ reveal_hugo:
   slideNumber: true
   hash: true
 
+pdf_export: true
+pdf_filename: "oer.pdf"
+
 description: >
   Reveal-Präsentation als Einstieg in Open Educational Resources (OER): Definitionen, UNESCO- und Deutschland-Bezüge, Gründe für OER sowie Arbeitsauftrag zur Erstellung eines eigenen OER inkl. Kriterien und Abgabe.
 

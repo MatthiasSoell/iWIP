@@ -21,6 +21,9 @@ reveal_hugo:
   transition: slide
   custom_theme: /iWIP/css/custom_reveal.css
 
+pdf_export: true
+pdf_filename: "did_allg_fach.pdf"
+
 description: >
   Reveal-Präsentation im Seminar „Grundlagen Fachdidaktik Wirtschaft“. Die Einheit führt in zentrale Entwicklungslinien, Begriffe und Unterscheidungen der Allgemeinen Didaktik und der Fachdidaktik ein und unterstützt Studierende bei der reflexiven Begründung didaktischen Handelns.
 

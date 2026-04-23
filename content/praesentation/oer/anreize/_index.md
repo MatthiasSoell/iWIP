@@ -20,6 +20,9 @@ reveal_hugo:
   slideNumber: true
   hash: true
 
+pdf_export: true
+pdf_filename: "anreize.pdf"
+
 description: >
   Reveal-Präsentation zum Co-WOERK-Teamtreffen: Einführung in Anreizbegriffe, Adaptionsphasen (u. a. nach Rogers/Hart et al.) und Anwendung der OER-Anreizmatrix zur standort- und zielgruppenspezifischen Maßnahmenplanung.
 

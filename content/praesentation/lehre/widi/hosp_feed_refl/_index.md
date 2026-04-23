@@ -22,6 +22,9 @@ reveal_hugo:
   transition: slide
   custom_theme: /iWIP/css/custom_reveal.css
 
+pdf_export: true
+pdf_filename: "hosp_feed_refl.pdf"
+
 description: >
   Reveal-Präsentation zur Professionalisierung angehender Lehrkräfte im Modul „Grundlagen Fachdidaktik Wirtschaft“. Im Fokus stehen Hospitation, Feedback und Reflexion als zentrale Elemente didaktischen Handelns.
 

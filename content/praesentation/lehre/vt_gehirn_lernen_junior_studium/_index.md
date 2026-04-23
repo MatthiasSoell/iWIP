@@ -21,6 +21,9 @@ reveal_hugo:
   transition: slide
   custom_theme: /iWIP/css/custom_reveal.css
 
+pdf_export: true
+pdf_filename: "vt_gehirn_lernen_junior_studium.pdf"
+
 description: >
   30-minütiger Lernimpuls für Schüler:innen der Oberstufe im Juniorstudium:
   Lerntypen-Mythos, kurze Lernmodelle, eigene Lernstrategien, digitale Tools

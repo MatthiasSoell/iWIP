@@ -13,6 +13,9 @@ draft: false
 outputs:
   - Reveal
 
+pdf_export: true
+pdf_filename: "warum_oer.pdf"
+
 description: >
   Reveal-Präsentation zur Einführung in Open Educational Resources (OER): Definition, bildungspolitische Einordnung (UNESCO, Deutschland) sowie emotionale, rationale und qualitative Begründungen für den Einsatz von OER in Bildung und Wissenschaft.
 
