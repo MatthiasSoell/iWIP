@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.147.7
-      REVEAL_URL: http://127.0.0.1:8080/praesentation/lehre/bisy/berufswahl_erste_schwelle/#/
+      REVEAL_URL: http://127.0.0.1:8080/iWIP/praesentation/lehre/bisy/berufswahl_erste_schwelle/#/
       PDF_OUTPUT: public/praesentation/lehre/bisy/berufswahl_erste_schwelle/berufswahl_erste_schwelle.pdf
     steps:
       - name: Checkout
@@ -64,7 +64,11 @@ jobs:
 
       - name: Export reveal presentation as PDF
         run: |
-          python3 -m http.server 8080 --directory public --bind 127.0.0.1 > /tmp/public-server.log 2>&1 &
+          rm -rf served
+          mkdir -p served/iWIP
+          cp -R public/. served/iWIP/
+
+          python3 -m http.server 8080 --directory served --bind 127.0.0.1 > /tmp/public-server.log 2>&1 &
           server_pid=$!
           
           trap 'kill "$server_pid"' EXIT
