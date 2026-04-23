@@ -21,7 +21,7 @@ reveal_hugo:
   transition: slide
   custom_theme: /iWIP/css/custom_reveal.css
 
-  pdf_export: true setzen
+  pdf_export: true
 * pdf_filename: "lerntypen_lernformen_pruefungsformen.pdf"
 
 description: >
