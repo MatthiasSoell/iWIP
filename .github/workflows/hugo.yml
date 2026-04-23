@@ -81,6 +81,12 @@ jobs:
 
           mkdir -p "$(dirname "$PDF_OUTPUT")"
 
+          echo "=== reveal html ==="
+          sed -n '1,220p' public/praesentation/lehre/bisy/berufswahl_erste_schwelle/index.html | grep -E 'script|link|reveal|plugin|markdown' || true
+
+          echo "=== likely reveal assets ==="
+          find public -type f | grep -E 'reveal|markdown|plugin|notes|zoom|search|highlight' | sort || true
+
           npx -y decktape \
             --pause 2000 \
             --chrome-arg=--no-sandbox \
