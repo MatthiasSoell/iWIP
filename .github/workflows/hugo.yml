@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.147.7
-      REVEAL_URL: http://127.0.0.1:8080/iWIP/praesentation/lehre/bisy/berufswahl_erste_schwelle/#/
+      REVEAL_URL: http://127.0.0.1:8080/praesentation/lehre/bisy/berufswahl_erste_schwelle/#/
       PDF_OUTPUT: public/praesentation/lehre/bisy/berufswahl_erste_schwelle/berufswahl_erste_schwelle.pdf
     steps:
       - name: Checkout
