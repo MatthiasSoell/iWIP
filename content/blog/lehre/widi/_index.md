@@ -34,8 +34,8 @@ oer:
       orcid: ""
 
   publisher:
-    name: "Universität Rostock"
-    url: "https://www.uni-rostock.de/"
+    name: "Prof. Dr. Matthias Söll"
+    url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
 
   license:
     label: "CC BY-SA 4.0"

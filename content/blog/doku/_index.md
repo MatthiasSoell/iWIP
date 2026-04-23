@@ -38,8 +38,8 @@ oer:
       orcid: ""
 
   publisher:
-    name: "SciBlog iWIP – Universität Rostock"
-    url: "https://matthiassoell.github.io/iWIP/"
+    name: "Prof. Dr. Matthias Söll"
+    url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
 
   license:
     label: "CC BY-SA 4.0"
