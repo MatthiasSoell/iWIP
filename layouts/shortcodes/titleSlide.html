@@ -46,12 +46,23 @@
   {{- with $page.Params.veranstaltung -}}{{- $event = . -}}{{- end -}}
 {{- end -}}
 
+{{- $pdfExport := $page.Params.pdf_export -}}
+{{- $pdfFilename := $page.Params.pdf_filename -}}
+{{- if not $pdfFilename -}}
+  {{- $pdfFilename = printf "%s.pdf" (path.Base (strings.TrimSuffix "/" $page.RelPermalink)) -}}
+{{- end -}}
+{{- $pdfLink := printf "%s%s" $page.RelPermalink $pdfFilename -}}
+
 {{- $hasEvent := or $type $event -}}
 
 <div class="titlecard{{ if not $hasEvent }} no-seminar{{ end }}">
   <div class="header-bar">
     <div class="buttons">
-      <button onclick="triggerPrint()" title="Präsentation speichern">📥</button>
+      {{ if $pdfExport }}
+        <a href="{{ $pdfLink }}" download title="PDF herunterladen">📥</a>
+      {{ else }}
+        <button onclick="triggerPrint()" title="Präsentation speichern">📥</button>
+      {{ end }}
 
       {{ with $blog }}
         <button onclick="location.href='{{ . }}'" title="Zur Blogansicht">📄</button>

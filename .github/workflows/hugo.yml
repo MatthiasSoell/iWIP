@@ -23,11 +23,18 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.147.7
+      REVEAL_URL: http://127.0.0.1:8080/iWIP/praesentation/lehre/bisy/berufswahl_erste_schwelle/#/
+      PDF_OUTPUT: public/praesentation/lehre/bisy/berufswahl_erste_schwelle/berufswahl_erste_schwelle.pdf
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
 
       - name: Install Hugo CLI
         run: |
@@ -54,6 +61,24 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Export reveal presentation as PDF
+        run: |
+          python3 -m http.server 8080 --directory public --bind 127.0.0.1 > /tmp/public-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+
+          curl --fail --silent --show-error --retry 10 --retry-delay 1 "$REVEAL_URL" > /dev/null
+
+          mkdir -p "$(dirname "$PDF_OUTPUT")"
+
+          npx -y decktape \
+            --pause 2000 \
+            --chrome-arg=--no-sandbox \
+            --chrome-arg=--disable-dev-shm-usage \
+            reveal \
+            "$REVEAL_URL" \
+            "$PDF_OUTPUT"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
