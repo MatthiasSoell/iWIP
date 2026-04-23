@@ -224,6 +224,7 @@ Verpflichtend zu pruefen:
 
 - `title`, `date`, `title_reveal`, `emojis`, `veranstaltungstyp`, `veranstaltung`, `author`, `blog`, `aliases`, `lastmod`, `draft`
 - `outputs`, `reveal_hugo.theme`, `reveal_hugo.slideNumber`, `reveal_hugo.hash`
+- `pdf_export`, `pdf_filename`
 - `description`, `summary`
 - `tags`, `categories`
 - `todos` (optional, darf leer sein)
@@ -233,6 +234,8 @@ Zusaetzlich verpflichtend zu pruefen:
 - `blog` zeigt auf die veroeffentlichte Blogansicht mit Site-Base, nicht auf einen technischen Content-Pfad.
 - `aliases` ist gemaess Reveal-Template relativ zur Site-Base gesetzt.
 - Sichtbarer Praesentationspfad, `aliases` und sichtbare Links/Hinweise sind untereinander konsistent.
+- `pdf_export` steht bei finalen Reveal-Praesentationen auf Root-Ebene und ist auf `true` gesetzt.
+- `pdf_filename` steht bei finalen Reveal-Praesentationen auf Root-Ebene und ist nicht leer. Standard ist `<ordnername>.pdf` aus dem letzten Ordner des technischen Reveal-Pfads; ein bereits vorhandener manueller Override bleibt zulaessig.
 
 ### Verbotene OER-Metadaten in Reveal
 

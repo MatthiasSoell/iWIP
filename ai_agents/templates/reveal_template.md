@@ -44,6 +44,9 @@ reveal_hugo:
   slideNumber: true
   hash: true
 
+pdf_export: true
+pdf_filename: "<ordnername>.pdf"
+
 description: >
   
 
@@ -68,6 +71,11 @@ Regeln:
 - Der sichtbare veroeffentlichte Praesentationspfad lautet `/iWIP/praesentation/<bereich>/<ordner>/`; fuer `widi` ist dies `/iWIP/praesentation/widi/<ordner>/`.
 - `aliases` fuehrt den Hugo-Alias relativ zur Site-Base; im Frontmatter steht daher `/praesentation/<bereich>/<ordner>/`, fuer `widi` `/praesentation/widi/<ordner>/`.
 - Sichtbare Links, Buttons und Hinweise verwenden nur den veroeffentlichten Pfad; technische Bundle-Orte und Alias-Semantik bleiben intern.
+- Fuer finale Reveal-Praesentationen ist `pdf_export: true` Standard.
+- `pdf_filename` steht auf Root-Ebene des Frontmatters und wird standardmaessig aus dem letzten Ordner des technischen Content-Pfads abgeleitet, z. B. `content/praesentation/lehre/bisy/einfuehrung/_index.md` -> `einfuehrung.pdf`.
+- Der uebergeordnete Bereichsordner wie `bisy`, `widi` oder `fortbildung` wird nicht automatisch in `pdf_filename` aufgenommen.
+- Wenn im Reveal-Frontmatter bereits ein `pdf_filename` vorhanden ist, bleibt dieser als manueller Override unveraendert.
+- `pdf_export` und `pdf_filename` stehen immer auf Root-Ebene und nie eingerueckt unter anderen Bloecken.
 - Metadaten müssen kontextspezifisch zur jeweiligen Präsentation ausgefüllt sein (keine Copy-Paste-Werte).
 - Pflichtfelder muessen semantisch gefuellt sein (keine Platzhalterwerte wie `TODO`, `tbd`, `-`, `...`).
 

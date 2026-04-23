@@ -36,6 +36,16 @@ Der Blog bildet das publizistische Zentrum des Projekts. Hier entstehen Blogarti
 
 Präsentationen werden mit reveal-hugo und reveal.js bereitgestellt. Sie sind bewusst als eigener Ausgabekanal organisiert und können aus vorhandenen Inhalten abgeleitet werden.
 
+Finale Präsentationen werden automatisch auch als PDF bereitgestellt. Dafür reicht im Front Matter:
+
+```yaml
+pdf_export: true
+```
+
+Der Dateiname wird standardmäßig aus dem Ordnernamen abgeleitet. Optional kann er manuell überschrieben werden.
+
+Die PDFs stehen direkt im Präsentationspfad zum Download bereit.
+
 ### Didaktischer Planungsagent
 
 Der integrierte didaktische Planungsagent (WiDi) unterstützt die Planung und strukturierte Ausarbeitung von Lehr-Lern-Inhalten. Er verbindet den Arbeitszusammenhang Planung → Blog → Präsentation und macht Entwicklungsprozesse nachvollziehbar und reflektierbar. Der Agent arbeitet dialogisch, strukturierend und ko-kreativ; der Blog dient dabei als zentrales Arbeitsdokument, aus dem bei Bedarf Präsentationen abgeleitet werden können. Er ist als unterstützendes Werkzeug konzipiert und ersetzt keine didaktischen Entscheidungen. Weitere Details, zentrale Dateien und die Nutzung sind in [ai_agents/README.md](ai_agents/README.md) dokumentiert.
