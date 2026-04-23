@@ -66,9 +66,16 @@ jobs:
         run: |
           python3 -m http.server 8080 --directory public --bind 127.0.0.1 > /tmp/public-server.log 2>&1 &
           server_pid=$!
+          
           trap 'kill "$server_pid"' EXIT
 
           sleep 3
+
+          echo "=== public tree ==="
+          find public -maxdepth 6 | sort
+
+          echo "=== target dir candidates ==="
+          find public -type f \( -name "index.html" -o -name "*.html" \) | sort | grep berufswahl || true
 
           curl --fail --silent --show-error --retry 10 --retry-delay 1 "$REVEAL_URL" > /dev/null
 
