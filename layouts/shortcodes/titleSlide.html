@@ -59,16 +59,16 @@
   <div class="header-bar">
     <div class="buttons">
       {{ if $pdfExport }}
-        <a href="{{ $pdfLink }}" download title="PDF herunterladen">📥</a>
+        <a class="title_action" href="{{ $pdfLink }}" download title="PDF herunterladen">📥</a>
       {{ else }}
-        <button onclick="triggerPrint()" title="Präsentation speichern">📥</button>
+        <button class="title_action" onclick="triggerPrint()" title="Präsentation speichern">📥</button>
       {{ end }}
 
       {{ with $blog }}
-        <button onclick="location.href='{{ . }}'" title="Zur Blogansicht">📄</button>
+        <button class="title_action" onclick="location.href='{{ . }}'" title="Zur Blogansicht">📄</button>
         <button
           type="button"
-          class="iwip_qr_trigger"
+          class="title_action iwip_qr_trigger"
           data-iwip-overlay-target="iwip_qr_overlay"
           aria-controls="iwip_qr_overlay"
           aria-expanded="false"
