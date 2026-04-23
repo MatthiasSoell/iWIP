@@ -21,6 +21,9 @@ reveal_hugo:
   transition: slide
   custom_theme: /iWIP/css/custom_reveal.css
 
+pdf_export: true
+pdf_filename: "uplan_ki_oer.pdf"
+
 description: >
   Reveal-Präsentation zur KI-gestützten Unterrichtsplanung im Fach AWT (Sekundarstufen I & II). 
   Die Präsentation verbindet curricular verankerte Zielperspektiven wirtschaftlicher Bildung 
