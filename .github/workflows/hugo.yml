@@ -23,8 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.147.7
-      REVEAL_URL: http://127.0.0.1:8080/iWIP/praesentation/lehre/bisy/berufswahl_erste_schwelle/#/
-      PDF_OUTPUT: public/praesentation/lehre/bisy/berufswahl_erste_schwelle/berufswahl_erste_schwelle.pdf
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -62,7 +60,7 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      - name: Export reveal presentation as PDF
+      - name: Export reveal presentations as PDFs
         run: |
           rm -rf served
           mkdir -p served/iWIP
@@ -75,17 +73,7 @@ jobs:
 
           sleep 3
 
-          curl --fail --silent --show-error --retry 10 --retry-delay 1 "$REVEAL_URL" > /dev/null
-
-          mkdir -p "$(dirname "$PDF_OUTPUT")"
-
-          npx -y decktape \
-            --pause 2000 \
-            --chrome-arg=--no-sandbox \
-            --chrome-arg=--disable-dev-shm-usage \
-            reveal \
-            "$REVEAL_URL" \
-            "$PDF_OUTPUT"
+          python3 scripts/export_reveal_pdfs.py
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
