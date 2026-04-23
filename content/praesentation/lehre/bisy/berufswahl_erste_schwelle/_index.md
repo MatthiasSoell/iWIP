@@ -22,8 +22,8 @@ reveal_hugo:
   transition: slide
   custom_theme: /iWIP/css/custom_reveal.css
 
-pdf_export = true
-pdf_filename = "berufswahl_erste_schwelle.pdf"
+pdf_export: true
+pdf_filename: "berufswahl_erste_schwelle.pdf"
 
 description: >
   Reveal-Präsentation zur 90-minütigen BISY-Vorlesung über Berufswahl an der
