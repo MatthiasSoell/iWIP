@@ -111,7 +111,7 @@ todos: []
   <li class="fragment">👥 Welche <b>sozialen Kontexte</b> und institutionellen Erfahrungen scheinen die Entscheidung mitzuprägen?</li>
   <li class="fragment">🧭 Welche <b>Erwartungen</b> an Arbeit, Beruf und Zukunft werden sichtbar?</li>
   <li class="fragment">💡 Wie lässt sich vorläufig <b>erklären</b>, warum diese Einmündung <b>für die Person plausibel</b> oder <b>attraktiv</b> erscheint?</li>
-  <li class="fragment"> 🎤 Bereiten Sie eine max. 2 Min Vorstellung vor</li>
+  <li class="fragment">🎤 Bereiten Sie eine max. 2 Min Vorstellung vor</li>
 </ul>
 
 ---
@@ -142,8 +142,7 @@ todos: []
 
 ### 🏛️ Berufswahl nach Wehking (2020)
 
-
-**Gesellschaftlichen Rahmenbedingungen**
+**Gesellschaftliche Rahmenbedingungen**
 
 <span class="spacer spacer-sm"></span>
 
@@ -204,7 +203,7 @@ Berufsorientierung unterstützt die **Abstimmung<br>zwischen Person und Berufswe
 
 <span class="spacer spacer-ssm"></span>
 
-<figure class="figure-frame figure-frame">
+<figure class="figure-frame">
   <img src="/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/Erfolglose_Marktteilnahmen.png" alt="Regionale Anteile erfolgloser Marktteilnahmen in den Arbeitsagenturbezirken im Jahr 2024">
 </figure>
 <p class="bild-quelle">Bildquelle: Bundesinstitut für Berufsbildung (2025, 26) · Ausschnitt · Lizenz: CC BY-SA 4.0</p>
@@ -229,7 +228,7 @@ Berufsorientierung unterstützt die **Abstimmung<br>zwischen Person und Berufswe
 Das **Übergangssystem** besteht aus Bildungsangeboten,
 > [!QUOTE]
 > „die unterhalb einer qualifizierten Berufsausbildung liegen bzw. zu keinem anerkannten Ausbildungsabschluss führen, sondern auf eine Verbesserung der individuellen Kompetenzen von Jugendlichen zur Aufnahme einer Ausbildung  [...] zielen [...].“
-<p class="zitat-quelle">Konsortium Bildungsberichterstattung (2006)</a> 
+<p class="zitat-quelle">Konsortium Bildungsberichterstattung (2006)</p>
 
 ---
 
