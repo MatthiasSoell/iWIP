@@ -144,7 +144,7 @@ todos: []
 
 **Gesellschaftliche Rahmenbedingungen**
 
-<span class="spacer spacer-sm"></span>
+<span class="spacer spacer-ssm"></span>
 
 <figure class="figure-frame">
   <img src="/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/Wehking.jpg" alt="Didaktisch reduzierte Darstellung von Wehkings Perspektive auf Berufswahl mit sozialer Herkunft, Institutionen, Übergängen und begrenzten Handlungsspielräumen">
