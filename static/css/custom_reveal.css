@@ -85,7 +85,7 @@
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  color: red;
+  color: var(--uni-blau);
   text-transform: none;
 }
 
