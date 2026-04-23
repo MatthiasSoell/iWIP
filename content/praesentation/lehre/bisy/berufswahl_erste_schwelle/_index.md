@@ -111,7 +111,7 @@ todos: []
   <li class="fragment">👥 Welche <b>sozialen Kontexte</b> und institutionellen Erfahrungen scheinen die Entscheidung mitzuprägen?</li>
   <li class="fragment">🧭 Welche <b>Erwartungen</b> an Arbeit, Beruf und Zukunft werden sichtbar?</li>
   <li class="fragment">💡 Wie lässt sich vorläufig <b>erklären</b>, warum diese Einmündung <b>für die Person plausibel</b> oder <b>attraktiv</b> erscheint?</li>
-  <li class="fragment">🎤 Bereiten Sie eine max. 2 Min Vorstellung vor</li>
+  <li class="fragment">🎤 Bereiten Sie eine <b>max. 2 Min Vorstellung</b> vor</li>
 </ul>
 
 ---
