@@ -27,6 +27,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           submodules: recursive
 
       - name: Setup Node.js
@@ -60,6 +61,21 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+      - name: Determine Reveal PDF export scope
+        id: pdf_scope
+        run: |
+          changed_paths_file="${RUNNER_TEMP}/reveal_changed_paths.txt"
+          : > "$changed_paths_file"
+
+          if [[ "${{ github.event_name }}" == "push" && "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]]; then
+            git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" > "$changed_paths_file"
+            echo "force_full_rebuild=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "force_full_rebuild=true" >> "$GITHUB_OUTPUT"
+          fi
+
+          echo "changed_paths_file=$changed_paths_file" >> "$GITHUB_OUTPUT"
+
       - name: Export reveal presentations as PDFs
         run: |
           rm -rf served
@@ -73,7 +89,16 @@ jobs:
 
           sleep 3
 
-          python3 scripts/export_reveal_pdfs.py
+          export_args=(
+            --changed-paths-file "${{ steps.pdf_scope.outputs.changed_paths_file }}"
+            --published-base-url "${{ steps.pages.outputs.base_url }}"
+          )
+
+          if [[ "${{ steps.pdf_scope.outputs.force_full_rebuild }}" == "true" ]]; then
+            export_args+=(--force-full-rebuild)
+          fi
+
+          python3 scripts/export_reveal_pdfs.py "${export_args[@]}"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
