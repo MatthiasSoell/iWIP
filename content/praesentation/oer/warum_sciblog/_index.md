@@ -56,10 +56,49 @@ todos:
 <div class="prof-diagram">
   
   <img src="motiv/motivation_1.png" class="plain">
+
+</div>
+{{< /rawhtml >}}
+<p class="bild-quelle" data-fragment-index="1">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: nicht frei verwendbar</p>
+
+---
+
+
+## 1. Motivation 💡
+
+{{< rawhtml >}}
+<div class="prof-diagram">
   
-  <img src="motiv/motivation_2.png" class="fragment plain">
-  <img src="motiv/motivation_3.png" class="fragment plain">
-  <img src="motiv/motivation_4.png" class="fragment plain">
+  <img src="motiv/motivation_2.png" class="plain">
+
+</div>
+{{< /rawhtml >}}
+<p class="bild-quelle" data-fragment-index="1">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: nicht frei verwendbar</p>
+
+---
+
+
+## 1. Motivation 💡
+
+{{< rawhtml >}}
+<div class="prof-diagram">
+  
+  <img src="motiv/motivation_3.png" class="plain">
+
+</div>
+{{< /rawhtml >}}
+<p class="bild-quelle" data-fragment-index="1">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: nicht frei verwendbar</p>
+
+---
+
+
+## 1. Motivation 💡
+
+{{< rawhtml >}}
+<div class="prof-diagram">
+  
+  <img src="motiv/motivation_4.png" class="plain">
+
 </div>
 {{< /rawhtml >}}
 <p class="bild-quelle" data-fragment-index="1">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: nicht frei verwendbar</p>
