@@ -313,8 +313,13 @@ jobs:
         run: |
           ruby <<'RUBY'
           require 'yaml'
+          require 'date'
 
-          metadata = YAML.load_file('metadata.yml')
+          metadata = YAML.safe_load(
+            File.read('metadata.yml'),
+            permitted_classes: [Date, Time],
+            aliases: true
+          )
           raise 'metadata.yml must contain a top-level array' unless metadata.is_a?(Array)
 
           ids = metadata.map { |entry| entry['id'] }
