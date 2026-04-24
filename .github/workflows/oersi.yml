@@ -358,6 +358,7 @@ jobs:
           require 'yaml'
           require 'net/http'
           require 'uri'
+          require 'date'
 
           def fetch_response(uri, limit = 5)
             raise 'Too many redirects' if limit <= 0
