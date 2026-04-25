@@ -9,7 +9,7 @@ permalink: "/blog/fortbildung/lerntypen_lernformen_pruefungsformen/"
 aliases:
   - "/blog/widi/lerntypen_lernformen_pruefungsformen/"
 
-description: "Fortbildungskonzept und -dokumentation einer 90-minütigen Online-Lehrkräftewerkstatt: Der Beitrag zeigt, wie Lerntypen, Lernformen und Prüfungsformen evidenzinformiert in die Unterrichts- und Schulentwicklung integriert werden – mit Inputblöcken, moderierter Plenumsdiskussion und konkretem Transferauftrag."
+description: "In dieser 90-minütigen Online-Fortbildung setzen sich Lehrkräfte an berufsbildenden Schulen mit dem Lerntypen-Mythos, zentralen Lernformen und Prüfungsformen auseinander. Die Seite verbindet evidenzinformierte Perspektiven mit konkreten Impulsen für Unterrichts- und Schulentwicklung."
 summary: "Konzept und Dokumentation einer 90-minütigen Lehrkräftefortbildung: Lerntypen-Mythos, Lernformen und Prüfungsformen – evidenzinformiert eingeordnet, diskutiert und in die Praxis transferiert."
 
 tags:
@@ -22,11 +22,11 @@ tags:
 
 categories:
   - Wirtschaftsdidaktik
-  - Lehre
+  - Fortbildung
 
 oer:
   is_oer: true
-  kind: "lesson"
+  kind: "workshop"
 
   creators:
     - type: "Person"
@@ -44,12 +44,6 @@ oer:
   publisher:
     name: "SciBlog iWIP"
     url: "https://matthiassoell.github.io/iWIP/"
-
-  source_organization:
-    - name: "Universität Rostock"
-      id: "https://ror.org/03zdwsf69"
-      url: "https://www.uni-rostock.de/"
-      type: "Organization"
 
   license:
     label: "CC BY-SA 4.0"
@@ -76,10 +70,13 @@ oer:
 
   keywords:
     - "Lerntypen"
+    - "Lerntypen-Mythos"
     - "Lernformen"
     - "Prüfungsformen"
     - "Lehrkräftefortbildung"
     - "Evidenzinformierung"
+    - "Unterrichtsentwicklung"
+    - "Schulentwicklung"
 
   time_required: "PT90M"
 

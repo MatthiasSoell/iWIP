@@ -49,12 +49,6 @@ oer:
     name: "SciBlog iWIP"
     url: "https://matthiassoell.github.io/iWIP/"
 
-  source_organization:
-    - name: "Universität Rostock"
-      id: "https://ror.org/03zdwsf69"
-      url: "https://www.uni-rostock.de/"
-      type: "Organization"
-
   license:
     label: "CC BY-SA 4.0"
     url: "https://creativecommons.org/licenses/by-sa/4.0/"

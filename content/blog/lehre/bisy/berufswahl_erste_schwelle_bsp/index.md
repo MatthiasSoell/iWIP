@@ -54,17 +54,11 @@ oer:
     name: "SciBlog iWIP"
     url: "https://matthiassoell.github.io/iWIP/"
 
-  source_organization:
-    - name: "Universität Rostock"
-      id: "https://ror.org/03zdwsf69"
-      url: "https://www.uni-rostock.de/"
-      type: "Organization"
-
   license:
     label: "CC BY 4.0"
     url: "https://creativecommons.org/licenses/by/4.0/"
 
-  image: "https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/Personas.png"
+  image: "https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg"
 
   version: "1.0"
   status: "pilot"   # draft | pilot | stable | aligned
