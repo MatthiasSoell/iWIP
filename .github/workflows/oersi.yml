@@ -30,10 +30,7 @@ jobs:
 
           BASE_URL = 'https://matthiassoell.github.io/iWIP'
 
-          def map_cover_image(path)
-            return "#{BASE_URL}/images/og/og_sciblog_lehre.jpg" if path.include?('content/blog/lehre/')
-            return "#{BASE_URL}/images/og/og_sciblog_fobi.jpg" if path.include?('content/blog/fortbildung/')
-            return "#{BASE_URL}/images/og/og_sciblog_oer.jpg" if path.include?('content/blog/oer/')
+          def map_cover_image(_path)
             "#{BASE_URL}/images/og/og_sciblog_default.jpg"
           end
 
