@@ -40,52 +40,76 @@ oer:
   kind: "worksheet"
 
   creators:
-    - name: "Prof. Dr. Matthias Söll"
+    - type: "Person"
+      name: "Prof. Dr. Matthias Söll"
       given_name: "Matthias"
       family_name: "Söll"
-      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      affiliation:
+        name: "Universität Rostock · Institut für Wirtschaftspädagogik"
+        id: "https://ror.org/03zdwsf69"
+        url: "https://www.uni-rostock.de/"
+        type: "Organization"
       url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
       orcid: "https://orcid.org/0000-0002-9717-3017"
 
   publisher:
-    name: "Prof. Dr. Matthias Söll"
-    url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
+    name: "SciBlog iWIP"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  source_organization:
+    - name: "Universität Rostock"
+      id: "https://ror.org/03zdwsf69"
+      url: "https://www.uni-rostock.de/"
+      type: "Organization"
 
   license:
     label: "CC BY 4.0"
     url: "https://creativecommons.org/licenses/by/4.0/"
 
-  source:
-    label: "SciBlog iWIP"
-    url: "https://matthiassoell.github.io/iWIP/"
+  image: "https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/Personas.png"
 
   version: "1.0"
   status: "pilot"   # draft | pilot | stable | aligned
 
-  in_language: "de"
-  learning_resource_type: "Worksheet"
+  in_language:
+    - "de"
+
+  learning_resource_type:
+    - id: "https://w3id.org/kim/hcrt/worksheet"
+      name: "Worksheet"
 
   educational_level:
-    - "Bachelor (grundlagenorientiert)"
-    - "Berufliche Bildung"
-    - "Hochschule"
+    - id: "https://w3id.org/kim/educationalLevel/level_6"
+      name: "Bachelor oder äquivalent"
+    - id: "https://w3id.org/kim/educationalLevel/level_4"
+      name: "Postsekundarer nicht-tertiärer Bereich"
+    - id: "https://w3id.org/kim/educationalLevel/level_A"
+      name: "Hochschule"
 
   audience:
     - "Studierende der Wirtschaftspädagogik"
     - "Lehrende in der beruflichen Bildung"
     - "Fortbildungsinteressierte"
 
+  keywords:
+    - "Berufswahl"
+    - "Erste Schwelle"
+    - "Personas"
+    - "Berufseinmündung"
+    - "Berufsorientierung"
+    - "Übergangssystem"
+    - "Bildungssysteme"
+    - "Wirtschaftspädagogik"
+
   time_required: "PT25M"
 
   about:
-    - term: "Berufswahl"
-    - term: "Erste Schwelle"
-    - term: "Personas"
-    - term: "Berufseinmündung"
-    - term: "Berufsorientierung"
-    - term: "Übergangssystem"
-    - term: "Bildungssysteme"
-    - term: "Wirtschaftspädagogik"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n270"
+      name: "Berufs- und Wirtschaftspädagogik"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n181"
+      name: "Wirtschaftspädagogik"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n33"
+      name: "Erziehungswissenschaften"
 
   todos: []
 ---

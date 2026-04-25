@@ -40,36 +40,53 @@ oer:
   kind: "lesson_plan"
 
   creators:
-    - name: "Prof. Dr. Matthias Söll"
+    - type: "Person"
+      name: "Prof. Dr. Matthias Söll"
       given_name: "Matthias"
       family_name: "Söll"
-      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      affiliation:
+        name: "Universität Rostock · Institut für Wirtschaftspädagogik"
+        id: "https://ror.org/03zdwsf69"
+        url: "https://www.uni-rostock.de/"
+        type: "Organization"
       url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
       orcid: "https://orcid.org/0000-0002-9717-3017"
 
   publisher:
-    name: "Prof. Dr. Matthias Söll"
-    url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
+    name: "SciBlog iWIP"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  source_organization:
+    - name: "Universität Rostock"
+      id: "https://ror.org/03zdwsf69"
+      url: "https://www.uni-rostock.de/"
+      type: "Organization"
 
   license:
     label: "CC BY 4.0"
     url: "https://creativecommons.org/licenses/by/4.0/"
 
-  source:
-    label: "SciBlog iWIP"
-    url: "https://matthiassoell.github.io/iWIP/"
+  image: "https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg"
 
   version: "1.0"
   status: "pilot"   # draft | pilot | stable | aligned
 
-  in_language: "de"
-  learning_resource_type: "Lesson Plan"
+  in_language:
+    - "de"
+
+  learning_resource_type:
+    - id: "https://w3id.org/kim/hcrt/lesson_plan"
+      name: "Lesson Plan"
 
   educational_level:
-    - "Sekundarstufe I"
-    - "Sekundarstufe II"
-    - "Berufliche Bildung"
-    - "Lehrerfortbildung"
+    - id: "https://w3id.org/kim/educationalLevel/level_2"
+      name: "Sekundarbereich I"
+    - id: "https://w3id.org/kim/educationalLevel/level_3"
+      name: "Sekundarbereich II"
+    - id: "https://w3id.org/kim/educationalLevel/level_4"
+      name: "Postsekundarer nicht-tertiärer Bereich"
+    - id: "https://w3id.org/kim/educationalLevel/level_C"
+      name: "Fortbildung"
 
   audience:
     - "AWT-Lehrkräfte"
@@ -77,17 +94,25 @@ oer:
     - "Lehrende in der beruflichen Bildung"
     - "Fortbildungsinteressierte"
 
+  keywords:
+    - "Haushaltsbudget"
+    - "Ökonomisches Prinzip"
+    - "Unterrichtsqualität"
+    - "Differenzierte Unterrichtsplanung"
+    - "Sekundarstufe I"
+    - "Sekundarstufe II"
+    - "KI-gestützte Unterrichtsplanung"
+    - "Open Educational Resources"
+
   time_required: "PT90M"
 
   about:
-    - term: "Haushaltsbudget"
-    - term: "Ökonomisches Prinzip"
-    - term: "Unterrichtsqualität"
-    - term: "Differenzierte Unterrichtsplanung"
-    - term: "Sekundarstufe I"
-    - term: "Sekundarstufe II"
-    - term: "KI-gestützte Unterrichtsplanung"
-    - term: "Open Educational Resources"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n270"
+      name: "Berufs- und Wirtschaftspädagogik"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n181"
+      name: "Wirtschaftspädagogik"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n33"
+      name: "Erziehungswissenschaften"
 
   todos: []
 ---

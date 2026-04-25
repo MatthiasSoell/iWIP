@@ -3,88 +3,80 @@
   url: https://matthiassoell.github.io/iWIP/blog/fortbildung/lerntypen_lernformen_pruefungsformen/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Lerntypen, Lernformen und Prüfungsformen in der Unterrichts- und Schulentwicklung
-  creativeWorkStatus: Published
   description: 'Fortbildungskonzept und -dokumentation einer 90-minütigen Online-Lehrkräftewerkstatt: Der Beitrag zeigt, wie Lerntypen, Lernformen und Prüfungsformen evidenzinformiert in die Unterrichts- und Schulentwicklung integriert werden – mit Inputblöcken, moderierter Plenumsdiskussion und konkretem Transferauftrag.'
-  datePublished: '2026-03-13'
-  dateModified: '2026-03-13'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+    name: CC BY-SA 4.0
+  learningResourceType:
+  - id: https://w3id.org/kim/hcrt/text
+    name: Text
+  educationalLevel:
+  - id: https://w3id.org/kim/educationalLevel/level_C
+    name: Fortbildung
+  about:
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2026-03-13'
+  dateModified: '2026-03-13'
   publisher:
     name: SciBlog iWIP
     url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: &1
-  - name: Universitaet Rostock
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
     id: https://ror.org/03zdwsf69
     url: https://www.uni-rostock.de/
-    type: Organization
-  license:
-    id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/
   keywords:
   - Lerntypen
   - Lernformen
   - Prüfungsformen
   - Lehrkräftefortbildung
   - Evidenzinformierung
-  - Didaktik
-  learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
-    name: Text
-  about:
-  - &2
-    id: https://w3id.org/kim/hochschulfaechersystematik/n33
-    name: Erziehungswissenschaften
   timeRequired: PT90M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/fortbildung/uplan_ki_oer/
   url: https://matthiassoell.github.io/iWIP/blog/fortbildung/uplan_ki_oer/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Unterricht planen mit KI – Wirtschaft unterrichten mit freien Bildungsmaterialien
-  creativeWorkStatus: Published
   description: Fortbildungskonzept und -dokumentation zur KI-gestützten Unterrichtsplanung im Fach AWT (Sekundarstufen I & II). Der Beitrag verbindet curricular verankerte Zielperspektiven der Bildung im Fach AWT mit Unterrichtsqualität (Sicht- und Tiefenstrukturen) und zeigt, wie KI dialogisch zur professionellen Planung genutzt werden kann.
-  datePublished: '2026-03-02'
-  dateModified: '2026-03-02'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
-  publisher:
-    name: SciBlog iWIP
-    url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
   license:
     id: https://creativecommons.org/licenses/by/4.0/
-    name: CC BY 4.0
     url: https://creativecommons.org/licenses/by/4.0/
-  keywords:
-  - KI
-  - Unterrichtsplanung
-  - Wirtschaftsdidaktik
-  - AWT
-  - Unterrichtsqualität
-  - Sicht- und Tiefenstrukturen
-  - OER
-  - Open Educational Resources
-  - Lehrerfortbildung
-  - Digitale Bildung
-  - KI-gestützte Unterrichtsplanung
-  - Ökonomische Mündigkeit
-  - Dialogische Planung
+    name: CC BY 4.0
   learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
+  - id: https://w3id.org/kim/hcrt/text
     name: Text
   educationalLevel:
   - id: https://w3id.org/kim/educationalLevel/level_2
@@ -92,59 +84,61 @@
   - id: https://w3id.org/kim/educationalLevel/level_3
     name: Sekundarbereich II
   - id: https://w3id.org/kim/educationalLevel/level_4
-    name: Postsekundarer nicht-tertiaerer Bereich
+    name: Postsekundarer nicht-tertiärer Bereich
   - id: https://w3id.org/kim/educationalLevel/level_C
     name: Fortbildung
   about:
-  - &3
-    id: https://w3id.org/kim/hochschulfaechersystematik/n270
-    name: Berufs- und Wirtschaftspaedagogik
-  - *2
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2026-03-02'
+  dateModified: '2026-03-02'
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
+  keywords:
+  - KI-gestützte Unterrichtsplanung
+  - Wirtschaftsdidaktik
+  - Ökonomische Mündigkeit
+  - Unterrichtsqualität
+  - Sicht- und Tiefenstrukturen
+  - Dialogische Planung
+  - Open Educational Resources
   timeRequired: PT90M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/fortbildung/uplan_ki_oer_bsp/
   url: https://matthiassoell.github.io/iWIP/blog/fortbildung/uplan_ki_oer_bsp/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Haushaltsbudget und ökonomisches Prinzip – differenzierte Unterrichtsplanung für Sek I & II
-  creativeWorkStatus: Published
   description: Differenzierte Unterrichtsplanung zum Haushaltsbudget (Sek I & II), entwickelt als Arbeitsgrundlage für eine Fortbildung in Form einer Lehrkräftewerkstatt zur KI-gestützten Unterrichtsplanung.
-  datePublished: '2026-03-02'
-  dateModified: '2026-03-02'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
-  publisher:
-    name: SciBlog iWIP
-    url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
   license:
     id: https://creativecommons.org/licenses/by/4.0/
-    name: CC BY 4.0
     url: https://creativecommons.org/licenses/by/4.0/
-  keywords:
-  - Haushaltsbudget
-  - Ökonomisches Prinzip
-  - Unterrichtsplanung
-  - AWT
-  - Wirtschaftsdidaktik
-  - Differenzierung
-  - KI-gestützte Planung
-  - OER
-  - Open Educational Resources
-  - Lehrerfortbildung
-  - Unterrichtsqualität
-  - Differenzierte Unterrichtsplanung
-  - Sekundarstufe I
-  - Sekundarstufe II
-  - KI-gestützte Unterrichtsplanung
+    name: CC BY 4.0
   learningResourceType:
-    id: https://w3id.org/kim/hcrt/lesson_plan
+  - id: https://w3id.org/kim/hcrt/lesson_plan
     name: Lesson Plan
   educationalLevel:
   - id: https://w3id.org/kim/educationalLevel/level_2
@@ -152,136 +146,200 @@
   - id: https://w3id.org/kim/educationalLevel/level_3
     name: Sekundarbereich II
   - id: https://w3id.org/kim/educationalLevel/level_4
-    name: Postsekundarer nicht-tertiaerer Bereich
+    name: Postsekundarer nicht-tertiärer Bereich
   - id: https://w3id.org/kim/educationalLevel/level_C
     name: Fortbildung
   about:
-  - *3
-  - *2
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2026-03-02'
+  dateModified: '2026-03-02'
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
+  keywords:
+  - Haushaltsbudget
+  - Ökonomisches Prinzip
+  - Unterrichtsqualität
+  - Differenzierte Unterrichtsplanung
+  - Sekundarstufe I
+  - Sekundarstufe II
+  - KI-gestützte Unterrichtsplanung
+  - Open Educational Resources
   timeRequired: PT90M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Wie finden Menschen ihren Weg in den Beruf?
-  creativeWorkStatus: Published
   description: Die 90-minütige Veranstaltung führt in Berufswahl als individuellen, sozialen und institutionell gerahmten Prozess ein. Über Personas, einen systematisierenden Theorieüberblick, Super (1990), Wehking (2020) und Berufsorientierung wird der Bogen bis zum Übergangssystem gespannt.
-  datePublished: '2026-04-23'
-  dateModified: '2026-04-23'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
-  publisher:
-    name: SciBlog iWIP
-    url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/
-  keywords:
-  - Bildungssysteme
-  - Berufswahl
-  - Berufsorientierung
-  - Übergangssystem
-  - Super
-  - Wehking
-  - Wirtschaftspädagogik
-  - Erste Schwelle
-  - Donald Super
+    name: CC BY-SA 4.0
   learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
+  - id: https://w3id.org/kim/hcrt/text
     name: Text
   educationalLevel:
   - id: https://w3id.org/kim/educationalLevel/level_6
-    name: Bachelor oder aequivalent
+    name: Bachelor oder äquivalent
   about:
-  - *3
-  timeRequired: PT90M
-  inLanguage: de
-- id: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle_bsp/
-  url: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle_bsp/
-  image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
-  name: Personas – Berufswahl an der ersten Schwelle (Einmündung)
-  creativeWorkStatus: Published
-  description: Vier Personas zur Berufswahl an der ersten Schwelle. Das Material dient als Arbeitsgrundlage für die Veranstaltung im Modul Bildungssysteme und unterstützt die Analyse individueller, sozialer und institutioneller Einflussfaktoren auf Berufseinmündungen.
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
   datePublished: '2026-04-23'
   dateModified: '2026-04-23'
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
+  keywords:
+  - Bildungssysteme
+  - Berufswahl
+  - Berufsorientierung
+  - Übergangssystem
+  - Erste Schwelle
+  timeRequired: PT90M
+- id: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle_bsp/
+  url: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle_bsp/
+  image: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/Personas.png
+  name: Personas – Berufswahl an der ersten Schwelle (Einmündung)
+  description: Vier Personas zur Berufswahl an der ersten Schwelle. Das Material dient als Arbeitsgrundlage für die Veranstaltung im Modul Bildungssysteme und unterstützt die Analyse individueller, sozialer und institutioneller Einflussfaktoren auf Berufseinmündungen.
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
-  publisher:
-    name: SciBlog iWIP
-    url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
   license:
     id: https://creativecommons.org/licenses/by/4.0/
-    name: CC BY 4.0
     url: https://creativecommons.org/licenses/by/4.0/
-  keywords:
-  - Bildungssysteme
-  - Berufswahl
-  - Erste Schwelle
-  - Personas
-  - Berufsorientierung
-  - Übergangssystem
-  - Wirtschaftspädagogik
-  - OER
-  - Open Educational Resources
-  - Unterrichtsmaterial
-  - Berufseinmündung
+    name: CC BY 4.0
   learningResourceType:
-    id: https://w3id.org/kim/hcrt/worksheet
+  - id: https://w3id.org/kim/hcrt/worksheet
     name: Worksheet
   educationalLevel:
   - id: https://w3id.org/kim/educationalLevel/level_6
-    name: Bachelor oder aequivalent
+    name: Bachelor oder äquivalent
   - id: https://w3id.org/kim/educationalLevel/level_4
-    name: Postsekundarer nicht-tertiaerer Bereich
+    name: Postsekundarer nicht-tertiärer Bereich
   - id: https://w3id.org/kim/educationalLevel/level_A
     name: Hochschule
   about:
-  - *3
-  - *2
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2026-04-23'
+  dateModified: '2026-04-23'
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
+  keywords:
+  - Berufswahl
+  - Erste Schwelle
+  - Personas
+  - Berufseinmündung
+  - Berufsorientierung
+  - Übergangssystem
+  - Bildungssysteme
+  - Wirtschaftspädagogik
   timeRequired: PT25M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/deutsches_bildungssystem/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/deutsches_bildungssystem/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Wie funktioniert das deutsche Bildungssystem?
-  creativeWorkStatus: Published
   description: Die 90-minütige Veranstaltung führt in Aufbau, Logik und rechtliche Rahmung des deutschen Bildungssystems ein. Dabei steht die Perspektive der berulfichen Bildung im Fokus. Es werden Bildungsbiographien mit strukturellen Perspektiven verbunden. Die Veranstaltung schließt mit einer Recherche zum Bildungssystem in Mecklenburg-Vorpommern ab.
-  datePublished: '2026-04-14'
-  dateModified: '2026-04-15'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+    name: CC BY-SA 4.0
+  learningResourceType:
+  - id: https://w3id.org/kim/hcrt/text
+    name: Text
+  educationalLevel:
+  - id: https://w3id.org/kim/educationalLevel/level_6
+    name: Bachelor oder äquivalent
+  about:
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2026-04-14'
+  dateModified: '2026-04-15'
   publisher:
     name: SciBlog iWIP
     url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
-  license:
-    id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
   keywords:
   - Bildungssysteme
   - Deutsches Bildungssystem
@@ -289,510 +347,605 @@
   - Bildungswege
   - Föderalismus
   - Berufsbildung
-  - Schulrecht
   - Mecklenburg-Vorpommern
   - Subjektive und strukturelle Perspektive
   - Gesellschaft, Bildungssystem und Arbeitswelt
   - Rechtliche Rahmenbedingungen
   - Bildungssystem Mecklenburg-Vorpommern
+  - Schulrecht
   - Berufliche Orientierung
-  learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
-    name: Text
-  educationalLevel:
-  - id: https://w3id.org/kim/educationalLevel/level_6
-    name: Bachelor oder aequivalent
-  about:
-  - *3
   timeRequired: PT90M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/einfuehrung/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/einfuehrung/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Einführung in das Modul Bildungssysteme
-  creativeWorkStatus: Published
   description: Die Einführungsveranstaltung eröffnet das Modul Bildungssysteme im Kontext von Arbeit und Gesellschaft. Sie verbindet Kennenlernen, Modulüberblick inkl. Ziele und Gegenstände, Motivierung und organisatorische Hinweise.
-  datePublished: '2026-04-08'
-  dateModified: '2026-04-08'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
-  publisher:
-    name: SciBlog iWIP
-    url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/
-  keywords:
-  - Bildungssysteme
-  - Berufsbildung
-  - Bildungswege
-  - wissenschaftliches Arbeiten
-  - Hausarbeit
+    name: CC BY-SA 4.0
   learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
+  - id: https://w3id.org/kim/hcrt/text
     name: Text
   educationalLevel:
   - id: https://w3id.org/kim/educationalLevel/level_6
-    name: Bachelor oder aequivalent
+    name: Bachelor oder äquivalent
   about:
-  - *3
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2026-04-08'
+  dateModified: '2026-04-08'
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
+  keywords:
+  - Bildungssysteme
+  - Bildungswege
+  - Berufsbildung
+  - wissenschaftliches Arbeiten
+  - Hausarbeit
   timeRequired: PT60M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/vt_gehirn_lernen_junior_studium/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/vt_gehirn_lernen_junior_studium/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Dein Gehirn ist keine Festplatte – Wie Du Dein Lernen boostern kannst
-  creativeWorkStatus: Published
   description: 'Impuls im Juniorstudium an der Universität Rostock für Schüler:innen: Lerntypen-Mythos, Lerntheorien, persönliche Lernstrategien, digitale Tools und soziale Lernprozesse im Rahmen einer 30-minütigen Veranstaltung.'
-  datePublished: '2026-03-20'
-  dateModified: '2026-04-11'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
-  publisher:
-    name: SciBlog iWIP
-    url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/
-  keywords:
-  - Lernen
-  - Lerntypen
-  - Oberstufe
-  - Juniorstudium
-  - Lernstrategien
-  - Studierendenorientierung
-  - Lerntypen-Mythos
-  - Selbstreguliertes Lernen
-  - Digitales Lernen
+    name: CC BY-SA 4.0
   learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
+  - id: https://w3id.org/kim/hcrt/text
     name: Text
   educationalLevel:
   - id: https://w3id.org/kim/educationalLevel/level_3
     name: Sekundarbereich II
   about:
-  - *3
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2026-03-20'
+  dateModified: '2026-04-11'
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
+  keywords:
+  - Lerntypen-Mythos
+  - Lernstrategien
+  - Selbstreguliertes Lernen
+  - Digitales Lernen
   timeRequired: PT30M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/widi/did_allg_fach/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/widi/did_allg_fach/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Allgemeine Didaktik und Fachdidaktik
-  creativeWorkStatus: Published
   description: Ausgangspunkt dieser Lehr-Lern-Einheit ist das eigene Verständnis von Didaktik. Auf dieser Basis werden zentrale Entwicklungslinien der Didaktik nachvollzogen und die Allgemeine Didaktik von den Fachdidaktiken abgegrenzt.
-  datePublished: '2025-10-22'
-  dateModified: '2025-10-22'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+    name: CC BY-SA 4.0
+  learningResourceType:
+  - id: https://w3id.org/kim/hcrt/text
+    name: Text
+  educationalLevel:
+  - id: https://w3id.org/kim/educationalLevel/level_6
+    name: Bachelor oder äquivalent
+  about:
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2025-10-22'
+  dateModified: '2025-10-22'
   publisher:
     name: SciBlog iWIP
     url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
-  license:
-    id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
   keywords:
   - Didaktik
   - Allgemeine Didaktik
   - Fachdidaktik
-  - Wirtschaftsdidaktik
-  - Unterricht
-  - OER
   - Unterrichtsgestaltung
-  learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
-    name: Text
-  educationalLevel:
-  - id: https://w3id.org/kim/educationalLevel/level_6
-    name: Bachelor oder aequivalent
-  about:
-  - *2
-  - *3
+  - Wirtschaftsdidaktik
   timeRequired: PT90M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/widi/hosp_feed_refl/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/widi/hosp_feed_refl/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Hospitation, Feedback & Reflexion
-  creativeWorkStatus: Published
   description: 'In dieser Lehr-Lern-Einheit entwickeln Sie Ihr Verständnis von Didaktik weiter: Anhand von Hospitation, Feedback und Reflexion wird die eigene Professionalisierung als Lehrperson in den Blick genommen.'
-  datePublished: '2025-11-26'
-  dateModified: '2025-11-26'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
-  publisher:
-    name: SciBlog iWIP
-    url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/
-  keywords:
-  - Didaktik
-  - Reflexion
-  - Feedback
-  - Hospitation
-  - Professionalisierung
-  - ALACT
-  - OER
-  - ALACT-Modell
-  - Lehrer:innenhandeln
+    name: CC BY-SA 4.0
   learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
+  - id: https://w3id.org/kim/hcrt/text
     name: Text
   educationalLevel:
   - id: https://w3id.org/kim/educationalLevel/level_6
-    name: Bachelor oder aequivalent
+    name: Bachelor oder äquivalent
   about:
-  - *2
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2025-11-26'
+  dateModified: '2025-11-26'
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
+  keywords:
+  - Hospitation
+  - Feedback
+  - Reflexion
+  - Professionalisierung
+  - ALACT-Modell
+  - Lehrer:innenhandeln
   timeRequired: PT90M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/widi/methoden_medien/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/widi/methoden_medien/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Methoden & Medien
-  creativeWorkStatus: Published
   description: Ausgangspunkt der Lehr-Lern-Einheit ist die Reflexion einer eigenen OER-Entwicklung. Anschließend werden Systematisierungen von Methoden und Medien kennengelernt und erprobt. Es wird diskutiert, wie sich daraus begründete Entscheidungen für die Gestaltung von Wirtschaftsunterricht ableiten lassen.
-  datePublished: '2025-11-19'
-  dateModified: '2025-11-19'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
-  publisher:
-    name: SciBlog iWIP
-    url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/
-  keywords:
-  - Methoden
-  - Medien
-  - Wirtschaftsdidaktik
-  - Unterrichtsgestaltung
-  - OER
-  - Didaktik
+    name: CC BY-SA 4.0
   learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
+  - id: https://w3id.org/kim/hcrt/text
     name: Text
   educationalLevel:
   - id: https://w3id.org/kim/educationalLevel/level_6
-    name: Bachelor oder aequivalent
+    name: Bachelor oder äquivalent
   about:
-  - *3
-  - *2
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2025-11-19'
+  dateModified: '2025-11-19'
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
+  keywords:
+  - Methoden
+  - Medien
+  - Unterrichtsgestaltung
+  - Wirtschaftsdidaktik
   timeRequired: PT90M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/widi/oer/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/widi/oer/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Frei nutzbare Lehr-Lern-Materialien – OER
-  creativeWorkStatus: Published
   description: In dieser Lehr-Lern-Einheit werden die Grundlagen von OER, die Bedeutung offener Lizenzen, Möglichkeiten der Suche und Nutzung sowie die Erstellung eigener OER kennengelernt.
-  datePublished: '2025-11-05'
-  dateModified: '2025-11-05'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
   - name: Marie-Christin Hamann
+    type: Person
     givenName: Marie-Christin
     familyName: Hamann
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
   - name: Laura Wolf
+    type: Person
     givenName: Laura
     familyName: Wolf
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+    name: CC BY-SA 4.0
+  learningResourceType:
+  - id: https://w3id.org/kim/hcrt/text
+    name: Text
+  educationalLevel:
+  - id: https://w3id.org/kim/educationalLevel/level_6
+    name: Bachelor oder äquivalent
+  about:
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2025-11-05'
+  dateModified: '2025-11-05'
   publisher:
     name: SciBlog iWIP
     url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
-  license:
-    id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
   keywords:
-  - OER
-  - Lehrmaterial
-  - Wissenschaft
+  - Open Educational Resources (OER)
   - Creative Commons
   - Offene Lizenzen
   - TULLU
-  - OER-Strategie
-  - Open Educational Resources (OER)
   - OER finden und einsetzen
   - OER erstellen
   - UNESCO (Bildungsagenda 2030 / OER-Empfehlung)
   - OER-Strategie (Deutschland)
   - Metadaten / Auffindbarkeit (OERSI)
-  learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
-    name: Text
-  educationalLevel:
-  - id: https://w3id.org/kim/educationalLevel/level_6
-    name: Bachelor oder aequivalent
-  about:
-  - *2
   timeRequired: PT90M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/widi/widi/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/widi/widi/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Wirtschaftsdidaktik
-  creativeWorkStatus: Published
   description: Aufbauend auf dem eigenen Verständnis von Allgemeiner Didaktik wird ein differenziertes Verständnis von Wirtschaftsdidaktik entwickelt.
-  datePublished: '2025-10-29'
-  dateModified: '2025-10-29'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+    name: CC BY-SA 4.0
+  learningResourceType:
+  - id: https://w3id.org/kim/hcrt/text
+    name: Text
+  educationalLevel:
+  - id: https://w3id.org/kim/educationalLevel/level_6
+    name: Bachelor oder äquivalent
+  about:
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2025-10-29'
+  dateModified: '2025-10-29'
   publisher:
     name: SciBlog iWIP
     url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
-  license:
-    id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
   keywords:
-  - Didaktik
-  - Fachdidaktik
   - Wirtschaftsdidaktik
   - Ökonomische Bildung
-  - Didaktische Modelle
-  - Unterricht
-  - OER
+  - Fachdidaktik
   - Themenfelder der Wirtschaftsdidaktik
   - Unterrichtsgestaltung
   - Kooperatives Lernen
   - Methodenreflexion
   - Berufliche Bildung
   - Allgemeine Bildung
-  learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
-    name: Text
-  educationalLevel:
-  - id: https://w3id.org/kim/educationalLevel/level_6
-    name: Bachelor oder aequivalent
-  about:
-  - *2
-  - *3
   timeRequired: PT90M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/oer/anreize/
   url: https://matthiassoell.github.io/iWIP/blog/oer/anreize/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Die OER-Anreizmatrix im Praxistest – Co-WOERK Teamtreffen
-  creativeWorkStatus: Published
   description: 'Arbeitsimpuls und Bericht aus einem OER-Projekttreffen: Ausgehend vom Begriff „Anreiz“, über Kategorien und Adaptionsphasen wird eine gemeinsame Werkstatt umgesetzt: Wie die OER-Anreizmatrix Denken und Handeln verbindet und in standort- sowie zielgruppenspezifische Maßnahmen übersetzt werden kann.'
-  datePublished: '2025-11-10'
-  dateModified: '2025-11-10'
+  creativeWorkStatus: Published
   creator:
   - name: Silvia Retzlaff
+    type: Person
     givenName: Silvia
     familyName: Retzlaff
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
   - name: Nancy Walter
+    type: Person
     givenName: Nancy
     familyName: Walter
     affiliation:
       name: Universität Potsdam
       type: Organization
+      id: https://ror.org/03bnmw459
+      url: https://www.uni-potsdam.de/de
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+    name: CC BY-SA 4.0
+  learningResourceType:
+  - id: https://w3id.org/kim/hcrt/text
+    name: Text
+  educationalLevel:
+  - id: https://w3id.org/kim/educationalLevel/level_A
+    name: Hochschule
+  - id: https://w3id.org/kim/educationalLevel/level_4
+    name: Postsekundarer nicht-tertiärer Bereich
+  about:
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2025-11-10'
+  dateModified: '2025-11-10'
   publisher:
     name: SciBlog iWIP
     url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
-  license:
-    id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
   keywords:
-  - OER
   - Open Educational Resources
-  - Open Educational Practices (OEP)
-  - Anreizmatrix
-  - Hochschullehre
-  - Co-WOERK
-  - Didaktik
-  - Community Building
   - Open Educational Practices
   - Anreize
   - Adoptionsphasen
   - Innovation Adoption
   - OER-Strategien
-  learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
-    name: Text
-  educationalLevel:
-  - id: https://w3id.org/kim/educationalLevel/level_A
-    name: Hochschule
-  - id: https://w3id.org/kim/educationalLevel/level_4
-    name: Postsekundarer nicht-tertiaerer Bereich
-  about:
-  - *2
+  - Community Building
   timeRequired: PT30M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/oer/warum_oer/
   url: https://matthiassoell.github.io/iWIP/blog/oer/warum_oer/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Warum OER?
-  creativeWorkStatus: Published
   description: 'In diesem Reflexionsbeitrag wird der Hintergrund freier Bildungsmaterialien erläutert. Aus der Perspektive der beruflichen Bildung werden drei zentrale Argumentationsfiguren für die Nutzung von Open Educational Resources (OER) vorgestellt: emotional, rational und qualitativ.'
-  datePublished: '2025-06-12'
-  dateModified: '2025-06-12'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
-  publisher:
-    name: SciBlog iWIP
-    url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/
-  keywords:
-  - OER
-  - Open Educational Resources
-  - Offene Bildung
-  - Berufliche Bildung
-  - Wissenschaftskommunikation
-  - Creative Commons
-  - OER-Strategien
+    name: CC BY-SA 4.0
   learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
+  - id: https://w3id.org/kim/hcrt/text
     name: Text
   educationalLevel:
   - id: https://w3id.org/kim/educationalLevel/level_A
     name: Hochschule
   - id: https://w3id.org/kim/educationalLevel/level_4
-    name: Postsekundarer nicht-tertiaerer Bereich
+    name: Postsekundarer nicht-tertiärer Bereich
   about:
-  - *2
-  - *3
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2025-06-12'
+  dateModified: '2025-06-12'
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
+  keywords:
+  - Open Educational Resources
+  - Offene Bildung
+  - Creative Commons
+  - OER-Strategien
+  - Berufliche Bildung
   timeRequired: PT20M
-  inLanguage: de
 - id: https://matthiassoell.github.io/iWIP/blog/oer/warum_sciblog/
   url: https://matthiassoell.github.io/iWIP/blog/oer/warum_sciblog/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Warum SciBlog iWIP? – Motivation, Funktionen, Learnings
-  creativeWorkStatus: Published
   description: Der Beitrag beschreibt die Entwicklung des SciBlog iWIP als integrierte Lehr-Lern-Umgebung. Ausgehend von der persönlichen Lehrpraxis werden Herausforderungen der Tool-Akkumulation, der OER-Arbeit und der digitalen Lehrplanung reflektiert und didaktisch begründete Gestaltungsentscheidungen erläutert.
-  datePublished: '2025-12-17'
-  dateModified: '2025-12-17'
+  creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
+    type: Person
     givenName: Matthias
     familyName: Söll
     affiliation:
       name: Universität Rostock · Institut für Wirtschaftspädagogik
       type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
     url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
     identifier: https://orcid.org/0000-0002-9717-3017
-  publisher:
-    name: SciBlog iWIP
-    url: https://matthiassoell.github.io/iWIP/
-  sourceOrganization: *1
   license:
     id: https://creativecommons.org/licenses/by-sa/4.0/
-    name: CC BY-SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/
-  keywords:
-  - OER
-  - Open Educational Resources
-  - Offene Bildung
-  - Hochschullehre
-  - Berufliche Bildung
-  - Lehrplanung
-  - Digitale Lehre
-  - Künstliche Intelligenz
-  - Wissenschaftskommunikation
-  - Digitale Lehr-Lern-Umgebungen
-  - Hochschuldidaktik
-  - Künstliche Intelligenz in der Lehre
-  - Open Educational Practices
+    name: CC BY-SA 4.0
   learningResourceType:
-    id: https://w3id.org/kim/hcrt/text
+  - id: https://w3id.org/kim/hcrt/text
     name: Text
   educationalLevel:
   - id: https://w3id.org/kim/educationalLevel/level_A
     name: Hochschule
   - id: https://w3id.org/kim/educationalLevel/level_4
-    name: Postsekundarer nicht-tertiaerer Bereich
+    name: Postsekundarer nicht-tertiärer Bereich
   about:
-  - *2
-  - *3
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2025-12-17'
+  dateModified: '2025-12-17'
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  sourceOrganization:
+  - name: Universität Rostock
+    type: Organization
+    id: https://ror.org/03zdwsf69
+    url: https://www.uni-rostock.de/
+  keywords:
+  - Open Educational Resources
+  - Offene Bildung
+  - Digitale Lehr-Lern-Umgebungen
+  - Lehrplanung
+  - Hochschuldidaktik
+  - Berufliche Bildung
+  - Künstliche Intelligenz in der Lehre
+  - Open Educational Practices
   timeRequired: PT20M
-  inLanguage: de

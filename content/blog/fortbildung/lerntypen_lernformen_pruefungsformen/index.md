@@ -28,48 +28,69 @@ oer:
   is_oer: true
   kind: "lesson"
 
-  # TULLU-Pflichtdaten (Frontend) + Basis für JSON-LD
   creators:
-    - name: "Prof. Dr. Matthias Söll"
+    - type: "Person"
+      name: "Prof. Dr. Matthias Söll"
       given_name: "Matthias"
       family_name: "Söll"
-      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      affiliation:
+        name: "Universität Rostock · Institut für Wirtschaftspädagogik"
+        id: "https://ror.org/03zdwsf69"
+        url: "https://www.uni-rostock.de/"
+        type: "Organization"
       url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
       orcid: "https://orcid.org/0000-0002-9717-3017"
 
   publisher:
-    name: "Prof. Dr. Matthias Söll"
-    url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
+    name: "SciBlog iWIP"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  source_organization:
+    - name: "Universität Rostock"
+      id: "https://ror.org/03zdwsf69"
+      url: "https://www.uni-rostock.de/"
+      type: "Organization"
 
   license:
     label: "CC BY-SA 4.0"
     url: "https://creativecommons.org/licenses/by-sa/4.0/"
 
-  source:
-    label: "SciBlog iWIP"
-    url: "https://matthiassoell.github.io/iWIP/"
+  image: "https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg"
 
-  # Version / Reifegrad (kein Qualitätsurteil)
   version: "1.0"
   status: "pilot"   # draft | pilot | stable | aligned
 
-  # OERSI / schema.org-nahe Felder
-  in_language: "de"
-  learning_resource_type: "Lesson"
+  in_language:
+    - "de"
+
+  learning_resource_type:
+    - id: "https://w3id.org/kim/hcrt/text"
+      name: "Text"
+
   educational_level:
-    - "Lehrkräftefortbildung"
+    - id: "https://w3id.org/kim/educationalLevel/level_C"
+      name: "Fortbildung"
+
   audience:
     - "Lehrkräfte an berufsbildenden Schulen"
+
+  keywords:
+    - "Lerntypen"
+    - "Lernformen"
+    - "Prüfungsformen"
+    - "Lehrkräftefortbildung"
+    - "Evidenzinformierung"
+
   time_required: "PT90M"
 
   about:
-    - term: "Lerntypen"
-    - term: "Lernformen"
-    - term: "Prüfungsformen"
-    - term: "Lehrkräftefortbildung"
-    - term: "Evidenzinformierung"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n270"
+      name: "Berufs- und Wirtschaftspädagogik"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n181"
+      name: "Wirtschaftspädagogik"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n33"
+      name: "Erziehungswissenschaften"
 
-  # Optional
   todos: []
 
 ---

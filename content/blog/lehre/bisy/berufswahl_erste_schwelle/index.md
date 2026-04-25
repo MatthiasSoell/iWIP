@@ -15,9 +15,6 @@ tags:
   - Berufswahl
   - Berufsorientierung
   - Übergangssystem
-  - Super
-  - Wehking
-  - Wirtschaftspädagogik
 
 categories:
   - Lehre
@@ -29,50 +26,72 @@ oer:
   kind: "lesson"
 
   creators:
-    - name: "Prof. Dr. Matthias Söll"
+    - type: "Person"
+      name: "Prof. Dr. Matthias Söll"
       given_name: "Matthias"
       family_name: "Söll"
-      affiliation: "Universität Rostock · Institut für Wirtschaftspädagogik"
+      affiliation:
+        name: "Universität Rostock · Institut für Wirtschaftspädagogik"
+        id: "https://ror.org/03zdwsf69"
+        url: "https://www.uni-rostock.de/"
+        type: "Organization"
       url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
       orcid: "https://orcid.org/0000-0002-9717-3017"
 
   publisher:
-    name: "Prof. Dr. Matthias Söll"
-    url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
+    name: "SciBlog iWIP"
+    url: "https://matthiassoell.github.io/iWIP/"
+
+  source_organization:
+    - name: "Universität Rostock"
+      id: "https://ror.org/03zdwsf69"
+      url: "https://www.uni-rostock.de/"
+      type: "Organization"
 
   license:
     label: "CC BY-SA 4.0"
     url: "https://creativecommons.org/licenses/by-sa/4.0/"
 
-  source:
-    label: "SciBlog iWIP"
-    url: "https://matthiassoell.github.io/iWIP/"
+  image: "https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg"
 
   version: "1.0"
   status: "pilot"
 
-  in_language: "de"
-  learning_resource_type: "Lesson"
+  in_language:
+    - "de"
+
+  learning_resource_type:
+    - id: "https://w3id.org/kim/hcrt/text"
+      name: "Text"
+
   educational_level:
-    - "Bachelor (grundlagenorientiert)"
+    - id: "https://w3id.org/kim/educationalLevel/level_6"
+      name: "Bachelor oder äquivalent"
+
   audience:
     - "Studierende der Wirtschaftspädagogik"
+
+  keywords:
+    - "Bildungssysteme"
+    - "Berufswahl"
+    - "Berufsorientierung"
+    - "Übergangssystem"
+    - "Erste Schwelle"
+
   time_required: "PT90M"
 
   about:
-    - term: "Bildungssysteme"
-    - term: "Berufswahl"
-    - term: "Berufsorientierung"
-    - term: "Übergangssystem"
-    - term: "Erste Schwelle"
-    - term: "Donald Super"
-    - term: "Wehking"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n270"
+      name: "Berufs- und Wirtschaftspädagogik"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n181"
+      name: "Wirtschaftspädagogik"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n33"
+      name: "Erziehungswissenschaften"
 
   todos:
     - "allgemeingültigere Quellen, bspw. für Wehking (2020) finden"
     - "Quelle für Überblick über Berufswahlansätze finden"
     - "Quelle für Holland und SCCT finden"
-
 ---
 
 <div class="top-toggle">

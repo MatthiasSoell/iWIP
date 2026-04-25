@@ -30,127 +30,6 @@ jobs:
 
           BASE_URL = 'https://matthiassoell.github.io/iWIP'
 
-          def map_cover_image(_path)
-            "#{BASE_URL}/images/og/og_sciblog_default.jpg"
-          end
-
-          UNIVERSITY_OF_ROSTOCK = {
-            'name' => 'Universitaet Rostock',
-            'id' => 'https://ror.org/03zdwsf69',
-            'url' => 'https://www.uni-rostock.de/',
-            'type' => 'Organization'
-          }.freeze
-          SOURCE_ORGANIZATION = [UNIVERSITY_OF_ROSTOCK].freeze
-
-          ORGANIZATION_MAP = {
-            'universitaet rostock · institut fuer wirtschaftspaedagogik' => {
-              'name' => 'Universitaet Rostock · Institut fuer Wirtschaftspaedagogik',
-              'id' => 'https://ror.org/03zdwsf69',
-              'url' => 'https://www.uni-rostock.de/',
-              'type' => 'Organization'
-            },
-            'universitaet potsdam' => {
-              'name' => 'Universitaet Potsdam',
-              'id' => 'https://ror.org/03bnmw459',
-              'url' => 'https://www.uni-potsdam.de/en/',
-              'type' => 'Organization'
-            }
-          }.freeze
-
-          LEARNING_RESOURCE_TYPE_MAP = {
-            'article' => {
-              'id' => 'https://w3id.org/kim/hcrt/text',
-              'name' => 'Text'
-            },
-            # HCRT has no exact concept for a lesson/unit page; keep the editorial value
-            # in frontmatter and export the conservative controlled fallback.
-            'lesson' => {
-              'id' => 'https://w3id.org/kim/hcrt/text',
-              'name' => 'Text'
-            },
-            'lesson plan' => {
-              'id' => 'https://w3id.org/kim/hcrt/lesson_plan',
-              'name' => 'Lesson Plan'
-            },
-            # Workshop documentation is not an HCRT concept; use the generic text type.
-            'workshop documentation' => {
-              'id' => 'https://w3id.org/kim/hcrt/text',
-              'name' => 'Text'
-            },
-            'worksheet' => {
-              'id' => 'https://w3id.org/kim/hcrt/worksheet',
-              'name' => 'Worksheet'
-            }
-          }.freeze
-
-          EDUCATIONAL_LEVEL_MAP = {
-            'bachelor (grundlagenorientiert)' => {
-              'id' => 'https://w3id.org/kim/educationalLevel/level_6',
-              'name' => 'Bachelor oder aequivalent'
-            },
-            'berufliche bildung' => {
-              'id' => 'https://w3id.org/kim/educationalLevel/level_4',
-              'name' => 'Postsekundarer nicht-tertiaerer Bereich'
-            },
-            'fortbildung' => {
-              'id' => 'https://w3id.org/kim/educationalLevel/level_C',
-              'name' => 'Fortbildung'
-            },
-            'hochschule' => {
-              'id' => 'https://w3id.org/kim/educationalLevel/level_A',
-              'name' => 'Hochschule'
-            },
-            'lehrerfortbildung' => {
-              'id' => 'https://w3id.org/kim/educationalLevel/level_C',
-              'name' => 'Fortbildung'
-            },
-            'lehrkraeftefortbildung' => {
-              'id' => 'https://w3id.org/kim/educationalLevel/level_C',
-              'name' => 'Fortbildung'
-            },
-            # The KIM vocabulary has no narrower concept for gymnasiale Oberstufe.
-            'oberstufe' => {
-              'id' => 'https://w3id.org/kim/educationalLevel/level_3',
-              'name' => 'Sekundarbereich II'
-            },
-            'sekundarstufe i' => {
-              'id' => 'https://w3id.org/kim/educationalLevel/level_2',
-              'name' => 'Sekundarbereich I'
-            },
-            'sekundarstufe ii' => {
-              'id' => 'https://w3id.org/kim/educationalLevel/level_3',
-              'name' => 'Sekundarbereich II'
-            }
-          }.freeze
-
-          ABOUT_CONCEPTS = {
-            'berufs_und_wirtschaftspaedagogik' => {
-              'id' => 'https://w3id.org/kim/hochschulfaechersystematik/n270',
-              'name' => 'Berufs- und Wirtschaftspaedagogik'
-            },
-            'erziehungswissenschaften' => {
-              'id' => 'https://w3id.org/kim/hochschulfaechersystematik/n33',
-              'name' => 'Erziehungswissenschaften'
-            },
-            'wirtschaftspaedagogik' => {
-              'id' => 'https://w3id.org/kim/hochschulfaechersystematik/n181',
-              'name' => 'Wirtschaftspaedagogik'
-            }
-          }.freeze
-
-          ABOUT_TERM_MAP = {
-            'berufliche bildung' => ['berufs_und_wirtschaftspaedagogik'],
-            'berufsorientierung' => ['berufs_und_wirtschaftspaedagogik'],
-            'bildungssysteme' => ['berufs_und_wirtschaftspaedagogik'],
-            'didaktik' => ['erziehungswissenschaften'],
-            'hochschuldidaktik' => ['erziehungswissenschaften'],
-            'oer' => ['erziehungswissenschaften'],
-            'open educational resources' => ['erziehungswissenschaften'],
-            'wirtschaftsdidaktik' => ['berufs_und_wirtschaftspaedagogik'],
-            'wirtschaftspaedagogik' => ['wirtschaftspaedagogik', 'berufs_und_wirtschaftspaedagogik']
-          }.freeze
-          DEFAULT_ABOUT_KEYS = ['berufs_und_wirtschaftspaedagogik'].freeze
-
           def present?(value)
             !(value.nil? || (value.respond_to?(:empty?) && value.empty?))
           end
@@ -164,73 +43,70 @@ jobs:
             value.to_s.gsub(/\s+/, ' ').strip
           end
 
-          def normalize_key(value)
-            text = normalize_text(value).downcase
-            text.tr('äöüß', 'aouss').gsub('ae', 'ae').gsub('oe', 'oe').gsub('ue', 'ue')
+          def required!(path, field_name, value)
+            return value if present?(value)
+
+            raise "#{path}: missing #{field_name}"
           end
 
-          def build_defined_term(id, name)
+          def required_array!(path, field_name, value)
+            raise "#{path}: missing #{field_name}" unless value.is_a?(Array) && value.any?
+
+            value
+          end
+
+          def normalize_defined_term(path, field_name, value)
+            raise "#{path}: #{field_name} entries must be objects" unless value.is_a?(Hash)
+
             {
-              'id' => id,
-              'name' => name
+              'id' => required!(path, "#{field_name}.id", normalize_text(value['id'])),
+              'name' => required!(path, "#{field_name}.name", normalize_text(value['name']))
             }
           end
 
-          def map_license(license)
-            return nil unless license.is_a?(Hash)
+          def normalize_organization(path, field_name, value)
+            raise "#{path}: #{field_name} must be an object" unless value.is_a?(Hash)
 
-            license_id = license['url']
-            return nil unless present?(license_id)
-
-            mapped = { 'id' => license_id }
-            mapped['name'] = normalize_text(license['label']) if present?(license['label'])
-            mapped['url'] = license_id
-            mapped
-          end
-
-          def map_organization(value)
-            return nil unless present?(value)
-
-            ORGANIZATION_MAP[normalize_key(value)] || {
-              'name' => normalize_text(value),
-              'type' => 'Organization'
+            organization = {
+              'name' => required!(path, "#{field_name}.name", normalize_text(value['name'])),
+              'type' => required!(path, "#{field_name}.type", normalize_text(value['type']))
             }
+            organization['id'] = normalize_text(value['id']) if present?(value['id'])
+            organization['url'] = normalize_text(value['url']) if present?(value['url'])
+            organization
           end
 
-          def map_learning_resource_type(value)
-            mapped = LEARNING_RESOURCE_TYPE_MAP[normalize_key(value)]
-            return nil unless mapped
+          def normalize_creator(path, value)
+            raise "#{path}: oer.creators entries must be objects" unless value.is_a?(Hash)
 
-            build_defined_term(mapped['id'], mapped['name'])
+            creator = {
+              'name' => required!(path, 'oer.creators.name', normalize_text(value['name']))
+            }
+            creator['type'] = normalize_text(value['type']) if present?(value['type'])
+            creator['givenName'] = normalize_text(value['given_name']) if present?(value['given_name'])
+            creator['familyName'] = normalize_text(value['family_name']) if present?(value['family_name'])
+            creator['affiliation'] = normalize_organization(path, 'oer.creators.affiliation', value['affiliation']) if value.key?('affiliation')
+            creator['url'] = normalize_text(value['url']) if present?(value['url'])
+            creator['identifier'] = normalize_text(value['orcid'] || value['identifier']) if present?(value['orcid'] || value['identifier'])
+            creator
           end
 
-          def map_educational_level(value)
-            mapped = EDUCATIONAL_LEVEL_MAP[normalize_key(value)]
-            return nil unless mapped
+          def normalize_license(path, value)
+            raise "#{path}: oer.license must be an object" unless value.is_a?(Hash)
 
-            build_defined_term(mapped['id'], mapped['name'])
+            license_url = required!(path, 'oer.license.url', normalize_text(value['url']))
+            license = {
+              'id' => license_url,
+              'url' => license_url
+            }
+            license['name'] = normalize_text(value['label']) if present?(value['label'])
+            license
           end
 
-          def deduplicate_terms(terms)
-            terms.compact.uniq { |term| term['id'] }
-          end
-
-          def map_about_terms(front, oer)
-            matched_keys = []
-
-            Array(front['tags']).each do |tag|
-              mapped_keys = ABOUT_TERM_MAP[normalize_key(tag)]
-              matched_keys.concat(mapped_keys) if mapped_keys
-            end
-
-            Array(oer['about']).each do |item|
-              term = item.is_a?(Hash) ? item['term'] : item
-              mapped_keys = ABOUT_TERM_MAP[normalize_key(term)]
-              matched_keys.concat(mapped_keys) if mapped_keys
-            end
-
-            matched_keys = DEFAULT_ABOUT_KEYS if matched_keys.empty?
-            deduplicate_terms(matched_keys.map { |key| ABOUT_CONCEPTS[key] })
+          def normalize_terms(path, field_name, values)
+            required_array!(path, field_name, values).map do |value|
+              normalize_defined_term(path, field_name, value)
+            end.uniq { |term| term['id'] }
           end
 
           entries = Dir.glob('content/blog/**/index.md').sort.map do |path|
@@ -246,69 +122,49 @@ jobs:
             oer = front['oer'] || {}
             next unless oer['is_oer'] == true
 
-            permalink = front['permalink']
-            next unless present?(permalink)
+            title = required!(path, 'title', normalize_text(front['title']))
+            description = normalize_text(front['description'] || front['summary'])
+            required!(path, 'description or summary', description)
+            permalink = required!(path, 'permalink', normalize_text(front['permalink']))
+            creators = required_array!(path, 'oer.creators', oer['creators']).map { |creator| normalize_creator(path, creator) }
+            required!(path, 'oer.image', normalize_text(oer['image']))
+            required_array!(path, 'oer.in_language', oer['in_language'])
+            required_array!(path, 'oer.learning_resource_type', oer['learning_resource_type'])
+            required_array!(path, 'oer.educational_level', oer['educational_level'])
+            required_array!(path, 'oer.about', oer['about'])
+            license = normalize_license(path, required!(path, 'oer.license', oer['license']))
+            required!(path, 'oer.publisher', oer['publisher'])
+            required_array!(path, 'oer.source_organization', oer['source_organization'])
 
             url = "#{BASE_URL}#{permalink}"
 
-            keywords = []
-            Array(front['tags']).each do |tag|
-              normalized = normalize_text(tag)
-              keywords << normalized if present?(normalized) && !keywords.include?(normalized)
-            end
-            Array(oer['about']).each do |item|
-              term = item.is_a?(Hash) ? item['term'] : item
-              normalized = normalize_text(term)
-              keywords << normalized if present?(normalized) && !keywords.include?(normalized)
-            end
+            item = {
+              'id' => url,
+              'url' => url,
+              'image' => normalize_text(oer['image']),
+              'name' => title,
+              'description' => description,
+              'creativeWorkStatus' => 'Published',
+              'creator' => creators,
+              'license' => license,
+              'learningResourceType' => normalize_terms(path, 'oer.learning_resource_type', oer['learning_resource_type']),
+              'educationalLevel' => normalize_terms(path, 'oer.educational_level', oer['educational_level']),
+              'about' => normalize_terms(path, 'oer.about', oer['about']),
+              'inLanguage' => required_array!(path, 'oer.in_language', oer['in_language']).map { |value| normalize_text(value) }
+            }
 
-            creators = Array(oer['creators']).map do |creator|
-              next unless creator.is_a?(Hash)
-
-              mapped = {}
-              mapped['name'] = normalize_text(creator['name']) if present?(creator['name'])
-              mapped['givenName'] = normalize_text(creator['given_name']) if present?(creator['given_name'])
-              mapped['familyName'] = normalize_text(creator['family_name']) if present?(creator['family_name'])
-              affiliation = map_organization(creator['affiliation'])
-              mapped['affiliation'] = affiliation if affiliation
-              mapped['url'] = creator['url'] if present?(creator['url'])
-              mapped['identifier'] = creator['orcid'] if present?(creator['orcid'])
-              mapped.empty? ? nil : mapped
-            end.compact
-
-            item = {}
-            item['id'] = url
-            item['url'] = url
-            item['image'] = map_cover_image(path)
-            item['name'] = normalize_text(front['title']) if present?(front['title'])
-            item['creativeWorkStatus'] = 'Published'
-
-            description = front['description'] || front['summary']
-            item['description'] = normalize_text(description) if present?(description)
             item['datePublished'] = normalize_scalar(front['date']) if present?(front['date'])
             item['dateModified'] = normalize_scalar(front['lastmod']) if present?(front['lastmod'])
-            item['creator'] = creators if creators.any?
             item['publisher'] = {
-              'name' => 'SciBlog iWIP',
-              'url' => 'https://matthiassoell.github.io/iWIP/'
+              'name' => required!(path, 'oer.publisher.name', normalize_text(oer['publisher']['name'])),
+              'url' => required!(path, 'oer.publisher.url', normalize_text(oer['publisher']['url']))
             }
-            item['sourceOrganization'] = SOURCE_ORGANIZATION
-
-            mapped_license = map_license(oer['license'] || {})
-            item['license'] = mapped_license if mapped_license
-
+            item['sourceOrganization'] = oer['source_organization'].map do |organization|
+              normalize_organization(path, 'oer.source_organization', organization)
+            end
+            keywords = Array(oer['keywords']).map { |value| normalize_text(value) }.reject(&:empty?).uniq
             item['keywords'] = keywords if keywords.any?
-            learning_resource_type = map_learning_resource_type(oer['learning_resource_type'])
-            item['learningResourceType'] = learning_resource_type if learning_resource_type
-
-            educational_level = deduplicate_terms(Array(oer['educational_level']).map { |value| map_educational_level(value) })
-            item['educationalLevel'] = educational_level if educational_level.any?
-
-            about = map_about_terms(front, oer)
-            item['about'] = about if about.any?
-
             item['timeRequired'] = normalize_text(oer['time_required']) if present?(oer['time_required'])
-            item['inLanguage'] = normalize_text(oer['in_language']) if present?(oer['in_language'])
             item
           end.compact
 
@@ -336,16 +192,42 @@ jobs:
             raise 'Missing id' unless entry['id']
             raise "Missing name for #{entry['id']}" unless entry['name']
             raise "Missing url for #{entry['id']}" unless entry['url']
+            raise "Missing description for #{entry['id']}" unless entry['description']
+            raise "Missing image for #{entry['id']}" unless entry['image']
             raise "Missing creativeWorkStatus for #{entry['id']}" unless entry['creativeWorkStatus'] == 'Published'
             raise "Missing license.id for #{entry['id']}" unless entry.dig('license', 'id')
+            raise "Missing license.url for #{entry['id']}" unless entry.dig('license', 'url')
             raise "sourceOrganization must not be a string for #{entry['id']}" if entry['sourceOrganization'].is_a?(String)
             raise "sourceOrganization must be an array for #{entry['id']}" unless entry['sourceOrganization'].is_a?(Array)
+            raise "Missing creator for #{entry['id']}" unless entry['creator'].is_a?(Array) && entry['creator'].any?
+            raise "learningResourceType must be an array for #{entry['id']}" unless entry['learningResourceType'].is_a?(Array) && entry['learningResourceType'].any?
+            raise "educationalLevel must be an array for #{entry['id']}" unless entry['educationalLevel'].is_a?(Array) && entry['educationalLevel'].any?
+            raise "about must be an array for #{entry['id']}" unless entry['about'].is_a?(Array) && entry['about'].any?
+            raise "inLanguage must be an array for #{entry['id']}" unless entry['inLanguage'].is_a?(Array) && entry['inLanguage'].any?
             raise "audience must not be exported for #{entry['id']}" if entry.key?('audience')
 
             entry['sourceOrganization'].each do |organization|
               raise "sourceOrganization entries must be objects for #{entry['id']}" unless organization.is_a?(Hash)
               raise "sourceOrganization.name missing for #{entry['id']}" unless organization['name']
               raise "sourceOrganization.type missing for #{entry['id']}" unless organization['type'] == 'Organization'
+            end
+
+            Array(entry['learningResourceType']).each do |term|
+              raise "learningResourceType entries must be objects for #{entry['id']}" unless term.is_a?(Hash)
+              raise "learningResourceType.id missing for #{entry['id']}" unless term['id']
+              raise "learningResourceType.name missing for #{entry['id']}" unless term['name']
+            end
+
+            Array(entry['educationalLevel']).each do |term|
+              raise "educationalLevel entries must be objects for #{entry['id']}" unless term.is_a?(Hash)
+              raise "educationalLevel.id missing for #{entry['id']}" unless term['id']
+              raise "educationalLevel.name missing for #{entry['id']}" unless term['name']
+            end
+
+            Array(entry['about']).each do |term|
+              raise "about entries must be objects for #{entry['id']}" unless term.is_a?(Hash)
+              raise "about.id missing for #{entry['id']}" unless term['id']
+              raise "about.name missing for #{entry['id']}" unless term['name']
             end
 
             Array(entry['creator']).each do |creator|
@@ -422,8 +304,8 @@ jobs:
                 urls << term['id']
               end
 
-              if entry['learningResourceType'].is_a?(Hash)
-                urls << entry['learningResourceType']['id']
+              Array(entry['learningResourceType']).each do |term|
+                urls << term['id'] if term.is_a?(Hash)
               end
 
               Array(entry['creator']).each do |creator|
