@@ -45,9 +45,6 @@ title = "SciBlog iWIP"
   # Welche Bereiche als „Hauptbereiche“ gelten (z. B. für Listen/Startseite)
   mainSections = ["blog", "posts"]
 
-  # Social Preview / OG-Images (absoluter Pfad unter baseURL)
-  images = ["/iWIP/bilder/logo_siblog_iwip_socmed.png"]
-
   # Meta
   description = "Ich bin Prof. Dr. Matthias Söll vom Institut für Wirtschaftspädagogik (iWIP) der Universität Rostock und blogge mit Open Educational Resources über Wissenschaft und Bildung."
 
