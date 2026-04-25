@@ -134,7 +134,6 @@ jobs:
             required_array!(path, 'oer.about', oer['about'])
             license = normalize_license(path, required!(path, 'oer.license', oer['license']))
             required!(path, 'oer.publisher', oer['publisher'])
-            required_array!(path, 'oer.source_organization', oer['source_organization'])
 
             url = "#{BASE_URL}#{permalink}"
 
@@ -159,9 +158,6 @@ jobs:
               'name' => required!(path, 'oer.publisher.name', normalize_text(oer['publisher']['name'])),
               'url' => required!(path, 'oer.publisher.url', normalize_text(oer['publisher']['url']))
             }
-            item['sourceOrganization'] = oer['source_organization'].map do |organization|
-              normalize_organization(path, 'oer.source_organization', organization)
-            end
             keywords = Array(oer['keywords']).map { |value| normalize_text(value) }.reject(&:empty?).uniq
             item['keywords'] = keywords if keywords.any?
             item['timeRequired'] = normalize_text(oer['time_required']) if present?(oer['time_required'])
@@ -197,20 +193,12 @@ jobs:
             raise "Missing creativeWorkStatus for #{entry['id']}" unless entry['creativeWorkStatus'] == 'Published'
             raise "Missing license.id for #{entry['id']}" unless entry.dig('license', 'id')
             raise "Missing license.url for #{entry['id']}" unless entry.dig('license', 'url')
-            raise "sourceOrganization must not be a string for #{entry['id']}" if entry['sourceOrganization'].is_a?(String)
-            raise "sourceOrganization must be an array for #{entry['id']}" unless entry['sourceOrganization'].is_a?(Array)
             raise "Missing creator for #{entry['id']}" unless entry['creator'].is_a?(Array) && entry['creator'].any?
             raise "learningResourceType must be an array for #{entry['id']}" unless entry['learningResourceType'].is_a?(Array) && entry['learningResourceType'].any?
             raise "educationalLevel must be an array for #{entry['id']}" unless entry['educationalLevel'].is_a?(Array) && entry['educationalLevel'].any?
             raise "about must be an array for #{entry['id']}" unless entry['about'].is_a?(Array) && entry['about'].any?
             raise "inLanguage must be an array for #{entry['id']}" unless entry['inLanguage'].is_a?(Array) && entry['inLanguage'].any?
             raise "audience must not be exported for #{entry['id']}" if entry.key?('audience')
-
-            entry['sourceOrganization'].each do |organization|
-              raise "sourceOrganization entries must be objects for #{entry['id']}" unless organization.is_a?(Hash)
-              raise "sourceOrganization.name missing for #{entry['id']}" unless organization['name']
-              raise "sourceOrganization.type missing for #{entry['id']}" unless organization['type'] == 'Organization'
-            end
 
             Array(entry['learningResourceType']).each do |term|
               raise "learningResourceType entries must be objects for #{entry['id']}" unless term.is_a?(Hash)
@@ -289,10 +277,6 @@ jobs:
               # Immer pruefen (stabile externe URLs)
               urls << entry.dig('publisher', 'url')
               urls << entry['image']
-              Array(entry['sourceOrganization']).each do |organization|
-                urls << organization['id'] if organization['id']
-                urls << organization['url'] if organization['url']
-              end
               urls << entry.dig('license', 'url')
               urls << entry.dig('license', 'id')
 
