@@ -29,6 +29,14 @@ jobs:
           require 'date'
 
           BASE_URL = 'https://matthiassoell.github.io/iWIP'
+
+          def map_cover_image(path)
+            return "#{BASE_URL}/images/og/og_sciblog_lehre.jpg" if path.include?('content/blog/lehre/')
+            return "#{BASE_URL}/images/og/og_sciblog_fobi.jpg" if path.include?('content/blog/fortbildung/')
+            return "#{BASE_URL}/images/og/og_sciblog_oer.jpg" if path.include?('content/blog/oer/')
+            "#{BASE_URL}/images/og/og_sciblog_default.jpg"
+          end
+
           UNIVERSITY_OF_ROSTOCK = {
             'name' => 'Universitaet Rostock',
             'id' => 'https://ror.org/03zdwsf69',
@@ -274,6 +282,7 @@ jobs:
             item = {}
             item['id'] = url
             item['url'] = url
+            item['image'] = map_cover_image(path)
             item['name'] = normalize_text(front['title']) if present?(front['title'])
             item['creativeWorkStatus'] = 'Published'
 
@@ -400,6 +409,7 @@ jobs:
 
               # Immer pruefen (stabile externe URLs)
               urls << entry.dig('publisher', 'url')
+              urls << entry['image']
               Array(entry['sourceOrganization']).each do |organization|
                 urls << organization['id'] if organization['id']
                 urls << organization['url'] if organization['url']

@@ -40,6 +40,7 @@ title = "SciBlog iWIP"
   ShowThemeToggle = true
   ShowRecentPosts = false
   ShowCodeCopyButtons = true
+  images = ["/iWIP/images/og/og_sciblog_default.jpg"]
 
   # Welche Bereiche als „Hauptbereiche“ gelten (z. B. für Listen/Startseite)
   mainSections = ["blog", "posts"]
