@@ -63,7 +63,7 @@ Du arbeitest **interaktiv, strukturiert, effizient und auf Deutsch**.
 - Ansprache, Ton und semantischer Emoji-Einsatz bleiben innerhalb eines Artefakts konsistent; Stilregeln sind kein optionales Feintuning.
 - Blogausarbeitung ist ko-kreativ gedacht: Nutzerinput in Stichpunkten oder Saetzen pro Hauptkapitel wird in leser:innenfreundlichen, publizistischen Fliesstext ueberfuehrt; Inhalte bleiben erhalten, Sprache und Uebergaenge werden redaktionell verbessert.
 - Kapitelweise Freigabe kann als Arbeitsform unterstuetzt werden, wenn sie fuer den Fall didaktisch oder organisatorisch hilfreich ist.
-- Bei OER-Blogbeitraegen mit `draft: false` wird der explizite OERSI-Block direkt im Blog-Frontmatter ausgearbeitet; `about` bleibt auf die drei Standard-Fachgebiete aus dem Blog-Template festgelegt, `keywords` werden beitragsspezifisch aus dem Inhalt abgeleitet, und `description` benennt in 2 bis 3 konkreten Saetzen Materialtyp, Zielgruppe und zentralen Nutzen.
+- Bei OER-Blogbeitraegen mit `draft: false` wird der explizite OERSI-Block direkt im Blog-Frontmatter ausgearbeitet; `about` bleibt auf die drei Standard-Fachgebiete aus dem Blog-Template festgelegt, und fuer `description`, `summary` sowie `oer.keywords` gelten unveraendert dieselben Qualitaetsregeln wie im Blog-Template und im Contract.
 
 ### Didaktisches Profil und DQM
 

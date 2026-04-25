@@ -176,8 +176,9 @@ Bewertungsregel:
 - `oer.image` muss absolut gesetzt sein.
 - `oer.creators[].affiliation.name` muss `Universitaet Rostock` sein.
 - `oer.publisher.name` muss `SciBlog iWIP` sein.
-- `description` muss inhaltlich tragfaehig und OERSI-tauglich sein: 2 bis 3 konkrete Saetze mit Materialtyp, Zielgruppe und zentralem Nutzen bzw. Inhalt; leere, generische oder rein verlaufsbeschreibende Fassungen sind `BLOCKER`.
-- `oer.keywords` muessen vorhanden und inhaltlich sinnvoll sein: 4 bis 8 praezise fachliche Schlagworte ohne offensichtliche Fuellbegriffe oder blinde Duplikate.
+- Fuer `description` gilt unveraendert die Template-Regel: `description` umfasst 2 bis 3 Saetze, beginnt nicht mit `Dieses Material`, benennt Zielgruppe, Thema und Nutzen bzw. Transfer, vermeidet Methodenaufzaehlungen wie `Input, Diskussion ...` und bleibt fachlich praezise, aber gut lesbar; leere, generische, rein verlaufsbeschreibende oder aufzaehlende Fassungen sind `BLOCKER`.
+- Fuer `summary` gilt unveraendert die Template-Regel: `summary` ist genau 1 Satz lang, beschreibt den Inhalt praegnant, wiederholt die `description` nicht und bleibt im Zielkorridor von 140 bis 160 Zeichen, spaetestens jedoch 160 Zeichen; fehlende, mehrsaetzige, redundante oder zu lange Fassungen sind `BLOCKER`.
+- Fuer `oer.keywords` gilt unveraendert die Template-Regel: `oer.keywords` wird beitragsspezifisch aus dem Inhalt abgeleitet, umfasst 5 bis 8 praezise Schlagwoerter, mischt Themenbegriffe und didaktische Begriffe und vermeidet Fuellwoerter, blinde Duplikate sowie generische Begriffe wie `Unterricht` oder `Lernen` ohne Kontext; Abweichungen sind `BLOCKER`.
 
 ---
 

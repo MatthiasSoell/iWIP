@@ -107,11 +107,13 @@ keine Fach- oder OERSI-Metadaten mehr.
 Dabei gilt verbindlich:
 
 - `oer.about` enthaelt immer exakt die drei Standard-Fachgebiete aus diesem Template; keine Ableitung aus Tags und keine zusaetzlichen Fachgebiete ohne ausdruecklichen Auftrag.
-- `oer.keywords` wird beitragsspezifisch aus dem Inhalt abgeleitet und umfasst 4 bis 8 praezise fachliche Schlagworte; `tags` koennen Ausgangspunkt sein, ersetzen die Keywords aber nicht.
-- `description` ist OERSI-tauglich und beschreibt in 2 bis 3 Saetzen Materialtyp, Zielgruppe und zentralen Nutzen bzw. Inhalt des Beitrags.
+- `description` umfasst 2 bis 3 Saetze, beginnt nicht mit `Dieses Material`, benennt Zielgruppe, Thema und Nutzen bzw. Transfer, vermeidet Methodenaufzaehlungen wie `Input, Diskussion ...` und bleibt fachlich praezise, aber gut lesbar.
+- `summary` ist genau 1 Satz lang, beschreibt den Inhalt praegnant, wiederholt die `description` nicht und bleibt im Zielkorridor von 140 bis 160 Zeichen, spaetestens jedoch 160 Zeichen.
+- `oer.keywords` wird beitragsspezifisch aus dem Inhalt abgeleitet, umfasst 5 bis 8 praezise Schlagwoerter, mischt Themenbegriffe und didaktische Begriffe und vermeidet Fuellwoerter, blinde Duplikate sowie generische Begriffe wie `Unterricht` oder `Lernen` ohne Kontext; `tags` koennen Ausgangspunkt sein, ersetzen die Keywords aber nicht.
 - `oer.learning_resource_type` und `oer.educational_level` sind Arrays aus Objekten mit `id` und `name`; freie String-Werte sind unzulaessig.
 - `oer.image` ist immer absolut auf das Standard-OG-Bild gesetzt.
 - `oer.creators[].affiliation.name` lautet immer `Universität Rostock`; Institutszusaetze sind dort unzulaessig.
+- `description` formuliert den Gegenstand adressatenorientiert und konkret; typische Einstiege sind z. B. "In dieser Veranstaltung...", "Der Beitrag zeigt...", "Lehrkräfte arbeiten hier an..."
 
 ## Hinweis zur Steuerung
 
