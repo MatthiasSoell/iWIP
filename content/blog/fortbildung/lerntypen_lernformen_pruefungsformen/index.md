@@ -17,7 +17,7 @@ tags:
   - Lernformen
   - Prüfungsformen
   - Lehrkräftefortbildung
-  - Evidenzinformierung
+  - Evidenzorientierung
   - Didaktik
 
 categories:
