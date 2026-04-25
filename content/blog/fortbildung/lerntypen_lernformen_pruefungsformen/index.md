@@ -34,7 +34,7 @@ oer:
       given_name: "Matthias"
       family_name: "Söll"
       affiliation:
-        name: "Universität Rostock · Institut für Wirtschaftspädagogik"
+        name: "Universität Rostock"
         id: "https://ror.org/03zdwsf69"
         url: "https://www.uni-rostock.de/"
         type: "Organization"

@@ -17,8 +17,6 @@ description: >
 summary: >
   Kompakte Persona-Sammlung für die Partnerarbeit zur Berufswahl an der ersten Schwelle. Die Beispiele dienen als Analyse- und Diskussionsgrundlage im Seminar.
 
-thumbnail: "/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/Personas.png"
-
 tags:
   - Bildungssysteme
   - Berufswahl
