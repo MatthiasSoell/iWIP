@@ -3,7 +3,7 @@
   url: https://matthiassoell.github.io/iWIP/blog/fortbildung/lerntypen_lernformen_pruefungsformen/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Lerntypen, Lernformen und Prüfungsformen in der Unterrichts- und Schulentwicklung
-  description: 'Fortbildungskonzept und -dokumentation einer 90-minütigen Online-Lehrkräftewerkstatt: Der Beitrag zeigt, wie Lerntypen, Lernformen und Prüfungsformen evidenzinformiert in die Unterrichts- und Schulentwicklung integriert werden – mit Inputblöcken, moderierter Plenumsdiskussion und konkretem Transferauftrag.'
+  description: In dieser 90-minütigen Online-Fortbildung setzen sich Lehrkräfte an berufsbildenden Schulen mit dem Lerntypen-Mythos, zentralen Lernformen und Prüfungsformen auseinander. Die Seite verbindet evidenzinformierte Perspektiven mit konkreten Impulsen für Unterrichts- und Schulentwicklung.
   creativeWorkStatus: Published
   creator:
   - name: Prof. Dr. Matthias Söll
@@ -43,10 +43,13 @@
     url: https://matthiassoell.github.io/iWIP/
   keywords:
   - Lerntypen
+  - Lerntypen-Mythos
   - Lernformen
   - Prüfungsformen
   - Lehrkräftefortbildung
   - Evidenzinformierung
+  - Unterrichtsentwicklung
+  - Schulentwicklung
   timeRequired: PT90M
 - id: https://matthiassoell.github.io/iWIP/blog/fortbildung/uplan_ki_oer/
   url: https://matthiassoell.github.io/iWIP/blog/fortbildung/uplan_ki_oer/
@@ -214,7 +217,7 @@
   timeRequired: PT90M
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle_bsp/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle_bsp/
-  image: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/Personas.png
+  image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
   name: Personas – Berufswahl an der ersten Schwelle (Einmündung)
   description: Vier Personas zur Berufswahl an der ersten Schwelle. Das Material dient als Arbeitsgrundlage für die Veranstaltung im Modul Bildungssysteme und unterstützt die Analyse individueller, sozialer und institutioneller Einflussfaktoren auf Berufseinmündungen.
   creativeWorkStatus: Published
