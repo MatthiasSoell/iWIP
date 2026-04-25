@@ -24,7 +24,7 @@ title: ""
 # Format wenn gesetzt: nur lowercase + unterstriche (z. B. did_allg_fach)
 slug: ""
 author: ""
-# mehrere Autor:innen als String mit Semikolon, z. B. "Matthias Soell; Max Mustermann"
+# mehrere Autor:innen als String mit Semikolon, z. B. "Matthias Söll; Max Mustermann"
 date: YYYY-MM-DD
 lastmod: YYYY-MM-DD
 draft: true
@@ -37,38 +37,60 @@ categories: []
 
 oer:
   is_oer: true
-  kind: ""
+  kind: "lesson"
 
   # TULLU-Pflichtdaten (Frontend) + Basis für JSON-LD
   creators:
-    - name: ""
-      given_name: ""
-      family_name: ""
-      affiliation: ""
-      url: ""
-      orcid: ""
+    - type: "Person"
+      name: "Prof. Dr. Matthias Söll"
+      given_name: "Matthias"
+      family_name: "Söll"
+      affiliation:
+        name: "Universität Rostock"
+        id: "https://ror.org/03zdwsf69"
+        url: "https://www.uni-rostock.de/"
+        type: "Organization"
+      url: "https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/"
+      orcid: "https://orcid.org/0000-0002-9717-3017"
 
   publisher:
-    name: ""
-    url: ""
+    name: "SciBlog iWIP"
+    url: "https://matthiassoell.github.io/iWIP/"
 
   license:
-    label: ""
-    url: ""
+    label: "CC BY-SA 4.0"
+    url: "https://creativecommons.org/licenses/by-sa/4.0/"
 
-  source:
-    label: ""
-    url: ""
+  image: "https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg"
+
+  version: "1.0"
+  status: "pilot"
 
   # OERSI / schema.org-nahe Felder
-  in_language: "de"
-  learning_resource_type: ""
-  educational_level: []
-  audience: []
-  time_required: ""
+  in_language:
+    - "de"
+  learning_resource_type:
+    - id: "https://w3id.org/kim/hcrt/text"
+      name: "Text"
+  educational_level:
+    - id: "https://w3id.org/kim/educationalLevel/level_6"
+      name: "Bachelor oder aequivalent"
+  audience:
+    - "Studierende der Wirtschaftspaedagogik"
+  keywords:
+    - "<inhaltliches Schlagwort 1>"
+    - "<inhaltliches Schlagwort 2>"
+    - "<inhaltliches Schlagwort 3>"
+    - "<inhaltliches Schlagwort 4>"
+  time_required: "PT90M"
 
   about:
-    - term: ""
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n270"
+      name: "Berufs- und Wirtschaftspaedagogik"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n181"
+      name: "Wirtschaftspaedagogik"
+    - id: "https://w3id.org/kim/hochschulfaechersystematik/n33"
+      name: "Erziehungswissenschaften"
 
   # Optional
   todos: []
@@ -78,8 +100,18 @@ Alle Felder sind verpflichtend, außer `slug` und `oer.todos`.
 Wenn `slug` gesetzt wird, muss er `snake_case` mit Unterstrichen nutzen.
 Fuer Autor:innen ist ausschliesslich `author` zulaessig; `authors` ist nicht erlaubt.
 
-Tags und Kategorien sind wichtig für Auffindbarkeit
-und OERSI-Metadaten.
+Fuer Blogbeitraege mit `draft: false` und `oer.is_oer: true` ist der `oer`-Block
+immer vollstaendig und explizit auszufuellen; der Workflow ergaenzt oder errät
+keine Fach- oder OERSI-Metadaten mehr.
+
+Dabei gilt verbindlich:
+
+- `oer.about` enthaelt immer exakt die drei Standard-Fachgebiete aus diesem Template; keine Ableitung aus Tags und keine zusaetzlichen Fachgebiete ohne ausdruecklichen Auftrag.
+- `oer.keywords` wird beitragsspezifisch aus dem Inhalt abgeleitet und umfasst 4 bis 8 praezise fachliche Schlagworte; `tags` koennen Ausgangspunkt sein, ersetzen die Keywords aber nicht.
+- `description` ist OERSI-tauglich und beschreibt in 2 bis 3 Saetzen Materialtyp, Zielgruppe und zentralen Nutzen bzw. Inhalt des Beitrags.
+- `oer.learning_resource_type` und `oer.educational_level` sind Arrays aus Objekten mit `id` und `name`; freie String-Werte sind unzulaessig.
+- `oer.image` ist immer absolut auf das Standard-OG-Bild gesetzt.
+- `oer.creators[].affiliation.name` lautet immer `Universität Rostock`; Institutszusaetze sind dort unzulaessig.
 
 ## Hinweis zur Steuerung
 

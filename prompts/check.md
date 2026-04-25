@@ -150,14 +150,14 @@ Verpflichtend zu pruefen:
 - `description`, `summary`
 - `tags`, `categories`
 - `oer.is_oer`, `oer.kind`
-- `oer.creators` mit `name`, `given_name`, `family_name`, `affiliation`, `url`, `orcid`
+- `oer.creators` mit `type`, `name`, `given_name`, `family_name`, `affiliation.name`, `affiliation.id`, `affiliation.url`, `affiliation.type`, `url`, `orcid`
 - `oer.publisher.name`, `oer.publisher.url`
 - `oer.license.label`, `oer.license.url`
-- `oer.source.label`, `oer.source.url`
+- `oer.image`
 - `oer.version`, `oer.status`
 - `oer.in_language`, `oer.learning_resource_type`
-- `oer.educational_level`, `oer.audience`, `oer.time_required`
-- `oer.about` (mindestens ein `term`)
+- `oer.educational_level`, `oer.audience`, `oer.keywords`, `oer.time_required`
+- `oer.about` (exakt die drei Standard-Fachgebiete aus dem Blog-Template mit `id` und `name`)
 - `oer.todos` (optional, darf leer sein)
 - `slug` ist optional; falls gesetzt, nur `snake_case` mit Unterstrichen
 - `authors` ist verboten; mehrere Autor:innen stehen in `author` als Semikolon-getrennter String
@@ -169,7 +169,15 @@ Bewertungsregel:
 - `lastmod` ist als Pflichtfeld vorhanden und semantisch plausibel befuellt zu pruefen.
 - Fuer `BLOG FINAL` sind unvollstaendiges oder ungueltiges Frontmatter, `draft` ungleich `false` sowie jede Nutzung von `authors` immer `BLOCKER`.
 - Fuer `BLOG FINAL` sind offene Linkfehler im nach Contract verbindlichen vorbereiteten Linkcheck immer `BLOCKER`.
-- Wenn `draft: false` gesetzt ist, muessen alle OER-Pflichtfelder vollstaendig und valide sein; Abweichungen sind `BLOCKER`.
+- Wenn `draft: false` und `oer.is_oer: true` gesetzt sind, muessen alle OER-Pflichtfelder vollstaendig und valide sein; Abweichungen sind `BLOCKER`.
+- `oer.about` muss exakt die drei Standard-Fachgebiete enthalten; fehlende, zusaetzliche oder abweichende Fachgebiete sind `BLOCKER`.
+- `oer.learning_resource_type` und `oer.educational_level` muessen Arrays aus Objekten mit `id` und `name` sein; freie String-Werte sind `BLOCKER`.
+- `oer.in_language` muss ein Array sein; ein Einzelstring ist `BLOCKER`.
+- `oer.image` muss absolut gesetzt sein.
+- `oer.creators[].affiliation.name` muss `Universitaet Rostock` sein.
+- `oer.publisher.name` muss `SciBlog iWIP` sein.
+- `description` muss inhaltlich tragfaehig und OERSI-tauglich sein: 2 bis 3 konkrete Saetze mit Materialtyp, Zielgruppe und zentralem Nutzen bzw. Inhalt; leere, generische oder rein verlaufsbeschreibende Fassungen sind `BLOCKER`.
+- `oer.keywords` muessen vorhanden und inhaltlich sinnvoll sein: 4 bis 8 praezise fachliche Schlagworte ohne offensichtliche Fuellbegriffe oder blinde Duplikate.
 
 ---
 
@@ -239,7 +247,7 @@ Zusaetzlich verpflichtend zu pruefen:
 
 ### Verbotene OER-Metadaten in Reveal
 
-- Reveal darf keinen `oer`-Block und keine OER-Einzelfelder enthalten (`is_oer`, `kind`, `creators`, `publisher`, `license`, `source`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `time_required`, `about`, `rights_exceptions`).
+- Reveal darf keinen `oer`-Block und keine OER-Einzelfelder enthalten (`is_oer`, `kind`, `creators`, `publisher`, `license`, `image`, `version`, `status`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `keywords`, `time_required`, `about`, `rights_exceptions`).
 
 ### Bewertungsregel
 

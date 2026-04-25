@@ -28,7 +28,7 @@ emojis: ""
 veranstaltungstyp: ""
 veranstaltung: ""
 author: ""
-# mehrere Autor:innen als String mit Semikolon, z. B. "Matthias Soell; Max Mustermann"
+# mehrere Autor:innen als String mit Semikolon, z. B. "Matthias Söll; Max Mustermann"
 blog: ""
 aliases:
   - "/praesentation/<bereich>/<ordner>/"
@@ -66,7 +66,7 @@ Regeln:
 - Reveal-Frontmatter enthält ausschließlich präsentationsbezogene Metadaten.
 - Fuer Autor:innen ist ausschliesslich `author` zulaessig; `authors` ist nicht erlaubt. Mehrere Autor:innen stehen als Semikolon-getrennter String in `author`.
 - In Reveal-Dateien sind OER-Metadaten strikt verboten.
-- Verboten sind insbesondere: `oer`, `is_oer`, `kind`, `creators`, `publisher`, `license`, `source`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `time_required`, `about`, `rights_exceptions`.
+- Verboten sind insbesondere: `oer`, `is_oer`, `kind`, `creators`, `publisher`, `license`, `image`, `version`, `status`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `keywords`, `time_required`, `about`, `rights_exceptions`.
 - `blog` soll auf die veroeffentlichte Blogansicht mit Site-Base zeigen, also auf die veroeffentlichte Blog-URL inkl. baseURL und nicht auf einen technischen Content-Pfad.
 - Der sichtbare veroeffentlichte Praesentationspfad lautet `/iWIP/praesentation/<bereich>/<ordner>/`; fuer `widi` ist dies `/iWIP/praesentation/widi/<ordner>/`.
 - `aliases` fuehrt den Hugo-Alias relativ zur Site-Base; im Frontmatter steht daher `/praesentation/<bereich>/<ordner>/`, fuer `widi` `/praesentation/widi/<ordner>/`.

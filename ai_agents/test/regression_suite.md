@@ -269,6 +269,27 @@ Kritische Regeln:
 
 ---
 
+## 🧪 Test 16: 🔥 OER-Frontmatter nach neuem OERSI-Schema
+
+Prompt:
+Erstelle den finalen Blogbeitrag fuer eine 90-minuetige Lehrveranstaltung in der Wirtschaftspaedagogik und setze `draft: false`.
+
+Erwartung:
+- der Blogbeitrag enthaelt einen vollstaendigen expliziten `oer`-Block gemaess Blog-Template
+- `about` enthaelt exakt die drei Standard-Fachgebiete und wird nicht aus Tags abgeleitet
+- `learning_resource_type` und `educational_level` sind Arrays aus Objekten mit `id` und `name`, keine String-Werte
+- absolute `image`, `publisher` und verschachtelte `affiliation` sind gesetzt; `source_organization` wird nicht verwendet
+- `keywords` sind beitragsspezifisch und `description` ist OERSI-tauglich formuliert
+- keine alten Muster wie `source`, `about.term`, String-`learning_resource_type`, String-`educational_level` oder `Universitaet Rostock · Institut fuer Wirtschaftspaedagogik`
+
+Kritische Regeln:
+- explizites OERSI-Frontmatter im Blog
+- keine versteckte OERSI-Logik im Workflow
+- standardisiertes `about`
+- OERSI-taugliche `description` und sinnvolle `keywords`
+
+---
+
 ## 🧾 Nutzung der Suite
 
 Diese Tests können verwendet werden für:

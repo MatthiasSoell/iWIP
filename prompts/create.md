@@ -42,6 +42,7 @@ Dabei gilt fuer den Handoff an den Contract:
 - In `P1` und `P2` bleibt `create` strikt im Planungsmodus; es werden keine publizierbaren Blog- oder Reveal-Passagen vorweggenommen.
 - Der Uebergang in `P3` erzeugt erst dann `blog_snapshot.txt` in `exports/snapshots/` und `index.md`, wenn Planungslogik in Artefaktsprache ueberfuehrt werden kann.
 - Der Uebergang in die Reveal-Arbeit nutzt ausschliesslich das finale Blog-`index.md`; Planungsnotizen, Fruehfassungen und Snapshots werden nicht direkt transformiert.
+- Wenn fuer einen Blogbeitrag `draft: false` und `oer.is_oer: true` gesetzt werden, wird der OER-Block bereits in `index.md` vollstaendig gemaess `ai_agents/templates/blog_template.md` ausgearbeitet; fehlende OERSI-Pflichtfelder werden nicht spaeter durch Workflow-Defaults, Fachableitungen oder erratene Werte ersetzt.
 - Nach erfolgreichem `BLOG FINAL` wird standardmaessig ein kuratierter Wissensbasis-Entwurf als Review-Anschluss vorgeschlagen; erst nach einer kurzen Bestaetigung oder gezielten Korrektur wird `blog_wissensbasis.md` aktualisiert. Bei ausdruecklicher sofortiger Uebernahmeanweisung kann die Rueckfrage entfallen. `REVEAL GO` allein ist dafuer kein Trigger.
 
 Fuer diese gezielte Klaerung kann der Agent bei Bedarf selektiv nach Zielgruppe,
