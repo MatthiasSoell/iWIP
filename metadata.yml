@@ -377,6 +377,57 @@
   - wissenschaftliches Arbeiten
   - Hausarbeit
   timeRequired: PT60M
+- id: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/hochschulbildung/
+  url: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/hochschulbildung/
+  image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
+  name: Wie ist Hochschulbildung organisiert – und für wen?
+  description: In dieser Veranstaltung setzen sich Studierende der Wirtschaftspädagogik mit Zielen, Organisation und Wandel der Hochschulbildung in Deutschland auseinander. Der Beitrag verbindet Hochschulidee, Systemstruktur und Akademisierung mit der Frage nach sozialer Ungleichheit, Teilhabe und neuen Grenzverschiebungen zwischen Berufs- und Hochschulbildung.
+  creativeWorkStatus: Published
+  creator:
+  - name: Prof. Dr. Matthias Söll
+    type: Person
+    givenName: Matthias
+    familyName: Söll
+    affiliation:
+      name: Universität Rostock
+      type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
+    url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
+    identifier: https://orcid.org/0000-0002-9717-3017
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+    name: CC BY-SA 4.0
+  learningResourceType:
+  - id: https://w3id.org/kim/hcrt/text
+    name: Text
+  educationalLevel:
+  - id: https://w3id.org/kim/educationalLevel/level_6
+    name: Bachelor oder äquivalent
+  about:
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2026-04-29'
+  dateModified: '2026-04-30'
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  keywords:
+  - Hochschulbildung
+  - Hochschulorganisation
+  - Akademisierung
+  - soziale Ungleichheit
+  - Employability
+  - Bachelor Professional
+  - Master Professional
+  timeRequired: PT90M
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/vt_gehirn_lernen_junior_studium/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/vt_gehirn_lernen_junior_studium/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
