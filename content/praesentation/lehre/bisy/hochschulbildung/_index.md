@@ -166,7 +166,7 @@ todos: []
 
 ---
 
-### 📊 Arbeitsmarktbezug tertiärer Abschlüsse
+#### 📊 Arbeitsmarktbezug tertiärer Abschlüsse
 
 <figure class="figure-frame">
   <img src="/iWIP/blog/lehre/bisy/hochschulbildung/berufe_absolvent_innen_tertiaere_bildung.png" alt="Anforderungsniveau der von 25- bis unter 35-jährigen Erwerbstätigen mit Hochschulabschluss ausgeübten Berufe 2022">
