@@ -89,7 +89,7 @@ todos: []
 
 ---
 
-## 🎓 Klassische und moderne Universität
+### 🎓 Klassische und moderne Universität
 
 <figure class="figure-frame figure-frame-sm">
   <img src="/iWIP/blog/lehre/bisy/hochschulbildung/klass_moderne_universitaet.png" alt="Vergleich von klassischer und moderner Universität">
