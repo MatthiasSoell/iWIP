@@ -43,7 +43,7 @@ jobs:
           hugo version
 
       - name: Install Dart Sass
-        run: sudo snap install dart-sass
+        run: npm install -g sass
 
       - name: Download Hugo Modules
         run: hugo mod get
