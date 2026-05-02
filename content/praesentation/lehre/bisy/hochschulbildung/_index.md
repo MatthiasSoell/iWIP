@@ -92,7 +92,7 @@ todos: []
 ### 🎓 Klassische und moderne Universität
 
 <figure class="figure-frame figure-frame-sm">
-  <img src="/iWIP/blog/lehre/bisy/hochschulbildung/klass_moderne_universitaet.png" alt="Vergleich von klassischer und moderner Universität">
+  <img src="/iWIP/blog/lehre/bisy/hochschulbildung/klass_moderne_universitaet.png" alt="Vergleich von klassischer und moderner Universität" class="zoomable">
 </figure>
 <p class="bild-quelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: CC BY-SA 4.0</p>
 
@@ -129,7 +129,7 @@ todos: []
 ### 3️⃣ Hochschullandschaft: Struktur 🏛️
 
 <figure class="figure-frame">
-  <img src="/iWIP/blog/lehre/bisy/hochschulbildung/zahl_hochschulen.png" alt="Zahl der Hochschulen nach Hochschulart und Trägerschaft 1995 bis 2022">
+  <img src="/iWIP/blog/lehre/bisy/hochschulbildung/zahl_hochschulen.png" alt="Zahl der Hochschulen nach Hochschulart und Trägerschaft 1995 bis 2022"  class="zoomable">
 </figure>
 <p class="bild-quelle">Bildquelle: Autorengruppe Bildungsberichterstattung (2024, 204) · Ausschnitt · Lizenz: CC BY-SA 3.0 DE</p>
 
@@ -160,7 +160,7 @@ todos: []
 ## 5️⃣ Akademisierung 📈
 
 <figure class="figure-frame">
-  <img src="/iWIP/blog/lehre/bisy/hochschulbildung/studierendenzahlen.png" alt="Zahl der Studierenden und Studienanfängerinnen und Studienanfänger 1995 bis 2023">
+  <img src="/iWIP/blog/lehre/bisy/hochschulbildung/studierendenzahlen.png" alt="Zahl der Studierenden und Studienanfängerinnen und Studienanfänger 1995 bis 2023" class="zoomable">
 </figure>
 <p class="bild-quelle">Bildquelle: Autorengruppe Bildungsberichterstattung (2024, 216) · Ausschnitt · Lizenz: CC BY-SA 3.0 DE</p>
 
@@ -169,7 +169,7 @@ todos: []
 #### 📊 Arbeitsmarktbezug tertiärer Abschlüsse
 
 <figure class="figure-frame">
-  <img src="/iWIP/blog/lehre/bisy/hochschulbildung/berufe_absolvent_innen_tertiaere_bildung.png" alt="Anforderungsniveau der von 25- bis unter 35-jährigen Erwerbstätigen mit Hochschulabschluss ausgeübten Berufe 2022">
+  <img src="/iWIP/blog/lehre/bisy/hochschulbildung/berufe_absolvent_innen_tertiaere_bildung.png" alt="Anforderungsniveau der von 25- bis unter 35-jährigen Erwerbstätigen mit Hochschulabschluss ausgeübten Berufe 2022" class="zoomable">
 </figure>
 <p class="bild-quelle">Bildquelle: Autorengruppe Bildungsberichterstattung (2024, 227) · Ausschnitt · Lizenz: CC BY-SA 3.0 DE</p>
 

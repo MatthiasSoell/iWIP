@@ -64,5 +64,6 @@
     {{- if fileExists (printf "layouts/partials/%s.html" $sectionBodyPartial) -}}
       {{ partial $sectionBodyPartial . }}
     {{- end }}
+    <script src="{{ "/iWIP/js/reveal_image_zoom.js" | relURL }}?v={{ now.Unix }}" defer></script>
   </body>
 </html>
