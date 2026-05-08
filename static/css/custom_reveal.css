@@ -262,12 +262,27 @@
 }
 
 @media (max-width: 768px) {
-  .reveal section img,
+  .reveal section .figure-frame,
+  .reveal section .figure-frame.figure-frame-sm,
+  .reveal section .figure-frame.figure-frame-ssm,
+  .reveal section .figure-frame.figure-frame-lg,
+  .reveal section .figure-frame.is-sm,
+  .reveal section .figure-frame.is-ssm,
+  .reveal section .figure-frame.is-lg {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 1rem;
+  }
+
   .reveal section .figure-frame > img,
   .reveal section img.figure-frame {
+    display: block;
     width: 100%;
-    height: auto;
     max-width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    margin: 0 auto;
   }
 
   .reveal .slide-number {
@@ -279,6 +294,38 @@
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.9);
     color: #222;
+  }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .reveal h3 {
+    font-size: 1.45em;
+    margin: 0 0 0.35rem 0;
+  }
+
+  .reveal section .figure-frame,
+  .reveal section .figure-frame.figure-frame-sm,
+  .reveal section .figure-frame.figure-frame-ssm,
+  .reveal section .figure-frame.figure-frame-lg,
+  .reveal section .figure-frame.is-sm,
+  .reveal section .figure-frame.is-ssm,
+  .reveal section .figure-frame.is-lg {
+    width: auto;
+    max-width: 96vw;
+    margin: 0 auto 0.35rem;
+  }
+
+  .reveal section .figure-frame > img,
+  .reveal section img.figure-frame {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 64vh;
+  }
+
+  .reveal .bild-quelle {
+    font-size: 0.72rem !important;
+    margin-top: 0.25rem;
   }
 }
 

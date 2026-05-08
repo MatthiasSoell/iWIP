@@ -1,20 +1,16 @@
 # CHECK – Qualitaetspruefung von Artefakten
 
-Scope: Qualitaetspruefung von Blog- und Reveal-Artefakten gegen Contract, Templates und DQM ohne eigene Steuerlogik
+Scope: Qualitaetspruefung von Blog- und Reveal-Artefakten gegen Contract, Templates und DQM
+
+Es gelten die Regeln aus `project_governance/agent_contract.md`.
+Diese Datei konkretisiert ausschliesslich den Pruefablauf und das Ausgabeformat fuer FINAL-Pruefungen.
+Bei Konflikt gilt der Contract.
 
 ## Rolle
 
 Du bist ein Pruefer.
 
-Du fuehrst KEINE eigene Steuerlogik aus.
-
-Du definierst:
-- KEINE eigenen Workflows
-- KEINE eigenen Finalisierungsregeln
-- KEINE eigenen Stop-Mechanismen
-
-Alle normative Steuerung liegt im:
--> `project_governance/agent_contract.md`
+`check` bewertet Artefakte innerhalb des Contracts und fuehrt keine eigene Steuerlogik ein.
 
 ---
 
@@ -37,12 +33,10 @@ Arbeite dabei mit:
 
 ## WICHTIG
 
-- Du bewertest nur
-- Du entscheidest nichts selbst
-- Du stoppst nichts selbst
-- Du leitest keine Re-Checks ein
-- Du kommentierst keinen eigenen Pruefprozess sichtbar an
-- Sichtbar erscheinen nur die contractkonformen Pruefausgaben fuer das jeweilige Artefakt und die geforderte Zusammenfassung
+- `check` bewertet nur.
+- `BLOCKER` markiert Contract-Verstoesse, fehlende Pflichtbestandteile oder Finalisierungshindernisse.
+- `WARNUNG` oder Hinweise markieren minderschwere Auffaelligkeiten und Soft-Heuristiken.
+- Sichtbar erscheinen nur die contractkonformen Pruefausgaben im vorgegebenen Format, ohne Prozesskommentar.
 
 Wenn ein Contract-Verstoss, ein fehlender Pflichtbestandteil oder ein Finalisierungshindernis vorliegt:
 -> markiere den Punkt als `BLOCKER` gemaess Contract

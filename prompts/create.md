@@ -7,6 +7,10 @@ Kontext: Einstieg und Routing in die Arbeit nach Contract
 Dieser Prompt startet eine neue didaktische Planung im SciBlog iWIP
 und routet den Fall in die Steuerlogik aus `project_governance/agent_contract.md`.
 
+Es gelten die Regeln aus `project_governance/agent_contract.md`.
+Diese Datei konkretisiert ausschliesslich den Einstieg fuer `/CREATE`.
+Bei Konflikt gilt der Contract.
+
 Arbeite strikt nach:
 
 - `project_governance/agent_contract.md`
@@ -39,12 +43,14 @@ keine Standardabfrage und keine routinemaessige Vollabfrage aller Parameter.
 
 Dabei gilt fuer den Handoff an den Contract:
 
-- In `P1` und `P2` bleibt `create` strikt im Planungsmodus; es werden keine publizierbaren Blog- oder Reveal-Passagen vorweggenommen.
-- Der Uebergang in `P3` erzeugt erst dann `blog_snapshot.txt` in `exports/snapshots/` und `index.md`, wenn Planungslogik in Artefaktsprache ueberfuehrt werden kann.
-- Der Uebergang in die Reveal-Arbeit nutzt ausschliesslich das finale Blog-`index.md`; Planungsnotizen, Fruehfassungen und Snapshots werden nicht direkt transformiert.
-- Wenn fuer einen Blogbeitrag `draft: false` und `oer.is_oer: true` gesetzt werden, wird der OER-Block bereits in `index.md` vollstaendig gemaess `ai_agents/templates/blog_template.md` ausgearbeitet; fehlende OERSI-Pflichtfelder werden nicht spaeter durch Workflow-Defaults, Fachableitungen oder erratene Werte ersetzt.
-- Fuer Blog-Metadaten gelten ohne Abweichung vom Template dieselben Qualitaetsregeln: `description` umfasst 2 bis 3 Saetze, beginnt nicht mit `Dieses Material`, benennt Zielgruppe, Thema und Nutzen bzw. Transfer, vermeidet Methodenaufzaehlungen wie `Input, Diskussion ...` und bleibt fachlich praezise, aber gut lesbar; `summary` ist genau 1 Satz lang, beschreibt den Inhalt praegnant, wiederholt die `description` nicht und bleibt im Zielkorridor von 140 bis 160 Zeichen, spaetestens jedoch 160 Zeichen; `oer.keywords` wird beitragsspezifisch aus dem Inhalt abgeleitet, umfasst 5 bis 8 praezise Schlagwoerter, mischt Themenbegriffe und didaktische Begriffe und vermeidet Fuellwoerter, blinde Duplikate sowie generische Begriffe wie `Unterricht` oder `Lernen` ohne Kontext.
-- Nach erfolgreichem `BLOG FINAL` wird standardmaessig ein kuratierter Wissensbasis-Entwurf als Review-Anschluss vorgeschlagen; erst nach einer kurzen Bestaetigung oder gezielten Korrektur wird `blog_wissensbasis.md` aktualisiert. Bei ausdruecklicher sofortiger Uebernahmeanweisung kann die Rueckfrage entfallen. `REVEAL GO` allein ist dafuer kein Trigger.
+- `/CREATE` startet immer in `P1` oder `P2`; die erste Reaktion bleibt Planungs- und Strukturierungsmodus.
+- `create` nutzt vorhandenen Kontext vorrangig und stellt nur die naechste entscheidende Rueckfrage.
+- `create` darf in der ersten Reaktion strukturieren, analysieren, genau eine priorisierte Rueckfrage stellen oder einen Planungsstand formulieren; ohne explizite Nutzerfreigabe werden keine Dateien angelegt.
+- Der Uebergang nach `P3` erfolgt erst nach expliziter Nutzerfreigabe wie `Entwurf anlegen`, `Blog erstellen`, `Jetzt ausarbeiten` oder `Passt, leg los`; im initialen `/CREATE`-Turn gelten solche Formulierungen noch nicht als Startsignal fuer Dateianlage.
+- Phasenfuehrung, Snapshot-Erzeugung und Reveal-Ableitung folgen dem Contract; insbesondere bleibt Artefaktsprache bis zum Uebergang nach `P3` ausgesetzt, und `index.md`, `_index.md`, `blog_snapshot.txt` sowie `reveal_snapshot.txt` duerfen vorher nicht erzeugt werden.
+- Wenn Blog und Reveal im selben `/CREATE` genannt werden, bleibt Reveal trotzdem abgeleitet und sekundaer; `_index.md` und `reveal_snapshot.txt` entstehen erst nach `REVEAL GO` aus dem finalen Blog-`index.md`.
+- Blog- und Reveal-Frontmatter werden ausschliesslich nach den Templates ausgearbeitet; fehlende OER-Pflichtfelder werden nicht durch Defaults, Fachableitungen oder erratene Werte ersetzt.
+- Der optionale Wissensbasis-Anschluss folgt dem Contract und wird nicht durch `REVEAL GO` ausgeloest.
 
 Fuer diese gezielte Klaerung kann der Agent bei Bedarf selektiv nach Zielgruppe,
 Kontext, Vorwissen, typischen Lernhuerden, Zeitrahmen, Format, Setting oder
@@ -75,6 +81,4 @@ Planung sichtbar staerkt.
 
 ## WICHTIG
 
-Keine eigene Steuerlogik.
-
-Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive Textauswahlen oder sonstiger Editor-Kontext steuern den Arbeitsmodus nicht.
+Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive Textauswahlen oder sonstiger Editor-Kontext steuern den Einstieg nicht. Massgeblich sind Anliegen und eindeutig erkennbare Arbeitsbefehle gemaess Contract.

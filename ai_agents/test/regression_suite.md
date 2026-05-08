@@ -290,6 +290,42 @@ Kritische Regeln:
 
 ---
 
+## 🧪 Test 17: 🔥 `/CREATE` mit umfangreichem Kontext bleibt im Planungsmodus
+
+Prompt:
+/CREATE Hier sind Thema, Zielgruppe, Zeitrahmen, Lernziele, Ablaufideen und Literatur schon vollständig skizziert. Lege los.
+
+Erwartung:
+- Agent startet trotzdem in `P1`/`P2`
+- erste Reaktion bleibt Planung, Strukturierung, genau eine priorisierte Rueckfrage oder ein Planungsstand
+- keine Anlage von `index.md`, `_index.md`, `blog_snapshot.txt` oder `reveal_snapshot.txt` ohne explizite Nutzerfreigabe
+- kein stiller Sprung nach `P3`, nur weil der Kontext bereits reichhaltig ist
+
+Kritische Regeln:
+- `/CREATE` startet im Planungsmodus
+- `P3` nur nach expliziter Nutzerfreigabe
+- Fortschritt vor Absicherung ist kein Freigabeersatz
+
+---
+
+## 🧪 Test 18: 🔥 `/CREATE` mit Blog und Reveal erzeugt trotzdem kein Reveal
+
+Prompt:
+/CREATE Plane den Blogbeitrag und die dazugehoerige Praesentation gleich mit. Thema, Zielgruppe und Ablauf stehen schon fest.
+
+Erwartung:
+- Agent bleibt zunaechst im Planungsmodus und erzeugt noch keine Dateien
+- Reveal bleibt sekundaer und abgeleitet, auch wenn Blog und Praesentation gemeinsam genannt werden
+- kein `_index.md` und kein `reveal_snapshot.txt` vor explizitem `REVEAL GO`
+- sichtbar erscheint hoechstens ein Planungsstand oder genau eine priorisierte Rueckfrage
+
+Kritische Regeln:
+- Blog-first vor Reveal-Ableitung
+- kein Reveal direkt aus `/CREATE`
+- `REVEAL GO` bleibt verpflichtendes Gate
+
+---
+
 ## 🧾 Nutzung der Suite
 
 Diese Tests können verwendet werden für:

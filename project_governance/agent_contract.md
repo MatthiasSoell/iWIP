@@ -47,7 +47,7 @@ Die fuenf Prozessphasen sind die einzige normative Ablaufstruktur der Artefakt-A
 
 - `P1 – Klaeren`: Kontext, Profil und offene Voraussetzungen klaeren.
 - `P2 – Strukturieren`: didaktische Planung gemaess Profil und DQM konsistent aufbauen.
-- `P3 – Entwerfen`: `blog_snapshot.txt` in der lokalen Snapshot-Ablage als unveraenderlichen Erstentwurf erzeugen, nach `index.md` klonen und Luecken markieren.
+- `P3 – Entwerfen`: beginnt erst nach expliziter Nutzerfreigabe fuer die Ausarbeitung; erst dann `blog_snapshot.txt` in der lokalen Snapshot-Ablage als unveraenderlichen Erstentwurf erzeugen, nach `index.md` klonen und Luecken markieren.
 - `P4 – Ko-kreativ ausarbeiten`: Blog standardmaessig gemeinsam in `index.md` ausarbeiten; nach `REVEAL GO` Reveal gezielt in `_index.md` verdichten. Offline-Ueberarbeitung durch den Nutzer ist optional und kein Standard-Gate.
 - `P5 – Finalisieren`: Mindestpruefungen, sichtbare Finalausgaben und Artefaktfreigabe durchfuehren.
 
@@ -63,6 +63,7 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 
 - `PLAN START: ...` startet die Artefakt-Arbeit fuer didaktische Planung und Artefakterstellung. Dabei wird kein Forschungsprotokoll aktiviert.
 - `FORSCHUNG START: ...` startet die Artefakt-Arbeit in einem eigenstaendigen Forschungsmodus. Nur in diesem Modus werden systematisch Prozessdaten (Zeit, Schritte, Entscheidungen) protokolliert; dazu gehoeren ein strukturiertes Forschungsprotokoll mit Zeitmarken und optional ein sichtbares Forschungs-Transkript in `exports/`.
+- Nach einem initialen `/CREATE` gelten Formulierungen wie `Entwurf anlegen`, `Blog erstellen`, `Jetzt ausarbeiten` oder `Passt, leg los` erst dann als explizite Nutzerfreigabe fuer den Uebergang nach `P3`, wenn sie einen bereits sichtbaren Planungsstand bestaetigen; im ersten `/CREATE`-Turn loesen sie noch kein `P3` aus.
 - `Kapitel <N> freigegeben` dokumentiert kapitelweise Freigaben innerhalb der Ausarbeitung, wenn dieser Modus genutzt wird.
 - `BLOG FINAL` loest die Blog-Finalisierung mit allen Mindestpruefungen aus.
 - `REVEAL GO` erzeugt `_index.md` als bearbeitbare Reveal-Arbeitsdatei und `reveal_snapshot.txt` in der lokalen Snapshot-Ablage als unveraenderlichen Snapshot.
@@ -76,21 +77,20 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 ### Sichtbarkeit von Struktur
 
 - Der Agent leitet den Arbeitsmodus aus dem Anliegen ab. Nur bei echter Unklarheit fragt er kurz nach.
-- Prozessschritte sind unsichtbar. Sichtbar sind nur notwendige Rueckfragen, Artefakte und finale Ergebnisse.
-- Alles, was der Steuerung dient, bleibt unsichtbar. Dazu gehoeren insbesondere Pruefungen, Routing, Dateioperationen, Snapshots, Logs, Marker, Builds und sonstige interne Checks.
-- Sichtbar sind nur eine notwendige Rueckfrage, ein echter Blocker oder Abbruch, die Uebergabe eines Artefakts oder ein knappes Finalergebnis.
-- Prozessnahe Selbstbeschreibungen sind im sichtbaren Dialog verboten, auch als Einzelsatz. Verboten sind insbesondere `Ich pruefe jetzt ...`, `Ich lese ...`, `Ich dokumentiere ...`, `Ich starte ...`, `Ich lege an ...`, `Ich fuehre das Protokoll ...`, `Ich gehe jetzt in Phase ...`, `Ich exportiere ...`, `Ich leite ab ...`.
-- Verstoesse gegen diese Unsichtbarkeitsregel gelten als Regelverletzung und duerfen nicht als Stilvariante behandelt werden.
-- Statusmeldungen, Zwischenstaende, Debug- oder Toolnaehe sowie Ankuendigungen wie `gleich mache ich ...` bleiben unsichtbar, solange kein echter Blocker, keine notwendige Rueckfrage und kein Ergebnis vorliegt.
+- `P1` bis `P5` strukturieren die Arbeit intern. Rueckspruenge und Iterationen sind normal und brauchen keine sichtbare Phasenmarkierung.
+- Sichtbare Antworten beginnen direkt mit einer notwendigen Rueckfrage, einem Ergebnis, einem Artefakt oder einem echten Blocker.
+- Alles, was der internen Steuerung dient, bleibt unsichtbar. Dazu gehoeren insbesondere Pruefungen, Routing, Dateioperationen, Snapshots, Logs, Marker, Builds und sonstige interne Checks.
+- Prozessnahe Selbstbeschreibungen, Statussaetze und Zwischenstaende gehoeren nicht in den sichtbaren Dialog.
 - Eine sichtbare Zusammenfassung erscheint nur bei Finalisierung, an echten Uebergaengen oder auf ausdrueckliche Nachfrage.
+- DQM-Pruefberichte, Abgleich, Tabellen und die sichtbare Zusammenfassung nach dem Summary-Schema gelten als Ergebnisbestandteile und sind trotz Low-noise-Regel sichtbar zulaessig.
 - Snapshot-Vergleiche, Meta-Reflexionen und Forschungsmetadaten sind nie Standardbestandteil von `BLOG FINAL` oder `REVEAL FINAL`; sie erscheinen nur auf ausdrueckliche Nachfrage oder wenn sie fuer eine konkrete Abstimmung noetig sind.
 - Wenn der Forschungsmodus aktiv ist, bleiben laufende Marker, Zeitstempel und technische Uebergangsnotizen aus dem normalen Planungsdialog ausgeblendet und werden nur intern fortgeschrieben.
 
 ### Steuerlogik (operativ)
 
-- Der Agent Contract ist die einzige sichtbare Steuerlogik.
-- Andere Quellen wie Templates, Emoji-Policy oder Beispiele liefern Inhalte, Struktur und Formstandards, steuern aber nicht sichtbar den Ablauf.
-- Sichtbare Ableitungen aus Templates, Policies oder Beispielen erscheinen nur als Artefaktbestandteil oder als fachliches Ergebnis, nicht als Ablaufkommentar.
+- Dieser Contract ist die einzige verbindliche normative Regelquelle fuer Arbeitsmodus, Prozessphasen, Finalisierung und Sichtbarkeit.
+- `ai_agents/master_agent.md`, `prompts/create.md`, `prompts/check.md` und die Templates konkretisieren nur Rolle, Ablauf und Form innerhalb dieses Rahmens.
+- Bei Konflikten gilt immer dieser Contract.
 
 ---
 
@@ -109,29 +109,30 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 11. Reveal-Frontmatter vollstaendig gemaess `ai_agents/templates/reveal_template.md`; Reveal enthaelt keine OER-Metadaten.
 12. Blog- und Reveal-Frontmatter verwenden ausschliesslich `author`; `authors` ist unzulaessig. Mehrere Autor:innen werden als einzelner String mit Semikolon getrennt.
 13. Bei finalen Reveal-Praesentationen steht `pdf_export` immer auf `true`. `pdf_filename` steht auf Root-Ebene des Frontmatters und wird standardmaessig aus dem letzten Ordner des technischen Reveal-Content-Pfads abgeleitet, also `content/praesentation/.../<ordner>/_index.md` -> `<ordner>.pdf`. Uebergeordnete Bereichsordner werden nicht in den Standard-Dateinamen aufgenommen. Ein bereits vorhandener `pdf_filename` bleibt als manueller Override unveraendert.
-14. Nach Abschluss der Planung erzeugt der Agent in der lokalen Snapshot-Ablage unter `exports/snapshots/` einen zum Blog-Zielordner gespiegelten `blog_snapshot.txt` als unveraenderlichen Plain-Text-Snapshot des ersten vollstaendigen Blogentwurfs, zum Beispiel `exports/snapshots/content/blog/<bereich>/<ordner>/blog_snapshot.txt`, und klont diesen Stand nach `index.md` als bearbeitbare Arbeitsdatei. Ohne vorhandenes `blog_snapshot.txt` ist weder `P4` noch `BLOG FINAL` zulaessig.
-15. Bei `REVEAL GO` erzeugt der Agent im Reveal-Zielordner `_index.md` als bearbeitbare Reveal-Arbeitsdatei und in der lokalen Snapshot-Ablage unter `exports/snapshots/` einen zum Reveal-Zielordner gespiegelten `reveal_snapshot.txt` als unveraenderlichen Plain-Text-Snapshot desselben Erststands, zum Beispiel `exports/snapshots/content/praesentation/<bereich>/<ordner>/reveal_snapshot.txt`. Ohne vorhandenes `reveal_snapshot.txt` ist weder die Reveal-Arbeitsphase abgeschlossen noch `REVEAL FINAL` zulaessig.
-16. Snapshot-Dateien im Blog- und Reveal-Kontext sind fuer Generierung und Ableitung nicht-operativ: keine automatische Bearbeitung und keine Nutzung als Ableitungsquelle; Reveal wird stets aus dem finalen Blog-`index.md` abgeleitet. Ein optionaler Vergleich zwischen lokalem `blog_snapshot.txt` und finalem `index.md` sowie zwischen lokalem `reveal_snapshot.txt` und finalem `_index.md` ist ausschliesslich als Reflexion zulaessig und darf keine automatische Regelanpassung ausloesen.
-17. Vor Finalisierung greifen verpflichtende Mindestpruefungen. Alle Pflichtbestandteile muessen vor `BLOG FINAL` beziehungsweise `REVEAL FINAL` vollstaendig geprueft sein. Im Blog sind dies mindestens DQM-Pruefbericht, sichtbare Zusammenfassung nach dem Summary-Schema dieses Contracts, Frontmatter-Pruefung, Begriffspruefung, Typografiepruefung und Snapshot-Pruefung. In Reveal sind dies mindestens Abgleich, sichtbare Zusammenfassung nach dem Summary-Schema dieses Contracts, Frontmatter-Pruefung und Snapshot-Pruefung. Eine Quellenuebersicht wird nur sichtbar ausgegeben, wenn Quellenkonsistenz oder Nutzerklarheit das erfordern. Eine Materialuebersicht wird nur sichtbar ausgegeben, wenn mehrere Dateien, Quellen oder Zielpfade tatsaechlich abgestimmt werden muessen. Ziel ist eine moeglichst abschliessende First-pass-Finalisierung ohne nachtraegliche Korrekturschleifen. Bei Blockern stoppt die Finalisierung.
-18. `BLOG FINAL` ist nur zulaessig, wenn `draft: false` gesetzt ist. Ein Blogbeitrag gilt nur dann als veroeffentlicht, wenn `draft: false` gesetzt ist; mit `draft: true` bleibt er unveroeffentlicht.
-19. `BLOG FINAL` ist unzulaessig, wenn Pflichtabschnitte aus diesem Contract oder dem Blog-Template fehlen, inhaltlich unvollstaendig sind, das lokale `blog_snapshot.txt` fehlt, `draft` nicht explizit `false` ist oder im kapitelweisen Freigabefall noch nicht freigegeben wurden.
-20. Sobald im Blog `draft: false` gesetzt ist und `oer.is_oer: true` vorliegt, muessen alle OER-Pflichtfelder vollstaendig und valide befuellt sein; unvollstaendige OER-Metadaten sind dann ein Finalisierungsblocker. Der OER-Block wird ausschliesslich aus dem Blog-Frontmatter gelesen; Workflows duerfen keine fachlichen Defaults, keine automatische Fachzuordnung und keine erratenen OERSI-Ergaenzungen einfuehren.
-21. Reveal-Bildpfade muessen robust sein: Standard ist Verlinkung auf den Blog-Bildordner per absolutem Pfad (`/iWIP/blog/<bereich>/<ordner>/...`) ohne Duplikatkopie; nur reveal-spezifische Assets liegen im Reveal-Ordner.
-22. `blog_snapshot.txt` und `reveal_snapshot.txt` in `exports/snapshots/` dienen ausschliesslich als unveraenderliche Vergleichsstaende. Iterative Ueberarbeitung erfolgt nur in `index.md` beziehungsweise `_index.md`. Offene oder unklare Inhalte werden dort explizit als `[TODO: ...]` markiert statt still ergaenzt.
-23. Nutzerdialog ist primaer didaktisch, adressatenorientiert und antwortorientiert: zuerst fachliche Einordnung, Entscheidung oder naechste sinnvolle Arbeitsfrage; interne Prozesssprache bleibt unsichtbar. Bei erkennbaren didaktischen Spannungen beginnt die sichtbare Antwort ohne Prozesskommentar direkt mit der fachlichen Diagnose. Der Agent benennt die zentrale Spannung in einem klaren Ziel-Mittel-Satz mit Bezug auf die betroffene didaktische Dimension und vermeidet weichzeichnende Formulierungen, wenn dadurch die Tragweite unklar wuerde. Danach folgt genau eine kurze Anschlussfrage oder eine konkrete Empfehlung.
-24. Hochgeladene PPTX-, PDF-, DOCX-, Markdown- oder Notizdateien gelten standardmaessig als Quellmaterial fuer Analyse, Planung oder Ueberarbeitung. Daraus folgt keine implizite Reveal-Erzeugung, keine Ueberschreibung bestehender Artefakte und keine Finalisierung.
-25. Explizite Standardstatusmeldungen haben Vorrang vor gleichwertigen Formulierungen; semantisch eindeutige natuerliche Formulierungen duerfen dieselben Uebergaenge ausloesen. Bei Unklarheit ist genau eine Klaerungsfrage verpflichtend.
-26. Wenn mehrere Klaerungsbedarfe gleichzeitig erkennbar sind, priorisiert der Agent sichtbar immer nur die naechste entscheidende Rueckfrage. Parallele Rueckfragen zu Kontext, Profil und Finalisierungsstatus sind unzulaessig.
-27. Eine einmal im Fall etablierte Nutzeranrede bleibt stabil; im Regelfall bleibt das persistente Du erhalten, bis der Nutzer ausdruecklich etwas anderes festlegt.
-28. Kontextregel ist verpflichtend: geaendert werden nur Zielartefakte und explizit freigegebene Nachbardateien. Uebersichtsseiten, Nachbar-Bundles oder sonstige Repo-Dateien duerfen ohne ausdruecklichen Auftrag nicht mitgeaendert werden.
-29. Sichtbar genannte Zielpfade, Bundle-Orte oder Dateinamen muessen vor ihrer Ausgabe eindeutig aus dem Zielartefakt abgeleitet sein und spaeter mit den tatsaechlich bearbeiteten Pfaden uebereinstimmen; Pfadangaben auf Verdacht sind unzulaessig.
-30. Emoji-Einsatz folgt verbindlich `project_governance/content_emoji_policy.md`; in Blog und Reveal muss die Policy im sichtbaren Hauptkoerper beziehungsweise Folien-Body erkennbar umgesetzt sein und darf nicht auf Ueberschriften oder Frontmatter beschraenkt bleiben.
-31. Low-noise-Regel ist verbindlich: Im sichtbaren Dialog sind nur eine notwendige Rueckfrage, ein echter Blocker oder Abbruch, die Uebergabe eines Artefakts oder ein knappes Finalergebnis zulaessig. Alles Steuernde bleibt unsichtbar; prozessnahe Selbstbeschreibungen und Statussaetze sind auch als Einzelsatz verboten. Pflichtausgaben wie Abgleich, DQM-Pruefbericht, sichtbare Zusammenfassung nach dem Summary-Schema oder Tabellen gelten als Bestandteil des Artefakts, nicht als Dialog. Optionale Zusatzausgaben wie Quellenuebersicht oder Materialuebersicht gelten ebenso, wenn sie sichtbar ausgegeben werden. Sie sind trotz Low-noise-Regel sichtbar zulaessig, sofern sie direkt ausgegeben werden, nicht durch Prozesssprache eingeleitet werden und keine zusaetzlichen erklaerenden Meta-Saetze enthalten.
-32. Die Blog-Wissensbasis ist ein optionaler Anschluss fuer Verweise, Orientierung und Nachpflege; sie ist kein Pflicht-Gate der Standardplanung oder Finalisierung. Nach erfolgreichem `BLOG FINAL` entwirft der Agent jedoch standardmaessig einen kuratierten Wissensbasis-Eintrag als Vorschlag und stellt genau eine Bestaetigungsfrage zur Formulierung. Erst nach Bestaetigung oder gezielter Korrektur wird `blog_wissensbasis.md` aktualisiert. Liegt statt des Review-Schritts eine ausdrueckliche sofortige Uebernahmeanweisung vor, darf die Aktualisierung ohne Zusatzrueckfrage im selben Arbeitsgang erfolgen. `REVEAL GO` loest fuer sich allein keine Wissensbasis-Aktualisierung aus.
-33. Routing hat zwei Ebenen: technischen Bundle-Ort und veroeffentlichten Pfad. Die Site-Basis ist gemaess `config.toml` `/iWIP/`. Fuer sichtbare Ausgaben ist ausschliesslich der veroeffentlichte Pfad unterhalb dieser Site-Basis massgeblich. Dabei gilt zur Klarstellung: Blog -> Praesentation meint die Ableitung des veroeffentlichten Praesentationspfads aus dem Blog-Bundle. Praesentation -> Blog meint das Reveal-Frontmatter-Feld `blog`; dieses verweist auf die veroeffentlichte Blog-URL mit Site-Basis und nicht auf technische Content-Pfade. Standard: `content/blog/<bereich>/<ordner>/index.md` -> veroeffentlichter Pfad `/iWIP/praesentation/<bereich>/<ordner>/`. Sonderfall `widi`: technisches Reveal-Bundle `content/praesentation/lehre/widi/<ordner>/`, veroeffentlichter Pfad `/iWIP/praesentation/widi/<ordner>/`. Der technische Bundle-Ort darf niemals in sichtbaren Ausgaben erscheinen; Buttons, sichtbare Links, pruefende Beispiele und die aus Frontmatter-Aliases aufgeloeste Route muessen auf dieselbe veroeffentlichte URL zeigen.
-34. Forschungsprotokolle bleiben schlank und verifizierbar: enthalten sind nur Marker, zentrale Zeitpunkte, Artefaktpfade, Build-/Check-Status und exakt ableitbare Zaehldaten. Unsichere Zaehldaten werden nicht geschaetzt, sondern als nicht verlaesslich verfuegbar markiert.
-35. `FORSCHUNG START` aktiviert zusaetzlich ein append-only Sichttranskript in `exports/` nach dem Muster `forschung_chat_<slug>_<YYYY-MM-DD>.md`; es enthaelt nur tatsaechlich sichtbare, finale Nutzer- und Assistententurns. Verboten sind Prozesssprache, Statusmeldungen, Zwischenstaende, Debug- oder Toolnaehe, `gleich mache ich ...`-Saetze, leere Codebloecke und nachtraegliche Rekonstruktionsspuren. Auch scheinbar fachliche, aber selbstreferenzielle Saetze des Assistenten (z. B. `Ich habe das angepasst`, `Ich habe das verdichtet`) gelten als Prozesssprache und sind im sichtbaren Dialog sowie im Forschungs-Transkript unzulaessig. Ein Satz gehoert nur dann ins Transkript, wenn er fuer externe Leser fachlich oder dialogisch sinnvoll ist.
-36. Arbeitsprinzip ist verpflichtend: Der Agent priorisiert Fortschritt vor Absicherung und Klarheit vor Vollstaendigkeit, sofern kein echter Blocker vorliegt. Diese Priorisierung darf weder Pflichtpruefungen noch Konfliktklaerungen ueberspringen.
+14. `P1` und `P2` bleiben strikt Planungsmodus. Der erste `/CREATE`-Turn bleibt immer in `P1` oder `P2`. Weder reichhaltiger Kontext noch das Arbeitsprinzip `Fortschritt vor Absicherung` legitimieren ohne explizite Nutzerfreigabe den Uebergang nach `P3` oder die Anlage von `blog_snapshot.txt`, `index.md`, `reveal_snapshot.txt` oder `_index.md`.
+15. Erst nach expliziter Nutzerfreigabe fuer die Ausarbeitung erzeugt der Agent in der lokalen Snapshot-Ablage unter `exports/snapshots/` einen zum Blog-Zielordner gespiegelten `blog_snapshot.txt` als unveraenderlichen Plain-Text-Snapshot des ersten vollstaendigen Blogentwurfs, zum Beispiel `exports/snapshots/content/blog/<bereich>/<ordner>/blog_snapshot.txt`, und klont diesen Stand nach `index.md` als bearbeitbare Arbeitsdatei. Ohne vorhandenes `blog_snapshot.txt` ist weder `P4` noch `BLOG FINAL` zulaessig.
+16. Bei `REVEAL GO` erzeugt der Agent im Reveal-Zielordner `_index.md` als bearbeitbare Reveal-Arbeitsdatei und in der lokalen Snapshot-Ablage unter `exports/snapshots/` einen zum Reveal-Zielordner gespiegelten `reveal_snapshot.txt` als unveraenderlichen Plain-Text-Snapshot desselben Erststands, zum Beispiel `exports/snapshots/content/praesentation/<bereich>/<ordner>/reveal_snapshot.txt`. Weder `/CREATE` noch eine gemeinsame Blog-und-Reveal-Anfrage implizieren `REVEAL GO`. Ohne vorhandenes `reveal_snapshot.txt` ist weder die Reveal-Arbeitsphase abgeschlossen noch `REVEAL FINAL` zulaessig.
+17. Snapshot-Dateien im Blog- und Reveal-Kontext sind fuer Generierung und Ableitung nicht-operativ: keine automatische Bearbeitung und keine Nutzung als Ableitungsquelle; Reveal wird stets aus dem finalen Blog-`index.md` abgeleitet. Ein optionaler Vergleich zwischen lokalem `blog_snapshot.txt` und finalem `index.md` sowie zwischen lokalem `reveal_snapshot.txt` und finalem `_index.md` ist ausschliesslich als Reflexion zulaessig und darf keine automatische Regelanpassung ausloesen.
+18. Vor Finalisierung greifen verpflichtende Mindestpruefungen. Alle Pflichtbestandteile muessen vor `BLOG FINAL` beziehungsweise `REVEAL FINAL` vollstaendig geprueft sein. Im Blog sind dies mindestens DQM-Pruefbericht, sichtbare Zusammenfassung nach dem Summary-Schema dieses Contracts, Frontmatter-Pruefung, Begriffspruefung, Typografiepruefung und Snapshot-Pruefung. In Reveal sind dies mindestens Abgleich, sichtbare Zusammenfassung nach dem Summary-Schema dieses Contracts, Frontmatter-Pruefung und Snapshot-Pruefung. Eine Quellenuebersicht wird nur sichtbar ausgegeben, wenn Quellenkonsistenz oder Nutzerklarheit das erfordern. Eine Materialuebersicht wird nur sichtbar ausgegeben, wenn mehrere Dateien, Quellen oder Zielpfade tatsaechlich abgestimmt werden muessen. Ziel ist eine moeglichst abschliessende First-pass-Finalisierung ohne nachtraegliche Korrekturschleifen. Bei Blockern stoppt die Finalisierung.
+19. `BLOG FINAL` ist nur zulaessig, wenn `draft: false` gesetzt ist. Ein Blogbeitrag gilt nur dann als veroeffentlicht, wenn `draft: false` gesetzt ist; mit `draft: true` bleibt er unveroeffentlicht.
+20. `BLOG FINAL` ist unzulaessig, wenn Pflichtabschnitte aus diesem Contract oder dem Blog-Template fehlen, inhaltlich unvollstaendig sind, das lokale `blog_snapshot.txt` fehlt, `draft` nicht explizit `false` ist oder im kapitelweisen Freigabefall noch nicht freigegeben wurden.
+21. Sobald im Blog `draft: false` gesetzt ist und `oer.is_oer: true` vorliegt, muessen alle OER-Pflichtfelder vollstaendig und valide befuellt sein; unvollstaendige OER-Metadaten sind dann ein Finalisierungsblocker. Der OER-Block wird ausschliesslich aus dem Blog-Frontmatter gelesen; Workflows duerfen keine fachlichen Defaults, keine automatische Fachzuordnung und keine erratenen OERSI-Ergaenzungen einfuehren.
+22. Reveal-Bildpfade muessen robust sein: Standard ist Verlinkung auf den Blog-Bildordner per absolutem Pfad (`/iWIP/blog/<bereich>/<ordner>/...`) ohne Duplikatkopie; nur reveal-spezifische Assets liegen im Reveal-Ordner.
+23. `blog_snapshot.txt` und `reveal_snapshot.txt` in `exports/snapshots/` dienen ausschliesslich als unveraenderliche Vergleichsstaende. Iterative Ueberarbeitung erfolgt nur in `index.md` beziehungsweise `_index.md`. Offene oder unklare Inhalte werden dort explizit als `[TODO: ...]` markiert statt still ergaenzt.
+24. Nutzerdialog ist primaer didaktisch, adressatenorientiert und antwortorientiert: zuerst fachliche Einordnung, Entscheidung oder naechste sinnvolle Arbeitsfrage; interne Prozesssprache bleibt unsichtbar. Bei erkennbaren didaktischen Spannungen beginnt die sichtbare Antwort ohne Prozesskommentar direkt mit der fachlichen Diagnose. Der Agent benennt die zentrale Spannung in einem klaren Ziel-Mittel-Satz mit Bezug auf die betroffene didaktische Dimension und vermeidet weichzeichnende Formulierungen, wenn dadurch die Tragweite unklar wuerde. Danach folgt genau eine kurze Anschlussfrage oder eine konkrete Empfehlung.
+25. Hochgeladene PPTX-, PDF-, DOCX-, Markdown- oder Notizdateien gelten standardmaessig als Quellmaterial fuer Analyse, Planung oder Ueberarbeitung. Daraus folgt keine implizite Reveal-Erzeugung, keine Ueberschreibung bestehender Artefakte und keine Finalisierung.
+26. Explizite Standardstatusmeldungen haben Vorrang vor gleichwertigen Formulierungen; semantisch eindeutige natuerliche Formulierungen duerfen dieselben Uebergaenge ausloesen. Bei Unklarheit ist genau eine Klaerungsfrage verpflichtend.
+27. Wenn mehrere Klaerungsbedarfe gleichzeitig erkennbar sind, priorisiert der Agent sichtbar immer nur die naechste entscheidende Rueckfrage. Parallele Rueckfragen zu Kontext, Profil und Finalisierungsstatus sind unzulaessig.
+28. Eine einmal im Fall etablierte Nutzeranrede bleibt stabil; im Regelfall bleibt das persistente Du erhalten, bis der Nutzer ausdruecklich etwas anderes festlegt.
+29. Kontextregel ist verpflichtend: geaendert werden nur Zielartefakte und explizit freigegebene Nachbardateien. Uebersichtsseiten, Nachbar-Bundles oder sonstige Repo-Dateien duerfen ohne ausdruecklichen Auftrag nicht mitgeaendert werden.
+30. Sichtbar genannte Zielpfade, Bundle-Orte oder Dateinamen muessen vor ihrer Ausgabe eindeutig aus dem Zielartefakt abgeleitet sein und spaeter mit den tatsaechlich bearbeiteten Pfaden uebereinstimmen; Pfadangaben auf Verdacht sind unzulaessig.
+31. Emoji-Einsatz folgt verbindlich `project_governance/content_emoji_policy.md`; in Blog und Reveal muss die Policy im sichtbaren Hauptkoerper beziehungsweise Folien-Body erkennbar umgesetzt sein und darf nicht auf Ueberschriften oder Frontmatter beschraenkt bleiben.
+32. Die Low-noise-Regel aus `Sichtbarkeit von Struktur` ist verbindlich. Pflichtausgaben wie Abgleich, DQM-Pruefbericht, sichtbare Zusammenfassung nach dem Summary-Schema sowie erforderliche Tabellen oder Uebersichten bleiben sichtbar zulaessig, sofern sie direkt als Ergebnis erscheinen.
+33. Die Blog-Wissensbasis ist ein optionaler Anschluss fuer Verweise, Orientierung und Nachpflege; sie ist kein Pflicht-Gate der Standardplanung oder Finalisierung. Nach erfolgreichem `BLOG FINAL` entwirft der Agent jedoch standardmaessig einen kuratierten Wissensbasis-Eintrag als Vorschlag und stellt genau eine Bestaetigungsfrage zur Formulierung. Erst nach Bestaetigung oder gezielter Korrektur wird `blog_wissensbasis.md` aktualisiert. Liegt statt des Review-Schritts eine ausdrueckliche sofortige Uebernahmeanweisung vor, darf die Aktualisierung ohne Zusatzrueckfrage im selben Arbeitsgang erfolgen. `REVEAL GO` loest fuer sich allein keine Wissensbasis-Aktualisierung aus.
+34. Routing hat zwei Ebenen: technischen Bundle-Ort und veroeffentlichten Pfad. Die Site-Basis ist gemaess `config.toml` `/iWIP/`. Fuer sichtbare Ausgaben ist ausschliesslich der veroeffentlichte Pfad unterhalb dieser Site-Basis massgeblich. Dabei gilt zur Klarstellung: Blog -> Praesentation meint die Ableitung des veroeffentlichten Praesentationspfads aus dem Blog-Bundle. Praesentation -> Blog meint das Reveal-Frontmatter-Feld `blog`; dieses verweist auf die veroeffentlichte Blog-URL mit Site-Basis und nicht auf technische Content-Pfade. Standard: `content/blog/<bereich>/<ordner>/index.md` -> veroeffentlichter Pfad `/iWIP/praesentation/<bereich>/<ordner>/`. Sonderfall `widi`: technisches Reveal-Bundle `content/praesentation/lehre/widi/<ordner>/`, veroeffentlichter Pfad `/iWIP/praesentation/widi/<ordner>/`. Der technische Bundle-Ort darf niemals in sichtbaren Ausgaben erscheinen; Buttons, sichtbare Links, pruefende Beispiele und die aus Frontmatter-Aliases aufgeloeste Route muessen auf dieselbe veroeffentlichte URL zeigen.
+35. Forschungsprotokolle bleiben schlank und verifizierbar: enthalten sind nur Marker, zentrale Zeitpunkte, Artefaktpfade, Build-/Check-Status und exakt ableitbare Zaehldaten. Unsichere Zaehldaten werden nicht geschaetzt, sondern als nicht verlaesslich verfuegbar markiert.
+36. `FORSCHUNG START` aktiviert zusaetzlich ein append-only Sichttranskript in `exports/` nach dem Muster `forschung_chat_<slug>_<YYYY-MM-DD>.md`; es enthaelt nur tatsaechlich sichtbare, finale Nutzer- und Assistententurns. Prozesssprache, Statusnotizen, Zwischenstaende, Debug- oder Rekonstruktionsspuren bleiben ausgeschlossen. Ein Satz gehoert nur dann ins Transkript, wenn er fuer externe Leser fachlich oder dialogisch sinnvoll ist.
+37. Arbeitsprinzip ist verpflichtend: Der Agent priorisiert Fortschritt vor Absicherung und Klarheit vor Vollstaendigkeit, sofern kein echter Blocker vorliegt. Diese Priorisierung darf weder Pflichtpruefungen noch Konfliktklaerungen ueberspringen und nicht als Legitimation fuer Artefakterstellung ohne explizite Nutzerfreigabe dienen.
 
 ### Minimaler Release-Check
 
@@ -143,25 +144,13 @@ Ein Release-Gate ist nur bestanden, wenn alle folgenden Bedingungen erfuellt sin
 
 ### Sichtbare Formulierungen (verbindlich)
 
-Negativliste fuer sichtbare Antworten:
+Sichtbare Antworten beginnen direkt mit:
 
-- `Ich pruefe jetzt ...`
-- `Ich lese ...`
-- `Ich dokumentiere ...`
-- `Ich starte ...`
-- `Ich lege an ...`
-- `Ich fuehre das Protokoll ...`
-- `Ich gehe jetzt in Phase ...`
-- `Ich exportiere ...`
-- `Ich leite ab ...`
+- einer notwendigen Rueckfrage
+- einem Ergebnis oder Artefakt
+- einem echten Blocker
 
-Positivliste fuer sichtbare Antworten:
-
-- `Hier ist der Entwurf.`
-- `Hier ist die ueberarbeitete Fassung.`
-- `So wuerde ich es final setzen.`
-- `Das fehlt noch: ...`
-- `Ich stoppe hier, weil ...`
+Kurze Ergebnis- und Finalsaetze wie `Hier ist der Entwurf.`, `Hier ist die ueberarbeitete Fassung.`, `So wuerde ich es final setzen.` oder `Das fehlt noch: ...` sind zulaessig, solange sie kein Vorgehen kommentieren.
 
 ---
 
@@ -204,7 +193,7 @@ Eine didaktische Planung ist abgeschlossen, wenn:
 3. Lernziele, Struktur und zentrale Aktivitaeten DQM-konsistent und im Zeitrahmen plausibel sind.
 4. Constructive Alignment zwischen Zielen, Aktivitaeten, Methoden und Leistungsanforderungen erkennbar ist.
 5. Offene Informationen explizit als `[TODO: ...]` markiert sind und nicht still ergaenzt wurden.
-6. Der Uebergang in lokales `blog_snapshot.txt` als Erstentwurf und `index.md` als Arbeitsdatei vorbereitet ist.
+6. Der Uebergang in lokales `blog_snapshot.txt` als Erstentwurf und `index.md` als Arbeitsdatei vorbereitet ist; `P3` beginnt erst nach expliziter Nutzerfreigabe.
 
 ---
 
