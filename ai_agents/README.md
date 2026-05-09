@@ -75,9 +75,23 @@ Der Einstieg erfolgt in der Regel ueber die Prompts im Ordner `prompts/`, insbes
 
 Die konkrete Befehlskette, alle Statusmeldungen und die Gate-Logik bleiben im Contract dokumentiert. Diese README fasst nur den Arbeitszusammenhang zusammen: Aus einem Planungsanliegen entsteht schrittweise ein Blogbeitrag; wenn gewuenscht, wird daraus anschliessend eine Praesentation abgeleitet.
 
-## Version
+## Version 
 
-Version: 1.0
+1.1 (Mai 2026)
+
+Mit Version 1.1 wurde der Agent konzeptionell und technisch grundlegend konsolidiert und erweitert. Wesentliche Neuerungen sind:
+- 🔄 Umstellung des zentralen Startbefehls von `/CREATE` auf `/PLAN`
+- 🧭 Einführung eines klaren Zustandsmodells mit Gates, Guards, Hooks und Exit-Actions
+- 🔬 Integration eines optionalen Forschungsmodus über `/PLAN FORSCHUNG`
+- 📚 Verbindlicher Wissensbasis-Hook nach `BLOG FINAL`
+- 🖥️ Automatischer Abschluss aktiver Forschungsartefakte bei `REVEAL FINAL`
+- 🧪 Ausbau und Konsolidierung der Regression Suite
+- 🏛️ Stärkung des `agent_contract.md` als zentrale Single Source of Truth
+- 🧠 Präzisere Einordnung des Didaktischen Qualitätsmodells (DQM) als Referenz- und Heuristikrahmen
+- ✂️ Deutliche Reduktion von Redundanzen und Vereinheitlichung der Terminologie
+- 📐 Klare Trennung von normativer Steuerlogik, operativer Umsetzung und dokumentarischer Orientierung
+
+Version 1.1 stellt damit einen konsolidierten, produktionsreifen Entwicklungsstand des Agenten dar.
 
 ## Lizenzhinweis
 
