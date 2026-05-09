@@ -353,6 +353,7 @@ Erwartung:
 - Agent startet mit demselben Planungsdialog wie bei `/PLAN`
 - Forschungs-/Rohdatenmodus ist aktiv
 - konkrete Rohdatenlogik bleibt einem spaeteren Patch vorbehalten
+- keine zusaetzlichen Forschungsbefehle werden eingefuehrt
 - keine sofortige Anlage von `index.md` oder `_index.md`
 
 Kritische Regeln:
@@ -380,6 +381,26 @@ Kritische Regeln:
 - `REVEAL FINAL` bleibt das regulaere Abschlussgate fuer Reveal
 - im Forschungsmodus schliesst `REVEAL FINAL` zusaetzlich aktive Forschungsartefakte ab
 - der Standardmodus bleibt unveraendert und erzeugt dadurch keine Forschungsartefakte
+
+---
+
+## 🧪 Test 22: 🔥 `BLOG FINAL` loest den Wissensbasis-Hook aus, blockiert Reveal aber nicht
+
+Voraussetzung:
+- Ein valider Blogentwurf in `index.md` liegt vor
+
+Prompt:
+BLOG FINAL
+
+Erwartung:
+- Blog wird mit den regulaeren Mindestpruefungen finalisiert
+- der Wissensbasis-Anschluss wird danach geprueft und standardmaessig als Entwurf bzw. Anschluss vorgeschlagen
+- ein noch offener redaktioneller Feinschliff am Wissensbasis-Anschluss macht den Blog nicht unfertig und blockiert `REVEAL GO` nicht
+
+Kritische Regeln:
+- `BLOG FINAL` bleibt das regulaere Abschlussgate fuer den Blog
+- der Wissensbasis-Anschluss ist ein Hook nach `BLOG FINAL`, kein eigenes Pflicht-Gate
+- `REVEAL GO` bleibt nach finalem Blog zulaessig
 
 ---
 

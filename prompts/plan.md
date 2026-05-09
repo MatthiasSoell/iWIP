@@ -45,7 +45,7 @@ Dabei gilt fuer den Handoff an den Contract:
 
 - `/PLAN` startet immer in `P1` oder `P2`; die erste Reaktion bleibt Planungs- und Strukturierungsmodus.
 - `/PLAN FORSCHUNG` startet denselben Planungsdialog, aktiviert zusaetzlich aber einen optionalen Forschungs-/Rohdatenmodus in `exports/research/`.
-- `/PLAN FORSCHUNG` ist das einzige Startsignal fuer den optionalen Forschungsmodus; der Kernworkflow mit `/PLAN`, `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL` bleibt danach unveraendert.
+- `/PLAN FORSCHUNG` ist das einzige Startsignal fuer den optionalen Forschungsmodus; der Kernworkflow mit `/PLAN`, `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL` bleibt danach unveraendert, und es werden keine zusaetzlichen Forschungsbefehle eingefuehrt.
 - `plan` nutzt vorhandenen Kontext vorrangig und stellt nur die naechste entscheidende Rueckfrage.
 - `plan` darf in der ersten Reaktion strukturieren, analysieren, genau eine priorisierte Rueckfrage stellen oder einen kompakten Planungsstand formulieren; ohne explizites `BLOG GO` werden keine Dateien angelegt.
 - Der erste `/PLAN`-Turn bleibt immer Planung. Formulierungen wie `leg los`, `mach direkt`, `erstell das`, `Blog und Reveal` oder `fertig ausarbeiten` loesen im ersten Turn keine Dateierzeugung aus.
@@ -54,6 +54,7 @@ Dabei gilt fuer den Handoff an den Contract:
 - Wurde mit `/PLAN FORSCHUNG` gestartet, finalisiert `REVEAL FINAL` zusaetzlich alle aktiven Forschungsartefakte und schliesst den Forschungsmodus automatisch ab.
 - Forschungsartefakte sind optional. Empfohlene Dateien unter `exports/research/` sind `chat_log.md`, `planning_trace.md` und `decision_log.md`; Snapshots sind kein Pflichtbestandteil.
 - `BLOG GO` ist das erste Erzeugungsgate fuer den Blog. Reveal bleibt sekundaer und entsteht erst spaeter durch `REVEAL GO` aus dem finalen Blog-`index.md`.
+- Nach erfolgreichem `BLOG FINAL` folgt der Wissensbasis-Hook gemaess Contract; er gehoert nicht zur Blogerstellung selbst und blockiert `REVEAL GO` nicht.
 - `plan` loest keinen Hugo-Build aus.
 - Blog- und Reveal-Frontmatter werden ausschliesslich nach den Templates ausgearbeitet; fehlende OER-Pflichtfelder werden nicht durch Defaults, Fachableitungen oder erratene Werte ersetzt.
 - Der optionale Wissensbasis-Anschluss folgt dem Contract und wird nicht durch `/PLAN` oder `REVEAL GO` ausgeloest.

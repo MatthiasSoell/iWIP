@@ -264,6 +264,8 @@ Wenn das Artefakt ein Blogartikel ist, folgt die sichtbare Reihenfolge dem Contr
 5. optionale `Quellenuebersicht`
 6. `Zusammenfassung`
 
+Nach erfolgreichem `BLOG FINAL` folgt anschliessend der Wissensbasis-Hook des Contracts; er gehoert nicht zur Blogpruefung selbst und blockiert `REVEAL GO` nicht.
+
 Wenn das Artefakt eine Reveal-Praesentation ist, folgt die sichtbare Reihenfolge dem Contract fuer `REVEAL FINAL`:
 
 1. `Abgleich`
