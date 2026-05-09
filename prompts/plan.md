@@ -43,21 +43,10 @@ keine Standardabfrage und keine routinemaessige Vollabfrage aller Parameter.
 
 Dabei gilt fuer den Handoff an den Contract:
 
-- `/PLAN` startet immer in `P1` oder `P2`; die erste Reaktion bleibt Planungs- und Strukturierungsmodus.
-- `/PLAN FORSCHUNG` startet denselben Planungsdialog, aktiviert zusaetzlich aber einen optionalen Forschungs-/Rohdatenmodus in `exports/research/`.
-- `/PLAN FORSCHUNG` ist das einzige Startsignal fuer den optionalen Forschungsmodus; der Kernworkflow mit `/PLAN`, `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL` bleibt danach unveraendert, und es werden keine zusaetzlichen Forschungsbefehle eingefuehrt.
-- `plan` nutzt vorhandenen Kontext vorrangig und stellt nur die naechste entscheidende Rueckfrage.
-- `plan` darf in der ersten Reaktion strukturieren, analysieren, genau eine priorisierte Rueckfrage stellen oder einen kompakten Planungsstand formulieren; ohne explizites `BLOG GO` werden keine Dateien angelegt.
-- Der erste `/PLAN`-Turn bleibt immer Planung. Formulierungen wie `leg los`, `mach direkt`, `erstell das`, `Blog und Reveal` oder `fertig ausarbeiten` loesen im ersten Turn keine Dateierzeugung aus.
-- Ohne explizites `BLOG GO` entstehen weder `index.md` noch `_index.md`; im Standardmodus entstehen ausserdem keine Snapshots, keine Chatlogs und keine Rohdatenexporte.
-- Der Forschungsmodus ist ein Zusatzmodus und ersetzt keine Standardstatusmeldung; auch mit `/PLAN FORSCHUNG` bleiben `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL` unveraendert.
-- Wurde mit `/PLAN FORSCHUNG` gestartet, finalisiert `REVEAL FINAL` zusaetzlich alle aktiven Forschungsartefakte und schliesst den Forschungsmodus automatisch ab.
-- Forschungsartefakte sind optional. Empfohlene Dateien unter `exports/research/` sind `chat_log.md`, `planning_trace.md` und `decision_log.md`; Snapshots sind kein Pflichtbestandteil.
-- `BLOG GO` ist das erste Erzeugungsgate fuer den Blog. Reveal bleibt sekundaer und entsteht erst spaeter durch `REVEAL GO` aus dem finalen Blog-`index.md`.
-- Nach erfolgreichem `BLOG FINAL` folgt der Wissensbasis-Hook gemaess Contract; er gehoert nicht zur Blogerstellung selbst und blockiert `REVEAL GO` nicht.
-- `plan` loest keinen Hugo-Build aus.
-- Blog- und Reveal-Frontmatter werden ausschliesslich nach den Templates ausgearbeitet; fehlende OER-Pflichtfelder werden nicht durch Defaults, Fachableitungen oder erratene Werte ersetzt.
-- Der optionale Wissensbasis-Anschluss folgt dem Contract und wird nicht durch `/PLAN` oder `REVEAL GO` ausgeloest.
+- `plan` wertet nur den Einstieg aus und uebergibt dann an die im Contract definierte State Machine mit ihren Gates, Guards, Hooks und Exit-Actions.
+- Die erste Reaktion bleibt Planungsmodus: strukturieren, den vorhandenen Kontext ordnen und hoechstens die naechste entscheidende Rueckfrage stellen.
+- Dateierzeugung, Finalisierung, Forschungsartefakte, Wissensbasis-Anschluss und Build-Verhalten folgen ausschliesslich dem Contract; `prompts/plan.md` fuehrt dazu keine Parallelregeln.
+- Blog- und Reveal-Frontmatter folgen ausschliesslich den Templates; fehlende Pflichtangaben werden nicht durch erratene Werte oder versteckte Defaults ersetzt.
 
 Fuer diese gezielte Klaerung kann der Agent bei Bedarf selektiv nach Zielgruppe,
 Kontext, Vorwissen, typischen Lernhuerden, Zeitrahmen, Format, Setting oder

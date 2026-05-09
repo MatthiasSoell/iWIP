@@ -31,18 +31,16 @@ Arbeite dabei mit:
 
 ---
 
-## WICHTIG
+## Bewertungslogik
+
+| Status | Verwendung |
+|---|---|
+| `BLOCKER` | Contract-Verstoss, fehlender Pflichtbestandteil oder Finalisierungshindernis |
+| `WARNUNG` | minderschwere Auffaelligkeit oder Soft-Heuristik-Hinweis |
+| `OK` / Hinweis | contractkonformer Befund ohne Finalisierungshindernis |
 
 - `check` bewertet nur.
-- `BLOCKER` markiert Contract-Verstoesse, fehlende Pflichtbestandteile oder Finalisierungshindernisse.
-- `WARNUNG` oder Hinweise markieren minderschwere Auffaelligkeiten und Soft-Heuristiken.
 - Sichtbar erscheinen nur die contractkonformen Pruefausgaben im vorgegebenen Format, ohne Prozesskommentar.
-
-Wenn ein Contract-Verstoss, ein fehlender Pflichtbestandteil oder ein Finalisierungshindernis vorliegt:
--> markiere den Punkt als `BLOCKER` gemaess Contract
-
-Wenn nur minderschwere Auffaelligkeiten oder Soft-Heuristik-Hinweise vorliegen:
--> gib sie als `WARNUNG` oder Hinweis aus, nicht als `BLOCKER`
 
 Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive Textauswahlen oder sonstiger Editor-Kontext steuern diesen Pruefpfad nicht.
 
@@ -50,17 +48,22 @@ Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive 
 
 ## DQM-Diagnose
 
-Wenn das Artefakt didaktisch zu beurteilen ist und keine Reveal-Ableitung ist, liefere eine Diagnose entlang der DQM-Dimensionen.
+Wenn das Artefakt didaktisch zu beurteilen ist und keine Reveal-Ableitung ist, liefere eine Diagnose entlang der sechs DQM-Dimensionen:
 
-- Bewerte jede DQM-Dimension mit `OK`, `WARNUNG` oder `BLOCKER`.
+1. Zielorientierung
+2. Strukturierung
+3. Lernverstaendnis
+4. Lernqualitaet
+5. Reflexion
+6. Adaptivitaet
+
+Dabei gilt:
+
+- Bewerte jede DQM-Dimension mit `OK`, `WARNUNG` oder `BLOCKER` und kurzer Begruendung.
 - Nutze die Profilgewichtung aus `ai_agents/didaktisches_qualitaetsmodell.md`.
 - Wenn ein Profil explizit im Artefakt oder Kontext dokumentiert ist, pruefe seine konsistente Umsetzung gegen diese Profilgewichtung.
 - Wenn kein Profil dokumentiert ist, bewerte mit Profil A als Contract-Default; das allein ist kein Befund.
 - Fuer Reveal-Ableitungen wird kein DQM-Block erzeugt.
-
----
-
-## Pruefmatrix
 
 ## Mediendidaktische Soft-Heuristiken
 
@@ -76,21 +79,7 @@ Dabei gilt strikt:
 
 Fokus ist ausschliesslich die Darstellung, nicht die inhaltliche Korrektheit.
 
-### DQM-Kernpruefung
-
-Pruefe bei didaktisch zu beurteilenden Artefakten ausser Reveal-Ableitungen entlang der sechs DQM-Dimensionen:
-
-1. Zielorientierung
-2. Strukturierung
-3. Lernverstaendnis
-4. Lernqualitaet
-5. Reflexion
-6. Adaptivitaet
-
-Bewertungsregel:
-
-- Bewerte jede DQM-Dimension mit `OK`, `WARNUNG` oder `BLOCKER` und kurzer Begruendung.
-- Hoeher gewichtete Dimensionen werden strenger ausgelegt; niedrig gewichtete Dimensionen duerfen in der Tiefe reduziert sein, nie fehlen.
+Hoeher gewichtete Dimensionen werden strenger ausgelegt; niedrig gewichtete Dimensionen duerfen in der Tiefe reduziert sein, nie fehlen.
 
 ---
 

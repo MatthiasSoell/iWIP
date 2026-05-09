@@ -9,6 +9,7 @@ Diese Regeln definieren, wie AI‑Agenten (z. B. GitHub Copilot, ChatGPT) Änd
 
 Diese Datei ist KEINE Laufzeit-Steuerlogik.
 Sie gilt nur fuer Entwicklung und QA.
+Fuer agentische Steuerlogik bleibt `project_governance/agent_contract.md` die einzige verbindliche Regelquelle.
 
 Ziel ist eine stabile, wartbare Architektur ohne unnötige technische Schulden.
 
@@ -173,9 +174,8 @@ Reveal prüfen, wenn betroffen:
 
 Dann zusätzlich:
 
-- RC‑Katalog aus `project_governance/agent_contract.md` anwenden
-- Ausführungslogik aus `project_governance/development_workflow.md` befolgen
-- vor Live‑Fällen oder festgeschriebenen Ständen einen vollständigen RC‑Durchlauf bzw. den im Workflow beschriebenen Dry Run als praktische Durchfuehrung des im Contract definierten RC‑Trockentests vorsehen
+- RC-Katalog aus `project_governance/agent_contract.md` als normative Referenz anwenden
+- Ausfuehrungslogik aus `project_governance/development_workflow.md` fuer Testtiefe, RC-Auswahl und Dry Run befolgen
 
 ---
 

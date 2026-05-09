@@ -32,7 +32,7 @@ Der Agent ist damit bewusst als Human-in-the-Loop-System angelegt.
 
 ## (Fach-)Didaktische Grundlage
 
-Die Arbeit des Agenten basiert auf einem didaktischen Qualitätsmodell (DQM), das als normative Orientierung für Planung und Ausarbeitung dient. 
+Die Arbeit des Agenten basiert auf einem didaktischen Qualitätsmodell (DQM), das als didaktisches Referenzmodell fuer Planung und Ausarbeitung dient.
 
 Ziel ist es, Lehr-Lern-Prozesse nicht nur formal zu strukturieren, sondern inhaltlich begründet und lernförderlich zu gestalten. Der Agent orientiert sich dabei insbesondere an zentralen didaktischen Dimensionen wie Zielorientierung, Strukturierung, Lernverständnis, Lernqualität, Reflexion und Adaptivität. 
 
@@ -59,27 +59,21 @@ Er unterstützt die Arbeit, steuert sie aber nicht anstelle der Lehrenden oder A
 
 ## Zentrale Dateien
 
-Die wichtigsten Dateien und Ordner für den Agenten sind:
+Die wichtigsten Dateien und Ordner fuer den Agenten sind:
 
-- `ai_agents/master_agent.md` – beschreibt Rolle, Arbeitsfokus und didaktische Grundausrichtung
-- `project_governance/agent_contract.md` – enthält die verbindliche Steuer- und Prozesslogik
-- `prompts/` – Einstiegspunkte für typische Arbeits- und Prüfprozesse
-- `ai_agents/templates/` – Vorlagen für Blog- und Reveal-Artefakte
+| Datei oder Bereich | Rolle |
+|---|---|
+| `project_governance/agent_contract.md` | einzige verbindliche Regelquelle fuer State Machine, Gates, Guards, Hooks, Exit-Actions, Finalisierung und Sichtbarkeit |
+| `ai_agents/master_agent.md` | didaktische Fuehrung, Dialoghaltung und Textarbeit innerhalb des Contracts |
+| `prompts/plan.md` | Einstieg und Routing fuer den Planungsdialog |
+| `prompts/check.md` | Pruefablauf und Ausgabeformat fuer Finalpruefungen |
+| `ai_agents/templates/` | Vorlagen fuer Blog- und Reveal-Artefakte |
 
 ## Nutzung
 
-Der Einstieg erfolgt in der Regel über die Prompts im Ordner `prompts/`, insbesondere über `prompts/plan.md` für den Planungsdialog und `prompts/check.md` für Finalpruefungen.
+Der Einstieg erfolgt in der Regel ueber die Prompts im Ordner `prompts/`, insbesondere ueber `prompts/plan.md` fuer den Planungsdialog und `prompts/check.md` fuer Finalpruefungen.
 
-Die dokumentierte Befehlskette lautet:
-
-- `/PLAN` startet den Planungsdialog, sichtet vorhandenen Kontext und erzeugt keine Dateien.
-- `/PLAN FORSCHUNG` startet denselben Planungsdialog mit zusaetzlichem Forschungs-/Rohdatenmodus.
-- `BLOG GO` erzeugt `index.md` aus einem freigegebenen oder explizit benannten Planungsstand.
-- `BLOG FINAL` prueft und finalisiert den Blog.
-- `REVEAL GO` erzeugt `_index.md` ausschliesslich aus dem finalen Blog.
-- `REVEAL FINAL` prueft und finalisiert die Praesentation; nach Start mit `/PLAN FORSCHUNG` schliesst es zusaetzlich aktive Forschungsartefakte ab.
-
-Die Nutzung ist als dialogischer Prozess angelegt: Aus einem Planungsanliegen entsteht schrittweise ein Blogbeitrag; wenn gewuenscht, wird daraus anschliessend eine Praesentation abgeleitet.
+Die konkrete Befehlskette, alle Statusmeldungen und die Gate-Logik bleiben im Contract dokumentiert. Diese README fasst nur den Arbeitszusammenhang zusammen: Aus einem Planungsanliegen entsteht schrittweise ein Blogbeitrag; wenn gewuenscht, wird daraus anschliessend eine Praesentation abgeleitet.
 
 ## Version
 

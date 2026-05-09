@@ -14,7 +14,7 @@ Kontext: technische Änderungen im Repository (Hugo, CSS, Layout, Docs)
 - Blog-CSS und Reveal-CSS strikt getrennt.
 - Agentenlogik nach Änderungen mit dem RC-Katalog in `project_governance/agent_contract.md` prüfen.
 - Testtiefe proportional zum Änderungsrisiko wählen.
-- Vor Änderungen: Diff prüfen und Smoke-Test durchführen.
+- Vor Commits: Diff pruefen; Smoke-Tests nur, wenn die Aenderungsklasse sie erfordert.
 
 ## 1. Grundprinzip
 
@@ -76,6 +76,8 @@ Wenn Änderungen an folgenden Dateien erfolgen, ist zusätzlich der RC-Katalog a
 - `ai_agents/templates/blog_template.md`
 - `ai_agents/templates/reveal_template.md`
 
+Der Contract bleibt dabei die einzige normative Quelle fuer State Machine, Gates, Guards, Hooks, Exit-Actions und Finalisierung; dieser Workflow regelt nur Tiefe und Form der Validierung.
+
 Ausführungslogik:
 
 - **Selektiver RC-Durchlauf**: bei kleinen Text- oder Regelkorrekturen nur betroffene RCs plus RC-07.
@@ -109,9 +111,9 @@ Pflichtstationen im praktischen Dry Run:
 - `BLOG FINAL`
 - `REVEAL GO` -> `REVEAL FINAL`
 
-Die Pflichtstationen werden gegen das kompakte Zustandsmodell im Contract geprueft. Dabei sind insbesondere diese Restriktionen mitzuprotokollieren: `/PLAN` erzeugt keine Dateien, `BLOG GO` nur `index.md`, `BLOG FINAL` setzt einen validen Blogentwurf voraus und loest danach den nicht blockierenden Wissensbasis-Hook aus, `REVEAL GO` setzt einen finalisierten Blog voraus, `REVEAL FINAL` finalisiert Reveal und schliesst nach Start mit `/PLAN FORSCHUNG` zusaetzlich aktive Forschungsartefakte ab, und `/PLAN FORSCHUNG` verhaelt sich wie `/PLAN` mit zusaetzlicher Forschungs-/Rohdatenaktivierung ohne neue Forschungsbefehle.
+Die Pflichtstationen werden gegen das kompakte Zustandsmodell im Contract geprueft. Der Auswertungsbogen dokumentiert daher das beobachtete Verhalten je Station mit Verweis auf die einschlaegige Contract-Regel, statt die Gate-Logik hier erneut auszuschreiben.
 
-Fuer die Auswertung gilt zusaetzlich: Im Standardmodus duerfen keine Snapshots, Chatlogs oder Rohdatenartefakte entstehen. Im Forschungsmodus bleiben solche Artefakte optional und sind kein Ersatz fuer die regulaeren Gates.
+Fuer die Auswertung gilt zusaetzlich: Besondere Aufmerksamkeit erhalten unbeabsichtigte Artefakterzeugung, Verwechslungen zwischen Standard- und Forschungsmodus sowie Umgehungen der regulaeren Gates.
 
 Pro Station mindestens erfassen:
 

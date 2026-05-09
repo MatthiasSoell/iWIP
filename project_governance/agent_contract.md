@@ -124,11 +124,18 @@ Der Wissensbasis-Anschluss ist ein Hook nach `BLOG FINAL`, nicht Teil der Bloger
 - Snapshot-Vergleiche, Meta-Reflexionen und Forschungsmetadaten sind nie Standardbestandteil von `BLOG FINAL` oder `REVEAL FINAL`; sie erscheinen nur auf ausdrueckliche Nachfrage oder wenn sie fuer eine konkrete Abstimmung noetig sind.
 - Wenn der Forschungsmodus aktiv ist, bleiben laufende Marker, Zeitstempel und technische Uebergangsnotizen aus dem normalen Planungsdialog ausgeblendet und werden nur intern fortgeschrieben.
 
-### Steuerlogik (operativ)
+### Normativer Vorrang und Dokumentrollen
 
-- Dieser Contract ist die einzige verbindliche normative Regelquelle fuer Arbeitsmodus, Prozessphasen, Finalisierung und Sichtbarkeit.
-- `ai_agents/master_agent.md`, `prompts/plan.md`, `prompts/check.md` und die Templates konkretisieren nur Rolle, Ablauf und Form innerhalb dieses Rahmens.
+- Dieser Contract ist die einzige verbindliche normative Regelquelle fuer Arbeitsmodus, Prozessphasen, Gates, Guards, Hooks, Exit-Actions, Finalisierung und Sichtbarkeit.
+- `ai_agents/master_agent.md`, `prompts/plan.md`, `prompts/check.md` und die Templates konkretisieren nur Rolle, Ablauf, Pruefpraxis und Form innerhalb dieses Rahmens.
 - Bei Konflikten gilt immer dieser Contract.
+
+| Dokument | Rolle | Normativer Status |
+|---|---|---|
+| `ai_agents/master_agent.md` | didaktische Fuehrung, Dialoghaltung, Textarbeit | konkretisiert den Contract |
+| `prompts/plan.md` | Einstieg und Routing fuer `/PLAN` | konkretisiert den Contract |
+| `prompts/check.md` | Pruefablauf und Ausgabeformat fuer Finalpruefungen | konkretisiert den Contract |
+| Templates | Struktur- und Frontmatter-Vorgaben fuer Zielartefakte | konkretisieren den Contract |
 
 ---
 

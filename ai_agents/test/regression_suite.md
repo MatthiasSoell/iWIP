@@ -7,9 +7,16 @@ Diese Regression Suite ist ein abgeleiteter Testkatalog auf Basis des Agent Cont
 
 Sie dient dazu, Contract-Regeln fuer Regressionen zu pruefen, relevante RC-IDs im RC-Durchlauf zu referenzieren, kompakte Beispieltests bereitzustellen und keine eigene normative Autoritaet zu begruenden.
 
+## Dokumentrolle
+
+| Dokument | Rolle |
+|---|---|
+| `project_governance/agent_contract.md` | verbindliche Regelquelle |
+| `ai_agents/test/regression_suite.md` | abgeleiteter Testkatalog fuer RC-Durchlaeufe, Audits und Regressionen |
+
 Die Tests sind bewusst:
 - realitätsnah (typische Nutzungssituationen)
-- regelzentriert (Contract, DQM, Workflow)
+- regelzentriert (Contract als Normbasis, DQM und Workflow als Referenzen)
 - kompakt (manuell oder gedanklich prüfbar)
 
 ---
