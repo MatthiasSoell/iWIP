@@ -121,7 +121,7 @@ Einige Pfade sind fuer den lokalen Arbeitsprozess sinnvoll, gehoeren aber
 nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
 
 - `exports/` fuer lokale Forschungs-, Review- und Chat-Exporte
-- `exports/snapshots/` fuer lokale, nicht oeffentliche Blog- und Reveal-Snapshots
+- `exports/snapshots/` fuer lokale, nicht oeffentliche Forschungs- und Vergleichsstaende im Forschungsmodus
 - `public/` als lokaler Hugo-Build-Output
 - `resources/` als lokaler Hugo-Cache bzw. Build-Artefakt
 - `.hugo_build.lock` als lokale Lock-Datei

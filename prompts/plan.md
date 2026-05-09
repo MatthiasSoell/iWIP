@@ -1,4 +1,4 @@
-# /create — Didaktische Planung starten
+# /plan — Didaktische Planung starten
 
 Kontext: Einstieg und Routing in die Arbeit nach Contract
 
@@ -8,7 +8,7 @@ Dieser Prompt startet eine neue didaktische Planung im SciBlog iWIP
 und routet den Fall in die Steuerlogik aus `project_governance/agent_contract.md`.
 
 Es gelten die Regeln aus `project_governance/agent_contract.md`.
-Diese Datei konkretisiert ausschliesslich den Einstieg fuer `/CREATE`.
+Diese Datei konkretisiert ausschliesslich den Einstieg fuer `/PLAN` und `/PLAN FORSCHUNG`.
 Bei Konflikt gilt der Contract.
 
 Arbeite strikt nach:
@@ -19,20 +19,20 @@ Arbeite strikt nach:
 - `ai_agents/templates/blog_template.md`
 - `ai_agents/templates/reveal_template.md`
 
-`prompts/create.md` fuehrt keine eigene Steuerlogik ein.
+`prompts/plan.md` fuehrt keine eigene Steuerlogik ein.
 
 ---
 
 ## Rolle
 
-`create` ist ein Router.
+`plan` ist ein Router.
 
 ---
 
 ## Aufgabe
 
-`create` interpretiert den Nutzereinstieg,
-ueberfuehrt ihn in den passenden Arbeitsmodus
+`plan` interpretiert den Nutzereinstieg,
+ueberfuehrt ihn in den passenden Planungsmodus
 und uebergibt vollstaendig an den Contract.
 
 Der Agent nutzt vorhandene Informationen aus Initialprompt, Folgeprompts und
@@ -43,14 +43,16 @@ keine Standardabfrage und keine routinemaessige Vollabfrage aller Parameter.
 
 Dabei gilt fuer den Handoff an den Contract:
 
-- `/CREATE` startet immer in `P1` oder `P2`; die erste Reaktion bleibt Planungs- und Strukturierungsmodus.
-- `create` nutzt vorhandenen Kontext vorrangig und stellt nur die naechste entscheidende Rueckfrage.
-- `create` darf in der ersten Reaktion strukturieren, analysieren, genau eine priorisierte Rueckfrage stellen oder einen Planungsstand formulieren; ohne explizite Nutzerfreigabe werden keine Dateien angelegt.
-- Der Uebergang nach `P3` erfolgt erst nach expliziter Nutzerfreigabe wie `Entwurf anlegen`, `Blog erstellen`, `Jetzt ausarbeiten` oder `Passt, leg los`; im initialen `/CREATE`-Turn gelten solche Formulierungen noch nicht als Startsignal fuer Dateianlage.
-- Phasenfuehrung, Snapshot-Erzeugung und Reveal-Ableitung folgen dem Contract; insbesondere bleibt Artefaktsprache bis zum Uebergang nach `P3` ausgesetzt, und `index.md`, `_index.md`, `blog_snapshot.txt` sowie `reveal_snapshot.txt` duerfen vorher nicht erzeugt werden.
-- Wenn Blog und Reveal im selben `/CREATE` genannt werden, bleibt Reveal trotzdem abgeleitet und sekundaer; `_index.md` und `reveal_snapshot.txt` entstehen erst nach `REVEAL GO` aus dem finalen Blog-`index.md`.
+- `/PLAN` startet immer in `P1` oder `P2`; die erste Reaktion bleibt Planungs- und Strukturierungsmodus.
+- `/PLAN FORSCHUNG` startet denselben Planungsdialog, aktiviert zusaetzlich aber den Forschungs-/Rohdatenmodus.
+- `plan` nutzt vorhandenen Kontext vorrangig und stellt nur die naechste entscheidende Rueckfrage.
+- `plan` darf in der ersten Reaktion strukturieren, analysieren, genau eine priorisierte Rueckfrage stellen oder einen kompakten Planungsstand formulieren; ohne explizites `BLOG GO` werden keine Dateien angelegt.
+- Der erste `/PLAN`-Turn bleibt immer Planung. Formulierungen wie `leg los`, `mach direkt`, `erstell das`, `Blog und Reveal` oder `fertig ausarbeiten` loesen im ersten Turn keine Dateierzeugung aus.
+- Ohne explizites `BLOG GO` entstehen weder `index.md` noch `_index.md`; im Standardmodus entstehen ausserdem keine Snapshots, keine Chatlogs und keine Rohdatenexporte.
+- `BLOG GO` ist das erste Erzeugungsgate fuer den Blog. Reveal bleibt sekundaer und entsteht erst spaeter durch `REVEAL GO` aus dem finalen Blog-`index.md`.
+- `plan` loest keinen Hugo-Build aus.
 - Blog- und Reveal-Frontmatter werden ausschliesslich nach den Templates ausgearbeitet; fehlende OER-Pflichtfelder werden nicht durch Defaults, Fachableitungen oder erratene Werte ersetzt.
-- Der optionale Wissensbasis-Anschluss folgt dem Contract und wird nicht durch `REVEAL GO` ausgeloest.
+- Der optionale Wissensbasis-Anschluss folgt dem Contract und wird nicht durch `/PLAN` oder `REVEAL GO` ausgeloest.
 
 Fuer diese gezielte Klaerung kann der Agent bei Bedarf selektiv nach Zielgruppe,
 Kontext, Vorwissen, typischen Lernhuerden, Zeitrahmen, Format, Setting oder
@@ -81,4 +83,7 @@ Planung sichtbar staerkt.
 
 ## WICHTIG
 
-Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive Textauswahlen oder sonstiger Editor-Kontext steuern den Einstieg nicht. Massgeblich sind Anliegen und eindeutig erkennbare Arbeitsbefehle gemaess Contract.
+Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive
+Textauswahlen oder sonstiger Editor-Kontext steuern den Einstieg nicht.
+Massgeblich sind Anliegen und eindeutig erkennbare Arbeitsbefehle gemaess
+Contract.

@@ -48,7 +48,18 @@ Die PDFs stehen direkt im Präsentationspfad zum Download bereit.
 
 ### Didaktischer Planungsagent
 
-Der integrierte didaktische Planungsagent (WiDi) unterstützt die Planung und strukturierte Ausarbeitung von Lehr-Lern-Inhalten. Er verbindet den Arbeitszusammenhang Planung → Blog → Präsentation und macht Entwicklungsprozesse nachvollziehbar und reflektierbar. Der Agent arbeitet dialogisch, strukturierend und ko-kreativ; der Blog dient dabei als zentrales Arbeitsdokument, aus dem bei Bedarf Präsentationen abgeleitet werden können. Er ist als unterstützendes Werkzeug konzipiert und ersetzt keine didaktischen Entscheidungen. Weitere Details, zentrale Dateien und die Nutzung sind in [ai_agents/README.md](ai_agents/README.md) dokumentiert.
+Der integrierte didaktische Planungsagent (WiDi) unterstützt die Planung und strukturierte Ausarbeitung von Lehr-Lern-Inhalten. Er verbindet den Arbeitszusammenhang Planung → Blog → Präsentation und macht Entwicklungsprozesse nachvollziehbar und reflektierbar. Der Agent arbeitet dialogisch, strukturierend und ko-kreativ; der Blog dient dabei als zentrales Arbeitsdokument, aus dem bei Bedarf Präsentationen abgeleitet werden koennen. Er ist als unterstützendes Werkzeug konzipiert und ersetzt keine didaktischen Entscheidungen.
+
+Die dokumentierte Befehlskette lautet:
+
+- `/PLAN` fuer den Planungsdialog ohne Dateierzeugung
+- `/PLAN FORSCHUNG` fuer denselben Planungsdialog mit zusaetzlichem Forschungs-/Rohdatenmodus
+- `BLOG GO` fuer die Erzeugung von `index.md` aus einem freigegebenen Planungsstand
+- `BLOG FINAL` fuer die Blog-Pruefung und Finalisierung
+- `REVEAL GO` fuer die Ableitung von `_index.md` aus dem finalen Blog
+- `REVEAL FINAL` fuer die Reveal-Pruefung und Finalisierung
+
+Weitere Details, zentrale Dateien und die Nutzung sind in [ai_agents/README.md](ai_agents/README.md) dokumentiert.
 
 ### Technische Infrastruktur
 

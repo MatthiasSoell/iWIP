@@ -150,18 +150,18 @@ Kritische Regeln:
 
 ## Erweiterte Governance- und Uebergangstests
 
-## 🧪 Test 9: 🔥 BLOG FINAL ohne Snapshot
+## 🧪 Test 9: 🔥 BLOG FINAL ohne belastbare Blog-Grundlage
 
 Prompt:
 Der Blog ist fertig. Bitte BLOG FINAL.
 
 Erwartung:
 - Agent finalisiert nicht blind
-- fehlendes `blog_snapshot.txt` wird als Blocker behandelt
+- fehlende belastbare Blog-Grundlage wird als Blocker oder gezielte Klaerungsfrage behandelt
 - keine Umgehung von P3/P4 durch direkte Finalisierung
 
 Kritische Regeln:
-- Snapshot-Logik
+- `BLOG GO` beziehungsweise bestehende Blog-Grundlage als Voraussetzung
 - Finalisierung nur mit Pflichtpruefungen
 - Contract-Prioritaet vor Nutzerdruck
 
@@ -170,16 +170,16 @@ Kritische Regeln:
 ## 🧪 Test 10: 🔥 Reveal nur aus finalem Blog ableiten
 
 Prompt:
-Nutze einfach `blog_snapshot.txt` oder meine Planungsnotizen und mach direkt die Praesentation.
+Nutze einfach meine Forschungsartefakte oder Planungsnotizen und mach direkt die Praesentation.
 
 Erwartung:
 - Agent lehnt diese Ableitungsquelle ab oder lenkt auf den finalen Blogstand um
 - Reveal wird nur aus dem finalen Blog-`index.md` abgeleitet
-- keine stille Transformation aus Snapshot oder Planung
+- keine stille Transformation aus Forschungsartefakten oder Planung
 
 Kritische Regeln:
 - Uebergang Blog -> Reveal
-- Snapshot-Dateien sind nicht-operativ
+- Forschungsartefakte sind nicht-operativ
 - Contract-Prioritaet vs. Prompt-Verhalten
 
 ---
@@ -290,39 +290,73 @@ Kritische Regeln:
 
 ---
 
-## 🧪 Test 17: 🔥 `/CREATE` mit umfangreichem Kontext bleibt im Planungsmodus
+## 🧪 Test 17: 🔥 `/PLAN` mit umfangreichem Kontext bleibt im Planungsmodus
 
 Prompt:
-/CREATE Hier sind Thema, Zielgruppe, Zeitrahmen, Lernziele, Ablaufideen und Literatur schon vollständig skizziert. Lege los.
+/PLAN Hier sind Thema, Zielgruppe, Zeitrahmen, Lernziele, Ablaufideen und Literatur schon vollstaendig skizziert. Lege los.
 
 Erwartung:
 - Agent startet trotzdem in `P1`/`P2`
 - erste Reaktion bleibt Planung, Strukturierung, genau eine priorisierte Rueckfrage oder ein Planungsstand
-- keine Anlage von `index.md`, `_index.md`, `blog_snapshot.txt` oder `reveal_snapshot.txt` ohne explizite Nutzerfreigabe
+- keine Anlage von `index.md` oder `_index.md`, keine Snapshots und keine Build-Ausfuehrung
 - kein stiller Sprung nach `P3`, nur weil der Kontext bereits reichhaltig ist
 
 Kritische Regeln:
-- `/CREATE` startet im Planungsmodus
-- `P3` nur nach expliziter Nutzerfreigabe
+- `/PLAN` startet im Planungsmodus
+- `BLOG GO` bleibt das erste Erzeugungsgate
 - Fortschritt vor Absicherung ist kein Freigabeersatz
 
 ---
 
-## 🧪 Test 18: 🔥 `/CREATE` mit Blog und Reveal erzeugt trotzdem kein Reveal
+## 🧪 Test 18: 🔥 `BLOG GO` erzeugt nur den Blog
 
 Prompt:
-/CREATE Plane den Blogbeitrag und die dazugehoerige Praesentation gleich mit. Thema, Zielgruppe und Ablauf stehen schon fest.
+BLOG GO
 
 Erwartung:
-- Agent bleibt zunaechst im Planungsmodus und erzeugt noch keine Dateien
-- Reveal bleibt sekundaer und abgeleitet, auch wenn Blog und Praesentation gemeinsam genannt werden
-- kein `_index.md` und kein `reveal_snapshot.txt` vor explizitem `REVEAL GO`
-- sichtbar erscheint hoechstens ein Planungsstand oder genau eine priorisierte Rueckfrage
+- bei vorhandenem Planungsstand wird `index.md` erzeugt
+- kein `_index.md`, kein Reveal und keine Snapshot-Dateien im Standardmodus
+- bei fehlender Grundlage erscheint genau eine Klaerungsfrage
 
 Kritische Regeln:
-- Blog-first vor Reveal-Ableitung
-- kein Reveal direkt aus `/CREATE`
+- `BLOG GO` braucht eine belastbare Grundlage
+- Blog bleibt Primaerartefakt
 - `REVEAL GO` bleibt verpflichtendes Gate
+
+---
+
+## 🧪 Test 19: 🔥 `REVEAL GO` erzeugt Reveal erst nach finalem Blog
+
+Prompt:
+REVEAL GO
+
+Erwartung:
+- Reveal wird nur aus dem finalen Blog-`index.md` abgeleitet
+- `_index.md` wird erzeugt
+- Reveal enthaelt keine OER-Metadaten
+
+Kritische Regeln:
+- Reveal nur aus finalem Blog
+- `REVEAL GO` erzeugt nur die Reveal-Arbeitsdatei
+- OER-Metadaten bleiben auf den Blog beschraenkt
+
+---
+
+## 🧪 Test 20: 🔥 `/PLAN FORSCHUNG` aktiviert Forschungsmodus ohne Artefakterzeugung
+
+Prompt:
+/PLAN FORSCHUNG
+
+Erwartung:
+- Agent startet mit demselben Planungsdialog wie bei `/PLAN`
+- Forschungs-/Rohdatenmodus ist aktiv
+- konkrete Rohdatenlogik bleibt einem spaeteren Patch vorbehalten
+- keine sofortige Anlage von `index.md` oder `_index.md`
+
+Kritische Regeln:
+- `/PLAN FORSCHUNG` ersetzt alte Forschungs-Startbefehle
+- Standard-Planungslogik bleibt erhalten
+- Forschungsmodus bleibt vom Standardmodus getrennt
 
 ---
 
@@ -354,7 +388,7 @@ Sie definiert die maßgeblichen Regressionstests für den Agenten.
 Zu prüfen ist der aktuelle Stand des Agentensystems auf Basis von:
 - project_governance/agent_contract.md
 - ai_agents/master_agent.md
-- prompts/create.md
+- prompts/plan.md
 - prompts/check.md
 - ggf. weiterer direkt betroffener Governance- oder DQM-Dateien
 

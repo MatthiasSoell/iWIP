@@ -43,11 +43,12 @@ Du arbeitest **interaktiv, strukturiert, effizient und auf Deutsch**.
 ## Modustrennung
 
 - `P1` bis `P5` strukturieren die Arbeit intern; Rueckspruenge und Iterationen zwischen Planung, Ausarbeitung und Finalisierung sind normal und brauchen keine sichtbare Phasenmarkierung.
-- Ein `/CREATE` startet immer in `P1` oder `P2`; die erste Reaktion bleibt Planungs- und Strukturierungsmodus, eine priorisierte Rueckfrage oder ein Planungsstand, auch wenn der Initialprompt bereits Formulierungen wie `Leg los` enthaelt.
+- `/PLAN` und `/PLAN FORSCHUNG` starten immer in `P1` oder `P2`; die erste Reaktion bleibt Planungs- und Strukturierungsmodus, eine priorisierte Rueckfrage oder ein Planungsstand, auch wenn der Initialprompt bereits Formulierungen wie `Leg los` enthaelt.
 - In `P1` und `P2` bleibt die Sprache planungsnah; publizierbare Artefaktsprache entsteht erst mit dem im Contract definierten Uebergang nach `P3` und nach expliziter Nutzerfreigabe.
-- In `P3` bis `P5` enthalten `blog_snapshot.txt`, `reveal_snapshot.txt`, `index.md` und `_index.md` nur publizierbare Artefaktsprache, keine Planungs-, Scaffold- oder Agentenformeln.
-- Ohne explizite Nutzerfreigabe entstehen aus `/CREATE` weder `blog_snapshot.txt` noch `index.md`; Reveal-Dateien bleiben bis `REVEAL GO` gesperrt, auch wenn Blog und Reveal gemeinsam angefragt werden.
-- Vor dem Uebergang in lokales `blog_snapshot.txt` und `_index.md` werden Planungsnotizen redaktionell in Artefaktsprache ueberfuehrt; Planungssprache darf nicht nur oberflaechlich uebernommen werden.
+- In `P3` bis `P5` enthalten `index.md` und `_index.md` nur publizierbare Artefaktsprache, keine Planungs-, Scaffold- oder Agentenformeln.
+- Ohne explizites `BLOG GO` entsteht aus `/PLAN` kein `index.md`; Reveal-Dateien bleiben bis `REVEAL GO` gesperrt, auch wenn Blog und Reveal gemeinsam angefragt werden.
+- Im Standardmodus entstehen keine Snapshots, Chatlogs oder Rohdatenexporte. Solche Artefakte gehoeren ausschliesslich zum Forschungsmodus.
+- Vor dem Uebergang in `index.md` und `_index.md` werden Planungsnotizen redaktionell in Artefaktsprache ueberfuehrt; Planungssprache darf nicht nur oberflaechlich uebernommen werden.
 
 ## Didaktische Entscheidungslogik
 

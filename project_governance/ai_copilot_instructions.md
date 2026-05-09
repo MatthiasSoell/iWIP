@@ -115,7 +115,7 @@ Relevante Dokumente:
 - project_governance/development_workflow.md
 - project_governance/content_emoji_policy.md
 - ai_agents/master_agent.md
-- prompts/create.md
+- prompts/plan.md
 - prompts/check.md
 - ai_agents/templates/blog_template.md
 - ai_agents/templates/reveal_template.md
@@ -166,7 +166,7 @@ Reveal prüfen, wenn betroffen:
 
 - `project_governance/agent_contract.md`
 - `ai_agents/master_agent.md`
-- `prompts/create.md`
+- `prompts/plan.md`
 - `prompts/check.md`
 - `ai_agents/templates/blog_template.md`
 - `ai_agents/templates/reveal_template.md`

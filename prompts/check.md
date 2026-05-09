@@ -115,7 +115,6 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen Agent Contract und `ai_agent
 - Der Literaturteil beginnt mit dem stabilen Anker und der Pflichtueberschrift gemaess Blog-Template.
 - Begriffspruefung: zentrale Begriffe und Benennungen werden im sichtbaren Blogtext konsistent verwendet.
 - Typografiepruefung: sichtbare deutsche Blogtexte folgen den Typografie- und Umlautregeln des Agent Contracts.
-- In `exports/snapshots/` liegt ein zum Blog-Bundle gespiegeltes `blog_snapshot.txt` als unveraenderlicher Erststand vor.
 - Fuer `BLOG FINAL` ist der im minimalen Release-Check des Contracts geforderte vorbereitete Linkcheck ohne offene Fehler.
 
 ### Blog-Heuristikhinweise zur Darstellung
@@ -201,7 +200,6 @@ Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen Agent Contract und
 - Der Emoji-Einsatz ist gemaess `project_governance/content_emoji_policy.md` im sichtbaren Folien-Body erkennbar umgesetzt.
 - Ansprache, Ton und semantischer Emoji-Einsatz sind innerhalb der Praesentation konsistent und folgen derselben Artefaktlogik wie im Blog.
 - Sichtbare deutsche Folientexte folgen den Typografie- und Umlautregeln des Agent Contracts.
-- In `exports/snapshots/` liegt ein zum Reveal-Bundle gespiegeltes `reveal_snapshot.txt` als unveraenderlicher Erststand vor.
 
 ### Reveal-Heuristikhinweise zur Darstellung
 
@@ -249,7 +247,7 @@ Zusaetzlich verpflichtend zu pruefen:
 - Fehlende Pflichtfelder, leere Pflichtfelder oder falsch strukturierte Pflichtfelder sind `BLOCKER`.
 - Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls `BLOCKER`.
 - Vorhandene OER-Metadaten in Reveal sind `BLOCKER`.
-- Fehlende Snapshot-Dateien, sichtbare Planungs-/Scaffold-Sprache im finalen Artefakt oder Ableitung aus Nicht-Blog-Quellen sind `BLOCKER`.
+- Sichtbare Planungs-/Scaffold-Sprache im finalen Artefakt oder Ableitung aus Nicht-Blog-Quellen sind `BLOCKER`.
 
 ---
 

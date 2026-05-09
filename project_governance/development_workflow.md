@@ -71,7 +71,7 @@ Wenn Änderungen an folgenden Dateien erfolgen, ist zusätzlich der RC-Katalog a
 
 - `project_governance/agent_contract.md`
 - `ai_agents/master_agent.md`
-- `prompts/create.md`
+- `prompts/plan.md`
 - `prompts/check.md`
 - `ai_agents/templates/blog_template.md`
 - `ai_agents/templates/reveal_template.md`
@@ -80,7 +80,8 @@ Ausführungslogik:
 
 - **Selektiver RC-Durchlauf**: bei kleinen Text- oder Regelkorrekturen nur betroffene RCs plus RC-07.
 - **Vollständiger RC-Durchlauf**: vor Live-Fällen, festgeschriebenen Ständen und nach Änderungen an Moduslogik, Übergängen, Snapshot-Regeln, Bundle-Hygiene oder DoD.
-- **Trockentest**: mindestens ein geschlossener Repo-Fall in drei Schritten: `Meta-Arbeit am Agenten`, `BLOG FINAL`, `REVEAL GO` -> `REVEAL FINAL`.
+- **Trockentest**: mindestens ein geschlossener Repo-Fall in fuenf Schritten: `/PLAN`, `BLOG GO`, `BLOG FINAL`, `REVEAL GO` -> `REVEAL FINAL`.
+- Bei Aenderungen am Forschungsmodus zusaetzlich gezielt `/PLAN FORSCHUNG` gegen die betroffenen Regeln pruefen.
 - Bei Änderungen an der Wissensbasis-Anschlusslogik zusätzlich gezielt RC-27 prüfen, insbesondere Entwurf bei `BLOG FINAL`, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
 
 ### 4.4 Proportionale Testtiefe
@@ -101,7 +102,8 @@ Ziel:
 
 Pflichtstationen im Agenten-Trockentest:
 
-- `Meta-Arbeit am Agenten`
+- `/PLAN`
+- `BLOG GO`
 - `BLOG FINAL`
 - `REVEAL GO` -> `REVEAL FINAL`
 
@@ -124,8 +126,9 @@ Bearbeiter:
 
 | Station | Prüfschritt | Erwartetes Verhalten | Tatsächliches Verhalten | Status (OK/Teilweise/Nein) | Abweichung | Folgeort |
 |---|---|---|---|---|---|---|
-| Meta-Arbeit am Agenten | Keine Artefakterstellung | | | | | |
-| Meta-Arbeit am Agenten | Sprache bleibt meta- und reviewgerecht | | | | | |
+| /PLAN | Keine Artefakterstellung | | | | | |
+| /PLAN | Sprache bleibt planungs- und dialoggerecht | | | | | |
+| BLOG GO | Erzeugt nur `index.md` auf Basis des Planungsstands | | | | | |
 | BLOG FINAL | Kontextlücken führen zu genau einer Rückfrage | | | | | |
 | BLOG FINAL | Profilsteuerung A/B/C ist sichtbar korrekt | | | | | |
 | BLOG FINAL | Blog-first und Uebergangsdisziplin bleiben intakt | | | | | |
@@ -134,7 +137,7 @@ Bearbeiter:
 | BLOG FINAL | Mindestpruefungen und sichtbare Zusammenfassung greifen korrekt | | | | | |
 | REVEAL GO -> REVEAL FINAL | Reveal startet erst nach Uebergang/Freigabe | | | | | |
 | REVEAL GO -> REVEAL FINAL | Gleichwertige Statusmeldungen werden korrekt interpretiert | | | | | |
-| REVEAL GO -> REVEAL FINAL | Snapshot- und Bundle-Hygiene bleiben sauber | | | | | |
+| REVEAL GO -> REVEAL FINAL | Forschungs-/Bundle-Hygiene bleiben sauber | | | | | |
 | REVEAL GO -> REVEAL FINAL | Abgleich, optionale Materialuebersicht und Finalisierung stimmen | | | | | |
 
 ### Kurzfazit

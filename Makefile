@@ -6,7 +6,7 @@ qa-agent: qa-prompts qa-markdown qa-hugo
 	@echo "QA completed successfully."
 
 qa-prompts:
-	@test -f prompts/create.md
+	@test -f prompts/plan.md
 	@test -f prompts/check.md
 	@test -f prompts/literatur.md
 	@echo "Prompt files OK."

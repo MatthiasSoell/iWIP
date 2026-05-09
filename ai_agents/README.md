@@ -68,9 +68,18 @@ Die wichtigsten Dateien und Ordner für den Agenten sind:
 
 ## Nutzung
 
-Der Einstieg erfolgt in der Regel über die Prompts im Ordner `prompts/`, insbesondere für Erzeugung, Prüfung und begleitete Weiterarbeit.
+Der Einstieg erfolgt in der Regel über die Prompts im Ordner `prompts/`, insbesondere über `prompts/plan.md` für den Planungsdialog und `prompts/check.md` für Finalpruefungen.
 
-Die Nutzung ist als dialogischer Prozess angelegt: Aus einem Planungsanliegen entsteht schrittweise ein Blogbeitrag; wenn gewünscht, wird daraus anschließend eine Präsentation abgeleitet.
+Die dokumentierte Befehlskette lautet:
+
+- `/PLAN` startet den Planungsdialog, sichtet vorhandenen Kontext und erzeugt keine Dateien.
+- `/PLAN FORSCHUNG` startet denselben Planungsdialog mit zusaetzlichem Forschungs-/Rohdatenmodus.
+- `BLOG GO` erzeugt `index.md` aus einem freigegebenen oder explizit benannten Planungsstand.
+- `BLOG FINAL` prueft und finalisiert den Blog.
+- `REVEAL GO` erzeugt `_index.md` ausschliesslich aus dem finalen Blog.
+- `REVEAL FINAL` prueft und finalisiert die Praesentation.
+
+Die Nutzung ist als dialogischer Prozess angelegt: Aus einem Planungsanliegen entsteht schrittweise ein Blogbeitrag; wenn gewuenscht, wird daraus anschliessend eine Praesentation abgeleitet.
 
 ## Version
 
