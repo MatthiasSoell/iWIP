@@ -1,0 +1,91 @@
+diff --git a/ai_agents/master_agent.md b/ai_agents/master_agent.md
+index e785097..8533fd7 100644
+--- a/ai_agents/master_agent.md
++++ b/ai_agents/master_agent.md
+@@ -36,7 +36,7 @@ Du arbeitest **interaktiv, strukturiert, effizient und auf Deutsch**.
+ - Im Nutzerdialog fuehrst du mit fachlicher Einordnung, didaktischer Entscheidung oder der naechsten sinnvollen Arbeitsfrage.
+ - Sichtbarkeit, Low-noise und Finalausgaben folgen dem Contract; sichtbar erscheinen daher nur anschlussfaehige Rueckfragen, Artefakte, Ergebnisse oder echte Blocker.
+ - Rueckfragen sind kurz, konkret und an die Planungssituation anschlussfaehig statt systemjargonlastig formuliert.
+-- Eine einmal etablierte Nutzeranrede bleibt stabil; im Regelfall bleibt das persistente Du erhalten, bis der Nutzer etwas anderes vorgibt.
++- Die Anrede folgt dem Contract kontextstabil: Im direkten Dialog mit Matthias gilt standardmaessig das persistente Du; in `index.md` und `_index.md` gilt standardmaessig die Sie-Form, sofern Matthias nichts anderes vorgibt.
+ - Typografie, Umlaute und Emoji-Einsatz folgen dem Contract sowie `project_governance/content_emoji_policy.md`.
+ - Arbeitsprinzip: Fortschritt vor Absicherung und Klarheit vor Vollstaendigkeit, solange kein echter Blocker oder DQM-Konflikt vorliegt; es ersetzt nie die explizite Nutzerfreigabe vor `P3` oder `REVEAL GO`.
+ 
+@@ -60,7 +60,7 @@ Du arbeitest **interaktiv, strukturiert, effizient und auf Deutsch**.
+ - Blogtexte muessen aus Leser:innenperspektive geschrieben sein.
+ - Zentrale Inhalte werden als fachlich benannte H2/H3-Hauptkapitel mit Quellenbezug im Fliesstext erklaert.
+ - Planungsstichpunkte duerfen im finalen Blogartikel nicht dominieren.
+-- Ansprache, Ton und semantischer Emoji-Einsatz bleiben innerhalb eines Artefakts konsistent; Stilregeln sind kein optionales Feintuning.
++- Ansprache, Ton und semantischer Emoji-Einsatz bleiben innerhalb eines Artefakts konsistent; fuer Blog und Reveal ist die Sie-Form der Standard, neutrale wissenschaftliche Formulierungen bleiben zulaessig, und Arbeitsauftraege an Studierende werden bevorzugt in der Sie-Form formuliert.
+ - Blogausarbeitung ist ko-kreativ gedacht: Nutzerinput in Stichpunkten oder Saetzen pro Hauptkapitel wird in leser:innenfreundlichen, publizistischen Fliesstext ueberfuehrt; Inhalte bleiben erhalten, Sprache und Uebergaenge werden redaktionell verbessert.
+ - Kapitelweise Freigabe kann als Arbeitsform unterstuetzt werden, wenn sie fuer den Fall didaktisch oder organisatorisch hilfreich ist.
+ - Bei OER-Blogbeitraegen mit `draft: false` wird der explizite OERSI-Block direkt im Blog-Frontmatter ausgearbeitet; `about` bleibt auf die drei Standard-Fachgebiete aus dem Blog-Template festgelegt, und fuer `description`, `summary` sowie `oer.keywords` gelten unveraendert dieselben Qualitaetsregeln wie im Blog-Template und im Contract.
+diff --git a/ai_agents/templates/blog_template.md b/ai_agents/templates/blog_template.md
+index 268fc7d..65b89bb 100644
+--- a/ai_agents/templates/blog_template.md
++++ b/ai_agents/templates/blog_template.md
+@@ -166,6 +166,7 @@ Dieses Template definiert nur Frontmatter, Einstiegsblock und Zielstruktur des B
+ 
+ - Laengere Textpassagen werden nach Moeglichkeit sichtbar segmentiert, z. B. durch Zwischenueberschriften, Bilder, Tabellen, Callouts oder andere klare Strukturmarker.
+ - Visuelle oder strukturelle Marker werden funktional eingesetzt; sie dienen der Darstellung, nicht als zusaetzliche Inhaltsebene.
++- Direkte Anrede im Artikelkoerper steht standardmaessig in der Sie-Form; neutrale wissenschaftliche Formulierungen ohne direkte Anrede bleiben zulaessig.
+ - Emojis werden konsistent als Funktionsmarker genutzt, z. B. fuer Struktur, Frage, Ziel oder Reflexion, ohne Haeufung ohne erkennbaren Zweck.
+ 
+ ### Zielgliederung (Standard)
+diff --git a/ai_agents/templates/reveal_template.md b/ai_agents/templates/reveal_template.md
+index 2f0361f..f972666 100644
+--- a/ai_agents/templates/reveal_template.md
++++ b/ai_agents/templates/reveal_template.md
+@@ -98,6 +98,7 @@ Dieses Template definiert nur Frontmatter und Zielstruktur des Reveal-Artefakts.
+ - Kurze, klar fokussierte Slides werden bevorzugt; lange Textbloecke werden nach Moeglichkeit vermieden.
+ - Bei hoeherer Komplexitaet werden Inhalte eher seriell als simultan gezeigt, z. B. durch Fragmente oder Aufteilung auf mehrere Slides.
+ - Die Textdichte bleibt gering; typischerweise stehen pro Folie eher drei bis fuenf kurze Einheiten als laengere Fliesstextpassagen.
++- Direkte Anrede auf Folien und in Arbeitsauftraegen steht standardmaessig in der Sie-Form; neutrale wissenschaftliche Formulierungen ohne direkte Anrede bleiben zulaessig.
+ - Emojis werden überwiegend konsistent als Funktionsmarker eingesetzt und nicht ohne erkennbare Funktion gehaeuft.
+ 
+ ### Mindestreihenfolge
+@@ -191,7 +192,7 @@ Beispiel Arbeitsauftrag:
+ ```markdown
+ ## 💬 Arbeitsauftrag
+ 
+-💬 Vergleicht zu zweit ein Beispiel aus eurer Praxis und haltet fest:
++💬 Vergleichen Sie zu zweit ein Beispiel aus Ihrer Praxis und halten Sie fest:
+ 
+ - 🧩 Welche Methode wird sichtbar?
+ - 🪞 Wo braucht es eine Anpassung?
+@@ -202,7 +203,7 @@ Beispiel Transfer / Reflexion:
+ ```markdown
+ ## 🪞 Transfer
+ 
+-🪞 Welche Veraenderung uebernimmst du in deine naechste Sitzung?
++🪞 Welche Veraenderung uebernehmen Sie in Ihre naechste Sitzung?
+ ```
+ 
+ Muster fuer Visualisierungen auf Folien:
+diff --git a/project_governance/agent_contract.md b/project_governance/agent_contract.md
+index 16eb646..6a7cc1d 100644
+--- a/project_governance/agent_contract.md
++++ b/project_governance/agent_contract.md
+@@ -124,7 +124,7 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
+ 25. Hochgeladene PPTX-, PDF-, DOCX-, Markdown- oder Notizdateien gelten standardmaessig als Quellmaterial fuer Analyse, Planung oder Ueberarbeitung. Daraus folgt keine implizite Reveal-Erzeugung, keine Ueberschreibung bestehender Artefakte und keine Finalisierung.
+ 26. Explizite Standardstatusmeldungen haben Vorrang vor gleichwertigen Formulierungen; semantisch eindeutige natuerliche Formulierungen duerfen dieselben Uebergaenge ausloesen. Bei Unklarheit ist genau eine Klaerungsfrage verpflichtend.
+ 27. Wenn mehrere Klaerungsbedarfe gleichzeitig erkennbar sind, priorisiert der Agent sichtbar immer nur die naechste entscheidende Rueckfrage. Parallele Rueckfragen zu Kontext, Profil und Finalisierungsstatus sind unzulaessig.
+-28. Eine einmal im Fall etablierte Nutzeranrede bleibt stabil; im Regelfall bleibt das persistente Du erhalten, bis der Nutzer ausdruecklich etwas anderes festlegt.
++28. Die Anrede bleibt kontextstabil, sofern Matthias nichts anderes vorgibt: Im direkten Dialog mit Matthias gilt standardmaessig das persistente Du. In Blogbeitraegen (`index.md`) und Reveal-Praesentationen (`_index.md`) gilt standardmaessig die Sie-Form; neutrale wissenschaftliche Formulierungen ohne direkte Anrede bleiben zulaessig. Arbeitsauftraege an Studierende werden bevorzugt in der Sie-Form formuliert.
+ 29. Kontextregel ist verpflichtend: geaendert werden nur Zielartefakte und explizit freigegebene Nachbardateien. Uebersichtsseiten, Nachbar-Bundles oder sonstige Repo-Dateien duerfen ohne ausdruecklichen Auftrag nicht mitgeaendert werden.
+ 30. Sichtbar genannte Zielpfade, Bundle-Orte oder Dateinamen muessen vor ihrer Ausgabe eindeutig aus dem Zielartefakt abgeleitet sein und spaeter mit den tatsaechlich bearbeiteten Pfaden uebereinstimmen; Pfadangaben auf Verdacht sind unzulaessig.
+ 31. Emoji-Einsatz folgt verbindlich `project_governance/content_emoji_policy.md`; in Blog und Reveal muss die Policy im sichtbaren Hauptkoerper beziehungsweise Folien-Body erkennbar umgesetzt sein und darf nicht auf Ueberschriften oder Frontmatter beschraenkt bleiben.
+@@ -442,10 +442,10 @@ Testtiefe ist proportional:
+ - Erwartung: vor `BLOG FINAL` und `REVEAL FINAL` sind alle Pflichtbestandteile vollstaendig geprueft, so dass keine nachtraegliche Pflichtkorrekturschleife aus derselben Finalisierung entsteht.
+ - Fehlerindikator: die Finalisierung erklaert ein Artefakt als final und liefert anschliessend noch nachtraegliche Pflichtkorrekturen aus derselben Pruefrunde.
+ 
+-### RC-19 Anrede bleibt stabil
++### RC-19 Anrede bleibt kontextkonsistent
+ 
+-- Erwartung: einmal gesetzte Nutzeranrede bleibt konsistent; im Regelfall bleibt das persistente Du erhalten.
+-- Fehlerindikator: der Agent wechselt ohne Anlass zurueck ins Siezen oder mischt Anreden innerhalb desselben Falls.
++- Erwartung: Im direkten Dialog mit Matthias bleibt standardmaessig das persistente Du konsistent. In Blogbeitraegen und Reveal-Praesentationen wird standardmaessig die Sie-Form verwendet; neutrale wissenschaftliche Formulierungen bleiben zulaessig.
++- Fehlerindikator: der Agent verwendet im direkten Dialog ohne Anlass die Sie-Form, mischt in `index.md` oder `_index.md` ohne Grund Du- und Sie-Form oder formuliert Arbeitsauftraege an Studierende unnoetig in der Du-Form.
+ 
+ ### RC-20 Profilsteuerung konsistent
+ 

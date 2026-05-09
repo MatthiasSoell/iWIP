@@ -166,6 +166,7 @@ Dieses Template definiert nur Frontmatter, Einstiegsblock und Zielstruktur des B
 
 - Laengere Textpassagen werden nach Moeglichkeit sichtbar segmentiert, z. B. durch Zwischenueberschriften, Bilder, Tabellen, Callouts oder andere klare Strukturmarker.
 - Visuelle oder strukturelle Marker werden funktional eingesetzt; sie dienen der Darstellung, nicht als zusaetzliche Inhaltsebene.
+- Direkte Anrede im Artikelkoerper steht standardmaessig in der Sie-Form; neutrale wissenschaftliche Formulierungen ohne direkte Anrede bleiben zulaessig.
 - Emojis werden konsistent als Funktionsmarker genutzt, z. B. fuer Struktur, Frage, Ziel oder Reflexion, ohne Haeufung ohne erkennbaren Zweck.
 
 ### Zielgliederung (Standard)

@@ -124,7 +124,7 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 25. Hochgeladene PPTX-, PDF-, DOCX-, Markdown- oder Notizdateien gelten standardmaessig als Quellmaterial fuer Analyse, Planung oder Ueberarbeitung. Daraus folgt keine implizite Reveal-Erzeugung, keine Ueberschreibung bestehender Artefakte und keine Finalisierung.
 26. Explizite Standardstatusmeldungen haben Vorrang vor gleichwertigen Formulierungen; semantisch eindeutige natuerliche Formulierungen duerfen dieselben Uebergaenge ausloesen. Bei Unklarheit ist genau eine Klaerungsfrage verpflichtend.
 27. Wenn mehrere Klaerungsbedarfe gleichzeitig erkennbar sind, priorisiert der Agent sichtbar immer nur die naechste entscheidende Rueckfrage. Parallele Rueckfragen zu Kontext, Profil und Finalisierungsstatus sind unzulaessig.
-28. Eine einmal im Fall etablierte Nutzeranrede bleibt stabil; im Regelfall bleibt das persistente Du erhalten, bis der Nutzer ausdruecklich etwas anderes festlegt.
+28. Die Anrede bleibt kontextstabil, sofern Matthias nichts anderes vorgibt: Im direkten Dialog mit Matthias gilt standardmaessig das persistente Du. In Blogbeitraegen (`index.md`) und Reveal-Praesentationen (`_index.md`) gilt standardmaessig die Sie-Form; neutrale wissenschaftliche Formulierungen ohne direkte Anrede bleiben zulaessig. Arbeitsauftraege an Studierende werden bevorzugt in der Sie-Form formuliert.
 29. Kontextregel ist verpflichtend: geaendert werden nur Zielartefakte und explizit freigegebene Nachbardateien. Uebersichtsseiten, Nachbar-Bundles oder sonstige Repo-Dateien duerfen ohne ausdruecklichen Auftrag nicht mitgeaendert werden.
 30. Sichtbar genannte Zielpfade, Bundle-Orte oder Dateinamen muessen vor ihrer Ausgabe eindeutig aus dem Zielartefakt abgeleitet sein und spaeter mit den tatsaechlich bearbeiteten Pfaden uebereinstimmen; Pfadangaben auf Verdacht sind unzulaessig.
 31. Emoji-Einsatz folgt verbindlich `project_governance/content_emoji_policy.md`; in Blog und Reveal muss die Policy im sichtbaren Hauptkoerper beziehungsweise Folien-Body erkennbar umgesetzt sein und darf nicht auf Ueberschriften oder Frontmatter beschraenkt bleiben.
@@ -442,10 +442,10 @@ Testtiefe ist proportional:
 - Erwartung: vor `BLOG FINAL` und `REVEAL FINAL` sind alle Pflichtbestandteile vollstaendig geprueft, so dass keine nachtraegliche Pflichtkorrekturschleife aus derselben Finalisierung entsteht.
 - Fehlerindikator: die Finalisierung erklaert ein Artefakt als final und liefert anschliessend noch nachtraegliche Pflichtkorrekturen aus derselben Pruefrunde.
 
-### RC-19 Anrede bleibt stabil
+### RC-19 Anrede bleibt kontextkonsistent
 
-- Erwartung: einmal gesetzte Nutzeranrede bleibt konsistent; im Regelfall bleibt das persistente Du erhalten.
-- Fehlerindikator: der Agent wechselt ohne Anlass zurueck ins Siezen oder mischt Anreden innerhalb desselben Falls.
+- Erwartung: Im direkten Dialog mit Matthias bleibt standardmaessig das persistente Du konsistent. In Blogbeitraegen und Reveal-Praesentationen wird standardmaessig die Sie-Form verwendet; neutrale wissenschaftliche Formulierungen bleiben zulaessig.
+- Fehlerindikator: der Agent verwendet im direkten Dialog ohne Anlass die Sie-Form, mischt in `index.md` oder `_index.md` ohne Grund Du- und Sie-Form oder formuliert Arbeitsauftraege an Studierende unnoetig in der Du-Form.
 
 ### RC-20 Profilsteuerung konsistent
 

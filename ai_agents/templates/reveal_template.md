@@ -98,6 +98,7 @@ Dieses Template definiert nur Frontmatter und Zielstruktur des Reveal-Artefakts.
 - Kurze, klar fokussierte Slides werden bevorzugt; lange Textbloecke werden nach Moeglichkeit vermieden.
 - Bei hoeherer Komplexitaet werden Inhalte eher seriell als simultan gezeigt, z. B. durch Fragmente oder Aufteilung auf mehrere Slides.
 - Die Textdichte bleibt gering; typischerweise stehen pro Folie eher drei bis fuenf kurze Einheiten als laengere Fliesstextpassagen.
+- Direkte Anrede auf Folien und in Arbeitsauftraegen steht standardmaessig in der Sie-Form; neutrale wissenschaftliche Formulierungen ohne direkte Anrede bleiben zulaessig.
 - Emojis werden überwiegend konsistent als Funktionsmarker eingesetzt und nicht ohne erkennbare Funktion gehaeuft.
 
 ### Mindestreihenfolge
@@ -191,7 +192,7 @@ Beispiel Arbeitsauftrag:
 ```markdown
 ## 💬 Arbeitsauftrag
 
-💬 Vergleicht zu zweit ein Beispiel aus eurer Praxis und haltet fest:
+💬 Vergleichen Sie zu zweit ein Beispiel aus Ihrer Praxis und halten Sie fest:
 
 - 🧩 Welche Methode wird sichtbar?
 - 🪞 Wo braucht es eine Anpassung?
@@ -202,7 +203,7 @@ Beispiel Transfer / Reflexion:
 ```markdown
 ## 🪞 Transfer
 
-🪞 Welche Veraenderung uebernimmst du in deine naechste Sitzung?
+🪞 Welche Veraenderung uebernehmen Sie in Ihre naechste Sitzung?
 ```
 
 Muster fuer Visualisierungen auf Folien:
