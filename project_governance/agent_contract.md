@@ -126,15 +126,23 @@ Der Wissensbasis-Anschluss ist ein Hook nach `BLOG FINAL`, nicht Teil der Bloger
 
 ### Normativer Vorrang und Dokumentrollen
 
-- Dieser Contract ist die einzige verbindliche normative Regelquelle fuer Arbeitsmodus, Prozessphasen, Gates, Guards, Hooks, Exit-Actions, Finalisierung und Sichtbarkeit.
+- Dieser Contract ist die einzige verbindliche Quelle fuer Prozess- und Steuerlogik sowie die einzige normative Regelquelle fuer Arbeitsmodus, Prozessphasen, Gates, Guards, Hooks, Exit-Actions, Finalisierung und Sichtbarkeit.
+- Andere Dateien konkretisieren ausschliesslich delegierte Detailbereiche innerhalb dieses Rahmens und fuehren keine eigene Steuerlogik ein.
 - `ai_agents/master_agent.md`, `prompts/plan.md`, `prompts/check.md` und die Templates konkretisieren nur Rolle, Ablauf, Pruefpraxis und Form innerhalb dieses Rahmens.
 - Bei Konflikten gilt immer dieser Contract.
 
 | Dokument | Rolle | Normativer Status |
 |---|---|---|
 | `ai_agents/master_agent.md` | didaktische Fuehrung, Dialoghaltung, Textarbeit | konkretisiert den Contract |
+| `ai_agents/test/regression_suite.md` | Abgeleiteter Testkatalog ohne eigene normative Autoritaet | konkretisiert den Contract ohne eigene Normsetzung |
+| `ai_agents/didaktisches_qualitaetsmodell.md` | Didaktisches Referenzmodell und Heuristikrahmen | delegierte didaktische Referenz innerhalb des Contracts |
+| `project_governance/content_emoji_policy.md` | Delegierte Detailreferenz fuer Emoji-Regeln | delegierte Detailregel innerhalb des Contracts |
+| `ai_agents/blog_wissensbasis.md` | Inhaltliche Wissensbasis ohne Prozesssteuerung | nicht-normative Inhaltsreferenz |
+| `ai_agents/blog_literaturbasis.md` | Inhaltliche Literaturbasis ohne Prozesssteuerung | nicht-normative Inhaltsreferenz |
 | `prompts/plan.md` | Einstieg und Routing fuer `/PLAN` | konkretisiert den Contract |
 | `prompts/check.md` | Pruefablauf und Ausgabeformat fuer Finalpruefungen | konkretisiert den Contract |
+| `README.md` | Einstieg und Orientierung ohne normative Steuerfunktion | nicht-normative Orientierung |
+| `ai_agents/README.md` | Agentenspezifische Orientierung ohne normative Steuerfunktion | nicht-normative Orientierung |
 | Templates | Struktur- und Frontmatter-Vorgaben fuer Zielartefakte | konkretisieren den Contract |
 
 ---

@@ -359,12 +359,15 @@ Prompt:
 Erwartung:
 - Agent startet mit demselben Planungsdialog wie bei `/PLAN`
 - Forschungs-/Rohdatenmodus ist aktiv
-- konkrete Rohdatenlogik bleibt einem spaeteren Patch vorbehalten
+- Forschungsartefakte entstehen nur im aktivierten Forschungsmodus
+- `REVEAL FINAL` schliesst aktive Forschungsartefakte automatisch ab
 - keine zusaetzlichen Forschungsbefehle werden eingefuehrt
 - keine sofortige Anlage von `index.md` oder `_index.md`
 
 Kritische Regeln:
 - `/PLAN FORSCHUNG` aktiviert den optionalen Forschungsmodus innerhalb der Standardplanung
+- Forschungsartefakte entstehen ausschliesslich in diesem Modus
+- `REVEAL FINAL` schliesst den Forschungsmodus ueber die aktiven Forschungsartefakte ab
 - Standard-Planungslogik bleibt erhalten
 - Forschungsmodus bleibt vom Standardmodus getrennt
 
