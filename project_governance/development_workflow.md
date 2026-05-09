@@ -80,7 +80,7 @@ Ausführungslogik:
 
 - **Selektiver RC-Durchlauf**: bei kleinen Text- oder Regelkorrekturen nur betroffene RCs plus RC-07.
 - **Vollständiger RC-Durchlauf**: vor Live-Fällen, festgeschriebenen Ständen und nach Änderungen an Moduslogik, Übergängen, Snapshot-Regeln, Bundle-Hygiene oder DoD.
-- **Dry Run**: praktischer Durchlauf des im Contract definierten RC-Trockentests, mindestens ein geschlossener Repo-Fall im Standardmodus in fuenf Schritten: `/PLAN`, `BLOG GO`, `BLOG FINAL`, `REVEAL GO` -> `REVEAL FINAL`.
+- **Dry Run**: praktische Durchfuehrung des im Contract als minimaler normativer Pflichttest definierten RC-Trockentests. Der Dry Run fuehrt diesen Test mindestens als einen geschlossenen Repo-Fall im Standardmodus in fuenf Schritten aus: `/PLAN`, `BLOG GO`, `BLOG FINAL`, `REVEAL GO` -> `REVEAL FINAL`.
 - Bei Aenderungen am Forschungsmodus zusaetzlich gezielt `/PLAN FORSCHUNG` gegen die betroffenen Regeln pruefen: gleicher Planungsdialog wie `/PLAN`, optionale Rohdatenerfassung unter `exports/research/`, keine Veraenderung der Kernlogik und automatischer Abschluss aktiver Forschungsartefakte bei `REVEAL FINAL`.
 - Bei Änderungen an der Wissensbasis-Anschlusslogik zusätzlich gezielt RC-27 prüfen, insbesondere Entwurf bei `BLOG FINAL`, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
 
@@ -92,7 +92,7 @@ Ausführungslogik:
 
 ### 4.5 Dry-Run-Auswertungsvorlage
 
-Der praktische Dry Run operationalisiert den im Contract definierten RC-Trockentest.
+Der praktische Dry Run ist die im Contract referenzierte Durchfuehrung des RC-Trockentests.
 
 Fuer diesen Dry Run wird das Ergebnis nicht nur summarisch, sondern als kurzer Auswertungsbogen festgehalten.
 

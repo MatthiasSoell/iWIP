@@ -1,19 +1,23 @@
 # Didaktisches Qualitätsmodell (DQM) – SciBlog iWIP
 
-Scope: DQM-Leitdimensionen, Profile und Prüfmatrix für agentische Planung und Finalprüfung
+Scope: DQM-Leitdimensionen, Profile und Qualitaetsraster fuer agentische Planung, Diagnose und Finalpruefung
 
 Referenzdokument für den Master-Agent.
-Das DQM steuert die didaktische Strukturierung, die profilabhängige Planung,
-den Kohärenzcheck und die abschließende Qualitätsprüfung.
+Das DQM dient als didaktisches Referenzmodell, Diagnose- und Heuristikrahmen
+sowie Qualitaetsraster fuer didaktische Strukturierung, profilabhaengige
+Planung, Kohaerenzcheck und abschliessende didaktische Bewertung.
 
-Normative Steuerung, Konfliktbehandlung, Profil-Defaults und Pflichtlogik liegen ausschliesslich in `project_governance/agent_contract.md`.
-Das DQM liefert Diagnose und Heuristik, keine eigene Prozesssteuerung.
+Verbindliche Steuerlogik, Konfliktbehandlung, Profil-Defaults und Pflichtlogik
+liegen ausschliesslich in `project_governance/agent_contract.md`.
+Das DQM liefert Diagnose, heuristische Orientierung und ein didaktisches
+Qualitaetsraster; es definiert keine eigene Prozesssteuerung.
 
 ## Nutzungsprinzipien
 
-1. **Vorrang des DQM**: Das DQM hat Vorrang vor der Blog-Wissensbasis.
-   Die Wissensbasis dient der inhaltlichen Konsistenz und Anschlussfähigkeit;
-   das DQM steuert die didaktische Qualität normativ.
+1. **DQM als Referenzrahmen**: Gegenueber der Blog-Wissensbasis dient das DQM
+   als didaktischer Referenzrahmen.
+   Die Wissensbasis dient der inhaltlichen Konsistenz und Anschlussfaehigkeit;
+   das DQM unterstuetzt die didaktische Bewertung und liefert heuristische Orientierung.
    Bestehende Blogartikel dürfen nicht unkritisch reproduziert werden,
    wenn sie DQM-Kriterien nicht erfüllen.
 
@@ -22,9 +26,10 @@ Das DQM liefert Diagnose und Heuristik, keine eigene Prozesssteuerung.
    Annahmen („Lernende könnten Schwierigkeiten haben mit…"), nicht als
    deterministische Aussagen. Ziel: didaktische Sensibilität ohne Scheinsicherheit.
 
-3. **Mindeststandard**: Auch bei niedrig gewichteten Dimensionen prüft der Agent
-   einen Mindeststandard. Keine Dimension darf vollständig ignoriert werden;
-   der Mindeststandard ist ⚠️ (teilweise), nicht ❌ (fehlt).
+3. **Heuristische Mindestbeachtung**: Auch bei niedrig gewichteten Dimensionen
+   bleibt eine didaktische Mindestbeachtung sinnvoll. Keine Dimension sollte in
+   der Diagnose vollstaendig ausgeblendet werden; als heuristische Untergrenze
+   dient ⚠️ (teilweise), nicht ❌ (fehlt).
 
 4. **Konfliktbehandlung**: Konflikte werden ausschliesslich gemaess Contract behandelt.
    -> `project_governance/agent_contract.md` – Abschnitt Konfliktregel
@@ -60,7 +65,8 @@ didaktische Funktionen derselben Quelle, z. B. Biggs (1996) und Biggs & Tang (20
 für Constructive Alignment und Deep Learning oder Helmke (2017) für Lernqualität und Adaptivität.
 
 Änderungen am fachlichen Leitanker oder am didaktischen Kernkanon sind
-normative Eingriffe und vor Freeze-Ständen explizit zu prüfen.
+substanzielle Eingriffe in den didaktischen Referenzrahmen und vor
+Freeze-Staenden explizit zu pruefen.
 Anschlussreferenzen können ergänzt oder präzisiert werden, solange dadurch
 keine neue Leitdimension, keine Profilumgewichtung und keine stille
 Theoriewende eingeführt wird.
