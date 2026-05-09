@@ -357,9 +357,29 @@ Erwartung:
 
 Kritische Regeln:
 - `/PLAN FORSCHUNG` aktiviert den optionalen Forschungsmodus innerhalb der Standardplanung
-- `FORSCHUNGSPROTOKOLL START` und `FORSCHUNGSPROTOKOLL FINAL` bleiben zusaetzliche Forschungsbefehle ausserhalb des Kernworkflows
 - Standard-Planungslogik bleibt erhalten
 - Forschungsmodus bleibt vom Standardmodus getrennt
+
+---
+
+## 🧪 Test 21: 🔥 `REVEAL FINAL` schliesst Forschungsmodus automatisch ab
+
+Voraussetzung:
+- Der Fall wurde mit `/PLAN FORSCHUNG` gestartet
+- aktive Forschungsartefakte unter `exports/research/` sind vorhanden oder fortlaufend geoeffnet
+
+Prompt:
+REVEAL FINAL
+
+Erwartung:
+- Reveal wird mit den regulaeren Mindestpruefungen finalisiert
+- aktive Forschungsartefakte werden zusaetzlich abgeschlossen
+- der Forschungsmodus endet ohne separates Zusatzkommando
+
+Kritische Regeln:
+- `REVEAL FINAL` bleibt das regulaere Abschlussgate fuer Reveal
+- im Forschungsmodus schliesst `REVEAL FINAL` zusaetzlich aktive Forschungsartefakte ab
+- der Standardmodus bleibt unveraendert und erzeugt dadurch keine Forschungsartefakte
 
 ---
 

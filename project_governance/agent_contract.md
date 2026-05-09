@@ -63,9 +63,9 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 ### Optionaler Zusatzmodus: Forschung
 
 - Der Forschungsmodus ist optional und erweitert die Artefakt-Arbeit nur um interne Rohdatenerfassung.
-- Aktiviert wird er entweder direkt ueber `/PLAN FORSCHUNG` oder spaeter ueber `FORSCHUNGSPROTOKOLL START`.
+- Aktiviert wird er ausschliesslich ueber `/PLAN FORSCHUNG`.
 - Der Forschungsmodus ersetzt keinen Standardstatus und aendert weder `P1` bis `P5` noch die Gates `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL`.
-- Die Forschungsbefehle `/PLAN FORSCHUNG`, `FORSCHUNGSPROTOKOLL START` und `FORSCHUNGSPROTOKOLL FINAL` erweitern den Agenten ausschliesslich um diesen optionalen Forschungsmodus und gehoeren bewusst nicht zum regulaeren Kernworkflow.
+- Der Forschungsmodus nutzt nach dem Startsignal `/PLAN FORSCHUNG` denselben Kernworkflow wie der Standardmodus.
 - Seine empfohlene Ablage ist `exports/research/`; moegliche Dateien sind `chat_log.md`, `planning_trace.md` und `decision_log.md`.
 - Snapshots bleiben auch im Forschungsmodus optional und sind nie Pflichtbestandteil des Kernworkflows.
 
@@ -78,9 +78,7 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 - `Kapitel <N> freigegeben` dokumentiert kapitelweise Freigaben innerhalb der Ausarbeitung, wenn dieser Modus genutzt wird.
 - `BLOG FINAL` loest die Blog-Finalisierung mit allen Mindestpruefungen aus.
 - `REVEAL GO` erzeugt `_index.md` als bearbeitbare Reveal-Arbeitsdatei ausschliesslich aus dem finalen Blog-`index.md`.
-- `REVEAL FINAL` loest die Reveal-Finalisierung mit allen Mindestpruefungen aus und schliesst eine aktive Forschungsdokumentation automatisch ab.
-- `FORSCHUNGSPROTOKOLL START` schaltet den Forschungsmodus nur noch dann explizit zu, wenn ein laufender Fall nicht mit `/PLAN FORSCHUNG` begonnen wurde oder die Forschungsdokumentation spaeter zugeschaltet werden soll.
-- `FORSCHUNGSPROTOKOLL FINAL` gibt das getrennte Forschungsprotokoll manuell aus bzw. schliesst es ab, wenn ein Fall ohne `REVEAL FINAL` endet oder ein Zwischenstand benoetigt wird.
+- `REVEAL FINAL` loest die Reveal-Finalisierung mit allen Mindestpruefungen aus. Wurde der Agent mit `/PLAN FORSCHUNG` gestartet, finalisiert `REVEAL FINAL` zusaetzlich alle aktiven Forschungsartefakte und schliesst den Forschungsmodus automatisch ab.
 - Semantisch eindeutige natuerliche Formulierungen gelten als gleichwertige Statusmeldungen, z. B. `Ich moechte das planen`, `Der Blog ist fertig`, `Mach daraus die Praesentation`, `Die Praesentation ist fertig`.
 - Bei mehrdeutigen Formulierungen wie `Das ist fertig` oder `Bitte finalisieren` stellt der Agent genau eine Klaerungsfrage, bevor ein Uebergang ausgeloest wird.
 - Aktiver Editorpfad, geoeffnete Prompt-Dateien, markierte Textstellen oder sonstiger Editor-Kontext steuern den Arbeitsmodus nicht. Massgeblich sind Nutzeranliegen sowie explizite oder semantisch eindeutig erkannte Arbeitsbefehle und Statusmeldungen. Solche Signale haben immer Vorrang vor aktivem Dateikontext, Auswahl oder offenem Prompt.
@@ -93,7 +91,7 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 | `BLOG GO` | Explizite Freigabe auf Basis eines sichtbaren Planungsstands | Genau `index.md` als bearbeitbare Blog-Arbeitsdatei erzeugen; bei fehlender Grundlage genau eine Klaerungsfrage stellen | Andere Artefaktdateien erzeugen, `BLOG FINAL` oder `REVEAL GO` vorwegnehmen |
 | `BLOG FINAL` | Explizite Finalisierungsfreigabe fuer den Blog oder semantisch gleichwertige Meldung | Vorliegenden Blogentwurf in `index.md` pruefen, finalisieren und sichtbar zusammenfassen | Ohne validen Blogentwurf finalisieren, Reveal erzeugen oder Forschungsartefakte separat finalisieren |
 | `REVEAL GO` | Expliziter Uebergang zur Praesentation | Ausschliesslich aus dem finalen Blog-`index.md` genau `_index.md` als bearbeitbare Reveal-Arbeitsdatei erzeugen | Reveal aus Planungsnotizen oder unfinalem Blog ableiten, Blog erneut finalisieren |
-| `REVEAL FINAL` | Explizite Finalisierungsfreigabe fuer Reveal oder semantisch gleichwertige Meldung | Vorliegendes Reveal finalisieren und aktive Forschungsdokumentation dabei abschliessen | Blog neu finalisieren, neue Blogdatei erzeugen oder den Blog als Quelle ueberschreiben |
+| `REVEAL FINAL` | Explizite Finalisierungsfreigabe fuer Reveal oder semantisch gleichwertige Meldung | Vorliegendes Reveal finalisieren; bei Start mit `/PLAN FORSCHUNG` zusaetzlich aktive Forschungsartefakte abschliessen und den Forschungsmodus beenden | Blog neu finalisieren, neue Blogdatei erzeugen oder den Blog als Quelle ueberschreiben |
 | `/PLAN FORSCHUNG` | Expliziter Planungsbefehl mit Forschungsmodus | Wie `/PLAN` planen und zusaetzlich optional interne Rohdatenerfassung in `exports/research/` aktivieren | Sichtbare Zielartefakte erzeugen, den Forschungsmodus als Ersatz fuer `BLOG GO` oder `REVEAL GO` behandeln |
 
 ### Sichtbarkeit von Struktur
@@ -152,8 +150,8 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 32. Die Low-noise-Regel aus `Sichtbarkeit von Struktur` ist verbindlich. Pflichtausgaben wie Abgleich, DQM-Pruefbericht, sichtbare Zusammenfassung nach dem Summary-Schema sowie erforderliche Tabellen oder Uebersichten bleiben sichtbar zulaessig, sofern sie direkt als Ergebnis erscheinen.
 33. Die Blog-Wissensbasis ist ein optionaler Anschluss fuer Verweise, Orientierung und Nachpflege; sie ist kein Pflicht-Gate der Standardplanung oder Finalisierung. Nach erfolgreichem `BLOG FINAL` entwirft der Agent jedoch standardmaessig einen kuratierten Wissensbasis-Eintrag als Vorschlag und stellt genau eine Bestaetigungsfrage zur Formulierung. Erst nach Bestaetigung oder gezielter Korrektur wird `blog_wissensbasis.md` aktualisiert. Liegt statt des Review-Schritts eine ausdrueckliche sofortige Uebernahmeanweisung vor, darf die Aktualisierung ohne Zusatzrueckfrage im selben Arbeitsgang erfolgen. `REVEAL GO` loest fuer sich allein keine Wissensbasis-Aktualisierung aus.
 34. Routing hat zwei Ebenen: technischen Bundle-Ort und veroeffentlichten Pfad. Die Site-Basis ist gemaess `config.toml` `/iWIP/`. Fuer sichtbare Ausgaben ist ausschliesslich der veroeffentlichte Pfad unterhalb dieser Site-Basis massgeblich. Dabei gilt zur Klarstellung: Blog -> Praesentation meint die Ableitung des veroeffentlichten Praesentationspfads aus dem Blog-Bundle. Praesentation -> Blog meint das Reveal-Frontmatter-Feld `blog`; dieses verweist auf die veroeffentlichte Blog-URL mit Site-Basis und nicht auf technische Content-Pfade. Standard: `content/blog/<bereich>/<ordner>/index.md` -> veroeffentlichter Pfad `/iWIP/praesentation/<bereich>/<ordner>/`. Sonderfall `widi`: technisches Reveal-Bundle `content/praesentation/lehre/widi/<ordner>/`, veroeffentlichter Pfad `/iWIP/praesentation/widi/<ordner>/`. Der technische Bundle-Ort darf niemals in sichtbaren Ausgaben erscheinen; Buttons, sichtbare Links, pruefende Beispiele und die aus Frontmatter-Aliases aufgeloeste Route muessen auf dieselbe veroeffentlichte URL zeigen.
-35. Forschungsprotokolle bleiben schlank und verifizierbar: enthalten sind nur Marker, zentrale Zeitpunkte, Artefaktpfade, Build-/Check-Status und exakt ableitbare Zaehldaten. Unsichere Zaehldaten werden nicht geschaetzt, sondern als nicht verlaesslich verfuegbar markiert. Empfohlene Dateien in `exports/research/` sind `chat_log.md`, `planning_trace.md` und `decision_log.md`; weitere Dateien bleiben optional.
-36. `/PLAN FORSCHUNG` aktiviert zusaetzlich einen optionalen Forschungs-/Rohdatenmodus in `exports/research/`. Dieser Zusatzmodus verhaelt sich wie `/PLAN` plus interne Rohdatenerfassung, beruehrt aber weder die Kernlogik noch die Freigabegates fuer Blog und Reveal.
+35. Forschungsartefakte bleiben schlank und verifizierbar: enthalten sind nur Marker, zentrale Zeitpunkte, Artefaktpfade, Build-/Check-Status und exakt ableitbare Zaehldaten. Unsichere Zaehldaten werden nicht geschaetzt, sondern als nicht verlaesslich verfuegbar markiert. Empfohlene Dateien in `exports/research/` sind `chat_log.md`, `planning_trace.md` und `decision_log.md`; weitere Dateien bleiben optional.
+36. `/PLAN FORSCHUNG` aktiviert zusaetzlich einen optionalen Forschungs-/Rohdatenmodus in `exports/research/`. Dieser Zusatzmodus verhaelt sich wie `/PLAN` plus interne Rohdatenerfassung, beruehrt aber weder die Kernlogik noch die Freigabegates fuer Blog und Reveal; `REVEAL FINAL` schliesst ihn automatisch ab.
 37. Arbeitsprinzip ist verpflichtend: Der Agent priorisiert Fortschritt vor Absicherung und Klarheit vor Vollstaendigkeit, sofern kein echter Blocker vorliegt. Diese Priorisierung darf weder Pflichtpruefungen noch Konfliktklaerungen ueberspringen und nicht als Legitimation fuer Artefakterstellung ohne explizite Nutzerfreigabe dienen.
 
 ### Minimaler Release-Check
@@ -276,12 +274,13 @@ Snapshot-Vergleiche und Reflexionsimpulse gehoeren nicht zur Standardzusammenfas
 
 Sichtbare Zusammenfassungen erscheinen nur bei Finalisierung, an echten Uebergaengen oder auf ausdrueckliche Nachfrage.
 
-`/PLAN` erzeugt keine Dateien, keine Snapshots und kein Forschungsprotokoll; der Befehl dient ausschliesslich dem Planungsdialog und der didaktischen Strukturierung.
+`/PLAN` erzeugt keine Dateien, keine Snapshots und keine Forschungsartefakte; der Befehl dient ausschliesslich dem Planungsdialog und der didaktischen Strukturierung.
 `/PLAN FORSCHUNG` aktiviert denselben Planungsdialog mit optionalem Forschungs-/Rohdatenmodus.
 
 Im Forschungsmodus bleiben Forschungsartefakte strikt vom sichtbaren Dialog und vom didaktischen Artefakt getrennt und enthalten nur schlanke, beobachtende Metadaten, soweit sie verlaesslich verfuegbar sind: Start- und Endzeit, Phasenuebergaenge, Artefaktpfade, Build-/Check-Status und nur dann Zaehldaten, wenn diese direkt ableitbar sind.
 
-Wenn ein Fall mit `/PLAN FORSCHUNG` beginnt oder spaeter mit `FORSCHUNGSPROTOKOLL START` in den Forschungsmodus uebergeht, fuehrt der Agent die Forschungsdokumentation ab diesem Zeitpunkt fortlaufend in `exports/research/`. Empfohlene Dateien sind `chat_log.md`, `planning_trace.md` und `decision_log.md`; Snapshots bleiben optional. Ohne aktivierten Forschungsmodus duerfen spaetere Auswertungen Zeitpunkte nur rekonstruieren und muessen fehlende Marker oder Rohdaten explizit als nicht verlaesslich verfuegbar kennzeichnen.
+Wenn ein Fall mit `/PLAN FORSCHUNG` beginnt, fuehrt der Agent die Forschungsdokumentation ab diesem Zeitpunkt fortlaufend in `exports/research/`. Empfohlene Dateien sind `chat_log.md`, `planning_trace.md` und `decision_log.md`; Snapshots bleiben optional. Ohne aktivierten Forschungsmodus duerfen spaetere Auswertungen Zeitpunkte nur rekonstruieren und muessen fehlende Marker oder Rohdaten explizit als nicht verlaesslich verfuegbar kennzeichnen.
+Wurde der Agent mit `/PLAN FORSCHUNG` gestartet, finalisiert `REVEAL FINAL` zusaetzlich alle aktiven Forschungsartefakte und schliesst den Forschungsmodus automatisch ab.
 
 Bei `BLOG FINAL` ist die sichtbare Reihenfolge:
 
@@ -457,8 +456,8 @@ Testtiefe ist proportional:
 
 ### RC-18 Reveal-Finalisierung getrennt
 
-- Erwartung: `REVEAL GO` startet die bearbeitbare Reveal-Arbeitsphase; `REVEAL FINAL` schliesst `_index.md` erst nach Mindestpruefungen ab.
-- Fehlerindikator: Reveal wird bereits bei `REVEAL GO` als final behandelt oder ohne `REVEAL FINAL` abgeschlossen.
+- Erwartung: `REVEAL GO` startet die bearbeitbare Reveal-Arbeitsphase; `REVEAL FINAL` schliesst `_index.md` erst nach Mindestpruefungen ab. Wurde der Fall mit `/PLAN FORSCHUNG` gestartet, finalisiert `REVEAL FINAL` dabei zusaetzlich aktive Forschungsartefakte.
+- Fehlerindikator: Reveal wird bereits bei `REVEAL GO` als final behandelt, ohne `REVEAL FINAL` abgeschlossen oder ein aktiver Forschungsmodus nach `REVEAL FINAL` offen gelassen.
 
 ### RC-18a First-pass-Finalisierung vollstaendig
 

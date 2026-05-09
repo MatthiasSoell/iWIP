@@ -77,7 +77,7 @@ Die dokumentierte Befehlskette lautet:
 - `BLOG GO` erzeugt `index.md` aus einem freigegebenen oder explizit benannten Planungsstand.
 - `BLOG FINAL` prueft und finalisiert den Blog.
 - `REVEAL GO` erzeugt `_index.md` ausschliesslich aus dem finalen Blog.
-- `REVEAL FINAL` prueft und finalisiert die Praesentation.
+- `REVEAL FINAL` prueft und finalisiert die Praesentation; nach Start mit `/PLAN FORSCHUNG` schliesst es zusaetzlich aktive Forschungsartefakte ab.
 
 Die Nutzung ist als dialogischer Prozess angelegt: Aus einem Planungsanliegen entsteht schrittweise ein Blogbeitrag; wenn gewuenscht, wird daraus anschliessend eine Praesentation abgeleitet.
 

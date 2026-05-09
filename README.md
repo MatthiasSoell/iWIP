@@ -57,7 +57,7 @@ Die dokumentierte Befehlskette lautet:
 - `BLOG GO` fuer die Erzeugung von `index.md` aus einem freigegebenen Planungsstand
 - `BLOG FINAL` fuer die Blog-Pruefung und Finalisierung
 - `REVEAL GO` fuer die Ableitung von `_index.md` aus dem finalen Blog
-- `REVEAL FINAL` fuer die Reveal-Pruefung und Finalisierung
+- `REVEAL FINAL` fuer die Reveal-Pruefung und Finalisierung; nach Start mit `/PLAN FORSCHUNG` werden dabei zusaetzlich aktive Forschungsartefakte abgeschlossen
 
 Weitere Details, zentrale Dateien und die Nutzung sind in [ai_agents/README.md](ai_agents/README.md) dokumentiert.
 

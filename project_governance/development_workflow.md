@@ -81,7 +81,7 @@ Ausführungslogik:
 - **Selektiver RC-Durchlauf**: bei kleinen Text- oder Regelkorrekturen nur betroffene RCs plus RC-07.
 - **Vollständiger RC-Durchlauf**: vor Live-Fällen, festgeschriebenen Ständen und nach Änderungen an Moduslogik, Übergängen, Snapshot-Regeln, Bundle-Hygiene oder DoD.
 - **Dry Run**: praktischer Durchlauf des im Contract definierten RC-Trockentests, mindestens ein geschlossener Repo-Fall im Standardmodus in fuenf Schritten: `/PLAN`, `BLOG GO`, `BLOG FINAL`, `REVEAL GO` -> `REVEAL FINAL`.
-- Bei Aenderungen am Forschungsmodus zusaetzlich gezielt `/PLAN FORSCHUNG` gegen die betroffenen Regeln pruefen: gleicher Planungsdialog wie `/PLAN`, optionale Rohdatenerfassung unter `exports/research/`, keine Veraenderung der Kernlogik.
+- Bei Aenderungen am Forschungsmodus zusaetzlich gezielt `/PLAN FORSCHUNG` gegen die betroffenen Regeln pruefen: gleicher Planungsdialog wie `/PLAN`, optionale Rohdatenerfassung unter `exports/research/`, keine Veraenderung der Kernlogik und automatischer Abschluss aktiver Forschungsartefakte bei `REVEAL FINAL`.
 - Bei Änderungen an der Wissensbasis-Anschlusslogik zusätzlich gezielt RC-27 prüfen, insbesondere Entwurf bei `BLOG FINAL`, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
 
 ### 4.4 Proportionale Testtiefe
@@ -109,7 +109,7 @@ Pflichtstationen im praktischen Dry Run:
 - `BLOG FINAL`
 - `REVEAL GO` -> `REVEAL FINAL`
 
-Die Pflichtstationen werden gegen das kompakte Zustandsmodell im Contract geprueft. Dabei sind insbesondere diese Restriktionen mitzuprotokollieren: `/PLAN` erzeugt keine Dateien, `BLOG GO` nur `index.md`, `BLOG FINAL` setzt einen validen Blogentwurf voraus, `REVEAL GO` setzt einen finalisierten Blog voraus, `REVEAL FINAL` finalisiert nur Reveal und `/PLAN FORSCHUNG` verhaelt sich wie `/PLAN` mit zusaetzlicher Forschungs-/Rohdatenaktivierung.
+Die Pflichtstationen werden gegen das kompakte Zustandsmodell im Contract geprueft. Dabei sind insbesondere diese Restriktionen mitzuprotokollieren: `/PLAN` erzeugt keine Dateien, `BLOG GO` nur `index.md`, `BLOG FINAL` setzt einen validen Blogentwurf voraus, `REVEAL GO` setzt einen finalisierten Blog voraus, `REVEAL FINAL` finalisiert Reveal und schliesst nach Start mit `/PLAN FORSCHUNG` zusaetzlich aktive Forschungsartefakte ab, und `/PLAN FORSCHUNG` verhaelt sich wie `/PLAN` mit zusaetzlicher Forschungs-/Rohdatenaktivierung.
 
 Fuer die Auswertung gilt zusaetzlich: Im Standardmodus duerfen keine Snapshots, Chatlogs oder Rohdatenartefakte entstehen. Im Forschungsmodus bleiben solche Artefakte optional und sind kein Ersatz fuer die regulaeren Gates.
 
@@ -144,7 +144,7 @@ Bearbeiter:
 | BLOG FINAL | Mindestpruefungen und sichtbare Zusammenfassung greifen korrekt | | | | | |
 | REVEAL GO -> REVEAL FINAL | Reveal startet erst nach Uebergang/Freigabe | | | | | |
 | REVEAL GO -> REVEAL FINAL | Gleichwertige Statusmeldungen werden korrekt interpretiert | | | | | |
-| REVEAL GO -> REVEAL FINAL | Forschungs-/Bundle-Hygiene bleiben sauber | | | | | |
+| REVEAL GO -> REVEAL FINAL | Forschungs-/Bundle-Hygiene bleiben sauber und aktive Forschungsartefakte werden im Forschungsmodus abgeschlossen | | | | | |
 | REVEAL GO -> REVEAL FINAL | Abgleich, optionale Materialuebersicht und Finalisierung stimmen | | | | | |
 
 ### Kurzfazit

@@ -273,6 +273,8 @@ Wenn das Artefakt eine Reveal-Praesentation ist, folgt die sichtbare Reihenfolge
 5. `Hinweise oder Optimierungen`
 6. `Zusammenfassung`
 
+Wurde der Fall mit `/PLAN FORSCHUNG` gestartet, finalisiert `REVEAL FINAL` zusaetzlich alle aktiven Forschungsartefakte und schliesst den Forschungsmodus automatisch ab.
+
 Die `Zusammenfassung` folgt ausschliesslich dem Summary-Schema des Contracts:
 
 - `Stand`
