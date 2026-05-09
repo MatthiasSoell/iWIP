@@ -107,6 +107,8 @@ Pflichtstationen im Agenten-Trockentest:
 - `BLOG FINAL`
 - `REVEAL GO` -> `REVEAL FINAL`
 
+Die Pflichtstationen werden gegen das kompakte Zustandsmodell im Contract geprueft. Dabei sind insbesondere diese Restriktionen mitzuprotokollieren: `/PLAN` erzeugt keine Dateien, `BLOG GO` nur `index.md`, `BLOG FINAL` setzt einen validen Blogentwurf voraus, `REVEAL GO` setzt einen finalisierten Blog voraus, `REVEAL FINAL` finalisiert nur Reveal und `/PLAN FORSCHUNG` verhaelt sich wie `/PLAN` mit zusaetzlicher Forschungs-/Rohdatenaktivierung.
+
 Pro Station mindestens erfassen:
 
 - welches Verhalten erwartet wurde,
@@ -128,6 +130,7 @@ Bearbeiter:
 |---|---|---|---|---|---|---|
 | /PLAN | Keine Artefakterstellung | | | | | |
 | /PLAN | Sprache bleibt planungs- und dialoggerecht | | | | | |
+| /PLAN FORSCHUNG | Verhaelt sich wie `/PLAN` und aktiviert zusaetzlich Forschungs-/Rohdatenartefakte | | | | | |
 | BLOG GO | Erzeugt nur `index.md` auf Basis des Planungsstands | | | | | |
 | BLOG FINAL | Kontextlücken führen zu genau einer Rückfrage | | | | | |
 | BLOG FINAL | Profilsteuerung A/B/C ist sichtbar korrekt | | | | | |

@@ -75,6 +75,17 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 - Bei mehrdeutigen Formulierungen wie `Das ist fertig` oder `Bitte finalisieren` stellt der Agent genau eine Klaerungsfrage, bevor ein Uebergang ausgeloest wird.
 - Aktiver Editorpfad, geoeffnete Prompt-Dateien, markierte Textstellen oder sonstiger Editor-Kontext steuern den Arbeitsmodus nicht. Massgeblich sind Nutzeranliegen sowie explizite oder semantisch eindeutig erkannte Arbeitsbefehle und Statusmeldungen. Solche Signale haben immer Vorrang vor aktivem Dateikontext, Auswahl oder offenem Prompt.
 
+### Kompaktes Zustandsmodell
+
+| Zustand | Ausloeser | Erlaubte Aktion | Nicht erlaubt |
+|---|---|---|---|
+| `/PLAN` | Expliziter Planungsbefehl oder semantisch gleichwertige Planungsanfrage | Planungsdialog in `P1` und `P2` fuehren, offene Voraussetzungen klaeren, sichtbaren Planungsstand aufbauen | Dateierzeugung, Snapshots, Builds oder Finalisierung ausloesen |
+| `BLOG GO` | Explizite Freigabe auf Basis eines sichtbaren Planungsstands | Genau `index.md` als bearbeitbare Blog-Arbeitsdatei erzeugen; bei fehlender Grundlage genau eine Klaerungsfrage stellen | Andere Artefaktdateien erzeugen, `BLOG FINAL` oder `REVEAL GO` vorwegnehmen |
+| `BLOG FINAL` | Explizite Finalisierungsfreigabe fuer den Blog oder semantisch gleichwertige Meldung | Vorliegenden Blogentwurf in `index.md` pruefen, finalisieren und sichtbar zusammenfassen | Ohne validen Blogentwurf finalisieren, Reveal erzeugen oder Forschungsartefakte separat finalisieren |
+| `REVEAL GO` | Expliziter Uebergang zur Praesentation | Ausschliesslich aus dem finalen Blog-`index.md` genau `_index.md` als bearbeitbare Reveal-Arbeitsdatei erzeugen | Reveal aus Planungsnotizen oder unfinalem Blog ableiten, Blog erneut finalisieren |
+| `REVEAL FINAL` | Explizite Finalisierungsfreigabe fuer Reveal oder semantisch gleichwertige Meldung | Vorliegendes Reveal finalisieren und aktive Forschungsdokumentation dabei abschliessen | Blog neu finalisieren, neue Blogdatei erzeugen oder den Blog als Quelle ueberschreiben |
+| `/PLAN FORSCHUNG` | Expliziter Planungsbefehl mit Forschungsmodus | Wie `/PLAN` planen und zusaetzlich Forschungs-/Rohdatenartefakte intern aktivieren | Sichtbare Zielartefakte erzeugen, den Forschungsmodus als Ersatz fuer `BLOG GO` oder `REVEAL GO` behandeln |
+
 ### Sichtbarkeit von Struktur
 
 - Der Agent leitet den Arbeitsmodus aus dem Anliegen ab. Nur bei echter Unklarheit fragt er kurz nach.
