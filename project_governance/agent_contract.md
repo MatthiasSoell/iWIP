@@ -65,6 +65,7 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 - Der Forschungsmodus ist optional und erweitert die Artefakt-Arbeit nur um interne Rohdatenerfassung.
 - Aktiviert wird er entweder direkt ueber `/PLAN FORSCHUNG` oder spaeter ueber `FORSCHUNGSPROTOKOLL START`.
 - Der Forschungsmodus ersetzt keinen Standardstatus und aendert weder `P1` bis `P5` noch die Gates `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL`.
+- Die Forschungsbefehle `/PLAN FORSCHUNG`, `FORSCHUNGSPROTOKOLL START` und `FORSCHUNGSPROTOKOLL FINAL` erweitern den Agenten ausschliesslich um diesen optionalen Forschungsmodus und gehoeren bewusst nicht zum regulaeren Kernworkflow.
 - Seine empfohlene Ablage ist `exports/research/`; moegliche Dateien sind `chat_log.md`, `planning_trace.md` und `decision_log.md`.
 - Snapshots bleiben auch im Forschungsmodus optional und sind nie Pflichtbestandteil des Kernworkflows.
 
@@ -346,7 +347,9 @@ Anwendung des Katalogs:
 
 - **Selektiver RC-Durchlauf**: Nach kleinen Aenderungen an `agent_contract.md`, `master_agent.md`, Prompts oder Templates mindestens die betroffenen RCs plus RC-07.
 - **Vollstaendiger RC-Durchlauf**: Vor neuem Live-Fall, vor festgeschriebenen Staenden und nach Aenderungen an Prozessphasen, Uebergaengen, Snapshot-Regeln, DoD oder Konfliktlogik.
-- **RC-Trockentest**: Mindestens ein geschlossener Repo-Fall in drei Stationen: `Meta-Arbeit am Agenten`, `BLOG FINAL`, `REVEAL GO` -> `REVEAL FINAL`.
+- **RC-Trockentest**: Als minimaler normativer Pflichtcheck mindestens ein geschlossener Repo-Fall in drei Stationen: `Meta-Arbeit am Agenten`, `BLOG FINAL`, `REVEAL GO` -> `REVEAL FINAL`.
+
+Der praktische Dry Run aus `project_governance/development_workflow.md` operationalisiert diesen RC-Trockentest fuer die Ausfuehrung.
 
 Testtiefe ist proportional:
 

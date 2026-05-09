@@ -45,6 +45,7 @@ Dabei gilt fuer den Handoff an den Contract:
 
 - `/PLAN` startet immer in `P1` oder `P2`; die erste Reaktion bleibt Planungs- und Strukturierungsmodus.
 - `/PLAN FORSCHUNG` startet denselben Planungsdialog, aktiviert zusaetzlich aber einen optionalen Forschungs-/Rohdatenmodus in `exports/research/`.
+- Die Forschungsbefehle `/PLAN FORSCHUNG`, `FORSCHUNGSPROTOKOLL START` und `FORSCHUNGSPROTOKOLL FINAL` gehoeren ausschliesslich zu diesem optionalen Forschungsmodus; der Kernworkflow mit `/PLAN`, `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL` bleibt unveraendert.
 - `plan` nutzt vorhandenen Kontext vorrangig und stellt nur die naechste entscheidende Rueckfrage.
 - `plan` darf in der ersten Reaktion strukturieren, analysieren, genau eine priorisierte Rueckfrage stellen oder einen kompakten Planungsstand formulieren; ohne explizites `BLOG GO` werden keine Dateien angelegt.
 - Der erste `/PLAN`-Turn bleibt immer Planung. Formulierungen wie `leg los`, `mach direkt`, `erstell das`, `Blog und Reveal` oder `fertig ausarbeiten` loesen im ersten Turn keine Dateierzeugung aus.

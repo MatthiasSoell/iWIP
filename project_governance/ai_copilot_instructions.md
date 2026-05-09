@@ -175,7 +175,7 @@ Dann zusätzlich:
 
 - RC‑Katalog aus `project_governance/agent_contract.md` anwenden
 - Ausführungslogik aus `project_governance/development_workflow.md` befolgen
-- vor Live‑Fällen oder festgeschriebenen Ständen einen vollständigen RC‑Durchlauf bzw. Trockentest vorsehen
+- vor Live‑Fällen oder festgeschriebenen Ständen einen vollständigen RC‑Durchlauf bzw. den im Workflow operationalisierten RC‑Trockentest als praktischen Dry Run vorsehen
 
 ---
 

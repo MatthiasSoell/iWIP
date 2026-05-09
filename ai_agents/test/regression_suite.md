@@ -3,7 +3,9 @@
 Scope: zentrale didaktische, prozessuale und governancebezogene Testfaelle zur Qualitaetssicherung des Agenten
 
 ## 🧭 Ziel
-Diese Regression-Suite dient der Sicherstellung, dass zentrale Regeln, didaktische Logik und Workflow-Annahmen des Agenten auch nach Änderungen stabil funktionieren.
+Diese Regression Suite ist ein abgeleiteter Testkatalog auf Basis des Agent Contracts. Massgeblich ist ausschliesslich `project_governance/agent_contract.md`.
+
+Sie dient dazu, Contract-Regeln fuer Regressionen zu pruefen, relevante RC-IDs im RC-Durchlauf zu referenzieren, kompakte Beispieltests bereitzustellen und keine eigene normative Autoritaet zu begruenden.
 
 Die Tests sind bewusst:
 - realitätsnah (typische Nutzungssituationen)
@@ -354,7 +356,8 @@ Erwartung:
 - keine sofortige Anlage von `index.md` oder `_index.md`
 
 Kritische Regeln:
-- `/PLAN FORSCHUNG` ersetzt alte Forschungs-Startbefehle
+- `/PLAN FORSCHUNG` aktiviert den optionalen Forschungsmodus innerhalb der Standardplanung
+- `FORSCHUNGSPROTOKOLL START` und `FORSCHUNGSPROTOKOLL FINAL` bleiben zusaetzliche Forschungsbefehle ausserhalb des Kernworkflows
 - Standard-Planungslogik bleibt erhalten
 - Forschungsmodus bleibt vom Standardmodus getrennt
 
@@ -383,7 +386,7 @@ Im Repository liegt die Datei:
 
 ai_agents/test/regression_suite.md
 
-Sie definiert die maßgeblichen Regressionstests für den Agenten.
+Sie dokumentiert einen abgeleiteten Testkatalog fuer den Agenten. Massgeblich bleiben der Contract und die dort verankerten RC-IDs.
 
 Zu prüfen ist der aktuelle Stand des Agentensystems auf Basis von:
 - project_governance/agent_contract.md
@@ -411,7 +414,7 @@ ist.
 ### Vorgehen
 
 1. Lies zuerst die Regression-Suite vollständig.
-2. Lies danach die maßgeblichen Agenten- und Governance-Dateien.
+2. Lies danach den Contract mit den relevanten RCs sowie die massgeblichen Agenten- und Governance-Dateien.
 3. Prüfe jeden Testfall einzeln gegen die tatsächlich geltenden Regeln.
 4. Beurteile nicht nach Bauchgefühl, sondern nur auf Basis der im Repo vorhandenen normativen Texte.
 5. Markiere einen Test nur dann als nicht bestanden, wenn eine echte, belegbare Abweichung vorliegt.

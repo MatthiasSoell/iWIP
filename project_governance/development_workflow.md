@@ -80,7 +80,7 @@ Ausführungslogik:
 
 - **Selektiver RC-Durchlauf**: bei kleinen Text- oder Regelkorrekturen nur betroffene RCs plus RC-07.
 - **Vollständiger RC-Durchlauf**: vor Live-Fällen, festgeschriebenen Ständen und nach Änderungen an Moduslogik, Übergängen, Snapshot-Regeln, Bundle-Hygiene oder DoD.
-- **Trockentest**: mindestens ein geschlossener Repo-Fall im Standardmodus in fuenf Schritten: `/PLAN`, `BLOG GO`, `BLOG FINAL`, `REVEAL GO` -> `REVEAL FINAL`.
+- **Dry Run**: praktischer Durchlauf des im Contract definierten RC-Trockentests, mindestens ein geschlossener Repo-Fall im Standardmodus in fuenf Schritten: `/PLAN`, `BLOG GO`, `BLOG FINAL`, `REVEAL GO` -> `REVEAL FINAL`.
 - Bei Aenderungen am Forschungsmodus zusaetzlich gezielt `/PLAN FORSCHUNG` gegen die betroffenen Regeln pruefen: gleicher Planungsdialog wie `/PLAN`, optionale Rohdatenerfassung unter `exports/research/`, keine Veraenderung der Kernlogik.
 - Bei Änderungen an der Wissensbasis-Anschlusslogik zusätzlich gezielt RC-27 prüfen, insbesondere Entwurf bei `BLOG FINAL`, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
 
@@ -92,7 +92,9 @@ Ausführungslogik:
 
 ### 4.5 Dry-Run-Auswertungsvorlage
 
-Für RC-Trockentests wird das Ergebnis nicht nur summarisch, sondern als kurzer Auswertungsbogen festgehalten.
+Der praktische Dry Run operationalisiert den im Contract definierten RC-Trockentest.
+
+Fuer diesen Dry Run wird das Ergebnis nicht nur summarisch, sondern als kurzer Auswertungsbogen festgehalten.
 
 Ziel:
 
@@ -100,7 +102,7 @@ Ziel:
 - Regel-, Prompt- und Template-Fehler trennen,
 - Folgearbeiten gezielt ableiten.
 
-Pflichtstationen im Agenten-Trockentest:
+Pflichtstationen im praktischen Dry Run:
 
 - `/PLAN`
 - `BLOG GO`
