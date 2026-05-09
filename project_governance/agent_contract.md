@@ -22,11 +22,12 @@ Reflexionsschleifen zwischen Planung, bearbeitetem `index.md`, bearbeitetem `_in
 ### Glossar der Steuerarchitektur
 
 - `Arbeitsmodus`: uebergeordnete Arbeitsart des Falls, also `Meta-Arbeit am Agenten` oder `Artefakt-Arbeit`.
+- `Forschungsmodus`: optionaler Zusatzmodus zur Artefakt-Arbeit; er erweitert die Planung um interne Rohdatenerfassung, veraendert aber weder Prozessphasen noch Freigabegates.
 - `Prozessphase`: operative Phase innerhalb der Artefakt-Arbeit, also `P1` bis `P5`.
 - `Phasenlabel`: rein beschreibende Bezeichnung innerhalb einer Prozessphase, z. B. Planung, Blogausarbeitung oder Reveal-Transformation; Phasenlabels erzeugen keine eigene Steuerlogik.
 - `veroeffentlichter Pfad`: sichtbare URL eines Artefakts unterhalb der Site-Basis `/iWIP/`.
 - `technischer Bundle-Ort`: dateibasierter Content-Pfad im Repo, aus dem ein Artefakt gebaut wird.
-- `lokale Forschungs-/Rohdatenablage`: nicht oeffentliche Arbeitsablage unter `exports/`; sie wird nur im Forschungsmodus genutzt und enthaelt keine rendernden Zielartefakte.
+- `lokale Forschungs-/Rohdatenablage`: empfohlene nicht oeffentliche Arbeitsablage unter `exports/research/`; sie wird nur im Forschungsmodus genutzt und enthaelt keine rendernden Zielartefakte.
 - `sichtbare Ausgabe`: alles, was absichtlich im Nutzerdialog oder als sichtbarer Artefaktteil erscheint.
 - `Planungsmodus`: sichtbare Planungs- und Klaerungssprache in `P1` und `P2`; sie dient nur der Vorbereitung und gehoert nicht in finale Artefakte.
 - `Outputmodus`: publizierbare Artefaktsprache in `P3` bis `P5`; sie ist frei von Planungs-, Scaffold- und Steuerformeln.
@@ -59,10 +60,18 @@ Die fuenf Prozessphasen sind die einzige normative Ablaufstruktur der Artefakt-A
 
 Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Finalisierung bleiben ausschliesslich `P1` bis `P5`.
 
+### Optionaler Zusatzmodus: Forschung
+
+- Der Forschungsmodus ist optional und erweitert die Artefakt-Arbeit nur um interne Rohdatenerfassung.
+- Aktiviert wird er entweder direkt ueber `/PLAN FORSCHUNG` oder spaeter ueber `FORSCHUNGSPROTOKOLL START`.
+- Der Forschungsmodus ersetzt keinen Standardstatus und aendert weder `P1` bis `P5` noch die Gates `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL`.
+- Seine empfohlene Ablage ist `exports/research/`; moegliche Dateien sind `chat_log.md`, `planning_trace.md` und `decision_log.md`.
+- Snapshots bleiben auch im Forschungsmodus optional und sind nie Pflichtbestandteil des Kernworkflows.
+
 ### Standardisierte Statusmeldungen
 
 - `/PLAN` startet den Planungsdialog fuer didaktische Planung und Artefakterstellung. Dabei werden keine Dateien, Snapshots oder Builds ausgeloest.
-- `/PLAN FORSCHUNG` startet denselben Planungsdialog, aktiviert zusaetzlich aber den Forschungs-/Rohdatenmodus.
+- `/PLAN FORSCHUNG` startet denselben Planungsdialog, aktiviert zusaetzlich aber als optionalen Zusatzmodus die interne Rohdatenerfassung in `exports/research/`.
 - Nach einem initialen `/PLAN` gelten Formulierungen wie `Entwurf anlegen`, `Blog erstellen`, `Jetzt ausarbeiten` oder `Passt, leg los` erst dann als explizite Nutzerfreigabe fuer `BLOG GO`, wenn sie einen bereits sichtbaren Planungsstand bestaetigen; im ersten `/PLAN`-Turn loesen sie noch kein `BLOG GO` aus.
 - `BLOG GO` erzeugt auf Basis eines freigegebenen oder explizit benannten Planungsstands `index.md` als bearbeitbare Blog-Arbeitsdatei. Ohne belastbare Grundlage ist genau eine Klaerungsfrage verpflichtend.
 - `Kapitel <N> freigegeben` dokumentiert kapitelweise Freigaben innerhalb der Ausarbeitung, wenn dieser Modus genutzt wird.
@@ -84,7 +93,7 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 | `BLOG FINAL` | Explizite Finalisierungsfreigabe fuer den Blog oder semantisch gleichwertige Meldung | Vorliegenden Blogentwurf in `index.md` pruefen, finalisieren und sichtbar zusammenfassen | Ohne validen Blogentwurf finalisieren, Reveal erzeugen oder Forschungsartefakte separat finalisieren |
 | `REVEAL GO` | Expliziter Uebergang zur Praesentation | Ausschliesslich aus dem finalen Blog-`index.md` genau `_index.md` als bearbeitbare Reveal-Arbeitsdatei erzeugen | Reveal aus Planungsnotizen oder unfinalem Blog ableiten, Blog erneut finalisieren |
 | `REVEAL FINAL` | Explizite Finalisierungsfreigabe fuer Reveal oder semantisch gleichwertige Meldung | Vorliegendes Reveal finalisieren und aktive Forschungsdokumentation dabei abschliessen | Blog neu finalisieren, neue Blogdatei erzeugen oder den Blog als Quelle ueberschreiben |
-| `/PLAN FORSCHUNG` | Expliziter Planungsbefehl mit Forschungsmodus | Wie `/PLAN` planen und zusaetzlich Forschungs-/Rohdatenartefakte intern aktivieren | Sichtbare Zielartefakte erzeugen, den Forschungsmodus als Ersatz fuer `BLOG GO` oder `REVEAL GO` behandeln |
+| `/PLAN FORSCHUNG` | Expliziter Planungsbefehl mit Forschungsmodus | Wie `/PLAN` planen und zusaetzlich optional interne Rohdatenerfassung in `exports/research/` aktivieren | Sichtbare Zielartefakte erzeugen, den Forschungsmodus als Ersatz fuer `BLOG GO` oder `REVEAL GO` behandeln |
 
 ### Sichtbarkeit von Struktur
 
@@ -124,13 +133,13 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 14. `P1` und `P2` bleiben strikt Planungsmodus. Der erste `/PLAN`-Turn bleibt immer in `P1` oder `P2`. Weder reichhaltiger Kontext noch das Arbeitsprinzip `Fortschritt vor Absicherung` legitimieren ohne explizite Nutzerfreigabe den Uebergang nach `P3`, die Anlage von `index.md` oder die Anlage von `_index.md`. Im ersten `/PLAN`-Turn werden keine Dateien, Snapshots oder Builds erzeugt.
 15. `BLOG GO` ist erst zulaessig, wenn ein sichtbarer Planungsstand vorliegt oder der Nutzer eine bereits bestehende Planung bzw. Blog-Grundlage explizit benennt. Dann erzeugt der Agent im Blog-Zielordner `index.md` als bearbeitbare Arbeitsdatei. Im Standardmodus entstehen dabei keine Snapshots, Chatlogs oder Rohdatenexporte.
 16. `REVEAL GO` ist erst zulaessig, wenn ein finaler Blog-`index.md` als belastbare Grundlage vorliegt. Dann erzeugt der Agent im Reveal-Zielordner `_index.md` als bearbeitbare Reveal-Arbeitsdatei. Weder `/PLAN` noch eine gemeinsame Blog-und-Reveal-Anfrage implizieren `REVEAL GO`.
-17. Snapshots sowie Chat-/Rohdatenexporte gehoeren nicht zum Standardmodus. Sie duerfen nur im Forschungsmodus erzeugt werden, bleiben auch dort nicht-operativ und sind nie Ableitungsquelle; Reveal wird stets aus dem finalen Blog-`index.md` abgeleitet.
+17. Snapshots sowie Chat-/Rohdatenexporte gehoeren nicht zum Standardmodus. Sie duerfen nur im Forschungsmodus erzeugt werden, bleiben auch dort optional, nicht-operativ und nie Ableitungsquelle; empfohlener Ablageort ist `exports/research/` mit moeglichen Dateien wie `chat_log.md`, `planning_trace.md` und `decision_log.md`. Reveal wird stets aus dem finalen Blog-`index.md` abgeleitet.
 18. Vor Finalisierung greifen verpflichtende Mindestpruefungen. Alle Pflichtbestandteile muessen vor `BLOG FINAL` beziehungsweise `REVEAL FINAL` vollstaendig geprueft sein. Im Blog sind dies mindestens DQM-Pruefbericht, sichtbare Zusammenfassung nach dem Summary-Schema dieses Contracts, Frontmatter-Pruefung, Begriffspruefung und Typografiepruefung. In Reveal sind dies mindestens Abgleich, sichtbare Zusammenfassung nach dem Summary-Schema dieses Contracts und Frontmatter-Pruefung. Eine Quellenuebersicht wird nur sichtbar ausgegeben, wenn Quellenkonsistenz oder Nutzerklarheit das erfordern. Eine Materialuebersicht wird nur sichtbar ausgegeben, wenn mehrere Dateien, Quellen oder Zielpfade tatsaechlich abgestimmt werden muessen. Ziel ist eine moeglichst abschliessende First-pass-Finalisierung ohne nachtraegliche Korrekturschleifen. Bei Blockern stoppt die Finalisierung.
 19. `BLOG FINAL` ist nur zulaessig, wenn `draft: false` gesetzt ist. Ein Blogbeitrag gilt nur dann als veroeffentlicht, wenn `draft: false` gesetzt ist; mit `draft: true` bleibt er unveroeffentlicht.
 20. `BLOG FINAL` ist unzulaessig, wenn Pflichtabschnitte aus diesem Contract oder dem Blog-Template fehlen, inhaltlich unvollstaendig sind, keine belastbare Blog-Grundlage vorliegt, `draft` nicht explizit `false` ist oder im kapitelweisen Freigabefall noch nicht freigegeben wurden.
 21. Sobald im Blog `draft: false` gesetzt ist und `oer.is_oer: true` vorliegt, muessen alle OER-Pflichtfelder vollstaendig und valide befuellt sein; unvollstaendige OER-Metadaten sind dann ein Finalisierungsblocker. Der OER-Block wird ausschliesslich aus dem Blog-Frontmatter gelesen; Workflows duerfen keine fachlichen Defaults, keine automatische Fachzuordnung und keine erratenen OERSI-Ergaenzungen einfuehren.
 22. Reveal-Bildpfade muessen robust sein: Standard ist Verlinkung auf den Blog-Bildordner per absolutem Pfad (`/iWIP/blog/<bereich>/<ordner>/...`) ohne Duplikatkopie; nur reveal-spezifische Assets liegen im Reveal-Ordner.
-23. Etwaige Forschungsartefakte in `exports/` dienen ausschliesslich der Dokumentation und Reflexion im Forschungsmodus. Iterative Ueberarbeitung erfolgt nur in `index.md` beziehungsweise `_index.md`. Offene oder unklare Inhalte werden dort explizit als `[TODO: ...]` markiert statt still ergaenzt.
+23. Etwaige Forschungsartefakte in `exports/research/` dienen ausschliesslich der Dokumentation und Reflexion im Forschungsmodus. Iterative Ueberarbeitung erfolgt nur in `index.md` beziehungsweise `_index.md`. Offene oder unklare Inhalte werden dort explizit als `[TODO: ...]` markiert statt still ergaenzt.
 24. Nutzerdialog ist primaer didaktisch, adressatenorientiert und antwortorientiert: zuerst fachliche Einordnung, Entscheidung oder naechste sinnvolle Arbeitsfrage; interne Prozesssprache bleibt unsichtbar. Bei erkennbaren didaktischen Spannungen beginnt die sichtbare Antwort ohne Prozesskommentar direkt mit der fachlichen Diagnose. Der Agent benennt die zentrale Spannung in einem klaren Ziel-Mittel-Satz mit Bezug auf die betroffene didaktische Dimension und vermeidet weichzeichnende Formulierungen, wenn dadurch die Tragweite unklar wuerde. Danach folgt genau eine kurze Anschlussfrage oder eine konkrete Empfehlung.
 25. Hochgeladene PPTX-, PDF-, DOCX-, Markdown- oder Notizdateien gelten standardmaessig als Quellmaterial fuer Analyse, Planung oder Ueberarbeitung. Daraus folgt keine implizite Reveal-Erzeugung, keine Ueberschreibung bestehender Artefakte und keine Finalisierung.
 26. Explizite Standardstatusmeldungen haben Vorrang vor gleichwertigen Formulierungen; semantisch eindeutige natuerliche Formulierungen duerfen dieselben Uebergaenge ausloesen. Bei Unklarheit ist genau eine Klaerungsfrage verpflichtend.
@@ -142,8 +151,8 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 32. Die Low-noise-Regel aus `Sichtbarkeit von Struktur` ist verbindlich. Pflichtausgaben wie Abgleich, DQM-Pruefbericht, sichtbare Zusammenfassung nach dem Summary-Schema sowie erforderliche Tabellen oder Uebersichten bleiben sichtbar zulaessig, sofern sie direkt als Ergebnis erscheinen.
 33. Die Blog-Wissensbasis ist ein optionaler Anschluss fuer Verweise, Orientierung und Nachpflege; sie ist kein Pflicht-Gate der Standardplanung oder Finalisierung. Nach erfolgreichem `BLOG FINAL` entwirft der Agent jedoch standardmaessig einen kuratierten Wissensbasis-Eintrag als Vorschlag und stellt genau eine Bestaetigungsfrage zur Formulierung. Erst nach Bestaetigung oder gezielter Korrektur wird `blog_wissensbasis.md` aktualisiert. Liegt statt des Review-Schritts eine ausdrueckliche sofortige Uebernahmeanweisung vor, darf die Aktualisierung ohne Zusatzrueckfrage im selben Arbeitsgang erfolgen. `REVEAL GO` loest fuer sich allein keine Wissensbasis-Aktualisierung aus.
 34. Routing hat zwei Ebenen: technischen Bundle-Ort und veroeffentlichten Pfad. Die Site-Basis ist gemaess `config.toml` `/iWIP/`. Fuer sichtbare Ausgaben ist ausschliesslich der veroeffentlichte Pfad unterhalb dieser Site-Basis massgeblich. Dabei gilt zur Klarstellung: Blog -> Praesentation meint die Ableitung des veroeffentlichten Praesentationspfads aus dem Blog-Bundle. Praesentation -> Blog meint das Reveal-Frontmatter-Feld `blog`; dieses verweist auf die veroeffentlichte Blog-URL mit Site-Basis und nicht auf technische Content-Pfade. Standard: `content/blog/<bereich>/<ordner>/index.md` -> veroeffentlichter Pfad `/iWIP/praesentation/<bereich>/<ordner>/`. Sonderfall `widi`: technisches Reveal-Bundle `content/praesentation/lehre/widi/<ordner>/`, veroeffentlichter Pfad `/iWIP/praesentation/widi/<ordner>/`. Der technische Bundle-Ort darf niemals in sichtbaren Ausgaben erscheinen; Buttons, sichtbare Links, pruefende Beispiele und die aus Frontmatter-Aliases aufgeloeste Route muessen auf dieselbe veroeffentlichte URL zeigen.
-35. Forschungsprotokolle bleiben schlank und verifizierbar: enthalten sind nur Marker, zentrale Zeitpunkte, Artefaktpfade, Build-/Check-Status und exakt ableitbare Zaehldaten. Unsichere Zaehldaten werden nicht geschaetzt, sondern als nicht verlaesslich verfuegbar markiert.
-36. `/PLAN FORSCHUNG` aktiviert zusaetzlich einen Forschungs-/Rohdatenmodus in `exports/`. Welche Forschungsartefakte dort genau gepflegt werden, wird separat geregelt; sie enthalten nur tatsaechlich ableitbare Daten und bleiben vom sichtbaren Dialog sowie von den Zielartefakten getrennt.
+35. Forschungsprotokolle bleiben schlank und verifizierbar: enthalten sind nur Marker, zentrale Zeitpunkte, Artefaktpfade, Build-/Check-Status und exakt ableitbare Zaehldaten. Unsichere Zaehldaten werden nicht geschaetzt, sondern als nicht verlaesslich verfuegbar markiert. Empfohlene Dateien in `exports/research/` sind `chat_log.md`, `planning_trace.md` und `decision_log.md`; weitere Dateien bleiben optional.
+36. `/PLAN FORSCHUNG` aktiviert zusaetzlich einen optionalen Forschungs-/Rohdatenmodus in `exports/research/`. Dieser Zusatzmodus verhaelt sich wie `/PLAN` plus interne Rohdatenerfassung, beruehrt aber weder die Kernlogik noch die Freigabegates fuer Blog und Reveal.
 37. Arbeitsprinzip ist verpflichtend: Der Agent priorisiert Fortschritt vor Absicherung und Klarheit vor Vollstaendigkeit, sofern kein echter Blocker vorliegt. Diese Priorisierung darf weder Pflichtpruefungen noch Konfliktklaerungen ueberspringen und nicht als Legitimation fuer Artefakterstellung ohne explizite Nutzerfreigabe dienen.
 
 ### Minimaler Release-Check
@@ -267,11 +276,11 @@ Snapshot-Vergleiche und Reflexionsimpulse gehoeren nicht zur Standardzusammenfas
 Sichtbare Zusammenfassungen erscheinen nur bei Finalisierung, an echten Uebergaengen oder auf ausdrueckliche Nachfrage.
 
 `/PLAN` erzeugt keine Dateien, keine Snapshots und kein Forschungsprotokoll; der Befehl dient ausschliesslich dem Planungsdialog und der didaktischen Strukturierung.
-`/PLAN FORSCHUNG` aktiviert denselben Planungsdialog mit zusaetzlichem Forschungs-/Rohdatenmodus.
+`/PLAN FORSCHUNG` aktiviert denselben Planungsdialog mit optionalem Forschungs-/Rohdatenmodus.
 
 Im Forschungsmodus bleiben Forschungsartefakte strikt vom sichtbaren Dialog und vom didaktischen Artefakt getrennt und enthalten nur schlanke, beobachtende Metadaten, soweit sie verlaesslich verfuegbar sind: Start- und Endzeit, Phasenuebergaenge, Artefaktpfade, Build-/Check-Status und nur dann Zaehldaten, wenn diese direkt ableitbar sind.
 
-Wenn ein Fall mit `/PLAN FORSCHUNG` beginnt oder spaeter mit `FORSCHUNGSPROTOKOLL START` in den Forschungsmodus uebergeht, fuehrt der Agent die Forschungsdokumentation ab diesem Zeitpunkt fortlaufend in `exports/`. Die konkrete Marker-, Snapshot- und Chatlog-Architektur wird separat geregelt. Ohne aktivierten Forschungsmodus duerfen spaetere Auswertungen Zeitpunkte nur rekonstruieren und muessen fehlende Marker oder Rohdaten explizit als nicht verlaesslich verfuegbar kennzeichnen.
+Wenn ein Fall mit `/PLAN FORSCHUNG` beginnt oder spaeter mit `FORSCHUNGSPROTOKOLL START` in den Forschungsmodus uebergeht, fuehrt der Agent die Forschungsdokumentation ab diesem Zeitpunkt fortlaufend in `exports/research/`. Empfohlene Dateien sind `chat_log.md`, `planning_trace.md` und `decision_log.md`; Snapshots bleiben optional. Ohne aktivierten Forschungsmodus duerfen spaetere Auswertungen Zeitpunkte nur rekonstruieren und muessen fehlende Marker oder Rohdaten explizit als nicht verlaesslich verfuegbar kennzeichnen.
 
 Bei `BLOG FINAL` ist die sichtbare Reihenfolge:
 
