@@ -875,6 +875,60 @@ body.dark .oer-meta [data-tooltip]::after {
 }
 
 
+/* Dark Mode – Tabellen, Figure-Frames und OER-Zitiervorschlag
+   Hält Dark-Mode-Flächen konsistent, ohne den Light Mode anzutasten. */
+:is(body.dark, [data-theme="dark"]) :is(.post-content table, .agenda) {
+  background: color-mix(in srgb, var(--theme) 88%, var(--primary) 12%);
+  border-color: color-mix(in srgb, var(--border) 84%, var(--primary) 16%);
+  color: var(--primary);
+}
+
+:is(body.dark, [data-theme="dark"]) .post-content table :is(thead, tbody, tr) {
+  background: transparent;
+}
+
+:is(body.dark, [data-theme="dark"]) .post-content table thead {
+  background: color-mix(in srgb, var(--theme) 76%, var(--primary) 24%);
+}
+
+:is(body.dark, [data-theme="dark"]) .post-content table thead th {
+  background: color-mix(in srgb, var(--theme) 74%, var(--primary) 26%);
+  color: var(--primary);
+  border-bottom-color: color-mix(in srgb, var(--border) 88%, transparent);
+}
+
+:is(body.dark, [data-theme="dark"]) .post-content table :is(th, td) {
+  color: var(--primary);
+  border-color: color-mix(in srgb, var(--border) 88%, transparent);
+}
+
+:is(body.dark, [data-theme="dark"]) .post-content table tbody td {
+  background: color-mix(in srgb, var(--theme) 90%, var(--primary) 10%);
+}
+
+:is(body.dark, [data-theme="dark"]) .post-content table tbody tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--theme) 85%, var(--primary) 15%);
+}
+
+:is(body.dark, [data-theme="dark"]) .post-content table tbody tr:hover td {
+  background: color-mix(in srgb, var(--theme) 80%, var(--uni-blau) 20%);
+}
+
+:is(body.dark, [data-theme="dark"]) .agenda table {
+  background: transparent;
+}
+
+:is(body.dark, [data-theme="dark"]) .post-content .figure-frame {
+  background: color-mix(in srgb, var(--theme) 82%, var(--code-bg) 18%);
+  border-color: color-mix(in srgb, var(--border) 78%, var(--primary) 22%);
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--border) 36%, transparent);
+}
+
+:is(body.dark, [data-theme="dark"]) .oer-meta .oer-cite {
+  border-top: 0;
+}
+
+
 /* ===========================================================
    10) UI Help Overlay – SciBlog iWIP
    =========================================================== */

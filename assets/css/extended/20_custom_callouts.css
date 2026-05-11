@@ -204,3 +204,136 @@
   margin-top: 0.2rem;
   text-align: right;
 }
+
+
+/* -----------------------------------------------------------
+    5. Dark Mode Overrides
+    -----------------------------------------------------------
+
+    Ziel:
+    - farbige Callouts im Dark Mode deutlich abdunkeln
+    - Text, Links und Hervorhebungen klar lesbar halten
+    - Light Mode unverändert lassen
+    ----------------------------------------------------------- */
+
+:is(body.dark, [data-theme="dark"]) :is(
+   .callout,
+   .tullu-box,
+   .callout-info,
+   .alert-info,
+   .callout-warning,
+   .alert-warning,
+   .callout-danger,
+   .alert-danger,
+   .warning-box
+) {
+   color: var(--primary);
+   box-shadow: none;
+}
+
+:is(body.dark, [data-theme="dark"]) :is(
+   .callout,
+   .tullu-box,
+   .callout-info,
+   .alert-info,
+   .callout-warning,
+   .alert-warning,
+   .callout-danger,
+   .alert-danger,
+   .warning-box
+) :is(p, li, ul, ol, strong, b, em, h1, h2, h3, h4, h5, h6) {
+   color: inherit;
+}
+
+:is(body.dark, [data-theme="dark"]) :is(
+   .callout,
+   .tullu-box,
+   .callout-info,
+   .alert-info,
+   .callout-warning,
+   .alert-warning,
+   .callout-danger,
+   .alert-danger,
+   .warning-box
+) a {
+   color: color-mix(in srgb, var(--primary) 72%, var(--uni-blau) 28%);
+   font-weight: 600;
+   text-decoration-color: color-mix(in srgb, currentColor 78%, transparent);
+   text-decoration-thickness: 0.08em;
+   text-underline-offset: 0.14em;
+}
+
+:is(body.dark, [data-theme="dark"]) :is(
+   .callout,
+   .tullu-box,
+   .callout-info,
+   .alert-info,
+   .callout-warning,
+   .alert-warning,
+   .callout-danger,
+   .alert-danger,
+   .warning-box
+) a:is(:hover, :focus-visible) {
+   color: color-mix(in srgb, var(--primary) 58%, var(--uni-blau) 42%);
+   text-decoration-color: currentColor;
+}
+
+:is(body.dark, [data-theme="dark"]) :is(
+   .callout,
+   .tullu-box,
+   .callout-info,
+   .alert-info,
+   .callout-warning,
+   .alert-warning,
+   .callout-danger,
+   .alert-danger,
+   .warning-box
+) :not(pre) > code {
+   color: inherit;
+   background: color-mix(in srgb, var(--code-bg) 72%, transparent);
+   border: 1px solid color-mix(in srgb, var(--primary) 18%, transparent);
+}
+
+:is(body.dark, [data-theme="dark"]) .callout {
+   background: color-mix(in srgb, var(--bg-info-soft-strong) 18%, var(--theme) 82%);
+   border-color: color-mix(in srgb, var(--uni-blau) 56%, var(--theme) 44%);
+}
+
+:is(body.dark, [data-theme="dark"]) :is(
+   .callout--quote,
+   .callout-info,
+   .alert-info
+) {
+   background: color-mix(in srgb, var(--bg-info-soft) 22%, var(--theme) 78%);
+   border-color: color-mix(in srgb, var(--uni-blau) 72%, var(--theme) 28%);
+}
+
+:is(body.dark, [data-theme="dark"]) :is(
+   .callout--tipp,
+   .callout-warning,
+   .alert-warning
+) {
+   background: color-mix(in srgb, var(--bg-tipp) 20%, var(--theme) 80%);
+   border-color: color-mix(in srgb, var(--border-tipp) 68%, var(--theme) 32%);
+}
+
+:is(body.dark, [data-theme="dark"]) :is(
+   .callout--important,
+   .callout--warn,
+   .callout--warning,
+   .callout-danger,
+   .alert-danger,
+   .warning-box
+) {
+   background: color-mix(in srgb, var(--bg-warning) 24%, var(--theme) 76%);
+   border-color: color-mix(in srgb, var(--border-warning) 72%, var(--theme) 28%);
+}
+
+:is(body.dark, [data-theme="dark"]) :is(
+   .callout--note,
+   .callout--info,
+   .tullu-box
+) {
+   background: color-mix(in srgb, var(--bg-quote-soft) 20%, var(--theme) 80%);
+   border-color: color-mix(in srgb, var(--accent-turquoise) 68%, var(--theme) 32%);
+}
