@@ -21,17 +21,36 @@
   </head>
 
   <body>
-    {{ if .Param "logo.src" }}
-    <style>
-      #logo {
-        position: absolute;
-        top: {{ if .Param "logo.top"}}{{ .Param "logo.top" }}{{ else if .Param "logo.diag" }}{{ .Param "logo.diag" }}{{ else }}1%{{ end }};
-        left: {{ if .Param "logo.top"}}{{ .Param "logo.left" }}{{ else if .Param "logo.diag" }}{{ .Param "logo.diag" }}{{ else }}1%{{ end }};
-        width: {{ if .Param "logo.width"}}{{ .Param "logo.width" }}{{ else }}15%{{ end }};
-      }
-    </style>
-    <img id="logo" src="{{ .Param "logo.src" }}" alt="{{ .Param "logo.alt" }}">
-    {{ end }}
+    {{- $logoTop := "1%" -}}
+    {{- if .Param "logo.top" -}}
+      {{- $logoTop = .Param "logo.top" -}}
+    {{- else if .Param "logo.diag" -}}
+      {{- $logoTop = .Param "logo.diag" -}}
+    {{- end -}}
+    {{- $logoLeft := "1%" -}}
+    {{- if .Param "logo.left" -}}
+      {{- $logoLeft = .Param "logo.left" -}}
+    {{- else if .Param "logo.diag" -}}
+      {{- $logoLeft = .Param "logo.diag" -}}
+    {{- end -}}
+    {{- $logoWidth := "15%" -}}
+    {{- if .Param "logo.width" -}}
+      {{- $logoWidth = .Param "logo.width" -}}
+    {{- end -}}
+
+    <div class="logo-box reveal-branding{{ if not (.Param "logo.src") }} reveal-branding--toggle-only{{ end }}"
+         style="--iwip-brand-top: {{ $logoTop }}; --iwip-brand-left: {{ $logoLeft }}; --iwip-brand-width: {{ $logoWidth }};">
+      {{ if .Param "logo.src" }}
+      <img id="logo" class="logo-img reveal-branding-logo" src="{{ .Param "logo.src" }}" alt="{{ .Param "logo.alt" }}">
+      {{ end }}
+      <button type="button"
+              class="reveal-theme-toggle"
+              aria-label="Dunklen Kontrastmodus aktivieren"
+              aria-pressed="false"
+              title="Kontrastmodus umschalten">
+        <span class="reveal-theme-toggle-icon" data-reveal-theme-icon aria-hidden="true">🌙</span>
+      </button>
+    </div>
 
     <!-- ===================================================== -->
     <!-- Reveal.js Stage -->
@@ -65,5 +84,6 @@
       {{ partial $sectionBodyPartial . }}
     {{- end }}
     <script src="{{ "/iWIP/js/reveal_image_zoom.js" | relURL }}?v={{ now.Unix }}" defer></script>
+    <script src="{{ "/iWIP/js/reveal_theme_toggle.js" | relURL }}?v={{ now.Unix }}" defer></script>
   </body>
 </html>

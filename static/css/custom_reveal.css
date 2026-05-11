@@ -53,6 +53,15 @@
   --uni-blau-650: #1E4D92;     /* dezente Trenner-/Linienfarbe */
   --accent-turquoise: #00796b;
   --surface-white: #ffffff;
+  --reveal-bg-light: #ffffff;
+  --reveal-bg-dark: #111827;
+  --reveal-surface-dark: #172033;
+  --reveal-surface-dark-soft: #1f2937;
+  --reveal-border-dark: #334155;
+  --reveal-text-dark: #f3f4f6;
+  --reveal-text-dark-muted: #cbd5e1;
+  --reveal-link-dark: #93c5fd;
+  --reveal-accent-dark: #60a5fa;
 
   /* Callouts */
   --bg-tipp: #fffbdd;
@@ -520,17 +529,18 @@
 
 .logo-box {
   position: fixed;
-  top: 1.2%;
-  left: 1.2%;
+  top: var(--iwip-brand-top, 1.2%);
+  left: var(--iwip-brand-left, 1.2%);
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  z-index: 2000;
+  width: calc(var(--iwip-brand-width, 15%) + var(--iwip-toggle-size, 2rem) + 0.7rem);
+  z-index: 3100;
 }
 
 .logo-img {
-  height: 42px;
-  width: auto;
+  width: 100%;
+  height: auto;
 }
 
 .logo-text {
@@ -540,10 +550,71 @@
   font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.reveal-branding {
+  --iwip-toggle-size: 2rem;
+}
+
+.reveal-branding--toggle-only {
+  width: auto;
+}
+
+.reveal-branding-logo {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.reveal-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: var(--iwip-toggle-size);
+  height: var(--iwip-toggle-size);
+  padding: 0;
+  border: 1px solid rgba(1, 74, 153, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--uni-blau);
+  box-shadow:
+    inset 0 0 1px rgba(255,255,255,0.55),
+    0 2px 6px rgba(1,74,153,0.14);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  backdrop-filter: blur(8px) saturate(120%);
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease, color 160ms ease;
+}
+
+.reveal-theme-toggle:hover {
+  background: rgba(236, 242, 250, 0.96);
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 0 1px rgba(255,255,255,0.5),
+    0 3px 8px rgba(1,74,153,0.18),
+    0 0 0 1px rgba(1,74,153,0.12);
+}
+
+.reveal-theme-toggle:focus-visible {
+  outline: 2px solid rgba(1, 74, 153, 0.35);
+  outline-offset: 2px;
+}
+
+.reveal-theme-toggle-icon {
+  display: block;
+  font-size: 0.92rem;
+  line-height: 1;
+}
+
 /* Responsive Anpassung */
 @media (max-width: 900px) {
+  .logo-box {
+    --iwip-toggle-size: 1.85rem;
+    gap: 0.3rem;
+    width: calc(var(--iwip-brand-width, 15%) + var(--iwip-toggle-size) + 0.55rem);
+  }
+
   .logo-img {
-    height: 32px;
+    width: 100%;
   }
 
   .logo-text {
@@ -1636,7 +1707,197 @@ body.presentation-view .qr-card svg,
 
 
 /* ===========================================================
-   19) Präsentationsmodus (reveal) – body.presentation-view
+   19) Globaler Kontrastmodus – body.reveal-dark
+   =========================================================== */
+
+body.reveal-dark {
+  background: var(--reveal-bg-dark);
+  color: var(--reveal-text-dark);
+}
+
+body.reveal-dark .reveal {
+  background: var(--reveal-bg-dark);
+  color: var(--reveal-text-dark);
+}
+
+body.reveal-dark .reveal .slides section {
+  color: var(--reveal-text-dark);
+}
+
+body.reveal-dark .reveal h1,
+body.reveal-dark .reveal h2,
+body.reveal-dark .reveal h3,
+body.reveal-dark .reveal h4,
+body.reveal-dark .reveal h5,
+body.reveal-dark .reveal h6,
+body.reveal-dark .reveal .title-wrap h1,
+body.reveal-dark .reveal .seminar,
+body.reveal-dark .reveal .author,
+body.reveal-dark .reveal .contact-line {
+  color: #e5eefc;
+}
+
+body.reveal-dark .reveal a,
+body.reveal-dark .reveal .contact-line a,
+body.reveal-dark .reveal .back-to-blog {
+  color: var(--reveal-link-dark);
+}
+
+body.reveal-dark .reveal a:hover,
+body.reveal-dark .reveal .contact-line a:hover,
+body.reveal-dark .reveal .back-to-blog:hover {
+  color: #bfdbfe;
+}
+
+body.reveal-dark .reveal blockquote,
+body.reveal-dark .anreiz-box,
+body.reveal-dark .zitat-box,
+body.reveal-dark .definition-box,
+body.reveal-dark .reveal .callout--quote {
+  background: #1e293b;
+  color: var(--reveal-text-dark);
+  border-left-color: var(--reveal-accent-dark);
+  box-shadow: 0 10px 28px rgba(2, 6, 23, 0.24);
+}
+
+body.reveal-dark .hinweis-box,
+body.reveal-dark .reveal .callout--tipp,
+body.reveal-dark .reveal .callout--tip {
+  background: #332701;
+  color: #fef3c7;
+  border-left-color: #facc15;
+}
+
+body.reveal-dark .reveal .callout--important,
+body.reveal-dark .reveal .callout--warning {
+  background: #3a1718;
+  color: #fee2e2;
+  border-left-color: #f87171;
+}
+
+body.reveal-dark .reveal .callout--note,
+body.reveal-dark .reveal .callout--info {
+  background: #0f2d33;
+  color: #d5fbf7;
+  border-left-color: #2dd4bf;
+}
+
+body.reveal-dark .fragebox-text,
+body.reveal-dark .reveal .literatur-card,
+body.reveal-dark .reveal .k3-step,
+body.reveal-dark .reveal .k3-reflect,
+body.reveal-dark .iwip_overlay_panel {
+  background: var(--reveal-surface-dark-soft);
+  color: var(--reveal-text-dark);
+  border-color: var(--reveal-border-dark);
+}
+
+body.reveal-dark .reveal .k3-title,
+body.reveal-dark .reveal .k3-bubble {
+  background: #243244;
+  color: var(--reveal-text-dark);
+  border-color: #475569;
+}
+
+body.reveal-dark .reveal .k3-arrow::before {
+  border-top-color: #94a3b8;
+}
+
+body.reveal-dark .reveal .bild-quelle,
+body.reveal-dark .reveal .bild-quelle--compact,
+body.reveal-dark .reveal .zitat-quelle,
+body.reveal-dark .reveal .zitat-inline,
+body.reveal-dark .reveal .meta-note,
+body.reveal-dark .reveal .end-url,
+body.reveal-dark #global-footer,
+body.reveal-dark #global-footer a {
+  color: var(--reveal-text-dark-muted);
+}
+
+body.reveal-dark #global-footer a:hover {
+  color: var(--reveal-text-dark);
+}
+
+body.reveal-dark .reveal .titlecard .buttons .title_action,
+body.reveal-dark .reveal .iwip_reveal_qr_trigger,
+body.reveal-dark .reveal-theme-toggle {
+  background: rgba(45, 50, 60, 0.52);
+  color: var(--reveal-text-dark);
+  border-color: rgba(255,255,255,0.12);
+  box-shadow:
+    inset 0 0 1px rgba(255,255,255,0.25),
+    0 2px 8px rgba(2, 6, 23, 0.28);
+}
+
+body.reveal-dark .reveal .titlecard .buttons .title_action:hover,
+body.reveal-dark .reveal .iwip_reveal_qr_trigger:hover,
+body.reveal-dark .reveal-theme-toggle:hover {
+  background: rgba(71, 85, 105, 0.68);
+}
+
+body.reveal-dark .reveal .slide-number {
+  background: rgba(15, 23, 42, 0.88);
+  color: #e5e7eb;
+}
+
+body.reveal-dark .reveal .controls {
+  color: var(--reveal-text-dark-muted);
+}
+
+body.reveal-dark .reveal .progress {
+  color: var(--reveal-accent-dark);
+  background: rgba(148, 163, 184, 0.22);
+}
+
+body.reveal-dark .reveal .anreizmatrix thead th,
+body.reveal-dark .reveal .anreizmatrix_2 thead th {
+  background: #1e293b;
+  color: var(--reveal-text-dark);
+  border-bottom-color: #475569;
+}
+
+body.reveal-dark .reveal .anreizmatrix tbody td,
+body.reveal-dark .reveal .anreizmatrix_2 tbody td {
+  background: #0f172a;
+  color: var(--reveal-text-dark);
+  border-bottom-color: #334155;
+}
+
+body.reveal-dark .reveal .anreizmatrix tbody tr:hover td,
+body.reveal-dark .reveal .anreizmatrix_2 tbody tr:hover td {
+  background: #1f2937;
+}
+
+body.reveal-dark .reveal .anreizmatrix_2 tbody tr:nth-child(even) td {
+  background: #111827;
+}
+
+body.reveal-dark .reveal .keycap {
+  background: #1e293b;
+  color: var(--reveal-text-dark);
+  border-color: #475569;
+}
+
+body.reveal-dark .iwip_overlay {
+  background: rgba(2, 6, 23, 0.62);
+}
+
+body.reveal-dark .iwip_overlay--image {
+  background: rgba(2, 6, 23, 0.88);
+}
+
+body.reveal-dark .iwip_overlay_close {
+  color: var(--reveal-text-dark-muted);
+}
+
+body.reveal-dark .iwip_overlay_close:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--reveal-text-dark);
+}
+
+
+/* ===========================================================
+   20) Präsentationsmodus (reveal) – body.presentation-view
    =========================================================== */
 
 body.presentation-view {
@@ -1872,4 +2133,15 @@ body.presentation-view footer {
 
 .iwip_overlay_close:focus-visible {
   outline: none;
+}
+
+
+@media print {
+  .reveal-theme-toggle {
+    display: none !important;
+  }
+
+  .reveal-branding {
+    width: var(--iwip-brand-width, 15%);
+  }
 }
