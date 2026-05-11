@@ -1788,8 +1788,8 @@ body.presentation-view footer {
   }
 }
 
-@media screen and (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: 950px),
-       screen and (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-height: 620px) {
+@media screen and (orientation: landscape) and (max-width: 950px),
+       screen and (orientation: landscape) and (max-height: 620px) {
   .iwip_overlay--image {
     --iwip-overlay-mobile-gap: 0.35rem;
     --iwip-overlay-image-vw: 94vw;
