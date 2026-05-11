@@ -6,7 +6,7 @@ draft: false
 ### Funktionen dieser Seite:
 <br>
 
-- **🖨 PDF** Diese Seite können Sie drucken oder als PDF speichern, z. B. für Offline-Nutzung wie Kommentierung.
+- **📥 PDF** Diese Seite können Sie drucken oder als PDF speichern, z. B. für Offline-Nutzung wie Kommentierung.
 - **📝 Markdown** Kopieren Sie den Seiteninhalt als Markdown, z. B. zur Übernahme in eigene Materialien oder OER.
 - **🖥️ Präsentation** Wechsel Sie in die Präsentationsansicht ins Folienformat, z. B. für den Einsatz in Lehrveranstaltungen.
 - **🌗 Darstellung** Sie können zwischen hellem und dunklem Modus wechseln.
