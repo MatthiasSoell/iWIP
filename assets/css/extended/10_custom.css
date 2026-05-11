@@ -1316,3 +1316,34 @@ details > summary + p {
 .info_tip:focus{
   opacity: 1;
 }
+
+/* ==========================================================
+   TULLU-/OER-Metadatenbox: Dark Mode auch auf iPhone/iPad
+   !important required because PaperMod/iOS Safari dark-mode paint stays partly light
+   on the OER meta box unless these component-level values win consistently.
+   ========================================================== */
+
+/* Hintergrund, Text und Rahmen */
+:is(body.dark, [data-theme="dark"]) .oer-meta {
+  background-color: #111827 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #374151 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Alle Texte innerhalb der Box */
+:is(body.dark, [data-theme="dark"]) .oer-meta * {
+  color: #e5e7eb !important;
+}
+
+/* Links */
+:is(body.dark, [data-theme="dark"]) .oer-meta a {
+  color: #93c5fd !important;
+}
+
+/* Status-Badge und ähnliche Inline-Elemente */
+:is(body.dark, [data-theme="dark"]) .oer-meta .oer-status {
+  background-color: #1f2937 !important;
+  border-color: #4b5563 !important;
+  color: #e5e7eb !important;
+}

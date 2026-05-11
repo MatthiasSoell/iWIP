@@ -37,18 +37,31 @@
     {{- if .Param "logo.width" -}}
       {{- $logoWidth = .Param "logo.width" -}}
     {{- end -}}
+    {{- $logoSrc := "/iWIP/bilder/logo_siblog_iwip.png" -}}
+    {{- with .Param "logo.src" -}}
+      {{- $logoSrc = . -}}
+    {{- end -}}
+    {{- $logoAlt := "SciBlog iWIP" -}}
+    {{- with .Param "logo.alt" -}}
+      {{- $logoAlt = . -}}
+    {{- end -}}
+    {{- $logoText := "SciBlog iWIP" -}}
+    {{- with .Param "logo.text" -}}
+      {{- $logoText = . -}}
+    {{- end -}}
 
-    <div class="logo-box reveal-branding{{ if not (.Param "logo.src") }} reveal-branding--toggle-only{{ end }}"
+    <div class="logo-box reveal-branding"
          style="--iwip-brand-top: {{ $logoTop }}; --iwip-brand-left: {{ $logoLeft }}; --iwip-brand-width: {{ $logoWidth }};">
-      {{ if .Param "logo.src" }}
-      <img id="logo" class="logo-img reveal-branding-logo" src="{{ .Param "logo.src" }}" alt="{{ .Param "logo.alt" }}">
-      {{ end }}
+      <img id="logo" class="logo-img reveal-branding-logo" src="{{ $logoSrc }}" alt="{{ $logoAlt }}">
+      {{- with $logoText -}}
+      <span class="logo-text reveal-branding-text">{{ . }}</span>
+      {{- end }}
       <button type="button"
               class="reveal-theme-toggle"
               aria-label="Dunklen Kontrastmodus aktivieren"
               aria-pressed="false"
               title="Kontrastmodus umschalten">
-        <span class="reveal-theme-toggle-icon" data-reveal-theme-icon aria-hidden="true">🌙</span>
+        <span class="reveal-theme-toggle-icon" data-reveal-theme-icon aria-hidden="true">☾</span>
       </button>
     </div>
 

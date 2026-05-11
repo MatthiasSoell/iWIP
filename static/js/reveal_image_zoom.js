@@ -28,11 +28,24 @@
       overlay.hidden = true;
       overlay.setAttribute('aria-hidden', 'true');
       overlayImage.removeAttribute('src');
+      overlayImage.removeAttribute('srcset');
+      overlayImage.removeAttribute('sizes');
     };
 
     const openOverlay = (img) => {
+      const srcset = img.getAttribute('srcset');
+
       overlayImage.src = img.currentSrc || img.src;
       overlayImage.alt = img.alt || '';
+
+      if (srcset) {
+        overlayImage.setAttribute('srcset', srcset);
+        overlayImage.setAttribute('sizes', '96vw');
+      } else {
+        overlayImage.removeAttribute('srcset');
+        overlayImage.removeAttribute('sizes');
+      }
+
       overlay.hidden = false;
       overlay.setAttribute('aria-hidden', 'false');
     };

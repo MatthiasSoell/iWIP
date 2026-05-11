@@ -4,8 +4,8 @@
   const BUTTON_SELECTOR = '.reveal-theme-toggle';
   const ICON_SELECTOR = '[data-reveal-theme-icon]';
   const ICONS = {
-    light: '🌙',
-    dark: '☀️'
+    light: '☾',
+    dark: '☀'
   };
   const LABELS = {
     light: 'Dunklen Kontrastmodus aktivieren',
