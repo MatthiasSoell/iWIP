@@ -274,7 +274,7 @@
    .alert-danger,
    .warning-box
 ) a:is(:hover, :focus-visible) {
-   color: color-mix(in srgb, var(--primary) 58%, var(--uni-blau) 42%);
+   color: color-mix(in srgb, var(--primary) 72%, var(--uni-blau) 28%);
    text-decoration-color: currentColor;
 }
 
