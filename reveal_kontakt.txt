@@ -1,0 +1,17 @@
+diff --git a/static/css/custom_reveal.css b/static/css/custom_reveal.css
+index 06e16bf..9765e46 100644
+--- a/static/css/custom_reveal.css
++++ b/static/css/custom_reveal.css
+@@ -76,6 +76,12 @@
+   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);
+ }
+ 
++@media (max-width: 768px) {
++  .reveal .contact-block {
++    display: none !important;
++  }
++}
++
+ 
+ /* ===========================================================
+    03) Grundfarben & Typografie

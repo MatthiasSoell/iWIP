@@ -2141,3 +2141,12 @@ body.presentation-view footer {
     width: var(--iwip-brand-width, 15%);
   }
 }
+
+@media (max-width: 768px),
+       (orientation: landscape) and (max-height: 620px) {
+  .reveal .contact-block,
+  #global-footer .social-links {
+    display: none !important;
+  }
+
+}
