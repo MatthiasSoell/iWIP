@@ -2002,6 +2002,66 @@ body.presentation-view footer {
 
 @media screen and (orientation: landscape) and (max-width: 950px),
        screen and (orientation: landscape) and (max-height: 620px) {
+  .reveal .slides section:has(.figure-frame),
+  .reveal .slides section:has(img.figure-frame) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.12rem 0 3.95rem;
+  }
+
+  .reveal .slides section:has(.figure-frame) > :is(h2, h3, h4),
+  .reveal .slides section:has(img.figure-frame) > :is(h2, h3, h4) {
+    flex: 0 0 auto;
+    line-height: 1.04;
+    margin: 0 0 0.16rem;
+  }
+
+  .reveal .slides section:has(.figure-frame) > h2,
+  .reveal .slides section:has(img.figure-frame) > h2 {
+    font-size: 1.24em;
+  }
+
+  .reveal .slides section:has(.figure-frame) > h3,
+  .reveal .slides section:has(img.figure-frame) > h3 {
+    font-size: 1.08em;
+  }
+
+  .reveal .slides section:has(.figure-frame) > h4,
+  .reveal .slides section:has(img.figure-frame) > h4 {
+    font-size: 0.94em;
+  }
+
+  .reveal .slides section:has(.figure-frame) > .spacer,
+  .reveal .slides section:has(img.figure-frame) > .spacer {
+    height: 0.04rem;
+  }
+
+  .reveal .slides section:has(.figure-frame) > .figure-frame,
+  .reveal .slides section:has(img.figure-frame) > img.figure-frame {
+    flex: 1 1 auto;
+    min-height: 0;
+    align-self: stretch;
+  }
+
+  .reveal .slides section:has(.figure-frame) > .figure-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reveal .slides section:has(.figure-frame) > .figure-frame > .iwip_reveal_image_trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
   .reveal section .figure-frame,
   .reveal section .figure-frame.figure-frame-sm,
   .reveal section .figure-frame.figure-frame-ssm,
@@ -2035,7 +2095,7 @@ body.presentation-view footer {
     width: 100%;
     max-width: 100%;
     height: auto;
-    max-height: var(--figure-landscape-max-height);
+    max-height: min(100%, var(--figure-landscape-max-height));
     object-fit: contain;
     margin: 0 auto;
   }
@@ -2046,6 +2106,15 @@ body.presentation-view footer {
     font-size: 0.58rem !important;
     line-height: 1.02;
     margin-top: 0.03rem;
+  }
+
+  .reveal .slides section:has(.figure-frame) > .bild-quelle,
+  .reveal .slides section:has(img.figure-frame) > .bild-quelle,
+  .reveal .slides section:has(.figure-frame) > .bild-quelle.bild-quelle--compact,
+  .reveal .slides section:has(img.figure-frame) > .bild-quelle.bild-quelle--compact {
+    flex: 0 0 auto;
+    width: min(96vw, 1100px);
+    max-width: 100%;
   }
 
   .reveal .slide-number {
