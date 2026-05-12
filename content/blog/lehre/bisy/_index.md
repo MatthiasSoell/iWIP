@@ -87,3 +87,17 @@ Sie entwickeln die Fähigkeit,
 - Entwicklungen der Berufsbildung **zu bewerten**  
 - eigene **begründete Positionen** zu formulieren  
 - wissenschaftlich **zu arbeiten und zu argumentieren**
+
+Folgende **Fragen** und **Gegenstände** werden behandelt:
+
+<p class="grafic-title">Grafik: Fahrplan des Moduls im Sommersemester 2026</p>
+
+{{< blog_image_overlay src="einfuehrung/ablauf_bisy_sose_26.png" alt="Fahrplan des Moduls Bildungssysteme im Sommersemester 2026 mit Vorlesung und Übung" >}}
+
+<p class="bildquelle">
+  Bildquelle: Eigene Darstellung · Lizenz:
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">
+    CC BY-SA 4.0
+  </a><br>
+  Hinweis: iWIP-Logo nicht frei verwendbar
+</p>
