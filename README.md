@@ -35,6 +35,7 @@ Der Blog bildet das publizistische Zentrum des Projekts. Hier entstehen Blogarti
 ### Präsentationen
 
 Präsentationen werden mit reveal-hugo und reveal.js bereitgestellt. Sie sind bewusst als eigener Ausgabekanal organisiert und können aus vorhandenen Inhalten abgeleitet werden.
+Reveal-Präsentationen verfügen über einen eigenen Light-/Dark-Mode-Toggle direkt in der Präsentation.
 
 Finale Präsentationen werden automatisch auch als PDF bereitgestellt. Dafür reicht im Front Matter:
 
@@ -107,7 +108,7 @@ Dokumentiert sind dort insbesondere Repository-Struktur, CSS-System, Content-Kon
 
 Die Versionierung markiert bewusst größere Entwicklungsschritte der Plattform und des Agenten (keine feingranulare Software-Versionierung).
 
-Plattform SciBlog iWIP: 1.1 (Release)
+Plattform SciBlog iWIP: 1.2 (Release)
 
 Kleinere Anpassungen an Layout, Formulierungen oder CSS werden nicht separat versioniert.
 
