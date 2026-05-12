@@ -2202,18 +2202,23 @@ body.reveal-dark {
   --r-link-color-hover: #bfdbfe;
 }
 
+  body.reveal-dark,
 body.reveal-dark.reveal-viewport,
 body.reveal-dark .reveal,
+  body.reveal-dark .reveal-viewport,
 body.reveal-dark .reveal .slides,
-body.reveal-dark .reveal .slides > section,
-body.reveal-dark .reveal .slides > section.present,
-body.reveal-dark .reveal .slides > section.stack,
-body.reveal-dark .reveal .backgrounds {
-  background: var(--reveal-bg-dark);
+  body.reveal-dark .reveal .slides section,
+  body.reveal-dark .reveal .slides section.present,
+  body.reveal-dark .reveal .slides > section.stack,
+  body.reveal-dark .reveal .backgrounds,
+  body.reveal-dark .reveal .slide-background,
+  body.reveal-dark .reveal .slide-background-content {
+    background: var(--reveal-bg-dark) !important;
+    background-color: var(--reveal-bg-dark) !important;
 }
 
-body.reveal-dark .reveal .slides > section,
-body.reveal-dark .reveal .slides > section.present,
+  body.reveal-dark .reveal .slides section,
+  body.reveal-dark .reveal .slides section.present,
 body.reveal-dark .reveal .slides > section.stack {
   background-color: transparent;
 }
