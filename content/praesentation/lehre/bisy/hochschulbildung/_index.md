@@ -128,7 +128,7 @@ todos: []
 
 ### 3️⃣ Hochschullandschaft: Struktur 🏛️
 
-<figure class="figure-frame">
+<figure class="figure-frame-lg">
   <img src="/iWIP/blog/lehre/bisy/hochschulbildung/zahl_hochschulen.png" alt="Zahl der Hochschulen nach Hochschulart und Trägerschaft 1995 bis 2022"  class="zoomable">
 </figure>
 <p class="bild-quelle">Bildquelle: Autorengruppe Bildungsberichterstattung (2024, 204) · Ausschnitt · Lizenz: CC BY-SA 3.0 DE</p>
