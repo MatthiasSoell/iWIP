@@ -76,6 +76,12 @@
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+@media (max-width: 768px) {
+  .reveal .contact-block {
+    display: none !important;
+  }
+}
+
 
 /* ===========================================================
    03) Grundfarben & Typografie
