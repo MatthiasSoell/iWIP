@@ -317,48 +317,6 @@
     font-size: 1.45em;
     margin: 0 0 0.35rem 0;
   }
-
-  .reveal section .figure-frame,
-  .reveal section .figure-frame.figure-frame-sm,
-  .reveal section .figure-frame.figure-frame-ssm,
-  .reveal section .figure-frame.figure-frame-lg,
-  .reveal section .figure-frame.is-sm,
-  .reveal section .figure-frame.is-ssm,
-  .reveal section .figure-frame.is-lg {
-    --figure-landscape-max-width: min(88vw, 1100px);
-    --figure-landscape-max-height: min(68vh, calc(100vh - 7rem));
-    width: min(100%, var(--figure-landscape-max-width));
-    max-width: var(--figure-landscape-max-width);
-    margin: 0 auto 0.35rem;
-  }
-
-  @supports (height: 100dvh) {
-    .reveal section .figure-frame,
-    .reveal section .figure-frame.figure-frame-sm,
-    .reveal section .figure-frame.figure-frame-ssm,
-    .reveal section .figure-frame.figure-frame-lg,
-    .reveal section .figure-frame.is-sm,
-    .reveal section .figure-frame.is-ssm,
-    .reveal section .figure-frame.is-lg {
-      --figure-landscape-max-height: min(68dvh, calc(100dvh - 7rem));
-    }
-  }
-
-  .reveal section .figure-frame > img,
-  .reveal section .figure-frame > .iwip_reveal_image_trigger img,
-  .reveal section img.figure-frame {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: var(--figure-landscape-max-height);
-    object-fit: contain;
-    margin: 0 auto;
-  }
-
-  .reveal .bild-quelle {
-    font-size: 0.72rem !important;
-    margin-top: 0.25rem;
-  }
 }
 
 /* Utility Spacer: kleine, wiederverwendbare Abstaende in Reveal-Folien */
@@ -2044,6 +2002,52 @@ body.presentation-view footer {
 
 @media screen and (orientation: landscape) and (max-width: 950px),
        screen and (orientation: landscape) and (max-height: 620px) {
+  .reveal section .figure-frame,
+  .reveal section .figure-frame.figure-frame-sm,
+  .reveal section .figure-frame.figure-frame-ssm,
+  .reveal section .figure-frame.figure-frame-lg,
+  .reveal section .figure-frame.is-sm,
+  .reveal section .figure-frame.is-ssm,
+  .reveal section .figure-frame.is-lg {
+    --figure-landscape-max-width: min(92vw, 1100px);
+    --figure-landscape-max-height: min(76vh, calc(100vh - 5.6rem));
+    width: min(100%, var(--figure-landscape-max-width));
+    max-width: var(--figure-landscape-max-width);
+    margin: 0 auto 0.18rem;
+  }
+
+  @supports (height: 100dvh) {
+    .reveal section .figure-frame,
+    .reveal section .figure-frame.figure-frame-sm,
+    .reveal section .figure-frame.figure-frame-ssm,
+    .reveal section .figure-frame.figure-frame-lg,
+    .reveal section .figure-frame.is-sm,
+    .reveal section .figure-frame.is-ssm,
+    .reveal section .figure-frame.is-lg {
+      --figure-landscape-max-height: min(76dvh, calc(100dvh - 5.6rem));
+    }
+  }
+
+  .reveal section .figure-frame > img,
+  .reveal section .figure-frame > .iwip_reveal_image_trigger img,
+  .reveal section img.figure-frame {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: var(--figure-landscape-max-height);
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  /* !important required because the base Reveal source rule also sets font-size with !important. */
+  .reveal .bild-quelle,
+  .reveal .bild-quelle.bild-quelle--compact {
+    font-size: 0.64rem !important;
+    line-height: 1.15;
+    margin-top: 0.12rem;
+  }
+
   .iwip_overlay--image {
     --iwip-overlay-mobile-gap: 0.35rem;
     --iwip-overlay-image-panel-padding: 0.5rem;
