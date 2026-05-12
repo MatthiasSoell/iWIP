@@ -2009,11 +2009,11 @@ body.presentation-view footer {
   .reveal section .figure-frame.is-sm,
   .reveal section .figure-frame.is-ssm,
   .reveal section .figure-frame.is-lg {
-    --figure-landscape-max-width: min(92vw, 1100px);
-    --figure-landscape-max-height: min(76vh, calc(100vh - 5.6rem));
+    --figure-landscape-max-width: min(94vw, 1100px);
+    --figure-landscape-max-height: min(82vh, calc(100vh - 4.8rem));
     width: min(100%, var(--figure-landscape-max-width));
     max-width: var(--figure-landscape-max-width);
-    margin: 0 auto 0.18rem;
+    margin: 0 auto 0.08rem;
   }
 
   @supports (height: 100dvh) {
@@ -2024,7 +2024,7 @@ body.presentation-view footer {
     .reveal section .figure-frame.is-sm,
     .reveal section .figure-frame.is-ssm,
     .reveal section .figure-frame.is-lg {
-      --figure-landscape-max-height: min(76dvh, calc(100dvh - 5.6rem));
+      --figure-landscape-max-height: min(82dvh, calc(100dvh - 4.8rem));
     }
   }
 
@@ -2044,8 +2044,15 @@ body.presentation-view footer {
   .reveal .bild-quelle,
   .reveal .bild-quelle.bild-quelle--compact {
     font-size: 0.64rem !important;
-    line-height: 1.15;
-    margin-top: 0.12rem;
+    line-height: 1.08;
+    margin-top: 0.06rem;
+  }
+
+  .reveal .slide-number {
+    right: 0.35rem;
+    bottom: 0.35rem;
+    padding: 0.2rem 0.34rem;
+    font-size: 0.68rem;
   }
 
   .iwip_overlay--image {
