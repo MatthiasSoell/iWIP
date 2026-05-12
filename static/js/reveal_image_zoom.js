@@ -13,6 +13,12 @@
     const panel = document.createElement('div');
     panel.className = 'iwip_overlay_panel';
 
+    const closeButton = document.createElement('button');
+    closeButton.className = 'iwip_overlay_close';
+    closeButton.type = 'button';
+    closeButton.setAttribute('aria-label', 'Bildansicht schliessen');
+    closeButton.textContent = '\u00d7';
+
     const imageWrap = document.createElement('div');
     imageWrap.className = 'iwip_reveal_image_wrap';
 
@@ -20,6 +26,7 @@
     overlayImage.alt = '';
 
     imageWrap.appendChild(overlayImage);
+    panel.appendChild(closeButton);
     panel.appendChild(imageWrap);
     overlay.appendChild(panel);
     document.body.appendChild(overlay);
@@ -52,6 +59,11 @@
 
     zoomableImages.forEach((img) => {
       img.addEventListener('click', () => openOverlay(img));
+    });
+
+    closeButton.addEventListener('click', (event) => {
+      event.stopPropagation();
+      closeOverlay();
     });
 
     overlay.addEventListener('click', closeOverlay);

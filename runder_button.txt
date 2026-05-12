@@ -1,0 +1,121 @@
+diff --git a/static/css/custom_reveal.css b/static/css/custom_reveal.css
+index 209cbbc..1da2538 100644
+--- a/static/css/custom_reveal.css
++++ b/static/css/custom_reveal.css
+@@ -1890,11 +1890,29 @@ body.reveal-dark .iwip_overlay_close {
+   color: var(--reveal-text-dark-muted);
+ }
+ 
++body.reveal-dark .iwip_overlay--image .iwip_overlay_close {
++  background: rgba(15, 23, 42, 0.72);
++  border-color: rgba(148, 163, 184, 0.28);
++  box-shadow:
++    inset 0 0 1px rgba(255, 255, 255, 0.18),
++    0 10px 24px rgba(2, 6, 23, 0.32);
++}
++
+ body.reveal-dark .iwip_overlay_close:hover {
+   background: rgba(255, 255, 255, 0.08);
+   color: var(--reveal-text-dark);
+ }
+ 
++body.reveal-dark .iwip_overlay--image .iwip_overlay_close:hover {
++  background: rgba(15, 23, 42, 0.9);
++  border-color: rgba(148, 163, 184, 0.42);
++}
++
++body.reveal-dark .iwip_overlay--image .iwip_overlay_close:focus-visible {
++  background: rgba(15, 23, 42, 0.94);
++  color: var(--reveal-text-dark);
++}
++
+ 
+ /* ===========================================================
+    20) Präsentationsmodus (reveal) – body.presentation-view
+@@ -1997,8 +2015,23 @@ body.presentation-view footer {
+ }
+ 
+ .iwip_overlay--image .iwip_overlay_close {
+-  top: 0.3rem;
+-  right: 0.3rem;
++  top: 0.5rem;
++  right: 0.5rem;
++  width: 2.75rem;
++  min-width: 2.75rem;
++  height: 2.75rem;
++  min-height: 2.75rem;
++  border: 1px solid rgba(15, 23, 42, 0.12);
++  background: rgba(255, 255, 255, 0.72);
++  color: #1f2937;
++  box-shadow:
++    inset 0 0 1px rgba(255, 255, 255, 0.38),
++    0 6px 18px rgba(15, 23, 42, 0.14);
++  backdrop-filter: blur(10px);
++  -webkit-backdrop-filter: blur(10px);
++  font-size: 1.75rem;
++  font-weight: 500;
++  transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease, border-color 180ms ease, transform 180ms ease;
+ }
+ 
+ .iwip_overlay--image .iwip_reveal_image_wrap {
+@@ -2115,7 +2148,22 @@ body.presentation-view footer {
+ }
+ 
+ .iwip_overlay_close:focus-visible {
+-  outline: none;
++  outline: 2px solid var(--uni-blau);
++  outline-offset: 2px;
++}
++
++.iwip_overlay--image .iwip_overlay_close:hover {
++  background: rgba(255, 255, 255, 0.92);
++  color: #111827;
++  border-color: rgba(15, 23, 42, 0.2);
++  box-shadow:
++    inset 0 0 1px rgba(255, 255, 255, 0.45),
++    0 10px 24px rgba(15, 23, 42, 0.18);
++}
++
++.iwip_overlay--image .iwip_overlay_close:focus-visible {
++  background: rgba(255, 255, 255, 0.96);
++  color: #111827;
+ }
+ 
+ 
+diff --git a/static/js/reveal_image_zoom.js b/static/js/reveal_image_zoom.js
+index 6d37e3c..74d7780 100644
+--- a/static/js/reveal_image_zoom.js
++++ b/static/js/reveal_image_zoom.js
+@@ -13,6 +13,12 @@
+     const panel = document.createElement('div');
+     panel.className = 'iwip_overlay_panel';
+ 
++    const closeButton = document.createElement('button');
++    closeButton.className = 'iwip_overlay_close';
++    closeButton.type = 'button';
++    closeButton.setAttribute('aria-label', 'Bildansicht schliessen');
++    closeButton.textContent = '\u00d7';
++
+     const imageWrap = document.createElement('div');
+     imageWrap.className = 'iwip_reveal_image_wrap';
+ 
+@@ -20,6 +26,7 @@
+     overlayImage.alt = '';
+ 
+     imageWrap.appendChild(overlayImage);
++    panel.appendChild(closeButton);
+     panel.appendChild(imageWrap);
+     overlay.appendChild(panel);
+     document.body.appendChild(overlay);
+@@ -54,6 +61,11 @@
+       img.addEventListener('click', () => openOverlay(img));
+     });
+ 
++    closeButton.addEventListener('click', (event) => {
++      event.stopPropagation();
++      closeOverlay();
++    });
++
+     overlay.addEventListener('click', closeOverlay);
+ 
+     document.addEventListener('keydown', (event) => {
