@@ -1060,6 +1060,18 @@ body.dark .oer-meta [data-tooltip]::after {
   pointer-events: none;
 }
 
+@media (max-width: 768px) {
+  .post-entry .entry-footer {
+    display: none;
+  }
+  .post-entry .entry-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  }
+}
+
 .iwip_overlay[hidden] {
   display: none;
 }
