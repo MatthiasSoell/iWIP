@@ -1,8 +1,8 @@
 ---
 title: "Wie ist Hochschulbildung organisiert - und für wen?"
 title_reveal: "Wie ist Hochschulbildung organisiert<br> - und für wen?<br>"
-emojis: "🎓 🏛️ ⚖️"
-veranstaltungstyp: "🎓 Vorlesung"
+emojis: '<span class="content-emoji">🎓</span> <span class="content-emoji">🏛️</span> <span class="content-emoji">⚖️</span>'
+veranstaltungstyp: '<span class="content-emoji">🎓</span> Vorlesung'
 veranstaltung: "'Bildungssysteme im Kontext von Arbeit und Gesellschaft'"
 author: "Prof. Dr. Matthias Söll"
 blog: "/iWIP/blog/lehre/bisy/hochschulbildung/"

@@ -105,7 +105,7 @@
   </div>
 
   <div class="title-wrap">
-              <span aria-hidden="true">⚪</span>
+    <h1>
       {{ $title | safeHTML }}<br>
       {{ with $emojis }}{{ . | safeHTML }}{{ end }}
     </h1>
@@ -120,7 +120,7 @@
     {{ end }}
 
     {{ with $author }}
-      <div class="author">👤 {{ . | safeHTML }}</div>
+      <div class="author"><span class="content-emoji">👤</span> {{ . | safeHTML }}</div>
     {{ end }}
   </div>
 </div>
