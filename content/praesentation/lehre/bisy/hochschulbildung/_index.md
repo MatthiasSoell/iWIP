@@ -54,42 +54,42 @@ todos: []
 
 ---
 
-## 💭 Leitfrage
+## <span class="content-emoji">💭</span> Leitfrage
 
 > [!TIPP]
-> Wie lässt sich **🎓 Hochschulbildung** zugleich als **Bildungsanspruch**, **organisiertes Teilsystem** und **soziales Verteilungsproblem** verstehen?
+> Wie lässt sich **<span class="content-emoji">🎓</span> Hochschulbildung** zugleich als **Bildungsanspruch**, **organisiertes Teilsystem** und **soziales Verteilungsproblem** verstehen?
 
 ---
 
-## 🧭 Ablauf (90 Min)
+## <span class="content-emoji">🧭</span> Ablauf (90 Min)
 
-1️⃣ Einstieg 💭  
-2️⃣ Verortung 🧭  
-3️⃣ Hochschulidee 🎓  
-4️⃣ Struktur & Wandel 🏛️  
-5️⃣ Akademisierung 💬  
-6️⃣ Recherche 🔎
+1. Einstieg <span class="content-emoji">💭</span>  
+2. Verortung <span class="content-emoji">🧭</span>  
+3. Hochschulidee <span class="content-emoji">🎓</span>  
+4. Struktur & Wandel <span class="content-emoji">🏛️</span>  
+5. Akademisierung <span class="content-emoji">💬</span>  
+6. Recherche <span class="content-emoji">🔎</span>
 
 ---
 
-## 🎯 Lernziele
+## <span class="content-emoji">🎯</span> Lernziele
 
 **Sie lernen ...**
 
 <span class="spacer spacer-sm"></span>
 
-- 🧭 Ziele von **Hochschulbildung** zu unterscheiden.
-- 🏛️ den Aufbau des **Hochschulsystems** zu beschreiben.
-- 💬 **Akademisierung** und **soziale Ungleichheit** zu diskutieren.
-- 🔎 **Bachelor Professional** und **Master Professional** einzuordnen.
+- <span class="content-emoji">🧭</span> Ziele von **Hochschulbildung** zu unterscheiden.
+- <span class="content-emoji">🏛️</span> den Aufbau des **Hochschulsystems** zu beschreiben.
+- <span class="content-emoji">💬</span> **Akademisierung** und **soziale Ungleichheit** zu diskutieren.
+- <span class="content-emoji">🔎</span> **Bachelor Professional** und **Master Professional** einzuordnen.
 
 ---
 
-# Wozu gibt es Hochschulen? 🎓
+# Wozu gibt es Hochschulen? <span class="content-emoji">🎓</span>
 
 ---
 
-### 🎓 Klassische und moderne Universität
+### <span class="content-emoji">🎓</span> Klassische und moderne Universität
 
 <figure class="figure-frame-sm">
   <img src="/iWIP/blog/lehre/bisy/hochschulbildung/klass_moderne_universitaet.png" alt="Vergleich von klassischer und moderner Universität" class="zoomable">
@@ -98,12 +98,12 @@ todos: []
 
 ---
 
-## 1️⃣ Wozu gibt es Hochschulen? 🎓
+## 1. Wozu gibt es Hochschulen? <span class="content-emoji">🎓</span>
 
 <ul>
-  <li>🧠 <b>Wissenschaftliche Bildung</b> durch Forschung</li>
-  <li>🤝 Vorbereitung auf <b>Beruf</b>, <b>Verantwortung</b> und <b>Teilhabe</b></li>
-  <li>⚖️ Spannung zwischen <b>Bildungsideal</b>, <b>Praxisbezug</b> und <b>Employability</b></li>
+  <li><span class="content-emoji">🧠</span> <b>Wissenschaftliche Bildung</b> durch Forschung</li>
+  <li><span class="content-emoji">🤝</span> Vorbereitung auf <b>Beruf</b>, <b>Verantwortung</b> und <b>Teilhabe</b></li>
+  <li><span class="content-emoji">⚖️</span> Spannung zwischen <b>Bildungsideal</b>, <b>Praxisbezug</b> und <b>Employability</b></li>
 </ul>
 
 <span class="fragment">
@@ -115,7 +115,7 @@ todos: []
 
 ---
 
-### 2️⃣ Verortung im Bildungssystem 🧭
+### 2. Verortung im Bildungssystem <span class="content-emoji">🧭</span>
 
 <span class="spacer spacer-ssm"></span>
 
@@ -126,7 +126,7 @@ todos: []
 
 ---
 
-### 3️⃣ Hochschullandschaft: Struktur 🏛️
+### 3. Hochschullandschaft: Struktur <span class="content-emoji">🏛️</span>
 
 <figure class="figure-frame">
   <img src="/iWIP/blog/lehre/bisy/hochschulbildung/zahl_hochschulen.png" alt="Zahl der Hochschulen nach Hochschulart und Trägerschaft 1995 bis 2022"  class="zoomable">
@@ -135,29 +135,29 @@ todos: []
 
 ---
 
-### 3️⃣ Hochschullandschaft: Kennzeichen 🧩
+### 3. Hochschullandschaft: Kennzeichen <span class="content-emoji">🧩</span>
 
 <ul>
-  <li>🏛️ <b>Universitäten</b> betonen Forschung, Theorie und wissenschaftliches Studium</li>
-  <li class="fragment">🛠️ <b>HAW</b> akzentuieren Anwendungsorientierung, Praxisbezug und regionale Kooperation</li>
-  <li class="fragment">🤝 <b>Duale und spezialisierte Hochschulformen</b> verbinden Studium mit weiteren Lernorten</li>
-  <li class="fragment">🌐 <b>Öffentliche und private Trägerschaften</b> zeigen organisationspolitische Vielfalt</li>
+  <li><span class="content-emoji">🏛️</span> <b>Universitäten</b> betonen Forschung, Theorie und wissenschaftliches Studium</li>
+  <li class="fragment"><span class="content-emoji">🛠️</span> <b>HAW</b> akzentuieren Anwendungsorientierung, Praxisbezug und regionale Kooperation</li>
+  <li class="fragment"><span class="content-emoji">🤝</span> <b>Duale und spezialisierte Hochschulformen</b> verbinden Studium mit weiteren Lernorten</li>
+  <li class="fragment"><span class="content-emoji">🌐</span> <b>Öffentliche und private Trägerschaften</b> zeigen organisationspolitische Vielfalt</li>
 </ul>
 
 ---
 
-## 4️⃣ Entwicklungslinien 🔄
+## 4. Entwicklungslinien <span class="content-emoji">🔄</span>
 
 <ul>
-  <li>🏛️ <b>Traditionelle Universität</b>: hohe Binnenautonomie und akademische Selbstverwaltung</li>
-  <li class="fragment">👥 <b>Massenuniversität</b>: mehr Studierende, mehr Studiengänge, mehr Öffnung <span class="zitat-inline">(Herrmann 2011; Lundgreen 1999; Müller 1990; zusammenfassend Söll 2016)</span></li>
-  <li class="fragment">📈 <b>Wettbewerbliche Hochschule</b>: Profilbildung, Rankings, Steuerung und Rechenschaft <span class="zitat-inline">(Federkeil 2013; Hartmann 2010; Krücken 2004)</span></li>
-  <li class="fragment">📜 Historische Prägungen verschwinden nicht einfach, sondern wirken bspw. in Selbstverständnissen weiter <span class="zitat-inline">(Oertel & Söll 2017)</span></li>
+  <li><span class="content-emoji">🏛️</span> <b>Traditionelle Universität</b>: hohe Binnenautonomie und akademische Selbstverwaltung</li>
+  <li class="fragment"><span class="content-emoji">👥</span> <b>Massenuniversität</b>: mehr Studierende, mehr Studiengänge, mehr Öffnung <span class="zitat-inline">(Herrmann 2011; Lundgreen 1999; Müller 1990; zusammenfassend Söll 2016)</span></li>
+  <li class="fragment"><span class="content-emoji">📈</span> <b>Wettbewerbliche Hochschule</b>: Profilbildung, Rankings, Steuerung und Rechenschaft <span class="zitat-inline">(Federkeil 2013; Hartmann 2010; Krücken 2004)</span></li>
+  <li class="fragment"><span class="content-emoji">📜</span> Historische Prägungen verschwinden nicht einfach, sondern wirken bspw. in Selbstverständnissen weiter <span class="zitat-inline">(Oertel & Söll 2017)</span></li>
 </ul>
 
 ---
 
-## 5️⃣ Akademisierung 📈
+## 5. Akademisierung <span class="content-emoji">📈</span>
 
 <figure class="figure-frame">
   <img src="/iWIP/blog/lehre/bisy/hochschulbildung/studierendenzahlen.png" alt="Zahl der Studierenden und Studienanfängerinnen und Studienanfänger 1995 bis 2023" class="zoomable">
@@ -166,7 +166,7 @@ todos: []
 
 ---
 
-#### 📊 Arbeitsmarktbezug tertiärer Abschlüsse
+#### <span class="content-emoji">📊</span> Arbeitsmarktbezug tertiärer Abschlüsse
 
 <figure class="figure-frame">
   <img src="/iWIP/blog/lehre/bisy/hochschulbildung/berufe_absolvent_innen_tertiaere_bildung.png" alt="Anforderungsniveau der von 25- bis unter 35-jährigen Erwerbstätigen mit Hochschulabschluss ausgeübten Berufe 2022" class="zoomable">
@@ -175,39 +175,39 @@ todos: []
 
 ---
 
-### 💬 Für wen ist Hochschulbildung?
+### <span class="content-emoji">💬</span> Für wen ist Hochschulbildung?
 
 <ul>
-  <li>📈 Akademisierung kann <b>Teilhabechancen</b>, <b>Statusgewinne</b> und <b>Berufsoptionen</b> erweitern</li>
-  <li class="fragment">⚠️ Sie kann zugleich den Druck erhöhen, <b>formale Höherqualifikation</b> als Normalerwartung zu behandeln</li>
-  <li class="fragment">⚖️ Damit stellt sich die Frage nach <b>ungleicher Teilhabe</b>, <b>Exklusion</b> und <b>Verdrängung</b> neu</li>
+  <li><span class="content-emoji">📈</span> Akademisierung kann <b>Teilhabechancen</b>, <b>Statusgewinne</b> und <b>Berufsoptionen</b> erweitern</li>
+  <li class="fragment"><span class="content-emoji">⚠️</span> Sie kann zugleich den Druck erhöhen, <b>formale Höherqualifikation</b> als Normalerwartung zu behandeln</li>
+  <li class="fragment"><span class="content-emoji">⚖️</span> Damit stellt sich die Frage nach <b>ungleicher Teilhabe</b>, <b>Exklusion</b> und <b>Verdrängung</b> neu</li>
 </ul>
 
 ---
 
-#### 🔎 Recherche: Bachelor und Master Professional
+#### <span class="content-emoji">🔎</span> Recherche: Bachelor und Master Professional
 
 Bearbeiten Sie in **20 Min** im **Tandem** einen der beiden Themenkreise:
 
 <span class="spacer spacer-ssm"></span>
 
 <ul>
-  <li>🧭 <b>Themenkreis 1</b>: Was sind Bachelor und Master Professional und warum wurden diese Bezeichnungen eingeführt?</li>
-  <li>💬 <b>Themenkreis 2</b>: Welche Argumente sprechen für oder gegen diese Abschlussbezeichnungen?</li>
+  <li><span class="content-emoji">🧭</span> <b>Themenkreis 1</b>: Was sind Bachelor und Master Professional und warum wurden diese Bezeichnungen eingeführt?</li>
+  <li><span class="content-emoji">💬</span> <b>Themenkreis 2</b>: Welche Argumente sprechen für oder gegen diese Abschlussbezeichnungen?</li>
 </ul>
 
-🎤 Halten Sie Ihre Ergebnisse so fest, dass Sie sie in **maximal einer Minute** vorstellen können <span class="zitat-inline">(1. Kernaussagen, 2. zentrale Argumente, 3. Einordnung zu Gleichwertigkeit und Grenzziehung)</span>.
+<span class="content-emoji">🎤</span> Halten Sie Ihre Ergebnisse so fest, dass Sie sie in **maximal einer Minute** vorstellen können <span class="zitat-inline">(1. Kernaussagen, 2. zentrale Argumente, 3. Einordnung zu Gleichwertigkeit und Grenzziehung)</span>.
 
 Details zu den Arbeitsaufträgen: <a href="/iWIP/blog/lehre/bisy/hochschulbildung/#arbeitsauftrag">Abschnitt "Arbeitsauftrag" im Blog</a>.
 
 ---
 
-## 🪞 Abschlussdiskussion
+## <span class="content-emoji">🪞</span> Abschlussdiskussion
 
 <ul>
-  <li>💬 Ist das eher eine <b>Aufwertung beruflicher Bildung</b> oder eher eine <b>Verwischung von Grenzen</b>?</li>
-  <li class="fragment">🪞 Was sagt das über die Frage aus, <b>für wen</b> höherqualifizierende Bildung gedacht ist?</li>
-  <li class="fragment">⚖️ Wie <b>verändert sich Hochschulbildung</b>, wenn Zugang und Anerkennung neu verhandelt werden?</li>
+  <li><span class="content-emoji">💬</span> Ist das eher eine <b>Aufwertung beruflicher Bildung</b> oder eher eine <b>Verwischung von Grenzen</b>?</li>
+  <li class="fragment"><span class="content-emoji">🪞</span> Was sagt das über die Frage aus, <b>für wen</b> höherqualifizierende Bildung gedacht ist?</li>
+  <li class="fragment"><span class="content-emoji">⚖️</span> Wie <b>verändert sich Hochschulbildung</b>, wenn Zugang und Anerkennung neu verhandelt werden?</li>
 </ul>
 
 ---

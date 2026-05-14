@@ -158,6 +158,11 @@ body.dark .top-toggle button:not(.iwip_help_btn):hover {
     0 4px 10px rgba(1, 74, 153, 0.25);
 }
 
+html.hide-content-emojis .content-emoji,
+body.hide-content-emojis .content-emoji {
+  display: none;
+}
+
 
 /* ===========================================================
    05) Footer & Social Links

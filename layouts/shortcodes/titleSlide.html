@@ -68,6 +68,15 @@
         <button class="title_action" onclick="location.href='{{ . }}'" title="Zur Blogansicht">📄</button>
         <button
           type="button"
+          class="title_action iwip_content_emoji_toggle"
+          data-content-emoji-toggle
+          aria-pressed="false"
+          aria-label="Emojis ausblenden"
+          title="Emojis ausblenden">
+          <span class="iwip_content_emoji_toggle_icon" data-content-emoji-toggle-icon aria-hidden="true">⚪</span>
+        </button>
+        <button
+          type="button"
           class="title_action iwip_qr_trigger"
           data-iwip-overlay-target="iwip_qr_overlay"
           aria-controls="iwip_qr_overlay"
@@ -96,7 +105,7 @@
   </div>
 
   <div class="title-wrap">
-    <h1>
+              <span aria-hidden="true">⚪</span>
       {{ $title | safeHTML }}<br>
       {{ with $emojis }}{{ . | safeHTML }}{{ end }}
     </h1>

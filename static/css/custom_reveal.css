@@ -675,6 +675,11 @@
   fill: currentColor;
 }
 
+html.hide-content-emojis .content-emoji,
+body.hide-content-emojis .content-emoji {
+  display: none;
+}
+
 .reveal .iwip_reveal_qr_inline {
   display: inline-flex;
   align-items: center;

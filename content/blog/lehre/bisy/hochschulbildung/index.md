@@ -110,48 +110,48 @@ oer:
 
 ---
 
-# 📚 Gegenstand
+# <span class="content-emoji">📚</span> Gegenstand
 
-Diese Veranstaltung im Modul **Bildungssysteme** fragt danach, wie **🏛️ Hochschulbildung** in Deutschland organisiert ist und für wen sie heute zugänglich, attraktiv und folgenreich wird. Im Zentrum stehen die **Ziele von Hochschulbildung**, die **Struktur des Hochschulsystems** sowie die Frage, wie sich **Akademisierung**, **soziale Ungleichheit** und neue Grenzverschiebungen zwischen **hochschulischer** und **beruflicher Bildung** zueinander verhalten.
+Diese Veranstaltung im Modul **Bildungssysteme** fragt danach, wie **<span class="content-emoji">🏛️</span> Hochschulbildung** in Deutschland organisiert ist und für wen sie heute zugänglich, attraktiv und folgenreich wird. Im Zentrum stehen die **Ziele von Hochschulbildung**, die **Struktur des Hochschulsystems** sowie die Frage, wie sich **Akademisierung**, **soziale Ungleichheit** und neue Grenzverschiebungen zwischen **hochschulischer** und **beruflicher Bildung** zueinander verhalten.
 
 Der Beitrag verbindet dazu eine fragend-entwickelnde Einführung in **Hochschulidee**, **Hochschultypen** und **Entwicklungslinien** mit einer vertiefenden Recherche zu **Bachelor und Master Professional**. Dadurch wird sichtbar, dass Hochschulbildung nicht nur institutionell organisiert ist, sondern auch mit Fragen von **Teilhabe**, **Anerkennung** und **Arbeitsmarktpositionen** verknüpft bleibt.
 
-# 💭 Ausgangsfrage
+# <span class="content-emoji">💭</span> Ausgangsfrage
 
 > [!TIPP]
-> Wie lässt sich **🎓 Hochschulbildung** zugleich als **Bildungsanspruch**, **organisiertes Teilsystem** und **soziales Verteilungsproblem** verstehen?
+> Wie lässt sich **<span class="content-emoji">🎓</span> Hochschulbildung** zugleich als **Bildungsanspruch**, **organisiertes Teilsystem** und **soziales Verteilungsproblem** verstehen?
 
-# 🎯 Lernziele
+# <span class="content-emoji">🎯</span> Lernziele
 
 Die Studierenden lernen, ...
 
-- 🧭 **zentrale Zielvorstellungen von Hochschulbildung** zwischen Bildungsideal und Employability zu unterscheiden.
-- 🏛️ Grundzüge der **Organisation** und **Entwicklung** des **Hochschulsystems in Deutschland** zu beschreiben.
-- 💬 **Akademisierung** als Spannungsfeld von Teilhabe, sozialer Ungleichheit und Arbeitsmarktbezug zu diskutieren.
-- 🔎 Bachelor und Master Professional und als Ausdruck **veränderter Grenzziehungen zwischen Hochschul- und Berufsbildung** einzuordnen.
+- <span class="content-emoji">🧭</span> **zentrale Zielvorstellungen von Hochschulbildung** zwischen Bildungsideal und Employability zu unterscheiden.
+- <span class="content-emoji">🏛️</span> Grundzüge der **Organisation** und **Entwicklung** des **Hochschulsystems in Deutschland** zu beschreiben.
+- <span class="content-emoji">💬</span> **Akademisierung** als Spannungsfeld von Teilhabe, sozialer Ungleichheit und Arbeitsmarktbezug zu diskutieren.
+- <span class="content-emoji">🔎</span> Bachelor und Master Professional und als Ausdruck **veränderter Grenzziehungen zwischen Hochschul- und Berufsbildung** einzuordnen.
 
 ---
 
-# 🧭 Aufbau & Ablauf
+# <span class="content-emoji">🧭</span> Aufbau & Ablauf
 
-**Gesamtdauer:** ca. 90 Minuten ⏱️
+**Gesamtdauer:** ca. 90 Minuten <span class="content-emoji">⏱️</span>
 
 <div class="agenda">
 
 | Phase | Inhalt | Ziel | Zeit |
 |:------|:--------|:------|:------:|
-| **1️⃣ Einstieg 💭** | Leitfrage zum Ziel tertiärer Bildung und erste Positionierungen | Vorwissen aktivieren und Spannungen sichtbar machen | ⏱️ 10 Min |
-| **2️⃣ Verortung 🧭** | Einordnung des tertiären Bereichs im Bildungssystem | Systembezug herstellen | ⏱️ 10 Min |
-| **3️⃣ Hochschulidee 🎓** | Humboldt, Praxisbezug und aktuelle Zielkonflikte | Ziele von Hochschulbildung klären | ⏱️ 15 Min |
-| **4️⃣ Struktur & Wandel 🏛️** | Hochschultypen, Entwicklungslinien und Steuerung | Organisation und Transformation einordnen | ⏱️ 15 Min |
-| **5️⃣ Akademisierung 💬** | Studierendenzahlen, soziale Ungleichheit und Arbeitsmarkt | Folgen der Expansion problematisieren | ⏱️ 15 Min |
-| **6️⃣ Recherche 🔎** | Bachelor Professional und Master Professional | Grenzverschiebungen analysieren | ⏱️ 25 Min |
+| **1. Einstieg <span class="content-emoji">💭</span>** | Leitfrage zum Ziel tertiärer Bildung und erste Positionierungen | Vorwissen aktivieren und Spannungen sichtbar machen | <span class="content-emoji">⏱️</span> 10 Min |
+| **2. Verortung <span class="content-emoji">🧭</span>** | Einordnung des tertiären Bereichs im Bildungssystem | Systembezug herstellen | <span class="content-emoji">⏱️</span> 10 Min |
+| **3. Hochschulidee <span class="content-emoji">🎓</span>** | Humboldt, Praxisbezug und aktuelle Zielkonflikte | Ziele von Hochschulbildung klären | <span class="content-emoji">⏱️</span> 15 Min |
+| **4. Struktur & Wandel <span class="content-emoji">🏛️</span>** | Hochschultypen, Entwicklungslinien und Steuerung | Organisation und Transformation einordnen | <span class="content-emoji">⏱️</span> 15 Min |
+| **5. Akademisierung <span class="content-emoji">💬</span>** | Studierendenzahlen, soziale Ungleichheit und Arbeitsmarkt | Folgen der Expansion problematisieren | <span class="content-emoji">⏱️</span> 15 Min |
+| **6. Recherche <span class="content-emoji">🔎</span>** | Bachelor Professional und Master Professional | Grenzverschiebungen analysieren | <span class="content-emoji">⏱️</span> 25 Min |
 
 </div>
 
 ---
 
-# 1️⃣ Wozu gibt es Hochschulen? 🎓
+# 1. Wozu gibt es Hochschulen? <span class="content-emoji">🎓</span>
 
 Die Frage nach dem Ziel von Hochschulbildung lässt sich nicht auf eine einzige Funktion reduzieren. Hochschulen werden bis heute sowohl als Orte **wissenschaftlicher Bildung** auf **Basis von Forschung** als auch als Institutionen verstanden, die auf **berufliche Tätigkeiten**, **gesellschaftliche Verantwortung** und **qualifizierte Teilhabe** vorbereiten. Gerade daraus ergibt sich ein Spannungsfeld, das die Diskussion über Hochschulbildung bis in die Gegenwart prägt.
 
@@ -162,7 +162,7 @@ Diese Tradition bedeutet jedoch keine vollständige Distanz zu Beruf und Gesells
 > [!QUOTE]
 > „Das heutige Ziel, eigenverantwortliche und selbstständige Hochschulabsolventinnen und -absolventen zu bilden, bestünde demnach in der Aktualisierung einer ‚Bildung durch Wissenschaft‘, wie sie in der Bildung höherer preußischer Beamter angelegt war.“ (<a href="#literatur">Wildt 2012, 263</a>)
 
-Damit lässt sich bereits im Einstieg zeigen: Hochschulbildung ist weder nur auf **🧠 Persönlichkeitsbildung** noch nur auf **🤝 Arbeitsmarktverwertbarkeit** zu beziehen. Vielmehr treffen unterschiedliche Zielhorizonte aufeinander, die im weiteren Verlauf der Veranstaltung als **Bildungsideal**, **Praxisbezug** und **Employability** konkretisiert werden (<a href="#literatur">Oertel & Söll 2017</a>).
+Damit lässt sich bereits im Einstieg zeigen: Hochschulbildung ist weder nur auf **<span class="content-emoji">🧠</span> Persönlichkeitsbildung** noch nur auf **<span class="content-emoji">🤝</span> Arbeitsmarktverwertbarkeit** zu beziehen. Vielmehr treffen unterschiedliche Zielhorizonte aufeinander, die im weiteren Verlauf der Veranstaltung als **Bildungsideal**, **Praxisbezug** und **Employability** konkretisiert werden (<a href="#literatur">Oertel & Söll 2017</a>).
 
 <p class="grafic-title">Klassische vs. Moderne Universität</p>
 
@@ -172,7 +172,7 @@ Damit lässt sich bereits im Einstieg zeigen: Hochschulbildung ist weder nur auf
 
 ---
 
-# 2️⃣ Wo ist Hochschulbildung im Bildungssystem verortet? 🧭
+# 2. Wo ist Hochschulbildung im Bildungssystem verortet? <span class="content-emoji">🧭</span>
 
 Hochschulbildung ist Teil des **tertiären Bereichs** des deutschen Bildungssystems. Sie ist in ein gegliedertes System von **Übergängen**, **Zertifikaten** und **Anschlussmöglichkeiten** eingebettet. Für die Sitzung ist diese Verortung wichtig, weil sich die Frage nach Hochschulbildung nur sinnvoll beantworten lässt, wenn zugleich die Beziehungen zur **Sekundarstufe II**, zu **beruflicher Bildung**, **Weiterbildung** und anderen Bildungswegen sichtbar bleiben.
 
@@ -186,7 +186,7 @@ Die Grafik macht deutlich, dass der tertiäre Bereich unterschiedliche Wege bün
  
 ---
 
-# 3️⃣ Wie ist die Hochschullandschaft aufgebaut? 🏛️
+# 3. Wie ist die Hochschullandschaft aufgebaut? <span class="content-emoji">🏛️</span>
 
 Das Hochschulsystem in Deutschland ist **institutionell vielfältig**. Es besteht aus unterschiedlichen **Hochschularten** und **Trägerschaften**, die historisch gewachsen sind und verschiedene Aufgabenprofile ausgebildet haben.
 
@@ -198,23 +198,23 @@ Das Hochschulsystem in Deutschland ist **institutionell vielfältig**. Es besteh
 
 Für die Einordnung in der Lehrveranstaltung reicht zunächst eine konzentrierte Unterscheidung:
 
-- 🏛️ **Universitäten** betonen traditionell Forschung, Theoriebildung und wissenschaftliches Studium.
-- 🧩 **Hochschulen für angewandte Wissenschaften** akzentuieren stärker Anwendungsorientierung, Praxisbezug und regionale Kooperationen.
-- 🤝 **Duale und spezialisierte Hochschulformen** verbinden Studium mit betrieblichen oder professionsbezogenen Lernorten.
-- 🌐 **Öffentliche und private Trägerschaften** verweisen darauf, dass Hochschulbildung auch organisationspolitisch unterschiedlich gerahmt ist.
+- <span class="content-emoji">🏛️</span> **Universitäten** betonen traditionell Forschung, Theoriebildung und wissenschaftliches Studium.
+- <span class="content-emoji">🧩</span> **Hochschulen für angewandte Wissenschaften** akzentuieren stärker Anwendungsorientierung, Praxisbezug und regionale Kooperationen.
+- <span class="content-emoji">🤝</span> **Duale und spezialisierte Hochschulformen** verbinden Studium mit betrieblichen oder professionsbezogenen Lernorten.
+- <span class="content-emoji">🌐</span> **Öffentliche und private Trägerschaften** verweisen darauf, dass Hochschulbildung auch organisationspolitisch unterschiedlich gerahmt ist.
 
 Die Abbildung zeigt zugleich, dass die Hochschullandschaft seit den 1990er Jahren nicht statisch geblieben ist. Expansion, Ausdifferenzierung und neue Trägerkonstellationen verweisen auf einen strukturellen Wandel, der im nächsten Schritt mit Blick auf **Massenhochschule**, **Wettbewerb** und **Steuerung** genauer gefasst werden kann.
 
 ---
 
-# 4️⃣ Welche Entwicklungslinien prägen Hochschulbildung heute? 🔄
+# 4. Welche Entwicklungslinien prägen Hochschulbildung heute? <span class="content-emoji">🔄</span>
 
 Die Organisation von Hochschulbildung lässt sich historisch als Bewegung von der **traditionellen Universität** über die **Massenuniversität** hin zu stärker gesteuerten und **wettbewerblich organisierten Hochschulen** beschreiben. Mit der Ausweitung des Studiums verändern sich nicht nur Größenordnungen, sondern auch Erwartungen an **Leistung**, **Steuerbarkeit**, **Profilbildung** und **Rechenschaft**.
 
 Für eine erste Systematisierung lassen sich drei Entwicklungslinien unterscheiden:
 
-- 🏛️ **Traditionelle Universität:** akademische Selbstverwaltung, hohe Binnenautonomie und wissenschaftliche Eigenlogik.
-- 👥 **Moderne Universität:** wachsende Studierendenzahlen, Ausdifferenzierung von Studienangeboten und stärkere gesellschaftliche Öffnung.
+- <span class="content-emoji">🏛️</span> **Traditionelle Universität:** akademische Selbstverwaltung, hohe Binnenautonomie und wissenschaftliche Eigenlogik.
+- <span class="content-emoji">👥</span> **Moderne Universität:** wachsende Studierendenzahlen, Ausdifferenzierung von Studienangeboten und stärkere gesellschaftliche Öffnung.
 
 Die Studie von <a href="#literatur">Oertel und Söll (2017)</a> zeigt, dass im Zuge der Entwicklungen **historische Prägungen fortwirken** und beeinflussen, wie Universitäten ihre Missionen formulieren. Hochschulen reagieren also auf moderne Steuerungsanforderungen auf der Basis institutioneller Selbstverständnisse, die aus ihrer Geschichte heraus mitgeführt werden.
 
@@ -222,20 +222,20 @@ Für die Diskussion in der Veranstaltung ergibt sich daraus eine zentrale Frage:
 
 ---
 
-# 5️⃣ Was verändert sich im Hochschulsystem? 💬
+# 5. Was verändert sich im Hochschulsystem? <span class="content-emoji">💬</span>
 
 Die Organisationsstruktur von Hochschulbildung ist nicht nur durch Vielfalt, sondern auch durch Angleichungstendenzen geprägt. Unterschiedliche Hochschultypen bleiben zwar bestehen, doch zugleich wird das System in Teilen **wettbewerblicher**, **vergleichbarer** und **leistungsorientierter**. Das zeigt sich unter anderem an **Rankings**, an der Bedeutung von **Profilbildung** und an Debatten über erweiterte Rechte für Hochschulen außerhalb des klassischen Universitätstyps (<a href="#literatur">Federkeil, 2013</a>; <a href="#literatur">Hartmann, 2010</a>; <a href="#literatur">Krücken, 2004</a>).
 
 Für die Lehre lässt sich daraus eine doppelte Diagnose ableiten:
 
-- 🧭 Einerseits bleiben **Hochschultypen** analytisch relevant, weil sie unterschiedliche historische und funktionale Profile tragen.
-- 🔁 Andererseits werden Grenzen durch **Wettbewerb**, **Praxisbezug**, **Promotionsrecht** und **Leistungsindikatoren** partiell verschoben.
+- <span class="content-emoji">🧭</span> Einerseits bleiben **Hochschultypen** analytisch relevant, weil sie unterschiedliche historische und funktionale Profile tragen.
+- <span class="content-emoji">🔁</span> Andererseits werden Grenzen durch **Wettbewerb**, **Praxisbezug**, **Promotionsrecht** und **Leistungsindikatoren** partiell verschoben.
 
 Gerade diese Spannung ist für die Leitfrage der Sitzung zentral. Wenn Hochschulbildung organisatorisch offener und zugleich wettbewerblicher wird, stellt sich verschärft die Frage, **für wen** diese Öffnung tatsächlich wirksam ist und welche neuen Ungleichheiten sich im System bilden.
 
 ---
 
-# 6️⃣ Für wen ist Hochschulbildung? Akademisierung und soziale Ungleichheit 📈
+# 6. Für wen ist Hochschulbildung? Akademisierung und soziale Ungleichheit <span class="content-emoji">📈</span>
 
 Die Frage nach dem „für wen?“ lässt sich nicht allein über Zieldiskurse oder Institutionalisierungsprozesse beantworten. Sie betrifft auch die Expansion des Systems und ihre sozialen Folgen. Die Entwicklung der **Studierendenzahlen** zeigt, dass Hochschulbildung seit den 1990er Jahren deutlich an Bedeutung gewonnen hat.
 
@@ -257,13 +257,13 @@ Akademisierung kann einerseits **Teilhabechancen**, **Statusgewinne** und **erwe
 
 Die Daten zum beruflichen Anforderungsniveau deuten allerdings darauf hin, dass vielen jungen Erwerbstätigen mit Hochschulabschluss weiterhin eine **qualifikationsangemessene berufliche Platzierung** gelingt. Die <a href="#literatur">Autorengruppe Bildungsberichterstattung (2024)</a> sieht deshalb auf aggregierter Ebene weiterhin keine klaren Hinweise auf eine generelle **Überakademisierung des Arbeitsmarkts**. Ob dies auch für geringer Qualifizierte gilt, ist eine wichtige Frage. Die in der <a href="/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/">letzten Lehrveranstaltung zur Berufswahl an der ersten Schwelle</a> diskutierte hohe Zahl an Jugendlichen im Übergangssystem deutet darauf hin, dass hier durchaus Probleme zu konstatieren sind. Entsprechende Fragestellungen können nicht nur im Hinblick auf die berufliche Bildung, sondern auch im Kontext der territorialen Bildung aus drei Perspektiven betrachtet werden:
 
-- 👤 **individuelle Perspektive:** Welche Chancen auf Aufstieg, Anerkennung und Beschäftigung eröffnet Hochschulbildung?
-- 🏛️ **institutionelle Perspektive:** Wie verändern sich Hochschulen und andere Bildungsorganisationen unter Expansionsdruck?
-- ⚖️ **soziale Perspektive:** Wer profitiert von Akademisierung, wer gerät unter Druck und welche Folgen ergeben sich für ungleiche Teilhabe?
+- <span class="content-emoji">👤</span> **individuelle Perspektive:** Welche Chancen auf Aufstieg, Anerkennung und Beschäftigung eröffnet Hochschulbildung?
+- <span class="content-emoji">🏛️</span> **institutionelle Perspektive:** Wie verändern sich Hochschulen und andere Bildungsorganisationen unter Expansionsdruck?
+- <span class="content-emoji">⚖️</span> **soziale Perspektive:** Wer profitiert von Akademisierung, wer gerät unter Druck und welche Folgen ergeben sich für ungleiche Teilhabe?
 
 ---
 
-# 7️⃣ Recherche: Bachelor und Master Professional als Grenzverschiebung 🔎
+# 7. Recherche: Bachelor und Master Professional als Grenzverschiebung <span class="content-emoji">🔎</span>
 
 Die abschließende Recherchephase macht die Leitfrage „für wen?“ an einem konkreten Fall bearbeitbar. **Bachelor Professional** und **Master Professional** stehen für den Versuch, höherqualifizierende berufliche Bildung sichtbarer aufzuwerten und zugleich an die Symbolik tertiärer Abschlüsse anzuschließen. Gerade daran lässt sich diskutieren, ob vor allem **Gleichwertigkeit** markiert oder ob zugleich die Grenzen zwischen **beruflicher** und **hochschulischer Bildung** neu verhandelt werden.
 
@@ -271,36 +271,36 @@ Die abschließende Recherchephase macht die Leitfrage „für wen?“ an einem k
 
 Bearbeiten Sie in Kleingruppen einen der beiden **Themenkreise** mit den jeweils zugeordneten **Quellen**. Halten Sie Ihre Ergebnisse so fest, dass Sie sie in **maximal einer Minute** im Plenum vorstellen können. Strukturieren Sie Ihre Rückmeldung in drei Punkten:
 
-- 🧭 Was ist die **Kernaussage** Ihrer Quellen?
-- 💬 Welches **Argument** ist besonders wichtig?
-- 🪞 Wie ordnen Sie das mit Blick auf **Gleichwertigkeit** und **Grenzziehung** ein?
+- <span class="content-emoji">🧭</span> Was ist die **Kernaussage** Ihrer Quellen?
+- <span class="content-emoji">💬</span> Welches **Argument** ist besonders wichtig?
+- <span class="content-emoji">🪞</span> Wie ordnen Sie das mit Blick auf **Gleichwertigkeit** und **Grenzziehung** ein?
 
 **Leitfragen für die Recherche zu Themenkreis 1:**
 
-- 🧭 Was sind **Bachelor Professional** und **Master Professional**?
-- ⚖️ **Warum** wurden diese Bezeichnungen für Abschlüsse der beruflichen Bildung **eingeführt**?
-- 🏢 Welche entsprechenden Abschlussbezeichnungen gibt es im Bereich **Wirtschaft und Verwaltung**?
+- <span class="content-emoji">🧭</span> Was sind **Bachelor Professional** und **Master Professional**?
+- <span class="content-emoji">⚖️</span> **Warum** wurden diese Bezeichnungen für Abschlüsse der beruflichen Bildung **eingeführt**?
+- <span class="content-emoji">🏢</span> Welche entsprechenden Abschlussbezeichnungen gibt es im Bereich **Wirtschaft und Verwaltung**?
   
 **Quellen:**
-- 🌐 <a href="https://www.dihk-bildungs-gmbh.de/resource/blob/38974/fee8cd4c3d9fca5aef1da74e4388a966/e-newsletter-ausbildung-winter-2019-data.pdf" target="_blank" rel="noopener noreferrer">DIHK (2019)</a>
-- 🌐 <a href="https://www.dihk.de/de/serviceportal/qualifizierung/-bachelor-professional-und-master-professional--158272" target="_blank" rel="noopener noreferrer">DIHK (o. J.)</a>
+- <span class="content-emoji">🌐</span> <a href="https://www.dihk-bildungs-gmbh.de/resource/blob/38974/fee8cd4c3d9fca5aef1da74e4388a966/e-newsletter-ausbildung-winter-2019-data.pdf" target="_blank" rel="noopener noreferrer">DIHK (2019)</a>
+- <span class="content-emoji">🌐</span> <a href="https://www.dihk.de/de/serviceportal/qualifizierung/-bachelor-professional-und-master-professional--158272" target="_blank" rel="noopener noreferrer">DIHK (o. J.)</a>
 
 **Leitfragen für die Recherche zu Themenkreis 2:**  
 
-- 🔁 Gibt es **Einigkeit** darüber, wie diese Abschlüsse in das **System der Abschlussbezeichnungen** eingeordnet werden sollen?
-- 💬 Welche **Argumente** sprechen **für**, welche **gegen** diese Bezeichnungen?
+- <span class="content-emoji">🔁</span> Gibt es **Einigkeit** darüber, wie diese Abschlüsse in das **System der Abschlussbezeichnungen** eingeordnet werden sollen?
+- <span class="content-emoji">💬</span> Welche **Argumente** sprechen **für**, welche **gegen** diese Bezeichnungen?
 
 **Quellen:**
-- 🌐 <a href="https://www.bwp-zeitschrift.de/dienst/publikationen/download/1256" target="_blank" rel="noopener noreferrer">Weiß (2007)</a>
-- 🌐 <a href="https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2009/2009_02_05-Bachelor-Master-berufliche_Weiterbildung.pdf" target="_blank" rel="noopener noreferrer">Wirtschaftsministerkonferenz & Kultusministerkonferenz (2009)</a>
+- <span class="content-emoji">🌐</span> <a href="https://www.bwp-zeitschrift.de/dienst/publikationen/download/1256" target="_blank" rel="noopener noreferrer">Weiß (2007)</a>
+- <span class="content-emoji">🌐</span> <a href="https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2009/2009_02_05-Bachelor-Master-berufliche_Weiterbildung.pdf" target="_blank" rel="noopener noreferrer">Wirtschaftsministerkonferenz & Kultusministerkonferenz (2009)</a>
 
 **Anschließend diskutieren wir im Plenum:**
-- 💬 Ist das eher eine **Aufwertung beruflicher Bildung** oder eher eine **Verwischung von Grenzen**?
-- 🪞 Was sagt das über die Frage aus, **für wen** höherqualifizierende Bildung gedacht ist?
+- <span class="content-emoji">💬</span> Ist das eher eine **Aufwertung beruflicher Bildung** oder eher eine **Verwischung von Grenzen**?
+- <span class="content-emoji">🪞</span> Was sagt das über die Frage aus, **für wen** höherqualifizierende Bildung gedacht ist?
 
 ---
 
-# 8️⃣ Einordnung und Ausblick 🪞
+# 8. Einordnung und Ausblick <span class="content-emoji">🪞</span>
 
 Hochschulbildung lässt sich damit **weder** nur als **Ort freier wissenschaftlicher Bildung** noch nur als **Instrument beruflicher Verwertbarkeit** beschreiben. Sie ist ein **historisch geprägter**, **institutionell differenzierter** und **gesellschaftlich umkämpfter** Teil des Bildungssystems. Gerade deshalb ist die Frage nach ihrer Organisation immer auch eine Frage nach **Zugang**, **Anerkennung** und **Teilhabe**.
 

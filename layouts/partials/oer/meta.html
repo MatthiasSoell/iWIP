@@ -6,44 +6,44 @@
 <script id="md-rawcontent" type="text/plain">{{ .RawContent }}</script>
 
 <script id="md-oer-meta" type="text/plain">
-## 🎓🌍🔓 OER-Metadaten
+## <span class="content-emoji">🎓🌍🔓</span> OER-Metadaten
 
-- 🏷️ **Titel:** {{ .Title }}
+- <span class="content-emoji">🏷️</span> **Titel:** {{ .Title }}
 
 {{ with $oer.creators -}}
-- {{ if gt (len .) 1 }}👥 **Urheber:innen:**{{ else }}👤 **Urheber:**{{ end }} {{ range $i, $c := . }}{{ if $i }}, {{ end }}{{ $c.family_name }}, {{ $c.given_name }}{{ end }}
+- {{ if gt (len .) 1 }}<span class="content-emoji">👥</span> **Urheber:innen:**{{ else }}<span class="content-emoji">👤</span> **Urheber:**{{ end }} {{ range $i, $c := . }}{{ if $i }}, {{ end }}{{ $c.family_name }}, {{ $c.given_name }}{{ end }}
 {{- else -}}
-- 👤 **Urheber:** –
+- <span class="content-emoji">👤</span> **Urheber:** –
 {{- end }}
 
 {{ with $oer.license -}}
-- 📜 **Lizenz:** {{ .label }}
-- 🔗 **Lizenz-Link:** {{ .url }}
+- <span class="content-emoji">📜</span> **Lizenz:** {{ .label }}
+- <span class="content-emoji">🔗</span> **Lizenz-Link:** {{ .url }}
 {{- else -}}
-- 📜 **Lizenz:** –
+- <span class="content-emoji">📜</span> **Lizenz:** –
 {{- end }}
 
 {{ with $oer.source -}}
-- 🔗 **Ursprungsort:** {{ .label }}
-- 🌐 **URL:** {{ .url }}
+- <span class="content-emoji">🔗</span> **Ursprungsort:** {{ .label }}
+- <span class="content-emoji">🌐</span> **URL:** {{ .url }}
 {{- end }}
 
-- 🗓 **Erstellt:** {{ .Date.Format "02.01.2006" }}
+- <span class="content-emoji">🗓</span> **Erstellt:** {{ .Date.Format "02.01.2006" }}
 {{ if ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02") -}}
-- 🔄 **Aktualisiert:** {{ .Lastmod.Format "02.01.2006" }}
+- <span class="content-emoji">🔄</span> **Aktualisiert:** {{ .Lastmod.Format "02.01.2006" }}
 {{- end }}
 
-- 🧩 **Version:** {{ $oer.version | default "–" }}
-- 🚦 **Status:** {{ if eq $oer.status "draft" -}}🟡 Entwurf{{- else if eq $oer.status "pilot" -}}🟠 In Erprobung{{- else if eq $oer.status "stable" -}}🔵 Stabil{{- else if eq $oer.status "aligned" -}}🟢 Didaktisch abgestimmt{{- else -}}–{{- end }}
+- <span class="content-emoji">🧩</span> **Version:** {{ $oer.version | default "–" }}
+- <span class="content-emoji">🚦</span> **Status:** {{ if eq $oer.status "draft" -}}🟡 Entwurf{{- else if eq $oer.status "pilot" -}}🟠 In Erprobung{{- else if eq $oer.status "stable" -}}🔵 Stabil{{- else if eq $oer.status "aligned" -}}🟢 Didaktisch abgestimmt{{- else -}}–{{- end }}
 
-- 🧾 **Zitiervorschlag:** {{ with $oer.creators }}{{ range $i, $c := . }}{{ if $i }}, {{ end }}{{ $c.family_name }}, {{ $c.given_name }}{{ end }}{{ end }} ({{ .Date.Format "2006" }}). {{ .Title }}. {{ with $oer.source }}{{ .label }}{{ else }}SciBlog iWIP{{ end }}. {{ .Permalink }} (Lizenz: {{ with $oer.license }}{{ .label }}{{ else }}–{{ end }})
+- <span class="content-emoji">🧾</span> **Zitiervorschlag:** {{ with $oer.creators }}{{ range $i, $c := . }}{{ if $i }}, {{ end }}{{ $c.family_name }}, {{ $c.given_name }}{{ end }}{{ end }} ({{ .Date.Format "2006" }}). {{ .Title }}. {{ with $oer.source }}{{ .label }}{{ else }}SciBlog iWIP{{ end }}. {{ .Permalink }} (Lizenz: {{ with $oer.license }}{{ .label }}{{ else }}–{{ end }})
 </script>
 
 <div class="oer-meta">
 
   <!-- 🏷️ Titel zentriert (Label + Value) -->
   <div class="oer-meta-title-center">
-    <span class="oer-meta-label">🏷️ Titel:</span>
+    <span class="oer-meta-label"><span class="content-emoji">🏷️</span> Titel:</span>
     <span class="oer-meta-value">{{ .Title }}</span>
   </div>
 
@@ -55,13 +55,13 @@
       {{/* --- URHEBER-LOGIK: Du allein vs. mehrere --- */}}
       {{ with $oer.creators }}
         {{- $n := len . -}}
-        {{- $label := "👤 Urheber:" -}}
+        {{- $label := "<span class=\"content-emoji\">👤</span> Urheber:" -}}
         {{- if gt $n 1 -}}
-          {{- $label = "👥 Urheber:innen:" -}}
+          {{- $label = "<span class=\"content-emoji\">👥</span> Urheber:innen:" -}}
         {{- end -}}
 
     <div class="oer-row">
-      <span class="oer-meta-label">{{ $label }}</span>
+      <span class="oer-meta-label">{{ $label | safeHTML }}</span>
 
       <span class="oer-meta-value">
         {{- $authors := slice -}}
@@ -88,7 +88,7 @@
 
       {{ with $oer.license }}
       <div class="oer-row">
-        <span class="oer-meta-label">📜 Lizenz & Link:</span>
+        <span class="oer-meta-label"><span class="content-emoji">📜</span> Lizenz & Link:</span>
         <a class="oer-meta-value"
            href="{{ .url }}"
            target="_blank"
@@ -100,7 +100,7 @@
 
       {{ with $oer.source }}
       <div class="oer-row">
-        <span class="oer-meta-label">🔗 Ursprungsort:</span>
+        <span class="oer-meta-label"><span class="content-emoji">🔗</span> Ursprungsort:</span>
         <a class="oer-meta-value" href="{{ .url }}" rel="noopener">
           {{ .label }}
         </a>
@@ -113,24 +113,24 @@
     <div class="oer-meta-col oer-meta-right">
 
       <div class="oer-row">
-        <span class="oer-meta-label">🗓 Erstellt:</span>
+        <span class="oer-meta-label"><span class="content-emoji">🗓</span> Erstellt:</span>
         <span class="oer-meta-value">{{ .Date.Format "02.01.2006" }}</span>
       </div>
 
       {{ if ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02") }}
       <div class="oer-row oer-meta-sub">
-        <span class="oer-meta-label">🔄 Aktualisiert:</span>
+        <span class="oer-meta-label"><span class="content-emoji">🔄</span> Aktualisiert:</span>
         <span class="oer-meta-value">{{ .Lastmod.Format "02.01.2006" }}</span>
       </div>
       {{ end }}
 
       <div class="oer-row">
-        <span class="oer-meta-label">🧩 Version:</span>
+        <span class="oer-meta-label"><span class="content-emoji">🧩</span> Version:</span>
         <span class="oer-meta-value">{{ $oer.version | default "–" }}</span>
       </div>
 
       <div class="oer-row">
-        <span class="oer-meta-label">🚦 Status: </span>
+        <span class="oer-meta-label"><span class="content-emoji">🚦</span> Status: </span>
 
         {{ with $oer.status }}
           {{- $label := "" -}}
@@ -221,7 +221,7 @@
   {{- end -}}
 
   <div class="oer-row oer-cite">
-    <span class="oer-meta-label">🧾 Zitiervorschlag:</span>
+    <span class="oer-meta-label"><span class="content-emoji">🧾</span> Zitiervorschlag:</span>
 
     <span class="oer-meta-value" id="oer_citation_text">
       {{- $cite -}}
