@@ -63,7 +63,7 @@ todos:
 
 ---
 
-### Woher kommen OER?<br>🇺🇳 UNESCO
+### Woher kommen OER?<br><span class="content-emoji">🇺🇳</span> UNESCO
 - Referenzrahmen: <a href="https://www.unesco.de/assets/dokumente/Deutsche_UNESCO-Kommission/02_Publikationen/Publikation_Bildungsagenda_2030_Aktionsrahmen.pdf" target="_blank" rel="noopener">Agenda Bildung 2030 (PDF)</a>  
 - Zielrichtung: inklusiv, chancengerecht, hochwertig (SDG 4)  
 - Empfehlung zu OER (2019): <a href="https://www.unesco.de/assets/2019_Empfehlung_Open_Educational_Resources.pdf" target="_blank" rel="noopener">PDF</a>  
@@ -71,7 +71,7 @@ todos:
 
 ---
 
-### Woher kommen OER? <br>🇩🇪 GER
+### Woher kommen OER? <br><span class="content-emoji">🇩🇪</span> GER
 - Förderung (ehem. BMBF, jetzt BMFTR) seit 2016:  
   - <a href="https://open-educational-resources.de/" target="_blank" rel="noopener">OERinfo</a> (2016)  
   - <a href="https://www.oer-strategie.de/foerdern/foerderrichtlinien/" target="_blank" rel="noopener">OE_COM</a> (2023)  

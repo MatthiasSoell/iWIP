@@ -159,11 +159,11 @@ Die Teilnehmenden können nach der Fortbildung <span class="content-emoji">🧠<
 
 | Phase | Inhalt | Ziel | Zeit |
 | :---- | :----- | :--- | :--: |
-| **1. Einstieg <span class="content-emoji">💭</span>** | Leitfrage, Rahmen, gemeinsame Orientierung | Arbeitsbündnis und Fokus <span class="content-emoji">🧭</span> | <span class="content-emoji">⏱️</span> 5<br>Min |
-| **2. Lerntypen <span class="content-emoji">🧠</span>** | Evidenzlage und konstruktive Einordnung | Mythen klären, Handlungsoptionen öffnen <span class="content-emoji">🪞</span> | <span class="content-emoji">⏱️</span> 25<br>Min |
-| **3. Lern-<br>formen <span class="content-emoji">🧩</span>** | Didaktische Entscheidungslogik | Formate begründet wählen <span class="content-emoji">🎯</span> | <span class="content-emoji">⏱️</span> 25<br>Min |
-| **4. Prüfungsformen <span class="content-emoji">🎯</span>** | Constructive Alignment und Passung | Kompetenzen angemessen sichtbar machen <span class="content-emoji">👥</span> | <span class="content-emoji">⏱️</span> 30<br>Min |
-| **5. Transfer <span class="content-emoji">🌱</span>** | Take-aways und 14-Tage-Commitment | Umsetzung im Alltag sichern <span class="content-emoji">🧭</span> | <span class="content-emoji">⏱️</span> 5<br>Min |
+| **1. Einstieg <span class="content-emoji">💭</span>** | Leitfrage, Rahmen, gemeinsame Orientierung | Arbeitsbündnis und Fokus <span class="content-emoji">🧭</span> | <span class="content-emoji">⏱️</span> 5 Min |
+| **2. Lerntypen <span class="content-emoji">🧠</span>** | Evidenzlage und konstruktive Einordnung | Mythen klären, Handlungsoptionen öffnen <span class="content-emoji">🪞</span> | <span class="content-emoji">⏱️</span> 25 Min |
+| **3. Lern-<br>formen <span class="content-emoji">🧩</span>** | Didaktische Entscheidungslogik | Formate begründet wählen <span class="content-emoji">🎯</span> | <span class="content-emoji">⏱️</span> 25 Min |
+| **4. Prüfungsformen <span class="content-emoji">🎯</span>** | Constructive Alignment und Passung | Kompetenzen angemessen sichtbar machen <span class="content-emoji">👥</span> | <span class="content-emoji">⏱️</span> 30 Min |
+| **5. Transfer <span class="content-emoji">🌱</span>** | Take-aways und 14-Tage-Commitment | Umsetzung im Alltag sichern <span class="content-emoji">🧭</span> | <span class="content-emoji">⏱️</span> 5 Min |
 
 </div>
 <!-- markdownlint-enable MD033 -->

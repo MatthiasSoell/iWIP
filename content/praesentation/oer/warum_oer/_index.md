@@ -51,14 +51,14 @@ todos:
 
 ---
 
-### Woher kommen OER?<br>🇺🇳 UNESCO
+### Woher kommen OER?<br><span class="content-emoji">🇺🇳</span> UNESCO
 * Ausgangspunkt der OER-Initiativen ist die <a href="https://www.unesco.de/assets/dokumente/Deutsche_UNESCO-Kommission/02_Publikationen/Publikation_Bildungsagenda_2030_Aktionsrahmen.pdf" target="_blank" rel="noopener">Agenda Bildung 2030 (PDF)</a> der UNESCO aus dem Jahr 2015
 * Ziel der Agenda (u. a.): inklusive, chancengerechte und hochwertige Bildung für alle Menschen weltweit
 * UNESCO (2009) <a href="https://www.unesco.de/assets/2019_Empfehlung_Open_Educational_Resources.pdf" target="_blank" rel="noopener"> Empfehlungen zu OER (PDF)</a>: OER als geeignete Mittel zur Zielerreichung
 
 ---
 
-### Woher kommen OER? <br>🇩🇪 GER
+### Woher kommen OER? <br><span class="content-emoji">🇩🇪</span> GER
 * Das BMFTR (Bundesministerium für Forschung, Technologie und Raumfahrt, ehemals BMBF: Bundesministerium für Bildung und Forschung) fördert OER seit 2016:
   * <a href="https://open-educational-resources.de/" target="_blank" rel="noopener">OERInfo</a> (2016)
   * <a href="https://www.oer-strategie.de/foerdern/foerderrichtlinien/" target="_blank" rel="noopener">OE_COM</a> (2023)

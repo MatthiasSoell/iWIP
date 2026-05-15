@@ -339,11 +339,12 @@ Diese Anreizkategorien können in eine Matrix überfürt werden, welche die **Ad
 .anreizmatrix_2 li{ margin:.06em 0; }
 
 /* Spaltenbreiten: Zähler + Phase + 4 Kategorien */
-.anreizmatrix_2 table :is(th,td):nth-child(1){ width:20% !important; text-align:right; font-weight:700; }
-.anreizmatrix_2 table :is(th,td):nth-child(2){ width:20% !important; font-weight:700; }
+.anreizmatrix_2 table :is(th,td):nth-child(1){ width:4% !important; text-align:right; font-weight:700; }
+.anreizmatrix_2 table :is(th,td):nth-child(2){ width:16% !important; font-weight:700; }
 .anreizmatrix_2 table :is(th,td):nth-child(3){ width:20% !important; }
 .anreizmatrix_2 table :is(th,td):nth-child(4){ width:20% !important; }
 .anreizmatrix_2 table :is(th,td):nth-child(5){ width:20% !important; }
+.anreizmatrix_2 table :is(th,td):nth-child(6){ width:20% !important; }
 
 /* Keycap-Labels */
 .keycap{
@@ -361,13 +362,13 @@ Diese Anreizkategorien können in eine Matrix überfürt werden, welche die **Ad
 
 <div class="anreizmatrix_2">
 
-|| **<span class="keycap">A</span> Immateriell** | **<span class="keycap">B</span> Materiell** | **<span class="keycap">C</span> Strukturell** | **<span class="keycap">D</span> Sozial** |
-|:--|:--|:--|:--|:--|
-1. **Awareness** |  |  |  |  |  
-2. **Interesse** |  |  |  |  |  
-3. **Erwägung** |  |  |  |  |  
-4. **Umsetzung** |  |  |  |  |  
-5. **Integration** |  |  |  |  |  
+||| **<span class="keycap">A</span> Immateriell** | **<span class="keycap">B</span> Materiell** | **<span class="keycap">C</span> Strukturell** | **<span class="keycap">D</span> Sozial** |
+|:--|:--|:--|:--|:--|:--|
+| 1 | **Awareness** |  |  |  |  |
+| 2 | **Interesse** |  |  |  |  |
+| 3 | **Erwägung** |  |  |  |  |
+| 4 | **Umsetzung** |  |  |  |  |
+| 5 | **Integration** |  |  |  |  |
 
 </div>
 

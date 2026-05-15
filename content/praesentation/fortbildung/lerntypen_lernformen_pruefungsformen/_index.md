@@ -53,7 +53,7 @@ todos: []
 
 ---
 
-<p style="font-size: 180px;"><span class="content-emoji">🙏</span></p>
+<p style="font-size: 180px;">🙏</p>
 
 {{% note %}}
 Einstieg: Vielen Dank für Ihr Interesse an einer wissenschaftsbasierten Weiterbildung. Dies ist gerade aktuell nicht selbstverständlich. Wissenschaftliche Erkenntnisse stehen aktuell unter besonderer gesellschaftlicher Beobachtung.

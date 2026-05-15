@@ -124,11 +124,11 @@ und <b>Rahmenbedingungen</b> der Zielgruppen übereinstimmen.
 
 ||| **<span class="keycap">A</span> Immateriell <span class="content-emoji">💡</span>** | **<span class="keycap">B</span> Materiell <span class="content-emoji">💰</span>** | **<span class="keycap">C</span> Strukturell <span class="content-emoji">🏛️</span>** | **<span class="keycap">D</span> Sozial <span class="content-emoji">🤝</span>** |
 |:--|:--|:--|:--|:--|:--|
-1.| **Awareness**   |  |  |  |  |
-2.| **Interesse**   |  |  |  |  |
-3.| **Erwägung**   |  |  |  |  |
-4.| **Umsetzung**  |  |  |  |  |
-5.| **Integration** |  |  |  |  |
+| 1 | **Awareness**  |  |  |  |  |
+| 2 | **Interesse**   |  |  |  |  |
+| 3 | **Erwägung**   |  |  |  |  |
+| 4 | **Umsetzung**  |  |  |  |  |
+| 5 | **Integration** |  |  |  |  |
 
 </div>
 

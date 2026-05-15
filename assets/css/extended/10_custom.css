@@ -430,6 +430,27 @@ a.lit-doi::before {
   min-width: 0;
 }
 
+/* Global variant: balanced widths for 4-column no-scroll agenda tables */
+.agenda.no-scroll table thead th:nth-child(1):nth-last-child(4),
+.agenda.no-scroll table tbody td:nth-child(1):nth-last-child(4){
+  width: 24%;
+}
+
+.agenda.no-scroll table thead th:nth-child(2):nth-last-child(3),
+.agenda.no-scroll table tbody td:nth-child(2):nth-last-child(3){
+  width: 32%;
+}
+
+.agenda.no-scroll table thead th:nth-child(3):nth-last-child(2),
+.agenda.no-scroll table tbody td:nth-child(3):nth-last-child(2){
+  width: 32%;
+}
+
+.agenda.no-scroll table thead th:nth-child(4):nth-last-child(1),
+.agenda.no-scroll table tbody td:nth-child(4):nth-last-child(1){
+  width: 12%;
+}
+
 /* Local variant: tighter readable taxonomy table */
 .agenda.taxonomy-table table{
   font-size: 0.9rem;

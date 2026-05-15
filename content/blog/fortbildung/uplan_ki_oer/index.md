@@ -245,7 +245,7 @@ Neben den o. g. Quellen haben bspw. Bob Blume: <a href="https://bobblume.de/2025
 ## Kurzformel für gutes Prompten in der Unterrichtsplanung
 
 > [!TIPP]
-> **Rolle <span class="content-emoji">🎭</span> + Kontext <span class="content-emoji">👥</span> + Ziel <span class="content-emoji">🎯</span> + Qualitätskriterien <span class="content-emoji">🧠</span> + Format 📑 + Differenzierung <span class="content-emoji">🌱</span> + Reflexion <span class="content-emoji">🪞</span>**
+> **Rolle <span class="content-emoji">🎭</span> + Kontext <span class="content-emoji">👥</span> + Ziel <span class="content-emoji">🎯</span> + Qualitätskriterien <span class="content-emoji">🧠</span> + Format <span class="content-emoji">📑</span> + Differenzierung <span class="content-emoji">🌱</span> + Reflexion <span class="content-emoji">🪞</span>**
 
 Oder als Leitfrage:
 
@@ -321,7 +321,7 @@ Oder als Leitfrage:
 
 ---
 
-### 5. Output-Format definieren 📑  
+### 5. Output-Format definieren <span class="content-emoji">📑</span>  
 
 <details>
   <summary><strong>In welcher Struktur soll die Antwort erscheinen?</strong><br><em>(Zum Aufklappen klicken)</em></summary>
@@ -376,7 +376,7 @@ Arbeiten Sie mit einer eigenen Unterrichtsidee oder einer [Beispielsequenz](/iWI
 Nutzen Sie die Kurzformel:
 
 > [!TIPP]
-> **Rolle <span class="content-emoji">🎭</span> + Kontext <span class="content-emoji">👥</span> + Ziel <span class="content-emoji">🎯</span> + Qualitätskriterien <span class="content-emoji">🧠</span> + Format 📑 + Differenzierung <span class="content-emoji">🌱</span> + Reflexion <span class="content-emoji">🪞</span>**
+> **Rolle <span class="content-emoji">🎭</span> + Kontext <span class="content-emoji">👥</span> + Ziel <span class="content-emoji">🎯</span> + Qualitätskriterien <span class="content-emoji">🧠</span> + Format <span class="content-emoji">📑</span> + Differenzierung <span class="content-emoji">🌱</span> + Reflexion <span class="content-emoji">🪞</span>**
 
 Nutzen Sie Ihren <a href="https://fobizz.com/de/"
    target="_blank"
@@ -403,7 +403,7 @@ Wählen Sie den Arbeitsmodus, der zu Ihrem Erfahrungsstand passt.
 2. Bitten Sie die KI:
    - die Lernziele **präzise** zu formulieren <span class="content-emoji">🎯</span>,  
    - die Stunde klar in Phasen zu strukturieren und Zeitangaben zu ergänzen <span class="content-emoji">⏱️</span>.  
-3. Überarbeiten Sie Ihren Prompt einmal gezielt (z. B. Format vorgeben 📑).
+3. Überarbeiten Sie Ihren Prompt einmal gezielt (z. B. Format vorgeben <span class="content-emoji">📑</span>).
 
 Reflexionsfrage:
 > [!TIPP]
