@@ -569,9 +569,6 @@
   transition: transform 160ms ease, background 160ms ease, color 160ms ease;
 }
 
-.reveal-theme-toggle:hover {
-}
-
 .reveal-theme-toggle:focus-visible {
   outline: 2px solid rgba(1, 74, 153, 0.35);
   outline-offset: 2px;
@@ -1624,51 +1621,112 @@ body.presentation-view .qr-card svg,
    =========================================================== */
 
 .reveal section.end-slide .end-icon{
-  font-size: 2.2rem !important;
-  margin-bottom: .6rem !important;
+  font-size: 2.35rem !important;
+  margin-bottom: 0.75rem !important;
   opacity: .75 !important;
 }
 
 .reveal section.end-slide .end-title{
-  font-size: 2.2rem !important;
-  line-height: 1.1 !important;
-  margin: .2rem 0 .6rem !important;
+  font-size: 2.45rem !important;
+  line-height: 1.15 !important;
+  margin: 0.3rem 0 0.85rem !important;
 }
 
 .reveal section.end-slide .end-sub{
-  font-size: 1.35rem !important;
+  font-size: 1.55rem !important;
   font-weight: 600 !important;
-  margin: .8rem 0 .8rem !important;
+  margin: 0.95rem 0 1rem !important;
   opacity: .95 !important;
 }
 
 .reveal section.end-slide .contact-block{
   display: inline-block !important;
   text-align: left !important;
-  margin: .6rem 0 1.4rem !important;
+  margin: 0.75rem 0 1.6rem !important;
 }
 
 .reveal section.end-slide .contact-line{
   display: flex !important;
   align-items: center !important;
-  gap: .6rem !important;
-  margin: .35rem 0 !important;
-  font-size: 1.05rem !important;
+  gap: 0.65rem !important;
+  margin: 0.45rem 0 !important;
+  font-size: 1.2rem !important;
+  line-height: 1.35 !important;
+}
+
+.reveal section.end-slide .contact-line svg {
+  width: 1.15em !important;
+  height: 1.15em !important;
 }
 
 .reveal section.end-slide .qr-card{
-  margin: .8rem auto .7rem !important;
+  margin: 1rem auto 0.9rem !important;
 }
 
 .reveal section.end-slide .back-to-blog{
-  font-size: 0.9rem !important;
+  font-size: 1rem !important;
   text-decoration: none !important;
   opacity: .75 !important;
 }
 
+.reveal section.end-slide .end-back {
+  margin-top: 0.8rem !important;
+}
+
 .reveal section.end-slide .qr-card img {
-  width: 140px;   /* oder 150 */
+  width: 148px;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .reveal section.end-slide .end-icon {
+    font-size: 3.1rem !important;
+    margin-bottom: 0.7rem !important;
+  }
+
+  .reveal section.end-slide .end-title {
+    font-size: 3.5rem !important;
+    line-height: 1.08 !important;
+    margin: 0.15rem 0 0.6rem !important;
+  }
+
+  .reveal section.end-slide .rule-thin {
+    width: 52%;
+    margin: 1rem auto 1.35rem !important;
+  }
+
+  .reveal section.end-slide .end-sub {
+    font-size: 2.15rem !important;
+    line-height: 1.2 !important;
+    margin: 0 0 0.8rem !important;
+  }
+
+  .reveal section.end-slide .contact-block {
+    margin: 0.6rem 0 1.2rem !important;
+  }
+
+  .reveal section.end-slide .contact-line {
+    gap: 0.72rem !important;
+    margin: 0.42rem 0 !important;
+    font-size: 1.68rem !important;
+    line-height: 1.28 !important;
+  }
+
+  .reveal section.end-slide .back-to-blog {
+    font-size: 1.35rem !important;
+  }
+
+  .reveal section.end-slide .end-back {
+    margin-top: 0.7rem !important;
+  }
+
+  .reveal section.end-slide .qr-card {
+    margin: 0.9rem auto 0.8rem !important;
+  }
+
+  .reveal section.end-slide .qr-card img {
+    width: 176px;
+  }
 }
 
 
@@ -1821,9 +1879,6 @@ body.reveal-dark .reveal-theme-toggle {
   color: var(--reveal-text-dark);
   border: none;
   box-shadow: none;
-}
-
-body.reveal-dark .reveal-theme-toggle:hover {
 }
 
 body.reveal-dark .reveal .slide-number {
@@ -2246,6 +2301,21 @@ body.presentation-view footer {
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
+  .reveal .titlecard .buttons .title_action {
+    width: 3.44rem;
+    height: 3.44rem;
+    font-size: 1.76rem;
+  }
+
+  .reveal .buttons .iwip_qr_trigger {
+    font-size: 1.6rem;
+  }
+
+  .reveal .buttons .iwip_qr_icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
   .reveal section .figure-frame.figure-frame-sm,
   .reveal section .figure-frame-sm,
   .reveal section .figure-frame.is-sm {
