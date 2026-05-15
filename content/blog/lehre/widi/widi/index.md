@@ -113,64 +113,64 @@ oer:
 
 ---
 
-# 🌀 Recap – Rückblick auf die letzte Veranstaltung  
+# <span class="content-emoji">🌀</span> Recap – Rückblick auf die letzte Veranstaltung  
 
-- 🏫 Ausgehend von Ihren Erfahrungen in **Bildungseinrichtungen** haben wir in der letzten Veranstaltung Ihr persönliches **Didaktikverständnis** reflektiert.  
-- 📜 Sie konnten außerdem die **historische Verwurzelung der Didaktik** rekapitulieren.  
-- Die **unmittelbaren Auswirkungen didaktischer Entscheidungen** – etwa durch die Wahl der **Sitzordnung** 🪑 – haben wir erlebbar gemacht.  
-- 🔍 Darüber hinaus arbeiteten wir Unterschiede zwischen **Allgemeiner Didaktik** und **Fachdidaktik** heraus.  
-
----
-
-# 📚 Gegenstand  
-
-- Heute widmen wir uns gezielt der **Wirtschaftsdidaktik** 💼.  
-- Sie erarbeiten in **Gruppen** 👥 zentrale Themenfelder und **systematisieren** diese 🧩.
-- Ferner **reflektieren** wir die **methodische Vorgehensweise** 🔄 im Vergleich zur letzten Sitzung.  
+- <span class="content-emoji">🏫</span> Ausgehend von Ihren Erfahrungen in **Bildungseinrichtungen** haben wir in der letzten Veranstaltung Ihr persönliches **Didaktikverständnis** reflektiert.  
+- <span class="content-emoji">📜</span> Sie konnten außerdem die **historische Verwurzelung der Didaktik** rekapitulieren.  
+- Die **unmittelbaren Auswirkungen didaktischer Entscheidungen** – etwa durch die Wahl der **Sitzordnung** <span class="content-emoji">🪑</span> – haben wir erlebbar gemacht.  
+- <span class="content-emoji">🔍</span> Darüber hinaus arbeiteten wir Unterschiede zwischen **Allgemeiner Didaktik** und **Fachdidaktik** heraus.  
 
 ---
 
-# 💭 Fragestellung  
+# <span class="content-emoji">📚</span> Gegenstand  
+
+- Heute widmen wir uns gezielt der **Wirtschaftsdidaktik** <span class="content-emoji">💼</span>.  
+- Sie erarbeiten in **Gruppen** <span class="content-emoji">👥</span> zentrale Themenfelder und **systematisieren** diese <span class="content-emoji">🧩</span>.
+- Ferner **reflektieren** wir die **methodische Vorgehensweise** <span class="content-emoji">🔄</span> im Vergleich zur letzten Sitzung.  
+
+---
+
+# <span class="content-emoji">💭</span> Fragestellung  
 
 > **Mit welchen Themen setzt sich die Wirtschaftsdidaktik aktuell auseinander?**
 
 ---
 
-# 🎯 Lehrziele  
+# <span class="content-emoji">🎯</span> Lehrziele  
 
 Sie erarbeiten sich einen Überblick über die zentralen Themenfelder der Wirtschaftsdidaktik.  
 
 Sie lernen, …
 
-- 🧩 die **Themenfelder der Wirtschaftsdidaktik** zu systematisieren und zu beschreiben,  
-- 👥 in **Gruppen** Ergebnisse zu erarbeiten und  
-- 🪞 die **Vor- und Nachteile methodischer Erarbeitungs- und Darstellungsformen** zu reflektieren.  
+- <span class="content-emoji">🧩</span> die **Themenfelder der Wirtschaftsdidaktik** zu systematisieren und zu beschreiben,  
+- <span class="content-emoji">👥</span> in **Gruppen** Ergebnisse zu erarbeiten und  
+- <span class="content-emoji">🪞</span> die **Vor- und Nachteile methodischer Erarbeitungs- und Darstellungsformen** zu reflektieren.  
 
 ---
 
-💡 *Ziel ist es, ein reflektiertes Verständnis von Wirtschaftsdidaktik als Grundlage professionellen wirtschaftspädagogischen Handelns zu entwickeln.*  
+<span class="content-emoji">💡</span> *Ziel ist es, ein reflektiertes Verständnis von Wirtschaftsdidaktik als Grundlage professionellen wirtschaftspädagogischen Handelns zu entwickeln.*  
 
 ---
 
-# 🧭 Aufbau & Ablauf  
+# <span class="content-emoji">🧭</span> Aufbau & Ablauf  
 
 Die Lehr-Lern-Einheit ist so konzipiert, dass Sie von einer **offenen Fragestellung** ausgehen und sich diese in **kooperativer Gruppenarbeit** selbst erarbeiten.  
 
-**Gesamtdauer:** ca. 90 Minuten ⏱️
+**Gesamtdauer:** ca. 90 Minuten <span class="content-emoji">⏱️</span>
 
 <div class="agenda">
 
 | Phase | Inhalt | Ziel | Zeit |
 |:------|:--------|:------|:------:|
-| **1️⃣ Einstieg 🤔** | Rückblick auf die letzte Sitzung und Einführung in die heutige Fragestellung | Vorwissen aktivieren, Leitfrage klären, Motivation schaffen | ⏱️ 10 Min |
-| **2️⃣ Erarbeitung 🧩** | Vier Gruppen analysieren je eine Quelle: Arndt 2020, Brahm et al. o. J., Euler &amp; Hahn 2014 oder Wilbers 2022 und bereiten Ergebnisse auf | Themen identifizieren, geeignete Darstellungsform wählen, methodische Vor- & Nachteile reflektieren | ⏱️ 45 Min |
-| **3️⃣ Präsentation 💬** | Kurzvorstellung der Gruppenergebnisse und gemeinsame Reflexion im Plenum | Perspektiven vergleichen, Themen systematisieren, Erkenntnisse sichern | ⏱️ 35 Min |
+| **1. Einstieg <span class="content-emoji">🤔</span>** | Rückblick auf die letzte Sitzung und Einführung in die heutige Fragestellung | Vorwissen aktivieren, Leitfrage klären, Motivation schaffen | <span class="content-emoji">⏱️</span> 10 Min |
+| **2. Erarbeitung <span class="content-emoji">🧩</span>** | Vier Gruppen analysieren je eine Quelle: Arndt 2020, Brahm et al. o. J., Euler &amp; Hahn 2014 oder Wilbers 2022 und bereiten Ergebnisse auf | Themen identifizieren, geeignete Darstellungsform wählen, methodische Vor- & Nachteile reflektieren | <span class="content-emoji">⏱️</span> 45 Min |
+| **3. Präsentation <span class="content-emoji">💬</span>** | Kurzvorstellung der Gruppenergebnisse und gemeinsame Reflexion im Plenum | Perspektiven vergleichen, Themen systematisieren, Erkenntnisse sichern | <span class="content-emoji">⏱️</span> 35 Min |
 
 </div>
 
 ---
 
-# 🧠 Arbeitsauftrag  
+# <span class="content-emoji">🧠</span> Arbeitsauftrag  
 
 Als Studierende:r der Wirtschaftspädagogik verfügen Sie bereits über grundlegende didaktische Kenntnisse. Nun geht es darum, das **Spezifische der Wirtschaftsdidaktik** zu verstehen.  
 
@@ -183,29 +183,29 @@ Als Studierende:r der Wirtschaftspädagogik verfügen Sie bereits über grundleg
 1. Arbeiten Sie heraus, mit welchen **Themen** sich die Wirtschaftsdidaktik beschäftigt.  
 2. Ergänzen Sie ggf. **fehlende Themen**, die in Ihrer Quelle nicht vorkommen.  
 3. Halten Sie Ihre Ergebnisse in einer geeigneten Form fest, z. B.:  
-   - 🧾 **Dokument** (z. B. <a href="https://cryptpad.fr/doc/" target="_blank" rel="noopener noreferrer">cryptpad.fr</a>)  
-   - 🪶 **Präsentation** (z. B. <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Canva</a> oder <a href="https://cryptpad.fr/presentation/" target="_blank" rel="noopener noreferrer">cryptpad.fr</a>)  
-   - 🧱 **Board** (z. B. <a href="https://miro.com/app/board/uXjVJ7SaunY=/" target="_blank" rel="noopener noreferrer">Miro</a>)  
-   - ✍️ **Etherpad** (z. B. <a href="https://yopad.eu" target="_blank" rel="noopener noreferrer">yopad.eu</a>)  
-   - 📷 **analoge Grafik** (z. B. digitalisiert per Smartphone)  
+   - <span class="content-emoji">🧾</span> **Dokument** (z. B. <a href="https://cryptpad.fr/doc/" target="_blank" rel="noopener noreferrer">cryptpad.fr</a>)  
+   - <span class="content-emoji">🪶</span> **Präsentation** (z. B. <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Canva</a> oder <a href="https://cryptpad.fr/presentation/" target="_blank" rel="noopener noreferrer">cryptpad.fr</a>)  
+   - <span class="content-emoji">🧱</span> **Board** (z. B. <a href="https://miro.com/app/board/uXjVJ7SaunY=/" target="_blank" rel="noopener noreferrer">Miro</a>)  
+   - <span class="content-emoji">✍️</span> **Etherpad** (z. B. <a href="https://yopad.eu" target="_blank" rel="noopener noreferrer">yopad.eu</a>)  
+   - <span class="content-emoji">📷</span> **analoge Grafik** (z. B. digitalisiert per Smartphone)  
 4. Bereiten Sie eine **max. 5-minütige Kurzvorstellung** Ihrer Ergebnisse vor.  
 
-⏱️ *Bearbeitungszeit: ca. 45 Minuten*  
+<span class="content-emoji">⏱️</span> *Bearbeitungszeit: ca. 45 Minuten*  
 
 ---
 
 <details>
-<summary>🔽 <span>Hinweis für asynchron Teilnehmende</span> 🌍</summary>
+<summary><span class="content-emoji">🔽</span> <span>Hinweis für asynchron Teilnehmende</span> <span class="content-emoji">🌍</span></summary>
 
 Wenn Sie **nicht live am Seminar teilnehmen**, können Sie die Aufgabe digital bearbeiten:
 
 1. **Lesen** Sie den Text von <a href="#-literatur">Wilbers (2022)</a> und lassen Sie sich den Text von <a href="#-literatur">Brahm et al. (o. J.)</a> mithilfe einer KI zusammenfassen.  
 2. **Vergleichen** Sie anschließend die Ergebnisse beider Quellen.  
 3. Schreiben Sie Ihre **Erkenntnisse** in ein Online-Dokument, z. B.:  
-   👉 <a href="https://cryptpad.fr/doc/" target="_blank" rel="noopener noreferrer">KryptPad – datenschutzfreundlicher Online-Editor</a>  
+   <span class="content-emoji">👉</span> <a href="https://cryptpad.fr/doc/" target="_blank" rel="noopener noreferrer">KryptPad – datenschutzfreundlicher Online-Editor</a>  
 4. Führen Sie ein **kurzes Gespräch** mit einer KI Ihrer Wahl (z. B. ChatGPT, Claude o. Ä.) über Ihr **Verständnis von Wirtschaftsdidaktik**.  
 
-💡 **Prompt-Vorschlag:**  
+<span class="content-emoji">💡</span> **Prompt-Vorschlag:**  
 > Fasse bitte den Text „Wirtschaft unterrichten. Offenes Lehrbuch für Wirtschaftsdidaktik“ von Brahm, Ring und Schild (o. J.) zusammen.  
 > Konzentriere dich dabei auf folgende Punkte:  
 > 1. Welche zentralen Themenfelder der Wirtschaftsdidaktik werden behandelt?  
@@ -214,23 +214,23 @@ Wenn Sie **nicht live am Seminar teilnehmen**, können Sie die Aufgabe digital b
 >  
 > Bitte formuliere die Zusammenfassung klar und kompakt und verwende eine sachlich-akademische Sprache.  
 
-Notieren Sie anschließend Ihre wichtigsten Einsichten und vergleichen Sie sie mit Ihrer ursprünglichen Einschätzung. 🔍  
+Notieren Sie anschließend Ihre wichtigsten Einsichten und vergleichen Sie sie mit Ihrer ursprünglichen Einschätzung. <span class="content-emoji">🔍</span>  
 
 </details>
 
 ---
 
-# 📘 Kennzeichen der Fachdidaktiken 🔄  
+# <span class="content-emoji">📘</span> Kennzeichen der Fachdidaktiken <span class="content-emoji">🔄</span>  
 
 - Entstehungszeit: unterschiedlich, teils parallel zur Entwicklung der **Fachwissenschaften** (z. B. Wirtschaftsdidaktik um 1900)  
 - Bezugspunkt: einzelne **Fächer oder Berufsfelder**  
 - Fokus: Anwendung allgemeiner didaktischer Prinzipien auf **fachliche Inhalte**  
 
-➡️ Siehe dazu auch <a href="#-literatur">Arnold & Roßa (2012)</a> und <a href="#-literatur">Jank & Meyer (2014)</a>.  
+<span class="content-emoji">➡️</span> Siehe dazu auch <a href="#-literatur">Arnold & Roßa (2012)</a> und <a href="#-literatur">Jank & Meyer (2014)</a>.  
 
 ---
 
-# 🧩 Systematisierung der Themen der Wirtschaftsdidaktik  
+# <span class="content-emoji">🧩</span> Systematisierung der Themen der Wirtschaftsdidaktik  
 
 Wir fassen die in den Quellen identifizierten Themenfelder gemeinsam auf **Moderationskarten** zusammen und **clustern** sie nach übergeordneten Bereichen.
 
@@ -245,12 +245,12 @@ Wir fassen die in den Quellen identifizierten Themenfelder gemeinsam auf **Moder
 
 ---
 
-## 🗺️ Erläuterung zur Systematisierung  
+## <span class="content-emoji">🗺️</span> Erläuterung zur Systematisierung  
 
-Sie haben über die Gemeinsamkeiten und Unterschiede nachgedacht und möchten sich nun die **Hintergründe genauer ansehen**? Dann klicken Sie auf die folgende Liste 👇  
+Sie haben über die Gemeinsamkeiten und Unterschiede nachgedacht und möchten sich nun die **Hintergründe genauer ansehen**? Dann klicken Sie auf die folgende Liste <span class="content-emoji">👇</span>  
 
 <details>
-<summary>🔽 <span>Erläuterung zur Systematisierung</span> 🗺️</summary>
+<summary><span class="content-emoji">🔽</span> <span>Erläuterung zur Systematisierung</span> <span class="content-emoji">🗺️</span></summary>
 
 - Wirtschaftsdidaktik in der **beruflichen Bildung**: vgl. <a href="#-literatur">Euler & Hahn (2014)</a>, <a href="#-literatur">Wilbers (2022)</a>  
 - Wirtschaftsdidaktik in der **allgemeinen Bildung**: vgl. <a href="#-literatur">Arndt (2020)</a>, <a href="#-literatur">Brahm et al. (o. J.)</a>  
@@ -261,7 +261,7 @@ Sie haben über die Gemeinsamkeiten und Unterschiede nachgedacht und möchten si
 
 ---
 
-# 💬 Reflexion & Ausblick  
+# <span class="content-emoji">💬</span> Reflexion & Ausblick  
 
 Haben wir unsere Ziele erreicht?  
 
@@ -271,13 +271,13 @@ Sie können nun …
 - in **Gruppen** kooperativ Ergebnisse erarbeiten,  
 - **methodische Ansätze und Darstellungsformen** kritisch reflektieren.  
 
-💡 *Damit vertiefen Sie Ihr Verständnis von Wirtschaftsdidaktik als Grundlage professionellen pädagogischen Handelns.*
+<span class="content-emoji">💡</span> *Damit vertiefen Sie Ihr Verständnis von Wirtschaftsdidaktik als Grundlage professionellen pädagogischen Handelns.*
 
-🔭 **Ausblick:** OER
+<span class="content-emoji">🔭</span> **Ausblick:** OER
 
 ---
 
-# 📚 Literatur  
+# <span class="content-emoji">📚</span> Literatur  
 
 Arndt, H. (2020). <em>Economic Education – Ökonomische Bildung.</em> FAU University Press. <a class="lit-doi" href="https://doi.org/10.25593/978-3-96147-267-3" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1140125971" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 

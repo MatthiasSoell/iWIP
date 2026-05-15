@@ -1,8 +1,8 @@
 ---
 title: "Wie funktioniert das deutsche Bildungssystem?"
 title_reveal: "Wie funktioniert das deutsche<br>Bildungssystem?<br>"
-emojis: "🏛️ 🧭 ⚖️"
-veranstaltungstyp: "🎓 Vorlesung"
+emojis: '<span class="content-emoji">🏛️</span> <span class="content-emoji">🧭</span> <span class="content-emoji">⚖️</span>'
+veranstaltungstyp: '<span class="content-emoji">🎓</span> Vorlesung'
 veranstaltung: "'Bildungssysteme im Kontext von Arbeit und Gesellschaft'"
 author: "Prof. Dr. Matthias Söll"
 blog: "/iWIP/blog/lehre/bisy/deutsches_bildungssystem/"
@@ -55,57 +55,57 @@ todos: []
 
 ---
 
-## 💭 Leitfrage
+## <span class="content-emoji">💭</span> Leitfrage
 
 > [!TIPP]
 > Wie lassen sich **individuelle Bildungswege** verstehen, wenn man sie zugleich als Teil eines gesellschaftlich, rechtlich und institutionell geordneten **Bildungssystems** betrachtet?
 
 ---
 
-## 🧭 Ablauf (90 Min)
+## <span class="content-emoji">🧭</span> Ablauf (90 Min)
 
-1️⃣ Einstieg 🎯  
-2️⃣ Bildungsbiographie 👤  
-3️⃣ Systematik 🏛️  
-4️⃣ Recht ⚖️  
-5️⃣ Recherche MV 🔎  
-6️⃣ Diskussion 💬
+1. Einstieg <span class="content-emoji">🎯</span>  
+2. Bildungsbiographie <span class="content-emoji">👤</span>  
+3. Systematik <span class="content-emoji">🏛️</span>  
+4. Recht <span class="content-emoji">⚖️</span>  
+5. Recherche MV <span class="content-emoji">🔎</span>  
+6. Diskussion <span class="content-emoji">💬</span>
 
 ---
 
-## 🎯 Lernziele
+## <span class="content-emoji">🎯</span> Lernziele
 
 **Sie lernen ...**
 
 <span class="spacer spacer-sm"></span>
 
-- 👤 **Bildungsbiographien** und **Bildungssystem** zusammen denken.
-- 🔁 subjektive und strukturelle **Perspektiven** unterscheiden.
-- 🧭 die **Trias** aus Gesellschaft, Bildungssystem und Arbeitswelt reflektieren.
-- 🏛️ den **Aufbau** des deutschen Bildungssystems beschreiben.
-- ⚖️ **rechtliche Rahmenbedingungen** einordnen.
-- 🔎 offizielle Quellen zu **Mecklenburg-Vorpommern** nutzen.
+- <span class="content-emoji">👤</span> **Bildungsbiographien** und **Bildungssystem** zusammen denken.
+- <span class="content-emoji">🔁</span> subjektive und strukturelle **Perspektiven** unterscheiden.
+- <span class="content-emoji">🧭</span> die **Trias** aus Gesellschaft, Bildungssystem und Arbeitswelt reflektieren.
+- <span class="content-emoji">🏛️</span> den **Aufbau** des deutschen Bildungssystems beschreiben.
+- <span class="content-emoji">⚖️</span> **rechtliche Rahmenbedingungen** einordnen.
+- <span class="content-emoji">🔎</span> offizielle Quellen zu **Mecklenburg-Vorpommern** nutzen.
 
 ---
 
-## 1️⃣ Einstieg: Bildungsbiographie
+## 1. Einstieg: Bildungsbiographie
 
 > [!IMPORTANT]
 > Welche **Erkenntnis** oder **Überraschung** nehmen Sie aus der Beschäftigung mit Ihren **Berufsbiographien** in der Übung am Montag mit?
 
 <ul>
-  <li>📝 Notieren Sie ein Stichwort oder eine Beobachtung.</li>
-  <li class="fragment">👥 Tauschen Sie sich zu zweit aus.</li>
+  <li><span class="content-emoji">📝</span> Notieren Sie ein Stichwort oder eine Beobachtung.</li>
+  <li class="fragment"><span class="content-emoji">👥</span> Tauschen Sie sich zu zweit aus.</li>
   <li class="fragment">📌 Ordnen Sie Ihre Beobachtung auf Taskcards {{< reveal_qr_overlay url="https://www.taskcards.de/#/board/85425d57-2921-4a91-ae4d-1bcff2e6b216/view?token=a1dea74f-04b8-44d1-8d26-a5fd07ad053a" text="" label="Taskcards" id="iwip_reveal_taskcards_qr" >}} ein.</li>
 </ul>
 
 ---
 
-## 👤🏛️ Zwei Perspektiven
+## <span class="content-emoji">👤</span><span class="content-emoji">🏛️</span> Zwei Perspektiven
 
 <div>
 
-**👤 Subjektive Perspektive**
+**<span class="content-emoji">👤</span> Subjektive Perspektive**
 
 - Interessen, Wünsche und Entscheidungen
 - Erfolgserlebnisse und Brüche
@@ -115,7 +115,7 @@ todos: []
 
 <div class="fragment">
 
-**🏛️ Strukturelle Perspektive**
+**<span class="content-emoji">🏛️</span> Strukturelle Perspektive**
 
 - Schularten und Übergänge
 - Abschlüsse und Berechtigungen
@@ -137,16 +137,16 @@ todos: []
 
 ## Trias "Subjekt"
 
-- 🌍 **Gesellschaft:** Werte, Normen, Teilhabe, Ungleichheit
-- 🏫 **Bildungssystem:** Institutionen, Abschlüsse, Übergänge, Förderung
-- 💼 **Arbeitswelt:** Berufe, Qualifikationen, Fachkräftesicherung
+- <span class="content-emoji">🌍</span> **Gesellschaft:** Werte, Normen, Teilhabe, Ungleichheit
+- <span class="content-emoji">🏫</span> **Bildungssystem:** Institutionen, Abschlüsse, Übergänge, Förderung
+- <span class="content-emoji">💼</span> **Arbeitswelt:** Berufe, Qualifikationen, Fachkräftesicherung
 
 <span class="spacer spacer-sm"></span>
 
 <ul>
-  <li class="fragment">💭 Welche Erwartungen richten diese drei Teilsysteme an Individuen?</li>
-  <li class="fragment">🔁 Wo ergänzen sie sich, wo entstehen Spannungen?</li>
-  <li class="fragment">📈 Wie prägen Bildungsabschlüsse spätere Chancen auf dem Arbeitsmarkt?</li>
+  <li class="fragment"><span class="content-emoji">💭</span> Welche Erwartungen richten diese drei Teilsysteme an Individuen?</li>
+  <li class="fragment"><span class="content-emoji">🔁</span> Wo ergänzen sie sich, wo entstehen Spannungen?</li>
+  <li class="fragment"><span class="content-emoji">📈</span> Wie prägen Bildungsabschlüsse spätere Chancen auf dem Arbeitsmarkt?</li>
 </ul>
 
 ---
@@ -154,14 +154,14 @@ todos: []
 ## Zentrale Begriffe
 
 <ul>
-  <li>🌍 <b>Gesellschaft</b>: Rahmen sozialer Ordnung und Kommunikation <span class="zitat-inline">(Luhmann 2017; Habermas 1999)</span></li>
-  <li class="fragment">💼 <b>Arbeit</b>: Vermittlungsinstanz zwischen Individuum und Gesellschaft; strukturiert soziale Rollen und Ungleichheit <span class="zitat-inline">(Offe 1984)</span></li>
-  <li class="fragment">🏫 <b>Bildungssystem</b>: institutionalisiertes Arrangement zur Reproduktion und Transformation von Kompetenzen für gesellschaftliche Arbeit <span class="zitat-inline">(Baethge et al. 2007; Kerschensteiner 2020)</span></li>
+  <li><span class="content-emoji">🌍</span> <b>Gesellschaft</b>: Rahmen sozialer Ordnung und Kommunikation <span class="zitat-inline">(Luhmann 2017; Habermas 1999)</span></li>
+  <li class="fragment"><span class="content-emoji">💼</span> <b>Arbeit</b>: Vermittlungsinstanz zwischen Individuum und Gesellschaft; strukturiert soziale Rollen und Ungleichheit <span class="zitat-inline">(Offe 1984)</span></li>
+  <li class="fragment"><span class="content-emoji">🏫</span> <b>Bildungssystem</b>: institutionalisiertes Arrangement zur Reproduktion und Transformation von Kompetenzen für gesellschaftliche Arbeit <span class="zitat-inline">(Baethge et al. 2007; Kerschensteiner 2020)</span></li>
 </ul>
 
 ---
 
-## 🏛️ Systematischer Aufbau
+## <span class="content-emoji">🏛️</span> Systematischer Aufbau
 
 <span class="spacer spacer-ssm"></span>
 
@@ -173,13 +173,13 @@ todos: []
 
 ---
 
-## 🔄 Zentrale Merkmale
+## <span class="content-emoji">🔄</span> Zentrale Merkmale
 
 <ul>
-  <li>🧭 Das System ist <b>gegliedert</b>.</li>
-  <li class="fragment">🏛️ Es ist <b>föderal organisiert</b>.</li>
-  <li class="fragment">🔁 Es ist prinzipiell <b>durchlässig</b>.</li>
-  <li class="fragment">📜 Es ist <b>zertifikats- und berechtigungsorientiert</b>.</li>
+  <li><span class="content-emoji">🧭</span> Das System ist <b>gegliedert</b>.</li>
+  <li class="fragment"><span class="content-emoji">🏛️</span> Es ist <b>föderal organisiert</b>.</li>
+  <li class="fragment"><span class="content-emoji">🔁</span> Es ist prinzipiell <b>durchlässig</b>.</li>
+  <li class="fragment"><span class="content-emoji">📜</span> Es ist <b>zertifikats- und berechtigungsorientiert</b>.</li>
 </ul>
 
 <div class="fragment">
@@ -191,28 +191,28 @@ todos: []
 
 ---
 
-## ⚖️ Rechtliche Rahmenbedingungen
+## <span class="content-emoji">⚖️</span> Rechtliche Rahmenbedingungen
 
 <ul>
-  <li>⚖️ <b>Art. 7 GG</b>: staatliche Aufsicht über das Schulwesen</li>
-  <li class="fragment">🏛️ <b>Art. 30 und 70 GG</b>: föderale Zuständigkeit der Länder</li>
-  <li class="fragment">📚 <b>SchulG M-V, Teil 4</b>: Schulpflicht in Mecklenburg-Vorpommern</li>
-  <li class="fragment">🛠️ <b>BBiG §§ 2, 3, 4, 71</b>: Lernorte, Anwendungsbereich, Ausbildungsberufe, zuständige Stellen</li>
+  <li><span class="content-emoji">⚖️</span> <b>Art. 7 GG</b>: staatliche Aufsicht über das Schulwesen</li>
+  <li class="fragment"><span class="content-emoji">🏛️</span> <b>Art. 30 und 70 GG</b>: föderale Zuständigkeit der Länder</li>
+  <li class="fragment"><span class="content-emoji">📚</span> <b>SchulG M-V, Teil 4</b>: Schulpflicht in Mecklenburg-Vorpommern</li>
+  <li class="fragment"><span class="content-emoji">🛠️</span> <b>BBiG §§ 2, 3, 4, 71</b>: Lernorte, Anwendungsbereich, Ausbildungsberufe, zuständige Stellen</li>
 </ul>
 
 ---
 
-## 🤝 Recht, Bildung, Beruf
+## <span class="content-emoji">🤝</span> Recht, Bildung, Beruf
 
 <ul>
-  <li>🏛️ Das Bildungssystem ist nicht vollständig zentral gesteuert.</li>
-  <li class="fragment">🔁 Es gibt einen gemeinsamen Rahmen und zugleich länderspezifische Ausprägungen.</li>
-  <li class="fragment">🤝 Für die Wirtschaftspädagogik ist die Verbindung von Bildung, Beruf und Recht besonders relevant.</li>
+  <li><span class="content-emoji">🏛️</span> Das Bildungssystem ist nicht vollständig zentral gesteuert.</li>
+  <li class="fragment"><span class="content-emoji">🔁</span> Es gibt einen gemeinsamen Rahmen und zugleich länderspezifische Ausprägungen.</li>
+  <li class="fragment"><span class="content-emoji">🤝</span> Für die Wirtschaftspädagogik ist die Verbindung von Bildung, Beruf und Recht besonders relevant.</li>
 </ul>
 
 ---
 
-## 🔎 Rechercheauftrag MV
+## <span class="content-emoji">🔎</span> Rechercheauftrag MV
 
 Recherchieren Sie in Kleingruppen oder Tandems in **offiziellen Quellen** des Landes Mecklenburg-Vorpommern.
 
@@ -226,34 +226,34 @@ Recherchieren Sie in Kleingruppen oder Tandems in **offiziellen Quellen** des La
 
 ---
 
-## 📌 Ergebnisformat
+## <span class="content-emoji">📌</span> Ergebnisformat
 
 Halten Sie Ihre Ergebnisse fest: Taskcards {{< reveal_qr_overlay url="https://www.taskcards.de/#/board/85425d57-2921-4a91-ae4d-1bcff2e6b216/view?token=a1dea74f-04b8-44d1-8d26-a5fd07ad053a" text="" label="Taskcards" id="iwip_reveal_taskcards_qr" >}}
 
 <ul>
-  <li>📍 in wenigen Stichpunkten</li>
-  <li>🔎 mit mindestens einer offiziellen Quelle</li>
-  <li>⏱️ Bearbeitungszeit: ca. 15 Minuten</li>
+  <li><span class="content-emoji">📍</span> in wenigen Stichpunkten</li>
+  <li><span class="content-emoji">🔎</span> mit mindestens einer offiziellen Quelle</li>
+  <li><span class="content-emoji">⏱️</span> Bearbeitungszeit: ca. 15 Minuten</li>
 </ul>
 
 ---
 
-## 💬 Abschlussdiskussion
+## <span class="content-emoji">💬</span> Abschlussdiskussion
 
 <ul>
-  <li>💭 Welche <b>Einsicht</b> aus dem heutigen Überblick zum deutschen Bildungssystem war für Sie <b>besonders klärend</b> oder <b>überraschend</b>?</li>
-  <li class="fragment">👤🏛️ An welchen Stellen wurde heute besonders deutlich, dass Bildungswege zugleich <b>individuell erlebt</b> und <b>strukturell gerahmt</b> sind?</li>
-  <li class="fragment">⚖️ Welche Rolle spielen <b>Aufbau, Föderalismus und rechtliche Rahmenbedingungen</b> für das Verständnis des Bildungssystems?</li>
-  <li class="fragment">📍 Was zeigen die Beispiele aus Mecklenburg-Vorpommern über <b>Gemeinsamkeiten</b> und <b>landesspezifische Besonderheiten</b> im deutschen Bildungssystem?</li>
+  <li><span class="content-emoji">💭</span> Welche <b>Einsicht</b> aus dem heutigen Überblick zum deutschen Bildungssystem war für Sie <b>besonders klärend</b> oder <b>überraschend</b>?</li>
+  <li class="fragment"><span class="content-emoji">👤</span><span class="content-emoji">🏛️</span> An welchen Stellen wurde heute besonders deutlich, dass Bildungswege zugleich <b>individuell erlebt</b> und <b>strukturell gerahmt</b> sind?</li>
+  <li class="fragment"><span class="content-emoji">⚖️</span> Welche Rolle spielen <b>Aufbau, Föderalismus und rechtliche Rahmenbedingungen</b> für das Verständnis des Bildungssystems?</li>
+  <li class="fragment"><span class="content-emoji">📍</span> Was zeigen die Beispiele aus Mecklenburg-Vorpommern über <b>Gemeinsamkeiten</b> und <b>landesspezifische Besonderheiten</b> im deutschen Bildungssystem?</li>
 </ul>
 
 ---
 
-## 🧭 Sicherung
+## <span class="content-emoji">🧭</span> Sicherung
 
-- 👤 **Subjektive Perspektive:** Wie erleben Menschen Bildungswege?
-- 🏛️ **Strukturelle Perspektive:** Wie ordnet und begrenzt das System diese Wege?
-- 🧭 **Trias:** Wie hängen Gesellschaft, Bildungssystem und Arbeitswelt zusammen?
+- <span class="content-emoji">👤</span> **Subjektive Perspektive:** Wie erleben Menschen Bildungswege?
+- <span class="content-emoji">🏛️</span> **Strukturelle Perspektive:** Wie ordnet und begrenzt das System diese Wege?
+- <span class="content-emoji">🧭</span> **Trias:** Wie hängen Gesellschaft, Bildungssystem und Arbeitswelt zusammen?
 
 ---
 

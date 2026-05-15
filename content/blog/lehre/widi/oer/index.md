@@ -130,7 +130,7 @@ oer:
 
 ---
 
-## 📚 Inhaltsverzeichnis
+## <span class="content-emoji">📚</span> Inhaltsverzeichnis
 
 - [Was sind OER?](#was-sind-oer)
 - [Lizenzen verstehen](#lizenzen-verstehen)
@@ -142,7 +142,7 @@ oer:
 ---
 
 <a id="was-sind-oer"></a>
-## ❓ Was sind OER?
+## <span class="content-emoji">❓</span> Was sind OER?
 
 > [!IMPORTANT]
 > OER = Open Educational Resources = freie Bildungsmaterialien  
@@ -176,7 +176,7 @@ Damit andere Ihre Lehr-Lern-Materialien rechtssicher nutzen können, werden OER 
 > * unter offener Lizenz veröffentlicht
 
 <a id="woher-kommen-oer"></a>
-## 🌍 Woher kommen OER?
+## <span class="content-emoji">🌍</span> Woher kommen OER?
 * Ausgangspunkt vieler OER-Initiativen ist die <a href="https://www.unesco.de/assets/dokumente/Deutsche_UNESCO-Kommission/02_Publikationen/Publikation_Bildungsagenda_2030_Aktionsrahmen.pdf" target="_blank" rel="noopener">Agenda Bildung 2030 (PDF)</a> der UNESCO aus dem Jahr 2015.  
 * Sie verfolgt das Ziel, Bildung weltweit inklusiver, chancengerechter und qualitativ hochwertiger zu gestalten – im Sinne des Nachhaltigkeitsziels 4 („Hochwertige Bildung für alle“).  
 * Auf dieser Grundlage veröffentlichte die Organisation 2019 ihre <a href="https://www.unesco.de/assets/2019_Empfehlung_Open_Educational_Resources.pdf" target="_blank" rel="noopener">Empfehlung zu Open Educational Resources (PDF)</a>. Darin werden OER als zentrales Instrument hervorgehoben, um den offenen Zugang zu Wissen und die gemeinsame Weiterentwicklung von Lernmaterialien weltweit zu fördern.
@@ -188,9 +188,9 @@ Damit andere Ihre Lehr-Lern-Materialien rechtssicher nutzen können, werden OER 
   Diese Maßnahmen dienen der Umsetzung der im Jahr 2022 ausgegebenen <a href="https://www.bmbf.de/SharedDocs/Publikationen/DE/3/691288_OER-Strategie.pdf?__blob=publicationFile&v=5" target="_blank" rel="noopener">OER-Strategie der Bundesregierung (PDF)</a>.
 
 <a id="gesellschaftliche-funktionen-und-herausforderungen-von-oer"></a>
-## 🧭 Gesellschaftliche Funktionen und Herausforderungen von OER
+## <span class="content-emoji">🧭</span> Gesellschaftliche Funktionen und Herausforderungen von OER
 
-### 🤝 Gesellschaftliche Funktionen  
+### <span class="content-emoji">🤝</span> Gesellschaftliche Funktionen  
 - **Kultur des Teilens und Kollaborierens**  
   - OER können Kooperation zwischen Lehrenden, Lernenden und Institutionen begünstigen.  
   - Sie ermöglichen es, Materialien gemeinschaftlich weiterzuentwickeln und zu verbessern.  
@@ -201,7 +201,7 @@ Damit andere Ihre Lehr-Lern-Materialien rechtssicher nutzen können, werden OER 
   - Für offene Lehr- und Lernmaterialien, freie Software und offene Infrastrukturen setzt sich bspw. das <a href="https://buendnis-freie-bildung.de" target="_blank" rel="noopener">Bündnis Freie Bildung</a> ein.  
   - OER kann – abhängig von Rahmenbedingungen und Nutzung – Transparenz, Teilhabe und demokratische Bildung stärken.  
 
-### 🏛️ Politisch-strategische Impulse  
+### <span class="content-emoji">🏛️</span> Politisch-strategische Impulse  
 - **Internationale Beispiele für staatliche Initiativen**  
   - In Ländern wie **Norwegen**, **Polen**, **USA** oder **Kanada** wurden und werden staatliche Strategien beziehungsweise Förderprogramme für OER initiiert.  
   - Diese dienen häufig als Orientierung für nationale oder regionale Ansätze in anderen Bildungssystemen.  
@@ -209,7 +209,7 @@ Damit andere Ihre Lehr-Lern-Materialien rechtssicher nutzen können, werden OER 
   - OER bieten Potenzial, Lehr- und Lernprozesse zu unterstützen: Schulbücher und Materialien lassen sich flexibel mit OER-Inhalten ergänzen oder aktualisieren.  
   - Sie können individualisierte Lernwege und differenzierten Unterricht fördern, sofern sie didaktisch sinnvoll eingebunden werden.
 
-### 🧩 Herausforderungen & Rahmenbedingungen  
+### <span class="content-emoji">🧩</span> Herausforderungen & Rahmenbedingungen  
 
 - **Kompetenzen, Rechtssicherheit und Aufklärung**  
   - Lehrkräfte, Lehrende und Bildungseinrichtungen benötigen rechtliche, technische und didaktische Kompetenzen im Umgang mit OER.  
@@ -224,7 +224,7 @@ Damit andere Ihre Lehr-Lern-Materialien rechtssicher nutzen können, werden OER 
   - Schließlich bedarf es institutioneller Anerkennung und Anreizsysteme, um das Teilen und gemeinsame Weiterentwickeln von Materialien dauerhaft zu fördern.  
 
 <a id="lizenzen-verstehen"></a>
-# 🧾 Lizenzen verstehen
+# <span class="content-emoji">🧾</span> Lizenzen verstehen
 
 Creative Commons Lizenzen regeln, unter welchen Bedingungen ein Werk genutzt, weitergegeben und – je nach Lizenztyp – auch bearbeitet werden darf.  
 Sie kombinieren verschiedene Elemente wie Namensnennung, nicht-kommerzielle Nutzung, Weitergabe unter gleichen Bedingungen oder das Verbot von Bearbeitungen.  
@@ -232,7 +232,7 @@ Jede Lizenzangabe enthält den Lizenztyp, die Versionsnummer und optional eine L
 
 ---
 
-## 🧩 CC – Bedingungen
+## <span class="content-emoji">🧩</span> CC – Bedingungen
 
 Creative Commons (CC) bietet verschiedene **Bausteine**, die kombinierbar sind:
 
@@ -249,7 +249,7 @@ Creative Commons (CC) bietet verschiedene **Bausteine**, die kombinierbar sind:
 
 ---
 
-## 🔤 Lizenzkürzel – Aufbau
+## <span class="content-emoji">🔤</span> Lizenzkürzel – Aufbau
 
 Ein Lizenzkürzel setzt sich aus mehreren Teilen zusammen, z. B.:
 
@@ -266,7 +266,7 @@ Ein Lizenzkürzel setzt sich aus mehreren Teilen zusammen, z. B.:
 
 ---
 
-## 🧪 Beispiele in der Praxis
+## <span class="content-emoji">🧪</span> Beispiele in der Praxis
 
 - **CC BY 4.0** — Namensnennung, internationale Version (weit verbreitet)  
 - **CC BY-NC-ND 4.0** — Namensnennung, nicht-kommerziell, keine Bearbeitung oder Abwandlung  
@@ -279,9 +279,9 @@ Ein Lizenzkürzel setzt sich aus mehreren Teilen zusammen, z. B.:
 ---
 
 <a id="oer-finden-und-einsetzen"></a>
-## 🔎 OER finden und einsetzen
+## <span class="content-emoji">🔎</span> OER finden und einsetzen
 
-### 📍 Wo kann man OER finden?
+### <span class="content-emoji">📍</span> Wo kann man OER finden?
 
 - <a href="https://hubbs.schule/" target="_blank" rel="noopener">HubbS</a>: berufliche Schule
 - <a href="https://mundo.schule/" target="_blank" rel="noopener">MUNDO</a>: Schule  
@@ -292,7 +292,7 @@ Ein Lizenzkürzel setzt sich aus mehreren Teilen zusammen, z. B.:
 
 ---
 
-### ✅ Wie kann ich OER korrekt nutzen?
+### <span class="content-emoji">✅</span> Wie kann ich OER korrekt nutzen?
 
 Beachten Sie bei jeder Nutzung die **TULLU-Regel** für Lizenzhinweise:
 
@@ -312,22 +312,22 @@ Beachten Sie bei jeder Nutzung die **TULLU-Regel** für Lizenzhinweise:
 > **Tipp:** Immer so genau wie möglich zitieren – so bleiben Sie rechtlich auf der sicheren Seite.
 
 <a id="oer-selbst-erstellen"></a>
-## 🛠️ OER selbst erstellen
+## <span class="content-emoji">🛠️</span> OER selbst erstellen
 
-### 1️⃣ Schritt 1: Lizenz auswählen
+### 1. Schritt 1: Lizenz auswählen
 Nutzen Sie den offiziellen <a href="https://creativecommons.org/choose/" target="_blank" rel="noopener"><strong>CC-Lizenzgenerator</strong></a>, um die passende Lizenz festzulegen.  
-➡️ Vorteil: Die Lizenz wird **maschinenlesbar**, sodass Ihr Material besser auffindbar ist.
+<span class="content-emoji">➡️</span> Vorteil: Die Lizenz wird **maschinenlesbar**, sodass Ihr Material besser auffindbar ist.
 
 ---
 
-### 2️⃣ Schritt 2: Inhalte prüfen
+### 2. Schritt 2: Inhalte prüfen
 Vor der Veröffentlichung:
 - Stellen Sie sicher, dass **keine urheberrechtlich geschützten Inhalte** verwendet werden.  
 - Falls doch, **ersetzen Sie diese durch offen lizenzierte Materialien** und ergänzen Sie einen **korrekten Lizenzhinweis**.
 
 ---
 
-### 3️⃣ Schritt 3: Geeignete Formate wählen
+### 3. Schritt 3: Geeignete Formate wählen
 
 <p class="grafic-title">Empfohlene Formate für OER</p>
 
@@ -340,7 +340,7 @@ Vor der Veröffentlichung:
 
 ---
 
-### 4️⃣ Schritt 4: Arbeitserleichterungen
+### 4. Schritt 4: Arbeitserleichterungen
 
 **Nützliche Tools:**
 - **Klassische Programme zur OER-Erstellung:** Wenn Sie mit klassischen Programmen wie Textverarbeitung oder Präsentationssoftware arbeiten, achten Sie darauf, **keine urheberrechtlich geschützten Designs, Schriftarten oder Vorlagen** zu verwenden. Auch mit diesen Werkzeugen lassen sich OER rechtssicher entwickeln.
@@ -350,7 +350,7 @@ Vor der Veröffentlichung:
 ---
 
 <a id="zusammenfassung"></a>
-## 🧾 Zusammenfassung
+## <span class="content-emoji">🧾</span> Zusammenfassung
 
 Offene Bildungsressourcen (OER) fördern:
 - **gemeinsames und offenes Lehren und Lernen**,  
@@ -358,35 +358,35 @@ Offene Bildungsressourcen (OER) fördern:
 - **Transparenz, Teilhabe und Sichtbarkeit** in Bildung und Wissenschaft.
 
 > [!IMPORTANT]
-> ☝️ Offen teilen heißt, gemeinsam weiterzulernen – mit Respekt vor Urheberrechten.
+> <span class="content-emoji">☝️</span> Offen teilen heißt, gemeinsam weiterzulernen – mit Respekt vor Urheberrechten.
 
-## 🎯 Ziel der Aufgabe
+## <span class="content-emoji">🎯</span> Ziel der Aufgabe
 
 Entwickeln Sie ein eigenes **Open Educational Resource (OER)** basierend auf Ihrer **Ausarbeitung wirtschaftsdidaktischer Themen**.  
 Nutzen Sie ggf. weitere, bestehende OER als Ausgangspunkt und wandeln Sie diese in ein neues, **didaktisch sinnvolles Lehrmaterial** um.
 
 <a id="zielsetzung"></a>
-## 🌟 Zielsetzung
+## <span class="content-emoji">🌟</span> Zielsetzung
 
 Das Ziel ist es, ein **praxisnahes Beispiel** zu erstellen, das zeigt, wie aus Ihren Vorarbeiten und vorhandenem OER-Material ein neues OER entstehen kann.
 
 <a id="selbst-tätig-werden"></a>
-## ✅ Selbst tätig werden
+## <span class="content-emoji">✅</span> Selbst tätig werden
 
-### 1️⃣ Rekapitulation Ihres Themas
+### 1. Rekapitulation Ihres Themas
 
 Führen Sie sich Ihr Thema und Ihre Ausarbeitung vor Augen und reflektieren Sie, welche Erkenntnisse wir zur Einordnung des Themas sowie zur Gestaltung Ihrer Zusammenfassung diskutiert haben.
 
 ---
 
-### 2️⃣ Recherche von bestehenden OERs
+### 2. Recherche von bestehenden OERs
 
 Recherchieren Sie vorhandene **OER-Materialien**, die Sie als Ausgangsbasis nutzen können.  
 Nutzen Sie die o. g. [Plattformen](#oer-finden-und-einsetzen)
 
 ---
 
-### 3️⃣ Erstellung Ihres neuen OER-Materials
+### 3. Erstellung Ihres neuen OER-Materials
 
 Erstellen Sie ein neues Lehrmaterial, z. B.:
 
@@ -401,12 +401,12 @@ Das Material soll:
 - eine **didaktische Zielsetzung** verfolgen  
 - für unsere Lehrveranstaltung einsetzbar sein  
 
-💡 **Hinweis:**  
+<span class="content-emoji">💡</span> **Hinweis:**  
 Achten Sie auf kreative, lernförderliche Gestaltung (Visualisierung, Struktur, Aktivierung der Lernenden).
 
 ---
 
-### 4️⃣ Lizenzierung Ihres OER
+### 4. Lizenzierung Ihres OER
 
 Versehen Sie Ihr Material mit einer korrekten **OER-Lizenz**, z. B.:
 
@@ -414,13 +414,13 @@ Versehen Sie Ihr Material mit einer korrekten **OER-Lizenz**, z. B.:
 - <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>
 
 Nutzen Sie zur Auswahl der passenden Lizenz das Tool:  
-👉 <a href="https://creativecommons.org/choose/" target="_blank" rel="noopener">creativecommons.org/choose</a>
+<span class="content-emoji">👉</span> <a href="https://creativecommons.org/choose/" target="_blank" rel="noopener">creativecommons.org/choose</a>
 
 Begründen Sie Ihre Auswahl.
 
 ---
 
-### 5️⃣ Didaktische Einbindung (Dokumentation)
+### 5. Didaktische Einbindung (Dokumentation)
 
 Beschreiben Sie die **Einbettung Ihres Materials in das Seminar**:
 
@@ -437,16 +437,16 @@ Beschreiben Sie die **Einbettung Ihres Materials in das Seminar**:
 
 ---
 
-### 6️⃣ Abgabe
+### 6. Abgabe
 
 - **Format:** bestenfalls editierbares Format (.pptx, .docx, .odt), ggf. PDF  
 - **Optional:** Bei digitalen Formaten (H5P, Video, interaktives PDF etc.) bitte **Link oder QR-Code** beifügen  
 - **Veröffentlichung:** Stellen Sie Ihr Material auf der **Stud.IP** im Datenbereich bereit.  
 
-🗓 **Abgabefrist:** 17.11.2025  
+<span class="content-emoji">🗓</span> **Abgabefrist:** 17.11.2025  
 
 <a id="gestaltungshinweise"></a>
-## 💡 Gestaltungshinweise
+## <span class="content-emoji">💡</span> Gestaltungshinweise
 
 - Verwenden Sie **ausschließlich Materialien mit offenen Lizenzen**  
 - Geben Sie **alle Quellen korrekt an**  
@@ -454,7 +454,7 @@ Beschreiben Sie die **Einbettung Ihres Materials in das Seminar**:
 - Achten Sie auf **benutzerfreundliche Struktur** und **professionelles Design**
 - Vergeben Sie eine **offene Lizenz**
 
-## 🧮 Bewertungskriterien zur Orientierung
+## <span class="content-emoji">🧮</span> Bewertungskriterien zur Orientierung
 
 <p class="grafic-title">Bewertungskriterien zur Orientierung</p>
 
@@ -469,14 +469,14 @@ Beschreiben Sie die **Einbettung Ihres Materials in das Seminar**:
 
 <p class="bildquelle">Bildquelle: Eigene Darstellung · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
-## 🧭 Andere Zugänge  
+## <span class="content-emoji">🧭</span> Andere Zugänge  
 
-🧗 Sie möchten lieber selbst entdecken, statt lesen? Dann besuchen Sie diesen interaktiven Onlinekurs: Universität Potsdam. (o.&nbsp;J.). *Open Educational Resources – Selbstlernkurs.* <a href="https://openup.uni-potsdam.de/enrol/index.php?id=556" target="_blank" rel="noopener">https://openup.uni-potsdam.de/enrol/index.php?id=556</a>. 
+<span class="content-emoji">🧗</span> Sie möchten lieber selbst entdecken, statt lesen? Dann besuchen Sie diesen interaktiven Onlinekurs: Universität Potsdam. (o.&nbsp;J.). *Open Educational Resources – Selbstlernkurs.* <a href="https://openup.uni-potsdam.de/enrol/index.php?id=556" target="_blank" rel="noopener">https://openup.uni-potsdam.de/enrol/index.php?id=556</a>. 
 
-🎥 Sie schauen gerne Info-Videos? Da finden Sie gute Zusammenfassungen auf OERinfo. (o.&nbsp;J.). *Was ist OER?*. <a href="https://open-educational-resources.de/was-ist-oer-3-2/" target="_blank" rel="noopener">https://open-educational-resources.de/was-ist-oer-3-2/</a>  
+<span class="content-emoji">🎥</span> Sie schauen gerne Info-Videos? Da finden Sie gute Zusammenfassungen auf OERinfo. (o.&nbsp;J.). *Was ist OER?*. <a href="https://open-educational-resources.de/was-ist-oer-3-2/" target="_blank" rel="noopener">https://open-educational-resources.de/was-ist-oer-3-2/</a>  
 
 <a id="quellen--weiterfuehrende-links"></a>
-## 📚 Quellen
+## <span class="content-emoji">📚</span> Quellen
 
 Creative Commons. (o.&nbsp;J.). *Creative Commons – Unlocking the full potential of the internet.* <a href="https://creativecommons.org" target="_blank" rel="noopener noreferrer">https://creativecommons.org</a> (abgerufen am 17.02.2026) 
 

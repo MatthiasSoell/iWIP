@@ -1,8 +1,8 @@
 ---
 title: "Wie finden Menschen ihren Weg in den Beruf?"
 title_reveal: "Wie finden Menschen ihren Weg<br>in den Beruf?<br>"
-emojis: "👥 🧠 ⚠️"
-veranstaltungstyp: "🎓 Vorlesung"
+emojis: '<span class="content-emoji">👥</span> <span class="content-emoji">🧠</span> <span class="content-emoji">⚠️</span>'
+veranstaltungstyp: '<span class="content-emoji">🎓</span> Vorlesung'
 veranstaltung: "'Bildungssysteme im Kontext von Arbeit und Gesellschaft'"
 author: "Prof. Dr. Matthias Söll"
 blog: "/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/"
@@ -53,37 +53,37 @@ todos: []
 
 ---
 
-## 💭 Leitfrage
+## <span class="content-emoji">💭</span> Leitfrage
 
 > [!TIPP]
 > Wie entsteht **Berufswahl** zwischen **subjektiver Passung**, **sozialer Einbettung** und **institutioneller Steuerung**?
 
 ---
 
-## 🧭 Ablauf (90 Min)
+## <span class="content-emoji">🧭</span> Ablauf (90 Min)
 
-1️⃣ Einstieg 👥  
-2️⃣ Begriff & Überblick 🧭  
-3️⃣ Theorien 🧠  
-4️⃣ Berufsorientierung 🔎  
-5️⃣ Matching & Übergangssystem ⚠️
+1. Einstieg <span class="content-emoji">👥</span>  
+2. Begriff & Überblick <span class="content-emoji">🧭</span>  
+3. Theorien <span class="content-emoji">🧠</span>  
+4. Berufsorientierung <span class="content-emoji">🔎</span>  
+5. Matching & Übergangssystem <span class="content-emoji">⚠️</span>
 
 ---
 
-## 🎯 Lernziele
+## <span class="content-emoji">🎯</span> Lernziele
 
 **Sie lernen ...**
 
 <span class="spacer spacer-sm"></span>
 
-- 🧠 Faktoren der **Berufswahl** an Fallbeispielen zu analysieren.
-- 🧭 Berufswahl als **biografischen, sozialen und institutionellen Prozess** einzuordnen.
-- ⚖️ **Super (1990)** und **Wehking (2020)** kontrastiv zu vergleichen.
-- 💬 Möglichkeiten und Grenzen von **Berufsorientierung** zu beurteilen.
+- <span class="content-emoji">🧠</span> Faktoren der **Berufswahl** an Fallbeispielen zu analysieren.
+- <span class="content-emoji">🧭</span> Berufswahl als **biografischen, sozialen und institutionellen Prozess** einzuordnen.
+- <span class="content-emoji">⚖️</span> **Super (1990)** und **Wehking (2020)** kontrastiv zu vergleichen.
+- <span class="content-emoji">💬</span> Möglichkeiten und Grenzen von **Berufsorientierung** zu beurteilen.
 
 ---
 
-## 1️⃣ Erste Schwelle
+## 1. Erste Schwelle
 
 Übergang von **Schule** in **Ausbildung**, **Studium** oder **andere Formen**
 
@@ -96,7 +96,7 @@ todos: []
 
 ---
 
-## 👥 Einstieg über Personas
+## <span class="content-emoji">👥</span> Einstieg über Personas
 
 <figure class="figure-frame figure-frame-sm">
   <img src="/iWIP/blog/lehre/bisy/berufswahl_erste_schwelle/Personas.png" alt="Vier Personas mit unterschiedlichen Wegen der Berufseinmündung an der ersten Schwelle">
@@ -105,32 +105,32 @@ todos: []
 
 ---
 
-## 💬 Arbeitsauftrag
+## <span class="content-emoji">💬</span> Arbeitsauftrag
 
-💬 **Analysieren** Sie Ihre **Persona** zu **zweit**:
+<span class="content-emoji">💬</span> **Analysieren** Sie Ihre **Persona** zu **zweit**:
 
 <ul>
-  <li class="fragment">🧠 Welche <b>biografischen Hinweise</b> deuten auf Interessen, Selbstbilder, Erfahrungen und wahrgenommene Stärken der Person hin?</li>
-  <li class="fragment">👥 Welche <b>sozialen Kontexte</b> und institutionellen Erfahrungen scheinen die Entscheidung mitzuprägen?</li>
-  <li class="fragment">🧭 Welche <b>Erwartungen</b> an Arbeit, Beruf und Zukunft werden sichtbar?</li>
-  <li class="fragment">💡 Wie lässt sich vorläufig <b>erklären</b>, warum diese Einmündung <b>für die Person plausibel</b> oder <b>attraktiv</b> erscheint?</li>
-  <li class="fragment">🎤 Bereiten Sie eine <b>max. 2 Min Vorstellung</b> vor</li>
+  <li class="fragment"><span class="content-emoji">🧠</span> Welche <b>biografischen Hinweise</b> deuten auf Interessen, Selbstbilder, Erfahrungen und wahrgenommene Stärken der Person hin?</li>
+  <li class="fragment"><span class="content-emoji">👥</span> Welche <b>sozialen Kontexte</b> und institutionellen Erfahrungen scheinen die Entscheidung mitzuprägen?</li>
+  <li class="fragment"><span class="content-emoji">🧭</span> Welche <b>Erwartungen</b> an Arbeit, Beruf und Zukunft werden sichtbar?</li>
+  <li class="fragment"><span class="content-emoji">💡</span> Wie lässt sich vorläufig <b>erklären</b>, warum diese Einmündung <b>für die Person plausibel</b> oder <b>attraktiv</b> erscheint?</li>
+  <li class="fragment"><span class="content-emoji">🎤</span> Bereiten Sie eine <b>max. 2 Min Vorstellung</b> vor</li>
 </ul>
 
 ---
 
-## 🧭 Berufswahl systematisiert
+## <span class="content-emoji">🧭</span> Berufswahl systematisiert
 
 <ul>
-  <li>🧩 Berufswahl ist kein Punkt, sondern ein <b>wiederkehrender Lern-, Such- und Entscheidungsprozess</b></li>
-  <li class="fragment">🧮 <b>Entscheidungstheoretische Ansätze</b> rücken den individuellen Entscheidungsprozess ins Zentrum</li>
-  <li class="fragment">🧠 <b>Psychologische Ansätze</b> fragen nach Interessen, Selbstkonzept und Passung</li>
-  <li class="fragment">🏛️ <b>Soziologische Ansätze</b> thematisieren Herkunft, Milieu und ungleiche Chancen</li>
+  <li><span class="content-emoji">🧩</span> Berufswahl ist kein Punkt, sondern ein <b>wiederkehrender Lern-, Such- und Entscheidungsprozess</b></li>
+  <li class="fragment"><span class="content-emoji">🧮</span> <b>Entscheidungstheoretische Ansätze</b> rücken den individuellen Entscheidungsprozess ins Zentrum</li>
+  <li class="fragment"><span class="content-emoji">🧠</span> <b>Psychologische Ansätze</b> fragen nach Interessen, Selbstkonzept und Passung</li>
+  <li class="fragment"><span class="content-emoji">🏛️</span> <b>Soziologische Ansätze</b> thematisieren Herkunft, Milieu und ungleiche Chancen</li>
 </ul>
 
 ---
 
-### 🧠 Berufswahl nach Super (1990)
+### <span class="content-emoji">🧠</span> Berufswahl nach Super (1990)
 
 **Entwicklung des Selbstkonzepts**
 
@@ -143,7 +143,7 @@ todos: []
 
 ---
 
-### 🏛️ Berufswahl nach Wehking (2020)
+### <span class="content-emoji">🏛️</span> Berufswahl nach Wehking (2020)
 
 **Gesellschaftliche Rahmenbedingungen**
 
@@ -156,42 +156,42 @@ todos: []
 
 ---
 
-### ⚖️ Kontrastive Zuspitzung "Berufswahl"
+### <span class="content-emoji">⚖️</span> Kontrastive Zuspitzung "Berufswahl"
 
 <ul>
-  <li>🧠 <b>Super (1990)</b> erklärt gut, warum <b>Berufswahl subjektiv plausibel</b> erscheint.</li>
-  <li class="fragment">🏛️ <b>Wehking (2020)</b> erklärt gut, warum <b>Berufswahl</b> unter <b>ungleichen Bedingungen</b> stattfindet.</li>
+  <li><span class="content-emoji">🧠</span> <b>Super (1990)</b> erklärt gut, warum <b>Berufswahl subjektiv plausibel</b> erscheint.</li>
+  <li class="fragment"><span class="content-emoji">🏛️</span> <b>Wehking (2020)</b> erklärt gut, warum <b>Berufswahl</b> unter <b>ungleichen Bedingungen</b> stattfindet.</li>
 </ul>
 
 <span class="fragment">
 
 > [!TIPP]
-> 🔁 Erst zusammen wird sichtbar: **Berufswahl** ist **weder rein frei noch rein determiniert**.
+> <span class="content-emoji">🔁</span> Erst zusammen wird sichtbar: **Berufswahl** ist **weder rein frei noch rein determiniert**.
 
 </span>
 
 ---
 
-## 🔎 Berufsorientierung
+## <span class="content-emoji">🔎</span> Berufsorientierung
 
 Berufsorientierung unterstützt die **Abstimmung<br>zwischen Person und Berufswelt**.
 
 <ul>
-  <li>🧭 Interessen, Wünsche & Fähigkeiten mit Optionen <b>abgleichen</b></li>
-   <li class="fragment">🪞 Reflexionen werden <b>angeregt</b></li>
-  <li class="fragment">🏫 Maßnahmen in MV: <b>Praxislerntag</b>, <b>Betriebspraktika</b>, <b>Beratung</b>.</li>
+  <li><span class="content-emoji">🧭</span> Interessen, Wünsche & Fähigkeiten mit Optionen <b>abgleichen</b></li>
+   <li class="fragment"><span class="content-emoji">🪞</span> Reflexionen werden <b>angeregt</b></li>
+  <li class="fragment"><span class="content-emoji">🏫</span> Maßnahmen in MV: <b>Praxislerntag</b>, <b>Betriebspraktika</b>, <b>Beratung</b>.</li>
 </ul>
 
 <span class="fragment">
 
 > [!IMPORTANT]
-> ⚠️ Berufsorientierung kann unterstützen, aber ungleiche Startbedingungen nicht einfach aufheben.
+> <span class="content-emoji">⚠️</span> Berufsorientierung kann unterstützen, aber ungleiche Startbedingungen nicht einfach aufheben.
 
 </span>
 
 ---
 
-### ⚠️ Probleme der Berufswahl 🧭 <br>und -orientierung 🔎
+### <span class="content-emoji">⚠️</span> Probleme der Berufswahl <span class="content-emoji">🧭</span> <br>und -orientierung <span class="content-emoji">🔎</span>
 
 <span class="spacer spacer-lg"></span>
 
@@ -200,7 +200,7 @@ Berufsorientierung unterstützt die **Abstimmung<br>zwischen Person und Berufswe
 
 ---
 
-## ⚠️ Matching-Probleme
+## <span class="content-emoji">⚠️</span> Matching-Probleme
 
 **Anteile erfolgloser Marktteilnahmen in den Regionen im Jahr 2024**
 
@@ -213,7 +213,7 @@ Berufsorientierung unterstützt die **Abstimmung<br>zwischen Person und Berufswe
 
 ---
 
-## 🏫 Drei Sektoren
+## <span class="content-emoji">🏫</span> Drei Sektoren
 
   **Verteilung der Neuzugänge auf die 3 Sektoren des beruflichen Ausbildungssystems 2019 bis 2023**
 
@@ -226,7 +226,7 @@ Berufsorientierung unterstützt die **Abstimmung<br>zwischen Person und Berufswe
 
 ---
 
-## ⚠️ Übergangssystem
+## <span class="content-emoji">⚠️</span> Übergangssystem
 
 Das **Übergangssystem** besteht aus Bildungsangeboten,
 > [!QUOTE]
@@ -235,12 +235,12 @@ Das **Übergangssystem** besteht aus Bildungsangeboten,
 
 ---
 
-## ⚠️ Übergangssystem
+## <span class="content-emoji">⚠️</span> Übergangssystem
 
 <ul>
-  <li>🛠️ <b>Unterstützung</b>: Qualifizierung, Orientierung, Nachqualifizierung</li>
-  <li class="fragment">🧮 <b>Sortierung</b>: soziale Ungleichheiten und Selektionsprozesse bündeln sich</li>
-  <li class="fragment">⏳ <b>Warteschleife</b>: Übergänge verzögern sich und bleiben offen</li>
+  <li><span class="content-emoji">🛠️</span> <b>Unterstützung</b>: Qualifizierung, Orientierung, Nachqualifizierung</li>
+  <li class="fragment"><span class="content-emoji">🧮</span> <b>Sortierung</b>: soziale Ungleichheiten und Selektionsprozesse bündeln sich</li>
+  <li class="fragment"><span class="content-emoji">⏳</span> <b>Warteschleife</b>: Übergänge verzögern sich und bleiben offen</li>
 </ul>
 
 <span class="fragment">
@@ -252,7 +252,7 @@ Das **Übergangssystem** besteht aus Bildungsangeboten,
 
 ---
 
-## 💬 Abschlussfrage
+## <span class="content-emoji">💬</span> Abschlussfrage
 
 > [!TIPP]
 > Wie entsteht **Berufswahl** zwischen **subjektiver Passung**, **sozialer Einbettung** und **institutioneller Steuerung**?

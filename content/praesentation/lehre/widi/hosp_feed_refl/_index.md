@@ -1,8 +1,8 @@
 ---
 title: "Hospitation, Feedback & Reflexion"
 title_reveal: "Hospitation, Feedback & Reflexion<br>"
-emojis: "🤔 🕰️ 🧭 🔍"
-veranstaltungstyp: "🎓 Seminar"
+emojis: '<span class="content-emoji">🤔</span> <span class="content-emoji">🕰️</span> <span class="content-emoji">🧭</span> <span class="content-emoji">🔍</span>'
+veranstaltungstyp: '<span class="content-emoji">🎓</span> Seminar'
 veranstaltung: "Grundlagen Fachdidaktik Wirtschaft"
 author: "Prof. Dr. Matthias Söll"
 blog: "/iWIP/blog/widi/hosp_feed_refl"
@@ -77,36 +77,36 @@ todos:
 
 ---
 
-## 🎯 Lehrziele
+## <span class="content-emoji">🎯</span> Lehrziele
 
  Die Studierenden sind in der Lage:
-- Die Zusammenhänge zwischen Reflexion, Hospitation und Feedback in der Veranstaltung zu benennen. <!-- .element: class="fragment" --> ✨
-- Feedback zu geben und zu nehmen (am Beispiel der entwickelten OER-Themenübersichten WiDi). <!-- .element: class="fragment" --> 🔄
+- Die Zusammenhänge zwischen Reflexion, Hospitation und Feedback in der Veranstaltung zu benennen. <!-- .element: class="fragment" --> <span class="content-emoji">✨</span>
+- Feedback zu geben und zu nehmen (am Beispiel der entwickelten OER-Themenübersichten WiDi). <!-- .element: class="fragment" --> <span class="content-emoji">🔄</span>
 
 ---
 
-## 🧭 Ablauf (90 Min)
+## <span class="content-emoji">🧭</span> Ablauf (90 Min)
 
-1️⃣ Einstieg &amp; Aktivierung (5’)<br>
-2️⃣ Hospitation (15’)<br>
-3️⃣ Feedback inkl. Übung (30’)<br>
-4️⃣ Reflexion (25’)<br>
-5️⃣ Ausblick (15’)  
-🕒
+1. Einstieg &amp; Aktivierung (5’)<br>
+2. Hospitation (15’)<br>
+3. Feedback inkl. Übung (30’)<br>
+4. Reflexion (25’)<br>
+5. Ausblick (15’)  
+<span class="content-emoji">🕒</span>
 
 ---
 
-## 1️⃣ Hospitation
+## 1. Hospitation
 
- - Bei einer Hospitation wird Unterricht systematisch beobachtet. 👀
- - Die Beobachtung dient einem bestimmten Zweck, bspw. der Professionalisierung der Beobachter:innen. 🎓
- - Die Hospitation bezieht sich auf spezifische Aspekte des Unterrichts, bspw. auf die Phasierung des Unterrichts, die Darstellung fachlicher Inhalte, Interaktionen zwischen Lehrenden und Lernenden oder den Methoden- bzw. Medieneinsatz. 🧩  
+ - Bei einer Hospitation wird Unterricht systematisch beobachtet. <span class="content-emoji">👀</span>
+ - Die Beobachtung dient einem bestimmten Zweck, bspw. der Professionalisierung der Beobachter:innen. <span class="content-emoji">🎓</span>
+ - Die Hospitation bezieht sich auf spezifische Aspekte des Unterrichts, bspw. auf die Phasierung des Unterrichts, die Darstellung fachlicher Inhalte, Interaktionen zwischen Lehrenden und Lernenden oder den Methoden- bzw. Medieneinsatz. <span class="content-emoji">🧩</span>  
 
 (Köhler & Weiß 2015)
 
 ---
 
-## 1️⃣ Hospitation
+## 1. Hospitation
 
   <img src="/iWIP/bilder/widi/hosp_feed_refl/hospitationsbogen.png" class="figure-frame figure-frame-ssm" alt="Hospitationsbogen">
   
@@ -116,22 +116,22 @@ todos:
 
 ## Feedback: Hintergrund
 
-- **Gegenstand**: individuelle Rückmeldung zur eigenen Leistung 🎯  
-- **Ziel**: Möglichkeit, sich in Zukunft zu verbessern 📈  
-- **Form**: mündlich oder schriftlich ✍️  
-- **Metapher**: Feedback als „Geschenk“ 🎁  
-- **Ansatz**: Wertschätzung zeigen 💛
+- **Gegenstand**: individuelle Rückmeldung zur eigenen Leistung <span class="content-emoji">🎯</span>  
+- **Ziel**: Möglichkeit, sich in Zukunft zu verbessern <span class="content-emoji">📈</span>  
+- **Form**: mündlich oder schriftlich <span class="content-emoji">✍️</span>  
+- **Metapher**: Feedback als „Geschenk“ <span class="content-emoji">🎁</span>  
+- **Ansatz**: Wertschätzung zeigen <span class="content-emoji">💛</span>
 
 ---
 
 ## Feedback: Grundregeln
 
-- **Beobachtetes** konkret beschreiben („auf Folie XY sagtest du … . Das hat auf mich … gewirkt.“) 👀  
-- **Ich-Botschaften** senden („Mir ist aufgefallen, dass du ... . Ich habe wahrgenommen /gesehen / gehört, dass du ... .“) 🗣️  
-- Nur **Veränderbares** zurückmelden 🔧  
-- **Keine Rechtfertigungen**, insbesondere seitens des Feedback-Nehmers 🙅‍♂️  
-- **Keine Bewertungen** („Das war doof“, „das war langweilig“) 🚫  
-- **Keine Vermutungen** („Ich glaube, Du hast Dich … verhalten, weil … .“) 🔍  
+- **Beobachtetes** konkret beschreiben („auf Folie XY sagtest du … . Das hat auf mich … gewirkt.“) <span class="content-emoji">👀</span>  
+- **Ich-Botschaften** senden („Mir ist aufgefallen, dass du ... . Ich habe wahrgenommen /gesehen / gehört, dass du ... .“) <span class="content-emoji">🗣️</span>  
+- Nur **Veränderbares** zurückmelden <span class="content-emoji">🔧</span>  
+- **Keine Rechtfertigungen**, insbesondere seitens des Feedback-Nehmers <span class="content-emoji">🙅‍♂️</span>  
+- **Keine Bewertungen** („Das war doof“, „das war langweilig“) <span class="content-emoji">🚫</span>  
+- **Keine Vermutungen** („Ich glaube, Du hast Dich … verhalten, weil … .“) <span class="content-emoji">🔍</span>  
 
 ---
 
@@ -183,17 +183,17 @@ YouTube: Die Feedbackformel WWW – Mit WWW erfolgreich Feedback geben
 
 ## Reflexion
 
-- Reflexion als spezifische Form des Denkens, die zweckgebunden ist und auf die Analyse und Verbesserung des eigenen Handelns abzielt (vgl. Dewey, 1933) 🧠  
-- Ziel von Reflexion: „[…] das Nachdenken über sich und das eigene Handeln sowie die Konsequenzen, die aus dem Reflektieren einer Situation gezogen werden […].“ (Jahncke et al. 2018, 118) 🎯  
-- Verbindung zwischen Theorie und Praxis: Reflexion vermittelt zwischen Wissen und Handeln 🔗  
+- Reflexion als spezifische Form des Denkens, die zweckgebunden ist und auf die Analyse und Verbesserung des eigenen Handelns abzielt (vgl. Dewey, 1933) <span class="content-emoji">🧠</span>  
+- Ziel von Reflexion: „[…] das Nachdenken über sich und das eigene Handeln sowie die Konsequenzen, die aus dem Reflektieren einer Situation gezogen werden […].“ (Jahncke et al. 2018, 118) <span class="content-emoji">🎯</span>  
+- Verbindung zwischen Theorie und Praxis: Reflexion vermittelt zwischen Wissen und Handeln <span class="content-emoji">🔗</span>  
 
 ---
 
 ## Reflexion
 
 - Reflexion fördert die Professionalisierung von Lehrer:innen durch:
-   - Selbstanalyse und Bewusstwerdung von Handlungen, Überzeugungen, Werthaltungen 🔍  
-   - Verbesserung der Planung, Durchführung und Evaluierung von Unterricht 📊  
+   - Selbstanalyse und Bewusstwerdung von Handlungen, Überzeugungen, Werthaltungen <span class="content-emoji">🔍</span>  
+   - Verbesserung der Planung, Durchführung und Evaluierung von Unterricht <span class="content-emoji">📊</span>  
 
 ---
 

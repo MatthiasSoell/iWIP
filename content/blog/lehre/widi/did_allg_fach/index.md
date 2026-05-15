@@ -109,104 +109,104 @@ oer:
 
 ---
 
-# 📚 Gegenstand  
+# <span class="content-emoji">📚</span> Gegenstand  
 
-Ausgangspunkt dieser Lehr-Lern-Einheit ist **Ihr eigenes Verständnis von Didaktik**. 🤔  
-Darauf aufbauend möchte ich didaktische Entscheidungen **nicht nur erklären, sondern erlebbar machen** – und zugleich ein kleines **Kennenlernen** ermöglichen. 👥  
+Ausgangspunkt dieser Lehr-Lern-Einheit ist **Ihr eigenes Verständnis von Didaktik**. <span class="content-emoji">🤔</span>  
+Darauf aufbauend möchte ich didaktische Entscheidungen **nicht nur erklären, sondern erlebbar machen** – und zugleich ein kleines **Kennenlernen** ermöglichen. <span class="content-emoji">👥</span>  
 
-Im weiteren Verlauf werfen wir einen Blick auf die **Entstehungsgeschichte der Didaktik** 🕰️ 
+Im weiteren Verlauf werfen wir einen Blick auf die **Entstehungsgeschichte der Didaktik** <span class="content-emoji">🕰️</span> 
 und unterscheiden zwischen der **Allgemeinen Didaktik** und den **Fachdidaktiken**.  
 
-# 🎯 Lehrziele  
+# <span class="content-emoji">🎯</span> Lehrziele  
 
 In dieser Lehr-Lern-Einheit entwickeln Sie ein grundlegendes **Verständnis von Didaktik** und deren **wissenschaftliche Fundamente**.  
 
 Sie lernen, …
 
-- 🤔 das **eigene Verständnis von Didaktik** zu reflektieren und in Beziehung zu unterschiedlichen didaktischen Perspektiven zu setzen.  
-- 🕰️ die **Entstehungsgeschichte der Didaktik** nachzuvollziehen und zentrale Entwicklungslinien zu skizzieren.  
-- 🧭 zwischen **Allgemeiner Didaktik** und **Fachdidaktiken** zu unterscheiden und deren jeweilige Funktionen zu beschreiben.  
-- 🔍 zentrale **Begriffe, Ziele und Prinzipien didaktischen Handelns** zu erklären und in eigene Überlegungen zu integrieren.  
+- <span class="content-emoji">🤔</span> das **eigene Verständnis von Didaktik** zu reflektieren und in Beziehung zu unterschiedlichen didaktischen Perspektiven zu setzen.  
+- <span class="content-emoji">🕰️</span> die **Entstehungsgeschichte der Didaktik** nachzuvollziehen und zentrale Entwicklungslinien zu skizzieren.  
+- <span class="content-emoji">🧭</span> zwischen **Allgemeiner Didaktik** und **Fachdidaktiken** zu unterscheiden und deren jeweilige Funktionen zu beschreiben.  
+- <span class="content-emoji">🔍</span> zentrale **Begriffe, Ziele und Prinzipien didaktischen Handelns** zu erklären und in eigene Überlegungen zu integrieren.  
 
 
 > [!TIPP]
-> 💡 *Ziel ist es, ein reflektiertes Verständnis von Didaktik als Grundlage professionellen pädagogischen Handelns zu entwickeln.*
+> <span class="content-emoji">💡</span> *Ziel ist es, ein reflektiertes Verständnis von Didaktik als Grundlage professionellen pädagogischen Handelns zu entwickeln.*
 
 ---
 
-# 🧭 Aufbau & Ablauf  
+# <span class="content-emoji">🧭</span> Aufbau & Ablauf  
 
 Die Lehr-Lern-Einheit ist so gestaltet, dass Sie **Didaktik nicht nur theoretisch kennenlernen, sondern auch praktisch erfahren**.  
 
-**Gesamtdauer:** ca. 90 Minuten ⏱️
+**Gesamtdauer:** ca. 90 Minuten <span class="content-emoji">⏱️</span>
 
 <div class="agenda">
 
 | Phase | Inhalt | Ziel | Zeit |
 |:------|:--------|:------|:------:|
-| **1️⃣ Einstieg 🤔** | Individuelle Reflexion: *Was verstehe ich unter Didaktik?* | Aktivierung des Vorwissens und gemeinsame Begriffsklärung | ⏱️ 20 Min |
-| **2️⃣ Historischer Überblick 🕰️** | Entwicklungs­linien der Didaktik von Comenius bis Klafki | Verständnis zentraler Denkmodelle und Begriffstraditionen | ⏱️ 15 Min |
-| **3️⃣ Allgemeine Didaktik 🧭** | Vergleich theoretischer Ansätze und ihrer Funktionen | Abgrenzung und Verknüpfung beider Perspektiven | ⏱️ 15 Min |
-| **4️⃣ Fachdidaktik 🎓** | Übertragung didaktischer Prinzipien auf spezifische Fachkontexte | Erkennen der Besonderheiten und Funktionen fachdidaktischer Ansätze | ⏱️ 25 Min |
-| **5️⃣ Reflexion & Ausblick 💬** | Gemeinsame Diskussion und persönliche Standortbestimmung | Transfer auf das eigene Lehrverständnis | ⏱️ 15 Min |
+| **1. Einstieg <span class="content-emoji">🤔</span>** | Individuelle Reflexion: *Was verstehe ich unter Didaktik?* | Aktivierung des Vorwissens und gemeinsame Begriffsklärung | <span class="content-emoji">⏱️</span> 20 Min |
+| **2. Historischer Überblick <span class="content-emoji">🕰️</span>** | Entwicklungs­linien der Didaktik von Comenius bis Klafki | Verständnis zentraler Denkmodelle und Begriffstraditionen | <span class="content-emoji">⏱️</span> 15 Min |
+| **3. Allgemeine Didaktik <span class="content-emoji">🧭</span>** | Vergleich theoretischer Ansätze und ihrer Funktionen | Abgrenzung und Verknüpfung beider Perspektiven | <span class="content-emoji">⏱️</span> 15 Min |
+| **4. Fachdidaktik <span class="content-emoji">🎓</span>** | Übertragung didaktischer Prinzipien auf spezifische Fachkontexte | Erkennen der Besonderheiten und Funktionen fachdidaktischer Ansätze | <span class="content-emoji">⏱️</span> 25 Min |
+| **5. Reflexion & Ausblick <span class="content-emoji">💬</span>** | Gemeinsame Diskussion und persönliche Standortbestimmung | Transfer auf das eigene Lehrverständnis | <span class="content-emoji">⏱️</span> 15 Min |
 
 </div>
 
 ---
 
-# 1️⃣ Einstieg 🤔  
+# 1. Einstieg <span class="content-emoji">🤔</span>  
 
 Wahrscheinlich haben Sie bisher einen großen Teil Ihres Lebens in **Bildungseinrichtungen** verbracht – von der **KiTa** über die **Schule** bis zur **Universität**.  
 
 Dort haben **Erzieher:innen** und **Lehrkräfte** Ihren Alltag geprägt. Vielleicht haben Sie selbst schon **Lehr-Lern-Arrangements** gestaltet – etwa als **Trainer:in**, **Tutor:in** oder **Nachhilfelehrer:in**?  
 
-➡️ Sie verfügen also bereits über ein **eigenes Verständnis von Didaktik**.  
+<span class="content-emoji">➡️</span> Sie verfügen also bereits über ein **eigenes Verständnis von Didaktik**.  
 
 ---
 
-## 🧠 **Arbeitsauftrag**
+## <span class="content-emoji">🧠</span> **Arbeitsauftrag**
 
-Schreiben Sie Ihr Verständnis von **Didaktik** in **maximal zwei Sätzen** auf eine **Moderationskarte**. ✏️  
+Schreiben Sie Ihr Verständnis von **Didaktik** in **maximal zwei Sätzen** auf eine **Moderationskarte**. <span class="content-emoji">✏️</span>  
 
 Anschließend besprechen wir im Seminar, **welche Unterschiede und Gemeinsamkeiten** sich zeigen.  
 
-Darauf aufbauend reflektieren wir gemeinsam das **eigene Didaktikverständnis**. 💬  
+Darauf aufbauend reflektieren wir gemeinsam das **eigene Didaktikverständnis**. <span class="content-emoji">💬</span>  
 
-⏱️ *Bearbeitungszeit: ca. 15 Minuten (inkl. Austausch im Plenum)*
+<span class="content-emoji">⏱️</span> *Bearbeitungszeit: ca. 15 Minuten (inkl. Austausch im Plenum)*
 
 ---
 
 <details>
-<summary>🔽 <span>Hinweis für asynchron Teilnehmende</span> 🌍</summary>
+<summary><span class="content-emoji">🔽</span> <span>Hinweis für asynchron Teilnehmende</span> <span class="content-emoji">🌍</span></summary>
 
 Wenn Sie **nicht live am Seminar teilnehmen**, können Sie die Aufgabe digital bearbeiten:
 
 1. Schreiben Sie Ihre zwei Sätze z. B. in ein Dokument auf  
-   👉 <a href="https://cryptpad.fr/doc/" target="_blank" rel="noopener noreferrer">KryptPad – datenschutzfreundlicher Online-Editor</a>  
+   <span class="content-emoji">👉</span> <a href="https://cryptpad.fr/doc/" target="_blank" rel="noopener noreferrer">KryptPad – datenschutzfreundlicher Online-Editor</a>  
 2. Führen Sie anschließend ein kurzes Gespräch mit einer **KI Ihrer Wahl** (z. B. ChatGPT, Claude o. Ä.) über Ihr Verständnis von Didaktik.  
 
-💡 **Prompt-Vorschlag:**  
+<span class="content-emoji">💡</span> **Prompt-Vorschlag:**  
 > [!TIPP]
 > „Ich möchte mein Verständnis von Didaktik reflektieren. Bitte erläutere, welche zentralen Dimensionen und Perspektiven typischerweise in einem Didaktikverständnis enthalten sind, und gib mir anschließend 2–3 Anregungen, wie ich mein eigenes Verständnis erweitern oder präzisieren könnte.“  
 
-Notieren Sie anschließend Ihre wichtigsten Einsichten und vergleichen Sie sie mit Ihrer ursprünglichen Formulierung. 🔍  
+Notieren Sie anschließend Ihre wichtigsten Einsichten und vergleichen Sie sie mit Ihrer ursprünglichen Formulierung. <span class="content-emoji">🔍</span>  
 
 </details>
 
 ---
 
-## 👥 Kennenlernen & Aktivierung
+## <span class="content-emoji">👥</span> Kennenlernen & Aktivierung
 
 Um gut miteinander arbeiten zu können, möchte ich Sie nun kurz kennenlernen und aktivieren – und dabei erfahren, **welche Vorstellungen Sie mit Didaktik verbinden.**  
 
-Bitte **schieben Sie die Tische zur Seite** und bilden Sie gemeinsam einen **Stuhlhalbkreis.** 🪑  
+Bitte **schieben Sie die Tische zur Seite** und bilden Sie gemeinsam einen **Stuhlhalbkreis.** <span class="content-emoji">🪑</span>  
 
-Werfen Sie anschließend den Ball 🎾 einer Person zu. Wer ihn fängt, stellt sich kurz **namentlich vor** und **vervollständigt den Satz**:
+Werfen Sie anschließend den Ball <span class="content-emoji">🎾</span> einer Person zu. Wer ihn fängt, stellt sich kurz **namentlich vor** und **vervollständigt den Satz**:
 
 > [!TIPP]
-> **„Didaktik bedeutet für mich …“** 💬
+> **„Didaktik bedeutet für mich …“** <span class="content-emoji">💬</span>
 
-🪞 **Reflexion**
+<span class="content-emoji">🪞</span> **Reflexion**
 
 Anschließend besprechen wir kurz gemeinsam:
 
@@ -218,7 +218,7 @@ Anschließend besprechen wir kurz gemeinsam:
 ---
 
 <details>
-<summary>🔽 <span>Unsere Beobachtungen</span> 🔎</summary>
+<summary><span class="content-emoji">🔽</span> <span>Unsere Beobachtungen</span> <span class="content-emoji">🔎</span></summary>
 
 <p>Wir haben unser Seminar im klassischen Setup mit Tischreihen begonnen:</p>
 
@@ -240,22 +240,22 @@ Im Zuge der Vorbereitung der Vorstellungsrunde haben wir auf einen Stuhlkreis um
 
 <p class="bildquelle">Bildquelle: Matthias Söll · Lizenz: nicht frei verwendbar</p>
 
-Wir stellten fest, dass die Sitzordnung in **Tischreihen** zunächst vertraut und strukturiert wirkt, zugleich jedoch **mehr Ablenkung** durch Laptops oder Smartphones ermöglicht. Im **Stuhlkreis** hingegen waren alle Teilnehmenden unmittelbarer präsent, der Blickkontakt intensiver und die **Aufmerksamkeit stärker aufeinander gerichtet**. Die Atmosphäre wirkte offener und dialogischer. Wäre die gleiche Übung an Tischen durchgeführt worden, hätten sich vermutlich schnell **Gruppenstrukturen oder Barrieren** ergeben. Didaktisch lässt sich die Methode als Versuch verstehen, **Lernräume aktiv zu gestalten** und die **soziale Interaktion** bewusst in den Mittelpunkt zu stellen. Häufig genannte Begriffe waren dabei *Inhalte aufbereiten*, *Lehren*, *Methoden* oder *Medien*. 💬  
+Wir stellten fest, dass die Sitzordnung in **Tischreihen** zunächst vertraut und strukturiert wirkt, zugleich jedoch **mehr Ablenkung** durch Laptops oder Smartphones ermöglicht. Im **Stuhlkreis** hingegen waren alle Teilnehmenden unmittelbarer präsent, der Blickkontakt intensiver und die **Aufmerksamkeit stärker aufeinander gerichtet**. Die Atmosphäre wirkte offener und dialogischer. Wäre die gleiche Übung an Tischen durchgeführt worden, hätten sich vermutlich schnell **Gruppenstrukturen oder Barrieren** ergeben. Didaktisch lässt sich die Methode als Versuch verstehen, **Lernräume aktiv zu gestalten** und die **soziale Interaktion** bewusst in den Mittelpunkt zu stellen. Häufig genannte Begriffe waren dabei *Inhalte aufbereiten*, *Lehren*, *Methoden* oder *Medien*. <span class="content-emoji">💬</span>  
 </details>
 
 ---
 
-# 2️⃣ Historischer Überblick 🕰️
+# 2. Historischer Überblick <span class="content-emoji">🕰️</span>
 
-## 🖼️ Unterricht im Wandel  
+## <span class="content-emoji">🖼️</span> Unterricht im Wandel  
 
 Betrachten Sie die folgenden Bilder von **Unterrichtssituationen** aus unterschiedlichen Zeiten.  
 
-Was fällt Ihnen in Bezug auf die **Aktivitäten der Lernenden und Lehrenden** sowie die **Sitzordnung** auf? 🤔  
+Was fällt Ihnen in Bezug auf die **Aktivitäten der Lernenden und Lehrenden** sowie die **Sitzordnung** auf? <span class="content-emoji">🤔</span>  
 
 ---
 
-### 📸 Klassenzimmer 1934  
+### <span class="content-emoji">📸</span> Klassenzimmer 1934  
 
 Auf folgendem Foto ist ein Klassenzimmer aus dem Jahr 1934 zu sehen. Es zeigt eine typische Unterrichtssituation der damaligen Zeit.
 
@@ -270,7 +270,7 @@ Auf folgendem Foto ist ein Klassenzimmer aus dem Jahr 1934 zu sehen. Es zeigt ei
 
 ---
 
-### 📸 Klassenzimmer heute  
+### <span class="content-emoji">📸</span> Klassenzimmer heute  
 
 Dieses Foto zeigt eine aktuelle Unterrichtssituation in einem modernen Klassenzimmer. Es verdeutlicht die Veränderungen in der Gestaltung von Lernräumen und Interaktionen zwischen Lehrenden und Lernenden.
 
@@ -286,28 +286,28 @@ Dieses Foto zeigt eine aktuelle Unterrichtssituation in einem modernen Klassenzi
 ---
 
 <details>
-<summary>🔽 <span>Hinweis für asynchron Teilnehmende</span> 🌍</summary>
+<summary><span class="content-emoji">🔽</span> <span>Hinweis für asynchron Teilnehmende</span> <span class="content-emoji">🌍</span></summary>
 
 Wenn Sie **nicht live am Seminar teilnehmen**, können Sie die Aufgabe digital bearbeiten:
 
 1. Schreiben Sie Ihre Beobachtungen und Eindrücke z. B. in ein Dokument auf  
-   👉 <a href="https://cryptpad.fr/doc/" target="_blank" rel="noopener noreferrer">KryptPad – datenschutzfreundlicher Online-Editor</a>  
+   <span class="content-emoji">👉</span> <a href="https://cryptpad.fr/doc/" target="_blank" rel="noopener noreferrer">KryptPad – datenschutzfreundlicher Online-Editor</a>  
 
 2. Führen Sie anschließend ein kurzes Gespräch mit einer **KI Ihrer Wahl** (z. B. ChatGPT, Claude o. Ä.) über die Unterschiede und Veränderungen zwischen den beiden Unterrichtssituationen.  
 
-💡 **Prompt-Vorschlag:**  
+<span class="content-emoji">💡</span> **Prompt-Vorschlag:**  
 > [!TIPP]
 > „Ich betrachte zwei Unterrichtsbilder auf der Seite <a href="https://matthiassoell.github.io/iWIP/" target="_blank" rel="noopener noreferrer">SciBlog iWIP</a> im Beitrag *Unterricht im Wandel*. Bitte hilf mir, die Unterschiede in Lehr- und Lernaktivitäten, Raumgestaltung und Lehrerrolle herauszuarbeiten. Erläutere, wie sich diese Beobachtungen im historischen Kontext der Didaktik deuten lassen.“  
 
 Notieren Sie anschließend Ihre wichtigsten Erkenntnisse und überlegen Sie,  
-was diese Beobachtungen über den **Wandel von Unterricht** aussagen. 🔍  
+was diese Beobachtungen über den **Wandel von Unterricht** aussagen. <span class="content-emoji">🔍</span>  
 
 </details>
 
 ---
 
 <details>
-<summary>🔽 <span>Mögliche Beobachtungen</span> 🔎</summary>
+<summary><span class="content-emoji">🔽</span> <span>Mögliche Beobachtungen</span> <span class="content-emoji">🔎</span></summary>
 
 **Klassenzimmer 1934:**  
 Im ersten Bild sitzen die Schüler:innen auf Bänken und schauen in die Kamera. Die Sitzhaltungen sind eher angespannt, die Gesichter ernst. Die Lehrerin sitzt in erhobener Position und beobachtet die Klasse mit wohlwollend-ernster Miene.  
@@ -325,28 +325,28 @@ Dennoch zeigen die Bilder exemplarisch, dass **Unterricht immer zeitgebunden** i
 
 ---
 
-Im Folgenden betrachten wir einige **gesellschaftliche Entwicklungen** und die **wissenschaftlichen Erkenntnisse**, die aus der Zeitgebundenheit von Unterricht hervorgegangen sind. 🕰️
+Im Folgenden betrachten wir einige **gesellschaftliche Entwicklungen** und die **wissenschaftlichen Erkenntnisse**, die aus der Zeitgebundenheit von Unterricht hervorgegangen sind. <span class="content-emoji">🕰️</span>
 
-## 🕰️ Geschichte der Pädagogik  
+## <span class="content-emoji">🕰️</span> Geschichte der Pädagogik  
 
 <a href="#-literatur">Koerrenz et al. (2017)</a> skizzieren die Geschichte der Pädagogik anhand der folgenden Etappen:
 
-- 🏛️ **Antike (bis 313)** – Von Mykene bis Kaiser Konstantin  
-- ⛪ **Mittelalter (313–1492)** – Von Kaiser Konstantin bis Christoph Kolumbus  
-- 🌍 **Frühe Neuzeit I (1492–1689)** – Von Christoph Kolumbus bis zu Bill of Rights. 
-- 💡 **Frühe Neuzeit II (1689–1789)** – Von Bill of Rights bis Französische Revolution  
-- ⚙️ **Moderne I (1789–1920)** – Von der Französischen Revolution bis zum Völkerbund  
-- ⚔️ **Moderne II (1920–1945)** – Vom Völkerbund bis zur Gründung der UNO  
-- 🌐 **Moderne III (1945–1992)** – Von der UNO bis zum Weltgipfel in Rio de Janeiro  
+- <span class="content-emoji">🏛️</span> **Antike (bis 313)** – Von Mykene bis Kaiser Konstantin  
+- <span class="content-emoji">⛪</span> **Mittelalter (313–1492)** – Von Kaiser Konstantin bis Christoph Kolumbus  
+- <span class="content-emoji">🌍</span> **Frühe Neuzeit I (1492–1689)** – Von Christoph Kolumbus bis zu Bill of Rights. 
+- <span class="content-emoji">💡</span> **Frühe Neuzeit II (1689–1789)** – Von Bill of Rights bis Französische Revolution  
+- <span class="content-emoji">⚙️</span> **Moderne I (1789–1920)** – Von der Französischen Revolution bis zum Völkerbund  
+- <span class="content-emoji">⚔️</span> **Moderne II (1920–1945)** – Vom Völkerbund bis zur Gründung der UNO  
+- <span class="content-emoji">🌐</span> **Moderne III (1945–1992)** – Von der UNO bis zum Weltgipfel in Rio de Janeiro  
 
 Eine anschauliche Visualisierung bietet der Blog <a href="https://www.smarterlernen.at/geschichte-der-bildung/" target="_blank" rel="noopener noreferrer">smarterlernen.at</a>, betrieben von einem österreichischen Bildungsunternehmen.  
 
 > [!TIPP]
-> 💬 Die Gliederung macht deutlich: Bildung ist nie zeitlos, sondern stets Ausdruck der gesellschaftlichen, kulturellen und ökonomischen Bedingungen ihrer Epoche.
+> <span class="content-emoji">💬</span> Die Gliederung macht deutlich: Bildung ist nie zeitlos, sondern stets Ausdruck der gesellschaftlichen, kulturellen und ökonomischen Bedingungen ihrer Epoche.
 
 ---
 
-## 3️⃣ Allgemeine Didaktik 🧭  
+## 3. Allgemeine Didaktik <span class="content-emoji">🧭</span>  
 
 Warum benötigen wir eigentlich *Didaktik* als wissenschaftliche Disziplin?  
 
@@ -361,22 +361,22 @@ Didaktik fragt also danach, **wie Lernprozesse gestaltet werden können**, um Le
 
 In der Übung *Methoden und Medien wirtschaftsberuflichen Handelns* haben Sie bereits Kriterien für guten Unterricht kennengelernt.  
 
-Besonders bekannt sind die **10 Merkmale guten Unterrichts** von <a href="#-literatur">Hilbert Meyer (2014)</a>. 🎥 <a href="https://www.youtube.com/watch?v=_4kPq5vhEHc" target="_blank" rel="noopener noreferrer">YouTube: Dr. Hilbert Meyer – Was guten Unterricht ausmacht</a>
+Besonders bekannt sind die **10 Merkmale guten Unterrichts** von <a href="#-literatur">Hilbert Meyer (2014)</a>. <span class="content-emoji">🎥</span> <a href="https://www.youtube.com/watch?v=_4kPq5vhEHc" target="_blank" rel="noopener noreferrer">YouTube: Dr. Hilbert Meyer – Was guten Unterricht ausmacht</a>
 
 ---
 
-### 📘 Kennzeichen der Allgemeinen Didaktik  
+### <span class="content-emoji">📘</span> Kennzeichen der Allgemeinen Didaktik  
 
 - Entstehungszeit: beginnende Aufklärung (ca. 1700, *Didactica Magna* von Comenius)  
 - Ab 1960er-Jahren: Etablierung als wissenschaftliche Disziplin  
-- Bedeutendster Vertreter: **Wolfgang Klafki** (Kategoriale Bildung, Didaktische Analyse, Allgemeinbildung, kritisch-konstruktive Didaktik) 🎓  
+- Bedeutendster Vertreter: **Wolfgang Klafki** (Kategoriale Bildung, Didaktische Analyse, Allgemeinbildung, kritisch-konstruktive Didaktik) <span class="content-emoji">🎓</span>  
 - Bezugsdisziplinen u. a.: Anthropologie, Psychologie, Philosophie, Soziologie, Politikwissenschaft  
 
-➡️ Siehe dazu auch <a href="#-literatur">Arnold & Roßa (2012)</a> und <a href="#-literatur">Jank & Meyer (2014)</a>.
+<span class="content-emoji">➡️</span> Siehe dazu auch <a href="#-literatur">Arnold & Roßa (2012)</a> und <a href="#-literatur">Jank & Meyer (2014)</a>.
 
 ---
 
-## 4️⃣ Fachdidaktik 🎓  
+## 4. Fachdidaktik <span class="content-emoji">🎓</span>  
 
 Warum benötigen wir nun zusätzlich *Fachdidaktiken* als eigene wissenschaftliche Disziplinen?
 
@@ -390,33 +390,33 @@ Warum benötigen wir nun zusätzlich *Fachdidaktiken* als eigene wissenschaftlic
 
 ---
 
-### 📘 Kennzeichen der Fachdidaktiken  
+### <span class="content-emoji">📘</span> Kennzeichen der Fachdidaktiken  
 
 - Entstehungszeit: unterschiedlich, teils parallel zur Entwicklung der Fachwissenschaften (z. B. Wirtschaftsdidaktik um 1900)  
 - Bezugspunkt: einzelne **Fächer oder Berufsfelder**  
 - Fokus: Anwendung allgemeiner didaktischer Prinzipien auf fachliche Inhalte  
 
-➡️ Vgl. dazu <a href="#-literatur">Arnold & Roßa (2012)</a> und <a href="#-literatur">Jank & Meyer (2014)</a>.
+<span class="content-emoji">➡️</span> Vgl. dazu <a href="#-literatur">Arnold & Roßa (2012)</a> und <a href="#-literatur">Jank & Meyer (2014)</a>.
 
 ---
 
-## 5️⃣ Reflexion & Ausblick 💬  
+## 5. Reflexion & Ausblick <span class="content-emoji">💬</span>  
 
 Haben wir unsere Ziele erreicht?  
 
 Sie können nun …  
 
-- 🤔 **Verständnis reflektieren** – eigene Sicht auf Didaktik prüfen.  
-- 🕰️ **Geschichte verstehen** – Entwicklung und Linien kennen.  
-- 🧭 **Disziplinen unterscheiden** – Allgemeine vs. Fachdidaktik.  
-- 🔍 **Handeln begründen** – zentrale Prinzipien integrieren. 
+- <span class="content-emoji">🤔</span> **Verständnis reflektieren** – eigene Sicht auf Didaktik prüfen.  
+- <span class="content-emoji">🕰️</span> **Geschichte verstehen** – Entwicklung und Linien kennen.  
+- <span class="content-emoji">🧭</span> **Disziplinen unterscheiden** – Allgemeine vs. Fachdidaktik.  
+- <span class="content-emoji">🔍</span> **Handeln begründen** – zentrale Prinzipien integrieren. 
 
 > [!TIPP]
-> 💭 *Didaktik bleibt damit keine abgeschlossene Theorie, sondern ein Werkzeug, um Lernen in einer sich wandelnden Welt bewusst zu gestalten.* 🌍  
+> <span class="content-emoji">💭</span> *Didaktik bleibt damit keine abgeschlossene Theorie, sondern ein Werkzeug, um Lernen in einer sich wandelnden Welt bewusst zu gestalten.* <span class="content-emoji">🌍</span>  
 
 ---
 
-# 📚 Literatur  
+# <span class="content-emoji">📚</span> Literatur  
 
 
 Arnold, K.-H., &amp; Roßa, A.-E. (2012). <em>Grundlagen der Allgemeinen Didaktik und der Fachdidaktiken.</em> In M. Kampshoff &amp; C. Wiepke (Hrsg.), <em>Handbuch Geschlechterforschung und Fachdidaktik</em> (S. 11–23). VS Verlag für Sozialwissenschaften. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1651884684" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.1007/978-3-531-18984-0" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/725009000" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>

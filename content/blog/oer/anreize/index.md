@@ -132,9 +132,9 @@ oer:
 
 {{< oer-meta >}}
 
-# 🚀 Einstieg  
+# <span class="content-emoji">🚀</span> Einstieg  
 
-Das Co-WOERK Team hat sich in Frankfurt (Oder) getroffen. Wir starten mit der Frage: **Warum über standort- und zielgruppenspezifische Anreize sprechen?** 🎯  
+Das Co-WOERK Team hat sich in Frankfurt (Oder) getroffen. Wir starten mit der Frage: **Warum über standort- und zielgruppenspezifische Anreize sprechen?** <span class="content-emoji">🎯</span>  
 
 Kurz: OER-Nutzung ist **kein** On/Off-Schalter. Sie entsteht **prozesshaft** – und braucht je nach **Phase** andere Impulse.
 
@@ -163,7 +163,7 @@ Kurz: OER-Nutzung ist **kein** On/Off-Schalter. Sie entsteht **prozesshaft** –
 
 ---
 
-# 🎯 Ziel des Workshops  
+# <span class="content-emoji">🎯</span> Ziel des Workshops  
 
 Wir **klären Begriffe**, **strukturieren** mit Kategorien und Phasen und **übertragen** das Modell auf den eigenen Standort.  
 
@@ -171,7 +171,7 @@ Die **Klammer**: vom **Verstehen** zum **Planen** – und am Ende eine **Mini-Ch
 
 ---
 
-# 💡 Was ist ein Anreiz?  
+# <span class="content-emoji">💡</span> Was ist ein Anreiz?  
 
 > [!TIPP] 
 > Ein Anreiz ist ein verhaltensbeeinflussender <b>Reiz</b>, der als Bindeglied zwischen <b>Motiven</b> (Bedürfnissen) und <b>Motivation</b> (zielgerichtetem <b>Handeln</b>) wirkt. Anreize können innerhalb einer <b>Person</b> (z. B. durch Sinn, Anerkennung oder Zugehörigkeit) oder <b>außerhalb</b> (z. B. durch Ressourcen, Strukturen oder Belohnungen) liegen.
@@ -185,14 +185,14 @@ Die **Klammer**: vom **Verstehen** zum **Planen** – und am Ende eine **Mini-Ch
 <p class="zitat-quelle" style="font-size:.9em;"><a href="#-literatur--hinweise">Organisation internationale de la Francophonie (2016)</a></p>
 
 <p>
-👉 Anreize sollen Studierende, Hochschullehrende, Referendar:innen und Lehrkräfte an beruflichen Schulen dazu motivieren, OER zu entdecken, zu nutzen, zu erstellen und zu teilen.
+<span class="content-emoji">👉</span> Anreize sollen Studierende, Hochschullehrende, Referendar:innen und Lehrkräfte an beruflichen Schulen dazu motivieren, OER zu entdecken, zu nutzen, zu erstellen und zu teilen.
 </p>
 
 <p><b>Übergang:</b> Diese Passung fassen wir <b>systematisch</b> – mit <b>Kategorien</b> (Was für ein Anreiz?) und <b>Phasen</b> (Wann wirkt er?).</p>
 
 ---
 
-# 🧩 Von Anreizen zur Anreizmatrix  
+# <span class="content-emoji">🧩</span> Von Anreizen zur Anreizmatrix  
 
 Grundlage ist das **Adoptionsmodell** nach <a href="#-literatur--hinweise">Hart et al. (2015)</a>:  
 - **Awareness → Interesse → Erwägung → Umsetzung → Integration**.  
@@ -215,11 +215,11 @@ Grundlage ist das **Adoptionsmodell** nach <a href="#-literatur--hinweise">Hart 
 </figure>
 
 > [!IMPORTANT]
-> 👉 Die Matrix verknüpft diese **Phasenlogik** mit **Anreizkategorien** – so werden **Lücken** sichtbar und **Prioritäten** ableitbar.
+> <span class="content-emoji">👉</span> Die Matrix verknüpft diese **Phasenlogik** mit **Anreizkategorien** – so werden **Lücken** sichtbar und **Prioritäten** ableitbar.
 
 ---
 
-# ✨ OER-Anreizkategorien  
+# <span class="content-emoji">✨</span> OER-Anreizkategorien  
 
 Die folgenden **vier Kategorien** zeigen **typische Anreizformen** für die **Nutzung von OER** und ihre jeweilige **Wirkung**:
 
@@ -274,10 +274,10 @@ Die folgenden **vier Kategorien** zeigen **typische Anreizformen** für die **Nu
 
 | Kategorie | Beschreibung | Typische Wirkung |
 |:--|:--|:--|
-| **<span class="keycap">A</span> Immateriell 💡** | Sinn, Anerkennung, **Selbstwirksamkeit**, Zugehörigkeit | 🧠 Zündet **intrinsische Motivation** – besonders in *Awareness/Interesse*. |
-| **<span class="keycap">B</span> Materiell 💰** | Zeitfenster, Tools, **Ressourcen**, kleine Incentives | 🎯 Wirkt **extrinsisch** – trägt durch *Erwägung/Umsetzung*. |
-| **<span class="keycap">C</span> Strukturell 🏛️** | Prozesse, Leitlinien, **Supportpfade**, Rechtssicherheit | ⚙️ Senkt **Hürden** – macht OER zum **Normalfall**. |
-| **<span class="keycap">D</span> Sozial 🤝** | Austausch, Mentoring, **Community-Erleben** | 💬 Stärkt **Zugehörigkeit** – verstärkt alle anderen. |
+| **<span class="keycap">A</span> Immateriell <span class="content-emoji">💡</span>** | Sinn, Anerkennung, **Selbstwirksamkeit**, Zugehörigkeit | <span class="content-emoji">🧠</span> Zündet **intrinsische Motivation** – besonders in *Awareness/Interesse*. |
+| **<span class="keycap">B</span> Materiell <span class="content-emoji">💰</span>** | Zeitfenster, Tools, **Ressourcen**, kleine Incentives | <span class="content-emoji">🎯</span> Wirkt **extrinsisch** – trägt durch *Erwägung/Umsetzung*. |
+| **<span class="keycap">C</span> Strukturell <span class="content-emoji">🏛️</span>** | Prozesse, Leitlinien, **Supportpfade**, Rechtssicherheit | <span class="content-emoji">⚙️</span> Senkt **Hürden** – macht OER zum **Normalfall**. |
+| **<span class="keycap">D</span> Sozial <span class="content-emoji">🤝</span>** | Austausch, Mentoring, **Community-Erleben** | <span class="content-emoji">💬</span> Stärkt **Zugehörigkeit** – verstärkt alle anderen. |
 
 </div>
 
@@ -293,7 +293,7 @@ Je nach **Phase** brauchst du **eine andere Mischung** aus A–D.
 
 ---
 
-# 🧭 Die OER-Anreizmatrix
+# <span class="content-emoji">🧭</span> Die OER-Anreizmatrix
 
 Diese Anreizkategorien können in eine Matrix überfürt werden, welche die **Adoptionsphasen** mit den **Anreizkategorien** verknüpft. So wird sichtbar, welche Anreize in welcher Phase besonders wichtig sind und wo es Lücken gibt.
 
@@ -363,11 +363,11 @@ Diese Anreizkategorien können in eine Matrix überfürt werden, welche die **Ad
 
 || **<span class="keycap">A</span> Immateriell** | **<span class="keycap">B</span> Materiell** | **<span class="keycap">C</span> Strukturell** | **<span class="keycap">D</span> Sozial** |
 |:--|:--|:--|:--|:--|
-1️⃣ **Awareness** |  |  |  |  |  
-2️⃣ **Interesse** |  |  |  |  |  
-3️⃣ **Erwägung** |  |  |  |  |  
-4️⃣ **Umsetzung** |  |  |  |  |  
-5️⃣ **Integration** |  |  |  |  |  
+1. **Awareness** |  |  |  |  |  
+2. **Interesse** |  |  |  |  |  
+3. **Erwägung** |  |  |  |  |  
+4. **Umsetzung** |  |  |  |  |  
+5. **Integration** |  |  |  |  |  
 
 </div>
 
@@ -380,23 +380,23 @@ Diese Anreizkategorien können in eine Matrix überfürt werden, welche die **Ad
 
 ---
 
-# 🧪 Gruppenarbeit (15′ + 30′)  
+# <span class="content-emoji">🧪</span> Gruppenarbeit (15′ + 30′)  
 
 ## 1) **Spezifische Anreize** (15′)  
 
 <ul>
-  <li>👥 Gruppen nach <b>Hochschulstandorten</b> bilden.</li>
-  <li><b>Persona</b> wählen: 👩‍🏫 Professor:in · 🧑‍🔧 Lehrkraft · 🧑‍💻 Service-MA · 👩‍🎓 Referendar:in · 🎓 Studierende:r.</li>
-  <li>Auftrag: <b>Anreize</b> je <b>Adaptionsphase</b> ermitteln (💡 imm. · 💰 mat. · 🏛️ str. · 🤝 soz.).</li>
+  <li><span class="content-emoji">👥</span> Gruppen nach <b>Hochschulstandorten</b> bilden.</li>
+  <li><b>Persona</b> wählen: <span class="content-emoji">👩‍🏫</span> Professor:in · <span class="content-emoji">🧑‍🔧</span> Lehrkraft · <span class="content-emoji">🧑‍💻</span> Service-MA · <span class="content-emoji">👩‍🎓</span> Referendar:in · <span class="content-emoji">🎓</span> Studierende:r.</li>
+  <li>Auftrag: <b>Anreize</b> je <b>Adaptionsphase</b> ermitteln (<span class="content-emoji">💡</span> imm. · <span class="content-emoji">💰</span> mat. · <span class="content-emoji">🏛️</span> str. · <span class="content-emoji">🤝</span> soz.).</li>
   <li>Material: <a href="/iWIP/pdf/oer/anreize/Anreizkategorien.pdf" target="_blank" rel="noopener">Übersicht Anreizkategorien</a> · <a href="/iWIP/pdf/oer/anreize/Anreizbeispiele.pdf" target="_blank" rel="noopener">Anreizbeispiele</a> · <a href="/iWIP/pdf/oer/anreize/Planung_Anreiz.pdf" target="_blank" rel="noopener">Planung Anreize</a>.</li>
 </ul>
 
-❓ **Warum zuerst die Persona?** Weil **Bedürfnisse** und **Barrieren** zielgruppenspezifisch sind. Das schärft die **Passung** deiner Maßnahmen.
+<span class="content-emoji">❓</span> **Warum zuerst die Persona?** Weil **Bedürfnisse** und **Barrieren** zielgruppenspezifisch sind. Das schärft die **Passung** deiner Maßnahmen.
 
 ## 2) **Plan: Werkstatttag** (30′)  
 
 <ul>
-  <li>🛠️ Auftrag: Kleingruppen <b>konzipieren</b> einen passenden Werkstatttag.</li>
+  <li><span class="content-emoji">🛠️</span> Auftrag: Kleingruppen <b>konzipieren</b> einen passenden Werkstatttag.</li>
   <li>
     Leitfragen:
     <ul>
@@ -407,16 +407,16 @@ Diese Anreizkategorien können in eine Matrix überfürt werden, welche die **Ad
       <li>Wie könnte die <b>Einladung</b> formuliert sein?</li>
     </ul>
   </li>
-  <li>📄 Material: Vorlage „Planung Werkstatttag“</b>.</li>
-  <li>🛗 Präsentation: Nutzt für Eure Ergebnisse einen <b>Elevator-Pitch</b> (🔄 Was passt zu meinem Standort? Was würde ich adaptieren?).</li>
-  <li>🎯 Ziel: <b>Formatkonzept</b>, das eure Zielgruppe wirklich erreicht – von der Idee bis zur Einladung.</li>
+  <li><span class="content-emoji">📄</span> Material: Vorlage „Planung Werkstatttag“</b>.</li>
+  <li><span class="content-emoji">🛗</span> Präsentation: Nutzt für Eure Ergebnisse einen <b>Elevator-Pitch</b> (<span class="content-emoji">🔄</span> Was passt zu meinem Standort? Was würde ich adaptieren?).</li>
+  <li><span class="content-emoji">🎯</span> Ziel: <b>Formatkonzept</b>, das eure Zielgruppe wirklich erreicht – von der Idee bis zur Einladung.</li>
 </ul>
 
 **Brücke zur Matrix:** Überführt eure **Anreize** in **Formate/Prozesse** (B/C) und stärkt sie **sozial** (D) und **immateriell** (A) durch gutes Storytelling.
 
 ---
 
-# 🔄 Abschluss & Transfer (Mini-Checkliste)  
+# <span class="content-emoji">🔄</span> Abschluss & Transfer (Mini-Checkliste)  
 
 <ul>
   <li>Welche <b>drei Schritte</b> gehen wir bis <b>Januar</b>?</li>
@@ -424,20 +424,20 @@ Diese Anreizkategorien können in eine Matrix überfürt werden, welche die **Ad
 </ul>
 
 <p class="hinweis-box" style="font-size:.9em;">
-🌍 <b>Community im Blick:</b> Wirksam wird’s dort, wo Standorte ihre <b>eigenen Communities</b> verstehen –  
+<span class="content-emoji">🌍</span> <b>Community im Blick:</b> Wirksam wird’s dort, wo Standorte ihre <b>eigenen Communities</b> verstehen –  
 und Anreize in deren <b>Sprache, Kultur, Struktur</b> formulieren.
 </p>
 
 ---
 
-# 💡 Zentrale Erkenntnis  
+# <span class="content-emoji">💡</span> Zentrale Erkenntnis  
 
 > [!TIPP] 
 > **Kein Anreiz wirkt überall gleich.** Entscheidend ist der **Kontext** (Phase × Zielgruppe × Rahmenbedingungen). Die Matrix verbindet **Denken** (Analysieren) und **Handeln** (Planen) – und macht Fortschritt **sichtbar**.
 
 ---
 
-## 📚 Literatur & Hinweise  
+## <span class="content-emoji">📚</span> Literatur & Hinweise  
 
 
  Hart, K. de, Chetty, Y. &amp; Archer, E. (2015). <em>Uptake of OER by staff in distance education in South Africa.</em><em>International Review of Research in Open and Distributed Learning, 16</em>(2), 18–45. <a href="https://www.irrodl.org/index.php/irrodl/article/view/2047/3272" target="_blank" rel="noopener">https://www.irrodl.org/index.php/irrodl/article/view/2047/3272</a> (abgerufen am 18.02.2026) <a class="lit-worldcat" href="https://search.worldcat.org/de/title/5867419439" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>

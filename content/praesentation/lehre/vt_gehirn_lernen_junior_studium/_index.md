@@ -1,8 +1,8 @@
 ---
 title: "Dein Gehirn ist keine Festplatte – Wie Du Dein Lernen boostern kannst"
 title_reveal: "Dein Gehirn ist keine Festplatte – <br>Wie Du Dein Lernen boostern kannst"
-emojis: "🧠 🎯 🌱"
-veranstaltungstyp: "🎓 Juniorstudium"
+emojis: '<span class="content-emoji">🧠</span> <span class="content-emoji">🎯</span> <span class="content-emoji">🌱</span>'
+veranstaltungstyp: '<span class="content-emoji">🎓</span> Juniorstudium'
 veranstaltung: ""
 author: "Prof. Dr. Matthias Söll"
 blog: "/iWIP/blog/lehre/vt_gehirn_lernen_junior_studium"
@@ -52,7 +52,7 @@ todos: []
 
 ---
 
-## 💭 Leitfrage
+## <span class="content-emoji">💭</span> Leitfrage
 
 > [!TIPP]
 > Wie kannst Du so lernen, dass es zu Dir, Deinen Zielen  
@@ -60,16 +60,16 @@ todos: []
 
 ---
 
-## 🧭 Ablauf
+## <span class="content-emoji">🧭</span> Ablauf
 
-1️⃣ Einstieg 🎯  
-2️⃣ Lernen verstehen 🧠  
-3️⃣ Lernen boostern 🧗  
-4️⃣ Ausblick 🔭  
+1. Einstieg <span class="content-emoji">🎯</span>  
+2. Lernen verstehen <span class="content-emoji">🧠</span>  
+3. Lernen boostern <span class="content-emoji">🧗</span>  
+4. Ausblick <span class="content-emoji">🔭</span>  
 
 ---
 
-## Lerntypen-Check 🧠
+## Lerntypen-Check <span class="content-emoji">🧠</span>
 
 <figure class="figure-frame figure-frame figure-frame-tight-top">
   <img src="Lerntypen.png" alt="Lerntypen-Grafik">
@@ -79,20 +79,20 @@ todos: []
 
 ---
 
-## Lerntypen-Mythos 🪞
+## Lerntypen-Mythos <span class="content-emoji">🪞</span>
 
 
 
 <ul>
-  <li>🗄️ Lerntypen als <b>feste Kategorien</b> empirisch <b>nicht nachweisbar</b> <span class="zitat-inline">(Brand, 2025; Daumiller & Wisniewski, 2022; Menz et al., 2021)</span></li>
-  <li class="fragment">🧪 Lerntypen gelten in der Forschung als <b>Mythos</b> <span class="zitat-inline">(Newton & Salvi, 2020)</span></li>
-  <li class="fragment">⚠️ Gefahr von Lerntypen-Denken: <b>Etikettierungen</b> <span class="zitat-inline">(Sun et al., 2023)</span></li>
-  <li class="fragment">🔁 Konstruktiv gewendet: Lernzugänge <b>variieren</b>, testen und <b>reflektieren</b> statt Typenfestlegung <span class="zitat-inline">(Daumiller & Wisniewski, 2022)</span></li>
+  <li><span class="content-emoji">🗄️</span> Lerntypen als <b>feste Kategorien</b> empirisch <b>nicht nachweisbar</b> <span class="zitat-inline">(Brand, 2025; Daumiller & Wisniewski, 2022; Menz et al., 2021)</span></li>
+  <li class="fragment"><span class="content-emoji">🧪</span> Lerntypen gelten in der Forschung als <b>Mythos</b> <span class="zitat-inline">(Newton & Salvi, 2020)</span></li>
+  <li class="fragment"><span class="content-emoji">⚠️</span> Gefahr von Lerntypen-Denken: <b>Etikettierungen</b> <span class="zitat-inline">(Sun et al., 2023)</span></li>
+  <li class="fragment"><span class="content-emoji">🔁</span> Konstruktiv gewendet: Lernzugänge <b>variieren</b>, testen und <b>reflektieren</b> statt Typenfestlegung <span class="zitat-inline">(Daumiller & Wisniewski, 2022)</span></li>
 </ul>
 
 ---
 
-## Wie funktioniert Lernen? 🧠
+## Wie funktioniert Lernen? <span class="content-emoji">🧠</span>
 
 <figure class="figure-frame figure-frame figure-frame-tight-top">
   <img src="Gehirn_Lernen.png" alt="Gehirn und Lernen">
@@ -102,7 +102,7 @@ todos: []
 
 ---
 
-## Wie funktioniert Lernen? 🧠
+## Wie funktioniert Lernen? <span class="content-emoji">🧠</span>
 
 {{< rawhtml >}}
 <div class="overlay-fragment-diagram lerntheorien-diagram">
@@ -117,7 +117,7 @@ todos: []
 
 ---
 
-## Lernen boostern 🌱
+## Lernen boostern <span class="content-emoji">🌱</span>
 
 {{< rawhtml >}}
 <div class="overlay-fragment-diagram persoenliches-lernen-diagram">
@@ -131,7 +131,7 @@ todos: []
 
 ---
 
-## Lernen boostern 🌱
+## Lernen boostern <span class="content-emoji">🌱</span>
 
 > [!IMPORTANT]
 > Lernen hängt davon ab, **wie** Du lernst, **was** Du lernst  
@@ -142,17 +142,17 @@ todos: []
 > und viele davon kannst **Du aktiv gestalten**!
 
 ---
-## Lernen boostern 🌱
+## Lernen boostern <span class="content-emoji">🌱</span>
 
-<p class="tools-heading">Tools als Lernhelfer 💻</p>
+<p class="tools-heading">Tools als Lernhelfer <span class="content-emoji">💻</span></p>
 
-- 🧠 Verstehen & Erklären:
+- <span class="content-emoji">🧠</span> Verstehen & Erklären:
   <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a> ·
   <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a>
-- 📚 Wiederholen & Behalten:
+- <span class="content-emoji">📚</span> Wiederholen & Behalten:
   <a href="https://www.studysmarter.de/" target="_blank" rel="noopener noreferrer">StudySmarter</a> ·
   <a href="https://apps.ankiweb.net/" target="_blank" rel="noopener noreferrer">Anki</a>
-- 🧩 Strukturieren & Verknüpfen:
+- <span class="content-emoji">🧩</span> Strukturieren & Verknüpfen:
   <a href="https://www.notion.com/" target="_blank" rel="noopener noreferrer">Notion</a> ·
   <a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian</a> ·
   <a href="https://www.goodnotes.com/" target="_blank" rel="noopener noreferrer">Goodnotes</a>
@@ -166,9 +166,9 @@ todos: []
 
 ---
 
-## 👫 Jetzt wird sozial gelernt!
+## <span class="content-emoji">👫</span> Jetzt wird sozial gelernt!
 
-**Auftrag: 💬 Murmelgruppen** (1 Minute + 1 Minute)
+**Auftrag: <span class="content-emoji">💬</span> Murmelgruppen** (1 Minute + 1 Minute)
 
 > [!TIPP]
 > Drehe Dich zu der Person, die rechts von Dir sitzt und besprecht:
@@ -184,7 +184,7 @@ todos: []
 
 ---
 
-## 🎓 Lust, Lernen selbst zu verstehen – und zu gestalten?
+## <span class="content-emoji">🎓</span> Lust, Lernen selbst zu verstehen – und zu gestalten?
 
 <figure class="figure-frame figure-frame-sm">
   <img src="/iWIP/praesentation/lehre/vt_gehirn_lernen_junior_studium/Wipaed_Werbefolie.jpg" alt="QR-Code zu den Informationen für Studieninteressierte Wirtschaftspädagogik">

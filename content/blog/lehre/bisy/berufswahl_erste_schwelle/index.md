@@ -106,49 +106,49 @@ oer:
 
 ---
 
-# 📚 Gegenstand
+# <span class="content-emoji">📚</span> Gegenstand
 
 Diese dritte Veranstaltung im Modul **Bildungssysteme** fragt danach, wie Menschen ihren Weg in den Beruf finden. Ausgangspunkt ist die Beobachtung, dass Berufswahl oft wie eine **individuelle Entscheidung** erscheint, tatsächlich aber in **biografische Erfahrungen**, **soziale Erwartungen** und **institutionelle Strukturen** eingebettet ist.
 
 Die Sitzung verbindet deshalb einen **fallbezogenen Einstieg** über vier Personas mit einer systematisierenden Einführung in **Berufswahl**, **Berufswahltheorien**, **Berufsorientierung** und das **Übergangssystem**. Damit knüpft sie an die vorangegangene Veranstaltung zum deutschen Bildungssystem an und verschiebt den Fokus von der Systemstruktur stärker auf die **erste Schwelle** zwischen Schule und Beruf.
 
-# 💭 Leitfrage
+# <span class="content-emoji">💭</span> Leitfrage
 
 > [!TIPP]
 > Wie entsteht **Berufswahl** zwischen **subjektiver Passung**, **sozialer Einbettung** und **institutioneller Steuerung**?
 
-# 🎯 Lernziele
+# <span class="content-emoji">🎯</span> Lernziele
 
 Die Studierenden lernen, ...
 
-- 🧠 an Fallbeispielen Faktoren zu analysieren, die Berufswahlentscheidungen an der ersten Schwelle prägen.
-- 🧭 Berufswahl als biografischen, sozialen und institutionell gerahmten Prozess zu definieren und einzuordnen.
-- ⚖️ mit <a href="#literatur">Super (1990)</a> und <a href="#literatur">Wehking (2020)</a> einen psychologischen und einen soziologischen Zugang zur Erklärung von Berufswahl zu vergleichen.
-- 💬 Möglichkeiten und Grenzen von Berufsorientierung vor dem Hintergrund ungleicher Übergangschancen zu beurteilen.
+- <span class="content-emoji">🧠</span> an Fallbeispielen Faktoren zu analysieren, die Berufswahlentscheidungen an der ersten Schwelle prägen.
+- <span class="content-emoji">🧭</span> Berufswahl als biografischen, sozialen und institutionell gerahmten Prozess zu definieren und einzuordnen.
+- <span class="content-emoji">⚖️</span> mit <a href="#literatur">Super (1990)</a> und <a href="#literatur">Wehking (2020)</a> einen psychologischen und einen soziologischen Zugang zur Erklärung von Berufswahl zu vergleichen.
+- <span class="content-emoji">💬</span> Möglichkeiten und Grenzen von Berufsorientierung vor dem Hintergrund ungleicher Übergangschancen zu beurteilen.
 
 Die Sitzung vermittelt bewusst **Grundlagen**. Ziel ist eine **tragfähige erste Systematisierung**.
 
 ---
 
-# 🧭 Aufbau & Ablauf
+# <span class="content-emoji">🧭</span> Aufbau & Ablauf
 
-**Gesamtdauer:** ca. 90 Minuten ⏱️
+**Gesamtdauer:** ca. 90 Minuten <span class="content-emoji">⏱️</span>
 
 <div class="agenda">
 
 | Phase | Inhalt | Ziel | Zeit |
 |:------|:--------|:------|:------:|
-| **1️⃣ Einstieg 👥** | Arbeit mit vier Personas zur Berufseinmündung | Berufswahl als konkreten Fall analysieren | ⏱️ 25 Min |
-| **2️⃣ Begriff & Überblick 🧭** | Berufswahl definieren und Theoriegruppen systematisieren | begriffliche und analytische Ordnung schaffen | ⏱️ 10 Min |
-| **3️⃣ Theorievergleich 🧠** | <a href="#literatur">Super (1990)</a> und <a href="#literatur">Wehking (2020)</a> kontrastiv einführen | individuelle und gesellschaftliche Perspektive unterscheiden | ⏱️ 20 Min |
-| **4️⃣ Berufsorientierung 🔎** | Definition, Ziele und Maßnahmen mit Rückbezug auf MV | Unterstützungslogiken sichtbar machen | ⏱️ 15 Min |
-| **5️⃣ Kritische Zuspitzung ⚠️** | Matching-Probleme, drei Sektoren und Übergangssystem | Grenzen gelingender Einmündung diskutieren | ⏱️ 20 Min |
+| **1. Einstieg <span class="content-emoji">👥</span>** | Arbeit mit vier Personas zur Berufseinmündung | Berufswahl als konkreten Fall analysieren | <span class="content-emoji">⏱️</span> 25 Min |
+| **2. Begriff & Überblick <span class="content-emoji">🧭</span>** | Berufswahl definieren und Theoriegruppen systematisieren | begriffliche und analytische Ordnung schaffen | <span class="content-emoji">⏱️</span> 10 Min |
+| **3. Theorievergleich <span class="content-emoji">🧠</span>** | <a href="#literatur">Super (1990)</a> und <a href="#literatur">Wehking (2020)</a> kontrastiv einführen | individuelle und gesellschaftliche Perspektive unterscheiden | <span class="content-emoji">⏱️</span> 20 Min |
+| **4. Berufsorientierung <span class="content-emoji">🔎</span>** | Definition, Ziele und Maßnahmen mit Rückbezug auf MV | Unterstützungslogiken sichtbar machen | <span class="content-emoji">⏱️</span> 15 Min |
+| **5. Kritische Zuspitzung <span class="content-emoji">⚠️</span>** | Matching-Probleme, drei Sektoren und Übergangssystem | Grenzen gelingender Einmündung diskutieren | <span class="content-emoji">⏱️</span> 20 Min |
 
 </div>
 
 ---
 
-# 1️⃣ Einstieg – Berufswahl an der ersten Schwelle 👥
+# 1. Einstieg – Berufswahl an der ersten Schwelle <span class="content-emoji">👥</span>
 
 Die **erste Schwelle** zwischen **Schule und Beruf** ist ein zentraler Moment der beruflichen Entwicklung. Sie ist geprägt von der Suche nach **Orientierung**, der Auseinandersetzung mit **eigenen Interessen** und der Einmündung in unterschiedliche **berufliche Tätigkeiten**.
 
@@ -192,7 +192,7 @@ Dadurch wird sichtbar, dass Berufswahl weder auf „Interesse“ noch auf „fre
 
 ---
 
-# 2️⃣ Berufswahl definieren und systematisieren 🧭
+# 2. Berufswahl definieren und systematisieren <span class="content-emoji">🧭</span>
 
 Berufswahl lässt sich für diese Sitzung sinnvoll als **wiederkehrender Lern-, Such- und Entscheidungsprozess** verstehen. Sie ist in eine **längere berufliche Entwicklung** eingebettet und steht unter **gesellschaftlichen Bedingungen**.
 
@@ -213,7 +213,7 @@ Bevor einzelne Theorien vertieft werden, hilft eine grobe Systematisierung:
 
 ---
 
-# 3️⃣ Zwei Zugänge zur Berufswahl: <a href="#literatur">Super (1990)</a> und <a href="#literatur">Wehking (2020)</a> 🧠
+# 3. Zwei Zugänge zur Berufswahl: <a href="#literatur">Super (1990)</a> und <a href="#literatur">Wehking (2020)</a> <span class="content-emoji">🧠</span>
 
 ## <a href="#literatur">Super (1990)</a>: Berufswahl als Entwicklung des Selbstkonzepts
 
@@ -281,7 +281,7 @@ Im Kontext von Berufswahl können auch die Theorie von <a href="#literatur">Holl
 
 ---
 
-# 4️⃣ Berufsorientierung als Unterstützung von Berufswahl 🔎
+# 4. Berufsorientierung als Unterstützung von Berufswahl <span class="content-emoji">🔎</span>
 
 Berufsorientierung lässt sich als Prozess verstehen, in dem Individuen ihre Interessen, Wünsche, Kenntnisse und Fähigkeiten mit Möglichkeiten, Anforderungen und Bedarfen der Arbeits- und Berufswelt in Beziehung setzen.
 
@@ -301,7 +301,7 @@ Damit wird deutlich: **Berufsorientierung** ist **pädagogisch gewollt** und **i
 
 ---
 
-# 5️⃣ Wenn Orientierung nicht reicht: Matching-Probleme und Übergangssystem ⚠️
+# 5. Wenn Orientierung nicht reicht: Matching-Probleme und Übergangssystem <span class="content-emoji">⚠️</span>
 
 > [!IMPORTANT]
 > Wenn Berufsorientierung gut funktioniert, warum münden dann nicht alle Jugendlichen direkt in Ausbildung ein?
@@ -361,7 +361,7 @@ An dieser Stelle kann auch die Debatte um **Ausbildungsreife** aufgegriffen werd
 
 ---
 
-# 💬 Abschluss und Rückbindung an die Leitfrage
+# <span class="content-emoji">💬</span> Abschluss und Rückbindung an die Leitfrage
 
 Berufswahl entsteht weder als rein freier individueller Akt noch als bloßes Produkt gesellschaftlicher Struktur. Sie entsteht im Zusammenspiel von **Interessen**, **Erfahrungen**, **Selbstkonzepten**, **sozialen Einflüssen**, **institutionellen Angeboten** und **ungleichen Einmündungschancen**.
 

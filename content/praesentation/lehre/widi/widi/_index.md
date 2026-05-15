@@ -1,8 +1,8 @@
 ---
 title: "Wirtschaftsdidaktik"
 title_reveal: "Wirtschaftsdidaktik –<br>Themen & Systematisierung"
-emojis: "🧩 👥 🪞"
-veranstaltungstyp: "🎓 Seminar"
+emojis: '<span class="content-emoji">🧩</span> <span class="content-emoji">👥</span> <span class="content-emoji">🪞</span>'
+veranstaltungstyp: '<span class="content-emoji">🎓</span> Seminar'
 veranstaltung: "Grundlagen Fachdidaktik Wirtschaft"
 author: "Prof. Dr. Matthias Söll"
 blog: "/iWIP/blog/lehre/widi/widi"
@@ -58,60 +58,60 @@ todos: []
 
 ---
 
-## 🌀 Recap – Rückblick
+## <span class="content-emoji">🌀</span> Recap – Rückblick
 
-- 🏫 Eigene Erfahrungen in **Bildungseinrichtungen** → persönliches **Didaktikverständnis** reflektiert. <!-- .element: class="fragment" -->
-- 📜 **Historische Verwurzelung** der Didaktik rekapituliert. <!-- .element: class="fragment" -->
-- 🪑 **Wirkung didaktischer Entscheidungen** (z. B. Sitzordnung) erlebbar gemacht. <!-- .element: class="fragment" -->
-- 🔍 Unterschiede zwischen **Allgemeiner Didaktik** und **Fachdidaktik** herausgearbeitet. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🏫</span> Eigene Erfahrungen in **Bildungseinrichtungen** → persönliches **Didaktikverständnis** reflektiert. <!-- .element: class="fragment" -->
+- <span class="content-emoji">📜</span> **Historische Verwurzelung** der Didaktik rekapituliert. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🪑</span> **Wirkung didaktischer Entscheidungen** (z. B. Sitzordnung) erlebbar gemacht. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🔍</span> Unterschiede zwischen **Allgemeiner Didaktik** und **Fachdidaktik** herausgearbeitet. <!-- .element: class="fragment" -->
 
 ---
 
-## 📚 Gegenstand
+## <span class="content-emoji">📚</span> Gegenstand
 
-- Fokus heute: **Wirtschaftsdidaktik** 💼. <!-- .element: class="fragment" -->
-- Gruppen **erarbeiten** und **systematisieren** Themenfelder 🧩
+- Fokus heute: **Wirtschaftsdidaktik** <span class="content-emoji">💼</span>. <!-- .element: class="fragment" -->
+- Gruppen **erarbeiten** und **systematisieren** Themenfelder <span class="content-emoji">🧩</span>
 - Wir **reflektieren** die Methodik (Vergleich zur letzten Sitzung) <!-- .element: class="fragment" -->
 
 ---
 
-## 💭 Leitfrage
+## <span class="content-emoji">💭</span> Leitfrage
 
 > **Mit welchen Themen setzt sich die Wirtschaftsdidaktik aktuell auseinander?**
 
 ---
 
-## 🎯 Lehrziele
+## <span class="content-emoji">🎯</span> Lehrziele
 
 Sie erarbeiten sich einen Überblick über die zentralen Themenfelder der Wirtschaftsdidaktik.  
 <br>&nbsp;
 Sie lernen, …
-- 🧩 **Themenfelder** zu systematisieren und zu beschreiben, <!-- .element: class="fragment" -->
-- 👥 in **Gruppen** Ergebnisse zu erarbeiten, <!-- .element: class="fragment" -->
-- 🪞 **Vor- & Nachteile** methodischer Erarbeitungs- und Darstellungsformen zu reflektieren. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🧩</span> **Themenfelder** zu systematisieren und zu beschreiben, <!-- .element: class="fragment" -->
+- <span class="content-emoji">👥</span> in **Gruppen** Ergebnisse zu erarbeiten, <!-- .element: class="fragment" -->
+- <span class="content-emoji">🪞</span> **Vor- & Nachteile** methodischer Erarbeitungs- und Darstellungsformen zu reflektieren. <!-- .element: class="fragment" -->
 
 ---
 
-## 🧭 Ablauf (90 Min)
+## <span class="content-emoji">🧭</span> Ablauf (90 Min)
 
-1️⃣ Einstieg &amp; Einführung 🚀 (10’)  
-2️⃣ Erarbeitung in Gruppen 🧩 (45’)  
-3️⃣ Präsentation &amp; Reflexion 💬 (35’)
-
----
-
-## 🧠 Arbeitsauftrag (Gruppen)
-
-1. Bilden Sie **vier Gruppen** 👥 (je zwei Tische zusammenstellen).  
-2. **Lesen** Sie die zugewiesene Quelle 📖 (siehe Blogbeitrag): Arndt (2020), Brahm et al. (o. J.), Euler & Hahn (2014) und Wilbers (2022)  
-3. **Arbeiten Sie heraus**, mit welchen **Themen** sich die Wirtschaftsdidaktik beschäftigt 💭.  
-4. **Ergänzen** Sie ggf. fehlende Themen ➕.  
-5. **Dokumentation** 🧾 (frei wählbar): z. B. Dokument, Präsentation, Board, Pad, analoge Grafik (digitalisiert).  
-6. **Kurzvorstellung** 🎤 vorbereiten (max. 5 Min).
+1. Einstieg &amp; Einführung <span class="content-emoji">🚀</span> (10’)  
+2. Erarbeitung in Gruppen <span class="content-emoji">🧩</span> (45’)  
+3. Präsentation &amp; Reflexion <span class="content-emoji">💬</span> (35’)
 
 ---
 
-## 📘 Kennzeichen der Fachdidaktiken 🔄
+## <span class="content-emoji">🧠</span> Arbeitsauftrag (Gruppen)
+
+1. Bilden Sie **vier Gruppen** <span class="content-emoji">👥</span> (je zwei Tische zusammenstellen).  
+2. **Lesen** Sie die zugewiesene Quelle <span class="content-emoji">📖</span> (siehe Blogbeitrag): Arndt (2020), Brahm et al. (o. J.), Euler & Hahn (2014) und Wilbers (2022)  
+3. **Arbeiten Sie heraus**, mit welchen **Themen** sich die Wirtschaftsdidaktik beschäftigt <span class="content-emoji">💭</span>.  
+4. **Ergänzen** Sie ggf. fehlende Themen <span class="content-emoji">➕</span>.  
+5. **Dokumentation** <span class="content-emoji">🧾</span> (frei wählbar): z. B. Dokument, Präsentation, Board, Pad, analoge Grafik (digitalisiert).  
+6. **Kurzvorstellung** <span class="content-emoji">🎤</span> vorbereiten (max. 5 Min).
+
+---
+
+## <span class="content-emoji">📘</span> Kennzeichen der Fachdidaktiken <span class="content-emoji">🔄</span>
 
 - Entstehung **fachspezifisch** (z. B. Wirtschaftsdidaktik um 1900). <!-- .element: class="fragment" -->
 - Bezugspunkt: **Fächer / Berufsfelder**. <!-- .element: class="fragment" -->
@@ -120,7 +120,7 @@ Sie lernen, …
 
 ---
 
-## 🧩 Systematisierung der Themen
+## <span class="content-emoji">🧩</span> Systematisierung der Themen
 
 **Zusammenfassung** und **Clusterung** der in den Quellen identifizierten Themenfelder nach übergeordneten Bereichen
 
@@ -132,20 +132,20 @@ Sie lernen, …
 
 ---
 
-## 🗺️ Erläuterung zur Systematisierung
+## <span class="content-emoji">🗺️</span> Erläuterung zur Systematisierung
 
 - **Berufliche Bildung**: vgl. <a href="https://elibrary.utb.de/doi/epdf/10.36198/9783838541648" target="_blank" rel="noopener noreferrer">Euler & Hahn (2014)</a>, <a href="https://doi.org/10.25656/01:24386" target="_blank" rel="noopener noreferrer">Wilbers (2022)</a> <!-- .element: class="fragment" -->
 - **Allgemeine Bildung**: vgl. <a href="https://doi.org/10.25593/978-3-96147-267-3" target="_blank" rel="noopener noreferrer">Arndt (2020)</a>, <a href="https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung" target="_blank" rel="noopener noreferrer">Brahm et al. (o. J.)</a> <!-- .element: class="fragment" -->
-- **Normative Zielsetzungen**: berufliche Handlungskompetenz ↔︎ mündige Konsument:innen. <!-- .element: class="fragment" -->
+- **Normative Zielsetzungen**: berufliche Handlungskompetenz <span class="content-emoji">↔</span>︎ mündige Konsument:innen. <!-- .element: class="fragment" -->
 - **Bezugspunkte**: betriebliche Praxis, Konsumverhalten, Finanzentscheidungen. <!-- .element: class="fragment" -->
 
 ---
 
-## 💬 Reflexion & Ausblick
+## <span class="content-emoji">💬</span> Reflexion & Ausblick
 
 - Sie können nun: **Themenfelder benennen & systematisieren**, **kooperativ arbeiten**, **Methoden & Darstellungen reflektieren**. <!-- .element: class="fragment" -->
-- 💡 Damit vertiefen Sie Ihr Verständnis von Wirtschaftsdidaktik als Grundlage **professionellen pädagogischen Handelns**. <!-- .element: class="fragment" -->
-- 🔭 **Ausblick:** OER. <!-- .element: class="fragment" -->
+- <span class="content-emoji">💡</span> Damit vertiefen Sie Ihr Verständnis von Wirtschaftsdidaktik als Grundlage **professionellen pädagogischen Handelns**. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🔭</span> **Ausblick:** OER. <!-- .element: class="fragment" -->
 
 ---
 

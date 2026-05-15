@@ -128,11 +128,11 @@ oer:
 
 ---
 
-# 🤝 Haushaltsbudget und ökonomisches Prinzip – differenzierte Unterrichtsplanung für Sek I & II
+# <span class="content-emoji">🤝</span> Haushaltsbudget und ökonomisches Prinzip – differenzierte Unterrichtsplanung für Sek I & II
 
 ---
 
-## 📝🪞 Hinweis zur Einordnung
+## <span class="content-emoji">📝</span><span class="content-emoji">🪞</span> Hinweis zur Einordnung
 
 Diese Unterrichtsplanung wurde als Arbeitsgrundlage für eine **Lehrkräftewerkstatt** zur KI-gestützten Unterrichtsplanung entwickelt.  
 
@@ -142,22 +142,22 @@ Die Planung dient im Workshop als **Analyse- und Überarbeitungsgrundlage** und 
 
 ---
 
-## 🧩 Gemeinsamer Kern der Stunde
+## <span class="content-emoji">🧩</span> Gemeinsamer Kern der Stunde
 
-### 💭 Leitfrage
+### <span class="content-emoji">💭</span> Leitfrage
 
 > [!TIPP]
 > Reicht mein Einkommen für das Leben, das ich führen möchte?
 
 ---
 
-### 🎯 Grobziel
+### <span class="content-emoji">🎯</span> Grobziel
 
 Die Schüler:innen **analysieren** ein Haushaltsbudget und **treffen** unter Bedingungen von Knappheit **begründete** ökonomische **Entscheidungen**.
 
 ---
 
-## 📘 Ausgangssituation (für alle Gruppen identisch)
+## <span class="content-emoji">📘</span> Ausgangssituation (für alle Gruppen identisch)
 
 Eine 19-jährige Auszubildende verdient **980 € netto**.
 
@@ -185,9 +185,9 @@ Eine 19-jährige Auszubildende verdient **980 € netto**.
 
 ---
 
-# 👥 Unterrichtsszenarien
+# <span class="content-emoji">👥</span> Unterrichtsszenarien
 
-## 🌱 Sek I – Regionale Schule, Jahrgang 9
+## <span class="content-emoji">🌱</span> Sek I – Regionale Schule, Jahrgang 9
 
 Die Klasse besteht aus 23 Schüler:innen mit heterogenem Leistungsstand.  
 Viele haben erste Nebenjobs, aber wenig systematisches Wissen über Haushaltsplanung.  
@@ -199,7 +199,7 @@ Typische Herausforderung:
 
 ---
 
-## 🌳 Sek II – Gymnasiale Oberstufe (Einführungsphase)
+## <span class="content-emoji">🌳</span> Sek II – Gymnasiale Oberstufe (Einführungsphase)
 
 Kurs mit 19 Schüler:innen.  
 Grundverständnis von Angebot/Nachfrage vorhanden.  
@@ -211,11 +211,11 @@ Typische Herausforderung:
 
 ---
 
-# 🧭 Geplanter Stundenverlauf
+# <span class="content-emoji">🧭</span> Geplanter Stundenverlauf
 
 ---
 
-## 1️⃣ Einstieg – Entscheidung unter Knappheit
+## 1. Einstieg – Entscheidung unter Knappheit
 
 Impuls:
 „980 € netto – reicht das für ein selbstständiges Leben?“
@@ -229,7 +229,7 @@ Knappheitserfahrung aktivieren und Problemspannung erzeugen.
 
 ---
 
-## 2️⃣ Erarbeitung I – Budgetanalyse
+## 2. Erarbeitung I – Budgetanalyse
 
 Auftrag:
 
@@ -244,7 +244,7 @@ Erwartete Denkprozesse:
 
 ---
 
-## 3️⃣ Erarbeitung II – Entscheidung & Abwägung
+## 3. Erarbeitung II – Entscheidung & Abwägung
 
 Arbeitsauftrag:
 
@@ -262,9 +262,9 @@ Hier wird bewusst eine Entscheidung unter Zielkonflikt erzwungen.
 
 ---
 
-## 4️⃣ Vertiefung je nach Niveaustufe
+## 4. Vertiefung je nach Niveaustufe
 
-### 🌱 Sek I
+### <span class="content-emoji">🌱</span> Sek I
 
 - Kennzeichnen Sie notwendige und optionale Ausgaben.
 - Begründen Sie Ihre Entscheidung schriftlich (5–8 Sätze).
@@ -275,7 +275,7 @@ Strukturierte Anwendung und nachvollziehbare Begründung.
 
 ---
 
-### 🌳 Sek II
+### <span class="content-emoji">🌳</span> Sek II
 
 Zusätzlicher Auftrag:
 
@@ -295,7 +295,7 @@ Analyse, Bewertung, Transfer und Perspektivwechsel.
 
 ---
 
-## 5️⃣ Sicherung & 🪞 Reflexion
+## 5. Sicherung & <span class="content-emoji">🪞</span> Reflexion
 
 Plenumsphase:
 
@@ -310,7 +310,7 @@ Plenumsphase:
 
 ---
 
-## 🎓🧠 Qualitätsaspekte der Stunde
+## <span class="content-emoji">🎓</span><span class="content-emoji">🧠</span> Qualitätsaspekte der Stunde
 
 In der Stunde werden sichtbar:
 

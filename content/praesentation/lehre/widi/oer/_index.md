@@ -1,8 +1,8 @@
 ---
 title: "Frei nutzbare Lehr-Lern-Materialien – OER"
 title_reveal: "Frei nutzbare Lehr-Lern-Materialien –<br>OER<br>"
-emojis: "🎓 🌍 🔓"
-veranstaltungstyp: "🎓 Seminar"
+emojis: '<span class="content-emoji">🎓</span> <span class="content-emoji">🌍</span> <span class="content-emoji">🔓</span>'
+veranstaltungstyp: '<span class="content-emoji">🎓</span> Seminar'
 veranstaltung: "Grundlagen Fachdidaktik Wirtschaft"
 author: "Prof. Dr. Matthias Söll"
 blog: "/iWIP/blog/lehre/widi/oer"
@@ -52,7 +52,7 @@ todos:
 
 ---
 
-### OER sind:<br> 🎓🌍🔓
+### OER sind:<br> <span class="content-emoji">🎓</span><span class="content-emoji">🌍</span><span class="content-emoji">🔓</span>
 - Bildungsmaterialien im weiten Sinn  
   *(Definition → Grafik → Selbstlernkurse)*  
 - frei auf Plattformen teilbar  
@@ -80,7 +80,7 @@ todos:
 
 ---
 
-### 🔎 Noch mehr<br>OER-Infos?
+### <span class="content-emoji">🔎</span> Noch mehr<br>OER-Infos?
 <div class="definition-container">
   <div class="definition-box">
     <p><em>Auf <a href="https://open-educational-resources.de/was-ist-oer-3-2/" target="_blank" rel="noopener">OERinfo.de</a> finden Sie Erklärvideo (~90 s), ausführliche Definition, Lizenzmodelle & Mehrwerte.</em></p>
@@ -92,7 +92,7 @@ todos:
 
 ---
 
-### Warum OER?<br>❤️ Emotionale Begründung
+### Warum OER?<br><span class="content-emoji">❤️</span> Emotionale Begründung
 <div class="zitat-wrapper">
   <div class="zitat-container">
     <blockquote class="zitat-box">
@@ -106,21 +106,21 @@ todos:
 
 ---
 
-### Warum OER?<br>📈 Rationale Begründung
+### Warum OER?<br><span class="content-emoji">📈</span> Rationale Begründung
 <ul>
-  <li>22.638 neue Büromanagement-Azubis (2023) 👩‍💼</li>
-  <li>∅ 22 Lernende pro Klasse 👥</li>
-  <li>≈ 1.029 Klassen im 1. Lehrjahr 🏫</li>
-  <li class="special-bullet">≈ 1.000 Lehrkräfte bereiten täglich Unterricht vor 👩‍🏫</li>
+  <li>22.638 neue Büromanagement-Azubis (2023) <span class="content-emoji">👩‍💼</span></li>
+  <li>∅ 22 Lernende pro Klasse <span class="content-emoji">👥</span></li>
+  <li>≈ 1.029 Klassen im 1. Lehrjahr <span class="content-emoji">🏫</span></li>
+  <li class="special-bullet">≈ 1.000 Lehrkräfte bereiten täglich Unterricht vor <span class="content-emoji">👩‍🏫</span></li>
 </ul>
 
 <div class="hinweis-box fragment">
-  ☝️ Teilen & Co-Entwicklung reduzieren Doppelarbeit und erhöhen Wiederverwendbarkeit.
+  <span class="content-emoji">☝️</span> Teilen & Co-Entwicklung reduzieren Doppelarbeit und erhöhen Wiederverwendbarkeit.
 </div>
 
 ---
 
-### Warum OER?<br>✨ Qualitative Begründung
+### Warum OER?<br><span class="content-emoji">✨</span> Qualitative Begründung
 - Schnell aktualisierbar, adaptierbar, kombinierbar  
 - Peer-Feedback, kollegiale Qualitätsentwicklung  
 - Sichtbarkeit & Anschlussfähigkeit in Netzwerken
@@ -130,30 +130,30 @@ todos:
 
 ---
 
-### 🚀 Einführung & Einstieg in OER
+### <span class="content-emoji">🚀</span> Einführung & Einstieg in OER
 
-- 🌐 Zum Blogbeitrag: [Frei nutzbare Lehr-Lern-Materialien – OER](/iWIP/widi/oer/)
-- 🧭 Lieber selbst entdecken? Dann besuchen Sie den interaktiven **Selbstlernkurs der Universität Potsdam**:  
+- <span class="content-emoji">🌐</span> Zum Blogbeitrag: [Frei nutzbare Lehr-Lern-Materialien – OER](/iWIP/widi/oer/)
+- <span class="content-emoji">🧭</span> Lieber selbst entdecken? Dann besuchen Sie den interaktiven **Selbstlernkurs der Universität Potsdam**:  
   <a href="https://openup.uni-potsdam.de/enrol/index.php?id=556" target="_blank" rel="noopener">openup.uni-potsdam.de</a>  
-- 🎥 Lieber Videos? Auf **OERinfo.de** finden Sie kompakte Erklärvideos zu offenen Bildungsmaterialien:  
+- <span class="content-emoji">🎥</span> Lieber Videos? Auf **OERinfo.de** finden Sie kompakte Erklärvideos zu offenen Bildungsmaterialien:  
   <a href="https://open-educational-resources.de/was-ist-oer-3-2/" target="_blank" rel="noopener">open-educational-resources.de</a>
 
 ---
 
-### 🎯 Ziel der Aufgabe
+### <span class="content-emoji">🎯</span> Ziel der Aufgabe
 - Eigenes **Open Educational Resource (OER)** entwickeln  
 - Grundlage: **eigene Ausarbeitung** (wirtschaftsdidaktisches Thema)  
 - Optional: bestehende OER als Ausgangspunkt → **didaktisch sinnvoll neu kombinieren/anpassen**
 
 ---
 
-### 🌟 Zielsetzung
+### <span class="content-emoji">🌟</span> Zielsetzung
 - **Praxisnahes Beispiel** erstellen  
 - zeigen, wie aus Vorarbeiten + OER **ein neues OER** entsteht
 
 ---
 
-### ✅ Selbst tätig werden — Vorgehen (1/2)
+### <span class="content-emoji">✅</span> Selbst tätig werden — Vorgehen (1/2)
 1) **Rekapitulation**  
    - Thema, Kernthesen, Zusammenfassung kurz prüfen  
 2) **Recherche**  
@@ -164,7 +164,7 @@ todos:
 
 ---
 
-### ✅ Selbst tätig werden — Vorgehen (2/2)
+### <span class="content-emoji">✅</span> Selbst tätig werden — Vorgehen (2/2)
 4) **Lizenzierung**  
    - geeignete CC-Lizenz wählen  
    - Tools: <a href="https://creativecommons.org/choose/" target="_blank" rel="noopener">creativecommons.org/choose</a>  
@@ -179,7 +179,7 @@ todos:
 
 ---
 
-### 💡 Gestaltungshinweise
+### <span class="content-emoji">💡</span> Gestaltungshinweise
 - Nur **offen lizenzierte** Materialien verwenden  
 - **Quellen/Lizenzen korrekt** angeben (TULLU-Prinzip)  
 - **Adressatengerechte Sprache**, klare Struktur, professionelles Design  
@@ -187,7 +187,7 @@ todos:
 
 ---
 
-### 🧮 Bewertung (100 Punkte)
+### <span class="content-emoji">🧮</span> Bewertung (100 Punkte)
 | Kriterium | Punkte |
 |---|:--:|
 | Fachliche Richtigkeit & Relevanz | 30 |

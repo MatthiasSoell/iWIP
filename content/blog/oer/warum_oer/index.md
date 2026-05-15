@@ -132,7 +132,7 @@ OER sind stark, weil:
 > [!TIPP]
   > Auf <a href="https://open-educational-resources.de/was-ist-oer-3-2/" target="_blank" rel="noopener">OERInfo.de</a> finden Sie weitere, anschaulich aufbereitete Informationen zu OER: bspw. ein 90s Erklärvideo, eine ausführliche Definition sowie Infos zu offenen Lizenzen und zum Mehrwert von OER.
 
-## Warum OER? ❤️ Emotionale Begründung
+## Warum OER? <span class="content-emoji">❤️</span> Emotionale Begründung
 
 > [!QUOTE]
 > „Wissen ist das einzige Gut, das sich vermehrt, wenn man es teilt.“  
@@ -145,14 +145,14 @@ Sie beschreibt Wissen als *Allmende* — als gemeinsames Gut, das durch gemeinsc
 
 ---
 
-## Warum OER? 📈 Rationale Begründung
+## Warum OER? <span class="content-emoji">📈</span> Rationale Begründung
 
 OER steigern die **Effizienz** in Lehr-Lern-Prozessen:
 
-* 22 638 neue Büromanagement-Auszubildende im Jahr 2023 👩‍💼  
-* Durchschnittlich 22 Schüler:innen pro Klasse 👥  
-* Ca. 1 029 Klassen allein im 1. Lehrjahr 🏫  
-* Etwa 1 000 Lehrkräfte, die ähnliche Unterrichtsinhalte täglich neu aufbereiten 👩‍🏫  
+* 22 638 neue Büromanagement-Auszubildende im Jahr 2023 <span class="content-emoji">👩‍💼</span>  
+* Durchschnittlich 22 Schüler:innen pro Klasse <span class="content-emoji">👥</span>  
+* Ca. 1 029 Klassen allein im 1. Lehrjahr <span class="content-emoji">🏫</span>  
+* Etwa 1 000 Lehrkräfte, die ähnliche Unterrichtsinhalte täglich neu aufbereiten <span class="content-emoji">👩‍🏫</span>  
 
 > [!TIPP]
 > Das Teilen und gemeinsame Bearbeiten von Materialien reduziert redundante Arbeit und ermöglicht eine bessere Nutzung gemeinsamer Ressourcen.  
@@ -160,7 +160,7 @@ OER steigern die **Effizienz** in Lehr-Lern-Prozessen:
 
 ---
 
-## Warum OER? ✨ Qualitative Begründung
+## Warum OER? <span class="content-emoji">✨</span> Qualitative Begründung
 
 Neben Effizienzgewinnen kann OER die **Qualität** von Lehr-Lern-Arrangements erhöhen.  
 Durch kooperative Entwicklung und kollegiale Begutachtung entstehen Materialien, die didaktisch reifer, aktueller und vielfältiger sind. Dies wird in folgender Darstellung verdeutlicht:

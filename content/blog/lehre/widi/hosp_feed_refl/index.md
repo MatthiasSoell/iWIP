@@ -111,7 +111,7 @@ oer:
 
 ---
 
-# 1️⃣ 🌀 Recap – Rückblick & Einordnung  
+# 1. <span class="content-emoji">🌀</span> Recap – Rückblick & Einordnung  
 
 In dieser Lehr-Lern-Einheit knüpfen wir an grundlegende Fragen der Didaktik an:
 
@@ -123,14 +123,14 @@ Die Veranstaltung verbindet damit zentrale Bausteine der **Professionalisierung*
 
 ---
 
-# 💭 Fragestellung  
+# <span class="content-emoji">💭</span> Fragestellung  
 
 > [!TIPP]
 > Wie können Hospitation, Feedback und Reflexion genutzt werden, um das eigene Lehrer:innenhandeln gezielt weiterzuentwickeln?
 
 ---
 
-# 🎯 Lehrziele  
+# <span class="content-emoji">🎯</span> Lehrziele  
 
 Die Studierenden sind in der Lage …
 
@@ -141,27 +141,27 @@ Die Studierenden sind in der Lage …
 
 ---
 
-# 🧭 Ablauf
+# <span class="content-emoji">🧭</span> Ablauf
 
 Die Lehr-Lern-Einheit ist als Kombination aus Input, angeleiteter Analyse und gemeinsamer Reflexion angelegt.
 
-**Gesamtdauer:** ca. 90 Minuten ⏱️
+**Gesamtdauer:** ca. 90 Minuten <span class="content-emoji">⏱️</span>
 
 <div class="agenda">
 
 | Phase | Inhalt | Ziel | Zeit |
 |:------|:--------|:------|:------:|
-| **1️⃣ Einstieg & Aktivierung 🤔** | Anknüpfung an bisherige Sitzungen, Aktivierung von Erfahrungen mit Hospitation & Feedback | Orientierung schaffen | ⏱️ 5 Min |
-| **2️⃣ Hospitation 🔍** | Klärung des Hospitationsbegriffs, Blick auf einen Hospitationsbogen | Zielgerichtete Unterrichtsbeobachtung verstehen | ⏱️ 15 Min |
-| **3️⃣ Feedback inkl. Übung 💬** | Grundlagen wirksamen Feedbacks & praktische Feedbackphase zu OER-Themenübersichten | Feedback geben & nehmen erproben | ⏱️ 30 Min |
-| **4️⃣ Reflexion 🪞** | Theoretische Grundlagen & ALACT-Modell, Anwendung auf eigene Erfahrungen | Reflexionsprozesse strukturieren | ⏱️ 25 Min |
-| **5️⃣ Ausblick 🕰️** | Übertragung auf weitere Lehrsituationen & eigene Professionalisierung | Transfer sichern | ⏱️ 15 Min |
+| **1. Einstieg & Aktivierung <span class="content-emoji">🤔</span>** | Anknüpfung an bisherige Sitzungen, Aktivierung von Erfahrungen mit Hospitation & Feedback | Orientierung schaffen | <span class="content-emoji">⏱️</span> 5 Min |
+| **2. Hospitation <span class="content-emoji">🔍</span>** | Klärung des Hospitationsbegriffs, Blick auf einen Hospitationsbogen | Zielgerichtete Unterrichtsbeobachtung verstehen | <span class="content-emoji">⏱️</span> 15 Min |
+| **3. Feedback inkl. Übung <span class="content-emoji">💬</span>** | Grundlagen wirksamen Feedbacks & praktische Feedbackphase zu OER-Themenübersichten | Feedback geben & nehmen erproben | <span class="content-emoji">⏱️</span> 30 Min |
+| **4. Reflexion <span class="content-emoji">🪞</span>** | Theoretische Grundlagen & ALACT-Modell, Anwendung auf eigene Erfahrungen | Reflexionsprozesse strukturieren | <span class="content-emoji">⏱️</span> 25 Min |
+| **5. Ausblick <span class="content-emoji">🕰️</span>** | Übertragung auf weitere Lehrsituationen & eigene Professionalisierung | Transfer sichern | <span class="content-emoji">⏱️</span> 15 Min |
 
 </div>
 
 ---
 
-# 2️⃣ 🤝 Professionalisierung im Blick  
+# 2. <span class="content-emoji">🤝</span> Professionalisierung im Blick  
 
 ## Professionalisierung nach Baumert & Kunter (2006)  
 
@@ -188,7 +188,7 @@ Im Seminar wird dieses Verständnis über eine Grafik (in Anlehnung an Baumert &
 
 ---
 
-# 3️⃣ 👀 Hospitation – Unterricht gezielt beobachten  
+# 3. <span class="content-emoji">👀</span> Hospitation – Unterricht gezielt beobachten  
 
 ## Was ist eine Hospitation?  
 
@@ -215,7 +215,7 @@ Im Seminar arbeiten wir mit einem **Hospitationsbogen**, der ausgewählte Beobac
 
 ---
 
-# 4️⃣ 💬 Feedback – wirksam rückmelden  
+# 4. <span class="content-emoji">💬</span> Feedback – wirksam rückmelden  
 
 ## Hintergrund: Was ist Feedback?  
 
@@ -257,7 +257,7 @@ Für das Selbststudium können Sie u. a. folgende Videos nutzen:
 
 ---
 
-# 5️⃣ 🪞 Reflexion – vom Erleben zum Lernen  
+# 5. <span class="content-emoji">🪞</span> Reflexion – vom Erleben zum Lernen  
 
 ## Was ist Reflexion?  
 
@@ -283,7 +283,7 @@ Reflexion fördert die Professionalisierung von Lehrer:innen u. a. durch:
 
 ---
 
-# 6️⃣ 🧠 Das ALACT-Modell der Reflexion  
+# 6. <span class="content-emoji">🧠</span> Das ALACT-Modell der Reflexion  
 
 ## ALACT nach Korthagen & Kessels (1999)  
 
@@ -308,7 +308,7 @@ Im Seminar wird das Modell genutzt, um konkrete Erfahrungen aus Hospitation und 
 
 ---
 
-# 7️⃣ ❤️ Hospitation, Feedback & Reflexion zusammenführen  
+# 7. <span class="content-emoji">❤️</span> Hospitation, Feedback & Reflexion zusammenführen  
 
 Zum Abschluss der Einheit werden die drei Bausteine noch einmal zusammengedacht:
 
@@ -324,7 +324,7 @@ Mögliche Leitfragen:
 
 ---
 
-# 📚 Literatur
+# <span class="content-emoji">📚</span> Literatur
 
 Arnold, K.-H., &amp; Roßa, A.-E. (2012). <em>Grundlagen der Allgemeinen Didaktik und der Fachdidaktiken.</em> In M. Kampshoff &amp; C. Wiepke (Hrsg.), <em>Handbuch Geschlechterforschung und Fachdidaktik</em> (S. 11–23). VS Verlag für Sozialwissenschaften. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1651884684" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.1007/978-3-531-18984-0" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/725009000" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 

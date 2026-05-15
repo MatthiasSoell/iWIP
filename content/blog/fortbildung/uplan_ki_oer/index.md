@@ -126,93 +126,93 @@ oer:
 
 ---
 
-# Unterricht planen mit KI – Wirtschaft unterrichten mit freien Bildungsmaterialien 🤝🎨
+# Unterricht planen mit KI – Wirtschaft unterrichten mit freien Bildungsmaterialien <span class="content-emoji">🤝</span><span class="content-emoji">🎨</span>
 
 Dieser Workshop ist als Werkstatt konzipiert: Wir betrachten **KI** nicht als Textgenerator, sondern als **dialogisches Gegenüber in der Unterrichtsplanung**. Ziel ist es, Unterricht **qualitativ weiterzuentwickeln** – nicht lediglich schneller zu produzieren.
 
 ---
 
-## 🎯 Zielperspektive: Was soll Wirtschaftsunterricht ermöglichen? 🤝🎨
+## <span class="content-emoji">🎯</span> Zielperspektive: Was soll Wirtschaftsunterricht ermöglichen? <span class="content-emoji">🤝</span><span class="content-emoji">🎨</span>
 
 Die [Rahmenlehrpläne für AWT / Wirtschaft (Sek I und Sek II) in Mecklenburg-Vorpommern](#-literatur) formulieren übergeordnete Ziele, die sich verdichten lassen zu:
 
-- ökonomische Mündigkeit 🤝  
-- reflektierte Urteilsbildung 🪞  
-- Problemlösefähigkeit 🧩  
-- Perspektivenwechsel und Kontroversität 💬  
-- verantwortliche Partizipation 👥  
-- digitale Handlungskompetenz 💻  
+- ökonomische Mündigkeit <span class="content-emoji">🤝</span>  
+- reflektierte Urteilsbildung <span class="content-emoji">🪞</span>  
+- Problemlösefähigkeit <span class="content-emoji">🧩</span>  
+- Perspektivenwechsel und Kontroversität <span class="content-emoji">💬</span>  
+- verantwortliche Partizipation <span class="content-emoji">👥</span>  
+- digitale Handlungskompetenz <span class="content-emoji">💻</span>  
 
 Wirtschaftsunterricht zielt damit auf die Befähigung zur **Analyse, Bewertung und verantwortlichen Entscheidung** in ökonomischen Zusammenhängen.
 
-Die entscheidende 💭 lautet daher:
+Die entscheidende <span class="content-emoji">💭</span> lautet daher:
 
 > [!TIPP]
 > Wie muss Unterricht geplant sein, damit diese Ziele erreicht werden können?
 
 ---
 
-## 🧭 Aufbau & Ablauf 👥
+## <span class="content-emoji">🧭</span> Aufbau & Ablauf <span class="content-emoji">👥</span>
 
-Die Werkstatt ist so gestaltet, dass *Theorie und Praxis* ineinandergreifen. 🧠🛠️
+Die Werkstatt ist so gestaltet, dass *Theorie und Praxis* ineinandergreifen. <span class="content-emoji">🧠</span><span class="content-emoji">🛠️</span>
 
-**Gesamtdauer:** ca. 90 Minuten ⏱️
+**Gesamtdauer:** ca. 90 Minuten <span class="content-emoji">⏱️</span>
 
 <div class="agenda">
 
 | Phase | Inhalt | Ziel | Zeit |
 |:------|:--------|:------|:------:|
-| **1️⃣ Einstieg 🎯** | Zielperspektive wirtschaftlicher Bildung | Gemeinsame Orientierung 🧭 | ⏱️ 10 Min |
-| **2️⃣ Qualität 🧠** | Sicht- und Tiefenstrukturen von Unterricht | Professionelle Klärung 🪞 | ⏱️ 15 Min |
-| **3️⃣ KI-Impuls 🤖** | KI als dialogischer Planungsraum | Rollenklärung 💭 | ⏱️ 10 Min |
-| **4️⃣ Werkstatt 🛠️** | Eigene Planung KI-gestützt überarbeiten | Anwendung & Reflexion 🪞 | ⏱️ 45 Min |
-| **5️⃣ Ausblick 🎓🌍🔓** | OER, Qualität & Community | Transfer & Weiterarbeit 🌱 | ⏱️ 10 Min |
+| **1. Einstieg <span class="content-emoji">🎯</span>** | Zielperspektive wirtschaftlicher Bildung | Gemeinsame Orientierung <span class="content-emoji">🧭</span> | <span class="content-emoji">⏱️</span> 10 Min |
+| **2. Qualität <span class="content-emoji">🧠</span>** | Sicht- und Tiefenstrukturen von Unterricht | Professionelle Klärung <span class="content-emoji">🪞</span> | <span class="content-emoji">⏱️</span> 15 Min |
+| **3. KI-Impuls <span class="content-emoji">🤖</span>** | KI als dialogischer Planungsraum | Rollenklärung <span class="content-emoji">💭</span> | <span class="content-emoji">⏱️</span> 10 Min |
+| **4. Werkstatt <span class="content-emoji">🛠️</span>** | Eigene Planung KI-gestützt überarbeiten | Anwendung & Reflexion <span class="content-emoji">🪞</span> | <span class="content-emoji">⏱️</span> 45 Min |
+| **5. Ausblick <span class="content-emoji">🎓</span><span class="content-emoji">🌍</span><span class="content-emoji">🔓</span>** | OER, Qualität & Community | Transfer & Weiterarbeit <span class="content-emoji">🌱</span> | <span class="content-emoji">⏱️</span> 10 Min |
 
 </div>
 
 ---
 
-## Unterrichtsqualität: Sicht- und Tiefenstrukturen 🎨🧠
+## Unterrichtsqualität: Sicht- und Tiefenstrukturen <span class="content-emoji">🎨</span><span class="content-emoji">🧠</span>
 
 Im Diskurs um guten Unterricht wird zwischen Sicht- und Tiefenstrukturen von Unterricht unterschieden ([Decristan et al., 2020](#-literatur); [Saum & Brüning, 2023](#-literatur)):
 
-### Sichtstrukturen 🎨
-- Methoden 🧩  
-- Medien 💻  
-- Materialien 📄 
-- Sozialformen 👥  
-- Zeitstruktur ⏱️  
+### Sichtstrukturen <span class="content-emoji">🎨</span>
+- Methoden <span class="content-emoji">🧩</span>  
+- Medien <span class="content-emoji">💻</span>  
+- Materialien <span class="content-emoji">📄</span> 
+- Sozialformen <span class="content-emoji">👥</span>  
+- Zeitstruktur <span class="content-emoji">⏱️</span>  
 
-### Tiefenstrukturen 🧠
-- kognitive Aktivierung 💡  
-- konstruktive Unterstützung 🤝  
-- Klassenführung 👥  
-- fachbezogenen Unterrichtsqualität 📚 [(Lipowsky & Bleck, 2019)](#-literatur)
+### Tiefenstrukturen <span class="content-emoji">🧠</span>
+- kognitive Aktivierung <span class="content-emoji">💡</span>  
+- konstruktive Unterstützung <span class="content-emoji">🤝</span>  
+- Klassenführung <span class="content-emoji">👥</span>  
+- fachbezogenen Unterrichtsqualität <span class="content-emoji">📚</span> [(Lipowsky & Bleck, 2019)](#-literatur)
 
 Während Sichtstrukturen das *Was* und *Wie* der Gestaltung von Unterricht betreffen, adressieren Tiefenstrukturen die *lernrelevanten* kognitiven und motivationalen *Prozesse*. Beide Strukturmerkmale müssen bei der Unterrichtsplanung berücksichtigt werden.
 
-In der Diskussion um KI-gestützte Unterrichtsplanung wird häufig der Fokus auf die Generierung von Texten, Materialien oder Methoden gelegt – also auf **Sichtstrukturen** 🎨. Der entscheidende Mehrwert von KI liegt jedoch darin, dass sie als **reflexives Gegenüber** 🪞 genutzt werden kann, um die Sicht-, v. a. aber auch die **Tiefenstrukturen** 🧠 von Unterricht zu stärken.
+In der Diskussion um KI-gestützte Unterrichtsplanung wird häufig der Fokus auf die Generierung von Texten, Materialien oder Methoden gelegt – also auf **Sichtstrukturen** <span class="content-emoji">🎨</span>. Der entscheidende Mehrwert von KI liegt jedoch darin, dass sie als **reflexives Gegenüber** <span class="content-emoji">🪞</span> genutzt werden kann, um die Sicht-, v. a. aber auch die **Tiefenstrukturen** <span class="content-emoji">🧠</span> von Unterricht zu stärken.
 
 > [!IMPORTANT]
-> KI-gestützte Unterrichtsplanung ist **dialogische Unterrichtsplanung**. Die Qualität der professionellen Entscheidungen entsteht durch **Reflexion 🪞** und Inspiration von Sicht- und Tiefenstrukturen. 
+> KI-gestützte Unterrichtsplanung ist **dialogische Unterrichtsplanung**. Die Qualität der professionellen Entscheidungen entsteht durch **Reflexion <span class="content-emoji">🪞</span>** und Inspiration von Sicht- und Tiefenstrukturen. 
 
 ---
 
-## KI als dialogischer Planungsraum 🤖
+## KI als dialogischer Planungsraum <span class="content-emoji">🤖</span>
 
 Unterrichtsplanung geschieht häufig:
 
-- allein 👤 
-- unter Zeitdruck ⏱️  
-- mit begrenzten Perspektiven 👁️
+- allein <span class="content-emoji">👤</span> 
+- unter Zeitdruck <span class="content-emoji">⏱️</span>  
+- mit begrenzten Perspektiven <span class="content-emoji">👁️</span>
 
 KI kann hier als **reflexives Gegenüber** dienen:
 
-- Perspektiven erweitern 🔭  
-- Gegenargumente formulieren 💬  
-- Differenzierung vorschlagen 🌱  
-- Anforderungsbereiche variieren 🎯  
-- alternative Aufgabenformate generieren 🧩  
+- Perspektiven erweitern <span class="content-emoji">🔭</span>  
+- Gegenargumente formulieren <span class="content-emoji">💬</span>  
+- Differenzierung vorschlagen <span class="content-emoji">🌱</span>  
+- Anforderungsbereiche variieren <span class="content-emoji">🎯</span>  
+- alternative Aufgabenformate generieren <span class="content-emoji">🧩</span>  
 
 Wichtig ist dabei:
 
@@ -221,14 +221,14 @@ Wichtig ist dabei:
 - KI produziert zunächst Text – Qualität entsteht durch Prüfung.
 
 > [!TIPP]
-> Zentral für eine gute (KI-gestützte) Unterrichtsplanung ist das Stellen der richtigen **Fragen 💭**, die kritische **Prüfung 🪞** der Antworten und die **iterative Überarbeitung 🌱** der Planung.
+> Zentral für eine gute (KI-gestützte) Unterrichtsplanung ist das Stellen der richtigen **Fragen <span class="content-emoji">💭</span>**, die kritische **Prüfung <span class="content-emoji">🪞</span>** der Antworten und die **iterative Überarbeitung <span class="content-emoji">🌱</span>** der Planung.
 
-Was sagt die Wissenschaft: **Wirkt sich die KI-Nutzung auch positiv auf die Qualität der Planung aus?** 🧠
+Was sagt die Wissenschaft: **Wirkt sich die KI-Nutzung auch positiv auf die Qualität der Planung aus?** <span class="content-emoji">🧠</span>
 
 In den bislang vorliegenden explorativen Studien zur KI-gestützten Unterrichtsplanung zeigen sich Hinweise darauf, dass generative Sprachmodelle als **strukturierende** und **inspirierende** Werkzeuge die Planungsqualität **unterstützen** können. Zugleich ist die empirische Befundlage noch *begrenzt*, insbesondere im Hinblick auf kontrollierte Wirksamkeitsstudien ([Luo & Tahir, 2025](#-literatur); [Moundridou et al., 2024](#-literatur); [Van Den Berg & Du Plessis, 2023](#-literatur)).
 
 > [!IMPORTANT]
-> Woher bekommt man aber nun die richtigen Fragen bzw. – im KI-Zeitalter – **Prompts**? 💭
+> Woher bekommt man aber nun die richtigen Fragen bzw. – im KI-Zeitalter – **Prompts**? <span class="content-emoji">💭</span>
 
 Neben den o. g. Quellen haben bspw. Bob Blume: <a href="https://bobblume.de/2025/08/16/unterricht-mega-prompt-fuer-lehrkraefte-unterrichtseinheiten-mit-ki-planen/?utm_source=chatgpt.com"
    target="_blank"
@@ -245,7 +245,7 @@ Neben den o. g. Quellen haben bspw. Bob Blume: <a href="https://bobblume.de/2025
 ## Kurzformel für gutes Prompten in der Unterrichtsplanung
 
 > [!TIPP]
-> **Rolle 🎭 + Kontext 👥 + Ziel 🎯 + Qualitätskriterien 🧠 + Format 📑 + Differenzierung 🌱 + Reflexion 🪞**
+> **Rolle <span class="content-emoji">🎭</span> + Kontext <span class="content-emoji">👥</span> + Ziel <span class="content-emoji">🎯</span> + Qualitätskriterien <span class="content-emoji">🧠</span> + Format 📑 + Differenzierung <span class="content-emoji">🌱</span> + Reflexion <span class="content-emoji">🪞</span>**
 
 Oder als Leitfrage:
 
@@ -258,7 +258,7 @@ Oder als Leitfrage:
 
 ---
 
-### 1️⃣ Rolle klären 🎭  
+### 1. Rolle klären <span class="content-emoji">🎭</span>  
 
 <details>
   <summary><strong>In welcher professionellen Rolle soll die KI denken?</strong><br><em>(Zum Aufklappen klicken)</em></summary>
@@ -266,13 +266,13 @@ Oder als Leitfrage:
 - „Agiere als erfahrene Lehrkraft für ... .“  
 - „Berücksichtige die Anforderungen der allgemeinen Bildung.“
 
-💡 Rollenfokus erhöht Kohärenz und Fachangemessenheit.
+<span class="content-emoji">💡</span> Rollenfokus erhöht Kohärenz und Fachangemessenheit.
 
 </details>
 
 ---
 
-### 2️⃣ Kontext präzisieren 👥  
+### 2. Kontext präzisieren <span class="content-emoji">👥</span>  
 
 <details>
   <summary><strong>Für wen und unter welchen Bedingungen plane ich?</strong><br><em>(Zum Aufklappen klicken)</em></summary>
@@ -284,13 +284,13 @@ Oder als Leitfrage:
 - verfügbare Medien 
 - Prüfungsrelevanz  
 
-💡 Je konkreter der Kontext, desto weniger generisch das Ergebnis.
+<span class="content-emoji">💡</span> Je konkreter der Kontext, desto weniger generisch das Ergebnis.
 
 </details>
 
 ---
 
-### 3️⃣ Zielorientierung sichern 🎯  
+### 3. Zielorientierung sichern <span class="content-emoji">🎯</span>  
 
 <details>
   <summary><strong>Welche Kompetenzen sollen aufgebaut werden?</strong><br><em>(Zum Aufklappen klicken)</em></summary>
@@ -299,45 +299,45 @@ Oder als Leitfrage:
 - „Ordne Aufgaben **Anforderungsbereichen** zu.“  
 - „Beziehe dich auf den Rahmenlehrplan ... .“  
 
-💡 Gute Prompts starten mit **Zielen**, nicht mit Methoden.
+<span class="content-emoji">💡</span> Gute Prompts starten mit **Zielen**, nicht mit Methoden.
 
 </details>
 
 ---
 
-### 4️⃣ Tiefenstruktur einfordern 🧠  
+### 4. Tiefenstruktur einfordern <span class="content-emoji">🧠</span>  
 
 <details>
   <summary><strong>Wie wird Lernen kognitiv und motivational angeregt?</strong><br><em>(Zum Aufklappen klicken)</em></summary>
 
 - „Integriere **problemorientierte Einstiege**.“  
 - „Plane Phasen **kognitiver Aktivierung**.“  
-- „Zeige Perspektivenvielfalt.“ 💬  
+- „Zeige Perspektivenvielfalt.“ <span class="content-emoji">💬</span>  
 - „Baue formative Rückmeldeschleifen ein.“  
 
-💡 KI strukturiert schnell **Oberflächen** 🎨 – *Tiefenqualität* 🧠 entsteht durch gezielte Nachfrage.
+<span class="content-emoji">💡</span> KI strukturiert schnell **Oberflächen** <span class="content-emoji">🎨</span> – *Tiefenqualität* <span class="content-emoji">🧠</span> entsteht durch gezielte Nachfrage.
 
 </details>
 
 ---
 
-### 5️⃣ Output-Format definieren 📑  
+### 5. Output-Format definieren 📑  
 
 <details>
   <summary><strong>In welcher Struktur soll die Antwort erscheinen?</strong><br><em>(Zum Aufklappen klicken)</em></summary>
 
-- Tabelle (Phase | Ziel 🎯 | Methode 🧩 | Material 💻 | Differenzierung 🌱)  
+- Tabelle (Phase | Ziel <span class="content-emoji">🎯</span> | Methode <span class="content-emoji">🧩</span> | Material <span class="content-emoji">💻</span> | Differenzierung <span class="content-emoji">🌱</span>)  
 - Verlaufsplanung mit Zeitangaben  
 - inklusive Reflexionsfragen  
 - inklusive Materialvorschlägen  
 
-💡 **Formatvorgaben** erhöhen Präzision und Vergleichbarkeit.
+<span class="content-emoji">💡</span> **Formatvorgaben** erhöhen Präzision und Vergleichbarkeit.
 
 </details>
 
 ---
 
-### 6️⃣ Differenzierung & Realitätscheck integrieren 🌱  
+### 6. Differenzierung & Realitätscheck integrieren <span class="content-emoji">🌱</span>  
 
 <details>
   <summary><strong>Ist die Planung machbar und adaptiv?</strong><br><em>(Zum Aufklappen klicken)</em></summary>
@@ -346,13 +346,13 @@ Oder als Leitfrage:
 - „Berücksichtige Zeit- und Materialaufwand.“   
 - „Welche Teile sind im Alltag unrealistisch?“  
 
-💡 KI produziert oft *idealisierte Entwürfe* – **Machbarkeit** muss aktiv eingefordert werden.
+<span class="content-emoji">💡</span> KI produziert oft *idealisierte Entwürfe* – **Machbarkeit** muss aktiv eingefordert werden.
 
 </details>
 
 ---
 
-### 7️⃣ Iteration & Qualitätsprüfung anstoßen 🪞  
+### 7. Iteration & Qualitätsprüfung anstoßen <span class="content-emoji">🪞</span>  
 
 <details>
   <summary><strong>Wie wird das Ergebnis kritisch geprüft und weiterentwickelt?</strong><br><em>(Zum Aufklappen klicken)</em></summary>
@@ -361,22 +361,22 @@ Oder als Leitfrage:
 - „Welche impliziten Annahmen erkennst du?“  
 - „Prüfe die Planung auf Bias oder einseitige Perspektiven.“  
 
-💡 Qualität entsteht **dialogisch** – nicht durch den ersten Prompt.
+<span class="content-emoji">💡</span> Qualität entsteht **dialogisch** – nicht durch den ersten Prompt.
 
 </details>
 
 ---
 
-## 🛠️ Werkstattphase: Mit KI planen
+## <span class="content-emoji">🛠️</span> Werkstattphase: Mit KI planen
 
-### 🧑‍💻 Arbeitsauftrag:
+### <span class="content-emoji">🧑‍💻</span> Arbeitsauftrag:
 
 Arbeiten Sie mit einer eigenen Unterrichtsidee oder einer [Beispielsequenz](/iWIP/blog/fortbildung/uplan_ki_oer_bsp/).  
 
 Nutzen Sie die Kurzformel:
 
 > [!TIPP]
-> **Rolle 🎭 + Kontext 👥 + Ziel 🎯 + Qualitätskriterien 🧠 + Format 📑 + Differenzierung 🌱 + Reflexion 🪞**
+> **Rolle <span class="content-emoji">🎭</span> + Kontext <span class="content-emoji">👥</span> + Ziel <span class="content-emoji">🎯</span> + Qualitätskriterien <span class="content-emoji">🧠</span> + Format 📑 + Differenzierung <span class="content-emoji">🌱</span> + Reflexion <span class="content-emoji">🪞</span>**
 
 Nutzen Sie Ihren <a href="https://fobizz.com/de/"
    target="_blank"
@@ -393,61 +393,61 @@ Wählen Sie den Arbeitsmodus, der zu Ihrem Erfahrungsstand passt.
 
 ---
 
-### 🔀 Differenzierte Arbeitsmodi:
+### <span class="content-emoji">🔀</span> Differenzierte Arbeitsmodi:
 
-#### 🌱 Einsteiger:innen – Struktur klären 🎨
+#### <span class="content-emoji">🌱</span> Einsteiger:innen – Struktur klären <span class="content-emoji">🎨</span>
 
-**Ziel:** Die *Sichtstruktur* 🎨 der eigenen Planung transparent machen.
+**Ziel:** Die *Sichtstruktur* <span class="content-emoji">🎨</span> der eigenen Planung transparent machen.
 
-1. Geben Sie Ihre Planung in die KI ein. 💻  
+1. Geben Sie Ihre Planung in die KI ein. <span class="content-emoji">💻</span>  
 2. Bitten Sie die KI:
-   - die Lernziele **präzise** zu formulieren 🎯,  
-   - die Stunde klar in Phasen zu strukturieren und Zeitangaben zu ergänzen ⏱️.  
+   - die Lernziele **präzise** zu formulieren <span class="content-emoji">🎯</span>,  
+   - die Stunde klar in Phasen zu strukturieren und Zeitangaben zu ergänzen <span class="content-emoji">⏱️</span>.  
 3. Überarbeiten Sie Ihren Prompt einmal gezielt (z. B. Format vorgeben 📑).
 
 Reflexionsfrage:
 > [!TIPP]
-> Ist meine Planung jetzt **transparenter** 🧭 – oder nur sprachlich ausführlicher?
+> Ist meine Planung jetzt **transparenter** <span class="content-emoji">🧭</span> – oder nur sprachlich ausführlicher?
 
 ---
 
-#### 🌿 Fortgeschrittene – Lernwirksamkeit stärken 🧠
+#### <span class="content-emoji">🌿</span> Fortgeschrittene – Lernwirksamkeit stärken <span class="content-emoji">🧠</span>
 
 **Ziel:** Die Planung *kognitiv anspruchsvoller* machen.
 
 1. Lassen Sie Ihre Planung überarbeiten mit Fokus auf:
-   - problemorientierte Leitfrage 🧩  
-   - eigenständige Urteilsbildung 🤝  
-   - Differenzierung 🌱.  
-2. Bitten Sie die KI um eine kurze Kritik der Planung 🪞.  
+   - problemorientierte Leitfrage <span class="content-emoji">🧩</span>  
+   - eigenständige Urteilsbildung <span class="content-emoji">🤝</span>  
+   - Differenzierung <span class="content-emoji">🌱</span>.  
+2. Bitten Sie die KI um eine kurze Kritik der Planung <span class="content-emoji">🪞</span>.  
 3. Nehmen Sie eine gezielte Überarbeitung vor.
 
 Reflexionsfrage:
 > [!TIPP]
-> Wird die **kognitive Aktivierung** 🧠 gestärkt – oder nur der Umfang erhöht?
+> Wird die **kognitive Aktivierung** <span class="content-emoji">🧠</span> gestärkt – oder nur der Umfang erhöht?
 
 ---
 
-#### 🌳 Profis – Tiefenstruktur explizieren 🪞
+#### <span class="content-emoji">🌳</span> Profis – Tiefenstruktur explizieren <span class="content-emoji">🪞</span>
 
 **Ziel:** Tiefenmerkmale sichtbar und überprüfbar machen.
 
 1. Lassen Sie Ihre Planung prüfen auf:
-   - kognitive Aktivierung 🧠  
-   - Anforderungsniveau 🎯  
-   - Feedbackstruktur 🪞.  
+   - kognitive Aktivierung <span class="content-emoji">🧠</span>  
+   - Anforderungsniveau <span class="content-emoji">🎯</span>  
+   - Feedbackstruktur <span class="content-emoji">🪞</span>.  
 2. Bitten Sie die KI, Schwächen konkret zu benennen.  
 3. Überarbeiten Sie eine Phase gezielt.
 
 Reflexionsfrage:
 > [!TIPP]
-> Hat die KI geholfen, **Tiefenstrukturen** 🧠 klarer zu machen – oder blieb es bei Oberflächenoptimierung?
+> Hat die KI geholfen, **Tiefenstrukturen** <span class="content-emoji">🧠</span> klarer zu machen – oder blieb es bei Oberflächenoptimierung?
 
 <!--
 
 ## KOMPLEXERE AUFGABENSTELLUNG FÜR MEHR ALS 45 MINUTEN
 
-### 🌱 Einsteiger:innen – Struktur bewusst machen
+### <span class="content-emoji">🌱</span> Einsteiger:innen – Struktur bewusst machen
 
 **Ziel:** Die Sichtstruktur der eigenen Planung klären und transparent machen.
 
@@ -473,7 +473,7 @@ Reflexionsfrage:
 
 ---
 
-### 🌿 Fortgeschrittene – Lernwirksamkeit steigern
+### <span class="content-emoji">🌿</span> Fortgeschrittene – Lernwirksamkeit steigern
 
 **Ziel:** Planung lernwirksam weiterentwickeln.
 
@@ -494,7 +494,7 @@ Reflexionsfrage:
 
 ---
 
-### 🌳 Profis – Tiefenstruktur steuern
+### <span class="content-emoji">🌳</span> Profis – Tiefenstruktur steuern
 
 **Ziel:** Unterrichtsqualität gezielt entlang von Tiefenmerkmalen entwickeln.
 
@@ -521,31 +521,31 @@ Abschlussfrage:
 
 ---
 
-## 🎓🌍🔓 OER als Verstärker professioneller Planung
+## <span class="content-emoji">🎓</span><span class="content-emoji">🌍</span><span class="content-emoji">🔓</span> OER als Verstärker professioneller Planung
 
 ### Begründungsmuster für OER:
 
-- ❤️ **Emotional:** Wissen entfaltet seinen Wert im *Teilen* – OER ermöglichen eine Kultur **kollegialer Offenheit** 👥 statt isolierter Einzelarbeit.
-- 📈 **Rational:** Offene Materialien reduzieren Doppelarbeit, sparen Zeit ⏱️ und machen professionelle Planung effizienter.
-- ✨ **Qualitativ:** Durch transparente und kooperative Weiterentwicklung 🪞 können Lehr-Lern-Arrangements fachlich fundierter und didaktisch reflektierter 🧠 werden.
+- <span class="content-emoji">❤️</span> **Emotional:** Wissen entfaltet seinen Wert im *Teilen* – OER ermöglichen eine Kultur **kollegialer Offenheit** <span class="content-emoji">👥</span> statt isolierter Einzelarbeit.
+- <span class="content-emoji">📈</span> **Rational:** Offene Materialien reduzieren Doppelarbeit, sparen Zeit <span class="content-emoji">⏱️</span> und machen professionelle Planung effizienter.
+- <span class="content-emoji">✨</span> **Qualitativ:** Durch transparente und kooperative Weiterentwicklung <span class="content-emoji">🪞</span> können Lehr-Lern-Arrangements fachlich fundierter und didaktisch reflektierter <span class="content-emoji">🧠</span> werden.
 
 ### Freie Bildungsmaterialien ermöglichen:
 
-- kollegiale Weiterentwicklung 👥  
-- Ressourcenschonung 🌱  
-- Qualitätssteigerung durch Transparenz 🪞  
-- Anpassung und Kontextualisierung 🤝  
+- kollegiale Weiterentwicklung <span class="content-emoji">👥</span>  
+- Ressourcenschonung <span class="content-emoji">🌱</span>  
+- Qualitätssteigerung durch Transparenz <span class="content-emoji">🪞</span>  
+- Anpassung und Kontextualisierung <span class="content-emoji">🤝</span>  
 
-### In Verbindung mit KI 🤖 entstehen neue Möglichkeiten:
+### In Verbindung mit KI <span class="content-emoji">🤖</span> entstehen neue Möglichkeiten:
 
-- OER analysieren und anpassen 🧠  
-- Aufgabenformate variieren 🧩  
-- regionale Bezüge integrieren 🌍  
-- Differenzierung systematisch erweitern 🌱  
+- OER analysieren und anpassen <span class="content-emoji">🧠</span>  
+- Aufgabenformate variieren <span class="content-emoji">🧩</span>  
+- regionale Bezüge integrieren <span class="content-emoji">🌍</span>  
+- Differenzierung systematisch erweitern <span class="content-emoji">🌱</span>  
 
 In meinem Beitrag [Warum OER?]({{< ref "blog/oer/warum_oer/index.md" >}}) habe ich mich ausführlicher mit der Begründung von OER auseinandergesetzt.
 
-### Beispielhafte OER-Quellen 🌐
+### Beispielhafte OER-Quellen <span class="content-emoji">🌐</span>
 
 - [WirLernenOnline](https://wirlernenonline.de) (Fachgebiete: Rechts-, Wirtschafts- und Sozialwissenschaften, Wirtschaftskunde; Fachportal: Wirtschaft)  
 - [Joachim Herz Stiftung](https://www.joachim-herz-stiftung.de/lernen) (Unterseite: Lernen)  
@@ -564,7 +564,7 @@ Allgemeine Infos zu OER und Meta-Suchmaschine:
 
 ---
 
-## 🌱 Ausblick: Qualität vor Quantität 🧠
+## <span class="content-emoji">🌱</span> Ausblick: Qualität vor Quantität <span class="content-emoji">🧠</span>
 
 KI kann:
 
@@ -574,10 +574,10 @@ KI kann:
 
 Doch der entscheidende **Mehrwert** liegt in:
 
-- bewusster **Reflexion** 🪞  
-- Perspektivenvielfalt 🔭  
-- Qualitätsprüfung 🧠  
-- dialogischer Planung 👥  
+- bewusster **Reflexion** <span class="content-emoji">🪞</span>  
+- Perspektivenvielfalt <span class="content-emoji">🔭</span>  
+- Qualitätsprüfung <span class="content-emoji">🧠</span>  
+- dialogischer Planung <span class="content-emoji">👥</span>  
 
 Unterricht wird nicht dadurch besser, dass er schneller entsteht, sondern dadurch, dass er **professionell reflektiert** wird.
 
@@ -585,7 +585,7 @@ Die Weiterentwicklung von KI-gestützter Planung kann perspektivisch in einer ko
 
 ---
 
-## 📚 Literatur
+## <span class="content-emoji">📚</span> Literatur
 
 Decristan, J., Hess, M., Holzberger, D., & Praetorius, A.-K. (2020). Oberflächen- und Tiefenmerkmale. Eine Reflexion zweier prominenter Begriffe der Unterrichtsforschung. In Empirische Forschung zu Unterrichtsqualität. Theoretische Grundfragen und quantitative Modellierungen: Zeitschrift für Pädagogik, Beiheft (Nummer 66, S. 102–116). Beltz Juventa. <a class="lit-doi" href="https://doi.org/10.25656/01:25867" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Unterricht planen mit KI – Wirtschaft unterrichten mit freien Bildungsmaterialien"
 title_reveal: "Unterricht planen mit KI –<br>Wirtschaft unterrichten mit freien Bildungsmaterialien<br>"
-emojis: "🤖 🎓🌍🔓"
+emojis: '<span class="content-emoji">🤖</span> <span class="content-emoji">🎓</span> <span class="content-emoji">🌍</span> <span class="content-emoji">🔓</span>'
 veranstaltungstyp: ""
 veranstaltung: "AWT-BO Fachtag 2026"
 author: "Prof. Dr. Matthias Söll"
@@ -55,72 +55,72 @@ todos: []
 
 ---
 
-## Einstieg 🕺
+## Einstieg <span class="content-emoji">🕺</span>
 
 <br>
 
-**Wer, wie, was ... ? 💭**
+**Wer, wie, was ... ? <span class="content-emoji">💭</span>**
 
-<p class="fragment"><strong>Reporter:in 👩‍💼🧑‍💼</strong></p>
+<p class="fragment"><strong>Reporter:in <span class="content-emoji">👩‍💼</span><span class="content-emoji">🧑‍💼</span></strong></p>
 
 <br>
 
 ---
 
-## 🧭 Ablauf (90 Min)
+## <span class="content-emoji">🧭</span> Ablauf (90 Min)
 
-1️⃣ Einstieg & Zielperspektive 🎯 (10’)  
-2️⃣ Unterrichtsqualität klären 🧠 (15’)  
-3️⃣ KI als Planungsraum 🤖 (10’)  
-4️⃣ Werkstatt: Planung überarbeiten 🛠️ (45’)  
-5️⃣ Ausblick & OER 🎓🌍🔓 (10’)
+1. Einstieg & Zielperspektive <span class="content-emoji">🎯</span> (10’)  
+2. Unterrichtsqualität klären <span class="content-emoji">🧠</span> (15’)  
+3. KI als Planungsraum <span class="content-emoji">🤖</span> (10’)  
+4. Werkstatt: Planung überarbeiten <span class="content-emoji">🛠️</span> (45’)  
+5. Ausblick & OER <span class="content-emoji">🎓</span><span class="content-emoji">🌍</span><span class="content-emoji">🔓</span> (10’)
 
 ---
 
-## 🎯 Zielperspektiven von Wirtschaftsunterricht 🤝🎨
+## <span class="content-emoji">🎯</span> Zielperspektiven von Wirtschaftsunterricht <span class="content-emoji">🤝</span><span class="content-emoji">🎨</span>
 
-- ökonomische Mündigkeit 🤝  
-- reflektierte Urteilsbildung 🪞  
-- Problemlösefähigkeit 🧩  
-- Perspektivenwechsel & Kontroversität 💬  
-- verantwortliche Partizipation 👥  
-- digitale Handlungskompetenz 💻
+- ökonomische Mündigkeit <span class="content-emoji">🤝</span>  
+- reflektierte Urteilsbildung <span class="content-emoji">🪞</span>  
+- Problemlösefähigkeit <span class="content-emoji">🧩</span>  
+- Perspektivenwechsel & Kontroversität <span class="content-emoji">💬</span>  
+- verantwortliche Partizipation <span class="content-emoji">👥</span>  
+- digitale Handlungskompetenz <span class="content-emoji">💻</span>
 
 <p class="zitat-quelle">Quellen: Rahmenlehrpläne AWT (Sek I & II)</p>
 
 ---
 
-## 💭 Leitfrage
+## <span class="content-emoji">💭</span> Leitfrage
 
 > [!TIPP]
 > Wie muss Unterricht geplant werden, damit diese Ziele erreicht werden können?
 
 ---
 
-## Unterrichtsqualität: Sichtstrukturen 🎨
+## Unterrichtsqualität: Sichtstrukturen <span class="content-emoji">🎨</span>
 
-- Methoden 🧩  
-- Medien 💻  
-- Materialien 📄 
-- Sozialformen 👥  
-- Zeitstruktur ⏱️  
+- Methoden <span class="content-emoji">🧩</span>  
+- Medien <span class="content-emoji">💻</span>  
+- Materialien <span class="content-emoji">📄</span> 
+- Sozialformen <span class="content-emoji">👥</span>  
+- Zeitstruktur <span class="content-emoji">⏱️</span>  
 
 <p class="zitat-quelle">Quellen: Decristan et al., 2020; Saum & Brüning, 2023</p>
 
 ---
 
-## Unterrichtsqualität: Tiefenstrukturen 🧠
+## Unterrichtsqualität: Tiefenstrukturen <span class="content-emoji">🧠</span>
 
-- kognitive Aktivierung 💡  
-- konstruktive Unterstützung 🤝  
-- Klassenführung 👥  
-- fachbezogenen Unterrichtsqualität 📚
+- kognitive Aktivierung <span class="content-emoji">💡</span>  
+- konstruktive Unterstützung <span class="content-emoji">🤝</span>  
+- Klassenführung <span class="content-emoji">👥</span>  
+- fachbezogenen Unterrichtsqualität <span class="content-emoji">📚</span>
 
 <p class="zitat-quelle">Quellen: Decristan et al., 2020; Lipowsky & Bleck, 2019;Saum & Brüning, 2023</p>
 
 ---
 
-## Unterrichtsqualität: Sicht- und Tiefenstrukturen & KI 🤖
+## Unterrichtsqualität: Sicht- und Tiefenstrukturen & KI <span class="content-emoji">🤖</span>
 
 - Sichtstrukturen: *Was* und *Wie* der Unterrichtsgestaltung
 - Tiefenstrukturen: *lernrelevante* kognitive und motivationale *Prozesse* 
@@ -129,18 +129,18 @@ todos: []
   <div class="callout-content">
     <p>
       Der entscheidende Mehrwert von KI-gestützter, dialogischer Unterrichtsplanung liegt darin,
-      dass die KI als <strong>reflexives Gegenüber</strong> 🪞 genutzt werden kann,
-      um die <strong>Sicht- 🎨</strong>, v. a. aber auch die
-      <strong>Tiefenstrukturen</strong> 🧠 von Unterricht zu stärken.
+      dass die KI als <strong>reflexives Gegenüber</strong> <span class="content-emoji">🪞</span> genutzt werden kann,
+      um die <strong>Sicht- <span class="content-emoji">🎨</span></strong>, v. a. aber auch die
+      <strong>Tiefenstrukturen</strong> <span class="content-emoji">🧠</span> von Unterricht zu stärken.
     </p>
   </div>
 </div>
 
 ---
 
-## KI: dialogischer Planungsraum 🤖
+## KI: dialogischer Planungsraum <span class="content-emoji">🤖</span>
 
-Unterrichtsplanung geschieht häufig alleine 👤, unter Zeitdruck ⏱️ und mit begrenzten Perspektiven 👁️.
+Unterrichtsplanung geschieht häufig alleine <span class="content-emoji">👤</span>, unter Zeitdruck <span class="content-emoji">⏱️</span> und mit begrenzten Perspektiven <span class="content-emoji">👁️</span>.
 
 <div class="fragment">
   <p>
@@ -148,10 +148,10 @@ Unterrichtsplanung geschieht häufig alleine 👤, unter Zeitdruck ⏱️ und mi
   </p>
 
   <ul>
-    <li>Perspektiven erweitern 🔭</li>
-    <li>Differenzierung vorschlagen 🧩</li>
-    <li>Anforderungsbereiche variieren 🎯</li>
-    <li>Gegenargumente formulieren 💬</li>
+    <li>Perspektiven erweitern <span class="content-emoji">🔭</span></li>
+    <li>Differenzierung vorschlagen <span class="content-emoji">🧩</span></li>
+    <li>Anforderungsbereiche variieren <span class="content-emoji">🎯</span></li>
+    <li>Gegenargumente formulieren <span class="content-emoji">💬</span></li>
   </ul>
 </div>
 
@@ -161,9 +161,9 @@ Unterrichtsplanung geschieht häufig alleine 👤, unter Zeitdruck ⏱️ und mi
 
 ---
 
-## KI: dialogischer Planungsraum 🤖
+## KI: dialogischer Planungsraum <span class="content-emoji">🤖</span>
 
-Woher bekommt man aber nun die richtigen Fragen bzw. **Prompts**? 💭
+Woher bekommt man aber nun die richtigen Fragen bzw. **Prompts**? <span class="content-emoji">💭</span>
 
 <div class="fragment">
 
@@ -172,8 +172,8 @@ Woher bekommt man aber nun die richtigen Fragen bzw. **Prompts**? 💭
   <div class="callout callout--tipp">
     <div class="callout-content">
       <p>
-        Rolle 🎭 + Kontext 👥 + Ziel 🎯 + Qualitätskriterien 🧠 +
-        Format 📑 + Differenzierung 🌱 + Reflexion 🪞
+        Rolle <span class="content-emoji">🎭</span> + Kontext <span class="content-emoji">👥</span> + Ziel <span class="content-emoji">🎯</span> + Qualitätskriterien <span class="content-emoji">🧠</span> +
+        Format <span class="content-emoji">📑</span> + Differenzierung <span class="content-emoji">🌱</span> + Reflexion <span class="content-emoji">🪞</span>
       </p>
     </div>
   </div>
@@ -186,43 +186,43 @@ Woher bekommt man aber nun die richtigen Fragen bzw. **Prompts**? 💭
 
 ---
 
-## Fragen❓
+## Fragen<span class="content-emoji">❓</span>
 
 <br>
 
 **Haben Sie Fragen?**  
 
-**🙋‍♀️🙋🙋‍♂️**
+**<span class="content-emoji">🙋‍♀️</span><span class="content-emoji">🙋</span><span class="content-emoji">🙋‍♂️</span>**
 
 <br>
 
 ---
 
-## 🛠️ Werkstatt: Auftrag
+## <span class="content-emoji">🛠️</span> Werkstatt: Auftrag
 
-- Arbeiten Sie mit eigenen Unterrichtsplanungen oder einem Beispiel 📑
+- Arbeiten Sie mit eigenen Unterrichtsplanungen oder einem Beispiel <span class="content-emoji">📑</span>
 <ul>
-  <li class="fragment">Nutzen Sie bspw. fobizz oder Perplexity AI 🤖</li>
-  <li class="fragment">Wählen Sie den Arbeitsmodus, der zu Ihrem Erfahrungsstand passt 🌱</li>
-  <li class="fragment">Nutzen Sie die Kurzformel 🧠 sowie die Leitfragen 💭 auf dem Blog 🌐</li>
-  <li class="fragment">Beantworten Sie Ihre Leitfrage schriftlich 📝</li>
-  <li class="fragment">Challenge: Wir identifizieren gemeinsam die Planung mit dem sichtbarsten Entwicklungsfortschritt 📈</li>
+  <li class="fragment">Nutzen Sie bspw. fobizz oder Perplexity AI <span class="content-emoji">🤖</span></li>
+  <li class="fragment">Wählen Sie den Arbeitsmodus, der zu Ihrem Erfahrungsstand passt <span class="content-emoji">🌱</span></li>
+  <li class="fragment">Nutzen Sie die Kurzformel <span class="content-emoji">🧠</span> sowie die Leitfragen <span class="content-emoji">💭</span> auf dem Blog <span class="content-emoji">🌐</span></li>
+  <li class="fragment">Beantworten Sie Ihre Leitfrage schriftlich <span class="content-emoji">📝</span></li>
+  <li class="fragment">Challenge: Wir identifizieren gemeinsam die Planung mit dem sichtbarsten Entwicklungsfortschritt <span class="content-emoji">📈</span></li>
 </ul>
 
 ---
 
-## 🛠️ Werkstatt: Arbeitsmodi
+## <span class="content-emoji">🛠️</span> Werkstatt: Arbeitsmodi
 
-**🌱 Einsteiger:innen – Struktur klären**
-- *Ziel:* Die Sichtstruktur 🎨 der eigenen Planung transparent machen.
+**<span class="content-emoji">🌱</span> Einsteiger:innen – Struktur klären**
+- *Ziel:* Die Sichtstruktur <span class="content-emoji">🎨</span> der eigenen Planung transparent machen.
 - *Frage:* Ist meine Planung jetzt transparenter?
 
 <div class="fragment">
 
-  <p><strong>🌿 Fortgeschrittene – Lernwirksamkeit stärken</strong></p>
+  <p><strong><span class="content-emoji">🌿</span> Fortgeschrittene – Lernwirksamkeit stärken</strong></p>
 
   <ul>
-    <li><em>Ziel:</em> Die Planung kognitiv anspruchsvoller 🧠 machen.</li>
+    <li><em>Ziel:</em> Die Planung kognitiv anspruchsvoller <span class="content-emoji">🧠</span> machen.</li>
     <li><em>Frage:</em> Wird die kognitive Aktivierung gestärkt?</li>
   </ul>
 
@@ -230,10 +230,10 @@ Woher bekommt man aber nun die richtigen Fragen bzw. **Prompts**? 💭
 
 <div class="fragment">
 
-  <p><strong>🌳 Profis – Tiefenstruktur explizieren</strong></p>
+  <p><strong><span class="content-emoji">🌳</span> Profis – Tiefenstruktur explizieren</strong></p>
 
   <ul>
-    <li><em>Ziel:</em> Tiefenmerkmale 🪞 sichtbar und überprüfbar machen.</li>
+    <li><em>Ziel:</em> Tiefenmerkmale <span class="content-emoji">🪞</span> sichtbar und überprüfbar machen.</li>
     <li><em>Frage:</em> Hat die KI geholfen, Tiefenstrukturen klarer zu machen?</li>
   </ul>
 
@@ -241,35 +241,35 @@ Woher bekommt man aber nun die richtigen Fragen bzw. **Prompts**? 💭
 
 ---
 
-## Reflexion 🪞
+## Reflexion <span class="content-emoji">🪞</span>
 
-- Vorstellung der Antwort auf die Leitfrage 📝
-- Challange: Welche Planung zeigt den sichtbarsten Fortschritt? 📈
-- Fragen & Anmerkungen ⁉️
+- Vorstellung der Antwort auf die Leitfrage <span class="content-emoji">📝</span>
+- Challange: Welche Planung zeigt den sichtbarsten Fortschritt? <span class="content-emoji">📈</span>
+- Fragen & Anmerkungen <span class="content-emoji">⁉️</span>
 
 ---
 
-## 🎓🌍🔓 OER als Verstärker professioneller Planung
+## <span class="content-emoji">🎓</span><span class="content-emoji">🌍</span><span class="content-emoji">🔓</span> OER als Verstärker professioneller Planung
 
 <p><strong>Begründungsmuster für OER:</strong></p>
 
 <ul>
-  <li class="fragment">❤️ <strong>Emotional:</strong> "Wissen wird mehr, wenn wir es teilen."</li>
-  <li class="fragment">📈 <strong>Rational:</strong> Effektivitäts- und Effizienzsteigerungen.</li>
-  <li class="fragment">✨ <strong>Qualitativ:</strong> "Better together."</li>
+  <li class="fragment"><span class="content-emoji">❤️</span> <strong>Emotional:</strong> "Wissen wird mehr, wenn wir es teilen."</li>
+  <li class="fragment"><span class="content-emoji">📈</span> <strong>Rational:</strong> Effektivitäts- und Effizienzsteigerungen.</li>
+  <li class="fragment"><span class="content-emoji">✨</span> <strong>Qualitativ:</strong> "Better together."</li>
 </ul>
 
 <p class="fragment"><strong>Neue Möglichkeiten für OER durch KI:</strong></p>
 
 <ul>
-  <li class="fragment">OER analysieren und anpassen 🧠</li>
-  <li class="fragment">Aufgabenformate variieren 🧩</li>
-  <li class="fragment">regionale Bezüge integrieren 🌍</li>
+  <li class="fragment">OER analysieren und anpassen <span class="content-emoji">🧠</span></li>
+  <li class="fragment">Aufgabenformate variieren <span class="content-emoji">🧩</span></li>
+  <li class="fragment">regionale Bezüge integrieren <span class="content-emoji">🌍</span></li>
 </ul>
 
 ---
 
-### Beispielhafte OER-Quellen 🌐
+### Beispielhafte OER-Quellen <span class="content-emoji">🌐</span>
 
 - WirLernenOnline
 - Joachim Herz Stiftung
@@ -281,7 +281,7 @@ Woher bekommt man aber nun die richtigen Fragen bzw. **Prompts**? 💭
 
 ---
 
-## 🌱 Ausblick: Qualität vor Quantität 🧠
+## <span class="content-emoji">🌱</span> Ausblick: Qualität vor Quantität <span class="content-emoji">🧠</span>
 
 **KI kann:**
 - Texte schneller formulieren  
@@ -293,17 +293,17 @@ Woher bekommt man aber nun die richtigen Fragen bzw. **Prompts**? 💭
   <p>Doch der <strong>entscheidende Mehrwert</strong> liegt in:</p>
 
   <ul>
-    <li>bewusster <strong>Reflexion</strong> 🪞</li>
-    <li>Perspektivenvielfalt 🔭</li>
-    <li>Qualitätsprüfung 🧠</li>
-    <li>dialogischer Planung 👥</li>
+    <li>bewusster <strong>Reflexion</strong> <span class="content-emoji">🪞</span></li>
+    <li>Perspektivenvielfalt <span class="content-emoji">🔭</span></li>
+    <li>Qualitätsprüfung <span class="content-emoji">🧠</span></li>
+    <li>dialogischer Planung <span class="content-emoji">👥</span></li>
   </ul>
 
 </div>
 
 ---
 
-## 🌱 Ausblick: Qualität vor Quantität 🧠
+## <span class="content-emoji">🌱</span> Ausblick: Qualität vor Quantität <span class="content-emoji">🧠</span>
 
 > [!TIPP]
 > Unterricht wird nicht dadurch besser, dass er schneller entsteht, sondern dadurch, dass er **professionell reflektiert** wird.

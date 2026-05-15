@@ -104,7 +104,7 @@ oer:
 
 ---
 
-## 🧭 Hintergrund
+## <span class="content-emoji">🧭</span> Hintergrund
 
 Die Veranstaltung "**Dein Gehirn ist keine Festplatte – Wie Du Dein Lernen boostern kannst**" ist als kurzer Impuls für das Juniorstudium an der Universität Rostock mit ca. 150 Schüler:innen geplant.
 
@@ -112,45 +112,45 @@ Das Format kombiniert kurze Inputs mit zwei Aktivierungsphasen (Aufsteh-Abfrage 
 
 ---
 
-## 💭 Ausgangsfrage
+## <span class="content-emoji">💭</span> Ausgangsfrage
 
 > [!TIPP]
 > Wie kannst Du so lernen, dass es zu Dir, Deinen Zielen und Deinem Alltag passt?
 
 ---
 
-## 🎯 Lernziele
+## <span class="content-emoji">🎯</span> Lernziele
 
 Die Junior-Studierenden können nach dem Impuls:
 
-- 🧠 das **Lerntypen-Konzept** in einem Satz einordnen,
-- 🔍 erklären, warum Lernen immer von **individuellen** und **situativen Faktoren** abhängt,
-- 🧩 mindestens zwei konkrete **Lernzugänge** für sich selbst benennen,
-- 🚀 eine direkte **Veränderung** für die nächste Lernwoche planen.
+- <span class="content-emoji">🧠</span> das **Lerntypen-Konzept** in einem Satz einordnen,
+- <span class="content-emoji">🔍</span> erklären, warum Lernen immer von **individuellen** und **situativen Faktoren** abhängt,
+- <span class="content-emoji">🧩</span> mindestens zwei konkrete **Lernzugänge** für sich selbst benennen,
+- <span class="content-emoji">🚀</span> eine direkte **Veränderung** für die nächste Lernwoche planen.
 
 ---
 
-## 🧭 Ablauf
+## <span class="content-emoji">🧭</span> Ablauf
 
-**Gesamtdauer:** ca. 30 Minuten ⏱️
+**Gesamtdauer:** ca. 30 Minuten <span class="content-emoji">⏱️</span>
 
 <div class="agenda compact no-scroll hover-reveal">
 
 | Phase | Inhalt | Ziel | Zeit |
 | :---- | :----- | :--- | :--: |
-| **1️⃣ Einstieg 💭** | Titel, Leitfrage, kurzer Erwartungsanker | Fokus und Aktivierung | 2 Min |
-| **2️⃣ Lerntypen-Check 🧠** | Aufsteh-Abfrage: auditiv, kognitiv, visuell, haptisch, weiß nicht | Vorwissen sichtbar machen | 4 Min |
-| **3️⃣ Lerntypen-Impuls 🪞** | Lerntypen vor dem Hintergrund der Empirie | Fehlkonzepte klären | 4 Min |
-| **4️⃣ Wie Lernen funktioniert 🧠** | Vier Lerntheorien als Kurzimpulse | Perspektiven erweitern | 6 Min |
-| **5️⃣ Lernen boostern 🌱** | Drei persönliche Beispiele + Tool-Beispiele | Handlungsoptionen öffnen | 8 Min |
-| **6️⃣ Murmelgruppe 💬** | Austausch zu bevorzugten Lernzugängen und nächster Schritt | Transfer sichern | 2 Min |
-| **7️⃣ Abschluss + WiPäd 🎓** | Lerntipps, Lernen als sozialer Prozess, Wirtschaftspädagogik | Ausblick und Verabschiedung | 4 Min |
+| **1. Einstieg <span class="content-emoji">💭</span>** | Titel, Leitfrage, kurzer Erwartungsanker | Fokus und Aktivierung | 2 Min |
+| **2. Lerntypen-Check <span class="content-emoji">🧠</span>** | Aufsteh-Abfrage: auditiv, kognitiv, visuell, haptisch, weiß nicht | Vorwissen sichtbar machen | 4 Min |
+| **3. Lerntypen-Impuls <span class="content-emoji">🪞</span>** | Lerntypen vor dem Hintergrund der Empirie | Fehlkonzepte klären | 4 Min |
+| **4. Wie Lernen funktioniert <span class="content-emoji">🧠</span>** | Vier Lerntheorien als Kurzimpulse | Perspektiven erweitern | 6 Min |
+| **5. Lernen boostern <span class="content-emoji">🌱</span>** | Drei persönliche Beispiele + Tool-Beispiele | Handlungsoptionen öffnen | 8 Min |
+| **6. Murmelgruppe <span class="content-emoji">💬</span>** | Austausch zu bevorzugten Lernzugängen und nächster Schritt | Transfer sichern | 2 Min |
+| **7. Abschluss + WiPäd <span class="content-emoji">🎓</span>** | Lerntipps, Lernen als sozialer Prozess, Wirtschaftspädagogik | Ausblick und Verabschiedung | 4 Min |
 
 </div>
 
 ---
 
-## Lerntypen 🧠
+## Lerntypen <span class="content-emoji">🧠</span>
 
 > [!TIPP]
 > Wie lernst Du am besten?
@@ -164,14 +164,14 @@ Die Junior-Studierenden können nach dem Impuls:
 
 <p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 
--🗄️ **Lerntypen** sind populäre, aber empirisch **nicht nachweisbare** Konstrukte, die Lernende in feste Kategorien einteilen ([Brand, 2025](#literatur); [Daumiller & Wisniewski, 2022](#literatur); [Menz et al., 2021](#literatur)).
-- 🧪 Der Lerntypen-Ansatz gilt deshalb in der Forschung als **Mythos** ([Newton & Salvi, 2020](#literatur)).
-- ⚠️ Lerntypen-Denken kann zu **Etikettierung** führen und Erwartungen an Lernende unnötig begrenzen ([Sun et al., 2023](#literatur)).
-- 🔄 Konstruktiv gewendet bleibt aber sinnvoll: **Lernzugänge variieren**, testen und **reflektieren** statt sich auf einen Typ festzulegen ([Daumiller & Wisniewski, 2022](#literatur)).
+- <span class="content-emoji">🗄️</span> **Lerntypen** sind populäre, aber empirisch **nicht nachweisbare** Konstrukte, die Lernende in feste Kategorien einteilen ([Brand, 2025](#literatur); [Daumiller & Wisniewski, 2022](#literatur); [Menz et al., 2021](#literatur)).
+- <span class="content-emoji">🧪</span> Der Lerntypen-Ansatz gilt deshalb in der Forschung als **Mythos** ([Newton & Salvi, 2020](#literatur)).
+- <span class="content-emoji">⚠️</span> Lerntypen-Denken kann zu **Etikettierung** führen und Erwartungen an Lernende unnötig begrenzen ([Sun et al., 2023](#literatur)).
+- <span class="content-emoji">🔄</span> Konstruktiv gewendet bleibt aber sinnvoll: **Lernzugänge variieren**, testen und **reflektieren** statt sich auf einen Typ festzulegen ([Daumiller & Wisniewski, 2022](#literatur)).
 
 ---
 
-## Wie funktioniert Lernen? 🧠
+## Wie funktioniert Lernen? <span class="content-emoji">🧠</span>
 
 Wir wissen heute bspw. aus den **kognitiven Neurowissenschaften** viel über die **Funktionen des Gehirns beim Lernen**, aber nicht alles. Deshalb und weil entsprechende Erkenntnisse **nicht direkt auf die Gestaltung des Lernens übertragen** werden können, ist Lernen keine rein naturwissenschaftlich ableitbare, sondern eine **didaktisch zu gestaltende, kontextabhängige Aufgabe** ([Schumacher & Stern, 2012](#literatur); [Willingham, 2009](#literatur)).
 
@@ -200,14 +200,14 @@ Um Lernen **wissenschaftlich fundiert** zu **verstehen** und zu **gestalten**, s
 
 <p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 
-- 🔁 **Behaviorismus:** Lernen zeigt sich in beobachtbarer Verhaltensänderung durch Reiz, Reaktion und Verstärkung.
-- 🧠 **Kognitivismus:** Lernen wird als aktive Informationsverarbeitung verstanden (Aufmerksamkeit, Verstehen, Gedächtnis).
-- 🛠️ **Konstruktivismus:** Lernende konstruieren Bedeutung auf Basis eigener Erfahrungen und Vorkenntnisse.
-- 👥 **Situiertes Lernen:** Lernen ist besonders wirksam in authentischen sozialen Kontexten und gemeinsamer Praxis [(Reinmann, 2013)](#literatur).
+- <span class="content-emoji">🔁</span> **Behaviorismus:** Lernen zeigt sich in beobachtbarer Verhaltensänderung durch Reiz, Reaktion und Verstärkung.
+- <span class="content-emoji">🧠</span> **Kognitivismus:** Lernen wird als aktive Informationsverarbeitung verstanden (Aufmerksamkeit, Verstehen, Gedächtnis).
+- <span class="content-emoji">🛠️</span> **Konstruktivismus:** Lernende konstruieren Bedeutung auf Basis eigener Erfahrungen und Vorkenntnisse.
+- <span class="content-emoji">👥</span> **Situiertes Lernen:** Lernen ist besonders wirksam in authentischen sozialen Kontexten und gemeinsamer Praxis [(Reinmann, 2013)](#literatur).
 
 ---
 
-## Dein Lernen boostern 🌱
+## Dein Lernen boostern <span class="content-emoji">🌱</span>
 
 > [!TIPP]
 > **Wie** kannst **Du** vor diesem Hintergrund **Dein Lernen boostern**?
@@ -221,11 +221,11 @@ Um Lernen **wissenschaftlich fundiert** zu **verstehen** und zu **gestalten**, s
 
 <p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: nicht frei verwendbar</p>
 
-Ich habe erst relativ spät angefangen, über mein eigenes **Lernen 🧠** nachzudenken – schade eigentlich.  
+Ich habe erst relativ spät angefangen, über mein eigenes **Lernen <span class="content-emoji">🧠</span>** nachzudenken – schade eigentlich.  
 In meiner Schulzeit war Lernen für mich oft **anstrengend**. Besonders das Üben in Mathe: immer wieder **ähnliche Aufgaben**, wenig Abwechslung – das hat mir selten **Spaß** gemacht.  
-Ganz anders war es im Badminton. Dort konnte ich mich stundenlang auf den Platz stellen und kurze Angaben üben – **freiwillig** und mit hoher **Konzentration 🧠**.  
-Und dann gab es einzelne Unterrichtssituationen, die mir bis heute im Gedächtnis geblieben sind 👥. Besonders im Deutschunterricht zum Thema Barock: Wir haben die Epoche „mit Kopf, Hand und Herz“ kennengelernt – also nicht nur darüber gesprochen, sondern sie **aktiv erlebt**.  
-Erst später habe ich verstanden, woran das liegt: **Motivation**, **Aktivierung**, **Rückmeldung** und **soziale Einbettung 👥** machen einen entscheidenden Unterschied – und viele dieser Faktoren kann ich selbst **beeinflussen 🌱**.
+Ganz anders war es im Badminton. Dort konnte ich mich stundenlang auf den Platz stellen und kurze Angaben üben – **freiwillig** und mit hoher **Konzentration <span class="content-emoji">🧠</span>**.  
+Und dann gab es einzelne Unterrichtssituationen, die mir bis heute im Gedächtnis geblieben sind <span class="content-emoji">👥</span>. Besonders im Deutschunterricht zum Thema Barock: Wir haben die Epoche „mit Kopf, Hand und Herz“ kennengelernt – also nicht nur darüber gesprochen, sondern sie **aktiv erlebt**.  
+Erst später habe ich verstanden, woran das liegt: **Motivation**, **Aktivierung**, **Rückmeldung** und **soziale Einbettung <span class="content-emoji">👥</span>** machen einen entscheidenden Unterschied – und viele dieser Faktoren kann ich selbst **beeinflussen <span class="content-emoji">🌱</span>**.
 
 Was bedeutet das für Dich und Dein Lernen?
 
@@ -234,26 +234,26 @@ Was bedeutet das für Dich und Dein Lernen?
 
 ### Tools zum Boostern
 
-Mit Tools wie den folgenden kannst Du **unterschiedliche Zugänge zum Lernen 🧠** gezielt nutzen:
+Mit Tools wie den folgenden kannst Du **unterschiedliche Zugänge zum Lernen <span class="content-emoji">🧠</span>** gezielt nutzen:
 
-**🧠 Verstehen & Erklären**
+**<span class="content-emoji">🧠</span> Verstehen & Erklären**
 - <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">NotebookLM</a>
 - <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a>
 
-**📚 Wiederholen & Behalten**
+**<span class="content-emoji">📚</span> Wiederholen & Behalten**
 - <a href="https://www.studysmarter.de/" target="_blank" rel="noopener noreferrer">StudySmarter</a>
 - <a href="https://apps.ankiweb.net/" target="_blank" rel="noopener noreferrer">Anki</a>
   
-**🧩 Strukturieren & Verknüpfen**
+**<span class="content-emoji">🧩</span> Strukturieren & Verknüpfen**
 - <a href="https://www.notion.com/" target="_blank" rel="noopener noreferrer">Notion</a>
 - <a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian</a>
 - <a href="https://www.goodnotes.com/" target="_blank" rel="noopener noreferrer">Goodnotes</a>
 
-Entscheidend bleibt, dass Du die **Inhalte aktiv bearbeitest 🧠**, statt sie nur zu konsumieren.
+Entscheidend bleibt, dass Du die **Inhalte aktiv bearbeitest <span class="content-emoji">🧠</span>**, statt sie nur zu konsumieren.
 
 ---
 
-## 💬 Murmelgruppe (2 Minuten)
+## <span class="content-emoji">💬</span> Murmelgruppe (2 Minuten)
 
 Lernen ist auch ein **sozialer Prozess**: Wer mit anderen über Inhalte spricht, erklärt, fragt und Rückmeldung bekommt, kann nachhaltiger lernen.
 
@@ -269,20 +269,20 @@ Rückmeldungen ins Plenum erfolgen nur freiwillig.
 
 ---
 
-## 🧠 Lerntipps und sozialer Blick
+## <span class="content-emoji">🧠</span> Lerntipps und sozialer Blick
 
 Aus didaktischer Perspektive für digitales Lernen wie im Juniorstudium besonders hilfreich:
 
 - Eigene Lernziele klein und konkret formulieren
-- 🔁 Lernaktivitäten variieren (lesen, zusammenfassen, erklären, anwenden)
-- ✅ Verständnis aktiv prüfen, statt nur wiederzulesen
-- 💬 Rückmeldung und Austausch gezielt suchen
+- <span class="content-emoji">🔁</span> Lernaktivitäten variieren (lesen, zusammenfassen, erklären, anwenden)
+- <span class="content-emoji">✅</span> Verständnis aktiv prüfen, statt nur wiederzulesen
+- <span class="content-emoji">💬</span> Rückmeldung und Austausch gezielt suchen
 
 Diese Tipps stammen von [Reinmann (2025)](#literatur), die in ihren Veröffentlichungen noch weitere, wertvolle Ratschläge zum Lernen bietet.
 
 ---
 
-## 🎓 Wirtschaftspädagogik studieren?
+## <span class="content-emoji">🎓</span> Wirtschaftspädagogik studieren?
 
 Wenn Du Lernen spannend findest und wissen willst, wie Unterricht, Schule und digitale Bildung im Bereich Wirtschaft wirksam gestaltet werden können, dann ist Wirtschaftspädagogik vielleicht genau das Richtige für Dich!
 
@@ -290,7 +290,7 @@ Interessiert? Weitere Informationen findest Du hier: <a href="https://www.iwip.u
 
 ---
 
-## 📚 Literatur <span id="literatur"></span>
+## <span class="content-emoji">📚</span> Literatur <span id="literatur"></span>
 
 Brand, A. (2025). Der Lerntypen-Mythos und seine Folgen. *Deutsches Schulportal der Robert Bosch Stiftung*. <a href="https://deutsches-schulportal.de/bildungsforschung/der-lerntypen-mythos-und-seine-folgen/" target="_blank" rel="noopener noreferrer">https://deutsches-schulportal.de/bildungsforschung/der-lerntypen-mythos-und-seine-folgen/</a>
 

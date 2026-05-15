@@ -2,7 +2,7 @@
 title: "Warum OER?"
 date: 2025-06-12
 title_reveal: "Warum OER?"
-emojis: "🎓 🌍 🔓"
+emojis: '<span class="content-emoji">🎓</span> <span class="content-emoji">🌍</span> <span class="content-emoji">🔓</span>'
 veranstaltungstyp: ""
 veranstaltung: ""
 author: "Prof. Dr. Matthias Söll"
@@ -42,7 +42,7 @@ todos:
 
 ---
 
-### OER sind:<br> 🎓🌍🔓
+### OER sind:<br> <span class="content-emoji">🎓</span><span class="content-emoji">🌍</span><span class="content-emoji">🔓</span>
 * Bildungsmaterialien in einem sehr weiten Verständnis (von einer Definition über eine Grafik bis hin zu einem Selbstlernkurse)
 * frei über Online-Plattformen verfügbar (bspw. <a href="https://www.twillo.de" target="_blank" rel="noopener">twillo</a> oder <a href="https://hubbs.schule/"  target="_blank" rel="noopener">HubbS</a> geteilt)
 * digital (so lässt sich das Material gut teilen)
@@ -67,7 +67,7 @@ todos:
   
 ---
 
-### 🔎 Noch mehr<br>OER Infos?
+### <span class="content-emoji">🔎</span> Noch mehr<br>OER Infos?
 
 <div class="definition-container">
   <div class="definition-box">
@@ -80,7 +80,7 @@ todos:
 
 ---
 
-### Warum OER?<br>❤️ Emotionale Begründung
+### Warum OER?<br><span class="content-emoji">❤️</span> Emotionale Begründung
 
 <div class="quote-block">
   {{< callout type="quote" >}}"Wissen ist das einzige Gut, das sich vermehrt, wenn man es teilt."{{< /callout >}}
@@ -91,22 +91,22 @@ todos:
 
 ---
 
-### Warum OER<br>📈 Rationale Begründung
+### Warum OER<br><span class="content-emoji">📈</span> Rationale Begründung
 
 <ul>
-  <li>22.638 neue Büromanagement-Azubis im Jahr 2023 👩‍💼</li>
-  <li>22 Schüler:innen gehen ∅lich in eine Klasse 👥</li>
-  <li>1.029 Klassen für Büromanagement-Azubis im 1. Lehrjahr 🏫</li>
-  <li class="special-bullet">± 1.000 Lehrer:innen bereiten täglich ≈ Unterricht vor 👩‍🏫</li>
+  <li>22.638 neue Büromanagement-Azubis im Jahr 2023 <span class="content-emoji">👩‍💼</span></li>
+  <li>22 Schüler:innen gehen ∅lich in eine Klasse <span class="content-emoji">👥</span></li>
+  <li>1.029 Klassen für Büromanagement-Azubis im 1. Lehrjahr <span class="content-emoji">🏫</span></li>
+  <li class="special-bullet">± 1.000 Lehrer:innen bereiten täglich ≈ Unterricht vor <span class="content-emoji">👩‍🏫</span></li>
 </ul>
 
 <div class="hinweis-box fragment">
-  ☝️ Das Teilen und gemeinsame Bearbeiten von Bildungsmaterialien steigert die Effizienz der Vorbereitung von Lehr-Lern-Arrangements.
+  <span class="content-emoji">☝️</span> Das Teilen und gemeinsame Bearbeiten von Bildungsmaterialien steigert die Effizienz der Vorbereitung von Lehr-Lern-Arrangements.
 </div>
 
 ---
 
-### Warum OER?<br>✨ Qualitative Begründung
+### Warum OER?<br><span class="content-emoji">✨</span> Qualitative Begründung
 
 
 Die Qualität von Lehr-Lern-Arrangements kann durch kooperative Entwicklung steigen.

@@ -97,66 +97,66 @@ oer:
 
 ---
 
-# 💭 Fragestellung  
+# <span class="content-emoji">💭</span> Fragestellung  
 
 > [!TIPP]
 > Wie kann Wirtschaftsunterricht **methodisch** und **medial** *lernförderlich* gestaltet werden – und welche **Entscheidungslogiken** unterstützen dabei eine reflektierte Auswahl?
 
 ---
 
-# 🎯 Lehrziele   
+# <span class="content-emoji">🎯</span> Lehrziele   
 
-In dieser Einheit bearbeiten wir die Frage, wie 🧩 Methoden und 💻 Medien lernförderlich eingesetzt werden können.  
+In dieser Einheit bearbeiten wir die Frage, wie <span class="content-emoji">🧩</span> Methoden und <span class="content-emoji">💻</span> Medien lernförderlich eingesetzt werden können.  
 
 Die Studierenden sind in der Lage …
 
-- ihre **🎓🌍🔓 OER-Entwicklung** zu reflektieren und weiterzuentwickeln,  
-- **🧩 Methoden** zu systematisieren und deren Funktionen zu erläutern,  
-- **💻 Medien** zu ordnen und deren Beitrag für 👥 Lehr-Lern-Prozesse zu beurteilen,  
-- begründete Entscheidungen für die 🎨 Gestaltung von 🤝 Wirtschaftsunterricht abzuleiten.
+- ihre **<span class="content-emoji">🎓</span><span class="content-emoji">🌍</span><span class="content-emoji">🔓</span> OER-Entwicklung** zu reflektieren und weiterzuentwickeln,  
+- **<span class="content-emoji">🧩</span> Methoden** zu systematisieren und deren Funktionen zu erläutern,  
+- **<span class="content-emoji">💻</span> Medien** zu ordnen und deren Beitrag für <span class="content-emoji">👥</span> Lehr-Lern-Prozesse zu beurteilen,  
+- begründete Entscheidungen für die <span class="content-emoji">🎨</span> Gestaltung von <span class="content-emoji">🤝</span> Wirtschaftsunterricht abzuleiten.
 
 ---
 
-# 🧭 Aufbau & Ablauf  
+# <span class="content-emoji">🧭</span> Aufbau & Ablauf  
 
 Die Lehr-Lern-Einheit geht von einer **offenen Fragestellung** aus, arbeitet im *Lehrgespräch* und nutzt *Partnerarbeit* sowie das *Plenum* zur Vertiefung.
 
-**Gesamtdauer:** ca. 90 Minuten ⏱️
+**Gesamtdauer:** ca. 90 Minuten <span class="content-emoji">⏱️</span>
 
 <div class="agenda">
 
 | Phase | Inhalt | Ziel | Zeit |
 |:------|:--------|:------|:------:|
-| **1️⃣ Einstieg 🤔** | Rückblick & Leitfrage | Orientierung schaffen | ⏱️ 5 Min |
-| **2️⃣ OER anschauen & reflektieren 🔍** | OER der Studierenden sichten & diskutieren | Stärken erkennen, Entwicklungsbereiche bestimmen | ⏱️ 30 Min |
-| **3️⃣ Systematisierung 🧭** | Arbeiten mit Systematisierungen von Methoden & Medien | Entscheidungslogiken klären | ⏱️ 30 Min |
-| **4️⃣ OER-Welten erkunden 🌐** | Recherche auf OER-Plattformen | Beispiele prüfen, Potenziale bewerten | ⏱️ 25 Min |
+| **1. Einstieg <span class="content-emoji">🤔</span>** | Rückblick & Leitfrage | Orientierung schaffen | <span class="content-emoji">⏱️</span> 5 Min |
+| **2. OER anschauen & reflektieren <span class="content-emoji">🔍</span>** | OER der Studierenden sichten & diskutieren | Stärken erkennen, Entwicklungsbereiche bestimmen | <span class="content-emoji">⏱️</span> 30 Min |
+| **3. Systematisierung <span class="content-emoji">🧭</span>** | Arbeiten mit Systematisierungen von Methoden & Medien | Entscheidungslogiken klären | <span class="content-emoji">⏱️</span> 30 Min |
+| **4. OER-Welten erkunden <span class="content-emoji">🌐</span>** | Recherche auf OER-Plattformen | Beispiele prüfen, Potenziale bewerten | <span class="content-emoji">⏱️</span> 25 Min |
 
 </div>
 
 ---
 
-# 2️⃣ 🛠️ Erstellung, Lizenzierung, Einbettung & Abgabe von OER
+# 2. <span class="content-emoji">🛠️</span> Erstellung, Lizenzierung, Einbettung & Abgabe von OER
 
-Sie hatten die Aufgabe, Ihre Ausarbeitungen zu den 🤝🎨 [Gegenständen der Wirtschaftsdidaktik](/iWIP/blog/lehre/widi/widi/) als 🎓🌍🔓 OER aufzubereiten. Hier gelangen Sie zur [Aufgabenstellung](/iWIP/blog/lehre/widi/oer/#-selbst-tätig-werden).  
+Sie hatten die Aufgabe, Ihre Ausarbeitungen zu den <span class="content-emoji">🤝</span><span class="content-emoji">🎨</span> [Gegenständen der Wirtschaftsdidaktik](/iWIP/blog/lehre/widi/widi/) als <span class="content-emoji">🎓</span><span class="content-emoji">🌍</span><span class="content-emoji">🔓</span> OER aufzubereiten. Hier gelangen Sie zur [Aufgabenstellung](/iWIP/blog/lehre/widi/oer/#-selbst-tätig-werden).  
 
-Im 👥 Seminar schauen wir uns die entwickelten Materialien im Plenum an und 💬 diskutieren die Kriterien von OER.
+Im <span class="content-emoji">👥</span> Seminar schauen wir uns die entwickelten Materialien im Plenum an und <span class="content-emoji">💬</span> diskutieren die Kriterien von OER.
 
 ---
 
-# 3️⃣ 🧩 Methoden im Unterricht
+# 3. <span class="content-emoji">🧩</span> Methoden im Unterricht
 
 Didaktik fragt danach, **wie Lernprozesse gestaltet werden können**, damit Lernen bedeutsam, wirksam bzw. nachhaltig und reflexiv wird.  
 
-**🧩 Methoden** und **💻 Medien** sind zentrale Stellschrauben, um 👥 Lehr-Lern-Prozesse zu strukturieren und zu unterstützen.
+**<span class="content-emoji">🧩</span> Methoden** und **<span class="content-emoji">💻</span> Medien** sind zentrale Stellschrauben, um <span class="content-emoji">👥</span> Lehr-Lern-Prozesse zu strukturieren und zu unterstützen.
 
 ---
 
-## 🔎 Methodengrundformen im Überblick
+## <span class="content-emoji">🔎</span> Methodengrundformen im Überblick
 
-### 🌐 Methoden anhand von Aktions- und Sozialformen
+### <span class="content-emoji">🌐</span> Methoden anhand von Aktions- und Sozialformen
 
-[Euler & Hahn (2014, S. 319)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) systematisieren Methoden anhand von **🎙️ Aktionsformen** (Darbieten, im Dialog entwickeln, erarbeiten & entdecken lassen) und **✏️ Sozialformen** (Plenum, Gruppe, Partner, Einzeln).  
+[Euler & Hahn (2014, S. 319)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) systematisieren Methoden anhand von **<span class="content-emoji">🎙️</span> Aktionsformen** (Darbieten, im Dialog entwickeln, erarbeiten & entdecken lassen) und **<span class="content-emoji">✏️</span> Sozialformen** (Plenum, Gruppe, Partner, Einzeln).  
 
 Diese Systematisierung lässt sich in einem *Entscheidungsbaum* darstellen:
 
@@ -198,19 +198,19 @@ Aktionsformen
 
 <p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an Euler & Hahn (2014, S. 319) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
-Wie ist der Entscheidungsbaum zu 📖 *lesen*?
-- Startpunkt ist die Ebene der 🎙️ Aktionsformen (z. B. Darbieten, im Dialog entwickeln, erarbeiten & entdecken lassen).
-- Innerhalb jeder Aktionsform wird die gewünschte ✏️ Sozialform gewählt (Plenum, Gruppe, Partner, Einzeln).
-- Am Ende steht die konkrete 🧩 Methode, die sich aus dieser Kombination ergibt (z. B. „Darbieten + Plenum → Vortrag/Vorführung“).
+Wie ist der Entscheidungsbaum zu <span class="content-emoji">📖</span> *lesen*?
+- Startpunkt ist die Ebene der <span class="content-emoji">🎙️</span> Aktionsformen (z. B. Darbieten, im Dialog entwickeln, erarbeiten & entdecken lassen).
+- Innerhalb jeder Aktionsform wird die gewünschte <span class="content-emoji">✏️</span> Sozialform gewählt (Plenum, Gruppe, Partner, Einzeln).
+- Am Ende steht die konkrete <span class="content-emoji">🧩</span> Methode, die sich aus dieser Kombination ergibt (z. B. „Darbieten + Plenum → Vortrag/Vorführung“).
 
 > [!TIPP]
 > So wird sichtbar, welche methodischen Optionen sich aus bestimmten Kombinationen von Aktions- und Sozialformen ergeben – und wo in der eigenen Praxis Neues ausprobiert werden kann.
 
 ---
 
-### 🌐 Spektrum der Methoden beruflicher Schulen
+### <span class="content-emoji">🌐</span> Spektrum der Methoden beruflicher Schulen
 
-[Bonz (2006, S. 339)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) systematisiert das Spektrum der Methoden ausgehend vom Konzept des 👩‍🏫 Lehrens oder des 🧠 Lernens:
+[Bonz (2006, S. 339)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) systematisiert das Spektrum der Methoden ausgehend vom Konzept des <span class="content-emoji">👩‍🏫</span> Lehrens oder des <span class="content-emoji">🧠</span> Lernens:
 
 <p class="grafic-title">Systematisierung von Methoden nach Bonz (2006)</p>
 
@@ -241,12 +241,12 @@ Lehren oder Lernen
 
 <p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an Bonz (2006, S. 339) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
-Wie ist dieser Entscheidungsbaum zu 📖 *lesen*?
-- 📌 Ausgangspunkt ist die Unterscheidung **Lehren 👩‍🏫** vs. **selbstgesteuertes Lernen 🧠**.  
-- 🌳 Innerhalb dieser beiden Wege verzweigt der Baum weiter in **Methodenfamilien** (z. B. Lehrformen, traditionelle Methoden, handlungsorientierte Methoden).  
-- 🧩 Die Endpunkte zeigen die **konkreten Methoden**, die aus diesem didaktischen Grundverständnis heraus typisch eingesetzt werden (z. B. Frontalunterricht, Gruppenarbeit, Leittextmethode).
+Wie ist dieser Entscheidungsbaum zu <span class="content-emoji">📖</span> *lesen*?
+- <span class="content-emoji">📌</span> Ausgangspunkt ist die Unterscheidung **Lehren <span class="content-emoji">👩‍🏫</span>** vs. **selbstgesteuertes Lernen <span class="content-emoji">🧠</span>**.  
+- <span class="content-emoji">🌳</span> Innerhalb dieser beiden Wege verzweigt der Baum weiter in **Methodenfamilien** (z. B. Lehrformen, traditionelle Methoden, handlungsorientierte Methoden).  
+- <span class="content-emoji">🧩</span> Die Endpunkte zeigen die **konkreten Methoden**, die aus diesem didaktischen Grundverständnis heraus typisch eingesetzt werden (z. B. Frontalunterricht, Gruppenarbeit, Leittextmethode).
 
-🧭 Wie bei der ersten Systematik von [Euler & Hahn (2014, S. 319)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) wird dadurch sichtbar, welche **methodischen Optionen** aus der gewählten Grundausrichtung entstehen.  
+<span class="content-emoji">🧭</span> Wie bei der ersten Systematik von [Euler & Hahn (2014, S. 319)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) wird dadurch sichtbar, welche **methodischen Optionen** aus der gewählten Grundausrichtung entstehen.  
 
 Mit der Übersicht lassen sich bspw. **Schwerpunkte und Entwicklungsmöglichkeiten** im eigenen Repertoire **reflektieren**: etwa wenn man fast ausschließlich Lehrformen nutzt, aber selten Methoden des selbstgesteuerten oder handlungsorientierten Lernens.
 
@@ -255,23 +255,23 @@ Mit der Übersicht lassen sich bspw. **Schwerpunkte und Entwicklungsmöglichkeit
 
 ---
 
-# 💻 Medien im Unterricht
+# <span class="content-emoji">💻</span> Medien im Unterricht
 
-## 💭 Was sind Medien und warum werden sie eingesetzt?
+## <span class="content-emoji">💭</span> Was sind Medien und warum werden sie eingesetzt?
 
-- 👥 Unterricht lebt von direkter Kommunikation zwischen Lehrenden und Lernenden – über Sprache, Gestik und Mimik.  
-- 💻 Beim Lernen mit *Medien* werden zusätzlich materielle und technische Objekte einbezogen (z. B. Texte, Visualisierungen, Simulationen).  
-- 🧭 Nach [Tulodziecki et al. (2021, S. 33)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) sind Medien Mittler, durch die in kommunikativen Zusammenhängen Zeichen aufgenommen, erzeugt, verarbeitet, übertragen, gespeichert oder präsentiert werden.  
-- 🎨 [Von Martial (2002, S. 15 ff.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) versteht Medien als Instrumente, mit deren Hilfe die Ziele des Unterrichts erreicht werden sollen.
+- <span class="content-emoji">👥</span> Unterricht lebt von direkter Kommunikation zwischen Lehrenden und Lernenden – über Sprache, Gestik und Mimik.  
+- <span class="content-emoji">💻</span> Beim Lernen mit *Medien* werden zusätzlich materielle und technische Objekte einbezogen (z. B. Texte, Visualisierungen, Simulationen).  
+- <span class="content-emoji">🧭</span> Nach [Tulodziecki et al. (2021, S. 33)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) sind Medien Mittler, durch die in kommunikativen Zusammenhängen Zeichen aufgenommen, erzeugt, verarbeitet, übertragen, gespeichert oder präsentiert werden.  
+- <span class="content-emoji">🎨</span> [Von Martial (2002, S. 15 ff.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) versteht Medien als Instrumente, mit deren Hilfe die Ziele des Unterrichts erreicht werden sollen.
 
 > [!TIPP]
 > Medien sind also kein Selbstzweck, sondern dienen dazu, Lerngegenstände zugänglich, anschaulich, bearbeitbar und reflektierbar zu machen.
 
-🧭 Wie Methoden lassen sich auch Medien systematisieren.  
+<span class="content-emoji">🧭</span> Wie Methoden lassen sich auch Medien systematisieren.  
 
-### 🌐 Unterrichtsmedien als Lernobjekte und Hilfsmittel
+### <span class="content-emoji">🌐</span> Unterrichtsmedien als Lernobjekte und Hilfsmittel
 
-Nach [von Martial (2002, S. 15 ff.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) können Unterrichtsmedien bspw. in 🎒 *Lernobjekte* (Originale und Abbildungen) und 🧰 *Hilfsmittel* differenziert werden. In folgender Übersicht werden Beispiele aus dem Berufsfeld 🤝 Wirtschaft und Verwaltung aufgezählt:
+Nach [von Martial (2002, S. 15 ff.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) können Unterrichtsmedien bspw. in <span class="content-emoji">🎒</span> *Lernobjekte* (Originale und Abbildungen) und <span class="content-emoji">🧰</span> *Hilfsmittel* differenziert werden. In folgender Übersicht werden Beispiele aus dem Berufsfeld <span class="content-emoji">🤝</span> Wirtschaft und Verwaltung aufgezählt:
 
 <p class="grafic-title">Systematisierung von Unterrichtsmedien nach von Martial (2002)</p>
 
@@ -300,9 +300,9 @@ Unterrichtsmedien
 
 <p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an von Martial (2002, S. 15 ff.) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
-### 🧰 Unterrichtsmedien als tradierte Lehrmittel & neue Medien
+### <span class="content-emoji">🧰</span> Unterrichtsmedien als tradierte Lehrmittel & neue Medien
 
-In Anlehnung an [Stadtfeld (2011, S. 71 f.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) kann zwischen 🏫🖍️ *tradierten Lehrmitteln* (klassische analoge Medien und klassische digitale Medien) und ✨💻 *neuen Medien* (Lernprogramme und -umgebungen, Experimentier- & Simulationsumgebungen, Werkzeugen und Kommunikations- & Kooperationsumgebungen) unterschieden werden:
+In Anlehnung an [Stadtfeld (2011, S. 71 f.)](/iWIP/blog/lehre/widi/methoden_medien/#-literatur) kann zwischen <span class="content-emoji">🏫</span><span class="content-emoji">🖍️</span> *tradierten Lehrmitteln* (klassische analoge Medien und klassische digitale Medien) und <span class="content-emoji">✨</span><span class="content-emoji">💻</span> *neuen Medien* (Lernprogramme und -umgebungen, Experimentier- & Simulationsumgebungen, Werkzeugen und Kommunikations- & Kooperationsumgebungen) unterschieden werden:
 
 <p class="grafic-title">Systematisierung von Unterrichtsmedien nach Stadtfeld (2011)</p>
 
@@ -348,35 +348,35 @@ Neue Medien
 
 ---
 
-# 4️⃣ ❤️ Vorlieben für Methoden und Medien
+# 4. <span class="content-emoji">❤️</span> Vorlieben für Methoden und Medien
 
-## 🧑‍🤝‍🧑 Partner:innenarbeit, ca. 10 Min
+## <span class="content-emoji">🧑‍🤝‍🧑</span> Partner:innenarbeit, ca. 10 Min
 
-1. Überlegen Sie zunächst individuell, welche **🧩 Methoden** und **💻 Medien** Sie für Ihr eigenes **🧠 Lernen** bevorzugen.  
+1. Überlegen Sie zunächst individuell, welche **<span class="content-emoji">🧩</span> Methoden** und **<span class="content-emoji">💻</span> Medien** Sie für Ihr eigenes **<span class="content-emoji">🧠</span> Lernen** bevorzugen.  
 2. Begründen Sie Ihre Auswahl.  
 3. Halten Sie stichpunktartig fest:  
-   - bevorzugte 🧩 Methode(n) und 💻 Medien  
+   - bevorzugte <span class="content-emoji">🧩</span> Methode(n) und <span class="content-emoji">💻</span> Medien  
    - kurze Begründung für Methode(n) und Medien  
-4. Tauschen Sie sich mit einer Kommilitonin oder einem Kommilitonen aus 🤝.  
-5. Ergänzen Sie ggf. neue Einsichten 🌱 aus dem Austausch.
+4. Tauschen Sie sich mit einer Kommilitonin oder einem Kommilitonen aus <span class="content-emoji">🤝</span>.  
+5. Ergänzen Sie ggf. neue Einsichten <span class="content-emoji">🌱</span> aus dem Austausch.
 
 ---
 
-## 🔎 Vertiefung: 🧩 Methoden und 💻 Medien
+## <span class="content-emoji">🔎</span> Vertiefung: <span class="content-emoji">🧩</span> Methoden und <span class="content-emoji">💻</span> Medien
 
-- 🔍 **Recherche (10 Min):** Suchen Sie auf 🌐 https://hubbs.schule oder 🌐 https://www.twillo.de nach Materialien zu Methoden und Medien in Ihrem Interessensfeld.  
-- Anschließend führen wir eine **💬 Gruppendiskussion** im 👥 Plenum durch:
+- <span class="content-emoji">🔍</span> **Recherche (10 Min):** Suchen Sie auf <span class="content-emoji">🌐</span> https://hubbs.schule oder <span class="content-emoji">🌐</span> https://www.twillo.de nach Materialien zu Methoden und Medien in Ihrem Interessensfeld.  
+- Anschließend führen wir eine **<span class="content-emoji">💬</span> Gruppendiskussion** im <span class="content-emoji">👥</span> Plenum durch:
   - Welche Beispiele finden Sie?  
   - Wie werden Methoden und Medien dort eingesetzt?  
-  - Welche Stärken und Grenzen sehen Sie, sowohl bezogen auf die Materialien als auch auf die 🌐 Plattformen?
+  - Welche Stärken und Grenzen sehen Sie, sowohl bezogen auf die Materialien als auch auf die <span class="content-emoji">🌐</span> Plattformen?
 
 ---
 
-# 🏁 Abschluss: Haben wir die Lehrziele erreicht?
+# <span class="content-emoji">🏁</span> Abschluss: Haben wir die Lehrziele erreicht?
 
 ---
 
-# 📚 Literatur
+# <span class="content-emoji">📚</span> Literatur
 
 Bonz, B. (2006). Methoden in der schulischen Berufsbildung. In R. Arnold & A. Lipsmeier (Hrsg.), Handbuch der Berufsbildung (S. 328–341). VS Verlag für Sozialwissenschaften. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=513898441" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.1007/978-3-531-90622-5_20" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/162307316" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 

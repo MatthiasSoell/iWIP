@@ -110,35 +110,35 @@ oer:
 
 ---
 
-## 🧭 Hintergrund
+## <span class="content-emoji">🧭</span> Hintergrund
 
-Dieser Beitrag dokumentiert eine 90-minütige Online-Lehrkräftefortbildung mit rund 12 Teilnehmenden zu den Themen **Lerntypen**, **Lernformen** und **Prüfungsformen** 👥.
+Dieser Beitrag dokumentiert eine 90-minütige Online-Lehrkräftefortbildung mit rund 12 Teilnehmenden zu den Themen **Lerntypen**, **Lernformen** und **Prüfungsformen** <span class="content-emoji">👥</span>.
 
-Die Fortbildung fand an einer Schule statt, die ihren Unterricht bewusst in Richtung **moderner, kompetenzorientierter Lehr-Lern-Arrangements** weiterentwickelt. Der Workshop versteht sich als kleiner Beitrag zu diesem laufenden Schulentwicklungsprozess 🤝🎨.
+Die Fortbildung fand an einer Schule statt, die ihren Unterricht bewusst in Richtung **moderner, kompetenzorientierter Lehr-Lern-Arrangements** weiterentwickelt. Der Workshop versteht sich als kleiner Beitrag zu diesem laufenden Schulentwicklungsprozess <span class="content-emoji">🤝</span><span class="content-emoji">🎨</span>.
 
-Leitidee der Veranstaltung ist eine **evidenzinformierte Perspektive** auf Unterricht: Forschung kann Orientierung geben und hilfreiche Einsichten liefern 🧠 – sie bietet jedoch keine einfachen Patentrezepte. Empirische Befunde müssen immer in konkrete Unterrichtssituationen und schulische Kontexte übersetzt werden 🪞.
+Leitidee der Veranstaltung ist eine **evidenzinformierte Perspektive** auf Unterricht: Forschung kann Orientierung geben und hilfreiche Einsichten liefern <span class="content-emoji">🧠</span> – sie bietet jedoch keine einfachen Patentrezepte. Empirische Befunde müssen immer in konkrete Unterrichtssituationen und schulische Kontexte übersetzt werden <span class="content-emoji">🪞</span>.
 
 Studien zeigen zudem, dass evidenzinformierte Schulentwicklung nicht allein durch Forschung entsteht, sondern vor allem durch **professionelle Gespräche, geeignete Strukturen und unterstützendes Leitungshandeln** ([Brown & Zhang 2017](#literatur)).  
 
-Die Fortbildung setzt deshalb bewusst auf einen **dialogischen, partizipativen Ansatz**, der kurze, fokussierte Inputs mit Diskussion und Transfer verbindet und dabei auf **wenige, klare Formate statt vieler Methodenwechsel** setzt 🤝.
+Die Fortbildung setzt deshalb bewusst auf einen **dialogischen, partizipativen Ansatz**, der kurze, fokussierte Inputs mit Diskussion und Transfer verbindet und dabei auf **wenige, klare Formate statt vieler Methodenwechsel** setzt <span class="content-emoji">🤝</span>.
 
-Zu jedem Themenfeld gibt es daher zunächst einen kurzen Input zu **Theorie und Empirie**, der anschließend gemeinsam diskutiert und auf Fragen der Unterrichts- und Schulentwicklung übertragen wird 💬.
+Zu jedem Themenfeld gibt es daher zunächst einen kurzen Input zu **Theorie und Empirie**, der anschließend gemeinsam diskutiert und auf Fragen der Unterrichts- und Schulentwicklung übertragen wird <span class="content-emoji">💬</span>.
 
 > [!IMPORTANT]
 > Evidenzinformierung bedeutet hier **begründete professionelle Entscheidungen im jeweiligen Schulkontext**.
 
 ---
 
-## 💭 Ausgangsfrage
+## <span class="content-emoji">💭</span> Ausgangsfrage
 
 > [!TIPP]
-> Was können aktuelle wissenschaftliche Erkenntnisse zu Lerntypen sowie zu Lernformen und Prüfungsformen für die Weiterentwicklung von Unterricht und Schule beitragen? 🪞
+> Was können aktuelle wissenschaftliche Erkenntnisse zu Lerntypen sowie zu Lernformen und Prüfungsformen für die Weiterentwicklung von Unterricht und Schule beitragen? <span class="content-emoji">🪞</span>
 
 ---
 
-## 🎯 Lernziele
+## <span class="content-emoji">🎯</span> Lernziele
 
-Die Teilnehmenden können nach der Fortbildung 🧠:
+Die Teilnehmenden können nach der Fortbildung <span class="content-emoji">🧠</span>:
 
 - den Lerntypen-Mythos wissenschaftlich einordnen und konstruktiv für die Unterrichtsgestaltung nutzen,
 - Vor- und Nachteile zentraler Lernformen begründet vergleichen,
@@ -146,31 +146,31 @@ Die Teilnehmenden können nach der Fortbildung 🧠:
 - eine konkrete Änderung für die eigene Praxis planen.
 
 > [!TIPP]
-> Ziel ist nicht nur Verstehen, sondern handlungsfähige didaktische Entscheidungssicherheit im Alltag 🌱.
+> Ziel ist nicht nur Verstehen, sondern handlungsfähige didaktische Entscheidungssicherheit im Alltag <span class="content-emoji">🌱</span>.
 
 ---
 
-## 🧭 Aufbau & Ablauf 👥
+## <span class="content-emoji">🧭</span> Aufbau & Ablauf <span class="content-emoji">👥</span>
 
-**Gesamtdauer:** ca. 90 Minuten ⏱️
+**Gesamtdauer:** ca. 90 Minuten <span class="content-emoji">⏱️</span>
 
 <!-- markdownlint-disable MD033 -->
 <div class="agenda compact no-scroll hover-reveal">
 
 | Phase | Inhalt | Ziel | Zeit |
 | :---- | :----- | :--- | :--: |
-| **1️⃣ Einstieg 💭** | Leitfrage, Rahmen, gemeinsame Orientierung | Arbeitsbündnis und Fokus 🧭 | ⏱️ 5<br>Min |
-| **2️⃣ Lerntypen 🧠** | Evidenzlage und konstruktive Einordnung | Mythen klären, Handlungsoptionen öffnen 🪞 | ⏱️ 25<br>Min |
-| **3️⃣ Lern-<br>formen 🧩** | Didaktische Entscheidungslogik | Formate begründet wählen 🎯 | ⏱️ 25<br>Min |
-| **4️⃣ Prüfungsformen 🎯** | Constructive Alignment und Passung | Kompetenzen angemessen sichtbar machen 👥 | ⏱️ 30<br>Min |
-| **5️⃣ Transfer 🌱** | Take-aways und 14-Tage-Commitment | Umsetzung im Alltag sichern 🧭 | ⏱️ 5<br>Min |
+| **1. Einstieg <span class="content-emoji">💭</span>** | Leitfrage, Rahmen, gemeinsame Orientierung | Arbeitsbündnis und Fokus <span class="content-emoji">🧭</span> | <span class="content-emoji">⏱️</span> 5<br>Min |
+| **2. Lerntypen <span class="content-emoji">🧠</span>** | Evidenzlage und konstruktive Einordnung | Mythen klären, Handlungsoptionen öffnen <span class="content-emoji">🪞</span> | <span class="content-emoji">⏱️</span> 25<br>Min |
+| **3. Lern-<br>formen <span class="content-emoji">🧩</span>** | Didaktische Entscheidungslogik | Formate begründet wählen <span class="content-emoji">🎯</span> | <span class="content-emoji">⏱️</span> 25<br>Min |
+| **4. Prüfungsformen <span class="content-emoji">🎯</span>** | Constructive Alignment und Passung | Kompetenzen angemessen sichtbar machen <span class="content-emoji">👥</span> | <span class="content-emoji">⏱️</span> 30<br>Min |
+| **5. Transfer <span class="content-emoji">🌱</span>** | Take-aways und 14-Tage-Commitment | Umsetzung im Alltag sichern <span class="content-emoji">🧭</span> | <span class="content-emoji">⏱️</span> 5<br>Min |
 
 </div>
 <!-- markdownlint-enable MD033 -->
 
 ---
 
-## Lerntypen 🧠
+## Lerntypen <span class="content-emoji">🧠</span>
 
 > [!TIPP]
 > Welcher Lerntyp dominiert bei Ihren Schüler:innen?
@@ -184,36 +184,36 @@ Die Teilnehmenden können nach der Fortbildung 🧠:
 
 <p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt  mit ChatGPT) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
-- **Lerntypen** sind populäre, aber empirisch nicht belastbare Konstrukte, die Lernende in **feste Kategorien einteilen** ([Brand, 2025](#literatur); [Daumiller & Wisniewski, 2022](#literatur); [Menz et al., 2021](#literatur)) 🧠.
+- **Lerntypen** sind populäre, aber empirisch nicht belastbare Konstrukte, die Lernende in **feste Kategorien einteilen** ([Brand, 2025](#literatur); [Daumiller & Wisniewski, 2022](#literatur); [Menz et al., 2021](#literatur)) <span class="content-emoji">🧠</span>.
 
-- Die Annahme, Lernen werde wirksamer, wenn Unterricht auf **stabile Lerntypen abgestimmt** wird („Matching-Hypothese“), lässt sich **empirisch nicht bestätigen** ([Newton & Salvi, 2020](#literatur)) ☝️.
+- Die Annahme, Lernen werde wirksamer, wenn Unterricht auf **stabile Lerntypen abgestimmt** wird („Matching-Hypothese“), lässt sich **empirisch nicht bestätigen** ([Newton & Salvi, 2020](#literatur)) <span class="content-emoji">☝️</span>.
 
-- Gleichzeitig kann die Einteilung in Lerntypen das Risiko bergen, Lernende zu **etikettieren** und damit ihre **Entwicklungsmöglichkeiten zu begrenzen** ([Sun et al., 2023](#literatur)) 🪞.
+- Gleichzeitig kann die Einteilung in Lerntypen das Risiko bergen, Lernende zu **etikettieren** und damit ihre **Entwicklungsmöglichkeiten zu begrenzen** ([Sun et al., 2023](#literatur)) <span class="content-emoji">🪞</span>.
 
-- **Konstruktiv gewendet** kann die Kritik am Lerntypen-Konzept jedoch dazu anregen, **Methoden zu variieren** 🧩 und **Lernstrategieberatung gezielt einzusetzen**, um individuelle Lernpräferenzen zu berücksichtigen – **ohne diese als feste Kategorien zu verstehen** ([Daumiller & Wisniewski, 2022](#literatur)).
+- **Konstruktiv gewendet** kann die Kritik am Lerntypen-Konzept jedoch dazu anregen, **Methoden zu variieren** <span class="content-emoji">🧩</span> und **Lernstrategieberatung gezielt einzusetzen**, um individuelle Lernpräferenzen zu berücksichtigen – **ohne diese als feste Kategorien zu verstehen** ([Daumiller & Wisniewski, 2022](#literatur)).
 
 ---
 
-## Lernformen 🧩
+## Lernformen <span class="content-emoji">🧩</span>
 
-- Lernformen beschreiben, **wie Lernen im Unterricht organisiert ist** – sie entstehen aus dem Zusammenspiel von Methoden 🧩, Sozialformen 👥 und der konkreten Aufgaben- und Steuerungsstruktur.
-- [Euler & Hahn (2014)](#literatur) systematisieren Methoden entlang von 🎙️ Aktionsformen und 👥 Sozialformen.
+- Lernformen beschreiben, **wie Lernen im Unterricht organisiert ist** – sie entstehen aus dem Zusammenspiel von Methoden <span class="content-emoji">🧩</span>, Sozialformen <span class="content-emoji">👥</span> und der konkreten Aufgaben- und Steuerungsstruktur.
+- [Euler & Hahn (2014)](#literatur) systematisieren Methoden entlang von <span class="content-emoji">🎙️</span> Aktionsformen und <span class="content-emoji">👥</span> Sozialformen.
 
 <p class="table-title">Methoden in Abhängigkeit von Aktions- und Sozialform</p>
 
 <div class="agenda compact no-scroll hover-reveal">
 
-| Aktions-/Sozialform: | 👥 Plenum | 👥 Gruppe | 👥 Partner | 👤 Einzeln |
+| Aktions-/Sozialform: | <span class="content-emoji">👥</span> Plenum | <span class="content-emoji">👥</span> Gruppe | <span class="content-emoji">👥</span> Partner | <span class="content-emoji">👤</span> Einzeln |
 | --- | --- | --- | --- | --- |
-| 🎨 Selbst Darbieten | Vortrag / Vorführung | Instruktion | Instruktion | Instruktion |
-| 💬 Im Dialog entwickeln | Lehrgespräch | Beratung / Moderation | Beratung / Moderation | Beratung / Moderation |
-| 🌱 Erarbeiten & entdecken lassen | angeleitete Einzelarbeit | Gruppenarbeit | Partnerarbeit | Einzelarbeit |
+| <span class="content-emoji">🎨</span> Selbst Darbieten | Vortrag / Vorführung | Instruktion | Instruktion | Instruktion |
+| <span class="content-emoji">💬</span> Im Dialog entwickeln | Lehrgespräch | Beratung / Moderation | Beratung / Moderation | Beratung / Moderation |
+| <span class="content-emoji">🌱</span> Erarbeiten & entdecken lassen | angeleitete Einzelarbeit | Gruppenarbeit | Partnerarbeit | Einzelarbeit |
 
 </div>
 
 <p class="bildquelle">Quelle: Eigene Darstellung in Anlehnung an <a href="#literatur">Euler & Hahn (2014, 319)</a> · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
-- Während [Euler & Hahn (2014)](#literatur) Methoden als **Kombination von Aktions- und Sozialformen** fassen, ordnet [Bonz (2006, 339)](#literatur) das Methodenspektrum entlang grundlegender Unterrichtslogiken zwischen 👩‍🏫 Lehren und 🧠 Lernen:
+- Während [Euler & Hahn (2014)](#literatur) Methoden als **Kombination von Aktions- und Sozialformen** fassen, ordnet [Bonz (2006, 339)](#literatur) das Methodenspektrum entlang grundlegender Unterrichtslogiken zwischen <span class="content-emoji">👩‍🏫</span> Lehren und <span class="content-emoji">🧠</span> Lernen:
 
 <p class="grafic-title">Spektrum der Methoden beruflicher Schulen nach Bonz (2006)</p>
 
@@ -224,30 +224,30 @@ Die Teilnehmenden können nach der Fortbildung 🧠:
 
 <p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an <a href="#literatur">Bonz (2006, 339)</a> · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
-- Empirische Befunde zeigen, dass Unterrichtsmethoden **nicht per se überlegen sind**, sondern ihre Wirksamkeit von Lernzielen 🎯, Lernvoraussetzungen 👥 und der konkreten Umsetzung abhängt ([Nickolaus, 2018](#literatur); [Seifried & Sembill, 2010](#literatur)).
-- Dabei zeigen sich jedoch **differenzielle Tendenzen**: Instruktional geprägte Lehrformen 👩‍🏫 können insbesondere den Erwerb von Fachkompetenz im Sinne deklarativen Wissens 📚 unterstützen, während stärker handlungsorientierte Lernformen 🧠 eher mit der Förderung von Sozial- und Selbstkompetenz 👥 in Verbindung gebracht werden.
-- Die Perspektiven von [Euler & Hahn (2014)](#literatur) und [Bonz (2006)](#literatur) sowie die empirischen Erkenntnisse machen deutlich: Lernformen sind **keine festen Kategorien**, sondern Ergebnis didaktischer Entscheidungen entlang von Lernzielen 🎯, Inhalten 📚, Lernvoraussetzungen 👥 und notwendigem Scaffolding 🪜 (z. B. durch strukturierende Hinweise, Hilfen und Feedback).
+- Empirische Befunde zeigen, dass Unterrichtsmethoden **nicht per se überlegen sind**, sondern ihre Wirksamkeit von Lernzielen <span class="content-emoji">🎯</span>, Lernvoraussetzungen <span class="content-emoji">👥</span> und der konkreten Umsetzung abhängt ([Nickolaus, 2018](#literatur); [Seifried & Sembill, 2010](#literatur)).
+- Dabei zeigen sich jedoch **differenzielle Tendenzen**: Instruktional geprägte Lehrformen <span class="content-emoji">👩‍🏫</span> können insbesondere den Erwerb von Fachkompetenz im Sinne deklarativen Wissens <span class="content-emoji">📚</span> unterstützen, während stärker handlungsorientierte Lernformen <span class="content-emoji">🧠</span> eher mit der Förderung von Sozial- und Selbstkompetenz <span class="content-emoji">👥</span> in Verbindung gebracht werden.
+- Die Perspektiven von [Euler & Hahn (2014)](#literatur) und [Bonz (2006)](#literatur) sowie die empirischen Erkenntnisse machen deutlich: Lernformen sind **keine festen Kategorien**, sondern Ergebnis didaktischer Entscheidungen entlang von Lernzielen <span class="content-emoji">🎯</span>, Inhalten <span class="content-emoji">📚</span>, Lernvoraussetzungen <span class="content-emoji">👥</span> und notwendigem Scaffolding <span class="content-emoji">🪜</span> (z. B. durch strukturierende Hinweise, Hilfen und Feedback).
 
 ---
 
-## Prüfungsformen 🎯
+## Prüfungsformen <span class="content-emoji">🎯</span>
 
-- Prüfungen erfüllen mehrere Funktionen 🛠️:
-  - **Diagnose und Rückmeldung** über erreichte Kompetenzen 🧠  
-  - **Steuerung von Lernprozessen** 🪜  
-  - **Selektion und Zertifizierung** im Bildungssystem 📊 ([Wilbers, 2025](#literatur))
+- Prüfungen erfüllen mehrere Funktionen <span class="content-emoji">🛠️</span>:
+  - **Diagnose und Rückmeldung** über erreichte Kompetenzen <span class="content-emoji">🧠</span>  
+  - **Steuerung von Lernprozessen** <span class="content-emoji">🪜</span>  
+  - **Selektion und Zertifizierung** im Bildungssystem <span class="content-emoji">📊</span> ([Wilbers, 2025](#literatur))
 
-- Daraus ergeben sich Anforderungen an die Gestaltung: Prüfungen sollen **lernförderlich 🧠** sowie **objektiv, reliabel und valide** sein.
+- Daraus ergeben sich Anforderungen an die Gestaltung: Prüfungen sollen **lernförderlich <span class="content-emoji">🧠</span>** sowie **objektiv, reliabel und valide** sein.
 
-- **Fehlpassungen** entstehen insbesondere dann, wenn **Handlungskompetenz 🤝 aufgebaut**, aber lediglich **Reproduktion von Wissen 📚 geprüft** wird. In solchen Fällen werden zentrale Kompetenzen **nicht angemessen erfasst**, wodurch Prüfungen ihre **diagnostische und steuernde Funktion** nur eingeschränkt erfüllen ([vgl. Deutscher et al., 2023](#literatur); [Wilbers, 2025](#literatur)).
+- **Fehlpassungen** entstehen insbesondere dann, wenn **Handlungskompetenz <span class="content-emoji">🤝</span> aufgebaut**, aber lediglich **Reproduktion von Wissen <span class="content-emoji">📚</span> geprüft** wird. In solchen Fällen werden zentrale Kompetenzen **nicht angemessen erfasst**, wodurch Prüfungen ihre **diagnostische und steuernde Funktion** nur eingeschränkt erfüllen ([vgl. Deutscher et al., 2023](#literatur); [Wilbers, 2025](#literatur)).
 
-- Empirische Analysen zeigen zudem, dass Prüfungsaufgaben häufig **wenig problemhaltig und authentisch** sind und damit **berufliche Handlungskompetenz 🤝 nur eingeschränkt erfassen** ([Wuttke et al., 2022](#literatur)).
+- Empirische Analysen zeigen zudem, dass Prüfungsaufgaben häufig **wenig problemhaltig und authentisch** sind und damit **berufliche Handlungskompetenz <span class="content-emoji">🤝</span> nur eingeschränkt erfassen** ([Wuttke et al., 2022](#literatur)).
 
-- Prüfungen beeinflussen zugleich die **Ausrichtung von Lernprozessen 🧠** („assessment drives learning“): Lernende orientieren ihr Lernen an **wahrgenommenen Prüfungsanforderungen 🎯**. Empirische Studien zeigen, dass Prüfungsformate **Lernstrategien, Lernaufwand und die Qualität des Lernens 🧠** maßgeblich beeinflussen können ([Gibbs & Simpson, 2005](#literatur)).
+- Prüfungen beeinflussen zugleich die **Ausrichtung von Lernprozessen <span class="content-emoji">🧠</span>** („assessment drives learning“): Lernende orientieren ihr Lernen an **wahrgenommenen Prüfungsanforderungen <span class="content-emoji">🎯</span>**. Empirische Studien zeigen, dass Prüfungsformate **Lernstrategien, Lernaufwand und die Qualität des Lernens <span class="content-emoji">🧠</span>** maßgeblich beeinflussen können ([Gibbs & Simpson, 2005](#literatur)).
 
-- Prüfungen in der beruflichen Bildung sollten sich daher an **beruflicher Handlungskompetenz 🤝** orientieren und **praxisnah, authentisch und prozessorientiert** gestaltet sein ([Wilbers, 2025](#literatur)).
+- Prüfungen in der beruflichen Bildung sollten sich daher an **beruflicher Handlungskompetenz <span class="content-emoji">🤝</span>** orientieren und **praxisnah, authentisch und prozessorientiert** gestaltet sein ([Wilbers, 2025](#literatur)).
 
-- Die Lernziel-Taxonomie nach [Anderson & Krathwohl (2001)](#literatur) bietet eine Möglichkeit, Prüfungsaufgaben systematisch entlang unterschiedlicher **kognitiver Anforderungen 🧠** zu gestalten:
+- Die Lernziel-Taxonomie nach [Anderson & Krathwohl (2001)](#literatur) bietet eine Möglichkeit, Prüfungsaufgaben systematisch entlang unterschiedlicher **kognitiver Anforderungen <span class="content-emoji">🧠</span>** zu gestalten:
 
 <p class="table-title">Lernziel-Taxonomie nach Anderson & Krathwohl (2001)<span class="table-title-note">(Mouseover zeigt die Tabelleneinträge)</span></p>
 
@@ -260,17 +260,17 @@ Die Teilnehmenden können nach der Fortbildung 🧠:
       <th colspan="6" style="text-align:center;">Kognitive Prozessdimensionen:</th>
     </tr>
     <tr>
-      <th>🔁 Erinnern</th>
-      <th>💡 Verstehen</th>
-      <th>⚙️ An-<br>wenden</th>
-      <th>🔍 Ana-<br>lysieren</th>
-      <th>⚖️ Bewerten</th>
-      <th>🛠️ Erschaffen</th>
+      <th><span class="content-emoji">🔁</span> Erinnern</th>
+      <th><span class="content-emoji">💡</span> Verstehen</th>
+      <th><span class="content-emoji">⚙️</span> An-<br>wenden</th>
+      <th><span class="content-emoji">🔍</span> Ana-<br>lysieren</th>
+      <th><span class="content-emoji">⚖️</span> Bewerten</th>
+      <th><span class="content-emoji">🛠️</span> Erschaffen</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>📚 Fakten-<br>wissen</td>
+      <td><span class="content-emoji">📚</span> Fakten-<br>wissen</td>
       <td><span class="hover-reveal-text">Begriffe und Fakten erinnern</span></td>
       <td><span class="hover-reveal-text">Definitionen und Bedeutungen erklären</span></td>
       <td><span class="hover-reveal-text">Regeln und Formeln in vertrauten Situationen anwenden</span></td>
@@ -279,7 +279,7 @@ Die Teilnehmenden können nach der Fortbildung 🧠:
       <td><span class="hover-reveal-text">eigene Beispiele für Begriffe entwickeln</span></td>
     </tr>
     <tr>
-      <td>🧠 Begriffliches Wissen</td>
+      <td><span class="content-emoji">🧠</span> Begriffliches Wissen</td>
       <td><span class="hover-reveal-text">Kategorien und Prinzipien benennen</span></td>
       <td><span class="hover-reveal-text">Zusammenhänge und Prinzipien erklären</span></td>
       <td><span class="hover-reveal-text">Konzepte auf neue Situationen anwenden</span></td>
@@ -288,7 +288,7 @@ Die Teilnehmenden können nach der Fortbildung 🧠:
       <td><span class="hover-reveal-text">Modelle und Strukturen entwickeln</span></td>
     </tr>
     <tr>
-      <td>🛠️ Verfahrensorientiertes Wissen</td>
+      <td><span class="content-emoji">🛠️</span> Verfahrensorientiertes Wissen</td>
       <td><span class="hover-reveal-text">Abläufe und Verfahren erinnern</span></td>
       <td><span class="hover-reveal-text">Vorgehensweisen und Regeln erklären</span></td>
       <td><span class="hover-reveal-text">Verfahren in Aufgaben ausführen</span></td>
@@ -297,7 +297,7 @@ Die Teilnehmenden können nach der Fortbildung 🧠:
       <td><span class="hover-reveal-text">neue Lösungswege und Verfahren entwickeln</span></td>
     </tr>
     <tr>
-      <td>🪞 Metakognitives Wissen</td>
+      <td><span class="content-emoji">🪞</span> Metakognitives Wissen</td>
       <td><span class="hover-reveal-text">eigene Lernstrategien benennen</span></td>
       <td><span class="hover-reveal-text">Lernstrategien und deren Einsatz erklären</span></td>
       <td><span class="hover-reveal-text">geeignete Strategien zielgerichtet einsetzen</span></td>
@@ -312,25 +312,25 @@ Die Teilnehmenden können nach der Fortbildung 🧠:
 
 <p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an <a href="#literatur">Anderson & Krathwohl (2001)</a> · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
 
-- Entscheidend ist die **Passung zwischen Lernzielen 🎯, Lernaktivitäten 🧩 und Prüfungen** (Constructive Alignment). Prüfungen sind damit Teil eines **abgestimmten didaktischen Gesamtsystems** ([Anderson & Krathwohl, 2001](#literatur)).
+- Entscheidend ist die **Passung zwischen Lernzielen <span class="content-emoji">🎯</span>, Lernaktivitäten <span class="content-emoji">🧩</span> und Prüfungen** (Constructive Alignment). Prüfungen sind damit Teil eines **abgestimmten didaktischen Gesamtsystems** ([Anderson & Krathwohl, 2001](#literatur)).
 
 ---
 
-## Nachhaltige Unterrichts- und Schulentwicklung 🗺️
+## Nachhaltige Unterrichts- und Schulentwicklung <span class="content-emoji">🗺️</span>
 
 Welche Schlüsse können aus den Erkenntnissen zu **Lerntypen**, **Lernformen** und **Prüfungsformen** gezogen werden, um Unterricht und Schule weiterzuentwickeln?
 
 > [!IMPORTANT]
 > Didaktische Entscheidungen stehen in **enger Wechselwirkung**:
-> Weder Lerntypen 🧠, Lernformen 🧩 noch Prüfungen 🎯 entfalten für sich genommen Wirkung, sondern erst im Zusammenspiel innerhalb eines **kohärenten didaktischen Arrangements**.
+> Weder Lerntypen <span class="content-emoji">🧠</span>, Lernformen <span class="content-emoji">🧩</span> noch Prüfungen <span class="content-emoji">🎯</span> entfalten für sich genommen Wirkung, sondern erst im Zusammenspiel innerhalb eines **kohärenten didaktischen Arrangements**.
 >
-> Empirische Befunde 🧠 liefern dabei **Orientierung**, müssen jedoch stets mit **konzeptionellen Überlegungen** und den **konkreten Rahmenbedingungen der Schule** verbunden werden 🪞.
+> Empirische Befunde <span class="content-emoji">🧠</span> liefern dabei **Orientierung**, müssen jedoch stets mit **konzeptionellen Überlegungen** und den **konkreten Rahmenbedingungen der Schule** verbunden werden <span class="content-emoji">🪞</span>.
 >
-> Erst wenn sich solche Arrangements in **Unterrichtspraxis und Schulkultur** niederschlagen, entsteht nachhaltige **Unterrichts- und Schulentwicklung im Sinne moderner beruflicher Bildung** 🤝.
+> Erst wenn sich solche Arrangements in **Unterrichtspraxis und Schulkultur** niederschlagen, entsteht nachhaltige **Unterrichts- und Schulentwicklung im Sinne moderner beruflicher Bildung** <span class="content-emoji">🤝</span>.
 
 ---
 
-## 📚 Literatur
+## <span class="content-emoji">📚</span> Literatur
 
 <span id="literatur"></span>
 

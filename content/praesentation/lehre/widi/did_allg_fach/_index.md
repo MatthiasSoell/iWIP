@@ -1,8 +1,8 @@
 ---
 title: "Allgemeine Didaktik und Fachdidaktik"
 title_reveal: "Allgemeine Didaktik &<br>Fachdidaktik<br>"
-emojis: "🤔 🕰️ 🧭 🔍"
-veranstaltungstyp: "🎓 Seminar"
+emojis: '<span class="content-emoji">🤔</span> <span class="content-emoji">🕰️</span> <span class="content-emoji">🧭</span> <span class="content-emoji">🔍</span>'
+veranstaltungstyp: '<span class="content-emoji">🎓</span> Seminar'
 veranstaltung: "Grundlagen Fachdidaktik Wirtschaft"
 author: "Prof. Dr. Matthias Söll"
 blog: "/iWIP/blog/widi/did_allg_fach"
@@ -52,58 +52,58 @@ todos:
 
 ---
 
-## 🎯 Lehrziele
+## <span class="content-emoji">🎯</span> Lehrziele
 
-- 🤔 **Verständnis reflektieren** – eigenes Didaktikbild prüfen. <!-- .element: class="fragment" -->
-- 🕰️ **Geschichte verstehen** – zentrale Entwicklungslinien kennen. <!-- .element: class="fragment" -->
-- 🧭 **Disziplinen unterscheiden** – Allgemeine vs. Fachdidaktik. <!-- .element: class="fragment" -->
-- 🔍 **Handeln begründen** – zentrale Prinzipien integrieren. <!-- .element: class="fragment" -->
-
----
-
-## 🧭 Ablauf (90 Min)
-
-1️⃣ Einstieg & Aktivierung ⚡ (20’)  
-2️⃣ Historischer Überblick 🕰️ (15’)  
-3️⃣ Allgemeine Didaktik 🧠 (15’)  
-4️⃣ Fachdidaktik 🤝🎨 (25’)  
-5️⃣ Reflexion & Ausblick 🪞🌱 (15’)  
+- <span class="content-emoji">🤔</span> **Verständnis reflektieren** – eigenes Didaktikbild prüfen. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🕰️</span> **Geschichte verstehen** – zentrale Entwicklungslinien kennen. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🧭</span> **Disziplinen unterscheiden** – Allgemeine vs. Fachdidaktik. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🔍</span> **Handeln begründen** – zentrale Prinzipien integrieren. <!-- .element: class="fragment" -->
 
 ---
 
-## 1️⃣ Einstieg 🤔
+## <span class="content-emoji">🧭</span> Ablauf (90 Min)
+
+1. Einstieg & Aktivierung <span class="content-emoji">⚡</span> (20’)  
+2. Historischer Überblick <span class="content-emoji">🕰️</span> (15’)  
+3. Allgemeine Didaktik <span class="content-emoji">🧠</span> (15’)  
+4. Fachdidaktik <span class="content-emoji">🤝</span><span class="content-emoji">🎨</span> (25’)  
+5. Reflexion & Ausblick <span class="content-emoji">🪞</span><span class="content-emoji">🌱</span> (15’)  
+
+---
+
+## 1. Einstieg <span class="content-emoji">🤔</span>
 
 Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – von KiTa bis Uni.  
 <br>
-➡️ Sie bringen bereits ein **eigenes Verständnis von Didaktik** mit.
+<span class="content-emoji">➡️</span> Sie bringen bereits ein **eigenes Verständnis von Didaktik** mit.
 
 ---
 
-## 🧠 Aktivierung in Einzelarbeit
+## <span class="content-emoji">🧠</span> Aktivierung in Einzelarbeit
 
-**Aufgabe:** Formulieren Sie in **max. 2 Sätzen**, was „**Didaktik**“ für Sie bedeutet. ✏️  
+**Aufgabe:** Formulieren Sie in **max. 2 Sätzen**, was „**Didaktik**“ für Sie bedeutet. <span class="content-emoji">✏️</span>  
 <br>
 **Ziel:** Begriffe sammeln – gemeinsame Arbeitsbasis.
 
 ---
 
-## 👥 Aktivierung im Plenum
+## <span class="content-emoji">👥</span> Aktivierung im Plenum
 
-🪑 **Stuhlhalbkreis**: Rücken Sie die Tische zur Seite und bilden Sie einen Stuhlhalbkreis.  
-🎾 **Ballwurf-Runde**: Name + Satz vervollständigen  
+<span class="content-emoji">🪑</span> **Stuhlhalbkreis**: Rücken Sie die Tische zur Seite und bilden Sie einen Stuhlhalbkreis.  
+<span class="content-emoji">🎾</span> **Ballwurf-Runde**: Name + Satz vervollständigen  
 > „**Didaktik bedeutet für mich …**“
 
 **Kurzreflexion:** Wirkung der Methode? Welche Begriffe tauchen häufig auf?
 
 ---
 
-## 2️⃣ Historischer Überblick 🕰️
+## 2. Historischer Überblick <span class="content-emoji">🕰️</span>
 
 **Leitfrage:** Wie hat sich Unterricht **als gesellschaftliche Praxis** verändert?
 
 ---
 
-## 🖼️ Unterricht im Wandel – Bild 1
+## <span class="content-emoji">🖼️</span> Unterricht im Wandel – Bild 1
 
 <figure class="figure-frame figure-frame">
   <img src="/iWIP/bilder/widi/did_allg_fach/Klassenzimmer_früher.jpg" alt="Klassenzimmer 1934">
@@ -113,7 +113,7 @@ Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – vo
 
 ---
 
-## 🖼️ Unterricht im Wandel – Bild 2
+## <span class="content-emoji">🖼️</span> Unterricht im Wandel – Bild 2
 
 <figure class="figure-frame figure-frame">
   <img src="/iWIP/bilder/widi/did_allg_fach/Klassenzimmer_heute.jpg" alt="Klassenzimmer heute">
@@ -123,7 +123,7 @@ Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – vo
 
 ---
 
-## 🧩 Deutung der Beobachtungen
+## <span class="content-emoji">🧩</span> Deutung der Beobachtungen
 
 - Unterricht ist **zeitgebunden**. <!-- .element: class="fragment" -->
 - Rollen, Medien, Räume und Aktivitäten **wandeln** sich. <!-- .element: class="fragment" -->
@@ -131,21 +131,21 @@ Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – vo
 
 ---
 
-## 🕰️ Geschichte der Pädagogik (Koerrenz et al., 2017)
+## <span class="content-emoji">🕰️</span> Geschichte der Pädagogik (Koerrenz et al., 2017)
 
-- 🏛️ Antike → 313 <!-- .element: class="fragment" -->
-- ⛪ Mittelalter 313–1492 <!-- .element: class="fragment" -->
-- 🌍 Frühe Neuzeit I 1492–1689 <!-- .element: class="fragment" -->
-- 💡 Frühe Neuzeit II 1689–1789 <!-- .element: class="fragment" -->
-- ⚙️ Moderne I 1789–1920 <!-- .element: class="fragment" -->
-- ⚔️ Moderne II 1920–1945 <!-- .element: class="fragment" -->
-- 🌐 Moderne III 1945–1992 <!-- .element: class="fragment" -->
+- <span class="content-emoji">🏛️</span> Antike → 313 <!-- .element: class="fragment" -->
+- <span class="content-emoji">⛪</span> Mittelalter 313–1492 <!-- .element: class="fragment" -->
+- <span class="content-emoji">🌍</span> Frühe Neuzeit I 1492–1689 <!-- .element: class="fragment" -->
+- <span class="content-emoji">💡</span> Frühe Neuzeit II 1689–1789 <!-- .element: class="fragment" -->
+- <span class="content-emoji">⚙️</span> Moderne I 1789–1920 <!-- .element: class="fragment" -->
+- <span class="content-emoji">⚔️</span> Moderne II 1920–1945 <!-- .element: class="fragment" -->
+- <span class="content-emoji">🌐</span> Moderne III 1945–1992 <!-- .element: class="fragment" -->
 
 <small>Anschauliche Visualisierung: smarterlernen.at</small>
 
 ---
 
-## 3️⃣ Allgemeine Didaktik 🧭
+## 3. Allgemeine Didaktik <span class="content-emoji">🧭</span>
 
 > „**Didaktik ist die Wissenschaft und Theorie des Unterrichts.**“  
 > — Arnold & Roßa (2012, S. 14)
@@ -154,7 +154,7 @@ Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – vo
 
 ---
 
-### 📘 Kennzeichen (Auswahl)
+### <span class="content-emoji">📘</span> Kennzeichen (Auswahl)
 
 - Aufklärung: *Didactica Magna* (Comenius) <!-- .element: class="fragment" -->
 - Etablierung als Disziplin (ab 1960er) <!-- .element: class="fragment" -->
@@ -163,14 +163,14 @@ Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – vo
 
 ---
 
-### 🔎 Praxisbezug
+### <span class="content-emoji">🔎</span> Praxisbezug
 
 - **Kriterien guten Unterrichts** (Meyer, 2014) <!-- .element: class="fragment" -->
 - Qualitätsmerkmale als **Planungs- und Reflexionshilfe** <!-- .element: class="fragment" -->
 
 ---
 
-## 4️⃣ Fachdidaktik 🎓
+## 4. Fachdidaktik <span class="content-emoji">🎓</span>
 
 > „**Fachdidaktik ist die Wissenschaft und Theorie des (Fach-)Unterrichts.**“  
 > — Arnold & Roßa (2012, S. 14)
@@ -180,7 +180,7 @@ Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – vo
 
 ---
 
-### 📘 Kennzeichen (Auswahl)
+### <span class="content-emoji">📘</span> Kennzeichen (Auswahl)
 
 - Entstehung **fachspezifisch** (z. B. Wirtschaftsdidaktik um 1900) <!-- .element: class="fragment" -->
 - Bezugspunkt: **Fächer / Berufsfelder** <!-- .element: class="fragment" -->
@@ -188,12 +188,12 @@ Wahrscheinlich haben Sie viel Zeit in **Bildungseinrichtungen** verbracht – vo
 
 ---
 
-## 5️⃣ Reflexion & Ausblick 💬
+## 5. Reflexion & Ausblick <span class="content-emoji">💬</span>
 
-- 🤔 **Verständnis reflektieren** – eigene Sicht schärfen. <!-- .element: class="fragment" -->
-- 🕰️ **Geschichte verstehen** – Entwicklungen kontextualisieren. <!-- .element: class="fragment" -->
-- 🧭 **Disziplinen unterscheiden** – Rolle von Allgemeiner & Fach-didaktik klären. <!-- .element: class="fragment" -->
-- 🔍 **Handeln begründen** – Prinzipien in Planung/Reflexion nutzen. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🤔</span> **Verständnis reflektieren** – eigene Sicht schärfen. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🕰️</span> **Geschichte verstehen** – Entwicklungen kontextualisieren. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🧭</span> **Disziplinen unterscheiden** – Rolle von Allgemeiner & Fach-didaktik klären. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🔍</span> **Handeln begründen** – Prinzipien in Planung/Reflexion nutzen. <!-- .element: class="fragment" -->
 
 > *Didaktik ist kein Rezept, sondern ein **Werkzeug** für bewusstes pädagogisches Handeln.* <!-- .element: class="fragment" -->
 

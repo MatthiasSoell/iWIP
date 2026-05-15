@@ -2,7 +2,7 @@
 title: "Warum SciBlog iWIP? – Motivation, Funktionen, Learnings"
 date: 2025-12-18
 title_reveal: "Warum SciBlog iWIP?<br>–<br> Motivation, Funktionen, Learnings<br>"
-emojis: "🧭 💻 🎓 🌍 🔓 🪞"
+emojis: '<span class="content-emoji">🧭</span> <span class="content-emoji">💻</span> <span class="content-emoji">🎓</span> <span class="content-emoji">🌍</span> <span class="content-emoji">🔓</span> <span class="content-emoji">🪞</span>'
 veranstaltungstyp: ""
 veranstaltung: ""
 author: "Prof. Dr. Matthias Söll"
@@ -50,7 +50,7 @@ todos:
 
 ---
 
-## 1. Motivation 💡
+## 1. Motivation <span class="content-emoji">💡</span>
 
 {{< rawhtml >}}
 <div class="prof-diagram">
@@ -64,7 +64,7 @@ todos:
 ---
 
 
-## 1. Motivation 💡
+## 1. Motivation <span class="content-emoji">💡</span>
 
 {{< rawhtml >}}
 <div class="prof-diagram">
@@ -78,7 +78,7 @@ todos:
 ---
 
 
-## 1. Motivation 💡
+## 1. Motivation <span class="content-emoji">💡</span>
 
 {{< rawhtml >}}
 <div class="prof-diagram">
@@ -92,7 +92,7 @@ todos:
 ---
 
 
-## 1. Motivation 💡
+## 1. Motivation <span class="content-emoji">💡</span>
 
 {{< rawhtml >}}
 <div class="prof-diagram">
@@ -105,89 +105,89 @@ todos:
 
 ---
 
-## Vom Tool-Zoo 🦒🦉🐘 zur integrierten Umgebung 🧭🧩
+## Vom Tool-Zoo <span class="content-emoji">🦒</span><span class="content-emoji">🦉</span><span class="content-emoji">🐘</span> zur integrierten Umgebung <span class="content-emoji">🧭</span><span class="content-emoji">🧩</span>
 
 <ul>
   <li>
-    <strong>Problem:</strong> wachsende Tool-Vielfalt wird <strong>didaktisch wirksam</strong> 🧠⚠️<br>
-    → Lehre droht verwaltet statt gestaltet zu werden 🎯
+    <strong>Problem:</strong> wachsende Tool-Vielfalt wird <strong>didaktisch wirksam</strong> <span class="content-emoji">🧠</span><span class="content-emoji">⚠️</span><br>
+    → Lehre droht verwaltet statt gestaltet zu werden <span class="content-emoji">🎯</span>
   </li>
 
   <li class="fragment">
-    <strong>Prinzip:</strong> Reduktion als Gewinn 🌱✂️<br>
-    → weniger Formate · weniger Pflege · mehr Kohärenz 🤝
+    <strong>Prinzip:</strong> Reduktion als Gewinn <span class="content-emoji">🌱</span><span class="content-emoji">✂️</span><br>
+    → weniger Formate · weniger Pflege · mehr Kohärenz <span class="content-emoji">🤝</span>
   </li>
 
   <li class="fragment">
-    <strong>Konsequenz:</strong> integrierte, web-basierte Lehr-Lern-Umgebung 🌐<br>
-    → <strong>SciBlog iWIP</strong> 🎯
+    <strong>Konsequenz:</strong> integrierte, web-basierte Lehr-Lern-Umgebung <span class="content-emoji">🌐</span><br>
+    → <strong>SciBlog iWIP</strong> <span class="content-emoji">🎯</span>
   </li>
 </ul>
 
 ---
 
-## 2. Zentrale Funktionen 💻🎯
+## 2. Zentrale Funktionen <span class="content-emoji">💻</span><span class="content-emoji">🎯</span>
 
 <ul>
   <li>
-    <strong>👥 Lernendenperspektive zuerst:</strong><br>
+    <strong><span class="content-emoji">👥</span> Lernendenperspektive zuerst:</strong><br>
     → strukturiert, responsiv, selbststeuerbar,
-    <a href="/iWIP/blog/oer/warum_sciblog/#-literatur">quellenbasiert</a> 🧠📱
+    <a href="/iWIP/blog/oer/warum_sciblog/#-literatur">quellenbasiert</a> <span class="content-emoji">🧠</span><span class="content-emoji">📱</span>
   </li>
 
   <li class="fragment">
-    <strong>🌐 Ein Inhalt – mehrere Zugänge:</strong><br>
+    <strong><span class="content-emoji">🌐</span> Ein Inhalt – mehrere Zugänge:</strong><br>
     → <a href="/iWIP/blog/oer/warum_sciblog/">Blog</a> · Präsentation ·
     <a href="/iWIP/praesentation/oer/warum_sciblog/#/">PDF</a> ·
     <a href="/iWIP/blog/oer/warum_sciblog/">Markdown</a><br>
-    eine Quelle, keine Redundanz 🤝
+    eine Quelle, keine Redundanz <span class="content-emoji">🤝</span>
   </li>
 
   <li class="fragment">
-    <strong>🎓🌍🔓 Transparenz & Offenheit:</strong><br>
-    → OER-Lizenzierung, Quellen, didaktische Dokumentation 🧭
+    <strong><span class="content-emoji">🎓</span><span class="content-emoji">🌍</span><span class="content-emoji">🔓</span> Transparenz & Offenheit:</strong><br>
+    → OER-Lizenzierung, Quellen, didaktische Dokumentation <span class="content-emoji">🧭</span>
   </li>
 </ul>
 
 ---
 
-## 2. Zentrale Funktionen 💻🎯
+## 2. Zentrale Funktionen <span class="content-emoji">💻</span><span class="content-emoji">🎯</span>
 
 <ul>
   <li>
-    <strong>🌱 Nachhaltige & offene Formate:</strong><br>
+    <strong><span class="content-emoji">🌱</span> Nachhaltige & offene Formate:</strong><br>
     → Markdown-basiert, versionierbar, zukunftsfähig
-    <a href="/iWIP/blog/oer/warum_sciblog/">✍️🔁</a>
+    <a href="/iWIP/blog/oer/warum_sciblog/"><span class="content-emoji">✍️</span><span class="content-emoji">🔁</span></a>
   </li>
 
   <li class="fragment">
-    <strong>🔗 Anschlussfähig statt isoliert:</strong><br>
-    → LMS-kompatibel, Metadaten-klar, Repositorien-fähig 🏷️🌐
+    <strong><span class="content-emoji">🔗</span> Anschlussfähig statt isoliert:</strong><br>
+    → LMS-kompatibel, Metadaten-klar, Repositorien-fähig <span class="content-emoji">🏷️</span><span class="content-emoji">🌐</span>
   </li>
 </ul>
 
 ---
 
-## 3. Learnings🪞🧠
+## 3. Learnings<span class="content-emoji">🪞</span><span class="content-emoji">🧠</span>
 
 <ul>
   <li>
-    🌐 <strong>Veröffentlichen verändert Lehre:</strong> Offenheit erzeugt produktiven Druck:
-    klarere Struktur, bessere Begründungen, mehr Reflexion 🪞
+    <span class="content-emoji">🌐</span> <strong>Veröffentlichen verändert Lehre:</strong> Offenheit erzeugt produktiven Druck:
+    klarere Struktur, bessere Begründungen, mehr Reflexion <span class="content-emoji">🪞</span>
   </li>
 
   <li class="fragment">
-    🤖 <strong>KI als didaktisches Gegenüber:</strong> KI als Reflexionshilfe für Didaktik & Technik 🧠⚙️
+    <span class="content-emoji">🤖</span> <strong>KI als didaktisches Gegenüber:</strong> KI als Reflexionshilfe für Didaktik & Technik <span class="content-emoji">🧠</span><span class="content-emoji">⚙️</span>
   </li>
 
   <li class="fragment">
-    ✂️ <strong>Reduktion schafft didaktischen Raum:</strong> weniger Tools & Formate · mehr Fokus auf Lernziele 🎯,
-    Lernprozesse 🧠 und Inhalte 📚
+    <span class="content-emoji">✂️</span> <strong>Reduktion schafft didaktischen Raum:</strong> weniger Tools & Formate · mehr Fokus auf Lernziele <span class="content-emoji">🎯</span>,
+    Lernprozesse <span class="content-emoji">🧠</span> und Inhalte <span class="content-emoji">📚</span>
   </li>
 </ul>
 
 <div class="hinweis-box fragment">
-  💡 Nicht Tools gestalten Lehre – <b>sondern didaktische Entscheidungen</b>. SciBlog iWIP schafft dafür Raum.
+  <span class="content-emoji">💡</span> Nicht Tools gestalten Lehre – <b>sondern didaktische Entscheidungen</b>. SciBlog iWIP schafft dafür Raum.
 </div>
 
 ---

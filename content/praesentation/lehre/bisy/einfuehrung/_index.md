@@ -1,8 +1,8 @@
 ---
 title: "Einführung in das Modul Bildungssysteme"
 title_reveal: "Einführung in das Modul<br>Bildungssysteme<br>"
-emojis: "🧭 👥 💬"
-veranstaltungstyp: "🎓 Vorlesung"
+emojis: '<span class="content-emoji">🧭</span> <span class="content-emoji">👥</span> <span class="content-emoji">💬</span>'
+veranstaltungstyp: '<span class="content-emoji">🎓</span> Vorlesung'
 veranstaltung: "'Bildungssysteme im Kontext von Arbeit und Gesellschaft'"
 author: "Prof. Dr. Matthias Söll"
 blog: "/iWIP/blog/lehre/bisy/einfuehrung"
@@ -56,7 +56,7 @@ todos: []
 
 ---
 
-## 1️⃣ Meine Bildungsbiographie
+## 1. Meine Bildungsbiographie
 
 {{< rawhtml >}}
 <div class="overlay-fragment-diagram biographie-diagram">
@@ -71,67 +71,67 @@ todos: []
 
 ---
 
-## 💭 Leitfrage
+## <span class="content-emoji">💭</span> Leitfrage
 
 > [!TIPP]
-> Wie verlaufen 🛤️ **Bildungswege** eigentlich, und was haben 🧠 **individuelle Entscheidungen** mit 🧭 **gesellschaftlichen Strukturen** zu tun?
+> Wie verlaufen <span class="content-emoji">🛤️</span> **Bildungswege** eigentlich, und was haben <span class="content-emoji">🧠</span> **individuelle Entscheidungen** mit <span class="content-emoji">🧭</span> **gesellschaftlichen Strukturen** zu tun?
 
 ---
 
-## 🎯 Lehrziele
+## <span class="content-emoji">🎯</span> Lehrziele
 
 **Sie lernen ...**
 
 <span class="spacer spacer-sm"></span>
 
-- 🧭 Gegenstand, Inhalte, Ziele und Organisation des Moduls kennen. <!-- .element: class="fragment" -->
-- 👥 eigene Bildungswege zu reflektieren. <!-- .element: class="fragment" -->
-- 💬 die Relevanz des Themas Bildungssysteme für Studium, Beruf und gesellschaftliche Teilhabe kennen. <!-- .element: class="fragment" -->
-- 🧠 Prüfungsleistung, Zeitstruktur und Prüfungsanmeldung frühzeitig einzuordnen. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🧭</span> Gegenstand, Inhalte, Ziele und Organisation des Moduls kennen. <!-- .element: class="fragment" -->
+- <span class="content-emoji">👥</span> eigene Bildungswege zu reflektieren. <!-- .element: class="fragment" -->
+- <span class="content-emoji">💬</span> die Relevanz des Themas Bildungssysteme für Studium, Beruf und gesellschaftliche Teilhabe kennen. <!-- .element: class="fragment" -->
+- <span class="content-emoji">🧠</span> Prüfungsleistung, Zeitstruktur und Prüfungsanmeldung frühzeitig einzuordnen. <!-- .element: class="fragment" -->
 
 ---
 
-## 🧭 Ablauf (60 Min)
+## <span class="content-emoji">🧭</span> Ablauf (60 Min)
 
-1️⃣ Einstieg 🧭  
-2️⃣ Kennenlernen 👥  
-4️⃣ Modulüberblick 📚  
-5️⃣ Organisation 🌐  
-6️⃣ Zeitmanagement ⏱️  
-7️⃣ Prüfung & Anmeldung 📝
+1. Einstieg <span class="content-emoji">🧭</span>  
+2. Kennenlernen <span class="content-emoji">👥</span>  
+4. Modulüberblick <span class="content-emoji">📚</span>  
+5. Organisation <span class="content-emoji">🌐</span>  
+6. Zeitmanagement <span class="content-emoji">⏱️</span>  
+7. Prüfung & Anmeldung <span class="content-emoji">📝</span>
 
 ---
 
-## 👥 Kennenlernen: Aufstellung
+## <span class="content-emoji">👥</span> Kennenlernen: Aufstellung
 
 <ul>
-  <li>🎓 Wer hat die <b>allgemeine Hochschulreife</b>?</li>
-  <li class="fragment">🛠️ Wer hat eine <b>Berufsausbildung</b> angefangen oder abgeschlossen?</li>
-  <li class="fragment">📚 Wer hat schon einmal etwas <b>anderes studiert</b>?</li>
-  <li class="fragment">📍 Wer kommt aus <b>Mecklenburg-Vorpommern</b>?</li>
+  <li><span class="content-emoji">🎓</span> Wer hat die <b>allgemeine Hochschulreife</b>?</li>
+  <li class="fragment"><span class="content-emoji">🛠️</span> Wer hat eine <b>Berufsausbildung</b> angefangen oder abgeschlossen?</li>
+  <li class="fragment"><span class="content-emoji">📚</span> Wer hat schon einmal etwas <b>anderes studiert</b>?</li>
+  <li class="fragment"><span class="content-emoji">📍</span> Wer kommt aus <b>Mecklenburg-Vorpommern</b>?</li>
 </ul>
 
 <div class="fragment">
 
 > [!TIPP]
-> Die Aufstellung macht sichtbar, wie unterschiedlich 🛤️ Bildungswege verlaufen und welche 🧠 Erfahrungen bereits im Raum vorhanden sind.
+> Die Aufstellung macht sichtbar, wie unterschiedlich <span class="content-emoji">🛤️</span> Bildungswege verlaufen und welche <span class="content-emoji">🧠</span> Erfahrungen bereits im Raum vorhanden sind.
 
 </div>
 
 ---
 
-## 👥 Kennenlernen: Aufstellung
+## <span class="content-emoji">👥</span> Kennenlernen: Aufstellung
 
 **Reflexionsfragen:**
 
 <span class="spacer spacer-sm"></span>
 
-- Welche Unterschiede in 🛤️ **Bildungswegen** werden hier sichtbar? <!-- .element: class="fragment" -->
-- Was könnte davon 🧠 **individuell** wirken, was eher 🧭 **strukturell**? <!-- .element: class="fragment" -->
+- Welche Unterschiede in <span class="content-emoji">🛤️</span> **Bildungswegen** werden hier sichtbar? <!-- .element: class="fragment" -->
+- Was könnte davon <span class="content-emoji">🧠</span> **individuell** wirken, was eher <span class="content-emoji">🧭</span> **strukturell**? <!-- .element: class="fragment" -->
 
 ---
 
-## 👥 Kennenlernen: 👩‍🏫 Lehrende
+## <span class="content-emoji">👥</span> Kennenlernen: <span class="content-emoji">👩‍🏫</span> Lehrende
 
 Claudia Thürke & Matthias Söll
 
@@ -145,13 +145,13 @@ Claudia Thürke & Matthias Söll
 
 ---
 
-## 📚 Gegenstände des Moduls
+## <span class="content-emoji">📚</span> Gegenstände des Moduls
 
 <ul>
-  <li>🏛️ Wie <b>funktioniert</b> das deutsche Bildungssystem?</li>
-  <li class="fragment">🧭 Wie verlaufen <b>Bildungswege</b> in Schule, Ausbildung, Hochschule und Weiterbildung?</li>
-  <li class="fragment">🌐 Wie <b>verändern</b> sich Bildung und Arbeit unter Bedingungen von <b>Digitalisierung</b>, <b>New Work</b> und <b>gesellschaftlichem Wandel</b>?</li>
-  <li class="fragment">🧠 Wie lassen sich diese Entwicklungen <b>wissenschaftlich erschließen</b> und <b>argumentativ bearbeiten</b>?</li>
+  <li><span class="content-emoji">🏛️</span> Wie <b>funktioniert</b> das deutsche Bildungssystem?</li>
+  <li class="fragment"><span class="content-emoji">🧭</span> Wie verlaufen <b>Bildungswege</b> in Schule, Ausbildung, Hochschule und Weiterbildung?</li>
+  <li class="fragment"><span class="content-emoji">🌐</span> Wie <b>verändern</b> sich Bildung und Arbeit unter Bedingungen von <b>Digitalisierung</b>, <b>New Work</b> und <b>gesellschaftlichem Wandel</b>?</li>
+  <li class="fragment"><span class="content-emoji">🧠</span> Wie lassen sich diese Entwicklungen <b>wissenschaftlich erschließen</b> und <b>argumentativ bearbeiten</b>?</li>
 </ul>
 
 <div class="fragment">
@@ -163,7 +163,7 @@ Claudia Thürke & Matthias Söll
 
 ---
 
-## 🗓️ Fahrplan im Semester
+## <span class="content-emoji">🗓️</span> Fahrplan im Semester
 
 <figure class="figure-frame">
   <img src="ablauf_bisy_sose_26.png" alt="Fahrplan des Moduls Bildungssysteme im Sommersemester 2026 mit Vorlesung und Übung">
@@ -173,17 +173,17 @@ Claudia Thürke & Matthias Söll
 
 ---
 
-## 🌐 Kommunikation
+## <span class="content-emoji">🌐</span> Kommunikation
 
-- 💬 **Veranstaltung:** für direkte Rückfragen <!-- .element: class="fragment" -->
-- 👥 **Sprechstunde:** für ausführlichere Rückfragen, Beratung und Feedback <!-- .element: class="fragment" -->
-- 📞 **Telefon:** für kurze dringliche Absprachen <!-- .element: class="fragment" -->
-- ✉️ **Mail:** für organisatorische und individuelle Anliegen <!-- .element: class="fragment" -->
-- 🌐 **Stud.IP:** für Materialien, Hinweise und organisatorische Informationen <!-- .element: class="fragment" -->
+- <span class="content-emoji">💬</span> **Veranstaltung:** für direkte Rückfragen <!-- .element: class="fragment" -->
+- <span class="content-emoji">👥</span> **Sprechstunde:** für ausführlichere Rückfragen, Beratung und Feedback <!-- .element: class="fragment" -->
+- <span class="content-emoji">📞</span> **Telefon:** für kurze dringliche Absprachen <!-- .element: class="fragment" -->
+- <span class="content-emoji">✉️</span> **Mail:** für organisatorische und individuelle Anliegen <!-- .element: class="fragment" -->
+- <span class="content-emoji">🌐</span> **Stud.IP:** für Materialien, Hinweise und organisatorische Informationen <!-- .element: class="fragment" -->
 
 ---
 
-## ⏱️ Zeitmanagement & Workload
+## <span class="content-emoji">⏱️</span> Zeitmanagement & Workload
 
 Das Modul umfasst **6 Leistungspunkte** und damit <br>ungefähr **180 Stunden Arbeitsaufwand**.
 
@@ -193,9 +193,9 @@ Das Modul umfasst **6 Leistungspunkte** und damit <br>ungefähr **180 Stunden Ar
 
 | Bereich | Stunden | Orientierung |
 |:--------|:--------|:-------------|
-| **👥 Präsenzzeit** | ca. 50 Stunden | Vorlesung und Übung |
-| **📚 Vor- und Nachbereitung** | ca. 26 Stunden | Lektüre, Vertiefung, Notizen und Wiederholung |
-| **📝 Hausarbeit** | ca. 104 Stunden* | Themenerschließung, Literaturarbeit, Schreiben und Überarbeitung |
+| **<span class="content-emoji">👥</span> Präsenzzeit** | ca. 50 Stunden | Vorlesung und Übung |
+| **<span class="content-emoji">📚</span> Vor- und Nachbereitung** | ca. 26 Stunden | Lektüre, Vertiefung, Notizen und Wiederholung |
+| **<span class="content-emoji">📝</span> Hausarbeit** | ca. 104 Stunden* | Themenerschließung, Literaturarbeit, Schreiben und Überarbeitung |
 
 </div>
 
@@ -203,22 +203,22 @@ Das Modul umfasst **6 Leistungspunkte** und damit <br>ungefähr **180 Stunden Ar
 
 ---
 
-## 📝 Prüfungsleistung
+## <span class="content-emoji">📝</span> Prüfungsleistung
 
-- 📝 Prüfungsform: wissenschaftliche **Hausarbeit** <!-- .element: class="fragment" -->
-- 📚 Themen: aus **Vorlesung und Übung** <!-- .element: class="fragment" -->
-- 📏 Umfang:
+- <span class="content-emoji">📝</span> Prüfungsform: wissenschaftliche **Hausarbeit** <!-- .element: class="fragment" -->
+- <span class="content-emoji">📚</span> Themen: aus **Vorlesung und Übung** <!-- .element: class="fragment" -->
+- <span class="content-emoji">📏</span> Umfang:
   - **10 bis 12 Seiten Fließtext** <!-- .element: class="fragment" -->
   - zzgl. **Verzeichnisse**, **Deckblatt** und **Selbstständigkeitserklärung** <!-- .element: class="fragment" -->
-- 📅 Termine:
+- <span class="content-emoji">📅</span> Termine:
   - Bekanntgabe der Themen: **13.07.2026** <!-- .element: class="fragment" -->
   - Abgabe: **digital** per E-Mail bis **07.09.2026** als WORD- und PDF-Datei an die **Dozent:innen** <!-- .element: class="fragment" -->
-- 📘 Zentrales Regelwerk: Leitfaden zum wissenschaftlichen Arbeiten <!-- .element: class="fragment" -->
+- <span class="content-emoji">📘</span> Zentrales Regelwerk: Leitfaden zum wissenschaftlichen Arbeiten <!-- .element: class="fragment" -->
 
 
 ---
 
-## 🗂️ Prüfungsanmeldung
+## <span class="content-emoji">🗂️</span> Prüfungsanmeldung
 
 Offizielle Termine des Prüfungsamts für das SoSe 2026:  
 
@@ -227,17 +227,17 @@ Offizielle Termine des Prüfungsamts für das SoSe 2026:
 <span class="fragment">
 
 > [!IMPORTANT]
-> ‼️ Melden Sie sich **fristgerecht** zur Prüfung an ‼️
+> <span class="content-emoji">‼️</span> Melden Sie sich **fristgerecht** zur Prüfung an <span class="content-emoji">‼️</span>
 
 </span>
 
 ---
 
-## 🔭 Ausblick
+## <span class="content-emoji">🔭</span> Ausblick
 
-**👥 Übung**: Wie lassen sich **individuelle Bildungswege** beschreiben und systematisieren?  
+**<span class="content-emoji">👥</span> Übung**: Wie lassen sich **individuelle Bildungswege** beschreiben und systematisieren?  
 
-**👩‍🏫 Vorlesung**: Wie funktioniert das **deutsche Bildungssystem**? <!-- .element: class="fragment" -->
+**<span class="content-emoji">👩‍🏫</span> Vorlesung**: Wie funktioniert das **deutsche Bildungssystem**? <!-- .element: class="fragment" -->
 
 ---
 
