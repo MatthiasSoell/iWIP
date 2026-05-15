@@ -40,6 +40,7 @@ Arbeite dabei mit:
 | `OK` / Hinweis | contractkonformer Befund ohne Finalisierungshindernis |
 
 - `check` bewertet nur.
+- `check` fuehrt keine inhaltlichen oder technischen Aenderungen am Artefakt aus.
 - Sichtbar erscheinen nur die contractkonformen Pruefausgaben im vorgegebenen Format, ohne Prozesskommentar.
 
 Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive Textauswahlen oder sonstiger Editor-Kontext steuern diesen Pruefpfad nicht.
@@ -97,7 +98,11 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen Agent Contract und `ai_agent
 - Quellenangaben sind belastbar; spezifische Quellen wurden nicht erfunden.
 - Der Emoji-Einsatz ist gemaess `project_governance/content_emoji_policy.md` im sichtbaren Hauptkoerper erkennbar umgesetzt.
 - Ansprache, Ton und semantischer Emoji-Einsatz sind innerhalb des Artefakts konsistent und wirken nicht optional nachgeruestet.
+- Im bearbeiteten Inhaltsbereich kommen keine Nummerierungs-Emojis `1️⃣` bis `🔟` mehr vor.
+- Es gibt keine verschachtelten `<span class="content-emoji">`.
 - Direkt unter dem Frontmatter steht der Pflichtblock `div.top-toggle`; direkt danach folgt `{{< oer-meta >}}`.
+- `.top-toggle` ist gegenueber dem vorliegenden Entwurf unveraendert.
+- `{{< oer-meta >}}` ist gegenueber dem vorliegenden Entwurf unveraendert.
 - Der Praesentationsbutton im `top-toggle` verweist auf den veroeffentlichten Reveal-Pfad gemaess Contract und Blog-Template.
 - Jede Blog-Visualisierung hat direkt darueber genau einen `p class="grafic-title">...</p>`, direkt darunter genau eine Quellenzeile gemaess Blog-Template (`p class="bildquelle">Bildquelle: ... · Lizenz: ...</p>`; freie Lizenzen als HTML-Link); ein kurzer Kontextsatz davor ist optional und nur bei erklaerungsbeduerftigen Darstellungen sinnvoll. Einzige Ausnahme sind eindeutig als Ablaufplan erkennbare Tabellen innerhalb eines Abschnitts: direkt unter einer Abschnittsueberschrift eingebettete Tabellen zur zeitlichen oder didaktischen Phasenstruktur mit organisatorischem Zweck duerfen nur dann ohne Titel und Quellenzeile stehen; stattdessen muss direkt ueber der Tabelle die Zeile `**Gesamtdauer:** ca. XX Minuten ⏱️` stehen.
 - Wenn ein Ablaufplan erkannt wird und diese Gesamtdauer-Zeile fehlt oder deutlich vom Format abweicht, gib eine `WARNUNG` aus, aber keinen `BLOCKER`.
@@ -105,6 +110,7 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen Agent Contract und `ai_agent
 - Begriffspruefung: zentrale Begriffe und Benennungen werden im sichtbaren Blogtext konsistent verwendet.
 - Typografiepruefung: sichtbare deutsche Blogtexte folgen den Typografie- und Umlautregeln des Agent Contracts.
 - Fuer `BLOG FINAL` ist der im minimalen Release-Check des Contracts geforderte vorbereitete Linkcheck ohne offene Fehler.
+- Fuer `BLOG FINAL` ist `hugo --minify` erfolgreich.
 
 ### Blog-Heuristikhinweise zur Darstellung
 
@@ -188,7 +194,13 @@ Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen Agent Contract und
 - Reveal-Bildquellen enthalten immer Herkunft und Lizenzstatus; fuer gesperrte Rechte ist die Formulierung `Lizenz: nicht frei verwendbar` zu verwenden.
 - Der Emoji-Einsatz ist gemaess `project_governance/content_emoji_policy.md` im sichtbaren Folien-Body erkennbar umgesetzt.
 - Ansprache, Ton und semantischer Emoji-Einsatz sind innerhalb der Praesentation konsistent und folgen derselben Artefaktlogik wie im Blog.
+- Es kommen keine Nummerierungs-Emojis `1️⃣` bis `🔟` mehr vor.
+- Es gibt keine verschachtelten `<span class="content-emoji">`.
+- Die Front-Matter-Felder `emojis` und `veranstaltungstyp` sind korrekt mit `<span class="content-emoji">…</span>` ausgezeichnet, sofern dort Emojis vorkommen.
+- `{{< titleSlide >}}` ist gegenueber dem vorliegenden Entwurf unveraendert.
+- Toolbar-Icons, Footer, Bilder und Shortcodes sind gegenueber dem vorliegenden Entwurf unveraendert.
 - Sichtbare deutsche Folientexte folgen den Typografie- und Umlautregeln des Agent Contracts.
+- Fuer `REVEAL FINAL` ist `hugo --minify` erfolgreich.
 
 ### Reveal-Heuristikhinweise zur Darstellung
 

@@ -6,7 +6,7 @@ Bitte zeichne in Reveal-Präsentationen des SciBlog iWIP gezielt Inhalts-Emojis 
 aus, damit sie über den bestehenden Emoji-Toggle (😄 / ⚪) ein- und ausgeblendet werden können.
 
 ## Bearbeitungsbereich
-- `content/praesentation/**/_index.md`
+- Bearbeite ausschließlich die aktuell im Workflow erzeugte Präsentationsdatei _index.md
 
 ## Front Matter zusätzlich prüfen
 Bitte in den Feldern `emojis` und `veranstaltungstyp` enthaltene Emojis mit

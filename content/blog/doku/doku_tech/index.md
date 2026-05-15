@@ -92,7 +92,7 @@ oer:
   </button>
 </div>
 
-# 📚 Gegenstand  
+# <span class="content-emoji">📚</span> Gegenstand  
 
 <!-- Test -->
 
@@ -106,47 +106,47 @@ Die Technik wird daher bewusst einfach gehalten und an didaktischen Anforderunge
 
 ---
 
-## 1️⃣ Entwicklungsumgebung „GitHub“
+## 1. Entwicklungsumgebung „GitHub“
 
-- **🌐 GitHub als öffentliche Softwareentwicklungsplattform:** <a href="https://github.com" target="_blank" rel="noopener noreferrer"><code>https://github.com</code></a>  
+- **<span class="content-emoji">🌐</span> GitHub als öffentliche Softwareentwicklungsplattform:** <a href="https://github.com" target="_blank" rel="noopener noreferrer"><code>https://github.com</code></a>  
   Ich nutze die Plattform GitHub, die eine benutzerfreundliche Umgebung für die **Entwicklung**, **Versionierung** und **Veröffentlichung** von Code bietet. Die Zusammenarbeit an Code wird durch die Versionsverwaltungs-Software Git transparent dokumentiert. GitHub ist für Open-Source-Projekte kostenfrei.
  
-- **🚀 GitHub Pages als Host:** <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer"><code>https://pages.github.com</code></a>  
+- **<span class="content-emoji">🚀</span> GitHub Pages als Host:** <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer"><code>https://pages.github.com</code></a>  
   Der Blog wird direkt über GitHub Pages im Internet **veröffentlicht**.
 
 ---
 
-## 2️⃣ Webseitengenerator „Hugo“
+## 2. Webseitengenerator „Hugo“
 
-- **⚡ Hugo als Generator:** <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer"><code>https://gohugo.io</code></a>  
-  Hugo ist ein **schneller** und **vielseitiger** Webseitengenerator, der Markdown-Dateien in statische HTML-Seiten umwandelt. Er eignet sich besonders gut für die Veröffentlichung über GitHub Pages und unterstützt eine effiziente Automatisierung via GitHub Actions. ✅ Da rein **statische Seiten** generiert werden, ist die Ladegeschwindigkeit hoch, das Hosting einfach und die langfristige Archivierbarkeit ganz im Sinne von OER.
+- **<span class="content-emoji">⚡</span> Hugo als Generator:** <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer"><code>https://gohugo.io</code></a>  
+  Hugo ist ein **schneller** und **vielseitiger** Webseitengenerator, der Markdown-Dateien in statische HTML-Seiten umwandelt. Er eignet sich besonders gut für die Veröffentlichung über GitHub Pages und unterstützt eine effiziente Automatisierung via GitHub Actions. <span class="content-emoji">✅</span> Da rein **statische Seiten** generiert werden, ist die Ladegeschwindigkeit hoch, das Hosting einfach und die langfristige Archivierbarkeit ganz im Sinne von OER.
 
-- **📦 Hugo Modules als Modulverwaltung:** <a href="https://gohugo.io/hugo-modules/" target="_blank" rel="noopener noreferrer"><code>https://gohugo.io/hugo-modules/</code></a>  
+- **<span class="content-emoji">📦</span> Hugo Modules als Modulverwaltung:** <a href="https://gohugo.io/hugo-modules/" target="_blank" rel="noopener noreferrer"><code>https://gohugo.io/hugo-modules/</code></a>  
   Die Verwaltung von Themes und Erweiterungen erfolgt über Hugo Modules. Diese bieten gegenüber klassischen Git Submodules eine **einfachere**, **robustere** und **wartungsärmere** Lösung – besonders im Teamkontext.
 
-- **🎨 PaperMod als Theme:** <a href="https://github.com/adityatelange/hugo-PaperMod" target="_blank" rel="noopener noreferrer"><code>https://github.com/adityatelange/hugo-PaperMod</code></a>  
+- **<span class="content-emoji">🎨</span> PaperMod als Theme:** <a href="https://github.com/adityatelange/hugo-PaperMod" target="_blank" rel="noopener noreferrer"><code>https://github.com/adityatelange/hugo-PaperMod</code></a>  
   Das PaperMod-Theme überzeugt durch **minimalistisches Design**, **hohe Anpassbarkeit** über Custom CSS und **gute Dokumentation**.
 
-- **🖥️ Reveal-Hugo als Präsentationserweiterung:** <a href="https://github.com/joshed-io/reveal-hugo" target="_blank" rel="noopener noreferrer"><code>https://github.com/joshed-io/reveal-hugo</code></a>  
+- **<span class="content-emoji">🖥️</span> Reveal-Hugo als Präsentationserweiterung:** <a href="https://github.com/joshed-io/reveal-hugo" target="_blank" rel="noopener noreferrer"><code>https://github.com/joshed-io/reveal-hugo</code></a>  
   Mit Reveal-Hugo können Blogbeiträge auch als **interaktive Online-Präsentationen** (basierend auf reveal.js) dargestellt werden – ein Feature, das ich in meinen Lehrveranstaltungen aktiv nutze.
 
-- **🎇 GitHub Actions für automatisiertes Deployment:** <a href="https://github.com/astefanutti/decktape" target="_blank" rel="noopener noreferrer"><code>https://github.com/astefanutti/decktape</code></a> Es werden erweiterte Build-Prozesse genutzt, z. B. der PDF-Export für Präsentationen über DeckTape.
+- **<span class="content-emoji">🎇</span> GitHub Actions für automatisiertes Deployment:** <a href="https://github.com/astefanutti/decktape" target="_blank" rel="noopener noreferrer"><code>https://github.com/astefanutti/decktape</code></a> Es werden erweiterte Build-Prozesse genutzt, z. B. der PDF-Export für Präsentationen über DeckTape.
 ---
 
-## 3️⃣ Quelltext-Editor Visual Studio Code  
+## 3. Quelltext-Editor Visual Studio Code  
 
-Zur Programmierung der Webseiten nutze ich 📝 **Visual Studio Code** <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer"><code>https://code.visualstudio.com</code></a>, der über zahlreiche Erweiterungen, z. B. **Markdown All in One** oder **Live Preview**, individuell erweitert und angepasst werden kann. 💡 Kleinere Änderungen nehme ich auch über **GitHub** selbst vor.
+Zur Programmierung der Webseiten nutze ich <span class="content-emoji">📝</span> **Visual Studio Code** <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer"><code>https://code.visualstudio.com</code></a>, der über zahlreiche Erweiterungen, z. B. **Markdown All in One** oder **Live Preview**, individuell erweitert und angepasst werden kann. <span class="content-emoji">💡</span> Kleinere Änderungen nehme ich auch über **GitHub** selbst vor.
 
 ---
 
-## 4️⃣ KI-Unterstützung
+## 4. KI-Unterstützung
 
-🤖 Für die Konzeption des SciBlogs iWIP sowie für die technische Umsetzung nutze ich die **KI ChatGPT**.  
+<span class="content-emoji">🤖</span> Für die Konzeption des SciBlogs iWIP sowie für die technische Umsetzung nutze ich die **KI ChatGPT**.  
 Sie kommt insbesondere bei der **Ideensammlung**, der **Codeoptimierung**, der **Fehlersuche**, dem **Schreiben von Dokumentationen** sowie der **didaktischen Aufbereitung** von Inhalten zum Einsatz.
 
 ---
 
-## 5️⃣ Didaktischer Planungsagent
+## 5. Didaktischer Planungsagent
 
 Ein zentrales Element des SciBlog iWIP ist ein didaktischer Planungsagent, der die Entwicklung von Lehr-Lern-Inhalten unterstützt.
 
@@ -156,12 +156,12 @@ Der Agent verbindet den Arbeitszusammenhang:
 
 Er arbeitet dialogisch und strukturierend und unterstützt insbesondere die didaktische Ausarbeitung von Inhalten. Der Blog dient dabei als zentrales Arbeitsdokument.
 
-Weitere Informationen finden sich in der Agentendokumentation:
+Weitere Informationen finden sich in der Agentendokumentation:  
 → [ai_agents/README.md](../../../../ai_agents/README.md)
 
 ---
 
-## 6️⃣ Automatisierte Metadatenpflege
+## 6. Automatisierte Metadatenpflege
 
 Zur Verbesserung der Auffindbarkeit und Interoperabilität werden Metadaten automatisiert gepflegt und aktualisiert.
 
@@ -173,32 +173,32 @@ Diese Automatisierung ist insbesondere für die Anbindung an OER-Infrastrukturen
 
 ---
 
-## 7️⃣ Struktur  
+## 7. Struktur  
 
-- 📂 **Repository:** <a href="https://github.com/MatthiasSoell/iWIP/" target="_blank" rel="noopener noreferrer"><code>https://github.com/MatthiasSoell/iWIP/</code></a>  
-- 🌍 **Homepage:** <a href="https://matthiassoell.github.io/iWIP/" target="_blank" rel="noopener noreferrer"><code>https://matthiassoell.github.io/iWIP/</code></a>
+- <span class="content-emoji">📂</span> **Repository:** <a href="https://github.com/MatthiasSoell/iWIP/" target="_blank" rel="noopener noreferrer"><code>https://github.com/MatthiasSoell/iWIP/</code></a>  
+- <span class="content-emoji">🌍</span> **Homepage:** <a href="https://matthiassoell.github.io/iWIP/" target="_blank" rel="noopener noreferrer"><code>https://matthiassoell.github.io/iWIP/</code></a>
 
 ---
 
-## 8️⃣ Zusammenarbeit  
+## 8. Zusammenarbeit  
 
-- 👥 Alle interessierten GitHub Nutzer:innen können über **Pull Requests** im Repository Beiträge oder Änderungen vorschlagen und so transparent dokumentiert als **Co-Autor:innen** am Projekt mitwirken.  
-- 🤝 **Collaborator:innen** können direkt im **Fork** <a href="https://github.com/kiwip2025/iWIP" target="_blank" rel="noopener noreferrer"><code>https://github.com/kiwip2025/iWIP</code></a> arbeiten, Beiträge erstellen und live unter <a href="https://kiwip2025.github.io/iWIP/" target="_blank" rel="noopener noreferrer"><code>https://kiwip2025.github.io/iWIP/</code></a> testen, bevor sie ihre Inhalte über Pull Requests in das Hauptprojekt einbringen.
+- <span class="content-emoji">👥</span> Alle interessierten GitHub Nutzer:innen können über **Pull Requests** im Repository Beiträge oder Änderungen vorschlagen und so transparent dokumentiert als **Co-Autor:innen** am Projekt mitwirken.  
+- <span class="content-emoji">🤝</span> **Collaborator:innen** können direkt im **Fork** <a href="https://github.com/kiwip2025/iWIP" target="_blank" rel="noopener noreferrer"><code>https://github.com/kiwip2025/iWIP</code></a> arbeiten, Beiträge erstellen und live unter <a href="https://kiwip2025.github.io/iWIP/" target="_blank" rel="noopener noreferrer"><code>https://kiwip2025.github.io/iWIP/</code></a> testen, bevor sie ihre Inhalte über Pull Requests in das Hauptprojekt einbringen.
 
 ---
 
 <span id="versionierung-reifegrad-blogbeitraege"></span>
 
-## 9️⃣ Versionierung & Reifegrad von Blogbeiträgen
+## 9. Versionierung & Reifegrad von Blogbeiträgen
 
-**🛠️ Entwicklungslogik des SciBlog iWIP:** Neben der technischen Infrastruktur folgt der SciBlog iWIP einer transparenten Entwicklungslogik für Lehr-Lern-Einheiten.
+**<span class="content-emoji">🛠️</span> Entwicklungslogik des SciBlog iWIP:** Neben der technischen Infrastruktur folgt der SciBlog iWIP einer transparenten Entwicklungslogik für Lehr-Lern-Einheiten.
 
 Im SciBlog iWIP werden Lehr-Lern-Einheiten nicht nur veröffentlicht, sondern kontinuierlich weiterentwickelt.  
 Um diesen Entwicklungsprozess transparent zu machen, werden zwei unterschiedliche Angaben ausgewiesen:
 
 ---
 
-### 🧩 Version (X.Y)
+### <span class="content-emoji">🧩</span> Version (X.Y)
 
 Die Version beschreibt **Veränderungen an der Struktur oder am Inhalt** einer Einheit.
 
@@ -212,7 +212,7 @@ Die Version macht sichtbar, **was sich verändert hat**.
 
 ---
 
-### 🚦 Reifegrad (Status)
+### <span class="content-emoji">🚦</span> Reifegrad (Status)
 
 Der Status beschreibt den **Entwicklungsstand** einer Lehr-Lern-Einheit.
 
@@ -232,7 +232,7 @@ Er stellt keine Wertung dar, sondern macht transparent, **in welcher Phase des E
 
 Eine Einheit im Status „In Erprobung“ ist nicht „schlechter“ als eine „Stabile“ Einheit – sie befindet sich lediglich in einer anderen Phase der didaktischen Weiterentwicklung.
 
-## 🔟 Versionierung der Plattform und des didaktischen Planungsagenten
+## 10. Versionierung der Plattform und des didaktischen Planungsagenten
 
 Die Versionierung erfolgt auf mehreren Ebenen:
 

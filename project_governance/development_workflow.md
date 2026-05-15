@@ -144,10 +144,12 @@ Bearbeiter:
 | BLOG FINAL | Dialogstil bleibt didaktisch und adressatenorientiert | | | | | |
 | BLOG FINAL | Uploads werden nur als Quellmaterial behandelt | | | | | |
 | BLOG FINAL | Mindestpruefungen und sichtbare Zusammenfassung greifen korrekt | | | | | |
+| BLOG FINAL | Content-Emoji-Postprocessing laeuft nach der inhaltlichen Finalisierung und vor dem finalen Build-/Release-Check | | | | | |
 | BLOG FINAL | Wissensbasis-Hook wird geprueft, blockiert `REVEAL GO` aber nicht | | | | | |
 | REVEAL GO -> REVEAL FINAL | Reveal startet erst nach Uebergang/Freigabe | | | | | |
 | REVEAL GO -> REVEAL FINAL | Gleichwertige Statusmeldungen werden korrekt interpretiert | | | | | |
 | REVEAL GO -> REVEAL FINAL | Forschungs-/Bundle-Hygiene bleiben sauber und aktive Forschungsartefakte werden im Forschungsmodus abgeschlossen | | | | | |
+| REVEAL GO -> REVEAL FINAL | Content-Emoji-Postprocessing laeuft nach der Reveal-Finalisierung und vor dem finalen Build-/Release-Check | | | | | |
 | REVEAL GO -> REVEAL FINAL | Abgleich, optionale Materialuebersicht und Finalisierung stimmen | | | | | |
 
 ### Kurzfazit
