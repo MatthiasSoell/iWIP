@@ -6,7 +6,7 @@ Bitte zeichne in Blogartikeln des SciBlog iWIP gezielt Inhalts-Emojis mit
 aus, damit sie über den bestehenden Emoji-Toggle (😄 / ⚪) ein- und ausgeblendet werden können.
 
 ## Bearbeitungsbereich
-- Bearbeite ausschließlich die aktuell im Workflow erzeugte Blogdatei index.md
+Bearbeite ausschließlich die aktuell im Workflow erzeugte Blogdatei `index.md`. Keine anderen Blogdateien ändern.
 
 Die Bearbeitung beginnt unmittelbar nach:
 `{{< oer-meta >}}`
