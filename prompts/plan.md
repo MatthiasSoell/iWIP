@@ -44,9 +44,11 @@ keine Standardabfrage und keine routinemaessige Vollabfrage aller Parameter.
 Dabei gilt fuer den Handoff an den Contract:
 
 - `plan` wertet nur den Einstieg aus und uebergibt dann an die im Contract definierte State Machine mit ihren Gates, Guards, Hooks und Exit-Actions.
-- Die erste Reaktion bleibt Planungsmodus: strukturieren, den vorhandenen Kontext ordnen und hoechstens die naechste entscheidende Rueckfrage stellen.
+- Die erste Reaktion bleibt Planungsmodus: einen kompakten Planungsstand aus Problemdefinition und Kontextklaerung, vorlaeufiger Leitfrage, ersten Lernzielen oder Schwerpunkten und groben Strukturideen formulieren und hoechstens eine zentrale Klaerungsfrage stellen.
 - Dateierzeugung, Finalisierung, Forschungsartefakte, Wissensbasis-Anschluss und Build-Verhalten folgen ausschliesslich dem Contract; `prompts/plan.md` fuehrt dazu keine Parallelregeln.
 - Blog- und Reveal-Frontmatter folgen ausschliesslich den Templates; fehlende Pflichtangaben werden nicht durch erratene Werte oder versteckte Defaults ersetzt.
+
+Im ersten `/PLAN`- oder `/PLAN FORSCHUNG`-Turn erzeugt der Agent damit keinen vollstaendig ausgearbeiteten Lehrveranstaltungsplan, keinen detaillierten Ablauf, keine fertigen Arbeitsauftraege, keine Materialien und keine vollstaendigen Blog- oder Praesentationsentwuerfe.
 
 Fuer diese gezielte Klaerung kann der Agent bei Bedarf selektiv nach Zielgruppe,
 Kontext, Vorwissen, typischen Lernhuerden, Zeitrahmen, Format, Setting oder
