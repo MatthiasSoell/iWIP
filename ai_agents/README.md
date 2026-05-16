@@ -75,9 +75,20 @@ Der Einstieg erfolgt in der Regel ueber die Prompts im Ordner `prompts/`, insbes
 
 Die konkrete Befehlskette, alle Statusmeldungen und die Gate-Logik bleiben im Contract dokumentiert. Diese README fasst nur den Arbeitszusammenhang zusammen: Aus einem Planungsanliegen entsteht schrittweise ein Blogbeitrag; wenn gewuenscht, wird daraus anschliessend eine Praesentation abgeleitet.
 
-## Version 
+## Version 1.2. (Mai 2026)
 
-1.1 (Mai 2026)
+Mit Version 1.2 wurde der Agent in mehreren zentralen Arbeitsablaeufen erweitert und operativ verfeinert. Wesentliche Neuerungen sind:
+- 🔬 Forschungsmodus bereits ab `/PLAN FORSCHUNG` mit frueher Aktivierung im Planungsprozess
+- 📁 Automatische Initialisierung von `exports/research/<case_id>/` fuer Forschungsfaelle
+- 📝 Anlage von `metadata.yaml`, `chat_log.md`, `planning_trace.md` und `decision_log.md` als Standardartefakte
+- 🗃️ Standardmaessige Archivierung von `blog_snapshot.txt` und `reveal_snapshot.txt`
+- 📄 Ablage von Kopien der finalen `index.md` und `_index.md`
+- 🧭 Verbesserte Planungslogik mit kompaktem erstem Planungsstand und sukzessiver Klaerung
+- 🧱 Deterministische Builds durch gepinnte Versionen von Hugo Modules, Sass und DeckTape
+
+Version 1.2 stellt damit einen weiter konsolidierten, reproduzierbaren Entwicklungsstand des Agenten dar.
+
+### Version 1.1 (Mai 2026)
 
 Mit Version 1.1 wurde der Agent konzeptionell und technisch grundlegend konsolidiert und erweitert. Wesentliche Neuerungen sind:
 - 🔄 Umstellung des zentralen Startbefehls von `/CREATE` auf `/PLAN`
