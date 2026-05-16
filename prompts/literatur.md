@@ -10,7 +10,7 @@ Der Contract ist die einzige Steuerlogik.
 
 ## Status
 
-Dieses Werkzeug bleibt als Prompt optional.
+Dieses Werkzeug bleibt als eigenständiger Prompt optional nutzbar. Der Modus `LITERATUR GO` wird zusätzlich im Contract standardmäßig innerhalb von `BLOG FINAL` ausgeführt.
 
 - `LITERATUR GO` ist der rein formale Standardmodus und wird im Contract standardmaessig innerhalb von `BLOG FINAL` ausgefuehrt.
 - `LITERATUR RECHERCHE GO` bleibt ein separater, manuell ausloesbarer Befehl.
