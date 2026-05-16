@@ -20,7 +20,7 @@ defaults:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       HUGO_VERSION: 0.147.7
     steps:
@@ -43,7 +43,7 @@ jobs:
           hugo version
 
       - name: Install Dart Sass
-        run: npm install -g sass
+        run: npm install -g sass@1.93.2
 
       - name: Setup Pages
         id: pages
@@ -106,7 +106,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: build
     steps:
       - name: Deploy to GitHub Pages

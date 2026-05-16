@@ -257,7 +257,7 @@ def export_pdf(spec: ExportSpec, pause_ms: int, retries: int, delay: float) -> N
     command = [
         "npx",
         "-y",
-        "decktape",
+        "decktape@3.12.0",
         "--pause",
         str(pause_ms),
         "--chrome-arg=--no-sandbox",
