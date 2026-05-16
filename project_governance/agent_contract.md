@@ -66,8 +66,71 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 - Aktiviert wird er ausschliesslich ueber `/PLAN FORSCHUNG`.
 - Der Forschungsmodus ersetzt keinen Standardstatus und aendert weder `P1` bis `P5` noch die Gates `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL`.
 - Der Forschungsmodus nutzt nach dem Startsignal `/PLAN FORSCHUNG` denselben Kernworkflow wie der Standardmodus.
-- Seine empfohlene Ablage ist `exports/research/`; moegliche Dateien sind `chat_log.md`, `planning_trace.md` und `decision_log.md`.
-- Snapshots bleiben auch im Forschungsmodus optional und sind nie Pflichtbestandteil des Kernworkflows.
+- Seine empfohlene Ablage ist `exports/research/<case_id>/`; vorgesehene Dateien sind `chat_log.md`, `planning_trace.md`, `decision_log.md`, `metadata.yaml`, `blog_snapshot.txt`, `reveal_snapshot.txt`, `index.md` und `_index.md`.
+- Im Forschungsmodus werden Snapshots standardmaessig erzeugt: `blog_snapshot.txt` nach `BLOG FINAL`, `reveal_snapshot.txt` nach `REVEAL FINAL`; beide werden direkt im Case-Ordner abgelegt, sind nicht-operativ und sind nie Ableitungsquelle.
+- Nach regulaeren Abschluss werden die finalen Artefakte zusaetzlich in den Case-Ordner kopiert: `index.md` (Kopie der finalen Blog-Datei) und `_index.md` (Kopie der finalen Reveal-Datei). Fehlende Artefakte werden nicht erzwungen.
+
+#### Verbindliche Minimal-Schemata im Forschungsmodus
+
+Wenn der Forschungsmodus aktiv ist, werden Forschungsartefakte in `exports/research/<case_id>/` abgelegt. Die empfohlenen Dateien folgen diesen Minimal-Schemata:
+
+**`chat_log.md`** – Primaerdatenquelle: vollstaendiger sichtbarer Dialogverlauf ohne Bereinigung; keine automatischen Zusammenfassungen; keine Interpretation.
+
+**`planning_trace.md`** – Ereignisprotokoll; jeder Eintrag enthaelt:
+- `timestamp`: ISO-8601-Zeitstempel des Ereignisses
+- `phase`: aktuelle Prozessphase (`P1`–`P5`)
+- `event_type`: einer der Werte `Gate | Phase | Artifact | Decision | Revision`
+- `user_action`: beobachtbare Nutzerhandlung (Befehl, Freigabe, Revision); leer, wenn kein Nutzerbezug vorliegt
+- `agent_action`: beobachtbare Agentenhandlung (Rueckfrage, Artefaktanlage, Statusmeldung); leer, wenn kein Agentenbezug vorliegt
+- `artifact_path`: Pfad des betroffenen Artefakts, falls vorhanden; sonst leer
+
+**`decision_log.md`** – Entscheidungsprotokoll; jeder Eintrag enthaelt:
+- `decision_id`: fortlaufende Kennung (`D01`, `D02`, …)
+- `timestamp`: ISO-8601-Zeitstempel
+- `decision_type`: einer der Werte `Profile | Gate | Structure | Content | Approval`
+- `context`: Phase und unmittelbarer Anlass als beobachtbare Tatsache (ohne Interpretation)
+- `decision`: getroffene Entscheidung als beobachtbare Tatsache
+- `rationale`: Begruendung aus dem Dialog, soweit sichtbar; sonst leer
+- `evidence`: Referenz auf turn oder Aussage in `chat_log.md`, soweit zitierbar; sonst leer
+
+**`metadata.yaml`** – Fallmetadaten; Pflichtfelder:
+- `case_id`: eindeutiger Fallbezeichner (z. B. Datum + Kurzthema)
+- `start_time`: ISO-8601-Zeitstempel des `/PLAN FORSCHUNG`-Starts
+- `end_time`: ISO-8601-Zeitstempel des Fallabschlusses
+- `duration_minutes`: ganzzahlige Dauer in Minuten; `null`, wenn nicht verlässlich ableitbar
+- `user_message_count`: Anzahl sichtbarer Nutzerturns; `null`, wenn nicht sicher zaehlbar
+- `agent_message_count`: Anzahl sichtbarer Agentturns; `null`, wenn nicht sicher zaehlbar
+- `phase_transition_count`: Anzahl beobachtbarer Phasenuebergaenge
+- `decision_count`: Anzahl Eintraege in `decision_log.md`
+- `generated_artifacts`: Liste der erzeugten Artefaktpfade (Array)
+- `completion_status`: Wert `complete | blog_only | aborted | intermediate`
+- `didactic_profile`: `A | B | C | unset`
+- `agent_version`: Versionsbezeichner des Agenten
+- `contract_version`: Versionsbezeichner des Agent Contracts
+- `git_commit`: Git-Commit-Hash zum Zeitpunkt des Starts; `null`, wenn nicht verfuegbar
+- `build_status`: `passed | failed | not_run`
+
+Nicht direkt ableitbare Zaehldaten werden grundsaetzlich als `null` markiert, nicht geschaetzt.
+
+**`blog_snapshot.txt`** – Rohtext-Schnappschuss des Blog-Artefakts unmittelbar nach `BLOG FINAL`; kein Markdown-Rendering, keine Interpretation; dient als nicht-operativer Vergleichsstand.
+
+**`reveal_snapshot.txt`** – Rohtext-Schnappschuss des Reveal-Artefakts unmittelbar nach `REVEAL FINAL`; analog zu `blog_snapshot.txt`.
+
+**`index.md`** – Kopie der finalen Blog-Datei (`content/blog/.../index.md`) nach erfolgreichem `BLOG FINAL`; identischer Inhalt, keine Bearbeitung. Bei `blog_only` ist dies die einzige Artefaktkopie.
+
+**`_index.md`** – Kopie der finalen Reveal-Datei (`content/praesentation/.../_index.md`) nach erfolgreichem `REVEAL FINAL`; identischer Inhalt, keine Bearbeitung. Entfaellt bei `blog_only`.
+
+#### Sonderfaelle im Forschungsmodus
+
+- `blog_only`: Der Fall endet nach `BLOG FINAL` ohne Reveal-Ableitung. `BLOG FINAL` erzeugt `blog_snapshot.txt` und kopiert `index.md` in den Case-Ordner; `metadata.yaml` wird mit `completion_status: blog_only` abgeschlossen. Reveal-Artefakte (`reveal_snapshot.txt`, `_index.md`) entfallen und werden nicht als fehlend markiert.
+- `aborted`: Der Fall wird ohne regulaeren Abschluss beendet. Nur tatsaechlich bereits vorhandene Dateien bleiben im Case-Ordner; `metadata.yaml` wird mit `completion_status: aborted` und `end_time` zum Abbruchzeitpunkt befuellt; noch nicht verfuegbare Felder werden als `null` markiert.
+- `intermediate`: Zwischenspeicherstand ohne Fallabschluss. Alle bis dahin verfuegbaren Dateien koennen abgelegt werden; `metadata.yaml` bleibt offen und wird erst beim regulaeren Fallabschluss finalisiert.
+
+#### Datenschutz und Nicht-Versionierung im Forschungsmodus
+
+- Forschungsartefakte enthalten ausschliesslich objektiv beobachtbare Informationen und keine interpretativen Bewertungen oder theoretischen Zuschreibungen.
+- Forschungsartefakte unter `exports/research/` sollen im Regelfall nicht versioniert werden (vgl. `project_governance/repo_architecture.md`, Abschnitt 4.1).
+- Falls Forschungsdaten Rueckschluesse auf Personen ermoeglichten, sind vor einer Weitergabe geeignete Anonymisierungsschritte zu dokumentieren; dies liegt ausserhalb des Agenten-Kernworkflows und obliegt dem Forschenden.
 
 ### Standardisierte Statusmeldungen
 
@@ -165,7 +228,7 @@ Der Wissensbasis-Anschluss ist ein Hook nach `BLOG FINAL`, nicht Teil der Bloger
 14. `P1` und `P2` bleiben strikt Planungsmodus. Der erste `/PLAN`-Turn bleibt immer in `P1` oder `P2`. Weder reichhaltiger Kontext noch das Arbeitsprinzip `Fortschritt vor Absicherung` legitimieren ohne explizite Nutzerfreigabe den Uebergang nach `P3`, die Anlage von `index.md` oder die Anlage von `_index.md`. Im ersten `/PLAN`-Turn werden keine Dateien, Snapshots oder Builds erzeugt.
 15. `BLOG GO` ist erst zulaessig, wenn ein sichtbarer Planungsstand vorliegt oder der Nutzer eine bereits bestehende Planung bzw. Blog-Grundlage explizit benennt. Dann erzeugt der Agent im Blog-Zielordner `index.md` als bearbeitbare Arbeitsdatei. Im Standardmodus entstehen dabei keine Snapshots, Chatlogs oder Rohdatenexporte.
 16. `REVEAL GO` ist erst zulaessig, wenn ein finaler Blog-`index.md` als belastbare Grundlage vorliegt. Dann erzeugt der Agent im Reveal-Zielordner `_index.md` als bearbeitbare Reveal-Arbeitsdatei. Weder `/PLAN` noch eine gemeinsame Blog-und-Reveal-Anfrage implizieren `REVEAL GO`.
-17. Snapshots sowie Chat-/Rohdatenexporte gehoeren nicht zum Standardmodus. Sie duerfen nur im Forschungsmodus erzeugt werden, bleiben auch dort optional, nicht-operativ und nie Ableitungsquelle; empfohlener Ablageort ist `exports/research/` mit moeglichen Dateien wie `chat_log.md`, `planning_trace.md` und `decision_log.md`. Reveal wird stets aus dem finalen Blog-`index.md` abgeleitet.
+17. Snapshots sowie Chat-/Rohdatenexporte gehoeren nicht zum Standardmodus. Im Forschungsmodus werden Snapshots standardmaessig erzeugt (`blog_snapshot.txt` nach `BLOG FINAL`, `reveal_snapshot.txt` nach `REVEAL FINAL`); sie sind nicht-operativ und nie Ableitungsquelle. Die finalen Artefakte werden nach regulaeren Abschluss zusaetzlich als Kopien (`index.md`, `_index.md`) im Case-Ordner abgelegt. Reveal wird stets aus dem finalen Blog-`index.md` abgeleitet.
 18. Vor Finalisierung greifen verpflichtende Mindestpruefungen. Alle Pflichtbestandteile muessen vor `BLOG FINAL` beziehungsweise `REVEAL FINAL` vollstaendig geprueft sein. Im Blog sind dies mindestens DQM-Pruefbericht, sichtbare Zusammenfassung nach dem Summary-Schema dieses Contracts, Frontmatter-Pruefung, Begriffspruefung und Typografiepruefung. In Reveal sind dies mindestens Abgleich, sichtbare Zusammenfassung nach dem Summary-Schema dieses Contracts und Frontmatter-Pruefung. Nach erfolgreicher inhaltlicher Finalisierung fuehrt `BLOG FINAL` standardmaessig `LITERATUR GO` aus `prompts/literatur.md` als rein formalen Schritt ohne externe Recherche auf der aktuellen `index.md` aus und startet erst danach das technische Content-Emoji-Postprocessing ueber `prompts/content_emojis_blog.md`; `REVEAL FINAL` fuehrt unveraendert das entsprechende technische Content-Emoji-Postprocessing ueber `prompts/content_emojis_reveal.md` auf der aktuellen `_index.md` aus. Der anschliessende Final-Check prueft nur das Ergebnis und nimmt selbst keine Aenderungen vor. Eine Quellenuebersicht wird nur sichtbar ausgegeben, wenn Quellenkonsistenz oder Nutzerklarheit das erfordern. Eine Materialuebersicht wird nur sichtbar ausgegeben, wenn mehrere Dateien, Quellen oder Zielpfade tatsaechlich abgestimmt werden muessen. Ziel ist eine moeglichst abschliessende First-pass-Finalisierung ohne nachtraegliche Korrekturschleifen. Bei Blockern stoppt die Finalisierung.
 19. `BLOG FINAL` ist nur zulaessig, wenn `draft: false` gesetzt ist. Ein Blogbeitrag gilt nur dann als veroeffentlicht, wenn `draft: false` gesetzt ist; mit `draft: true` bleibt er unveroeffentlicht.
 20. `BLOG FINAL` ist unzulaessig, wenn Pflichtabschnitte aus diesem Contract oder dem Blog-Template fehlen, inhaltlich unvollstaendig sind, keine belastbare Blog-Grundlage vorliegt, `draft` nicht explizit `false` ist oder im kapitelweisen Freigabefall noch nicht freigegeben wurden.
@@ -183,7 +246,7 @@ Der Wissensbasis-Anschluss ist ein Hook nach `BLOG FINAL`, nicht Teil der Bloger
 32. Die Low-noise-Regel aus `Sichtbarkeit von Struktur` ist verbindlich. Pflichtausgaben wie Abgleich, DQM-Pruefbericht, sichtbare Zusammenfassung nach dem Summary-Schema sowie erforderliche Tabellen oder Uebersichten bleiben sichtbar zulaessig, sofern sie direkt als Ergebnis erscheinen.
 33. Die Blog-Wissensbasis ist ein optionaler Anschluss fuer Verweise, Orientierung und Nachpflege; sie ist kein Pflicht-Gate der Standardplanung oder Finalisierung. Nach erfolgreichem `BLOG FINAL` prueft der Agent diesen Anschluss jedoch verpflichtend und entwirft standardmaessig einen kuratierten Wissensbasis-Eintrag als Vorschlag. Der Hook gehoert nicht zur Blogerstellung selbst: Der Blog bleibt final, auch wenn der Wissensbasis-Anschluss anschliessend redaktionell nachbearbeitet wird. Erst nach Bestaetigung oder gezielter Korrektur wird `blog_wissensbasis.md` aktualisiert. Liegt statt des Review-Schritts eine ausdrueckliche sofortige Uebernahmeanweisung vor, darf die Aktualisierung ohne Zusatzrueckfrage im selben Arbeitsgang erfolgen. `REVEAL GO` loest fuer sich allein keine Wissensbasis-Aktualisierung aus und wird durch einen noch offenen Wissensbasis-Feinschliff nicht blockiert.
 34. Routing hat zwei Ebenen: technischen Bundle-Ort und veroeffentlichten Pfad. Die Site-Basis ist gemaess `config.toml` `/iWIP/`. Fuer sichtbare Ausgaben ist ausschliesslich der veroeffentlichte Pfad unterhalb dieser Site-Basis massgeblich. Dabei gilt zur Klarstellung: Blog -> Praesentation meint die Ableitung des veroeffentlichten Praesentationspfads aus dem Blog-Bundle. Praesentation -> Blog meint das Reveal-Frontmatter-Feld `blog`; dieses verweist auf die veroeffentlichte Blog-URL mit Site-Basis und nicht auf technische Content-Pfade. Standard: `content/blog/<bereich>/<ordner>/index.md` -> veroeffentlichter Pfad `/iWIP/praesentation/<bereich>/<ordner>/`. Sonderfall `widi`: technisches Reveal-Bundle `content/praesentation/lehre/widi/<ordner>/`, veroeffentlichter Pfad `/iWIP/praesentation/widi/<ordner>/`. Der technische Bundle-Ort darf niemals in sichtbaren Ausgaben erscheinen; Buttons, sichtbare Links, pruefende Beispiele und die aus Frontmatter-Aliases aufgeloeste Route muessen auf dieselbe veroeffentlichte URL zeigen.
-35. Forschungsartefakte bleiben schlank und verifizierbar: enthalten sind nur Marker, zentrale Zeitpunkte, Artefaktpfade, Build-/Check-Status und exakt ableitbare Zaehldaten. Unsichere Zaehldaten werden nicht geschaetzt, sondern als nicht verlaesslich verfuegbar markiert. Empfohlene Dateien in `exports/research/` sind `chat_log.md`, `planning_trace.md` und `decision_log.md`; weitere Dateien bleiben optional.
+35. Forschungsartefakte bleiben schlank und verifizierbar: enthalten sind nur Marker, zentrale Zeitpunkte, Artefaktpfade, Build-/Check-Status und exakt ableitbare Zaehldaten. Unsichere Zaehldaten werden nicht geschaetzt, sondern als `null` markiert. Vorgesehene Dateien in `exports/research/<case_id>/` sind `chat_log.md`, `planning_trace.md`, `decision_log.md`, `metadata.yaml`, `blog_snapshot.txt`, `reveal_snapshot.txt`, `index.md` und `_index.md`; tatsaechlich erzeugte Dateien haengen vom Fallverlauf und `completion_status` ab.
 36. `/PLAN FORSCHUNG` aktiviert zusaetzlich einen optionalen Forschungs-/Rohdatenmodus in `exports/research/`. Dieser orthogonale Zusatzmodus verhaelt sich wie `/PLAN` plus interne Rohdatenerfassung, beruehrt aber weder die Kernlogik noch die Freigabegates fuer Blog und Reveal, fuehrt keine zusaetzlichen Forschungsbefehle ein und wird durch `REVEAL FINAL` automatisch abgeschlossen.
 37. Arbeitsprinzip ist verpflichtend: Der Agent priorisiert Fortschritt vor Absicherung und Klarheit vor Vollstaendigkeit, sofern kein echter Blocker vorliegt. Diese Priorisierung darf weder Pflichtpruefungen noch Konfliktklaerungen ueberspringen und nicht als Legitimation fuer Artefakterstellung ohne explizite Nutzerfreigabe dienen.
 
@@ -312,8 +375,8 @@ Sichtbare Zusammenfassungen erscheinen nur bei Finalisierung, an echten Uebergae
 
 Im Forschungsmodus bleiben Forschungsartefakte strikt vom sichtbaren Dialog und vom didaktischen Artefakt getrennt und enthalten nur schlanke, beobachtende Metadaten, soweit sie verlaesslich verfuegbar sind: Start- und Endzeit, Phasenuebergaenge, Artefaktpfade, Build-/Check-Status und nur dann Zaehldaten, wenn diese direkt ableitbar sind.
 
-Wenn ein Fall mit `/PLAN FORSCHUNG` beginnt, fuehrt der Agent die Forschungsdokumentation ab diesem Zeitpunkt fortlaufend in `exports/research/`. Empfohlene Dateien sind `chat_log.md`, `planning_trace.md` und `decision_log.md`; Snapshots bleiben optional. Ohne aktivierten Forschungsmodus duerfen spaetere Auswertungen Zeitpunkte nur rekonstruieren und muessen fehlende Marker oder Rohdaten explizit als nicht verlaesslich verfuegbar kennzeichnen.
-Wurde der Agent mit `/PLAN FORSCHUNG` gestartet, finalisiert `REVEAL FINAL` zusaetzlich alle aktiven Forschungsartefakte und schliesst den Forschungsmodus automatisch ab.
+Wenn ein Fall mit `/PLAN FORSCHUNG` beginnt, fuehrt der Agent die Forschungsdokumentation ab diesem Zeitpunkt fortlaufend in `exports/research/<case_id>/`. Vorgesehene Dateien sind `chat_log.md`, `planning_trace.md`, `decision_log.md`, `metadata.yaml`, `blog_snapshot.txt`, `reveal_snapshot.txt`, `index.md` und `_index.md`; tatsaechlich erzeugte Dateien haengen vom Fallverlauf ab. Ohne aktivierten Forschungsmodus duerfen spaetere Auswertungen Zeitpunkte nur rekonstruieren und muessen fehlende Marker oder Rohdaten explizit als nicht verlaesslich verfuegbar kennzeichnen.
+Wurde der Agent mit `/PLAN FORSCHUNG` gestartet, finalisiert `REVEAL FINAL` zusaetzlich alle aktiven Forschungsartefakte: Snapshot wird erzeugt, Artefaktkopien werden abgelegt und `metadata.yaml` mit allen verfuegbaren Pflichtfeldern abgeschlossen; nicht direkt ableitbare Zaehldaten werden als `null` markiert. Bei `completion_status: blog_only` uebernimmt `BLOG FINAL` diese Abschlussrolle analog; `reveal_snapshot.txt` und `_index.md` entfallen dann.
 
 Bei `BLOG FINAL` ist die sichtbare Reihenfolge:
 
@@ -545,3 +608,8 @@ Testtiefe ist proportional:
 
 - Erwartung: Nach erfolgreichem `BLOG FINAL` wird standardmaessig ein kuratierter Wissensbasis-Entwurf vorgeschlagen und genau eine Bestaetigungsfrage zur Formulierung gestellt; die Datei wird erst nach Freigabe oder gezielter Korrektur aktualisiert. Bei ausdruecklicher sofortiger Uebernahmeanweisung darf die Rueckfrage entfallen. `REVEAL GO` allein triggert keine Wissensbasis-Aktualisierung.
 - Fehlerindikator: Nach `BLOG FINAL` fehlt der Wissensbasis-Entwurf trotz regulaerem Anschlussfall; die Formulierung wird ohne Review still uebernommen; trotz bestaetigtem Entwurf wird `blog_wissensbasis.md` nicht aktualisiert; oder `REVEAL GO` behandelt die Wissensbasis wieder wie ein automatisches Pflicht-Gate.
+
+### RC-28 Forschungsmodus-Schemata und Fallarchivierung korrekt
+
+- Erwartung: Im aktiven Forschungsmodus werden `planning_trace.md`, `decision_log.md` und `metadata.yaml` gemaess den in Abschnitt 2 definierten Minimal-Schemata befuellt. Nach `BLOG FINAL` wird `blog_snapshot.txt` erzeugt und `index.md` in den Case-Ordner kopiert; nach `REVEAL FINAL` analog `reveal_snapshot.txt` und `_index.md`. Nicht ableitbare Felder werden als `null` markiert, nicht geschaetzt. `metadata.yaml` wird beim Fallabschluss vollstaendig finalisiert; `generated_artifacts` listet alle tatsaechlich erzeugten Artefaktpfade. Sonderfaelle (`blog_only`, `aborted`, `intermediate`) werden schemakonsistent und lagerichtig abgebildet.
+- Fehlerindikator: Fehlende Pflichtfelder in `metadata.yaml`; geschaetzte statt als `null` markierte Zaehldaten; fehlender oder falscher `completion_status`; Snapshots nicht erzeugt obwohl Fallverlauf vollstaendig; Artefaktkopien fehlen oder wurden bearbeitet; `reveal_snapshot.txt` oder `_index.md` bei `blog_only` vorhanden; Forschungsartefakte enthalten interpretative Bewertungen.

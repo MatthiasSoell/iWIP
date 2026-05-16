@@ -414,6 +414,74 @@ Kritische Regeln:
 
 ---
 
+## 🧪 Test 23: 🔥 Forschungsartefakte folgen den Minimal-Schemata und werden vollstaendig archiviert
+
+Voraussetzung:
+- Der Fall wurde mit `/PLAN FORSCHUNG` gestartet
+- aktive Forschungsartefakte unter `exports/research/<case_id>/` werden gefuehrt
+
+Prompt:
+REVEAL FINAL
+
+Erwartung:
+- `planning_trace.md` enthaelt Eintraege mit den Pflichtfeldern `timestamp`, `phase`, `event_type`, `user_action`, `agent_action`, `artifact_path`
+- `decision_log.md` enthaelt Eintraege mit den Pflichtfeldern `decision_id`, `timestamp`, `decision_type`, `context`, `decision`, `rationale`, `evidence`
+- `metadata.yaml` ist vollstaendig abgeschlossen mit allen Pflichtfeldern gemaess Contract-Schema
+- `completion_status` in `metadata.yaml` ist `complete`
+- nicht ableitbare Zaehldaten sind als `null` markiert, nicht geschaetzt
+- keine Eintraege enthalten interpretative Bewertungen
+- `blog_snapshot.txt` ist nach `BLOG FINAL` im Case-Ordner vorhanden
+- `reveal_snapshot.txt` ist nach `REVEAL FINAL` im Case-Ordner vorhanden
+- `index.md` (Kopie der finalen Blog-Datei) ist im Case-Ordner vorhanden
+- `_index.md` (Kopie der finalen Reveal-Datei) ist im Case-Ordner vorhanden
+- `generated_artifacts` in `metadata.yaml` listet alle erzeugten Artefaktpfade vollstaendig auf
+
+Kritische Regeln:
+- Forschungsartefakte enthalten ausschliesslich objektiv beobachtbare Informationen
+- Nicht ableitbare Daten werden als `null` markiert, niemals geschaetzt (RC-28)
+- Snapshots und Artefaktkopien sind nach vollstaendigem Fallabschluss Pflicht
+- Artefaktkopien (`index.md`, `_index.md`) sind unveraenderte Kopien der Originale, nicht neu erzeugt
+
+---
+
+## 🧪 Test 24: 🔥 Sonderfaelle im Forschungsmodus korrekt archiviert
+
+Voraussetzung:
+- Der Fall wurde mit `/PLAN FORSCHUNG` gestartet
+
+**Sonderfall `blog_only`:**
+Prompt: BLOG FINAL (kein REVEAL GO folgt, Nutzer erklaert den Fall als abgeschlossen)
+
+Erwartung:
+- `BLOG FINAL` finalisiert die Forschungsartefakte
+- `blog_snapshot.txt` und `index.md` (Blog-Kopie) sind im Case-Ordner vorhanden
+- `reveal_snapshot.txt` und `_index.md` sind nicht vorhanden (kein Reveal)
+- `metadata.yaml` erhaelt `completion_status: blog_only`
+- `generated_artifacts` enthaelt nur die tatsaechlich erzeugten Eintraege
+
+**Sonderfall `aborted`:**
+Prompt: (kein regulaerer Abschlussbefehl; Nutzer bricht ab oder erklaert den Abbruch)
+
+Erwartung:
+- nur tatsaechlich bereits vorhandene Dateien bleiben im Case-Ordner
+- `metadata.yaml` erhaelt `completion_status: aborted` und `end_time` zum Abbruchzeitpunkt
+- noch nicht verfuegbare Felder werden als `null` markiert
+- kein nachtraeglicher Snapshot oder Artefaktkopie
+
+**Sonderfall `intermediate`:**
+Prompt: (Nutzer erbittet Zwischenspeicherung)
+
+Erwartung:
+- alle bis dahin verfuegbaren Dateien werden im Case-Ordner abgelegt
+- `metadata.yaml` bleibt offen (kein `completion_status`-Abschluss)
+- Finalisierung erfolgt erst beim regulaeren Fallabschluss
+
+Kritische Regeln:
+- Sonderfaelle werden schemakonsistent und lagerichtig abgebildet (RC-28)
+- Standardworkflow bleibt durch Sonderfaelle unveraendert
+
+---
+
 ## 🧾 Nutzung der Suite
 
 Diese Tests können verwendet werden für:
