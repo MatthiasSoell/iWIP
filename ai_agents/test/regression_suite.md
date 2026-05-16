@@ -307,12 +307,13 @@ Prompt:
 Erwartung:
 - Agent startet trotzdem in `P1`/`P2`
 - erste Reaktion bleibt Planung, Strukturierung, genau eine priorisierte Rueckfrage oder ein Planungsstand
-- keine Anlage von `index.md` oder `_index.md`, keine Snapshots und keine Build-Ausfuehrung
+- keine Anlage von `index.md` oder `_index.md`, keine Snapshots, keine Build-Ausfuehrung und keine Anlage von `exports/research/`
 - kein stiller Sprung nach `P3`, nur weil der Kontext bereits reichhaltig ist
 
 Kritische Regeln:
 - `/PLAN` startet im Planungsmodus
 - `BLOG GO` bleibt das erste Erzeugungsgate
+- Standardmodus erzeugt vor `BLOG GO` keine Dateien
 - Fortschritt vor Absicherung ist kein Freigabeersatz
 
 ---
@@ -351,7 +352,7 @@ Kritische Regeln:
 
 ---
 
-## 🧪 Test 20: 🔥 `/PLAN FORSCHUNG` aktiviert Forschungsmodus ohne Artefakterzeugung
+## 🧪 Test 20: 🔥 `/PLAN FORSCHUNG` initialisiert den Forschungsfall sofort
 
 Prompt:
 /PLAN FORSCHUNG
@@ -359,6 +360,11 @@ Prompt:
 Erwartung:
 - Agent startet mit demselben Planungsdialog wie bei `/PLAN`
 - Forschungs-/Rohdatenmodus ist aktiv
+- `case_id` wird sofort erzeugt und `exports/research/<case_id>/` direkt angelegt
+- `metadata.yaml`, `chat_log.md`, `planning_trace.md` und `decision_log.md` werden sofort initialisiert
+- der initiale Nutzerprompt wird direkt in `chat_log.md` gespeichert
+- `metadata.yaml` enthaelt mindestens `case_id`, `start_time`, `completion_status: intermediate`, `agent_version`, `contract_version` und `git_commit`
+- `planning_trace.md` beginnt mit einem Aktivierungseintrag fuer den Forschungsmodus
 - Forschungsartefakte entstehen nur im aktivierten Forschungsmodus
 - `REVEAL FINAL` schliesst aktive Forschungsartefakte automatisch ab
 - keine zusaetzlichen Forschungsbefehle werden eingefuehrt
@@ -366,6 +372,7 @@ Erwartung:
 
 Kritische Regeln:
 - `/PLAN FORSCHUNG` aktiviert den optionalen Forschungsmodus innerhalb der Standardplanung
+- Datenerhebung beginnt unmittelbar mit dem ersten sichtbaren Forschungsimpuls
 - Forschungsartefakte entstehen ausschliesslich in diesem Modus
 - `REVEAL FINAL` schliesst den Forschungsmodus ueber die aktiven Forschungsartefakte ab
 - Standard-Planungslogik bleibt erhalten
@@ -426,6 +433,7 @@ REVEAL FINAL
 Erwartung:
 - `planning_trace.md` enthaelt Eintraege mit den Pflichtfeldern `timestamp`, `phase`, `event_type`, `user_action`, `agent_action`, `artifact_path`
 - `decision_log.md` enthaelt Eintraege mit den Pflichtfeldern `decision_id`, `timestamp`, `decision_type`, `context`, `decision`, `rationale`, `evidence`
+- die vier Initialdateien aus `/PLAN FORSCHUNG` bleiben im Case-Ordner erhalten und werden fortgeschrieben
 - `metadata.yaml` ist vollstaendig abgeschlossen mit allen Pflichtfeldern gemaess Contract-Schema
 - `completion_status` in `metadata.yaml` ist `complete`
 - nicht ableitbare Zaehldaten sind als `null` markiert, nicht geschaetzt
@@ -473,7 +481,7 @@ Prompt: (Nutzer erbittet Zwischenspeicherung)
 
 Erwartung:
 - alle bis dahin verfuegbaren Dateien werden im Case-Ordner abgelegt
-- `metadata.yaml` bleibt offen (kein `completion_status`-Abschluss)
+- `metadata.yaml` bleibt mit `completion_status: intermediate` im offenen Zwischenstatus
 - Finalisierung erfolgt erst beim regulaeren Fallabschluss
 
 Kritische Regeln:
