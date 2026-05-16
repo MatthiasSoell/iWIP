@@ -82,7 +82,7 @@ Ausführungslogik:
 
 - **Selektiver RC-Durchlauf**: bei kleinen Text- oder Regelkorrekturen nur betroffene RCs plus RC-07.
 - **Vollständiger RC-Durchlauf**: vor Live-Fällen, festgeschriebenen Ständen und nach Änderungen an Moduslogik, Übergängen, Snapshot-Regeln, Bundle-Hygiene oder DoD.
-- **Dry Run**: praktische Durchfuehrung des im Contract als minimaler normativer Pflichttest definierten RC-Trockentests. Der Dry Run fuehrt diesen Test mindestens als einen geschlossenen Repo-Fall im Standardmodus in fuenf Schritten aus: `/PLAN`, `BLOG GO`, `BLOG FINAL`, `REVEAL GO` -> `REVEAL FINAL`.
+- **Dry Run**: praktische Durchfuehrung des im Contract als minimaler normativer Pflichttest definierten RC-Trockentests. Der Dry Run fuehrt diesen Test mindestens als einen geschlossenen Repo-Fall im Standardmodus in fuenf Schritten aus: `/PLAN`, `BLOG GO`, `BLOG FINAL` inklusive automatischem `LITERATUR GO`, `REVEAL GO` -> `REVEAL FINAL`.
 - Bei Aenderungen am Forschungsmodus zusaetzlich gezielt `/PLAN FORSCHUNG` gegen die betroffenen Regeln pruefen: gleicher Planungsdialog wie `/PLAN`, optionale Rohdatenerfassung unter `exports/research/`, keine Veraenderung der Kernlogik, keine zusaetzlichen Forschungsbefehle und automatischer Abschluss aktiver Forschungsartefakte bei `REVEAL FINAL`.
 - Bei Änderungen an der Wissensbasis-Anschlusslogik zusätzlich gezielt RC-27 prüfen, insbesondere Entwurf bei `BLOG FINAL`, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
 
@@ -144,6 +144,7 @@ Bearbeiter:
 | BLOG FINAL | Dialogstil bleibt didaktisch und adressatenorientiert | | | | | |
 | BLOG FINAL | Uploads werden nur als Quellmaterial behandelt | | | | | |
 | BLOG FINAL | Mindestpruefungen und sichtbare Zusammenfassung greifen korrekt | | | | | |
+| BLOG FINAL | Automatisches `LITERATUR GO` laeuft als rein formaler Schritt ohne Recherche und vor dem Content-Emoji-Postprocessing | | | | | |
 | BLOG FINAL | Content-Emoji-Postprocessing laeuft nach der inhaltlichen Finalisierung und vor dem finalen Build-/Release-Check | | | | | |
 | BLOG FINAL | Wissensbasis-Hook wird geprueft, blockiert `REVEAL GO` aber nicht | | | | | |
 | REVEAL GO -> REVEAL FINAL | Reveal startet erst nach Uebergang/Freigabe | | | | | |
