@@ -45,9 +45,6 @@ jobs:
       - name: Install Dart Sass
         run: npm install -g sass
 
-      - name: Download Hugo Modules
-        run: hugo mod get
-
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
