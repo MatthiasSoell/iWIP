@@ -41,7 +41,7 @@ Arbeite dabei mit:
 
 - `check` bewertet nur.
 - `check` fuehrt keine inhaltlichen oder technischen Aenderungen am Artefakt aus.
-- Sichtbar erscheinen nur die contractkonformen Pruefausgaben im vorgegebenen Format, ohne Prozesskommentar.
+- Sichtbar erscheinen nur die contractkonformen Pruefausgaben im vorgegebenen Format, ohne Prozesskommentar. Forschungsprotokollierung erscheint nicht als eigener sichtbarer Block; sie wird nur bei blockerrelevanten Befunden, echten Finalisierungsfolgen oder auf ausdrueckliche Nachfrage genannt.
 
 Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive Textauswahlen oder sonstiger Editor-Kontext steuern diesen Pruefpfad nicht.
 
@@ -89,8 +89,9 @@ Hoeher gewichtete Dimensionen werden strenger ausgelegt; niedrig gewichtete Dime
 Wenn das Artefakt ein Blogartikel ist, pruefe gegen Agent Contract und `ai_agents/templates/blog_template.md`:
 
 - Leser:innenperspektive ist klar erkennbar.
-- Der Text ist im Fliesstext ausgearbeitet; planungsnahe Sprache dominiert nicht.
-- Planungslogik, Scaffold-Formulierungen, Agentenarbeitsauftraege oder Meta-Notizen erscheinen nicht im sichtbaren Artikelkoerper.
+- Der Text ist im Fliesstext durchgaengig in veroeffentlichbarer Blogsprache ausgearbeitet; planungsnahe Sprache erscheint nicht im sichtbaren Artikelkoerper.
+- Planungslogik, Scaffold-Formulierungen, Autorenanweisungen, Agentenarbeitsauftraege oder Meta-Notizen erscheinen nicht im sichtbaren Artikelkoerper.
+- Didaktische Pflicht- oder Strukturabschnitte sind, falls vorhanden, in Blogsprache fuer Lernende formuliert und nicht als interne Planungsliste geschrieben.
 - Kernpunkte erscheinen als fachlich benannte H2/H3-Hauptkapitel mit Quellenbezug im Text.
 - Sammelueberschriften wie `Kernpunkte`, `Kernpunkte mit Evidenz` oder `Kernthemen` werden im Artikelkoerper nicht verwendet.
 - Die Zielgliederung aus dem Blog-Template ist in ihren Pflichtbestandteilen vorhanden: `Hintergrund`, `Ausgangsfrage`, `Lernziele`, `Ablauf`, fachliche Hauptkapitel, `Literatur und Quellen`.
@@ -277,6 +278,8 @@ Wenn das Artefakt eine Reveal-Praesentation ist, folgt die sichtbare Reihenfolge
 6. `Zusammenfassung`
 
 Wurde der Fall mit `/PLAN FORSCHUNG` gestartet, finalisiert `REVEAL FINAL` zusaetzlich alle aktiven Forschungsartefakte und schliesst den Forschungsmodus automatisch ab.
+
+Diese Forschungsfinalisierung erscheint nicht als eigener sichtbarer Pruefblock; notwendige Hinweise werden nur im passenden Block des Contract-Formats genannt.
 
 Die `Zusammenfassung` folgt ausschliesslich dem Summary-Schema des Contracts:
 

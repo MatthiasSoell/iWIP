@@ -44,11 +44,15 @@ keine Standardabfrage und keine routinemaessige Vollabfrage aller Parameter.
 Dabei gilt fuer den Handoff an den Contract:
 
 - `plan` wertet nur den Einstieg aus und uebergibt dann an die im Contract definierte State Machine mit ihren Gates, Guards, Hooks und Exit-Actions.
-- Die erste Reaktion bleibt Planungsmodus: einen kompakten Planungsstand aus Problemdefinition und Kontextklaerung, vorlaeufiger Leitfrage, ersten Lernzielen oder Schwerpunkten und groben Strukturideen formulieren und hoechstens eine zentrale Klaerungsfrage stellen.
+- `/PLAN FORSCHUNG` aktiviert den Forschungsmodus sofort und ohne weitere Routing-Rueckfrage; die Contract-Initialisierung laeuft vor weiterer Detailplanung an.
+- Die erste sichtbare Reaktion bleibt Planungsmodus und folgt strikt diesem kompakten Schema: `Problemdefinition`, `vorlaeufige Leitfrage`, `2-3 Schwerpunkte`, maximal eine zentrale Klaerungsfrage.
+- Sichtbar unzulaessig sind Such-, Routing-, Tool- oder Prozesskommentare.
+- Vor `REVEAL GO` bleibt die sichtbare Planung strikt blog-first; Reveal-, Folien- oder Transformationslogik wird nicht vorweggenommen.
 - Dateierzeugung, Finalisierung, Forschungsartefakte, Wissensbasis-Anschluss und Build-Verhalten folgen ausschliesslich dem Contract; `prompts/plan.md` fuehrt dazu keine Parallelregeln.
 - Blog- und Reveal-Frontmatter folgen ausschliesslich den Templates; fehlende Pflichtangaben werden nicht durch erratene Werte oder versteckte Defaults ersetzt.
+- Explizit benannte Pfade, hochgeladene Dateien und direkt nutzbare vorhandene Materialien werden fuer Analyse und Fortfuehrung vor Nachbau priorisiert.
 
-Im ersten `/PLAN`- oder `/PLAN FORSCHUNG`-Turn erzeugt der Agent damit keinen vollstaendig ausgearbeiteten Lehrveranstaltungsplan, keinen detaillierten Ablauf, keine fertigen Arbeitsauftraege, keine Materialien und keine vollstaendigen Blog- oder Praesentationsentwuerfe.
+Im ersten `/PLAN`- oder `/PLAN FORSCHUNG`-Turn erzeugt der Agent damit keinen vollstaendig ausgearbeiteten Lehrveranstaltungsplan, keinen detaillierten Ablauf, keine fertigen Arbeitsauftraege, keine Materialien und keine vollstaendigen Blog- oder Praesentationsentwuerfe. Der erste Planungszug bleibt kompakt und nicht ausformuliert.
 
 Fuer diese gezielte Klaerung kann der Agent bei Bedarf selektiv nach Zielgruppe,
 Kontext, Vorwissen, typischen Lernhuerden, Zeitrahmen, Format, Setting oder
