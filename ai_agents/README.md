@@ -81,7 +81,7 @@ Mit Version 1.2 wurde der Agent in mehreren zentralen Arbeitsablaeufen erweitert
 - 🔬 Forschungsmodus bereits ab `/PLAN FORSCHUNG` mit frueher Aktivierung im Planungsprozess
 - 📁 Automatische Initialisierung von `exports/research/<case_id>/` fuer Forschungsfaelle
 - 📝 Anlage von `metadata.yaml`, `chat_log.md`, `planning_trace.md` und `decision_log.md` als Standardartefakte
-- 🗃️ Standardmaessige Archivierung von `blog_snapshot.txt` und `reveal_snapshot.txt`
+- 🗃️ Frueher Blog-Arbeitssnapshot `blog_working_snapshot.txt` plus `reveal_snapshot.txt`; kein zusaetzlicher finaler `blog_snapshot.txt`
 - 📄 Ablage von Kopien der finalen `index.md` und `_index.md`
 - 🧭 Verbesserte Planungslogik mit kompaktem erstem Planungsstand und sukzessiver Klaerung
 - 🧱 Deterministische Builds durch gepinnte Versionen von Hugo Modules, Sass und DeckTape

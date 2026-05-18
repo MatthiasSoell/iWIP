@@ -83,7 +83,7 @@ Ausführungslogik:
 - **Selektiver RC-Durchlauf**: bei kleinen Text- oder Regelkorrekturen nur betroffene RCs plus RC-07.
 - **Vollständiger RC-Durchlauf**: vor Live-Fällen, festgeschriebenen Ständen und nach Änderungen an Moduslogik, Übergängen, Snapshot-Regeln, Bundle-Hygiene oder DoD.
 - **Dry Run**: praktische Durchfuehrung des im Contract als minimaler normativer Pflichttest definierten RC-Trockentests. Der Dry Run fuehrt diesen Test mindestens als einen geschlossenen Repo-Fall im Standardmodus in fuenf Schritten aus: `/PLAN`, `BLOG GO`, `BLOG FINAL` inklusive automatischem `LITERATUR GO`, `REVEAL GO` -> `REVEAL FINAL`.
-- Bei Aenderungen am Forschungsmodus zusaetzlich gezielt `/PLAN FORSCHUNG` gegen die betroffenen Regeln pruefen: gleicher Planungsdialog wie `/PLAN`, optionale Rohdatenerfassung unter `exports/research/`, keine Veraenderung der Kernlogik, keine zusaetzlichen Forschungsbefehle und automatischer Abschluss aktiver Forschungsartefakte bei `REVEAL FINAL`.
+- Bei Aenderungen am Forschungsmodus zusaetzlich gezielt `/PLAN FORSCHUNG` gegen die betroffenen Regeln pruefen: gleicher Planungsdialog wie `/PLAN`, sofortige Initialisierung der vier Startartefakte unter `exports/research/`, `blog_working_snapshot.txt` erst nach der ersten agentenseitig erzeugten Blog-Arbeitsfassung, kein finales `blog_snapshot.txt`, keine Veraenderung der Kernlogik, keine zusaetzlichen Forschungsbefehle und automatischer Abschluss aktiver Forschungsartefakte bei `REVEAL FINAL`.
 - Bei Änderungen an der Wissensbasis-Anschlusslogik zusätzlich gezielt RC-27 prüfen, insbesondere Entwurf bei `BLOG FINAL`, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
 
 ### 4.4 Proportionale Testtiefe
@@ -136,8 +136,9 @@ Bearbeiter:
 |---|---|---|---|---|---|---|
 | /PLAN | Keine Artefakterstellung | | | | | |
 | /PLAN | Sprache bleibt planungs- und dialoggerecht | | | | | |
-| /PLAN FORSCHUNG | Verhaelt sich wie `/PLAN` und aktiviert optional Rohdatenerfassung unter `exports/research/` | | | | | |
-| BLOG GO | Erzeugt nur `index.md` auf Basis des Planungsstands | | | | | |
+| /PLAN | Keine sichtbaren Such-, Routing-, Tool- oder Prozesskommentare | | | | | |
+| /PLAN FORSCHUNG | Verhaelt sich wie `/PLAN`, aktiviert sofort Rohdatenerfassung unter `exports/research/` und erzeugt noch keine Zielartefakte oder Snapshots | | | | | |
+| BLOG GO | Erzeugt `index.md` auf Basis des Planungsstands; im Forschungsmodus danach genau `blog_working_snapshot.txt` | | | | | |
 | BLOG FINAL | Kontextlücken führen zu genau einer Rückfrage | | | | | |
 | BLOG FINAL | Profilsteuerung A/B/C ist sichtbar korrekt | | | | | |
 | BLOG FINAL | Blog-first und Uebergangsdisziplin bleiben intakt | | | | | |

@@ -120,7 +120,7 @@ iWIP/
 Einige Pfade sind fuer den lokalen Arbeitsprozess sinnvoll, gehoeren aber
 nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
 
-- `exports/research/` fuer Forschungs-/Rohdatenartefakte aus `/PLAN FORSCHUNG`; der Forschungsstart legt je Fall sofort ein Unterverzeichnis `<case_id>/` mit `metadata.yaml`, `chat_log.md`, `planning_trace.md` und `decision_log.md` an; weitere Dateien wie `blog_snapshot.txt`, `reveal_snapshot.txt`, `index.md` und `_index.md` haengen vom Fallverlauf und `completion_status` ab
+- `exports/research/` fuer Forschungs-/Rohdatenartefakte aus `/PLAN FORSCHUNG`; der Forschungsstart legt je Fall sofort ein Unterverzeichnis `<case_id>/` mit `metadata.yaml`, `chat_log.md`, `planning_trace.md` und `decision_log.md` an; weitere Dateien wie `blog_working_snapshot.txt` (erst nach der ersten agentenseitig erzeugten Blog-Arbeitsfassung), `reveal_snapshot.txt`, `index.md` und `_index.md` haengen vom Fallverlauf und `completion_status` ab; ein zusaetzliches finales `blog_snapshot.txt` ist nicht vorgesehen
 - `public/` als lokaler Hugo-Build-Output
 - `resources/` als lokaler Hugo-Cache bzw. Build-Artefakt
 - `.hugo_build.lock` als lokale Lock-Datei

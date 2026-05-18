@@ -368,12 +368,13 @@ Erwartung:
 - Forschungsartefakte entstehen nur im aktivierten Forschungsmodus
 - `REVEAL FINAL` schliesst aktive Forschungsartefakte automatisch ab
 - keine zusaetzlichen Forschungsbefehle werden eingefuehrt
-- keine sofortige Anlage von `index.md` oder `_index.md`
+- keine sofortige Anlage von `index.md`, `_index.md` oder `blog_working_snapshot.txt`
 
 Kritische Regeln:
 - `/PLAN FORSCHUNG` aktiviert den optionalen Forschungsmodus innerhalb der Standardplanung
 - Datenerhebung beginnt unmittelbar mit dem ersten sichtbaren Forschungsimpuls
 - Forschungsartefakte entstehen ausschliesslich in diesem Modus
+- `blog_working_snapshot.txt` entsteht erst nach der ersten agentenseitig erzeugten Blog-Arbeitsfassung
 - `REVEAL FINAL` schliesst den Forschungsmodus ueber die aktiven Forschungsartefakte ab
 - Standard-Planungslogik bleibt erhalten
 - Forschungsmodus bleibt vom Standardmodus getrennt
@@ -438,7 +439,7 @@ Erwartung:
 - `completion_status` in `metadata.yaml` ist `complete`
 - nicht ableitbare Zaehldaten sind als `null` markiert, nicht geschaetzt
 - keine Eintraege enthalten interpretative Bewertungen
-- `blog_snapshot.txt` ist nach `BLOG FINAL` im Case-Ordner vorhanden
+- das bereits nach der ersten agentenseitig erzeugten Blog-Arbeitsfassung angelegte `blog_working_snapshot.txt` bleibt im Case-Ordner vorhanden
 - `reveal_snapshot.txt` ist nach `REVEAL FINAL` im Case-Ordner vorhanden
 - `index.md` (Kopie der finalen Blog-Datei) ist im Case-Ordner vorhanden
 - `_index.md` (Kopie der finalen Reveal-Datei) ist im Case-Ordner vorhanden
@@ -462,7 +463,8 @@ Prompt: BLOG FINAL (kein REVEAL GO folgt, Nutzer erklaert den Fall als abgeschlo
 
 Erwartung:
 - `BLOG FINAL` finalisiert die Forschungsartefakte
-- `blog_snapshot.txt` und `index.md` (Blog-Kopie) sind im Case-Ordner vorhanden
+- das bereits zuvor angelegte `blog_working_snapshot.txt` und `index.md` (Blog-Kopie) sind im Case-Ordner vorhanden
+- kein zusaetzlicher finaler `blog_snapshot.txt` wird angelegt
 - `reveal_snapshot.txt` und `_index.md` sind nicht vorhanden (kein Reveal)
 - `metadata.yaml` erhaelt `completion_status: blog_only`
 - `generated_artifacts` enthaelt nur die tatsaechlich erzeugten Eintraege
