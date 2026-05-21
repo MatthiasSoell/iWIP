@@ -6,6 +6,7 @@
 
 # Hugo
 /public/
+/public_temp/
 /resources/
 /.hugo_build.lock
 

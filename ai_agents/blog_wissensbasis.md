@@ -109,3 +109,10 @@ Kuratierungsprinzipien:
 - **Kernthemen**: Modulauftakt zu Bildungssystemen im Kontext von Arbeit und Gesellschaft, biographischer Zugang über Bildungswege und Übergänge, Kennenlernen und Sichtbarmachung heterogener Bildungsbiographien, organisatorische Orientierung zu Kommunikation, Workload und Semesterfahrplan, Einführung in Hausarbeit und Prüfungsanmeldung
 - **Schlüsselkonzepte**: Bildungssysteme, Bildungsbiographie, Bildungswege, Übergänge, berufliche Bildung, wissenschaftliches Arbeiten, Hausarbeit
 - **Verweishaken**: Bei Modul- und Semesterauftakten; bei Einstiegen über biographische Zugänge zu Bildungssystemen; bei der frühen Klärung von Prüfungsanforderungen, Kommunikation und Arbeitsorganisation
+
+## 14. Wie ist Weiterbildung im Bildungssystem organisiert – und wer nimmt teil?
+- **Pfad**: content/blog/lehre/bisy/weiterbildung/index.md
+- **Bereich**: Lehre
+- **Kernthemen**: Weiterbildung als offener und weniger standardisierter Bildungsbereich, Datengrundlagen aus AES-Trendbericht und Bildung in Deutschland 2024, betriebliche Weiterbildung, Angebotsstrukturen und Lernfelder, Digitalisierung, soziale Ungleichheit der Weiterbildungsbeteiligung, politische Steuerung und begrenzte Steuerbarkeit
+- **Schlüsselkonzepte**: Weiterbildung, Erwachsenenbildung, Weiterbildungsbeteiligung, betriebliche Weiterbildung, lebenslanges Lernen, Digitalisierung, Ungleichheit, politische Steuerung
+- **Verweishaken**: Bei Einordnungen von Weiterbildung im Bildungssystem; bei Diskussionen zu Teilhabeungleichheiten im Erwachsenenalter; bei Verknüpfungen von Angebotsstruktur, Betrieben, Digitalisierung und Weiterbildungspolitik
