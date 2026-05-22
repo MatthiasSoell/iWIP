@@ -492,6 +492,43 @@ Kritische Regeln:
 
 ---
 
+## 🧪 Test 25: Kontrollierte Perspektivenpluralitaet im ersten `/PLAN`-Turn
+
+Prompt:
+/PLAN Plane eine Einheit zu Digitalisierung in der beruflichen Bildung. Das Thema soll fuer Lehramtsstudierende anschlussfaehig sein, ich bin aber noch offen fuer den genauen Zuschnitt.
+
+Erwartung:
+- Agent bleibt im Planungsmodus und erzeugt keine Dateien
+- eine empfohlene Verdichtung fuehrt sichtbar mit Problemdefinition, vorlaeufiger Leitfrage und 2 bis 3 Schwerpunkten
+- zusaetzlich erscheinen hoechstens zwei kurze asymmetrische Alternativen
+- die Alternativen bleiben Reflexionsangebote und keine gleichwertigen Parallelplanungen
+- keine Option-A/B/C-Struktur, keine Vergleichstabelle und keine offene Workshop-Logik
+
+Kritische Regeln:
+- erste `/PLAN`-Reaktion bleibt kompakt und fuehrend
+- Perspektivenpluralitaet bleibt kontrolliert und low-noise
+- keine kuenstliche Variantenproduktion
+
+---
+
+## 🧪 Test 26: Keine kuenstlichen Alternativen bei klarer Problemachse
+
+Prompt:
+/PLAN Plane eine 45-minuetige Einfuehrung in das Angebot-Nachfrage-Modell fuer eine 11. Klasse an der Berufsschule. Fokus ist die sichere Deutung des Marktgleichgewichts.
+
+Erwartung:
+- Agent bleibt im Planungsmodus und erzeugt keine Dateien
+- die erste Reaktion fuehrt mit einer klaren empfohlenen Verdichtung
+- es erscheinen keine zusaetzlichen Alternativen, wenn keine konkurrierende didaktische Problemachse plausibel ist
+- hoechstens eine priorisierte Klaerungsfrage bleibt zulaessig
+
+Kritische Regeln:
+- keine kuenstliche Exploration
+- Verdichtung bleibt frueh und operativ anschlussfaehig
+- Rueckfragenheuristik bleibt sparsam
+
+---
+
 ## 🧾 Nutzung der Suite
 
 Diese Tests können verwendet werden für:

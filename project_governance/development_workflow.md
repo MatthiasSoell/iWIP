@@ -84,6 +84,7 @@ Ausführungslogik:
 - **Vollständiger RC-Durchlauf**: vor Live-Fällen, festgeschriebenen Ständen und nach Änderungen an Moduslogik, Übergängen, Snapshot-Regeln, Bundle-Hygiene oder DoD.
 - **Dry Run**: praktische Durchfuehrung des im Contract als minimaler normativer Pflichttest definierten RC-Trockentests. Der Dry Run fuehrt diesen Test mindestens als einen geschlossenen Repo-Fall im Standardmodus in fuenf Schritten aus: `/PLAN`, `BLOG GO`, `BLOG FINAL` inklusive automatischem `LITERATUR GO`, `REVEAL GO` -> `REVEAL FINAL`.
 - Bei Aenderungen am Forschungsmodus zusaetzlich gezielt `/PLAN FORSCHUNG` gegen die betroffenen Regeln pruefen: gleicher Planungsdialog wie `/PLAN`, sofortige Initialisierung der vier Startartefakte unter `exports/research/`, `blog_working_snapshot.txt` erst nach der ersten agentenseitig erzeugten Blog-Arbeitsfassung, kein finales `blog_snapshot.txt`, keine Veraenderung der Kernlogik, keine zusaetzlichen Forschungsbefehle und automatischer Abschluss aktiver Forschungsartefakte bei `REVEAL FINAL`.
+- Bei Aenderungen an der Planungsheuristik zusaetzlich gezielt `/PLAN` pruefen: eine empfohlene Verdichtung bleibt sichtbar fuehrend; moegliche Alternativen bleiben auf bis zu zwei knappe asymmetrische Verdichtungen begrenzt und erscheinen nur bei plausiblen konkurrierenden Problemachsen oder noch offener Nutzerpriorisierung.
 - Bei Änderungen an der Wissensbasis-Anschlusslogik zusätzlich gezielt RC-27 prüfen, insbesondere Entwurf bei `BLOG FINAL`, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
 
 ### 4.4 Proportionale Testtiefe
@@ -136,6 +137,7 @@ Bearbeiter:
 |---|---|---|---|---|---|---|
 | /PLAN | Keine Artefakterstellung | | | | | |
 | /PLAN | Sprache bleibt planungs- und dialoggerecht | | | | | |
+| /PLAN | Empfohlene Verdichtung bleibt fuehrend; Alternativen sind hoechstens zwei kurze asymmetrische Hinweise und nur bei plausibler Mehrdeutigkeit sichtbar | | | | | |
 | /PLAN | Keine sichtbaren Such-, Routing-, Tool- oder Prozesskommentare | | | | | |
 | /PLAN FORSCHUNG | Verhaelt sich wie `/PLAN`, aktiviert sofort Rohdatenerfassung unter `exports/research/` und erzeugt noch keine Zielartefakte oder Snapshots | | | | | |
 | BLOG GO | Erzeugt `index.md` auf Basis des Planungsstands; im Forschungsmodus danach genau `blog_working_snapshot.txt` | | | | | |

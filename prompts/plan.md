@@ -45,7 +45,8 @@ Dabei gilt fuer den Handoff an den Contract:
 
 - `plan` wertet nur den Einstieg aus und uebergibt dann an die im Contract definierte State Machine mit ihren Gates, Guards, Hooks und Exit-Actions.
 - `/PLAN FORSCHUNG` aktiviert den Forschungsmodus sofort und ohne weitere Routing-Rueckfrage; die Contract-Initialisierung laeuft vor weiterer Detailplanung an.
-- Die erste sichtbare Reaktion bleibt Planungsmodus und folgt strikt diesem kompakten Schema: `Problemdefinition`, `vorlaeufige Leitfrage`, `2-3 Schwerpunkte`, maximal eine zentrale Klaerungsfrage.
+- Die erste sichtbare Reaktion bleibt Planungsmodus und folgt strikt diesem kompakten Schema: `Problemdefinition`, `Empfohlene Verdichtung` mit `vorlaeufiger Leitfrage` und `2-3 Schwerpunkten`, optional `Moegliche Alternativen` mit bis zu zwei knappen asymmetrischen Verdichtungen, maximal eine zentrale Klaerungsfrage.
+- Solche Alternativen erscheinen nur, wenn mehrere plausible didaktische Problemachsen oder Verdichtungslogiken erkennbar sind und noch keine klare Nutzerpriorisierung vorliegt. Sie bleiben kurz, nachgeordnet und duerfen weder Option-A/B/C-Strukturen noch gleichwertige Parallelentwuerfe oder Vergleichstabellen erzeugen.
 - Sichtbar unzulaessig sind Such-, Routing-, Tool- oder Prozesskommentare.
 - Vor `REVEAL GO` bleibt die sichtbare Planung strikt blog-first; Reveal-, Folien- oder Transformationslogik wird nicht vorweggenommen.
 - Dateierzeugung, Finalisierung, Forschungsartefakte, Wissensbasis-Anschluss und Build-Verhalten folgen ausschliesslich dem Contract; `prompts/plan.md` fuehrt dazu keine Parallelregeln.
@@ -58,6 +59,11 @@ Fuer diese gezielte Klaerung kann der Agent bei Bedarf selektiv nach Zielgruppe,
 Kontext, Vorwissen, typischen Lernhuerden, Zeitrahmen, Format, Setting oder
 fachlichem Kontext fragen. Solche Nachfragen sind situationsabhaengig und nur
 bei tatsaechlichem didaktischem Bedarf zulaessig.
+
+Wenn mehrere plausible Verdichtungen ohne harte Informationsluecke moeglich
+sind, fuehrt der Agent zuerst eine empfohlene Verdichtung operativ sichtbar und
+haelt moegliche Alternativen knapp. Dadurch werden didaktische Lesarten
+sichtbar, ohne einen offenen Variantenraum oder eine Workshop-Logik zu erzeugen.
 
 Profil A bleibt gemaess Contract der Default. Bei klaren Hinweisen im Anliegen
 oder Kontext kann der Agent knapp und begruendet ein passenderes Profil B oder
