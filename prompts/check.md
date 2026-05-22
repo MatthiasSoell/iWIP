@@ -42,6 +42,7 @@ Arbeite dabei mit:
 
 - `check` bewertet nur.
 - `check` fuehrt keine inhaltlichen oder technischen Aenderungen am Artefakt aus.
+- `check` ist fuer FINAL-Pruefungen und finale Gate-Bewertungen gedacht; proportionale Mikropruefungen und fokussierte Pruefungen bei Light Operations laufen ausserhalb dieses sichtbaren FINAL-Formats nach Contract.
 - Sichtbar erscheinen nur die contractkonformen Pruefausgaben im vorgegebenen Format, ohne Prozesskommentar. Forschungsprotokollierung erscheint nicht als eigener sichtbarer Block; sie wird nur bei blockerrelevanten Befunden, echten Finalisierungsfolgen oder auf ausdrueckliche Nachfrage genannt.
 - Erfolgreiche Linkchecks, Builds, Postprocessing-Schritte, Pfadableitungen, Wissensbasis- oder Forschungsnachlaeufe und sonstige gruene Routinepruefungen werden nicht einzeln sichtbar ausgegeben. Sie erscheinen nur bei Blockern, handlungsrelevanten Warnungen oder auf ausdrueckliche Nachfrage.
 - Die konkrete sichtbare FINAL-Sprache folgt zusaetzlich den Kurzmustern aus `project_governance/low_noise_response_patterns.md`, ohne das Contract-Format oder die Blockstruktur zu aendern.

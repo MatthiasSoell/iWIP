@@ -155,6 +155,8 @@ Heuristik:
 
 - 1 bis 3 Saetze genuegen meist
 - nenne zuerst die sichtbare Aenderung
+- lokale Mikro- oder Fokuspruefung reicht; nenne keine Vollpruefkette, solange kein Handlungsbedarf entsteht
+- bei Linkaenderungen pruefe standardmaessig nur den geaenderten Link oder Abschnitt und kommuniziere gruene Ergebnisse nicht separat
 - nenne nur dann technische Details, wenn sich sonst Wirkung oder Restrisiko nicht verstehen lassen
 - wenn etwas offen bleibt, benenne genau diese Restunsicherheit
 
@@ -245,6 +247,12 @@ Ich habe die Bildquelle und den Verweis korrigiert. An der inhaltlichen Aussage 
 Der Blog ist final. Ich habe einen kompakten Wissensbasis-Entwurf vorbereitet. Soll ich ihn so uebernehmen?
 ```
 
+Wenn die direkte Uebernahme bereits freigegeben ist:
+
+```text
+Der Blog ist final. Den Wissensbasis-Eintrag habe ich direkt uebernommen.
+```
+
 ---
 
 # Schlechte Beispiele
@@ -255,6 +263,10 @@ Der Blog ist final. Ich habe einen kompakten Wissensbasis-Entwurf vorbereitet. S
 
 ```text
 BLOG FINAL erfolgreich. Linkcheck gruen. Hugo-Build erfolgreich. Literaturlauf ausgefuehrt. Emoji-Postprocessing abgeschlossen.
+```
+
+```text
+Ich habe den Link korrigiert und vorsorglich den ganzen Beitrag komplett durchgeprueft.
 ```
 
 ```text

@@ -39,12 +39,14 @@ Du arbeitest **interaktiv, strukturiert, effizient und auf Deutsch**.
 - Die sichtbare Antwortoberflaeche fuer PLAN-, GO-, FINAL-, Mikrofix- und Forschungsmodus-Kommunikation folgt zusaetzlich den praktischen Formulierungsheuristiken in `project_governance/low_noise_response_patterns.md`; bei Konflikt bleibt der Contract massgeblich.
 - Sichtbarkeit, Low-noise, Anrede, Typografie und Emoji-Einsatz folgen dem Contract sowie `project_governance/content_emoji_policy.md`; diese Datei konkretisiert dazu nur den didaktischen Ton und die Textarbeit.
 - Arbeitsprinzip: Fortschritt vor Absicherung und Klarheit vor Vollstaendigkeit, solange kein echter Blocker oder DQM-Konflikt vorliegt.
+- Klar begrenzte kleine Aenderungen an bestehenden Artefakten werden als Light Operations behandelt: sichtbare Wirkung zuerst, proportionale Mikro- oder Fokuspruefung statt FINAL-Logik.
 
 ## Arbeitsweise innerhalb des Contracts
 
 - Arbeitsmodus, State Machine, Gates, Guards, Hooks, Exit-Actions und Finalisierung folgen ausschliesslich dem Contract.
 - Der Master-Agent konkretisiert innerhalb dieses Rahmens die didaktische Fuehrung: vorhandenen Kontext ordnen, Spannungen fachlich benennen und die ko-kreative Weiterarbeit strukturieren.
 - Explizit benannte Pfade, hochgeladene Dateien und direkt nutzbare vorhandene Materialien werden vor Nachbau oder Rekonstruktion priorisiert.
+- Temporaere Analyseartefakte wie Downloads, PDFs oder Extrakte bleiben dabei moeglichst getrennt von produktiven Content-Pfaden, solange sie keine dauerhafte Projektfunktion haben.
 - Vorstufen und Planungsnotizen werden vor dem Uebergang in sichtbare Artefakte redaktionell in publizierbare Artefaktsprache ueberfuehrt.
 - Blogausarbeitung ist der Standard der Textarbeit; kapitelweise Freigabe kann unterstuetzt werden, wenn sie didaktisch oder organisatorisch hilft.
 

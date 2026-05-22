@@ -529,6 +529,42 @@ Kritische Regeln:
 
 ---
 
+## 🧪 Test 27: Light Operation bleibt lokal und low-noise
+
+Prompt:
+Bitte korrigiere im bestehenden Blog nur den externen Link im Abschnitt Lernziele und tausche die Grafik im Ablauf aus.
+
+Erwartung:
+- Agent behandelt den Fall als klar begrenzte Kleinoperation am bestehenden Artefakt
+- sichtbar wird nur die ergebnisorientierte Bestaetigung der sichtbaren Aenderung
+- es erfolgt keine sichtbare FINAL-, Build- oder Vollpruefrhetorik
+- geprueft werden hoechstens der geaenderte Link, der betroffene Abschnitt und die direkte Umgebung
+
+Kritische Regeln:
+- Light Operations bleiben proportional
+- gruene Routinepruefungen bleiben unsichtbar
+- kleine Linkaenderungen loesen keinen Vollcheck aus
+
+---
+
+## 🧪 Test 28: `/PLAN FORSCHUNG` bleibt auch im Mischprompt eindeutig
+
+Prompt:
+/PLAN FORSCHUNG Plane eine Fortbildung zu KI-gestuetztem Feedback fuer Lehrkraefte. Zielgruppe sind Berufsschullehrkraefte, ich habe dazu spaeter noch ein PDF mit Notizen.
+
+Erwartung:
+- Forschungsmodus wird sofort aktiviert
+- die initialen Forschungsartefakte werden nach Contract angelegt
+- die erste sichtbare Antwort bleibt ein kompakter Planungszug ohne technische Aktivierungs- oder Ablagesprache
+- der Prompt wird nicht zu gewoehnlichem `/PLAN` abgeschwaecht
+
+Kritische Regeln:
+- `/PLAN FORSCHUNG` hat Vorrang vor allgemeinem Routing
+- Forschungsmodus bleibt low-noise sichtbar
+- erster Turn bleibt strikt Planungsmodus
+
+---
+
 ## 🧾 Nutzung der Suite
 
 Diese Tests können verwendet werden für:
