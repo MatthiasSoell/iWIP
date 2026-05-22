@@ -116,3 +116,10 @@ Kuratierungsprinzipien:
 - **Kernthemen**: Weiterbildung als offener und weniger standardisierter Bildungsbereich, Datengrundlagen aus AES-Trendbericht und Bildung in Deutschland 2024, betriebliche Weiterbildung, Angebotsstrukturen und Lernfelder, Digitalisierung, soziale Ungleichheit der Weiterbildungsbeteiligung, politische Steuerung und begrenzte Steuerbarkeit
 - **Schlüsselkonzepte**: Weiterbildung, Erwachsenenbildung, Weiterbildungsbeteiligung, betriebliche Weiterbildung, lebenslanges Lernen, Digitalisierung, Ungleichheit, politische Steuerung
 - **Verweishaken**: Bei Einordnungen von Weiterbildung im Bildungssystem; bei Diskussionen zu Teilhabeungleichheiten im Erwachsenenalter; bei Verknüpfungen von Angebotsstruktur, Betrieben, Digitalisierung und Weiterbildungspolitik
+
+## 15. Zwischenfazit: Wie verändert sich Bildung und Arbeit?
+- **Pfad**: content/blog/lehre/bisy/zwischenfazit_bildung_arbeit/index.md
+- **Bereich**: Lehre
+- **Kernthemen**: Zwischenfazit zu den bisherigen Themen des Moduls Bildungssysteme, Bündelung von Bildungswegen, Systemaufbau, dualer Ausbildung, Hochschulbildung und Weiterbildung, Verhältnis von Bildung und Arbeit, quellengeleitete Gruppenrecherche mit Taskcards, Ausblick auf Digitalisierung, New Work und gesellschaftlichen Wandel
+- **Schlüsselkonzepte**: Bildung und Arbeit, Bildungswege, Übergänge, Beruflichkeit, Akademisierung, lebenslanges Lernen, gesellschaftlicher Wandel
+- **Verweishaken**: Bei Semestermitten und Zwischenbilanzen in Bildungssystem-Modulen; bei der Verknüpfung mehrerer Bildungsbereiche auf eine gemeinsame Leitfrage; beim Übergang von Systemthemen zu Digitalisierung, New Work und Wandel der Arbeitswelt

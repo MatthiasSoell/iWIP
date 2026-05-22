@@ -76,7 +76,9 @@ Das Modul umfasst die folgenden Veranstaltungen:
 - 🎓 *Vorlesung Bildungssysteme im Kontext von Arbeit und Gesellschaft*  
 - 🧠 *Übung Bildungssysteme im Kontext von Arbeit und Gesellschaft*
 
-📚 **Lehr-Lern-Materialien:** In diesem Blog finden Sie **Materialien**, **Beispiele** und **Impulse** zu der Vorlesung – als **Begleitung**, **Nachschlagewerk** und **Vertiefung** für Ihr Studium.
+📚 **Lehr-Lern-Materialien:** In diesem Blog finden Sie **Materialien**, **Beispiele** und **Impulse** zu der Vorlesung – als **Begleitung**, **Nachschlagewerk** und **Vertiefung** für Ihr Studium.  
+
+**Interaktiv** arbeiten wir **digital** mit dieser <a href="https://www.taskcards.de/#/board/85425d57-2921-4a91-ae4d-1bcff2e6b216/view?token=a1dea74f-04b8-44d1-8d26-a5fd07ad053a" target="_blank" rel="noopener noreferrer">Taskcards</a>{{< blog_qr_overlay url="https://www.taskcards.de/#/board/85425d57-2921-4a91-ae4d-1bcff2e6b216/view?token=a1dea74f-04b8-44d1-8d26-a5fd07ad053a" label="Taskcards" id="iwip_taskcards_qr" >}}.
 
 🧠 **Kompetenzen:** 
 

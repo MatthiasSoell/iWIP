@@ -31,7 +31,7 @@
     </button>
   </span>
 
-  <div
+  <span
     id="{{ $id }}"
     class="iwip_overlay iwip_overlay--blog-qr"
     data-iwip-overlay
@@ -39,26 +39,26 @@
     aria-modal="true"
     aria-label="QR-Code zu {{ $label }}"
     hidden>
-    <div class="iwip_overlay_panel">
+    <span class="iwip_overlay_panel">
       <button
         type="button"
         class="iwip_overlay_close"
         data-iwip-overlay-close
         aria-label="Overlay schließen">×</button>
 
-      <div class="iwip_blog_qr_wrap">
+      <span class="iwip_blog_qr_wrap">
         {{- $opts := dict "scale" 12 "level" "medium" "targetDir" "qr" -}}
         {{- with images.QR $url $opts -}}
-          <div class="qr-card">
+          <span class="qr-card">
             <img
               src="{{ .RelPermalink }}"
               width="{{ math.Div .Width 2 }}"
               height="{{ math.Div .Height 2 }}"
               alt="QR-Code zu {{ $label }}"
               loading="lazy">
-          </div>
+          </span>
         {{- end -}}
-      </div>
-    </div>
-  </div>
+      </span>
+    </span>
+  </span>
 {{- end -}}
