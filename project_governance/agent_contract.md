@@ -416,7 +416,7 @@ Die technischen Nachlaeufe des finalen Revealschritts laufen ohne eigene sichtba
 6. Zusammenfassung
 
 Der Abgleich bei `REVEAL FINAL` erscheint als echte Markdown-Tabelle mit den Spalten `Blog-Abschnitt`, `Reveal-Umsetzung (1:1|gruppiert|ausgelassen)` und `Begruendung`.
-Eine sichtbare Materialuebersicht erscheint, wenn noetig, ebenfalls als echte Markdown-Tabelle mit den Spalten `Datei`, `Verwendung`, `Quelle`, `Zielpfad` und `Status`; sie wird nur gezeigt, wenn sie fuer eine reale Abstimmung mehrerer Materialien oder Zielpfade noetig ist.
+Eine sichtbare Materialuebersicht erscheint, wenn noetig, ebenfalls als echte Markdown-Tabelle mit den Spalten `Datei`, `Verwendung`, `Quelle`, `Zielpfad` und `Status`; sie wird nur gezeigt, wenn sie fuer eine reale Abstimmung mehrerer Materialien oder sichtbarer Zielpfade gemaess Regel 35 noetig ist.
 
 ---
 
