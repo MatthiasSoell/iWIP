@@ -343,7 +343,7 @@ Ein Blogartikel ist nur final, wenn:
 11. Emoji-Einsatz folgt `project_governance/content_emoji_policy.md` und ist im sichtbaren Hauptkoerper erkennbar umgesetzt.
 12. Alle Pflichtabschnitte aus diesem Contract und `ai_agents/templates/blog_template.md` sind vorhanden und inhaltlich ausgearbeitet; wenn kapitelweise Freigabe genutzt wurde, sind alle Pflichtabschnitte vor `BLOG FINAL` freigegeben.
 13. Der minimale Release-Check dieses Contracts ist bestanden; bei `BLOG FINAL` schliesst dies den verbindlichen Linkcheck ohne offene Fehler ein.
-14. Die Blog-Wissensbasis kann nach `BLOG FINAL` als optionaler Anschluss aktualisiert oder fuer Verweise genutzt werden; sie ist kein Definition-of-Done-Bestandteil. Standardanschluss ist ein kuratierter Entwurf mit genau einer Bestaetigungsfrage zur Formulierung; erst danach wird der Eintrag uebernommen. Bei eindeutiger Freigabe zur direkten Uebernahme im unmittelbaren Arbeitskontext kann die Rueckfrage entfallen.
+14. Die Blog-Wissensbasis kann nach `BLOG FINAL` als optionaler Anschluss aktualisiert oder fuer Verweise genutzt werden; sie ist kein Definition-of-Done-Bestandteil. Die Hook-Details folgen ausschliesslich Regel 34.
 
 ---
 
@@ -402,7 +402,7 @@ Die technischen Nachlaeufe des finalen Blogschritts laufen ohne eigene sichtbare
 5. optional Quellenuebersicht
 6. Zusammenfassung
 
-Nach erfolgreich abgeschlossenem `BLOG FINAL` folgt verpflichtend die Pruefung des optionalen Wissensbasis-Anschlusses. Standardfall ist ein kuratierter Wissensbasis-Entwurf mit genau einer knappen Bestaetigungsfrage zur Formulierung. Liegt im unmittelbaren Arbeitskontext bereits eine eindeutige Freigabe zur direkten Uebernahme vor, darf die Wissensbasis ohne weitere Rueckfrage aktualisiert werden. Der Hook gehoert nicht zur Blogerstellung selbst; der Blog bleibt final und `REVEAL GO` wird dadurch nicht blockiert.
+Nach erfolgreich abgeschlossenem `BLOG FINAL` folgt der Wissensbasis-Hook gemaess Regel 34.
 
 Bei `REVEAL FINAL` ist die sichtbare Reihenfolge:
 
