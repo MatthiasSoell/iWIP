@@ -73,7 +73,7 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 - Der Forschungsmodus ersetzt keinen Standardstatus und aendert weder `P1` bis `P5` noch die Gates `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL`.
 - Der Forschungsmodus nutzt nach dem Startsignal `/PLAN FORSCHUNG` denselben Kernworkflow wie der Standardmodus; Aktivierung, `case_id`, Case-Ordner und erste Protokolleintraege erfolgen jedoch sofort und vor jeder weiteren Detailplanung.
 - Seine empfohlene Ablage ist `exports/research/<case_id>/`; vorgesehene Dateien sind `chat_log.md`, `planning_trace.md`, `decision_log.md`, `metadata.yaml`, `blog_working_snapshot.txt`, `reveal_snapshot.txt`, `index.md` und `_index.md`.
-- Unmittelbar bei `/PLAN FORSCHUNG` werden `case_id` und `exports/research/<case_id>/` angelegt sowie `metadata.yaml`, `chat_log.md`, `planning_trace.md` und `decision_log.md` initialisiert. `chat_log.md` uebernimmt den initialen Nutzerprompt; `planning_trace.md` beginnt mit einem Aktivierungseintrag; `metadata.yaml` enthaelt dabei mindestens `case_id`, `start_time`, `completion_status: intermediate`, `agent_version`, `contract_version` und `git_commit` (`null`, wenn nicht verfuegbar); `decision_log.md` bleibt leer oder beginnt mit einem Aktivierungseintrag.
+- Unmittelbar bei `/PLAN FORSCHUNG` werden `case_id` und `exports/research/<case_id>/` angelegt sowie `metadata.yaml`, `chat_log.md`, `planning_trace.md` und `decision_log.md` initialisiert. `chat_log.md` uebernimmt den initialen Nutzerprompt; `planning_trace.md` beginnt mit einem Aktivierungseintrag; `metadata.yaml` enthaelt dabei mindestens `case_id`, `start_time`, `completion_status: intermediate`, `agent_version`, `contract_version` und `git_commit` (`null`, wenn nicht verfuegbar); `decision_log.md` bleibt leer oder beginnt mit einem Aktivierungseintrag. Zeitstempel innerhalb eines Forschungsfalls werden ueber alle Forschungsartefakte hinweg konsistent in demselben ISO-8601-Format mit numerischem UTC-Offset gefuehrt; Mischformate innerhalb desselben Falls sind unzulaessig.
 - Im Forschungsmodus entsteht standardmaessig genau ein frueher Blog-Arbeitssnapshot: `blog_working_snapshot.txt` unmittelbar nach der ersten vom Agenten erzeugten Blog-Arbeitsfassung in `index.md`; er wird direkt im Case-Ordner abgelegt, ist nicht-operativ und nie Ableitungsquelle. Ein zusaetzliches `blog_snapshot.txt` nach `BLOG FINAL` entfaellt, weil die finale Blogfassung bereits ueber die Case-Kopie `index.md` dokumentiert wird. `reveal_snapshot.txt` wird weiterhin nach `REVEAL FINAL` direkt im Case-Ordner abgelegt, ist nicht-operativ und nie Ableitungsquelle.
 - Forschungsartefakte werden fortgeschrieben, aber nicht nach jeder Kleinigkeit voll gegeneinander geprueft; eine Vollpruefung erfolgt nur direkt nach Initialisierung, vor Finalisierung, nach manuellen Overrides oder bei erkannten Inkonsistenzen.
 - Nach regulaeren Abschluss werden die finalen Artefakte zusaetzlich in den Case-Ordner kopiert: `index.md` (Kopie der finalen Blog-Datei) und `_index.md` (Kopie der finalen Reveal-Datei). Fehlende Artefakte werden nicht erzwungen.
@@ -82,19 +82,19 @@ Diese Labels sind rein beschreibend. Massgeblich fuer Ablauf, Uebergaenge und Fi
 
 Wenn der Forschungsmodus aktiv ist, werden Forschungsartefakte in `exports/research/<case_id>/` abgelegt. Die empfohlenen Dateien folgen diesen Minimal-Schemata:
 
-**`chat_log.md`** – Primaerdatenquelle: vollstaendiger sichtbarer Dialogverlauf ohne Bereinigung; keine automatischen Zusammenfassungen; keine Interpretation.
+**`chat_log.md`** – Primaerdatenquelle: vollstaendiger sichtbarer Dialogverlauf in tatsaechlicher Turn-Reihenfolge ohne Bereinigung; jeder Eintrag ist eindeutig als Nutzer- oder Agentenbeitrag markiert; keine automatischen Zusammenfassungen; keine Interpretation; keine nachtraegliche Glaettung oder thematische Umsortierung. Wenn Reihenfolge oder Vollstaendigkeit nicht verlaesslich rekonstruierbar sind, wird dies im Forschungsfall explizit markiert; betroffene Zaehldaten in `metadata.yaml` bleiben dann `null`.
 
 **`planning_trace.md`** – Ereignisprotokoll; jeder Eintrag enthaelt:
-- `timestamp`: ISO-8601-Zeitstempel des Ereignisses
+- `timestamp`: ISO-8601-Zeitstempel des Ereignisses im Fallformat `YYYY-MM-DDTHH:MM:SS+ZZZZ`
 - `phase`: aktuelle Prozessphase (`P1`–`P5`)
 - `event_type`: einer der Werte `Gate | Phase | Artifact | Decision | Revision`
 - `user_action`: beobachtbare Nutzerhandlung (Befehl, Freigabe, Revision); leer, wenn kein Nutzerbezug vorliegt
 - `agent_action`: beobachtbare Agentenhandlung (Rueckfrage, Artefaktanlage, Statusmeldung); leer, wenn kein Agentenbezug vorliegt
 - `artifact_path`: Pfad des betroffenen Artefakts, falls vorhanden; sonst leer
 
-**`decision_log.md`** – Entscheidungsprotokoll; jeder Eintrag enthaelt:
+**`decision_log.md`** – Entscheidungsprotokoll fuer zentrale, rekonstruierbare Entscheidungen und Gates; es ist keine Vollchronik und ersetzt keine qualitative Interpretation. Jeder Eintrag enthaelt:
 - `decision_id`: fortlaufende Kennung (`D01`, `D02`, …)
-- `timestamp`: ISO-8601-Zeitstempel
+- `timestamp`: ISO-8601-Zeitstempel im Fallformat `YYYY-MM-DDTHH:MM:SS+ZZZZ`
 - `decision_type`: einer der Werte `Profile | Gate | Structure | Content | Approval`
 - `context`: Phase und unmittelbarer Anlass als beobachtbare Tatsache (ohne Interpretation)
 - `decision`: getroffene Entscheidung als beobachtbare Tatsache
@@ -103,12 +103,12 @@ Wenn der Forschungsmodus aktiv ist, werden Forschungsartefakte in `exports/resea
 
 **`metadata.yaml`** – Fallmetadaten; Pflichtfelder:
 - `case_id`: eindeutiger Fallbezeichner (z. B. Datum + Kurzthema)
-- `start_time`: ISO-8601-Zeitstempel des `/PLAN FORSCHUNG`-Starts
-- `end_time`: ISO-8601-Zeitstempel des Fallabschlusses
+- `start_time`: ISO-8601-Zeitstempel des `/PLAN FORSCHUNG`-Starts im Fallformat `YYYY-MM-DDTHH:MM:SS+ZZZZ`
+- `end_time`: ISO-8601-Zeitstempel des Fallabschlusses im Fallformat `YYYY-MM-DDTHH:MM:SS+ZZZZ`
 - `duration_minutes`: ganzzahlige Dauer in Minuten; `null`, wenn nicht verlässlich ableitbar
 - `user_message_count`: Anzahl sichtbarer Nutzerturns; `null`, wenn nicht sicher zaehlbar
 - `agent_message_count`: Anzahl sichtbarer Agentturns; `null`, wenn nicht sicher zaehlbar
-- `phase_transition_count`: Anzahl beobachtbarer Phasenuebergaenge
+- `phase_transition_count`: Anzahl beobachtbarer Phasenuebergaenge; `null`, wenn nicht sicher zaehlbar
 - `decision_count`: Anzahl Eintraege in `decision_log.md`
 - `generated_artifacts`: Liste der erzeugten Artefaktpfade (Array)
 - `completion_status`: Wert `complete | blog_only | aborted | intermediate`
@@ -118,7 +118,7 @@ Wenn der Forschungsmodus aktiv ist, werden Forschungsartefakte in `exports/resea
 - `git_commit`: Git-Commit-Hash zum Zeitpunkt des Starts; `null`, wenn nicht verfuegbar
 - `build_status`: `passed | failed | not_run`
 
-Nicht direkt ableitbare Zaehldaten werden grundsaetzlich als `null` markiert, nicht geschaetzt.
+Forschungsmetadaten mit Zaehlcharakter werden nur eingetragen, wenn sie direkt und zuverlaessig aus dem vorliegenden Fall ableitbar sind. Nicht sicher ableitbare Werte bleiben `null`; Schaetzungen sind unzulaessig.
 
 **`blog_working_snapshot.txt`** – Rohtext-Schnappschuss der ersten vom Agenten erzeugten Blog-Arbeitsfassung unmittelbar nach `BLOG GO`; kein Markdown-Rendering, keine Interpretation; dient als nicht-operativer Vergleichsstand fuer spaetere Nutzer- und Agentenrevisionen.
 
@@ -195,7 +195,7 @@ Der Wissensbasis-Anschluss ist ein Hook nach `BLOG FINAL`, nicht Teil der Bloger
 - Eine sichtbare Zusammenfassung erscheint nur bei Finalisierung, an echten Uebergaengen oder auf ausdrueckliche Nachfrage.
 - DQM-Pruefberichte, Abgleich, Tabellen und die sichtbare Zusammenfassung nach dem Summary-Schema gelten als Ergebnisbestandteile und sind trotz Low-noise-Regel sichtbar zulaessig.
 - Snapshot-Vergleiche, Meta-Reflexionen und Forschungsmetadaten sind nie Standardbestandteil von `BLOG FINAL` oder `REVEAL FINAL`; sie erscheinen nur auf ausdrueckliche Nachfrage oder wenn sie fuer eine konkrete Abstimmung noetig sind.
-- Wenn der Forschungsmodus aktiv ist, bleiben laufende Marker, Zeitstempel und technische Uebergangsnotizen aus dem normalen Planungsdialog ausgeblendet und werden nur intern fortgeschrieben. Sichtbare Hinweise auf die Forschungsprotokollierung erscheinen nur bei Initialisierung, echten Uebergaengen, Finalisierung, ausdruecklicher Nachfrage oder echten Blockern.
+- Wenn der Forschungsmodus aktiv ist, bleiben Forschungsinitialisierung, Synchronisationen, Artefaktfortschreibungen, laufende Marker, Zeitstempel und technische Uebergangsnotizen im normalen Verlauf standardmaessig intern. Sichtbare Hinweise auf die Forschungsprotokollierung erscheinen nur bei Initialisierung, echten Uebergaengen, Finalisierung, ausdruecklicher Nachfrage oder echten Blockern. Sichtbare Datei- oder Pfadlisten sowie Synchronisationsketten erscheinen im Gruenzustand nicht.
 - Kleine Korrekturen, Mikroedits und sonstige Light Operations werden sichtbar ergebnisorientiert bestaetigt. Sie loesen weder sichtbare Finalisierungsrhetorik noch sichtbare Vollpruefketten aus; standardmaessig genuegt eine lokale Mikropruefung oder eine eng fokussierte Pruefung. Technische Root-Cause-Erklaerungen, Dateistrukturdetails oder Implementierungswege erscheinen dabei nur, wenn sie fuer das Verstaendnis des Problems noetig sind oder explizit angefragt werden.
 - `project_governance/low_noise_response_patterns.md` buendelt dazu konkrete sichtbare Formulierungsheuristiken, Kurztemplates sowie Positiv-/Negativbeispiele. Die Datei fuehrt keine eigene Steuerlogik ein; bei Konflikt bleibt ausschliesslich dieser Contract massgeblich.
 

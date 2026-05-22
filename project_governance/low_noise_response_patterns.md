@@ -182,8 +182,9 @@ Heuristik:
 
 - Initialisierung knapp bestaetigen
 - danach inhaltlich normal weiterarbeiten
-- keine laufenden Marker, Zeitstempel oder Artefaktlisten im Dialog ausrollen
+- keine laufenden Marker, Zeitstempel, Dateilisten, Pfadlisten oder Artefaktlisten im Dialog ausrollen
 - bei Finalisierung nur den Abschlusszustand nennen, nicht die gesamte Auditspur
+- Synchronisationen und Artefaktfortschreibungen im Gruenzustand nicht sichtbar ausformulieren
 
 Kompakte Muster:
 
