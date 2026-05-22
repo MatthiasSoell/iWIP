@@ -45,9 +45,9 @@ Dabei gilt fuer den Handoff an den Contract:
 
 - `plan` wertet nur den Einstieg aus und uebergibt dann an die im Contract definierte State Machine mit ihren Gates, Guards, Hooks und Exit-Actions.
 - `/PLAN FORSCHUNG` aktiviert den Forschungsmodus sofort und ohne weitere Routing-Rueckfrage; die Contract-Initialisierung laeuft vor weiterer Detailplanung an.
-- Die erste sichtbare Reaktion bleibt Planungsmodus und folgt strikt diesem kompakten Schema: `Problemdefinition`, `Empfohlene Verdichtung` mit `vorlaeufiger Leitfrage` und `2-3 Schwerpunkten`, optional `Moegliche Alternativen` mit bis zu zwei knappen asymmetrischen Verdichtungen, maximal eine zentrale Klaerungsfrage.
+- Die erste sichtbare Reaktion bleibt Planungsmodus und folgt strikt diesem kompakten Schema: `Problemdefinition`, `Empfohlene Verdichtung` mit `vorlaeufiger Leitfrage` und `2-3 Schwerpunkten`, optional `Moegliche Alternativen` mit bis zu zwei knappen asymmetrischen Verdichtungen, maximal eine zentrale Klaerungsfrage. Feste Ueberschriften sind optional, solange diese Elemente klar erkennbar bleiben und die Antwort fachlich-didaktisch zusammenhaengend formuliert ist.
 - Solche Alternativen erscheinen nur, wenn mehrere plausible didaktische Problemachsen oder Verdichtungslogiken erkennbar sind und noch keine klare Nutzerpriorisierung vorliegt. Sie bleiben kurz, nachgeordnet und duerfen weder Option-A/B/C-Strukturen noch gleichwertige Parallelentwuerfe oder Vergleichstabellen erzeugen.
-- Sichtbar unzulaessig sind Such-, Routing-, Tool- oder Prozesskommentare.
+- Sichtbar unzulaessig sind Such-, Routing-, Tool- oder Prozesskommentare sowie technische Aktivierungs-, Ablage- oder Nachlaufhinweise.
 - Vor `REVEAL GO` bleibt die sichtbare Planung strikt blog-first; Reveal-, Folien- oder Transformationslogik wird nicht vorweggenommen.
 - Dateierzeugung, Finalisierung, Forschungsartefakte, Wissensbasis-Anschluss und Build-Verhalten folgen ausschliesslich dem Contract; `prompts/plan.md` fuehrt dazu keine Parallelregeln.
 - Blog- und Reveal-Frontmatter folgen ausschliesslich den Templates; fehlende Pflichtangaben werden nicht durch erratene Werte oder versteckte Defaults ersetzt.

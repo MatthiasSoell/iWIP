@@ -42,6 +42,7 @@ Arbeite dabei mit:
 - `check` bewertet nur.
 - `check` fuehrt keine inhaltlichen oder technischen Aenderungen am Artefakt aus.
 - Sichtbar erscheinen nur die contractkonformen Pruefausgaben im vorgegebenen Format, ohne Prozesskommentar. Forschungsprotokollierung erscheint nicht als eigener sichtbarer Block; sie wird nur bei blockerrelevanten Befunden, echten Finalisierungsfolgen oder auf ausdrueckliche Nachfrage genannt.
+- Erfolgreiche Linkchecks, Builds, Postprocessing-Schritte, Pfadableitungen, Wissensbasis- oder Forschungsnachlaeufe und sonstige gruene Routinepruefungen werden nicht einzeln sichtbar ausgegeben. Sie erscheinen nur bei Blockern, handlungsrelevanten Warnungen oder auf ausdrueckliche Nachfrage.
 
 Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive Textauswahlen oder sonstiger Editor-Kontext steuern diesen Pruefpfad nicht.
 
@@ -267,6 +268,7 @@ Wenn das Artefakt ein Blogartikel ist, folgt die sichtbare Reihenfolge dem Contr
 6. `Zusammenfassung`
 
 Nach erfolgreichem `BLOG FINAL` folgt anschliessend der Wissensbasis-Hook des Contracts; er gehoert nicht zur Blogpruefung selbst und blockiert `REVEAL GO` nicht.
+Der Hook wird nur knapp ergebnisorientiert aufgegriffen; Routinedetails zur Aktualisierung oder Ablage erscheinen ohne Nachfrage nicht.
 
 Wenn das Artefakt eine Reveal-Praesentation ist, folgt die sichtbare Reihenfolge dem Contract fuer `REVEAL FINAL`:
 
@@ -284,10 +286,10 @@ Diese Forschungsfinalisierung erscheint nicht als eigener sichtbarer Pruefblock;
 Die `Zusammenfassung` folgt ausschliesslich dem Summary-Schema des Contracts:
 
 - `Stand`
-- `Letzte Aenderung`
+- `Ergebnis`
 - `Offen`
 - `Blocker`
-- `Naechster sinnvoller Befehl`
-- `Empfohlene Reihenfolge`
+- `Naechster Schritt`
 
+Die Zusammenfassung bleibt kompakt und ergebnisorientiert; erfolgreiche Pruefketten, Pfad- oder Ablageangaben und technische Nachlaufdetails erscheinen dort nicht, solange daraus kein Handlungsbedarf entsteht.
 Einen separaten globalen Statusblock oder eine eigene Empfehlungsspalte gibt es nicht; notwendige Korrekturen werden in den passenden Block des Contract-Formats eingeordnet.
