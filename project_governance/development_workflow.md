@@ -12,7 +12,7 @@ Kontext: technische Änderungen im Repository (Hugo, CSS, Layout, Docs)
 - Farben im Blog nur über Tokens (00_design_tokens.css).
 - Reveal verwendet eigene Variablen in custom_reveal.css.
 - Blog-CSS und Reveal-CSS strikt getrennt.
-- Agentenlogik nach Änderungen mit dem RC-Katalog in `project_governance/agent_contract.md` prüfen.
+- Agentenlogik nach Änderungen direkt gegen die betroffenen Regeln in `project_governance/agent_contract.md` prüfen.
 - Testtiefe proportional zum Änderungsrisiko wählen.
 - Vor Commits: Diff pruefen; Smoke-Tests nur, wenn die Aenderungsklasse sie erfordert.
 
@@ -65,9 +65,9 @@ Vor jedem Commit:
   - Endslide / Endcard
   - Portrait vs Landscape Typografie (wenn vorhanden)
 
-### 4.3 Agenten-Regression
+### 4.3 Agenten-Validierung
 
-Wenn Änderungen an folgenden Dateien erfolgen, ist zusätzlich der RC-Katalog aus `project_governance/agent_contract.md` anzuwenden:
+Wenn Änderungen an folgenden Dateien erfolgen, ist zusätzlich eine direkte Validierung gegen die betroffenen Regeln aus `project_governance/agent_contract.md` erforderlich:
 
 - `project_governance/agent_contract.md`
 - `ai_agents/master_agent.md`
@@ -80,22 +80,22 @@ Der Contract bleibt dabei die einzige normative Quelle fuer State Machine, Gates
 
 Ausführungslogik:
 
-- **Selektiver RC-Durchlauf**: bei kleinen Text- oder Regelkorrekturen nur betroffene RCs plus RC-07.
-- **Vollständiger RC-Durchlauf**: vor Live-Fällen, festgeschriebenen Ständen und nach Änderungen an Moduslogik, Übergängen, Snapshot-Regeln, Bundle-Hygiene oder DoD.
-- **Dry Run**: praktische Durchfuehrung des im Contract als minimaler normativer Pflichttest definierten RC-Trockentests. Der Dry Run fuehrt diesen Test mindestens als einen geschlossenen Repo-Fall im Standardmodus in fuenf Schritten aus: `/PLAN`, `BLOG GO`, `BLOG FINAL` inklusive automatischem `LITERATUR GO`, `REVEAL GO` -> `REVEAL FINAL`.
+- Kleine Text- oder Regelkorrekturen: Diff-Pruefung plus die betroffenen Contract-Regeln und die Konfliktprioritaet aus Abschnitt 9 des Contracts.
+- Aenderungen an Moduslogik, Uebergaengen, Snapshot-Regeln, Bundle-Hygiene oder DoD: ein geschlossener Dry Run im Standardmodus ueber `/PLAN`, `BLOG GO`, `BLOG FINAL` inklusive automatischem `LITERATUR GO`, `REVEAL GO` -> `REVEAL FINAL`.
 - Bei Aenderungen am Forschungsmodus zusaetzlich gezielt `/PLAN FORSCHUNG` gegen die betroffenen Regeln pruefen: gleicher Planungsdialog wie `/PLAN`, sofortige Initialisierung der vier Startartefakte unter `exports/research/`, `blog_working_snapshot.txt` erst nach der ersten agentenseitig erzeugten Blog-Arbeitsfassung, kein finales `blog_snapshot.txt`, keine Veraenderung der Kernlogik, keine zusaetzlichen Forschungsbefehle und automatischer Abschluss aktiver Forschungsartefakte bei `REVEAL FINAL`.
 - Bei Aenderungen an der Planungsheuristik zusaetzlich gezielt `/PLAN` pruefen: eine empfohlene Verdichtung bleibt sichtbar fuehrend; moegliche Alternativen bleiben auf bis zu zwei knappe asymmetrische Verdichtungen begrenzt und erscheinen nur bei plausiblen konkurrierenden Problemachsen oder noch offener Nutzerpriorisierung.
-- Bei Änderungen an der Wissensbasis-Anschlusslogik zusätzlich gezielt RC-27 prüfen, insbesondere Entwurf bei `BLOG FINAL`, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
+- Bei Aenderungen an der Wissensbasis-Anschlusslogik zusaetzlich gezielt den Anschluss nach `BLOG FINAL` pruefen, insbesondere Entwurf, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
+- `ai_agents/archive/regression_suite.md` kann bei Bedarf als archivierte, nicht operative Audit- und Smoke-Test-Referenz herangezogen werden.
 
 ### 4.4 Proportionale Testtiefe
 
-- Reine Text- oder Formulierungsänderungen an Doku, Prompts oder Regeln: Diff-Prüfung plus betroffene RCs; kein voller Smoke-Test nötig.
-- Änderungen an Workflow, Pfaden, Snapshots, Bundles, Frontmatter-Logik oder Renderlogik: betroffene RCs plus technischer Smoke-Test.
+- Reine Text- oder Formulierungsänderungen an Doku, Prompts oder Regeln: Diff-Prüfung plus betroffene Contract-Regeln; kein voller Smoke-Test nötig.
+- Änderungen an Workflow, Pfaden, Snapshots, Bundles, Frontmatter-Logik oder Renderlogik: betroffene Contract-Regeln plus technischer Smoke-Test.
 - Reveal-, Bundle- oder CSS-Änderungen: zusätzlicher Reveal-Sichttest und Bundle-Prüfung auf unerwünschte Markdown-Dateien.
 
 ### 4.5 Dry-Run-Auswertungsvorlage
 
-Der praktische Dry Run ist die im Contract referenzierte Durchfuehrung des RC-Trockentests.
+Der praktische Dry Run ist die im Contract definierte Durchfuehrung des minimalen Pflichttests.
 
 Fuer diesen Dry Run wird das Ergebnis nicht nur summarisch, sondern als kurzer Auswertungsbogen festgehalten.
 
@@ -165,7 +165,7 @@ Bearbeiter:
 
 Faustregel fuer `Folgeort`:
 
-- **Contract**: Governance, Prioritaeten, Uebergaenge, RCs, Konfliktlogik.
+- **Contract**: Governance, Prioritaeten, Uebergaenge, Konfliktlogik.
 - **Master-Agent**: operative Arbeitslogik, Dialogstil, Statusauswertung.
 - **Prompt**: Start-, Check- oder Interaktionssteuerung.
 - **Template**: Frontmatter, Artefaktstruktur, Template-Pflichtlogik.
@@ -209,7 +209,7 @@ Vor Merge nach `main`:
 - [ ] Diff geprüft (keine unbeabsichtigten Änderungen)
 - [ ] Smoke-Test Blog OK
 - [ ] Smoke-Test Reveal OK (falls betroffen)
-- [ ] RC-Katalog durchlaufen (falls Agentenlogik betroffen)
+- [ ] Betroffene Contract-Regeln geprueft; Dry Run durchgefuehrt (falls Agentenlogik betroffen)
 - [ ] Doku konsistent (wenn betroffen)
 - [ ] keine neuen unkommentierten `!important`
 - [ ] keine neuen Hardcoded-Farben außerhalb von Tokens

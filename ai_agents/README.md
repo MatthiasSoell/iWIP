@@ -96,7 +96,7 @@ Mit Version 1.1 wurde der Agent konzeptionell und technisch grundlegend konsolid
 - 🔬 Integration eines optionalen Forschungsmodus über `/PLAN FORSCHUNG`
 - 📚 Verbindlicher Wissensbasis-Hook nach `BLOG FINAL`
 - 🖥️ Automatischer Abschluss aktiver Forschungsartefakte bei `REVEAL FINAL`
-- 🧪 Ausbau und Konsolidierung der Regression Suite
+- 🧪 Archivierung und Konsolidierung der Regression Suite als optionale Audit-Basis
 - 🏛️ Stärkung des `agent_contract.md` als zentrale Single Source of Truth
 - 🧠 Präzisere Einordnung des Didaktischen Qualitätsmodells (DQM) als Referenz- und Heuristikrahmen
 - ✂️ Deutliche Reduktion von Redundanzen und Vereinheitlichung der Terminologie

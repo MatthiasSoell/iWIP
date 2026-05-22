@@ -174,8 +174,8 @@ Reveal prüfen, wenn betroffen:
 
 Dann zusätzlich:
 
-- RC-Katalog aus `project_governance/agent_contract.md` als normative Referenz anwenden
-- Ausfuehrungslogik aus `project_governance/development_workflow.md` fuer Testtiefe, RC-Auswahl und Dry Run befolgen
+- betroffene Regeln aus `project_governance/agent_contract.md` direkt als normative Referenz anwenden
+- Ausfuehrungslogik aus `project_governance/development_workflow.md` fuer Testtiefe und Dry Run befolgen
 
 ---
 
