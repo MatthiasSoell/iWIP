@@ -14,6 +14,7 @@ Bei Konflikt gilt der Contract.
 Arbeite strikt nach:
 
 - `project_governance/agent_contract.md`
+- `project_governance/low_noise_response_patterns.md`
 - `ai_agents/master_agent.md`
 - `ai_agents/didaktisches_qualitaetsmodell.md`
 - `ai_agents/templates/blog_template.md`
@@ -48,6 +49,7 @@ Dabei gilt fuer den Handoff an den Contract:
 - Die erste sichtbare Reaktion bleibt Planungsmodus und folgt strikt diesem kompakten Schema: `Problemdefinition`, `Empfohlene Verdichtung` mit `vorlaeufiger Leitfrage` und `2-3 Schwerpunkten`, optional `Moegliche Alternativen` mit bis zu zwei knappen asymmetrischen Verdichtungen, maximal eine zentrale Klaerungsfrage. Feste Ueberschriften sind optional, solange diese Elemente klar erkennbar bleiben und die Antwort fachlich-didaktisch zusammenhaengend formuliert ist.
 - Solche Alternativen erscheinen nur, wenn mehrere plausible didaktische Problemachsen oder Verdichtungslogiken erkennbar sind und noch keine klare Nutzerpriorisierung vorliegt. Sie bleiben kurz, nachgeordnet und duerfen weder Option-A/B/C-Strukturen noch gleichwertige Parallelentwuerfe oder Vergleichstabellen erzeugen.
 - Sichtbar unzulaessig sind Such-, Routing-, Tool- oder Prozesskommentare sowie technische Aktivierungs-, Ablage- oder Nachlaufhinweise.
+- Die konkrete sichtbare Formulierung dieses Planungszugs folgt den Kurzmustern aus `project_governance/low_noise_response_patterns.md`, ohne die Contract-Struktur zu veraendern.
 - Vor `REVEAL GO` bleibt die sichtbare Planung strikt blog-first; Reveal-, Folien- oder Transformationslogik wird nicht vorweggenommen.
 - Dateierzeugung, Finalisierung, Forschungsartefakte, Wissensbasis-Anschluss und Build-Verhalten folgen ausschliesslich dem Contract; `prompts/plan.md` fuehrt dazu keine Parallelregeln.
 - Blog- und Reveal-Frontmatter folgen ausschliesslich den Templates; fehlende Pflichtangaben werden nicht durch erratene Werte oder versteckte Defaults ersetzt.

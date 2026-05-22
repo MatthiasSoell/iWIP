@@ -25,6 +25,7 @@ Pruefe das vorliegende Artefakt ausschliesslich gegen:
 Arbeite dabei mit:
 
 - `project_governance/agent_contract.md`
+- `project_governance/low_noise_response_patterns.md`
 - `ai_agents/didaktisches_qualitaetsmodell.md`
 - `ai_agents/templates/blog_template.md`
 - `ai_agents/templates/reveal_template.md`
@@ -43,6 +44,7 @@ Arbeite dabei mit:
 - `check` fuehrt keine inhaltlichen oder technischen Aenderungen am Artefakt aus.
 - Sichtbar erscheinen nur die contractkonformen Pruefausgaben im vorgegebenen Format, ohne Prozesskommentar. Forschungsprotokollierung erscheint nicht als eigener sichtbarer Block; sie wird nur bei blockerrelevanten Befunden, echten Finalisierungsfolgen oder auf ausdrueckliche Nachfrage genannt.
 - Erfolgreiche Linkchecks, Builds, Postprocessing-Schritte, Pfadableitungen, Wissensbasis- oder Forschungsnachlaeufe und sonstige gruene Routinepruefungen werden nicht einzeln sichtbar ausgegeben. Sie erscheinen nur bei Blockern, handlungsrelevanten Warnungen oder auf ausdrueckliche Nachfrage.
+- Die konkrete sichtbare FINAL-Sprache folgt zusaetzlich den Kurzmustern aus `project_governance/low_noise_response_patterns.md`, ohne das Contract-Format oder die Blockstruktur zu aendern.
 
 Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive Textauswahlen oder sonstiger Editor-Kontext steuern diesen Pruefpfad nicht.
 

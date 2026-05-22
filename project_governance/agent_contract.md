@@ -193,6 +193,7 @@ Der Wissensbasis-Anschluss ist ein Hook nach `BLOG FINAL`, nicht Teil der Bloger
 - Snapshot-Vergleiche, Meta-Reflexionen und Forschungsmetadaten sind nie Standardbestandteil von `BLOG FINAL` oder `REVEAL FINAL`; sie erscheinen nur auf ausdrueckliche Nachfrage oder wenn sie fuer eine konkrete Abstimmung noetig sind.
 - Wenn der Forschungsmodus aktiv ist, bleiben laufende Marker, Zeitstempel und technische Uebergangsnotizen aus dem normalen Planungsdialog ausgeblendet und werden nur intern fortgeschrieben. Sichtbare Hinweise auf die Forschungsprotokollierung erscheinen nur bei Initialisierung, echten Uebergaengen, Finalisierung, ausdruecklicher Nachfrage oder echten Blockern.
 - Kleine Korrekturen und Mikroedits werden sichtbar ergebnisorientiert bestaetigt. Technische Root-Cause-Erklaerungen, Dateistrukturdetails oder Implementierungswege erscheinen dabei nur, wenn sie fuer das Verstaendnis des Problems noetig sind oder explizit angefragt werden.
+- `project_governance/low_noise_response_patterns.md` buendelt dazu konkrete sichtbare Formulierungsheuristiken, Kurztemplates sowie Positiv-/Negativbeispiele. Die Datei fuehrt keine eigene Steuerlogik ein; bei Konflikt bleibt ausschliesslich dieser Contract massgeblich.
 
 ### Normativer Vorrang und Dokumentrollen
 
@@ -209,6 +210,7 @@ Der Wissensbasis-Anschluss ist ein Hook nach `BLOG FINAL`, nicht Teil der Bloger
 | `project_governance/content_emoji_policy.md` | Delegierte Detailreferenz fuer Emoji-Regeln | delegierte Detailregel innerhalb des Contracts |
 | `ai_agents/blog_wissensbasis.md` | Inhaltliche Wissensbasis ohne Prozesssteuerung | nicht-normative Inhaltsreferenz |
 | `ai_agents/blog_literaturbasis.md` | Inhaltliche Literaturbasis ohne Prozesssteuerung | nicht-normative Inhaltsreferenz |
+| `project_governance/low_noise_response_patterns.md` | gebuendelte Musterreferenz fuer sichtbare Antwortoberflaeche ohne eigene Steuerlogik | konkretisiert sichtbare Antwortmuster innerhalb des Contract-Rahmens |
 | `prompts/plan.md` | Einstieg und Routing fuer `/PLAN` | konkretisiert den Contract |
 | `prompts/check.md` | Pruefablauf und Ausgabeformat fuer Finalpruefungen | konkretisiert den Contract |
 | `README.md` | Einstieg und Orientierung ohne normative Steuerfunktion | nicht-normative Orientierung |
