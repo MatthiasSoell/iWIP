@@ -282,7 +282,7 @@ Wenn das Artefakt eine Reveal-Praesentation ist, folgt die sichtbare Reihenfolge
 5. `Hinweise oder Optimierungen`
 6. `Zusammenfassung`
 
-Wurde der Fall mit `/PLAN FORSCHUNG` gestartet, finalisiert `REVEAL FINAL` zusaetzlich alle aktiven Forschungsartefakte und schliesst den Forschungsmodus automatisch ab.
+Wurde der Fall mit `/PLAN FORSCHUNG` gestartet, finalisiert im Standardfall `REVEAL FINAL` zusaetzlich alle aktiven Forschungsartefakte und schliesst den Forschungsmodus automatisch ab. Im Sonderfall `blog_only` erfolgt dieser Abschluss bereits bei `BLOG FINAL`, wenn kein Reveal erzeugt werden soll.
 
 Diese Forschungsfinalisierung erscheint nicht als eigener sichtbarer Pruefblock; notwendige Hinweise werden nur im passenden Block des Contract-Formats genannt.
 

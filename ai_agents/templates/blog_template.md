@@ -217,6 +217,8 @@ Für sitzungs- oder fortbildungsbezogene Beiträge den Ablauf als kompakte
 Agenda-Tabelle anlegen.
 
 ```markdown
+**Gesamtdauer:** ca. XX Minuten ⏱️
+
 <div class="agenda">
 
 | Phase | Inhalt | Ziel | Zeit |
