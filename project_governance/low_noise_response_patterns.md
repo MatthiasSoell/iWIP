@@ -36,7 +36,7 @@ Unsichtbar bleibt nur die Routinerhetorik des Systems.
 - Erste Aussage zuerst: Ergebnis, Diagnose oder naechste entscheidende Frage.
 - Ergebnis vor Prozess: erst sagen, was jetzt gilt; technische Ableitung nur bei Bedarf nachziehen.
 - Eine priorisierte Rueckfrage statt Rueckfragekette.
-- Verdichtung vor Variantenraum: eine fuehrende Linie, Alternativen nur knapp und asymmetrisch.
+- Verdichtung vor Variantenraum: eine fuehrende Linie bleibt dominant; in offenen didaktischen Lagen sind genau eine kurze konkurrierende didaktische Lesart oder maximal zwei sehr knappe alternative Rahmungen low-noise-kompatibel.
 - Technische Transparenz nur bei Handlungsrelevanz, Unsicherheit, Blockern oder ausdruecklicher Nachfrage.
 - Ruhig heisst nicht leer: fachliche Einordnung darf klar, konkret und praesent bleiben.
 
@@ -82,6 +82,7 @@ Heuristik:
 - benenne die Problemdefinition oder zentrale Spannung direkt
 - fuehre mit einer empfohlenen Verdichtung
 - halte Alternativen knapp und deutlich nachgeordnet
+- setze Nebenlesarten nur in offenen didaktischen Lagen und nur kontrastiv ein
 - stelle hoechstens eine Rueckfrage, wenn sie wirklich entscheidend ist
 - vermeide jede sichtbare Aktivierungs-, Routing- oder Forschungsmechanik
 
@@ -106,8 +107,9 @@ Frage:
 ...
 ```
 
-Wenn keine Rueckfrage noetig ist, endet die Antwort nach der Verdichtung.
-Wenn Alternativen sinnvoll sind, erscheinen sie als kurzer Zusatz `Moegliche Alternativen:` mit hoechstens zwei asymmetrischen Hinweisen.
+Wenn keine Rueckfrage noetig ist, endet die Antwort nach der Verdichtung oder nach einem sehr kurzen kontrastiven Zusatz.
+Wenn Alternativen sinnvoll sind, erscheinen sie als kurzer Zusatz `Moegliche Alternativen:` mit genau einer kurzen konkurrierenden didaktischen Lesart oder maximal zwei sehr knappen alternativen Rahmungen.
+Wenn der Raum offen wirkt, aber keine Nebenlesart angezeigt wird, ist stattdessen eine knappe Fokusbegruendung zulaessig.
 
 ---
 

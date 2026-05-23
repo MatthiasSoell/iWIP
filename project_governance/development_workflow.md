@@ -83,7 +83,7 @@ Ausführungslogik:
 - Kleine Text- oder Regelkorrekturen: Diff-Pruefung plus die betroffenen Contract-Regeln und die Konfliktprioritaet aus Abschnitt 9 des Contracts.
 - Aenderungen an Moduslogik, Uebergaengen, Snapshot-Regeln, Bundle-Hygiene oder DoD: ein geschlossener Dry Run im Standardmodus ueber `/PLAN`, `BLOG GO`, `BLOG FINAL` inklusive automatischem `LITERATUR GO`, `REVEAL GO` -> `REVEAL FINAL`.
 - Bei Aenderungen am Forschungsmodus zusaetzlich gezielt `/PLAN FORSCHUNG` gegen die betroffenen Regeln pruefen: gleicher Planungsdialog wie `/PLAN`, sofortige Initialisierung der vier Startartefakte unter `exports/research/`, `blog_working_snapshot.txt` erst nach der ersten agentenseitig erzeugten Blog-Arbeitsfassung, kein finales `blog_snapshot.txt`, keine Veraenderung der Kernlogik, keine zusaetzlichen Forschungsbefehle und im Standardfall automatischer Abschluss aktiver Forschungsartefakte bei `REVEAL FINAL`; im Sonderfall `blog_only` bei `BLOG FINAL`, wenn kein Reveal erzeugt werden soll.
-- Bei Aenderungen an der Planungsheuristik zusaetzlich gezielt `/PLAN` pruefen: eine empfohlene Verdichtung bleibt sichtbar fuehrend; moegliche Alternativen bleiben auf bis zu zwei knappe asymmetrische Verdichtungen begrenzt und erscheinen nur bei plausiblen konkurrierenden Problemachsen oder noch offener Nutzerpriorisierung.
+- Bei Aenderungen an der Planungsheuristik zusaetzlich gezielt `/PLAN` pruefen: eine empfohlene Verdichtung bleibt sichtbar fuehrend; moegliche Alternativen bleiben auf genau eine kurze konkurrierende didaktische Lesart oder maximal zwei sehr knappe alternative Rahmungen begrenzt und erscheinen nur bei normativer Spannung, multiperspektivischem Gegenstand, mehreren plausiblen Zielarchitekturen, unklarer Nutzerpriorisierung oder offenem didaktischem Raum. Wenn trotz offener Lage keine sinnvolle Alternative angezeigt wird, ist stattdessen eine knappe Fokusbegruendung zulaessig.
 - Bei Aenderungen an der Wissensbasis-Anschlusslogik zusaetzlich gezielt den Anschluss nach `BLOG FINAL` pruefen, insbesondere Entwurf, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
 - `ai_agents/archive/regression_suite.md` kann bei Bedarf als archivierte, nicht operative Audit- und Smoke-Test-Referenz herangezogen werden.
 
@@ -137,7 +137,7 @@ Bearbeiter:
 |---|---|---|---|---|---|---|
 | /PLAN | Keine Artefakterstellung | | | | | |
 | /PLAN | Sprache bleibt planungs- und dialoggerecht | | | | | |
-| /PLAN | Empfohlene Verdichtung bleibt fuehrend; Alternativen sind hoechstens zwei kurze asymmetrische Hinweise und nur bei plausibler Mehrdeutigkeit sichtbar | | | | | |
+| /PLAN | Empfohlene Verdichtung bleibt fuehrend; Alternativen sind auf genau eine kurze konkurrierende didaktische Lesart oder maximal zwei sehr knappe alternative Rahmungen begrenzt, erscheinen nur in offenen didaktischen Lagen und werden sonst durch eine knappe Fokusbegruendung ersetzt | | | | | |
 | /PLAN | Keine sichtbaren Such-, Routing-, Tool- oder Prozesskommentare | | | | | |
 | /PLAN FORSCHUNG | Verhaelt sich wie `/PLAN`, aktiviert sofort Rohdatenerfassung unter `exports/research/` und erzeugt noch keine Zielartefakte oder Snapshots | | | | | |
 | BLOG GO | Erzeugt `index.md` auf Basis des Planungsstands; im Forschungsmodus danach genau `blog_working_snapshot.txt` | | | | | |
