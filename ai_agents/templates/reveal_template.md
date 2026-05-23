@@ -41,7 +41,7 @@ outputs:
 
 reveal_hugo:
   theme: "simple"
-  slideNumber: true
+  slide_number: true
   hash: true
 
 pdf_export: true
@@ -76,6 +76,7 @@ Regeln:
 - Der uebergeordnete Bereichsordner wie `bisy`, `widi` oder `fortbildung` wird nicht automatisch in `pdf_filename` aufgenommen.
 - Wenn im Reveal-Frontmatter bereits ein `pdf_filename` vorhanden ist, bleibt dieser als manueller Override unveraendert.
 - `pdf_export` und `pdf_filename` stehen immer auf Root-Ebene und nie eingerueckt unter anderen Bloecken.
+- Im Repo ist `reveal_hugo.slide_number` die kanonische Schreibweise; `slideNumber` wird fuer neue oder angepasste Reveal-Dateien nicht verwendet.
 - Metadaten müssen kontextspezifisch zur jeweiligen Präsentation ausgefüllt sein (keine Copy-Paste-Werte).
 - Pflichtfelder muessen semantisch gefuellt sein (keine Platzhalterwerte wie `TODO`, `tbd`, `-`, `...`).
 

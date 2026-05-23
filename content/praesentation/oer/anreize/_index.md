@@ -17,7 +17,7 @@ outputs:
 
 reveal_hugo:
   theme: "simple"
-  slideNumber: true
+  slide_number: true
   hash: true
 
 pdf_export: true

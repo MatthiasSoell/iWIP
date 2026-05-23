@@ -101,7 +101,8 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen Agent Contract und `ai_agent
 - Die Zielgliederung aus dem Blog-Template ist in ihren Pflichtbestandteilen vorhanden: `Hintergrund`, `Ausgangsfrage`, `Lernziele`, `Ablauf`, fachliche Hauptkapitel, `Literatur und Quellen`.
 - Alle Pflichtabschnitte aus Contract und Blog-Template sind vorhanden und inhaltlich ausgearbeitet.
 - Quellenangaben sind belastbar; spezifische Quellen wurden nicht erfunden.
-- Der Emoji-Einsatz ist gemaess `project_governance/content_emoji_policy.md` im sichtbaren Hauptkoerper erkennbar umgesetzt.
+- Der Emoji-Einsatz ist gemaess `project_governance/content_emoji_policy.md` im sichtbaren Hauptkoerper erkennbar und funktional umgesetzt; Mindestabdeckung und Verteilungsprinzip der Policy werden dabei qualitativ mitgeprueft.
+- Wenn die in `project_governance/content_emoji_policy.md` definierte Mindestabdeckung oder funktionale Verteilung klar verfehlt wird, gib eine `WARNUNG` aus, aber keinen `BLOCKER`; semantische Passung ist wichtiger als dekorative Dichte.
 - Ansprache, Ton und semantischer Emoji-Einsatz sind innerhalb des Artefakts konsistent und wirken nicht optional nachgeruestet.
 - Im bearbeiteten Inhaltsbereich kommen keine Nummerierungs-Emojis `1️⃣` bis `🔟` mehr vor.
 - Es gibt keine verschachtelten `<span class="content-emoji">`.
@@ -197,7 +198,8 @@ Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen Agent Contract und
 - Jede Reveal-Visualisierung hat direkt darunter genau eine Quellenzeile gemaess Reveal-Template (`p class="bild-quelle">Bildquelle: ... · Lizenz: ...</p>`). Ein `p class="grafic-title">...</p>` direkt darueber ist optional und nur erforderlich, wenn die Visualisierung nicht bereits durch die Folienueberschrift oder den unmittelbaren Kontext eingefuehrt ist. Ein kurzer Kontextsatz davor ist optional und nur bei erklaerungsbeduerftigen Darstellungen sinnvoll. Einzige Ausnahme sind eindeutig als Ablaufplan erkennbare Tabellen innerhalb eines Abschnitts: direkt unter einer Abschnittsueberschrift eingebettete Tabellen zur zeitlichen oder didaktischen Phasenstruktur mit organisatorischem Zweck duerfen nur dann ohne Titel und Quellenzeile stehen; stattdessen muss direkt ueber der Tabelle die Zeile `**Gesamtdauer:** ca. XX Minuten ⏱️` stehen.
 - Wenn ein Ablaufplan erkannt wird und diese Gesamtdauer-Zeile fehlt oder deutlich vom Format abweicht, gib eine `WARNUNG` aus, aber keinen `BLOCKER`.
 - Reveal-Bildquellen enthalten immer Herkunft und Lizenzstatus; fuer gesperrte Rechte ist die Formulierung `Lizenz: nicht frei verwendbar` zu verwenden.
-- Der Emoji-Einsatz ist gemaess `project_governance/content_emoji_policy.md` im sichtbaren Folien-Body erkennbar umgesetzt.
+- Der Emoji-Einsatz ist gemaess `project_governance/content_emoji_policy.md` im sichtbaren Folien-Body erkennbar und funktional umgesetzt; Mindestabdeckung und Verteilungsprinzip der Policy werden dabei qualitativ mitgeprueft.
+- Wenn die in `project_governance/content_emoji_policy.md` definierte Mindestabdeckung oder funktionale Verteilung klar verfehlt wird, gib eine `WARNUNG` aus, aber keinen `BLOCKER`; semantische Passung ist wichtiger als dekorative Dichte.
 - Ansprache, Ton und semantischer Emoji-Einsatz sind innerhalb der Praesentation konsistent und folgen derselben Artefaktlogik wie im Blog.
 - Es kommen keine Nummerierungs-Emojis `1️⃣` bis `🔟` mehr vor.
 - Es gibt keine verschachtelten `<span class="content-emoji">`.
@@ -230,7 +232,7 @@ Pruefe bei Revealartefakten das Frontmatter strikt gegen `ai_agents/templates/re
 Verpflichtend zu pruefen:
 
 - `title`, `date`, `title_reveal`, `emojis`, `veranstaltungstyp`, `veranstaltung`, `author`, `blog`, `aliases`, `lastmod`, `draft`
-- `outputs`, `reveal_hugo.theme`, `reveal_hugo.slideNumber`, `reveal_hugo.hash`
+- `outputs`, `reveal_hugo.theme`, `reveal_hugo.slide_number`, `reveal_hugo.hash`
 - `pdf_export`, `pdf_filename`
 - `description`, `summary`
 - `tags`, `categories`

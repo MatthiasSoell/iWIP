@@ -93,6 +93,8 @@ Wenn zwei oder mehr der folgenden Strukturelemente vorkommen, muessen mindestens
 
 Ein einzelnes Emoji im gesamten Abschnitt ist nicht ausreichend.
 
+In der Artefaktpruefung wird eine klar verfehlte Mindestabdeckung als qualitativer Warnhinweis behandelt; entscheidend bleibt die funktionale, nicht dekorative Nutzung.
+
 ### Verteilungsprinzip
 
 Emojis werden nicht punktuell, sondern funktional verteilt eingesetzt.
