@@ -17,8 +17,11 @@ Arbeite strikt nach:
 - `project_governance/low_noise_response_patterns.md`
 - `ai_agents/master_agent.md`
 - `ai_agents/didaktisches_qualitaetsmodell.md`
-- `ai_agents/templates/blog_template.md`
-- `ai_agents/templates/reveal_template.md`
+
+Template-Ladelogik fuer `/PLAN`:
+
+- `ai_agents/templates/blog_template.md` wird erst ab `BLOG GO` geladen und verbindlich angewendet.
+- `ai_agents/templates/reveal_template.md` wird erst ab `REVEAL GO` geladen und verbindlich angewendet.
 
 `prompts/plan.md` fuehrt keine eigene Steuerlogik ein.
 

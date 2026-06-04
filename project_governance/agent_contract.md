@@ -203,6 +203,7 @@ Der Wissensbasis-Anschluss ist ein Hook nach `BLOG FINAL`, nicht Teil der Bloger
 
 - Dieser Contract ist die einzige verbindliche Quelle fuer Prozess- und Steuerlogik sowie die einzige normative Regelquelle fuer Arbeitsmodus, Prozessphasen, Gates, Guards, Hooks, Exit-Actions, Finalisierung und Sichtbarkeit.
 - Andere Dateien konkretisieren ausschliesslich delegierte Detailbereiche innerhalb dieses Rahmens und fuehren keine eigene Steuerlogik ein.
+- Verweise auf Workflow- und Architektur-Governance sind zweckgebunden (Technik-, QA-, FINAL-, Workflow- oder Architekturbezug) und kein frueher Pflichtkontext fuer den normalen `/PLAN`-Erstzug.
 - `ai_agents/master_agent.md`, `prompts/plan.md`, `prompts/check.md` und die Templates konkretisieren nur Rolle, Ablauf, Pruefpraxis und Form innerhalb dieses Rahmens.
 - Bei Konflikten gilt immer dieser Contract.
 
@@ -211,8 +212,8 @@ Der Wissensbasis-Anschluss ist ein Hook nach `BLOG FINAL`, nicht Teil der Bloger
 | `ai_agents/master_agent.md` | didaktische Fuehrung, Dialoghaltung, Textarbeit | konkretisiert den Contract |
 | `ai_agents/didaktisches_qualitaetsmodell.md` | Didaktisches Referenzmodell und Heuristikrahmen | delegierte didaktische Referenz innerhalb des Contracts |
 | `project_governance/content_emoji_policy.md` | Delegierte Detailreferenz fuer Emoji-Regeln | delegierte Detailregel innerhalb des Contracts |
-| `ai_agents/blog_wissensbasis.md` | Inhaltliche Wissensbasis ohne Prozesssteuerung | nicht-normative Inhaltsreferenz |
-| `ai_agents/blog_literaturbasis.md` | Inhaltliche Literaturbasis ohne Prozesssteuerung | nicht-normative Inhaltsreferenz |
+| `ai_agents/blog_wissensbasis.md` | Inhaltliche Wissensbasis ohne Prozesssteuerung, on-demand bei explizitem Blog-/OER-/Wissensbasisbedarf | nicht-normative Inhaltsreferenz |
+| `ai_agents/blog_literaturbasis.md` | Inhaltliche Literaturbasis ohne Prozesssteuerung, on-demand bei Literaturbezug, Quellenpruefung oder wissenschaftlicher Ausarbeitung | nicht-normative Inhaltsreferenz |
 | `project_governance/low_noise_response_patterns.md` | gebuendelte Musterreferenz fuer sichtbare Antwortoberflaeche ohne eigene Steuerlogik | konkretisiert sichtbare Antwortmuster innerhalb des Contract-Rahmens |
 | `prompts/plan.md` | Einstieg und Routing fuer `/PLAN` | konkretisiert den Contract |
 | `prompts/check.md` | Pruefablauf und Ausgabeformat fuer Finalpruefungen | konkretisiert den Contract |
