@@ -123,3 +123,10 @@ Kuratierungsprinzipien:
 - **Kernthemen**: Zwischenfazit zu den bisherigen Themen des Moduls Bildungssysteme, Bündelung von Bildungswegen, Systemaufbau, dualer Ausbildung, Hochschulbildung und Weiterbildung, Verhältnis von Bildung und Arbeit, quellengeleitete Gruppenrecherche mit Taskcards, Ausblick auf Digitalisierung, New Work und gesellschaftlichen Wandel
 - **Schlüsselkonzepte**: Bildung und Arbeit, Bildungswege, Übergänge, Beruflichkeit, Akademisierung, lebenslanges Lernen, gesellschaftlicher Wandel
 - **Verweishaken**: Bei Semestermitten und Zwischenbilanzen in Bildungssystem-Modulen; bei der Verknüpfung mehrerer Bildungsbereiche auf eine gemeinsame Leitfrage; beim Übergang von Systemthemen zu Digitalisierung, New Work und Wandel der Arbeitswelt
+
+## 16. SciBlog iWIP und didaktischer Agent: Orientierung statt Tool Zoo
+- **Pfad**: content/blog/oer/blog_agent/index.md
+- **Bereich**: OER
+- **Kernthemen**: SciBlog als integrierte OER-Infrastruktur, blog-first-Workflow, Tool-Zoo als Ausgangsproblem, didaktisch spezialisierter Agent, Verbindung von Blog und Präsentation
+- **Schlüsselkonzepte**: Arbeits- und Publikationsraum, didaktische Kohärenz, spezialisierter Agent vs. Chatbot/Megaprompt, Transparenz, Nachnutzbarkeit, blog-first
+- **Verweishaken**: Wenn Blog und Präsentation als zusammenhängende OER-Infrastruktur beschrieben werden; bei der Einordnung didaktisch spezialisierter Agenten; bei Diskussionen zu Chancen und Grenzen KI-gestützter Lehrentwicklung
