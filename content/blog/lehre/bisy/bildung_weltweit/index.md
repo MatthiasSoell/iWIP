@@ -24,6 +24,8 @@ categories:
   - Lehre
   - Bildungssysteme
 
+permalink: "/blog/lehre/bisy/bildung_weltweit/"
+
 oer:
   is_oer: true
   kind: "lesson"
