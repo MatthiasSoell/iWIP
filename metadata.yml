@@ -271,6 +271,58 @@
   - Bildungssysteme
   - Wirtschaftspädagogik
   timeRequired: PT25M
+- id: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/bildung_weltweit/
+  url: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/bildung_weltweit/
+  image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
+  name: 'Bildung weltweit: Wie unterscheiden sich Systeme unter globalen Herausforderungen?'
+  description: In dieser Lehrveranstaltung analysieren Studierende der Wirtschaftspädagogik, wie globale Transformationslinien Bildungssysteme verändern. Der Beitrag vergleicht Berufsbildung, Hochschulbildung und Weiterbildung entlang zentraler Steuerungslogiken. Er unterstützt dabei, Chancen, Zielkonflikte und Handlungsoptionen für die eigene professionelle Praxis einzuordnen.
+  creativeWorkStatus: Published
+  creator:
+  - name: Prof. Dr. Matthias Söll
+    type: Person
+    givenName: Matthias
+    familyName: Söll
+    affiliation:
+      name: Universität Rostock
+      type: Organization
+      id: https://ror.org/03zdwsf69
+      url: https://www.uni-rostock.de/
+    url: https://www.iwip.uni-rostock.de/institut/iwip/team/prof-dr-matthias-soell/
+    identifier: https://orcid.org/0000-0002-9717-3017
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    url: https://creativecommons.org/licenses/by-sa/4.0/
+    name: CC BY-SA 4.0
+  learningResourceType:
+  - id: https://w3id.org/kim/hcrt/text
+    name: Text
+  educationalLevel:
+  - id: https://w3id.org/kim/educationalLevel/level_6
+    name: Bachelor oder äquivalent
+  about:
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n270
+    name: Berufs- und Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n181
+    name: Wirtschaftspädagogik
+  - id: https://w3id.org/kim/hochschulfaechersystematik/n33
+    name: Erziehungswissenschaften
+  inLanguage:
+  - de
+  datePublished: '2026-06-07'
+  dateModified: '2026-06-07'
+  publisher:
+    name: SciBlog iWIP
+    url: https://matthiassoell.github.io/iWIP/
+  keywords:
+  - Bildungssysteme
+  - Globalisierung
+  - 5D-Transformationslinien
+  - Bologna-Prozess
+  - Brügge-Kopenhagen-Prozess
+  - Systemvergleich
+  - berufliche Bildung
+  - lebenslanges Lernen
+  timeRequired: PT90M
 - id: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/deutsches_bildungssystem/
   url: https://matthiassoell.github.io/iWIP/blog/lehre/bisy/deutsches_bildungssystem/
   image: https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg
