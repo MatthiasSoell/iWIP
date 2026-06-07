@@ -7,7 +7,7 @@ lastmod: 2026-06-07
 draft: false
 
 description: "In dieser Lehrveranstaltung analysieren Studierende der Wirtschaftspädagogik, wie globale Transformationslinien Bildungssysteme verändern. Der Beitrag vergleicht Berufsbildung, Hochschulbildung und Weiterbildung entlang zentraler Steuerungslogiken. Er unterstützt dabei, Chancen, Zielkonflikte und Handlungsoptionen für die eigene professionelle Praxis einzuordnen."
-summary: "Die Sitzung zeigt, wie 5D-Transformationen Bildungsbereiche verändern und welche Chancen sowie Spannungen Bologna- und Brügge-Kopenhagen-Prozess auslösen."
+summary: "Die Veranstaltung zeigt, wie Globalisierung Bildungsbereiche verändert und welche Chancen sowie Spannungen Brügge-Kopenhagen- und Bologna-Prozess auslösen."
 
 tags:
   - Bildungssystem
@@ -102,7 +102,7 @@ oer:
 
 ## 🧭 Hintergrund
 
-Bildungssysteme stehen heute unter einem doppelten Druck: Sie sollen soziale Teilhabe sichern und zugleich auf tiefgreifende globale Veränderungen reagieren. Für Studierende der Wirtschaftspädagogik wird damit zentral, nicht nur Institutionen zu beschreiben, sondern deren Steuerungslogiken vergleichend zu analysieren. Der Beitrag verdichtet diese Perspektive entlang der fünf Transformationslinien Demografie, Dekarbonisierung, Digitalisierung, Deglobalisierung und Demokratieverdrossenheit.
+Bildungssysteme stehen heute unter einem **doppelten Druck**: Sie sollen **soziale Teilhabe** sichern und zugleich auf **tiefgreifende globale Veränderungen** reagieren. Für Studierende der Wirtschaftspädagogik wird damit zentral, nicht nur Institutionen zu beschreiben, sondern deren **Steuerungslogiken** vergleichend zu analysieren. Der Beitrag verdichtet diese Perspektive entlang der **fünf Transformationslinien** Demografie, Dekarbonisierung, Digitalisierung, Deglobalisierung und Demokratieverdrossenheit.
 
 ## 💭 Ausgangsfrage
 
@@ -110,10 +110,10 @@ Wie reagieren Bildungssysteme auf globale gesellschaftliche und wirtschaftliche 
 
 ## 🎯 Lernziele
 
-- 🧠 Sie erläutern die 5D-Transformationslinien als analytischen Rahmen für Bildungsentwicklungen.
-- 🧩 Sie vergleichen Berufsbildung, Hochschulbildung und Weiterbildung anhand zentraler Funktionen und Steuerungsinstrumente.
-- 🤝 Sie ordnen Bologna- sowie Brügge-Kopenhagen-Prozess in ihren Zielen, Chancen und Spannungen ein.
-- 🪞 Sie reflektieren Zielkonflikte zwischen Vergleichbarkeit, Teilhabe, Qualität und Verwertungslogik.
+- 🧠 Sie können die **5D-Transformationslinien** als analytischen Rahmen für Bildungsentwicklungen erläutern.
+- 🧩 Sie vergleichen Berufsbildung, Hochschulbildung und Weiterbildung anhand **zentraler Funktionen** und **Steuerungsinstrumente**.
+- 🤝 Sie ordnen **Brügge-Kopenhagen-** und **Bologna-Prozess** in ihren Zielen, Chancen und Spannungen ein.
+- 🪞 Sie **reflektieren** Zielkonflikte zwischen Vergleichbarkeit, Teilhabe, Qualität und Verwertungslogik im Bildungssystem.
 
 ## Ablauf
 
@@ -123,17 +123,19 @@ Wie reagieren Bildungssysteme auf globale gesellschaftliche und wirtschaftliche 
 
 | Phase | Inhalt | Ziel | Zeit |
 |:------|:--------|:------|:------:|
-| **1️⃣ Einstieg** | Whiteboard-Brainstorming und Stimmungsbarometer | Vorwissen aktivieren, Perspektiven sichtbar machen | ⏱️ 8<br>Min |
-| **2️⃣ Rahmung** | 5D-Transformationslinien und Bildungsfolgen | Gemeinsames Analysegerüst herstellen | ⏱️ 10<br>Min |
-| **3️⃣ Vergleichsraster** | Drei Bildungsbereiche und Leitkriterien | Arbeitsrahmen für Gruppenanalyse klären | ⏱️ 4<br>Min |
-| **4️⃣ Gruppenarbeit** | Recherche und Analyse entlang von Leitfragen | Eigenständige, quellenbasierte Urteilsbildung | ⏱️ 45<br>Min |
-| **5️⃣ Sicherung & Reflexion** | Kurzberichte, Vergleich und Transfer | Ergebnisse bündeln und Spannungen diskutieren | ⏱️ 23<br>Min |
+| **1. Einstieg** | Whiteboard-Brainstorming und Stimmungsbarometer | Vorwissen aktivieren, Perspektiven sichtbar machen | ⏱️ 8<br>Min |
+| **2. Rahmung** | 5D-Transformationslinien und Bildungsfolgen | Gemeinsames Analysegerüst herstellen | ⏱️ 10<br>Min |
+| **3. Vergleichsraster** | Drei Bildungsbereiche und Leitkriterien | Arbeitsrahmen für Gruppenanalyse klären | ⏱️ 4<br>Min |
+| **4. Gruppenarbeit** | Recherche und Analyse entlang von Leitfragen | Eigenständige, quellenbasierte Urteilsbildung | ⏱️ 45<br>Min |
+| **5. Sicherung & Reflexion** | Kurzberichte, Vergleich und Transfer | Ergebnisse bündeln und Spannungen diskutieren | ⏱️ 23<br>Min |
 
 </div>
 
 ## 🧠 Globale Transformationslinien als Analysegerüst
 
-Der Einstieg über spontanes Sammeln globaler Entwicklungen wird im zweiten Schritt systematisiert. Dafür dient das 5D-Modell als verdichtetes Raster, um Wirkungen auf Arbeit, Qualifikation und Bildungsorganisation vergleichbar zu machen (vgl. <a href="#literatur">BMAS, 2017</a>; <a href="#literatur">BIBB, 2024</a>).
+Wir starten mit einem kurzen **Stimmungsbarometer**. Die Studierenden positionieren sich zur **Globalisierung** allgemein und zu ihrer Wirkung auf **Bildungssysteme**. Das Ziel ist, **unterschiedliche Perspektiven** sichtbar zu machen und die **Komplexität der Thematik** zu verdeutlichen.
+
+🧭 Um dieses Stimmungsbild systematisch zu analysieren, kann das **5D-Modell** als verdichtetes Raster genutzt werden. Es zeigt Wirkungen von **Demografie**, **Dekarbonisierung**, **Digitalisierung**, **Deglobalisierung** und **Demokratieverdrossenheit** auf **Arbeit**, **Qualifikation** und **Bildungsorganisation** (<a href="#literatur">BMAS, 2017</a>; <a href="#literatur">BIBB, 2024</a>).
 
 | 🔄 Transformationslinie | Bedeutung für Arbeit und Bildung |
 |---|---|
@@ -143,41 +145,53 @@ Der Einstieg über spontanes Sammeln globaler Entwicklungen wird im zweiten Schr
 | **Deglobalisierung** | fragile Lieferketten, Resilienz, regionale Qualifizierung |
 | **Demokratieverdrossenheit** | politische Polarisierung, Teilhabeprobleme, Legitimitätsfragen |
 
+<p class="bildquelle">Bildquelle: Eigene Darstellung in Anlehnung an <a href="#literatur">BIBB (2024)</a> · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+
+🧠 Folgende Abbildung bringt **Chancen und Verwundbarkeiten** von **Globalisierung** mit den **5D-Transformationslinien** zusammen und fragt danach, wie sich diese auf **Bildung und Arbeit** in der **beruflichen Bildung**, in der **Hochschulbildung** und in der **Weiterbildung** auswirken.
+
 <p class="grafic-title">Globalisierung und ihre Auswirkungen auf Bildung</p>
-<figure class="figure-frame">
-  <img src="auswirkungen_globalisierung_bildung.png" alt="Visualisierung der fünf Transformationslinien und ihrer Folgen für Bildung und Arbeit">
-</figure>
-<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) in Anlehnung an <a href="#literatur">BMAS (2017)</a> und <a href="#literatur">BIBB (2024)</a> · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+{{< blog_image_overlay src="auswirkungen_globalisierung_bildung.png" alt="Visualisierung der fünf Transformationslinien und ihrer Folgen für Bildung und Arbeit" id="iwip_auswirkungen_globalisierung_bildung_overlay" >}}
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) in Anlehnung an <a href="#literatur">BMAS (2017)</a> und <a href="#literatur">BIBB (2024)</a> · <br>Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 
 ## 🧩 Bildungssysteme als gesellschaftliche Antwortstrukturen
 
-Mit Fend lassen sich Bildungssysteme als Vermittlungsinstanzen zwischen Gesellschaft und Individuum lesen: Sie qualifizieren, verteilen Chancen, integrieren und legitimieren soziale Ordnung (vgl. <a href="#literatur">Fend, 2006</a>). Unter globalen Bedingungen verschiebt sich der Erwartungshorizont: Abschlüsse sollen anschlussfähig sein, Übergänge resilient organisiert werden und Teilhabe auch bei beschleunigtem Wandel möglich bleiben.
+Mit <a href="#literatur">Fend (2006)</a> lassen sich **Bildungssysteme** als **Vermittlungsinstanzen zwischen Gesellschaft und Individuum** lesen: Sie **qualifizieren**, **verteilen Chancen**, **integrieren** und **legitimieren soziale Ordnung**.
+
+🧭 Unter globalen Bedingungen erweitert sich der **Erwartungshorizont**: **Abschlüsse** sollen anschlussfähig sein, **Übergänge** resilient organisiert werden und **Teilhabe** auch bei beschleunigtem Wandel möglich bleiben.
 
 Drei Leitfragen strukturieren die Analyse:
 
-- 💭 Welche Kompetenzen und Abschlüsse sichern Teilhabe an Arbeit, Demokratie und Gesellschaft?
+- 💭 Welche Kompetenzen und Abschlüsse sichern Teilhabe an Gesellschaft, Demokratie und Arbeit?
 - 🧭 Wie werden Übergänge organisiert und Lebenschancen verteilt?
 - 🤝 Wie lassen sich Abschlüsse und Kompetenzen national wie international vergleichbar und anerkennbar machen?
 
 <p class="grafic-title">Globalisierung, Bildungsfunktionen und Systemreaktionen</p>
-<figure class="figure-frame">
-  <img src="globalisierung_bildungssystem_bildung.png" alt="Schaubild zum Zusammenhang von Globalisierung, Bildungssystemen und gesellschaftlichen Funktionen">
-</figure>
-<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) in Anlehnung an <a href="#literatur">Fend (2006)</a>, <a href="#literatur">BMAS (2017)</a> und <a href="#literatur">BIBB (2024)</a> · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+{{< blog_image_overlay src="globalisierung_bildungssystem_bildung.png" alt="Schaubild zum Zusammenhang von Globalisierung, Bildungssystemen und gesellschaftlichen Funktionen" id="iwip_globalisierung_bildungssystem_bildung_overlay" >}}
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) in Anlehnung an <a href="#literatur">Fend (2006)</a>, <a href="#literatur">BMAS (2017)</a> und <br><a href="#literatur">BIBB (2024)</a> · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+
+## 🌐 Europäische Steuerungsprozesse: Brügge-Kopenhagen- und Bologna-Prozess
+
+🌐 Europa reagiert mit **Koordinationsinstrumenten**, die **Vergleichbarkeit** erhöhen sollen:
+
+- 🧭 **Brügge-Kopenhagen-Prozess (berufliche Bildung und Weiterbildung):** Transparenz, Anerkennung, Qualität und Attraktivität beruflicher Bildung, eng mit lebenslangem Lernen verbunden (<a href="#literatur">European Commission, 2023</a>; <a href="#literatur">European Ministers for Vocational Education and Training et al., 2010</a>).
+- 🎓 **Bologna-Prozess (Hochschulbildung):** Bachelor/Master-Struktur, ECTS, Qualitätssicherung und Mobilitätsförderung (<a href="#literatur">European Ministers of Education, 1999</a>; <a href="#literatur">European Commission, 2026</a>).
+
+🤝 Insgesamt sollen der **Brügge-Kopenhagen-Prozess** und der **Bologna-Prozess** so die **Wettbewerbsfähigkeit Europas** stärken, die **Beschäftigungsfähigkeit von Absolvent:innen** erhöhen und die **europäische Integration** fördern (<a href="#literatur">European Ministers of Education, 1999</a>; <a href="#literatur">European Ministers for Vocational Education and Training et al., 2010</a>).
+
 
 ## 🤝 Drei Bildungsbereiche im Vergleich
 
-Die drei im Modul fokussierten Bereiche reagieren unterschiedlich, weil sie in verschiedene institutionelle Umwelten eingebettet sind:
+🧭 Die drei im Modul fokussierten Bereiche reagieren **unterschiedlich**, weil sie in **verschiedene institutionelle Umwelten** eingebettet sind:
 
 - 👥 **Berufliche Bildung:** enge Kopplung an Betriebe, Berufe und Fachkräftebedarf; hohe Reaktionsdynamik bei Qualifikationswandel.
 - 👩‍🏫 **Hochschulbildung:** starke Orientierung an Wissenschaft, Internationalisierung und akademischer Mobilität.
 - 🌱 **Weiterbildung:** lebenslaufbezogene Kompetenzaktualisierung, heterogene Trägerlandschaft, zentrale Rolle für Beschäftigungsfähigkeit und Teilhabe.
 
-Diese Differenzierung verhindert vorschnelle Gleichsetzungen und macht sichtbar, dass einheitliche Reformlogiken häufig unterschiedliche Nebenwirkungen erzeugen.
+🪞 Diese **Differenzierung** verhindert vorschnelle Gleichsetzungen und macht sichtbar, dass **einheitliche Reformlogiken** häufig **unterschiedliche Nebenwirkungen** erzeugen.
 
 ## 🧩 Arbeitsauftrag
 
-Analysieren Sie in Gruppen, wie ein Bildungsbereich auf globale Transformationsanforderungen reagiert.
+🧩 Analysieren Sie **in Gruppen**, wie ein **Bildungsbereich** auf **globale Transformationsanforderungen** reagiert.
 
 ### Gruppenlogik
 
@@ -187,7 +201,7 @@ Analysieren Sie in Gruppen, wie ein Bildungsbereich auf globale Transformationsa
 
 ### Rechercheauftrag
 
-Nutzen Sie mindestens **eine belastbare wissenschaftliche oder institutionelle Quelle** zur Begründung Ihrer Analyse, z. B. aus dem Kontext von BIBB, Europäischer Kommission, Cedefop oder einschlägiger Fachliteratur.
+🔎 Nutzen Sie mindestens **eine belastbare wissenschaftliche oder institutionelle Quelle** zur Begründung Ihrer Analyse, z. B. aus dem Kontext von **BIBB**, **Europäischer Kommission**, **Cedefop** oder einschlägiger **Fachliteratur**.
 
 ### Vier Analysefragen
 
@@ -198,54 +212,42 @@ Nutzen Sie mindestens **eine belastbare wissenschaftliche oder institutionelle Q
 
 ### Ergebnisformat
 
-Bereiten Sie eine kurze Ergebnisdarstellung mit Antworten auf die vier Analysefragen vor und ergänzen Sie:
+💻 Bereiten Sie eine **kurze Ergebnisdarstellung** mit Antworten auf die **vier Analysefragen** vor und ergänzen Sie:
 
-- die genutzte Quelle,
-- eine zentrale Erkenntnis,
-- eine offene Spannungsfrage für die Diskussion.
+- **die genutzte Quelle**,
+- **eine zentrale Erkenntnis**,
+- **eine offene Spannungsfrage** für die Diskussion.
+
+🌐 Halten Sie Ihre Ergebnisse auf <a href="https://www.taskcards.de/#/board/85425d57-2921-4a91-ae4d-1bcff2e6b216/view?token=a1dea74f-04b8-44d1-8d26-a5fd07ad053a" target="_blank" rel="noopener noreferrer">**Taskcards**</a>{{< blog_qr_overlay url="https://www.taskcards.de/#/board/85425d57-2921-4a91-ae4d-1bcff2e6b216/view?token=a1dea74f-04b8-44d1-8d26-a5fd07ad053a" label="Taskcards" id="iwip_taskcards_qr" >}} fest.
 
 ### Gemeinsame Sicherung
 
-Sichern Sie die Ergebnisse im Plenum über einen kompakten Vergleichsimpuls:
-
-| Vergleichsdimension | Berufliche Bildung | Hochschulbildung | Weiterbildung |
-|---|---|---|---|
-| Zentrales Problem |  |  |  |
-| Instrumente |  |  |  |
-| Lernverständnis |  |  |  |
-| Chancen/Spannungen |  |  |  |
+💬 Wir sichern Ihre Ergebnisse durch eine **Vorstellung und Diskussion im Plenum** über Ihre **Taskcards-Einträge**.
 
 🌱 **Optionaler Vertiefungshinweis:** PISA kann ergänzend als Beispiel für internationale Vergleichslogiken herangezogen werden.
 
-## 🌐 Europäische Steuerungsprozesse: Bologna und Brügge-Kopenhagen
-
-Europa reagiert nicht mit vollständiger Vereinheitlichung, sondern mit Koordinationsinstrumenten, die Vergleichbarkeit erhöhen sollen:
-
-- 🎓 **Bologna-Prozess (Hochschulbildung):** Bachelor/Master-Struktur, ECTS, Qualitätssicherung und Mobilitätsförderung (vgl. <a href="#literatur">European Ministers of Education, 1999</a>; <a href="#literatur">European Commission, 2026</a>).
-- 🧭 **Brügge-Kopenhagen-Prozess (berufliche Bildung/Weiterbildung):** Transparenz, Anerkennung, Qualität und Attraktivität beruflicher Bildung, eng mit lebenslangem Lernen verbunden (vgl. <a href="#literatur">European Commission, 2023</a>; <a href="#literatur">European Ministers for Vocational Education and Training et al., 2010</a>).
-
-Didaktisch zentral ist die Spannung: Mehr Vergleichbarkeit kann Mobilität fördern, zugleich aber Standardisierungsdruck und neue Selektivitäten verstärken.
-
 ## 🪞 Reflexion und Transfer
 
-Für die professionelle Perspektive in der Wirtschaftspädagogik heißt das: Bildungssysteme sind weder rein nationale Konstruktionen noch bloße Vollzugsorgane globaler Trends. Sie sind umkämpfte Arrangements, in denen Ziele wie Teilhabe, Qualität, Wettbewerbsfähigkeit und demokratische Integration immer wieder neu austariert werden müssen.
-
-Leitender Transferimpuls für die Sitzung:
-
-💬 Wo entstehen aus Ihrer Sicht die größten Zielkonflikte zwischen internationaler Anschlussfähigkeit und sozial gerechter Bildungsteilnahme?
-
-🎓🌍🔓 Dieser Beitrag ist als OER-Material unter CC BY-SA 4.0 veröffentlicht.
+🪞 Für die **professionelle Perspektive in der Wirtschaftspädagogik** heißt das: Bildungssysteme sind weder rein nationale Konstruktionen noch bloße Vollzugsorgane globaler Trends. Sie sind **umkämpfte Arrangements**, in denen Ziele wie **Teilhabe**, **Qualität**, **Wettbewerbsfähigkeit** und **demokratische Integration** immer wieder neu austariert werden müssen.
 
 <span id="literatur"></span>
 
-## Literatur und Quellen
+## Literatur
 
-- Bundesinstitut für Berufsbildung (BIBB). (2024). BIBB-Strategie 2030. <a href="https://www.bibb.de/dokumente/pdf/z3_bibb_strategie_2030.pdf" target="_blank" rel="noopener noreferrer">https://www.bibb.de/dokumente/pdf/z3_bibb_strategie_2030.pdf</a>
-- Bundesministerium für Arbeit und Soziales (BMAS). (2017). WEISSBUCH Arbeiten 4.0. <a href="https://www.bmas.de/SharedDocs/Downloads/DE/Publikationen/a883-weissbuch.pdf?__blob=publicationFile&amp;v=2" target="_blank" rel="noopener noreferrer">https://www.bmas.de/SharedDocs/Downloads/DE/Publikationen/a883-weissbuch.pdf?__blob=publicationFile&amp;v=2</a>
-- Europäische Kommission. (o. J.). Europäische Kompetenzagenda. Abgerufen 7. Juni 2026, von <a href="https://employment-social-affairs.ec.europa.eu/policies-and-activities/skills-and-qualifications/european-skills-agenda_de" target="_blank" rel="noopener noreferrer">https://employment-social-affairs.ec.europa.eu/policies-and-activities/skills-and-qualifications/european-skills-agenda_de</a>
-- Europäische Kommission. (2025). Empfehlung des Rates zu Schlüsselkompetenzen für lebenslanges Lernen. <a href="https://education.ec.europa.eu/de/focus-topics/improving-quality/key-competences" target="_blank" rel="noopener noreferrer">https://education.ec.europa.eu/de/focus-topics/improving-quality/key-competences</a>
-- European Commission. (2023). Vocational education and training initiatives. <a href="https://education.ec.europa.eu/education-levels/vocational-education-and-training/about-vocational-education-and-training" target="_blank" rel="noopener noreferrer">https://education.ec.europa.eu/education-levels/vocational-education-and-training/about-vocational-education-and-training</a>
-- European Commission. (2026). Bologna-Prozess und Europäischer Hochschulraum. <a href="https://education.ec.europa.eu/de/education-levels/higher-education/inclusive-and-connected-higher-education/bologna-process" target="_blank" rel="noopener noreferrer">https://education.ec.europa.eu/de/education-levels/higher-education/inclusive-and-connected-higher-education/bologna-process</a>
-- European Ministers for Vocational Education and Training, European Social Partners, & European Commission. (2010). The Bruges Communiqué on enhanced European Cooperation in Vocational Education and Training. <a href="https://ec.europa.eu/education/sites/default/files/document-library-docs/bruges-communique.pdf" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/education/sites/default/files/document-library-docs/bruges-communique.pdf</a>
-- European Ministers of Education. (1999). The Bologna Declaration of 19 June 1999. Joint declaration of the European Ministers of Education. <a href="https://ehea.info/Upload/document/ministerial_declarations/1999_Bologna_Declaration_English_553028.pdf" target="_blank" rel="noopener noreferrer">https://ehea.info/Upload/document/ministerial_declarations/1999_Bologna_Declaration_English_553028.pdf</a>
-- Fend, H. (Hrsg.). (2006). Neue Theorie der Schule: Einführung in das Verstehen von Bildungssystemen. VS Verlag für Sozialwissenschaften. <a href="https://doi.org/10.1007/978-3-531-90169-5" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/978-3-531-90169-5</a>
+Bundesinstitut für Berufsbildung (BIBB). (2024). BIBB-Strategie 2030. <a class="lit-online" href="https://www.bibb.de/dokumente/pdf/z3_bibb_strategie_2030.pdf" target="_blank" rel="noopener noreferrer" aria-label="Online-Link zur Publikation"></a>
+
+Bundesministerium für Arbeit und Soziales (BMAS). (2017). WEISSBUCH Arbeiten 4.0. <a class="lit-online" href="https://www.bmas.de/SharedDocs/Downloads/DE/Publikationen/a883-weissbuch.pdf?__blob=publicationFile&amp;v=2" target="_blank" rel="noopener noreferrer" aria-label="Online-Link zur Publikation"></a>
+
+Europäische Kommission. (o. J.). Europäische Kompetenzagenda. <a class="lit-online" href="https://employment-social-affairs.ec.europa.eu/policies-and-activities/skills-and-qualifications/european-skills-agenda_de" target="_blank" rel="noopener noreferrer" aria-label="Online-Link zur Publikation"></a>
+
+Europäische Kommission. (2025). Empfehlung des Rates zu Schlüsselkompetenzen für lebenslanges Lernen. <a class="lit-online" href="https://education.ec.europa.eu/de/focus-topics/improving-quality/key-competences" target="_blank" rel="noopener noreferrer" aria-label="Online-Link zur Publikation"></a>
+
+European Commission. (2023). Vocational education and training initiatives. <a class="lit-online" href="https://education.ec.europa.eu/education-levels/vocational-education-and-training/about-vocational-education-and-training" target="_blank" rel="noopener noreferrer" aria-label="Online-Link zur Publikation"></a>
+
+European Commission. (2026). Bologna-Prozess und Europäischer Hochschulraum. <a class="lit-online" href="https://education.ec.europa.eu/de/education-levels/higher-education/inclusive-and-connected-higher-education/bologna-process" target="_blank" rel="noopener noreferrer" aria-label="Online-Link zur Publikation"></a>
+
+European Ministers for Vocational Education and Training, European Social Partners, & European Commission. (2010). The Bruges Communiqué on enhanced European Cooperation in Vocational Education and Training. <a class="lit-online" href="https://ec.europa.eu/education/sites/default/files/document-library-docs/bruges-communique.pdf" target="_blank" rel="noopener noreferrer" aria-label="Online-Link zur Publikation"></a>
+
+European Ministers of Education. (1999). The Bologna Declaration of 19 June 1999. Joint declaration of the European Ministers of Education. <a class="lit-online" href="https://ehea.info/Upload/document/ministerial_declarations/1999_Bologna_Declaration_English_553028.pdf" target="_blank" rel="noopener noreferrer" aria-label="Online-Link zur Publikation"></a>
+
+Fend, H. (Hrsg.). (2006). Neue Theorie der Schule: Einführung in das Verstehen von Bildungssystemen. VS Verlag für Sozialwissenschaften. <a class="lit-doi" href="https://doi.org/10.1007/978-3-531-90169-5" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>

@@ -262,6 +262,7 @@ main.main {
 
 /* Basis: Literatur-Link (Text ausblenden) */
 a.lit-doi,
+a.lit-online,
 a.lit-ub,
 a.lit-worldcat {
   position: relative;
@@ -276,13 +277,14 @@ a.lit-worldcat {
 
 /* Einheitlicher Abstand zwischen Badge-Elementen und Info-Icon,
    unabhaengig von HTML-Whitespace oder Minifizierung */
-.post-content :where(a.lit-doi, a.lit-ub, a.lit-worldcat, .info_tip) {
+.post-content :where(a.lit-doi, a.lit-online, a.lit-ub, a.lit-worldcat, .info_tip) {
   margin: 0;
   vertical-align: middle;
 }
 
 /* Badge-Design (sichtbarer Teil) */
 a.lit-doi::before,
+a.lit-online::before,
 a.lit-ub::before,
 a.lit-worldcat::before {
   display: inline-block;
@@ -312,6 +314,12 @@ a.lit-worldcat::before {
 /* DOI – neutrale Blaustufe */
 a.lit-doi::before {
   content: "DOI";
+  background-color: #5F7F9E;
+}
+
+/* Online – Verweis auf Webquelle */
+a.lit-online::before {
+  content: "Online";
   background-color: #5F7F9E;
 }
 
