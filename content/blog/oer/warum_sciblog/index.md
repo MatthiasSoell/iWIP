@@ -387,7 +387,7 @@ Der SciBlog ist dabei kein Selbstzweck, sondern ein **Arbeitsmittel**, das mir e
 
 # <span class="content-emoji">📚</span> Literatur
 
-Dietrich, A., & Zug, S. (2025). AI-assisted course creation: From Markdown to interactive learning in 3 hours [Blogbeitrag]. LiaScript. [https://liascript.github.io/blog/ai-assisted-course-creation-buchstabensuppe-tutorial/](https://liascript.github.io/blog/ai-assisted-course-creation-buchstabensuppe-tutorial/) (abgerufen am 18.02.2026)  
+Dietrich, A., & Zug, S. (2025). AI-assisted course creation: From Markdown to interactive learning in 3 hours [Blogbeitrag]. LiaScript. <a class="lit-online" href="https://liascript.github.io/blog/ai-assisted-course-creation-buchstabensuppe-tutorial/" target="_blank" rel="noopener noreferrer"></a>
 
 Söll, M., & Klusmeyer, J. (2022). Akademisches Lernen und Reflexion bei der Förderung von Unterrichtsplanungskompetenz in der Wirtschaftsdidaktik. In J. Klusmeyer & D. Bosse (Hrsg.), *Konzepte reflexiver Praxisstudien in der Lehrer*innenbildun* (S. 73–114). Springer VS. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1799310981" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a>
 <a class="lit-doi" href="https://doi.org/10.1007/978-3-658-35483-1" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>

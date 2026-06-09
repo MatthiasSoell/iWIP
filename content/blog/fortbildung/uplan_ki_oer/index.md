@@ -596,11 +596,11 @@ Lipowsky, F., & Bleck, V. (2019). Was wissen wir über guten Unterricht? – Ein
 Luo, Z., & Tahir, R. (2025). ChatGPT-Assisted Lesson Planning for Children’s STEAM Arts Education: An Experimental Study on Benefits, Challenges, Methods, and a Prompt Framework. International Journal of Artificial Intelligence in Education, 35(6), 3696–3745. 
 <a class="lit-doi" href="https://doi.org/10.1007/s40593-025-00513-6" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 
-Ministerium für Bildung und Kindertagesförderung. Mecklenburg-Vorpommern (Hrsg.). (2019). Rahmenplan  für die Qualifikationsphase der gymnasialen Oberstufe. https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/unterricht/rahmenplaene/RP_WIRT_SEK2.pdf (abgerufen am 03.02.2026).
+Ministerium für Bildung und Kindertagesförderung. Mecklenburg-Vorpommern (Hrsg.). (2019). Rahmenplan  für die Qualifikationsphase der gymnasialen Oberstufe. <a class="lit-online" href="https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/unterricht/rahmenplaene/RP_WIRT_SEK2.pdf" target="_blank" rel="noopener noreferrer"></a>
 
-Ministerium für Bildung und Kindertagesförderung. Mecklenburg-Vorpommern (Hrsg.). (2023a). Rahmenplan AWT.  Regionale Schule und Gesamtschule. Klasse 7 bis 10. https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/unterricht/rahmenplaene/rp_awt_sek_I_regs.pdf (abgerufen am 03.02.2026).
+Ministerium für Bildung und Kindertagesförderung. Mecklenburg-Vorpommern (Hrsg.). (2023a). Rahmenplan AWT.  Regionale Schule und Gesamtschule. Klasse 7 bis 10. <a class="lit-online" href="https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/unterricht/rahmenplaene/rp_awt_sek_I_regs.pdf" target="_blank" rel="noopener noreferrer"></a>
 
-Ministerium für Bildung und Kindertagesförderung. Mecklenburg-Vorpommern (Hrsg.). (2023b). Rahmenplan AWT. Gymnasium. Klasse 7 bis 10. https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/unterricht/rahmenplaene/rp_awt_sek_I_gym_.pdf (abgerufen am 03.02.2026).
+Ministerium für Bildung und Kindertagesförderung. Mecklenburg-Vorpommern (Hrsg.). (2023b). Rahmenplan AWT. Gymnasium. Klasse 7 bis 10. <a class="lit-online" href="https://www.bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/unterricht/rahmenplaene/rp_awt_sek_I_gym_.pdf" target="_blank" rel="noopener noreferrer"></a>
 
 Moundridou, M., Matzakos, N., & Doukakis, S. (2024). Generative AI tools as educators’ assistants: Designing and implementing inquiry-based lesson plans. Computers and Education: Artificial Intelligence, (7, 100277), S. 1–16. <a class="lit-doi" href="https://doi.org/10.1016/j.caeai.2024.100277" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 

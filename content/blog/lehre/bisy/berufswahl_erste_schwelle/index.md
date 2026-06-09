@@ -375,7 +375,7 @@ BM (Ministerium für Bildung und Kindertagesförderung Mecklenburg-Vorpommern) (
 
 BM (Ministerium für Bildung und Kindertagesförderung Mecklenburg-Vorpommern) (o. J. 2). Berufliche Orientierung – Der Wegweiser in die berufliche Zukunft. <a class="lit-online" href="https://www.bildung-mv.de/unterricht/berufliche-orientierung/" target="_blank" rel="noopener noreferrer"></a>
 
-Bundesinstitut für Berufsbildung. (2025). Datenreport zum Berufsbildungsbericht 2025. Informationen und Analysen zur Entwicklung der berufl ichen Bildung. https://www.bibb.de/dienst/publikationen/de/20621
+Bundesinstitut für Berufsbildung. (2025). Datenreport zum Berufsbildungsbericht 2025. Informationen und Analysen zur Entwicklung der berufl ichen Bildung. <a class="lit-online" href="https://www.bibb.de/dienst/publikationen/de/20621" target="_blank" rel="noopener noreferrer"></a>
 
 Bußhoff, L. (1989). Berufswahl: Theorien und ihre Bedeutung für die Praxis der Berufsberatung. Kohlhammer.
 

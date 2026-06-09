@@ -314,13 +314,13 @@ a.lit-worldcat::before {
 /* DOI – neutrale Blaustufe */
 a.lit-doi::before {
   content: "DOI";
-  background-color: #5F7F9E;
+  background-color: #4A6FA5;
 }
 
 /* Online – Verweis auf Webquelle */
 a.lit-online::before {
   content: "Online";
-  background-color: #5F7F9E;
+  background-color: #7893AF;
 }
 
 

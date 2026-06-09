@@ -441,10 +441,10 @@ und Anreize in deren <b>Sprache, Kultur, Struktur</b> formulieren.
 ## <span class="content-emoji">📚</span> Literatur & Hinweise  
 
 
- Hart, K. de, Chetty, Y. &amp; Archer, E. (2015). <em>Uptake of OER by staff in distance education in South Africa.</em><em>International Review of Research in Open and Distributed Learning, 16</em>(2), 18–45. <a href="https://www.irrodl.org/index.php/irrodl/article/view/2047/3272" target="_blank" rel="noopener">https://www.irrodl.org/index.php/irrodl/article/view/2047/3272</a> (abgerufen am 18.02.2026) <a class="lit-worldcat" href="https://search.worldcat.org/de/title/5867419439" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
+ Hart, K. de, Chetty, Y. &amp; Archer, E. (2015). <em>Uptake of OER by staff in distance education in South Africa.</em><em>International Review of Research in Open and Distributed Learning, 16</em>(2), 18–45. <a class="lit-online" href="https://www.irrodl.org/index.php/irrodl/article/view/2047/3272" target="_blank" rel="noopener noreferrer"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/5867419439" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 
 
-Organisation internationale de la Francophonie. (2016). <em>Open Educational Resources: From commitment to action.</em> <a href="https://open-educational-resources.de/wp-content/uploads/266159eng.pdf" target="_blank" rel="noopener">https://open-educational-resources.de/wp-content/uploads/266159eng.pdf</a> (abgerufen am 18.02.2026)
+Organisation internationale de la Francophonie. (2016). <em>Open Educational Resources: From commitment to action.</em> <a class="lit-online" href="https://open-educational-resources.de/wp-content/uploads/266159eng.pdf" target="_blank" rel="noopener noreferrer"></a>
 
 Puca, R. M., &amp; Schüler, J. (2024). <em>Motivation.</em> In M. Rieger &amp; J. Müsseler (Hrsg.), <em>Allgemeine Psychologie</em> (pp. 269–301). Springer Nature. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=1907593772" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.1007/978-3-662-68476-4_8" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> 
 <span class="info_tip"

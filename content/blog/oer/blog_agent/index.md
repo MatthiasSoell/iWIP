@@ -265,14 +265,14 @@ Zugleich bleiben **Grenzen** <span class="content-emoji">⚠️</span> wichtig:
 Für die abschließende Diskussion ist vor allem interessant, welche Elemente einer solchen Infrastruktur in der eigenen Praxis tatsächlich entlasten, wo sie didaktisch überzeugen und an welchen Stellen bewusster Widerspruch nötig bleibt.
 
 <a id="literatur"></a>
-## Literatur und Quellen
+## Literatur
 
-Repository SciBlog iWIP auf github.com. Verfügbar unter: <a href="https://github.com/MatthiasSoell/iWIP" target="_blank" rel="noopener noreferrer">https://github.com/MatthiasSoell/iWIP</a>
+Repository SciBlog iWIP auf github.com. <a class="lit-online" href="https://github.com/MatthiasSoell/iWIP" target="_blank" rel="noopener noreferrer"></a>
 
-LiaScript: Teaching-Agent. Verfügbar unter: <a href="https://github.com/LiaScript/teaching-agent" target="_blank" rel="noopener noreferrer">https://github.com/LiaScript/teaching-agent</a>
+LiaScript: Teaching-Agent. <a class="lit-online" href="https://github.com/LiaScript/teaching-agent" target="_blank" rel="noopener noreferrer"></a>
 
-SciBlog iWIP: Beispielseite Hochschulbildung. Verfügbar unter: <a href="https://matthiassoell.github.io/iWIP/blog/lehre/bisy/hochschulbildung/" target="_blank" rel="noopener noreferrer">https://matthiassoell.github.io/iWIP/blog/lehre/bisy/hochschulbildung/</a>
+SciBlog iWIP: Beispielseite Hochschulbildung. <a class="lit-online" href="https://matthiassoell.github.io/iWIP/blog/lehre/bisy/hochschulbildung/" target="_blank" rel="noopener noreferrer"></a>
 
-SciBlog iWIP: Technische Infrastruktur. Verfügbar unter: <a href="https://matthiassoell.github.io/iWIP/blog/doku/doku_tech/" target="_blank" rel="noopener noreferrer">https://matthiassoell.github.io/iWIP/blog/doku/doku_tech/</a>
+SciBlog iWIP: Technische Infrastruktur. <a class="lit-online" href="https://matthiassoell.github.io/iWIP/blog/doku/doku_tech/" target="_blank" rel="noopener noreferrer"></a>
 
-SciBlog iWIP: Warum SciBlog iWIP? – Motivation, Funktionen, Learnings. Verfügbar unter: <a href="https://matthiassoell.github.io/iWIP/blog/oer/warum_sciblog/" target="_blank" rel="noopener noreferrer">https://matthiassoell.github.io/iWIP/blog/oer/warum_sciblog/</a>
+SciBlog iWIP: Warum SciBlog iWIP? – Motivation, Funktionen, Learnings. <a class="lit-online" href="https://matthiassoell.github.io/iWIP/blog/oer/warum_sciblog/" target="_blank" rel="noopener noreferrer"></a>
