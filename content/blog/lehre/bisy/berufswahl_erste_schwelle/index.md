@@ -387,7 +387,7 @@ Konsortium Bildungsberichterstattung (2006). Bildung in Deutschland: Ein indikat
 
 KMK (Kultusministerkonferenz). (2023). Grundstruktur des Bildungswesens in der Bundesrepublik Deutschland [Diagramm]. <a class="lit-online" href="https://www.kmk.org/fileadmin/Dateien/pdf/Dokumentation/de_2023.pdf" target="_blank" rel="noopener noreferrer"></a>
 
-Lent, R. W., Brown, S. D., & Hackett, G. (1994). Toward a Unifying Social Cognitive Theory of Career and Academic Interest, Choice, and Performance. Journal of Vocational Behavior, 45(1), 79–122. <a href="https://doi.org/10.1006/jvbe.1994.1027" target="_blank" rel="noopener noreferrer">https://doi.org/10.1006/jvbe.1994.1027</a>
+Lent, R. W., Brown, S. D., & Hackett, G. (1994). Toward a Unifying Social Cognitive Theory of Career and Academic Interest, Choice, and Performance. Journal of Vocational Behavior, 45(1), 79–122. <a class="lit-doi" href="https://doi.org/10.1006/jvbe.1994.1027" target="_blank" rel="noopener noreferrer"></a>
 
 Super, D. E. (1990). A Life-Span, Life-Space Approach to Career Development. In D. Brown & L. Brooks (Hrsg.), Career choice and development. Applying contemporary theories to practice (2. Aufl., S. 197–261). San Francisco & Oxford: Jossey-Bass.
 
