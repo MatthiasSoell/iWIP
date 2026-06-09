@@ -314,9 +314,9 @@ Ein möglicher Ausblick führt zum Thema **Studienabbruch**. Auch hier stellt si
 
 Autorengruppe Bildungsberichterstattung. (2024). *Bildung in Deutschland 2024. Ein indikatorengestützter Bericht mit einer Analyse zu beruflicher Bildung*. Bielefeld: wbv Publikation.
 
-DIHK-Bildungs-GmbH. (2019). *Newsletter für Ausbildungsberater, Ausbildungsbetriebe, Ausbilder und Bildungsverantwortliche in der IHK. Winter 2019*. <a href="https://www.dihk-bildungs-gmbh.de/resource/blob/38974/fee8cd4c3d9fca5aef1da74e4388a966/e-newsletter-ausbildung-winter-2019-data.pdf" target="_blank" rel="noopener noreferrer">https://www.dihk-bildungs-gmbh.de/resource/blob/38974/fee8cd4c3d9fca5aef1da74e4388a966/e-newsletter-ausbildung-winter-2019-data.pdf</a>
+DIHK-Bildungs-GmbH. (2019). *Newsletter für Ausbildungsberater, Ausbildungsbetriebe, Ausbilder und Bildungsverantwortliche in der IHK. Winter 2019*. <a class="lit-online" href="https://www.dihk-bildungs-gmbh.de/resource/blob/38974/fee8cd4c3d9fca5aef1da74e4388a966/e-newsletter-ausbildung-winter-2019-data.pdf" target="_blank" rel="noopener noreferrer"></a>
 
-Deutsche Industrie- und Handelskammer. (o. J.). *„Bachelor Professional“ und „Master Professional“*. <a href="https://www.dihk.de/de/serviceportal/qualifizierung/-bachelor-professional-und-master-professional--158272" target="_blank" rel="noopener noreferrer">https://www.dihk.de/de/serviceportal/qualifizierung/-bachelor-professional-und-master-professional--158272</a>
+Deutsche Industrie- und Handelskammer. (o. J.). *„Bachelor Professional“ und „Master Professional“*. <a class="lit-online" href="https://www.dihk.de/de/serviceportal/qualifizierung/-bachelor-professional-und-master-professional--158272" target="_blank" rel="noopener noreferrer"></a>
 
 Federkeil, G. (2013). Internationale Hochschulrankings Eine kritische Bestandsaufnahme. *Beiträge zur Hochschulforschung, 35*(2), 34–48.
 
@@ -326,11 +326,11 @@ Herrmann, U. (2011). Bildung durch Wissenschaft? Mythos „Humboldt“. In C. Ja
 
 Krücken, G. (2004). Hochschulen im Wettbewerb—Eine organisationstheoretische Perspektive. In W. Böttcher & E. Terhart (Hrsg.), *Organisationstheorie in pädagogischen Feldern* (Bd. 2, S. 286–301). VS Verlag für Sozialwissenschaften. <a class="lit-doi" href="https://doi.org/10.1007/978-3-322-80609-3" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 
-Kultusministerkonferenz. (2023). *Grundstruktur des Bildungswesens in der Bundesrepublik Deutschland* [Diagramm]. <a href="https://www.kmk.org/fileadmin/Dateien/pdf/Dokumentation/de_2023.pdf" target="_blank" rel="noopener noreferrer">https://www.kmk.org/fileadmin/Dateien/pdf/Dokumentation/de_2023.pdf</a>
+Kultusministerkonferenz. (2023). *Grundstruktur des Bildungswesens in der Bundesrepublik Deutschland* [Diagramm]. <a class="lit-online" href="https://www.kmk.org/fileadmin/Dateien/pdf/Dokumentation/de_2023.pdf" target="_blank" rel="noopener noreferrer"></a>
 
-Kultusministerkonferenz. (2025). *Das Bildungswesen in der Bundesrepublik Deutschland 2023/2024: Darstellung der Kompetenzen, Strukturen und bildungspolitischen Entwicklungen für den Informationsaustausch in Europa*. <a href="https://www.kmk.org/fileadmin/Dateien/pdf/Eurydice/DE/dossier_de_ebook.pdf" target="_blank" rel="noopener noreferrer">https://www.kmk.org/fileadmin/Dateien/pdf/Eurydice/DE/dossier_de_ebook.pdf</a>
+Kultusministerkonferenz. (2025). *Das Bildungswesen in der Bundesrepublik Deutschland 2023/2024: Darstellung der Kompetenzen, Strukturen und bildungspolitischen Entwicklungen für den Informationsaustausch in Europa*. <a class="lit-online" href="https://www.kmk.org/fileadmin/Dateien/pdf/Eurydice/DE/dossier_de_ebook.pdf" target="_blank" rel="noopener noreferrer"></a>
 
-Kultusministerkonferenz & Wirtschaftsministerkonferenz. (2009). *Bachelor- und Masterabschlüsse in der beruflichen Weiterbildung (Beschluss der Wirtschaftsministerkonferenz vom 15./16.12.2008 und der Kultusministerkonferenz vom 05.02.2009)*. <a href="https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2009/2009_02_05-Bachelor-Master-berufliche_Weiterbildung.pdf" target="_blank" rel="noopener noreferrer">https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2009/2009_02_05-Bachelor-Master-berufliche_Weiterbildung.pdf</a>
+Kultusministerkonferenz & Wirtschaftsministerkonferenz. (2009). *Bachelor- und Masterabschlüsse in der beruflichen Weiterbildung (Beschluss der Wirtschaftsministerkonferenz vom 15./16.12.2008 und der Kultusministerkonferenz vom 05.02.2009)*. <a class="lit-online" href="https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2009/2009_02_05-Bachelor-Master-berufliche_Weiterbildung.pdf" target="_blank" rel="noopener noreferrer"></a>
 
 Lundgreen, P. (1999). Mythos Humboldt in der Gegenwart: Lehre - Forschung - Selbstverwaltung. In M. G. Ash (Hrsg.), *Mythos Humboldt. Vergangenheit und Zukunft der deutschen Universitäten* (S. 145-169). Wien: Böhlau.
 
@@ -340,6 +340,6 @@ Oertel, S., & Söll, M. (2017). Universities between traditional forces and mode
 
 Söll, M. (2016). *Die Entwicklung von Studiengängen: Eine Curriculumanalyse am Beispiel der Wirtschaftspädagogik*. Detmold: Eusl.
 
-Weiß, R. (2007). Bachelor Professional - ein Beitrag zur Aufwertung der beruflichen Bildung? *BWP Berufsbildung in Wissenschaft und Praxis, 36*(4), 47-50. <a href="https://www.bwp-zeitschrift.de/dienst/publikationen/download/1256" target="_blank" rel="noopener noreferrer">https://www.bwp-zeitschrift.de/dienst/publikationen/download/1256</a>
+Weiß, R. (2007). Bachelor Professional - ein Beitrag zur Aufwertung der beruflichen Bildung? *BWP Berufsbildung in Wissenschaft und Praxis, 36*(4), 47-50. <a class="lit-online" href="https://www.bwp-zeitschrift.de/dienst/publikationen/download/1256" target="_blank" rel="noopener noreferrer"></a>
 
 Wildt, J. (2012). Praxisbezug der Hochschulbildung - Herausforderung für Hochschulentwicklung und Hochschuldidaktik. In W. Schubarth et al. (Hrsg.), *Studium nach Bologna: Praxisbezüge stärken?! Praktika als Brücke zwischen Hochschule und Arbeitsmarkt* (S. 261-278). Wiesbaden: Springer VS.

@@ -371,21 +371,21 @@ Berufswahl entsteht weder als rein freier individueller Akt noch als bloßes Pro
 
 Autorengruppe Bildungsberichterstattung. (2024). Bildung in Deutschland 2024: Ein indikatorengestützter Bericht mit einer Analyse zu beruflicher Bildung. wbv Publikation.
 
-BM (Ministerium für Bildung und Kindertagesförderung Mecklenburg-Vorpommern) (o. J. 1). Konzept „Alle werden gebraucht! Schulische Berufliche Orientierung für einen guten Übergang in Ausbildung und Beruf“. <a href="https://www.bildung-mv.de/unterricht/berufliche-orientierung/praxislerntag/" target="_blank" rel="noopener noreferrer">https://www.bildung-mv.de/unterricht/berufliche-orientierung/praxislerntag/</a>.
+BM (Ministerium für Bildung und Kindertagesförderung Mecklenburg-Vorpommern) (o. J. 1). Konzept „Alle werden gebraucht! Schulische Berufliche Orientierung für einen guten Übergang in Ausbildung und Beruf“. <a class="lit-online" href="https://www.bildung-mv.de/unterricht/berufliche-orientierung/praxislerntag/" target="_blank" rel="noopener noreferrer"></a>.
 
-BM (Ministerium für Bildung und Kindertagesförderung Mecklenburg-Vorpommern) (o. J. 2). Berufliche Orientierung – Der Wegweiser in die berufliche Zukunft. <a href="https://www.bildung-mv.de/unterricht/berufliche-orientierung/" target="_blank" rel="noopener noreferrer">https://www.bildung-mv.de/unterricht/berufliche-orientierung/</a>
+BM (Ministerium für Bildung und Kindertagesförderung Mecklenburg-Vorpommern) (o. J. 2). Berufliche Orientierung – Der Wegweiser in die berufliche Zukunft. <a class="lit-online" href="https://www.bildung-mv.de/unterricht/berufliche-orientierung/" target="_blank" rel="noopener noreferrer"></a>
 
 Bundesinstitut für Berufsbildung. (2025). Datenreport zum Berufsbildungsbericht 2025. Informationen und Analysen zur Entwicklung der berufl ichen Bildung. https://www.bibb.de/dienst/publikationen/de/20621
 
 Bußhoff, L. (1989). Berufswahl: Theorien und ihre Bedeutung für die Praxis der Berufsberatung. Kohlhammer.
 
-Deeken, S. & Butz, B. (2010). Berufsorientierung. Beitrag zur Persönlichkeitsentwicklung. <a href="https://www.bibb.de/dienst/publikationen/download/6544" target="_blank" rel="noopener noreferrer">https://www.bibb.de/dienst/publikationen/download/6544</a>
+Deeken, S. & Butz, B. (2010). Berufsorientierung. Beitrag zur Persönlichkeitsentwicklung. <a class="lit-online" href="https://www.bibb.de/dienst/publikationen/download/6544" target="_blank" rel="noopener noreferrer"></a>
 
 Holland, J. (1997). Making vocational choices. A theory of vocational personalities and work en-vironments. Odessa: Psychological Assessment Resources.
 
 Konsortium Bildungsberichterstattung (2006). Bildung in Deutschland: Ein indikatorengestützter Bericht mit einer Analyse zu Bildung und Migration. Bertelsmann.
 
-KMK (Kultusministerkonferenz). (2023). Grundstruktur des Bildungswesens in der Bundesrepublik Deutschland [Diagramm]. <a href="https://www.kmk.org/fileadmin/Dateien/pdf/Dokumentation/de_2023.pdf" target="_blank" rel="noopener noreferrer">https://www.kmk.org/fileadmin/Dateien/pdf/Dokumentation/de_2023.pdf</a>
+KMK (Kultusministerkonferenz). (2023). Grundstruktur des Bildungswesens in der Bundesrepublik Deutschland [Diagramm]. <a class="lit-online" href="https://www.kmk.org/fileadmin/Dateien/pdf/Dokumentation/de_2023.pdf" target="_blank" rel="noopener noreferrer"></a>
 
 Lent, R. W., Brown, S. D., & Hackett, G. (1994). Toward a Unifying Social Cognitive Theory of Career and Academic Interest, Choice, and Performance. Journal of Vocational Behavior, 45(1), 79–122. <a href="https://doi.org/10.1006/jvbe.1994.1027" target="_blank" rel="noopener noreferrer">https://doi.org/10.1006/jvbe.1994.1027</a>
 

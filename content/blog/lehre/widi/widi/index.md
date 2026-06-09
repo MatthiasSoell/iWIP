@@ -281,7 +281,7 @@ Sie können nun …
 
 Arndt, H. (2020). <em>Economic Education – Ökonomische Bildung.</em> FAU University Press. <a class="lit-doi" href="https://doi.org/10.25593/978-3-96147-267-3" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1140125971" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 
-Brahm, T., Ring, M. &amp; Schild, K. (o.&nbsp;J.). <em>Wirtschaft unterrichten. Offenes Lehrbuch für Wirtschaftsdidaktik.</em> <a href="https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung" target="_blank" rel="noopener noreferrer">https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung</a> (abgerufen am 17.02.2026)
+Brahm, T., Ring, M. &amp; Schild, K. (o.&nbsp;J.). <em>Wirtschaft unterrichten. Offenes Lehrbuch für Wirtschaftsdidaktik.</em> <a class="lit-online" href="https://wirtschaft-unterrichten.de/themenfelder-oekonomische-bildung" target="_blank" rel="noopener noreferrer"></a>
 
 Euler, D. &amp; Hahn, A. (2014). <em>Wirtschaftsdidaktik.</em> Haupt Verlag. <a class="lit-ub" href="https://opac.lbs-rostock.gbv.de/DB=1/XMLPRS=N/PPN?PPN=797092021" target="_blank" rel="noopener noreferrer" aria-label="Universitätsbibliothek-Rostock-Link zur Publikation"></a> <a class="lit-doi" href="https://doi.org/10.36198/9783838541648" target="_blank" rel="noopener noreferrer"></a> <a class="lit-worldcat" href="https://search.worldcat.org/de/title/1250361192" target="_blank" rel="noopener noreferrer" aria-label="WorldCat-Link zur Publikation"></a>
 

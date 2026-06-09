@@ -259,18 +259,18 @@ Die Sitzung zielt damit auf eine differenzierte Schlussfolgerung: Hochschulbildu
 
 # Literatur
 
-CBS University of Applied Sciences. (o. J.). *Duales Studium in Rostock*. <a href="https://www.cbs.de/standorte/campus-rostock?campus=Campus+Rostock" target="_blank" rel="noopener noreferrer">https://www.cbs.de/standorte/campus-rostock?campus=Campus+Rostock</a>
+CBS University of Applied Sciences. (o. J.). *Duales Studium in Rostock*. <a class="lit-online" href="https://www.cbs.de/standorte/campus-rostock?campus=Campus+Rostock" target="_blank" rel="noopener noreferrer"></a>
 
-CHE Centrum für Hochschulentwicklung. (o. J.). *Hochschulen in Mecklenburg-Vorpommern*. <a href="https://hochschuldaten.che.de/mecklenburg-vorpommern/hochschulen/" target="_blank" rel="noopener noreferrer">https://hochschuldaten.che.de/mecklenburg-vorpommern/hochschulen/</a>
+CHE Centrum für Hochschulentwicklung. (o. J.). *Hochschulen in Mecklenburg-Vorpommern*. <a class="lit-online" href="https://hochschuldaten.che.de/mecklenburg-vorpommern/hochschulen/" target="_blank" rel="noopener noreferrer"></a>
 
-Fachhochschule des Mittelstands. (o. J.). *Startseite / Studienangebot*. <a href="https://www.fh-mittelstand.de/" target="_blank" rel="noopener noreferrer">https://www.fh-mittelstand.de/</a>
+Fachhochschule des Mittelstands. (o. J.). *Startseite / Studienangebot*. <a class="lit-online" href="https://www.fh-mittelstand.de/" target="_blank" rel="noopener noreferrer"></a>
 
-Hochschule Stralsund. (o. J.). *Kooperatives Studium*. <a href="https://www.hochschule-stralsund.de/kooperatives-studium/" target="_blank" rel="noopener noreferrer">https://www.hochschule-stralsund.de/kooperatives-studium/</a>
+Hochschule Stralsund. (o. J.). *Kooperatives Studium*. <a class="lit-online" href="https://www.hochschule-stralsund.de/kooperatives-studium/" target="_blank" rel="noopener noreferrer"></a>
 
-Hochschule Wismar. (o. J.). *Duales Studium*. <a href="https://www.hs-wismar.de/studium/vor-dem-studium/passgenaues-studium/duales-studium/" target="_blank" rel="noopener noreferrer">https://www.hs-wismar.de/studium/vor-dem-studium/passgenaues-studium/duales-studium/</a>
+Hochschule Wismar. (o. J.). *Duales Studium*. <a class="lit-online" href="https://www.hs-wismar.de/studium/vor-dem-studium/passgenaues-studium/duales-studium/" target="_blank" rel="noopener noreferrer"></a>
 
-Ministerium für Wirtschaft, Infrastruktur, Tourismus und Arbeit Mecklenburg-Vorpommern. (o. J.). *Hochschulen in Mecklenburg-Vorpommern*. <a href="https://www.regierung-mv.de/Landesregierung/wm/Technologie/Hochschulen-in-MV/" target="_blank" rel="noopener noreferrer">https://www.regierung-mv.de/Landesregierung/wm/Technologie/Hochschulen-in-MV/</a>
+Ministerium für Wirtschaft, Infrastruktur, Tourismus und Arbeit Mecklenburg-Vorpommern. (o. J.). *Hochschulen in Mecklenburg-Vorpommern*. <a class="lit-online" href="https://www.regierung-mv.de/Landesregierung/wm/Technologie/Hochschulen-in-MV/" target="_blank" rel="noopener noreferrer"></a>
 
-Ministerium für Wissenschaft, Kultur, Bundes- und Europaangelegenheiten Mecklenburg-Vorpommern. (o. J.). *Hochschulen*. <a href="https://www.regierung-mv.de/Landesregierung/wkm/Wissenschaft/Hochschule/" target="_blank" rel="noopener noreferrer">https://www.regierung-mv.de/Landesregierung/wkm/Wissenschaft/Hochschule/</a>
+Ministerium für Wissenschaft, Kultur, Bundes- und Europaangelegenheiten Mecklenburg-Vorpommern. (o. J.). *Hochschulen*. <a class="lit-online" href="https://www.regierung-mv.de/Landesregierung/wkm/Wissenschaft/Hochschule/" target="_blank" rel="noopener noreferrer"></a>
 
-Neptun Werft. (o. J.). *Ausbildung*. <a href="https://www.neptunwerft.de/de/karriere/ausbildung/index.jsp" target="_blank" rel="noopener noreferrer">https://www.neptunwerft.de/de/karriere/ausbildung/index.jsp</a>
+Neptun Werft. (o. J.). *Ausbildung*. <a class="lit-online" href="https://www.neptunwerft.de/de/karriere/ausbildung/index.jsp" target="_blank" rel="noopener noreferrer"></a>

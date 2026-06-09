@@ -478,10 +478,10 @@ Beschreiben Sie die **Einbettung Ihres Materials in das Seminar**:
 <a id="quellen--weiterfuehrende-links"></a>
 ## <span class="content-emoji">📚</span> Quellen
 
-Creative Commons. (o.&nbsp;J.). *Creative Commons – Unlocking the full potential of the internet.* <a href="https://creativecommons.org" target="_blank" rel="noopener noreferrer">https://creativecommons.org</a> (abgerufen am 17.02.2026) 
+Creative Commons. (o.&nbsp;J.). *Creative Commons – Unlocking the full potential of the internet.* <a class="lit-online" href="https://creativecommons.org" target="_blank" rel="noopener noreferrer"></a> (abgerufen am 17.02.2026) 
 
-OERinfo. (o.&nbsp;J.). *Informationsstelle für Open Educational Resources.* <a href="https://open-educational-resources.de" target="_blank" rel="noopener noreferrer">https://open-educational-resources.de</a> (abgerufen am 17.02.2026) 
+OERinfo. (o.&nbsp;J.). *Informationsstelle für Open Educational Resources.* <a class="lit-online" href="https://open-educational-resources.de" target="_blank" rel="noopener noreferrer"></a> (abgerufen am 17.02.2026) 
 
-Bundeszentrale für politische Bildung (bpb). (o.&nbsp;J.). *Open Educational Resources – OER.* <a href="https://www.bpb.de/lernen/digitale-bildung/werkstatt/222073/open-educational-resources-oer/" target="_blank" rel="noopener noreferrer">https://www.bpb.de/lernen/digitale-bildung/werkstatt/222073/open-educational-resources-oer/</a> (abgerufen am 17.02.2026)
+Bundeszentrale für politische Bildung (bpb). (o.&nbsp;J.). *Open Educational Resources – OER.* <a class="lit-online" href="https://www.bpb.de/lernen/digitale-bildung/werkstatt/222073/open-educational-resources-oer/" target="_blank" rel="noopener noreferrer"></a> (abgerufen am 17.02.2026)
 
-Bundeszentrale für politische Bildung (bpb). (2016). *OER ist alles. Oder ist im Web alles OER?* <a href="https://www.bpb.de/lernen/digitale-bildung/werkstatt/222108/oer-ist-alles-oder-ist-im-web-alles-oer/" target="_blank" rel="noopener noreferrer">https://www.bpb.de/lernen/digitale-bildung/werkstatt/222108/oer-ist-alles-oder-ist-im-web-alles-oer/</a>  (abgerufen am 17.02.2026)
+Bundeszentrale für politische Bildung (bpb). (2016). *OER ist alles. Oder ist im Web alles OER?* <a class="lit-online" href="https://www.bpb.de/lernen/digitale-bildung/werkstatt/222108/oer-ist-alles-oder-ist-im-web-alles-oer/" target="_blank" rel="noopener noreferrer"></a>  (abgerufen am 17.02.2026)

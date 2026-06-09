@@ -292,9 +292,9 @@ Interessiert? Weitere Informationen findest Du hier: <a href="https://www.iwip.u
 
 ## <span class="content-emoji">📚</span> Literatur <span id="literatur"></span>
 
-Brand, A. (2025). Der Lerntypen-Mythos und seine Folgen. *Deutsches Schulportal der Robert Bosch Stiftung*. <a href="https://deutsches-schulportal.de/bildungsforschung/der-lerntypen-mythos-und-seine-folgen/" target="_blank" rel="noopener noreferrer">https://deutsches-schulportal.de/bildungsforschung/der-lerntypen-mythos-und-seine-folgen/</a>
+Brand, A. (2025). Der Lerntypen-Mythos und seine Folgen. *Deutsches Schulportal der Robert Bosch Stiftung*. <a class="lit-online" href="https://deutsches-schulportal.de/bildungsforschung/der-lerntypen-mythos-und-seine-folgen/" target="_blank" rel="noopener noreferrer"></a>
 
-Daumiller, M., & Wisniewski, B. (2022). Lerntypen - Warum es sie nicht gibt und sie sich trotzdem halten. *In-Mind, 3*. <a href="https://de.in-mind.org/article/lerntypen-warum-es-sie-nicht-gibt-und-sie-sich-trotzdem-halten" target="_blank" rel="noopener noreferrer">https://de.in-mind.org/article/lerntypen-warum-es-sie-nicht-gibt-und-sie-sich-trotzdem-halten</a>
+Daumiller, M., & Wisniewski, B. (2022). Lerntypen - Warum es sie nicht gibt und sie sich trotzdem halten. *In-Mind, 3*. <a class="lit-online" href="https://de.in-mind.org/article/lerntypen-warum-es-sie-nicht-gibt-und-sie-sich-trotzdem-halten" target="_blank" rel="noopener noreferrer"></a>
 
 Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). Improving Students' Learning With Effective Learning Techniques. *Psychological Science in the Public Interest, 14*(1), 4-58. <a class="lit-doi" href="https://doi.org/10.1177/1529100612453266" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 
@@ -304,7 +304,7 @@ Newton, P. M., & Salvi, A. (2020). How common is belief in the learning styles n
 
 Reinmann, G. (2013). Didaktisches Handeln. Die Beziehung zwischen Lerntheorien und didaktischem Design. In M. Ebner & S. Schoen (Hrsg.), *L3T. Lehrbuch für Lernen und Lehren mit Technologien*. <a class="lit-doi" href="https://doi.org/10.25656/01:8338" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 
-Reinmann, G. (2025). Strategien, Lernformen, Tugenden <a href="https://www.uni-hamburg.de/dl-portal/studium-und-lehre/strategien-lernformen-tugenden.html" target="_blank" rel="noopener noreferrer">https://www.uni-hamburg.de/dl-portal/studium-und-lehre/strategien-lernformen-tugenden.html</a>
+Reinmann, G. (2025). Strategien, Lernformen, Tugenden <a class="lit-online" href="https://www.uni-hamburg.de/dl-portal/studium-und-lehre/strategien-lernformen-tugenden.html" target="_blank" rel="noopener noreferrer"></a>
 
 Schumacher, R., & Stern, E. (2012). Neurowissenschaften und Lehr-Lern-Forschung: Welches Wissen trägt zu lernwirksamem Unterricht bei? *Die Deutsche Schule, 104*(4), 383-396. <a class="lit-doi" href="https://doi.org/10.25656/01:25740" target="_blank" rel="noopener noreferrer" aria-label="DOI-Link zur Publikation"></a>
 
