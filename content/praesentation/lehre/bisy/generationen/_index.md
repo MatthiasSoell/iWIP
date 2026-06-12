@@ -11,7 +11,7 @@ aliases:
 
 date: 2026-06-11
 lastmod: 2026-06-11
-draft: true
+draft: false
 
 outputs:
   - Reveal
