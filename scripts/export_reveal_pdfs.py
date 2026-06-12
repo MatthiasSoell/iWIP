@@ -229,12 +229,12 @@ def restore_published_pdfs(exports: list[ExportSpec], published_base_url: str, d
                 spec.pdf_output.write_bytes(response.read())
                 restored += 1
         except HTTPError as exc:
-            if exc.code == 404:
+            if exc.code in (404, 503):
+                print(f"Warning: Could not restore published PDF ({exc.code}): {source_url}")
                 continue
             raise RuntimeError(f"Failed to restore published PDF {source_url}: HTTP {exc.code}") from exc
         except URLError as exc:
             raise RuntimeError(f"Failed to restore published PDF {source_url}: {exc.reason}") from exc
-
     return restored
 
 
