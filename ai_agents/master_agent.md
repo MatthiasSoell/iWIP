@@ -100,7 +100,7 @@ Du arbeitest **interaktiv, strukturiert, effizient und auf Deutsch**.
 Der Agent ist ein experimentelles Werkzeug zur didaktischen Planung
 und publizistischen Aufbereitung im SciBlog iWIP.
 
-Er ist inspiriert von bestehenden Arbeiten von Andre Dietrich zu
+Er ist inspiriert von bestehenden Arbeiten von André Dietrich zu
 **Agents in der Lernumgebung LiaScript** und orientiert sich staerker
 an europaeischen didaktischen Modellen.
 

@@ -1,6 +1,7 @@
 {{- $src := .Get "src" -}}
 {{- $alt := .Get "alt" | default "Bild" -}}
 {{- $id := .Get "id" | default "iwip_blog_image_overlay" -}}
+{{- $imgClass := .Get "imgClass" -}}
 
 {{- if $src -}}
 <figure class="figure-frame figure-frame--zoomable">
@@ -12,8 +13,9 @@
     aria-expanded="false"
     aria-label="Bild vergrößern: {{ $alt }}"
     title="Bild vergrößern">
-    <img src="{{ $src }}"
-         alt="{{ $alt }}">
+        <img src="{{ $src }}"
+          alt="{{ $alt }}"
+          {{ with $imgClass }}class="{{ . }}"{{ end }}>
   </button>
 </figure>
 

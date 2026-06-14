@@ -916,7 +916,6 @@ body.dark .oer-meta [data-tooltip]::after {
   max-width: 100%;
 }
 
-
 /* Dark Mode – Tabellen, Figure-Frames und OER-Zitiervorschlag
    Hält Dark-Mode-Flächen konsistent, ohne den Light Mode anzutasten. */
 :is(body.dark, [data-theme="dark"]) :is(.post-content table, .agenda) {
@@ -1265,6 +1264,20 @@ body.dark .oer-meta [data-tooltip]::after {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.iwip_blog_image_trigger img.blog-image-inner-medium {
+  width: min(72%, 700px);
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .iwip_blog_image_trigger img.blog-image-inner-medium {
+    width: 100%;
+  }
 }
 
 .iwip_blog_image_trigger:focus-visible {
