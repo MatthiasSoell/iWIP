@@ -124,14 +124,21 @@ Kuratierungsprinzipien:
 - **Schlüsselkonzepte**: Bildung und Arbeit, Bildungswege, Übergänge, Beruflichkeit, Akademisierung, lebenslanges Lernen, gesellschaftlicher Wandel
 - **Verweishaken**: Bei Semestermitten und Zwischenbilanzen in Bildungssystem-Modulen; bei der Verknüpfung mehrerer Bildungsbereiche auf eine gemeinsame Leitfrage; beim Übergang von Systemthemen zu Digitalisierung, New Work und Wandel der Arbeitswelt
 
-## 16. Nachhaltigkeit – Welche Rolle spielt Bildung?
+## 16. Was nehmen wir mit? Zentrale Erkenntnisse und Themenfindung für die Hausarbeit
+- **Pfad**: content/blog/lehre/bisy/erkenntnisse/index.md
+- **Bereich**: Lehre
+- **Kernthemen**: Verdichtung zentraler Modulinhalte, individuelle Erkenntnislandkarten, Bündelung von Zusammenhängen, offenen Fragen und Spannungen, Überleitung zur Hausarbeit, Entwicklung erster Themen und Fragestellungen mit TaskCards
+- **Schlüsselkonzepte**: Bildungssysteme, Modulreflexion, Erkenntnislandkarte, Themenfindung, Hausarbeit, Fragestellung, TaskCards
+- **Verweishaken**: Bei Sitzungen zur Modulverdichtung; beim Übergang von inhaltlicher Reflexion zur Hausarbeit; bei der Entwicklung erster wissenschaftlicher Fragestellungen in kleinen Online-Settings
+
+## 17. Nachhaltigkeit – Welche Rolle spielt Bildung?
 - **Pfad**: content/blog/lehre/bisy/nachhaltigkeit/index.md
 - **Bereich**: Lehre
 - **Kernthemen**: Nachhaltigkeit als gesellschaftliches Leitbild und bildungssystemische Herausforderung, Agenda 2030 und SDG 4, globale und nationale Bildungsungleichheiten, Bildung für nachhaltige Entwicklung, Berufsbildung für nachhaltige Entwicklung, Standardberufsbildpositionen, NaVeBb als Beispiel für die Übersetzung in berufliche Handlungskontexte
 - **Schlüsselkonzepte**: Brundtland-Bericht, Nachhaltigkeitsdimensionen, SDG 4, SDG 4.7, BNE, BBNE, Standardberufsbildpositionen, NaVeBb
 - **Verweishaken**: Bei Einordnungen von Nachhaltigkeit im Bildungssystem; bei der Verbindung globaler Nachhaltigkeitsziele mit beruflicher Bildung; bei Analysen von BBNE-Materialien und nachhaltigkeitsbezogenen Handlungssituationen
 
-## 17. SciBlog iWIP und didaktischer Agent: Orientierung statt Tool Zoo
+## 18. SciBlog iWIP und didaktischer Agent: Orientierung statt Tool Zoo
 - **Pfad**: content/blog/oer/blog_agent/index.md
 - **Bereich**: OER
 - **Kernthemen**: SciBlog als integrierte OER-Infrastruktur, blog-first-Workflow, Tool-Zoo als Ausgangsproblem, didaktisch spezialisierter Agent, Verbindung von Blog und Präsentation
