@@ -15,7 +15,10 @@ Arbeite strikt nach:
 
 - `project_governance/plan_core.md`
 - `ai_agents/master_agent.md`
-- `ai_agents/didaktisches_qualitaetsmodell.md`
+- `ai_agents/didaktisches_qualitaetsmodell_core.md`
+
+Das vollstaendige DQM wird nur unter den im PLAN Core definierten
+Lazy-Loading-Bedingungen zusaetzlich geladen.
 
 Template-Ladelogik fuer `/PLAN`:
 

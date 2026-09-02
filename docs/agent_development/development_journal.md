@@ -1264,3 +1264,288 @@ permanente Verfügbarkeit des vollständigen DQM zur Qualität und zum Tokenverb
 leistet.
 
 B1.2 ist wiederum gegen B0 und B1.1 mit demselben H01-Benchmark zu prüfen.
+
+## B1.2 – DQM-Core-Ablation
+
+### Ziel und Hypothese
+
+B1.2 ersetzt im normalen PLAN-Pflichtkontext ausschließlich das vollständig
+geladene didaktische Qualitätsmodell durch einen kompakten DQM-Core. Die
+Hypothese lautet, dass die entscheidungsrelevanten didaktischen Heuristiken für
+normale PLAN-Aufgaben damit erhalten bleiben, während der statische
+Pflichtkontext weiter sinkt. Die tatsächliche Wirkung auf Qualität und
+Tokenverbrauch kann erst der noch ausstehende Benchmark zeigen.
+
+### Umsetzung
+
+- `ai_agents/didaktisches_qualitaetsmodell_core.md` wurde als verpflichtender
+  didaktischer Referenz- und Diagnoserahmen für normale PLAN-Aufgaben
+  eingeführt.
+- Das vollständige `ai_agents/didaktisches_qualitaetsmodell.md` bleibt
+  unverändert als vertiefende DQM-Reference erhalten.
+- Angepasst wurden ausschließlich `AGENTS.md`,
+  `project_governance/plan_core.md`, `ai_agents/master_agent.md`,
+  `prompts/plan.md` und dieses Development Journal; neu hinzugekommen ist die
+  DQM-Core-Datei.
+
+### Lazy Loading des vollständigen DQM
+
+Die kanonische Lazy-Loading-Regel liegt in
+`project_governance/plan_core.md`. Das vollständige DQM wird zusätzlich nur
+geladen bei:
+
+- expliziter theoretischer oder wissenschaftlicher Vertiefung,
+- einem mit dem Core nicht ausreichend auflösbaren didaktischen Grenz- oder
+  Konfliktfall mit ernsthaft kollidierenden DQM-Prinzipien,
+- explizit vertiefter oder formaler DQM-Prüfung,
+- spezifischer Vertiefung, die im Core bewusst nicht vollständig enthalten
+  ist, etwa detaillierter Kompetenzmodellierung, Reflexions-, Feedback- oder
+  Adaptivitäts-/Differenzierungsmodellen oder Bachelor-/Master-Progression.
+
+Normale PLAN-Überarbeitungen und Ziel-Mittel-Spannungen,
+Multiperspektivität, Profil B oder C, einzelne Lernhürden, kritisches Sparring
+und H01 lösen kein automatisches Laden aus. Formale FINAL-Prüfungen dürfen
+weiterhin auf das vollständige DQM zugreifen.
+
+### Bewusst unverändert
+
+Unverändert bleiben insbesondere das vollständige DQM, `prompts/check.md`,
+die FINAL-Prüflogik, KDM/KDM-Core, Planning State, Tasks und allgemeines
+Routing, Learner Lens und weitere Review Lenses, Profile,
+Multi-Agent-Strukturen, Research-Architektur, allgemeine Token- oder
+Call-Optimierungen sowie die bestehenden Dialog-, Autonomie-, Gate-,
+Spannungs- und Prozessregeln außerhalb der notwendigen DQM-Umschaltung.
+
+### Statischer Pflichtkontext nach Implementierung
+
+Der normale B1.2-PLAN-Pflichtkontext besteht aus:
+
+1. `AGENTS.md`
+2. `project_governance/plan_core.md`
+3. `ai_agents/master_agent.md`
+4. `ai_agents/didaktisches_qualitaetsmodell_core.md`
+5. `prompts/plan.md`
+
+Die neue DQM-Core-Datei umfasst exakt 261 Zeilen, 1.363 Wörter und 12.378
+Bytes. Der gesamte normale B1.2-PLAN-Pflichtkontext umfasst exakt 638 Zeilen,
+4.312 Wörter und 37.116 Bytes (Dateisummen mit `wc`).
+
+Gegenüber B1.1 mit 1.473 Zeilen, 7.667 Wörtern und 64.672 Bytes entspricht
+dies einer Reduktion des statischen Pflichtkontexts um 56,69 % bei den Zeilen,
+43,76 % bei den Wörtern und 42,61 % bei den Bytes.
+
+Gegenüber B0 mit 2.127 Zeilen, 15.140 Wörtern und 130.407 Bytes entspricht
+dies einer Reduktion des statischen Pflichtkontexts um 70,00 % bei den Zeilen,
+71,52 % bei den Wörtern und 71,54 % bei den Bytes.
+
+Aus diesen statischen Kontextwerten wird keine proportionale Tokenersparnis
+abgeleitet. H01 wurde noch nicht ausgeführt; Benchmarkresultate und tatsächliche
+Tokenwirkung stehen aus.
+
+## B1.2 – DQM-Core-Ablation: Benchmark und Ergebnis
+
+### Ziel
+
+B1.2 prüft, ob das vollständige didaktische Qualitätsmodell im normalen
+PLAN-Modus durch einen kompakten DQM-Core ersetzt werden kann, ohne die
+didaktische Qualität des Agenten im etablierten H01-Regressionsfall zu
+verschlechtern.
+
+Gegenüber B1.1 wurde ausschließlich die didaktische Referenzarchitektur
+verändert:
+
+- `ai_agents/didaktisches_qualitaetsmodell_core.md` wurde als verpflichtender
+  didaktischer Referenz- und Diagnoserahmen für normale PLAN-Aufgaben
+  eingeführt.
+- Das vollständige `ai_agents/didaktisches_qualitaetsmodell.md` blieb
+  unverändert als vertiefende DQM-Reference erhalten.
+- Das vollständige DQM wird im normalen PLAN-Modus nur unter den im PLAN-Core
+  definierten Lazy-Loading-Bedingungen zusätzlich geladen.
+- Dialog-, Autonomie-, Gate-, Spannungs- und Prozessregeln wurden nicht
+  verändert.
+- KDM, Planning State, Tasks, Review Lenses, Multi-Agent-Strukturen und
+  Research-Architektur blieben außerhalb von B1.2.
+
+Damit bildet B1.2 eine kontrollierte Ablation des permanent geladenen
+vollständigen DQM.
+
+### Statischer PLAN-Pflichtkontext
+
+Der normale B1.2-PLAN-Pflichtkontext umfasst:
+
+1. `AGENTS.md`
+2. `project_governance/plan_core.md`
+3. `ai_agents/master_agent.md`
+4. `ai_agents/didaktisches_qualitaetsmodell_core.md`
+5. `prompts/plan.md`
+
+Gemessener Umfang:
+
+| Stand | Zeilen | Wörter | Bytes |
+|---|---:|---:|---:|
+| B0 | 2.127 | 15.140 | 130.407 |
+| B1.1 | 1.473 | 7.667 | 64.672 |
+| B1.2 | 638 | 4.312 | 37.116 |
+
+B1.2 reduziert den statischen Pflichtkontext damit gegenüber B1.1 um
+43,76 % bei den Wörtern und 42,61 % bei den Bytes. Gegenüber B0 beträgt
+die Reduktion 71,52 % bei den Wörtern und 71,54 % bei den Bytes.
+
+Aus dieser statischen Reduktion wird keine proportionale Tokenersparnis
+abgeleitet. Statischer Pflichtkontext und kumulierte Laufzeit-Usage sind
+unterschiedliche Messgrößen.
+
+### Benchmark-Setup
+
+Für die Regression wurde erneut H01 verwendet.
+
+- Datum: 02.09.2026
+- Modell: `gpt-5.6-sol`
+- Reasoning-Level: `low`
+- Session-ID: `01a0627d-8a31-7f02-8f8a-b96b7f7861ae`
+- Thread: `Analysiere didaktische Spannungen`
+- lokales Session-Log:
+  `/Users/matthias/.codex/sessions/2026/09/02/rollout-2026-09-02T16-19-49-01a0627d-8a31-7f02-8f8a-b96b7f7861ae.jsonl`
+
+Verwendet wurden die fünf Original-Prompts H01.1 bis H01.5 aus
+`benchmark/inputs/H01_DIALOG.md` in der vorgesehenen Reihenfolge.
+
+Bei H01.2 enthielt der in der IDE übermittelte Text lediglich eine
+Markdown-Fetthervorhebung der ersten Zeile. Der Wortlaut und die Semantik
+des Auftrags blieben unverändert.
+
+Bewertet wurden ausschließlich die Antworten bis zum vollständig
+abgeschlossenen H01.5-Turn.
+
+### Qualitätsauswertung
+
+| Zug | Qualität | Drift | unnötige Rückfragen |
+|---|---:|---:|---:|
+| H01.1 | 15/15 | 0 | 0 |
+| H01.2 | 15/15 | 0 | 0 |
+| H01.3 | 15/15 | 0 | 0 |
+| H01.4 | 15/15 | 0 | 0 |
+| H01.5 | 15/15 | 0 | 0 |
+| **Gesamt** | **75/75** | **0** | **0** |
+
+B1.2 erfüllt damit im H01-Regressionsfall den vollständigen
+Erwartungshorizont.
+
+Insbesondere:
+
+- H01.1 priorisiert eine zentrale didaktische Spannung und überschreitet die
+  vorgegebene Obergrenze nicht.
+- H01.2 entwickelt genau zwei begründete didaktische Zuspitzungen.
+- Die Entscheidung für Variante 1 bleibt in H01.3 bis H01.5 stabil.
+- H01.3 entwickelt einen kohärenten Ablauf von exakt 90 Minuten.
+- H01.4 verändert ausschließlich die Arbeitsaufträge.
+- H01.5 liefert ausschließlich das verlangte fragmentfähige HTML.
+- Es erfolgt keine externe Recherche.
+- Es werden keine neuen fachlichen Quellen oder Inhalte eingeführt.
+- Es erfolgt keine vorzeitige itslearning-Beratung.
+- Es werden keine Dateien verändert.
+
+### Technische Usage
+
+Die Usage wurde direkt aus dem lokalen JSONL-Session-Log bis zum
+abgeschlossenen H01.5-Turn bestimmt.
+
+| Kennzahl | B0 | B1.1 Clean | B1.2 |
+|---|---:|---:|---:|
+| Input | 229.974 | 249.791 | 156.653 |
+| Cached Input | 198.912 | 222.976 | 137.344 |
+| Uncached Input | 31.062 | 26.815 | 19.309 |
+| Output | 4.234 | 4.282 | 4.406 |
+| Reasoning Output | 780 | 1.104 | 1.103 |
+| Total | 234.208 | 254.073 | 161.059 |
+| Modellaufrufe | 7 | 8 | 6 |
+
+Gegenüber B1.1 Clean verändert sich B1.2 wie folgt:
+
+- Input: −37,29 %
+- Cached Input: −38,40 %
+- Uncached Input: −27,99 %
+- Output: +2,90 %
+- Reasoning Output: −0,09 %
+- Total: −36,61 %
+- Modellaufrufe: 8 → 6
+
+Gegenüber B0:
+
+- Input: −31,88 %
+- Cached Input: −30,95 %
+- Uncached Input: −37,84 %
+- Output: +4,06 %
+- Reasoning Output: +41,41 %
+- Total: −31,23 %
+- Modellaufrufe: 7 → 6
+
+Die fünf Nutzereingaben erzeugten sechs Modellaufrufe. H01.1 erforderte
+aufgrund des initialen Tool-/Dateizugriffs zwei Aufrufe; H01.2 bis H01.5
+jeweils einen.
+
+Die Reduktion der kumulierten Usage darf nicht allein kausal auf die
+Verkleinerung des statischen Pflichtkontexts zurückgeführt werden. Neben
+dem kleineren Kontext wirkt insbesondere die geringere Anzahl der
+Modellaufrufe auf die kumulierten Werte.
+
+### Prüfung der Ablation
+
+Während des H01-Benchmarks wurde das vollständige
+`ai_agents/didaktisches_qualitaetsmodell.md` nicht geladen.
+
+Beim initialen Tool-/Dateizugriff wurden ausschließlich geladen:
+
+- `project_governance/plan_core.md`
+- `ai_agents/master_agent.md`
+- `ai_agents/didaktisches_qualitaetsmodell_core.md`
+- `prompts/plan.md`
+- `benchmark/inputs/H01_AGENT_INPUT.md`
+
+Vorkommen des vollständigen DQM-Pfads im Session-Log stammen aus den
+Lazy-Loading-Instruktionen. Ein tatsächlicher Lesezugriff auf die vollständige
+DQM-Datei erfolgte nicht.
+
+Damit ist die B1.2-H01-Ablation hinsichtlich des vollständigen DQM nicht
+kontaminiert.
+
+### Vergleich der bisherigen Entwicklungsstände
+
+| Stand | H01-Qualität | Drift | unnötige Rückfragen | statischer Kontext | Total Usage |
+|---|---:|---:|---:|---:|---:|
+| B0 | 75/75 | 0 | 0 | 130.407 B | 234.208 |
+| B1.1 Clean | 74/75 | 0 | 0 | 64.672 B | 254.073 |
+| B1.2 | 75/75 | 0 | 0 | 37.116 B | 161.059 |
+
+B1.2 erreicht damit im H01-Regressionsfall wieder das Qualitätsniveau von B0,
+während der statische Pflichtkontext gegenüber B0 um 71,54 % und die
+kumulierte Total Usage in diesem Lauf um 31,23 % geringer ausfallen.
+
+### Bewertung und Entscheidung
+
+**B1.2 gilt für den H01-Regressionsfall als bestanden.**
+
+Der DQM-Core erhält in diesem Test die für die Planung erforderliche
+didaktische Diagnose- und Entscheidungsqualität. Das vollständige DQM muss
+für diesen normalen PLAN-Fall nicht permanent im Kontext liegen.
+
+Das Ergebnis rechtfertigt daher keinen Rückbau auf das vollständige DQM als
+PLAN-Pflichtkontext. Ebenso ergibt sich derzeit kein Anlass, den DQM-Core
+weiter zu komprimieren.
+
+H01 ist allerdings nur ein definierter Regressionsfall. Das Ergebnis ist
+kein Nachweis allgemeiner Gleichwertigkeit von DQM-Core und vollständigem
+DQM über alle didaktischen Aufgaben, Profile und Grenzfälle hinweg.
+
+### Konsequenz für B1.3
+
+Der in B1.2 erreichte DQM-Core bleibt zunächst unverändert.
+
+B1.3 untersucht als nächste isolierte Architekturänderung die Trennung von:
+
+- didaktischer Produktqualität (DQM),
+- Qualität des ko-konstruktiven Planungsdialogs (KDM),
+- sowie bestehender redundanter Prozess- und Dialogsteuerung.
+
+Planning State, Learner Lens, weitere Review Lenses, Multi-Agent-Architektur
+und Research-Architektur bleiben weiterhin außerhalb dieses Schritts.

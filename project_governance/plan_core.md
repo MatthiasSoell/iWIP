@@ -1,10 +1,10 @@
 # PLAN Core — Didaktische Planung
 
-Kontext: minimale normative Steuerung fuer den normalen didaktischen PLAN-Modus in B1.1
+Kontext: minimale normative Steuerung fuer den normalen didaktischen PLAN-Modus in B1.2
 
 Dieser Core enthaelt ausschliesslich die fuer `P1` und `P2` benoetigten Regeln
-des B0-Agent-Contracts. Das vollstaendige DQM bleibt verbindlicher
-Pflichtkontext. Produktions- und Finalisierungsdetails werden erst durch die in
+des B0-Agent-Contracts. Der DQM-Core ist der verbindliche didaktische
+Referenzrahmen. Produktions- und Finalisierungsdetails werden erst durch die in
 `AGENTS.md` definierten Gates geladen; Forschungsdetails bleiben inaktiv.
 
 Bei Konflikten innerhalb des normalen PLAN-Kontexts hat dieser Core Vorrang.
@@ -63,7 +63,7 @@ Arbeitsbefehle haben Vorrang.
 3. Bei erkennbaren didaktischen Spannungen beginnt die Antwort direkt mit der fachlichen Diagnose. Der Agent benennt genau eine zentrale Spannung in einem klaren Ziel-Mittel-Satz mit Bezug auf die betroffene DQM-Dimension. Danach folgt genau eine kurze Anschlussfrage oder eine konkrete Empfehlung.
 4. Wenn mehrere Klaerungsbedarfe bestehen, wird sichtbar nur die naechste entscheidende Rueckfrage gestellt. Parallele Rueckfrageketten sind unzulaessig. Vorhandene Informationen werden vorrangig genutzt.
 5. Das didaktische Profil A ist Default. Bei klaren Hinweisen kann der Agent Profil B oder C knapp begruendet vorschlagen, ohne eine routinemaessige Profilabfrage zu erzwingen. Bewusst begruendete Profilmischungen bleiben zulaessig.
-6. Das vollstaendige `ai_agents/didaktisches_qualitaetsmodell.md` ist das einzige didaktische Referenzmodell fuer Profilgewichtung, Struktur, Diagnose und Bewertung. Es wird in B1.1 nicht komprimiert.
+6. `ai_agents/didaktisches_qualitaetsmodell_core.md` ist der verbindliche didaktische Referenzrahmen fuer Profilgewichtung, Struktur, Diagnose und Bewertung im normalen PLAN-Modus.
 7. Spezifische Quellenangaben duerfen nur aus belastbaren Grundlagen kommen: Nutzervorgaben, Projektquellen, allgemein bekannte Modelle oder dokumentierte Blogartikel der Wissensbasis. Konkrete Studien, DOI-Angaben oder Publikationsdetails duerfen nicht erfunden werden.
 8. Hochgeladene oder explizit benannte Materialien werden fuer Analyse und Fortfuehrung vor Nachbau priorisiert. Daraus folgt keine implizite Artefakterzeugung oder Finalisierung.
 9. Geaendert werden nur Zielartefakte und explizit freigegebene Nachbardateien. Uebersichtsseiten, Nachbar-Bundles oder sonstige Repo-Dateien duerfen ohne ausdruecklichen Auftrag nicht mitgeaendert werden.
@@ -99,6 +99,28 @@ detaillierten Ablauf, keine fertigen Arbeitsauftraege oder Materialien und
 keinen vollstaendigen Blog- oder Praesentationsentwurf.
 
 ## Inaktive und lazy geladene Bereiche
+
+Das vollstaendige `ai_agents/didaktisches_qualitaetsmodell.md` bleibt die
+vertiefende DQM-Reference und wird im normalen PLAN-Modus nur zusaetzlich
+geladen bei:
+
+- expliziter theoretischer oder wissenschaftlicher Vertiefung, etwa zu
+  didaktischen Theorien, Modellen, Autor:innen, wissenschaftlich referenzierter
+  Begruendung oder der Herleitung eines DQM-Kriteriums oder Profils,
+- einem didaktischen Grenz- oder Konfliktfall, in dem mehrere DQM-Prinzipien
+  ernsthaft kollidieren und der Core keine ausreichend differenzierte
+  Beurteilung ermoeglicht,
+- einer explizit vertieften oder formalen DQM-Pruefung, etwa entlang aller
+  Dimensionen, zu einer einzelnen Dimension oder als formaler Pruefbericht,
+- spezifischer Vertiefung, die der Core bewusst nicht vollstaendig enthaelt,
+  etwa detaillierter Kompetenzmodellierung, Reflexions-, Feedback- oder
+  Adaptivitaets-/Differenzierungsmodellen oder Bachelor-/Master-Progression.
+
+Normale Ziel-Mittel-Spannungen reichen nicht aus. Das vollstaendige DQM wird
+insbesondere nicht automatisch bei normalen PLAN-Ueberarbeitungen,
+Multiperspektivitaet, Profil B oder C, einzelnen Lernhuerden, kritischem
+Sparring oder H01 geladen. Formale FINAL-Pruefungen duerfen weiterhin auf die
+vollstaendige DQM-Reference zugreifen.
 
 Der Research-Adapter ist derzeit fuer die persoenliche KO-PLAN-Nutzung inaktiv
 und wird im normalen PLAN-Modus nicht geladen. Der vollstaendige B0-Stand bleibt

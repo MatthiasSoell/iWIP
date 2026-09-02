@@ -4,17 +4,15 @@ This file only connects Codex to the existing agent specification. It does not a
 new pedagogical rules.
 
 For normal didactic planning requests, including `/PLAN`, read and follow only
-these B1.1 core files:
+these B1.2 core files:
 
 1. `project_governance/plan_core.md`
 2. `ai_agents/master_agent.md`
-3. `ai_agents/didaktisches_qualitaetsmodell.md`
+3. `ai_agents/didaktisches_qualitaetsmodell_core.md`
 4. `prompts/plan.md`
 
-The PLAN core has priority if these files conflict. Keep the complete DQM loaded.
-For normal `/PLAN`, the two legacy references inside the unchanged DQM to
-`project_governance/agent_contract.md` resolve to `project_governance/plan_core.md`;
-they do not trigger loading the B0 contract.
+The PLAN core has priority if these files conflict. The complete DQM is loaded
+only under the lazy-loading conditions defined in the PLAN core.
 
 Load production and finalization details only at their gates:
 
