@@ -1113,3 +1113,154 @@ Bytes.
 Der nächste Schritt ist ein H01-Vergleich B1.1 gegen B0 unter möglichst gleichen
 Bedingungen. Bis dahin ist B1.1 eine benchmarkbereite Experimentvariante, aber
 keine neue Referenz.
+
+## B1.1 – Entkopplung des normalen PLAN-Kontexts
+
+### Ziel
+
+B1.1 prüft, ob sich der verpflichtend geladene Kontext des KO-PLAN-Agenten deutlich
+reduzieren und modularisieren lässt, ohne die im B0-Benchmark beobachtete didaktische
+Qualität und Dialogtreue substanziell zu verschlechtern.
+
+B1.1 verändert bewusst noch nicht das didaktische Qualitätsmodell (DQM). Insbesondere
+bleibt das vollständige DQM weiterhin verpflichtender Bestandteil des normalen
+PLAN-Kontexts. Damit soll die Wirkung der Kontextentkopplung möglichst isoliert
+beobachtet werden.
+
+### Architekturänderung
+
+Für den normalen PLAN-Pfad wurde ein kompakter `plan_core.md` eingeführt. Forschungs-,
+Produktions- und Finalisierungsregeln werden nicht mehr generell geladen, sondern nur
+noch bei entsprechendem Bedarf. Auch `low_noise_response_patterns.md` ist nicht mehr
+Bestandteil des normalen PLAN-Pflichtkontexts.
+
+Der verpflichtende normale PLAN-Kontext reduzierte sich dadurch von:
+
+- B0: 130.407 Bytes, 15.140 Wörter, 2.127 Zeilen
+- B1.1: 64.672 Bytes, 7.667 Wörter, 1.473 Zeilen
+
+Dies entspricht einer Reduktion um ca. 50,4 % bei den Bytes und 49,4 % bei den Wörtern.
+
+Das vollständige DQM blieb unverändert.
+
+### Benchmark
+
+B1.1 wurde mit dem bestehenden H01-Benchmark und den fünf unveränderten Dialogschritten
+aus `benchmark/inputs/H01_DIALOG.md` geprüft.
+
+Modell und Laufzeitkonfiguration:
+
+- Modell: `gpt-5.6-sol`
+- Reasoning: `low`
+- Benchmark: H01
+- Dialogschritte: H01.1–H01.5
+- Calls: 8
+
+Der Clean-Lauf ist dokumentiert unter:
+
+`benchmark/runs/B1.1-codex-clean/summary.md`
+
+Ein vorheriger B1.1-Pilotlauf ist nicht als direkter Qualitätsvergleich mit B0 zu
+verwenden, da H01.3–H01.5 versehentlich nicht mit den originalen Benchmark-Prompts
+durchgeführt wurden. Der Pilot bleibt als Entwicklungsartefakt erhalten, wird aber
+methodisch vom Clean-Lauf getrennt.
+
+### Qualitätsbefund
+
+B0:
+
+- Qualität: 75/75
+- Drift: 0
+- unnötige Rückfragen: 0
+
+B1.1 Clean:
+
+- H01.1: 14/15
+- H01.2: 15/15
+- H01.3: 15/15
+- H01.4: 15/15
+- H01.5: 15/15
+- Gesamt: 74/75
+- Drift: 0
+- unnötige Rückfragen: 0
+
+Der einzige Punktverlust entstand in H01.1: Gefordert waren höchstens drei zentrale
+Spannungen; die Antwort benannte inhaltlich vier. Dafür wurde ein Punkt bei der
+Auftragstreue abgezogen.
+
+Weitere relevante Abweichungen wurden nicht festgestellt. Insbesondere wurde die in
+H01.2 getroffene Entscheidung für die erste Variante in den folgenden Dialogschritten
+stabil beibehalten.
+
+B1.1 wird deshalb hinsichtlich der beobachteten didaktischen Qualität als praktisch
+qualitätserhaltend bewertet. Der Unterschied von 75/75 zu 74/75 liefert im vorliegenden
+Einzelfall keinen Hinweis auf eine substanzielle Verschlechterung.
+
+### Token- und Effizienzbefund
+
+Die Usage-Daten von B0 und B1.1 Clean wurden direkt aus den jeweiligen lokalen
+Codex-Sessionlogs ermittelt. Damit beruhen beide Messungen auf derselben Methode.
+
+| Metrik | B0 | B1.1 Clean | Veränderung |
+|---|---:|---:|---:|
+| Input | 229.974 | 249.791 | +8,6 % |
+| Cached Input | 198.912 | 222.976 | +12,1 % |
+| Uncached Input | 31.062 | 26.815 | -13,7 % |
+| Output | 4.234 | 4.282 | +1,1 % |
+| Reasoning Output | 780 | 1.104 | +41,5 % |
+| Total | 234.208 | 254.073 | +8,5 % |
+| Calls | 7 | 8 | +1 |
+
+Die lokal verifizierten B0-Werte entsprechen exakt den zuvor dokumentierten Werten.
+
+### Interpretation
+
+B1.1 erreicht das Architekturziel: Der verpflichtende statische PLAN-Kontext wurde
+ungefähr halbiert und fachlich bzw. funktional stärker entkoppelt, während die im
+H01-Benchmark beobachtete Qualität praktisch erhalten blieb.
+
+Die starke Reduktion des statischen Pflichtkontexts führt jedoch nicht zu einer
+entsprechenden Reduktion des kumulierten Tokenverbrauchs. Der gesamte Input steigt
+im Clean-Lauf sogar um 8,6 %. Gleichzeitig sinkt der uncached Input um 13,7 %.
+
+Damit zeigt B1.1, dass die Größe des statischen Pflichtkontexts allein kein
+hinreichender Indikator für den kumulierten Tokenverbrauch eines agentischen
+Codex-Laufs ist. Unterschiede in Modellaufrufen, wiederverwendetem Cache und
+Laufverhalten müssen bei der Effizienzbewertung berücksichtigt werden.
+
+Die Ursache für die gegenüber B0 höhere Zahl der Calls und den höheren kumulierten
+Input lässt sich aus B1.1 allein nicht belastbar bestimmen.
+
+Ein zusätzlicher Hinweis auf die Stabilität des B1.1-Verbrauchs ergibt sich aus dem
+nicht direkt qualitätsvergleichbaren Pilotlauf: Pilot und Clean-Lauf benötigten beide
+8 Calls und unterschieden sich beim gesamten Input nur um ca. 0,5 %. Dies spricht
+dafür, dass der gemessene B1.1-Verbrauch nicht lediglich durch den im Pilot
+abweichenden Dialog entstanden ist.
+
+### Entscheidung
+
+B1.1 wird beibehalten.
+
+Die Kontextentkopplung hat die Architektur deutlich modularisiert, ohne im
+H01-Benchmark einen substanziellen Qualitätsverlust zu erzeugen. Eine Rückkehr zur
+B0-Architektur ist daher nicht angezeigt.
+
+B1.1 belegt zugleich nicht, dass eine bloße Reduktion der statischen Kontextmenge
+automatisch den gesamten Tokenverbrauch reduziert.
+
+### Nächster experimenteller Schritt: B1.2
+
+B1.2 untersucht als kontrollierte Ablation den größten verbleibenden verpflichtenden
+Kontextbaustein: das vollständige didaktische Qualitätsmodell (DQM).
+
+Dazu soll ein kompakter DQM-Core für den normalen PLAN-Pfad entwickelt werden, während
+das vollständige DQM als Referenz erhalten bleibt und bei Bedarf gezielt geladen
+werden kann.
+
+B1.2 soll zunächst keine weiteren grundlegenden Architektur- oder Dialogänderungen
+vornehmen. Insbesondere werden KDM, Planning State und weitere optionale Lenses noch
+nicht eingeführt. Dadurch soll möglichst isoliert geprüft werden, welchen Beitrag die
+permanente Verfügbarkeit des vollständigen DQM zur Qualität und zum Tokenverbrauch
+leistet.
+
+B1.2 ist wiederum gegen B0 und B1.1 mit demselben H01-Benchmark zu prüfen.
