@@ -2061,3 +2061,28 @@ technischer State-Dump formuliert.
 B1.4 ist zunaechst eine deklarative Arbeitsgedaechtnis-Hypothese. Es wird weder
 technische Persistenz noch eine Tokenersparnis behauptet. Ein Verhaltenstest
 wurde in diesem Implementierungsschritt noch nicht durchgefuehrt.
+
+### Abschlussbefund B1.4
+
+H02 verglich B1.3c ohne Shadow Planning State (A), das urspruengliche B1.4 (B)
+und das nachgeschaerfte B1.4b (B'). A loeste H02 vollstaendig korrekt. Im
+urspruenglichen B1.4 blieb bei der ausdruecklichen Revision in H02.7 der
+ueberholte Analysegegenstand "Chancen und Probleme" erhalten und wurde in
+H02.8 weitergefuehrt.
+
+Daraufhin wurde die Update-Semantik des Shadow Planning State minimal
+praezisiert: Bei ausdruecklicher Revision wird der betroffene State-Bereich
+vollstaendig gegen die neue Setzung geprueft; damit unvereinbare Bestandteile
+entfallen auch ohne einzelnen Widerruf. B1.4b beseitigte den beobachteten
+Fehler; H02.7 und H02.8 waren danach korrekt. Gegenueber B1.3c zeigte B1.4b
+keine beobachtbare inhaltliche Regression. Ein positiver Zusatznutzen des
+Shadow Planning State gegenueber B1.3c ist durch H02 jedoch nicht empirisch
+belegt.
+
+Der Usage-Vergleich zwischen B1.4b und B1.3c ist nicht sauber interpretierbar,
+weil H02.1 im B1.4b-Lauf versehentlich einmal zusaetzlich wiederholt wurde und
+dadurch ein weiterer Model Call entstand. Aus den Usage-Werten wird daher
+keine Effizienzwirkung abgeleitet.
+
+**Abschlussentscheidung:** B1.4 behalten – funktional plausibel und ohne
+beobachtbare Regression, Zusatznutzen noch nicht empirisch belegt.
