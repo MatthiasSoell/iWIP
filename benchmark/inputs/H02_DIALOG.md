@@ -1,4 +1,4 @@
-# H02 – Dialogbenchmark Shadow Planning State
+# H02 – Dialogbenchmark didaktische Planung
 
 ## H02.1
 
@@ -44,9 +44,6 @@ Die Gruppen sollen ihre Ergebnisse anschließend nicht präsentieren.
 zentralen Zusammenhänge auf einem gemeinsamen Arbeitsblatt fest, das anschließend
 für den Vergleich genutzt wird.
 
-Die Analyse beruflicher Veränderungssituationen und die bisher vereinbarte
-didaktische Hauptlinie bleiben bestehen.
-
 ## H02.5
 
 Formuliere den Arbeitsauftrag aus H02.3 jetzt sprachlich etwas einfacher und
@@ -76,19 +73,9 @@ Tätigkeiten und Anforderungen an Beschäftigte analysieren.
 Die Konsequenzen für berufliche Bildung sollen erst im gemeinsamen Vergleich
 erschlossen werden.
 
-Passe den bisherigen Arbeitsstand an diese Entscheidung an. Die
-Veränderungssituationen bleiben weiterhin der Kern der Sitzung und die
-Gesamtdauer bleibt 90 Minuten.
+Passe den bisherigen Arbeitsstand an diese Entscheidung an.
 
 ## H02.8
 
-Fasse mir jetzt den aktuell geltenden Planungsstand knapp zusammen:
-
-- Was ist der Kern der Sitzung?
-- Was ist die didaktische Hauptlinie?
-- Welche tragenden Entscheidungen gelten aktuell?
-- Welche wichtigen Rahmenbedingungen gelten?
-- Gibt es noch einen entscheidungsrelevanten offenen Punkt?
-
-Nenne nur den aktuellen Stand. Rekonstruiere keine Entwicklungsgeschichte und
-liste keine inzwischen verworfenen Zwischenstände auf.
+Fasse den aktuell geltenden Planungsstand knapp so zusammen, dass wir auf
+dieser Grundlage weiterarbeiten können.
