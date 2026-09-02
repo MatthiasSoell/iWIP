@@ -1872,3 +1872,192 @@ Inhaltlich unveraendert bleiben `project_governance/plan_core.md`,
 Benchmark-Runs. Damit bleiben PLAN-Gates und Prozesslogik, DQM-Diagnostik sowie
 Master- und Promptformulierungen unveraendert; verstärkende Paraphrasen werden
 nicht eingefuehrt.
+
+### H01-Regressions- und Usage-Test
+
+B1.3c wurde nach der Implementierung mit dem unveraenderten H01-Benchmark
+getestet.
+
+Benchmark-Commit:
+
+`23fa9c1ba2c2bf7b4733aa982dc384126c1d9aaf`
+
+Session:
+
+`01a06380-5c81-77c0-a1c1-e30b40f4c11b`
+
+Modell:
+
+- `gpt-5.6-sol`
+- Reasoning: `low`
+
+Die fuenf Originalprompts H01.1 bis H01.5 wurden wortgetreu, in der
+vorgesehenen Reihenfolge und ohne eingeschobene Nutzerprompts ausgefuehrt.
+
+#### Qualitaet
+
+Ergebnis:
+
+- Qualitaet: 75/75
+- Didaktischer Drift: 0
+- turn-spezifische Grenzverletzungen: 0
+- unnoetige Rueckfragen: 0
+- unnoetige Alternativen: 0
+- erneute Oeffnung bereits getroffener Entscheidungen: nein
+- unnoetige Zustimmungs- oder Freigabeschleifen: nein
+
+Die in H01.2 ausgewaehlte erste Variante bleibt von H01.3 bis H01.5
+konsistent die tragende didaktische Hauptlinie. Lokale Folgeauftraege werden
+nicht zum Anlass genommen, diese Entscheidung erneut zu oeffnen.
+
+Auch fuer die auftragsangemessene Intervention zeigt der Lauf ein positives
+Signal: H01.1 bleibt bei Diagnose und kritischem Sparring, H01.3 fuehrt die
+ausdruecklich verlangte substanzielle Ablaufrevision durch und H01.4 beschraenkt
+sich auf die beauftragte sprachliche Ueberarbeitung der Arbeitsauftraege.
+
+Hinweise auf eine Uebersteuerung durch die beiden neuen KDM-Normen wurden nicht
+beobachtet. Insbesondere entstanden keine Starrheit, keine unnoetigen
+Freigabeschleifen, keine Verweigerung legitimer Aenderungen und keine zu geringe
+Eingriffstiefe bei ausdruecklichem Ueberarbeitungsauftrag.
+
+In H01.1 erschien einmalig der sichtbare Prozesshinweis, dass Fallkontext und
+Kernregeln geladen werden. Dieser hatte keine beobachtbare Auswirkung auf die
+didaktische Qualitaet und wird nicht als Anlass fuer eine weitere
+Verhaltensintervention gewertet.
+
+H01 ist damit ein positiver Regressionstest fuer B1.3c. Der Lauf liefert
+positive Signale fuer Entscheidungskontinuitaet und auftragsangemessene
+Intervention, kann deren Wirkung aufgrund seines festen Dialogverlaufs und der
+Einzellaufbasis jedoch nicht kausal oder vollstaendig diskriminierend pruefen.
+
+#### Usage und technisches Laufverhalten
+
+Der normale statische PLAN-Pflichtkontext von B1.3c umfasst:
+
+- 610 Zeilen
+- 3.479 Woerter
+- 30.556 Bytes
+
+Gegenueber B1.3b steigt der statische Pflichtkontext durch die zwei neuen
+KDM-Normen bewusst um 1.140 Bytes beziehungsweise 3,88 %. Gegenueber B0 bleibt
+er um 76,57 % reduziert.
+
+Fuer die H01-Session wurden gemessen:
+
+- Input: 150.053
+- Cached Input: 130.560
+- Uncached Input: 19.493
+- Output: 4.415
+- Reasoning: 571
+- Total: 154.468
+- Model Calls: 6
+- Cached Share: 87,01 %
+
+Gegenueber B1.3b liegen der kumulative Input um 12,37 % und der uncached Input
+um 18,86 % niedriger. Gegenueber B1.2 liegt der Input um 4,21 % niedriger,
+waehrend der uncached Input mit +0,95 % praktisch auf demselben Niveau liegt.
+
+Diese Unterschiede werden nicht als Effizienzwirkung der neuen KDM-Normen
+interpretiert. B1.3c benoetigte sechs Model Calls und damit einen Call weniger
+als B1.3b. Call-Struktur, Cacheverhalten und normale Laufvariation beeinflussen
+die kumulative Usage wesentlich. B1.3c ist primaer eine Verhaltens- und keine
+Effizienzintervention.
+
+Tatsaechlich geladen wurden:
+
+- `project_governance/plan_core.md`
+- `project_governance/kdm_core.md`
+- `ai_agents/master_agent.md`
+- `ai_agents/didaktisches_qualitaetsmodell_core.md`
+- `prompts/plan.md`
+- `benchmark/inputs/H01_AGENT_INPUT.md`
+
+Es traten keine unerwarteten Lazy Loads des vollstaendigen DQM, des alten
+Agent-Contracts, der Low-Noise-Patterns, von Produktions- oder
+Finalisierungstemplates oder des Research-Bereichs auf.
+
+Beim DQM-Core wurden durch den verwendeten Leseaufruf Zeilen 1 bis 260 der
+261-zeiligen Datei ausgegeben. Die letzte Fortsetzungszeile der Reference-Regel
+wurde nicht geladen. Da der H01-Lauf dennoch 75/75 erreicht und kein
+entsprechendes Fehlverhalten zeigt, wird daraus fuer B1.3c keine weitere
+Intervention abgeleitet.
+
+### Entscheidung nach B1.3c
+
+B1.3c wird beibehalten und abgeschlossen.
+
+Die zwei neuen KDM-Prinzipien
+
+1. Entscheidungskontinuitaet und
+2. auftragsangemessene Intervention
+
+bleiben Bestandteil des normalen KDM-Core.
+
+Begruendung:
+
+1. H01 erreicht weiterhin 75/75 bei Drift 0 und ohne turn-spezifische
+   Grenzverletzungen.
+2. Beide neuen KDM-Normen zeigen im H01-Lauf das beabsichtigte Verhalten.
+3. Es gibt keinen beobachteten Hinweis auf Starrheit, Uebervorsicht,
+   unnoetige Freigabeschleifen oder Verlust kritischen Sparrings.
+4. Der technische Lauf bleibt trotz des bewusst leicht vergroesserten
+   KDM-Kontexts im Groessenbereich der schlanken Core-Varianten.
+5. Es treten keine unerwarteten Lazy Loads auf.
+6. Die niedrigere kumulative Usage gegenueber B1.3b wird wegen der
+   unterschiedlichen Call-Struktur nicht kausal B1.3c zugeschrieben.
+7. Weitere Anpassungen der beiden KDM-Normen sind auf Basis des H01-Laufs
+   nicht begruendet.
+
+B1.3 ist damit insgesamt abgeschlossen:
+
+- B1.3a: Kanonisierung bereits aktiver KDM-Dialogregeln
+- B1.3b: Deduplizierung des normalen PLAN-Laufzeitkontexts
+- B1.3c: gezielte Ergaenzung um zwei neue KDM-Verhaltensnormen
+
+Als naechster Architekturbaustein bleibt B1.4 mit einem Shadow Planning State
+vorgesehen. Vor beziehungsweise im Rahmen dieses Schritts sollte jedoch ein
+kleiner gezielter Verhaltenstest ergaenzt werden, der Entscheidungskontinuitaet
+und auftragsangemessene Intervention staerker diskriminiert als H01.
+
+## B1.4 – Minimaler Shadow Planning State
+
+B1.4 ergaenzt den PLAN-Core um ein kleines deklaratives Arbeitsgedaechtnis fuer
+den aktuell relevanten fallbezogenen Planungsstand. Das Audit ergab, dass dafuer
+weder eine eigene State-Datei noch Aenderungen an KDM, DQM, Gates, Chat oder
+Research Trace erforderlich sind. Gewaehlt wurde deshalb ein sehr kleiner
+Shadow Planning State mit fuenf Feldern:
+
+- `planning_focus`: aktueller Planungsgegenstand beziehungsweise Planungsziel
+- `main_line`: aktuell tragende didaktische Hauptlinie
+- `commitments`: wenige bestaetigte tragende Entscheidungen
+- `constraints`: aktuell relevante Grenzen oder Vorgaben der Lehrperson
+- `open_item`: hoechstens ein aktuell entscheidungsrelevanter offener Punkt
+
+`next_step` wurde bewusst gestrichen, weil es mit aktuellem Nutzerauftrag,
+PLAN-Prozesslogik und Auftragstreue ueberlappt und ein veralteter Wert den
+aktuellen Auftrag uebersteuern koennte. `planning_focus` und `main_line` bleiben
+getrennt: Das erste Feld bezeichnet Gegenstand oder Ziel der Planung, das zweite
+die tragende didaktische Hauptlinie.
+
+Der State speichert ausschliesslich den aktuell relevanten Arbeitsstand aus
+expliziten Nutzerangaben oder eindeutig angenommenen sichtbaren
+Planungsentscheidungen. Der aktuelle Nutzerprompt hat stets Vorrang; neuere
+widersprechende Angaben ersetzen aeltere Werte ohne Historisierung, waehrend
+nicht betroffene Felder unveraendert bleiben. `open_item` entfaellt nach
+Beantwortung oder bei verlorener Entscheidungsrelevanz. Lokale sprachliche oder
+redaktionelle Aenderungen beruehren die vier tragenden Felder nur bei einer
+erkennbaren Revision durch die Lehrperson. Blosse Agentenvorschlaege werden
+nicht als bestaetigte Entscheidungen gespeichert.
+
+Die Ownership bleibt getrennt: KDM besitzt Dialog- und Entscheidungsnormen, DQM
+die didaktische Qualitaetsbewertung und PLAN Prozess, Gates, Aktionen und Lazy
+Loading. Der Shadow State ersetzt weder Chat noch Research Trace und enthaelt
+keine Diagnosen, Bewertungen, Prozess- oder Artefaktzustaende, Quellen,
+Recherchemetadaten, vollstaendige Planungsprodukte, ausfuehrliche
+Begruendungen oder Historien. Er bleibt standardmaessig intern; bei fachlich
+noetiger Rueckspiegelung wird der relevante Stand natuerlich statt als
+technischer State-Dump formuliert.
+
+B1.4 ist zunaechst eine deklarative Arbeitsgedaechtnis-Hypothese. Es wird weder
+technische Persistenz noch eine Tokenersparnis behauptet. Ein Verhaltenstest
+wurde in diesem Implementierungsschritt noch nicht durchgefuehrt.
