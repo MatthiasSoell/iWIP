@@ -68,6 +68,70 @@ angekuendigt oder ausgegeben. Auf explizite Nachfrage darf der aktuelle
 Arbeitsstand knapp sichtbar werden; fachlich notwendige Rueckspiegelungen
 formuliert der Agent natuerlich statt als technischen State-Dump.
 
+## Persistentes Planning Journal
+
+Ein normales `/PLAN` bleibt dateilos. Nur wenn die Lehrperson ausdruecklich
+verlangt, eine konkrete Planung persistent zu speichern, fortzufuehren oder ein
+bestehendes Journal zu verwenden, fuehrt der Agent fallbezogen eine
+`planning_journal.md`. Liegt ein eindeutiger Fall- oder Projektpfad vor, wird er
+verwendet; andernfalls fragt der Agent beim ausdruecklichen Persistenzwunsch
+einmal knapp nach dem Zielverzeichnis. Danach erzeugt die Journalpflege keine
+weiteren Freigabe- oder Bestaetigungsschleifen. Es entstehen weder eine globale
+Fallsammlung noch ein neues Standardverzeichnis.
+
+Die Datei enthaelt genau zwei logisch getrennte Bereiche:
+
+1. `Current State` bildet den Shadow Planning State mit seinen fuenf bestehenden
+   Feldern persistent ab. Er ist innerhalb des Artefakts allein autoritativ
+   dafuer, was aktuell gilt; der aktuelle Nutzerprompt hat weiterhin absoluten
+   Vorrang.
+2. `Decision History` enthaelt eine kleine chronologische Historie
+   journalwuerdiger Planungsereignisse. Historische Eintraege erklaeren den Weg
+   zum aktuellen Stand, besitzen aber keinerlei Autoritaet ueber den Current
+   State.
+
+Jeder History-Eintrag verwendet eine innerhalb der Datei fortlaufende stabile
+ID `J-001`, `J-002` und so weiter, ein ISO-Datum, einen der Ereignistypen
+`decision`, `revision`, `open` oder `resolved` sowie `content`. `rationale` ist
+bei `decision` und `revision` verpflichtend, sonst nur bei Erklaerungsbedarf.
+`refers_to` ist bei `revision` und `resolved` verpflichtend und ansonsten
+optional. `rejected_alternative` ist nur optional zulaessig, wenn eine
+ernsthafte bewusst verworfene Alternative spaeter erklaerungsrelevant ist.
+Weitere Felder werden nicht gefuehrt.
+
+Ein History-Eintrag entsteht nur bei einem materiellen Planungsereignis, dessen
+Fehlen einen spaeteren Wiedereinstieg relevant erschweren wuerde: einer
+eindeutig angenommenen tragenden Entscheidung, einer substantiellen Revision,
+einem laengerfristig entscheidungsrelevanten offenen Punkt oder der Erledigung
+eines dokumentierten offenen Punkts. KDM bestimmt weiterhin, wann eine
+Entscheidung im Dialog als angenommen gilt. Sprachliche, formatierende, lokale
+redaktionelle oder triviale Aenderungen, blosse nicht angenommene
+Agentenvorschlaege und technische Prozessmeldungen sind nicht journalwuerdig.
+
+Bei einer substantiellen Revision werden in einem zusammengehoerigen
+Pflegevorgang der gesamte betroffene Current-State-Bereich nach der bestehenden
+B1.4b-Semantik gegen die neue Setzung geprueft, unvereinbare Bestandteile
+entfernt oder ersetzt und ein neuer `revision`-Eintrag mit `refers_to` auf die
+relevanten frueheren Eintraege angefuegt. Fruehere Eintraege bleiben als
+Historie erhalten und duerfen nie dazu fuehren, dass eine revidierte
+Entscheidung wieder als aktuell behandelt wird. Wird ein dokumentierter offener
+Punkt durch eine Entscheidung oder Revision erledigt, kann deren Eintrag den
+`open`-Eintrag referenzieren; entfaellt er ohne neue tragende Entscheidung,
+wird ein knapper `resolved`-Eintrag angefuegt.
+
+In einer laufenden Session arbeitet der Agent primaer mit Gespraechskontext und
+Shadow State und liest das Journal nicht vor jedem Turn vollstaendig neu. Er
+aktualisiert es nur bei journalwuerdigen Ereignissen und prueft vor dem
+Schreibzugriff den fuer eine sichere Aktualisierung notwendigen aktuellen
+Dateiinhalt. Bei einer neuen Session oder einem ausdruecklichen Wiedereinstieg
+in einen benannten persistenten Planungsfall liest er die kleine
+`planning_journal.md` vollstaendig, verwendet nur `Current State` als geltenden
+Stand und die `Decision History` als Begruendungs- und Revisionshistorie. Der
+alte Chat wird nur bei einer daraus nicht aufloesbaren konkreten Unklarheit
+herangezogen. Sichtbar wird standardmaessig eine natuerliche knappe
+Rueckspiegelung statt eines technischen Dumps; auf ausdrueckliche Nachfrage
+darf das Journal selbst gezeigt werden.
+
 ## Arbeitsmodus, Phasen und Gates
 
 - `Meta-Arbeit am Agenten` ist Analyse, Regelarbeit, Review und Weiterentwicklung ohne Artefakterstellung.
@@ -79,7 +143,8 @@ formuliert der Agent natuerlich statt als technischen State-Dump.
 - `P5 – Finalisieren`: Finaldetails werden erst am jeweiligen FINAL-Gate geladen.
 
 `/PLAN` startet ausschliesslich den Planungsdialog in `P1` und `P2`. Dabei
-werden keine Dateien, Snapshots oder Builds ausgeloest. Formulierungen wie
+werden ausser einer ausdruecklich aktivierten `planning_journal.md` keine
+Dateien, Snapshots oder Builds ausgeloest. Formulierungen wie
 `Entwurf anlegen`, `Blog erstellen`, `Jetzt ausarbeiten` oder `Passt, leg los`
 gelten erst dann als `BLOG GO`, wenn sie einen bereits sichtbaren Planungsstand
 bestaetigen; im ersten PLAN-Turn loesen sie kein Produktionsgate aus.

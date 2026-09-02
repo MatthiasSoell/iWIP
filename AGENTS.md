@@ -17,6 +17,11 @@ core defines dialog and decision form. The DQM core defines didactic quality and
 diagnosis. The PLAN core has priority if these files conflict. The complete DQM
 is loaded only under the lazy-loading conditions defined in the PLAN core.
 
+Load a fallbezogene `planning_journal.md` only when the user explicitly names
+an existing persistent planning case or asks to resume it. Do not search for or
+load planning journals during ordinary `/PLAN` turns; creation and maintenance
+follow the activation and lifecycle rules in the PLAN core.
+
 Load production and finalization details only at their gates:
 
 - at `BLOG GO`: `ai_agents/templates/blog_template.md`

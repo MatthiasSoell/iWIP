@@ -2086,3 +2086,46 @@ keine Effizienzwirkung abgeleitet.
 
 **Abschlussentscheidung:** B1.4 behalten – funktional plausibel und ohne
 beobachtbare Regression, Zusatznutzen noch nicht empirisch belegt.
+
+## B1.5 – Persistentes Planning Journal / Decision Log
+
+B1.5 ergaenzt den B1.4b-State ausschliesslich fuer ausdruecklich persistente
+Planungsfaelle um eine fallbezogene `planning_journal.md`. Ein normales
+`/PLAN` bleibt dateilos. Die Persistenz wird nur auf ausdruecklichen Wunsch der
+Lehrperson aktiviert; ein eindeutiger Fall- oder Projektpfad wird uebernommen,
+andernfalls wird einmal nach dem Zielverzeichnis gefragt. Danach entstehen fuer
+einzelne Journalupdates keine zusaetzlichen Freigabeschleifen.
+
+Das Artefakt besitzt genau zwei logisch getrennte Bereiche:
+
+1. `Current State` persistiert unveraendert die fuenf Felder des Shadow Planning
+   State und ist innerhalb des Artefakts allein autoritativ fuer den aktuell
+   geltenden Stand. Der aktuelle Nutzerprompt behaelt absoluten Vorrang.
+2. `Decision History` dokumentiert chronologisch nur materielle Entscheidungen,
+   Revisionen sowie laengerfristig relevante offene und erledigte
+   Entscheidungspunkte. Historische Eintraege besitzen keine Autoritaet ueber
+   den Current State.
+
+History-Eintraege verwenden fortlaufende IDs `J-001`, `J-002` und so weiter,
+ISO-Datum, einen der Typen `decision`, `revision`, `open` oder `resolved` sowie
+`content`. `rationale` ist fuer Entscheidungen und Revisionen verpflichtend,
+`refers_to` fuer Revisionen und Erledigungen; eine erklaerungsrelevante bewusst
+verworfene Alternative kann optional als `rejected_alternative` festgehalten
+werden. Weitere Felder, insbesondere Origin-, DQM-, Modell-, Tool-, Token- oder
+Research-Metadaten, werden nicht eingefuehrt.
+
+Die B1.4b-Revisionssemantik bleibt erhalten und wird fuer persistente Faelle
+mit der Historie gekoppelt: Der betroffene Current-State-Bereich wird
+vollstaendig gegen die neue Setzung geprueft und bereinigt, waehrend ein neuer
+`revision`-Eintrag ueber `refers_to` auf die relevante fruehere Historie
+verweist. Die Datei wird in einer laufenden Session nicht vor jedem Turn neu
+geladen. Beim ausdruecklichen Wiedereinstieg wird die zunaechst kleine Datei
+vollstaendig gelesen; Current State und History bleiben dabei semantisch strikt
+getrennt, der alte Chat wird nur bei konkreter Unklarheit herangezogen.
+
+Bewusst nicht Teil von B1.5 sind Resume Index, separate State- oder
+Decision-Log-Dateien, Verdichtung, Archivierung, semantische Suche, Embeddings,
+Datenbank, Retrieval-System, globales Fallregister, neue Gates oder Rollen,
+Research Trace sowie Benchmarkdateien. B1.5 schafft nur die technische
+Voraussetzung fuer einen kompakten sessionuebergreifenden Wiedereinstieg; eine
+Wirksamkeit oder Tokenersparnis ist damit nicht empirisch belegt.
