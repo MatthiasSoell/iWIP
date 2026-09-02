@@ -2129,3 +2129,26 @@ Datenbank, Retrieval-System, globales Fallregister, neue Gates oder Rollen,
 Research Trace sowie Benchmarkdateien. B1.5 schafft nur die technische
 Voraussetzung fuer einen kompakten sessionuebergreifenden Wiedereinstieg; eine
 Wirksamkeit oder Tokenersparnis ist damit nicht empirisch belegt.
+
+### H03-Befund und minimale Nachschaerfung
+
+H03 pruefte B1.5 in einem persistenten Planungsfall ueber zwei getrennte
+Sessions. B1.5 hat den Funktionsbenchmark bestanden: Aktivierung und Persistenz,
+selektive Journalisierung, vollstaendige Bereinigung des Current State bei
+Revisionen, historische Revisionsverweise und Rehydration aus der
+`planning_journal.md` funktionierten. Historisch ueberholte Entscheidungen
+wurden nicht reaktiviert, und der aktuelle Nutzerprompt behielt Vorrang. Eine
+funktionale KDM- oder Qualitaetsregression wurde nicht beobachtet.
+
+Der einzige Nachschaerfungsbedarf betrifft die sichtbare technische
+Prozesskommunikation. In sieben Benchmarkturns erschienen acht Lade-, Schreib-,
+State-, Journal- oder sonstige Prozessmeldungen, obwohl sie fuer das fachliche
+Ergebnis nicht erforderlich waren. Deshalb wurde ausschliesslich die bereits
+bestehende KDM-Regel `Ergebnisvordergrund` praezisiert: Interne Operationen
+bleiben im normalen PLAN-Dialog unsichtbar, ausser die Lehrperson verlangt die
+technische Information ausdruecklich oder eine notwendige technische Klaerung
+beziehungsweise ein Fehler verhindert die weitere Bearbeitung.
+
+State-, Journal-, Journalwuerdigkeits-, Revisions-, Persistenz- und Leselogik
+bleiben unveraendert. Wegen einer fehlenden Kontrollbedingung erlaubt H03 keine
+Beurteilung eines moeglichen Tokenvorteils.
