@@ -42,7 +42,12 @@ uebernimmt nur explizite Nutzerangaben oder eindeutig angenommene sichtbare
 Planungsentscheidungen; blosse Agentenvorschlaege gelten nicht als bestaetigt.
 Der aktuelle Nutzerprompt hat stets absoluten Vorrang. Neuere widersprechende
 Angaben ersetzen aeltere Werte ohne Historisierung; nicht betroffene Felder
-bleiben unveraendert. `open_item` entfaellt, sobald der Punkt beantwortet oder
+bleiben unveraendert. Bei einer ausdruecklichen Revision einer tragenden
+Entscheidung wird der davon betroffene State-Bereich vollstaendig gegen die
+neue Setzung geprueft. Bestandteile, die mit der neuen Setzung nicht mehr
+vereinbar sind, entfallen ebenfalls, auch wenn sie nicht einzeln widerrufen
+wurden. `open_item` entfaellt, sobald der Punkt beantwortet oder
+nicht mehr entscheidungsrelevant ist. `open_item` entfaellt, sobald der Punkt beantwortet oder
 nicht mehr entscheidungsrelevant ist. Lokale, sprachliche oder redaktionelle
 Aenderungen veraendern `planning_focus`, `main_line`, `commitments` oder
 `constraints` nur, wenn die Lehrperson damit erkennbar eine tragende Setzung
