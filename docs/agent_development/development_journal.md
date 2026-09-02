@@ -1031,3 +1031,85 @@ Nicht aufgenommen werden:
 - normale Planungsfälle.
 
 So bleibt das Dokument als nachvollziehbare, kompakte Entwicklungsgeschichte nutzbar.
+
+---
+
+## B1.1 – Kontextentkopplung
+
+### Ziel
+
+B1.1 entfernt ausschließlich eindeutig unnötigen frühen Laufzeitkontext aus
+dem normalen didaktischen PLAN-Modus. B0 bleibt mit H01 `5 × 15/15`, Drift `0`
+und `0` unnötigen Rückfragen die Referenz. Die Änderung ist bewusst klein und
+soll vor weiteren Architekturvarianten kausal interpretierbar bleiben.
+
+### Vorgenommene Änderungen
+
+- `project_governance/plan_core.md` wurde als minimaler normaler PLAN-Core aus
+  bestehenden B0-Regeln angelegt.
+- `AGENTS.md` lädt beim normalen PLAN-Start nur noch PLAN-Core, Master-Agent,
+  vollständiges DQM und Plan-Prompt.
+- Blog- und Reveal-Templates werden erst bei `BLOG GO` beziehungsweise
+  `REVEAL GO` geladen; Literatur-, Emoji-, QA- und weitere Finaldetails erst am
+  jeweiligen FINAL-Gate. OER/OERSI-Metadaten werden erst mit Blog- oder
+  Publikationsaufgaben geladen.
+- Research-Schemas, Research-Dateiregeln, Snapshots, Trace-Regeln und
+  Research-Exit-Actions wurden aus dem normalen Routing entfernt. Ihr
+  vollständiger B0-Stand bleibt in `project_governance/agent_contract.md`
+  erhalten; der Research-Adapter ist derzeit inaktiv.
+- `project_governance/low_noise_response_patterns.md` gehört nicht mehr zum
+  normalen PLAN-Pflichtkontext. Die Datei bleibt als B0-Regelstand erhalten und
+  kann bei FINAL-Aufgaben weiterhin bedarfsgesteuert geladen werden.
+- `prompts/plan.md`, `ai_agents/master_agent.md` und `prompts/check.md` wurden
+  nur soweit angepasst, wie es für die neue Ladegrenze und das Entfernen früher
+  Research-Verweise erforderlich war.
+
+### Bewusst unverändert
+
+Das vollständige DQM, seine didaktischen Kernheuristiken und Profile,
+Human-in-the-loop und Lehrpersonenautonomie, führende begründete Verdichtung,
+Behandlung didaktischer Spannungen, höchstens eine entscheidende Rückfrage,
+Entscheidungs- und Auftragstreue, Quellenintegrität, Gate-Logik, Blog-first und
+DQM-Konfliktlogik bleiben erhalten. Es wurden weder DQM-Core noch KDM-Core,
+Planning State, Learner Lens, neue KBS-/DJP-/itslearning-Profile,
+Multi-Agent-Struktur oder maschinenlesbarer Router eingeführt.
+
+### Normaler PLAN-Pflichtkontext
+
+1. `AGENTS.md`
+2. `project_governance/plan_core.md`
+3. `ai_agents/master_agent.md`
+4. `ai_agents/didaktisches_qualitaetsmodell.md`
+5. `prompts/plan.md`
+
+Der B1.1-Pflichtkontext umfasst 1.473 Zeilen, 7.667 Wörter und 64.672 Bytes
+(Dateisummen mit `wc`). B0 umfasste 2.127 Zeilen, 15.140 Wörter und 130.407
+Bytes.
+
+### Lazy oder inaktiv
+
+- `BLOG GO`: Blog-Template und konkrete Blogregeln
+- `REVEAL GO`: Reveal-Template und konkrete Transformationsregeln
+- Blog-/Publikationsaufgaben: OER/OERSI-Metadaten
+- `BLOG FINAL` / `REVEAL FINAL`: Check-, Build-, Literatur-, Emoji-,
+  Metadaten- und weitere QA-/Finalisierungsdetails
+- normaler PLAN-, GO- und FINAL-Modus: Research-Adapter inaktiv
+- normaler PLAN-Modus: Low-noise-Beispielsammlung nicht geladen
+
+### Offene Risiken
+
+- B0-Redundanz könnte bislang als Sicherheitsverstärkung gewirkt haben; ihr
+  Wegfall kann Antwortstil, Entscheidungsstabilität oder Rückfrageverhalten
+  unbeabsichtigt verändern.
+- Die neue Ladearchitektur bleibt deklarativ. Ihre korrekte Gate-Aktivierung
+  ist noch nicht technisch erzwungen.
+- Der neue PLAN-Core überführt B0-Regeln in eine kürzere Datei. Trotz
+  semantischer Nähe sind Nuancenverlust oder eine veränderte Gewichtung nicht
+  ohne empirischen Vergleich auszuschließen.
+- Produktions- und FINAL-Pfade wurden in B1.1 nicht benchmarkgeprüft.
+
+### Nächster Schritt
+
+Der nächste Schritt ist ein H01-Vergleich B1.1 gegen B0 unter möglichst gleichen
+Bedingungen. Bis dahin ist B1.1 eine benchmarkbereite Experimentvariante, aber
+keine neue Referenz.

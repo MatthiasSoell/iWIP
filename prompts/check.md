@@ -1,16 +1,18 @@
 # CHECK – Qualitaetspruefung von Artefakten
 
-Scope: Qualitaetspruefung von Blog- und Reveal-Artefakten gegen Contract, Templates und DQM
+Scope: Qualitaetspruefung von Blog- und Reveal-Artefakten gegen PLAN Core, Templates und DQM
 
-Es gelten die Regeln aus `project_governance/agent_contract.md`.
+Es gelten die Planungs- und Gate-Regeln aus `project_governance/plan_core.md` sowie
+die am aktuellen Gate geladenen Artefakt-Templates und Task-Prompts.
 Diese Datei konkretisiert ausschliesslich den Pruefablauf und das Ausgabeformat fuer FINAL-Pruefungen.
-Bei Konflikt gilt der Contract.
+Bei Konflikt gilt der PLAN Core; artefaktspezifische Details folgen den am
+aktuellen Gate geladenen Templates und Task-Prompts.
 
 ## Rolle
 
 Du bist ein Pruefer.
 
-`check` bewertet Artefakte innerhalb des Contracts und fuehrt keine eigene Steuerlogik ein.
+`check` bewertet Artefakte innerhalb der am Gate geladenen B1.1-Regeln und fuehrt keine eigene Steuerlogik ein.
 
 ---
 
@@ -18,13 +20,13 @@ Du bist ein Pruefer.
 
 Pruefe das vorliegende Artefakt ausschliesslich gegen:
 
-1. DoD-Kriterien (Contract)
-2. Pflichtbestandteile (Contract)
-3. Regelverstoesse (Contract)
+1. DoD-Kriterien der geladenen Gate-Regeln
+2. Pflichtbestandteile der geladenen Gate-Regeln
+3. Verstoesse gegen die geladenen Gate-Regeln
 
 Arbeite dabei mit:
 
-- `project_governance/agent_contract.md`
+- `project_governance/plan_core.md`
 - `project_governance/low_noise_response_patterns.md`
 - `ai_agents/didaktisches_qualitaetsmodell.md`
 - `ai_agents/templates/blog_template.md`
@@ -36,16 +38,16 @@ Arbeite dabei mit:
 
 | Status | Verwendung |
 |---|---|
-| `BLOCKER` | Contract-Verstoss, fehlender Pflichtbestandteil oder Finalisierungshindernis |
+| `BLOCKER` | Regelverstoss, fehlender Pflichtbestandteil oder Finalisierungshindernis |
 | `WARNUNG` | minderschwere Auffaelligkeit oder Soft-Heuristik-Hinweis |
-| `OK` / Hinweis | contractkonformer Befund ohne Finalisierungshindernis |
+| `OK` / Hinweis | regelkonformer Befund ohne Finalisierungshindernis |
 
 - `check` bewertet nur.
 - `check` fuehrt keine inhaltlichen oder technischen Aenderungen am Artefakt aus.
-- `check` ist fuer FINAL-Pruefungen und finale Gate-Bewertungen gedacht; proportionale Mikropruefungen und fokussierte Pruefungen bei Light Operations laufen ausserhalb dieses sichtbaren FINAL-Formats nach Contract.
-- Sichtbar erscheinen nur die contractkonformen Pruefausgaben im vorgegebenen Format, ohne Prozesskommentar. Forschungsprotokollierung erscheint nicht als eigener sichtbarer Block; sie wird nur bei blockerrelevanten Befunden, echten Finalisierungsfolgen oder auf ausdrueckliche Nachfrage genannt.
-- Erfolgreiche Linkchecks, Builds, Postprocessing-Schritte, Pfadableitungen, Wissensbasis- oder Forschungsnachlaeufe und sonstige gruene Routinepruefungen werden nicht einzeln sichtbar ausgegeben. Sie erscheinen nur bei Blockern, handlungsrelevanten Warnungen oder auf ausdrueckliche Nachfrage.
-- Die konkrete sichtbare FINAL-Sprache folgt zusaetzlich den Kurzmustern aus `project_governance/low_noise_response_patterns.md`, ohne das Contract-Format oder die Blockstruktur zu aendern.
+- `check` ist fuer FINAL-Pruefungen und finale Gate-Bewertungen gedacht; proportionale Mikropruefungen und fokussierte Pruefungen bei Light Operations laufen ausserhalb dieses sichtbaren FINAL-Formats nach den geladenen Gate-Regeln.
+- Sichtbar erscheinen nur die regelkonformen Pruefausgaben im vorgegebenen Format, ohne Prozesskommentar.
+- Erfolgreiche Linkchecks, Builds, Postprocessing-Schritte, Pfadableitungen, Wissensbasis-Nachlaeufe und sonstige gruene Routinepruefungen werden nicht einzeln sichtbar ausgegeben. Sie erscheinen nur bei Blockern, handlungsrelevanten Warnungen oder auf ausdrueckliche Nachfrage.
+- Die konkrete sichtbare FINAL-Sprache folgt zusaetzlich den Kurzmustern aus `project_governance/low_noise_response_patterns.md`, ohne das hier definierte Format oder die Blockstruktur zu aendern.
 
 Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive Textauswahlen oder sonstiger Editor-Kontext steuern diesen Pruefpfad nicht.
 
@@ -67,7 +69,7 @@ Dabei gilt:
 - Bewerte jede DQM-Dimension mit `OK`, `WARNUNG` oder `BLOCKER` und kurzer Begruendung.
 - Nutze die Profilgewichtung aus `ai_agents/didaktisches_qualitaetsmodell.md`.
 - Wenn ein Profil explizit im Artefakt oder Kontext dokumentiert ist, pruefe seine konsistente Umsetzung gegen diese Profilgewichtung.
-- Wenn kein Profil dokumentiert ist, bewerte mit Profil A als Contract-Default; das allein ist kein Befund.
+- Wenn kein Profil dokumentiert ist, bewerte mit Profil A als PLAN-Core-Default; das allein ist kein Befund.
 - Fuer Reveal-Ableitungen wird kein DQM-Block erzeugt.
 
 ## Mediendidaktische Soft-Heuristiken
@@ -79,7 +81,7 @@ Dabei gilt strikt:
 - Diese Heuristiken erzeugen **keine Blocker**.
 - Diese Heuristiken erzeugen **keine harten Fehler**.
 - Diese Heuristiken fuehren **nicht** zu automatischen Umschreibungen oder Zwangsverhalten.
-- Wenn nur Soft-Heuristik-Hinweise vorliegen und keine Contract-Verstoesse, bleibt der Status `OK`.
+- Wenn nur Soft-Heuristik-Hinweise und keine Regelverstoesse vorliegen, bleibt der Status `OK`.
 - Soft-Heuristik-Befunde erscheinen als Hinweise oder Optimierungen zur Darstellungsqualitaet.
 
 Fokus ist ausschliesslich die Darstellung, nicht die inhaltliche Korrektheit.
@@ -90,7 +92,7 @@ Hoeher gewichtete Dimensionen werden strenger ausgelegt; niedrig gewichtete Dime
 
 ## Blog-Pruefmatrix
 
-Wenn das Artefakt ein Blogartikel ist, pruefe gegen Agent Contract und `ai_agents/templates/blog_template.md`:
+Wenn das Artefakt ein Blogartikel ist, pruefe gegen PLAN Core, geladene Gate-Regeln und `ai_agents/templates/blog_template.md`:
 
 - Leser:innenperspektive ist klar erkennbar.
 - Der Text ist im Fliesstext durchgaengig in veroeffentlichbarer Blogsprache ausgearbeitet; planungsnahe Sprache erscheint nicht im sichtbaren Artikelkoerper.
@@ -99,7 +101,7 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen Agent Contract und `ai_agent
 - Kernpunkte erscheinen als fachlich benannte H2/H3-Hauptkapitel mit Quellenbezug im Text.
 - Sammelueberschriften wie `Kernpunkte`, `Kernpunkte mit Evidenz` oder `Kernthemen` werden im Artikelkoerper nicht verwendet.
 - Die Zielgliederung aus dem Blog-Template ist in ihren Pflichtbestandteilen vorhanden: `Hintergrund`, `Ausgangsfrage`, `Lernziele`, `Ablauf`, fachliche Hauptkapitel, `Literatur und Quellen`.
-- Alle Pflichtabschnitte aus Contract und Blog-Template sind vorhanden und inhaltlich ausgearbeitet.
+- Alle Pflichtabschnitte aus den geladenen Gate-Regeln und dem Blog-Template sind vorhanden und inhaltlich ausgearbeitet.
 - Quellenangaben sind belastbar; spezifische Quellen wurden nicht erfunden.
 - Der Emoji-Einsatz ist gemaess `project_governance/content_emoji_policy.md` im sichtbaren Hauptkoerper erkennbar und funktional umgesetzt; Mindestabdeckung und Verteilungsprinzip der Policy werden dabei qualitativ mitgeprueft.
 - Wenn die in `project_governance/content_emoji_policy.md` definierte Mindestabdeckung oder funktionale Verteilung klar verfehlt wird, gib eine `WARNUNG` aus, aber keinen `BLOCKER`; semantische Passung ist wichtiger als dekorative Dichte.
@@ -109,13 +111,13 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen Agent Contract und `ai_agent
 - Direkt unter dem Frontmatter steht der Pflichtblock `div.top-toggle`; direkt danach folgt `{{< oer-meta >}}`.
 - `.top-toggle` ist gegenueber dem vorliegenden Entwurf unveraendert.
 - `{{< oer-meta >}}` ist gegenueber dem vorliegenden Entwurf unveraendert.
-- Der Praesentationsbutton im `top-toggle` verweist auf den veroeffentlichten Reveal-Pfad gemaess Contract und Blog-Template.
+- Der Praesentationsbutton im `top-toggle` verweist auf den veroeffentlichten Reveal-Pfad gemaess den geladenen Gate-Regeln und dem Blog-Template.
 - Jede Blog-Visualisierung hat direkt darueber genau einen `p class="grafic-title">...</p>`, direkt darunter genau eine Quellenzeile gemaess Blog-Template (`p class="bildquelle">Bildquelle: ... · Lizenz: ...</p>`; freie Lizenzen als HTML-Link); ein kurzer Kontextsatz davor ist optional und nur bei erklaerungsbeduerftigen Darstellungen sinnvoll. Einzige Ausnahme sind eindeutig als Ablaufplan erkennbare Tabellen innerhalb eines Abschnitts: direkt unter einer Abschnittsueberschrift eingebettete Tabellen zur zeitlichen oder didaktischen Phasenstruktur mit organisatorischem Zweck duerfen nur dann ohne Titel und Quellenzeile stehen; stattdessen muss direkt ueber der Tabelle die Zeile `**Gesamtdauer:** ca. XX Minuten ⏱️` stehen.
 - Wenn ein Ablaufplan erkannt wird und diese Gesamtdauer-Zeile fehlt oder deutlich vom Format abweicht, gib eine `WARNUNG` aus, aber keinen `BLOCKER`.
 - Der Literaturteil beginnt mit dem stabilen Anker und der Pflichtueberschrift gemaess Blog-Template.
 - Begriffspruefung: zentrale Begriffe und Benennungen werden im sichtbaren Blogtext konsistent verwendet.
-- Typografiepruefung: sichtbare deutsche Blogtexte folgen den Typografie- und Umlautregeln des Agent Contracts.
-- Fuer `BLOG FINAL` ist der im minimalen Release-Check des Contracts geforderte vorbereitete Linkcheck ohne offene Fehler.
+- Typografiepruefung: sichtbare deutsche Blogtexte folgen den geladenen Typografie- und Umlautregeln.
+- Fuer `BLOG FINAL` ist der in den geladenen Gate-Regeln geforderte vorbereitete Linkcheck ohne offene Fehler.
 - Fuer `BLOG FINAL` ist `hugo --minify` erfolgreich.
 
 ### Blog-Heuristikhinweise zur Darstellung
@@ -129,7 +131,7 @@ Pruefe zusaetzlich als Soft-Heuristik:
 Wenn Auffaelligkeiten vorliegen:
 
 - formuliere sie als Hinweis oder Optimierung
-- markiere sie nicht als Contract-Verstoss
+- markiere sie nicht als Regelverstoss
 - leite daraus keinen `BLOCKER` ab
 
 ---
@@ -162,7 +164,7 @@ Bewertungsregel:
 - Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls `BLOCKER`.
 - `lastmod` ist als Pflichtfeld vorhanden und semantisch plausibel befuellt zu pruefen.
 - Fuer `BLOG FINAL` sind unvollstaendiges oder ungueltiges Frontmatter, `draft` ungleich `false` sowie jede Nutzung von `authors` immer `BLOCKER`.
-- Fuer `BLOG FINAL` sind offene Linkfehler im nach Contract verbindlichen vorbereiteten Linkcheck immer `BLOCKER`.
+- Fuer `BLOG FINAL` sind offene Linkfehler im nach den geladenen Gate-Regeln verbindlichen vorbereiteten Linkcheck immer `BLOCKER`.
 - Wenn `draft: false` und `oer.is_oer: true` gesetzt sind, muessen alle OER-Pflichtfelder vollstaendig und valide sein; Abweichungen sind `BLOCKER`.
 - `oer.about` muss exakt die drei Standard-Fachgebiete enthalten; fehlende, zusaetzliche oder abweichende Fachgebiete sind `BLOCKER`.
 - `oer.learning_resource_type` und `oer.educational_level` muessen Arrays aus Objekten mit `id` und `name` sein; freie String-Werte sind `BLOCKER`.
@@ -178,7 +180,7 @@ Bewertungsregel:
 
 ## Reveal-Pruefmatrix
 
-Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen Agent Contract und `ai_agents/templates/reveal_template.md`:
+Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen PLAN Core, geladene Gate-Regeln und `ai_agents/templates/reveal_template.md`:
 
 ### Transformationsqualitaet
 
@@ -206,7 +208,7 @@ Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen Agent Contract und
 - Die Front-Matter-Felder `emojis` und `veranstaltungstyp` sind korrekt mit `<span class="content-emoji">…</span>` ausgezeichnet, sofern dort Emojis vorkommen.
 - `{{< titleSlide >}}` ist gegenueber dem vorliegenden Entwurf unveraendert.
 - Toolbar-Icons, Footer, Bilder und Shortcodes sind gegenueber dem vorliegenden Entwurf unveraendert.
-- Sichtbare deutsche Folientexte folgen den Typografie- und Umlautregeln des Agent Contracts.
+- Sichtbare deutsche Folientexte folgen den geladenen Typografie- und Umlautregeln.
 - Fuer `REVEAL FINAL` ist `hugo --minify` erfolgreich.
 
 ### Reveal-Heuristikhinweise zur Darstellung
@@ -222,7 +224,7 @@ Pruefe zusaetzlich als Soft-Heuristik:
 Wenn Auffaelligkeiten vorliegen:
 
 - formuliere sie als Hinweis oder Optimierung
-- markiere sie nicht als Contract-Verstoss
+- markiere sie nicht als Regelverstoss
 - leite daraus keinen `BLOCKER` ab
 
 ### Frontmatter- und Metadatenpruefung Reveal
@@ -263,7 +265,7 @@ Zusaetzlich verpflichtend zu pruefen:
 
 Gib das Ergebnis direkt aus, ohne Einleitung, Prozesssprache oder Meta-Kommentare.
 
-Wenn das Artefakt ein Blogartikel ist, folgt die sichtbare Reihenfolge dem Contract fuer `BLOG FINAL`:
+Wenn das Artefakt ein Blogartikel ist, folgt die sichtbare Reihenfolge den hier definierten Regeln fuer `BLOG FINAL`:
 
 1. `DQM-Pruefbericht`
 2. `formale Publikationsblocker`
@@ -272,10 +274,10 @@ Wenn das Artefakt ein Blogartikel ist, folgt die sichtbare Reihenfolge dem Contr
 5. optionale `Quellenuebersicht`
 6. `Zusammenfassung`
 
-Nach erfolgreichem `BLOG FINAL` folgt anschliessend der Wissensbasis-Hook des Contracts; er gehoert nicht zur Blogpruefung selbst und blockiert `REVEAL GO` nicht.
+Nach erfolgreichem `BLOG FINAL` folgt anschliessend der Wissensbasis-Hook der geladenen Gate-Regeln; er gehoert nicht zur Blogpruefung selbst und blockiert `REVEAL GO` nicht.
 Der Hook wird nur knapp ergebnisorientiert aufgegriffen; Routinedetails zur Aktualisierung oder Ablage erscheinen ohne Nachfrage nicht.
 
-Wenn das Artefakt eine Reveal-Praesentation ist, folgt die sichtbare Reihenfolge dem Contract fuer `REVEAL FINAL`:
+Wenn das Artefakt eine Reveal-Praesentation ist, folgt die sichtbare Reihenfolge den hier definierten Regeln fuer `REVEAL FINAL`:
 
 1. `Abgleich`
 2. optionale `Materialuebersicht`
@@ -284,11 +286,7 @@ Wenn das Artefakt eine Reveal-Praesentation ist, folgt die sichtbare Reihenfolge
 5. `Hinweise oder Optimierungen`
 6. `Zusammenfassung`
 
-Wurde der Fall mit `/PLAN FORSCHUNG` gestartet, finalisiert im Standardfall `REVEAL FINAL` zusaetzlich alle aktiven Forschungsartefakte und schliesst den Forschungsmodus automatisch ab. Im Sonderfall `blog_only` erfolgt dieser Abschluss bereits bei `BLOG FINAL`, wenn kein Reveal erzeugt werden soll.
-
-Diese Forschungsfinalisierung erscheint nicht als eigener sichtbarer Pruefblock; notwendige Hinweise werden nur im passenden Block des Contract-Formats genannt.
-
-Die `Zusammenfassung` folgt ausschliesslich dem Summary-Schema des Contracts:
+Die `Zusammenfassung` folgt ausschliesslich dem hier definierten Summary-Schema:
 
 - `Stand`
 - `Ergebnis`
@@ -297,4 +295,4 @@ Die `Zusammenfassung` folgt ausschliesslich dem Summary-Schema des Contracts:
 - `Naechster Schritt`
 
 Die Zusammenfassung bleibt kompakt und ergebnisorientiert; erfolgreiche Pruefketten, Pfad- oder Ablageangaben und technische Nachlaufdetails erscheinen dort nicht, solange daraus kein Handlungsbedarf entsteht.
-Einen separaten globalen Statusblock oder eine eigene Empfehlungsspalte gibt es nicht; notwendige Korrekturen werden in den passenden Block des Contract-Formats eingeordnet.
+Einen separaten globalen Statusblock oder eine eigene Empfehlungsspalte gibt es nicht; notwendige Korrekturen werden in den passenden Block dieses Formats eingeordnet.
