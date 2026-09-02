@@ -1608,3 +1608,267 @@ KDM-Core und DQM-Core blieben unveraendert. Es wurden keine neuen Regeln zu
 Entscheidungsstabilitaet, Kontinuitaet, Reparatur oder Proportionalitaet
 eingefuehrt. H01 folgt erst nach Abschluss und Review von B1.3b; fuer diesen
 Schritt wurden weder Benchmark-Ergebnisse noch Usage-Werte erhoben.
+
+## B1.3b – Deduplizierung des normalen PLAN-Laufzeitkontexts
+
+### Ziel
+
+B1.3b prüft, ob nach der in B1.3a eingeführten KDM-Kanonisierung weitere
+redundante Laufzeitformulierungen aus Master-Agent und PLAN-Prompt entfernt
+werden können, ohne das beobachtbare Verhalten des KO-PLAN-Agenten im
+H01-Benchmark zu verschlechtern.
+
+Die Intervention ist bewusst eng begrenzt:
+
+- keine Änderung des `project_governance/kdm_core.md`,
+- keine Änderung des `ai_agents/didaktisches_qualitaetsmodell_core.md`,
+- keine Änderung des `project_governance/plan_core.md`,
+- keine neuen Verhaltensnormen,
+- keine Einführung von Planning State, Lenses, Multi-Agent-Logik oder neuen
+  Profilen,
+- keine weitere Kompression des DQM-Core.
+
+B1.3b ist damit primär eine Architektur- und Deduplizierungsintervention.
+
+### Benchmarkstand
+
+Commit:
+
+`a3b7784f6337817da9d7983cc9fe2b7d3c65a1bf`
+
+Normaler PLAN-Pflichtkontext:
+
+- 594 Zeilen
+- 3.357 Wörter
+- 29.416 Bytes
+
+Vergleich:
+
+- B0: 130.407 Bytes
+- B1.1: 64.672 Bytes
+- B1.2: 37.116 Bytes
+- B1.3a: 34.700 Bytes
+- B1.3b: 29.416 Bytes
+
+Damit reduziert B1.3b den statischen Pflichtkontext gegenüber B1.3a um
+15,23 % und gegenüber B1.2 um 20,75 %. Gegenüber B0 beträgt die Reduktion
+77,44 %.
+
+### H01-Qualitätstest
+
+Session:
+
+`01a0635b-7a02-7bc1-8d81-cf9cc673a03e`
+
+Modell:
+
+- `gpt-5.6-sol`
+- Reasoning: `low`
+
+Die fünf H01-Prompts wurden vollständig, wortgleich und in der vorgesehenen
+Reihenfolge ausgeführt. Zwischen H01.1 und H01.5 gab es keine zusätzlichen
+Nutzerprompts.
+
+Ergebnis:
+
+- Qualität: 75/75
+- Didaktischer Drift: 0
+- turn-spezifische Grenzverletzungen: 0
+- gewählte erste Variante ab H01.3 bis H01.5 stabil
+- neue Quellen oder fachliche Inhalte: 0
+- unnötige Rückfragen: 1 in H01.2
+
+Die zusätzliche Frage in H01.2 ist für den festen Benchmarkverlauf nicht
+erforderlich und stellt ein schwaches Signal bei der Frageökonomie dar. Sie
+führt jedoch weder zu Drift noch zur Öffnung einer bereits getroffenen
+Entscheidung und rechtfertigt im beobachteten Lauf keinen Punktabzug.
+
+Damit liefert der H01-Einzellauf keinen belastbaren Hinweis darauf, dass die in
+B1.3b entfernte redundante Verstärkung für didaktische Qualität, kritisches
+Sparring, Hauptlinienführung oder Gate-/Auftragstreue erforderlich war.
+
+### H01-Usage
+
+Für dieselbe Session wurden direkt aus dem lokalen Codex-JSONL folgende Werte
+ermittelt:
+
+- Input: 171.225
+- Cached Input: 147.200
+- Uncached Input: 24.025
+- Output: 4.381
+- Reasoning: 883
+- Total: 175.606
+- Model Calls: 7
+- Cached Share: 85,97 %
+
+Vergleich mit B1.2:
+
+- statischer Pflichtkontext: −20,75 %
+- Input: +9,30 %
+- Cached Input: +7,18 %
+- Uncached Input: +24,42 %
+- Output: −0,57 %
+- Reasoning: −19,95 %
+- Total: +9,03 %
+- Model Calls: 6 → 7
+
+Der kleinere statische Pflichtkontext führt im B1.3b-Einzellauf somit nicht zu
+einer weiteren Reduktion der kumulativen Usage gegenüber B1.2. Insbesondere der
+zusätzliche Model Call ist ein plausibler Mitfaktor für den höheren kumulativen
+Input.
+
+Der Lauf bestätigt damit erneut, dass statische Kontextgröße, Cacheverhalten,
+Tool-/Call-Struktur und kumulative Token-Usage getrennt betrachtet werden
+müssen. Eine kausale Attribution der Usage-Unterschiede an die Deduplizierung
+ist aus einem einzelnen Lauf nicht möglich.
+
+### Ladeverhalten
+
+Im H01-Lauf wurden tatsächlich geladen:
+
+- `project_governance/plan_core.md`
+- `project_governance/kdm_core.md`
+- `ai_agents/master_agent.md`
+- `ai_agents/didaktisches_qualitaetsmodell_core.md`
+- `prompts/plan.md`
+- `benchmark/inputs/H01_AGENT_INPUT.md`
+
+Nicht geladen wurden insbesondere:
+
+- vollständiges `ai_agents/didaktisches_qualitaetsmodell.md`
+- `project_governance/low_noise_response_patterns.md`
+- `project_governance/agent_contract.md`
+- Produktions- und Finalisierungstemplates
+- Research-Dateien
+
+Die Lazy-Load-Grenzen funktionieren damit im H01-Lauf wie beabsichtigt.
+
+### Entscheidung nach B1.3b
+
+B1.3b wird beibehalten.
+
+Begründung:
+
+1. Der normale statische PLAN-Pflichtkontext wurde gegenüber B1.2 nochmals
+   deutlich reduziert.
+2. H01 erreicht weiterhin 75/75 bei Drift 0 und ohne Grenzverletzungen.
+3. Es gibt keinen belastbaren Hinweis, dass die entfernten redundanten
+   Formulierungen für die beobachtete H01-Qualität erforderlich sind.
+4. Die gegenüber B1.2 höhere kumulative Usage wird nicht als Architekturfehler
+   der Deduplizierung interpretiert, da sich die Model-Call-Struktur unterscheidet.
+5. Weitere reine Textkompression des bestehenden Core-Kontexts wird vorerst
+   nicht priorisiert.
+
+B1.3 wird deshalb noch nicht abgeschlossen. Als nächste kontrollierte
+Intervention folgt B1.3c.
+
+## Nächster Schritt: B1.3c – gezielte KDM-Verhaltensintervention
+
+### Ausgangspunkt
+
+B1.3a hat bereits vorhandene Dialogregeln im KDM-Core kanonisiert.
+B1.3b hat anschließend redundante Verstärkung entfernt.
+
+Mehrere ursprünglich diskutierte Verhaltensprinzipien wurden bewusst noch nicht
+eingeführt, weil sie gegenüber B1.2 tatsächlich neue Normen darstellen würden.
+
+B1.3c soll diese möglichen neuen KDM-Regeln zunächst auditieren und nur dann
+minimal ergänzen, wenn ein eigenständiger Nutzen gegenüber den bereits
+vorhandenen Regeln begründbar ist.
+
+### Zu prüfende Kandidaten
+
+Insbesondere:
+
+1. Entscheidungsstabilität
+   - bereits getroffene didaktische Entscheidungen nicht ohne neuen relevanten
+     Grund erneut öffnen.
+
+2. Kritisches Sparring statt automatischer Reparatur
+   - diagnostizierte Spannungen nicht automatisch durch vollständige
+     Neuplanung „lösen“, wenn der Nutzer zunächst Analyse, Bewertung oder
+     Entscheidungshilfe verlangt.
+
+3. Begründete Kontinuität
+   - über mehrere Turns an der gewählten Linie weiterarbeiten und Änderungen
+     nur bei neuer Information, explizitem Auftrag oder relevantem Konflikt
+     begründen.
+
+4. Auftragstreue und Proportionalität
+   - Umfang und Eingriffstiefe an den konkreten Auftrag koppeln und keine
+     unnötigen Zusatzleistungen erzeugen.
+
+### Methodische Grenze für B1.3c
+
+Vor einer Implementierung ist zunächst zu prüfen:
+
+- Welche dieser Regeln sind bereits funktional durch KDM-, PLAN- oder
+  DQM-Regeln abgedeckt?
+- Welche wären tatsächlich neue Verhaltensnormen?
+- Welche Regel adressiert ein beobachtetes oder plausibles Fehlerbild, das durch
+  bestehende Regeln nicht ausreichend verhindert wird?
+- Lassen sich mehrere Kandidaten auf eine kleinere Zahl präziser Prinzipien
+  reduzieren?
+
+B1.3c darf nicht gleichzeitig:
+
+- Planning State einführen,
+- DQM-Core verändern,
+- PLAN-Core restrukturieren,
+- neue Profile oder Lenses einführen,
+- Research-Architektur verändern,
+- Multi-Agent-Logik einführen,
+- weitere Kontextkompression als eigenes Ziel verfolgen.
+
+Ziel ist eine kleine, klar isolierbare KDM-Verhaltensintervention.
+
+Erst nach Abschluss von B1.3c soll mit B1.4 ein Shadow Planning State geprüft
+werden.
+
+## B1.3c – Gezielte KDM-Verhaltensintervention
+
+### Ziel und Auditentscheidung
+
+B1.3c ergaenzt den KDM-Core minimal um eigenstaendige Normen fuer die
+dialogische Fortfuehrung didaktischer Entscheidungen und fuer eine dem Auftrag
+angemessene Eingriffstiefe. Der Audit hat die vier Kandidaten
+Entscheidungsstabilitaet, kritisches Sparring statt automatischer Reparatur,
+begruendete Kontinuitaet sowie Auftragstreue und Proportionalitaet auf genau zwei
+Prinzipien verdichtet: Entscheidungskontinuitaet und auftragsangemessene
+Intervention.
+
+### Neue Normen
+
+1. **Entscheidungskontinuitaet:** Getroffene tragende didaktische Entscheidungen
+   und die daraus entwickelte Hauptlinie gelten im weiteren Dialog als aktueller
+   Arbeitsstand und werden nicht ohne relevanten Anlass erneut zur Disposition
+   gestellt. Eine substantielle Abweichung ist insbesondere bei ausdruecklichem
+   Aenderungswunsch der Lehrperson, neuen relevanten Informationen oder einem
+   sichtbar werdenden relevanten DQM-Konflikt legitim und wird knapp
+   nachvollziehbar gemacht. Kleine redaktionelle, sprachliche oder lokale
+   Anpassungen benoetigen keine eigene Begruendung.
+2. **Auftragsangemessene Intervention:** Umfang und didaktische Eingriffstiefe
+   folgen dem konkreten Nutzerauftrag. Bei Analyse, Bewertung oder
+   Entscheidungshilfe diagnostiziert, begruendet und empfiehlt der Agent, setzt
+   aber keine umfassende Neuplanung oder weitreichende Ueberarbeitung ungefragt
+   bereits selbst um. Konkrete Empfehlungen und begrenzte Beispiele bleiben
+   erlaubt. Eine vollstaendige oder weitreichende Ueberarbeitung erfolgt, wenn
+sie ausdruecklich beauftragt ist oder die Lehrperson ihr im weiteren Dialog
+erkennbar zugestimmt hat.
+
+### Methodische Abgrenzung und unveraenderte Dateien
+
+B1.3c ist anders als B1.3a keine Kanonisierung bereits aktiver Dialogregeln und
+anders als B1.3b keine Deduplizierungs- oder Kontextkompressionsintervention.
+Die beiden neuen Normen liegen ausschliesslich im KDM-Core. Sie fuehren weder
+Planning-State-Verwaltung noch neue Zustaende oder Mechanismen ein; der fuer
+B1.4 vorgesehene Shadow Planning State bleibt ein spaeterer, getrennter Schritt.
+
+Inhaltlich unveraendert bleiben `project_governance/plan_core.md`,
+`ai_agents/master_agent.md`, `ai_agents/didaktisches_qualitaetsmodell_core.md`,
+`ai_agents/didaktisches_qualitaetsmodell.md`, `prompts/plan.md`,
+`prompts/check.md`, `project_governance/low_noise_response_patterns.md`,
+`project_governance/agent_contract.md` sowie alle Benchmark-Inputs und bisherigen
+Benchmark-Runs. Damit bleiben PLAN-Gates und Prozesslogik, DQM-Diagnostik sowie
+Master- und Promptformulierungen unveraendert; verstärkende Paraphrasen werden
+nicht eingefuehrt.
