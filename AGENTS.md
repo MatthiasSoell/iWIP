@@ -4,15 +4,18 @@ This file only connects Codex to the existing agent specification. It does not a
 new pedagogical rules.
 
 For normal didactic planning requests, including `/PLAN`, read and follow only
-these B1.2 core files:
+these core files:
 
 1. `project_governance/plan_core.md`
-2. `ai_agents/master_agent.md`
-3. `ai_agents/didaktisches_qualitaetsmodell_core.md`
-4. `prompts/plan.md`
+2. `project_governance/kdm_core.md`
+3. `ai_agents/master_agent.md`
+4. `ai_agents/didaktisches_qualitaetsmodell_core.md`
+5. `prompts/plan.md`
 
-The PLAN core has priority if these files conflict. The complete DQM is loaded
-only under the lazy-loading conditions defined in the PLAN core.
+The PLAN core defines process, permitted actions, gates, and governance. The KDM
+core defines dialog and decision form. The DQM core defines didactic quality and
+diagnosis. The PLAN core has priority if these files conflict. The complete DQM
+is loaded only under the lazy-loading conditions defined in the PLAN core.
 
 Load production and finalization details only at their gates:
 

@@ -8,12 +8,14 @@ Dieser Prompt startet eine neue didaktische Planung im SciBlog iWIP
 und routet den Fall in die Steuerlogik aus `project_governance/plan_core.md`.
 
 Es gelten die Regeln aus `project_governance/plan_core.md`.
+Die Dialog- und Entscheidungsform folgt `project_governance/kdm_core.md`.
 Diese Datei konkretisiert ausschliesslich den Einstieg fuer den normalen `/PLAN`-Modus.
 Bei Konflikt gilt der PLAN Core.
 
 Arbeite strikt nach:
 
 - `project_governance/plan_core.md`
+- `project_governance/kdm_core.md`
 - `ai_agents/master_agent.md`
 - `ai_agents/didaktisches_qualitaetsmodell_core.md`
 
@@ -41,18 +43,16 @@ Template-Ladelogik fuer `/PLAN`:
 ueberfuehrt ihn in den passenden Planungsmodus
 und uebergibt vollstaendig an den PLAN Core.
 
-Der Agent nutzt vorhandene Informationen aus Initialprompt, Folgeprompts und
-Kontext vorrangig. Er fragt nur dann gezielt nach, wenn fuer didaktisch
-relevante Entscheidungen wesentliche Informationen fehlen, Angaben
-widerspruechlich sind oder sich nicht tragfaehig ableiten lassen. Es gibt
-keine Standardabfrage und keine routinemaessige Vollabfrage aller Parameter.
+Frageoekonomie und die sichtbare Dialogbearbeitung folgen dem KDM-Core.
 
 Dabei gilt fuer den Handoff an den PLAN Core:
 
 - `plan` wertet nur den Einstieg aus und uebergibt dann an die im PLAN Core definierte Phasen- und Gate-Logik.
-- Die erste sichtbare Reaktion bleibt Planungsmodus und folgt strikt diesem kompakten Schema: `Problemdefinition`, `Empfohlene Verdichtung` mit `vorlaeufiger Leitfrage` und `2-3 Schwerpunkten`, optional `Moegliche Alternativen` mit genau einer kurzen konkurrierenden didaktischen Lesart oder maximal zwei sehr knappen alternativen Rahmungen, maximal eine zentrale Klaerungsfrage. Feste Ueberschriften sind optional, solange diese Elemente klar erkennbar bleiben und die Antwort fachlich-didaktisch zusammenhaengend formuliert ist.
-- Solche Alternativen erscheinen nur, wenn normative Spannung, ein multiperspektivischer Gegenstand, mehrere plausible Zielarchitekturen, unklare Nutzerpriorisierung oder ein offener didaktischer Raum vorliegen. Sie bleiben kurz, nachgeordnet und duerfen weder Option-A/B/C-Strukturen noch gleichwertige Parallelentwuerfe oder Vergleichstabellen erzeugen. Wenn trotz offener Lage keine sinnvolle Alternative angezeigt wird, ist stattdessen eine knappe Fokusbegruendung zulaessig.
-- Sichtbar unzulaessig sind Such-, Routing-, Tool- oder Prozesskommentare sowie technische Aktivierungs-, Ablage- oder Nachlaufhinweise.
+- Die erste sichtbare Reaktion bleibt Planungsmodus und kompakt. Sie enthaelt
+  eine Problemdefinition und eine empfohlene Verdichtung mit vorlaeufiger
+  Leitfrage und zwei bis drei Schwerpunkten; ihre weitere Dialogform folgt dem
+  KDM-Core. Feste Ueberschriften sind optional, solange die Antwort
+  fachlich-didaktisch zusammenhaengend formuliert ist.
 - Vor `REVEAL GO` bleibt die sichtbare Planung strikt blog-first; Reveal-, Folien- oder Transformationslogik wird nicht vorweggenommen.
 - Produktions- und Finalisierungsdetails werden erst an den in `AGENTS.md` definierten Gates geladen; `prompts/plan.md` fuehrt dazu keine Parallelregeln.
 - Explizit benannte Pfade, hochgeladene Dateien und direkt nutzbare vorhandene Materialien werden fuer Analyse und Fortfuehrung vor Nachbau priorisiert.
@@ -63,16 +63,6 @@ Fuer diese gezielte Klaerung kann der Agent bei Bedarf selektiv nach Zielgruppe,
 Kontext, Vorwissen, typischen Lernhuerden, Zeitrahmen, Format, Setting oder
 fachlichem Kontext fragen. Solche Nachfragen sind situationsabhaengig und nur
 bei tatsaechlichem didaktischem Bedarf zulaessig.
-
-Wenn normative Spannung, ein multiperspektivischer Gegenstand, mehrere
-plausible Zielarchitekturen, unklare Nutzerpriorisierung oder ein offener
-didaktischer Raum ohne harte Informationsluecke vorliegen, fuehrt der Agent
-zuerst eine empfohlene Verdichtung operativ sichtbar und haelt moegliche
-Alternativen bei genau einer kurzen konkurrierenden didaktischen Lesart oder
-maximal zwei sehr knappen alternativen Rahmungen. Dadurch werden didaktische
-Lesarten sichtbar, ohne einen offenen Variantenraum oder eine Workshop-Logik zu
-erzeugen. Wenn trotz offener Lage keine sinnvolle Alternative angezeigt wird,
-ist stattdessen eine knappe Fokusbegruendung zulaessig.
 
 Profil A bleibt gemaess PLAN Core der Default. Bei klaren Hinweisen im Anliegen
 oder Kontext kann der Agent knapp und begruendet ein passenderes Profil B oder

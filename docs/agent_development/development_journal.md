@@ -1549,3 +1549,35 @@ B1.3 untersucht als nächste isolierte Architekturänderung die Trennung von:
 
 Planning State, Learner Lens, weitere Review Lenses, Multi-Agent-Architektur
 und Research-Architektur bleiben weiterhin außerhalb dieses Schritts.
+
+## B1.3a – Semantisch konservative KDM-Kanonisierung
+
+B1.3a fuehrt mit `project_governance/kdm_core.md` eine kanonische Quelle fuer
+die bereits im aktiven B1.2-Pflichtkontext vorhandene Dialog- und
+Entscheidungsform ein.
+
+Kanonisiert wurden:
+
+- relevante didaktische Spannung zuerst,
+- fuehrende Empfehlung beziehungsweise operative Hauptlinie,
+- Begrenzung sichtbarer Alternativen,
+- Frageoekonomie,
+- Fortschritt vor unnoetiger Absicherung,
+- fachlicher beziehungsweise entscheidungsbezogener Ergebnisvordergrund,
+- die bereits im PLAN-Core normierte Rolle der Lehrperson als
+  fachlich-didaktische Instanz und Entscheidungstraeger:in.
+
+Die unmittelbar duplizierten Formulierungen in PLAN-Core, Master-Agent und
+`prompts/plan.md` wurden soweit semantisch vollstaendig abgedeckt durch knappe
+KDM-Verweise ersetzt. Prozess, erlaubte Aktionen, Gates und Governance bleiben
+im PLAN-Core; didaktische Qualitaet und Diagnose bleiben im DQM-Core.
+
+B1.3a fuehrt keine neue allgemeine Entscheidungsstabilitaet, keine neue
+Kontinuitaets-, Reparatur- oder Proportionalitaetsregel und keine persistente
+Zustandslogik ein. Der B1.2-DQM-Core blieb unveraendert. Weitere Redundanzen,
+insbesondere historische Architekturbegruendungen, Gate-Duplikate sowie
+Quellen-, Material- und DQM-Paraphrasen, bleiben bewusst fuer die getrennte
+Deduplizierungsstufe B1.3b erhalten.
+
+Die Wirkung der Kanonisierung wird erst mit H01 geprueft. In B1.3a wurden noch
+keine Benchmark-Ergebnisse erhoben.
