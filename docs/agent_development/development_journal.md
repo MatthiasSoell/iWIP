@@ -1581,3 +1581,30 @@ Deduplizierungsstufe B1.3b erhalten.
 
 Die Wirkung der Kanonisierung wird erst mit H01 geprueft. In B1.3a wurden noch
 keine Benchmark-Ergebnisse erhoben.
+
+## B1.3b – Deduplizierung des PLAN-Pflichtkontexts
+
+Ausgangspunkt ist der separat committete B1.3a-Stand. B1.3b reduziert
+Redundanzen im normalen PLAN-Pflichtkontext, ohne neue Normlogik einzufuehren
+oder bestehende Verhaltenslogik bewusst zu veraendern.
+
+Bereinigt wurden Gate- und Blog-first-Wiederholungen, DQM- und
+Profilparaphrasen sowie doppelte Quellen- und Materialregeln in Master-Agent
+und Plan-Prompt. Redundante Materialregeln ausserhalb des PLAN-Cores wurden
+entfernt; die bestehende PLAN-Core-Regel bleibt unveraendert kanonisch. Rein
+historische Architekturvergleiche wurden aus dem Master-Agent entfernt, da sie
+keine normative Laufzeitfunktion hatten.
+
+Bewusst erhalten blieben funktionsspezifische lokale Angaben: die
+profilsensitive Anwendung und DQM-Nutzung im Master-Agent, der Rang von
+Projektquellen gegenueber dem DQM, die Trennung temporaerer
+Analyseartefakte von produktiven Pfaden, die redaktionelle Ueberfuehrung in
+publizierbare Sprache sowie knappe Beispiele fuer moegliche
+Klaerungsgegenstaende im Plan-Prompt. Auch die sicherheitsrelevanten Regeln zu
+Quellenintegritaet und Materialvorrang bleiben vollstaendig im PLAN-Core und
+werden im Master-Agent knapp referenziert.
+
+KDM-Core und DQM-Core blieben unveraendert. Es wurden keine neuen Regeln zu
+Entscheidungsstabilitaet, Kontinuitaet, Reparatur oder Proportionalitaet
+eingefuehrt. H01 folgt erst nach Abschluss und Review von B1.3b; fuer diesen
+Schritt wurden weder Benchmark-Ergebnisse noch Usage-Werte erhoben.
