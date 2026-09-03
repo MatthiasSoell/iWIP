@@ -31,6 +31,11 @@ Load production and finalization details only at their gates:
 - at `REVEAL FINAL`: additionally `prompts/check.md`,
   `prompts/content_emojis_reveal.md`, and the references they explicitly require
 
+Load `tasks/external_handoff.md` only when a concrete external handoff is
+activated under the conditions in the PLAN core. Do not load the task for a
+normal `/PLAN` turn or merely to suggest a potentially useful external
+specialized service.
+
 OER/OERSI metadata rules are loaded only with the blog template or a relevant
 publication task. The B0 research rules remain preserved in
 `project_governance/agent_contract.md`, but the Research adapter is currently

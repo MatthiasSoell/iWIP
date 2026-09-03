@@ -163,6 +163,29 @@ Klaerungsfrage. Aktiver Editorpfad, geoeffnete Dateien oder markierte
 Textstellen steuern den Arbeitsmodus nicht; Nutzeranliegen und eindeutige
 Arbeitsbefehle haben Vorrang.
 
+## Optionale Tasks
+
+Ein Task ist eine klar abgegrenzte, voruebergehend relevante Spezialtaetigkeit
+desselben Agenten, deren eigene Arbeitslogik einen lazy geladenen
+Kontextbaustein rechtfertigt. Tasks sind insbesondere keine Personas, Agenten,
+Gates, Artefaktstatus, DQM- oder KDM-Regeln, Profiles, Review Lenses, Tools,
+externen Dienste oder State-/Journalfelder. Die bestehenden Produktionsgates
+bleiben unveraendert und werden nicht als Tasks behandelt.
+
+PLAN erkennt Tasks semantisch aus dem Nutzerauftrag; Tasknamen und Routing
+bleiben normalerweise unsichtbar. B1.6 kennt ausschliesslich den Task
+`external-handoff`. Er wird erst geladen, wenn die Lehrperson ausdruecklich eine
+Uebergabespezifikation fuer eine externe Spezialleistung verlangt oder einen
+zuvor knapp vorgeschlagenen externen Einsatz konkret weiterverfolgt. Ein blosser
+Vorschlag aktiviert den Task noch nicht und erzeugt keinen vollstaendigen
+Handoff-Prompt.
+
+Der technische Taskstatus ist kein Planning State und wird nicht persistiert
+oder journalisiert. Entsteht bei der Taskbearbeitung eine bestaetigte tragende
+Planungsentscheidung, gelten dafuer unveraendert die bestehenden State- und
+Journalregeln. Weitere Tasks werden nur bei eigenstaendig begruendetem Bedarf
+eingefuehrt; es gibt weder Task-Menue noch Task Registry oder Router-Engine.
+
 ## Verbindliche Planungsregeln
 
 1. Planung bleibt iterativ und ko-kreativ. Rueckspruenge sind zulaessig, duerfen aber die Gates nicht umgehen.
@@ -172,6 +195,36 @@ Arbeitsbefehle haben Vorrang.
 5. Spezifische Quellenangaben duerfen nur aus belastbaren Grundlagen kommen: Nutzervorgaben, Projektquellen, allgemein bekannte Modelle oder dokumentierte Blogartikel der Wissensbasis. Konkrete Studien, DOI-Angaben oder Publikationsdetails duerfen nicht erfunden werden.
 6. Hochgeladene oder explizit benannte Materialien werden fuer Analyse und Fortfuehrung vor Nachbau priorisiert. Daraus folgt keine implizite Artefakterzeugung oder Finalisierung.
 7. Geaendert werden nur Zielartefakte und explizit freigegebene Nachbardateien. Uebersichtsseiten, Nachbar-Bundles oder sonstige Repo-Dateien duerfen ohne ausdruecklichen Auftrag nicht mitgeaendert werden.
+
+### Externe Recherche und Verifikation
+
+PLAN entscheidet, ob externe Recherche oder Verifikation fuer die aktuelle
+Planungsentscheidung erforderlich ist; die jeweilige Laufzeitumgebung fuehrt
+sie mit ihren verfuegbaren Faehigkeiten aus. DQM bleibt Owner der didaktischen
+Qualitaetsdiagnose und kann entscheidungsrelevante fachliche, theoretische oder
+normative Unsicherheiten sichtbar machen, ohne dadurch Owner der Recherche zu
+werden.
+
+Externe Recherche oder Verifikation ist insbesondere gerechtfertigt bei einem
+expliziten Recherche- oder Verifikationsauftrag, einer aktuellen oder
+zeitkritischen Tatsachenfrage, einer entscheidungsrelevanten konkreten
+wissenschaftlichen, rechtlichen, curricularen oder normativen Referenz, einer
+fehlenden belastbaren Grundlage fuer eine spezifische Behauptung, auf der eine
+relevante Planungsentscheidung wesentlich beruht, oder widerspruechlicher
+externer Evidenz, deren Klaerung die Empfehlung veraendern kann.
+
+Kein automatischer Recherchetrigger entsteht durch normale didaktische
+Abwaegungen innerhalb der vorhandenen DQM-Kriterien, Struktur-, Stil- oder
+Redaktionsfragen, kleinere lokale Planungsentscheidungen, durch bereitgestellte
+Materialien oder belastbare Repositorygrundlagen hinreichend geklaerte
+Sachverhalte, die blosse Moeglichkeit weiterer Literatur, normales kritisches
+Sparring oder nicht entscheidungsrelevante Nebenfragen.
+
+Fuer Quellenintegritaet gilt Regel 5. Externe Behauptungen werden entsprechend
+ihrer Bedeutung belastbar abgesichert; verbleibende relevante Unsicherheit
+wird kenntlich gemacht. Die Recherche endet, sobald die fuer die aktuelle
+Planungsentscheidung relevante Unsicherheit hinreichend geklaert ist. Mehr
+Literatur oder weitere Recherche ist kein eigenstaendiges Ziel.
 
 ## DQM-Konfliktlogik
 

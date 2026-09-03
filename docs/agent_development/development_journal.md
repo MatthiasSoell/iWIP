@@ -2152,3 +2152,658 @@ beziehungsweise ein Fehler verhindert die weitere Bearbeitung.
 State-, Journal-, Journalwuerdigkeits-, Revisions-, Persistenz- und Leselogik
 bleiben unveraendert. Wegen einer fehlenden Kontrollbedingung erlaubt H03 keine
 Beurteilung eines moeglichen Tokenvorteils.
+
+## B1.6 – Minimaler Task `external-handoff`
+
+B1.6 fuehrt bewusst kein allgemeines Task-System ein. Das Audit der
+urspruenglich vorgesehenen Kandidaten zeigte, dass `intake`, `analyse`,
+`goals`, `content`, `learning-activities`, `assessment` und `plan-refine`
+bereits als zusammenhaengende PLAN-Arbeit durch PLAN, KDM und DQM-Core getragen
+werden. Eigene Dateien fuer diese Planungsphasen wuerden vorhandene Ownership
+duplizieren, die didaktische Kohaerenz fragmentieren und mehr Routingkontext
+erzeugen, als sie einsparen.
+
+`review` bleibt einer spaeteren Architektur gezielter Review Lenses vorbehalten.
+Blog-, Reveal- und FINAL-Logik bleiben bestehende Gate-/Produktionsmodule;
+`export` bleibt eine artefakt- und werkzeuggebundene Operation innerhalb dieser
+Pfade. Kein bestehendes Gate wird umbenannt, ersetzt oder in einen Task
+umklassifiziert.
+
+### Taskbegriff und Routing
+
+Ein Task ist eine klar abgegrenzte, voruebergehend relevante Spezialtaetigkeit
+desselben KO-PLAN-Agenten, deren spezialisierte Arbeitslogik einen eigenen lazy
+geladenen Kontextbaustein rechtfertigt. Er ist insbesondere keine Persona, kein
+weiterer Agent, kein Gate, kein Artefaktstatus, kein Qualitaets- oder
+Dialogmodell, kein Profile, keine Review Lens, kein Tool und kein externer
+Dienst.
+
+PLAN bleibt Owner des unsichtbaren semantischen Routings. Es entstehen weder
+Task-Menue, Task Registry noch Router-Engine. Der technische Taskstatus wird
+nicht im Shadow Planning State gespeichert, Taskwechsel werden nicht
+journalisiert und geladene Tasklogik wird nicht als dauerhafter Arbeitszustand
+behandelt. Tragende Planungsentscheidungen, die waehrend einer Taskbearbeitung
+bestaetigt oder revidiert werden, folgen unveraendert den B1.4-/B1.5-Regeln.
+
+### Einziger Task: `external-handoff`
+
+`tasks/external_handoff.md` ist der einzige mit B1.6 eingefuehrte Task. Er
+erstellt eine kompakte, direkt weiterverwendbare Uebergabespezifikation fuer
+eine Spezialleistung, die bewusst ausserhalb von KO-PLAN ausgefuehrt wird.
+KO-PLAN behaelt die Verantwortung fuer Zweck, Zielgruppe, Verwendungskontext
+und fachlich unverzichtbare Anforderungen; der externe Spezialist verantwortet
+die eigentliche Ausfuehrung.
+
+Der Task wird nur geladen, wenn die Lehrperson ausdruecklich einen Handoff-Prompt
+verlangt oder einen zuvor knapp vorgeschlagenen externen Einsatz konkret
+weiterverfolgt. Ein blosser Hinweis auf eine fachlich-didaktisch oder
+kommunikativ sinnvolle externe Spezialleistung aktiviert ihn nicht. Damit darf
+KO-PLAN einen relevanten externen Einsatz nachgeordnet vorschlagen, ohne
+routinemaessig Grafiken, Werkzeuge oder weitere Produktionsschritte anzubieten
+und ohne ungefragt vollstaendige Handoff-Prompts zu erzeugen.
+
+Die Taskdatei enthaelt nur die fuer einen Handoff moeglicherweise notwendigen
+Informationsarten, Regeln fuer eine knappe ausfuehrbare Ausgabe und klare
+Nicht-Zustaendigkeiten. Sie implementiert weder eine grafik-spezifische
+Architektur noch Tools, APIs, Anbieterwahl, automatische Uebergaben oder einen
+Multi-Agent-Workflow. Grafik, Audio, Video oder Datenanalyse koennen kuenftige
+Anwendungsfaelle desselben allgemeinen Musters sein, begruenden aber keine
+weiteren Tasks.
+
+### Kontext- und Architekturwirkung
+
+Aus dem normalen PLAN-Pflichtkontext wurden keine weiteren Regeln in Tasks
+verschoben. `external_handoff.md` wird bei normaler `/PLAN`-Arbeit nicht
+geladen; lediglich die kleine Definition und Aktivierungsgrenze im PLAN-Core
+sowie der Ladehinweis in `AGENTS.md` kommen zum Pflichtkontext hinzu. B1.6 ist
+daher primaer eine modulare Erweiterungsgrenze und keine
+Kontextreduktionsintervention.
+
+Eine Tokenersparnis wird nicht behauptet. Statischer Pflichtkontext,
+zusaetzliche Dateizugriffe, Zahl der Model Calls, Cacheverhalten und kumulative
+Token-Usage bleiben getrennte Groessen; die tatsaechliche Laufzeitwirkung ist
+ohne spaeteren Benchmark offen.
+
+Bewusst nicht Teil von B1.6 sind weitere Tasks, Planungs-Mikrotasks, Profiles,
+Review Lenses, Research Adapter, Grafik-Agenten, technische externe
+Schnittstellen, Tool-/API-Aufrufe, Multi-Agent-Systeme, Aenderungen der
+Gate-Erkennung oder -Syntax, neue State-/Journalfelder sowie ein Benchmark.
+Weitere Tasks duerfen erst entstehen, wenn eine eigenstaendige spezialisierte
+Arbeitslogik und ein realer Bedarf nachgewiesen sind.
+
+## Abschluss B1.6 – Funktionstest und weitere Entwicklungsroadmap
+
+### Funktionstest `external-handoff`
+
+B1.6 wurde nach der Implementierung mit einem kleinen dreistufigen
+Funktionstest geprüft.
+
+**Test 1 – normale didaktische PLAN-Arbeit**
+
+Der Agent analysierte eine zentrale didaktische Spannung für ein
+90-minütiges Bachelorseminar zum Thema Feedback in betrieblichen
+Lernprozessen.
+
+`tasks/external_handoff.md` wurde dabei nicht geladen.
+
+**Test 2 – Visualisierungsbedarf innerhalb der normalen Planung**
+
+Auf die Frage, ob für den Zusammenhang von Feedback, Wirkung und Perspektive
+Text ausreiche, entwickelte der Agent selbst ein einfaches Wirkungsmodell in
+Mermaid und verband dieses mit einer didaktischen Nutzungsidee.
+
+Auch in diesem Fall wurde `tasks/external_handoff.md` nicht geladen.
+
+Dies bestätigt die vorgesehene Grenze: Einfache Visualisierungen, die der
+Agent selbst sinnvoll konzipieren kann, bleiben Bestandteil der normalen
+Planungsarbeit und lösen keinen externen Handoff aus.
+
+**Test 3 – expliziter externer Handoff**
+
+Nach dem ausdrücklichen Wunsch, die Visualisierung durch einen externen
+Grafik-Agenten professionell gestalten zu lassen, wurde
+`tasks/external_handoff.md` geladen.
+
+Der Agent erzeugte einen kompakten, direkt weiterverwendbaren Prompt mit:
+
+- Ziel und Zielgruppe,
+- fachlicher Kernaussage,
+- verbindlichen inhaltlichen Beziehungen,
+- relevanten Nicht-Zielen,
+- gestalterischen Anforderungen,
+- sowie bewusst verbleibendem gestalterischem Spielraum.
+
+Der externe Dienst wurde nicht selbst ausgeführt und es entstanden keine
+unnötigen Rückfragen oder sichtbaren Task-/Routing-Erklärungen.
+
+**Abschlussentscheidung:**
+
+B1.6 gilt funktional als bestanden.
+
+Das Lazy Loading funktioniert im geprüften Fall wie vorgesehen:
+
+- normale Planung → kein `external-handoff`,
+- einfache agenteneigene Visualisierung → kein `external-handoff`,
+- explizite Übergabe an externe Spezialleistung → `external-handoff`.
+
+Ein zusätzlicher Benchmark ist für B1.6 nicht erforderlich.
+
+### Plattformneutralität als weiteres Architekturprinzip
+
+Die fachliche Agentenarchitektur soll möglichst unabhängig von der späteren
+Laufzeitumgebung bleiben.
+
+Insbesondere sollen PLAN, KDM, DQM, Planning State, Planning Journal, Tasks,
+Profiles und Review Lenses keine unnötigen Codex-spezifischen Annahmen
+enthalten.
+
+`AGENTS.md` kann als Codex-spezifischer Adapter dienen. Andere
+Laufzeitumgebungen können später eigene dünne Adapter erhalten.
+
+Der Task `external-handoff` bleibt plattformneutral. Seine Funktion ist nicht
+„Codex übergibt an einen anderen Agenten“, sondern:
+
+> Planungsagent → kompakte Übergabespezifikation → externe Spezialleistung.
+
+Dieses Muster kann grundsätzlich auch bei ChatGPT, GitHub Copilot, fobizz
+oder anderen Laufzeitumgebungen verwendet werden.
+
+### Weiteres Vorgehen nach B1.6
+
+Die weitere Entwicklung erfolgt zunächst auf Ebene der gemeinsamen
+plattformneutralen Agentenarchitektur.
+
+Vorgesehene Reihenfolge:
+
+1. **Profiles**
+   - zunächst Audit,
+   - nur tatsächlich kontextspezifische Regeln aus dem allgemeinen
+     Laufzeitkontext auslagern,
+   - insbesondere Prof-WiDi und gegebenenfalls KBS.
+
+2. **Review Lenses**
+   - gezielte Review-Architektur entwickeln,
+   - insbesondere Learner Lens,
+   - keine neuen permanenten Agentenrollen.
+
+3. **Research Adapter / Research Trace**
+   - technische Forschungsinstrumentierung von der normalen Planungslogik
+     trennen,
+   - Planning Journal und Research Trace weiterhin als unterschiedliche
+     Datenebenen behandeln.
+
+Während dieser Schritte werden weiterhin kleine komponentenspezifische
+Funktions- und Regressionstests durchgeführt. Die Architektur soll also nicht
+erst ganz am Ende erstmals geprüft werden.
+
+### Konsolidierungs- und Optimierungsphase
+
+Nach Abschluss der vorgesehenen Architekturbausteine folgt vor der
+abschließenden Evaluation eine eigene Konsolidierungsphase.
+
+Dabei wird das Gesamtsystem erneut systematisch auditiert auf:
+
+- verbliebene Regelduplikationen,
+- semantische Überschneidungen,
+- unklare oder widersprüchliche Ownership,
+- unnötigen Pflichtkontext,
+- überflüssige historische oder erklärende Laufzeittexte,
+- inkonsistente Gate- und Routinglogik,
+- unnötige technische Prozesskommunikation,
+- widersprüchliche State-/Journal-Regeln,
+- Plattformabhängigkeiten in eigentlich plattformneutralen Komponenten,
+- sowie unnötige Komplexität durch inzwischen überholte Zwischenlösungen.
+
+Diese Phase soll keine neue Funktionalität hinzufügen, sondern die entwickelte
+Architektur vereinfachen, präzisieren und konsolidieren.
+
+Erst der danach erreichte Stand bildet den Kandidaten für die abschließenden
+Gesamt-, Plattform- und Vergleichstests.
+
+### Abschließende Evaluation und Plattformtests
+
+Nach der Konsolidierung wird dieselbe fachliche Agentenarchitektur möglichst
+kontrolliert in verschiedenen Laufzeitumgebungen geprüft.
+
+Vorgesehene Plattformen sind insbesondere:
+
+- Codex in VS Code,
+- ChatGPT in Verbindung mit VS Code,
+- GitHub Copilot in VS Code,
+- fobizz.
+
+Zu prüfen sind unter anderem:
+
+- Qualität des didaktischen Sparrings,
+- Dialogqualität,
+- Entscheidungsstabilität,
+- State- und Journal-Nutzung,
+- Lazy Loading,
+- Tasks und Review Lenses,
+- Zugriff auf Projektdateien,
+- Persistenz über Sitzungen,
+- notwendiger plattformspezifischer Adapter,
+- Bedienbarkeit für Lehrpersonen,
+- sowie – soweit vergleichbar messbar – Ressourceneffizienz.
+
+Nicht jede Plattform muss intern dieselbe technische Umsetzung verwenden.
+Entscheidend ist, ob die kanonische fachliche Agentenlogik mit möglichst dünnen
+Adaptern erhalten werden kann.
+
+### Vergleichsbenchmark mit Andrés Teaching-Agent
+
+Zusätzlich soll nach Stabilisierung des eigenen Agenten ein kontrollierter
+Vergleich mit Andrés LiaScript Teaching-Agent durchgeführt werden.
+
+Der Vergleich dient nicht dazu, pauschal einen „besseren Agenten“ zu bestimmen,
+sondern unterschiedliche Architekturentscheidungen empirisch sichtbar zu
+machen.
+
+Interessante Vergleichsdimensionen sind insbesondere:
+
+- didaktische Qualität,
+- Qualität und Kohärenz des Planungsdialogs,
+- kritisches Sparring,
+- Lehrpersonenautonomie,
+- Umgang mit Revisionen und längerem Planungsverlauf,
+- Modularität und Progressive Disclosure,
+- Persistenz und Wiedereinstieg,
+- Produktionsorientierung,
+- Plattformportabilität,
+- sowie Ressourceneffizienz, soweit technisch fair messbar.
+
+Für einen belastbaren Vergleich sollen möglichst:
+
+- identische oder funktional äquivalente Aufgaben verwendet werden,
+- dieselben Planungsfälle und Bewertungskriterien gelten,
+- Modell und Reasoningbedingungen möglichst vergleichbar sein,
+- Unterschiede in Toolzugriff und Plattform transparent dokumentiert werden,
+- mehrere unterschiedliche Fälle statt nur eines einzelnen Benchmarks
+  verwendet werden.
+
+Tokenwerte sind nur dann direkt vergleichbar, wenn die technischen Bedingungen
+hinreichend ähnlich sind.
+
+Insbesondere wird nicht vorausgesetzt oder behauptet, dass Andrés Agent allein
+aufgrund seiner Journal-, BMAD- oder Lazy-Loading-Architektur
+token-effizienter ist. Dies ist eine empirisch zu prüfende Frage.
+
+Der Vergleich soll vielmehr zeigen, welche Stärken und Grenzen sich aus
+unterschiedlichen Architekturentscheidungen ergeben.
+
+## B1.7 – Profile-Audit: vorerst keine Architektur-Profiles
+
+### Ausgangsfrage
+
+B1.7 sollte prüfen, ob kontextspezifische `Profiles` als eigener lazy geladener
+Architekturbaustein gerechtfertigt sind.
+
+Die frühe Zielarchitektur sah insbesondere ein Prof-WiDi-Profile für
+Hochschullehre, iWIP, Blog, Reveal und OER/OERSI sowie ein KBS-Profile für
+berufliche Schulen, DJP, itslearning und Fortbildung vor.
+
+Nach den Erfahrungen aus B1.6 wurde diese frühe Architekturannahme nicht
+automatisch umgesetzt, sondern zunächst einem Repository-Audit unterzogen.
+
+### Auditbefund
+
+Der Audit zeigt keine belastbare Grundlage für kleine austauschbare
+Architektur-Profiles.
+
+Dabei sind zunächst zwei unterschiedliche Profile-Begriffe zu trennen:
+
+1. Die bereits bestehenden didaktischen Profile A/B/C sind Gewichtungen
+   innerhalb des DQM und bleiben unverändert Bestandteil von DQM-Core
+   beziehungsweise DQM-Reference.
+2. Die ursprünglich vorgesehenen Prof-WiDi-/KBS-Profile wären dagegen
+   kontextspezifische Architekturmodule. Für diesen zweiten Profile-Begriff
+   besteht derzeit keine hinreichende Implementierungsgrundlage.
+
+Ein wesentlicher Befund ist die notwendige Trennung von Kontext, Didaktik und
+Produktion.
+
+Hugo, Blog, Reveal und OER/OERSI sind überwiegend Produktions-,
+Publikations- und Gate-Logik und bereits entsprechend modularisiert. Sie
+sollten nicht zusätzlich in einem Prof-WiDi-Profile dupliziert werden.
+Entsprechend ist itslearning für eine spätere KBS-Adaption zunächst als
+mögliche Produktions-/Plattformlogik und nicht automatisch als Bestandteil
+eines didaktischen Profiles zu behandeln.
+
+Auch die didaktische Wissensbasis lässt sich nicht sinnvoll in ein
+Hochschul- und ein Berufsschul-Profile zerlegen. Allgemeine didaktische
+Qualitätskriterien, sozioökonomische Fachperspektive, berufliche
+Handlungskompetenz und doppelte Zielorientierung der Lehrkräftebildung
+überschneiden unterschiedliche professionelle Kontexte und bleiben deshalb
+vorerst in DQM-Core beziehungsweise DQM-Reference.
+
+Für KBS, DJP und itslearning existiert gegenwärtig noch keine hinreichend
+konkrete aktive Regelbasis. Eine entsprechende Profile-Architektur müsste
+wesentliche zukünftige Anforderungen antizipieren und wäre damit in hohem
+Maße spekulativ.
+
+### Architekturentscheidung
+
+**B1.7 implementiert keine neuen Architektur-Profiles.**
+
+Der gegenwärtige Agent wird zunächst als kohärenter
+**Hochschul-/iWIP-Referenzagent** fertigentwickelt und konsolidiert.
+
+Dabei wird nicht vorausgesetzt, dass seine gesamte Architektur bereits
+allgemeingültig ist. PLAN, KDM, DQM, State, Journal, Tasks und weitere
+Komponenten enthalten voraussichtlich unterschiedlich stark
+generalisierbare Bestandteile. Welche davon tatsächlich kontextübergreifend
+sind, soll nicht allein aus einer bestehenden Implementierung abstrahiert
+werden.
+
+Erst bei einer realen Berufsschul-/Weiterbildungsadaption wird systematisch
+verglichen:
+
+- welche Komponenten unverändert gemeinsam genutzt werden können,
+- welche lediglich konfiguriert oder ergänzt werden müssen,
+- welche eigene didaktische oder institutionelle Logik benötigen,
+- welche Produktions- und Plattformadapter erforderlich sind,
+- und ob daraus kleine Profiles, größere Agentenkonfigurationen oder eine
+  andere gemeinsame Architektur hervorgehen.
+
+Profiles werden damit **nicht endgültig verworfen**, sondern als noch nicht
+validierte Abstraktion vertagt. Eine spätere Einführung soll sich auf
+mindestens zwei reale Anwendungskonfigurationen stützen und nicht auf
+vorweggenommene Generalisierung aus nur einem Referenzagenten.
+
+Ein Profile wäre insbesondere dann ungeeignet, wenn es tragende PLAN-, KDM-
+oder DQM-Regeln überschreiben, eigene Prozess-/Gate-Logik einführen,
+umfangreiche Override-Regeln benötigen oder Didaktik, Kontext, Produktion
+und Plattformlogik in einem Modul bündeln müsste.
+
+### Auswirkungen auf die bestehende Architektur
+
+B1.7 erfordert keine Änderungen an B1.1–B1.6.
+
+Insbesondere bleiben:
+
+- PLAN als Owner von Prozess, Gates und Routing,
+- KDM als Owner von Dialog- und Entscheidungsqualität,
+- DQM als Owner didaktischer Qualitätslogik,
+- DQM-Profile A/B/C als didaktische Gewichtungen,
+- Gates und Templates als Owner von Produktion und Publikation,
+- Shadow Planning State und Planning Journal,
+- sowie `external-handoff`
+
+unverändert.
+
+Da B1.7 keine Laufzeitänderung vornimmt, ist kein eigener
+Regressionsbenchmark erforderlich.
+
+### Aktualisierte Entwicklungsroadmap
+
+Nach B1.7 wird die Entwicklung des Hochschul-/iWIP-Referenzagenten zunächst
+fortgesetzt:
+
+1. Audit der vorgesehenen Review-Lens-Architektur, insbesondere der
+   Learner Lens.
+2. Nur bei nachgewiesenem eigenständigem Nutzen minimale Implementierung
+   einer Review Lens.
+3. Audit und gegebenenfalls Implementierung von Research Adapter /
+   Research Trace.
+4. Konsolidierungs- und Deduplizierungsphase des vollständigen
+   Referenzagenten.
+5. Gesamtbenchmark des konsolidierten Referenzagenten.
+6. Plattformtests mit Codex, ChatGPT + VS Code, GitHub Copilot und fobizz.
+7. Reale Berufsschul-/Weiterbildungsadaption als bewusste zweite
+   Anwendungskonfiguration.
+8. Vergleich von Referenzagent und KBS-Adaption und erst darauf aufbauend
+   erneute Entscheidung über gemeinsame Cores, Profiles oder größere
+   Adaptionen.
+9. Kontrollierter Vergleichsbenchmark mit Andrés Teaching-Agent.
+
+Die komponentenspezifischen Funktionstests während der Entwicklung bleiben
+erhalten. Die spätere Konsolidierungsphase ersetzt diese nicht, sondern prüft
+das fertig entwickelte Gesamtsystem zusätzlich auf Regelduplikationen,
+unklare Ownership, unnötigen Pflichtkontext, inkonsistentes Routing und
+Plattformabhängigkeiten.
+
+## Review-Lens-Audit – keine neue Lens-Architektur
+
+### Ausgangsfrage
+
+Nach B1.7 wurde geprüft, ob die in der frühen Zielarchitektur vorgesehene
+`Learner Lens` beziehungsweise ein generisches Review-Lens-System einen
+eigenständigen funktionalen Mehrwert gegenüber der bestehenden Architektur
+besitzt.
+
+Ausgangspunkt war ausdrücklich die Gegenhypothese, dass das DQM bereits
+lernendenzentriert genug ist und eine zusätzliche Lens vor allem vorhandene
+Qualitätskriterien duplizieren könnte.
+
+### Auditbefund
+
+Der Audit bestätigt diese Gegenhypothese weitgehend.
+
+Die ursprünglich für eine Learner Lens vorgesehenen Prüffragen sind bereits
+durch DQM-Core beziehungsweise DQM-Reference abgedeckt. Dies betrifft
+insbesondere:
+
+- Verständlichkeit von Arbeitsaufträgen,
+- Vorwissen und Voraussetzungen,
+- tatsächliche kognitive Tätigkeit der Lernenden,
+- Aufgabenqualität,
+- typische Lernhürden und Fehlvorstellungen,
+- Scaffolding,
+- fachlichen Zusammenhang,
+- Feedback und Assessment,
+- Reflexion und Transfer,
+- Adaptivität.
+
+Eine sogenannte `DQM Lens` wäre ebenfalls keine eigenständige Komponente,
+sondern lediglich eine Umbenennung des bereits bestehenden DQM als
+kanonischem didaktischen Diagnose- und Qualitätsrahmen.
+
+Damit existieren derzeit nicht mindestens zwei eigenständige
+Review-Perspektiven, die die Einführung eines generischen Lens-Systems
+rechtfertigen würden.
+
+### Restnutzen eines sequenziellen Walk-throughs
+
+Ein kleiner möglicher Zusatznutzen wurde nicht in einer anderen
+"Lernendenperspektive", sondern in einer anderen Prüfoperation identifiziert:
+
+Ein sequenzieller Walk-through eines konkreten Entwurfs könnte prüfen, welche
+Informationen, Zwischenergebnisse und Handlungsoptionen an einem bestimmten
+Zeitpunkt tatsächlich verfügbar sind.
+
+Damit könnten beispielsweise sichtbar werden:
+
+- vorausgesetzte Informationen, die erst später eingeführt werden,
+- fehlende Zwischenschritte,
+- nicht gesicherte Voraussetzungen zwischen zwei Aufgaben,
+- zeitlich zu spät angebotene Hilfen,
+- widersprüchliche Begriffsverwendungen,
+- oder Bearbeitungsschritte, die mit dem vorliegenden Material nicht
+  begründet durchführbar sind.
+
+Diese Prüftechnik besitzt jedoch keine eigenständige normative Qualitätslogik.
+Ihre Befunde werden weiterhin durch das DQM bewertet. Neu wäre lediglich die
+sequenzielle Anwendung bestehender Kriterien auf einen konkreten Ablauf oder
+Materialsatz.
+
+Ein solcher Walk-through wird deshalb derzeit **nicht als eigene Komponente
+implementiert**.
+
+### Architekturentscheidung
+
+**Keine Learner Lens implementieren.**
+
+**Kein generisches Review-Lens-System einführen.**
+
+Das DQM bleibt alleiniger Owner der lernprozessbezogenen didaktischen
+Qualitätsdiagnose.
+
+PLAN bleibt Owner von Prozess und Routing, KDM von Dialog- und
+Entscheidungsqualität und die bestehenden FINAL-/Check-Komponenten von
+formaler, technischer und produktiver Qualitätssicherung.
+
+Die frühe Architekturidee `Review Lenses` wird damit nicht in die
+Laufzeitarchitektur übernommen.
+
+Ein sequenzieller Walk-through bleibt als mögliche spätere DQM-Prüftechnik
+offen. Eine eigene Heuristik wäre erst gerechtfertigt, wenn reale Prüfungen
+wiederholt zeigen, dass normale DQM-Reviews relevante zeitpunktbezogene
+Informationslücken oder Bearbeitungssackgassen systematisch übersehen.
+
+Dabei müsste ein zusätzlicher Walk-through nachweisbar:
+
+1. relevante Befunde erzeugen, die eine normale DQM-Prüfung nicht findet,
+2. mehr leisten als vorhandene DQM-Befunde anders zu formulieren,
+3. seine Befunde an konkrete Stellen im Entwurf oder Material binden,
+4. und potenziell eine relevante Planungsentscheidung verändern.
+
+Bis zu einer solchen Evidenz erfolgt keine Implementierung.
+
+### Epistemische Grenze
+
+Eine simulierte "Lernendenperspektive" wird nicht als empirische Aussage über
+tatsächliches Lernendenverhalten verstanden.
+
+Zulässig sind lediglich didaktisch begründete Hypothesen wie mögliche
+Lernhürden, plausible Fehlinterpretationen oder prüfbedürftige Annahmen.
+
+Persona-Simulationen und Aussagen darüber, wie Lernende tatsächlich reagieren,
+sind dafür weder erforderlich noch hinreichend begründet.
+
+### Auswirkungen auf die bestehende Architektur
+
+Der Audit führt zu keiner Laufzeitänderung und erfordert keine Änderungen an
+B1.1–B1.7.
+
+Daher ist auch kein eigener Regressionsbenchmark erforderlich.
+
+Der nächste Entwicklungsbaustein ist der Audit von
+**Research Adapter / Research Trace**.
+
+Die aktualisierte Reihenfolge lautet damit:
+
+1. Research Adapter / Research Trace auditieren,
+2. nur bei eigenständigem Bedarf minimal implementieren,
+3. vollständige Konsolidierungs- und Deduplizierungsphase,
+4. Gesamtbenchmark des konsolidierten Hochschul-/iWIP-Referenzagenten,
+5. Plattformtests,
+6. reale Berufsschul-/Weiterbildungsadaption,
+7. erneute Abstraktionsentscheidung anhand mindestens zweier realer
+   Konfigurationen,
+8. kontrollierter Vergleich mit Andrés Teaching-Agent.
+
+## Agent Research und Interaction Research Logging – Architekturentscheidung
+
+### Ausgangsproblem und Trennung
+
+Der Audit von Research Adapter und Research Trace zeigte zwei unterschiedliche
+Anliegen: Agent Research unterstuetzt eine konkrete Planungsentscheidung durch
+externe Recherche oder Verifikation; Interaction Research Logging dient der
+spaeteren wissenschaftlichen Untersuchung der Mensch-Agent-Interaktion. Beide
+werden architektonisch getrennt.
+
+Fuer Agent Research wird kein eigener Research Adapter, Task, Modus oder Trace
+eingefuehrt. PLAN bleibt Owner der Entscheidung, ob externe Recherche oder
+Verifikation erforderlich ist. Die jeweilige Laufzeitumgebung fuehrt sie mit
+ihren vorhandenen Faehigkeiten aus. DQM bleibt Owner der didaktischen
+Qualitaetsdiagnose und kann entscheidungsrelevante fachliche, theoretische oder
+normative Unsicherheiten sichtbar machen. Die bestehenden Regeln zur
+Quellenintegritaet bleiben fuer belastbare und nicht erfundene Quellen
+zustaendig. Das Planning Journal wird weder als Research Log genutzt noch um
+Research-Felder erweitert.
+
+### Implementierte minimale Research-Heuristik
+
+Im PLAN-Core wurde unmittelbar bei den verbindlichen Planungs- und
+Quellenregeln eine kleine plattformneutrale Heuristik verankert. Recherche oder
+Verifikation ist insbesondere bei explizitem Auftrag, aktuellen oder
+zeitkritischen Tatsachenfragen, entscheidungsrelevanten konkreten
+wissenschaftlichen, rechtlichen, curricularen oder normativen Referenzen,
+fehlender belastbarer Grundlage fuer eine tragende spezifische Behauptung oder
+potenziell empfehlungsveraendernder widerspruechlicher externer Evidenz
+gerechtfertigt.
+
+Normale didaktische DQM-Abwaegungen, Struktur-, Stil- und Redaktionsfragen,
+kleinere lokale Entscheidungen, durch Materialien oder Repositorygrundlagen
+hinreichend geklaerte Sachverhalte, die blosse Moeglichkeit weiterer Literatur,
+normales kritisches Sparring und nicht entscheidungsrelevante Nebenfragen
+loesen keine automatische Recherche aus. Externe Behauptungen werden ihrer
+Bedeutung entsprechend abgesichert, verbleibende relevante Unsicherheit wird
+kenntlich gemacht. Recherche endet, sobald die fuer die aktuelle Entscheidung
+relevante Unsicherheit hinreichend geklaert ist; mehr Literatur ist kein
+eigenstaendiges Ziel.
+
+### Separate technische Erfassungs- und Exportschicht
+
+Das wissenschaftliche Forschungsinteresse richtet sich primaer auf die
+Mensch-Agent-Interaktion und nicht auf die Entwicklung des Agenten. Untersucht
+werden sollen insbesondere Initialprompts, weitere User-Prompts,
+Agentenantworten, entstehende Rueckfragen, artikulierte Ueberlegungen,
+Entscheidungen und Revisionen, Veraenderungen der expliziten
+Problemrepraesentation sowie Reaktionen auf Agentenimpulse.
+
+Das Interaction Research Logging wird deshalb von der fachlichen
+Agentenarchitektur getrennt:
+
+```text
+Nutzer <-> fachlicher Agent <-> technische Laufzeit
+                              |
+                              -> separate technische Erfassungs-/Exportschicht
+```
+
+Die Logging-Schicht soll das sichtbare Agentenverhalten moeglichst nicht
+beeinflussen. In diesem Entwicklungsschritt wird noch keine
+Logging-Infrastruktur implementiert.
+
+### Datenprioritaeten fuer den technischen Pilot
+
+Kerndaten sind vollstaendige User- und Assistant-Turns im Wortlaut, Rolle,
+Reihenfolge und Zeitstempel je Turn sowie Session-ID, Agent-Version
+beziehungsweise Git-Commit, Modell und Plattform.
+
+Hohe Prioritaet haben, sofern technisch zuverlaessig verfuegbar, Sessionstart
+und Sessionende, Nachrichten-Edits beziehungsweise Versionen, Tool-Aufrufe,
+Artefaktaenderungen, tatsaechlich geladene Dateien oder Module sowie technische
+Fehler oder Abbrueche. Optional sind deklarierte Reasoning- oder
+Runtime-Konfiguration, externe Rechercheevents und echte Token- oder
+Laufzeitwerte.
+
+Der Agent klassifiziert in den Rohdaten keine Entscheidung, Revision,
+Zustimmung, Ablehnung, Unsicherheit, Reflexion, Motivation, Planungsqualitaet,
+kognitive Aktivitaet oder Wirkung eines Agentenimpulses. Diese Kategorien
+gehoeren in die spaetere wissenschaftliche Analyse.
+
+- **Raw Data:** unveraenderte Primaer- und technische Daten.
+- **Derived Data:** deterministisch nachgelagert berechenbare Merkmale wie
+  Turnanzahl, Promptlaenge, Antwortlaenge, Zeitabstaende oder Sessiondauer.
+- **Research Coding / Analysis:** interpretative wissenschaftliche Kategorien
+  und Auswertung.
+
+### Methodische Reichweite und Grenzen
+
+Der vollstaendige wortgetreue Dialog ist die zentrale Primaerdatenquelle.
+User-Prompts duerfen nicht isoliert von Agentenantworten analysiert werden,
+weil Folgeprompts Reaktionen auf den vorausgehenden Dialog darstellen koennen.
+Zeitstempel sind objektive Prozessdaten, aber nicht selbst als Indikatoren fuer
+Denken oder Reflexion zu interpretieren.
+
+Aus Chatdaten koennen artikulierte Fragen, Ueberlegungen, Entscheidungen,
+Revisionen und Interaktionsverlaeufe untersucht werden. Nicht verbalisiertes
+Denken oder tatsaechliche kognitive Prozesse duerfen daraus nicht unmittelbar
+als beobachtete Tatsachen abgeleitet werden.
+
+### Naechster Schritt: Codex-Logging-Pilot
+
+Der naechste technische Entwicklungsschritt ist ein Codex-Logging-Pilot, noch
+kein vollstaendiges plattformuebergreifendes Logging-System. Zunaechst wird
+empirisch geprueft, welche beschlossenen Rohdaten aus einer realen
+Codex-Session technisch zuverlaessig und agentenunabhaengig gewonnen werden
+koennen.
+
+Der minimale Proof of Concept bildet eine Session mit Agent-/Commit-Version,
+Plattform und Modell sowie ihren Turns mit Zeitstempel, Rolle, Reihenfolge und
+Originaltext ab. Danach werden insbesondere Nachrichten-Edits, Tool-Aufrufe,
+Artefaktaenderungen, geladene Dateien und technische Fehler geprueft. Ein
+endgueltiges plattformuebergreifendes Schema wird erst festgelegt, nachdem
+reale Exports beziehungsweise technische Daten aus mindestens zwei
+Zielplattformen untersucht wurden.
