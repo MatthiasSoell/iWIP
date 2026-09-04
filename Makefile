@@ -13,11 +13,11 @@ qa-prompts:
 
 qa-markdown:
 	@if command -v markdownlint-cli2 >/dev/null 2>&1; then \
-		markdownlint-cli2 --config .markdownlint-cli2.jsonc README.md "ai_agents/**/*.md" "prompts/**/*.md" "project_governance/**/*.md"; \
+		markdownlint-cli2 --config .markdownlint-cli2.jsonc README.md "ai_agents/**/*.md" "prompts/**/*.md" "project_governance/**/*.md" || exit $$?; \
 		echo "Markdownlint OK (markdownlint-cli2)."; \
 	elif command -v markdownlint >/dev/null 2>&1; then \
 		files="README.md $$(find ai_agents prompts project_governance -type f -name '*.md' | tr '\n' ' ')"; \
-		markdownlint --config .markdownlint.jsonc $$files; \
+		markdownlint --config .markdownlint.jsonc $$files || exit $$?; \
 		echo "Markdownlint OK (markdownlint)."; \
 	else \
 		echo "Markdownlint skipped (no markdownlint tool installed)."; \

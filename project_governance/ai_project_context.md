@@ -25,7 +25,8 @@ Agent structure:
 - ai_agents/master_agent.md and didaktisches_qualitaetsmodell_core.md → role and didactic quality core
 - prompts/plan.md → normal planning entry point
 - templates, final checks, full DQM and external handoff → loaded only when required by PLAN-Core
-- benchmark/ and docs/agent_development/ → development, QA and historical evidence; not normal runtime context
+- benchmark/ → public manual regression definitions and expected fixtures
+- agent_entwicklung/ → local, ignored development history, benchmark runs and raw data; never normal runtime context
 
 Styling architecture:
 - assets/css/extended/00_design_tokens.css → design tokens
@@ -88,5 +89,6 @@ L --> L1[PLAN and KDM Cores]
 L --> L2[DQM and Master Agent]
 L --> L3[Lazy Production Tasks]
 
-M --> M1[benchmark]
-M --> M2[docs/agent_development]
+M --> M1[benchmark<br>public test definitions]
+M --> M2[agent_entwicklung<br>local runs and raw data]
+```

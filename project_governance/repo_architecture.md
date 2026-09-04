@@ -32,10 +32,11 @@ Der SciBlog iWIP basiert auf folgenden Kerntechnologien:
 
 Daneben enthaelt dasselbe Repository den deklarativen wirtschaftsdidaktischen
 Planungsagenten. Seine kanonischen Laufzeitkomponenten liegen derzeit in
-`project_governance/`, `ai_agents/`, `prompts/` und `tasks/`; Entwicklung und
-Reproduzierbarkeit liegen insbesondere in `benchmark/` und
-`docs/agent_development/`. Diese Beschreibung bildet nur den aktuellen Stand ab
-und nimmt keine kuenftige Strukturentscheidung vorweg.
+`project_governance/`, `ai_agents/`, `prompts/` und `tasks/`. Aktuelle
+Benchmarkdefinitionen und Soll-Fixtures liegen in `benchmark/`. Konkrete
+Testlaeufe, Entwicklungsprotokolle und Rohdaten gehoeren in den lokalen,
+nicht versionierten Bereich `agent_entwicklung/` und sind kein
+Runtime-Kontext.
 
 ---
 
@@ -110,11 +111,10 @@ iWIP/
 │
 ├─ layouts/                # Hugo Layout-Anpassungen / Overrides
 │
-├─ ai_agents/             # Rolle, DQM, Templates und historische Referenzen
+├─ ai_agents/             # Rolle, DQM, Wissensbasis und Templates
 ├─ prompts/               # Planungs-, Pruef- und Postprocessing-Prompts
 ├─ tasks/                 # Lazy geladene Spezialaufgaben
-├─ benchmark/             # Regression, Testfaelle und historische Laufnachweise
-├─ docs/agent_development/ # Entwicklungsjournal und historische Audits
+├─ benchmark/             # aktuelle Regression, Inputs, Expectations und Fixtures
 │
 ├─ project_governance/    # Agenten-Cores und technische Governance
 │  ├─ css_architecture.md
@@ -124,6 +124,7 @@ iWIP/
 │
 ├─ AGENTS.md              # duenn gehaltener Codex-Adapter
 ├─ config.toml             # zentrale Hugo-Konfiguration
+├─ agent_entwicklung/      # lokal, ignoriert; Historie, Runs und Arbeitsdaten
 │
 └─ .github/
    └─ workflows/           # GitHub Actions Deployment
@@ -140,18 +141,23 @@ nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
 - `.vscode/` fuer nutzerspezifische Workspace-Einstellungen
 - `.venv/` fuer eine lokale Python-Laufzeitumgebung
 - `served/` als temporaeres lokales Staging fuer den Pages-/PDF-Workflow
+- `agent_entwicklung/` fuer Entwicklungsprotokolle, historische Audits,
+  konkrete Benchmark-Runs, Rohdaten und temporaere Arbeitsdateien
 
 Hinweis:
 
-- Der Oberordner `exports/` kann weitere manuelle Export- oder Archivdateien enthalten.
-- `benchmark/tmp/` ist trotz seines Namens nicht pauschal temporaer: Dort
-  koennen versionierte Test-Fixtures fuer aktuelle Regressionen liegen.
+- Der Oberordner `exports/` kann weitere manuelle Exportdateien enthalten.
+- Versionierte Benchmarkdefinitionen und Soll-Fixtures verbleiben unter
+  `benchmark/`; konkrete Laeufe und Rohoutputs liegen lokal unter
+  `agent_entwicklung/benchmark_runs/`.
 
 Regel:
 
 - Diese Pfade duerfen lokal existieren.
 - Sie werden nicht fuer GitHub Pages benoetigt.
 - Sie sollen im Regelfall nicht versioniert werden.
+- `agent_entwicklung/` wird im normalen Agentenbetrieb nur auf ausdruecklichen
+  Nutzerauftrag gelesen oder durchsucht.
 
 ---
 

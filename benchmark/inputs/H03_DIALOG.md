@@ -29,7 +29,7 @@ aus, aber entwickle noch keinen vollstaendigen Ablauf.
 
 Ich moechte diese konkrete Planung ab jetzt persistent weiterfuehren. Verwende
 dazu das Verzeichnis
-`/Users/matthias/Documents/GitHub/iWIP/benchmark/tmp/H03_persistent_case/`.
+`agent_entwicklung/benchmark_runs/H03_persistent_case/`.
 Als weitere Entscheidung gilt: Die Ergebnisse der drei Fallanalysen werden in
 einer gemeinsamen Vergleichsmatrix gesichert; auf einzelne
 Gruppenpraesentationen verzichten wir. Halte den aktuellen Planungsstand fest.
@@ -69,7 +69,7 @@ gestartet.
 ### H03.B1
 
 Setze den persistenten Planungsfall aus
-`/Users/matthias/Documents/GitHub/iWIP/benchmark/tmp/H03_persistent_case/planning_journal.md`
+`agent_entwicklung/benchmark_runs/H03_persistent_case/planning_journal.md`
 fort. Rekonstruiere mir knapp den aktuell geltenden Stand und den fuer sein
 Verstaendnis wichtigsten bisherigen Richtungswechsel, damit wir direkt
 weiterarbeiten koennen.

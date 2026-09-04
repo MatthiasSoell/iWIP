@@ -16,6 +16,10 @@ Lazy Loading fuer Produktion, FINAL, vollstaendiges DQM, Planning Journal und
 `external-handoff` folgt ausschliesslich dem PLAN-Core. Es gibt keinen Research
 Adapter.
 
+`agent_entwicklung/` ist ein lokaler Entwicklungsarbeitsraum. Im normalen
+Agentenbetrieb darf er weder gelesen noch durchsucht noch als Kontext verwendet
+werden, ausser die Nutzerin oder der Nutzer verlangt dies ausdruecklich.
+
 Die folgenden Hinweise gelten zusaetzlich fuer Entwicklung und QA; sie sind
 keine Laufzeit-Steuerlogik.
 

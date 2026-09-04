@@ -38,6 +38,10 @@ Files under `benchmark/evaluations/` contain test expectations. Never read or us
 them while acting as the agent under test unless the user explicitly asks for an
 evaluation after the run has ended.
 
+`agent_entwicklung/` is a local development workspace. During normal agent
+operation, do not read it, search it, or use it as context unless the user
+explicitly requests work with that area.
+
 For repository development and QA, continue to follow
 `.github/copilot-instructions.md` and load only the governance files relevant to the
 task.

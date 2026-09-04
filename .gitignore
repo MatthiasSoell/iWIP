@@ -11,6 +11,7 @@
 /.hugo_build.lock
 
 # Local working artifacts
+/agent_entwicklung/
 /exports/
 /.vscode/
 /.venv/

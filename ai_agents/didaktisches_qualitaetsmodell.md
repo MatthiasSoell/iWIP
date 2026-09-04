@@ -1079,25 +1079,25 @@ Anderson, L. W., Krathwohl, D. R., Airasian, P. W., Cruikshank, K. A., Mayer, R.
 
 Baumert, J., & Kunter, M. (2006). Stichwort: Professionelle Kompetenz von Lehrkräften. Zeitschrift für Erziehungswissenschaft: ZfE, 9(4), 469–520.
 
-Biggs, J. (1996). Enhancing teaching through constructive alignment. Higher Education, 32(3), 347–364. https://doi.org/10.1007/BF00138871
+Biggs, J. (1996). Enhancing teaching through constructive alignment. Higher Education, 32(3), 347–364. <https://doi.org/10.1007/BF00138871>
 
 Biggs, J. B., & Tang, C. S. (2009). Teaching for quality learning at university: What the student does (3rd ed., reprinted). McGraw-Hill u.a..
 
-Deci, E. L., & Ryan, R. M. (2000). The "What" and "Why" of goal pursuits: Human needs and the self-determination of behavior. Psychological Inquiry, 11(4), 227–268. https://doi.org/10.1207/S15327965PLI1104_01
+Deci, E. L., & Ryan, R. M. (2000). The "What" and "Why" of goal pursuits: Human needs and the self-determination of behavior. Psychological Inquiry, 11(4), 227–268. <https://doi.org/10.1207/S15327965PLI1104_01>
 
 Dewey, J. (1910). How we think. D. C. Heath & Co.
 
 Hattie, J. (2009). Visible learning: A synthesis of over 800 meta-analyses relating to achievement. Routledge.
 
-Hattie, J., & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112. https://doi.org/10.3102/003465430298487
+Hattie, J., & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112. <https://doi.org/10.3102/003465430298487>
 
-Hedtke, R. (2015). Sozioökonomische Bildung. Haushalt in Bildung & Forschung, 4(3), 3–18. https://doi.org/10.3224/hibifo.v4i3.20689
+Hedtke, R. (2015). Sozioökonomische Bildung. Haushalt in Bildung & Forschung, 4(3), 3–18. <https://doi.org/10.3224/hibifo.v4i3.20689>
 
 Heimann, P., Otto, G., & Schulz, W. (Hrsg.). (1976). Unterricht: Analyse und Planung. Schroedel.
 
 Helmke, A. (2017). Unterrichtsqualität und Lehrerprofessionalität: Diagnose, Evaluation und Verbesserung des Unterrichts. Klett Kallmeyer.
 
-KMK. (2021). Handreichung für die Erarbeitung von Rahmenlehrplänen der Kultusministerkonferenz für den berufsbezogenen Unterricht in der Berufsschule und ihre Abstimmung mit Ausbildungsordnungen des Bundes für anerkannte Ausbildungsberufe. https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2021/2021_06_17-GEP-Handreichung.pdf
+KMK. (2021). Handreichung für die Erarbeitung von Rahmenlehrplänen der Kultusministerkonferenz für den berufsbezogenen Unterricht in der Berufsschule und ihre Abstimmung mit Ausbildungsordnungen des Bundes für anerkannte Ausbildungsberufe. <https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2021/2021_06_17-GEP-Handreichung.pdf>
 
 Korthagen, F. A. J. (2002). Eine Reflexion über Reflexion. In F. A. J. Korthagen (Hrsg.), Schulwirklichkeit und Lehrerbildung: Reflexion der Lehrertätigkeit (S. 55–74). EB-Verlag.
 
@@ -1107,7 +1107,7 @@ Meyer, H. (2015). Leitfaden zur Unterrichtsvorbereitung. Cornelsen Scriptor.
 
 Reich, K. (2012). Konstruktivistische Didaktik: Das Lehr- und Studienbuch mit Online-Methodenpool. Beltz Verlag.
 
-Sektion BWP der DGfE. (2014). Basiscurriculum für das universitäre Studienfach Berufs- und Wirtschaftspädagogik im Rahmen berufs- und wirtschaftspädagogischer Studiengänge. https://www.dgfe.de/fileadmin/OrdnerRedakteure/Sektionen/Sek07_BerWiP/2014_Basiscurriculum_BWP.pdf
+Sektion BWP der DGfE. (2014). Basiscurriculum für das universitäre Studienfach Berufs- und Wirtschaftspädagogik im Rahmen berufs- und wirtschaftspädagogischer Studiengänge. <https://www.dgfe.de/fileadmin/OrdnerRedakteure/Sektionen/Sek07_BerWiP/2014_Basiscurriculum_BWP.pdf>
 
 Schön, D. A. (1987). Educating the Reflective Practitioner: Toward a New Design for Teaching and Learning in the Professions. Jossey-Bass.
 
@@ -1119,4 +1119,4 @@ Weinert, F. E. (2001). Concept of competence: A conceptual clarification. In D. 
 
 Wilbers, K. (2025). Wirtschaftsunterricht gestalten: Eine traditionelle und handlungsorientierte Didaktik für kaufmännische Bildungsgänge. epubli.
 
-Wood, D., Bruner, J. S., & Ross, G. (1976). The role of tutoring in problem solving. Journal of Child Psychology and Psychiatry, 17(2), 89–100. https://doi.org/10.1111/j.1469-7610.1976.tb00381.x
+Wood, D., Bruner, J. S., & Ross, G. (1976). The role of tutoring in problem solving. Journal of Child Psychology and Psychiatry, 17(2), 89–100. <https://doi.org/10.1111/j.1469-7610.1976.tb00381.x>

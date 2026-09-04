@@ -110,7 +110,9 @@ Dokumentiert sind dort insbesondere Repository-Struktur, CSS-System, Content-Kon
 
 ## Versionierung
 
-Die Versionierung markiert bewusst größere Entwicklungsschritte der Plattform und des Agenten (keine feingranulare Software-Versionierung).
+Die hier genannte Versionierung bezeichnet die Plattform und ist keine
+Agenten-Produktversion. Die aktuelle Agentenversion wird ausschliesslich in
+[`ai_agents/README.md`](ai_agents/README.md) dokumentiert.
 
 Plattform SciBlog iWIP: 1.2 (Release)
 
