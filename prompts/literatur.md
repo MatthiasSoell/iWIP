@@ -71,6 +71,13 @@ Dieser Modus umfasst:
 - konsistente Badge-Linkdarstellung mit den bestehenden Klassen `lit-doi`, `lit-worldcat` und `lit-ub`,
 - Reparatur defekter Markdown-Linksyntax, doppelter URL-Syntax und zerbrochener Klammerungen.
 
+Der kanonische Anker gilt fuer Blogartikel, die der Agent neu erzeugt oder im
+regulaeren Produktionsvorgang ohnehin bearbeitet. Bei einer solchen lokalen
+Bearbeitung duerfen aeltere Ankerformen sicher auf genau einen kanonischen
+`<span id="literatur"></span>` unmittelbar vor dem Literaturabschnitt
+normalisiert werden. Eine repositoryweite Suche-und-Ersetze-Migration
+bestehender Blogartikel ist ausgeschlossen.
+
 Beispiele:
 
 ```markdown
@@ -141,7 +148,7 @@ Bei Unsicherheit:
 
 Vor der Ausgabe bzw. vor Abschluss des Bearbeitungsschritts sind insbesondere diese Punkte zu pruefen:
 
-1. Literaturanker vorhanden.
+1. Genau ein kanonischer Literaturanker unmittelbar vor dem Literaturabschnitt vorhanden.
 2. Fliesstext-Verweise auf `#literatur` gesetzt.
 3. Mehrfachzitate als getrennte Links formatiert.
 4. Quellenzeilen unter Tabellen und Grafiken mit Literaturbezug verlinkt.
@@ -151,3 +158,6 @@ Vor der Ausgabe bzw. vor Abschluss des Bearbeitungsschritts sind insbesondere di
 8. Keine inhaltliche Quellenaenderung vorgenommen.
 9. Im Modus `LITERATUR GO` keine externe Recherche ausgefuehrt.
 10. Im Modus `LITERATUR RECHERCHE GO` nur plausibilisierte und stabile Recherchelinks uebernommen.
+
+Dieser Schritt startet keinen Hugo-Build. Der abschliessende Build gehoert
+ausschliesslich dem FINAL-Ablauf im PLAN-Core.

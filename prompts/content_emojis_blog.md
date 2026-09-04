@@ -12,7 +12,20 @@ Die Bearbeitung beginnt unmittelbar nach:
 `{{< oer-meta >}}`
 
 Die Bearbeitung endet vor:
-`<div id="literatur"></div>`
+`<span id="literatur"></span>`
+
+## Fail-closed-Vorbedingung
+
+Vor jeder Mutation muss in der aktuell bearbeiteten `index.md` geprueft werden,
+dass `{{< oer-meta >}}` und der kanonische Literaturanker jeweils genau einmal
+vorkommen und der Anker nach dem OER-Meta-Shortcode liegt. Nur der Inhalt
+zwischen diesen beiden eindeutigen Grenzen darf bearbeitet werden.
+
+Fehlt der kanonische Literaturanker, kommt er mehrfach vor oder sind die
+Grenzen nicht eindeutig bestimmbar, brich den Schritt vor jeder Mutation mit
+einem klaren `BLOCKER` ab. Arbeite insbesondere nicht bis zum Dateiende weiter,
+veraendere den Literaturbereich nicht und repariere den Fehler nicht
+stillschweigend ausserhalb des aktuell bearbeiteten Artefakts.
 
 ## Nicht verändern
 - Front Matter
@@ -26,6 +39,8 @@ Die Bearbeitung endet vor:
 `1️⃣ 2️⃣ 3️⃣ ... 🔟` durch `1. 2. 3. ...` ersetzen.
 
 ## Qualitätssicherung
-- `hugo --minify`
-- mindestens einen Blogartikel testen
-- prüfen, dass nur Content-Emojis verschwinden
+- eindeutige Bereichsgrenzen vor der Mutation bestaetigen
+- pruefen, dass nur der Bereich nach `{{< oer-meta >}}` und vor
+  `<span id="literatur"></span>` veraendert wurde
+- pruefen, dass der Literaturbereich bytegleich blieb
+- keinen Build starten; der einzige abschliessende Build gehoert `BLOG FINAL`

@@ -41,6 +41,6 @@ todos: []
 `1️⃣ 2️⃣ 3️⃣ ... 🔟` durch `1. 2. 3. ...` ersetzen.
 
 ## Qualitätssicherung
-- `hugo --minify`
 - mindestens eine Präsentation testen
 - prüfen, dass auch Emojis aus `emojis:` und `veranstaltungstyp:` ausgeblendet werden
+- keinen Build starten; der einzige abschliessende Build gehoert `REVEAL FINAL`

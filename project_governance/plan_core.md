@@ -163,23 +163,53 @@ Gate-Aktionen und lazy geladene Details:
   Blog-Arbeitsdatei erzeugt oder fortgefuehrt. Fehlt eine belastbare Grundlage,
   ist genau eine Klaerungsfrage zulaessig; andernfalls beginnt die Ausarbeitung
   ohne weitere Bestaetigungsschleife in publizierbarer Blogsprache.
-- Bei `BLOG FINAL` werden zusaetzlich `prompts/check.md`,
-  `prompts/literatur.md`, `prompts/content_emojis_blog.md` und deren ausdruecklich
-  benoetigte Referenzen geladen. Nach der inhaltlichen Finalisierung laeuft
-  `LITERATUR GO` als formale Normalisierung ohne externe Recherche, danach das
-  Content-Emoji-Postprocessing und abschliessend die reine Ergebnispruefung.
+- Bei `BLOG FINAL` werden fuer den Blogpfad ausschliesslich `prompts/check.md`,
+  `ai_agents/templates/blog_template.md`, `prompts/literatur.md`,
+  `prompts/content_emojis_blog.md`, `project_governance/content_emoji_policy.md`,
+  `project_governance/low_noise_response_patterns.md` und fuer die formale
+  didaktische Finalpruefung das vollstaendige
+  `ai_agents/didaktisches_qualitaetsmodell.md` geladen. Reveal-Template,
+  Reveal-Emoji-Prompt und sonstige Reveal-Produktionsregeln werden nicht geladen.
+  Der verbindliche Ablauf ist: (1) inhaltliche und formale buildfreie
+  Vorpruefung, (2) `LITERATUR GO`, (3) Blog-Emoji-Postprocessing, (4) genau ein
+  abschliessendes `hugo --minify`, (5) technische Ergebnispruefung des gebauten
+  Endstands und (6) Freigabe nur bei bestandenem Endstand. Literatur- und
+  Emoji-Schritt starten keinen Build; nach dem Build folgt keine Mutation mehr.
 - Bei `REVEAL GO` wird `ai_agents/templates/reveal_template.md` geladen und
   ausschliesslich aus dem finalen Blog genau `_index.md` als bearbeitbare
   Reveal-Arbeitsdatei erzeugt oder fortgefuehrt.
-- Bei `REVEAL FINAL` werden zusaetzlich `prompts/check.md`,
-  `prompts/content_emojis_reveal.md` und deren ausdruecklich benoetigte
-  Referenzen geladen. Nach der inhaltlichen Finalisierung laeuft das
-  Content-Emoji-Postprocessing und abschliessend die reine Ergebnispruefung.
+- Bei `REVEAL FINAL` werden fuer den Reveal-Pfad ausschliesslich
+  `prompts/check.md`, `ai_agents/templates/reveal_template.md`,
+  `prompts/content_emojis_reveal.md`,
+  `project_governance/content_emoji_policy.md` und
+  `project_governance/low_noise_response_patterns.md` geladen. Das vollstaendige
+  DQM, Blog-Template, Literatur-Prompt und Blog-Emoji-Prompt werden nicht geladen.
+  Der verbindliche Ablauf ist: (1) inhaltliche, ableitungsbezogene und formale
+  buildfreie Vorpruefung, (2) Reveal-Emoji-Postprocessing, (3) genau ein
+  abschliessendes `hugo --minify`, (4) technische Ergebnispruefung des gebauten
+  Endstands und (5) Freigabe nur bei bestandenem Endstand. Der Emoji-Schritt
+  startet keinen Build; nach dem Build folgt keine Mutation mehr. Die
+  Vorpruefung bewertet insbesondere vollstaendige und bedeutungstreue Ableitung
+  aus dem finalen Blog, Praesentationsstruktur und Dramaturgie sowie
+  Darstellungsqualitaet; ein zweiter vollstaendiger DQM-Lauf findet nicht statt.
 
-Vor `BLOG FINAL` und `REVEAL FINAL` muessen die geladenen Pflichtpruefungen
-vollstaendig bestanden sein. Dazu gehoeren ein erfolgreicher Hugo-Build und
-valides Frontmatter; bei `BLOG FINAL` zusaetzlich ein vorbereiteter Linkcheck
-ohne offene Fehler und `draft: false`. Blocker stoppen die Finalisierung.
+Die buildfreie Vorpruefung muss vor den dateiveraendernden Nachbearbeitungen
+bestanden sein; dazu gehoeren insbesondere valides Frontmatter und bei
+`BLOG FINAL` `draft: false`. Erst die technische Ergebnispruefung nach dem
+abschliessenden Build bewertet dessen Erfolg und den gebauten Endstand.
+Der technische FINAL-Linkcheck wird, sofern Lychee in der Laufzeitumgebung
+verfuegbar ist, mit der vorhandenen `lychee.toml` gegen die gebaute HTML-Ausgabe
+des aktuellen Artefakts unter `public/` ausgefuehrt. Fuer site-relative
+`/iWIP/...`-Ziele wird der gebaute Stand unter einem passenden lokalen
+Staging-Root geprueft; offene Linkfehler sind Blocker. Ein Offline-Lauf prueft
+nur lokale Ziele und darf nicht als Pruefung externer URLs ausgegeben werden.
+Nur ein tatsaechlich ausgefuehrter fehlerfreier Lauf darf als bestandener
+Linkcheck gelten. Ist Lychee nicht verfuegbar, wird transparent festgehalten,
+dass die technische Linkpruefung nicht ausgefuehrt werden konnte; dies allein
+blockiert FINAL nicht. `hugo --minify` darf weiterhin nicht als Nachweis fuer
+existente `href`-Ziele ausgegeben werden. Andere nicht vorhandene
+Linkpruefungen werden nicht vorausgesetzt. Tatsaechlich festgestellte relevante
+interne Linkfehler sind Blocker und stoppen die Finalisierung.
 
 Nach erfolgreichem `BLOG FINAL` prueft der Agent verpflichtend den optionalen
 Anschluss an `ai_agents/blog_wissensbasis.md` und bietet bei relevantem Anschluss

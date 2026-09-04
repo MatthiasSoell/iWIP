@@ -2874,3 +2874,41 @@ Rechercheheuristik vereinbare Literaturrecherche geprueft und unveraendert
 beibehalten. Der historische B0-Contract wurde physisch nach
 `ai_agents/archive/agent_contract_b0.md` archiviert. Damit ist keine
 funktionale Aenderung der B1-Architektur verbunden.
+
+## Konsolidierungspaket 2: Produktion und Finalisierung
+
+**Datum:** 2026-09-04
+**Bearbeitete Befunde:** SA-03, SA-05, SA-06
+
+- PASS: Fuer neu erzeugte oder regulaer bearbeitete Blogs ist
+  `<span id="literatur"></span>` der einzige kanonische Literaturanker; das
+  Blog-Emoji-Postprocessing prueft seine eindeutigen Bereichsgrenzen vor jeder
+  Mutation und bricht andernfalls fail-closed ab. Eine Bestandsmigration fand
+  nicht statt.
+- PASS: BLOG FINAL und REVEAL FINAL besitzen getrennte artefaktspezifische
+  Ladepfade. Der Blogpfad laedt das vollstaendige DQM, der Reveal-Pfad nicht.
+- PASS: Beide FINAL-Ablaufe trennen buildfreie Vorpruefung, Transformationen,
+  genau einen abschliessenden Hugo-Build und die anschliessende technische
+  Ergebnispruefung eindeutig; nach dem Build folgt keine Mutation.
+- PASS: Der technische Linkcheck ist auf Lychee mit der vorhandenen
+  `lychee.toml` gegen die gebaute HTML-Ausgabe begrenzt. Ein fokussierter
+  Offline-Lauf mit lokalem Staging-Root war ausfuehrbar; externe URLs gelten
+  dabei ausdruecklich nicht als geprueft.
+- PASS: Ein Blog ist ohne Reveal vollstaendig finalisierbar. Ein
+  Praesentationslink ist nur bei real vorhandenem veroeffentlichtem Ziel
+  zulaessig; Layouts, bestehende Blog-/Reveal-Artefakte und Hugo-Konfiguration
+  blieben unveraendert.
+- PASS: Die gezielten Regressionen A bis J sowie `hugo --minify` und
+  `git diff --check` wurden erfolgreich ausgefuehrt. Der repositoryweite
+  Offline-Lychee-Diagnoselauf meldete 26 vorbestehende interne Bestandsfehler;
+  sie wurden ausserhalb des Pakets nicht veraendert und nicht als PASS gewertet.
+
+### Praezisierung der Lychee-Laufzeitabhaengigkeit
+
+Lychee bleibt die bevorzugte technische Linkpruefung, ist aber keine zwingende
+plattformuebergreifende Laufzeitvoraussetzung fuer BLOG FINAL oder REVEAL FINAL.
+Nur ein tatsaechlich ausgefuehrter fehlerfreier Lauf gilt als bestandener
+Linkcheck. Nichtverfuegbarkeit wird transparent als nicht ausgefuehrte Pruefung
+dokumentiert und blockiert FINAL nicht automatisch; tatsaechlich festgestellte
+relevante interne Linkfehler bleiben Blocker. Ein Hugo-Build allein gilt nicht
+als Linknachweis.

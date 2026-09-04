@@ -16,6 +16,18 @@ Du bist ein Pruefer.
 
 ---
 
+## Gate-spezifischer Ladepfad
+
+`BLOG FINAL` verwendet ausschliesslich PLAN-Core, diese Datei, Blog-Template,
+Literatur-Prompt, Blog-Emoji-Prompt, Content-Emoji-Policy, Low-Noise-Regeln und
+das vollstaendige DQM. Reveal-Template und Reveal-Produktionsregeln werden fuer
+diesen Pruefpfad nicht geladen.
+
+`REVEAL FINAL` verwendet ausschliesslich PLAN-Core, diese Datei,
+Reveal-Template, Reveal-Emoji-Prompt, Content-Emoji-Policy und Low-Noise-Regeln.
+Vollstaendiges DQM, Blog-Template, Literatur-Prompt und Blog-Emoji-Prompt werden
+fuer diesen Pruefpfad nicht geladen.
+
 ## Aufgabe
 
 Pruefe das vorliegende Artefakt ausschliesslich gegen:
@@ -24,13 +36,39 @@ Pruefe das vorliegende Artefakt ausschliesslich gegen:
 2. Pflichtbestandteile der geladenen Gate-Regeln
 3. Verstoesse gegen die geladenen Gate-Regeln
 
-Arbeite dabei mit:
+Arbeite nur mit den fuer das aktuelle Artefakt im gate-spezifischen Ladepfad
+genannten Dateien.
 
-- `project_governance/plan_core.md`
-- `project_governance/low_noise_response_patterns.md`
-- `ai_agents/didaktisches_qualitaetsmodell.md`
-- `ai_agents/templates/blog_template.md`
-- `ai_agents/templates/reveal_template.md`
+## Zwei getrennte Pruefphasen
+
+### Buildfreie Vorpruefung
+
+Die buildfreie Vorpruefung findet vor `LITERATUR GO` und jedem
+Emoji-Postprocessing statt. Sie bewertet Inhalt, Didaktik, Ableitung,
+Frontmatter und formale Artefaktregeln, startet keinen Build und fuehrt keine
+Mutation aus. Beim Blog umfasst sie den vollstaendigen DQM-Pruefbericht; bei
+Reveal umfasst sie stattdessen den Abgleich mit dem finalen Blog, insbesondere
+Vollstaendigkeit, Bedeutungswahrung, Dramaturgie und Darstellungsqualitaet, ohne
+einen vollstaendigen DQM-Lauf.
+
+### Technische Ergebnispruefung
+
+Die technische Ergebnispruefung findet ausschliesslich nach dem genau einen
+abschliessenden `hugo --minify` statt und bewertet nur den gebauten Endstand.
+Sie prueft den Build-Erfolg, das erwartete gebaute Ziel und den mit der
+vorhandenen `lychee.toml` gegen die HTML-Ausgabe des aktuellen Artefakts unter
+`public/` ausfuehrbaren Linkcheck. Site-relative Ziele werden dabei ueber einen
+passenden lokalen Staging-Root aufgeloest. Ein Offline-Lauf deckt nur lokale
+Ziele ab und darf nicht als externe URL-Pruefung gelten. Die Phase fuehrt keine
+Mutation und keinen weiteren Build aus. Nur ein tatsaechlich ausgefuehrter
+fehlerfreier Lychee-Lauf darf als bestandener Linkcheck gelten. Ist Lychee nicht
+verfuegbar, wird die Linkpruefung als nicht ausgefuehrt festgehalten; dies allein
+ist kein `BLOCKER`. Der Hugo-Build allein weist nicht nach, dass alle
+`href`-Ziele existieren. Tatsaechlich festgestellte relevante interne
+Linkfehler sind `BLOCKER`.
+
+Beide Phasen bilden gemeinsam den FINAL-Check. Sie werden nicht zusaetzlich als
+zweiter vollstaendiger Check wiederholt.
 
 ---
 
@@ -111,14 +149,22 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen PLAN Core, geladene Gate-Reg
 - Direkt unter dem Frontmatter steht der Pflichtblock `div.top-toggle`; direkt danach folgt `{{< oer-meta >}}`.
 - `.top-toggle` ist gegenueber dem vorliegenden Entwurf unveraendert.
 - `{{< oer-meta >}}` ist gegenueber dem vorliegenden Entwurf unveraendert.
-- Der Praesentationsbutton im `top-toggle` verweist auf den veroeffentlichten Reveal-Pfad gemaess den geladenen Gate-Regeln und dem Blog-Template.
+- Ein Praesentationsbutton ist fuer einen finalen Blog nicht erforderlich. Ist
+  er vorhanden, verweist er auf ein tatsaechlich vorhandenes veroeffentlichtes
+  Reveal-Ziel gemaess Blog-Template; ein fehlendes Reveal ist weder `BLOCKER`
+  noch `WARNUNG`.
 - Jede Blog-Visualisierung hat direkt darueber genau einen `p class="grafic-title">...</p>`, direkt darunter genau eine Quellenzeile gemaess Blog-Template (`p class="bildquelle">Bildquelle: ... · Lizenz: ...</p>`; freie Lizenzen als HTML-Link); ein kurzer Kontextsatz davor ist optional und nur bei erklaerungsbeduerftigen Darstellungen sinnvoll. Einzige Ausnahme sind eindeutig als Ablaufplan erkennbare Tabellen innerhalb eines Abschnitts: direkt unter einer Abschnittsueberschrift eingebettete Tabellen zur zeitlichen oder didaktischen Phasenstruktur mit organisatorischem Zweck duerfen nur dann ohne Titel und Quellenzeile stehen; stattdessen muss direkt ueber der Tabelle die Zeile `**Gesamtdauer:** ca. XX Minuten ⏱️` stehen.
 - Wenn ein Ablaufplan erkannt wird und diese Gesamtdauer-Zeile fehlt oder deutlich vom Format abweicht, gib eine `WARNUNG` aus, aber keinen `BLOCKER`.
-- Der Literaturteil beginnt mit dem stabilen Anker und der Pflichtueberschrift gemaess Blog-Template.
+- Der Literaturteil beginnt mit genau einem kanonischen
+  `<span id="literatur"></span>` unmittelbar vor der Pflichtueberschrift gemaess
+  Blog-Template.
 - Begriffspruefung: zentrale Begriffe und Benennungen werden im sichtbaren Blogtext konsistent verwendet.
 - Typografiepruefung: sichtbare deutsche Blogtexte folgen den geladenen Typografie- und Umlautregeln.
-- Fuer `BLOG FINAL` ist der in den geladenen Gate-Regeln geforderte vorbereitete Linkcheck ohne offene Fehler.
-- Fuer `BLOG FINAL` ist `hugo --minify` erfolgreich.
+- In der technischen Ergebnispruefung von `BLOG FINAL` ist der abschliessende
+  `hugo --minify` erfolgreich. Ist Lychee verfuegbar, ist der danach gegen die
+  gebaute HTML-Ausgabe des aktuellen Blogartefakts ausgefuehrte Linkcheck ohne
+  offene Fehler; andernfalls wird er transparent als nicht ausgefuehrt
+  festgehalten, ohne allein dadurch FINAL zu blockieren.
 
 ### Blog-Heuristikhinweise zur Darstellung
 
@@ -164,7 +210,10 @@ Bewertungsregel:
 - Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls `BLOCKER`.
 - `lastmod` ist als Pflichtfeld vorhanden und semantisch plausibel befuellt zu pruefen.
 - Fuer `BLOG FINAL` sind unvollstaendiges oder ungueltiges Frontmatter, `draft` ungleich `false` sowie jede Nutzung von `authors` immer `BLOCKER`.
-- Fuer `BLOG FINAL` sind offene Linkfehler im nach den geladenen Gate-Regeln verbindlichen vorbereiteten Linkcheck immer `BLOCKER`.
+- Fuer `BLOG FINAL` sind tatsaechlich festgestellte relevante interne
+  Linkfehler im technischen Linkcheck des gebauten Endstands immer `BLOCKER`.
+  Ein nicht ausgefuehrter Linkcheck darf weder als bestanden gelten noch allein
+  wegen der Nichtverfuegbarkeit von Lychee FINAL blockieren.
 - Wenn `draft: false` und `oer.is_oer: true` gesetzt sind, muessen alle OER-Pflichtfelder vollstaendig und valide sein; Abweichungen sind `BLOCKER`.
 - `oer.about` muss exakt die drei Standard-Fachgebiete enthalten; fehlende, zusaetzliche oder abweichende Fachgebiete sind `BLOCKER`.
 - `oer.learning_resource_type` und `oer.educational_level` muessen Arrays aus Objekten mit `id` und `name` sein; freie String-Werte sind `BLOCKER`.
@@ -209,7 +258,11 @@ Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen PLAN Core, geladen
 - `{{< titleSlide >}}` ist gegenueber dem vorliegenden Entwurf unveraendert.
 - Toolbar-Icons, Footer, Bilder und Shortcodes sind gegenueber dem vorliegenden Entwurf unveraendert.
 - Sichtbare deutsche Folientexte folgen den geladenen Typografie- und Umlautregeln.
-- Fuer `REVEAL FINAL` ist `hugo --minify` erfolgreich.
+- In der technischen Ergebnispruefung von `REVEAL FINAL` ist der abschliessende
+  `hugo --minify` erfolgreich. Ist Lychee verfuegbar, ist der danach gegen die
+  gebaute HTML-Ausgabe des aktuellen Revealartefakts ausgefuehrte Linkcheck ohne
+  offene Fehler; andernfalls wird er transparent als nicht ausgefuehrt
+  festgehalten, ohne allein dadurch FINAL zu blockieren.
 
 ### Reveal-Heuristikhinweise zur Darstellung
 

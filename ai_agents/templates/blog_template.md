@@ -4,8 +4,9 @@ Kontext: Frontmatter, Einstiegsblock und Zielstruktur für Blogartefakte
 
 Dieses Template definiert die Standardstruktur für Blogartikel im SciBlog iWIP.
 
-Der Blogartikel ist das **Primärartefakt**.
-Die Reveal-Präsentation wird anschließend daraus abgeleitet.
+Der Blogartikel ist das **vollstaendige Primärartefakt** und darf ohne
+Reveal-Praesentation finalisiert und veroeffentlicht werden. Eine optionale
+Reveal-Praesentation wird anschließend daraus abgeleitet.
 
 Emojis werden gemäß **content_emoji_policy.md** verwendet.
 Prozess, Gates und Finalisierung folgen `project_governance/plan_core.md`.
@@ -134,7 +135,6 @@ Direkt nach dem Frontmatter muss immer folgender Block stehen:
 <div class="top-toggle">
   <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
-  <button onclick="location.href='<veroeffentlichter-praesentationspfad>'" title="Zur Präsentationsansicht">🖥️</button>
   <button class="iwip_help_btn"
         type="button"
         aria-haspopup="dialog"
@@ -148,13 +148,27 @@ Direkt nach dem Frontmatter muss immer folgender Block stehen:
 {{< oer-meta >}}
 ```
 
-Pfadregel für den Präsentationsbutton (verbindlich):
+Der Praesentationsbutton ist optional. Er darf nur in einen neu erzeugten oder
+regulaer bearbeiteten Blog aufgenommen werden, wenn das konkrete Reveal-Ziel
+tatsaechlich vorhanden und veroeffentlicht ist:
 
-- Im Button steht immer der veroeffentlichte Praesentationspfad.
+```html
+<button onclick="location.href='<veroeffentlichter-praesentationspfad>'" title="Zur Präsentationsansicht">🖥️</button>
+```
+
+Pfadregel für einen vorhandenen Präsentationsbutton (verbindlich):
+
+- Im Button steht immer der veroeffentlichte Praesentationspfad; Platzhalter,
+  Dummy-Ziele und Links auf nicht existente Praesentationen sind unzulaessig.
 - Standard: `content/blog/<bereich>/<ordner>/index.md` -> `/iWIP/praesentation/<bereich>/<ordner>/`.
 - Sonderfall `content/blog/lehre/widi/<ordner>/index.md`: Ziel ist `/iWIP/praesentation/widi/<ordner>/`.
 - Technische Bundle-Orte gehoeren weder in den Button noch in sichtbare Hinweise oder Links.
 - `<ordner>` ist immer genau der Ordnername des Blogbeitrags.
+- Fehlt ein reales Reveal-Ziel, entfaellt der Button ersatzlos; der Blog ist
+  dennoch vollstaendig und finalisierbar.
+- Entsteht Reveal erst spaeter, bleibt der bereits finale Blog unveraendert.
+  `REVEAL FINAL` schreibt ihn nicht automatisch um; eine spaetere Ergaenzung
+  ist nur im Rahmen einer regulaeren, freigegebenen Blogbearbeitung zulaessig.
 
 ---
 
