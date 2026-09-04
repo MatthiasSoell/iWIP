@@ -68,7 +68,11 @@ Regeln:
 - In Reveal-Dateien sind OER-Metadaten strikt verboten.
 - Verboten sind insbesondere: `oer`, `is_oer`, `kind`, `creators`, `publisher`, `license`, `image`, `version`, `status`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `keywords`, `time_required`, `about`, `rights_exceptions`.
 - `blog` soll auf die veroeffentlichte Blogansicht mit Site-Base zeigen, also auf die veroeffentlichte Blog-URL inkl. baseURL und nicht auf einen technischen Content-Pfad.
-- Der sichtbare veroeffentlichte Praesentationspfad lautet `/iWIP/praesentation/<bereich>/<ordner>/`; fuer `widi` ist dies `/iWIP/praesentation/widi/<ordner>/`.
+- Der sichtbare veroeffentlichte Praesentationspfad wird aus der Site-Basis der
+  aktuellen Hugo-Projektkonfiguration und der Praesentationsroute abgeleitet.
+  Im iWIP-Referenzprojekt ergibt dies
+  `/iWIP/praesentation/<bereich>/<ordner>/`, fuer `widi`
+  `/iWIP/praesentation/widi/<ordner>/`.
 - `aliases` fuehrt den Hugo-Alias relativ zur Site-Base; im Frontmatter steht daher `/praesentation/<bereich>/<ordner>/`, fuer `widi` `/praesentation/widi/<ordner>/`.
 - Sichtbare Links, Buttons und Hinweise verwenden nur den veroeffentlichten Pfad; technische Bundle-Orte und Alias-Semantik bleiben intern.
 - Fuer finale Reveal-Praesentationen ist `pdf_export: true` Standard.

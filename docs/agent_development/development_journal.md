@@ -2912,3 +2912,25 @@ Linkcheck. Nichtverfuegbarkeit wird transparent als nicht ausgefuehrte Pruefung
 dokumentiert und blockiert FINAL nicht automatisch; tatsaechlich festgestellte
 relevante interne Linkfehler bleiben Blocker. Ein Hugo-Build allein gilt nicht
 als Linknachweis.
+
+## Konsolidierungspaket 3: OER-Nachnutzbarkeit und Uebertragbarkeit
+
+**Datum:** 2026-09-04
+**Bearbeiteter Befund:** SA-07
+
+- PASS: Die buildfreie Vorpruefung von BLOG FINAL bewertet bei OER-Blogs nun
+  proportional Kontext und Voraussetzungen, wesentliche zugaengliche oder
+  referenzierte Materialien, tatsaechlich vorhandene relevante bearbeitbare
+  Quellen sowie erkennbare Rechteausnahmen.
+- PASS: Rechtliche Fehlbehauptungen und faelschlich als vorhanden oder frei
+  dargestellte zentrale Komponenten bleiben Blocker; praktisch relevante
+  Einschraenkungen sind Warnungen, reine Nice-to-have-Ergaenzungen ohne Befund.
+- PASS: Neue beziehungsweise regulär bearbeitete Artefakte leiten die
+  Site-Basis nach Moeglichkeit aus der aktuellen Hugo-Projektkonfiguration ab;
+  notwendige iWIP-Referenzwerte und institutionelle OER-Metadaten bleiben
+  erhalten.
+- PASS: Die gezielten Regressionen A bis I und `git diff --check` wurden
+  erfolgreich ausgefuehrt. FINAL-Ladegraphen, Build-Reihenfolge,
+  Literaturanker-, Lychee- und Blog-ohne-Reveal-Regeln sowie bestehende
+  OER-/OERSI-Pflichten blieben semantisch unveraendert; Layouts, Inhalte und
+  Hugo-Konfiguration wurden nicht geaendert.

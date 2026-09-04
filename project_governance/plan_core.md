@@ -171,7 +171,9 @@ Gate-Aktionen und lazy geladene Details:
   `ai_agents/didaktisches_qualitaetsmodell.md` geladen. Reveal-Template,
   Reveal-Emoji-Prompt und sonstige Reveal-Produktionsregeln werden nicht geladen.
   Der verbindliche Ablauf ist: (1) inhaltliche und formale buildfreie
-  Vorpruefung, (2) `LITERATUR GO`, (3) Blog-Emoji-Postprocessing, (4) genau ein
+  Vorpruefung; bei OER-Blogs umfasst sie auch die proportionale praktische
+  Nachnutzbarkeit gemaess Blog-Template und CHECK, (2) `LITERATUR GO`, (3)
+  Blog-Emoji-Postprocessing, (4) genau ein
   abschliessendes `hugo --minify`, (5) technische Ergebnispruefung des gebauten
   Endstands und (6) Freigabe nur bei bestandenem Endstand. Literatur- und
   Emoji-Schritt starten keinen Build; nach dem Build folgt keine Mutation mehr.
@@ -199,9 +201,10 @@ bestanden sein; dazu gehoeren insbesondere valides Frontmatter und bei
 abschliessenden Build bewertet dessen Erfolg und den gebauten Endstand.
 Der technische FINAL-Linkcheck wird, sofern Lychee in der Laufzeitumgebung
 verfuegbar ist, mit der vorhandenen `lychee.toml` gegen die gebaute HTML-Ausgabe
-des aktuellen Artefakts unter `public/` ausgefuehrt. Fuer site-relative
-`/iWIP/...`-Ziele wird der gebaute Stand unter einem passenden lokalen
-Staging-Root geprueft; offene Linkfehler sind Blocker. Ein Offline-Lauf prueft
+des aktuellen Artefakts unter `public/` ausgefuehrt. Fuer site-relative Ziele
+unter der aus der Projektkonfiguration abgeleiteten Site-Basis wird der gebaute
+Stand unter einem passenden lokalen Staging-Root geprueft; offene Linkfehler
+sind Blocker. Ein Offline-Lauf prueft
 nur lokale Ziele und darf nicht als Pruefung externer URLs ausgegeben werden.
 Nur ein tatsaechlich ausgefuehrter fehlerfreier Lauf darf als bestandener
 Linkcheck gelten. Ist Lychee nicht verfuegbar, wird transparent festgehalten,

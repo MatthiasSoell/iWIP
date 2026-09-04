@@ -166,6 +166,39 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen PLAN Core, geladene Gate-Reg
   offene Fehler; andernfalls wird er transparent als nicht ausgefuehrt
   festgehalten, ohne allein dadurch FINAL zu blockieren.
 
+### Praktische OER-Nachnutzbarkeit
+
+Bei Blogartefakten mit `oer.is_oer: true` prueft die buildfreie Vorpruefung
+zusaetzlich proportional zur konkreten Nachnutzung:
+
+- Zweck beziehungsweise Einsatzkontext ist hinreichend verstaendlich;
+  zentrale Nutzungsvoraussetzungen sind erkennbar, sofern sie relevant sind.
+- Fuer die Nutzung wesentliche Materialien, Quellen und Bestandteile sind
+  zugaenglich oder nachvollziehbar referenziert. Eine bearbeitbare Quelle oder
+  Ausgangsdatei muss nur auffindbar sein, wenn sie fuer die Nachnutzung
+  wesentlich und im Projekt tatsaechlich vorhanden ist; nicht existente
+  Dateien werden weder verlangt noch erfunden.
+- Bestandteile ausserhalb der allgemeinen OER-Lizenz sind erkennbar als
+  Rechteausnahmen gekennzeichnet und erscheinen nicht faelschlich als frei
+  nachnutzbar.
+
+Bewerte dabei wie folgt:
+
+- `BLOCKER`: fehlerhafte rechtliche Offenheit oder Lizenzierung; eine fehlende
+  notwendige Rechteausnahme erzeugt eine reale falsche Lizenzbehauptung; oder
+  eine zentrale Nachnutzungskomponente wird als vorhanden beziehungsweise frei
+  dargestellt, obwohl sie dies nicht ist.
+- `WARNUNG`: Die praktische Nachnutzbarkeit ist relevant eingeschraenkt, ohne
+  falsche rechtliche Aussage, etwa durch fehlenden zentralen Einsatzkontext,
+  eine fehlende relevante Voraussetzung oder eine nicht sinnvoll auffindbare,
+  vorhandene und wesentliche bearbeitbare Quelle.
+- Kein Befund: Es fehlen nur theoretisch denkbare Zusatzinformationen oder
+  optionale Materialien, oder das Artefakt ist ohne sie sinnvoll verstaendlich
+  und nachnutzbar.
+
+Die Pruefung verlangt nicht pauschal zusaetzliche Erlaeuterungen,
+Downloadpakete, Bearbeitungsdateien oder Nutzungshinweise.
+
 ### Blog-Heuristikhinweise zur Darstellung
 
 Pruefe zusaetzlich als Soft-Heuristik:

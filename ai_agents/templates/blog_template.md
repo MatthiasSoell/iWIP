@@ -116,6 +116,18 @@ Dabei gilt verbindlich:
 - `oer.creators[].affiliation.name` lautet immer `Universität Rostock`; Institutszusaetze sind dort unzulaessig.
 - `description` formuliert den Gegenstand adressatenorientiert und konkret; typische Einstiege sind z. B. "In dieser Veranstaltung...", "Der Beitrag zeigt...", "Lehrkräfte arbeiten hier an..."
 
+## Praktische Nachnutzbarkeit bei OER
+
+Ein OER-Blog macht Zweck beziehungsweise Einsatzkontext und relevante
+Nutzungsvoraussetzungen im Artefakt hinreichend verstaendlich. Wesentliche
+Materialien, Quellen und Bestandteile werden zugaenglich oder nachvollziehbar
+referenziert; eine im Projekt vorhandene bearbeitbare Quelle wird nur dann
+erkennbar gemacht, wenn sie fuer die Nachnutzung wesentlich ist. Nicht
+existierende Ausgangsdateien werden nicht verlangt, und Bestandteile ausserhalb
+der allgemeinen OER-Lizenz werden als Rechteausnahme sichtbar gekennzeichnet.
+Zusaetzliche Erlaeuterungen, Dateien oder Downloadpakete sind nur erforderlich,
+wenn ihr Fehlen die praktische Nachnutzung relevant erschwert.
+
 ## Hinweis zur Steuerung
 
 Alle Uebergaenge, Pruefungen und Finalisierungen erfolgen
@@ -160,8 +172,14 @@ Pfadregel für einen vorhandenen Präsentationsbutton (verbindlich):
 
 - Im Button steht immer der veroeffentlichte Praesentationspfad; Platzhalter,
   Dummy-Ziele und Links auf nicht existente Praesentationen sind unzulaessig.
-- Standard: `content/blog/<bereich>/<ordner>/index.md` -> `/iWIP/praesentation/<bereich>/<ordner>/`.
-- Sonderfall `content/blog/lehre/widi/<ordner>/index.md`: Ziel ist `/iWIP/praesentation/widi/<ordner>/`.
+- Die Site-Basis wird aus der aktuellen Hugo-Projektkonfiguration abgeleitet;
+  im iWIP-Referenzprojekt ist sie `/iWIP/`.
+- Standard: `content/blog/<bereich>/<ordner>/index.md` -> Site-Basis plus
+  `praesentation/<bereich>/<ordner>/` (aktuell also
+  `/iWIP/praesentation/<bereich>/<ordner>/`).
+- Sonderfall `content/blog/lehre/widi/<ordner>/index.md`: Ziel ist Site-Basis
+  plus `praesentation/widi/<ordner>/` (aktuell also
+  `/iWIP/praesentation/widi/<ordner>/`).
 - Technische Bundle-Orte gehoeren weder in den Button noch in sichtbare Hinweise oder Links.
 - `<ordner>` ist immer genau der Ordnername des Blogbeitrags.
 - Fehlt ein reales Reveal-Ziel, entfaellt der Button ersatzlos; der Blog ist

@@ -40,6 +40,10 @@ Gleichzeitig ist der Agent fachlich im Sinne der Wirtschaftsdidaktik gerahmt. Er
 
 Diese Perspektive verpflichtet den Agenten dazu, Vorschläge nicht nur technisch oder formal zu generieren, sondern (fach-)didaktisch zu begründen und auf ihre Qualität hin zu reflektieren. Planung wird damit als nachvollziehbarer, argumentativer Prozess verstanden – nicht als rein schematische Ableitung.
 
+Bei OER-Blogartefakten prueft der Agent neben rechtlicher Offenheit und den
+bestehenden OERSI-Metadaten proportional auch praktische Nachnutzbarkeit und
+technische Uebertragbarkeit, ohne pauschal Zusatzmaterialien zu verlangen.
+
 ## Wofür der Agent gedacht ist
 
 Der Agent ist insbesondere gedacht für:
