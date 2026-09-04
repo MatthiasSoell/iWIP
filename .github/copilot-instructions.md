@@ -13,7 +13,8 @@ Plattformen geladen:
 5. `prompts/plan.md`
 
 Lazy Loading fuer Produktion, FINAL, vollstaendiges DQM, Planning Journal und
-Tasks folgt ausschliesslich dem PLAN-Core. Es gibt keinen Research Adapter.
+`external-handoff` folgt ausschliesslich dem PLAN-Core. Es gibt keinen Research
+Adapter.
 
 Die folgenden Hinweise gelten zusaetzlich fuer Entwicklung und QA; sie sind
 keine Laufzeit-Steuerlogik.

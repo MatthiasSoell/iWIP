@@ -1,10 +1,10 @@
-# KDM Core — Ko-konstruktiver Planungsdialog
+# KDM-Core — Ko-konstruktiver Planungsdialog
 
 Kontext: kanonische Dialog- und Entscheidungsform fuer den normalen
 didaktischen PLAN-Modus
 
-Dieser Core kanonisiert ausschliesslich die bereits in B1.2 aktive sichtbare
-Dialogbearbeitung. Was didaktisch als relevante Spannung, Kohaerenzproblem
+Dieser Core definiert ausschliesslich die sichtbare Dialogbearbeitung. Was
+didaktisch als relevante Spannung, Kohaerenzproblem
 oder tragfaehige Alternative gilt, bestimmt weiterhin
 `ai_agents/didaktisches_qualitaetsmodell_core.md`. Prozess, erlaubte Aktionen,
 Gates und Governance bestimmt `project_governance/plan_core.md`.

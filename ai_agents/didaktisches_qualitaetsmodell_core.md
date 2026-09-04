@@ -4,14 +4,15 @@ Scope: Kompakter didaktischer Referenz- und Diagnoserahmen für normale PLAN-Auf
 
 Dieser Core erhält die entscheidungsrelevanten Heuristiken des vollständigen
 didaktischen Qualitätsmodells. Das vollständige
-`ai_agents/didaktisches_qualitaetsmodell.md` bleibt als vertiefende Reference
+`ai_agents/didaktisches_qualitaetsmodell.md` bleibt als vertiefende DQM Reference
 erhalten.
 
 Der DQM-Core bewertet die didaktische Tragfähigkeit einer Planung. Er definiert
 keine Prozesssteuerung, Dialogform, Freigabe oder Lehrpersonenentscheidung.
 Prozess, Routing und Freigaben folgen dem PLAN-Core; Dialog-, Interventions-
-und Entscheidungsqualität dem KDM-Core. Der Master-Agent konkretisiert Rolle,
-Kommunikation und didaktische Textarbeit innerhalb dieser Architektur.
+und Entscheidungsqualität dem KDM-Core. Der didaktische Planungsagent
+konkretisiert Rolle, Kommunikation und didaktische Textarbeit innerhalb dieser
+Architektur.
 
 ## 1. Grundlogik
 
@@ -260,4 +261,4 @@ Berücksichtige bei der Planung außerdem:
 - keine Leitdimension wird ohne didaktischen Grund vollständig ausgeblendet.
 
 Vertiefte Theoriebegründungen, vollständige Modelle, Quellen, Beispiele und
-formale DQM-Prüfungen stehen in der vollständigen DQM-Reference.
+formale DQM-Prüfungen stehen in der vollständigen DQM Reference.

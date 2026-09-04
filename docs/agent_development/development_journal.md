@@ -2934,3 +2934,13 @@ als Linknachweis.
   Literaturanker-, Lychee- und Blog-ohne-Reveal-Regeln sowie bestehende
   OER-/OERSI-Pflichten blieben semantisch unveraendert; Layouts, Inhalte und
   Hugo-Konfiguration wurden nicht geaendert.
+
+## Terminologie- und Lesbarkeitscheck des didaktischen Planungsagenten
+
+**Datum:** 2026-09-04
+
+- Aktive Bezeichnungen fuer den didaktischen Planungsagenten, PLAN, KDM,
+  DQM-Core, DQM Reference, Planning State und `external-handoff` wurden
+  vereinheitlicht; verbliebene B1.x-Reste wurden entfernt.
+- Es erfolgte keine Architektur- oder Verhaltensaenderung. Die gezielten
+  Regressionen und `git diff --check` waren erfolgreich.

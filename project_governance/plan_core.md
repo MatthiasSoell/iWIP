@@ -1,4 +1,4 @@
-# PLAN Core — Didaktische Planung
+# PLAN-Core — Didaktische Planung
 
 Kontext: minimale normative Steuerung fuer den normalen didaktischen PLAN-Modus
 
@@ -18,7 +18,7 @@ Unsicherheiten und Spannungen werden vor der Artefakterstellung explizit
 benannt und ueber Rueckfragen, Reflexionsschleifen und klar markierte
 Uebergaenge bearbeitet.
 
-## Shadow Planning State
+## Planning State
 
 Als kompaktes internes Arbeitsgedaechtnis fuehrt der Agent fallbezogen:
 
@@ -80,7 +80,7 @@ Fallsammlung noch ein neues Standardverzeichnis.
 
 Die Datei enthaelt genau zwei logisch getrennte Bereiche:
 
-1. `Current State` bildet den Shadow Planning State mit seinen fuenf bestehenden
+1. `Current State` bildet den Planning State mit seinen fuenf bestehenden
    Feldern persistent ab. Er ist innerhalb des Artefakts allein autoritativ
    dafuer, was aktuell gilt; der aktuelle Nutzerprompt hat weiterhin absoluten
    Vorrang.
@@ -109,7 +109,7 @@ Agentenvorschlaege und technische Prozessmeldungen sind nicht journalwuerdig.
 
 Bei einer substantiellen Revision werden in einem zusammengehoerigen
 Pflegevorgang der gesamte betroffene Current-State-Bereich nach der bestehenden
-B1.4b-Semantik gegen die neue Setzung geprueft, unvereinbare Bestandteile
+Revisionssemantik gegen die neue Setzung geprueft, unvereinbare Bestandteile
 entfernt oder ersetzt und ein neuer `revision`-Eintrag mit `refers_to` auf die
 relevanten frueheren Eintraege angefuegt. Fruehere Eintraege bleiben als
 Historie erhalten und duerfen nie dazu fuehren, dass eine revidierte
@@ -119,7 +119,7 @@ Punkt durch eine Entscheidung oder Revision erledigt, kann deren Eintrag den
 wird ein knapper `resolved`-Eintrag angefuegt.
 
 In einer laufenden Session arbeitet der Agent primaer mit Gespraechskontext und
-Shadow State und liest das Journal nicht vor jedem Turn vollstaendig neu. Er
+Planning State und liest das Journal nicht vor jedem Turn vollstaendig neu. Er
 aktualisiert es nur bei journalwuerdigen Ereignissen und prueft vor dem
 Schreibzugriff den fuer eine sichere Aktualisierung notwendigen aktuellen
 Dateiinhalt. Bei einer neuen Session oder einem ausdruecklichen Wiedereinstieg
@@ -226,17 +226,17 @@ Klaerungsfrage. Aktiver Editorpfad, geoeffnete Dateien oder markierte
 Textstellen steuern den Arbeitsmodus nicht; Nutzeranliegen und eindeutige
 Arbeitsbefehle haben Vorrang.
 
-## Optionale Tasks
+## Spezialisierter Task
 
 Ein Task ist eine klar abgegrenzte, voruebergehend relevante Spezialtaetigkeit
 desselben Agenten, deren eigene Arbeitslogik einen lazy geladenen
-Kontextbaustein rechtfertigt. Tasks sind insbesondere keine Personas, Agenten,
-Gates, Artefaktstatus, DQM- oder KDM-Regeln, Profiles, Review Lenses, Tools,
-externen Dienste oder State-/Journalfelder. Die bestehenden Produktionsgates
-bleiben unveraendert und werden nicht als Tasks behandelt.
+Kontextbaustein rechtfertigt. Tasks sind insbesondere von Personas, Agenten,
+Gates, Artefaktstatus, DQM- oder KDM-Regeln, didaktischen Profilen, Tools,
+externen Diensten und State-/Journalfeldern abzugrenzen. Die bestehenden
+Produktionsgates bleiben unveraendert und werden nicht als Tasks behandelt.
 
 PLAN erkennt Tasks semantisch aus dem Nutzerauftrag; Tasknamen und Routing
-bleiben normalerweise unsichtbar. B1.6 kennt ausschliesslich den Task
+bleiben normalerweise unsichtbar. Aktiv ist ausschliesslich der Task
 `external-handoff`. Er wird erst geladen, wenn die Lehrperson ausdruecklich eine
 Uebergabespezifikation fuer eine externe Spezialleistung verlangt oder einen
 zuvor knapp vorgeschlagenen externen Einsatz konkret weiterverfolgt. Ein blosser
@@ -332,7 +332,7 @@ keinen vollstaendigen Blog- oder Praesentationsentwurf.
 ## Inaktive und lazy geladene Bereiche
 
 Das vollstaendige `ai_agents/didaktisches_qualitaetsmodell.md` bleibt die
-vertiefende DQM-Reference und wird im normalen PLAN-Modus nur zusaetzlich
+vertiefende DQM Reference und wird im normalen PLAN-Modus nur zusaetzlich
 geladen bei:
 
 - expliziter theoretischer oder wissenschaftlicher Vertiefung, etwa zu
@@ -351,10 +351,10 @@ Normale Ziel-Mittel-Spannungen reichen nicht aus. Das vollstaendige DQM wird
 insbesondere nicht automatisch bei normalen PLAN-Ueberarbeitungen,
 Multiperspektivitaet, Profil B oder C, einzelnen Lernhuerden, kritischem
 Sparring oder H01 geladen. Formale FINAL-Pruefungen duerfen weiterhin auf die
-vollstaendige DQM-Reference zugreifen.
+vollstaendige DQM Reference zugreifen.
 
-Es gibt keinen Research Adapter, Research Task, Research Trace,
-`/PLAN FORSCHUNG`-Modus oder agentenseitiges Forschungslogging. Externe
+Es gibt keinen Research Adapter, keinen `/PLAN FORSCHUNG`-Modus und kein
+agentenseitiges Forschungslogging. Externe
 Recherche folgt ausschliesslich der kleinen PLAN-Heuristik oben. Eine spaetere
 komplexere Recherchelogik waere eine neue Architekturentscheidung.
 

@@ -1,8 +1,8 @@
 # Didaktisches Qualitätsmodell (DQM) – SciBlog iWIP
 
-Scope: DQM-Leitdimensionen, Profile und Qualitaetsraster fuer agentische Planung, Diagnose und Finalpruefung
+Scope: DQM-Leitdimensionen, Profile und Qualitaetsraster fuer didaktische Planung, Diagnose und Finalpruefung
 
-Referenzdokument für den Master-Agent.
+DQM Reference fuer den didaktischen Planungsagenten.
 Das DQM dient als didaktisches Referenzmodell, Diagnose- und Heuristikrahmen
 sowie Qualitaetsraster fuer didaktische Strukturierung, profilabhaengige
 Planung, Kohaerenzcheck und abschliessende didaktische Bewertung.

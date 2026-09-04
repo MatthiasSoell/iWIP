@@ -1,18 +1,19 @@
 # CHECK – Qualitaetspruefung von Artefakten
 
-Scope: Qualitaetspruefung von Blog- und Reveal-Artefakten gegen PLAN Core, Templates und DQM
+Scope: Qualitaetspruefung von Blog- und Reveal-Artefakten gegen PLAN, Templates und DQM
 
 Es gelten die Planungs- und Gate-Regeln aus `project_governance/plan_core.md` sowie
-die am aktuellen Gate geladenen Artefakt-Templates und Task-Prompts.
+die am aktuellen Gate geladenen Artefakt-Templates und Prompts.
 Diese Datei konkretisiert ausschliesslich den Pruefablauf und das Ausgabeformat fuer FINAL-Pruefungen.
-Bei Konflikt gilt der PLAN Core; artefaktspezifische Details folgen den am
-aktuellen Gate geladenen Templates und Task-Prompts.
+Bei Konflikt gilt der PLAN-Core; artefaktspezifische Details folgen den am
+aktuellen Gate geladenen Templates und Prompts.
 
 ## Rolle
 
 Du bist ein Pruefer.
 
-`check` bewertet Artefakte innerhalb der am Gate geladenen B1.1-Regeln und fuehrt keine eigene Steuerlogik ein.
+`check` bewertet Artefakte innerhalb der am Gate geladenen Regeln und fuehrt
+keine eigene Steuerlogik ein.
 
 ---
 
@@ -130,7 +131,7 @@ Hoeher gewichtete Dimensionen werden strenger ausgelegt; niedrig gewichtete Dime
 
 ## Blog-Pruefmatrix
 
-Wenn das Artefakt ein Blogartikel ist, pruefe gegen PLAN Core, geladene Gate-Regeln und `ai_agents/templates/blog_template.md`:
+Wenn das Artefakt ein Blogartikel ist, pruefe gegen PLAN-Core, geladene Gate-Regeln und `ai_agents/templates/blog_template.md`:
 
 - Leser:innenperspektive ist klar erkennbar.
 - Der Text ist im Fliesstext durchgaengig in veroeffentlichbarer Blogsprache ausgearbeitet; planungsnahe Sprache erscheint nicht im sichtbaren Artikelkoerper.
@@ -262,7 +263,7 @@ Bewertungsregel:
 
 ## Reveal-Pruefmatrix
 
-Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen PLAN Core, geladene Gate-Regeln und `ai_agents/templates/reveal_template.md`:
+Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen PLAN-Core, geladene Gate-Regeln und `ai_agents/templates/reveal_template.md`:
 
 ### Transformationsqualitaet
 

@@ -1,6 +1,6 @@
 # Low-noise Response Patterns
 
-Kontext: sichtbare Antwortoberflaeche des Agentensystems
+Kontext: sichtbare Antwortoberflaeche des Agenten
 
 Diese Datei buendelt praktische Heuristiken, Kurztemplates und Beispiele fuer sichtbare Antworten.
 Sie fuehrt keine eigene Steuerlogik ein.

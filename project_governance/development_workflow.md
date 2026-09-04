@@ -132,7 +132,7 @@ Pro Station mindestens erfassen:
 - was tatsächlich passiert ist,
 - ob der Schritt bestanden ist,
 - welche Abweichung vorliegt,
-- wo die Korrektur voraussichtlich hingehoert (PLAN, KDM, DQM, Master-Agent, Prompt, Template, Doku).
+- wo die Korrektur voraussichtlich hingehoert (PLAN, KDM, DQM, didaktischer Planungsagent, Prompt, Template, Doku).
 
 Kopierbare Vorlage:
 
@@ -182,7 +182,7 @@ Faustregel fuer `Folgeort`:
 - **PLAN**: Prozess, Routing, Uebergaenge, Gates und Konfliktlogik.
 - **KDM**: Dialog-, Interventions- und Entscheidungsform.
 - **DQM**: didaktische Qualitaet und Diagnose.
-- **Master-Agent**: operative Arbeitslogik, Dialogstil, Statusauswertung.
+- **Didaktischer Planungsagent**: operative Arbeitslogik, Dialogstil, Statusauswertung.
 - **Prompt**: Start-, Check- oder Interaktionssteuerung.
 - **Template**: Frontmatter, Artefaktstruktur, Template-Pflichtlogik.
 - **Doku**: README oder Workflow erklaert den Stand noch falsch oder unvollstaendig.

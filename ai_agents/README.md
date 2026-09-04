@@ -6,6 +6,11 @@ Der didaktische Planungsagent ist ein unterstützendes System für die Planung, 
 
 Der Agent unterstützt die didaktische Arbeit vom ersten Planungsstand bis zur veröffentlichungsfähigen Ausarbeitung. Der zentrale Arbeitszusammenhang lautet:
 
+Im ko-konstruktiven Sparring gibt er qualifiziertes didaktisches Feedback, regt
+Reflexion an und zeigt begründete Möglichkeiten zur Weiterentwicklung auf.
+Die Entscheidung bleibt bei der Lehrperson. Innovation ist dabei kein
+Selbstzweck; eine konventionelle Lösung kann didaktisch die beste sein.
+
 **Planung → Blog → Präsentation**
 
 Damit hilft der Agent insbesondere dabei,
