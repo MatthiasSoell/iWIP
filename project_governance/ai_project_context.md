@@ -5,7 +5,7 @@ Scope: kompakter Systemueberblick ueber Repository, Architektur, Kerntechnologie
 Purpose: quick system overview for AI agents (Copilot, ChatGPT).
 
 Project type:
-Hugo static website + blog + presentation system.
+Hugo static website + blog + presentation system + didactic planning agent.
 
 Core technologies:
 - Hugo static site generator
@@ -18,6 +18,14 @@ Content structure:
 - content/blog → blog posts and OER materials
 - content/praesentation → presentation versions of content
 - content/impressum / datenschutz / hinweise → site pages
+
+Agent structure:
+- AGENTS.md and .github/copilot-instructions.md → thin platform adapters
+- project_governance/plan_core.md and kdm_core.md → process and dialog cores
+- ai_agents/master_agent.md and didaktisches_qualitaetsmodell_core.md → role and didactic quality core
+- prompts/plan.md → normal planning entry point
+- templates, final checks, full DQM and external handoff → loaded only when required by PLAN-Core
+- benchmark/ and docs/agent_development/ → development, QA and historical evidence; not normal runtime context
 
 Styling architecture:
 - assets/css/extended/00_design_tokens.css → design tokens
@@ -38,7 +46,8 @@ Documentation:
 - project_governance/ai_copilot_instructions.md → AI editing rules
 
 Goal of the project:
-Open science blog publishing teaching materials as OER.
+Open science blog publishing teaching materials as OER, supported by a
+dialogical didactic planning agent.
 
 System Context Diagram:
 
@@ -48,6 +57,8 @@ flowchart TD
 A[GitHub Repository: iWIP]
 
 A --> B[Hugo Static Site Generator]
+A --> L[Didactic Planning Agent]
+A --> M[Development and QA]
 
 B --> C1[Blog System<br>PaperMod Theme]
 B --> C2[Presentation System<br>reveal-hugo / reveal.js]
@@ -72,3 +83,10 @@ I --> J[Public Website<br>SciBlog iWIP]
 J --> K1[Blog Articles]
 J --> K2[OER Materials]
 J --> K3[Reveal Presentations]
+
+L --> L1[PLAN and KDM Cores]
+L --> L2[DQM and Master Agent]
+L --> L3[Lazy Production Tasks]
+
+M --> M1[benchmark]
+M --> M2[docs/agent_development]

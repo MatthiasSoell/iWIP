@@ -13,3 +13,7 @@
 # Local working artifacts
 /exports/
 /.vscode/
+/.venv/
+/served/
+__pycache__/
+*.py[cod]

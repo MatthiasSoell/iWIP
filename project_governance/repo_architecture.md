@@ -1,6 +1,6 @@
 # Repository Architecture – SciBlog iWIP
 
-Scope: Gesamte Projektstruktur des SciBlog iWIP (Blog + Präsentationen)  
+Scope: Aktuelle Gesamtstruktur des SciBlog iWIP (Planungsagent + Blog + Präsentationen)
 
 ---
 
@@ -29,6 +29,13 @@ Der SciBlog iWIP basiert auf folgenden Kerntechnologien:
 | Blog-Theme | PaperMod | Layout und Blogstruktur |
 | Präsentationen | reveal-hugo / reveal.js | Präsentationsmodus |
 | Styles | Custom CSS | Design und UI-Komponenten |
+
+Daneben enthaelt dasselbe Repository den deklarativen wirtschaftsdidaktischen
+Planungsagenten. Seine kanonischen Laufzeitkomponenten liegen derzeit in
+`project_governance/`, `ai_agents/`, `prompts/` und `tasks/`; Entwicklung und
+Reproduzierbarkeit liegen insbesondere in `benchmark/` und
+`docs/agent_development/`. Diese Beschreibung bildet nur den aktuellen Stand ab
+und nimmt keine kuenftige Strukturentscheidung vorweg.
 
 ---
 
@@ -103,12 +110,19 @@ iWIP/
 │
 ├─ layouts/                # Hugo Layout-Anpassungen / Overrides
 │
-├─ project_governance/                   # Projekt-Dokumentation (Governance)
+├─ ai_agents/             # Rolle, DQM, Templates und historische Referenzen
+├─ prompts/               # Planungs-, Pruef- und Postprocessing-Prompts
+├─ tasks/                 # Lazy geladene Spezialaufgaben
+├─ benchmark/             # Regression, Testfaelle und historische Laufnachweise
+├─ docs/agent_development/ # Entwicklungsjournal und historische Audits
+│
+├─ project_governance/    # Agenten-Cores und technische Governance
 │  ├─ css_architecture.md
 │  ├─ ai_copilot_instructions.md
 │  ├─ content_emoji_policy.md
 │  └─ repo_architecture.md
 │
+├─ AGENTS.md              # duenn gehaltener Codex-Adapter
 ├─ config.toml             # zentrale Hugo-Konfiguration
 │
 └─ .github/
@@ -124,10 +138,14 @@ nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
 - `resources/` als lokaler Hugo-Cache bzw. Build-Artefakt
 - `.hugo_build.lock` als lokale Lock-Datei
 - `.vscode/` fuer nutzerspezifische Workspace-Einstellungen
+- `.venv/` fuer eine lokale Python-Laufzeitumgebung
+- `served/` als temporaeres lokales Staging fuer den Pages-/PDF-Workflow
 
 Hinweis:
 
 - Der Oberordner `exports/` kann weitere manuelle Export- oder Archivdateien enthalten.
+- `benchmark/tmp/` ist trotz seines Namens nicht pauschal temporaer: Dort
+  koennen versionierte Test-Fixtures fuer aktuelle Regressionen liegen.
 
 Regel:
 

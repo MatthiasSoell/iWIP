@@ -89,6 +89,16 @@ nur den Arbeitszusammenhang zusammen: Aus einem Planungsanliegen entsteht
 schrittweise ein Blogbeitrag; wenn gewuenscht, wird daraus anschliessend eine
 Praesentation abgeleitet.
 
+## Version 1.3 (September 2026)
+
+Mit Version 1.3 wurde der wirtschaftsdidaktische Planungsagent architektonisch und dialogisch konsolidiert. 
+
+- PLAN-Core, KDM-Core und DQM-Core trennen nun Prozesssteuerung, Dialog- und Entscheidungsqualität sowie didaktische Qualitätsprüfung klar voneinander. 
+- Ein kompakter Planning State und ein optionales Planning Journal sichern die Kontinuität von Entscheidungen, während die Lehrperson ausdrücklich die Entscheidungshoheit behält. 
+- Produktions-, Finalisierungs- und OER-Regeln wurden vereinfacht und robuster gefasst; zugleich wurden aktive Agentenregeln, Terminologie und Repository-Kontext von historischen Entwicklungsständen bereinigt. 
+
+Version 1.3 bildet damit den aktuellen konsolidierten Referenzstand des Agenten.
+
 ## Historischer Versionshinweis 1.2 (Mai 2026)
 
 Die folgenden Punkte dokumentieren den damaligen B0-Stand und sind keine

@@ -4,6 +4,8 @@
 **Auftrag:** Analyse des unveränderten B0-Systems; keine Implementierung und kein neuer Benchmark  
 **Leitkriterium:** Qualität des professionellen Planungs- und Entscheidungsprozesses der Lehrperson dialogisch und ko-konstruktiv verbessern
 
+**Status:** Historischer B0/B1-Entwicklungsnachweis; keine aktuelle Laufzeit- oder Steuerquelle. Fuer den geltenden Stand sind die in `AGENTS.md` genannten Cores massgeblich.
+
 ## 1. Executive Summary
 
 KO-PLAN/B0 ist didaktisch und dialogisch ungewöhnlich robust, architektonisch aber stark dokumentzentriert und überkoppelt. Seine nachgewiesene Stärke liegt nicht in einer technisch ausgeführten State Machine, sondern in einer umfangreichen, mehrfach abgesicherten Promptarchitektur: klare menschliche Entscheidungsautonomie, eine führende didaktische Verdichtung, genau eine priorisierte Rückfrage, explizite Behandlung didaktischer Spannungen, Blog-first-Gates, Quellenintegrität und ein breites didaktisches Qualitätsmodell. Diese Kombination erklärt plausibel die in B0 beobachteten 5 × 15/15, Drift 0 und null unnötige Rückfragen. Die Redundanz ist daher nicht nur Ballast; sie wirkt teilweise als Sicherheitsverstärkung. Sie darf nur kontrolliert und regressionsgeprüft reduziert werden.
