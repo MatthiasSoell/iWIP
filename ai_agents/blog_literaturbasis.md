@@ -3,7 +3,7 @@
 Scope: kuratierte Literaturbasis fuer den Agenten auf Grundlage des DQM sowie spaetere Ergaenzung um eigene Projektquellen
 
 Diese Datei ergaenzt das DQM um eine funktional kuratierte Literaturbasis.
-Sie ist keine normative Steuerdatei und ersetzt weder das DQM noch den Agent Contract.
+Sie ist keine normative Steuerdatei und ersetzt weder das DQM noch den PLAN-Core.
 
 Rollen im System:
 

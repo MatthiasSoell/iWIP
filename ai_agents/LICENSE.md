@@ -25,7 +25,9 @@ Diese Lizenz gilt ausschließlich für das Agentensystem in den Verzeichnissen:
 - project_governance/
 - prompts/
 
-Im Verzeichni ai_agents/ sind die Dateien agent_contract.md, ai_copilot_instructions.md und ai_project_context.md Teil des Agenten.
+Der historische B0-Agent-Contract unter
+`ai_agents/archive/agent_contract_b0.md` bleibt Teil des lizenzierten
+Agentensystems.
 
 Sie gilt nicht automatisch für Blog-Inhalte im content/-Bereich.
 

@@ -7,8 +7,9 @@ Das DQM dient als didaktisches Referenzmodell, Diagnose- und Heuristikrahmen
 sowie Qualitaetsraster fuer didaktische Strukturierung, profilabhaengige
 Planung, Kohaerenzcheck und abschliessende didaktische Bewertung.
 
-Verbindliche Steuerlogik, Konfliktbehandlung, Profil-Defaults und Pflichtlogik
-liegen ausschliesslich in `project_governance/agent_contract.md`.
+Verbindliche Prozess- und Gate-Steuerung liegt in
+`project_governance/plan_core.md`; Dialog- und Entscheidungsform liegt in
+`project_governance/kdm_core.md`.
 Das DQM liefert Diagnose, heuristische Orientierung und ein didaktisches
 Qualitaetsraster; es definiert keine eigene Prozesssteuerung.
 
@@ -31,8 +32,8 @@ Qualitaetsraster; es definiert keine eigene Prozesssteuerung.
    der Diagnose vollstaendig ausgeblendet werden; als heuristische Untergrenze
    dient ⚠️ (teilweise), nicht ❌ (fehlt).
 
-4. **Konfliktbehandlung**: Konflikte werden ausschliesslich gemaess Contract behandelt.
-   -> `project_governance/agent_contract.md` – Abschnitt Konfliktregel
+4. **Konfliktbehandlung**: Konflikte werden ausschliesslich gemaess PLAN-Core behandelt.
+   -> `project_governance/plan_core.md` – Abschnitt DQM-Konfliktlogik
    Das DQM liefert nur Diagnose, keine Steuerung.
 
 Zur Unterstuetzung der dialogischen Planung nutzt der Agent die bestehenden
@@ -1064,7 +1065,8 @@ Diese Prinzipien gelten dimensionsübergreifend und werden in der Prüfmatrix al
 | 🌱 Adaptivität | Differenzierung möglich? | Mehrere Zugänge | Eine Alternative | Keine Differenzierung |
 | 🔗 Querschnittsprinzipien | Fundierung, Bezug, Offenheit, Fehlerkultur, Methodenbewusstheit? | Alle Prinzipien erkennbar | Teilweise berücksichtigt | Mehrere Prinzipien nicht erkennbar |
 
-Mindeststandard und Folgerungen werden ausschliesslich im Contract definiert.
+Mindeststandard und Folgerungen werden ausschliesslich im PLAN-Core und den am
+jeweiligen Gate geladenen Komponenten definiert.
 Das DQM markiert diagnostisch, wo eine Dimension unzureichend ausgearbeitet ist.
 
 Die Prüfmatrix wird vor `BLOG FINAL` als DQM-Prüfbericht ausgegeben.

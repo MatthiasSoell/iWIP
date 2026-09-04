@@ -8,8 +8,10 @@ AI agents: read `ai_project_context.md` first, then follow these rules.
 Diese Regeln definieren, wie AI‑Agenten (z. B. GitHub Copilot, ChatGPT) Änderungen am Projekt durchführen sollen.
 
 Diese Datei ist KEINE Laufzeit-Steuerlogik.
-Sie gilt nur fuer Entwicklung und QA.
-Fuer agentische Steuerlogik bleibt `project_governance/agent_contract.md` die einzige verbindliche Regelquelle.
+Sie gilt nur fuer Entwicklung und QA. Fuer agentische Steuerlogik gelten die
+kanonischen Komponenten `project_governance/plan_core.md`,
+`project_governance/kdm_core.md`, `ai_agents/master_agent.md`,
+`ai_agents/didaktisches_qualitaetsmodell_core.md` und `prompts/plan.md`.
 
 Ziel ist eine stabile, wartbare Architektur ohne unnötige technische Schulden.
 
@@ -112,7 +114,8 @@ Relevante Dokumente:
 - project_governance/css_architecture.md
 - project_governance/repo_architecture.md
 - project_governance/ai_copilot_instructions.md
-- project_governance/agent_contract.md
+- project_governance/plan_core.md
+- project_governance/kdm_core.md
 - project_governance/development_workflow.md
 - project_governance/content_emoji_policy.md
 - ai_agents/master_agent.md
@@ -165,7 +168,8 @@ Reveal prüfen, wenn betroffen:
 
 Änderungen an agentischen Steuerdateien:
 
-- `project_governance/agent_contract.md`
+- `project_governance/plan_core.md`
+- `project_governance/kdm_core.md`
 - `ai_agents/master_agent.md`
 - `prompts/plan.md`
 - `prompts/check.md`
@@ -174,7 +178,7 @@ Reveal prüfen, wenn betroffen:
 
 Dann zusätzlich:
 
-- betroffene Regeln aus `project_governance/agent_contract.md` direkt als normative Referenz anwenden
+- betroffene Regeln aus PLAN-, KDM- und DQM-Core direkt als normative Referenz anwenden
 - Ausfuehrungslogik aus `project_governance/development_workflow.md` fuer Testtiefe und Dry Run befolgen
 
 ---

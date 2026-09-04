@@ -1,11 +1,11 @@
 # Archivierte Regression Suite – SciBlog iWIP Agent
 
-Status: archivierte, nicht operative Audit- und Smoke-Test-Referenz. Normativ massgeblich bleibt ausschliesslich `project_governance/agent_contract.md`.
+Status: archivierte, nicht operative Audit- und Smoke-Test-Referenz. Normativ massgeblich bleibt ausschliesslich `ai_agents/archive/agent_contract_b0.md`.
 
 Scope: zentrale didaktische, prozessuale und governancebezogene Testfaelle zur Qualitaetssicherung des Agenten
 
 ## 🧭 Ziel
-Diese Regression Suite ist ein abgeleiteter Testkatalog auf Basis des Agent Contracts. Massgeblich ist ausschliesslich `project_governance/agent_contract.md`.
+Diese Regression Suite ist ein abgeleiteter Testkatalog auf Basis des Agent Contracts. Massgeblich ist ausschliesslich `ai_agents/archive/agent_contract_b0.md`.
 
 Sie dient dazu, Contract-Regeln fuer Regressionen zu pruefen, relevante RC-IDs im RC-Durchlauf zu referenzieren, kompakte Beispieltests bereitzustellen und keine eigene normative Autoritaet zu begruenden.
 
@@ -13,7 +13,7 @@ Sie dient dazu, Contract-Regeln fuer Regressionen zu pruefen, relevante RC-IDs i
 
 | Dokument | Rolle |
 |---|---|
-| `project_governance/agent_contract.md` | verbindliche Regelquelle |
+| `ai_agents/archive/agent_contract_b0.md` | verbindliche Regelquelle |
 | `ai_agents/archive/regression_suite.md` | archivierter Testkatalog fuer optionale Audits und spaetere Smoke-Tests |
 
 Die Tests sind bewusst:
@@ -593,7 +593,7 @@ ai_agents/archive/regression_suite.md
 Sie dokumentiert einen abgeleiteten Testkatalog fuer den Agenten. Massgeblich bleiben der Contract und die dort verankerten RC-IDs.
 
 Zu prüfen ist der aktuelle Stand des Agentensystems auf Basis von:
-- project_governance/agent_contract.md
+- ai_agents/archive/agent_contract_b0.md
 - ai_agents/master_agent.md
 - prompts/plan.md
 - prompts/check.md

@@ -4,20 +4,20 @@ Scope: optionale, teilweise automatisierte Literatur-Nachbearbeitung fuer besteh
 
 Du arbeitest strikt nach den Regeln aus:
 
-project_governance/agent_contract.md
+project_governance/plan_core.md
 
-Der Contract ist die einzige Steuerlogik.
+Der PLAN-Core ist die einzige Prozess- und Gate-Steuerlogik.
 
 ## Status
 
-Dieses Werkzeug bleibt als eigenständiger Prompt optional nutzbar. Der Modus `LITERATUR GO` wird zusätzlich im Contract standardmäßig innerhalb von `BLOG FINAL` ausgeführt.
+Dieses Werkzeug bleibt als eigenständiger Prompt optional nutzbar. Der Modus `LITERATUR GO` wird zusätzlich gemaess PLAN-Core standardmäßig innerhalb von `BLOG FINAL` ausgeführt.
 
-- `LITERATUR GO` ist der rein formale Standardmodus und wird im Contract standardmaessig innerhalb von `BLOG FINAL` ausgefuehrt.
+- `LITERATUR GO` ist der rein formale Standardmodus und wird gemaess PLAN-Core standardmaessig innerhalb von `BLOG FINAL` ausgefuehrt.
 - `LITERATUR RECHERCHE GO` bleibt ein separater, manuell ausloesbarer Befehl.
 - `REVEAL FINAL` fuehrt keine eigene Literatur-Recherche aus und bleibt unveraendert.
 - Reveal uebernimmt seine Literatur weiterhin ausschliesslich aus dem finalen Blog.
 
-Dieser Prompt fuehrt keine eigene Steuerlogik ein und veraendert den Hauptablauf nicht ausserhalb der im Contract beschriebenen Integration von `LITERATUR GO` in `BLOG FINAL`.
+Dieser Prompt fuehrt keine eigene Steuerlogik ein und veraendert den Hauptablauf nicht ausserhalb der im PLAN-Core beschriebenen Integration von `LITERATUR GO` in `BLOG FINAL`.
 
 ---
 

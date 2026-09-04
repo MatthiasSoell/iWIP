@@ -12,7 +12,7 @@ Kontext: technische Änderungen im Repository (Hugo, CSS, Layout, Docs)
 - Farben im Blog nur über Tokens (00_design_tokens.css).
 - Reveal verwendet eigene Variablen in custom_reveal.css.
 - Blog-CSS und Reveal-CSS strikt getrennt.
-- Agentenlogik nach Änderungen direkt gegen die betroffenen Regeln in `project_governance/agent_contract.md` prüfen.
+- Agentenlogik nach Änderungen direkt gegen die betroffenen Regeln in PLAN-, KDM- und DQM-Core prüfen.
 - Testtiefe proportional zum Änderungsrisiko wählen.
 - Vor Commits: Diff pruefen; Smoke-Tests nur, wenn die Aenderungsklasse sie erfordert.
 
@@ -67,35 +67,41 @@ Vor jedem Commit:
 
 ### 4.3 Agenten-Validierung
 
-Wenn Änderungen an folgenden Dateien erfolgen, ist zusätzlich eine direkte Validierung gegen die betroffenen Regeln aus `project_governance/agent_contract.md` erforderlich:
+Wenn Änderungen an folgenden Dateien erfolgen, ist zusätzlich eine direkte Validierung gegen die betroffenen Regeln aus PLAN-, KDM- und DQM-Core erforderlich:
 
-- `project_governance/agent_contract.md`
+- `project_governance/plan_core.md`
+- `project_governance/kdm_core.md`
+- `ai_agents/didaktisches_qualitaetsmodell_core.md`
 - `ai_agents/master_agent.md`
 - `prompts/plan.md`
 - `prompts/check.md`
 - `ai_agents/templates/blog_template.md`
 - `ai_agents/templates/reveal_template.md`
 
-Der Contract bleibt dabei die einzige normative Quelle fuer State Machine, Gates, Guards, Hooks, Exit-Actions und Finalisierung; dieser Workflow regelt nur Tiefe und Form der Validierung.
+Der PLAN-Core bleibt dabei die normative Quelle fuer Prozess, Routing, Gates und
+Lazy Loading; KDM und DQM behalten ihre dort beschriebenen Zustaendigkeiten.
+Dieser Workflow regelt nur Tiefe und Form der Validierung.
 
 Ausführungslogik:
 
-- Kleine Text- oder Regelkorrekturen: Diff-Pruefung plus die betroffenen Contract-Regeln und die Konfliktprioritaet aus Abschnitt 9 des Contracts.
+- Kleine Text- oder Regelkorrekturen: Diff-Pruefung plus die betroffenen Regeln der aktuellen kanonischen Komponenten.
 - Aenderungen an Moduslogik, Uebergaengen, Snapshot-Regeln, Bundle-Hygiene oder DoD: ein geschlossener Dry Run im Standardmodus ueber `/PLAN`, `BLOG GO`, `BLOG FINAL` inklusive automatischem `LITERATUR GO`, `REVEAL GO` -> `REVEAL FINAL`.
-- Bei Aenderungen am Forschungsmodus zusaetzlich gezielt `/PLAN FORSCHUNG` gegen die betroffenen Regeln pruefen: gleicher Planungsdialog wie `/PLAN`, sofortige Initialisierung der vier Startartefakte unter `exports/research/`, `blog_working_snapshot.txt` erst nach der ersten agentenseitig erzeugten Blog-Arbeitsfassung, kein finales `blog_snapshot.txt`, keine Veraenderung der Kernlogik, keine zusaetzlichen Forschungsbefehle und im Standardfall automatischer Abschluss aktiver Forschungsartefakte bei `REVEAL FINAL`; im Sonderfall `blog_only` bei `BLOG FINAL`, wenn kein Reveal erzeugt werden soll.
-- Bei Aenderungen an der Planungsheuristik zusaetzlich gezielt `/PLAN` pruefen: eine empfohlene Verdichtung bleibt sichtbar fuehrend; moegliche Alternativen bleiben auf genau eine kurze konkurrierende didaktische Lesart oder maximal zwei sehr knappe alternative Rahmungen begrenzt und erscheinen nur bei normativer Spannung, multiperspektivischem Gegenstand, mehreren plausiblen Zielarchitekturen, unklarer Nutzerpriorisierung oder offenem didaktischem Raum. Wenn trotz offener Lage keine sinnvolle Alternative angezeigt wird, ist stattdessen eine knappe Fokusbegruendung zulaessig.
+- Bei Aenderungen an der Planungsheuristik zusaetzlich offene Planungsstarts und
+  konkrete Analyse-, Feedback-, Reflexions-, Review- oder
+  Entscheidungshilfeauftraege pruefen. Eine empfohlene Verdichtung bleibt bei
+  offenen Planungsstarts fuehrend; vorhandene Planungsstaende werden dagegen
+  zuerst im beauftragten Umfang bearbeitet und nicht ungefragt neu geplant.
 - Bei Aenderungen an der Wissensbasis-Anschlusslogik zusaetzlich gezielt den Anschluss nach `BLOG FINAL` pruefen, insbesondere Entwurf, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
-- `ai_agents/archive/regression_suite.md` kann bei Bedarf als archivierte, nicht operative Audit- und Smoke-Test-Referenz herangezogen werden.
 
 ### 4.4 Proportionale Testtiefe
 
-- Reine Text- oder Formulierungsänderungen an Doku, Prompts oder Regeln: Diff-Prüfung plus betroffene Contract-Regeln; kein voller Smoke-Test nötig.
-- Änderungen an Workflow, Pfaden, Snapshots, Bundles, Frontmatter-Logik oder Renderlogik: betroffene Contract-Regeln plus technischer Smoke-Test.
+- Reine Text- oder Formulierungsänderungen an Doku, Prompts oder Regeln: Diff-Prüfung plus betroffene Kernregeln; kein voller Smoke-Test nötig.
+- Änderungen an Workflow, Pfaden, Bundles, Frontmatter-Logik oder Renderlogik: betroffene Kernregeln plus technischer Smoke-Test.
 - Reveal-, Bundle- oder CSS-Änderungen: zusätzlicher Reveal-Sichttest und Bundle-Prüfung auf unerwünschte Markdown-Dateien.
 
 ### 4.5 Dry-Run-Auswertungsvorlage
 
-Der praktische Dry Run ist die im Contract definierte Durchfuehrung des minimalen Pflichttests.
+Der praktische Dry Run prueft die im PLAN-Core definierte Gatefolge.
 
 Fuer diesen Dry Run wird das Ergebnis nicht nur summarisch, sondern als kurzer Auswertungsbogen festgehalten.
 
@@ -112,9 +118,13 @@ Pflichtstationen im praktischen Dry Run:
 - `BLOG FINAL`
 - `REVEAL GO` -> `REVEAL FINAL`
 
-Die Pflichtstationen werden gegen das kompakte Zustandsmodell im Contract geprueft. Der Auswertungsbogen dokumentiert daher das beobachtete Verhalten je Station mit Verweis auf die einschlaegige Contract-Regel, statt die Gate-Logik hier erneut auszuschreiben.
+Die Pflichtstationen werden gegen die Gatefolge im PLAN-Core geprueft. Der
+Auswertungsbogen dokumentiert das beobachtete Verhalten je Station mit Verweis
+auf die einschlaegige aktuelle Kernregel, statt die Gate-Logik hier erneut
+auszuschreiben.
 
-Fuer die Auswertung gilt zusaetzlich: Besondere Aufmerksamkeit erhalten unbeabsichtigte Artefakterzeugung, Verwechslungen zwischen Standard- und Forschungsmodus sowie Umgehungen der regulaeren Gates.
+Fuer die Auswertung gilt zusaetzlich: Besondere Aufmerksamkeit erhalten
+unbeabsichtigte Artefakterzeugung und Umgehungen der regulaeren Gates.
 
 Pro Station mindestens erfassen:
 
@@ -122,7 +132,7 @@ Pro Station mindestens erfassen:
 - was tatsächlich passiert ist,
 - ob der Schritt bestanden ist,
 - welche Abweichung vorliegt,
-- wo die Korrektur voraussichtlich hingehört (Contract, Master-Agent, Prompt, Template, Doku).
+- wo die Korrektur voraussichtlich hingehoert (PLAN, KDM, DQM, Master-Agent, Prompt, Template, Doku).
 
 Kopierbare Vorlage:
 
@@ -137,10 +147,9 @@ Bearbeiter:
 |---|---|---|---|---|---|---|
 | /PLAN | Keine Artefakterstellung | | | | | |
 | /PLAN | Sprache bleibt planungs- und dialoggerecht | | | | | |
-| /PLAN | Empfohlene Verdichtung bleibt fuehrend; Alternativen sind auf genau eine kurze konkurrierende didaktische Lesart oder maximal zwei sehr knappe alternative Rahmungen begrenzt, erscheinen nur in offenen didaktischen Lagen und werden sonst durch eine knappe Fokusbegruendung ersetzt | | | | | |
+| /PLAN | Offener Planungsstart wird verdichtet; konkrete Analyse- oder Feedbackauftraege werden ohne ungefragte Neuplanung bearbeitet | | | | | |
 | /PLAN | Keine sichtbaren Such-, Routing-, Tool- oder Prozesskommentare | | | | | |
-| /PLAN FORSCHUNG | Verhaelt sich wie `/PLAN`, aktiviert sofort Rohdatenerfassung unter `exports/research/` und erzeugt noch keine Zielartefakte oder Snapshots | | | | | |
-| BLOG GO | Erzeugt `index.md` auf Basis des Planungsstands; im Forschungsmodus danach genau `blog_working_snapshot.txt` | | | | | |
+| BLOG GO | Erzeugt `index.md` auf Basis des freigegebenen Planungsstands | | | | | |
 | BLOG FINAL | Kontextlücken führen zu genau einer Rückfrage | | | | | |
 | BLOG FINAL | Profilsteuerung A/B/C ist sichtbar korrekt | | | | | |
 | BLOG FINAL | Blog-first und Uebergangsdisziplin bleiben intakt | | | | | |
@@ -152,7 +161,6 @@ Bearbeiter:
 | BLOG FINAL | Wissensbasis-Hook wird geprueft, blockiert `REVEAL GO` aber nicht | | | | | |
 | REVEAL GO -> REVEAL FINAL | Reveal startet erst nach Uebergang/Freigabe | | | | | |
 | REVEAL GO -> REVEAL FINAL | Gleichwertige Statusmeldungen werden korrekt interpretiert | | | | | |
-| REVEAL GO -> REVEAL FINAL | Forschungs-/Bundle-Hygiene bleiben sauber und aktive Forschungsartefakte werden im Forschungsmodus abgeschlossen | | | | | |
 | REVEAL GO -> REVEAL FINAL | Content-Emoji-Postprocessing laeuft nach der Reveal-Finalisierung und vor dem finalen Build-/Release-Check | | | | | |
 | REVEAL GO -> REVEAL FINAL | Abgleich, optionale Materialuebersicht und Finalisierung stimmen | | | | | |
 
@@ -165,7 +173,9 @@ Bearbeiter:
 
 Faustregel fuer `Folgeort`:
 
-- **Contract**: Governance, Prioritaeten, Uebergaenge, Konfliktlogik.
+- **PLAN**: Prozess, Routing, Uebergaenge, Gates und Konfliktlogik.
+- **KDM**: Dialog-, Interventions- und Entscheidungsform.
+- **DQM**: didaktische Qualitaet und Diagnose.
 - **Master-Agent**: operative Arbeitslogik, Dialogstil, Statusauswertung.
 - **Prompt**: Start-, Check- oder Interaktionssteuerung.
 - **Template**: Frontmatter, Artefaktstruktur, Template-Pflichtlogik.
@@ -209,7 +219,7 @@ Vor Merge nach `main`:
 - [ ] Diff geprüft (keine unbeabsichtigten Änderungen)
 - [ ] Smoke-Test Blog OK
 - [ ] Smoke-Test Reveal OK (falls betroffen)
-- [ ] Betroffene Contract-Regeln geprueft; Dry Run durchgefuehrt (falls Agentenlogik betroffen)
+- [ ] Betroffene Kernregeln geprueft; Dry Run durchgefuehrt (falls Agentenlogik betroffen)
 - [ ] Doku konsistent (wenn betroffen)
 - [ ] keine neuen unkommentierten `!important`
 - [ ] keine neuen Hardcoded-Farben außerhalb von Tokens

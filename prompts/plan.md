@@ -43,7 +43,10 @@ Frageoekonomie und die sichtbare Dialogbearbeitung folgen dem KDM-Core.
 Dabei gilt fuer den Handoff an den PLAN Core:
 
 - `plan` wertet nur den Einstieg aus und uebergibt dann an die im PLAN Core definierte Phasen- und Gate-Logik.
-- Der erste sichtbare Zug folgt dem Abschnitt `Erster PLAN-Zug` des PLAN Core.
+- Der erste sichtbare Zug folgt dem konkreten Auftrag und dem Abschnitt
+  `Erster PLAN-Zug` des PLAN Core. Analyse-, Feedback-, Reflexions-, Review-
+  und Entscheidungshilfeauftraege werden nicht automatisch in eine neue oder
+  umfassendere Planung ueberfuehrt.
   Feste Ueberschriften sind optional, solange die Antwort
   fachlich-didaktisch zusammenhaengend formuliert ist.
 

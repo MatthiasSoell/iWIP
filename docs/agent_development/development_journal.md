@@ -2807,3 +2807,70 @@ Artefaktaenderungen, geladene Dateien und technische Fehler geprueft. Ein
 endgueltiges plattformuebergreifendes Schema wird erst festgelegt, nachdem
 reale Exports beziehungsweise technische Daten aus mindestens zwei
 Zielplattformen untersucht wurden.
+
+## Konsolidierungspaket 1: Architektur- und Dialogkern
+
+**Datum:** 2026-09-04
+**Anlass:** Konsolidierung nach B1.1–B1.8, Implementierungsaudit und
+anschliessendem Systemaudit
+**Bearbeitete Befunde:** SA-01, SA-02, SA-04, IA-01, IA-02, IA-03
+
+### Umgesetzte Aenderungen
+
+- Der historische B0-Contract wurde aus allen aktuellen Steuer- und
+  Ladepfaden geloest und als historische, nicht aktive Referenz kenntlich
+  gemacht. Noch benoetigte Gate-Ladezeitpunkte, Produktions-/FINAL-Reihenfolge,
+  Release-Mindestpruefungen und der Wissensbasis-Anschluss wurden minimal im
+  PLAN-Core gesichert; Templates und FINAL-Komponenten verweisen nun dorthin.
+- Codex und GitHub Copilot verwenden ueber duenne Adapter denselben
+  kanonischen Kern aus PLAN, KDM, DQM, Master-Agent und PLAN-Prompt. Weitere
+  aktive Plattformadapter sind im Repository nicht vorhanden.
+- Der erste PLAN-Zug unterscheidet nun offene Aufbau- und wesentliche
+  Weiterentwicklungsauftraege von Analyse, Feedback, Reflexion, Review und
+  Entscheidungshilfe. Vorhandene Planungsstaende werden zuerst im beauftragten
+  Umfang bearbeitet; tragfaehige Planungen duerfen ohne kuenstlichen Konflikt
+  bestaetigt werden.
+- Der KDM-Core definiert die Annahme einer Entscheidung: ausdrueckliche
+  Bestaetigung, eigene Formulierung oder eindeutige weitere Uebernahme durch die
+  Lehrperson. Schweigen, Themenwechsel, Diskussion oder Agentenempfehlung
+  reichen nicht; bei Mehrdeutigkeit entsteht kein Commitment.
+- Die doppelte `open_item`-Regel wurde entfernt und die DQM-Core-Aussage zu den
+  Zustaendigkeiten von PLAN, KDM, DQM und Master-Agent korrigiert.
+- Aktive Aussagen zu einem nur voruebergehend inaktiven oder spaeter zu
+  reaktivierenden Research Adapter sowie Regeln zu Research Trace,
+  `/PLAN FORSCHUNG` und agentenseitigem Forschungslogging wurden entfernt. Die
+  kleine plattformneutrale Rechercheheuristik in PLAN bleibt unveraendert.
+
+### Gezielte Regression
+
+- Aktiver Ladegraph einschliesslich Codex, Copilot, Produktions- und
+  FINAL-Komponenten: PASS; keine aktuelle Abhaengigkeit vom B0-Contract.
+- Offener Planungsstart: PASS; Verdichtung, Leitfrage und Schwerpunkte bleiben
+  fuer offene Aufbauauftraege moeglich.
+- Feedbackfall: PASS; konkrete Bewertung ohne erzwungene Gesamtneuplanung,
+  Leitfrage oder Rueckfrage ist eindeutig geregelt.
+- Tragfaehige Planung: PASS; Bestaetigung ohne kuenstlich erzeugte Spannung ist
+  zulaessig.
+- Entscheidungsannahme: PASS; Nichtannahme, ausdrueckliche Annahme, eindeutige
+  dialogische Uebernahme, Ablehnung und spaetere Revision sind abgedeckt.
+- State und Journal: PASS; H02-/H03-Semantik, fuenf State-Felder,
+  B1.4b-Revisionspruefung, selektive Persistenz und Verzicht auf kuenstliche
+  Bestaetigungsschleifen bleiben erhalten.
+
+### Bewusst unveraendert
+
+DQM-Dimensionen und Profile, Frageoekonomie, begrenzte Alternativen,
+Entscheidungskontinuitaet, fuenfteiliger Shadow Planning State, Planning
+Journal, external-handoff, Rechercheheuristik, Blog-first, Reveal-Workflow,
+FINAL, OER/OERSI und Gate-Syntax wurden nicht grundlegend veraendert. SA-03,
+SA-05, SA-06 und SA-07 bleiben fuer spaetere Konsolidierungspakete offen.
+
+## Nachtrag zur Nachpruefung von Konsolidierungspaket 1
+
+**Datum:** 2026-09-04
+
+`LITERATUR RECHERCHE GO` wurde als eigenstaendige, mit der aktuellen
+Rechercheheuristik vereinbare Literaturrecherche geprueft und unveraendert
+beibehalten. Der historische B0-Contract wurde physisch nach
+`ai_agents/archive/agent_contract_b0.md` archiviert. Damit ist keine
+funktionale Aenderung der B1-Architektur verbunden.

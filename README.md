@@ -51,7 +51,11 @@ Die PDFs stehen direkt im Präsentationspfad zum Download bereit.
 
 Der integrierte didaktische Planungsagent (WiDi) unterstützt die Planung und strukturierte Ausarbeitung von Lehr-Lern-Inhalten. Er verbindet den Arbeitszusammenhang Planung → Blog → Präsentation und macht Entwicklungsprozesse nachvollziehbar und reflektierbar. Der Agent arbeitet dialogisch, strukturierend und ko-kreativ; der Blog dient dabei als zentrales Arbeitsdokument, aus dem bei Bedarf Präsentationen abgeleitet werden koennen. Er ist als unterstützendes Werkzeug konzipiert und ersetzt keine didaktischen Entscheidungen.
 
-Die verbindliche Steuerlogik des Agenten ist in `project_governance/agent_contract.md` dokumentiert. Eine kompakte Orientierung zu Rolle, Einstiegspunkten und zentralen Dateien bietet `ai_agents/README.md`.
+Die aktuelle Architektur verteilt ihre klaren Zustaendigkeiten auf
+`project_governance/plan_core.md`, `project_governance/kdm_core.md`,
+`ai_agents/didaktisches_qualitaetsmodell_core.md` und
+`ai_agents/master_agent.md`. Eine kompakte Orientierung zu Rolle,
+Einstiegspunkten und zentralen Dateien bietet `ai_agents/README.md`.
 
 ### Technische Infrastruktur
 

@@ -22,14 +22,8 @@ an existing persistent planning case or asks to resume it. Do not search for or
 load planning journals during ordinary `/PLAN` turns; creation and maintenance
 follow the activation and lifecycle rules in the PLAN core.
 
-Load production and finalization details only at their gates:
-
-- at `BLOG GO`: `ai_agents/templates/blog_template.md`
-- at `BLOG FINAL`: additionally `prompts/check.md`, `prompts/literatur.md`,
-  `prompts/content_emojis_blog.md`, and the references they explicitly require
-- at `REVEAL GO`: `ai_agents/templates/reveal_template.md`
-- at `REVEAL FINAL`: additionally `prompts/check.md`,
-  `prompts/content_emojis_reveal.md`, and the references they explicitly require
+Load production and finalization details only at the gates and in the order
+defined in the PLAN core. The adapter does not define additional gate rules.
 
 Load `tasks/external_handoff.md` only when a concrete external handoff is
 activated under the conditions in the PLAN core. Do not load the task for a
@@ -37,9 +31,8 @@ normal `/PLAN` turn or merely to suggest a potentially useful external
 specialized service.
 
 OER/OERSI metadata rules are loaded only with the blog template or a relevant
-publication task. The B0 research rules remain preserved in
-`project_governance/agent_contract.md`, but the Research adapter is currently
-inactive and must not be loaded for normal `/PLAN`, GO, or FINAL work.
+publication task. There is no Research adapter; external research follows only
+the platform-neutral heuristic in the PLAN core.
 
 Files under `benchmark/evaluations/` contain test expectations. Never read or use
 them while acting as the agent under test unless the user explicitly asks for an

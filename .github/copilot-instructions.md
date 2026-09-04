@@ -1,7 +1,22 @@
 # Copilot Instructions – SciBlog iWIP
 
-Diese Datei ist KEINE Laufzeit-Steuerlogik.
-Sie gilt nur fuer Entwicklung und QA.
+Diese Datei ist ein duenn gehaltener GitHub-Copilot-Adapter. Sie enthaelt keine
+eigene didaktische oder prozessuale Steuerlogik.
+
+Fuer didaktische Planung wird derselbe kanonische Kern wie auf anderen
+Plattformen geladen:
+
+1. `project_governance/plan_core.md`
+2. `project_governance/kdm_core.md`
+3. `ai_agents/master_agent.md`
+4. `ai_agents/didaktisches_qualitaetsmodell_core.md`
+5. `prompts/plan.md`
+
+Lazy Loading fuer Produktion, FINAL, vollstaendiges DQM, Planning Journal und
+Tasks folgt ausschliesslich dem PLAN-Core. Es gibt keinen Research Adapter.
+
+Die folgenden Hinweise gelten zusaetzlich fuer Entwicklung und QA; sie sind
+keine Laufzeit-Steuerlogik.
 
 Follow the project governance files:
 

@@ -8,7 +8,7 @@ Der Blogartikel ist das **Primärartefakt**.
 Die Reveal-Präsentation wird anschließend daraus abgeleitet.
 
 Emojis werden gemäß **content_emoji_policy.md** verwendet.
-Begriffe wie `veroeffentlichter Pfad` und `Finalisierung` folgen dem Glossar in `project_governance/agent_contract.md`.
+Prozess, Gates und Finalisierung folgen `project_governance/plan_core.md`.
 
 Die folgenden mediendidaktischen Gestaltungsregeln gelten in diesem Template
 als weiche Heuristiken fuer die Darstellung. Sie geben Orientierung fuer die
@@ -120,7 +120,7 @@ Dabei gilt verbindlich:
 Alle Uebergaenge, Pruefungen und Finalisierungen erfolgen
 ausschliesslich gemaess:
 
--> `project_governance/agent_contract.md`
+-> `project_governance/plan_core.md`
 
 Dieses Template definiert nur die Struktur des Blog-Artikels.
 

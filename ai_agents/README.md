@@ -63,8 +63,10 @@ Die wichtigsten Dateien und Ordner fuer den Agenten sind:
 
 | Datei oder Bereich | Rolle |
 |---|---|
-| `project_governance/agent_contract.md` | einzige verbindliche Regelquelle fuer State Machine, Gates, Guards, Hooks, Exit-Actions, Finalisierung und Sichtbarkeit |
-| `ai_agents/master_agent.md` | didaktische Fuehrung, Dialoghaltung und Textarbeit innerhalb des Contracts |
+| `project_governance/plan_core.md` | Prozess, Routing, Gates und Lazy Loading |
+| `project_governance/kdm_core.md` | Dialog-, Interventions- und Entscheidungsqualitaet |
+| `ai_agents/didaktisches_qualitaetsmodell_core.md` | didaktische Qualitaet und Diagnose |
+| `ai_agents/master_agent.md` | Rolle, Kommunikation und didaktische Textarbeit innerhalb der Architektur |
 | `prompts/plan.md` | Einstieg und Routing fuer den Planungsdialog |
 | `prompts/check.md` | Pruefablauf und Ausgabeformat fuer Finalpruefungen |
 | `ai_agents/templates/` | Vorlagen fuer Blog- und Reveal-Artefakte |
@@ -73,9 +75,15 @@ Die wichtigsten Dateien und Ordner fuer den Agenten sind:
 
 Der Einstieg erfolgt in der Regel ueber die Prompts im Ordner `prompts/`, insbesondere ueber `prompts/plan.md` fuer den Planungsdialog und `prompts/check.md` fuer Finalpruefungen.
 
-Die konkrete Befehlskette, alle Statusmeldungen und die Gate-Logik bleiben im Contract dokumentiert. Diese README fasst nur den Arbeitszusammenhang zusammen: Aus einem Planungsanliegen entsteht schrittweise ein Blogbeitrag; wenn gewuenscht, wird daraus anschliessend eine Praesentation abgeleitet.
+Die Gate-Logik und ihre Ladebedingungen stehen im PLAN-Core. Diese README fasst
+nur den Arbeitszusammenhang zusammen: Aus einem Planungsanliegen entsteht
+schrittweise ein Blogbeitrag; wenn gewuenscht, wird daraus anschliessend eine
+Praesentation abgeleitet.
 
-## Version 1.2. (Mai 2026)
+## Historischer Versionshinweis 1.2 (Mai 2026)
+
+Die folgenden Punkte dokumentieren den damaligen B0-Stand und sind keine
+Beschreibung der aktuellen Laufzeitarchitektur.
 
 Mit Version 1.2 wurde der Agent in mehreren zentralen Arbeitsablaeufen erweitert und operativ verfeinert. Wesentliche Neuerungen sind:
 - 🔬 Forschungsmodus bereits ab `/PLAN FORSCHUNG` mit frueher Aktivierung im Planungsprozess
@@ -88,7 +96,7 @@ Mit Version 1.2 wurde der Agent in mehreren zentralen Arbeitsablaeufen erweitert
 
 Version 1.2 stellt damit einen weiter konsolidierten, reproduzierbaren Entwicklungsstand des Agenten dar.
 
-### Version 1.1 (Mai 2026)
+### Historischer Versionshinweis 1.1 (Mai 2026)
 
 Mit Version 1.1 wurde der Agent konzeptionell und technisch grundlegend konsolidiert und erweitert. Wesentliche Neuerungen sind:
 - 🔄 Umstellung des zentralen Startbefehls von `/CREATE` auf `/PLAN`

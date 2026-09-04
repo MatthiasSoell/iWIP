@@ -9,7 +9,9 @@ erhalten.
 
 Der DQM-Core bewertet die didaktische Tragfähigkeit einer Planung. Er definiert
 keine Prozesssteuerung, Dialogform, Freigabe oder Lehrpersonenentscheidung.
-Diese folgen ausschließlich dem PLAN-Core und dem Master-Agent.
+Prozess, Routing und Freigaben folgen dem PLAN-Core; Dialog-, Interventions-
+und Entscheidungsqualität dem KDM-Core. Der Master-Agent konkretisiert Rolle,
+Kommunikation und didaktische Textarbeit innerhalb dieser Architektur.
 
 ## 1. Grundlogik
 

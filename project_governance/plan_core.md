@@ -2,11 +2,10 @@
 
 Kontext: minimale normative Steuerung fuer den normalen didaktischen PLAN-Modus
 
-Dieser Core enthaelt ausschliesslich die fuer `P1` und `P2` benoetigten Regeln
-des B0-Agent-Contracts. Der KDM-Core ist fuer die Dialog- und Entscheidungsform,
+Dieser Core enthaelt die kanonische Prozess-, Routing- und Freigabelogik der
+aktuellen Architektur. Der KDM-Core ist fuer die Dialog- und Entscheidungsform,
 der DQM-Core fuer didaktische Qualitaet und Diagnose verbindlich. Produktions-
-und Finalisierungsdetails werden erst durch die in `AGENTS.md` definierten Gates
-geladen; Forschungsdetails bleiben inaktiv.
+und Finalisierungsdetails werden erst an den hier definierten Gates geladen.
 
 Bei Konflikten innerhalb des normalen PLAN-Kontexts hat dieser Core Vorrang.
 
@@ -39,7 +38,8 @@ open_item: null
 
 Der State enthaelt ausschliesslich den aktuell relevanten Arbeitsstand. Er
 uebernimmt nur explizite Nutzerangaben oder eindeutig angenommene sichtbare
-Planungsentscheidungen; blosse Agentenvorschlaege gelten nicht als bestaetigt.
+Planungsentscheidungen gemaess KDM-Core; blosse Agentenvorschlaege gelten nicht
+als bestaetigt.
 Der aktuelle Nutzerprompt hat stets absoluten Vorrang. Neuere widersprechende
 Angaben ersetzen aeltere Werte ohne Historisierung; nicht betroffene Felder
 bleiben unveraendert. Bei einer ausdruecklichen Revision einer tragenden
@@ -47,7 +47,6 @@ Entscheidung wird der davon betroffene State-Bereich vollstaendig gegen die
 neue Setzung geprueft. Bestandteile, die mit der neuen Setzung nicht mehr
 vereinbar sind, entfallen ebenfalls, auch wenn sie nicht einzeln widerrufen
 wurden. `open_item` entfaellt, sobald der Punkt beantwortet oder
-nicht mehr entscheidungsrelevant ist. `open_item` entfaellt, sobald der Punkt beantwortet oder
 nicht mehr entscheidungsrelevant ist. Lokale, sprachliche oder redaktionelle
 Aenderungen veraendern `planning_focus`, `main_line`, `commitments` oder
 `constraints` nur, wenn die Lehrperson damit erkennbar eine tragende Setzung
@@ -157,6 +156,37 @@ Die Gatefolge bleibt bindend:
 4. `REVEAL GO` setzt einen finalen Blog als alleinige Ableitungsgrundlage voraus.
 5. `REVEAL FINAL` erst nach Reveal-Ausarbeitung und den am Gate geladenen Pflichtpruefungen.
 
+Gate-Aktionen und lazy geladene Details:
+
+- Bei `BLOG GO` wird `ai_agents/templates/blog_template.md` geladen und auf
+  Grundlage des freigegebenen Planungsstands direkt `index.md` als bearbeitbare
+  Blog-Arbeitsdatei erzeugt oder fortgefuehrt. Fehlt eine belastbare Grundlage,
+  ist genau eine Klaerungsfrage zulaessig; andernfalls beginnt die Ausarbeitung
+  ohne weitere Bestaetigungsschleife in publizierbarer Blogsprache.
+- Bei `BLOG FINAL` werden zusaetzlich `prompts/check.md`,
+  `prompts/literatur.md`, `prompts/content_emojis_blog.md` und deren ausdruecklich
+  benoetigte Referenzen geladen. Nach der inhaltlichen Finalisierung laeuft
+  `LITERATUR GO` als formale Normalisierung ohne externe Recherche, danach das
+  Content-Emoji-Postprocessing und abschliessend die reine Ergebnispruefung.
+- Bei `REVEAL GO` wird `ai_agents/templates/reveal_template.md` geladen und
+  ausschliesslich aus dem finalen Blog genau `_index.md` als bearbeitbare
+  Reveal-Arbeitsdatei erzeugt oder fortgefuehrt.
+- Bei `REVEAL FINAL` werden zusaetzlich `prompts/check.md`,
+  `prompts/content_emojis_reveal.md` und deren ausdruecklich benoetigte
+  Referenzen geladen. Nach der inhaltlichen Finalisierung laeuft das
+  Content-Emoji-Postprocessing und abschliessend die reine Ergebnispruefung.
+
+Vor `BLOG FINAL` und `REVEAL FINAL` muessen die geladenen Pflichtpruefungen
+vollstaendig bestanden sein. Dazu gehoeren ein erfolgreicher Hugo-Build und
+valides Frontmatter; bei `BLOG FINAL` zusaetzlich ein vorbereiteter Linkcheck
+ohne offene Fehler und `draft: false`. Blocker stoppen die Finalisierung.
+
+Nach erfolgreichem `BLOG FINAL` prueft der Agent verpflichtend den optionalen
+Anschluss an `ai_agents/blog_wissensbasis.md` und bietet bei relevantem Anschluss
+einen kuratierten Entwurf an. Eine Uebernahme bleibt freigabepflichtig, sofern
+sie nicht bereits eindeutig freigegeben wurde; der Anschluss ist kein
+Definition-of-Done-Bestandteil und blockiert `REVEAL GO` nicht.
+
 Semantisch eindeutige natuerliche Formulierungen gelten als gleichwertige
 Statusmeldungen. Bei mehrdeutigen Formulierungen stellt der Agent genau eine
 Klaerungsfrage. Aktiver Editorpfad, geoeffnete Dateien oder markierte
@@ -244,9 +274,23 @@ die Gate-Logik bleibt bindend.
 
 ## Erster PLAN-Zug
 
-Der erste Planungszug bleibt kompakt. Er enthaelt eine Problemdefinition und
-eine empfohlene Verdichtung mit vorlaeufiger Leitfrage und zwei bis drei
-Schwerpunkten; seine weitere sichtbare Dialogform folgt dem KDM-Core.
+Der erste Planungszug bleibt kompakt und folgt dem konkreten Auftrag:
+
+- Bei einem offenen Aufbau- oder Planungsauftrag sowie einer beauftragten
+  wesentlichen Weiterentwicklung enthaelt er eine
+  Problemdefinition und eine empfohlene Verdichtung mit vorlaeufiger Leitfrage
+  und zwei bis drei relevanten Schwerpunkten oder Spannungen.
+- Bei Analyse, Feedback, Reflexion, Review oder Entscheidungshilfe bearbeitet
+  er zuerst den vorhandenen Planungsstand im verlangten Umfang. Er bestaetigt
+  tragfaehige Elemente, priorisiert nur tatsaechlich relevante Spannungen und
+  kann begruendete Empfehlungen, Reflexionsimpulse, begrenzte Alternativen oder
+  konkrete Weiterentwicklungen anbieten. Er eroeffnet keine ungefragte
+  Gesamtneuplanung und erzwingt weder eine neue Leitfrage noch eine neue
+  Schwerpunktstruktur oder Rueckfrage.
+
+Auch eine insgesamt tragfaehige Planung darf ohne kuenstlich erzeugten Konflikt
+als tragfaehig bestaetigt werden. Die weitere sichtbare Dialogform folgt dem
+KDM-Core.
 
 Er erzeugt keinen vollstaendig ausgearbeiteten Lehrveranstaltungsplan, keinen
 detaillierten Ablauf, keine fertigen Arbeitsauftraege oder Materialien und
@@ -276,11 +320,11 @@ Multiperspektivitaet, Profil B oder C, einzelnen Lernhuerden, kritischem
 Sparring oder H01 geladen. Formale FINAL-Pruefungen duerfen weiterhin auf die
 vollstaendige DQM-Reference zugreifen.
 
-Der Research-Adapter ist derzeit fuer die persoenliche KO-PLAN-Nutzung inaktiv
-und wird im normalen PLAN-Modus nicht geladen. Der vollstaendige B0-Stand bleibt
-im bisherigen `project_governance/agent_contract.md` fuer eine spaetere
-KBS-Reintegration erhalten.
+Es gibt keinen Research Adapter, Research Task, Research Trace,
+`/PLAN FORSCHUNG`-Modus oder agentenseitiges Forschungslogging. Externe
+Recherche folgt ausschliesslich der kleinen PLAN-Heuristik oben. Eine spaetere
+komplexere Recherchelogik waere eine neue Architekturentscheidung.
 
 Konkrete Blog-, Reveal-, OER/OERSI-, Build-, Literatur-, Emoji-, QA- und
 Finalisierungsregeln gehoeren nicht in diesen Core. Ihre Ladebedingungen stehen
-im Repository-Adapter `AGENTS.md`.
+bei den Gates oben; die Details liegen in den dort genannten Komponenten.

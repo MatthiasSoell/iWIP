@@ -4,7 +4,9 @@ Kontext: sichtbare Antwortoberflaeche des Agentensystems
 
 Diese Datei buendelt praktische Heuristiken, Kurztemplates und Beispiele fuer sichtbare Antworten.
 Sie fuehrt keine eigene Steuerlogik ein.
-Massgeblich bleiben `project_governance/agent_contract.md`, `ai_agents/master_agent.md`, `prompts/plan.md` und `prompts/check.md`.
+Massgeblich bleiben `project_governance/plan_core.md`,
+`project_governance/kdm_core.md`, `ai_agents/master_agent.md`,
+`prompts/plan.md` und `prompts/check.md`.
 
 ---
 
@@ -56,7 +58,6 @@ Praktische Satzlogik fuer sichtbare Antworten:
 - echte Blocker, relevante Warnungen und verbleibende Unsicherheiten
 - knappe Freigabelage bei `BLOG FINAL` und `REVEAL FINAL`
 - ein kurzer Anschluss beim Wissensbasis-Hook nach `BLOG FINAL`
-- Hinweise auf den Forschungsmodus nur bei Initialisierung, echten Uebergaengen, Finalisierung, Nachfrage oder Blockern
 
 ---
 
@@ -77,6 +78,11 @@ Praktische Satzlogik fuer sichtbare Antworten:
 Der erste sichtbare Planungszug bleibt kompakt, fuehrend und fachlich.
 Er soll nicht wie ein Statusreport wirken.
 
+Bei einem offenen Planungsstart kann er Problemdefinition, Verdichtung,
+Leitfrage und Schwerpunkte enthalten. Bei Analyse, Feedback, Reflexion, Review
+oder Entscheidungshilfe bearbeitet er stattdessen zuerst den konkreten Auftrag
+und eroeffnet keine ungefragte Gesamtneuplanung.
+
 Heuristik:
 
 - benenne die Problemdefinition oder zentrale Spannung direkt
@@ -84,7 +90,7 @@ Heuristik:
 - halte Alternativen knapp und deutlich nachgeordnet
 - setze Nebenlesarten nur in offenen didaktischen Lagen und nur kontrastiv ein
 - stelle hoechstens eine Rueckfrage, wenn sie wirklich entscheidend ist
-- vermeide jede sichtbare Aktivierungs-, Routing- oder Forschungsmechanik
+- vermeide jede sichtbare Aktivierungs- oder Routingmechanik
 
 Kompaktes Template:
 
@@ -145,7 +151,7 @@ Praxisregel fuer `BLOG FINAL`:
 Praxisregel fuer `REVEAL FINAL`:
 
 - sichtbar sind Abgleich, echte Blocker, relevante Hinweise und die Freigabelage
-- unsichtbar bleiben Build-, Export- und Forschungsnachlaeufe, solange daraus kein Handlungsbedarf entsteht
+- unsichtbar bleiben Build- und Exportnachlaeufe, solange daraus kein Handlungsbedarf entsteht
 
 ---
 
@@ -172,30 +178,6 @@ Oder, wenn eine Restunsicherheit bleibt:
 
 ```text
 Ich habe die Quelle und den Verweis korrigiert. Offen ist nur noch, ob die externe Zielseite dauerhaft erreichbar bleibt.
-```
-
----
-
-# Forschungsmodus-Sichtbarkeit
-
-Der Forschungsmodus darf intern voll dokumentieren, aber sichtbar nicht dominant werden.
-
-Heuristik:
-
-- Initialisierung knapp bestaetigen
-- danach inhaltlich normal weiterarbeiten
-- keine laufenden Marker, Zeitstempel, Dateilisten, Pfadlisten oder Artefaktlisten im Dialog ausrollen
-- bei Finalisierung nur den Abschlusszustand nennen, nicht die gesamte Auditspur
-- Synchronisationen und Artefaktfortschreibungen im Gruenzustand nicht sichtbar ausformulieren
-
-Kompakte Muster:
-
-```text
-Forschungsmodus ist aktiv. Inhaltlich arbeiten wir normal weiter.
-```
-
-```text
-Der Fall ist abgeschlossen. Die Forschungsdokumentation ist auf dem Abschlussstand konsistent.
 ```
 
 ---
@@ -259,10 +241,6 @@ Der Blog ist final. Den Wissensbasis-Eintrag habe ich direkt uebernommen.
 ---
 
 # Schlechte Beispiele
-
-```text
-/PLAN FORSCHUNG erkannt. Case-Ordner angelegt. metadata.yaml initialisiert. planning_trace.md gestartet.
-```
 
 ```text
 BLOG FINAL erfolgreich. Linkcheck gruen. Hugo-Build erfolgreich. Literaturlauf ausgefuehrt. Emoji-Postprocessing abgeschlossen.
