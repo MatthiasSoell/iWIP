@@ -40,6 +40,17 @@ Der State enthaelt ausschliesslich den aktuell relevanten Arbeitsstand. Er
 uebernimmt nur explizite Nutzerangaben oder eindeutig angenommene sichtbare
 Planungsentscheidungen gemaess KDM-Core; blosse Agentenvorschlaege gelten nicht
 als bestaetigt.
+Als `constraints` werden nur weiterhin geltende Grenzen der Lehrperson gefuehrt,
+die den zulaessigen weiteren Planungs- oder Handlungsspielraum beschraenken;
+blosse situative Arbeitsanweisungen und Formulierungswuensche genuegen nicht.
+Ein solcher Constraint bleibt bei spaeteren, nicht widersprechenden
+Entscheidungen erhalten, bis die Lehrperson ihn explizit aufhebt oder durch eine
+eindeutig widersprechende spaetere Setzung ersetzt.
+`open_item` wird nur gefuehrt, wenn fuer den weiteren Entwurf tatsaechlich eine
+noch ausstehende Entscheidung erforderlich ist und unterschiedliche Antworten
+zu relevant unterschiedlichen Planungsentscheidungen fuehren wuerden. Die
+blosse Moeglichkeit, eine weitere Frage zu stellen, erzeugt kein `open_item` und
+keine zusaetzliche Rueckfragepflicht.
 Der aktuelle Nutzerprompt hat stets absoluten Vorrang. Neuere widersprechende
 Angaben ersetzen aeltere Werte ohne Historisierung; nicht betroffene Felder
 bleiben unveraendert. Bei einer ausdruecklichen Revision einer tragenden
@@ -101,8 +112,8 @@ Weitere Felder werden nicht gefuehrt.
 Ein History-Eintrag entsteht nur bei einem materiellen Planungsereignis, dessen
 Fehlen einen spaeteren Wiedereinstieg relevant erschweren wuerde: einer
 eindeutig angenommenen tragenden Entscheidung, einer substantiellen Revision,
-einem laengerfristig entscheidungsrelevanten offenen Punkt oder der Erledigung
-eines dokumentierten offenen Punkts. KDM bestimmt weiterhin, wann eine
+einem nach der State-Semantik entscheidungsrelevanten offenen Punkt oder der
+Erledigung eines dokumentierten offenen Punkts. KDM bestimmt weiterhin, wann eine
 Entscheidung im Dialog als angenommen gilt. Sprachliche, formatierende, lokale
 redaktionelle oder triviale Aenderungen, blosse nicht angenommene
 Agentenvorschlaege und technische Prozessmeldungen sind nicht journalwuerdig.
