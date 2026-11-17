@@ -56,7 +56,7 @@ oer:
   image: "https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg"
 
   version: "1.0"
-  status: "stable"
+  status: "pilot"
 
   in_language:
     - "de"
