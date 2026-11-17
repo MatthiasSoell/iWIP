@@ -309,8 +309,8 @@ jobs:
             2.times do
               break unless response.code.to_i == 429
 
-              retry_after = response['retry-after']
-              delay = if retry_after.to_s.match?(/\A\d+\z/)
+              retry_after = response['retry-after'].to_s
+              delay = if retry_after.match?(/\A\d+\z/)
                         retry_after.to_i
                       else
                         begin
