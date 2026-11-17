@@ -3,7 +3,7 @@ title: "Vor lauter Tools keine Zeit zum Planen? Mein neuer Workflow für die Hoc
 author: "Prof. Dr. Matthias Söll"
 date: 2026-11-17
 lastmod: 2026-11-17
-draft: true
+draft: false
 
 description: >
   Der Beitrag zeigt Hochschullehrenden, wie ein integrierter Workflow didaktische Planung mit einem KI-Agenten, Bloginhalte, Präsentationen und OER verbindet.
@@ -55,7 +55,7 @@ oer:
   image: "https://matthiassoell.github.io/iWIP/images/og/og_sciblog_default.jpg"
 
   version: "1.0"
-  status: "draft"
+  status: "stable"
 
   in_language:
     - "de"
@@ -108,61 +108,53 @@ oer:
 
 {{< oer-meta >}}
 
-<!-- Bewusst freigegebene Gliederungsabweichung vom Blog-Template: kurzer persönlicher Erfahrungsbericht ohne separate Lernziele, Ablaufplan oder Literaturabschnitt. Weiterführende Quellen stehen im Fließtext. Bestehende Gliederung und abgestimmten Fließtext unverändert erhalten. -->
-
 Digitale Werkzeuge sollen uns die Lehre erleichtern. Aber was passiert, wenn wir irgendwann mehr Zeit mit ihrer Bedienung als mit der eigentlichen didaktischen Planung verbringen? Genau diese Frage hat mich dazu gebracht, meinen bisherigen Workflow grundlegend zu überdenken.
 
-## 🧩 Mein Ausgangspunkt: Zu viele Tools!
+## <span class="content-emoji">💻</span> Mein Ausgangspunkt: Zu viele Tools!
 
 Word für die Planung, PowerPoint für Präsentationen, verschiedene Programme für Materialien und Stud.IP für die Bereitstellung. Dazu noch KI und die Veröffentlichung als Open Educational Resources (OER).
 
 Irgendwann hatte ich den Eindruck, mehr Zeit mit der Bedienung unterschiedlicher Werkzeuge als mit der eigentlichen didaktischen Planung zu verbringen.
 
-**Das wollte ich ändern!**
+**Das wollte ich ändern! 🔄**
 
 <p class="grafic-title">Vor lauter Tools keine Zeit zum Planen!</p>
-<figure class="figure-frame">
-  <img src="tool_chaos.png" alt="Comic: Ein überforderter Lehrender zwischen zahlreichen digitalen Werkzeugen und Dateiformaten; KI kommt als weiteres Werkzeug hinzu.">
-</figure>
-<p class="bildquelle">Bildquelle: Eigene Darstellung (KI-generiert) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+{{< blog_image_overlay src="tool_chaos.png" alt="Comic: Ein überforderter Lehrender zwischen zahlreichen digitalen Werkzeugen und Dateiformaten; KI kommt als weiteres Werkzeug hinzu." id="iwip_workflow_tool_chaos_overlay" >}}
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 
-## 🤖 Meine Lösung: Ein integrierter Workflow
+## <span class="content-emoji">🤖</span> Meine Lösung: Ein integrierter Workflow
 
 Statt immer neue Werkzeuge in meinen bisherigen Arbeitsprozess einzubauen, habe ich versucht, diesen grundsätzlich anders zu organisieren. Entstanden ist ein Workflow, in dem vier Schritte ineinandergreifen:
 
-- **Dialogisch planen:** Ein eigens konfigurierter KI-Agent hinterfragt meine didaktischen Entscheidungen, liefert Ideen und unterstützt meine Reflexion. Die Entscheidungen treffe weiterhin ich.
-- **Inhalte entwickeln:** Die Ergebnisse arbeite ich in meinem Lehreblog auf Grundlage von Markdown und Hugo aus. Texte, Bilder und weitere Medien bilden dort eine gemeinsame Inhaltsbasis.
-- **Präsentationen ableiten:** Aus den Bloginhalten entstehen teilautomatisiert Reveal-Präsentationen. So muss ich die Inhalte nicht mehrfach entwickeln.
-- **Offen veröffentlichen:** Die Materialien stehen im Internet zur Verfügung und können als OER nachgenutzt werden.
+- <span class="content-emoji">💬</span> **Dialogisch planen:** Ein eigens konfigurierter KI-Agent hinterfragt meine didaktischen Entscheidungen, liefert Ideen und unterstützt meine Reflexion. Die Entscheidungen treffe weiterhin ich.
+- <span class="content-emoji">🎨</span> **Inhalte entwickeln:** Die Ergebnisse arbeite ich in meinem Lehreblog auf mit Markdown in Hugo aus. Texte, Bilder und weitere Medien bilden dort eine gemeinsame Inhaltsbasis.
+- <span class="content-emoji">💻</span> **Präsentationen ableiten:** Aus den Bloginhalten entstehen teilautomatisiert Reveal-Präsentationen. So muss ich die Inhalte nicht mehrfach entwickeln.
+- <span class="content-emoji">🎓🌍🔓</span> **Offen veröffentlichen:** Die Materialien veröffentliche ich unter einer offenen Lizenz, sodass sie als OER nachgenutzt und weiterentwickelt werden können.
 
 <p class="grafic-title">Mein Workflow vom didaktischen Dialog zur Veröffentlichung</p>
-<figure class="figure-frame">
-  <img src="workflow.png" alt="Vier aufeinanderfolgende Schritte: dialogische und reflexive Planung mit KI bei menschlicher Entscheidungshoheit, Blog aus Markdown und Medien, teilautomatisch abgeleitete Reveal-Präsentation sowie Veröffentlichung und Nachnutzung als OER.">
-</figure>
-<p class="bildquelle">Bildquelle: Eigene Darstellung (KI-generiert) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+{{< blog_image_overlay src="workflow.png" alt="Vier aufeinanderfolgende Schritte: dialogische und reflexive Planung mit KI bei menschlicher Entscheidungshoheit, Blog aus Markdown und Medien, teilautomatisch abgeleitete Reveal-Präsentation sowie Veröffentlichung und Nachnutzung als OER." id="iwip_workflow_workflow_overlay" >}}
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 
-Der entscheidende Unterschied liegt für mich nicht allein in der technischen Integration. **Ich plane inzwischen anders:** Im Dialog mit dem KI-Agenten hinterfrage ich meine Überlegungen bewusster, während die technische Verarbeitung der Materialien weniger Aufmerksamkeit beansprucht.
+Der entscheidende Unterschied liegt für mich nicht allein in der technischen Integration. <span class="content-emoji">🪞</span> **Ich plane inzwischen anders:** Im Dialog mit dem KI-Agenten hinterfrage ich meine Überlegungen bewusster, während die technische Verarbeitung der Materialien weniger Aufmerksamkeit beansprucht.
 
 Wie mein [didaktischer KI-Agent](https://matthiassoell.github.io/iWIP/blog/oer/blog_agent/) funktioniert und [warum ich den SciBlog entwickelt habe](https://matthiassoell.github.io/iWIP/blog/oer/warum_sciblog/), habe ich an anderer Stelle ausführlicher beschrieben.
 
-## 💻 Und was haben die Studierenden davon?
+## <span class="content-emoji">🎓</span> Und was haben die Studierenden davon?
 
 Die gemeinsame Inhaltsbasis bietet auch in der Lehrveranstaltung Vorteile: Während die Präsentation über den Beamer läuft, können Studierende die Inhalte gleichzeitig auf Laptop, Tablet oder Smartphone aufrufen und beispielsweise in ihre persönlichen Notizsysteme übernehmen.
 
-Die Materialien bleiben außerdem über die Lehrveranstaltung hinaus zugänglich.
+Die Materialien bleiben außerdem über die Lehrveranstaltung hinaus zugänglich 🔓.
 
 <p class="grafic-title">Mein Workflow im Seminarraum</p>
-<figure class="figure-frame">
-  <img src="seminarraum.png" alt="Comic eines Seminars: Der Lehrende zeigt den vierstufigen Workflow auf der Leinwand; Studierende nutzen die Bloginhalte parallel auf Laptops, Tablets und Smartphones.">
-</figure>
-<p class="bildquelle">Bildquelle: Eigene Darstellung (KI-generiert) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+{{< blog_image_overlay src="seminarraum.png" alt="Comic eines Seminars: Der Lehrende zeigt den vierstufigen Workflow auf der Leinwand; Studierende nutzen die Bloginhalte parallel auf Laptops, Tablets und Smartphones." id="iwip_workflow_seminarraum_overlay" >}}
+<p class="bildquelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
 
-## 💡 Mein Fazit: Mehr Raum für Didaktik
+## <span class="content-emoji">💡</span> Mein Fazit: Mehr Raum für Didaktik
 
-Natürlich erfordert ein solcher Workflow zunächst Zeit und technisches Know-how. Aber für mich hat sich der Aufwand gelohnt: Ich muss weniger Inhalte doppelt bearbeiten und gewinne mehr Raum für die didaktische Gestaltung.
+Natürlich erfordert ein solcher Workflow zunächst Zeit und technisches Know-how 🛠️. Aber für mich hat sich der Aufwand gelohnt: Ich muss weniger Inhalte doppelt bearbeiten und gewinne mehr Raum für die didaktische Gestaltung.
 
 Vor allem hat sich meine Planung verändert. Der kritische Dialog mit dem KI-Agenten eröffnet zusätzliche Möglichkeiten, didaktische Entscheidungen zu reflektieren und weiterzuentwickeln.
 
-Dafür braucht es nicht zwingend dieselben Werkzeuge. **Die Grundidee ist übertragbar: Inhalte einmal entwickeln, vielfältig nutzen und die gewonnene Zeit in die Qualität der Lehre investieren.**
+Dafür braucht es nicht zwingend dieselben Werkzeuge. <span class="content-emoji">🌱</span> **Die Grundidee ist übertragbar: Inhalte einmal entwickeln, vielfältig nutzen und die gewonnene Zeit in die Qualität der Lehre investieren.**
 
 Denn am Ende geht es nicht darum, möglichst viele digitale Tools einzusetzen, sondern darum, sie so einzusetzen, dass wieder mehr Zeit für gute Didaktik bleibt.
