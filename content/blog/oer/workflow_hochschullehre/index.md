@@ -97,6 +97,7 @@ oer:
 <div class="top-toggle">
   <button id="md-copy-btn" title="Markdown kopieren (ohne Bilder)">📑</button>
   <button onclick="triggerPrint()" title="Blog speichern">📥</button>
+  <button onclick="location.href='/iWIP/praesentation/oer/workflow_hochschullehre/'" title="Zur Präsentationsansicht">🖥️</button>
   <button class="iwip_help_btn"
         type="button"
         aria-haspopup="dialog"
