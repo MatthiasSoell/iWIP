@@ -194,6 +194,34 @@ Pfadregel für einen vorhandenen Präsentationsbutton (verbindlich):
 
 Dieses Template definiert nur Frontmatter, Einstiegsblock und Zielstruktur des Blogartefakts.
 
+### Beitragsart und Klaerung
+
+Die Beitragsart wird anhand von Auftrag, Funktion und Inhalt bestimmt, nicht
+allein anhand von Ueberschriften, Ablageort oder Metadaten wie `oer.kind` und
+`oer.is_oer`. OER-Kennzeichnung und Textsorte sind unabhaengig voneinander.
+Ist die Zuordnung eindeutig, erfolgt sie ohne Rueckfrage. Ist sie mehrdeutig
+und beeinflusst sie Gliederung oder Qualitaetspruefung, stellt der Agent genau
+eine gezielte Rueckfrage und ueberlaesst der Lehrperson die Entscheidung;
+die Frageoekonomie des KDM-Core bleibt verbindlich.
+
+- **Lehr-Lern-Materialien** gestalten einen konkreten Lernprozess. Fuer sie
+  bleiben die nachfolgenden Pflichtbestandteile der Zielgliederung erhalten.
+- **Persoenliche Reflexions-, Praxis- und Erfahrungsberichte** werden nach
+  Textsorte, Zielgruppe und Gegenstand gegliedert. Separate Abschnitte fuer
+  Hintergrund, Ausgangsfrage, Lernziele und Ablauf sind nicht verpflichtend.
+  Die nachfolgenden Abschnittsmuster sind fuer diese Berichte nur Orientierung.
+  Eingebettete Lehr-Lern-Materialien behalten ihre entsprechenden Anforderungen;
+  eine persoenliche Rahmung hebt diese nicht auf.
+
+Ein eigener Literaturabschnitt bleibt fuer Lehr-Lern-Materialien Pflicht.
+Bei Reflexions-, Praxis- und Erfahrungsberichten ist er nur erforderlich,
+wenn Quellenumfang, wissenschaftlicher Anspruch oder ausdrueckliche formale
+Vorgaben dies verlangen. Bei kurzen Erfahrungsberichten koennen nachvollziehbare
+Quellenverweise im Fliesstext genuegen. Belegpflicht fuer fachliche Aussagen
+und Quellenintegritaet bleiben bestehen. Vorhandene Literaturabschnitte werden
+nicht allein wegen der Beitragsart entfernt. Frontmatter, Einstiegsblock,
+Visualisierungsregeln und praktische OER-Nachnutzbarkeit gelten weiterhin.
+
 ## Mediendidaktische Soft-Heuristiken fuer Blogabschnitte
 
 - Laengere Textpassagen werden nach Moeglichkeit sichtbar segmentiert, z. B. durch Zwischenueberschriften, Bilder, Tabellen, Callouts oder andere klare Strukturmarker.
@@ -201,7 +229,7 @@ Dieses Template definiert nur Frontmatter, Einstiegsblock und Zielstruktur des B
 - Direkte Anrede im Artikelkoerper steht standardmaessig in der Sie-Form; neutrale wissenschaftliche Formulierungen ohne direkte Anrede bleiben zulaessig.
 - Emojis werden konsistent als Funktionsmarker genutzt, z. B. fuer Struktur, Frage, Ziel oder Reflexion, ohne Haeufung ohne erkennbaren Zweck.
 
-### Zielgliederung (Standard)
+### Zielgliederung fuer Lehr-Lern-Materialien (Pflichtbestandteile)
 
 1. `## 🧭 Hintergrund`
 2. `## 💭 Ausgangsfrage`
@@ -266,9 +294,9 @@ Agenda-Tabelle anlegen.
 
 ---
 
-## 🧠 Fachliche Hauptkapitel (Pflicht)
+## 🧠 Fachliche Hauptkapitel
 
-- nach dem Ablauf ein oder mehrere fachlich benannte H2/H3-Hauptkapitel anlegen
+- bei Lehr-Lern-Materialien nach dem Ablauf verpflichtend ein oder mehrere fachlich benannte H2/H3-Hauptkapitel anlegen; Berichte nach ihrer Textsorte strukturieren
 - keine Sammelüberschrift fuer alle Kernpunkte verwenden
 - zentrale Aussagen im Fließtext ausführen und Quellen im Text sichtbar integrieren
 
@@ -295,9 +323,10 @@ Strukturmuster fuer Visualisierungen:
 
 ---
 
-## 📚 Literatur und Quellen (Pflichtformat)
+## 📚 Literatur und Quellen (Format bei vorhandenem oder erforderlichem Abschnitt)
 
-Der Literaturteil beginnt mit einem stabilen Anker:
+Ist ein Literaturabschnitt vorhanden oder erforderlich, beginnt er mit genau
+einem kanonischen Anker unmittelbar vor der Ueberschrift:
 
 ```markdown
 <span id="literatur"></span>
@@ -307,3 +336,6 @@ Der Literaturteil beginnt mit einem stabilen Anker:
 
 - bibliografische Haupteinträge gesammelt und konsistent ausgeben
 - zusätzliche Zugriffe bei Bedarf als Badge oder Weblink ergänzen
+- Ist ein Literaturabschnitt weder erforderlich noch vorhanden, entfallen Abschnitt
+  und Anker; keine Dummy-Anker, unsichtbaren Ersatzabschnitte oder Verweise auf
+  einen fehlenden Literaturbereich erzeugen.

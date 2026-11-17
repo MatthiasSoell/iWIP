@@ -105,6 +105,14 @@ Wenn das Artefakt didaktisch zu beurteilen ist und keine Reveal-Ableitung ist, l
 
 Dabei gilt:
 
+- Bestimme die Beitragsart gemaess Blog-Template anhand von Auftrag, Funktion
+  und Inhalt einschliesslich der dortigen Klaerungsregel. Der vollstaendige
+  DQM-Pruefbericht bleibt erhalten. Bei Berichten pruefe je Dimension begruendet
+  die Anwendbarkeit auf den tatsaechlich beanspruchten didaktischen Gehalt;
+  fehlende, textsortenbedingt nicht erforderliche Lernziele, Lernaktivitaeten
+  oder Phasenplaene sind kein Mangel. Keine Dimension pauschal als erfuellt
+  ausweisen und keine kuenstlichen Lernarrangements verlangen. Enthaltene
+  Lehr-Lern-Arrangements unterliegen unveraendert allen DQM-Anforderungen.
 - Bewerte jede DQM-Dimension mit `OK`, `WARNUNG` oder `BLOCKER` und kurzer Begruendung.
 - Nutze die Profilgewichtung aus `ai_agents/didaktisches_qualitaetsmodell.md`.
 - Wenn ein Profil explizit im Artefakt oder Kontext dokumentiert ist, pruefe seine konsistente Umsetzung gegen diese Profilgewichtung.
@@ -136,11 +144,20 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen PLAN-Core, geladene Gate-Reg
 - Leser:innenperspektive ist klar erkennbar.
 - Der Text ist im Fliesstext durchgaengig in veroeffentlichbarer Blogsprache ausgearbeitet; planungsnahe Sprache erscheint nicht im sichtbaren Artikelkoerper.
 - Planungslogik, Scaffold-Formulierungen, Autorenanweisungen, Agentenarbeitsauftraege oder Meta-Notizen erscheinen nicht im sichtbaren Artikelkoerper.
-- Didaktische Pflicht- oder Strukturabschnitte sind, falls vorhanden, in Blogsprache fuer Lernende formuliert und nicht als interne Planungsliste geschrieben.
-- Kernpunkte erscheinen als fachlich benannte H2/H3-Hauptkapitel mit Quellenbezug im Text.
+- Didaktische Pflicht- oder Strukturabschnitte sind, falls vorhanden, in Blogsprache fuer die jeweilige Zielgruppe formuliert und nicht als interne Planungsliste geschrieben.
+- Kernpunkte erscheinen in einer der Beitragsart angemessenen Gliederung; fachliche Aussagen sind im Text soweit erforderlich belegt.
 - Sammelueberschriften wie `Kernpunkte`, `Kernpunkte mit Evidenz` oder `Kernthemen` werden im Artikelkoerper nicht verwendet.
-- Die Zielgliederung aus dem Blog-Template ist in ihren Pflichtbestandteilen vorhanden: `Hintergrund`, `Ausgangsfrage`, `Lernziele`, `Ablauf`, fachliche Hauptkapitel, `Literatur und Quellen`.
-- Alle Pflichtabschnitte aus den geladenen Gate-Regeln und dem Blog-Template sind vorhanden und inhaltlich ausgearbeitet.
+- Die gemaess Blog-Template nach Auftrag, Funktion und Inhalt bestimmte
+  Beitragsart einschliesslich etwaiger Klaerung ist Grundlage der Pruefung.
+  Fuer Lehr-Lern-Materialien sind `Hintergrund`, `Ausgangsfrage`, `Lernziele`,
+  `Ablauf`, fachliche Hauptkapitel und `Literatur und Quellen` Pflicht.
+  Berichte folgen Textsorte, Zielgruppe und Gegenstand; Lernziele und Ablaufplan
+  werden nicht verlangt. Eingebettete Lehr-Lern-Materialien behalten ihre
+  Anforderungen. Metadaten oder fehlende Ueberschriften allein begruenden
+  keine Einordnung als Bericht.
+- Alle fuer die Beitragsart geltenden Pflichtabschnitte sind vorhanden und
+  ausgearbeitet. Textsortenbedingt nicht erforderliche Abschnitte fehlen zu
+  Recht; daraus entstehen weder `BLOCKER` noch `WARNUNG`.
 - Quellenangaben sind belastbar; spezifische Quellen wurden nicht erfunden.
 - Der Emoji-Einsatz ist gemaess `project_governance/content_emoji_policy.md` im sichtbaren Hauptkoerper erkennbar und funktional umgesetzt; Mindestabdeckung und Verteilungsprinzip der Policy werden dabei qualitativ mitgeprueft.
 - Wenn die in `project_governance/content_emoji_policy.md` definierte Mindestabdeckung oder funktionale Verteilung klar verfehlt wird, gib eine `WARNUNG` aus, aber keinen `BLOCKER`; semantische Passung ist wichtiger als dekorative Dichte.
@@ -156,9 +173,13 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen PLAN-Core, geladene Gate-Reg
   noch `WARNUNG`.
 - Jede Blog-Visualisierung hat direkt darueber genau einen `p class="grafic-title">...</p>`, direkt darunter genau eine Quellenzeile gemaess Blog-Template (`p class="bildquelle">Bildquelle: ... · Lizenz: ...</p>`; freie Lizenzen als HTML-Link); ein kurzer Kontextsatz davor ist optional und nur bei erklaerungsbeduerftigen Darstellungen sinnvoll. Einzige Ausnahme sind eindeutig als Ablaufplan erkennbare Tabellen innerhalb eines Abschnitts: direkt unter einer Abschnittsueberschrift eingebettete Tabellen zur zeitlichen oder didaktischen Phasenstruktur mit organisatorischem Zweck duerfen nur dann ohne Titel und Quellenzeile stehen; stattdessen muss direkt ueber der Tabelle die Zeile `**Gesamtdauer:** ca. XX Minuten ⏱️` stehen.
 - Wenn ein Ablaufplan erkannt wird und diese Gesamtdauer-Zeile fehlt oder deutlich vom Format abweicht, gib eine `WARNUNG` aus, aber keinen `BLOCKER`.
-- Der Literaturteil beginnt mit genau einem kanonischen
-  `<span id="literatur"></span>` unmittelbar vor der Pflichtueberschrift gemaess
-  Blog-Template.
+- Die Notwendigkeit eines Literaturabschnitts folgt dem Blog-Template.
+  Ist er vorhanden oder erforderlich, gelten Literaturformat und genau ein
+  kanonischer `<span id="literatur"></span>` unmittelbar vor der Ueberschrift.
+  Ist er zulaessigerweise nicht vorhanden, genuegen nachvollziehbare
+  Quellenverweise im Fliesstext; es gibt weder Literaturanker noch lokale
+  Verweise auf einen fehlenden Literaturbereich. Dummy-Anker und unsichtbare
+  Ersatzabschnitte sind unzulaessig.
 - Begriffspruefung: zentrale Begriffe und Benennungen werden im sichtbaren Blogtext konsistent verwendet.
 - Typografiepruefung: sichtbare deutsche Blogtexte folgen den geladenen Typografie- und Umlautregeln.
 - In der technischen Ergebnispruefung von `BLOG FINAL` ist der abschliessende

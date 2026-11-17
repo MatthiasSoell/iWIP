@@ -50,7 +50,22 @@ Wenn der Zielbeitrag nicht eindeutig ist, stelle genau eine kurze Rueckfrage.
 
 `LITERATUR GO` ist die rein formale Literatur-Normalisierung ohne Online-Recherche.
 
-Dieser Modus umfasst:
+Die Notwendigkeit eines eigenen Literaturabschnitts richtet sich nach der
+im Blog-Template anhand von Auftrag, Funktion und Inhalt bestimmten Beitragsart
+und dessen Literaturregel einschliesslich der Klaerungsregel.
+
+Ist ein Literaturabschnitt weder erforderlich noch vorhanden, schliesst
+`LITERATUR GO` regulaer ohne bibliografische Ergaenzungen ab. Nachvollziehbare
+direkte Quellenverweise im Fliesstext bleiben erhalten; fehlerhafte Linksyntax
+darf formal repariert werden. Es werden weder Literaturabschnitt noch Anker,
+Dummy-Anker, unsichtbare Ersatzabschnitte oder `#literatur`-Verweise erzeugt.
+Vorhandene Anker oder lokale Verweise auf einen fehlenden Literaturbereich
+sind widerspruechlich und werden vor jeder Mutation als `BLOCKER` gemeldet.
+Das gilt auch fuer aeltere Anker- und Verweisformen. Ist ein Abschnitt
+erforderlich, aber nicht vorhanden, bleibt dies ein `BLOCKER`; der Fall ohne
+Literaturabschnitt darf nicht als Ausweichweg dienen.
+
+Bei vorhandenem Literaturabschnitt umfasst dieser Modus:
 
 - APA-7-nahe Vereinheitlichung des bestehenden Literaturbestands,
 - Literaturanker direkt vor dem Literaturabschnitt:
@@ -71,8 +86,9 @@ Dieser Modus umfasst:
 - konsistente Badge-Linkdarstellung mit den bestehenden Klassen `lit-doi`, `lit-worldcat` und `lit-ub`,
 - Reparatur defekter Markdown-Linksyntax, doppelter URL-Syntax und zerbrochener Klammerungen.
 
-Der kanonische Anker gilt fuer Blogartikel, die der Agent neu erzeugt oder im
-regulaeren Produktionsvorgang ohnehin bearbeitet. Bei einer solchen lokalen
+Der kanonische Anker gilt bei vorhandenem Literaturabschnitt fuer Blogartikel,
+die der Agent neu erzeugt oder im regulaeren Produktionsvorgang ohnehin
+bearbeitet. Bei einer solchen lokalen
 Bearbeitung duerfen aeltere Ankerformen sicher auf genau einen kanonischen
 `<span id="literatur"></span>` unmittelbar vor dem Literaturabschnitt
 normalisiert werden. Eine repositoryweite Suche-und-Ersetze-Migration
@@ -141,12 +157,19 @@ Bei Unsicherheit:
 
 ## Formale Leitlinien fuer beide Modi
 
-- Pro Quelle genau ein bibliografischer Haupteintrag.
+- Bei vorhandenem Literaturabschnitt pro Quelle genau ein bibliografischer Haupteintrag.
 - Zusatzlinks stehen direkt beim jeweiligen Eintrag.
 - Bevorzugt werden vorhandene Badge-Klassen `lit-doi`, `lit-worldcat`, `lit-ub`; nur wenn das nicht sinnvoll passt, nutze normale Weblinks.
 - Bestehende Quelleninhalte werden formal normalisiert, aber nicht inhaltlich umgeschrieben.
 
-Vor der Ausgabe bzw. vor Abschluss des Bearbeitungsschritts sind insbesondere diese Punkte zu pruefen:
+Ohne Literaturabschnitt ist vor Abschluss zu pruefen, dass dessen Entfallen
+gemaess Blog-Template zulaessig ist, direkte Quellenverweise erhalten sind und
+keine verwaisten Literaturanker oder lokalen Literaturverweise bestehen.
+Die Quellenintegritaet und das Rechercheverbot fuer `LITERATUR GO` gelten
+unveraendert; der Recherchemodus erzwingt ebenfalls keinen Literaturabschnitt.
+
+Bei vorhandenem Literaturabschnitt sind vor der Ausgabe bzw. vor Abschluss
+des Bearbeitungsschritts insbesondere diese Punkte zu pruefen:
 
 1. Genau ein kanonischer Literaturanker unmittelbar vor dem Literaturabschnitt vorhanden.
 2. Fliesstext-Verweise auf `#literatur` gesetzt.

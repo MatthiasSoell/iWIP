@@ -157,7 +157,7 @@ Bearbeiter:
 | BLOG FINAL | Uploads werden nur als Quellmaterial behandelt | | | | | |
 | BLOG FINAL | Buildfreie Inhalts-, DQM-, Frontmatter- und Formalpruefung laeuft vor jeder Transformation | | | | | |
 | BLOG FINAL | Automatisches `LITERATUR GO` laeuft als rein formaler Schritt ohne Recherche und vor dem Content-Emoji-Postprocessing | | | | | |
-| BLOG FINAL | Content-Emoji-Postprocessing arbeitet fail-closed nur bis zum eindeutigen kanonischen Literaturanker und startet keinen Build | | | | | |
+| BLOG FINAL | Content-Emoji-Postprocessing arbeitet fail-closed nach dem eindeutigen OER-Meta-Shortcode: mit Literaturabschnitt nur bis zum korrekt positionierten eindeutigen kanonischen Literaturanker; ohne Abschnitt nur bei bestaetigter Zulaessigkeit und ohne verwaiste Anker oder Literaturverweise bis Dateiende. Geschuetzte Bestandteile bleiben bytegleich; kein Build. | | | | | |
 | BLOG FINAL | Genau ein abschliessender Build laeuft nach allen Mutationen; Lychee prueft danach bevorzugt die gebaute HTML-Ausgabe des aktuellen Blogartefakts. Nur ein ausgefuehrter fehlerfreier Lauf gilt als PASS; Nichtverfuegbarkeit wird ohne automatischen FINAL-Blocker dokumentiert, festgestellte relevante interne Linkfehler sind Blocker. | | | | | |
 | BLOG FINAL | Nach dem abschliessenden Build erfolgt keine Mutation und kein zweiter vollstaendiger FINAL-Check | | | | | |
 | BLOG FINAL | Ein fehlendes Reveal ist weder Blocker noch Warnung; kein toter Praesentationslink wird erzeugt | | | | | |
