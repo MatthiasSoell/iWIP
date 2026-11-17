@@ -235,6 +235,7 @@ jobs:
           require 'net/http'
           require 'uri'
           require 'date'
+          require 'time'
 
           def fetch_response(uri, limit = 5)
             raise 'Too many redirects' if limit <= 0
@@ -249,7 +250,7 @@ jobs:
             headers = { 'User-Agent' => 'SciBlog-iWIP-OERSI-Workflow' }
 
             response = http.request(Net::HTTP::Head.new(path, headers))
-            response = http.request(Net::HTTP::Get.new(path, headers)) if response.code.to_i >= 400
+            response = http.request(Net::HTTP::Get.new(path, headers)) if response.code.to_i >= 400 && response.code.to_i != 429
 
             if response.is_a?(Net::HTTPRedirection)
               location = response['location']
@@ -305,7 +306,27 @@ jobs:
           failures = []
           urls.each do |url|
             response = fetch_response(URI(url))
+            2.times do
+              break unless response.code.to_i == 429
+
+              retry_after = response['retry-after']
+              delay = if retry_after.to_s.match?(/\A\d+\z/)
+                        retry_after.to_i
+                      else
+                        begin
+                          Time.httpdate(retry_after).to_i - Time.now.to_i
+                        rescue ArgumentError, TypeError
+                          5
+                        end
+                      end
+              sleep [[delay, 0].max, 30].min
+              response = fetch_response(URI(url))
+            end
             code = response.code.to_i
+            if code == 429
+              warn "::warning::Could not validate #{url}: HTTP 429 after retries"
+              next
+            end
             failures << "#{url} => #{code}" unless code.between?(200, 399)
           rescue StandardError => error
             failures << "#{url} => #{error.class}: #{error.message}"
