@@ -4,6 +4,7 @@ author: "Prof. Dr. Matthias Söll"
 date: 2026-11-17
 lastmod: 2026-11-17
 draft: false
+permalink: "/blog/oer/workflow_hochschullehre/"
 
 description: >
   Der Beitrag zeigt Hochschullehrenden, wie ein integrierter Workflow didaktische Planung mit einem KI-Agenten, Bloginhalte, Präsentationen und OER verbindet.
