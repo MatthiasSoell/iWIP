@@ -52,7 +52,7 @@ todos: []
 
 #### Ahhhhh!
 
-<figure class="figure-frame figure-frame">
+<figure class="figure-frame figure-frame-wide-landscape">
   <img src="/iWIP/blog/oer/workflow_hochschullehre/tool_chaos.png" class="zoomable" alt="Comic: Ein überforderter Lehrender zwischen zahlreichen digitalen Werkzeugen und Dateiformaten; KI kommt als weiteres Werkzeug hinzu.">
 </figure>
 <p class="bild-quelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: CC BY-SA 4.0</p>
@@ -61,10 +61,10 @@ todos: []
 
 #### Mein neuer Workflow
 
-<span class="spacer spacer-lg"></span>
+<span class="spacer spacer-lg spacer-compact-mobile"></span>
 
 {{< rawhtml >}}
-<div class="figure-frame overlay-fragment-diagram">
+<div class="figure-frame overlay-fragment-diagram figure-frame-wide-landscape overlay-fragment-flow-mobile">
   <img src="konzept_1.png" class="plain fragment fade-out zoomable" data-fragment-index="0" alt="Dialogisch und reflexiv mit einem KI-Agenten planen; die Lehrperson entscheidet.">
   <img src="konzept_2.png" class="plain fragment fade-in-then-out zoomable" data-fragment-index="0" alt="Auf die dialogische Planung folgt der Blog als gemeinsame Inhaltsbasis aus Markdown und Medien.">
   <img src="konzept_3.png" class="plain fragment fade-in-then-out zoomable" data-fragment-index="1" alt="Aus der gemeinsamen Inhaltsbasis im Blog entsteht teilautomatisch eine Reveal-Präsentation.">
@@ -80,7 +80,7 @@ todos: []
 
 #### Das Ergebnis im Seminarraum
 
-<figure class="figure-frame figure-frame">
+<figure class="figure-frame figure-frame-wide-landscape">
   <img src="/iWIP/blog/oer/workflow_hochschullehre/seminarraum.png" class="zoomable" alt="Comic eines Seminars: Der Lehrende zeigt den vierstufigen Workflow auf der Leinwand; Studierende nutzen die Bloginhalte parallel auf Laptops, Tablets und Smartphones.">
 </figure>
 <p class="bild-quelle">Bildquelle: Eigene Darstellung (erstellt mit ChatGPT) · Lizenz: CC BY-SA 4.0</p>

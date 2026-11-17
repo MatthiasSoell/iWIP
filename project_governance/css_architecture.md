@@ -151,6 +151,24 @@ Enthält NICHT:
 Zweck:
 Strikte Trennung zwischen Blog und Präsentation.
 
+### Größen und Abstände auf Reveal-Folien
+
+Für Änderungen in allen Ansichten zuerst die vorhandenen Klassen verwenden:
+`spacer-sm` für weniger Abstand, `figure-frame-lg` für größere Bilder.
+Für neue Bildstapel aus Reveal-Fragmenten eignet sich Reveals `r-stack`, wenn
+keine bestehende Desktop-Positionierung erhalten werden muss.
+
+Für gezielte mobile Anpassungen gibt es kombinierbare Zusatzklassen:
+
+| Zusatzklasse | Kombinieren mit | Wirkung |
+|---|---|---|
+| `spacer-compact-mobile` | `spacer` und der gewünschten Standardgröße, etwa `spacer-lg` | Verkürzt den Abstand auf kleinen Bildschirmen; die Standardgröße bleibt am Desktop erhalten. |
+| `overlay-fragment-flow-mobile` | `figure-frame overlay-fragment-diagram` | Reserviert auf kleinen Bildschirmen Platz für die übereinanderliegenden Bildstufen im Layout. |
+| `figure-frame-wide-landscape` | `figure-frame` | Vergrößert das Bild im engen Querformat; Hochformat und Desktop behalten die Standardgröße. |
+
+Das kleine Hochformat reicht bis 768 CSS-Pixel Breite, das enge Querformat
+bis 950 CSS-Pixel Breite und 620 CSS-Pixel Höhe.
+
 ---
 
 # 4. Kaskadenreihenfolge (verbindlich)
