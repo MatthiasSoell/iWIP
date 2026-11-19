@@ -129,7 +129,7 @@ Irgendwann hatte ich den Eindruck, mehr Zeit mit der Bedienung unterschiedlicher
 Statt immer neue Werkzeuge in meinen bisherigen Arbeitsprozess einzubauen, habe ich versucht, diesen grundsätzlich anders zu organisieren. Entstanden ist ein Workflow, in dem vier Schritte ineinandergreifen:
 
 - <span class="content-emoji">💬</span> **Dialogisch planen:** Ein eigens konfigurierter KI-Agent hinterfragt meine didaktischen Entscheidungen, liefert Ideen und unterstützt meine Reflexion. Die Entscheidungen treffe weiterhin ich.
-- <span class="content-emoji">🎨</span> **Inhalte entwickeln:** Die Ergebnisse arbeite ich in meinem Lehreblog auf mit Markdown in Hugo aus. Texte, Bilder und weitere Medien bilden dort eine gemeinsame Inhaltsbasis.
+- <span class="content-emoji">🎨</span> **Inhalte entwickeln:** Die Ergebnisse veröffentliche ich in meinem Lehreblog in Markdown auf einer Hugo Umgebung. Texte, Bilder und weitere Medien bilden dort eine gemeinsame Inhaltsbasis.
 - <span class="content-emoji">💻</span> **Präsentationen ableiten:** Aus den Bloginhalten entstehen teilautomatisiert Reveal-Präsentationen. So muss ich die Inhalte nicht mehrfach entwickeln.
 - <span class="content-emoji">🎓🌍🔓</span> **Offen veröffentlichen:** Die Materialien veröffentliche ich unter einer offenen Lizenz, sodass sie als OER nachgenutzt und weiterentwickelt werden können.
 
