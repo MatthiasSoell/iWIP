@@ -13,7 +13,7 @@ Bei Konflikten innerhalb des normalen PLAN-Kontexts hat dieser Core Vorrang.
 
 Der Agent arbeitet reflektionsgeleitet und Human-in-the-Loop. Rolle der
 Lehrperson sowie Dialog- und Entscheidungsform folgen verbindlich
-`project_governance/kdm_core.md`. Kritische didaktische Entscheidungen,
+`core/kdm_core.md`. Kritische didaktische Entscheidungen,
 Unsicherheiten und Spannungen werden vor der Artefakterstellung explizit
 benannt und ueber Rueckfragen, Reflexionsschleifen und klar markierte
 Uebergaenge bearbeitet.
@@ -169,17 +169,17 @@ Die Gatefolge bleibt bindend:
 
 Gate-Aktionen und lazy geladene Details:
 
-- Bei `BLOG GO` wird `ai_agents/templates/blog_template.md` geladen und auf
+- Bei `BLOG GO` wird `publikation/templates/blog_template.md` geladen und auf
   Grundlage des freigegebenen Planungsstands direkt `index.md` als bearbeitbare
   Blog-Arbeitsdatei erzeugt oder fortgefuehrt. Fehlt eine belastbare Grundlage,
   ist genau eine Klaerungsfrage zulaessig; andernfalls beginnt die Ausarbeitung
   ohne weitere Bestaetigungsschleife in publizierbarer Blogsprache.
-- Bei `BLOG FINAL` werden fuer den Blogpfad ausschliesslich `prompts/check.md`,
-  `ai_agents/templates/blog_template.md`, `prompts/literatur.md`,
-  `prompts/content_emojis_blog.md`, `project_governance/content_emoji_policy.md`,
-  `project_governance/low_noise_response_patterns.md` und fuer die formale
+- Bei `BLOG FINAL` werden fuer den Blogpfad ausschliesslich `publikation/check.md`,
+  `publikation/templates/blog_template.md`, `publikation/literatur.md`,
+  `publikation/content_emojis_blog.md`, `project_governance/content_emoji_policy.md`,
+  `publikation/low_noise_response_patterns.md` und fuer die formale
   didaktische Finalpruefung das vollstaendige
-  `ai_agents/didaktisches_qualitaetsmodell.md` geladen. Reveal-Template,
+  `references/didaktisches_qualitaetsmodell.md` geladen. Reveal-Template,
   Reveal-Emoji-Prompt und sonstige Reveal-Produktionsregeln werden nicht geladen.
   Der verbindliche Ablauf ist: (1) inhaltliche und formale buildfreie
   Vorpruefung; bei OER-Blogs umfasst sie auch die proportionale praktische
@@ -188,14 +188,14 @@ Gate-Aktionen und lazy geladene Details:
   abschliessendes `hugo --minify`, (5) technische Ergebnispruefung des gebauten
   Endstands und (6) Freigabe nur bei bestandenem Endstand. Literatur- und
   Emoji-Schritt starten keinen Build; nach dem Build folgt keine Mutation mehr.
-- Bei `REVEAL GO` wird `ai_agents/templates/reveal_template.md` geladen und
+- Bei `REVEAL GO` wird `publikation/templates/reveal_template.md` geladen und
   ausschliesslich aus dem finalen Blog genau `_index.md` als bearbeitbare
   Reveal-Arbeitsdatei erzeugt oder fortgefuehrt.
 - Bei `REVEAL FINAL` werden fuer den Reveal-Pfad ausschliesslich
-  `prompts/check.md`, `ai_agents/templates/reveal_template.md`,
-  `prompts/content_emojis_reveal.md`,
+  `publikation/check.md`, `publikation/templates/reveal_template.md`,
+  `publikation/content_emojis_reveal.md`,
   `project_governance/content_emoji_policy.md` und
-  `project_governance/low_noise_response_patterns.md` geladen. Das vollstaendige
+  `publikation/low_noise_response_patterns.md` geladen. Das vollstaendige
   DQM, Blog-Template, Literatur-Prompt und Blog-Emoji-Prompt werden nicht geladen.
   Der verbindliche Ablauf ist: (1) inhaltliche, ableitungsbezogene und formale
   buildfreie Vorpruefung, (2) Reveal-Emoji-Postprocessing, (3) genau ein
@@ -226,7 +226,7 @@ Linkpruefungen werden nicht vorausgesetzt. Tatsaechlich festgestellte relevante
 interne Linkfehler sind Blocker und stoppen die Finalisierung.
 
 Nach erfolgreichem `BLOG FINAL` prueft der Agent verpflichtend den optionalen
-Anschluss an `ai_agents/blog_wissensbasis.md` und bietet bei relevantem Anschluss
+Anschluss an `publikation/blog_wissensbasis.md` und bietet bei relevantem Anschluss
 einen kuratierten Entwurf an. Eine Uebernahme bleibt freigabepflichtig, sofern
 sie nicht bereits eindeutig freigegeben wurde; der Anschluss ist kein
 Definition-of-Done-Bestandteil und blockiert `REVEAL GO` nicht.
@@ -263,9 +263,9 @@ eingefuehrt; es gibt weder Task-Menue noch Task Registry oder Router-Engine.
 ## Verbindliche Planungsregeln
 
 1. Planung bleibt iterativ und ko-kreativ. Rueckspruenge sind zulaessig, duerfen aber die Gates nicht umgehen.
-2. Dialog- und Entscheidungsform folgen verbindlich `project_governance/kdm_core.md`.
+2. Dialog- und Entscheidungsform folgen verbindlich `core/kdm_core.md`.
 3. Das didaktische Profil A ist Default. Bei klaren Hinweisen kann der Agent Profil B oder C knapp begruendet vorschlagen, ohne eine routinemaessige Profilabfrage zu erzwingen. Bewusst begruendete Profilmischungen bleiben zulaessig.
-4. `ai_agents/didaktisches_qualitaetsmodell_core.md` ist der verbindliche didaktische Referenzrahmen fuer Profilgewichtung, Struktur, Diagnose und Bewertung im normalen PLAN-Modus.
+4. `core/didaktisches_qualitaetsmodell_core.md` ist der verbindliche didaktische Referenzrahmen fuer Profilgewichtung, Struktur, Diagnose und Bewertung im normalen PLAN-Modus.
 5. Spezifische Quellenangaben duerfen nur aus belastbaren Grundlagen kommen: Nutzervorgaben, Projektquellen, allgemein bekannte Modelle oder dokumentierte Blogartikel der Wissensbasis. Konkrete Studien, DOI-Angaben oder Publikationsdetails duerfen nicht erfunden werden.
 6. Hochgeladene oder explizit benannte Materialien werden fuer Analyse und Fortfuehrung vor Nachbau priorisiert. Daraus folgt keine implizite Artefakterzeugung oder Finalisierung.
 7. Geaendert werden nur Zielartefakte und explizit freigegebene Nachbardateien. Uebersichtsseiten, Nachbar-Bundles oder sonstige Repo-Dateien duerfen ohne ausdruecklichen Auftrag nicht mitgeaendert werden.
@@ -342,7 +342,7 @@ keinen vollstaendigen Blog- oder Praesentationsentwurf.
 
 ## Inaktive und lazy geladene Bereiche
 
-Das vollstaendige `ai_agents/didaktisches_qualitaetsmodell.md` bleibt die
+Das vollstaendige `references/didaktisches_qualitaetsmodell.md` bleibt die
 vertiefende DQM Reference und wird im normalen PLAN-Modus nur zusaetzlich
 geladen bei:
 

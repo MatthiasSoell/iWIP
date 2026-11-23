@@ -21,11 +21,11 @@ Content structure:
 
 Agent structure:
 - AGENTS.md and .github/copilot-instructions.md → thin platform adapters
-- project_governance/plan_core.md and kdm_core.md → process and dialog cores
-- ai_agents/master_agent.md and didaktisches_qualitaetsmodell_core.md → role and didactic quality core
-- prompts/plan.md → normal planning entry point
+- .agents/skills/iwip-planungsagent/core/plan_core.md and kdm_core.md → process and dialog cores
+- .agents/skills/iwip-planungsagent/core/master_agent.md and didaktisches_qualitaetsmodell_core.md → role and didactic quality core
+- .agents/skills/iwip-planungsagent/SKILL.md → normal planning entry point
 - templates, final checks, full DQM and external handoff → loaded only when required by PLAN-Core
-- benchmark/ → public manual regression definitions and expected fixtures
+- iwip-planungsagent-benchmarks/ → public manual regression definitions and expected fixtures
 - agent_entwicklung/ → local, ignored development history, benchmark runs and raw data; never normal runtime context
 
 Styling architecture:
@@ -89,6 +89,6 @@ L --> L1[PLAN and KDM Cores]
 L --> L2[DQM and Master Agent]
 L --> L3[Lazy Production Tasks]
 
-M --> M1[benchmark<br>public test definitions]
+M --> M1[iwip-planungsagent-benchmarks<br>public test definitions]
 M --> M2[agent_entwicklung<br>local runs and raw data]
 ```

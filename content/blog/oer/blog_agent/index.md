@@ -211,10 +211,10 @@ Aus dieser Verbindung entstehen dann nicht beliebige Texte, sondern konkrete OER
 
 Weiterführende Informationen zum Agentensystem finden Sie direkt im Repository:
 
-- Die Agentendokumentation in der <a href="https://github.com/MatthiasSoell/iWIP/blob/main/ai_agents/README.md" target="_blank" rel="noopener noreferrer">README des Agentenbereichs</a>.
-- Die didaktischen Orientierungen im <a href="https://github.com/MatthiasSoell/iWIP/blob/main/ai_agents/didaktisches_qualitaetsmodell.md" target="_blank" rel="noopener noreferrer">didaktischen Qualitätsmodell</a>.
-- Die fortlaufend aktualisierte Wissensbasis in der <a href="https://github.com/MatthiasSoell/iWIP/blob/main/ai_agents/blog_wissensbasis.md" target="_blank" rel="noopener noreferrer">Wissensbasis des Blogs</a>.
-- Die Vorlagen unter den <a href="https://github.com/MatthiasSoell/iWIP/tree/main/ai_agents/templates" target="_blank" rel="noopener noreferrer">Templates</a> und die Prompts im Ordner <a href="https://github.com/MatthiasSoell/iWIP/tree/main/prompts" target="_blank" rel="noopener noreferrer">prompts</a>; zentral ist dabei <a href="https://github.com/MatthiasSoell/iWIP/blob/main/prompts/plan.md" target="_blank" rel="noopener noreferrer">plan.md</a>.
+- Die Agentendokumentation in der <a href="https://github.com/MatthiasSoell/iWIP/blob/main/.agents/skills/iwip-planungsagent/README.md" target="_blank" rel="noopener noreferrer">README des Agentenbereichs</a>.
+- Die didaktischen Orientierungen im <a href="https://github.com/MatthiasSoell/iWIP/blob/main/.agents/skills/iwip-planungsagent/references/didaktisches_qualitaetsmodell.md" target="_blank" rel="noopener noreferrer">didaktischen Qualitätsmodell</a>.
+- Die fortlaufend aktualisierte Wissensbasis in der <a href="https://github.com/MatthiasSoell/iWIP/blob/main/.agents/skills/iwip-planungsagent/publikation/blog_wissensbasis.md" target="_blank" rel="noopener noreferrer">Wissensbasis des Blogs</a>.
+- Die Vorlagen unter den <a href="https://github.com/MatthiasSoell/iWIP/tree/main/.agents/skills/iwip-planungsagent/publikation/templates" target="_blank" rel="noopener noreferrer">Templates</a> und die Prompts im Ordner <a href="https://github.com/MatthiasSoell/iWIP/tree/main/.agents/skills/iwip-planungsagent/publikation" target="_blank" rel="noopener noreferrer">Publikationsregeln</a>; zentral ist dabei <a href="https://github.com/MatthiasSoell/iWIP/blob/main/.agents/skills/iwip-planungsagent/SKILL.md" target="_blank" rel="noopener noreferrer">SKILL.md</a>.
 - Das gesamte Projekt im <a href="https://github.com/MatthiasSoell/iWIP" target="_blank" rel="noopener noreferrer">Repository SciBlog iWIP</a> sowie die übergreifende <a href="https://github.com/MatthiasSoell/iWIP/blob/main/README.md" target="_blank" rel="noopener noreferrer">README des Repositories</a>.
 
 ## Chatbot, Megaprompt oder spezialisierter Agent? <span class="content-emoji">🧠</span>

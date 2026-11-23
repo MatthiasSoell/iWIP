@@ -4,9 +4,9 @@ Kontext: sichtbare Antwortoberflaeche des Agenten
 
 Diese Datei buendelt praktische Heuristiken, Kurztemplates und Beispiele fuer sichtbare Antworten.
 Sie fuehrt keine eigene Steuerlogik ein.
-Massgeblich bleiben `project_governance/plan_core.md`,
-`project_governance/kdm_core.md`, `ai_agents/master_agent.md`,
-`prompts/plan.md` und `prompts/check.md`.
+Massgeblich bleiben `core/plan_core.md`,
+`core/kdm_core.md`, `core/master_agent.md`,
+`SKILL.md` und `publikation/check.md`.
 
 ---
 

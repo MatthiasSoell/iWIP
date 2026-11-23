@@ -6,11 +6,11 @@ eigene didaktische oder prozessuale Steuerlogik.
 Fuer didaktische Planung wird derselbe kanonische Kern wie auf anderen
 Plattformen geladen:
 
-1. `project_governance/plan_core.md`
-2. `project_governance/kdm_core.md`
-3. `ai_agents/master_agent.md`
-4. `ai_agents/didaktisches_qualitaetsmodell_core.md`
-5. `prompts/plan.md`
+1. `.agents/skills/iwip-planungsagent/core/plan_core.md`
+2. `.agents/skills/iwip-planungsagent/core/kdm_core.md`
+3. `.agents/skills/iwip-planungsagent/core/master_agent.md`
+4. `.agents/skills/iwip-planungsagent/core/didaktisches_qualitaetsmodell_core.md`
+5. `.agents/skills/iwip-planungsagent/SKILL.md`
 
 Lazy Loading fuer Produktion, FINAL, vollstaendiges DQM, Planning Journal und
 `external-handoff` folgt ausschliesslich dem PLAN-Core. Es gibt keinen Research

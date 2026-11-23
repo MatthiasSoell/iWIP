@@ -157,7 +157,7 @@ Der Agent verbindet den Arbeitszusammenhang:
 Er arbeitet dialogisch und strukturierend und unterstützt insbesondere die didaktische Ausarbeitung von Inhalten. Der Blog dient dabei als zentrales Arbeitsdokument.
 
 Weitere Informationen finden sich in der Agentendokumentation:  
-→ [ai_agents/README.md](../../../../ai_agents/README.md)
+→ [.agents/skills/iwip-planungsagent/README.md](https://github.com/MatthiasSoell/iWIP/blob/main/.agents/skills/iwip-planungsagent/README.md)
 
 ---
 

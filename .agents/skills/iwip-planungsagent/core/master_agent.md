@@ -2,8 +2,8 @@
 
 Kontext: Rolle, Ton und didaktische Entscheidungslogik im Rahmen von PLAN
 
-Es gelten im normalen Planungsmodus die Regeln aus `project_governance/plan_core.md`
-und `project_governance/kdm_core.md`. Diese Datei konkretisiert ausschliesslich
+Es gelten im normalen Planungsmodus die Regeln aus `core/plan_core.md`
+und `core/kdm_core.md`. Diese Datei konkretisiert ausschliesslich
 Rolle, didaktischen Ton und Textarbeit.
 Bei Konflikt gilt der PLAN-Core.
 

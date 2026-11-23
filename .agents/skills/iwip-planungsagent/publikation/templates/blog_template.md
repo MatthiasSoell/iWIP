@@ -9,7 +9,7 @@ Reveal-Praesentation finalisiert und veroeffentlicht werden. Eine optionale
 Reveal-Praesentation wird anschließend daraus abgeleitet.
 
 Emojis werden gemäß **content_emoji_policy.md** verwendet.
-Prozess, Gates und Finalisierung folgen `project_governance/plan_core.md`.
+Prozess, Gates und Finalisierung folgen `core/plan_core.md`.
 
 Die folgenden mediendidaktischen Gestaltungsregeln gelten in diesem Template
 als weiche Heuristiken fuer die Darstellung. Sie geben Orientierung fuer die
@@ -133,7 +133,7 @@ wenn ihr Fehlen die praktische Nachnutzung relevant erschwert.
 Alle Uebergaenge, Pruefungen und Finalisierungen erfolgen
 ausschliesslich gemaess:
 
--> `project_governance/plan_core.md`
+-> `core/plan_core.md`
 
 Dieses Template definiert nur die Struktur des Blog-Artikels.
 

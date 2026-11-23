@@ -72,17 +72,17 @@ Die wichtigsten Dateien und Ordner fuer den Agenten sind:
 
 | Datei oder Bereich | Rolle |
 |---|---|
-| `project_governance/plan_core.md` | Prozess, Routing, Gates und Lazy Loading |
-| `project_governance/kdm_core.md` | Dialog-, Interventions- und Entscheidungsqualitaet |
-| `ai_agents/didaktisches_qualitaetsmodell_core.md` | didaktische Qualitaet und Diagnose |
-| `ai_agents/master_agent.md` | Rolle, Kommunikation und didaktische Textarbeit innerhalb der Architektur |
-| `prompts/plan.md` | Einstieg und Routing fuer den Planungsdialog |
-| `prompts/check.md` | Pruefablauf und Ausgabeformat fuer Finalpruefungen |
-| `ai_agents/templates/` | Vorlagen fuer Blog- und Reveal-Artefakte |
+| `core/plan_core.md` | Prozess, Routing, Gates und Lazy Loading |
+| `core/kdm_core.md` | Dialog-, Interventions- und Entscheidungsqualitaet |
+| `core/didaktisches_qualitaetsmodell_core.md` | didaktische Qualitaet und Diagnose |
+| `core/master_agent.md` | Rolle, Kommunikation und didaktische Textarbeit innerhalb der Architektur |
+| `SKILL.md` | Einstieg und Routing fuer den Planungsdialog |
+| `publikation/check.md` | Pruefablauf und Ausgabeformat fuer Finalpruefungen |
+| `publikation/templates/` | Vorlagen fuer Blog- und Reveal-Artefakte |
 
 ## Nutzung
 
-Der Einstieg erfolgt in der Regel ueber die Prompts im Ordner `prompts/`, insbesondere ueber `prompts/plan.md` fuer den Planungsdialog und `prompts/check.md` fuer Finalpruefungen.
+Der Einstieg erfolgt in der Regel über [SKILL.md](SKILL.md). Die Finalprüfung folgt den Freigaben im PLAN-Core.
 
 Die Gate-Logik und ihre Ladebedingungen stehen im PLAN-Core. Diese README fasst
 nur den Arbeitszusammenhang zusammen: Aus einem Planungsanliegen entsteht
@@ -133,4 +133,4 @@ Version 1.1 stellt damit einen konsolidierten, produktionsreifen Entwicklungssta
 
 ## Lizenzhinweis
 
-Der didaktische Agent steht unter der Lizenz **CC BY-SA 4.0**. Details sind in `ai_agents/LICENSE.md` dokumentiert.
+Der didaktische Agent steht unter der Lizenz **CC BY-SA 4.0**. Details sind in `LICENSE.md` dokumentiert.

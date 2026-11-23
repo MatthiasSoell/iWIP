@@ -19,13 +19,10 @@ Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 
 ## Geltungsbereich
 
-Diese Lizenz gilt ausschließlich für das Agentensystem in den Verzeichnissen:
-
-- ai_agents/
-- project_governance/
-- prompts/
-
-Sie gilt nicht automatisch für Blog-Inhalte im content/-Bereich.
+Die Agentendateien in diesem Paket stehen unter CC BY-SA 4.0. Für die zuvor
+mitlizenzierten Dateien in `project_governance/` und ihre hierher verschobenen
+Bestandteile gilt die bisherige Lizenz fort. Die Lizenzangaben der Blog-Inhalte
+unter `content/` stehen beim jeweiligen Beitrag.
 
 ## Urheber
 

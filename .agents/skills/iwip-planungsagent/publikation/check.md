@@ -2,7 +2,7 @@
 
 Scope: Qualitaetspruefung von Blog- und Reveal-Artefakten gegen PLAN, Templates und DQM
 
-Es gelten die Planungs- und Gate-Regeln aus `project_governance/plan_core.md` sowie
+Es gelten die Planungs- und Gate-Regeln aus `core/plan_core.md` sowie
 die am aktuellen Gate geladenen Artefakt-Templates und Prompts.
 Diese Datei konkretisiert ausschliesslich den Pruefablauf und das Ausgabeformat fuer FINAL-Pruefungen.
 Bei Konflikt gilt der PLAN-Core; artefaktspezifische Details folgen den am
@@ -86,7 +86,7 @@ zweiter vollstaendiger Check wiederholt.
 - `check` ist fuer FINAL-Pruefungen und finale Gate-Bewertungen gedacht; proportionale Mikropruefungen und fokussierte Pruefungen bei Light Operations laufen ausserhalb dieses sichtbaren FINAL-Formats nach den geladenen Gate-Regeln.
 - Sichtbar erscheinen nur die regelkonformen Pruefausgaben im vorgegebenen Format, ohne Prozesskommentar.
 - Erfolgreiche Linkchecks, Builds, Postprocessing-Schritte, Pfadableitungen, Wissensbasis-Nachlaeufe und sonstige gruene Routinepruefungen werden nicht einzeln sichtbar ausgegeben. Sie erscheinen nur bei Blockern, handlungsrelevanten Warnungen oder auf ausdrueckliche Nachfrage.
-- Die konkrete sichtbare FINAL-Sprache folgt zusaetzlich den Kurzmustern aus `project_governance/low_noise_response_patterns.md`, ohne das hier definierte Format oder die Blockstruktur zu aendern.
+- Die konkrete sichtbare FINAL-Sprache folgt zusaetzlich den Kurzmustern aus `publikation/low_noise_response_patterns.md`, ohne das hier definierte Format oder die Blockstruktur zu aendern.
 
 Aktiver Editorpfad, geoeffnete oder markierte Prompt- oder Regeldateien, aktive Textauswahlen oder sonstiger Editor-Kontext steuern diesen Pruefpfad nicht.
 
@@ -114,7 +114,7 @@ Dabei gilt:
   ausweisen und keine kuenstlichen Lernarrangements verlangen. Enthaltene
   Lehr-Lern-Arrangements unterliegen unveraendert allen DQM-Anforderungen.
 - Bewerte jede DQM-Dimension mit `OK`, `WARNUNG` oder `BLOCKER` und kurzer Begruendung.
-- Nutze die Profilgewichtung aus `ai_agents/didaktisches_qualitaetsmodell.md`.
+- Nutze die Profilgewichtung aus `references/didaktisches_qualitaetsmodell.md`.
 - Wenn ein Profil explizit im Artefakt oder Kontext dokumentiert ist, pruefe seine konsistente Umsetzung gegen diese Profilgewichtung.
 - Wenn kein Profil dokumentiert ist, bewerte mit Profil A als PLAN-Core-Default; das allein ist kein Befund.
 - Fuer Reveal-Ableitungen wird kein DQM-Block erzeugt.
@@ -139,7 +139,7 @@ Hoeher gewichtete Dimensionen werden strenger ausgelegt; niedrig gewichtete Dime
 
 ## Blog-Pruefmatrix
 
-Wenn das Artefakt ein Blogartikel ist, pruefe gegen PLAN-Core, geladene Gate-Regeln und `ai_agents/templates/blog_template.md`:
+Wenn das Artefakt ein Blogartikel ist, pruefe gegen PLAN-Core, geladene Gate-Regeln und `publikation/templates/blog_template.md`:
 
 - Leser:innenperspektive ist klar erkennbar.
 - Der Text ist im Fliesstext durchgaengig in veroeffentlichbarer Blogsprache ausgearbeitet; planungsnahe Sprache erscheint nicht im sichtbaren Artikelkoerper.
@@ -239,7 +239,7 @@ Wenn Auffaelligkeiten vorliegen:
 
 ## Frontmatter- und Metadatenpruefung Blog
 
-Pruefe bei Blogartefakten das Frontmatter strikt gegen `ai_agents/templates/blog_template.md`.
+Pruefe bei Blogartefakten das Frontmatter strikt gegen `publikation/templates/blog_template.md`.
 
 Verpflichtend zu pruefen:
 
@@ -284,7 +284,7 @@ Bewertungsregel:
 
 ## Reveal-Pruefmatrix
 
-Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen PLAN-Core, geladene Gate-Regeln und `ai_agents/templates/reveal_template.md`:
+Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen PLAN-Core, geladene Gate-Regeln und `publikation/templates/reveal_template.md`:
 
 ### Transformationsqualitaet
 
@@ -337,7 +337,7 @@ Wenn Auffaelligkeiten vorliegen:
 
 ### Frontmatter- und Metadatenpruefung Reveal
 
-Pruefe bei Revealartefakten das Frontmatter strikt gegen `ai_agents/templates/reveal_template.md`.
+Pruefe bei Revealartefakten das Frontmatter strikt gegen `publikation/templates/reveal_template.md`.
 
 Verpflichtend zu pruefen:
 

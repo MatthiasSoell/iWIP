@@ -8,8 +8,8 @@ sowie Qualitaetsraster fuer didaktische Strukturierung, profilabhaengige
 Planung, Kohaerenzcheck und abschliessende didaktische Bewertung.
 
 Verbindliche Prozess- und Gate-Steuerung liegt in
-`project_governance/plan_core.md`; Dialog- und Entscheidungsform liegt in
-`project_governance/kdm_core.md`.
+`core/plan_core.md`; Dialog- und Entscheidungsform liegt in
+`core/kdm_core.md`.
 Das DQM liefert Diagnose, heuristische Orientierung und ein didaktisches
 Qualitaetsraster; es definiert keine eigene Prozesssteuerung.
 
@@ -33,7 +33,7 @@ Qualitaetsraster; es definiert keine eigene Prozesssteuerung.
    dient ⚠️ (teilweise), nicht ❌ (fehlt).
 
 4. **Konfliktbehandlung**: Konflikte werden ausschliesslich gemaess PLAN-Core behandelt.
-   -> `project_governance/plan_core.md` – Abschnitt DQM-Konfliktlogik
+   -> `core/plan_core.md` – Abschnitt DQM-Konfliktlogik
    Das DQM liefert nur Diagnose, keine Steuerung.
 
 Zur Unterstuetzung der dialogischen Planung nutzt der Agent die bestehenden

@@ -4,7 +4,7 @@ Scope: Kompakter didaktischer Referenz- und Diagnoserahmen für normale PLAN-Auf
 
 Dieser Core erhält die entscheidungsrelevanten Heuristiken des vollständigen
 didaktischen Qualitätsmodells. Das vollständige
-`ai_agents/didaktisches_qualitaetsmodell.md` bleibt als vertiefende DQM Reference
+`references/didaktisches_qualitaetsmodell.md` bleibt als vertiefende DQM Reference
 erhalten.
 
 Der DQM-Core bewertet die didaktische Tragfähigkeit einer Planung. Er definiert

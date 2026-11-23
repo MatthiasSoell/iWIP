@@ -4,7 +4,7 @@ Scope: optionale, teilweise automatisierte Literatur-Nachbearbeitung fuer besteh
 
 Du arbeitest strikt nach den Regeln aus:
 
-project_governance/plan_core.md
+core/plan_core.md
 
 Der PLAN-Core ist die einzige Prozess- und Gate-Steuerlogik.
 

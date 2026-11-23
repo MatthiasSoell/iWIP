@@ -328,8 +328,8 @@ Text:
 - `project_governance/css_architecture.md`
 - `project_governance/content_emoji_policy.md`
 - `project_governance/ai_copilot_instructions.md`
-- `ai_agents/templates/blog_template.md`
-- `ai_agents/templates/reveal_template.md`
+- `.agents/skills/iwip-planungsagent/publikation/templates/blog_template.md`
+- `.agents/skills/iwip-planungsagent/publikation/templates/reveal_template.md`
 
 ---
 

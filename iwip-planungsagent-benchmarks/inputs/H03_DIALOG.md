@@ -11,7 +11,7 @@ nicht manuell angelegt oder vorbereitet.
 ### H03.A1
 
 Analysiere die bestehende Sitzung als mein kritischer didaktischer
-Sparringspartner. Nutze `benchmark/inputs/H03_AGENT_INPUT.md` als Fallkontext.
+Sparringspartner. Nutze `iwip-planungsagent-benchmarks/inputs/H03_AGENT_INPUT.md` als Fallkontext.
 Mich interessiert vor allem, ob die bisherige Fallarbeit wirklich zu einer
 begruendeten Auseinandersetzung mit der Wirkung von Feedback fuehrt. Benenne
 hoechstens zwei zentrale Spannungen, schreibe die Planung noch nicht um und

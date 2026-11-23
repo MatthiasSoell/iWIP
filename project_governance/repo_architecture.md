@@ -32,8 +32,8 @@ Der SciBlog iWIP basiert auf folgenden Kerntechnologien:
 
 Daneben enthaelt dasselbe Repository den deklarativen wirtschaftsdidaktischen
 Planungsagenten. Seine kanonischen Laufzeitkomponenten liegen derzeit in
-`project_governance/`, `ai_agents/`, `prompts/` und `tasks/`. Aktuelle
-Benchmarkdefinitionen und Soll-Fixtures liegen in `benchmark/`. Konkrete
+`.agents/skills/iwip-planungsagent/`. Aktuelle
+Benchmarkdefinitionen und Soll-Fixtures liegen in `iwip-planungsagent-benchmarks/`. Konkrete
 Testlaeufe, Entwicklungsprotokolle und Rohdaten gehoeren in den lokalen,
 nicht versionierten Bereich `agent_entwicklung/` und sind kein
 Runtime-Kontext.
@@ -111,12 +111,10 @@ iWIP/
 │
 ├─ layouts/                # Hugo Layout-Anpassungen / Overrides
 │
-├─ ai_agents/             # Rolle, DQM, Wissensbasis und Templates
-├─ prompts/               # Planungs-, Pruef- und Postprocessing-Prompts
-├─ tasks/                 # Lazy geladene Spezialaufgaben
-├─ benchmark/             # aktuelle Regression, Inputs, Expectations und Fixtures
+├─ .agents/skills/iwip-planungsagent/  # Planungskern und optionale Publikationsregeln
+├─ iwip-planungsagent-benchmarks/             # aktuelle Regression, Inputs, Expectations und Fixtures
 │
-├─ project_governance/    # Agenten-Cores und technische Governance
+├─ project_governance/    # technische Governance
 │  ├─ css_architecture.md
 │  ├─ ai_copilot_instructions.md
 │  ├─ content_emoji_policy.md
@@ -148,7 +146,7 @@ Hinweis:
 
 - Der Oberordner `exports/` kann weitere manuelle Exportdateien enthalten.
 - Versionierte Benchmarkdefinitionen und Soll-Fixtures verbleiben unter
-  `benchmark/`; konkrete Laeufe und Rohoutputs liegen lokal unter
+  `iwip-planungsagent-benchmarks/`; konkrete Laeufe und Rohoutputs liegen lokal unter
   `agent_entwicklung/benchmark_runs/`.
 
 Regel:

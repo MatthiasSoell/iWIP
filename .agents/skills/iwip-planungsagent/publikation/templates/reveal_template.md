@@ -8,7 +8,7 @@ für Reveal-Präsentationen im SciBlog iWIP.
 Die Präsentation wird ausschliesslich aus dem finalen Blogartikel abgeleitet.
 
 Emojis werden gemäß **content_emoji_policy.md** verwendet.
-Prozess, Gates und Finalisierung folgen `project_governance/plan_core.md`.
+Prozess, Gates und Finalisierung folgen `core/plan_core.md`.
 
 Die folgenden mediendidaktischen Gestaltungsregeln gelten in diesem Template
 als weiche Heuristiken fuer die Darstellung. Sie geben Orientierung fuer die
@@ -89,7 +89,7 @@ Regeln:
 Die Ableitung, Pruefung und Finalisierung der Praesentation
 erfolgt ausschliesslich gemaess:
 
--> `project_governance/plan_core.md`
+-> `core/plan_core.md`
 
 Dieses Template definiert nur die Struktur der Praesentation.
 

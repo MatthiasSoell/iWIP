@@ -69,14 +69,14 @@ Vor jedem Commit:
 
 Wenn Änderungen an folgenden Dateien erfolgen, ist zusätzlich eine direkte Validierung gegen die betroffenen Regeln aus PLAN-, KDM- und DQM-Core erforderlich:
 
-- `project_governance/plan_core.md`
-- `project_governance/kdm_core.md`
-- `ai_agents/didaktisches_qualitaetsmodell_core.md`
-- `ai_agents/master_agent.md`
-- `prompts/plan.md`
-- `prompts/check.md`
-- `ai_agents/templates/blog_template.md`
-- `ai_agents/templates/reveal_template.md`
+- `.agents/skills/iwip-planungsagent/core/plan_core.md`
+- `.agents/skills/iwip-planungsagent/core/kdm_core.md`
+- `.agents/skills/iwip-planungsagent/core/didaktisches_qualitaetsmodell_core.md`
+- `.agents/skills/iwip-planungsagent/core/master_agent.md`
+- `.agents/skills/iwip-planungsagent/SKILL.md`
+- `.agents/skills/iwip-planungsagent/publikation/check.md`
+- `.agents/skills/iwip-planungsagent/publikation/templates/blog_template.md`
+- `.agents/skills/iwip-planungsagent/publikation/templates/reveal_template.md`
 
 Der PLAN-Core bleibt dabei die normative Quelle fuer Prozess, Routing, Gates und
 Lazy Loading; KDM und DQM behalten ihre dort beschriebenen Zustaendigkeiten.

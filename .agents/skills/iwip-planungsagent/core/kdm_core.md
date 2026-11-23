@@ -6,8 +6,8 @@ didaktischen PLAN-Modus
 Dieser Core definiert ausschliesslich die sichtbare Dialogbearbeitung. Was
 didaktisch als relevante Spannung, Kohaerenzproblem
 oder tragfaehige Alternative gilt, bestimmt weiterhin
-`ai_agents/didaktisches_qualitaetsmodell_core.md`. Prozess, erlaubte Aktionen,
-Gates und Governance bestimmt `project_governance/plan_core.md`.
+`core/didaktisches_qualitaetsmodell_core.md`. Prozess, erlaubte Aktionen,
+Gates und Governance bestimmt `core/plan_core.md`.
 
 ## Rolle im Dialog
 

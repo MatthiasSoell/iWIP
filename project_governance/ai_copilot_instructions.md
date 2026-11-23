@@ -9,9 +9,9 @@ Diese Regeln definieren, wie AI‑Agenten (z. B. GitHub Copilot, ChatGPT) Änd
 
 Diese Datei ist KEINE Laufzeit-Steuerlogik.
 Sie gilt nur fuer Entwicklung und QA. Fuer agentische Steuerlogik gelten die
-kanonischen Komponenten `project_governance/plan_core.md`,
-`project_governance/kdm_core.md`, `ai_agents/master_agent.md`,
-`ai_agents/didaktisches_qualitaetsmodell_core.md` und `prompts/plan.md`.
+kanonischen Komponenten `.agents/skills/iwip-planungsagent/core/plan_core.md`,
+`.agents/skills/iwip-planungsagent/core/kdm_core.md`, `.agents/skills/iwip-planungsagent/core/master_agent.md`,
+`.agents/skills/iwip-planungsagent/core/didaktisches_qualitaetsmodell_core.md` und `.agents/skills/iwip-planungsagent/SKILL.md`.
 
 Ziel ist eine stabile, wartbare Architektur ohne unnötige technische Schulden.
 
@@ -114,15 +114,15 @@ Relevante Dokumente:
 - project_governance/css_architecture.md
 - project_governance/repo_architecture.md
 - project_governance/ai_copilot_instructions.md
-- project_governance/plan_core.md
-- project_governance/kdm_core.md
+- .agents/skills/iwip-planungsagent/core/plan_core.md
+- .agents/skills/iwip-planungsagent/core/kdm_core.md
 - project_governance/development_workflow.md
 - project_governance/content_emoji_policy.md
-- ai_agents/master_agent.md
-- prompts/plan.md
-- prompts/check.md
-- ai_agents/templates/blog_template.md
-- ai_agents/templates/reveal_template.md
+- .agents/skills/iwip-planungsagent/core/master_agent.md
+- .agents/skills/iwip-planungsagent/SKILL.md
+- .agents/skills/iwip-planungsagent/publikation/check.md
+- .agents/skills/iwip-planungsagent/publikation/templates/blog_template.md
+- .agents/skills/iwip-planungsagent/publikation/templates/reveal_template.md
 - config.toml Kommentare
 - content/blog/doku/doku_tech/index.md technische Blog‑Dokumentation
 
@@ -168,13 +168,13 @@ Reveal prüfen, wenn betroffen:
 
 Änderungen an agentischen Steuerdateien:
 
-- `project_governance/plan_core.md`
-- `project_governance/kdm_core.md`
-- `ai_agents/master_agent.md`
-- `prompts/plan.md`
-- `prompts/check.md`
-- `ai_agents/templates/blog_template.md`
-- `ai_agents/templates/reveal_template.md`
+- `.agents/skills/iwip-planungsagent/core/plan_core.md`
+- `.agents/skills/iwip-planungsagent/core/kdm_core.md`
+- `.agents/skills/iwip-planungsagent/core/master_agent.md`
+- `.agents/skills/iwip-planungsagent/SKILL.md`
+- `.agents/skills/iwip-planungsagent/publikation/check.md`
+- `.agents/skills/iwip-planungsagent/publikation/templates/blog_template.md`
+- `.agents/skills/iwip-planungsagent/publikation/templates/reveal_template.md`
 
 Dann zusätzlich:
 
