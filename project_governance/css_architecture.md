@@ -290,7 +290,7 @@ gelten zusätzliche Regeln.
 
 Diese sind dokumentiert in:
 
-ai_copilot_instructions.md
+ai_editing_rules.md
 
 Die dort definierten Prinzipien (Modify-first, Framework-first,
 No-hack) sind verbindlich für alle automatisierten Codevorschläge.

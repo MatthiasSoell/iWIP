@@ -11,8 +11,7 @@
 /.hugo_build.lock
 
 # Local working artifacts
-/iwip_planungsagent_entwicklung/
-/agent_entwicklung/
+/iwip_planungsagent/
 /exports/
 /.vscode/
 /.venv/

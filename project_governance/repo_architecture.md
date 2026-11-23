@@ -32,11 +32,10 @@ Der SciBlog iWIP basiert auf folgenden Kerntechnologien:
 
 Daneben enthaelt dasselbe Repository den deklarativen wirtschaftsdidaktischen
 Planungsagenten. Seine kanonischen Laufzeitkomponenten liegen derzeit in
-`.agents/skills/iwip-planungsagent/`. Aktuelle
-Benchmarkdefinitionen und Soll-Fixtures liegen in `iwip_planungsagent_benchmarks/`. Konkrete
-Testlaeufe, Entwicklungsprotokolle und Rohdaten gehoeren in den lokalen,
-nicht versionierten Bereich `iwip_planungsagent_entwicklung/` und sind kein
-Runtime-Kontext.
+`.agents/skills/iwip-planungsagent/`. Benchmarkdefinitionen und Soll-Fixtures liegen
+lokal in `iwip_planungsagent/benchmarks/`. Testlaeufe, Entwicklungsprotokolle und
+Rohdaten liegen in `iwip_planungsagent/entwicklung/`. Git ignoriert beide Ordner
+unter `iwip_planungsagent/`. Die technische Paketpruefung liegt in `scripts/check_paket.py`.
 
 ---
 
@@ -112,17 +111,19 @@ iWIP/
 ├─ layouts/                # Hugo Layout-Anpassungen / Overrides
 │
 ├─ .agents/skills/iwip-planungsagent/  # Planungskern und optionale Publikationsregeln
-├─ iwip_planungsagent_benchmarks/             # aktuelle Regression, Inputs, Expectations und Fixtures
+├─ iwip_planungsagent/     # lokaler Arbeitsbereich, von Git ignoriert
+│  ├─ benchmarks/          # manuelle Regressionstests, Inputs und Soll-Fixtures
+│  └─ entwicklung/         # Historie, Testlaeufe und Arbeitsdaten
+├─ scripts/check_paket.py  # technische Paketpruefung fuer den Skill
 │
 ├─ project_governance/    # technische Governance
 │  ├─ css_architecture.md
-│  ├─ ai_copilot_instructions.md
+│  ├─ ai_editing_rules.md
 │  ├─ content_emoji_policy.md
 │  └─ repo_architecture.md
 │
 ├─ AGENTS.md              # duenn gehaltener Codex-Adapter
 ├─ config.toml             # zentrale Hugo-Konfiguration
-├─ iwip_planungsagent_entwicklung/      # lokal, ignoriert; Historie, Runs und Arbeitsdaten
 │
 └─ .github/
    └─ workflows/           # GitHub Actions Deployment
@@ -139,22 +140,22 @@ nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
 - `.vscode/` fuer nutzerspezifische Workspace-Einstellungen
 - `.venv/` fuer eine lokale Python-Laufzeitumgebung
 - `served/` als temporaeres lokales Staging fuer den Pages-/PDF-Workflow
-- `iwip_planungsagent_entwicklung/` fuer Entwicklungsprotokolle, historische Audits,
-  konkrete Benchmark-Runs, Rohdaten und temporaere Arbeitsdateien
+- `iwip_planungsagent/benchmarks/` fuer manuelle Benchmarkdefinitionen und Soll-Fixtures
+- `iwip_planungsagent/entwicklung/` fuer Entwicklungsprotokolle, historische Audits,
+  Rohdaten und temporaere Arbeitsdateien
 
 Hinweis:
 
 - Der Oberordner `exports/` kann weitere manuelle Exportdateien enthalten.
-- Versionierte Benchmarkdefinitionen und Soll-Fixtures verbleiben unter
-  `iwip_planungsagent_benchmarks/`; konkrete Laeufe und Rohoutputs liegen lokal unter
-  `iwip_planungsagent_entwicklung/benchmark_runs/`.
+- Konkrete Benchmark-Laeufe und Rohoutputs liegen lokal unter
+  `iwip_planungsagent/entwicklung/benchmark_runs/`.
 
 Regel:
 
 - Diese Pfade duerfen lokal existieren.
 - Sie werden nicht fuer GitHub Pages benoetigt.
 - Sie sollen im Regelfall nicht versioniert werden.
-- `iwip_planungsagent_entwicklung/` wird im normalen Agentenbetrieb nur auf ausdruecklichen
+- `iwip_planungsagent/entwicklung/` wird im normalen Agentenbetrieb nur auf ausdruecklichen
   Nutzerauftrag gelesen oder durchsucht.
 
 ---

@@ -67,6 +67,9 @@ Vor jedem Commit:
 
 ### 4.3 Agenten-Validierung
 
+`make qa-prompts` prueft das Skill-Paket mit `scripts/check_paket.py`. Die
+manuellen Regressionstests liegen im lokalen Arbeitsbereich `iwip_planungsagent/benchmarks/`.
+
 Wenn Änderungen an folgenden Dateien erfolgen, ist zusätzlich eine direkte Validierung gegen die betroffenen Regeln aus PLAN-, KDM- und DQM-Core erforderlich:
 
 - `.agents/skills/iwip-planungsagent/core/plan_core.md`
@@ -209,7 +212,7 @@ Wenn du **Architektur, Pfade, Owners oder Regeln** änderst, dann gilt:
   - `project_governance/css_architecture.md`
   - `project_governance/repo_architecture.md`
   - `project_governance/content_emoji_policy.md`
-  - `project_governance/ai_copilot_instructions.md`
+  - `project_governance/ai_editing_rules.md`
   - `project_governance/ai_project_context.md`
   - `project_governance/development_workflow.md`
   - `README.md` (nur wenn es „Entry-Point“-Infos betrifft)
@@ -235,7 +238,7 @@ Vor Merge nach `main`:
 ## 8. Zusammenarbeit mit Copilot / AI
 
 - AI soll **diese Dateien** als Leitplanken berücksichtigen:
-  - `project_governance/ai_copilot_instructions.md`
+  - `project_governance/ai_editing_rules.md`
   - `project_governance/ai_project_context.md`
   - `project_governance/css_architecture.md`
   - `project_governance/content_emoji_policy.md`

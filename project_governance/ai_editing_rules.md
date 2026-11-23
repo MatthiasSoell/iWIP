@@ -1,11 +1,11 @@
-# AI Editing Instructions – Copilot / ChatGPT
+# AI Editing Rules
 SciBlog iWIP
 
 Kontext: technische Änderungen im Repo (CSS, Layout, Struktur) sowie Änderungen an agentischen Steuerdateien
 
 AI agents: read `ai_project_context.md` first, then follow these rules.
 
-Diese Regeln definieren, wie AI‑Agenten (z. B. GitHub Copilot, ChatGPT) Änderungen am Projekt durchführen sollen.
+Diese Regeln definieren, wie KI-Assistenten Änderungen am Projekt durchführen sollen.
 
 Diese Datei ist KEINE Laufzeit-Steuerlogik.
 Sie gilt nur fuer Entwicklung und QA. Fuer agentische Steuerlogik gelten die
@@ -113,7 +113,7 @@ Relevante Dokumente:
 
 - project_governance/css_architecture.md
 - project_governance/repo_architecture.md
-- project_governance/ai_copilot_instructions.md
+- project_governance/ai_editing_rules.md
 - .agents/skills/iwip-planungsagent/core/plan_core.md
 - .agents/skills/iwip-planungsagent/core/kdm_core.md
 - project_governance/development_workflow.md
