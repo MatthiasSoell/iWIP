@@ -113,11 +113,11 @@ Dieses Template definiert nur Frontmatter und Zielstruktur des Reveal-Artefakts.
 1. Titel
 2. Leitfrage oder Problem
 3. Ablauf
-4. Lernziele
+4. Lernziele, sofern aus dem finalen Blog ableitbar
 5. optionale Einordnung
 6. ein oder mehrere inhaltliche Themenfolien
 7. optionale Arbeits-, Diskussions- oder Transferfolien
-8. Literatur
+8. Literatur, sofern der finale Blog einen eigenen Literaturabschnitt hat
 9. Abschluss
 
 ---
@@ -146,9 +146,10 @@ Nutze nach Möglichkeit `title_reveal` und `emojis` im Frontmatter.
 
 ---
 
-## Folie 4 — Lernziele
+## Lernziele (wenn ableitbar)
 
-- wichtigste Lernziele oder Zielperspektiven knapp darstellen
+- Wichtigste Lernziele oder Zielperspektiven aus dem finalen Blog knapp darstellen.
+- Bei Berichten ohne Lernziele oder didaktische Zielperspektive entfaellt die Folie.
 - Emojis im Folieninhalt folgen `project_governance/content_emoji_policy.md`
 
 Beispiel:
@@ -236,7 +237,10 @@ Muster fuer Visualisierungen auf Folien:
 
 ---
 
-## Vorletzte Folie — Literatur
+## Literatur (bei eigenem Literaturabschnitt im Blog)
+
+Der Shortcode verweist auf Quellen am Ende des Blogs. Bei Quellenverweisen
+allein im Fliesstext oder bei einem quellenfreien Bericht entfaellt die Folie.
 
 ```markdown
 {{< literatureSlide >}}

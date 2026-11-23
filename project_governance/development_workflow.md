@@ -148,7 +148,7 @@ Bearbeiter:
 
 | Station | Prüfschritt | Erwartetes Verhalten | Tatsächliches Verhalten | Status (OK/Teilweise/Nein) | Abweichung | Folgeort |
 |---|---|---|---|---|---|---|
-| /PLAN | Keine Artefakterstellung | | | | | |
+| /PLAN | Keine Publikationsdateien und kein Build. Bei konkreten Fällen werden Journalaktionen nach PLAN-Core geprüft. Ein freigegebener Übergabestand wird nur auf ausdrücklichen Auftrag gespeichert. | | | | | |
 | /PLAN | Sprache bleibt planungs- und dialoggerecht | | | | | |
 | /PLAN | Offener Planungsstart wird verdichtet; konkrete Analyse- oder Feedbackauftraege werden ohne ungefragte Neuplanung bearbeitet | | | | | |
 | /PLAN | Keine sichtbaren Such-, Routing-, Tool- oder Prozesskommentare | | | | | |
@@ -162,15 +162,15 @@ Bearbeiter:
 | BLOG FINAL | Automatisches `LITERATUR GO` laeuft als rein formaler Schritt ohne Recherche und vor dem Content-Emoji-Postprocessing | | | | | |
 | BLOG FINAL | Content-Emoji-Postprocessing arbeitet fail-closed nach dem eindeutigen OER-Meta-Shortcode: mit Literaturabschnitt nur bis zum korrekt positionierten eindeutigen kanonischen Literaturanker; ohne Abschnitt nur bei bestaetigter Zulaessigkeit und ohne verwaiste Anker oder Literaturverweise bis Dateiende. Geschuetzte Bestandteile bleiben bytegleich; kein Build. | | | | | |
 | BLOG FINAL | Genau ein abschliessender Build laeuft nach allen Mutationen; Lychee prueft danach bevorzugt die gebaute HTML-Ausgabe des aktuellen Blogartefakts. Nur ein ausgefuehrter fehlerfreier Lauf gilt als PASS; Nichtverfuegbarkeit wird ohne automatischen FINAL-Blocker dokumentiert, festgestellte relevante interne Linkfehler sind Blocker. | | | | | |
-| BLOG FINAL | Nach dem abschliessenden Build erfolgt keine Mutation und kein zweiter vollstaendiger FINAL-Check | | | | | |
+| BLOG FINAL | Original bleibt waehrend der Pruefung unveraendert. Nach erfolgreichem Build und Ergebnispruefung wird die bytegleiche Endfassung uebernommen. | | | | | |
 | BLOG FINAL | Ein fehlendes Reveal ist weder Blocker noch Warnung; kein toter Praesentationslink wird erzeugt | | | | | |
 | BLOG FINAL | Wissensbasis-Hook wird geprueft, blockiert `REVEAL GO` aber nicht | | | | | |
 | REVEAL GO -> REVEAL FINAL | Reveal startet erst nach Uebergang/Freigabe | | | | | |
-| REVEAL GO -> REVEAL FINAL | Gleichwertige Statusmeldungen werden korrekt interpretiert | | | | | |
+| REVEAL GO -> REVEAL FINAL | Eindeutige natuerliche Auftraege werden korrekt erkannt. Reine Statusmeldungen starten kein Gate. | | | | | |
 | REVEAL GO -> REVEAL FINAL | Buildfreie Ableitungs- und Formalpruefung laeuft ohne vollstaendiges DQM vor dem Emoji-Postprocessing | | | | | |
 | REVEAL GO -> REVEAL FINAL | Content-Emoji-Postprocessing startet keinen Build | | | | | |
 | REVEAL GO -> REVEAL FINAL | Genau ein abschliessender Build laeuft nach allen Mutationen; Lychee prueft danach bevorzugt die gebaute HTML-Ausgabe des aktuellen Revealartefakts. Nur ein ausgefuehrter fehlerfreier Lauf gilt als PASS; Nichtverfuegbarkeit wird ohne automatischen FINAL-Blocker dokumentiert, festgestellte relevante interne Linkfehler sind Blocker. | | | | | |
-| REVEAL GO -> REVEAL FINAL | Nach dem abschliessenden Build erfolgt keine Mutation und kein zweiter vollstaendiger FINAL-Check | | | | | |
+| REVEAL GO -> REVEAL FINAL | Nach dem einzigen Build wird das Ziel-PDF temporaer erzeugt und danach der Link geprueft. Nach bestandener Pruefung wird die bytegleiche Endfassung uebernommen. | | | | | |
 | REVEAL GO -> REVEAL FINAL | Abgleich, optionale Materialuebersicht und Finalisierung stimmen | | | | | |
 
 ### Kurzfazit

@@ -188,8 +188,9 @@ Wenn die Lehrperson den sichtbaren ausgearbeiteten Planungsstand freigibt
 und ausdruecklich um dessen Speicherung oder um die Uebergabe an Codex bittet,
 speichere ihn als `planning_state.md` im benannten oder bereits bestaetigten
 Fallordner. Fehlt eine der Voraussetzungen, klaere nur die fehlende Angabe.
-Bei fehlendem Schreibzugriff gib auf den Uebergabeauftrag hin den Stand als
-kopierbares Markdown aus und kennzeichne, dass keine Datei gespeichert wurde.
+Bei fehlendem Schreibzugriff gib bei einem Speicher- oder Uebergabeauftrag
+den Stand als kopierbares Markdown aus und kennzeichne, dass keine Datei
+gespeichert wurde.
 Das Dokument kann auch bei deaktivierter Journalfuehrung erstellt werden.
 
 Uebernimm den freigegebenen Stand materialtreu. Halte, soweit im freigegebenen
@@ -255,8 +256,9 @@ Lege dafuer keine neuen Statusdateien oder Pflichtmetadaten an.
 
 Gate-Aktionen und lazy geladene Details:
 
-- Bei `BLOG GO` wird `publikation/templates/blog_template.md` geladen und auf
-  Grundlage des freigegebenen Planungsstands direkt `index.md` als bearbeitbare
+- Bei `BLOG GO` werden `publikation/templates/blog_template.md` und
+  `project_governance/content_emoji_policy.md` geladen. Auf Grundlage des
+  freigegebenen Planungsstands wird direkt `index.md` als bearbeitbare
   Blog-Arbeitsdatei erzeugt oder fortgefuehrt. Fehlt eine belastbare Grundlage,
   ist genau eine Klaerungsfrage zulaessig; andernfalls beginnt die Ausarbeitung
   ohne weitere Bestaetigungsschleife in publizierbarer Blogsprache.
@@ -267,9 +269,13 @@ Gate-Aktionen und lazy geladene Details:
   didaktische Finalpruefung das vollstaendige
   `references/didaktisches_qualitaetsmodell.md` geladen. Reveal-Template,
   Reveal-Emoji-Prompt und sonstige Reveal-Produktionsregeln werden nicht geladen.
-- Bei `REVEAL GO` wird `publikation/templates/reveal_template.md` geladen und
-  ausschliesslich aus dem finalen Blog genau `_index.md` als bearbeitbare
-  Reveal-Arbeitsdatei erzeugt oder fortgefuehrt.
+- Bei `BLOG GO` und `BLOG FINAL` wird `core/kdm_core.md` zusaetzlich geladen,
+  falls eine mehrdeutige Beitragsart eine Rueckfrage erfordert und KDM noch
+  nicht im Kontext ist.
+- Bei `REVEAL GO` werden `publikation/templates/reveal_template.md` und
+  `project_governance/content_emoji_policy.md` geladen. Ausschliesslich aus
+  dem finalen Blog wird genau `_index.md` als bearbeitbare Reveal-Arbeitsdatei
+  erzeugt oder fortgefuehrt.
 - Bei `REVEAL FINAL` werden fuer den Reveal-Pfad ausschliesslich
   `publikation/check.md`, `publikation/templates/reveal_template.md`,
   `publikation/content_emojis_reveal.md`,
@@ -288,8 +294,7 @@ Definition-of-Done-Bestandteil und blockiert `REVEAL GO` nicht.
 
 Semantisch eindeutige natuerliche Auftraege koennen einen Gate-Befehl ersetzen.
 Eine reine Statusmeldung startet kein Gate. Bei mehrdeutigen Formulierungen
-stellt der Agent genau eine
-Klaerungsfrage. Aktiver Editorpfad, geoeffnete Dateien oder markierte
+stellt der Agent genau eine Klaerungsfrage. Aktiver Editorpfad, geoeffnete Dateien oder markierte
 Textstellen steuern den Arbeitsmodus nicht; Nutzeranliegen und eindeutige
 Arbeitsbefehle haben Vorrang.
 
@@ -355,6 +360,12 @@ ihrer Bedeutung belastbar abgesichert; verbleibende relevante Unsicherheit
 wird kenntlich gemacht. Die Recherche endet, sobald die fuer die aktuelle
 Planungsentscheidung relevante Unsicherheit hinreichend geklaert ist. Mehr
 Literatur oder weitere Recherche ist kein eigenstaendiges Ziel.
+
+Lade `references/blog_literaturbasis.md` gezielt, wenn der Auftrag eine
+kuratierte didaktische Quellenwahl verlangt oder eine konkrete theoretische
+Planungsfrage davon abhaengt. Ein routinemaessiger PLAN- oder FINAL-Lauf
+laedt sie nicht. Der formale Literaturlauf bleibt auf vorhandene Belege
+beschraenkt.
 
 ## DQM-Konfliktlogik
 

@@ -43,8 +43,10 @@ Nicht erlaubt sind:
 
 ## Nutzung
 
-Arbeite auf dem aktuell aktiven Blogbeitrag oder auf dem vom Nutzer genannten Beitragspfad.
-Wenn der Zielbeitrag nicht eindeutig ist, stelle genau eine kurze Rueckfrage.
+Innerhalb von `BLOG FINAL` bearbeite ausschliesslich die temporaere Fassung
+des in der Vorpruefung geprueften Blogbeitrags. Bei separatem Aufruf arbeite
+auf dem vom Nutzer genannten oder aus dem Auftrag eindeutig bestimmten
+Beitrag. Ist das Ziel unklar, stelle genau eine kurze Rueckfrage.
 
 ### Modus 1: `LITERATUR GO`
 

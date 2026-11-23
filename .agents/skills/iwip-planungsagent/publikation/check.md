@@ -40,7 +40,8 @@ genannten Dateien.
    bis zur bestandenen FINAL-Pruefung im Repository auf `draft: true`.
 2. Nach bestandener Vorpruefung arbeite in einer temporaeren Kopie des
    aktuellen iWIP-Quellbaums mit identischen relativen Pfaden und Materialien.
-   Beim Blog folgt dort `LITERATUR GO`, anschliessend das Blog-Emoji-Postprocessing.
+   Beim Blog folgt dort `LITERATUR GO` fuer das gepruefte Zielartefakt,
+   anschliessend das Blog-Emoji-Postprocessing.
    Bei Reveal folgt dort das Reveal-Emoji-Postprocessing. Literatur- und
    Emoji-Schritte starten keinen Build. Setze erst dort im Zielartefakt
    `draft: false`; die Originaldatei bleibt waehrend der Pruefung bytegleich.
@@ -94,8 +95,12 @@ Reveal-HTML gegen denselben Staging-Root. Beende den lokalen Server nach dem
 Check. Fehlender oder fehlgeschlagener PDF-Export blockiert die Reveal-Freigabe.
 Das produktive Ausgabeziel bleibt unberuehrt. Es folgt kein weiterer Hugo-Build.
 
-Nur ein tatsaechlich ausgefuehrter
-fehlerfreier Lychee-Lauf darf als bestandener Linkcheck gelten. Ist Lychee nicht
+Pruefe fuer beide FINAL-Gates auch JavaScript-Navigationsbuttons im gebauten
+HTML mit `scripts/check_navigation.py`. Uebergib das gebaute HTML, das
+temporaere Buildziel und die konfigurierte Site-URL in dieser Reihenfolge.
+Die Pruefung dieser lokalen Ziele ist verbindlich, auch ohne Lychee.
+
+Nur ein tatsaechlich ausgefuehrter fehlerfreier Lychee-Lauf darf als bestandener Linkcheck gelten. Ist Lychee nicht
 verfuegbar, wird die Linkpruefung als nicht ausgefuehrt festgehalten; dies allein
 ist kein `BLOCKER`. Der Hugo-Build allein weist nicht nach, dass alle
 `href`-Ziele existieren. Andere nicht vorhandene Linkpruefungen werden nicht
@@ -207,13 +212,15 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen PLAN-Core, geladene Gate-Reg
   noch `WARNUNG`.
 - Jede Blog-Visualisierung hat direkt darueber genau einen `p class="grafic-title">...</p>`, direkt darunter genau eine Quellenzeile gemaess Blog-Template (`p class="bildquelle">Bildquelle: ... · Lizenz: ...</p>`; freie Lizenzen als HTML-Link); ein kurzer Kontextsatz davor ist optional und nur bei erklaerungsbeduerftigen Darstellungen sinnvoll. Einzige Ausnahme sind eindeutig als Ablaufplan erkennbare Tabellen innerhalb eines Abschnitts: direkt unter einer Abschnittsueberschrift eingebettete Tabellen zur zeitlichen oder didaktischen Phasenstruktur mit organisatorischem Zweck duerfen nur dann ohne Titel und Quellenzeile stehen; stattdessen muss direkt ueber der Tabelle die Zeile `**Gesamtdauer:** ca. XX Minuten ⏱️` stehen.
 - Wenn ein Ablaufplan erkannt wird und diese Gesamtdauer-Zeile fehlt oder deutlich vom Format abweicht, gib eine `WARNUNG` aus, aber keinen `BLOCKER`.
-- Die Notwendigkeit eines Literaturabschnitts folgt dem Blog-Template.
-  Ist er vorhanden oder erforderlich, gelten Literaturformat und genau ein
-  kanonischer `<span id="literatur"></span>` unmittelbar vor der Ueberschrift.
-  Ist er zulaessigerweise nicht vorhanden, genuegen nachvollziehbare
-  Quellenverweise im Fliesstext; es gibt weder Literaturanker noch lokale
-  Verweise auf einen fehlenden Literaturbereich. Dummy-Anker und unsichtbare
-  Ersatzabschnitte sind unzulaessig.
+- Die Vorpruefung prueft die Abschnittspflicht nach Blog-Template und die
+  eindeutige Zuordnung der Literaturverweise. Ein vorhandener eindeutiger
+  Abschnitt mit fehlendem oder sicher normalisierbarem Altanker darf
+  `LITERATUR GO` durchlaufen. Vor dem Emoji-Postprocessing muss genau ein
+  kanonischer `<span id="literatur"></span>` unmittelbar vor der Ueberschrift
+  stehen. Fehlt ein Pflichtabschnitt oder bleibt der Zielbereich unklar,
+  blockiert die Pruefung. Bei zulaessigem Entfall bleiben nachvollziehbare
+  Quellenverweise im Fliesstext erhalten. Verwaiste Verweise, Dummy-Anker und
+  unsichtbare Ersatzabschnitte sind unzulaessig.
 - Begriffspruefung: zentrale Begriffe und Benennungen werden im sichtbaren Blogtext konsistent verwendet.
 - Typografiepruefung: sichtbare deutsche Blogtexte folgen den geladenen Typografie- und Umlautregeln.
 - In der technischen Ergebnispruefung von `BLOG FINAL` ist der abschliessende
@@ -311,7 +318,7 @@ Bewertungsregel:
 - `oer.learning_resource_type` und `oer.educational_level` muessen Arrays aus Objekten mit `id` und `name` sein; freie String-Werte sind `BLOCKER`.
 - `oer.in_language` muss ein Array sein; ein Einzelstring ist `BLOCKER`.
 - `oer.image` muss absolut gesetzt sein.
-- `oer.creators[].affiliation.name` muss `Universitaet Rostock` sein.
+- `oer.creators[].affiliation.name` muss `Universität Rostock` sein.
 - `oer.publisher.name` muss `SciBlog iWIP` sein.
 - Fuer `description` gilt unveraendert die Template-Regel: `description` umfasst 2 bis 3 Saetze, beginnt nicht mit `Dieses Material`, benennt Zielgruppe, Thema und Nutzen bzw. Transfer, vermeidet Methodenaufzaehlungen wie `Input, Diskussion ...` und bleibt fachlich praezise, aber gut lesbar; leere, generische, rein verlaufsbeschreibende oder aufzaehlende Fassungen sind `BLOCKER`.
 - Fuer `summary` gilt unveraendert die Template-Regel: `summary` ist genau 1 Satz lang, beschreibt den Inhalt praegnant, wiederholt die `description` nicht und bleibt im Zielkorridor von 140 bis 160 Zeichen, spaetestens jedoch 160 Zeichen; fehlende, mehrsaetzige, redundante oder zu lange Fassungen sind `BLOCKER`.
@@ -332,6 +339,9 @@ Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen PLAN-Core, geladen
 - Es wurden keine neuen unbelegten Kernbehauptungen ergaenzt.
 - Zulaessige Transformationen bleiben auf Verdichtung, Gruppierung, Visualisierung und aus dem Blog ableitbare Interaktionsimpulse begrenzt.
 - Die Praesentation ist verdichtet und interaktionsorientiert.
+- Lernziel- und Literaturfolien folgen der tatsaechlichen Bloggrundlage.
+  Der Literatur-Shortcode darf nur auf einen vorhandenen Literaturabschnitt
+  verweisen.
 
 ### Folienqualitaet und Dramaturgie
 
