@@ -3,13 +3,17 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import fnmatch
+import os
 import re
 import subprocess
 import sys
 import time
 from dataclasses import dataclass
+from html.parser import HTMLParser
 from http.client import HTTPException
+from io import StringIO
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from urllib.error import HTTPError, URLError
@@ -41,6 +45,23 @@ class ExportSpec:
     @property
     def published_pdf_rel_path(self) -> Path:
         return self.published_rel_dir / self.pdf_output.name
+
+
+class MediaReferences(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.urls: set[str] = set()
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        for name, value in attrs:
+            if not value:
+                continue
+            if name in {"src", "data-src", "poster"}:
+                self.urls.add(value)
+            elif name in {"srcset", "data-srcset", "data-background",
+                          "data-background-image", "data-background-video"}:
+                self.urls.update(candidate.split()[0] for candidate in value.split(",")
+                                 if candidate.strip())
 
 
 def parse_args() -> argparse.Namespace:
@@ -99,7 +120,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--changed-paths-file",
         type=Path,
-        help="Optional file containing repo-relative changed paths, one per line.",
+        help="Optional file containing repo-relative changed paths, NUL- or newline-separated.",
     )
     parser.add_argument(
         "--published-base-url",
@@ -202,11 +223,10 @@ def load_changed_paths(changed_paths_file: Path | None) -> tuple[list[str], bool
     if not changed_paths_file.exists():
         raise FileNotFoundError(f"Changed paths file not found: {changed_paths_file}")
 
-    changed_paths = [
-        line.strip().replace("\\", "/")
-        for line in changed_paths_file.read_text(encoding="utf-8").splitlines()
-        if line.strip()
-    ]
+    contents = changed_paths_file.read_text(encoding="utf-8")
+    if "\0" in contents:
+        return [path for path in contents.split("\0") if path], True
+    changed_paths = [line.strip().replace("\\", "/") for line in contents.splitlines() if line.strip()]
     return changed_paths, True
 
 
@@ -225,12 +245,61 @@ def spec_is_affected(spec: ExportSpec, repo_root: Path, changed_paths: list[str]
     return any(path == source_path or path.startswith(source_dir_prefix) for path in changed_paths)
 
 
+def changed_media_targets(
+    changed_paths: list[str], repo_root: Path, public_root: Path, site: str
+) -> set[Path]:
+    static_media = [path.removeprefix("static/") for path in changed_paths
+                    if path.startswith("static/")]
+    content_media = [Path(path) for path in changed_paths
+                     if path.startswith("content/") and Path(path).suffix.lower() != ".md"]
+    targets = {(public_root / path).resolve() for path in static_media}
+    if not content_media:
+        return targets
+
+    # Resolve bundle resources using Hugo's own routes, including custom slugs.
+    pages = subprocess.check_output(
+        ["hugo", "list", "all"], cwd=repo_root, text=True,
+        env={**os.environ, "HUGO_BASEURL": site, "HUGO_ENVIRONMENT": "production"},
+    )
+    bundles = {
+        Path(page["path"]).parent: page["permalink"]
+        for page in csv.DictReader(StringIO(pages)) if Path(page["path"]).name == "index.md"
+    }
+    site_url = urlsplit(site)
+    for path in content_media:
+        # Keep the default route as well, including when the bundle was removed.
+        targets.add((public_root / path.relative_to("content")).resolve())
+        for parent in path.parents:
+            if parent in bundles:
+                resource = quote(path.relative_to(parent).as_posix())
+                target = built_target(public_root, site_url, bundles[parent], resource)
+                if target is not None:
+                    targets.add(target)
+                break
+    return targets
+
+
+def uses_changed_media(spec: ExportSpec, public_root: Path, site: str, targets: set[Path]) -> bool:
+    html = spec.pdf_output.parent / "index.html"
+    references = MediaReferences()
+    references.feed(html.read_text(encoding="utf-8"))
+    references.close()
+    document_url = urljoin(site, quote(html.relative_to(public_root).as_posix()))
+    site_url = urlsplit(site)
+    return any(
+        built_target(public_root, site_url, document_url, urljoin(document_url, reference)) in targets
+        for reference in references.urls
+    )
+
+
 def select_exports_to_build(
     exports: list[ExportSpec],
     repo_root: Path,
     changed_paths: list[str],
     changed_paths_known: bool,
     force_full_rebuild: bool,
+    public_root: Path,
+    site_url: str,
 ) -> tuple[list[ExportSpec], bool, str]:
     if force_full_rebuild:
         return exports, True, "forced full rebuild"
@@ -242,7 +311,13 @@ def select_exports_to_build(
         if is_global_render_change(path):
             return exports, True, f"global render change: {path}"
 
-    selected = [spec for spec in exports if spec_is_affected(spec, repo_root, changed_paths)]
+    site = site_url.rstrip("/") + "/"
+    targets = changed_media_targets(changed_paths, repo_root, public_root, site)
+    selected = [
+        spec for spec in exports
+        if spec_is_affected(spec, repo_root, changed_paths)
+        or (targets and uses_changed_media(spec, public_root, site, targets))
+    ]
     return selected, False, "selective rebuild"
 
 
@@ -369,12 +444,15 @@ def main() -> int:
         print("No Reveal presentations with pdf_export: true found.")
         return 0
 
+    site_url = args.published_base_url or args.served_base_url
     exports_to_build, full_rebuild, selection_reason = select_exports_to_build(
         exports,
         repo_root,
         changed_paths,
         changed_paths_known,
         args.force_full_rebuild,
+        public_root,
+        site_url,
     )
 
     print(f"PDF export scope: {selection_reason}")
@@ -396,7 +474,6 @@ def main() -> int:
         export_pdf(spec, args.pause_ms, args.readiness_retries, args.readiness_delay)
 
     if not args.dry_run:
-        site_url = args.published_base_url or args.served_base_url
         for spec in exports:
             if not is_complete_pdf(spec.pdf_output):
                 raise RuntimeError(f"Missing or incomplete PDF in deployment: {spec.published_pdf_rel_path}")

@@ -40,7 +40,8 @@ genannten Dateien.
    mitsamt Pruefsumme der Zieldatei. Halte die Inhaltspruefsummen der
    Zieldatei und der geprueften Arbeitsfassung fest. Fuehre die buildfreie
    Vorpruefung am Bearbeitungsstand durch, einschliesslich gueltigem
-   Frontmatter mit booleschem `draft`.
+   Frontmatter mit booleschem `draft`. Beim Blog gehoert der Abgleich mit
+   der freigegebenen Planungsgrundlage gemaess PLAN-Core zur Vorpruefung.
 2. Nach bestandener Vorpruefung arbeite in einer temporaeren Kopie des
    aktuellen iWIP-Quellbaums mit identischen relativen Pfaden und Materialien.
    Kopiere nur Build-Quellen, Konfiguration und benoetigte Hilfsdateien.

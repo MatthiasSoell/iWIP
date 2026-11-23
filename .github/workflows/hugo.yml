@@ -64,7 +64,7 @@ jobs:
           : > "$changed_paths_file"
 
           if [[ "${{ github.event_name }}" == "push" && "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]]; then
-            git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" > "$changed_paths_file"
+            git diff --no-renames --name-only -z "${{ github.event.before }}" "${{ github.sha }}" > "$changed_paths_file"
             echo "force_full_rebuild=false" >> "$GITHUB_OUTPUT"
           else
             echo "force_full_rebuild=true" >> "$GITHUB_OUTPUT"

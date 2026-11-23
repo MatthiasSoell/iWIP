@@ -4,7 +4,8 @@ This file only connects Codex to the existing agent specification. It does not a
 new pedagogical rules.
 
 Für didaktische Planung (auch `/PLAN`), die Fortführung eines benannten
-Planungsfalls sowie `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL`
+Planungsfalls sowie `BLOG GO`, `BLOG FINAL`, `REVEAL GO`, `REVEAL FINAL`,
+`LITERATUR GO` und `LITERATUR RECHERCHE GO`
 lies und verwende [.agents/skills/iwip-planungsagent/SKILL.md](.agents/skills/iwip-planungsagent/SKILL.md).
 
 Benchmark expectations, fixtures and evaluation prompts are for evaluation only, regardless of their location under `iwip_planungsagent/benchmarks/`. Never read or use

@@ -207,19 +207,27 @@ Uebergabeauftrag. Liegt eine spaetere umsetzungsrelevante Revision vor, weise
 auf den veralteten Uebergabestand hin. Die aktuellen Vorgaben der Lehrperson
 haben Vorrang.
 
-Speicherung und Uebergabe loesen kein Produktionsgate aus. In einer neuen
-Sitzung darf die Lehrperson die Datei ausdruecklich als Grundlage fuer
-`BLOG GO` benennen. Lade sie gezielt vom angegebenen Pfad und gleiche sie mit
-den fuer den Auftrag freigegebenen neueren Vorgaben ab. Fuer den Abgleich mit
-dem `Current State` des Journals desselben Falls gelten die Journalregeln
-oben. Bei deaktivierter oder unbekannter Journalfuehrung darfst du das Journal
-nur lesen und zum Abgleich verwenden, wenn die Lehrperson dies fuer den
-Auftrag ausdruecklich freigibt. Ein benannter Fallordner, technischer Zugriff
-oder die Benennung von `planning_state.md` genuegen dafuer nicht. Diese
-einmalige Lesefreigabe aktiviert die Journalfuehrung nicht. Weise auf
-erkennbare umsetzungsrelevante Revisionen hin und klaere relevante
-Widersprueche vor der Ausarbeitung. Ein Journal ist keine Voraussetzung fuer
-`BLOG GO`.
+Speicherung und Uebergabe loesen kein Produktionsgate aus. Die Lehrperson
+kann die Datei ausdruecklich als Grundlage fuer `/PLAN` oder `BLOG GO`
+benennen. Lade sie gezielt vom angegebenen Pfad.
+
+- Bei `/PLAN` uebernimm daraus die relevanten freigegebenen Setzungen in
+  den laufenden Planning State, soweit sie gemaess State-Semantik noch
+  gelten. Gleiche sie mit aktuellen Vorgaben der Lehrperson nach der
+  Revisionssemantik ab. Der Import selbst schreibt keine Datei und aendert
+  die Journal-Einstellung nicht. Journalaktionen folgen ihren eigenen Regeln.
+- Bei `BLOG GO` gleiche die Datei mit den fuer den Auftrag freigegebenen
+  neueren Vorgaben ab. Weise auf erkennbare umsetzungsrelevante Revisionen
+  hin und klaere relevante Widersprueche vor der Ausarbeitung.
+
+Fuer den Abgleich mit dem `Current State` des Journals desselben Falls
+gelten die Journalregeln oben. Bei deaktivierter oder unbekannter
+Journalfuehrung darfst du das Journal nur lesen und zum Abgleich verwenden,
+wenn die Lehrperson dies fuer den Auftrag ausdruecklich freigibt. Ein
+benannter Fallordner, technischer Zugriff oder die Benennung von
+`planning_state.md` genuegen dafuer nicht. Diese einmalige Lesefreigabe
+aktiviert die Journalfuehrung nicht. Ein Journal ist keine Voraussetzung
+fuer `/PLAN`, `BLOG GO` oder `BLOG FINAL`.
 
 ## Arbeitsmodus, Phasen und Gates
 
@@ -253,6 +261,19 @@ Zielartefakt und Grundlage anhand des Auftrags und des nachweisbaren Kontexts.
 Frage nur, wenn Ziel oder Freigabestand tatsaechlich unklar sind, und dann
 einmal gezielt.
 
+Pruefe bei jedem `BLOG FINAL`, auch bei einem direkten Einstieg in einer
+neuen Sitzung, ob der Entwurf die weiterhin freigegebene Grundlage aus
+`BLOG GO` und alle bekannten, fuer die Umsetzung freigegebenen Revisionen
+abbildet. Ermittle die Grundlage aus dem Auftrag und dem nachweisbaren
+Kontext einschliesslich ausdruecklich benannter freigegebener Arbeitsstaende.
+Der Entwurf allein belegt die Freigabe nicht. Fuer einen Abgleich
+mit dem Journal gelten die Leseregeln oben. Ein Journaleintrag allein
+erteilt keine Freigabe zur Blogausarbeitung oder zur Umsetzung einer
+Revision im Blog. Ist die Grundlage unklar oder fehlt bei einer
+umsetzungsrelevanten Revision die Freigabe fuer den Blog, klaere gezielt
+die offene Entscheidung. Weicht der Entwurf von der feststehenden
+freigegebenen Grundlage ab, blockiert FINAL bis zur Korrektur des Entwurfs.
+
 Pruefe vor jedem `REVEAL GO` und `REVEAL FINAL`, auch in derselben Sitzung,
 ob der Inhalt der Blog-Zieldatei bytegleich mit der konkret freigegebenen
 Fassung ist. Der Nachweis kann aus dem bestandenen `BLOG FINAL` im laufenden
@@ -266,8 +287,9 @@ abschliessenden Uebernahme bei `REVEAL FINAL`.
 
 ### Arbeitsfassung bei bereits veroeffentlichten Zielen
 
-Bei beiden GO-Gates und den anschliessenden Korrekturen bearbeite ein
-bereits veroeffentlichtes Ziel (insbesondere eine bestehende Datei mit
+Bei beiden GO-Gates, den anschliessenden Korrekturen und separat
+beauftragten Literaturarbeiten bearbeite ein bereits veroeffentlichtes
+Ziel (insbesondere eine bestehende Datei mit
 `draft: false`) nur in einer Arbeitsfassung. Spiegele den
 repo-relativen Zielpfad unter `iwip_planungsagent/publikation/` ausserhalb
 der Hugo-Quellen und setze dort `draft: true`. Halte beim Anlegen daneben
@@ -311,6 +333,9 @@ Gate-Aktionen und lazy geladene Details:
   Für beide FINAL-Gates gelten die buildfreie Vorprüfung, die geordnete
   Nachbearbeitung und die technische Ergebnisprüfung aus `publikation/check.md`.
   Freigabe erfolgt erst bei bestandenem Endstand.
+- Bei separat beauftragtem `LITERATUR GO` oder `LITERATUR RECHERCHE GO`
+  lade `publikation/literatur.md` und folge dessen Laderegeln zur separaten
+  Nutzung. Die Arbeitsfassungsregel gilt, es startet kein FINAL-Gate.
 
 Nach erfolgreichem `BLOG FINAL` prueft der Agent verpflichtend den optionalen
 Anschluss an `publikation/blog_wissensbasis.md` und bietet bei relevantem Anschluss

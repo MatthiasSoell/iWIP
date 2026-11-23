@@ -46,8 +46,9 @@ pdf_export: true
 Der Dateiname wird standardmäßig aus dem Ordnernamen abgeleitet. Optional kann er manuell überschrieben werden.
 
 GitHub Actions erzeugt fehlende und geänderte PDFs und übernimmt vorhandene
-PDFs unveränderter Präsentationen. Der Workflow prüft die erwarteten Downloads
-im Build-Artefakt vor dem Upload. Die PDFs stehen nach dem Deployment direkt
+PDFs unveränderter Präsentationen. Änderungen an eingebundenen lokalen
+Medien lösen einen Export der betroffenen Präsentationen aus. Der Workflow
+prüft die erwarteten Downloads im Build-Artefakt vor dem Upload. Die PDFs stehen nach dem Deployment direkt
 im Präsentationspfad zum Download bereit.
 
 ### Didaktischer Planungsagent

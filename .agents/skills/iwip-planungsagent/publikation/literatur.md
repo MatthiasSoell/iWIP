@@ -4,7 +4,7 @@ Scope: optionale, teilweise automatisierte Literatur-Nachbearbeitung fuer besteh
 
 Du arbeitest strikt nach den Regeln aus:
 
-core/plan_core.md
+`core/plan_core.md`
 
 Der PLAN-Core ist die einzige Prozess- und Gate-Steuerlogik.
 
@@ -44,9 +44,13 @@ Nicht erlaubt sind:
 ## Nutzung
 
 Innerhalb von `BLOG FINAL` bearbeite ausschliesslich die temporaere Fassung
-des in der Vorpruefung geprueften Blogbeitrags. Bei separatem Aufruf arbeite
-auf dem vom Nutzer genannten oder aus dem Auftrag eindeutig bestimmten
-Beitrag. Ist das Ziel unklar, stelle genau eine kurze Rueckfrage.
+des in der Vorpruefung geprueften Blogbeitrags. Bei separatem Aufruf beider
+Literaturmodi lade den PLAN-Core und `publikation/templates/blog_template.md`.
+Bestimme den Beitrag aus dem Auftrag und verwende die Arbeitsfassungsregel
+des PLAN-Core einschliesslich der Basispruefsumme. Ist die Beitragsart
+mehrdeutig und fuer die Literaturpflicht relevant, lade fuer die
+Klaerungsfrage auch `core/kdm_core.md`. Ist das Ziel unklar, stelle genau
+eine kurze Rueckfrage. Der separate Aufruf erteilt keine FINAL-Freigabe.
 
 ### Modus 1: `LITERATUR GO`
 

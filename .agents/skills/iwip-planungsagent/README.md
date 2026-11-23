@@ -91,6 +91,7 @@ beliebigen Arbeitsverzeichnis führen.
 - **ChatGPT Work (Desktop):** Öffne den entpackten Agentenordner oder das iWIP-Repository. Im Paket starte mit „Nutze SKILL.md für folgende didaktische Planung …“, im Repository mit „Nutze .agents/skills/iwip-planungsagent/SKILL.md für folgende didaktische Planung …“.
 - **Codex in VS Code:** Öffne das iWIP-Repository und wähle `$iwip-planungsagent`. Der Texteinstieg `/PLAN` wird auch über die Repository-Anweisungen unterstützt. Ein heruntergeladenes Paket kannst Du in einem eigenen Projekt als `.agents/skills/iwip-planungsagent/` ablegen.
 - **Planung fortführen:** `/PLAN` führt bei konkreten Fällen die wichtigen Entscheidungen und Revisionen standardmäßig im `planning_journal.md`. Benenne dafür einen beschreibbaren Fallordner. „Ohne Journal“ gilt, bis Du ausdrücklich wieder um Journalführung bittest. Wenn die bisherige Einstellung beim Wiedereinstieg in einer neuen Sitzung unbekannt ist, bitte ausdrücklich um Journalführung, falls Du sie möchtest.
+- **Mit Übergabestand weiterplanen:** Benenne die konkrete `planning_state.md` als Grundlage für `/PLAN`. Aktuelle Vorgaben gehen dem gespeicherten Stand vor. Die Journal-Einstellung bleibt beim Import unverändert.
 - **Als OER weitergeben:** Den gesamten Ordner `iwip-planungsagent/` einschließlich Lizenz und Quellen aus einem bezeichneten Commit verpacken. Im Repository erzeugt der folgende Befehl aus dem aktuellen Commit ein ZIP mit sichtbarem Paketordner:
 
   ```sh
@@ -103,10 +104,13 @@ beliebigen Arbeitsverzeichnis führen.
 Für den Publikationsworkflow öffnest Du das vollständige iWIP-Repository
 mit seinen Content-Verzeichnissen, Projektregeln und der Hugo-Konfiguration.
 `BLOG GO` mit freigegebener Grundlage eröffnet die Blogausarbeitung.
-`BLOG FINAL` startet deren Finalprüfung. Der finale Blog dient als einzige
+`BLOG FINAL` prüft auch den Abgleich mit der freigegebenen Grundlage und
+freigegebenen Revisionen. Der finale Blog dient als einzige
 Grundlage für `REVEAL GO` und die anschließende Prüfung mit `REVEAL FINAL`.
 Für Änderungen an veröffentlichten Blog- und Reveal-Dateien führt GO eine
-lokale Arbeitsfassung. Das bestandene FINAL übernimmt sie an den Content-Pfad.
+lokale Arbeitsfassung. Beide separat aufgerufenen Literaturmodi verwenden
+für veröffentlichte Beiträge dieselbe Arbeitsfassungsregel. Das bestandene
+FINAL übernimmt die geprüfte Fassung an den Content-Pfad.
 `REVEAL FINAL` prüft das HTML und den PDF-Downloadpfad. Die PDF-Datei wird im
 GitHub-Deployment erzeugt oder aus der bisherigen Veröffentlichung übernommen.
 

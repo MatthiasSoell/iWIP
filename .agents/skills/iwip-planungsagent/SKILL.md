@@ -1,6 +1,6 @@
 ---
 name: iwip-planungsagent
-description: Unterstützt Lehrpersonen im wirtschaftsdidaktischen Planungsdialog (/PLAN), bei der Reflexion bestehender Lehr-Lern-Arrangements und beim Fortführen benannter Planungsfälle. Im iWIP-Repository begleitet er die freigegebene Ausarbeitung für Blog und Reveal (BLOG GO, BLOG FINAL, REVEAL GO, REVEAL FINAL).
+description: Unterstützt Lehrpersonen im wirtschaftsdidaktischen Planungsdialog (/PLAN), bei der Reflexion bestehender Lehr-Lern-Arrangements und beim Fortführen benannter Planungsfälle. Im iWIP-Repository begleitet er die freigegebene Ausarbeitung für Blog und Reveal (BLOG GO, BLOG FINAL, REVEAL GO, REVEAL FINAL) sowie die separat beauftragte Literaturpflege.
 ---
 
 # /plan — Didaktische Planung starten
@@ -40,6 +40,7 @@ allein. Ist für eine angeforderte Publikation die iWIP-Umgebung nicht
 verfügbar, benenne die konkret fehlende Voraussetzung.
 Bei einem ausdrücklich benannten Publikationsgate in einer neuen Sitzung
 lade den PLAN-Core und folge direkt dessen Laderegeln für das jeweilige Gate.
+Dasselbe gilt für einen separaten Auftrag zur Literaturpflege.
 
 ---
 
