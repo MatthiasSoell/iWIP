@@ -8,7 +8,7 @@ Sie ist keine normative Steuerdatei und ersetzt weder das DQM noch den PLAN-Core
 Rollen im System:
 
 - Das DQM bleibt der normative didaktische Referenzrahmen.
-- `blog_wissensbasis.md` bleibt der kuratierte Index veroeffentlichter Blogartikel.
+- `publikation/blog_wissensbasis.md` bleibt der kuratierte Index veroeffentlichter Blogartikel.
 - Diese Literaturbasis dient der gezielten Quellenwahl, der argumentativen Stabilisierung und der projektinternen Anschlussfaehigkeit.
 
 Kuratierungsprinzipien:

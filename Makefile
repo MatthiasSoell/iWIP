@@ -8,7 +8,7 @@ qa-agent: qa-prompts qa-markdown qa-hugo
 	@echo "QA completed successfully."
 
 qa-prompts:
-	@test -f $(SKILL_DIR)/SKILL.md
+	@python3 iwip-planungsagent-benchmarks/check_paket.py
 	@test -f $(SKILL_DIR)/publikation/check.md
 	@test -f $(SKILL_DIR)/publikation/literatur.md
 	@echo "Prompt files OK."
