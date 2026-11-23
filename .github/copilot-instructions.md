@@ -3,18 +3,9 @@
 Diese Datei ist ein duenn gehaltener GitHub-Copilot-Adapter. Sie enthaelt keine
 eigene didaktische oder prozessuale Steuerlogik.
 
-Fuer didaktische Planung wird derselbe kanonische Kern wie auf anderen
-Plattformen geladen:
-
-1. `.agents/skills/iwip-planungsagent/core/plan_core.md`
-2. `.agents/skills/iwip-planungsagent/core/kdm_core.md`
-3. `.agents/skills/iwip-planungsagent/core/master_agent.md`
-4. `.agents/skills/iwip-planungsagent/core/didaktisches_qualitaetsmodell_core.md`
-5. `.agents/skills/iwip-planungsagent/SKILL.md`
-
-Lazy Loading fuer Produktion, FINAL, vollstaendiges DQM, Planning Journal und
-`external-handoff` folgt ausschliesslich dem PLAN-Core. Es gibt keinen Research
-Adapter.
+Für didaktische Planung (auch `/PLAN`), die Fortführung eines benannten
+Planungsfalls sowie `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL`
+lies und verwende [.agents/skills/iwip-planungsagent/SKILL.md](../.agents/skills/iwip-planungsagent/SKILL.md).
 
 `agent_entwicklung/` ist ein lokaler Entwicklungsarbeitsraum. Im normalen
 Agentenbetrieb darf er weder gelesen noch durchsucht noch als Kontext verwendet

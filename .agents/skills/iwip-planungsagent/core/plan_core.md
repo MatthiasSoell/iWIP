@@ -181,13 +181,6 @@ Gate-Aktionen und lazy geladene Details:
   didaktische Finalpruefung das vollstaendige
   `references/didaktisches_qualitaetsmodell.md` geladen. Reveal-Template,
   Reveal-Emoji-Prompt und sonstige Reveal-Produktionsregeln werden nicht geladen.
-  Der verbindliche Ablauf ist: (1) inhaltliche und formale buildfreie
-  Vorpruefung; bei OER-Blogs umfasst sie auch die proportionale praktische
-  Nachnutzbarkeit gemaess Blog-Template und CHECK, (2) `LITERATUR GO`, (3)
-  Blog-Emoji-Postprocessing, (4) genau ein
-  abschliessendes `hugo --minify`, (5) technische Ergebnispruefung des gebauten
-  Endstands und (6) Freigabe nur bei bestandenem Endstand. Literatur- und
-  Emoji-Schritt starten keinen Build; nach dem Build folgt keine Mutation mehr.
 - Bei `REVEAL GO` wird `publikation/templates/reveal_template.md` geladen und
   ausschliesslich aus dem finalen Blog genau `_index.md` als bearbeitbare
   Reveal-Arbeitsdatei erzeugt oder fortgefuehrt.
@@ -197,33 +190,9 @@ Gate-Aktionen und lazy geladene Details:
   `project_governance/content_emoji_policy.md` und
   `publikation/low_noise_response_patterns.md` geladen. Das vollstaendige
   DQM, Blog-Template, Literatur-Prompt und Blog-Emoji-Prompt werden nicht geladen.
-  Der verbindliche Ablauf ist: (1) inhaltliche, ableitungsbezogene und formale
-  buildfreie Vorpruefung, (2) Reveal-Emoji-Postprocessing, (3) genau ein
-  abschliessendes `hugo --minify`, (4) technische Ergebnispruefung des gebauten
-  Endstands und (5) Freigabe nur bei bestandenem Endstand. Der Emoji-Schritt
-  startet keinen Build; nach dem Build folgt keine Mutation mehr. Die
-  Vorpruefung bewertet insbesondere vollstaendige und bedeutungstreue Ableitung
-  aus dem finalen Blog, Praesentationsstruktur und Dramaturgie sowie
-  Darstellungsqualitaet; ein zweiter vollstaendiger DQM-Lauf findet nicht statt.
-
-Die buildfreie Vorpruefung muss vor den dateiveraendernden Nachbearbeitungen
-bestanden sein; dazu gehoeren insbesondere valides Frontmatter und bei
-`BLOG FINAL` `draft: false`. Erst die technische Ergebnispruefung nach dem
-abschliessenden Build bewertet dessen Erfolg und den gebauten Endstand.
-Der technische FINAL-Linkcheck wird, sofern Lychee in der Laufzeitumgebung
-verfuegbar ist, mit der vorhandenen `lychee.toml` gegen die gebaute HTML-Ausgabe
-des aktuellen Artefakts unter `public/` ausgefuehrt. Fuer site-relative Ziele
-unter der aus der Projektkonfiguration abgeleiteten Site-Basis wird der gebaute
-Stand unter einem passenden lokalen Staging-Root geprueft; offene Linkfehler
-sind Blocker. Ein Offline-Lauf prueft
-nur lokale Ziele und darf nicht als Pruefung externer URLs ausgegeben werden.
-Nur ein tatsaechlich ausgefuehrter fehlerfreier Lauf darf als bestandener
-Linkcheck gelten. Ist Lychee nicht verfuegbar, wird transparent festgehalten,
-dass die technische Linkpruefung nicht ausgefuehrt werden konnte; dies allein
-blockiert FINAL nicht. `hugo --minify` darf weiterhin nicht als Nachweis fuer
-existente `href`-Ziele ausgegeben werden. Andere nicht vorhandene
-Linkpruefungen werden nicht vorausgesetzt. Tatsaechlich festgestellte relevante
-interne Linkfehler sind Blocker und stoppen die Finalisierung.
+  Für beide FINAL-Gates gelten die buildfreie Vorprüfung, die geordnete
+  Nachbearbeitung und die technische Ergebnisprüfung aus `publikation/check.md`.
+  Freigabe erfolgt erst bei bestandenem Endstand.
 
 Nach erfolgreichem `BLOG FINAL` prueft der Agent verpflichtend den optionalen
 Anschluss an `publikation/blog_wissensbasis.md` und bietet bei relevantem Anschluss
@@ -248,7 +217,7 @@ Produktionsgates bleiben unveraendert und werden nicht als Tasks behandelt.
 
 PLAN erkennt Tasks semantisch aus dem Nutzerauftrag; Tasknamen und Routing
 bleiben normalerweise unsichtbar. Aktiv ist ausschliesslich der Task
-`external-handoff`. Er wird erst geladen, wenn die Lehrperson ausdruecklich eine
+`external-handoff` (`tasks/external_handoff.md`). Er wird erst geladen, wenn die Lehrperson ausdruecklich eine
 Uebergabespezifikation fuer eine externe Spezialleistung verlangt oder einen
 zuvor knapp vorgeschlagenen externen Einsatz konkret weiterverfolgt. Ein blosser
 Vorschlag aktiviert den Task noch nicht und erzeugt keinen vollstaendigen

@@ -82,12 +82,22 @@ Die wichtigsten Dateien und Ordner fuer den Agenten sind:
 
 ## Nutzung
 
-Der Einstieg erfolgt in der Regel über [SKILL.md](SKILL.md). Die Finalprüfung folgt den Freigaben im PLAN-Core.
+- **ChatGPT Work (Desktop):** Öffne den entpackten Agentenordner oder das iWIP-Repository. Im Paket starte mit „Nutze SKILL.md für folgende didaktische Planung …“, im Repository mit „Nutze .agents/skills/iwip-planungsagent/SKILL.md für folgende didaktische Planung …“.
+- **Codex in VS Code:** Öffne das iWIP-Repository und wähle `$iwip-planungsagent`. Der Texteinstieg `/PLAN` wird auch über die Repository-Anweisungen unterstützt. Ein heruntergeladenes Paket kannst Du in einem eigenen Projekt als `.agents/skills/iwip-planungsagent/` ablegen.
+- **Planung fortführen:** `/PLAN` beginnt im Dialog. Wenn Du einen Fall persistent führen möchtest, benenne den Fallordner und bitte ausdrücklich um das `planning_journal.md`. Gib bei einem Wechsel zu Codex die ausgearbeiteten Aufgaben, Materialien und Quellen als freigegebene Planungsgrundlage mit. Das Journal führt die Entscheidungen und Revisionen.
+- **Publizieren:** Öffne dafür das vollständige iWIP-Repository. `BLOG GO` mit freigegebener Grundlage eröffnet die Blogausarbeitung, `BLOG FINAL` die Finalprüfung. Ein finaler Blog ist die Grundlage für `REVEAL GO` und anschließend `REVEAL FINAL`.
+- **Als OER weitergeben:** Den gesamten Ordner `iwip-planungsagent/` einschließlich Lizenz und Quellen aus einem bezeichneten Commit verpacken. Im Repository erzeugt der folgende Befehl aus dem aktuellen Commit ein ZIP mit sichtbarem Paketordner:
 
-Die Gate-Logik und ihre Ladebedingungen stehen im PLAN-Core. Diese README fasst
-nur den Arbeitszusammenhang zusammen: Aus einem Planungsanliegen entsteht
-schrittweise ein Blogbeitrag; wenn gewuenscht, wird daraus anschliessend eine
-Praesentation abgeleitet.
+  ```sh
+  git archive --format=zip --prefix=iwip-planungsagent/ -o iwip-planungsagent.zip HEAD:.agents/skills/iwip-planungsagent
+  ```
+
+## Geplante Folgeänderungen
+
+- **A · Automatische Journalführung:** Für konkrete Planungsfälle ist ein standardmäßiges, ausdrücklich abwählbares Journal vorgesehen. Allgemeine Fragen benötigen kein Journal. Bei fehlendem Schreibzugriff soll die Oberfläche Gesprächsdokumentation und tatsächlich gespeicherte Dateien kenntlich machen.
+- **B · Ausgearbeiteter Planungsstand:** Für den Wechsel zwischen Work und Codex soll eine zusätzliche `planning_state.md` mit gültigen Aufgabenstellungen und Materialien geprüft werden.
+
+Beide Punkte sind Entwicklungsvorhaben. Für die aktuelle Nutzung gilt der PLAN-Core.
 
 ## Version 1.3 (September 2026)
 

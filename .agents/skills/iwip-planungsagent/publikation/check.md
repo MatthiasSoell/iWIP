@@ -40,6 +40,16 @@ Pruefe das vorliegende Artefakt ausschliesslich gegen:
 Arbeite nur mit den fuer das aktuelle Artefakt im gate-spezifischen Ladepfad
 genannten Dateien.
 
+## Verbindlicher FINAL-Ablauf
+
+1. Die buildfreie Vorprüfung muss bestanden sein, einschließlich gültigem
+   Frontmatter und bei `BLOG FINAL` auch `draft: false`.
+2. Beim Blog folgt `LITERATUR GO`, anschließend das Blog-Emoji-Postprocessing.
+   Bei Reveal folgt das Reveal-Emoji-Postprocessing.
+3. Erst danach im iWIP-Repository genau einmal `hugo --minify` ausführen.
+4. Den gebauten Endstand technisch prüfen. Nach dem Build erfolgt keine
+   Mutation mehr. Nur ein bestandener Endstand wird freigegeben.
+
 ## Zwei getrennte Pruefphasen
 
 ### Buildfreie Vorpruefung
@@ -66,7 +76,7 @@ fehlerfreier Lychee-Lauf darf als bestandener Linkcheck gelten. Ist Lychee nicht
 verfuegbar, wird die Linkpruefung als nicht ausgefuehrt festgehalten; dies allein
 ist kein `BLOCKER`. Der Hugo-Build allein weist nicht nach, dass alle
 `href`-Ziele existieren. Tatsaechlich festgestellte relevante interne
-Linkfehler sind `BLOCKER`.
+Linkfehler sowie offene Fehler im ausgeführten FINAL-Linkcheck sind `BLOCKER`.
 
 Beide Phasen bilden gemeinsam den FINAL-Check. Sie werden nicht zusaetzlich als
 zweiter vollstaendiger Check wiederholt.

@@ -51,11 +51,8 @@ Die PDFs stehen direkt im Präsentationspfad zum Download bereit.
 
 Der integrierte didaktische Planungsagent (WiDi) unterstützt die Planung und strukturierte Ausarbeitung von Lehr-Lern-Inhalten. Er verbindet den Arbeitszusammenhang Planung → Blog → Präsentation und macht Entwicklungsprozesse nachvollziehbar und reflektierbar. Der Agent arbeitet dialogisch, strukturierend und ko-kreativ; der Blog dient dabei als zentrales Arbeitsdokument, aus dem bei Bedarf Präsentationen abgeleitet werden koennen. Er ist als unterstützendes Werkzeug konzipiert und ersetzt keine didaktischen Entscheidungen.
 
-Die aktuelle Architektur verteilt ihre klaren Zustaendigkeiten auf
-`.agents/skills/iwip-planungsagent/core/plan_core.md`, `.agents/skills/iwip-planungsagent/core/kdm_core.md`,
-`.agents/skills/iwip-planungsagent/core/didaktisches_qualitaetsmodell_core.md` und
-`.agents/skills/iwip-planungsagent/core/master_agent.md`. Eine kompakte Orientierung zu Rolle,
-Einstiegspunkten und zentralen Dateien bietet `.agents/skills/iwip-planungsagent/README.md`.
+[Planungsagent öffnen: Start in ChatGPT Work und Codex, OER-Weitergabe](.agents/skills/iwip-planungsagent/README.md).
+Die [manuellen Benchmarks](iwip-planungsagent-benchmarks/README.md) dokumentieren die Referenzfälle.
 
 ### Technische Infrastruktur
 
