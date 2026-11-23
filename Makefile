@@ -14,16 +14,8 @@ qa-prompts:
 	@echo "Prompt files OK."
 
 qa-markdown:
-	@if command -v markdownlint-cli2 >/dev/null 2>&1; then \
-		markdownlint-cli2 --config .markdownlint-cli2.jsonc README.md "$(SKILL_DIR)/**/*.md" "project_governance/**/*.md" || exit $$?; \
-		echo "Markdownlint OK (markdownlint-cli2)."; \
-	elif command -v markdownlint >/dev/null 2>&1; then \
-		files="README.md $$(find $(SKILL_DIR) project_governance -type f -name '*.md' | tr '\n' ' ')"; \
-		markdownlint --config .markdownlint.jsonc $$files || exit $$?; \
-		echo "Markdownlint OK (markdownlint)."; \
-	else \
-		echo "Markdownlint skipped (no markdownlint tool installed)."; \
-	fi
+	markdownlint-cli2 --config .markdownlint-cli2.jsonc README.md "$(SKILL_DIR)/**/*.md" "project_governance/**/*.md"
+	@echo "Markdownlint OK (markdownlint-cli2)."
 
 qa-hugo:
 	hugo --quiet

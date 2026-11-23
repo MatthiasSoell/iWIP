@@ -113,7 +113,8 @@ iWIP/
 ├─ .agents/skills/iwip-planungsagent/  # Planungskern und optionale Publikationsregeln
 ├─ iwip_planungsagent/     # lokaler Arbeitsbereich, von Git ignoriert
 │  ├─ benchmarks/          # manuelle Regressionstests, Inputs und Soll-Fixtures
-│  └─ entwicklung/         # Historie, Testlaeufe und Arbeitsdaten
+│  ├─ entwicklung/         # Historie, Testlaeufe und Arbeitsdaten
+│  └─ exports/             # manuelle Exporte zum Planungsagenten
 ├─ scripts/check_paket.py  # technische Paketpruefung fuer den Skill
 │
 ├─ project_governance/    # technische Governance
@@ -143,10 +144,10 @@ nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
 - `iwip_planungsagent/benchmarks/` fuer manuelle Benchmarkdefinitionen und Soll-Fixtures
 - `iwip_planungsagent/entwicklung/` fuer Entwicklungsprotokolle, historische Audits,
   Rohdaten und temporaere Arbeitsdateien
+- `iwip_planungsagent/exports/` fuer manuelle Exporte zum Planungsagenten
 
 Hinweis:
 
-- Der Oberordner `exports/` kann weitere manuelle Exportdateien enthalten.
 - Konkrete Benchmark-Laeufe und Rohoutputs liegen lokal unter
   `iwip_planungsagent/entwicklung/benchmark_runs/`.
 
