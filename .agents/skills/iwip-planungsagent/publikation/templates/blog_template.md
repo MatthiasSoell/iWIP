@@ -29,6 +29,8 @@ author: ""
 date: YYYY-MM-DD
 lastmod: YYYY-MM-DD
 draft: true
+# Pflicht fuer OER: kanonische Hugo-Route ohne Site-Basis
+permalink: ""
 
 description: ""
 summary: ""
@@ -97,7 +99,13 @@ oer:
   todos: []
 ```
 
-Alle Felder sind verpflichtend, außer `slug` und `oer.todos`.
+Alle Felder sind verpflichtend, außer `slug` und `oer.todos`. `permalink` ist
+bei `oer.is_oer: true` verpflichtend. Der Wert ist der kanonische Pfad mit
+fuehrendem und abschliessendem Schraegstrich, ohne Host, Site-Basis, Query oder
+Fragment, etwa `/blog/oer/blog_agent/` fuer die gebaute URL unter `/iWIP/`.
+Leite den Wert aus der tatsaechlichen Hugo-Route ab und pruefe ihn bei FINAL
+gegen den gebauten Stand. Fuer neue GO-Entwuerfe gilt `draft: true`.
+Der Wechsel zu `draft: false` folgt dem Ablauf in `publikation/check.md`.
 Wenn `slug` gesetzt wird, muss er `snake_case` mit Unterstrichen nutzen.
 Fuer Autor:innen ist ausschliesslich `author` zulaessig; `authors` ist nicht erlaubt.
 

@@ -35,16 +35,24 @@ genannten Dateien.
 
 ## Verbindlicher FINAL-Ablauf
 
-1. Die buildfreie Vorprüfung muss bestanden sein, einschließlich gültigem
-   Frontmatter und bei `BLOG FINAL` auch `draft: false`.
-2. Beim Blog folgt `LITERATUR GO`, anschließend das Blog-Emoji-Postprocessing.
-   Bei Reveal folgt das Reveal-Emoji-Postprocessing. Literatur- und
-   Emoji-Schritte starten keinen Build.
-3. Erst danach im iWIP-Repository genau einmal `hugo --minify` mit leerem
-   temporaerem Ausgabeziel ausfuehren.
-4. Den gebauten Endstand technisch pruefen. Bei Reveal vor Lychee das PDF
-   des betreffenden Artefakts im temporaeren Build erzeugen. Nach dem Build
-   bleiben die Quelldateien unveraendert. Fuer die Freigabe gilt der PLAN-Core.
+1. Fuehre die buildfreie Vorpruefung am vorliegenden Stand durch, einschliesslich
+   gueltigem Frontmatter mit booleschem `draft`. Neue GO-Entwuerfe bleiben
+   bis zur bestandenen FINAL-Pruefung im Repository auf `draft: true`.
+2. Nach bestandener Vorpruefung arbeite in einer temporaeren Kopie des
+   aktuellen iWIP-Quellbaums mit identischen relativen Pfaden und Materialien.
+   Beim Blog folgt dort `LITERATUR GO`, anschliessend das Blog-Emoji-Postprocessing.
+   Bei Reveal folgt dort das Reveal-Emoji-Postprocessing. Literatur- und
+   Emoji-Schritte starten keinen Build. Setze erst dort im Zielartefakt
+   `draft: false`; die Originaldatei bleibt waehrend der Pruefung bytegleich.
+3. Fuehre in der temporaeren Kopie genau einmal `hugo --minify` mit leerem
+   temporaerem Ausgabeziel aus.
+4. Pruefe den gebauten Endstand. Erzeuge bei Reveal vor Lychee das PDF des
+   Zielartefakts im temporaeren Build. Aendere die gepruefte Fassung danach
+   nicht mehr.
+5. Uebernimm erst nach bestandener Pruefung die bytegleiche Endfassung atomar
+   ins Repository. Pruefe vorher, ob das Original noch dem geprueften
+   Ausgangsstand entspricht. Bei Blockern, Abbruch oder zwischenzeitlicher
+   Aenderung bleibt das Original unberuehrt und es erfolgt keine Freigabe.
 
 ## Zwei getrennte Pruefphasen
 
@@ -70,6 +78,11 @@ temporaeren Build ausfuehrbaren Linkcheck. Site-relative Ziele werden dabei uebe
 lokalen Staging-Root unter der aus der Projektkonfiguration abgeleiteten
 Site-Basis aufgeloest. Ein Offline-Lauf deckt nur lokale
 Ziele ab und darf nicht als externe URL-Pruefung gelten.
+
+Bei OER-Blogs muss der `permalink` im Frontmatter der tatsaechlich gebauten
+kanonischen Route ohne Site-Basis entsprechen. Pruefe die kanonische URL
+in der gebauten HTML und das zugehoerige Ausgabeziel. Ein Alias oder eine
+Weiterleitungsseite reicht fuer diesen Abgleich nicht aus.
 
 Fuer `REVEAL FINAL` spiegele das temporaere Buildziel unter der Site-Basis im
 Staging-Root, etwa ueber einen Symlink, und serviere diesen Root lokal auf
@@ -277,6 +290,7 @@ Verpflichtend zu pruefen:
 - `oer.educational_level`, `oer.audience`, `oer.keywords`, `oer.time_required`
 - `oer.about` (exakt die drei Standard-Fachgebiete aus dem Blog-Template mit `id` und `name`)
 - `oer.todos` (optional, darf leer sein)
+- `permalink` ist bei `oer.is_oer: true` Pflicht und folgt der Pfadregel im Blog-Template
 - `slug` ist optional; falls gesetzt, nur `snake_case` mit Unterstrichen
 - `authors` ist verboten; mehrere Autor:innen stehen in `author` als Semikolon-getrennter String
 
@@ -285,7 +299,9 @@ Bewertungsregel:
 - Fehlende Pflichtfelder, leere Pflichtfelder oder falsch strukturierte Pflichtfelder sind `BLOCKER`.
 - Platzhalterwerte in Pflichtfeldern (z. B. `TODO`, `tbd`, `-`, `...`) sind ebenfalls `BLOCKER`.
 - `lastmod` ist als Pflichtfeld vorhanden und semantisch plausibel befuellt zu pruefen.
-- Fuer `BLOG FINAL` sind unvollstaendiges oder ungueltiges Frontmatter, `draft` ungleich `false` sowie jede Nutzung von `authors` immer `BLOCKER`.
+- Fuer `BLOG FINAL` sind unvollstaendiges oder ungueltiges Frontmatter sowie
+  jede Nutzung von `authors` immer `BLOCKER`. Die gepruefte Endfassung hat
+  `draft: false` gemaess FINAL-Ablauf.
 - Fuer `BLOG FINAL` sind tatsaechlich festgestellte relevante interne
   Linkfehler im technischen Linkcheck des gebauten Endstands immer `BLOCKER`.
   Ein nicht ausgefuehrter Linkcheck darf weder als bestanden gelten noch allein

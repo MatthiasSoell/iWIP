@@ -64,6 +64,8 @@ todos: []
 Regeln:
 
 - Reveal-Frontmatter enthält ausschließlich präsentationsbezogene Metadaten.
+- Neue GO-Entwuerfe haben `draft: true`. Der Wechsel zu `draft: false` folgt
+  dem FINAL-Ablauf in `publikation/check.md`.
 - Fuer Autor:innen ist ausschliesslich `author` zulaessig; `authors` ist nicht erlaubt. Mehrere Autor:innen stehen als Semikolon-getrennter String in `author`.
 - In Reveal-Dateien sind OER-Metadaten strikt verboten.
 - Verboten sind insbesondere: `oer`, `is_oer`, `kind`, `creators`, `publisher`, `license`, `image`, `version`, `status`, `in_language`, `learning_resource_type`, `educational_level`, `audience`, `keywords`, `time_required`, `about`, `rights_exceptions`.

@@ -171,6 +171,17 @@ herangezogen. Sichtbar wird standardmaessig eine natuerliche knappe
 Rueckspiegelung statt eines technischen Dumps; auf ausdrueckliche Nachfrage
 darf das Journal selbst gezeigt werden.
 
+Bei ausdruecklicher Wiederaktivierung ist der Abgleich ein eigener
+Pflegeanlass, auch ohne neues Planungsereignis. Lies das Journal im
+bestaetigten Fallordner und gleiche den Current State mit den belegten
+neueren Setzungen im Dialog und in ausdruecklich benannten Arbeitsstaenden ab.
+Wende die bestehende Revisionssemantik an, einschliesslich entfallener
+Entscheidungen und offener Punkte. Erhalte die vorhandene Decision History.
+Trage ein Ereignis nur nach, wenn Inhalt und notwendige Begruendung belegt
+sind und es noch nicht dokumentiert ist. Gibt es noch kein Journal, gilt
+weiterhin die Anlageregel fuer das erste belegte journalwuerdige Ereignis.
+`planning_state.md` wird dabei nur nach seiner eigenen Freigaberegel geaendert.
+
 ## Freigegebener Planungsstand fuer die Uebergabe
 
 Wenn die Lehrperson den sichtbaren ausgearbeiteten Planungsstand freigibt
@@ -218,10 +229,11 @@ den Abgleich zur Verfuegung, ist es keine Voraussetzung fuer `BLOG GO`.
 `/PLAN` startet ausschliesslich den Planungsdialog in `P1` und `P2`. Dabei
 sind die oben geregelten Journalaktionen und die ausdruecklich beauftragte
 Uebergabe moeglich. Der Planungsdialog erzeugt keine Publikationsdateien und
-startet keinen Build. Formulierungen wie
-`Entwurf anlegen`, `Blog erstellen`, `Jetzt ausarbeiten` oder `Passt, leg los`
-gelten erst dann als `BLOG GO`, wenn sie einen bereits sichtbaren Planungsstand
-bestaetigen; im ersten PLAN-Turn loesen sie kein Produktionsgate aus.
+startet keinen Build. `BLOG GO` braucht eine eigenstaendige ausdrueckliche
+Freigabe zur Blogausarbeitung. Eine natuerliche Formulierung ist gleichwertig,
+wenn sie die Blogausarbeitung fuer die konkrete Grundlage eindeutig freigibt.
+Planungsfreigabe, Speicher- oder Uebergabeauftrag und reine Statusmeldung
+reichen dafuer nicht.
 
 Die Gatefolge bleibt bindend:
 
@@ -230,6 +242,16 @@ Die Gatefolge bleibt bindend:
 3. Bis `REVEAL GO` bleibt die Arbeit strikt blog-first; sichtbare Reveal-, Folien- oder Transformationslogik wird nicht vorweggenommen.
 4. `REVEAL GO` setzt einen finalen Blog als alleinige Ableitungsgrundlage voraus.
 5. `REVEAL FINAL` erst nach Reveal-Ausarbeitung und den am Gate geladenen Pflichtpruefungen.
+
+Beim Einstieg in ein Publikationsgate in einer neuen Sitzung identifiziere
+Zielartefakt und Grundlage anhand des Auftrags und des nachweisbaren Kontexts.
+Fuer `REVEAL GO` und `REVEAL FINAL` muss die Finalfreigabe den tatsaechlich
+vorliegenden Blogstand betreffen, etwa eine benannte freigegebene Git-Revision
+oder den im Auftrag eindeutig als final bestaetigten Stand der Datei.
+Ein Pfad oder `draft: false` allein belegt diese Freigabe nicht. Aenderungen seit
+der belegten Freigabe klaere vor der Ableitung oder Finalisierung. Frage nur,
+wenn Ziel oder Freigabestand tatsaechlich unklar sind, und dann einmal gezielt.
+Lege dafuer keine neuen Statusdateien oder Pflichtmetadaten an.
 
 Gate-Aktionen und lazy geladene Details:
 
@@ -264,8 +286,9 @@ einen kuratierten Entwurf an. Eine Uebernahme bleibt freigabepflichtig, sofern
 sie nicht bereits eindeutig freigegeben wurde; der Anschluss ist kein
 Definition-of-Done-Bestandteil und blockiert `REVEAL GO` nicht.
 
-Semantisch eindeutige natuerliche Formulierungen gelten als gleichwertige
-Statusmeldungen. Bei mehrdeutigen Formulierungen stellt der Agent genau eine
+Semantisch eindeutige natuerliche Auftraege koennen einen Gate-Befehl ersetzen.
+Eine reine Statusmeldung startet kein Gate. Bei mehrdeutigen Formulierungen
+stellt der Agent genau eine
 Klaerungsfrage. Aktiver Editorpfad, geoeffnete Dateien oder markierte
 Textstellen steuern den Arbeitsmodus nicht; Nutzeranliegen und eindeutige
 Arbeitsbefehle haben Vorrang.

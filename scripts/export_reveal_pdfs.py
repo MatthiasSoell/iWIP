@@ -134,7 +134,8 @@ def strip_yaml_scalar(value: str) -> str:
 def parse_bool(value: str | None) -> bool:
     if value is None:
         return False
-    normalized = strip_yaml_scalar(value).strip().lower()
+    scalar = re.split(r"\s+#", value, maxsplit=1)[0]
+    normalized = strip_yaml_scalar(scalar).strip().lower()
     return normalized == "true"
 
 
@@ -162,7 +163,9 @@ def discover_exports(
     exports: list[ExportSpec] = []
     for markdown_path in sources:
         front_matter = parse_front_matter(markdown_path)
-        if not parse_bool(front_matter.get("pdf_export")):
+        if parse_bool(front_matter.get("draft")) or not parse_bool(
+            front_matter.get("pdf_export")
+        ):
             continue
 
         pdf_filename = resolve_pdf_filename(front_matter, markdown_path)
