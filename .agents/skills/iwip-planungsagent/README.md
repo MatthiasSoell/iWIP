@@ -94,7 +94,8 @@ beliebigen Arbeitsverzeichnis führen.
 - **Als OER weitergeben:** Den gesamten Ordner `iwip-planungsagent/` einschließlich Lizenz und Quellen aus einem bezeichneten Commit verpacken. Im Repository erzeugt der folgende Befehl aus dem aktuellen Commit ein ZIP mit sichtbarem Paketordner:
 
   ```sh
-  git archive --format=zip --prefix=iwip-planungsagent/ -o iwip_planungsagent.zip HEAD:.agents/skills/iwip-planungsagent
+  mkdir -p exports
+  git archive --format=zip --prefix=iwip-planungsagent/ -o exports/iwip_planungsagent.zip HEAD:.agents/skills/iwip-planungsagent
   ```
 
 ### Publikation im iWIP-Repository
@@ -104,6 +105,10 @@ mit seinen Content-Verzeichnissen, Projektregeln und der Hugo-Konfiguration.
 `BLOG GO` mit freigegebener Grundlage eröffnet die Blogausarbeitung.
 `BLOG FINAL` startet deren Finalprüfung. Der finale Blog dient als einzige
 Grundlage für `REVEAL GO` und die anschließende Prüfung mit `REVEAL FINAL`.
+Für Änderungen an veröffentlichten Blog- und Reveal-Dateien führt GO eine
+lokale Arbeitsfassung. Das bestandene FINAL übernimmt sie an den Content-Pfad.
+`REVEAL FINAL` prüft das HTML und den PDF-Downloadpfad. Die PDF-Datei wird im
+GitHub-Deployment erzeugt oder aus der bisherigen Veröffentlichung übernommen.
 
 ### Planungsstand von Work an Codex übergeben
 
@@ -118,7 +123,9 @@ Die Übergabe funktioniert auch ohne Journal.
 > `<Fallordner>/planning_state.md`.
 
 Für den Abgleich kannst Du im selben Auftrag das `planning_journal.md`
-aus demselben Fallordner zum Lesen und Verwenden freigeben.
+aus demselben Fallordner ausdrücklich zum Lesen und Verwenden freigeben.
+Bei deaktivierter oder unbekannter Journalführung ist diese Freigabe
+erforderlich und aktiviert die Journalpflege nicht.
 
 Nach einer für die Ausarbeitung relevanten Revision gib den aktualisierten
 Stand erneut frei und bitte um die Aktualisierung der Datei.

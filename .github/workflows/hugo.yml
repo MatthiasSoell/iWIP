@@ -72,18 +72,14 @@ jobs:
 
           echo "changed_paths_file=$changed_paths_file" >> "$GITHUB_OUTPUT"
 
-      - name: Export reveal presentations as PDFs
+      - name: Export and verify Reveal PDF downloads
         run: |
-          rm -rf served
-          mkdir -p served/iWIP
-          cp -R public/. served/iWIP/
+          staging_root="$(mktemp -d "${RUNNER_TEMP}/reveal.XXXXXXXX")"
+          ln -s "$PWD/public" "$staging_root/iWIP"
 
-          python3 -m http.server 8080 --directory served --bind 127.0.0.1 > /tmp/public-server.log 2>&1 &
+          python3 -m http.server 8080 --directory "$staging_root" --bind 127.0.0.1 > "${RUNNER_TEMP}/reveal-server.log" 2>&1 &
           server_pid=$!
-          
           trap 'kill "$server_pid"' EXIT
-
-          sleep 3
 
           export_args=(
             --changed-paths-file "${{ steps.pdf_scope.outputs.changed_paths_file }}"

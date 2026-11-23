@@ -27,6 +27,7 @@ Agent structure:
 - templates, final checks, full DQM and external handoff → loaded only when required by PLAN-Core
 - iwip_planungsagent/benchmarks/ → local, ignored manual regression definitions and expected fixtures
 - iwip_planungsagent/entwicklung/ → local, ignored development history, benchmark runs and raw data; never normal runtime context
+- iwip_planungsagent/publikation/ → local, ignored working copies for revisions of published content
 - scripts/check_paket.py → versioned Skill package checker used by make qa-prompts
 
 Styling architecture:

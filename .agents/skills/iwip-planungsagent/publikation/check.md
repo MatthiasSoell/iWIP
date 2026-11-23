@@ -35,25 +35,39 @@ genannten Dateien.
 
 ## Verbindlicher FINAL-Ablauf
 
-1. Fuehre die buildfreie Vorpruefung am vorliegenden Stand durch, einschliesslich
-   gueltigem Frontmatter mit booleschem `draft`. Neue GO-Entwuerfe bleiben
-   bis zur bestandenen FINAL-Pruefung im Repository auf `draft: true`.
+1. Bestimme Zieldatei und vorliegenden Bearbeitungsstand nach der
+   Arbeitsfassungsregel im PLAN-Core. Verwende eine vorhandene Arbeitsfassung
+   mitsamt Pruefsumme der Zieldatei. Halte die Inhaltspruefsummen der
+   Zieldatei und der geprueften Arbeitsfassung fest. Fuehre die buildfreie
+   Vorpruefung am Bearbeitungsstand durch, einschliesslich gueltigem
+   Frontmatter mit booleschem `draft`.
 2. Nach bestandener Vorpruefung arbeite in einer temporaeren Kopie des
    aktuellen iWIP-Quellbaums mit identischen relativen Pfaden und Materialien.
+   Kopiere nur Build-Quellen, Konfiguration und benoetigte Hilfsdateien.
+   Lege dort den geprueften Stand am repo-relativen Zielpfad ab, damit Hugo
+   dieselben Routen und Materialien verwendet. Pruefe bei Reveal auch, dass
+   die Kopie der Bloggrundlage die freigegebene Pruefsumme hat.
    Beim Blog folgt dort `LITERATUR GO` fuer das gepruefte Zielartefakt,
    anschliessend das Blog-Emoji-Postprocessing.
    Bei Reveal folgt dort das Reveal-Emoji-Postprocessing. Literatur- und
-   Emoji-Schritte starten keinen Build. Setze erst dort im Zielartefakt
-   `draft: false`; die Originaldatei bleibt waehrend der Pruefung bytegleich.
+   Emoji-Schritte starten keinen Build. Pruefe die durch diese Schritte
+   herzustellenden Merkmale der Pruefmatrix an der bearbeiteten Fassung.
+   Setze erst dort im Zielartefakt `draft: false`; die Originaldatei bleibt
+   waehrend der Pruefung bytegleich.
 3. Fuehre in der temporaeren Kopie genau einmal `hugo --minify` mit leerem
    temporaerem Ausgabeziel aus.
-4. Pruefe den gebauten Endstand. Erzeuge bei Reveal vor Lychee das PDF des
-   Zielartefakts im temporaeren Build. Aendere die gepruefte Fassung danach
-   nicht mehr.
+4. Pruefe den gebauten Endstand. Bei Reveal umfasst das die PDF-Konfiguration
+   und den Downloadpfad im HTML. Die PDF-Datei entsteht im Deployment.
+   Aendere die gepruefte Fassung danach nicht mehr.
 5. Uebernimm erst nach bestandener Pruefung die bytegleiche Endfassung atomar
-   ins Repository. Pruefe vorher, ob das Original noch dem geprueften
-   Ausgangsstand entspricht. Bei Blockern, Abbruch oder zwischenzeitlicher
-   Aenderung bleibt das Original unberuehrt und es erfolgt keine Freigabe.
+   an den Zielpfad im Repository. Vergleiche unmittelbar davor die
+   Inhaltspruefsummen der Zieldatei und einer separaten Arbeitsfassung mit
+   den geprueften Ausgangsstaenden. Bei Reveal muss auch die Bloggrundlage
+   weiterhin exakt der freigegebenen Fassung entsprechen. Bei Blockern,
+   Abbruch oder zwischenzeitlicher Aenderung bleibt die Zieldatei unberuehrt
+   und es erfolgt keine Freigabe. Entferne eine verwendete Arbeitsfassung
+   mitsamt Basispruefsumme erst nach erfolgreicher Uebernahme und nur, wenn
+   sie unveraendert ist.
 
 ## Zwei getrennte Pruefphasen
 
@@ -73,39 +87,33 @@ Abschnitt „Praktische OER-Nachnutzbarkeit“ in dieser Datei.
 
 Die technische Ergebnispruefung findet ausschliesslich nach dem genau einen
 abschliessenden `hugo --minify` statt und bewertet nur den gebauten Endstand.
-Sie prueft den Build-Erfolg, das erwartete gebaute Ziel und den mit der
-vorhandenen `lychee.toml` gegen die HTML-Ausgabe des aktuellen Artefakts im
-temporaeren Build ausfuehrbaren Linkcheck. Site-relative Ziele werden dabei ueber einen
-lokalen Staging-Root unter der aus der Projektkonfiguration abgeleiteten
-Site-Basis aufgeloest. Ein Offline-Lauf deckt nur lokale
-Ziele ab und darf nicht als externe URL-Pruefung gelten.
+Sie prueft den Build-Erfolg, das erwartete gebaute Ziel und seine lokalen
+Links. Nutze in beiden Gates `scripts/check_navigation.py` mit der gebauten
+HTML-Datei, dem temporaeren Buildziel und der konfigurierten Site-URL.
+Das Skript prueft JavaScript-Navigation und HTML-Links, einschliesslich
+absoluter URLs der eigenen iWIP-Site, gegen dieses Buildziel.
 
 Bei OER-Blogs muss der `permalink` im Frontmatter der tatsaechlich gebauten
 kanonischen Route ohne Site-Basis entsprechen. Pruefe die kanonische URL
 in der gebauten HTML und das zugehoerige Ausgabeziel. Ein Alias oder eine
 Weiterleitungsseite reicht fuer diesen Abgleich nicht aus.
 
-Fuer `REVEAL FINAL` spiegele das temporaere Buildziel unter der Site-Basis im
-Staging-Root, etwa ueber einen Symlink, und serviere diesen Root lokal auf
-Loopback. Rufe `scripts/export_reveal_pdfs.py` mit `--only` fuer den
-repo-relativen Pfad der Reveal-Quelldatei, `--public-root` fuer das
-temporaere Buildziel und `--served-base-url` fuer die lokale URL inklusive
-Site-Basis auf. Pruefe das erzeugte PDF und danach die Links der gebauten
-Reveal-HTML gegen denselben Staging-Root. Beende den lokalen Server nach dem
-Check. Fehlender oder fehlgeschlagener PDF-Export blockiert die Reveal-Freigabe.
-Das produktive Ausgabeziel bleibt unberuehrt. Es folgt kein weiterer Hugo-Build.
+Fuehre bei `REVEAL FINAL` zuerst `scripts/export_reveal_pdfs.py --check-only`
+mit `--repo-root` fuer den temporaeren Quellbaum, `--only` fuer den
+repo-relativen Reveal-Quellpfad, `--public-root` fuer das temporaere
+Buildziel und `--served-base-url` fuer die konfigurierte Site-URL aus.
+Der Modus prueft die PDF-Konfiguration und den Downloadpfad im gebauten
+HTML. Uebergib den ausgegebenen Pfad als `--pending-pdf` an
+`scripts/check_navigation.py`. Nur dieses Ziel wird von der lokalen
+Dateiexistenzpruefung ausgenommen. Diese Schritte starten weder Server
+noch DeckTape. Das GitHub-Deployment erzeugt oder uebernimmt die PDFs und
+prueft danach alle erwarteten PDF-Downloads im Upload-Artefakt.
 
-Pruefe fuer beide FINAL-Gates auch JavaScript-Navigationsbuttons im gebauten
-HTML mit `scripts/check_navigation.py`. Uebergib das gebaute HTML, das
-temporaere Buildziel und die konfigurierte Site-URL in dieser Reihenfolge.
-Die Pruefung dieser lokalen Ziele ist verbindlich, auch ohne Lychee.
-
-Nur ein tatsaechlich ausgefuehrter fehlerfreier Lychee-Lauf darf als bestandener Linkcheck gelten. Ist Lychee nicht
-verfuegbar, wird die Linkpruefung als nicht ausgefuehrt festgehalten; dies allein
-ist kein `BLOCKER`. Der Hugo-Build allein weist nicht nach, dass alle
-`href`-Ziele existieren. Andere nicht vorhandene Linkpruefungen werden nicht
-vorausgesetzt. Tatsaechlich festgestellte relevante interne
-Linkfehler sowie offene Fehler im ausgeführten FINAL-Linkcheck sind `BLOCKER`.
+Relevante lokale Linkfehler sind `BLOCKER`. Fuer beauftragte oder fachlich
+erforderliche externe Linkpruefungen nutze bei Verfuegbarkeit Lychee mit
+`lychee.toml` gezielt fuer die betroffenen URLs. Ein ausgebliebener Lauf
+gilt nicht als bestanden. Seine Nichtverfuegbarkeit ist allein kein
+`BLOCKER`; relevante nachgewiesene Linkfehler bleiben Blocker.
 
 Beide Phasen bilden gemeinsam den FINAL-Check. Sie werden nicht zusaetzlich als
 zweiter vollstaendiger Check wiederholt.
@@ -122,7 +130,7 @@ zweiter vollstaendiger Check wiederholt.
 
 - `check` bewertet nur.
 - `check` fuehrt keine inhaltlichen oder technischen Aenderungen am Artefakt aus.
-- `check` ist fuer FINAL-Pruefungen und finale Gate-Bewertungen gedacht; proportionale Mikropruefungen und fokussierte Pruefungen bei Light Operations laufen ausserhalb dieses sichtbaren FINAL-Formats nach den geladenen Gate-Regeln.
+- Fokussierte Pruefungen bei Zwischenkorrekturen folgen den Gate-Regeln zur Arbeitsfassung.
 - Sichtbar erscheinen nur die regelkonformen Pruefausgaben im vorgegebenen Format, ohne Prozesskommentar.
 - Erfolgreiche Linkchecks, Builds, Postprocessing-Schritte, Pfadableitungen, Wissensbasis-Nachlaeufe und sonstige gruene Routinepruefungen werden nicht einzeln sichtbar ausgegeben. Sie erscheinen nur bei Blockern, handlungsrelevanten Warnungen oder auf ausdrueckliche Nachfrage.
 - Die konkrete sichtbare FINAL-Sprache folgt zusaetzlich den Kurzmustern aus `publikation/low_noise_response_patterns.md`, ohne das hier definierte Format oder die Blockstruktur zu aendern.
@@ -222,12 +230,8 @@ Wenn das Artefakt ein Blogartikel ist, pruefe gegen PLAN-Core, geladene Gate-Reg
   Quellenverweise im Fliesstext erhalten. Verwaiste Verweise, Dummy-Anker und
   unsichtbare Ersatzabschnitte sind unzulaessig.
 - Begriffspruefung: zentrale Begriffe und Benennungen werden im sichtbaren Blogtext konsistent verwendet.
-- Typografiepruefung: sichtbare deutsche Blogtexte folgen den geladenen Typografie- und Umlautregeln.
-- In der technischen Ergebnispruefung von `BLOG FINAL` ist der abschliessende
-  `hugo --minify` erfolgreich. Ist Lychee verfuegbar, ist der danach gegen die
-  gebaute HTML-Ausgabe des aktuellen Blogartefakts ausgefuehrte Linkcheck ohne
-  offene Fehler; andernfalls wird er transparent als nicht ausgefuehrt
-  festgehalten, ohne allein dadurch FINAL zu blockieren.
+- Pruefe sichtbare deutsche Blogtexte auf korrekte Umlaute und Typografie.
+- Fuer Build und Links gilt die technische Ergebnispruefung oben.
 
 ### Praktische OER-Nachnutzbarkeit
 
@@ -309,10 +313,6 @@ Bewertungsregel:
 - Fuer `BLOG FINAL` sind unvollstaendiges oder ungueltiges Frontmatter sowie
   jede Nutzung von `authors` immer `BLOCKER`. Die gepruefte Endfassung hat
   `draft: false` gemaess FINAL-Ablauf.
-- Fuer `BLOG FINAL` sind tatsaechlich festgestellte relevante interne
-  Linkfehler im technischen Linkcheck des gebauten Endstands immer `BLOCKER`.
-  Ein nicht ausgefuehrter Linkcheck darf weder als bestanden gelten noch allein
-  wegen der Nichtverfuegbarkeit von Lychee FINAL blockieren.
 - Wenn `draft: false` und `oer.is_oer: true` gesetzt sind, muessen alle OER-Pflichtfelder vollstaendig und valide sein; Abweichungen sind `BLOCKER`.
 - `oer.about` muss exakt die drei Standard-Fachgebiete enthalten; fehlende, zusaetzliche oder abweichende Fachgebiete sind `BLOCKER`.
 - `oer.learning_resource_type` und `oer.educational_level` muessen Arrays aus Objekten mit `id` und `name` sein; freie String-Werte sind `BLOCKER`.
@@ -359,12 +359,8 @@ Wenn das Artefakt eine Reveal-Praesentation ist, pruefe gegen PLAN-Core, geladen
 - Die Front-Matter-Felder `emojis` und `veranstaltungstyp` sind korrekt mit `<span class="content-emoji">…</span>` ausgezeichnet, sofern dort Emojis vorkommen.
 - `{{< titleSlide >}}` ist gegenueber dem vorliegenden Entwurf unveraendert.
 - Toolbar-Icons, Footer, Bilder und Shortcodes sind gegenueber dem vorliegenden Entwurf unveraendert.
-- Sichtbare deutsche Folientexte folgen den geladenen Typografie- und Umlautregeln.
-- In der technischen Ergebnispruefung von `REVEAL FINAL` ist der abschliessende
-  `hugo --minify` erfolgreich. Ist Lychee verfuegbar, ist der danach gegen die
-  gebaute HTML-Ausgabe des aktuellen Revealartefakts ausgefuehrte Linkcheck ohne
-  offene Fehler; andernfalls wird er transparent als nicht ausgefuehrt
-  festgehalten, ohne allein dadurch FINAL zu blockieren.
+- Pruefe sichtbare deutsche Folientexte auf korrekte Umlaute und Typografie.
+- Fuer Build, Links und PDF-Downloadpfad gilt die technische Ergebnispruefung oben.
 
 ### Reveal-Heuristikhinweise zur Darstellung
 

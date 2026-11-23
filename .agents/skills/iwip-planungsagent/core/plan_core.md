@@ -209,13 +209,17 @@ haben Vorrang.
 
 Speicherung und Uebergabe loesen kein Produktionsgate aus. In einer neuen
 Sitzung darf die Lehrperson die Datei ausdruecklich als Grundlage fuer
-`BLOG GO` benennen. Lade sie gezielt vom angegebenen Pfad. Gleiche den
-Uebergabestand mit den zugaenglichen und fuer den Auftrag freigegebenen neueren
-Vorgaben sowie dem `Current State` eines vorhandenen `planning_journal.md` im
-selben Fallordner ab, soweit Zugriff und Verwendung fuer den Abgleich
-freigegeben sind. Weise auf erkennbare umsetzungsrelevante Revisionen hin und
-klaere relevante Widersprueche vor der Ausarbeitung. Steht kein Journal fuer
-den Abgleich zur Verfuegung, ist es keine Voraussetzung fuer `BLOG GO`.
+`BLOG GO` benennen. Lade sie gezielt vom angegebenen Pfad und gleiche sie mit
+den fuer den Auftrag freigegebenen neueren Vorgaben ab. Fuer den Abgleich mit
+dem `Current State` des Journals desselben Falls gelten die Journalregeln
+oben. Bei deaktivierter oder unbekannter Journalfuehrung darfst du das Journal
+nur lesen und zum Abgleich verwenden, wenn die Lehrperson dies fuer den
+Auftrag ausdruecklich freigibt. Ein benannter Fallordner, technischer Zugriff
+oder die Benennung von `planning_state.md` genuegen dafuer nicht. Diese
+einmalige Lesefreigabe aktiviert die Journalfuehrung nicht. Weise auf
+erkennbare umsetzungsrelevante Revisionen hin und klaere relevante
+Widersprueche vor der Ausarbeitung. Ein Journal ist keine Voraussetzung fuer
+`BLOG GO`.
 
 ## Arbeitsmodus, Phasen und Gates
 
@@ -246,20 +250,42 @@ Die Gatefolge bleibt bindend:
 
 Beim Einstieg in ein Publikationsgate in einer neuen Sitzung identifiziere
 Zielartefakt und Grundlage anhand des Auftrags und des nachweisbaren Kontexts.
-Fuer `REVEAL GO` und `REVEAL FINAL` muss die Finalfreigabe den tatsaechlich
-vorliegenden Blogstand betreffen, etwa eine benannte freigegebene Git-Revision
-oder den im Auftrag eindeutig als final bestaetigten Stand der Datei.
-Ein Pfad oder `draft: false` allein belegt diese Freigabe nicht. Aenderungen seit
-der belegten Freigabe klaere vor der Ableitung oder Finalisierung. Frage nur,
-wenn Ziel oder Freigabestand tatsaechlich unklar sind, und dann einmal gezielt.
-Lege dafuer keine neuen Statusdateien oder Pflichtmetadaten an.
+Frage nur, wenn Ziel oder Freigabestand tatsaechlich unklar sind, und dann
+einmal gezielt.
+
+Pruefe vor jedem `REVEAL GO` und `REVEAL FINAL`, auch in derselben Sitzung,
+ob der Inhalt der Blog-Zieldatei bytegleich mit der konkret freigegebenen
+Fassung ist. Der Nachweis kann aus dem bestandenen `BLOG FINAL` im laufenden
+Dialog, einer benannten freigegebenen Git-Revision oder einer ausdruecklichen
+Freigabe der konkret vorliegenden Fassung stammen. Halte bei Freigabe im
+laufenden Dialog Pfad und Inhaltspruefsumme fest. Ein Pfad oder
+`draft: false` allein belegt keine Freigabe. Pruefe einen vorhandenen
+Reveal-Entwurf gegen genau diese Grundlage und klaere Abweichungen vor der
+weiteren Arbeit. Wiederhole den Abgleich der Blogdatei unmittelbar vor der
+abschliessenden Uebernahme bei `REVEAL FINAL`.
+
+### Arbeitsfassung bei bereits veroeffentlichten Zielen
+
+Bei beiden GO-Gates und den anschliessenden Korrekturen bearbeite ein
+bereits veroeffentlichtes Ziel (insbesondere eine bestehende Datei mit
+`draft: false`) nur in einer Arbeitsfassung. Spiegele den
+repo-relativen Zielpfad unter `iwip_planungsagent/publikation/` ausserhalb
+der Hugo-Quellen und setze dort `draft: true`. Halte beim Anlegen daneben
+in einer Datei mit dem Namenszusatz `.base.sha256` die SHA-256-Pruefsumme
+der unveraenderten Zieldatei fest. Bei Fortsetzung, auch in einer neuen
+Sitzung, verwende die vorhandene Arbeitsfassung. Klaere eine fehlende
+Pruefsumme oder eine seit Beginn geaenderte Zieldatei vor dem Fortsetzen
+oder Uebernehmen. Ein neues oder noch unveroeffentlichtes Ziel kann direkt
+am vorgesehenen Content-Pfad als Entwurf mit `draft: true` bearbeitet werden.
+Nur nach bestandenem FINAL darf die gepruefte Fassung die veroeffentlichte
+Zieldatei ersetzen.
 
 Gate-Aktionen und lazy geladene Details:
 
 - Bei `BLOG GO` werden `publikation/templates/blog_template.md` und
   `project_governance/content_emoji_policy.md` geladen. Auf Grundlage des
-  freigegebenen Planungsstands wird direkt `index.md` als bearbeitbare
-  Blog-Arbeitsdatei erzeugt oder fortgefuehrt. Fehlt eine belastbare Grundlage,
+  freigegebenen Planungsstands wird `index.md` gemaess Arbeitsfassungsregel
+  erzeugt oder fortgefuehrt. Fehlt eine belastbare Grundlage,
   ist genau eine Klaerungsfrage zulaessig; andernfalls beginnt die Ausarbeitung
   ohne weitere Bestaetigungsschleife in publizierbarer Blogsprache.
 - Bei `BLOG FINAL` werden fuer den Blogpfad ausschliesslich `publikation/check.md`,
@@ -274,8 +300,8 @@ Gate-Aktionen und lazy geladene Details:
   nicht im Kontext ist.
 - Bei `REVEAL GO` werden `publikation/templates/reveal_template.md` und
   `project_governance/content_emoji_policy.md` geladen. Ausschliesslich aus
-  dem finalen Blog wird genau `_index.md` als bearbeitbare Reveal-Arbeitsdatei
-  erzeugt oder fortgefuehrt.
+  dem finalen Blog wird `_index.md` gemaess Arbeitsfassungsregel erzeugt
+  oder fortgefuehrt.
 - Bei `REVEAL FINAL` werden fuer den Reveal-Pfad ausschliesslich
   `publikation/check.md`, `publikation/templates/reveal_template.md`,
   `publikation/content_emojis_reveal.md`,

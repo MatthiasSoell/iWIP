@@ -20,10 +20,12 @@ veranstaltungstyp: '<span class="content-emoji">🎓</span> Vorlesung'
 ```
 
 ## Inhaltsbereich
-Die Bearbeitung im Markdown beginnt erst nach:
+Die Bearbeitung des Markdown-Textes beginnt nach dem Titel-Shortcode
+und dem folgenden Folientrenner. Die beiden angegebenen Frontmatter-Felder
+werden getrennt bearbeitet. Ein optionales `todos`-Feld ist fuer die
+Bereichsgrenze unerheblich.
 
 ```markdown
-todos: []
 ---
 
 {{< titleSlide >}}

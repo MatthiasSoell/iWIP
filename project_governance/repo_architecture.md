@@ -114,7 +114,8 @@ iWIP/
 ├─ iwip_planungsagent/     # lokaler Arbeitsbereich, von Git ignoriert
 │  ├─ benchmarks/          # manuelle Regressionstests, Inputs und Soll-Fixtures
 │  ├─ entwicklung/         # Historie, Testlaeufe und Arbeitsdaten
-│  └─ exports/             # manuelle Exporte zum Planungsagenten
+│  ├─ exports/             # manuelle Exporte zum Planungsagenten
+│  └─ publikation/         # lokale Arbeitsfassungen veröffentlichter Content-Dateien
 ├─ scripts/check_paket.py  # technische Paketpruefung fuer den Skill
 │
 ├─ project_governance/    # technische Governance
@@ -140,11 +141,14 @@ nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
 - `.hugo_build.lock` als lokale Lock-Datei
 - `.vscode/` fuer nutzerspezifische Workspace-Einstellungen
 - `.venv/` fuer eine lokale Python-Laufzeitumgebung
-- `served/` als temporaeres lokales Staging fuer den Pages-/PDF-Workflow
+- `served/` als optionales lokales Staging fuer technische Pruefungen
 - `iwip_planungsagent/benchmarks/` fuer manuelle Benchmarkdefinitionen und Soll-Fixtures
 - `iwip_planungsagent/entwicklung/` fuer Entwicklungsprotokolle, historische Audits,
   Rohdaten und temporaere Arbeitsdateien
 - `iwip_planungsagent/exports/` fuer manuelle Exporte zum Planungsagenten
+- `iwip_planungsagent/publikation/` fuer Arbeitsfassungen veroeffentlichter
+  Blog- und Reveal-Dateien bis zur bestandenen FINAL-Pruefung
+- `planning_journal.md` und `planning_state.md` als Git-ignorierte Fallunterlagen
 
 Hinweis:
 

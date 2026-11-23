@@ -88,7 +88,7 @@ Dieser Workflow regelt nur Tiefe und Form der Validierung.
 Ausführungslogik:
 
 - Kleine Text- oder Regelkorrekturen: Diff-Pruefung plus die betroffenen Regeln der aktuellen kanonischen Komponenten.
-- Aenderungen an Moduslogik, Uebergaengen, Snapshot-Regeln, Bundle-Hygiene oder DoD: ein geschlossener Dry Run im Standardmodus ueber `/PLAN`, `BLOG GO`, `BLOG FINAL` inklusive automatischem `LITERATUR GO`, `REVEAL GO` -> `REVEAL FINAL`.
+- Aenderungen an Gates, Arbeitsfassungen oder technischen Pflichtpruefungen: die betroffenen Uebergaenge gezielt in einem temporaeren Arbeitsbereich pruefen. Einen vollstaendigen didaktischen Dry Run nur fuer Aenderungen vorsehen, die den gesamten Planungsverlauf betreffen.
 - Bei Aenderungen an der Planungsheuristik zusaetzlich offene Planungsstarts und
   konkrete Analyse-, Feedback-, Reflexions-, Review- oder
   Entscheidungshilfeauftraege pruefen. Eine empfohlene Verdichtung bleibt bei
@@ -152,7 +152,7 @@ Bearbeiter:
 | /PLAN | Sprache bleibt planungs- und dialoggerecht | | | | | |
 | /PLAN | Offener Planungsstart wird verdichtet; konkrete Analyse- oder Feedbackauftraege werden ohne ungefragte Neuplanung bearbeitet | | | | | |
 | /PLAN | Keine sichtbaren Such-, Routing-, Tool- oder Prozesskommentare | | | | | |
-| BLOG GO | Erzeugt `index.md` auf Basis des freigegebenen Planungsstands | | | | | |
+| BLOG GO | Erzeugt einen Entwurf auf Basis des freigegebenen Planungsstands. Bei einem veroeffentlichten Ziel bleiben Aenderungen in der separaten Arbeitsfassung. | | | | | |
 | BLOG FINAL | Kontextlücken führen zu genau einer Rückfrage | | | | | |
 | BLOG FINAL | Profilsteuerung A/B/C ist sichtbar korrekt | | | | | |
 | BLOG FINAL | Blog-first und Uebergangsdisziplin bleiben intakt | | | | | |
@@ -161,16 +161,16 @@ Bearbeiter:
 | BLOG FINAL | Buildfreie Inhalts-, DQM-, Frontmatter- und Formalpruefung laeuft vor jeder Transformation | | | | | |
 | BLOG FINAL | Automatisches `LITERATUR GO` laeuft als rein formaler Schritt ohne Recherche und vor dem Content-Emoji-Postprocessing | | | | | |
 | BLOG FINAL | Content-Emoji-Postprocessing arbeitet fail-closed nach dem eindeutigen OER-Meta-Shortcode: mit Literaturabschnitt nur bis zum korrekt positionierten eindeutigen kanonischen Literaturanker; ohne Abschnitt nur bei bestaetigter Zulaessigkeit und ohne verwaiste Anker oder Literaturverweise bis Dateiende. Geschuetzte Bestandteile bleiben bytegleich; kein Build. | | | | | |
-| BLOG FINAL | Genau ein abschliessender Build laeuft nach allen Mutationen; Lychee prueft danach bevorzugt die gebaute HTML-Ausgabe des aktuellen Blogartefakts. Nur ein ausgefuehrter fehlerfreier Lauf gilt als PASS; Nichtverfuegbarkeit wird ohne automatischen FINAL-Blocker dokumentiert, festgestellte relevante interne Linkfehler sind Blocker. | | | | | |
+| BLOG FINAL | Nach dem einzigen Build werden die lokalen Links im Ziel-HTML einschliesslich absoluter iWIP-URLs gegen das temporaere Buildziel geprueft. Externe Links werden bei Bedarf gezielt verifiziert. | | | | | |
 | BLOG FINAL | Original bleibt waehrend der Pruefung unveraendert. Nach erfolgreichem Build und Ergebnispruefung wird die bytegleiche Endfassung uebernommen. | | | | | |
 | BLOG FINAL | Ein fehlendes Reveal ist weder Blocker noch Warnung; kein toter Praesentationslink wird erzeugt | | | | | |
 | BLOG FINAL | Wissensbasis-Hook wird geprueft, blockiert `REVEAL GO` aber nicht | | | | | |
-| REVEAL GO -> REVEAL FINAL | Reveal startet erst nach Uebergang/Freigabe | | | | | |
+| REVEAL GO -> REVEAL FINAL | Beide Gates gleichen den Blogstand mit der konkreten Freigabe ab. Vor FINAL-Uebernahme wird der Abgleich wiederholt. | | | | | |
 | REVEAL GO -> REVEAL FINAL | Eindeutige natuerliche Auftraege werden korrekt erkannt. Reine Statusmeldungen starten kein Gate. | | | | | |
 | REVEAL GO -> REVEAL FINAL | Buildfreie Ableitungs- und Formalpruefung laeuft ohne vollstaendiges DQM vor dem Emoji-Postprocessing | | | | | |
 | REVEAL GO -> REVEAL FINAL | Content-Emoji-Postprocessing startet keinen Build | | | | | |
-| REVEAL GO -> REVEAL FINAL | Genau ein abschliessender Build laeuft nach allen Mutationen; Lychee prueft danach bevorzugt die gebaute HTML-Ausgabe des aktuellen Revealartefakts. Nur ein ausgefuehrter fehlerfreier Lauf gilt als PASS; Nichtverfuegbarkeit wird ohne automatischen FINAL-Blocker dokumentiert, festgestellte relevante interne Linkfehler sind Blocker. | | | | | |
-| REVEAL GO -> REVEAL FINAL | Nach dem einzigen Build wird das Ziel-PDF temporaer erzeugt und danach der Link geprueft. Nach bestandener Pruefung wird die bytegleiche Endfassung uebernommen. | | | | | |
+| REVEAL GO -> REVEAL FINAL | Nach dem einzigen Build werden die lokalen Links im Ziel-HTML einschliesslich absoluter iWIP-URLs gegen das temporaere Buildziel geprueft. | | | | | |
+| REVEAL GO -> REVEAL FINAL | FINAL prueft die PDF-Konfiguration und den Downloadpfad im HTML. Das Deployment prueft den Download nach dem Export gegen das Upload-Artefakt. | | | | | |
 | REVEAL GO -> REVEAL FINAL | Abgleich, optionale Materialuebersicht und Finalisierung stimmen | | | | | |
 
 ### Kurzfazit

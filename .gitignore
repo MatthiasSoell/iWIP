@@ -16,5 +16,7 @@
 /.vscode/
 /.venv/
 /served/
+planning_journal.md
+planning_state.md
 __pycache__/
 *.py[cod]

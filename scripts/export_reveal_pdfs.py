@@ -9,14 +9,17 @@ import subprocess
 import sys
 import time
 from dataclasses import dataclass
+from http.client import HTTPException
 from pathlib import Path
-from urllib.parse import quote
+from tempfile import TemporaryDirectory
 from urllib.error import HTTPError, URLError
+from urllib.parse import quote, urljoin, urlsplit
 from urllib.request import urlopen
 
+from check_navigation import Navigation, built_target
 
 FRONT_MATTER_RE = re.compile(r"\A---\s*\n(.*?)\n---\s*(?:\n|\Z)", re.DOTALL)
-ROOT_FIELD_RE = re.compile(r"^([A-Za-z0-9_]+):\s*(.*?)\s*$", re.MULTILINE)
+ROOT_FIELD_RE = re.compile(r"^([A-Za-z0-9_]+):[ \t]*(.*)$", re.MULTILINE)
 GLOBAL_RENDER_REBUILD_PATTERNS = (
     ".github/workflows/hugo.yml",
     "config.toml",
@@ -89,6 +92,11 @@ def parse_args() -> argparse.Namespace:
         help="Print the planned exports without calling DeckTape.",
     )
     parser.add_argument(
+        "--check-only",
+        action="store_true",
+        help="With --only, validate the built download link and print its build-relative PDF path.",
+    )
+    parser.add_argument(
         "--changed-paths-file",
         type=Path,
         help="Optional file containing repo-relative changed paths, one per line.",
@@ -105,6 +113,8 @@ def parse_args() -> argparse.Namespace:
     args = parser.parse_args()
     if (args.only is None) != (args.public_root is None):
         parser.error("--only and --public-root must be used together")
+    if args.check_only and (args.only is None or args.dry_run):
+        parser.error("--check-only requires --only and cannot be combined with --dry-run")
     if args.only is not None and (
         args.changed_paths_file or args.published_base_url or args.force_full_rebuild
     ):
@@ -126,6 +136,8 @@ def parse_front_matter(markdown_path: Path) -> dict[str, str]:
 
 def strip_yaml_scalar(value: str) -> str:
     cleaned = value.strip()
+    if not cleaned.startswith(('"', "'")):
+        cleaned = re.split(r"[ \t]+#", cleaned, maxsplit=1)[0].rstrip()
     if len(cleaned) >= 2 and cleaned[0] == cleaned[-1] and cleaned[0] in {'"', "'"}:
         return cleaned[1:-1]
     return cleaned
@@ -239,30 +251,52 @@ def build_published_pdf_url(spec: ExportSpec, published_base_url: str) -> str:
     return f"{published_base_url.rstrip('/')}/{'/'.join(encoded_parts)}"
 
 
-def restore_published_pdfs(exports: list[ExportSpec], published_base_url: str, dry_run: bool) -> int:
-    restored = 0
+def check_pdf_download(spec: ExportSpec, public_root: Path, site_url: str) -> None:
+    html = spec.pdf_output.parent / "index.html"
+    navigation = Navigation()
+    navigation.feed(html.read_text(encoding="utf-8"))
+    navigation.close()
+    site = urlsplit(site_url.rstrip("/") + "/")
+    document_url = urljoin(site.geturl(), quote(html.relative_to(public_root).as_posix()))
+    links = navigation.pdf_downloads
+    if len(links) != 1 or built_target(
+        public_root.resolve(), site, document_url, links[0]
+    ) != spec.pdf_output.resolve():
+        raise ValueError(f"{html}: expected one PDF download for {spec.published_pdf_rel_path}")
+
+
+def is_complete_pdf(path: Path) -> bool:
+    if not path.is_file():
+        return False
+    with path.open("rb") as pdf:
+        if pdf.read(5) != b"%PDF-":
+            return False
+        pdf.seek(max(5, path.stat().st_size - 1024))
+        return pdf.read().rstrip().endswith(b"%%EOF")
+
+
+def restore_published_pdfs(
+    exports: list[ExportSpec], published_base_url: str, dry_run: bool
+) -> list[ExportSpec]:
+    missing = []
     for spec in exports:
         source_url = build_published_pdf_url(spec, published_base_url)
         print(f"Restoring {spec.published_pdf_rel_path.as_posix()} from {source_url}")
         if dry_run:
-            restored += 1
             continue
 
         try:
-            with urlopen(source_url) as response:
-                if not 200 <= response.status < 400:
-                    raise RuntimeError(f"Unexpected status {response.status} while restoring {source_url}")
+            with urlopen(source_url, timeout=15) as response:
                 spec.pdf_output.parent.mkdir(parents=True, exist_ok=True)
                 spec.pdf_output.write_bytes(response.read())
-                restored += 1
-        except HTTPError as exc:
-            if exc.code in (404, 503):
-                print(f"Warning: Could not restore published PDF ({exc.code}): {source_url}")
-                continue
-            raise RuntimeError(f"Failed to restore published PDF {source_url}: HTTP {exc.code}") from exc
-        except URLError as exc:
-            raise RuntimeError(f"Failed to restore published PDF {source_url}: {exc.reason}") from exc
-    return restored
+        except (URLError, TimeoutError, HTTPException) as exc:
+            print(f"Could not restore {source_url}: {exc}. Will export again.")
+            missing.append(spec)
+            continue
+        if not is_complete_pdf(spec.pdf_output):
+            print(f"Invalid PDF at {source_url}. Will export again.")
+            missing.append(spec)
+    return missing
 
 
 def wait_for_url(url: str, retries: int, delay: float) -> None:
@@ -291,9 +325,13 @@ def export_pdf(spec: ExportSpec, pause_ms: int, retries: int, delay: float) -> N
         "--chrome-arg=--disable-dev-shm-usage",
         "reveal",
         spec.reveal_url,
-        str(spec.pdf_output),
     ]
-    subprocess.run(command, check=True)
+    with TemporaryDirectory(dir=spec.pdf_output.parent) as staging:
+        generated = Path(staging) / spec.pdf_output.name
+        subprocess.run([*command, str(generated)], check=True)
+        if not is_complete_pdf(generated):
+            raise RuntimeError(f"Incomplete PDF generated for {spec.source_path}")
+        generated.replace(spec.pdf_output)
 
 
 def main() -> int:
@@ -311,6 +349,10 @@ def main() -> int:
         if not exports:
             raise ValueError(f"No PDF export configured for {args.only}")
         spec = exports[0]
+        if args.check_only:
+            check_pdf_download(spec, public_root, args.served_base_url)
+            print(spec.published_pdf_rel_path.as_posix())
+            return 0
         if spec.pdf_output.exists():
             raise FileExistsError(f"Temporary PDF already exists: {spec.pdf_output}")
         if not (spec.pdf_output.parent / "index.html").is_file():
@@ -318,8 +360,7 @@ def main() -> int:
         print(f"Exporting {args.only} -> {spec.pdf_output}")
         if not args.dry_run:
             export_pdf(spec, args.pause_ms, args.readiness_retries, args.readiness_delay)
-            if not spec.pdf_output.is_file() or spec.pdf_output.stat().st_size == 0:
-                raise RuntimeError(f"PDF export did not produce {spec.pdf_output}")
+            check_pdf_download(spec, public_root, args.served_base_url)
         return 0
 
     changed_paths, changed_paths_known = load_changed_paths(args.changed_paths_file)
@@ -343,18 +384,24 @@ def main() -> int:
     else:
         if not args.published_base_url:
             raise RuntimeError("Selective PDF rebuild requires --published-base-url so unchanged PDFs can be restored.")
-        restored = restore_published_pdfs(exports, args.published_base_url, args.dry_run)
-        print(f"Restored {restored} published PDFs before selective rebuild.")
-        if not exports_to_build:
-            print("No Reveal PDF rebuild needed after restoring existing PDFs.")
-            return 0
-        print(f"Rebuilding {len(exports_to_build)} affected PDFs.")
+        unchanged = [spec for spec in exports if spec not in exports_to_build]
+        missing = restore_published_pdfs(unchanged, args.published_base_url, args.dry_run)
+        exports_to_build.extend(missing)
+        print(f"Rebuilding {len(exports_to_build)} changed or missing PDFs.")
 
     for spec in exports_to_build:
         print(f"Exporting {spec.source_path.relative_to(repo_root)} -> {spec.pdf_output.relative_to(repo_root)}")
         if args.dry_run:
             continue
         export_pdf(spec, args.pause_ms, args.readiness_retries, args.readiness_delay)
+
+    if not args.dry_run:
+        site_url = args.published_base_url or args.served_base_url
+        for spec in exports:
+            if not is_complete_pdf(spec.pdf_output):
+                raise RuntimeError(f"Missing or incomplete PDF in deployment: {spec.published_pdf_rel_path}")
+            check_pdf_download(spec, public_root, site_url)
+        print(f"Verified {len(exports)} PDF downloads in the deployment artifact.")
 
     return 0
 
