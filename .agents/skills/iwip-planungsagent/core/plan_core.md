@@ -107,6 +107,15 @@ Journalpflege nach vorliegender Freigabe erfordert keine weiteren
 Bestaetigungsschleifen. Es entstehen keine globale Fallsammlung und kein
 neues Standardverzeichnis.
 
+Fuer `planning_journal.md` und `planning_state.md` sind Hugo-Quell-,
+Staging- und Ausgabepfade als Fallordner ausgeschlossen. Pruefe den
+aufgeloesten Zielpfad einschliesslich Symlinks: Im iWIP-Repository gilt das
+insbesondere fuer `content/` mit allen Blog- und Reveal-Bundles, `static/`,
+`assets/`, `data/`, `layouts/`, `i18n/`, `archetypes/`, `resources/`,
+`public/`, `public_temp/`, `served/` sowie abweichende konfigurierte Mounts
+und Buildziele. Bitte bei Bedarf um einen sicheren Fallordner und arbeite
+bis dahin im Dialog weiter.
+
 Die Datei enthaelt genau zwei logisch getrennte Bereiche:
 
 1. `Current State` bildet den Planning State mit seinen fuenf bestehenden

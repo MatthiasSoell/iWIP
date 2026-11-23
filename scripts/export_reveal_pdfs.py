@@ -51,6 +51,16 @@ def parse_args() -> argparse.Namespace:
         help="Repository root containing content/ and public/.",
     )
     parser.add_argument(
+        "--only",
+        type=Path,
+        help="Export only this repository-relative Reveal _index.md.",
+    )
+    parser.add_argument(
+        "--public-root",
+        type=Path,
+        help="Temporary Hugo output directory for --only.",
+    )
+    parser.add_argument(
         "--served-base-url",
         default="http://127.0.0.1:8080/iWIP",
         help="Base URL of the locally served Hugo site.",
@@ -92,7 +102,14 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Force a full PDF rebuild regardless of changed files.",
     )
-    return parser.parse_args()
+    args = parser.parse_args()
+    if (args.only is None) != (args.public_root is None):
+        parser.error("--only and --public-root must be used together")
+    if args.only is not None and (
+        args.changed_paths_file or args.published_base_url or args.force_full_rebuild
+    ):
+        parser.error("--only cannot be combined with deployment selection options")
+    return args
 
 
 def parse_front_matter(markdown_path: Path) -> dict[str, str]:
@@ -131,12 +148,19 @@ def resolve_pdf_filename(front_matter: dict[str, str], markdown_path: Path) -> s
     return filename
 
 
-def discover_exports(repo_root: Path, served_base_url: str) -> list[ExportSpec]:
+def discover_exports(
+    repo_root: Path, served_base_url: str, public_root: Path, only: Path | None
+) -> list[ExportSpec]:
     content_root = repo_root / "content" / "praesentation"
-    public_root = repo_root / "public"
-    exports: list[ExportSpec] = []
+    sources = sorted(content_root.glob("**/_index.md"))
+    if only is not None:
+        source = (repo_root / only).resolve()
+        if only.is_absolute() or source not in sources:
+            raise ValueError(f"Expected a repository-relative Reveal _index.md: {only}")
+        sources = [source]
 
-    for markdown_path in sorted(content_root.glob("**/_index.md")):
+    exports: list[ExportSpec] = []
+    for markdown_path in sources:
         front_matter = parse_front_matter(markdown_path)
         if not parse_bool(front_matter.get("pdf_export")):
             continue
@@ -272,7 +296,29 @@ def export_pdf(spec: ExportSpec, pause_ms: int, retries: int, delay: float) -> N
 def main() -> int:
     args = parse_args()
     repo_root = args.repo_root.resolve()
-    exports = discover_exports(repo_root, args.served_base_url)
+    public_root = repo_root / "public"
+    if args.public_root is not None:
+        audit_output = args.public_root.resolve()
+        if audit_output == repo_root or audit_output.is_relative_to(repo_root):
+            raise ValueError("--public-root must be outside the repository")
+        public_root = audit_output
+
+    exports = discover_exports(repo_root, args.served_base_url, public_root, args.only)
+    if args.only is not None:
+        if not exports:
+            raise ValueError(f"No PDF export configured for {args.only}")
+        spec = exports[0]
+        if spec.pdf_output.exists():
+            raise FileExistsError(f"Temporary PDF already exists: {spec.pdf_output}")
+        if not (spec.pdf_output.parent / "index.html").is_file():
+            raise FileNotFoundError(f"Built Reveal HTML missing for {args.only}")
+        print(f"Exporting {args.only} -> {spec.pdf_output}")
+        if not args.dry_run:
+            export_pdf(spec, args.pause_ms, args.readiness_retries, args.readiness_delay)
+            if not spec.pdf_output.is_file() or spec.pdf_output.stat().st_size == 0:
+                raise RuntimeError(f"PDF export did not produce {spec.pdf_output}")
+        return 0
+
     changed_paths, changed_paths_known = load_changed_paths(args.changed_paths_file)
 
     if not exports:

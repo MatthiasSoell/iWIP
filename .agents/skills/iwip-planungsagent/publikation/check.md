@@ -40,9 +40,11 @@ genannten Dateien.
 2. Beim Blog folgt `LITERATUR GO`, anschließend das Blog-Emoji-Postprocessing.
    Bei Reveal folgt das Reveal-Emoji-Postprocessing. Literatur- und
    Emoji-Schritte starten keinen Build.
-3. Erst danach im iWIP-Repository genau einmal `hugo --minify` ausführen.
-4. Den gebauten Endstand technisch prüfen. Nach dem Build erfolgt keine
-   Mutation mehr. Für die Freigabe gilt der PLAN-Core.
+3. Erst danach im iWIP-Repository genau einmal `hugo --minify` mit leerem
+   temporaerem Ausgabeziel ausfuehren.
+4. Den gebauten Endstand technisch pruefen. Bei Reveal vor Lychee das PDF
+   des betreffenden Artefakts im temporaeren Build erzeugen. Nach dem Build
+   bleiben die Quelldateien unveraendert. Fuer die Freigabe gilt der PLAN-Core.
 
 ## Zwei getrennte Pruefphasen
 
@@ -63,12 +65,23 @@ Abschnitt „Praktische OER-Nachnutzbarkeit“ in dieser Datei.
 Die technische Ergebnispruefung findet ausschliesslich nach dem genau einen
 abschliessenden `hugo --minify` statt und bewertet nur den gebauten Endstand.
 Sie prueft den Build-Erfolg, das erwartete gebaute Ziel und den mit der
-vorhandenen `lychee.toml` gegen die HTML-Ausgabe des aktuellen Artefakts unter
-`public/` ausfuehrbaren Linkcheck. Site-relative Ziele werden dabei ueber einen
+vorhandenen `lychee.toml` gegen die HTML-Ausgabe des aktuellen Artefakts im
+temporaeren Build ausfuehrbaren Linkcheck. Site-relative Ziele werden dabei ueber einen
 lokalen Staging-Root unter der aus der Projektkonfiguration abgeleiteten
 Site-Basis aufgeloest. Ein Offline-Lauf deckt nur lokale
-Ziele ab und darf nicht als externe URL-Pruefung gelten. Die Phase fuehrt keine
-Mutation und keinen weiteren Build aus. Nur ein tatsaechlich ausgefuehrter
+Ziele ab und darf nicht als externe URL-Pruefung gelten.
+
+Fuer `REVEAL FINAL` spiegele das temporaere Buildziel unter der Site-Basis im
+Staging-Root, etwa ueber einen Symlink, und serviere diesen Root lokal auf
+Loopback. Rufe `scripts/export_reveal_pdfs.py` mit `--only` fuer den
+repo-relativen Pfad der Reveal-Quelldatei, `--public-root` fuer das
+temporaere Buildziel und `--served-base-url` fuer die lokale URL inklusive
+Site-Basis auf. Pruefe das erzeugte PDF und danach die Links der gebauten
+Reveal-HTML gegen denselben Staging-Root. Beende den lokalen Server nach dem
+Check. Fehlender oder fehlgeschlagener PDF-Export blockiert die Reveal-Freigabe.
+Das produktive Ausgabeziel bleibt unberuehrt. Es folgt kein weiterer Hugo-Build.
+
+Nur ein tatsaechlich ausgefuehrter
 fehlerfreier Lychee-Lauf darf als bestandener Linkcheck gelten. Ist Lychee nicht
 verfuegbar, wird die Linkpruefung als nicht ausgefuehrt festgehalten; dies allein
 ist kein `BLOCKER`. Der Hugo-Build allein weist nicht nach, dass alle
