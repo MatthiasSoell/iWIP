@@ -147,7 +147,7 @@ Nutze nach Möglichkeit `title_reveal` und `emojis` im Frontmatter.
 ## Folie 4 — Lernziele
 
 - wichtigste Lernziele oder Zielperspektiven knapp darstellen
-- Emojis im Folieninhalt folgen `.agents/iwip_planungsagent_governance/content_emoji_policy.md`
+- Emojis im Folieninhalt folgen `project_governance/content_emoji_policy.md`
 
 Beispiel:
 
@@ -190,7 +190,7 @@ Emojis werden über mehrere Fragmente hinweg konsistent fortgeführt und nicht n
 
 ## Arbeits-, Diskussions- und Transferfolien (optional)
 
-- Arbeits-, Diskussions- und Transferfolien setzen Emojis im sichtbaren Folieninhalt gemaess `.agents/iwip_planungsagent_governance/content_emoji_policy.md` ein.
+- Arbeits-, Diskussions- und Transferfolien setzen Emojis im sichtbaren Folieninhalt gemaess `project_governance/content_emoji_policy.md` ein.
 
 Beispiel Arbeitsauftrag:
 

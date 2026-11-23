@@ -89,12 +89,12 @@ static/css/
 
 ## Dokumentation
 
-Die technische und organisatorische Dokumentation liegt im Ordner `.agents/iwip_planungsagent_governance/`.
+Die technische und organisatorische Dokumentation liegt im Ordner `project_governance/`.
 
 Wichtige Dokumente:
 
 ```text
-.agents/iwip_planungsagent_governance/
+project_governance/
 ├─ repo_architecture.md
 ├─ css_architecture.md
 ├─ development_workflow.md

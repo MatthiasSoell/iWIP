@@ -16,14 +16,14 @@ keine Laufzeit-Steuerlogik.
 
 Follow the project governance files:
 
-- .agents/iwip_planungsagent_governance/content_emoji_policy.md
+- project_governance/content_emoji_policy.md
 
 Load the following governance files only when relevant for Technik-, QA-, FINAL-, Workflow- oder Architekturfragen (not as early mandatory context for normal `/PLAN` tasks):
 
-- .agents/iwip_planungsagent_governance/ai_copilot_instructions.md
-- .agents/iwip_planungsagent_governance/css_architecture.md
-- .agents/iwip_planungsagent_governance/repo_architecture.md
-- .agents/iwip_planungsagent_governance/development_workflow.md
+- project_governance/ai_copilot_instructions.md
+- project_governance/css_architecture.md
+- project_governance/repo_architecture.md
+- project_governance/development_workflow.md
 
 Key principles:
 

@@ -35,7 +35,7 @@ Journalen gesucht. Anlage und Pflege richten sich nach dem PLAN-Core.
 
 Fallpfade beziehen sich auf den von der Lehrperson benannten Arbeitsbereich.
 Bei einer iWIP-Publikation beziehen sich `content/`, `public/`,
-`.agents/iwip_planungsagent_governance/`, die Hugo-Konfiguration und Buildbefehle auf den
+`project_governance/`, die Hugo-Konfiguration und Buildbefehle auf den
 iWIP-Repository-Stamm. Die dialogische Planung funktioniert mit dem Paket
 allein. Ist für eine angeforderte Publikation die iWIP-Umgebung nicht
 verfügbar, benenne die konkret fehlende Voraussetzung.

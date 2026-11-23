@@ -41,10 +41,10 @@ Architecture rules:
 - no hardcoded colors outside design tokens
 
 Documentation:
-- .agents/iwip_planungsagent_governance/css_architecture.md → CSS system
-- .agents/iwip_planungsagent_governance/repo_architecture.md → repository structure
-- .agents/iwip_planungsagent_governance/content_emoji_policy.md → content emoji conventions
-- .agents/iwip_planungsagent_governance/ai_copilot_instructions.md → AI editing rules
+- project_governance/css_architecture.md → CSS system
+- project_governance/repo_architecture.md → repository structure
+- project_governance/content_emoji_policy.md → content emoji conventions
+- project_governance/ai_copilot_instructions.md → AI editing rules
 
 Goal of the project:
 Open science blog publishing teaching materials as OER, supported by a

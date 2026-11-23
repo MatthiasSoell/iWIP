@@ -114,7 +114,7 @@ iWIP/
 ├─ .agents/skills/iwip-planungsagent/  # Planungskern und optionale Publikationsregeln
 ├─ iwip_planungsagent_benchmarks/             # aktuelle Regression, Inputs, Expectations und Fixtures
 │
-├─ .agents/iwip_planungsagent_governance/    # technische Governance
+├─ project_governance/    # technische Governance
 │  ├─ css_architecture.md
 │  ├─ ai_copilot_instructions.md
 │  ├─ content_emoji_policy.md
@@ -211,7 +211,7 @@ static/css/custom_reveal.css
 
 Details sind dokumentiert in:
 
-- `.agents/iwip_planungsagent_governance/css_architecture.md`
+- `project_governance/css_architecture.md`
 
 ---
 

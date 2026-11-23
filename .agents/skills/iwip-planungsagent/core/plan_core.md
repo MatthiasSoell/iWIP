@@ -176,7 +176,7 @@ Gate-Aktionen und lazy geladene Details:
   ohne weitere Bestaetigungsschleife in publizierbarer Blogsprache.
 - Bei `BLOG FINAL` werden fuer den Blogpfad ausschliesslich `publikation/check.md`,
   `publikation/templates/blog_template.md`, `publikation/literatur.md`,
-  `publikation/content_emojis_blog.md`, `.agents/iwip_planungsagent_governance/content_emoji_policy.md`,
+  `publikation/content_emojis_blog.md`, `project_governance/content_emoji_policy.md`,
   `publikation/low_noise_response_patterns.md` und fuer die formale
   didaktische Finalpruefung das vollstaendige
   `references/didaktisches_qualitaetsmodell.md` geladen. Reveal-Template,
@@ -187,7 +187,7 @@ Gate-Aktionen und lazy geladene Details:
 - Bei `REVEAL FINAL` werden fuer den Reveal-Pfad ausschliesslich
   `publikation/check.md`, `publikation/templates/reveal_template.md`,
   `publikation/content_emojis_reveal.md`,
-  `.agents/iwip_planungsagent_governance/content_emoji_policy.md` und
+  `project_governance/content_emoji_policy.md` und
   `publikation/low_noise_response_patterns.md` geladen. Das vollstaendige
   DQM, Blog-Template, Literatur-Prompt und Blog-Emoji-Prompt werden nicht geladen.
   Für beide FINAL-Gates gelten die buildfreie Vorprüfung, die geordnete

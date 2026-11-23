@@ -111,13 +111,13 @@ Muss eine Dokumentation angepasst werden?
 
 Relevante Dokumente:
 
-- .agents/iwip_planungsagent_governance/css_architecture.md
-- .agents/iwip_planungsagent_governance/repo_architecture.md
-- .agents/iwip_planungsagent_governance/ai_copilot_instructions.md
+- project_governance/css_architecture.md
+- project_governance/repo_architecture.md
+- project_governance/ai_copilot_instructions.md
 - .agents/skills/iwip-planungsagent/core/plan_core.md
 - .agents/skills/iwip-planungsagent/core/kdm_core.md
-- .agents/iwip_planungsagent_governance/development_workflow.md
-- .agents/iwip_planungsagent_governance/content_emoji_policy.md
+- project_governance/development_workflow.md
+- project_governance/content_emoji_policy.md
 - .agents/skills/iwip-planungsagent/core/master_agent.md
 - .agents/skills/iwip-planungsagent/SKILL.md
 - .agents/skills/iwip-planungsagent/publikation/check.md
@@ -179,7 +179,7 @@ Reveal prüfen, wenn betroffen:
 Dann zusätzlich:
 
 - betroffene Regeln aus PLAN-, KDM- und DQM-Core direkt als normative Referenz anwenden
-- Ausfuehrungslogik aus `.agents/iwip_planungsagent_governance/development_workflow.md` fuer Testtiefe und Dry Run befolgen
+- Ausfuehrungslogik aus `project_governance/development_workflow.md` fuer Testtiefe und Dry Run befolgen
 
 ---
 

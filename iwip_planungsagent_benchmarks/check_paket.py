@@ -61,7 +61,7 @@ def check_package(package, repository=None):
     for document in package.rglob("*.md"):
         contents = document.read_text(encoding="utf-8")
         for name in re.findall(r"`([^ `\n<>]+/[^ `\n<>]+\.md)`", contents):
-            if name.startswith(("content/", ".agents/iwip_planungsagent_governance/")):
+            if name.startswith(("content/", "project_governance/")):
                 if repository is not None:
                     check_target(repository, name, document)
             else:
