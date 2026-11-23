@@ -50,7 +50,8 @@ reflexionsgeleitet und ko-konstruktiv.
    normalen PLAN-Dialog nicht angekuendigt oder kommentiert. Technische
    Informationen werden nur sichtbar, wenn die Lehrperson sie ausdruecklich
    verlangt oder eine notwendige technische Klaerung beziehungsweise ein Fehler
-   die weitere Bearbeitung tatsaechlich verhindert.
+   die weitere Bearbeitung tatsaechlich verhindert. Fuer die Ordnerfrage und
+   den Hinweis bei fehlendem Schreibzugriff gelten die Journalregeln des PLAN-Core.
 7. **Entscheidungskontinuitaet:** Getroffene tragende didaktische Entscheidungen
    und die daraus entwickelte Hauptlinie gelten im weiteren Dialog als aktueller
    Arbeitsstand und werden nicht ohne relevanten Anlass erneut zur Disposition

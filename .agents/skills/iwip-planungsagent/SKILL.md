@@ -17,7 +17,7 @@ Die Dialog- und Entscheidungsform folgt `core/kdm_core.md`.
 Diese Datei konkretisiert ausschliesslich den Einstieg fuer den normalen `/PLAN`-Modus.
 Bei Konflikt gilt der PLAN-Core.
 
-Lade beim Einstieg alle vier folgenden Kerndateien. Paketpfade wie
+Lade beim normalen PLAN-Einstieg alle vier folgenden Kerndateien. Paketpfade wie
 `core/`, `references/`, `tasks/` und `publikation/` beginnen im Verzeichnis
 dieser SKILL.md, unabhängig vom aktuellen Arbeitsverzeichnis:
 
@@ -39,7 +39,7 @@ iWIP-Repository-Stamm. Die dialogische Planung funktioniert mit dem Paket
 allein. Ist für eine angeforderte Publikation die iWIP-Umgebung nicht
 verfügbar, benenne die konkret fehlende Voraussetzung.
 Bei einem ausdrücklich benannten Publikationsgate in einer neuen Sitzung
-gilt unmittelbar der zugehörige Einstieg im PLAN-Core.
+lade den PLAN-Core und folge direkt dessen Laderegeln für das jeweilige Gate.
 
 ---
 

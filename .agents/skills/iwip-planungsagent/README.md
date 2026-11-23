@@ -90,7 +90,7 @@ beliebigen Arbeitsverzeichnis führen.
 
 - **ChatGPT Work (Desktop):** Öffne den entpackten Agentenordner oder das iWIP-Repository. Im Paket starte mit „Nutze SKILL.md für folgende didaktische Planung …“, im Repository mit „Nutze .agents/skills/iwip-planungsagent/SKILL.md für folgende didaktische Planung …“.
 - **Codex in VS Code:** Öffne das iWIP-Repository und wähle `$iwip-planungsagent`. Der Texteinstieg `/PLAN` wird auch über die Repository-Anweisungen unterstützt. Ein heruntergeladenes Paket kannst Du in einem eigenen Projekt als `.agents/skills/iwip-planungsagent/` ablegen.
-- **Planung fortführen:** `/PLAN` führt bei konkreten Fällen die wichtigen Entscheidungen und Revisionen standardmäßig im `planning_journal.md`. Benenne dafür einen beschreibbaren Fallordner. Mit „ohne Journal“ führst Du den Fall nur im Dialog.
+- **Planung fortführen:** `/PLAN` führt bei konkreten Fällen die wichtigen Entscheidungen und Revisionen standardmäßig im `planning_journal.md`. Benenne dafür einen beschreibbaren Fallordner. „Ohne Journal“ gilt, bis Du ausdrücklich wieder um Journalführung bittest. Wenn die bisherige Einstellung beim Wiedereinstieg in einer neuen Sitzung unbekannt ist, bitte ausdrücklich um Journalführung, falls Du sie möchtest.
 - **Als OER weitergeben:** Den gesamten Ordner `iwip-planungsagent/` einschließlich Lizenz und Quellen aus einem bezeichneten Commit verpacken. Im Repository erzeugt der folgende Befehl aus dem aktuellen Commit ein ZIP mit sichtbarem Paketordner:
 
   ```sh
@@ -110,12 +110,15 @@ Grundlage für `REVEAL GO` und die anschließende Prüfung mit `REVEAL FINAL`.
 Gib den sichtbaren Planungsstand in Work frei und bitte ausdrücklich darum,
 ihn im benannten Fallordner als `planning_state.md` zu speichern. Darin stehen
 die freigegebenen Aufgaben, Materialien und Quellen für die Ausarbeitung.
-Das `planning_journal.md` hält die Entscheidungen und ihre Revisionen fest.
+Die Übergabe funktioniert auch ohne Journal.
 
 Öffne anschließend in Codex das iWIP-Repository und gib zum Beispiel ein:
 
 > BLOG GO auf Basis des freigegebenen Planungsstands in
 > `<Fallordner>/planning_state.md`.
+
+Für den Abgleich kannst Du im selben Auftrag das `planning_journal.md`
+aus demselben Fallordner zum Lesen und Verwenden freigeben.
 
 Nach einer für die Ausarbeitung relevanten Revision gib den aktualisierten
 Stand erneut frei und bitte um die Aktualisierung der Datei.

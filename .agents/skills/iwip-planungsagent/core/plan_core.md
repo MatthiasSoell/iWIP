@@ -83,14 +83,19 @@ formuliert der Agent natuerlich statt als technischen State-Dump.
 Bei konkreten Planungsfaellen wird das fallbezogene `planning_journal.md`
 standardmaessig gefuehrt. Es entsteht beim ersten journalwuerdigen Ereignis.
 Allgemeine Fragen, Meta-Arbeit und reine Analyse oder Beratung ohne konkretes
-journalwuerdiges Planungsereignis bleiben dateilos. Die Lehrperson kann das
-Journal jederzeit ausdruecklich deaktivieren oder wieder aktivieren. Bei
-Deaktivierung wird das bestehende Journal weder aktualisiert noch geloescht.
-Ein ausdruecklicher Auftrag, einen benannten Fall mit Journal fortzufuehren
-oder seinen Stand zu speichern, gilt als Aktivierung.
+journalwuerdiges Planungsereignis bleiben dateilos. „Ohne Journal“ deaktiviert
+die Journalfuehrung fuer den Fall bis zu einem ausdruecklichen Auftrag, sie
+wieder aufzunehmen.
+Solange sie deaktiviert ist, wird das Journal weder automatisch gelesen noch
+angelegt, aktualisiert oder geloescht. Ein ausdruecklich freigegebener Lesezugriff
+ist moeglich und aktiviert die Journalfuehrung nicht. Ist bei der Wiederaufnahme
+eines benannten Falls in einer neuen Sitzung die bisherige Einstellung
+unbekannt, fuehre den Fall im Dialog fort, bis die Lehrperson ausdruecklich
+um Journalfuehrung bittet. Ein Auftrag zu `planning_state.md` aktiviert das
+Journal nicht.
 
-Verwende nur einen eindeutig von der Lehrperson benannten oder zuvor fuer
-diesen Fall bestaetigten Arbeitsordner. Der Ablageort einer gelesenen
+Bei aktiver Journalfuehrung verwende nur einen eindeutig von der Lehrperson
+benannten oder zuvor fuer diesen Fall bestaetigten Arbeitsordner. Der Ablageort einer gelesenen
 Quelldatei allein ist keine Freigabe, dort zu schreiben. Fehlt der Arbeitsordner,
 frage beim ersten journalwuerdigen Ereignis einmal knapp danach. Hat eine
 didaktisch notwendige Frage Vorrang, stelle die Ordnerfrage erst danach.
@@ -117,9 +122,10 @@ Jeder History-Eintrag verwendet eine innerhalb der Datei fortlaufende stabile
 ID `J-001`, `J-002` und so weiter, ein ISO-Datum, einen der Ereignistypen
 `decision`, `revision`, `open` oder `resolved` sowie `content`. `rationale` ist
 bei `decision` und `revision` verpflichtend, sonst nur bei Erklaerungsbedarf.
-`refers_to` ist bei `revision` und `resolved` verpflichtend und ansonsten
-optional. `rejected_alternative` ist nur optional zulaessig, wenn eine
-ernsthafte bewusst verworfene Alternative spaeter erklaerungsrelevant ist.
+`refers_to` ist bei `resolved` und bei `revision` mit einem passenden frueheren
+Journaleintrag verpflichtend und ansonsten optional. `rejected_alternative` ist
+nur optional zulaessig, wenn eine ernsthafte bewusst verworfene Alternative
+spaeter erklaerungsrelevant ist.
 Weitere Felder werden nicht gefuehrt.
 
 Ein History-Eintrag entsteht nur bei einem materiellen Planungsereignis, dessen
@@ -134,9 +140,9 @@ Agentenvorschlaege und technische Prozessmeldungen sind nicht journalwuerdig.
 Bei einer substantiellen Revision werden in einem zusammengehoerigen
 Pflegevorgang der gesamte betroffene Current-State-Bereich nach der bestehenden
 Revisionssemantik gegen die neue Setzung geprueft, unvereinbare Bestandteile
-entfernt oder ersetzt und ein neuer `revision`-Eintrag mit `refers_to` auf die
-relevanten frueheren Eintraege angefuegt. Fruehere Eintraege bleiben als
-Historie erhalten und duerfen nie dazu fuehren, dass eine revidierte
+entfernt oder ersetzt und ein neuer `revision`-Eintrag angefuegt. Gibt es
+relevante fruehere Eintraege, verweist `refers_to` auf sie. Fruehere Eintraege
+bleiben als Historie erhalten und duerfen nie dazu fuehren, dass eine revidierte
 Entscheidung wieder als aktuell behandelt wird. Wird ein dokumentierter offener
 Punkt durch eine Entscheidung oder Revision erledigt, kann deren Eintrag den
 `open`-Eintrag referenzieren; entfaellt er ohne neue tragende Entscheidung,
@@ -146,9 +152,10 @@ In einer laufenden Session arbeitet der Agent primaer mit Gespraechskontext und
 Planning State und liest das Journal nicht vor jedem Turn vollstaendig neu. Er
 aktualisiert es nur bei journalwuerdigen Ereignissen und prueft vor dem
 Schreibzugriff den fuer eine sichere Aktualisierung notwendigen aktuellen
-Dateiinhalt. Bei einer neuen Session oder einem ausdruecklichen Wiedereinstieg
-in einen benannten persistenten Planungsfall liest er die kleine
-`planning_journal.md` vollstaendig, verwendet nur `Current State` als geltenden
+Dateiinhalt. Bei aktiver Journalfuehrung liest der Agent die kleine
+`planning_journal.md` vollstaendig, wenn er einen benannten persistenten
+Planungsfall in einer neuen Session oder auf ausdruecklichen Auftrag
+wieder aufnimmt. Er verwendet nur `Current State` als geltenden
 Stand und die `Decision History` als Begruendungs- und Revisionshistorie. Der
 alte Chat wird nur bei einer daraus nicht aufloesbaren konkreten Unklarheit
 herangezogen. Sichtbar wird standardmaessig eine natuerliche knappe
@@ -181,9 +188,13 @@ haben Vorrang.
 
 Speicherung und Uebergabe loesen kein Produktionsgate aus. In einer neuen
 Sitzung darf die Lehrperson die Datei ausdruecklich als Grundlage fuer
-`BLOG GO` benennen. Lade sie gezielt vom angegebenen Pfad. Sind fuer
-die Umsetzung relevante Widersprueche zu neueren Vorgaben oder zu einem
-bekannten aktuellen Journalstand erkennbar, klaere sie vor der Ausarbeitung.
+`BLOG GO` benennen. Lade sie gezielt vom angegebenen Pfad. Gleiche den
+Uebergabestand mit den zugaenglichen und fuer den Auftrag freigegebenen neueren
+Vorgaben sowie dem `Current State` eines vorhandenen `planning_journal.md` im
+selben Fallordner ab, soweit Zugriff und Verwendung fuer den Abgleich
+freigegeben sind. Weise auf erkennbare umsetzungsrelevante Revisionen hin und
+klaere relevante Widersprueche vor der Ausarbeitung. Steht kein Journal fuer
+den Abgleich zur Verfuegung, ist es keine Voraussetzung fuer `BLOG GO`.
 
 ## Arbeitsmodus, Phasen und Gates
 

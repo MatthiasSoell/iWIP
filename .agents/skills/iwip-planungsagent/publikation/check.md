@@ -19,15 +19,8 @@ keine eigene Steuerlogik ein.
 
 ## Gate-spezifischer Ladepfad
 
-`BLOG FINAL` verwendet ausschliesslich PLAN-Core, diese Datei, Blog-Template,
-Literatur-Prompt, Blog-Emoji-Prompt, Content-Emoji-Policy, Low-Noise-Regeln und
-das vollstaendige DQM. Reveal-Template und Reveal-Produktionsregeln werden fuer
-diesen Pruefpfad nicht geladen.
-
-`REVEAL FINAL` verwendet ausschliesslich PLAN-Core, diese Datei,
-Reveal-Template, Reveal-Emoji-Prompt, Content-Emoji-Policy und Low-Noise-Regeln.
-Vollstaendiges DQM, Blog-Template, Literatur-Prompt und Blog-Emoji-Prompt werden
-fuer diesen Pruefpfad nicht geladen.
+Die verbindliche Dateiauswahl fuer `BLOG FINAL` und `REVEAL FINAL` steht in
+`core/plan_core.md`.
 
 ## Aufgabe
 
@@ -49,7 +42,7 @@ genannten Dateien.
    Emoji-Schritte starten keinen Build.
 3. Erst danach im iWIP-Repository genau einmal `hugo --minify` ausführen.
 4. Den gebauten Endstand technisch prüfen. Nach dem Build erfolgt keine
-   Mutation mehr. Nur ein bestandener Endstand wird freigegeben.
+   Mutation mehr. Für die Freigabe gilt der PLAN-Core.
 
 ## Zwei getrennte Pruefphasen
 
