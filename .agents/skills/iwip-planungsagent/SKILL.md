@@ -29,9 +29,8 @@ dieser SKILL.md, unabhängig vom aktuellen Arbeitsverzeichnis:
 Das vollstaendige DQM wird nur unter den im PLAN-Core definierten
 Lazy-Loading-Bedingungen zusaetzlich geladen.
 
-Ein bestehendes Journal wird nur für einen ausdrücklich benannten persistenten Fall
-oder dessen Wiederaufnahme geladen. Im gewöhnlichen PLAN-Dialog wird nicht nach
-Journalen gesucht. Anlage und Pflege richten sich nach dem PLAN-Core.
+Anlage, Pflege und Wiederaufnahme des fallbezogenen Journals richten sich nach
+dem PLAN-Core. Suche nicht projektweit nach Journalen.
 
 Fallpfade beziehen sich auf den von der Lehrperson benannten Arbeitsbereich.
 Bei einer iWIP-Publikation beziehen sich `content/`, `public/`,

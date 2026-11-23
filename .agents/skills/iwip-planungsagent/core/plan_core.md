@@ -80,14 +80,27 @@ formuliert der Agent natuerlich statt als technischen State-Dump.
 
 ## Persistentes Planning Journal
 
-Ein normales `/PLAN` bleibt dateilos. Nur wenn die Lehrperson ausdruecklich
-verlangt, eine konkrete Planung persistent zu speichern, fortzufuehren oder ein
-bestehendes Journal zu verwenden, fuehrt der Agent fallbezogen eine
-`planning_journal.md`. Liegt ein eindeutiger Fall- oder Projektpfad vor, wird er
-verwendet; andernfalls fragt der Agent beim ausdruecklichen Persistenzwunsch
-einmal knapp nach dem Zielverzeichnis. Danach erzeugt die Journalpflege keine
-weiteren Freigabe- oder Bestaetigungsschleifen. Es entstehen weder eine globale
-Fallsammlung noch ein neues Standardverzeichnis.
+Bei konkreten Planungsfaellen wird das fallbezogene `planning_journal.md`
+standardmaessig gefuehrt. Es entsteht beim ersten journalwuerdigen Ereignis.
+Allgemeine Fragen, Meta-Arbeit und reine Analyse oder Beratung ohne konkretes
+journalwuerdiges Planungsereignis bleiben dateilos. Die Lehrperson kann das
+Journal jederzeit ausdruecklich deaktivieren oder wieder aktivieren. Bei
+Deaktivierung wird das bestehende Journal weder aktualisiert noch geloescht.
+Ein ausdruecklicher Auftrag, einen benannten Fall mit Journal fortzufuehren
+oder seinen Stand zu speichern, gilt als Aktivierung.
+
+Verwende nur einen eindeutig von der Lehrperson benannten oder zuvor fuer
+diesen Fall bestaetigten Arbeitsordner. Der Ablageort einer gelesenen
+Quelldatei allein ist keine Freigabe, dort zu schreiben. Fehlt der Arbeitsordner,
+frage beim ersten journalwuerdigen Ereignis einmal knapp danach. Hat eine
+didaktisch notwendige Frage Vorrang, stelle die Ordnerfrage erst danach.
+Bis der Pfad eindeutig und beschreibbar ist, fuehre den Stand im Dialog
+fort. Halte bereits in diesem Dialog belegte journalwuerdige Ereignisse nach
+Freigabe des Ordners nachvollziehbar fest. Bei fehlendem Schreibzugriff
+benenne einmal knapp, dass der Stand nur im Dialog festgehalten ist.
+Journalpflege nach vorliegender Freigabe erfordert keine weiteren
+Bestaetigungsschleifen. Es entstehen keine globale Fallsammlung und kein
+neues Standardverzeichnis.
 
 Die Datei enthaelt genau zwei logisch getrennte Bereiche:
 
@@ -142,6 +155,36 @@ herangezogen. Sichtbar wird standardmaessig eine natuerliche knappe
 Rueckspiegelung statt eines technischen Dumps; auf ausdrueckliche Nachfrage
 darf das Journal selbst gezeigt werden.
 
+## Freigegebener Planungsstand fuer die Uebergabe
+
+Wenn die Lehrperson den sichtbaren ausgearbeiteten Planungsstand freigibt
+und ausdruecklich um dessen Speicherung oder um die Uebergabe an Codex bittet,
+speichere ihn als `planning_state.md` im benannten oder bereits bestaetigten
+Fallordner. Fehlt eine der Voraussetzungen, klaere nur die fehlende Angabe.
+Bei fehlendem Schreibzugriff gib auf den Uebergabeauftrag hin den Stand als
+kopierbares Markdown aus und kennzeichne, dass keine Datei gespeichert wurde.
+Das Dokument kann auch bei deaktivierter Journalfuehrung erstellt werden.
+
+Uebernimm den freigegebenen Stand materialtreu. Halte, soweit im freigegebenen
+Stand vorhanden, den Fall, Ziele und Rahmenbedingungen, Lernablauf, den
+ausformulierten Wortlaut von Aufgaben und Leitfragen sowie Materialien und
+Quellen mit aufloesbaren Verweisen fest. Erhalte fuer die Umsetzung wichtige
+Bedingungen und kennzeichne offengebliebene Angaben. Fuege keine neuen
+Entscheidungen, Quellen oder Materialien hinzu. Das Journal bleibt fuer
+Entscheidungshistorie und den kompakten laufenden Planning State zustaendig.
+
+`planning_state.md` ist ein Stand zum Zeitpunkt der ausdruecklichen Freigabe.
+Ersetze ihn erst nach erneuter Freigabe und ausdruecklichem Speicher- oder
+Uebergabeauftrag. Liegt eine spaetere umsetzungsrelevante Revision vor, weise
+auf den veralteten Uebergabestand hin. Die aktuellen Vorgaben der Lehrperson
+haben Vorrang.
+
+Speicherung und Uebergabe loesen kein Produktionsgate aus. In einer neuen
+Sitzung darf die Lehrperson die Datei ausdruecklich als Grundlage fuer
+`BLOG GO` benennen. Lade sie gezielt vom angegebenen Pfad. Sind fuer
+die Umsetzung relevante Widersprueche zu neueren Vorgaben oder zu einem
+bekannten aktuellen Journalstand erkennbar, klaere sie vor der Ausarbeitung.
+
 ## Arbeitsmodus, Phasen und Gates
 
 - `Meta-Arbeit am Agenten` ist Analyse, Regelarbeit, Review und Weiterentwicklung ohne Artefakterstellung.
@@ -153,15 +196,16 @@ darf das Journal selbst gezeigt werden.
 - `P5 – Finalisieren`: Finaldetails werden erst am jeweiligen FINAL-Gate geladen.
 
 `/PLAN` startet ausschliesslich den Planungsdialog in `P1` und `P2`. Dabei
-werden ausser einer ausdruecklich aktivierten `planning_journal.md` keine
-Dateien, Snapshots oder Builds ausgeloest. Formulierungen wie
+sind die oben geregelten Journalaktionen und die ausdruecklich beauftragte
+Uebergabe moeglich. Der Planungsdialog erzeugt keine Publikationsdateien und
+startet keinen Build. Formulierungen wie
 `Entwurf anlegen`, `Blog erstellen`, `Jetzt ausarbeiten` oder `Passt, leg los`
 gelten erst dann als `BLOG GO`, wenn sie einen bereits sichtbaren Planungsstand
 bestaetigen; im ersten PLAN-Turn loesen sie kein Produktionsgate aus.
 
 Die Gatefolge bleibt bindend:
 
-1. `BLOG GO` erst auf Basis eines sichtbaren Planungsstands oder einer explizit benannten bestehenden Blog-Grundlage.
+1. `BLOG GO` erst auf Basis eines sichtbaren Planungsstands, eines ausdruecklich benannten freigegebenen Uebergabestands oder einer explizit benannten bestehenden Blog-Grundlage.
 2. `BLOG FINAL` erst nach Blogausarbeitung und den am Gate geladenen Pflichtpruefungen.
 3. Bis `REVEAL GO` bleibt die Arbeit strikt blog-first; sichtbare Reveal-, Folien- oder Transformationslogik wird nicht vorweggenommen.
 4. `REVEAL GO` setzt einen finalen Blog als alleinige Ableitungsgrundlage voraus.
