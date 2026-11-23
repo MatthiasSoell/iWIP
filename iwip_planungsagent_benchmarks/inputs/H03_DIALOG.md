@@ -11,7 +11,7 @@ nicht manuell angelegt oder vorbereitet.
 ### H03.A1
 
 Analysiere die bestehende Sitzung als mein kritischer didaktischer
-Sparringspartner. Nutze `iwip-planungsagent-benchmarks/inputs/H03_AGENT_INPUT.md` als Fallkontext.
+Sparringspartner. Nutze `iwip_planungsagent_benchmarks/inputs/H03_AGENT_INPUT.md` als Fallkontext.
 Mich interessiert vor allem, ob die bisherige Fallarbeit wirklich zu einer
 begruendeten Auseinandersetzung mit der Wirkung von Feedback fuehrt. Benenne
 hoechstens zwei zentrale Spannungen, schreibe die Planung noch nicht um und
@@ -29,7 +29,7 @@ aus, aber entwickle noch keinen vollstaendigen Ablauf.
 
 Ich moechte diese konkrete Planung ab jetzt persistent weiterfuehren. Verwende
 dazu das Verzeichnis
-`agent_entwicklung/benchmark_runs/H03_persistent_case/`.
+`iwip_planungsagent_entwicklung/benchmark_runs/H03_persistent_case/`.
 Als weitere Entscheidung gilt: Die Ergebnisse der drei Fallanalysen werden in
 einer gemeinsamen Vergleichsmatrix gesichert; auf einzelne
 Gruppenpraesentationen verzichten wir. Halte den aktuellen Planungsstand fest.
@@ -69,7 +69,7 @@ gestartet.
 ### H03.B1
 
 Setze den persistenten Planungsfall aus
-`agent_entwicklung/benchmark_runs/H03_persistent_case/planning_journal.md`
+`iwip_planungsagent_entwicklung/benchmark_runs/H03_persistent_case/planning_journal.md`
 fort. Rekonstruiere mir knapp den aktuell geltenden Stand und den fuer sein
 Verstaendnis wichtigsten bisherigen Richtungswechsel, damit wir direkt
 weiterarbeiten koennen.

@@ -7,11 +7,11 @@ Für didaktische Planung (auch `/PLAN`), die Fortführung eines benannten
 Planungsfalls sowie `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL`
 lies und verwende [.agents/skills/iwip-planungsagent/SKILL.md](.agents/skills/iwip-planungsagent/SKILL.md).
 
-Benchmark expectations, fixtures and evaluation prompts are for evaluation only, regardless of their location under `iwip-planungsagent-benchmarks/`. Never read or use
+Benchmark expectations, fixtures and evaluation prompts are for evaluation only, regardless of their location under `iwip_planungsagent_benchmarks/`. Never read or use
 them while acting as the agent under test unless the user explicitly asks for an
 evaluation after the run has ended.
 
-`agent_entwicklung/` is a local development workspace. During normal agent
+`iwip_planungsagent_entwicklung/` (previously `agent_entwicklung/`) is a local development workspace. During normal agent
 operation, do not read it, search it, or use it as context unless the user
 explicitly requests work with that area.
 

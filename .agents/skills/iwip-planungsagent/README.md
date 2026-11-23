@@ -82,15 +82,28 @@ Die wichtigsten Dateien und Ordner fuer den Agenten sind:
 
 ## Nutzung
 
+### Eigenständige Planung
+
+Für `/PLAN` genügt der entpackte Skill-Ordner mit den vier Kerndateien,
+Referenzen und Spezialaufgaben. Die Lehrperson kann den Dialog in einem
+beliebigen Arbeitsverzeichnis führen.
+
 - **ChatGPT Work (Desktop):** Öffne den entpackten Agentenordner oder das iWIP-Repository. Im Paket starte mit „Nutze SKILL.md für folgende didaktische Planung …“, im Repository mit „Nutze .agents/skills/iwip-planungsagent/SKILL.md für folgende didaktische Planung …“.
 - **Codex in VS Code:** Öffne das iWIP-Repository und wähle `$iwip-planungsagent`. Der Texteinstieg `/PLAN` wird auch über die Repository-Anweisungen unterstützt. Ein heruntergeladenes Paket kannst Du in einem eigenen Projekt als `.agents/skills/iwip-planungsagent/` ablegen.
 - **Planung fortführen:** `/PLAN` beginnt im Dialog. Wenn Du einen Fall persistent führen möchtest, benenne den Fallordner und bitte ausdrücklich um das `planning_journal.md`. Gib bei einem Wechsel zu Codex die ausgearbeiteten Aufgaben, Materialien und Quellen als freigegebene Planungsgrundlage mit. Das Journal führt die Entscheidungen und Revisionen.
-- **Publizieren:** Öffne dafür das vollständige iWIP-Repository. `BLOG GO` mit freigegebener Grundlage eröffnet die Blogausarbeitung, `BLOG FINAL` die Finalprüfung. Ein finaler Blog ist die Grundlage für `REVEAL GO` und anschließend `REVEAL FINAL`.
 - **Als OER weitergeben:** Den gesamten Ordner `iwip-planungsagent/` einschließlich Lizenz und Quellen aus einem bezeichneten Commit verpacken. Im Repository erzeugt der folgende Befehl aus dem aktuellen Commit ein ZIP mit sichtbarem Paketordner:
 
   ```sh
-  git archive --format=zip --prefix=iwip-planungsagent/ -o iwip-planungsagent.zip HEAD:.agents/skills/iwip-planungsagent
+  git archive --format=zip --prefix=iwip-planungsagent/ -o iwip_planungsagent.zip HEAD:.agents/skills/iwip-planungsagent
   ```
+
+### Publikation im iWIP-Repository
+
+Für den Publikationsworkflow öffnest Du das vollständige iWIP-Repository
+mit seinen Content-Verzeichnissen, Projektregeln und der Hugo-Konfiguration.
+`BLOG GO` mit freigegebener Grundlage eröffnet die Blogausarbeitung.
+`BLOG FINAL` startet deren Finalprüfung. Der finale Blog dient als einzige
+Grundlage für `REVEAL GO` und die anschließende Prüfung mit `REVEAL FINAL`.
 
 ## Geplante Folgeänderungen
 
@@ -99,15 +112,19 @@ Die wichtigsten Dateien und Ordner fuer den Agenten sind:
 
 Beide Punkte sind Entwicklungsvorhaben. Für die aktuelle Nutzung gilt der PLAN-Core.
 
-## Version 1.3 (September 2026)
+## Version 1.4 (November 2026)
+
+Version 1.4 bündelt den Planungskern als eigenständig nutzbaren Skill.
+Die technische FINAL-Prüfung für den iWIP-Publikationsworkflow steht in
+[publikation/check.md](publikation/check.md).
+
+### Historischer Versionshinweis 1.3 (September 2026)
 
 Mit Version 1.3 wurde der wirtschaftsdidaktische Planungsagent architektonisch und dialogisch konsolidiert. 
 
 - PLAN-Core, KDM-Core und DQM-Core trennen nun Prozesssteuerung, Dialog- und Entscheidungsqualität sowie didaktische Qualitätsprüfung klar voneinander. 
 - Ein kompakter Planning State und ein optionales Planning Journal sichern die Kontinuität von Entscheidungen, während die Lehrperson ausdrücklich die Entscheidungshoheit behält. 
 - Produktions-, Finalisierungs- und OER-Regeln wurden vereinfacht und robuster gefasst; zugleich wurden aktive Agentenregeln, Terminologie und Repository-Kontext von historischen Entwicklungsständen bereinigt. 
-
-Version 1.3 bildet damit den aktuellen konsolidierten Referenzstand des Agenten.
 
 ## Historischer Versionshinweis 1.2 (Mai 2026)
 

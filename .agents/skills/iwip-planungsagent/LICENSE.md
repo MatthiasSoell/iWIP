@@ -20,7 +20,7 @@ Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ## Geltungsbereich
 
 Die Agentendateien in diesem Paket stehen unter CC BY-SA 4.0. Für die zuvor
-mitlizenzierten Dateien in `project_governance/` und ihre hierher verschobenen
+mitlizenzierten Dateien in `.agents/iwip_planungsagent_governance/` und ihre hierher verschobenen
 Bestandteile gilt die bisherige Lizenz fort. Die Lizenzangaben der Blog-Inhalte
 unter `content/` stehen beim jeweiligen Beitrag.
 

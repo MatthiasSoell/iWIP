@@ -7,7 +7,7 @@ Für didaktische Planung (auch `/PLAN`), die Fortführung eines benannten
 Planungsfalls sowie `BLOG GO`, `BLOG FINAL`, `REVEAL GO` und `REVEAL FINAL`
 lies und verwende [.agents/skills/iwip-planungsagent/SKILL.md](../.agents/skills/iwip-planungsagent/SKILL.md).
 
-`agent_entwicklung/` ist ein lokaler Entwicklungsarbeitsraum. Im normalen
+`iwip_planungsagent_entwicklung/` (bisher `agent_entwicklung/`) ist ein lokaler Entwicklungsarbeitsraum. Im normalen
 Agentenbetrieb darf er weder gelesen noch durchsucht noch als Kontext verwendet
 werden, ausser die Nutzerin oder der Nutzer verlangt dies ausdruecklich.
 
@@ -16,14 +16,14 @@ keine Laufzeit-Steuerlogik.
 
 Follow the project governance files:
 
-- project_governance/content_emoji_policy.md
+- .agents/iwip_planungsagent_governance/content_emoji_policy.md
 
 Load the following governance files only when relevant for Technik-, QA-, FINAL-, Workflow- oder Architekturfragen (not as early mandatory context for normal `/PLAN` tasks):
 
-- project_governance/ai_copilot_instructions.md
-- project_governance/css_architecture.md
-- project_governance/repo_architecture.md
-- project_governance/development_workflow.md
+- .agents/iwip_planungsagent_governance/ai_copilot_instructions.md
+- .agents/iwip_planungsagent_governance/css_architecture.md
+- .agents/iwip_planungsagent_governance/repo_architecture.md
+- .agents/iwip_planungsagent_governance/development_workflow.md
 
 Key principles:
 

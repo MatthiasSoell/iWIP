@@ -25,8 +25,8 @@ Agent structure:
 - .agents/skills/iwip-planungsagent/core/master_agent.md and didaktisches_qualitaetsmodell_core.md → role and didactic quality core
 - .agents/skills/iwip-planungsagent/SKILL.md → normal planning entry point
 - templates, final checks, full DQM and external handoff → loaded only when required by PLAN-Core
-- iwip-planungsagent-benchmarks/ → public manual regression definitions and expected fixtures
-- agent_entwicklung/ → local, ignored development history, benchmark runs and raw data; never normal runtime context
+- iwip_planungsagent_benchmarks/ → public manual regression definitions and expected fixtures
+- iwip_planungsagent_entwicklung/ → local, ignored development history, benchmark runs and raw data; never normal runtime context
 
 Styling architecture:
 - assets/css/extended/00_design_tokens.css → design tokens
@@ -41,10 +41,10 @@ Architecture rules:
 - no hardcoded colors outside design tokens
 
 Documentation:
-- project_governance/css_architecture.md → CSS system
-- project_governance/repo_architecture.md → repository structure
-- project_governance/content_emoji_policy.md → content emoji conventions
-- project_governance/ai_copilot_instructions.md → AI editing rules
+- .agents/iwip_planungsagent_governance/css_architecture.md → CSS system
+- .agents/iwip_planungsagent_governance/repo_architecture.md → repository structure
+- .agents/iwip_planungsagent_governance/content_emoji_policy.md → content emoji conventions
+- .agents/iwip_planungsagent_governance/ai_copilot_instructions.md → AI editing rules
 
 Goal of the project:
 Open science blog publishing teaching materials as OER, supported by a
@@ -89,6 +89,6 @@ L --> L1[PLAN and KDM Cores]
 L --> L2[DQM and Master Agent]
 L --> L3[Lazy Production Tasks]
 
-M --> M1[iwip-planungsagent-benchmarks<br>public test definitions]
-M --> M2[agent_entwicklung<br>local runs and raw data]
+M --> M1[iwip_planungsagent_benchmarks<br>public test definitions]
+M --> M2[iwip_planungsagent_entwicklung<br>local runs and raw data]
 ```

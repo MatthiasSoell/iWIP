@@ -206,12 +206,12 @@ Arbeitsprinzip: lieber mehrere kleine Commits als ein großer „Wurf“.
 Wenn du **Architektur, Pfade, Owners oder Regeln** änderst, dann gilt:
 
 - passende Doku aktualisieren (mindestens):
-  - `project_governance/css_architecture.md`
-  - `project_governance/repo_architecture.md`
-  - `project_governance/content_emoji_policy.md`
-  - `project_governance/ai_copilot_instructions.md`
-  - `project_governance/ai_project_context.md`
-  - `project_governance/development_workflow.md`
+  - `.agents/iwip_planungsagent_governance/css_architecture.md`
+  - `.agents/iwip_planungsagent_governance/repo_architecture.md`
+  - `.agents/iwip_planungsagent_governance/content_emoji_policy.md`
+  - `.agents/iwip_planungsagent_governance/ai_copilot_instructions.md`
+  - `.agents/iwip_planungsagent_governance/ai_project_context.md`
+  - `.agents/iwip_planungsagent_governance/development_workflow.md`
   - `README.md` (nur wenn es „Entry-Point“-Infos betrifft)
 
 Regel: **Wenn Code sich ändert und die Doku dadurch falsch wäre → Doku mit ändern.**
@@ -235,10 +235,10 @@ Vor Merge nach `main`:
 ## 8. Zusammenarbeit mit Copilot / AI
 
 - AI soll **diese Dateien** als Leitplanken berücksichtigen:
-  - `project_governance/ai_copilot_instructions.md`
-  - `project_governance/ai_project_context.md`
-  - `project_governance/css_architecture.md`
-  - `project_governance/content_emoji_policy.md`
-  - `project_governance/repo_architecture.md`
-  - `project_governance/development_workflow.md`
+  - `.agents/iwip_planungsagent_governance/ai_copilot_instructions.md`
+  - `.agents/iwip_planungsagent_governance/ai_project_context.md`
+  - `.agents/iwip_planungsagent_governance/css_architecture.md`
+  - `.agents/iwip_planungsagent_governance/content_emoji_policy.md`
+  - `.agents/iwip_planungsagent_governance/repo_architecture.md`
+  - `.agents/iwip_planungsagent_governance/development_workflow.md`
 - AI-Vorschläge werden **wie Code Reviews** behandelt: übernehmen nur, was du verstehst und getestet hast.

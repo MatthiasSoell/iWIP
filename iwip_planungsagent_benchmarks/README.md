@@ -17,7 +17,7 @@ oder ein Benchmark-Harness ist nicht vorhanden. Erwartungen duerfen waehrend
 eines Testlaufs nicht als Agentenkontext verwendet werden.
 
 Laufartefakte, Transkripte und Rohdaten gehoeren nach
-`agent_entwicklung/benchmark_runs/`. Dieser lokale, ignorierte Bereich ist keine
+`iwip_planungsagent_entwicklung/benchmark_runs/`. Dieser lokale, ignorierte Bereich ist keine
 normative Quelle fuer den aktuellen Agenten. Das gilt ebenso fuer historische
 Runs; massgeblich sind die aktuellen Agentenregeln und die hier versionierten
 Testdefinitionen.
@@ -27,9 +27,10 @@ Testdefinitionen.
 Basis ist `d75d303`. Die Migration konsolidiert den Skill und verlegt die
 technische Abfolge der FINAL-Prüfungen in den Publikationsbereich. KDM, DQM
 und Master-Agent sind bis auf die Pfade textgleich. Die Abschnitte zu Planning
-State und Journal sind bytegleich. Der lokale, ignorierte Ordner
-`agent_entwicklung/` behält seinen Pfad, damit vorhandene Journale und
-Testläufe erreichbar bleiben.
+State und Journal sind bytegleich. Der lokale Arbeitsordner heißt jetzt `iwip_planungsagent_entwicklung/`.
+Einen vorhandenen Ordner `agent_entwicklung/` kannst Du vor dem nächsten
+Benchmark dorthin verschieben, sofern das Ziel noch frei ist. Beide Pfade
+sind von Git ausgenommen.
 
 | Prüfung | Ergebnis |
 | --- | --- |
@@ -41,3 +42,11 @@ Testläufe erreichbar bleiben.
 | Produktion und Plattformen | Blog- und Reveal-HTML wurden gerendert. Die vollständige Gatefolge und die native Erkennung in der Codex-Oberfläche sind offen. Der Publikationslauf wurde durch das Nutzungslimit unterbrochen. |
 
 Die Benchmarks wurden für die Übergabe nicht erneut ausgeführt.
+
+Für die technische Prüfung mit `make qa` werden Python ab Version 3.9 und
+Ruby mit YAML/Psych benötigt. Die Paketprüfung kann auch einen separat
+entpackten Skill-Ordner prüfen:
+
+```sh
+python3 iwip_planungsagent_benchmarks/check_paket.py /pfad/zu/iwip-planungsagent
+```

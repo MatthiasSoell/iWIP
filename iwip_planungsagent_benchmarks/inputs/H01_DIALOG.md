@@ -5,7 +5,7 @@ Jede Nachricht einzeln senden. Erst nach der Antwort den nächsten Zug senden.
 ## H01.1
 
 Analysiere die bestehende Sitzung als mein kritischer didaktischer Sparringspartner.
-Nutze `iwip-planungsagent-benchmarks/inputs/H01_AGENT_INPUT.md` als Fallkontext. Benenne höchstens drei
+Nutze `iwip_planungsagent_benchmarks/inputs/H01_AGENT_INPUT.md` als Fallkontext. Benenne höchstens drei
 zentrale Spannungen, die für eine Überarbeitung wirklich entscheidungsrelevant sind.
 Schreibe die Planung noch nicht um und recherchiere keine neuen Inhalte.
 
