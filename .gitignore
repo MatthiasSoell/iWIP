@@ -11,7 +11,26 @@
 /.hugo_build.lock
 
 # Local working artifacts
-/iwip_planungsagent/
+/iwip_planungsagent/*
+!/iwip_planungsagent/benchmarks/
+/iwip_planungsagent/benchmarks/*
+!/iwip_planungsagent/benchmarks/README.md
+!/iwip_planungsagent/benchmarks/inputs/
+/iwip_planungsagent/benchmarks/inputs/**
+!/iwip_planungsagent/benchmarks/inputs/H0[123]_AGENT_INPUT.md
+!/iwip_planungsagent/benchmarks/inputs/H0[123]_DIALOG.md
+!/iwip_planungsagent/benchmarks/inputs/H0[478]/
+!/iwip_planungsagent/benchmarks/inputs/H0[478]/H0[478]_AGENT_INPUT.md
+!/iwip_planungsagent/benchmarks/inputs/H0[478]/H0[478]_DIALOG.md
+!/iwip_planungsagent/benchmarks/evaluations/
+/iwip_planungsagent/benchmarks/evaluations/**
+!/iwip_planungsagent/benchmarks/evaluations/H0[123]_EXPECTED.md
+!/iwip_planungsagent/benchmarks/evaluations/H0[478]/
+!/iwip_planungsagent/benchmarks/evaluations/H0[478]/H0[478]_EXPECTED.md
+!/iwip_planungsagent/benchmarks/evaluations/H0[478]/H0[478]_EVALUATION_PROMPT.md
+!/iwip_planungsagent/benchmarks/fixtures/
+/iwip_planungsagent/benchmarks/fixtures/**
+!/iwip_planungsagent/benchmarks/fixtures/H03_JOURNAL_CHECKPOINTS.md
 /exports/
 /.vscode/
 /.venv/

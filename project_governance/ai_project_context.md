@@ -25,7 +25,7 @@ Agent structure:
 - .agents/skills/iwip-planungsagent/core/master_agent.md and didaktisches_qualitaetsmodell_core.md → role and didactic quality core
 - .agents/skills/iwip-planungsagent/SKILL.md → normal planning entry point
 - templates, final checks, full DQM and external handoff → loaded only when required by PLAN-Core
-- iwip_planungsagent/benchmarks/ → local, ignored manual regression definitions and expected fixtures
+- iwip_planungsagent/benchmarks/ → versioned public test definitions and evaluation material
 - iwip_planungsagent/entwicklung/ → local, ignored development history, benchmark runs and raw data; never normal runtime context
 - iwip_planungsagent/publikation/ → local, ignored working copies for revisions of published content
 - scripts/check_paket.py → versioned Skill package checker used by make qa-prompts
@@ -91,7 +91,7 @@ L --> L1[PLAN and KDM Cores]
 L --> L2[DQM and Master Agent]
 L --> L3[Lazy Production Tasks]
 
-M --> M1[iwip_planungsagent/benchmarks<br>local test definitions]
+M --> M1[iwip_planungsagent/benchmarks<br>versioned test definitions]
 M --> M2[iwip_planungsagent/entwicklung<br>local runs and raw data]
 M --> M3[scripts/check_paket.py<br>Skill package checker]
 ```

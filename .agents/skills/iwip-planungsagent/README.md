@@ -140,6 +140,9 @@ Version 1.4 bündelt den Planungskern als eigenständig nutzbaren Skill.
 Die technische FINAL-Prüfung für den iWIP-Publikationsworkflow steht in
 [publikation/check.md](publikation/check.md).
 
+Die [Benchmark-Suite im iWIP-Repository](https://github.com/MatthiasSoell/iWIP/blob/main/iwip_planungsagent/benchmarks/README.md)
+beschreibt Regressionstests, didaktische Systemvergleiche und technische Prüfungen.
+
 ### Historischer Versionshinweis 1.3 (September 2026)
 
 Mit Version 1.3 wurde der wirtschaftsdidaktische Planungsagent architektonisch und dialogisch konsolidiert. 

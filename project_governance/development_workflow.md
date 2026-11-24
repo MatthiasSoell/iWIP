@@ -68,7 +68,7 @@ Vor jedem Commit:
 ### 4.3 Agenten-Validierung
 
 `make qa-prompts` prueft das Skill-Paket mit `scripts/check_paket.py`. Die
-manuellen Regressionstests liegen im lokalen Arbeitsbereich `iwip_planungsagent/benchmarks/`.
+manuellen Regressionstests sind in der [Benchmark-Suite](../iwip_planungsagent/benchmarks/README.md) dokumentiert.
 `make qa-hugo` prueft nach dem Build die gemeinsame Kopf- und Fussnavigation
 an der Startseite und an der Reveal-Praesentation „Warum OER“.
 

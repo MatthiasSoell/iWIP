@@ -32,10 +32,10 @@ Der SciBlog iWIP basiert auf folgenden Kerntechnologien:
 
 Daneben enthaelt dasselbe Repository den deklarativen wirtschaftsdidaktischen
 Planungsagenten. Seine kanonischen Laufzeitkomponenten liegen derzeit in
-`.agents/skills/iwip-planungsagent/`. Benchmarkdefinitionen und Soll-Fixtures liegen
-lokal in `iwip_planungsagent/benchmarks/`. Testlaeufe, Entwicklungsprotokolle und
-Rohdaten liegen in `iwip_planungsagent/entwicklung/`. Git ignoriert beide Ordner
-unter `iwip_planungsagent/`. Die technische Paketpruefung liegt in
+`.agents/skills/iwip-planungsagent/`. Die öffentlichen Benchmarkdefinitionen
+und Bewertungsmaterialien sind in `iwip_planungsagent/benchmarks/` versioniert.
+Testläufe, Entwicklungsprotokolle und Rohdaten liegen unter dem
+Git-ignorierten `iwip_planungsagent/entwicklung/`. Die technische Paketprüfung liegt in
 `scripts/check_paket.py`. `scripts/check_final.py` buendelt die technische
 Ergebnispruefung fuer Blog- und Reveal-Fassungen.
 
@@ -144,7 +144,8 @@ nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
 - `.vscode/` fuer nutzerspezifische Workspace-Einstellungen
 - `.venv/` fuer eine lokale Python-Laufzeitumgebung
 - `served/` als optionales lokales Staging fuer technische Pruefungen
-- `iwip_planungsagent/benchmarks/` fuer manuelle Benchmarkdefinitionen und Soll-Fixtures
+- `iwip_planungsagent/benchmarks/historie/` und `iwip_planungsagent/benchmarks/fixtures/`
+  für lokale historische Fassungen und Sollartefakte
 - `iwip_planungsagent/entwicklung/` fuer Entwicklungsprotokolle, historische Audits,
   Rohdaten und temporaere Arbeitsdateien
 - `iwip_planungsagent/exports/` fuer manuelle Exporte zum Planungsagenten
