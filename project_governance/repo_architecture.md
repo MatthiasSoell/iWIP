@@ -113,11 +113,11 @@ iWIP/
 ├─ layouts/                # Hugo Layout-Anpassungen / Overrides
 │
 ├─ .agents/skills/iwip-planungsagent/  # Planungskern und optionale Publikationsregeln
-├─ iwip_planungsagent/     # lokaler Arbeitsbereich, von Git ignoriert
-│  ├─ benchmarks/          # manuelle Regressionstests, Inputs und Soll-Fixtures
-│  ├─ entwicklung/         # Historie, Testlaeufe und Arbeitsdaten
-│  ├─ exports/             # manuelle Exporte zum Planungsagenten
-│  └─ publikation/         # lokale Arbeitsfassungen veröffentlichter Content-Dateien
+├─ iwip_planungsagent/
+│  ├─ benchmarks/          # versionierte Testeingaben, Bewertungsmaterialien und Sollstände
+│  ├─ entwicklung/         # lokale Entwicklungsdaten und Testläufe, Git-ignoriert
+│  ├─ exports/             # lokale Exporte zum Planungsagenten, Git-ignoriert
+│  └─ publikation/         # lokale Publikationsfassungen, Git-ignoriert
 ├─ scripts/check_paket.py  # technische Paketpruefung fuer den Skill
 │
 ├─ project_governance/    # technische Governance
@@ -144,8 +144,7 @@ nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
 - `.vscode/` fuer nutzerspezifische Workspace-Einstellungen
 - `.venv/` fuer eine lokale Python-Laufzeitumgebung
 - `served/` als optionales lokales Staging fuer technische Pruefungen
-- `iwip_planungsagent/benchmarks/historie/` und `iwip_planungsagent/benchmarks/fixtures/`
-  für lokale historische Fassungen und Sollartefakte
+- `iwip_planungsagent/benchmarks/historie/` für lokale historische Fassungen
 - `iwip_planungsagent/entwicklung/` fuer Entwicklungsprotokolle, historische Audits,
   Rohdaten und temporaere Arbeitsdateien
 - `iwip_planungsagent/exports/` fuer manuelle Exporte zum Planungsagenten
