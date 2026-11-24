@@ -19,4 +19,6 @@ qa-markdown:
 
 qa-hugo:
 	hugo --quiet
+	python3 scripts/check_navigation.py public/index.html public --shared
+	python3 scripts/check_navigation.py public/praesentation/oer/warum_oer/index.html public --shared
 	@echo "Hugo build OK."

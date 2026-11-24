@@ -69,6 +69,8 @@ Vor jedem Commit:
 
 `make qa-prompts` prueft das Skill-Paket mit `scripts/check_paket.py`. Die
 manuellen Regressionstests liegen im lokalen Arbeitsbereich `iwip_planungsagent/benchmarks/`.
+`make qa-hugo` prueft nach dem Build die gemeinsame Kopf- und Fussnavigation
+an der Startseite und an der Reveal-Praesentation „Warum OER“.
 
 Wenn Änderungen an folgenden Dateien erfolgen, ist zusätzlich eine direkte Validierung gegen die betroffenen Regeln aus PLAN-, KDM- und DQM-Core erforderlich:
 
@@ -161,7 +163,7 @@ Bearbeiter:
 | BLOG FINAL | Buildfreie Inhalts-, DQM-, Frontmatter- und Formalpruefung laeuft vor jeder Transformation | | | | | |
 | BLOG FINAL | Automatisches `LITERATUR GO` laeuft als rein formaler Schritt ohne Recherche und vor dem Content-Emoji-Postprocessing | | | | | |
 | BLOG FINAL | Content-Emoji-Postprocessing arbeitet fail-closed nach dem eindeutigen OER-Meta-Shortcode: mit Literaturabschnitt nur bis zum korrekt positionierten eindeutigen kanonischen Literaturanker; ohne Abschnitt nur bei bestaetigter Zulaessigkeit und ohne verwaiste Anker oder Literaturverweise bis Dateiende. Geschuetzte Bestandteile bleiben bytegleich; kein Build. | | | | | |
-| BLOG FINAL | Nach dem einzigen Build werden die lokalen Links im Ziel-HTML einschliesslich absoluter iWIP-URLs gegen das temporaere Buildziel geprueft. Externe Links werden bei Bedarf gezielt verifiziert. | | | | | |
+| BLOG FINAL | Ein Aufruf von `scripts/check_final.py` baut einmal und prueft die Zielseite, den OER-Permalink und lokale Links im Bloginhalt einschliesslich `#literatur`. Externe Links werden bei Bedarf gezielt verifiziert. | | | | | |
 | BLOG FINAL | Original bleibt waehrend der Pruefung unveraendert. Nach erfolgreichem Build und Ergebnispruefung wird die bytegleiche Endfassung uebernommen. | | | | | |
 | BLOG FINAL | Ein fehlendes Reveal ist weder Blocker noch Warnung; kein toter Praesentationslink wird erzeugt | | | | | |
 | BLOG FINAL | Wissensbasis-Hook wird geprueft, blockiert `REVEAL GO` aber nicht | | | | | |
@@ -169,7 +171,7 @@ Bearbeiter:
 | REVEAL GO -> REVEAL FINAL | Eindeutige natuerliche Auftraege werden korrekt erkannt. Reine Statusmeldungen starten kein Gate. | | | | | |
 | REVEAL GO -> REVEAL FINAL | Buildfreie Ableitungs- und Formalpruefung laeuft ohne vollstaendiges DQM vor dem Emoji-Postprocessing | | | | | |
 | REVEAL GO -> REVEAL FINAL | Content-Emoji-Postprocessing startet keinen Build | | | | | |
-| REVEAL GO -> REVEAL FINAL | Nach dem einzigen Build werden die lokalen Links im Ziel-HTML einschliesslich absoluter iWIP-URLs gegen das temporaere Buildziel geprueft. | | | | | |
+| REVEAL GO -> REVEAL FINAL | Ein Aufruf von `scripts/check_final.py` baut einmal und prueft die Zielseite und lokale Links auf den Folien. | | | | | |
 | REVEAL GO -> REVEAL FINAL | FINAL prueft die PDF-Konfiguration und den Downloadpfad im HTML. Das Deployment prueft den Download nach dem Export gegen das Upload-Artefakt. | | | | | |
 | REVEAL GO -> REVEAL FINAL | Abgleich, optionale Materialuebersicht und Finalisierung stimmen | | | | | |
 

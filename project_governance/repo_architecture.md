@@ -35,7 +35,9 @@ Planungsagenten. Seine kanonischen Laufzeitkomponenten liegen derzeit in
 `.agents/skills/iwip-planungsagent/`. Benchmarkdefinitionen und Soll-Fixtures liegen
 lokal in `iwip_planungsagent/benchmarks/`. Testlaeufe, Entwicklungsprotokolle und
 Rohdaten liegen in `iwip_planungsagent/entwicklung/`. Git ignoriert beide Ordner
-unter `iwip_planungsagent/`. Die technische Paketpruefung liegt in `scripts/check_paket.py`.
+unter `iwip_planungsagent/`. Die technische Paketpruefung liegt in
+`scripts/check_paket.py`. `scripts/check_final.py` buendelt die technische
+Ergebnispruefung fuer Blog- und Reveal-Fassungen.
 
 ---
 

@@ -20,7 +20,7 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urljoin, urlsplit
 from urllib.request import urlopen
 
-from check_navigation import Navigation, built_target
+from check_navigation import built_target, read_navigation
 
 FRONT_MATTER_RE = re.compile(r"\A---\s*\n(.*?)\n---\s*(?:\n|\Z)", re.DOTALL)
 ROOT_FIELD_RE = re.compile(r"^([A-Za-z0-9_]+):[ \t]*(.*)$", re.MULTILINE)
@@ -328,9 +328,7 @@ def build_published_pdf_url(spec: ExportSpec, published_base_url: str) -> str:
 
 def check_pdf_download(spec: ExportSpec, public_root: Path, site_url: str) -> None:
     html = spec.pdf_output.parent / "index.html"
-    navigation = Navigation()
-    navigation.feed(html.read_text(encoding="utf-8"))
-    navigation.close()
+    navigation = read_navigation(html, collect_links=False)
     site = urlsplit(site_url.rstrip("/") + "/")
     document_url = urljoin(site.geturl(), quote(html.relative_to(public_root).as_posix()))
     links = navigation.pdf_downloads

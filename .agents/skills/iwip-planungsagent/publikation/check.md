@@ -42,12 +42,8 @@ genannten Dateien.
    Vorpruefung am Bearbeitungsstand durch, einschliesslich gueltigem
    Frontmatter mit booleschem `draft`. Beim Blog gehoert der Abgleich mit
    der freigegebenen Planungsgrundlage gemaess PLAN-Core zur Vorpruefung.
-2. Nach bestandener Vorpruefung arbeite in einer temporaeren Kopie des
-   aktuellen iWIP-Quellbaums mit identischen relativen Pfaden und Materialien.
-   Kopiere nur Build-Quellen, Konfiguration und benoetigte Hilfsdateien.
-   Lege dort den geprueften Stand am repo-relativen Zielpfad ab, damit Hugo
-   dieselben Routen und Materialien verwendet. Pruefe bei Reveal auch, dass
-   die Kopie der Bloggrundlage die freigegebene Pruefsumme hat.
+2. Nach bestandener Vorpruefung kopiere den geprueften Stand in eine
+   temporaere Markdown-Datei ausserhalb der Hugo-Quellen.
    Beim Blog folgt dort `LITERATUR GO` fuer das gepruefte Zielartefakt,
    anschliessend das Blog-Emoji-Postprocessing.
    Bei Reveal folgt dort das Reveal-Emoji-Postprocessing. Literatur- und
@@ -55,15 +51,13 @@ genannten Dateien.
    herzustellenden Merkmale der Pruefmatrix an der bearbeiteten Fassung.
    Setze erst dort im Zielartefakt `draft: false`; die Originaldatei bleibt
    waehrend der Pruefung bytegleich.
-3. Fuehre in der temporaeren Kopie genau einmal `hugo --minify` mit leerem
-   temporaerem Ausgabeziel aus.
-4. Pruefe den gebauten Endstand. Bei Reveal umfasst das die PDF-Konfiguration
-   und den Downloadpfad im HTML. Die PDF-Datei entsteht im Deployment.
+3. Fuehre die technische Ergebnispruefung mit `scripts/check_final.py` aus.
    Aendere die gepruefte Fassung danach nicht mehr.
-5. Uebernimm erst nach bestandener Pruefung die bytegleiche Endfassung atomar
+4. Uebernimm erst nach bestandener Pruefung die bytegleiche Endfassung atomar
    an den Zielpfad im Repository. Vergleiche unmittelbar davor die
    Inhaltspruefsummen der Zieldatei und einer separaten Arbeitsfassung mit
-   den geprueften Ausgangsstaenden. Bei Reveal muss auch die Bloggrundlage
+   den geprueften Ausgangsstaenden und die temporaere Endfassung mit der vom
+   Skript ausgegebenen Pruefsumme. Bei Reveal muss auch die Bloggrundlage
    weiterhin exakt der freigegebenen Fassung entsprechen. Bei Blockern,
    Abbruch oder zwischenzeitlicher Aenderung bleibt die Zieldatei unberuehrt
    und es erfolgt keine Freigabe. Entferne eine verwendete Arbeitsfassung
@@ -86,31 +80,26 @@ Abschnitt „Praktische OER-Nachnutzbarkeit“ in dieser Datei.
 
 ### Technische Ergebnispruefung
 
-Die technische Ergebnispruefung findet ausschliesslich nach dem genau einen
-abschliessenden `hugo --minify` statt und bewertet nur den gebauten Endstand.
-Sie prueft den Build-Erfolg, das erwartete gebaute Ziel und seine lokalen
-Links. Nutze in beiden Gates `scripts/check_navigation.py` mit der gebauten
-HTML-Datei, dem temporaeren Buildziel und der konfigurierten Site-URL.
-Das Skript prueft JavaScript-Navigation und HTML-Links, einschliesslich
-absoluter URLs der eigenen iWIP-Site, gegen dieses Buildziel.
+Rufe vom Repo-Stamm einen Befehl mit repo-relativem Zielpfad und Pfad der
+vorbereiteten Markdown-Datei auf. Bei Reveal gib zusaetzlich Pfad und
+SHA-256-Pruefsumme des freigegebenen Blogs an.
 
-Bei OER-Blogs muss der `permalink` im Frontmatter der tatsaechlich gebauten
-kanonischen Route ohne Site-Basis entsprechen. Pruefe die kanonische URL
-in der gebauten HTML und das zugehoerige Ausgabeziel. Ein Alias oder eine
-Weiterleitungsseite reicht fuer diesen Abgleich nicht aus.
+```sh
+python3 scripts/check_final.py "$ziel" "$endfassung"
+python3 scripts/check_final.py "$ziel" "$endfassung" --base-blog "$blog" "$blog_sha256"
+```
 
-Fuehre bei `REVEAL FINAL` zuerst `scripts/export_reveal_pdfs.py --check-only`
-mit `--repo-root` fuer den temporaeren Quellbaum, `--only` fuer den
-repo-relativen Reveal-Quellpfad, `--public-root` fuer das temporaere
-Buildziel und `--served-base-url` fuer die konfigurierte Site-URL aus.
-Der Modus prueft die PDF-Konfiguration und den Downloadpfad im gebauten
-HTML. Uebergib den ausgegebenen Pfad als `--pending-pdf` an
-`scripts/check_navigation.py`. Nur dieses Ziel wird von der lokalen
-Dateiexistenzpruefung ausgenommen. Diese Schritte starten weder Server
-noch DeckTape. Das GitHub-Deployment erzeugt oder uebernimmt die PDFs und
-prueft danach alle erwarteten PDF-Downloads im Upload-Artefakt.
+Das Skript setzt die Endfassung am Zielpfad in einer temporaeren Kopie der
+Build-Quellen ein, prueft dort bei Reveal die Blog-Pruefsumme und fuehrt genau
+einen `hugo --minify` mit leerem Ausgabeziel aus. Es prueft die gerenderte
+Zielseite, bei OER den kanonischen `permalink` und bei Reveal die
+PDF-Konfiguration und den Downloadpfad. Das GitHub-Deployment erzeugt oder
+uebernimmt die PDF-Datei und prueft sie vor dem Upload.
 
-Relevante lokale Linkfehler sind `BLOCKER`. Fuer beauftragte oder fachlich
+Lokale Linkfehler im Bloginhalt oder auf den Folien sind `BLOCKER`.
+Die Pruefung umfasst Blog-Reveal-Buttons, Materiallinks und das Ziel von
+`#literatur`-Verweisen. Die gemeinsame Kopf- und Fussnavigation wird in
+der technischen Repository-QA geprueft. Fuer beauftragte oder fachlich
 erforderliche externe Linkpruefungen nutze bei Verfuegbarkeit Lychee mit
 `lychee.toml` gezielt fuer die betroffenen URLs. Ein ausgebliebener Lauf
 gilt nicht als bestanden. Seine Nichtverfuegbarkeit ist allein kein
