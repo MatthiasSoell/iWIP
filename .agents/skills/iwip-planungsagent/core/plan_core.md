@@ -129,22 +129,43 @@ Die Datei enthaelt genau zwei logisch getrennte Bereiche:
 
 Jeder History-Eintrag verwendet eine innerhalb der Datei fortlaufende stabile
 ID `J-001`, `J-002` und so weiter, ein ISO-Datum, einen der Ereignistypen
-`decision`, `revision`, `open` oder `resolved` sowie `content`. `rationale` ist
-bei `decision` und `revision` verpflichtend, sonst nur bei Erklaerungsbedarf.
+`decision`, `revision`, `open` oder `resolved` sowie `content`. Uebernimm in
+`rationale` nur Gruende, die die Lehrperson im Dialog ausdruecklich genannt
+oder sich ausdruecklich zu eigen gemacht hat, bei `decision` und `revision`
+soweit belegt, sonst nur bei Erklaerungsbedarf. Ohne belegten Grund entfaellt
+das Feld.
 `refers_to` ist bei `resolved` und bei `revision` mit einem passenden frueheren
 Journaleintrag verpflichtend und ansonsten optional. `rejected_alternative` ist
 nur optional zulaessig, wenn eine ernsthafte bewusst verworfene Alternative
-spaeter erklaerungsrelevant ist.
+fuer den Entscheidungsverlauf relevant ist. Eine Ablehnung allein erzeugt
+keinen Eintrag und aendert den Current State nur, wenn sie eine bereits
+geltende Setzung aufhebt oder revidiert.
+
+`dialogue_ref` ist optional. Kopiere dafuer die im Dialog ausdruecklich
+vorhandene Schrittkennung des Zugs, der das Ereignis belegt, wortgetreu
+(z. B. `dialogue_ref: H03.A3`). Fehlt eine eindeutige Kennung, lass das Feld
+weg. Erfinde keine Schritt-, Konversations- oder Nachrichten-IDs und frage
+fuer die Referenz nicht nach. Native Nachrichten-IDs werden im Planungsdialog
+weder abgefragt noch geschaetzt. Dialogexport und nachtraegliche Zuordnung
+der Nachrichten-IDs erfolgen ausserhalb des Agentenworkflows und des Journals.
+Der Agent installiert oder nutzt keine Exportsoftware und liest beim Planen
+keine Exportarchive.
 Weitere Felder werden nicht gefuehrt.
 
 Ein History-Eintrag entsteht nur bei einem materiellen Planungsereignis, dessen
 Fehlen einen spaeteren Wiedereinstieg relevant erschweren wuerde: einer
 eindeutig angenommenen tragenden Entscheidung, einer substantiellen Revision,
-einem nach der State-Semantik entscheidungsrelevanten offenen Punkt oder der
-Erledigung eines dokumentierten offenen Punkts. KDM bestimmt weiterhin, wann eine
-Entscheidung im Dialog als angenommen gilt. Sprachliche, formatierende, lokale
-redaktionelle oder triviale Aenderungen, blosse nicht angenommene
-Agentenvorschlaege und technische Prozessmeldungen sind nicht journalwuerdig.
+einem im Dialog ausdruecklich offenen und nach der State-Semantik
+entscheidungsrelevanten Punkt oder der Erledigung eines dokumentierten offenen
+Punkts. KDM bestimmt weiterhin, wann eine Entscheidung im Dialog als angenommen
+gilt. Sprachliche, formatierende, lokale redaktionelle oder triviale
+Aenderungen, blosse nicht angenommene Agentenvorschlaege und technische
+Prozessmeldungen sind nicht journalwuerdig.
+Das Journal dokumentiert diese Ereignisse deskriptiv. Ergaenze keine
+vermuteten Motive, zugeschriebenen didaktischen Wirkungen, Qualitaetsurteile
+oder nachtraeglichen Rationalisierungen. Rekonstruiere keine fehlenden Angaben.
+Wissenschaftliche Interpretation und Codierung erfolgen ausserhalb des
+Journals.
 
 Bei einer substantiellen Revision werden in einem zusammengehoerigen
 Pflegevorgang der gesamte betroffene Current-State-Bereich nach der bestehenden
@@ -177,8 +198,9 @@ bestaetigten Fallordner und gleiche den Current State mit den belegten
 neueren Setzungen im Dialog und in ausdruecklich benannten Arbeitsstaenden ab.
 Wende die bestehende Revisionssemantik an, einschliesslich entfallener
 Entscheidungen und offener Punkte. Erhalte die vorhandene Decision History.
-Trage ein Ereignis nur nach, wenn Inhalt und notwendige Begruendung belegt
-sind und es noch nicht dokumentiert ist. Gibt es noch kein Journal, gilt
+Trage ein Ereignis nur nach, wenn sein Inhalt belegt ist und es noch nicht
+dokumentiert ist. Fuer `rationale` und `dialogue_ref` gelten dieselben
+Belegregeln wie bei der laufenden Pflege. Gibt es noch kein Journal, gilt
 weiterhin die Anlageregel fuer das erste belegte journalwuerdige Ereignis.
 `planning_state.md` wird dabei nur nach seiner eigenen Freigaberegel geaendert.
 
