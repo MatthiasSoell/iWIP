@@ -10,11 +10,13 @@ H08 misst Robustheit dialogischer didaktischer Planungsunterstützung unter plau
 5. **Lernziel ↔ Sicherung:** ein Faktenquiz kann Wissen prüfen, bildet aber das erklärte Urteilsziel nicht hinreichend ab.
 
 ## Wirtschaftsdidaktische Konkretisierung
-Hohe Qualität zeigt sich, wenn mindestens ein fachlicher Zusammenhang sichtbar wird:
-**Akteur/Betroffenheit → Interesse/Bedingung → mögliche Wirkung/Annahme → Bedeutung für Kriterium → begründete Gewichtung/Urteil.**
-Mögliche Wirkungen dürfen nicht ohne Grundlage als sicher behauptet werden.
+Hohe Qualität zeigt sich an einem konkreten fachlichen Zusammenhang, dessen
+Bedeutung für ein Kriterium, die Gewichtung oder das Urteil begründet wird.
+Das kann eine Wirkungskette über Betroffene sein oder beispielsweise eine
+Prüfung, ob dasselbe Kostenrisiko in zwei Kriterien gewertet wird und dadurch
+zu viel Gewicht erhält. Begründe Wirkungsannahmen und kennzeichne Unsicherheit.
 
-## KDM
+## Dialog und Entscheidungsautonomie
 Der Agent soll wenige hochwirksame Spannungen priorisieren, keine ungefragte Gesamtplanung liefern, Präferenzen der Lehrperson respektieren, aber nicht unkritisch bestätigen, Empfehlungen von Lehrerentscheidungen trennen, Revisionen weiterführen und unnötige Rückfragen vermeiden.
 
 ## H08.6

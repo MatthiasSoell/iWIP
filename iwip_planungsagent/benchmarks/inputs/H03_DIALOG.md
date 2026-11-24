@@ -61,9 +61,6 @@ an.
 
 ## Session B – frischer Wiedereinstieg
 
-Session B wird in einer neuen Sitzung ohne den Dialogverlauf aus Session A
-gestartet.
-
 ### H03.B1
 
 Setze den Planungsfall aus `<Fallordner>/planning_journal.md` fort und führe

@@ -1,50 +1,62 @@
 # H03 – Durchführung und Auswertung
 
-Sichere nach jedem Nutzerzug die Beobachtungen zu Dialog und Dateien. Verwende
-einen eigenen ignorierten oder temporären Laufordner. Lege darin außerhalb des
-Fallordners neun Snapshot-Verzeichnisse `A1` bis `A6` und `B1` bis `B3` an.
-Kopiere nach jedem Zug vorhandene Journal- und Übergabedateien in dessen
-Verzeichnis. Bei Abwesenheit bleibt das Verzeichnis leer. Die Sitzung erhält
-keinen Zugriff auf die Snapshots. Kontrolliere zusätzlich, dass der Agent nur
-im benannten Fallordner schreibt und keinen Build oder Produktionsschritt auslöst.
+## Beobachtungen sichern
 
-Prüfe die [Journalsollstände](../fixtures/H03_JOURNAL_CHECKPOINTS.md). Der
-[Strukturprüfer](../../../scripts/check_h03_journal.rb) prüft gespeicherte
-Snapshots mit Ruby und YAML/Psych. Er führt keinen Agentenlauf aus.
+Lege in einem ignorierten oder temporären Laufordner außerhalb des Fallordners
+ein Verzeichnis `snapshots` an. Nach jeder Agentenantwort erstelle darin den
+Unterordner für den abgeschlossenen Zug (`A1` bis `A6`, `B1` bis `B3`).
+Kopiere vorhandene `planning_journal.md` und `planning_state.md` unverändert
+dorthin. Ein leerer Snapshot belegt, dass am Ende des ausgeführten Zugs keine
+der beiden Dateien vorlag. Für ausgefallene Züge keine Snapshots anlegen.
+Die Sitzungen erhalten keinen Zugriff auf die Snapshots. Protokolliere die
+beobachtbaren Datei- und Toolaktionen, auch Schreibzugriffe außerhalb des
+Fallordners und etwaige Builds oder Produktionsschritte.
+
+## Struktur prüfen
+
+Rufe den [Strukturprüfer](../../../scripts/check_h03_journal.rb) mit Ruby und
+YAML/Psych aus dem Wurzelverzeichnis des Repositorys auf:
 
 ```sh
-ruby scripts/check_h03_journal.rb /pfad/zum/lauf/snapshots
+ruby scripts/check_h03_journal.rb "PFAD_ZUM_LAUFORDNER/snapshots"
 ```
 
-Der Prüfer akzeptiert YAML-Listen für die Historie und Überschriften mit
-YAML-Blöcken pro Eintrag. Falls ein Journal ein anderes lesbares Layout
-verwendet, prüfe die Struktur und Referenzen anhand des Sollstands manuell
-und dokumentiere das Format. Inhaltliche Gleichwertigkeit wird immer anhand
-des Journals und des Dialogs beurteilt.
+Der Prüfer kontrolliert Dateiexistenz, Bytegleichheit in Ruhephasen,
+Feldnamen, Ereignisstruktur, Erhalt der Historie und formale Referenzen.
+Exitcode `0` bestätigt diese technischen Teilprüfungen. Bei `1` die
+Fehlermeldung dem betroffenen Prüfpunkt zuordnen und zwischen fehlender
+Laufdokumentation und belegter Abweichung unterscheiden. Bei `2` ist das
+Layout für den Prüfer nicht auswertbar. In diesem Fall **alle** Strukturpunkte
+manuell anhand der Sollstände prüfen und Layout und Belege dokumentieren.
+Bei Teilläufen die vorliegenden Checkpoints manuell prüfen.
+
+## Inhalt und Dialog prüfen
+
+Die [Journalsollstände](../fixtures/H03_JOURNAL_CHECKPOINTS.md) sind für
+jeden ausgeführten Zug verpflichtend. Prüfe den gesamten geltenden Stand,
+die erhaltene Historie und die inhaltliche Zuordnung der Revisionsverweise
+immer manuell, auch bei Exitcode `0`. Werte zusätzlich die folgenden
+Belege aus:
 
 | Bereich | Beobachtbarer Beleg |
 |---|---|
-| Prozess | In A1 kein Journal, erste Anlage bei A2. Änderungen, Ruhephasen und Referenzen entsprechen dem Sollstand. In B1 wird die Revision ohne Rückgriff auf den alten Dialog rekonstruiert. Keine zusätzliche Freigabeschleife bei bestätigtem Pfad. |
+| Prozess | Schreibzugriffe nur im bestätigten Fallordner, kein Build oder Produktionsschritt, keine erneute Ordnerfreigabe. B ist eine frische Sitzung ohne A-Dialog. Die Antwort auf B1 rekonstruiert den geltenden Stand und den Wechsel vom Mehrfallvergleich zum gemeinsamen Fall anhand des Journals. |
 | Didaktik | A1 verbindet Feedbackwirkung mit der Aufgabenanforderung. B2 verbindet die zwei Perspektiven mit der möglichen Wirkung. B3 erhält die gemeinsame Analyse und macht die Abwägung der zwei Strategien für die Lernenden begründbar. Fachlich tragfähige Formulierungen sind gleichwertig. |
-| Dialog | Relevante Rückfragen und Prozessmeldungen mit Turn und Anlass erfassen. Eine kurze benutzerrelevante Statusinformation kann angemessen sein. |
+| Dialogbeobachtungen | Rückfragen und Prozessmeldungen mit Zug und Anlass erfassen. Eine kurze benutzerrelevante Statusinformation kann angemessen sein. |
 
-Je Prüfpunkt `erfüllt`, `abweichend` oder `nicht beobachtbar` vergeben und
-Belege angeben. Kernfehler sind vorzeitiges Schreiben, fehlende Persistenz
-einer tragenden Entscheidung, Reaktivieren alter Entscheidungen und Verlust
-der Entscheidungshistorie. Bei fehlendem Schreibzugriff oder fehlender
-Möglichkeit, Sitzung B ohne alten Dialog zu öffnen, gilt der betroffene
-Abschnitt als technisch nicht durchführbar. Einen solchen Abbruch separat
-ausweisen.
+## Prüfurteil
 
-## Optionale Prüfung des freigegebenen Übergabestands
+Je Pflichtpunkt der Sollstände, des Prozesses und der Didaktik
+`erfüllt`, `abweichend` oder `nicht beobachtbar` mit Beleg vergeben.
+Weise Struktur, Journalinhalt, Prozess und Didaktik getrennt aus.
+Ein vollständiger H03-Lauf ist **bestanden**, wenn alle Pflichtpunkte
+erfüllt sind. Bei mindestens einer belegten Abweichung ist er
+**nicht bestanden**. Sind alle beobachtbaren Pflichtpunkte erfüllt, aber
+Pflichtbelege fehlen, lautet das Urteil **unvollständig**. Fehlender
+Schreibzugriff oder ein technisch unmöglicher Sitzungswechsel werden
+als Abbruchgrund ausgewiesen. Geplante Teilläufe erhalten ein Urteil
+ausschließlich für ihren Prüfumfang.
 
-Bei Änderungen an `planning_state.md` nach B3 den sichtbaren Stand ausdrücklich
-freigeben und seine Speicherung im bestätigten Fallordner beauftragen. Prüfe die
-Übereinstimmung mit dem freigegebenen Text, die getrennte Journalhistorie
-und das Ausbleiben von Publikation oder Build. Revidiere anschließend die
-Sicherung ohne neuen Speicherauftrag. Der gespeicherte Stand bleibt bytegleich,
-der Dialog weist auf den veralteten Übergabestand hin. Erst erneute Freigabe
-mit Speicherauftrag aktualisiert ihn. Für einen Plattformwechsel diese Datei
-in einer frischen Sitzung ausdrücklich als Planungsgrundlage benennen und
-eine aktuelle Vorgabe hinzufügen. Die aktuelle Vorgabe hat Vorrang. Diese
-optionale Prüfung geht nicht in H03 ein.
+Kennzeichne vorzeitiges Schreiben, fehlende Persistenz einer tragenden
+Entscheidung, Reaktivierung alter Entscheidungen und Verlust der Historie
+zusätzlich als Kernfehler.

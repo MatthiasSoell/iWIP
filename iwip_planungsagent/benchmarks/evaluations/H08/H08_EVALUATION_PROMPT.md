@@ -16,9 +16,9 @@ Bewerte zunächst H08.1–H08.7 knapp nach: verlangt / getan / Stärke / Abweich
 
 D5 wird anhand sichtbarer Beiträge in H08.1–H08.5 bewertet. In H08.4 ist ausdrücklich eine Fallkonkretisierung beauftragt.
 
-9–10 = mindestens eine konkrete Kette Akteur/Betroffenheit → Interesse/Bedingung → mögliche Wirkung/Annahme → Bedeutung für Kriterium/Urteil; Unsicherheit angemessen markiert.
-7–8 = Akteure, Interessen, Folgen und Kriterien sinnvoll verbunden, Kette teilweise implizit.
-4–6 = passende Kategorien, eher Aufzählung.
+9–10 = mindestens eine konkrete, fachlich plausible Begründung, wie ein Zusammenhang im Standortfall ein Kriterium, eine Gewichtung oder das Urteil beeinflusst. Annahmen und Unsicherheit werden angemessen markiert. Gleichwertige Wege sind etwa eine Wirkungskette über Betroffene oder die begründete Prüfung, ob dieselbe mögliche Kostenfolge in zwei Kriterien eingeht und deshalb das Urteil verzerrt.
+7–8 = fachlich sinnvoller Zusammenhang, dessen Begründung oder Konsequenz für das Urteil teilweise implizit bleibt.
+4–6 = passende Gesichtspunkte, überwiegend aufgezählt.
 1–3 = allgemeine Perspektiven-/Kriterienrhetorik.
 0 = keine relevante wirtschaftsdidaktische Substanz.
 
@@ -60,7 +60,7 @@ Für alle 0–5-Kriterien gilt:
 4. Nach H08.6 bleibt die alte Logik vollständig vorgegebener Gewichtung, einziger Musterentscheidung oder Kahoot als aktuelle Kernplanung bestehen.
 5. Unerlaubte Recherche, externe Quellen oder Benchmark-Dateioperationen.
 
-Punkte werden unabhängig vom Critical Error vollständig ausgewiesen. Bei mindestens einem Critical Error kann das qualitative Gesamturteil jedoch höchstens „eingeschränkt erfüllt“ lauten.
+Weise die Punkte der beurteilbaren Kriterien unabhängig vom Critical Error aus. Bei mindestens einem Critical Error kann das qualitative Gesamturteil höchstens „eingeschränkt erfüllt“ lauten.
 
 Substantial Drift = substanzielle Veränderung von Planungsgegenstand, verlangter Interventionstiefe oder aktuellem Entscheidungsstatus.
 Unnötige Rückfrage = Frage, deren Antwort für die nächste materielle Entscheidung nicht benötigt wird oder bereits hinreichend erschließbar ist.
@@ -71,4 +71,4 @@ Gesamturteil:
 52–59 eingeschränkt erfüllt
 0–51 nicht erfüllt
 
-Gib pro Kriterium Turn, Belegstelle und Punkte an. Weise A/40, B/25 und C/10 einzeln aus. Die Fallrubrik kann zusätzlich den bisherigen Gesamtwert /75 ausweisen, wenn alle Kriterien beurteilbar sind. Kritische Fehler belegen. Zähle Turns mit Drift oder unnötigen Rückfragen getrennt. Bei Abbruch oder fehlender Beobachtungsgrundlage unvollständige Profile kennzeichnen. Vergleiche die Ergebnisse mit anderen Fällen anhand der jeweiligen Dimensionsbelege.
+Gib pro Kriterium Turn, Belegstelle und Punkte an. Weise A/40, B/25 und C/10 einzeln aus. Wenn alle Kriterien beurteilbar sind, kann zusätzlich der H08-Gesamtwert /75 angegeben werden. Kritische Fehler belegen. Zähle Turns mit Drift oder unnötigen Rückfragen getrennt. Bei Abbruch oder fehlender Beobachtungsgrundlage unvollständige Profile kennzeichnen. Vergleiche die Ergebnisse mit anderen Fällen anhand der jeweiligen Dimensionsbelege.

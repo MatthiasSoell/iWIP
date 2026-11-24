@@ -1,7 +1,5 @@
 # H04 – Benchmarkdialog
 
-Die folgenden sieben Nutzerzüge werden in allen Vergleichsbedingungen in derselben Reihenfolge verwendet.
-
 ## H04.1 – Diagnose
 
 Analysiere zunächst nur diesen Plan.

@@ -98,6 +98,16 @@ Ausführungslogik:
   zuerst im beauftragten Umfang bearbeitet und nicht ungefragt neu geplant.
 - Bei Aenderungen an der Wissensbasis-Anschlusslogik zusaetzlich gezielt den Anschluss nach `BLOG FINAL` pruefen, insbesondere Entwurf, Bestaetigungsfrage und Uebernahme erst nach Freigabe.
 
+Bei Änderungen am freigegebenen Übergabestand separat prüfen, wie
+`planning_state.md` gespeichert und wieder aufgenommen wird. Einen sichtbaren
+Stand ausdrücklich freigeben und im bestätigten Fallordner speichern lassen.
+Auf Übereinstimmung mit der Freigabe, getrennte Journalhistorie und ausbleibende
+Produktion oder Builds prüfen. Bei anschließender Revision ohne Speicherauftrag
+bleibt die Datei bytegleich und der Dialog weist auf den veralteten Stand hin.
+Erst eine erneute Freigabe mit Speicherauftrag aktualisiert die Datei. Für
+einen Plattformwechsel die Datei in einer frischen Sitzung als Planungsgrundlage
+benennen und eine aktuelle Vorgabe ergänzen. Diese hat Vorrang.
+
 ### 4.4 Proportionale Testtiefe
 
 - Reine Text- oder Formulierungsänderungen an Doku, Prompts oder Regeln: Diff-Prüfung plus betroffene Kernregeln; kein voller Smoke-Test nötig.

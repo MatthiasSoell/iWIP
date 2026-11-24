@@ -1,10 +1,5 @@
 # H08 – Benchmarkdialog
 
-## Durchführung
-- H08_AGENT_INPUT.md und H08.1 werden gemeinsam als erste Nutzernachricht gesendet.
-- Danach H08.2 bis H08.7 einzeln und unverändert.
-- H08_EXPECTED.md und H08_EVALUATION_PROMPT.md bleiben bis nach Abschluss von H08.7 verborgen.
-
 ## H08.1
 Schau zunächst nur auf meinen bisherigen Planungsstand.
 

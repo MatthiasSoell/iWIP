@@ -18,7 +18,7 @@ D1 Diagnose – 5
 1–2: pauschal, methodenfixiert oder deutlich vorentschieden.
 0: grundlegend verfehlt.
 
-D2 Zielklärung – 5
+D2 Zielklärung in H07.2 – 5
 5: legitime Anspruchsniveaus und Konsequenzen transparent; bewusste Lehrerentscheidung unterstützt. Begründet geschärftes Wissens-/Verständnisziel kann ebenso 5 erhalten wie begründet weiterentwickeltes Ziel.
 3–4: gute Zielklärung mit kleiner Einseitigkeit.
 1–2: vermeintlich höheres Ziel einfach gesetzt oder unpräzises „kennen“ belassen.
@@ -44,19 +44,20 @@ D5 Wirtschaftsdidaktische Urteilsqualität – 10
 0: keine relevante Qualität.
 
 D6 Verarbeitung Lehrerrevision – 5
-5: H07.6 für Input, Arbeitsphase, Sicherung vollständig/funktional/widerspruchsfrei; keine rückwirkende Behauptung eigener Professionalisierungsleistung.
-3–4: weitgehend kohärent.
-1–2: gewählte Arbeitsphase und Sicherung greifen fachlich kaum ineinander.
+5: Leitet in H07.6 aus der Lehrerentscheidung für Input, Arbeitsphase und Sicherung je eine funktionale Konsequenz ab und hält die drei Phasen kohärent. Erkennbar wird beispielsweise, welches Grundlagenwissen die Analyse vorbereitet, welche Prüfung oder Verknüpfung Lernende selbst leisten und woran die Begründung in der Sicherung sichtbar wird.
+3–4: Eigenständige Ableitungen sind weitgehend kohärent, eine Phase oder ein Zusammenhang bleibt aber schwach.
+1–2: Nur ein schwacher eigenständiger Beitrag, etwa eine lokale Ergänzung ohne erkennbare Verbindung der Phasen.
 0: didaktische Konsequenzen verfehlt. Die Geltung der Revision zählt bei K4.
+Eine bloße Wiedergabe der gesetzten Linie erhält bei D6 0 Punkte. Die von der Lehrperson vorgegebenen Verbesserungen und eine vermutete Professionalisierungswirkung geben keine Punkte.
 
 D7 Reflexionsunterstützung – 5
 5: Macht in H07.1–H07.5 eine prüfbare Bedingung oder Abwägung sichtbar, mit der die Lehrperson ihre eigene Entscheidung beurteilen kann.
 3–4: Relevanter Reflexionsanlass, dessen Konsequenz nur teilweise deutlich wird.
 1–2: Allgemeiner Reflexionsimpuls mit schwachem Bezug zur anstehenden Entscheidung.
 0: Kein erkennbarer Reflexionsanlass.
-Bewerte hier die Prüfbarkeit für die Lehrperson. Diagnose, Zielklärung, fachliche Urteilstiefe und die skriptierte Revision werden an anderer Stelle erfasst.
+Bewerte hier ein eigenständig nutzbares Prüfkriterium für die Planung, etwa woran die Lehrperson an einer erwartbaren Schülerantwort erkennt, ob ihr Arbeitsblatt das angestrebte Begründen ermöglicht. Ein Vergleich möglicher Anspruchsniveaus in H07.2 zählt zu D2. Für D7 ist eine zusätzlich beobachtbare Prüfhilfe erforderlich. Diagnose, fachliche Urteilstiefe und die skriptierte Revision werden an anderer Stelle erfasst.
 
-## B Dialog-/Professionalisierungsqualität – 25
+## B Dialog- und Entscheidungsqualität – 25
 
 K1 Orientierung und Entscheidungsspielraum – 5
 5: klare begründete Orientierung/Empfehlung + Lehrerautonomie; weder Übernahme noch bloßes Zurückspielen.

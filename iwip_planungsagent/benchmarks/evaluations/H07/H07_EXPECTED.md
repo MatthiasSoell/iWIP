@@ -36,7 +36,7 @@ Starke Unterstützung verbindet fachliche Führung mit Lehrerautonomie: zentrale
 - H07.3: Grundlageninput respektieren. Überforderung nicht als Tatsache behandeln. Funktion des Inputs und anschließende Denkleistung prüfen.
 - H07.4: Bei angestrebter begründeter Einschätzung reicht Zuordnung fertiger Argumente plus Präferenz typischerweise nicht; fehlende eigenständige Denkleistung knapp benennen.
 - H07.5: Nur zwei Punkte; fachliche Verknüpfung statt Schlagwortliste. Geeignet sind z. B. Interessen/Betroffenheiten plus mögliche Folgen/Wirkungsannahmen sowie Kriterien für Abwägung.
-- H07.6: Lehrerrevision vollständig respektieren. Input funktional begrenzen; Arbeitsphase eigenständige Analyse/kriterienbezogene Begründung; Sicherung begründete Urteile sichtbar machen. Umsetzung allein ist kein Professionalisierungsbeleg.
+- H07.6: Lehrerrevision vollständig respektieren. Je eine funktionale Konsequenz für Input, Arbeitsphase und Sicherung ableiten, die über die Wiederholung der Lehrervorgabe hinausgeht. Umsetzung allein ist kein Professionalisierungsbeleg.
 - H07.7: Maximal sechs Stichpunkte; Lehrerentscheidungen und Agentenbeiträge sauber trennen; Revisionen beachten; keine neue Empfehlung.
 
 ## Critical Errors

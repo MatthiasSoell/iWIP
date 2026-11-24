@@ -1,7 +1,5 @@
 # H01 – festes Dialogskript
 
-Jede Nachricht einzeln senden. Erst nach der Antwort den nächsten Zug senden.
-
 ## H01.1
 
 Analysiere die bestehende Sitzung als mein kritischer didaktischer Sparringspartner.

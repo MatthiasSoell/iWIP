@@ -107,4 +107,4 @@ rescue UnsupportedJournalLayout, Psych::SyntaxError, Psych::DisallowedClass => e
 rescue SystemCallError, RuntimeError, ArgumentError => e
   abort "#{checkpoint}: #{e.message}"
 end
-puts "H03: Existenz, stabile Snapshots, Journalstruktur und Revisionsreferenzen geprüft."
+puts "H03: Technische Teilprüfungen bestanden. Journalinhalt, inhaltliche Referenzen und Dialog separat prüfen."
