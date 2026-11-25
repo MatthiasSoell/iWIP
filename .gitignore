@@ -45,5 +45,7 @@
 /served/
 planning_journal.md
 planning_state.md
+journal_history/
+.planning_journal_*
 __pycache__/
 *.py[cod]

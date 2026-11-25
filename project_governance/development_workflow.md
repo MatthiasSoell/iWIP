@@ -67,8 +67,10 @@ Vor jedem Commit:
 
 ### 4.3 Agenten-Validierung
 
-`make qa-prompts` prueft das Skill-Paket mit `scripts/check_paket.py`. Die
-manuellen Regressionstests sind in der [Benchmark-Suite](../iwip_planungsagent/benchmarks/README.md) dokumentiert.
+`make qa-prompts` prueft das Skill-Paket mit `scripts/check_paket.py`.
+`make qa-journal` prueft atomare Journalpflege und Archivierung in
+temporaeren Fallordnern. Die manuellen Regressionstests sind in der
+[Benchmark-Suite](../iwip_planungsagent/benchmarks/README.md) dokumentiert.
 `make qa-hugo` prueft nach dem Build die gemeinsame Kopf- und Fussnavigation
 an der Startseite und an der Reveal-Praesentation „Warum OER“.
 
@@ -107,6 +109,18 @@ bleibt die Datei bytegleich und der Dialog weist auf den veralteten Stand hin.
 Erst eine erneute Freigabe mit Speicherauftrag aktualisiert die Datei. Für
 einen Plattformwechsel die Datei in einer frischen Sitzung als Planungsgrundlage
 benennen und eine aktuelle Vorgabe ergänzen. Diese hat Vorrang.
+
+Für einen gezielten Dialogtest der Archivierung einen temporären Fall mit
+gemeinsamer Fallanalyse, Perspektivvergleich und kommentiertem Gesprächsentwurf
+vorbereiten (H03 nach A6). In einem frischen Chat nacheinander das konkrete
+Journal zur Fortführung benennen, eine Leitfrage formulieren lassen und dann
+die Sicherung durch eine Entscheidungstabelle zu zwei Feedbackstrategien
+ersetzen. Die ersten beiden Züge lassen den Stand bytegleich und erzeugen
+keinen Snapshot. Der dritte Zug sichert den Altstand und ergänzt eine
+Revision mit Bezug auf den Gesprächsentwurf. Der Dialog benötigt keine
+zusätzliche Bestätigung. In einem separaten temporären Fall mit fehlendem
+`Current State` prüfen, dass der Agent die Lücke benennt, frühere Entscheidungen
+historisch belässt und weder Journal noch Archiv schreibt.
 
 ### 4.4 Proportionale Testtiefe
 

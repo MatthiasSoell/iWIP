@@ -77,6 +77,7 @@ Die wichtigsten Dateien und Ordner fuer den Agenten sind:
 | `core/didaktisches_qualitaetsmodell_core.md` | didaktische Qualitaet und Diagnose |
 | `core/master_agent.md` | Rolle, Kommunikation und didaktische Textarbeit innerhalb der Architektur |
 | `SKILL.md` | Einstieg und Routing fuer den Planungsdialog |
+| `scripts/write_journal.py` | Atomare Journalpflege mit Sicherung beim Wiedereinstieg |
 | `publikation/check.md` | Pruefablauf und Ausgabeformat fuer Finalpruefungen |
 | `publikation/templates/` | Vorlagen fuer Blog- und Reveal-Artefakte |
 
@@ -84,9 +85,9 @@ Die wichtigsten Dateien und Ordner fuer den Agenten sind:
 
 ### Eigenständige Planung
 
-Für `/PLAN` genügt der entpackte Skill-Ordner mit den vier Kerndateien,
-Referenzen und Spezialaufgaben. Die Lehrperson kann den Dialog in einem
-beliebigen Arbeitsverzeichnis führen.
+Für `/PLAN` genügt der entpackte Skill-Ordner. Die Lehrperson kann den Dialog
+in einem beliebigen Arbeitsverzeichnis führen. Sichere Journalpflege setzt
+Python 3.9+ und ein lokales POSIX-Dateisystem mit Schreibzugriff voraus.
 
 - **ChatGPT Work (Desktop):** Öffne den entpackten Agentenordner oder das iWIP-Repository. Im Paket starte mit „Nutze SKILL.md für folgende didaktische Planung …“, im Repository mit „Nutze .agents/skills/iwip-planungsagent/SKILL.md für folgende didaktische Planung …“.
 - **Codex in VS Code:** Öffne das iWIP-Repository und wähle `$iwip-planungsagent`. Der Texteinstieg `/PLAN` wird auch über die Repository-Anweisungen unterstützt. Ein heruntergeladenes Paket kannst Du in einem eigenen Projekt als `.agents/skills/iwip-planungsagent/` ablegen.
@@ -98,6 +99,16 @@ beliebigen Arbeitsverzeichnis führen.
   mkdir -p exports
   git archive --format=zip --prefix=iwip-planungsagent/ -o exports/iwip_planungsagent.zip HEAD:.agents/skills/iwip-planungsagent
   ```
+
+Beim Wiedereinstieg genügt zum Beispiel „Setze den Fall aus
+<Fallordner>/planning_journal.md fort und führe das Journal dort weiter.“
+Erst vor der ersten Journaländerung sichert der Agent die bisherigen Bytes
+als fortlaufend nummerierte Markdown-Datei unter `journal_history/` im
+Fallordner. Der aktuelle Stand und die Entscheidungshistorie stehen im
+`planning_journal.md`. Da eine Chat-ID plattformübergreifend nicht
+verlässlich verfügbar ist, kann nach Verlust des aktuellen Dialogkontexts
+ein zusätzlicher Snapshot entstehen. Ein bytegleicher letzter Snapshot
+wird beim Wiederholungsversuch wiederverwendet.
 
 ### Publikation im iWIP-Repository
 
@@ -142,6 +153,11 @@ Die technische FINAL-Prüfung für den iWIP-Publikationsworkflow steht in
 
 Die [Benchmark-Suite im iWIP-Repository](https://github.com/MatthiasSoell/iWIP/blob/main/iwip_planungsagent/benchmarks/README.md)
 beschreibt Regressionstests, didaktische Systemvergleiche und technische Prüfungen.
+Für Forschungsfälle ordnet das dort vorgesehene Laufprotokoll dem Fall den
+Agenten-Commit oder die Konfigurationsversion zu. Im verwendeten Checkout
+liefert `git rev-parse HEAD` den Commit. Lokale Änderungen am Skill separat
+vermerken. Bei einem entpackten Paket die belegte Herkunft oder Version
+angeben und fehlende Angaben offenlassen.
 
 ### Historischer Versionshinweis 1.3 (September 2026)
 

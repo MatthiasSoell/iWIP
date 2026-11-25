@@ -151,6 +151,7 @@ nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
 - `iwip_planungsagent/publikation/` fuer Arbeitsfassungen veroeffentlichter
   Blog- und Reveal-Dateien bis zur bestandenen FINAL-Pruefung
 - `planning_journal.md` und `planning_state.md` als Git-ignorierte Fallunterlagen
+- `journal_history/` für Git-ignorierte Journal-Snapshots im bestätigten Fallordner
 
 Hinweis:
 

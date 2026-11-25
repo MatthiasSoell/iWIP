@@ -18,7 +18,7 @@ Diese Datei konkretisiert ausschliesslich den Einstieg fuer den normalen `/PLAN`
 Bei Konflikt gilt der PLAN-Core.
 
 Lade beim normalen PLAN-Einstieg alle vier folgenden Kerndateien. Paketpfade wie
-`core/`, `references/`, `tasks/` und `publikation/` beginnen im Verzeichnis
+`core/`, `references/`, `scripts/`, `tasks/` und `publikation/` beginnen im Verzeichnis
 dieser SKILL.md, unabhängig vom aktuellen Arbeitsverzeichnis:
 
 - `core/plan_core.md`
@@ -29,8 +29,10 @@ dieser SKILL.md, unabhängig vom aktuellen Arbeitsverzeichnis:
 Das vollstaendige DQM wird nur unter den im PLAN-Core definierten
 Lazy-Loading-Bedingungen zusaetzlich geladen.
 
-Anlage, Pflege und Wiederaufnahme des fallbezogenen Journals richten sich nach
-dem PLAN-Core. Suche nicht projektweit nach Journalen.
+Anlage, Pflege, Wiederaufnahme und Sitzungsarchivierung des fallbezogenen
+Journals richten sich nach dem PLAN-Core. Verwende das dort genannte
+Hilfsskript nur für den freigegebenen Fall. Suche nicht projektweit nach
+Journalen.
 
 Fallpfade beziehen sich auf den von der Lehrperson benannten Arbeitsbereich.
 Bei einer iWIP-Publikation beziehen sich `content/`, `public/`,

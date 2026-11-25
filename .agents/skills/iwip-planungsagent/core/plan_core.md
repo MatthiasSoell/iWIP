@@ -93,6 +93,10 @@ eines benannten Falls in einer neuen Sitzung die bisherige Einstellung
 unbekannt, fuehre den Fall im Dialog fort, bis die Lehrperson ausdruecklich
 um Journalfuehrung bittet. Ein Auftrag zu `planning_state.md` aktiviert das
 Journal nicht.
+Die ausdrueckliche Benennung eines konkreten Journals als Grundlage fuer die
+Fortsetzung erlaubt das gezielte Lesen. Der Auftrag, dieses Journal in
+demselben Ordner weiterzufuehren, genuegt bei eindeutigem Pfad auch als
+Freigabe zur Journalpflege dort.
 
 Bei aktiver Journalfuehrung verwende nur einen eindeutig von der Lehrperson
 benannten oder zuvor fuer diesen Fall bestaetigten Arbeitsordner. Der Ablageort einer gelesenen
@@ -114,7 +118,9 @@ insbesondere fuer `content/` mit allen Blog- und Reveal-Bundles, `static/`,
 `assets/`, `data/`, `layouts/`, `i18n/`, `archetypes/`, `resources/`,
 `public/`, `public_temp/`, `served/` sowie abweichende konfigurierte Mounts
 und Buildziele. Bitte bei Bedarf um einen sicheren Fallordner und arbeite
-bis dahin im Dialog weiter.
+bis dahin im Dialog weiter. Dieselben Pfadregeln gelten fuer Journalarchive
+und temporaere Journaldateien. Pruefe bei deren Verwendung auch das aufgeloeste
+Archivziel im bestaetigten Fallordner.
 
 Die Datei enthaelt genau zwei logisch getrennte Bereiche:
 
@@ -182,15 +188,20 @@ In einer laufenden Session arbeitet der Agent primaer mit Gespraechskontext und
 Planning State und liest das Journal nicht vor jedem Turn vollstaendig neu. Er
 aktualisiert es nur bei journalwuerdigen Ereignissen und prueft vor dem
 Schreibzugriff den fuer eine sichere Aktualisierung notwendigen aktuellen
-Dateiinhalt. Bei aktiver Journalfuehrung liest der Agent die kleine
-`planning_journal.md` vollstaendig, wenn er einen benannten persistenten
-Planungsfall in einer neuen Session oder auf ausdruecklichen Auftrag
-wieder aufnimmt. Er verwendet nur `Current State` als geltenden
-Stand und die `Decision History` als Begruendungs- und Revisionshistorie. Der
-alte Chat wird nur bei einer daraus nicht aufloesbaren konkreten Unklarheit
-herangezogen. Sichtbar wird standardmaessig eine natuerliche knappe
-Rueckspiegelung statt eines technischen Dumps; auf ausdrueckliche Nachfrage
-darf das Journal selbst gezeigt werden.
+Dateiinhalt. Beim Wiedereinstieg in einen benannten persistenten Fall lies
+das freigegebene `planning_journal.md` vollstaendig. Verwende nur
+`Current State` als gespeicherten geltenden Stand und `Decision History` als
+Begruendungs- und Revisionshistorie. Eindeutig belegte neuere Setzungen
+haben Vorrang. Fehlen bei einem erkennbar veralteten, unvollstaendigen oder
+beschaedigten Journal entscheidende Angaben, benenne die konkrete Luecke und
+arbeite mit dem belegten Stand im Dialog weiter. Schreibe ein unvollstaendiges
+oder beschaedigtes Journal nicht fort und stelle es nicht aus Historie, Archiv
+oder altem Chat wieder her. Ziehe frueheren Dialog nur bei einer konkret
+verbleibenden Unklarheit heran und frage nur nach, wenn die Klaerung fuer den
+Auftrag erforderlich ist. Spiegle den geltenden Stand natuerlich und knapp.
+Sind nur der Stand und ein Richtungswechsel erfragt, beschraenke die
+Rueckspiegelung darauf.
+Auf ausdrueckliche Nachfrage darfst du das Journal selbst zeigen.
 
 Bei ausdruecklicher Wiederaktivierung ist der Abgleich ein eigener
 Pflegeanlass, auch ohne neues Planungsereignis. Lies das Journal im
@@ -203,6 +214,61 @@ dokumentiert ist. Fuer `rationale` und `dialogue_ref` gelten dieselben
 Belegregeln wie bei der laufenden Pflege. Gibt es noch kein Journal, gilt
 weiterhin die Anlageregel fuer das erste belegte journalwuerdige Ereignis.
 `planning_state.md` wird dabei nur nach seiner eigenen Freigaberegel geaendert.
+
+### Sitzungsarchiv und sicheres Schreiben
+
+Bei einem bestehenden Journal merke im laufenden Dialog pro Fall, ob nach
+dem Wiedereinstieg noch eine erste Aenderung aussteht. Ein neuer Chat oder
+eine Fortsetzung ohne im aktuellen Dialog belegte Journalpflege gilt als
+Wiedereinstieg. Ein erneutes Lesen im selben Dialog setzt die Markierung
+nicht zurueck. Es gibt keine plattformuebergreifend verlaessliche Chat-ID.
+Geht der laufende Kontext verloren, kann daher ein zusaetzlicher Snapshot
+entstehen. Eine Neuanlage und reine Lesezuege brauchen keinen Snapshot.
+
+Fuehre saemtliche Aenderungen an `planning_journal.md` ausschliesslich ueber
+`scripts/write_journal.py` aus dem Skill-Paket aus (Python 3.9+ auf einem
+lokalen POSIX-Dateisystem). Das gilt fuer Neuanlage, Aktualisierung und
+Revision. Direkte Dateiaenderungen sind auch bei Fehlern unzulaessig. Lies den
+Ausgangsstand mit `python3 <Hilfsskript> read <Fallordner>`. Die erste
+Ausgabezeile ist der SHA-256 der darauffolgenden Journalbytes oder `missing`.
+Pruefe bei einem vorhandenen Journal beide Bereiche auf Vollstaendigkeit und
+Konsistenz. Bereite den gesamten Folgestand einschliesslich unveraenderter
+History-Eintraege anhand genau dieses Ausgangsstands vor und uebergib ihn
+ueber Standardeingabe. Verwende den passenden Aufruf:
+
+- Neuanlage: `python3 <Hilfsskript> write <Fallordner> --expected missing`
+- Bis zur ersten erfolgreichen Aenderung eines beim Wiedereinstieg vorhandenen Journals:
+  `python3 <Hilfsskript> write <Fallordner> --expected <SHA-256> --archive`
+- Weitere Aenderungen in derselben Sitzung, auch nach Neuanlage in dieser Sitzung:
+  `python3 <Hilfsskript> write <Fallordner> --expected <SHA-256> --continue`
+
+Fuer Aenderungen an einem bestehenden Journal ist genau einer der beiden
+Modi erforderlich. Fuer bytegleiche Staende ist kein Schreibaufruf
+erforderlich. Ohne Hilfsskript oder dessen Voraussetzungen
+ist der gezielte Lesezugriff weiterhin moeglich. Fuehre die Planung in
+diesem Fall im Dialog fort.
+
+Das Hilfsskript sichert unter Sperre die bisherigen Bytes exklusiv in
+`journal_history/` als `session_001.md`, `session_002.md` usw., bevor es das
+Journal atomar ersetzt. Ist der letzte Snapshot bytegleich zum Ausgangsstand,
+wird er wiederverwendet. Das Archiv ist nur eine Sicherung. Es fliesst weder
+automatisch in den Current State ein noch wird daraus Historie zusammengefuehrt.
+
+Nur die erfolgreiche Aenderung schliesst die Archivierung fuer diesen
+Dialog ab. Bei Fehler oder Abbruch melde keine erfolgreiche Speicherung.
+Lies vor einem Wiederholungsversuch den tatsaechlichen Stand. Ist der
+beabsichtigte Folgestand bereits vorhanden, wiederhole denselben
+Schreibaufruf zur technischen Bestaetigung, ohne das Ereignis erneut
+anzufuegen. Ein erfolgreiches `unchanged` bestaetigt dann den Folgestand
+und schliesst die Archivierung fuer diesen Dialog ab.
+Bei abweichendem Stand schreibe erst wieder auf der nachweislich aktuellen
+und konsistenten Grundlage. Ohne sicheres Schreibverfahren bleibt die
+Planungsentscheidung im Dialog. Benenne einen nicht behebbaren Lesefehler
+oder fehlgeschlagenen Schreibzugriff einmal knapp. Archivierung und
+Wiederholung brauchen keine weitere Bestaetigung durch die Lehrperson.
+Melde erfolgreiche Journalpflege und Archivierung nur auf ausdrueckliche
+Nachfrage zu Dateiaktionen. Ein Auftrag zur Fortfuehrung allein ist keine
+solche Nachfrage.
 
 ## Freigegebener Planungsstand fuer die Uebergabe
 
