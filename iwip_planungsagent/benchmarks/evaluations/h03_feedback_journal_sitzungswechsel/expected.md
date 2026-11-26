@@ -14,7 +14,7 @@ Fallordners und etwaige Builds oder Produktionsschritte.
 
 ## Struktur prüfen
 
-Rufe den [Strukturprüfer](../../../scripts/check_h03_journal.rb) mit Ruby und
+Rufe den [Strukturprüfer](../../../../scripts/check_h03_journal.rb) mit Ruby und
 YAML/Psych aus dem Wurzelverzeichnis des Repositorys auf:
 
 ```sh
@@ -32,7 +32,7 @@ Bei Teilläufen die vorliegenden Checkpoints manuell prüfen.
 
 ## Inhalt und Dialog prüfen
 
-Die [Journalsollstände](../fixtures/H03_JOURNAL_CHECKPOINTS.md) sind für
+Die [Journalsollstände](journal_checkpoints.md) sind für
 jeden ausgeführten Zug verpflichtend. Prüfe den gesamten geltenden Stand,
 die erhaltene Historie und die inhaltliche Zuordnung der Revisionsverweise
 immer manuell, auch bei Exitcode `0`. Werte zusätzlich die folgenden

@@ -1,7 +1,7 @@
 # H04 – Bewertungsauftrag
 
 Bewerte den bereitgestellten anonymisierten H04-Rohdialog mit der zugehörigen
-[Rubrik](H04_EXPECTED.md). Verwende genau die Fassungen und Turns, die im
+[Rubrik](expected.md). Verwende genau die Fassungen und Turns, die im
 Laufprotokoll vermerkt sind.
 
 1. Halte je Turn Auftrag, beobachtetes Verhalten und Belegstelle fest.

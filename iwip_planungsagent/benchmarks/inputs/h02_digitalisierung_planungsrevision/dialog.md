@@ -5,7 +5,7 @@
 Analysiere die bestehende Sitzung als mein kritischer didaktischer
 Sparringspartner.
 
-Nutze `iwip_planungsagent/benchmarks/inputs/H02_AGENT_INPUT.md` als Fallkontext.
+Nutze `iwip_planungsagent/benchmarks/inputs/h02_digitalisierung_planungsrevision/agent_input.md` als Fallkontext.
 
 Mich interessiert zunächst nur die Frage, ob die Analyse beruflicher
 Veränderungssituationen tatsächlich als tragender Kern der Sitzung funktioniert.

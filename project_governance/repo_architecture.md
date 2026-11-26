@@ -144,7 +144,6 @@ nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
 - `.vscode/` fuer nutzerspezifische Workspace-Einstellungen
 - `.venv/` fuer eine lokale Python-Laufzeitumgebung
 - `served/` als optionales lokales Staging fuer technische Pruefungen
-- `iwip_planungsagent/benchmarks/historie/` für lokale historische Fassungen
 - `iwip_planungsagent/entwicklung/` fuer Entwicklungsprotokolle, historische Audits,
   Rohdaten und temporaere Arbeitsdateien
 - `iwip_planungsagent/exports/` fuer manuelle Exporte zum Planungsagenten
@@ -155,8 +154,11 @@ nicht zur oeffentlichen Repository-Quelle und nicht zum Deploy-Artefakt:
 
 Hinweis:
 
-- Konkrete Benchmark-Laeufe und Rohoutputs liegen lokal unter
-  `iwip_planungsagent/entwicklung/benchmark_runs/`.
+- Konkrete Benchmark-Läufe und Rohoutputs liegen lokal unter
+  `iwip_planungsagent/entwicklung/benchmark_runs/<fall>/<lauf>/`.
+  Historische Materialstände liegen unter `entwicklung/historie/`,
+  Entwicklungsprotokolle unter `entwicklung/entwicklungsprotokolle/`
+  und lokale Exporte unter `entwicklung/exports/`.
 
 Regel:
 

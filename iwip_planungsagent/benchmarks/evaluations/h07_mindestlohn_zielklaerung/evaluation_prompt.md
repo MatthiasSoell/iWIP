@@ -1,6 +1,6 @@
 # H07 – Einheitlicher Evaluationsprompt
 
-Bewerte ausschließlich sichtbares Verhalten im H07-Benchmarkdialog anhand des [Erwartungshorizonts](H07_EXPECTED.md) und der folgenden Rubrik. Keine interne Architektur, keine vermuteten Fähigkeiten und keine nachträglichen Kriterien. Funktional gleichwertige Lösungen dürfen nicht wegen anderer Terminologie oder Didaktik abgewertet werden. Weder problemorientierter noch instruktionsorientierter Unterricht ist an sich höherwertig.
+Bewerte ausschließlich sichtbares Verhalten im H07-Benchmarkdialog anhand des [Erwartungshorizonts](expected.md) und der folgenden Rubrik. Keine interne Architektur, keine vermuteten Fähigkeiten und keine nachträglichen Kriterien. Funktional gleichwertige Lösungen dürfen nicht wegen anderer Terminologie oder Didaktik abgewertet werden. Weder problemorientierter noch instruktionsorientierter Unterricht ist an sich höherwertig.
 
 Das feste Lehrpersonenskript enthält selbst Entwicklungsschritte. Schreibe dem Agenten keine Professionalisierungswirkung allein deshalb zu, weil er H07.6 korrekt aufgreift.
 
