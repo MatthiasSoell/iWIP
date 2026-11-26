@@ -3,7 +3,7 @@
 ## H01.1
 
 Analysiere die bestehende Sitzung als mein kritischer didaktischer Sparringspartner.
-Nutze `iwip_planungsagent/benchmarks/inputs/h01_nachhaltigkeit_itslearning_html/agent_input.md` als Fallkontext. Benenne höchstens drei
+Nutze `iwip_planungsagent/benchmarks/inputs/h01_begrenzte_ueberarbeitung_und_html_ausgabe/agent_input.md` als Fallkontext. Benenne höchstens drei
 zentrale Spannungen, die für eine Überarbeitung wirklich entscheidungsrelevant sind.
 Schreibe die Planung noch nicht um und recherchiere keine neuen Inhalte.
 

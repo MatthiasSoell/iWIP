@@ -101,7 +101,7 @@ def check_candidate(repo, target, candidate, base_blog):
             check_pdf_download(spec, output, site_url)
             pending_pdf = spec.pdf_output.resolve()
 
-        check_links(navigation, html, output, site, page_url, pending_pdf, literature=True)
+        check_links(navigation, html, output, site, page_url, pending_pdf, fragments=True)
         return page_url
 
 

@@ -26,7 +26,7 @@
 !/iwip_planungsagent/benchmarks/evaluations/h[0-9][0-9]_*/
 !/iwip_planungsagent/benchmarks/evaluations/h[0-9][0-9]_*/expected.md
 !/iwip_planungsagent/benchmarks/evaluations/h[0-9][0-9]_*/evaluation_prompt.md
-!/iwip_planungsagent/benchmarks/evaluations/h03_feedback_journal_sitzungswechsel/journal_checkpoints.md
+!/iwip_planungsagent/benchmarks/evaluations/h03_planung_aus_journal_in_neuer_sitzung_fortsetzen/journal_checkpoints.md
 /exports/
 /.vscode/
 /.venv/

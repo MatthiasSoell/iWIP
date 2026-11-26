@@ -8,17 +8,17 @@ Git-Tag `benchmark-v1.0`.
 
 ## 1. Benchmark auswählen
 
-Die Fallordner beginnen mit der historischen ID und benennen Thema und
-Prüfschwerpunkt. Die IDs bleiben in Laufprotokollen und Zugnummern gültig.
+Die Fallordner beginnen mit der historischen ID und benennen die geprüfte
+Fähigkeit. Die IDs bleiben in Laufprotokollen und Zugnummern gültig.
 
 | Fallversion | Schwerpunkt und Einsatz | Testmaterial | Bewertung |
 |---|---|---|---|
-| `H01@1.0` | Nachhaltigkeit und Bildung, 90 Minuten Hochschullehre. Diagnose, begrenzte Anpassung und itslearning-HTML. Regression für begrenzte Überarbeitung und HTML-Ausgabe. | [Kontext](inputs/h01_nachhaltigkeit_itslearning_html/agent_input.md), [5 Züge](inputs/h01_nachhaltigkeit_itslearning_html/dialog.md) | [Erwartungen](evaluations/h01_nachhaltigkeit_itslearning_html/expected.md), [Bewertungsauftrag](evaluations/h01_nachhaltigkeit_itslearning_html/evaluation_prompt.md) |
-| `H02@1.0` | Digitalisierung beruflicher Arbeit, Hochschullehre. Prozessregression für Kontinuität und ausdrückliche Revision in einer Sitzung. | [Kontext](inputs/h02_digitalisierung_planungsrevision/agent_input.md), [8 Züge](inputs/h02_digitalisierung_planungsrevision/dialog.md) | [Solltabelle](evaluations/h02_digitalisierung_planungsrevision/expected.md), [Bewertungsauftrag](evaluations/h02_digitalisierung_planungsrevision/evaluation_prompt.md) |
-| `H03@1.0` | Feedback in der betrieblichen Ausbildung, Hochschullehre. iWIP-Prozessregression für Journalführung und Sitzungswechsel. | [Kontext](inputs/h03_feedback_journal_sitzungswechsel/agent_input.md), [6 + 3 Züge](inputs/h03_feedback_journal_sitzungswechsel/dialog.md) | [Protokoll](evaluations/h03_feedback_journal_sitzungswechsel/expected.md), [Bewertungsauftrag](evaluations/h03_feedback_journal_sitzungswechsel/evaluation_prompt.md), [Journalsoll](evaluations/h03_feedback_journal_sitzungswechsel/journal_checkpoints.md) |
-| `H04@1.0` | Lieferantenauswahl, Ausbildung Industriekaufleute. Kalibrierung für Diagnose und Urteilsbegründung sowie für Präferenzen, Revision und Herkunft von Entscheidungen. | [Kontext](inputs/h04_lieferantenauswahl_urteilsbegruendung/agent_input.md), [7 Züge](inputs/h04_lieferantenauswahl_urteilsbegruendung/dialog.md) | [Rubrik](evaluations/h04_lieferantenauswahl_urteilsbegruendung/expected.md), [Bewertungsauftrag](evaluations/h04_lieferantenauswahl_urteilsbegruendung/evaluation_prompt.md) |
-| `H07@1.0` | Mindestlohn, Ausbildung Industriekaufleute. Pilot für Zielklärung und Reflexionsunterstützung einer weniger erfahrenen Lehrperson. Dialogbefund separat. | [Kontext](inputs/h07_mindestlohn_zielklaerung/agent_input.md), [7 Züge](inputs/h07_mindestlohn_zielklaerung/dialog.md) | [Erwartungen](evaluations/h07_mindestlohn_zielklaerung/expected.md), [Rubrik](evaluations/h07_mindestlohn_zielklaerung/evaluation_prompt.md) |
-| `H08@1.0` | Unternehmerische Standortentscheidung, fortgeschrittene Lernende. Robustheit gegenüber schrittweise offengelegten Ziel-Mittel-Spannungen. Revision separat. | [Kontext](inputs/h08_standortentscheidung_ziel_mittel_spannungen/agent_input.md), [7 Züge](inputs/h08_standortentscheidung_ziel_mittel_spannungen/dialog.md) | [Erwartungen](evaluations/h08_standortentscheidung_ziel_mittel_spannungen/expected.md), [Rubrik](evaluations/h08_standortentscheidung_ziel_mittel_spannungen/evaluation_prompt.md) |
+| `H01@1.0` | Nachhaltigkeit und Bildung, 90 Minuten Hochschullehre. Diagnose, begrenzte Anpassung und itslearning-HTML. Regression für begrenzte Überarbeitung und HTML-Ausgabe. | [Kontext](inputs/h01_begrenzte_ueberarbeitung_und_html_ausgabe/agent_input.md), [5 Züge](inputs/h01_begrenzte_ueberarbeitung_und_html_ausgabe/dialog.md) | [Erwartungen](evaluations/h01_begrenzte_ueberarbeitung_und_html_ausgabe/expected.md), [Bewertungsauftrag](evaluations/h01_begrenzte_ueberarbeitung_und_html_ausgabe/evaluation_prompt.md) |
+| `H02@1.0` | Digitalisierung beruflicher Arbeit, Hochschullehre. Prozessregression für Kontinuität und ausdrückliche Revision in einer Sitzung. | [Kontext](inputs/h02_planungsrevision_im_laufenden_dialog/agent_input.md), [8 Züge](inputs/h02_planungsrevision_im_laufenden_dialog/dialog.md) | [Solltabelle](evaluations/h02_planungsrevision_im_laufenden_dialog/expected.md), [Bewertungsauftrag](evaluations/h02_planungsrevision_im_laufenden_dialog/evaluation_prompt.md) |
+| `H03@1.0` | Feedback in der betrieblichen Ausbildung, Hochschullehre. Prüft, ob der Agent eine Planung in einer neuen Sitzung allein aus dem Journal wieder aufnimmt und neue Entscheidungen festhält. | [Kontext](inputs/h03_planung_aus_journal_in_neuer_sitzung_fortsetzen/agent_input.md), [6 + 3 Züge](inputs/h03_planung_aus_journal_in_neuer_sitzung_fortsetzen/dialog.md) | [Protokoll](evaluations/h03_planung_aus_journal_in_neuer_sitzung_fortsetzen/expected.md), [Bewertungsauftrag](evaluations/h03_planung_aus_journal_in_neuer_sitzung_fortsetzen/evaluation_prompt.md), [Journalsoll](evaluations/h03_planung_aus_journal_in_neuer_sitzung_fortsetzen/journal_checkpoints.md) |
+| `H04@1.0` | Lieferantenauswahl, Ausbildung Industriekaufleute. Kalibrierung für Diagnose und Urteilsbegründung sowie für Präferenzen, Revision und Herkunft von Entscheidungen. | [Kontext](inputs/h04_didaktische_alternativen_begruenden_und_praeferenzen_beruecksichtigen/agent_input.md), [7 Züge](inputs/h04_didaktische_alternativen_begruenden_und_praeferenzen_beruecksichtigen/dialog.md) | [Rubrik](evaluations/h04_didaktische_alternativen_begruenden_und_praeferenzen_beruecksichtigen/expected.md), [Bewertungsauftrag](evaluations/h04_didaktische_alternativen_begruenden_und_praeferenzen_beruecksichtigen/evaluation_prompt.md) |
+| `H07@1.0` | Mindestlohn, Ausbildung Industriekaufleute. Pilot für Zielklärung und Reflexionsunterstützung einer weniger erfahrenen Lehrperson. Dialogbefund separat. | [Kontext](inputs/h07_lernziele_klaeren_und_reflexion_anregen/agent_input.md), [7 Züge](inputs/h07_lernziele_klaeren_und_reflexion_anregen/dialog.md) | [Erwartungen](evaluations/h07_lernziele_klaeren_und_reflexion_anregen/expected.md), [Rubrik](evaluations/h07_lernziele_klaeren_und_reflexion_anregen/evaluation_prompt.md) |
+| `H08@1.0` | Unternehmerische Standortentscheidung, fortgeschrittene Lernende. Robustheit gegenüber schrittweise offengelegten Ziel-Mittel-Spannungen. Revision separat. | [Kontext](inputs/h08_ziel_mittel_konflikte_erkennen_und_planung_revidieren/agent_input.md), [7 Züge](inputs/h08_ziel_mittel_konflikte_erkennen_und_planung_revidieren/dialog.md) | [Erwartungen](evaluations/h08_ziel_mittel_konflikte_erkennen_und_planung_revidieren/expected.md), [Rubrik](evaluations/h08_ziel_mittel_konflikte_erkennen_und_planung_revidieren/evaluation_prompt.md) |
 
 | Prüfumfang | Auswahl |
 |---|---|
@@ -47,9 +47,9 @@ und sein [Stationsbogen](../../project_governance/development_workflow.md#45-dry
 3. H01/H02 erhalten die Falltextdatei am im ersten Zug genannten relativen
    Pfad. Bei H04/H07/H08 den Falltext und Zug 1 gemeinsam als erste Nachricht
    senden. Für H03 den Falltext mit A1 senden und vorher den leeren, bestätigten
-   und beschreibbaren Fallordner gemäß [H03-Dialog](inputs/h03_feedback_journal_sitzungswechsel/dialog.md)
+   und beschreibbaren Fallordner gemäß [H03-Dialog](inputs/h03_planung_aus_journal_in_neuer_sitzung_fortsetzen/dialog.md)
    vorbereiten. Die Snapshot-Ablage gemäß
-   [H03-Protokoll](evaluations/h03_feedback_journal_sitzungswechsel/expected.md) liegt außerhalb des Fallordners.
+   [H03-Protokoll](evaluations/h03_planung_aus_journal_in_neuer_sitzung_fortsetzen/expected.md) liegt außerhalb des Fallordners.
 
 ## 3. Dialog durchführen
 
@@ -146,9 +146,14 @@ erfassen, wenn die Plattform beide Werte ausweist.
 - Der Tag `benchmark-v1.0` bindet den eingefrorenen Suite-Commit
   einschließlich Rubriken, Durchführungsvorgaben und H03-Prüfer. Arbeitsfassung
   1.1 benennt die Fallordner um, aktualisiert die Dateipfade im ersten Zug von
-  H01 und H02 und ergänzt drei Bewertungsaufträge. Die Aufgabeninhalte und
-  Fallsollstände entsprechen weiterhin Fassung 1.0. Für Läufe mit der
-  Arbeitsfassung den genauen Benchmark-Commit mitprotokollieren.
+  H01 und H02 und ergänzt drei Bewertungsaufträge. Die Aufgabeninhalte
+  entsprechen weiterhin Fassung 1.0. H03 verwendet in der Arbeitsfassung
+  das Auswertungsprotokoll und die Journalsollstände in Fassung 1.1.
+  Diese berücksichtigen den aktuellen Journalvertrag und die Archivbelege
+  aus A6, B1, B2 und B3. Für Läufe mit der Arbeitsfassung den genauen
+  Benchmark-Commit mitprotokollieren. Ergebnisse nach H03-Auswertung 1.0
+  behalten ihre damalige Einstufung. Fehlende Archivbelege sind bei einer
+  Neubewertung nach 1.1 als nicht beobachtbar auszuweisen.
 - Frühere Ergebnisse behalten ihre ursprüngliche Fall- und Rubrikfassung.
   Eine Neubewertung unveränderter Rohdialoge ist eine eigene Auswertung.
   Ältere versionierte Teststände und Herkunftshinweise bleiben in Git

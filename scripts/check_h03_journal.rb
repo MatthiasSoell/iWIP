@@ -7,8 +7,9 @@ require "yaml"
 class UnsupportedJournalLayout < StandardError; end
 
 STATE_FIELDS = %w[planning_focus main_line commitments constraints open_item].freeze
-EVENT_FIELDS = %w[id date type content rationale refers_to rejected_alternative].freeze
+EVENT_FIELDS = %w[id date type content rationale refers_to rejected_alternative dialogue_ref].freeze
 EVENT_TYPES = %w[decision revision open resolved].freeze
+SNAPSHOT_NAME = /\Asession_\d{3,}\.md\z/
 
 def read_yaml(text)
   fenced = text.match(/\A\s*```ya?ml[ \t]*\r?\n(.*?)^```[ \t]*\s*\z/m)
@@ -42,6 +43,7 @@ def journal_events(text)
   end
 
   ids = []
+  open_ids = []
   events.each do |event|
     id = format("J-%03d", ids.length + 1)
     type = event["type"]
@@ -49,17 +51,30 @@ def journal_events(text)
       event["id"] == id && (event.keys - EVENT_FIELDS).empty? && EVENT_TYPES.include?(type)
     date = event["date"].to_s
     raise "Kein ISO-Datum für #{id}" unless date.match?(/\A\d{4}-\d{2}-\d{2}\z/) && Date.iso8601(date)
-    required = %w[decision revision].include?(type) ? %w[content rationale] : %w[content]
-    raise "Fehlender Text für #{id}" unless required.all? { |key| event[key].is_a?(String) && !event[key].strip.empty? }
+    text_fields = ["content"] + (%w[rationale rejected_alternative dialogue_ref] & event.keys)
+    text_fields.each do |key|
+      raise "Fehlender oder ungültiger Text in #{key} für #{id}" unless
+        event[key].is_a?(String) && !event[key].strip.empty?
+    end
 
     references = Array(event["refers_to"])
     raise "Nur frühere IDs sind als Referenz zulässig für #{id}" unless (references - ids).empty?
-    raise "Fehlender Revisions- oder Erledigungsbezug für #{id}" if
-      %w[revision resolved].include?(type) && references.empty?
+    raise "Fehlender Bezug auf einen früheren offenen Punkt für #{id}" if
+      type == "resolved" && (references & open_ids).empty?
 
     ids << id
+    open_ids << id if type == "open"
   end
   events
+end
+
+def archived_journals(directory)
+  archive = File.join(directory, "journal_history")
+  raise "Archivbeleg fehlt (leeres journal_history bei leerem Archiv)" unless File.directory?(archive)
+
+  Dir.children(archive).grep(SNAPSHOT_NAME).to_h do |name|
+    [name, File.binread(File.join(archive, name))]
+  end
 end
 
 abort "Aufruf: ruby scripts/check_h03_journal.rb SNAPSHOT-ORDNER" unless ARGV.length == 1
@@ -85,7 +100,8 @@ begin
   end
 
   history = []
-  prior_decisions = []
+  event_ids = {}
+  revision_predecessors = { "A6" => %w[A2 A3], "B3" => %w[A6] }
   { "A2" => "decision", "A3" => "decision", "A6" => "revision", "B3" => "revision" }.each do |turn, expected|
     checkpoint = turn
     events = journal_events(journals.fetch(turn))
@@ -93,13 +109,36 @@ begin
 
     added = events.drop(history.length).select { |event| event["type"] == expected }
     raise "Kein neuer #{expected}-Eintrag" if added.empty?
-    if expected == "revision" && added.none? { |event| (Array(event["refers_to"]) & prior_decisions).any? }
-      raise "Revision verweist nicht auf einen einschlägigen früheren Eintrag"
+    if expected == "revision"
+      added.each do |event|
+        raise "Fehlender Revisionsbezug für #{event["id"]}" if Array(event["refers_to"]).empty?
+      end
+      references = added.flat_map { |event| Array(event["refers_to"]) }
+      revision_predecessors.fetch(turn).each do |previous_turn|
+        raise "Revisionsbezug auf #{previous_turn} fehlt" if (references & event_ids.fetch(previous_turn)).empty?
+      end
     end
 
-    ids = added.map { |event| event["id"] }
-    prior_decisions = expected == "revision" ? ids : prior_decisions + ids
+    event_ids[turn] = added.map { |event| event["id"] }
     history = events
+  end
+
+  checkpoint = "A6"
+  baseline = archived_journals(File.join(ARGV.first, checkpoint))
+  %w[B1 B2].each do |turn|
+    checkpoint = turn
+    raise "Sitzungsarchiv hat sich seit A6 geändert" unless
+      archived_journals(File.join(ARGV.first, turn)) == baseline
+  end
+
+  checkpoint = "B3"
+  archive = archived_journals(File.join(ARGV.first, checkpoint))
+  unless baseline.all? { |name, bytes| archive[name] == bytes }
+    raise "Bisherige Sitzungsarchive wurden verändert oder entfernt"
+  end
+  added = archive.keys - baseline.keys
+  unless added.size == 1 && archive.fetch(added.first) == journals.fetch("A6").b
+    raise "Erwartet genau einen neuen Sitzungs-Snapshot, bytegleich zu A6"
   end
 rescue UnsupportedJournalLayout, Psych::SyntaxError, Psych::DisallowedClass => e
   warn "#{checkpoint}: Journalformat manuell prüfen (#{e.message})"
@@ -107,4 +146,4 @@ rescue UnsupportedJournalLayout, Psych::SyntaxError, Psych::DisallowedClass => e
 rescue SystemCallError, RuntimeError, ArgumentError => e
   abort "#{checkpoint}: #{e.message}"
 end
-puts "H03: Technische Teilprüfungen bestanden. Journalinhalt, inhaltliche Referenzen und Dialog separat prüfen."
+puts "H03: Journalstruktur und Sitzungsarchiv geprüft. Journalinhalt, inhaltliche Referenzen und Dialog separat prüfen."

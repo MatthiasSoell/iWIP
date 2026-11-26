@@ -27,6 +27,8 @@ class Navigation(HTMLParser):
         self.regions = []
         self.content_found = False
         self.ids = set()
+        self.named_anchors = set()
+        self.reveal = False
         self.canonical = None
         self.targets = []
         self.links = []
@@ -49,6 +51,10 @@ class Navigation(HTMLParser):
         element_id = attributes.get("id")
         if element_id:
             self.ids.add(element_id)
+        if tag == "a" and attributes.get("name"):
+            self.named_anchors.add(attributes["name"])
+        if "reveal" in classes:
+            self.reveal = True
         if tag == "link" and attributes.get("rel") == "canonical":
             self.canonical = attributes.get("href")
         if self.content_class in classes:
@@ -115,13 +121,14 @@ def read_navigation(html, **options):
     return navigation
 
 
-def check_links(navigation, html, root, site, document_url, pending_pdf=None, *, literature=False):
+def check_links(navigation, html, root, site, document_url, pending_pdf=None, *, fragments=False):
     for destination in navigation.targets:
         built = built_target(root, site, document_url, destination, button=True)
         if not (built.is_file() or (built / "index.html").is_file()):
             raise ValueError(f"Missing built button target: {destination}")
 
     checked_links = 0
+    parsed_targets = {html: navigation}
     for destination in dict.fromkeys(navigation.links):
         built = built_target(root, site, document_url, destination)
         if built is None or built == pending_pdf:
@@ -129,10 +136,17 @@ def check_links(navigation, html, root, site, document_url, pending_pdf=None, *,
         target = built if built.is_file() else built / "index.html"
         if not target.is_file():
             raise ValueError(f"Missing built link target: {destination}")
-        if literature and unquote(urlsplit(destination).fragment) == "literatur":
-            ids = navigation.ids if target == html else read_navigation(target, collect_links=False).ids
-            if "literatur" not in ids:
-                raise ValueError(f"Missing built literature anchor: {destination}")
+        if fragments and target.suffix.lower() in {".html", ".htm"}:
+            # Text-fragment directives are interpreted by the browser, separately from the ID.
+            fragment = unquote(urlsplit(destination).fragment.split(":~:", 1)[0])
+            if fragment and fragment.lower() != "top":
+                if target not in parsed_targets:
+                    parsed_targets[target] = read_navigation(target, collect_links=False)
+                page = parsed_targets[target]
+                # Reveal handles hashes such as #/2/1 or #/slide-id itself.
+                if not (page.reveal and fragment.startswith("/")):
+                    if fragment not in page.ids and fragment not in page.named_anchors:
+                        raise ValueError(f"Missing built HTML anchor: {destination}")
         checked_links += 1
     return checked_links
 

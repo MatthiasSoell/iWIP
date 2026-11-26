@@ -1,10 +1,10 @@
 SKILL_DIR := .agents/skills/iwip-planungsagent
 
-.PHONY: qa qa-agent qa-prompts qa-journal qa-markdown qa-hugo
+.PHONY: qa qa-agent qa-prompts qa-journal qa-markdown qa-hugo qa-navigation
 
 qa: qa-agent
 
-qa-agent: qa-prompts qa-journal qa-markdown qa-hugo
+qa-agent: qa-prompts qa-journal qa-markdown qa-navigation qa-hugo
 	@echo "QA completed successfully."
 
 qa-prompts:
@@ -19,6 +19,10 @@ qa-markdown:
 
 qa-journal:
 	@python3 scripts/test_journal.py
+	@python3 scripts/test_check_h03_journal.py
+
+qa-navigation:
+	@python3 scripts/test_check_navigation.py
 
 qa-hugo:
 	hugo --quiet

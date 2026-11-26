@@ -97,11 +97,12 @@ PDF-Konfiguration und den Downloadpfad. Das GitHub-Deployment erzeugt oder
 uebernimmt die PDF-Datei und prueft sie vor dem Upload.
 
 Lokale Linkfehler im Bloginhalt oder auf den Folien sind `BLOCKER`.
-Die Pruefung umfasst Blog-Reveal-Buttons, Materiallinks und das Ziel von
-`#literatur`-Verweisen. Die gemeinsame Kopf- und Fussnavigation wird in
-der technischen Repository-QA geprueft. Fuer beauftragte oder fachlich
-erforderliche externe Linkpruefungen nutze bei Verfuegbarkeit Lychee mit
-`lychee.toml` gezielt fuer die betroffenen URLs. Ein ausgebliebener Lauf
+Die Pruefung umfasst Blog-Reveal-Buttons, Materiallinks und lokale
+HTML-Sprungziele einschliesslich `#literatur`. Reveal-Navigationshashes wie
+`#/2/1` werden vom Praesentationssystem ausgewertet. Die gemeinsame Kopf-
+und Fussnavigation wird in der technischen Repository-QA geprueft. Fuer beauftragte oder fachlich
+erforderliche externe Linkpruefungen nutze bei Verfuegbarkeit Lychee
+gezielt fuer die betroffenen URLs. Ein ausgebliebener Lauf
 gilt nicht als bestanden. Seine Nichtverfuegbarkeit ist allein kein
 `BLOCKER`; relevante nachgewiesene Linkfehler bleiben Blocker.
 

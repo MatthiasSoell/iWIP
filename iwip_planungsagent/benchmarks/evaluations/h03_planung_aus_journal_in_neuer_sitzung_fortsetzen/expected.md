@@ -8,6 +8,13 @@ Unterordner für den abgeschlossenen Zug (`A1` bis `A6`, `B1` bis `B3`).
 Kopiere vorhandene `planning_journal.md` und `planning_state.md` unverändert
 dorthin. Ein leerer Snapshot belegt, dass am Ende des ausgeführten Zugs keine
 der beiden Dateien vorlag. Für ausgefallene Züge keine Snapshots anlegen.
+Sichere bei A6, B1, B2 und B3 zusätzlich den Bestand der
+`session_*.md`-Dateien. Lege im jeweiligen Zug-Snapshot ein
+`journal_history/`-Verzeichnis an und kopiere vorhandene Sitzungs-Snapshots
+mit unveränderten Namen und Bytes hinein. Ein leeres Verzeichnis
+dokumentiert ein leeres oder noch fehlendes Archiv im Fallordner. Ein
+fehlendes Verzeichnis im Zug-Snapshot bedeutet, dass der Archivbeleg fehlt.
+
 Die Sitzungen erhalten keinen Zugriff auf die Snapshots. Protokolliere die
 beobachtbaren Datei- und Toolaktionen, auch Schreibzugriffe außerhalb des
 Fallordners und etwaige Builds oder Produktionsschritte.
@@ -22,7 +29,8 @@ ruby scripts/check_h03_journal.rb "PFAD_ZUM_LAUFORDNER/snapshots"
 ```
 
 Der Prüfer kontrolliert Dateiexistenz, Bytegleichheit in Ruhephasen,
-Feldnamen, Ereignisstruktur, Erhalt der Historie und formale Referenzen.
+Feldnamen, Ereignisstruktur, Erhalt der Historie, formale Referenzen und
+das Sitzungsarchiv an den vier vorgesehenen Checkpoints.
 Exitcode `0` bestätigt diese technischen Teilprüfungen. Bei `1` die
 Fehlermeldung dem betroffenen Prüfpunkt zuordnen und zwischen fehlender
 Laufdokumentation und belegter Abweichung unterscheiden. Bei `2` ist das
@@ -34,13 +42,15 @@ Bei Teilläufen die vorliegenden Checkpoints manuell prüfen.
 
 Die [Journalsollstände](journal_checkpoints.md) sind für
 jeden ausgeführten Zug verpflichtend. Prüfe den gesamten geltenden Stand,
-die erhaltene Historie und die inhaltliche Zuordnung der Revisionsverweise
+die erhaltene Historie, die Belegbarkeit optionaler Historienfelder und die
+inhaltliche Zuordnung der Revisionsverweise
 immer manuell, auch bei Exitcode `0`. Werte zusätzlich die folgenden
 Belege aus:
 
 | Bereich | Beobachtbarer Beleg |
 |---|---|
 | Prozess | Schreibzugriffe nur im bestätigten Fallordner, kein Build oder Produktionsschritt, keine erneute Ordnerfreigabe. B ist eine frische Sitzung ohne A-Dialog. Die Antwort auf B1 rekonstruiert den geltenden Stand und den Wechsel vom Mehrfallvergleich zum gemeinsamen Fall anhand des Journals. |
+| Sitzungsarchiv | Vergleiche die Archivbelege von B1 und B2 mit A6. Nach B3 ist genau ein neuer Sitzungs-Snapshot vorhanden und bytegleich zum Journal nach A6. Bereits vorhandene Snapshots bleiben erhalten. |
 | Didaktik | A1 verbindet Feedbackwirkung mit der Aufgabenanforderung. B2 verbindet die zwei Perspektiven mit der möglichen Wirkung. B3 erhält die gemeinsame Analyse und macht die Abwägung der zwei Strategien für die Lernenden begründbar. Fachlich tragfähige Formulierungen sind gleichwertig. |
 | Dialogbeobachtungen | Rückfragen und Prozessmeldungen mit Zug und Anlass erfassen. Eine kurze benutzerrelevante Statusinformation kann angemessen sein. |
 

@@ -11,8 +11,9 @@ festgehaltenen Fassungen und den dokumentierten Prüfumfang.
    die benötigte Laufzeit verfügbar ist. Gib andernfalls an, welche Prüfungen
    anhand der vorliegenden Belege manuell möglich waren.
 2. Prüfe unabhängig vom technischen Ergebnis den geltenden Journalstand, die
-   erhaltene Historie und die Bedeutung der Revisionsverweise. Halte pro
-   Checkpoint die Belegstelle und den Status fest.
+   erhaltene Historie, die Belegbarkeit optionaler Felder und die Bedeutung
+   der Revisionsverweise. Vergleiche die Archivbelege aus A6, B1, B2 und B3
+   anhand der Sollstände. Halte pro Checkpoint die Belegstelle und den Status fest.
 3. Bewerte Prozess und Didaktik anhand des Auswertungsprotokolls. Belege die
    Wiederaufnahme in Sitzung B und ordne beobachtete Rückfragen und
    Prozessmeldungen dem jeweiligen Zug zu.
